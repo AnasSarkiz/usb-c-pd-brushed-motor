@@ -10,11 +10,17 @@ struct stusb_read {
   uint8_t *bytes;
   uint32_t deadline_us;
 };
+struct stusb_write {
+  uint8_t register_address, byte_count;
+  const uint8_t *bytes;
+  uint32_t deadline_us;
+};
 struct stusb_bus {
   void *context;
   /* Return false on NACK, short transfer, arbitration, timeout or bus fault.
    * The target adapter must enforce deadline_us inside the peripheral wait. */
   bool (*read)(void *context, const struct stusb_read *transfer);
+  bool (*write)(void *context, const struct stusb_write *transfer);
   uint32_t (*now_us)(void *context);
 };
 enum stusb_rx_result {

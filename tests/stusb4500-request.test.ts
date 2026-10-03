@@ -1,8 +1,8 @@
 import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
-test("STUSB4500 capture rejects late, changed and malformed PD messages", () => {
-  const executable = "evidence/stusb4500-rx-host-A13"
+test("PD profile transaction rejects partial writes and never repeats an uncertain command", () => {
+  const executable = "evidence/stusb4500-request-host-A13"
   const compiled = spawnSync(
     "cc",
     [
@@ -11,8 +11,8 @@ test("STUSB4500 capture rejects late, changed and malformed PD messages", () => 
       "-Wextra",
       "-Werror",
       "firmware/pd_policy.c",
-      "firmware/stusb4500_rx.c",
-      "firmware/stusb4500_rx_test.c",
+      "firmware/stusb4500_request.c",
+      "firmware/stusb4500_request_test.c",
       "-o",
       executable,
     ],
@@ -21,5 +21,5 @@ test("STUSB4500 capture rejects late, changed and malformed PD messages", () => 
   expect(compiled.status, compiled.stderr).toBe(0)
   const result = spawnSync(`./${executable}`, [], { encoding: "utf8" })
   expect(result.status, result.stderr).toBe(0)
-  expect(result.stdout).toContain("STUSB4500 RX host tests passed")
+  expect(result.stdout).toContain("STUSB4500 request host tests passed")
 })

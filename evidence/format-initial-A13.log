@@ -1,0 +1,21 @@
+$ biome format .
+tests/pd-policy.test.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     3  3 │   
+     4  4 │   test("compiled C PD policy rejects unsafe contracts and stale qualification", () => {
+     5    │ - ····const·executable·=·"evidence/pd-policy-bun-test-A13"
+        5 │ + ··const·executable·=·"evidence/pd-policy-bun-test-A13"
+     6  6 │     const compile = spawnSync(
+     7  7 │       "cc",
+  
+
+Checked 164 files in 154ms. No fixes applied.
+Found 1 error.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format:check" exited with code 1

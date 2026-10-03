@@ -1,4 +1,45 @@
-# A12 current validation — 2026-10-03
+# A13 current validation — 2026-10-03
+
+**Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Implements a bounded RAM profile-write/readback and SoftReset transaction. Successful programming does not qualify motor power or complete the embedded controller.
+
+| Stage | Status | Current evidence /remaining work |
+|---|---|---|
+| 1. Requirements | in progress | Explicit5/9/12 V selection, approximately2 A target, voltage-aware15/20 V policy retained; final thermal/mechanical/manufacturing limits open. |
+| 2. Schematic/BOM | blocked | A11 hardware129 components/55 supplier codes; electrical/import/schema checks remain applicable. Buck loop/thermal/current sharing, capacitor land process, regeneration envelope, NVM/fresh negotiation and STM32 target port remain open. |
+| 3. Product placement | blocked | No product coordinates or mounting holes authored. A12 numeric native API probe remains valid; standard explicit/unit-string defects retained. Electrical/assembly/firmware gates remain. |
+| 4. Routing | not started | Explicitly disabled; zero product PCB traces, no new via-in-pad permitted. |
+| 5. Routed checks | not started | No routed output/snapshot/shorts approval. |
+| 6. Fabrication | not started | No process approval, release or order. |
+| 7. Physical prototype | not started | No actual charger/motor/thermal/decay/reversal evidence. |
+| 8. Store release | not started | No configured GitHub repository/branch/remote; neither GitHub nor tscircuit published. |
+
+## Completed A13 step and evidence
+
+firmware/stusb4500_request.c/.h programs exactly mandatory5 V/3 A standby PDO1 plus the policy-chosen15/20 V/3 A PDO2. Count1 contains profile replacement; then count2 keeps old PDO3 inactive. Every PDO/count/header write is read back; attached sink and pending alarms are rechecked before0x26. Request tokens are consumed before I2C. Every failure, reused token or ambiguous command latches off and clears completion; no silent bus retry. Proposed4 ms whole-transaction deadline is checked around every transfer. The bus interface gains an explicit write callback; receive behavior is separately renewed.
+
+The caller must already inhibit power and the bridge and settle feedback. Boolean adapter preconditions do not prove actual GPIO/VM behavior. completed_request_id proves checked programming/command acknowledgement only, not fresh PS_RDY or a contract. NVM initialization, event ownership, fresh Source_Capabilities/Accept/PS_RDY/RDO/PE/ADC provenance, actual STM32 peripheral/startup/watchdog implementation and a linked image remain required. Legacy/public reserved-bit discrepancies are retained. See docs/STUSB4500-REQUEST.md.
+
+| Check | Result |
+|---|---|
+| Configured format /TypeScript /Bun suite | pass:18 tests/366 expects, zero failures. Initial formatting error corrected; initial/final logs retained. |
+| Request host C11 Wall/Wextra/Werror | pass:969 assertions. All14 transfer failures, partial/ambiguous writes including an actually transmitted unacknowledged command, every readback byte, detach/fault/alarm/deadline/token/precondition cases exercised. Mock registers only. |
+| Receive host harness with expanded bus interface | pass:531 assertions; no live packet-capture evidence. |
+| Freestanding Cortex-M0+ request and receive objects | pass; not linked/flashable firmware. |
+| Unchanged policy/sequence | pass in configured suite with A13 executable paths preserving historical A12 artifacts. |
+| Manufacturer programming/count review | UM2650 pages3/39 visually inspected; addresses/count/header agree with retained reference operations. |
+| A11 hardware/import/schematic/power and A12 native placement evidence | unchanged and still applicable, including unresolved failures. No repeat product build/visual review or product placement is claimed. |
+
+Versions unchanged:tscircuit0.0.2742 /CLI0.1.2237 /core0.0.2056 /props0.0.677 /circuit-json0.0.510; Bun1.3.9 /TS5.9.3 /Biome2.5.14. No supplier definition, schema, checker or threshold changed. RDO/voltage-only or old power-ready status can never substitute for the still-unimplemented fresh handshake.
+
+## Revision and publication
+
+A13 hashes/dependencies/evidence are recorded in evidence/source-manifest-A13.json; source commit recorded after implementation commit. A11 hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. Git remote/destination remains unknown. Standing publication authorization exists, but missing repository/branch and incomplete gates block fully publishing this step. Neither GitHub nor tscircuit remote update succeeded. No fabrication/hardware approval implied.
+
+---
+
+A12 and earlier records below are historical. A13 supersedes portable profile-write and current software checks only; unresolved hardware/tooling/physical limitations remain applicable.
+
+# A12 historical validation — 2026-10-03
 
 **Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Adds bounded PD receive handling and independently audits the supported numeric manual-placement API. No imported electronic definition, output schema or checker is patched or suppressed.
 
