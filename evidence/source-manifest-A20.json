@@ -15,7 +15,7 @@
   "stage2": "blocked",
   "stage3": "blocked",
   "revision": "A20",
-  "sourceCommit": null,
+  "sourceCommit": "5ccf142f12b49cfc26265af407ea83206467fa20",
   "hardwareRevision": "A19",
   "scope": "Bounded raw STM32 ADC1 MMIO backend and tests/documentation; hardware/BOM/dependencies unchanged from A19, evidence reuse hash-bound. No placement, routing, calibrated rail qualification, flashable firmware or remote publication approval. README/VALIDATION/current-manifest bookkeeping excluded.",
   "files": {

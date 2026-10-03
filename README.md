@@ -52,3 +52,5 @@ A18 adds the actual STM32 GPIO backend with open-drain bridge inhibition, safe s
 A19 replaces four ADC-divider resistors with validated0.1% JLCPCB imports.129 placements/57 supplier codes; static rail-error screening passes261,568 independent corners and creates a5 V acceptance window. Actual ADC calibration/peripheral/noise/transient qualification remains open. Product placement and routing are still unstarted.
 
 A20 adds the actual ADC1 MMIO acquisition layer with bounded calibration and timestamped VBUS/VM/VREFINT frames. Raw counts do not qualify motor power. Monotonic target timing, calibrated uncertainty integration and the remaining embedded/PD/physical gates are pending; hardware/BOM stay A19,129 parts/57 suppliers.
+
+A20 source revision `5ccf142f12b49cfc26265af407ea83206467fa20` is committed locally. GitHub repository/branch/remote remains unspecified, so neither GitHub nor the tscircuit package has been updated.

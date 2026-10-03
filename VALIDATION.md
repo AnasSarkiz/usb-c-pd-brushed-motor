@@ -32,7 +32,7 @@ Versions unchanged:tscircuit0.0.2742/CLI0.1.2237/core0.0.2056/props0.0.677/circu
 
 ## Revision and publication
 
-Exact hashes: evidence/source-manifest-A20.json. Source commit pending bookkeeping. **Publication blocker:** task branch main still has no GitHub remote; destination repository/branch is unspecified. Standing push/package authorization exists, but no destination is invented. Neither GitHub push nor tscircuit package update succeeded; this step is locally committed only. This missing destination is independent of continuing design work.
+Exact hashes: evidence/source-manifest-A20.json. Source commit 5ccf142f12b49cfc26265af407ea83206467fa20. **Publication blocker:** task branch main still has no GitHub remote; destination repository/branch is unspecified. Standing push/package authorization exists, but no destination is invented. Neither GitHub push nor tscircuit package update succeeded; this step is locally committed only. This missing destination is independent of continuing design work.
 
 ---
 
