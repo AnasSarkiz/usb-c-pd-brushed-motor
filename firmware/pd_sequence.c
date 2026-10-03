@@ -52,6 +52,8 @@ void pd_sequence_step(struct pd_sequence *sequence,
   };
   if (!sample->adc_valid || sample->hard_reset || !observation->attached ||
       !observation->communication_ok ||
+      !pd_voltage_interval_valid(&observation->vbus) ||
+      !pd_voltage_interval_valid(&observation->motor_rail) ||
       observation->source_generation != sequence->plan.source_generation ||
       pd_motor_voltage(sample->selector_bits) != sequence->plan.motor_voltage_v ||
       sample->now_ms - sample->adc_sample_ms > SAMPLE_MAX_AGE_MS ||
@@ -65,7 +67,7 @@ void pd_sequence_step(struct pd_sequence *sequence,
   case PD_SEQUENCE_DECAY:
     if (elapsed_ms >= DECAY_TIMEOUT_MS) {
       pd_sequence_abort(sequence);
-    } else if (observation->motor_rail_mv <= DECAY_THRESHOLD_MV) {
+    } else if (observation->motor_rail.upper_mv <= DECAY_THRESHOLD_MV) {
       sequence->outputs.drive_9v = sequence->plan.motor_voltage_v == 9;
       sequence->outputs.drive_12v = sequence->plan.motor_voltage_v == 12;
       sequence->state = PD_SEQUENCE_FEEDBACK;
@@ -73,7 +75,7 @@ void pd_sequence_step(struct pd_sequence *sequence,
     }
     break;
   case PD_SEQUENCE_FEEDBACK:
-    if (observation->motor_rail_mv > DECAY_THRESHOLD_MV) {
+    if (observation->motor_rail.upper_mv > DECAY_THRESHOLD_MV) {
       pd_sequence_abort(sequence);
     } else if (elapsed_ms >= FEEDBACK_SETTLE_MS) {
       sequence->outputs.request_contract = true;
@@ -82,7 +84,8 @@ void pd_sequence_step(struct pd_sequence *sequence,
     }
     break;
   case PD_SEQUENCE_REQUEST:
-    if (elapsed_ms >= CONTRACT_TIMEOUT_MS) {
+    if (observation->motor_rail.upper_mv > DECAY_THRESHOLD_MV ||
+        elapsed_ms >= CONTRACT_TIMEOUT_MS) {
       pd_sequence_abort(sequence);
     } else if (sample->completed_request_id == sequence->outputs.request_id) {
       sequence->outputs.request_contract = false;
@@ -91,7 +94,8 @@ void pd_sequence_step(struct pd_sequence *sequence,
     }
     break;
   case PD_SEQUENCE_CONTRACT:
-    if (elapsed_ms >= CONTRACT_TIMEOUT_MS) {
+    if (observation->motor_rail.upper_mv > DECAY_THRESHOLD_MV ||
+        elapsed_ms >= CONTRACT_TIMEOUT_MS) {
       pd_sequence_abort(sequence);
     } else if (sample->ps_rdy_request_id == sequence->outputs.request_id &&
                pd_contract_qualified(&sequence->plan, observation)) {
@@ -105,8 +109,8 @@ void pd_sequence_step(struct pd_sequence *sequence,
   case PD_SEQUENCE_READY:
     if (sample->ps_rdy_request_id != sequence->outputs.request_id ||
         !pd_contract_qualified(&sequence->plan, observation) ||
-        (uint32_t)observation->motor_rail_mv * 100u >
-            (uint32_t)sequence->plan.motor_voltage_v * 1000u * 105u) {
+        (uint64_t)observation->motor_rail.upper_mv * 100u >
+            (uint64_t)sequence->plan.motor_voltage_v * 1000u * 105u) {
       pd_sequence_abort(sequence);
       break;
     }

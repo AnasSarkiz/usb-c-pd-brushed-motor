@@ -1,0 +1,15 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/pd-interval.test.ts:
+(pass) PD qualification contains whole voltage intervals and rejects back-drive [471.15ms]
+
+tests/pd-policy.test.ts:
+(pass) compiled C PD policy rejects unsafe contracts and stale qualification [217.89ms]
+
+tests/pd-sequence.test.ts:
+(pass) compiled C power sequence inhibits stale contracts and unsafe voltage changes [371.92ms]
+
+ 3 pass
+ 0 fail
+ 9 expect() calls
+Ran 3 tests across 3 files. [1068.00ms]

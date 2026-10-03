@@ -1,8 +1,8 @@
 import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
-test("compiled C PD policy rejects unsafe contracts and stale qualification", () => {
-  const executable = "evidence/pd-policy-bun-test-A21"
+test("PD qualification contains whole voltage intervals and rejects back-drive", () => {
+  const executable = "evidence/pd-interval-bun-test-A21"
   const compile = spawnSync(
     "cc",
     [
@@ -11,7 +11,8 @@ test("compiled C PD policy rejects unsafe contracts and stale qualification", ()
       "-Wextra",
       "-Werror",
       "firmware/pd_policy.c",
-      "firmware/pd_policy_test.c",
+      "firmware/pd_sequence.c",
+      "firmware/pd_interval_test.c",
       "-o",
       executable,
     ],
@@ -20,5 +21,5 @@ test("compiled C PD policy rejects unsafe contracts and stale qualification", ()
   expect(compile.status, compile.stderr).toBe(0)
   const result = spawnSync(`./${executable}`, [], { encoding: "utf8" })
   expect(result.status, result.stderr).toBe(0)
-  expect(result.stdout).toContain("PD policy host tests passed")
+  expect(result.stdout).toContain("PD interval host tests passed")
 })

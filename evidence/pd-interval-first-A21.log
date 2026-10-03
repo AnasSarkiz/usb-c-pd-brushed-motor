@@ -1,0 +1,12 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/pd-policy.test.ts:
+(pass) compiled C PD policy rejects unsafe contracts and stale qualification [553.89ms]
+
+tests/pd-sequence.test.ts:
+(pass) compiled C power sequence inhibits stale contracts and unsafe voltage changes [370.49ms]
+
+ 2 pass
+ 0 fail
+ 6 expect() calls
+Ran 2 tests across 2 files. [936.00ms]

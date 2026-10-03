@@ -15,11 +15,17 @@ struct pd_plan {
   uint16_t current_ma;
   uint32_t sink_pdo;
 };
+/* Outward-rounded physical bounds from a qualified measurement adapter.
+ * Raw ADC validity alone must never set this flag. */
+struct pd_voltage_interval {
+  uint32_t lower_mv, upper_mv;
+  bool valid;
+};
 struct pd_observation {
   bool attached, communication_ok, fresh_ps_rdy, motor_fault;
   uint8_t pe_fsm_state;
   uint32_t source_generation, rdo;
-  uint16_t vbus_mv, motor_rail_mv;
+  struct pd_voltage_interval vbus, motor_rail;
 };
 struct pd_rail_check {
   const struct pd_plan *plan;
@@ -35,6 +41,7 @@ struct pd_capabilities {
 uint8_t pd_motor_voltage(uint8_t selector_bits);
 struct pd_plan pd_make_plan(uint8_t selector_bits, const struct pd_capabilities *capabilities);
 bool pd_plan_valid(const struct pd_plan *plan);
+bool pd_voltage_interval_valid(const struct pd_voltage_interval *interval);
 bool pd_contract_qualified(const struct pd_plan *plan,
                            const struct pd_observation *observation);
 /* Rail check while the bridge is asleep; nFAULT is checked separately at wake. */

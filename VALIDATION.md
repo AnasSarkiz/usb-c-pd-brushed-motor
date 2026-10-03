@@ -1,3 +1,42 @@
+# A21 validation — 2026-10-03
+
+**Unrouted WIP prototype; hardware/BOM remain A19,129 purchased components/57 supplier codes. Product placement is unstarted.** PD/VM decisions now contain entire explicit voltage-uncertainty intervals, and VM rise during request/contract waiting aborts power permission. No calibrated physical measurement adapter or hardware qualification is implied.
+
+|Stage|Status|Current evidence /remaining work|
+|---|---|---|
+|1. Requirements|in progress|Explicit5/9/12 V selector and approximately2 A target retained; final mechanical/thermal/operating envelope open.|
+|2. Schematic/BOM|blocked|All57 imports and schematic connectivity retain A19 validity under identical source/dependency hashes. ADC interval interface is now enforced; qualified conversion/reference/filter bounds, actual timer/I2C/fresh-response owner, approved NVM image and outstanding converter/thermal/current-sharing/land/energy qualification remain open.|
+|3. Product placement|blocked|No product coordinates/mounting holes; full A19 unplaced geometry errors remain unresolved.|
+|4. Routing|not started|Explicitly disabled; no new routed via-in-pad permitted.|
+|5. Routed checks|not started|No routed output/shorts/snapshot approval.|
+|6. Fabrication|not started|No assembler/process approval/release/order.|
+|7. Physical prototype|not started|No measured motor/PD/ADC/noise/thermal/reversal evidence.|
+|8. Store release|not started|GitHub destination absent; neither remote published.|
+
+## Completed A21 step
+
+Removes scalar physical-voltage fields from pd_observation and requires valid lower/upper bounds. No midpoint or raw-ADC compatibility fallback. VBUS and VM must each fit their entire relevant±5% window. All active sequence states reject invalid/reversed measurements; VM upper bound≤1 V is enforced through feedback, request and contract wait. Back-drive while waiting therefore cannot silently proceed to HOST_ALLOW.64-bit comparisons reject extreme values without multiplication overflow. Existing current/RDO/freshness/token/rail stability and feedback-preservation rules remain intact; no direction logic or reversal timer added.
+
+|Check|Actual result/evidence|
+|---|---|
+|Independent interval/state regressions|393,356 C assertions pass: all0..65535 mV motor endpoints for5/9/12 V, exact boundaries, midpoint traps, VBUS bounds, invalid/reversed/extreme ranges, conditional A19 examples, all active states and back-drive. pd-interval-assertions-A21.log.|
+|Existing policy and sequence C tests|60,202/11,518 assertions pass using explicitly synthetic exact intervals, not a production ADC-to-voltage shim. Separate A21 binaries/host logs preserved.|
+|Configured tests|26 pass/0 fail/409 expects; tests-final-A21.log. All prior GPIO/ADC/transport/NVM/startup/request regressions rerun.|
+|Formatting/TypeScript|Pass; format-check-final-A21.log/typecheck-final-A21.log.|
+|Target compilation|All8 production modules pass freestanding Cortex-M0+ ARM GCC16.1 strict compilation; target-compile-A21.json and logs. No linked/executed image.|
+|Power report|Configured report passes unchanged conditional assumptions; power-report-final-A21.log. Thermal/transient and narrow9 V/15 V margin remain open.|
+|Hardware evidence reuse|Diff to A20 bookkeeping41164d4 confirms identical circuits/import/BOM/dependencies. hardware-evidence-reuse-A21.json binds A19 outputs. All57 supplier/schema and schematic results, plus unresolved actual unplaced-board overlap/clearance errors, remain applicable. No unnecessary new board build/visual/stock claim.|
+
+Versions unchanged:tscircuit0.0.2742/CLI0.1.2237/core0.0.2056/props0.0.677/circuit-json0.0.510; Bun1.3.9/TypeScript5.9.3/Biome2.5.14. This finishes the interval-consuming policy boundary only. A20 raw ADC valid cannot set qualified interval validity; the actual adapter must establish the accuracy/noise/filter/clock conditions and preserve oldest sample age. Actual GPIO output application, fresh SOP/event provenance, I2C/timebase/NVM integration and prototype tests remain pending. See docs/PD-VOLTAGE-INTERVALS.md.
+
+## Revision and publication
+
+Exact hashes: evidence/source-manifest-A21.json. Source commit pending bookkeeping. **Publication blocker:** task branch main still has no GitHub remote; destination repository/branch remains unspecified. Standing authorization exists; neither GitHub push nor tscircuit package update succeeded. Source is committed locally only. No destination, credentials or physical results are invented.
+
+---
+
+A20 and earlier records below are historical; unchanged hardware findings remain applicable.
+
 # A20 validation — 2026-10-03
 
 **Unrouted WIP prototype; hardware/BOM remain A19,129 purchased components/57 supplier codes. Product placement is unstarted.** Adds bounded real-ADC1 raw acquisition/calibration, timestamps and fault inhibition. Raw counts do not qualify a motor voltage or PD contract.

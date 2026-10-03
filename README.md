@@ -1,4 +1,4 @@
-# USB-C PD brushed DC motor controller — A20 raw ADC acquisition step
+# USB-C PD brushed DC motor controller — A21 voltage uncertainty integration step
 
 Connected tscircuit prototype for one 5/9/12 V brushed motor, targeting approximately 2 A continuous. One USB-C power input, regulated motor voltage, hardware speed potentiometer, FWD/OFF/REV switch, DRV8874 H-bridge, power/direction LEDs and one motor screw terminal. The user approved an MCU only for PD qualification; PWM remains hardware controlled.
 
@@ -9,6 +9,7 @@ Use this task directory for every command. Entry point: index.circuit.tsx. Depen
 - docs/BOM.csv: current 129 components / 57 supplier parts, dates and pending approvals.
 - VALIDATION.md: current gates, checks and historical evidence.
 - docs/ARCHITECTURE.md: connected circuit and electrical limitations.
+- docs/PD-VOLTAGE-INTERVALS.md: whole-interval voltage checks, invalid-measurement inhibition and request-wait back-drive rejection.
 - docs/STM32-ADC.md: bounded real-peripheral raw sampling, calibration and failure inhibition; voltage qualification integration pending.
 - docs/ADC-SENSING.md: precision sensing replacements and conservative rail/decay uncertainty screen.
 - docs/STM32-SAFE-GPIO.md: actual STM32 pin initialization/inhibition, bonded aliases and unchanged vendor definitions.
@@ -54,3 +55,5 @@ A19 replaces four ADC-divider resistors with validated0.1% JLCPCB imports.129 pl
 A20 adds the actual ADC1 MMIO acquisition layer with bounded calibration and timestamped VBUS/VM/VREFINT frames. Raw counts do not qualify motor power. Monotonic target timing, calibrated uncertainty integration and the remaining embedded/PD/physical gates are pending; hardware/BOM stay A19,129 parts/57 suppliers.
 
 A20 source revision `5ccf142f12b49cfc26265af407ea83206467fa20` is committed locally. GitHub repository/branch/remote remains unspecified, so neither GitHub nor the tscircuit package has been updated.
+
+A21 replaces scalar voltage decisions with complete uncertainty intervals and aborts if VM rises during the PD request/contract wait. Calibrated measurement integration and actual target execution remain pending; hardware/BOM stay A19.

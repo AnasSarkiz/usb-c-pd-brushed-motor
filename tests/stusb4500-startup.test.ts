@@ -2,7 +2,7 @@ import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
 test("PD startup drains old events under inhibition and verifies standby acquisition", () => {
-  const executable = "evidence/stusb4500-startup-host-A20"
+  const executable = "evidence/stusb4500-startup-host-A21"
   const compiled = spawnSync(
     "cc",
     [

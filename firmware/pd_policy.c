@@ -68,6 +68,17 @@ bool pd_plan_valid(const struct pd_plan *p) {
          power_budget_fits(p->motor_voltage_v, p->voltage_mv);
 }
 
+bool pd_voltage_interval_valid(const struct pd_voltage_interval *interval) {
+  return interval && interval->valid && interval->lower_mv <= interval->upper_mv;
+}
+struct voltage_window { uint32_t target_mv, low_percent, high_percent; };
+static bool within_window(const struct pd_voltage_interval *interval,
+                          const struct voltage_window window) {
+  return pd_voltage_interval_valid(interval) &&
+    (uint64_t)interval->lower_mv * 100u >= (uint64_t)window.target_mv * window.low_percent &&
+    (uint64_t)interval->upper_mv * 100u <= (uint64_t)window.target_mv * window.high_percent;
+}
+
 bool pd_contract_qualified(const struct pd_plan *p,
                            const struct pd_observation *o) {
   if (!pd_plan_valid(p) || !o || !o->attached || !o->communication_ok ||
@@ -84,8 +95,7 @@ bool pd_contract_qualified(const struct pd_plan *p,
     return false;
   /* ADC scaling/calibration/error must be established before using these
    * physical limits. The transport must fail closed on stale samples. */
-  return (uint32_t)o->vbus_mv * 100u >= (uint32_t)p->voltage_mv * 95u &&
-         (uint32_t)o->vbus_mv * 100u <= (uint32_t)p->voltage_mv * 105u;
+  return within_window(&o->vbus, (struct voltage_window){p->voltage_mv, 95, 105});
 }
 
 bool pd_motor_rail_qualified(const struct pd_rail_check *check) {
@@ -97,8 +107,7 @@ bool pd_motor_rail_qualified(const struct pd_rail_check *check) {
   /* Independent VM measurement catches a wrong feedback branch or selector.
    * +/-5% is a proposed acceptance window, not a measured board tolerance. */
   const uint32_t target_mv = (uint32_t)p->motor_voltage_v * 1000u;
-  return (uint32_t)o->motor_rail_mv * 100u >= target_mv * 95u &&
-         (uint32_t)o->motor_rail_mv * 100u <= target_mv * 105u;
+  return within_window(&o->motor_rail, (struct voltage_window){target_mv, 95, 105});
 }
 
 bool pd_motor_qualified(const struct pd_rail_check *check) {

@@ -1,0 +1,170 @@
+[
+  {
+    "module": "pd_policy",
+    "command": [
+      "/opt/homebrew/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Os",
+      "-Ifirmware/vendor/stm32g0/Include",
+      "-Ifirmware/vendor/cmsis/Core/Include",
+      "-c",
+      "firmware/pd_policy.c",
+      "-o",
+      "evidence/pd_policy-target-A21.o"
+    ],
+    "exit": 0
+  },
+  {
+    "module": "pd_sequence",
+    "command": [
+      "/opt/homebrew/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Os",
+      "-Ifirmware/vendor/stm32g0/Include",
+      "-Ifirmware/vendor/cmsis/Core/Include",
+      "-c",
+      "firmware/pd_sequence.c",
+      "-o",
+      "evidence/pd_sequence-target-A21.o"
+    ],
+    "exit": 0
+  },
+  {
+    "module": "stusb4500_rx",
+    "command": [
+      "/opt/homebrew/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Os",
+      "-Ifirmware/vendor/stm32g0/Include",
+      "-Ifirmware/vendor/cmsis/Core/Include",
+      "-c",
+      "firmware/stusb4500_rx.c",
+      "-o",
+      "evidence/stusb4500_rx-target-A21.o"
+    ],
+    "exit": 0
+  },
+  {
+    "module": "stusb4500_request",
+    "command": [
+      "/opt/homebrew/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Os",
+      "-Ifirmware/vendor/stm32g0/Include",
+      "-Ifirmware/vendor/cmsis/Core/Include",
+      "-c",
+      "firmware/stusb4500_request.c",
+      "-o",
+      "evidence/stusb4500_request-target-A21.o"
+    ],
+    "exit": 0
+  },
+  {
+    "module": "stusb4500_startup",
+    "command": [
+      "/opt/homebrew/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Os",
+      "-Ifirmware/vendor/stm32g0/Include",
+      "-Ifirmware/vendor/cmsis/Core/Include",
+      "-c",
+      "firmware/stusb4500_startup.c",
+      "-o",
+      "evidence/stusb4500_startup-target-A21.o"
+    ],
+    "exit": 0
+  },
+  {
+    "module": "stusb4500_nvm",
+    "command": [
+      "/opt/homebrew/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Os",
+      "-Ifirmware/vendor/stm32g0/Include",
+      "-Ifirmware/vendor/cmsis/Core/Include",
+      "-c",
+      "firmware/stusb4500_nvm.c",
+      "-o",
+      "evidence/stusb4500_nvm-target-A21.o"
+    ],
+    "exit": 0
+  },
+  {
+    "module": "stm32_safe_gpio",
+    "command": [
+      "/opt/homebrew/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Os",
+      "-Ifirmware/vendor/stm32g0/Include",
+      "-Ifirmware/vendor/cmsis/Core/Include",
+      "-c",
+      "firmware/stm32_safe_gpio.c",
+      "-o",
+      "evidence/stm32_safe_gpio-target-A21.o"
+    ],
+    "exit": 0
+  },
+  {
+    "module": "stm32_adc",
+    "command": [
+      "/opt/homebrew/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Os",
+      "-Ifirmware/vendor/stm32g0/Include",
+      "-Ifirmware/vendor/cmsis/Core/Include",
+      "-c",
+      "firmware/stm32_adc.c",
+      "-o",
+      "evidence/stm32_adc-target-A21.o"
+    ],
+    "exit": 0
+  }
+]
