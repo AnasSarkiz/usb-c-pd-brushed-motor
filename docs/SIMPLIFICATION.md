@@ -1,6 +1,6 @@
-# A9 architecture simplification — 2026-10-03
+# A11 architecture simplification — 2026-10-03
 
-The user approved a small MCU for PD qualification. Hardware PWM and the mechanical direction switch remain independent of it. The active BOM contains **128 placements / 54 supplier part numbers**, compared with the historical 118 / 54 assembly. This is a connected prototype draft; the A9 simplification review is complete, with the part-count tradeoff below retained for review. This does not pass electrical, placement or hardware gates.
+The user approved a small MCU for PD qualification. Hardware PWM and the mechanical direction switch remain independent of it. The active BOM contains **129 placements / 55 supplier part numbers**, compared with the historical 118 / 54 assembly. This is a connected prototype draft; the A9 simplification review is retained; A11 adds one required rail-discharge resistor, with the part-count tradeoff below retained for review. This does not pass electrical, placement or hardware gates.
 
 | Change from the historical assembly | Placement change |
 |---|---:|
@@ -52,3 +52,8 @@ Retain TPS54360 for this revision: its 4.5 A minimum peak limit leaves more curr
 The source-to-manifest count was reconciled for every functional sheet. The two PWM gating/decoding paths and supplier debug/service header are removed. No replacement direction logic, timed-reversal circuit, MCU PWM, display, radio, motor sensor or communications connector is added. The 5 V LDO powers the STUSB4500 VDD-only configuration; the hardware PWM already uses 3.3 V, so changing its supply cannot remove that LDO. The VM-powered analog clamp must remain active after USB and MCU power disappear. Removing those circuits merely because the MCU can sample a powered rail would change the fault behavior.
 
 Retain this connected architecture for electrical qualification. A synchronous buck redesign is the concrete remaining reduction opportunity, but its current-limit and three-mode feedback/monitor behavior require a fresh design rather than a part-only substitution. No reduction is claimed until that alternative is validated. The greater count and provisional 65 × 50 mm size are explicit tradeoffs of regulated multi-voltage PD power and protection for unspecified motors; reference-like compactness is still unproven.
+
+
+## A11 essential discharge addition
+
+One R68/C2074262 1 kΩ/0.5 W passive VM bleeder makes rail decay independent of the attached motor and uncertain below-range IC loading. It avoids a discharge transistor/driver network, adds one part, and retains hardware PWM/direct direction switching. Current total: 129 purchased components/55 supplier codes; buck sheet 22, other sheet counts unchanged. No debug/sensor/communication/reversal-delay circuit is added. See RAIL-DISCHARGE.md for calculations, stock and independent import audit. The portable voltage-change sequence waits for measured decay and still inhibits on timeout; actual operating limits remain unapproved.

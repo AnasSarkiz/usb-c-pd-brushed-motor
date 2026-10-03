@@ -50,11 +50,15 @@ if (process.argv.includes("--inspect")) {
   if (new Set(references).size !== references.length) throw new Error("Duplicate BOM reference");
   const escapedRows = writtenRows.map(row => row.map(cell => `"${String(cell ?? "").replace(/"/g, '""')}"`).join(",")).join("\n");
   await fs.writeFile("docs/BOM.csv", `${escapedRows}\n`);
-  const capacitorIndex = writtenRows.findIndex(row => row[5] === "C178373");
-  if (capacitorIndex < 1) throw new Error("C18 supplier metadata absent");
-  sheet.getRange(`A${capacitorIndex+1}:G${capacitorIndex+1}`).format.autofitColumns();
-  const capacitorPreview = await workbook.render({ sheetName: "BOM", range: `A${capacitorIndex+1}:G${capacitorIndex+1}`, scale: 1, format: "png" });
-  await fs.writeFile(`evidence/bom-authoring/C18-${revision}.png`, new Uint8Array(await capacitorPreview.arrayBuffer()));
+  for (const code of ["C178373", ...newMetadata.map(part => part.JLCPCB_LCSC_Number)]) {
+    const rowIndex = writtenRows.findIndex(row => row[5] === code);
+    if (rowIndex < 1) throw new Error(`Supplier metadata absent: ${code}`);
+    const previewRange = `A${rowIndex+1}:G${rowIndex+1}`;
+    sheet.getRange(previewRange).format.autofitColumns();
+    const supplierPreview = await workbook.render({ sheetName: "BOM", range: previewRange, scale: 1, format: "png" });
+    const reference = String(writtenRows[rowIndex][0]);
+    await fs.writeFile(`evidence/bom-authoring/${reference}-${revision}.png`, new Uint8Array(await supplierPreview.arrayBuffer()));
+  }
   const check = await workbook.inspect({ kind: "table", range: "BOM!A1:G6", tableMaxRows: 6, tableMaxCols: 7, maxChars: 1800 });
   await fs.writeFile(`evidence/bom-authoring/reconciliation-${revision}.json`, JSON.stringify({ componentCount: total, supplierPartCount: groups.size, duplicateReferences: 0, inspected: check.ndjson }, null, 2));
   sheet.getRange("A1:G6").format.autofitColumns();

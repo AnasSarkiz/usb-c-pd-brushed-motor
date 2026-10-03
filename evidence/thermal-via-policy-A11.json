@@ -1,0 +1,280 @@
+{
+  "revision": "A11",
+  "issues": [],
+  "reviewedVias": [
+    {
+      "code": "C1849461",
+      "ref": "U4",
+      "importedSha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "vias": [
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net14",
+          "x": 0.599948,
+          "y": -0.599948,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_21",
+            "pcb_port_22"
+          ],
+          "source_trace_id": "source_trace_14"
+        },
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_1",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net14",
+          "x": 0.599948,
+          "y": 0.599948,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_23",
+            "pcb_port_24"
+          ],
+          "source_trace_id": "source_trace_14"
+        },
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_2",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net14",
+          "x": -0.599948,
+          "y": 0.599948,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_25",
+            "pcb_port_26"
+          ],
+          "source_trace_id": "source_trace_14"
+        },
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_3",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net14",
+          "x": -0.599948,
+          "y": -0.599948,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_27",
+            "pcb_port_28"
+          ],
+          "source_trace_id": "source_trace_14"
+        }
+      ]
+    },
+    {
+      "code": "C44377",
+      "ref": "U5",
+      "importedSha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2",
+      "vias": [
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net8",
+          "x": 0.500126,
+          "y": 0.499872,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_9",
+            "pcb_port_10"
+          ],
+          "source_trace_id": "source_trace_8"
+        },
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_1",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net8",
+          "x": -0.499872,
+          "y": 0.499872,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_11",
+            "pcb_port_12"
+          ],
+          "source_trace_id": "source_trace_8"
+        },
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_2",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net8",
+          "x": -0.499872,
+          "y": -0.500126,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_13",
+            "pcb_port_14"
+          ],
+          "source_trace_id": "source_trace_8"
+        },
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_3",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net8",
+          "x": 0.500126,
+          "y": -0.500126,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_15",
+            "pcb_port_16"
+          ],
+          "source_trace_id": "source_trace_8"
+        }
+      ]
+    },
+    {
+      "code": "C1855818",
+      "ref": "U10",
+      "importedSha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "vias": [
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net16",
+          "x": -0.499872,
+          "y": 0.499872,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_17",
+            "pcb_port_18"
+          ],
+          "source_trace_id": "source_trace_16"
+        },
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_1",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net16",
+          "x": 0.500126,
+          "y": 0.499872,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_19",
+            "pcb_port_20"
+          ],
+          "source_trace_id": "source_trace_16"
+        },
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_2",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net16",
+          "x": -0.499872,
+          "y": -0.500126,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_21",
+            "pcb_port_22"
+          ],
+          "source_trace_id": "source_trace_16"
+        },
+        {
+          "type": "pcb_via",
+          "pcb_via_id": "pcb_via_3",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net16",
+          "x": 0.500126,
+          "y": -0.500126,
+          "outer_diameter": 0.6096,
+          "hole_diameter": 0.3048,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "pcb_port_ids": [
+            "pcb_port_23",
+            "pcb_port_24"
+          ],
+          "source_trace_id": "source_trace_16"
+        }
+      ]
+    }
+  ],
+  "limitation": "Board-wide checker permission, not a per-via exception. No routing executed; assembler process and thermal copper still require review."
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "check": "netlist",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "tests/supplier-audit/C859155.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/supplier-C859155-netlist-A11.log"
+  },
+  {
+    "check": "pin_specification",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "tests/supplier-audit/C859155.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/supplier-C859155-pin_specification-A11.log"
+  },
+  {
+    "check": "source",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "tests/supplier-audit/C859155.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/supplier-C859155-source-A11.log"
+  },
+  {
+    "check": "schematic-placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "tests/supplier-audit/C859155.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/supplier-C859155-schematic-placement-A11.log"
+  },
+  {
+    "check": "placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "tests/supplier-audit/C859155.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/supplier-C859155-placement-A11.log"
+  }
+]

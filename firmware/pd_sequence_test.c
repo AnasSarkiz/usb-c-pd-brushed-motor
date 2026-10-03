@@ -62,8 +62,34 @@ static void make_ready(struct pd_sequence *sequence, struct pd_sequence_sample *
   CHECK(sequence->state == PD_SEQUENCE_READY && sequence->outputs.release_bridge);
 }
 
+static void check_slow_discharge(uint8_t bits) {
+  const uint32_t source_pdos[] = {(100u<<10)|300u, (300u<<10)|300u, (400u<<10)|300u};
+  struct pd_sequence sequence = {0};
+  const struct pd_sequence_request request = {.plan=pd_make_plan(bits, source_pdos, 3, 1)};
+  struct pd_sequence_sample sample = {.selector_bits=bits, .adc_valid=true, .observation={
+    .attached=true, .communication_ok=true, .source_generation=1, .motor_fault=true
+  }};
+  CHECK(pd_sequence_begin(&sequence, &request));
+  /* 650uF, 1060ohm screen. Euler's 1ms step is only a host load model;
+   * qualification uses the independently supplied VM observation, not a timer. */
+  double rail_mv = 15000;
+  while (sequence.state == PD_SEQUENCE_DECAY && sample.now_ms < 3000) {
+    sample.observation.motor_rail_mv = (uint16_t)(rail_mv + 1);
+    tick(&sequence, &sample);
+    CHECK(!sequence.outputs.host_allow && !sequence.outputs.release_bridge);
+    if (sample.observation.motor_rail_mv > 1000)
+      CHECK(!sequence.outputs.drive_9v && !sequence.outputs.drive_12v);
+    rail_mv *= 1.0 - 1.0 / (1060 * 650e-6 * 1000);
+  }
+  CHECK(sample.now_ms > 1000 && sample.now_ms < 3000);
+  CHECK(sequence.state == PD_SEQUENCE_FEEDBACK);
+  CHECK(sequence.outputs.drive_9v == (bits==1));
+  CHECK(sequence.outputs.drive_12v == (bits==2));
+}
+
 int main(void) {
   for (uint8_t bits=0; bits<3; ++bits) {
+    check_slow_discharge(bits);
     struct pd_sequence sequence = {0};
     struct pd_sequence_sample sample = {.selector_bits=bits};
     make_ready(&sequence, &sample);
@@ -103,7 +129,7 @@ int main(void) {
     CHECK(sequence.outputs.request_id == old_request_id+1);
     const bool retained_9v = sequence.outputs.drive_9v;
     const bool retained_12v = sequence.outputs.drive_12v;
-    for (unsigned i=0; i<1001; ++i) tick(&sequence, &sample);
+    for (unsigned i=0; i<3001; ++i) tick(&sequence, &sample);
     CHECK(sequence.state == PD_SEQUENCE_FAULT); /* Charged rail must decay first. */
     CHECK(sequence.outputs.drive_9v == retained_9v && sequence.outputs.drive_12v == retained_12v);
   }

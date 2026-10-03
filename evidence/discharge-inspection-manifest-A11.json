@@ -1,0 +1,12 @@
+[
+  {
+    "ref": "R68",
+    "code": "C2074262",
+    "import_path": "imports/ESR18EZPF1001.tsx",
+    "pins": {
+      "pin1": "VM",
+      "pin2": "GND"
+    },
+    "nc": []
+  }
+]

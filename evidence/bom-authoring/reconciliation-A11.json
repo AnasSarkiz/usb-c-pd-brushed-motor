@@ -1,0 +1,6 @@
+{
+  "componentCount": 129,
+  "supplierPartCount": 55,
+  "duplicateReferences": 0,
+  "inspected": "{\"kind\":\"table\",\"sheet\":\"BOM\",\"address\":\"A1:G6\",\"rows\":6,\"cols\":7,\"values\":[[\"References\",\"Quantity\",\"Value\",\"Manufacturer\",\"Manufacturer_Part_Number\",\"JLCPCB_LCSC_Number\",\"Package\"],[\"J1\",1,\"TYPE-C-31-M-12\",\"Korean Hroparts Elec\",\"TYPE-C-31-M-12\",\"C165948\",\"SMD\"],[\"U1\",1,\"STUSB4500QTR\",\"ST\",\"STUSB4500QTR\",\"C2678061\",\"QFN-24-EP(4x4)\"],[\"U2\",1,\"TPS7A1650DGNR\",\"TI\",\"TPS7A1650DGNR\",\"C468238\",\"MSOP-8-EP\"],[\"U3\",1,\"TPS7A1633DGNR\",\"TI\",\"TPS7A1633DGNR\",\"C181239\",\"HVSSOP-8-EP\"],[\"D1\",1,\"SMBJ22A\",\"RUILON\",\"SMBJ22A\",\"C10214\",\"DO-214AA(SMB)\"]]}"
+}

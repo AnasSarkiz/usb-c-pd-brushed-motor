@@ -17,3 +17,6 @@ The 8.2 µH inductor screen uses its tolerance, low switching frequency and peak
 The 12 V regenerative dump can dissipate approximately 18.9 W instantaneously at its nominal trip, exceeding the four-resistor bank's 8 W aggregate continuous component rating. It must be qualified for pulse energy/duty and the declared motor inertia. Driver OCP/thermal protection does not establish a continuous braking envelope or prevent the mechanical hazards of running reversal. Rapid reversal in both directions and 5 V current-limit accuracy remain mandatory prototype cases.
 
 References: [TI TPS54360](https://www.ti.com/lit/ds/symlink/tps54360.pdf), §8.2.2.6; [Samsung exact characterization](https://product.samsungsem.com/mlcc/CL32B106KBJNNN.do); [LCSC exact SKU](https://www.lcsc.com/product-detail/C138687.html). Calculations and raw data are in evidence/buck-input-review-A9.json and evidence/C138687-characteristics-A9.json.
+
+
+A11: R68/C2074262 adds a 1 kΩ/0.5 W rail-discharge load. Active count 129/55. +5% VM and worst bleeder load are included in both C and host power screens, with selected peak inputs 1.347/2.226/2.145 A. The 9 V/15 V combined-corner margin is 17 mA; transient/thermal validation remains required. See RAIL-DISCHARGE.md. Existing loop/input-capacitor limitations remain.

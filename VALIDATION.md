@@ -1,4 +1,52 @@
-# A10 current validation — 2026-10-03
+# A11 current validation — 2026-10-03
+
+**Unrouted WIP engineering prototype; product placement is unstarted.** Adds a supplier-backed passive VM discharge resistor and corrects the power-change timeout/budget. All 55 active supplier audits and the connected 129-part schematic pass their electrical/schema checks. Complete power/assembly/firmware approval remains blocked.
+
+| Stage | Status | Current evidence / remaining work |
+|---|---|---|
+| 1. Requirements | in progress | Explicit 5/9/12 V selection, 2 A target, single USB-C and qualified 15/20 V contracts retained. Final thermal/mechanical/manufacturing envelope open. |
+| 2. Schematic/BOM | blocked | 129 purchased parts / 55 supplier codes, eight native A4 sheets; zero connectivity/schema issues. Discharge screen passes. Buck loop/MLCC bias/thermal/current sharing, capacitor land-process approval, regeneration energy and flashable MCU/STUSB4500 port still open. |
+| 3. Product placement | blocked | No product coordinates or mounting-hole placement authored. Official coordinate-schema defect persists; default unplaced geometry fails native placement checks. |
+| 4. Routing | not started | routingDisabled, new via-in-pad router prohibition retained. Zero PCB traces. |
+| 5. Routed checks | not started | No routed output/snapshot/shorts approval. |
+| 6. Fabrication | not started | Assembly/thermal-via/paste processes unapproved; no release or order. |
+| 7. Physical prototype | not started | No measured charger/motor/thermal/decay/reversal evidence. |
+| 8. Store release | not started | GitHub destination repository/branch missing; no remote configured. Neither GitHub nor tscircuit package updated. |
+
+## Completed A11 step and checks
+
+R68/C2074262/ROHM ESR18EZPF1001 is an unchanged official exact-footprint 1 kΩ/0.5 W 1206 import. Live exact-SKU stock observed 101,150; raw page/hash/date retained. Exactly two electrical pins/pads, positive SMD paste, strict schema, native build and all five independent checks pass. The zero-stock Yageo candidate remains unused. Manufacturer body/land/derating pages and generated ROHM probe were visually inspected; no component definition or imported model was edited.
+
+A11 supplies defined passive discharge independent of uncertain low-voltage IC or motor loading. With ≤650 µF and ≤1060 Ω, 15→1 V screens 1.866 s; the software decay timeout becomes 3 s. A fresh VM≤1 V measurement still gates feedback changes. External back-drive that maintains VM latches inhibition at timeout. R68 screens 169 mW at 12.6 V and 222 mW at nominal OV trip plus 5%, below 294 mW derated rating at the declared 105°C local-ambient ceiling. Actual capacitance, temperature, decay and continuous-energy behavior must be measured; no physical result is claimed. See docs/RAIL-DISCHARGE.md.
+
+PD calculations in both C and host policy now include +5% motor-rail voltage and worst 940 Ω bleeder load outside the 1 W auxiliary allowance. Selected 2.423 A-peak cases screen 1.347 A(5/15), 2.226 A(9/15), 2.145 A(12/20), versus 2.243 A minimum eFuse limit. The 9 V/15 V corner has only 17 mA margin; transient/current/thermal qualification remains mandatory. No native 12 V PDO assumed; insufficient 5 V/non-PD sources remain inhibited. No timed direction/reversal logic is added.
+
+Versions unchanged: tscircuit 0.0.2742 / CLI 0.1.2237 / core 0.0.2056 / props 0.0.677 / circuit-json 0.0.510; Bun 1.3.9 / TS 5.9.3 / Biome 2.5.14. Official dependencies only. A10/A9 importer coordinate defect and current limitations remain applicable.
+
+| Check | Result |
+|---|---|
+| Formatting /TypeScript /configured Bun suite | pass; 16 tests, 360 expects, zero failures. |
+| C sequencer host harness | pass; 11,506 assertions including slow modeled RC decay and persistent charged-rail timeout. Simulated observations, not measured decay. |
+| Cortex-M0+ policy and sequence objects | pass; no linked/flashable firmware image. |
+| Strict active supplier import/pin/pad/schema audit | pass; 55 parts, zero issues/traces. New C2074262 freshly rebuilt ; 54 unchanged prior probes remain applicable under unchanged dependencies. |
+| Thermal-via source/hash/EP policy | pass;12 existing imported vias, zero issues. No new routed via in a pad. |
+| Official schematic-only build and strict full schematic/BOM/A4/NC audit | pass;129 parts/ 55codes/ 84 exact-signature reviewed advisories, zero PCB traces. |
+| Native netlist/pin_specification/source/schematic-placement | pass, sequential against full archived PCB artifact. |
+| Full unrouted build and native/explicit-artifact placement check | fail: 6,301 footprint overlaps, 297 pad-clearance errors, 1,955 courtyard overlaps. Default unplaced layout; errors retained. 129 source components/ 141 PCB records/zero traces. |
+| Defined discharge/resistor derating screen | pass under stated bounds; source and bridge off/no external energy, actual temperatures and VM measurement still required. |
+| Updated C178373 CCM profile including 1 kΩ load | exits 1; 1,570 sensitivity-threshold failures retained. No loop or current-sharing approval. |
+
+Visual review: all eight sheets in schematic-overview-A11.png, updated buck full-resolution dist/review/3-buck-A11.png, supplier PCB and manufacturer dimension/derating pages, BOM R68-A11.png and C18-A11.png. Labels/polarity/R68 wiring fit A4; warnings remain visible. Artifact-tool BOM reconciliation gives129/ 55 and no duplicate references. The full build was archived as full-build-output-A11.circuit.json before schematic-only regeneration; the CLI cache false-pass is not accepted.
+
+## Revision and publication
+
+A11 source hashes/dependencies/evidence are recorded in evidence/source-manifest-A11.json; source commit pending local commit. Raw manufacturer HTML/text evidence remains unchanged even where Git's whitespace review reports source CRLF/trailing spaces; source formatting passes. Stage results are limited to the evidence above. Git remote remains absent. Standing publish authorization exists, but unknown GitHub repository/branch plus incomplete validation block completing GitHub/package publication. Neither remote succeeded. No fabrication/hardware approval is implied.
+
+---
+
+A10 and earlier records below are historical; affected current results are superseded by A11. Unresolved blockers remain applicable.
+
+# A10 historical validation — 2026-10-03
 
 **WIP engineering prototype. Product placement has not started; routing remains disabled.** C18 is now an unchanged official Panasonic polymer import, and the portable PD/rail startup sequence is implemented. The active supplier and schematic audits pass; power/assembly qualification and the flashable MCU port remain blocked. No component model, schema, diagnostic or checker threshold was patched or suppressed.
 

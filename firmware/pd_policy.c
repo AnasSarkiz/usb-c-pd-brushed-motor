@@ -5,16 +5,17 @@ uint8_t pd_motor_voltage(uint8_t bits) {
   return bits < 4 ? voltage[bits] : 0;
 }
 
-/* Engineering assumptions match the A7 power report: 2.423 A peak,
+/* Engineering assumptions match the A11 power report: 2.423 A peak,
  * 0.36 ohm hot bridge bound, 85% buck efficiency, 0.55 V diode,
- * 1 W auxiliaries, -5% source voltage. 5 V current-limit accuracy
+ * 1 W auxiliaries plus worst bleeder load, +5% output / -5% source voltage. 5 V current-limit accuracy
  * is not guaranteed by the driver; it needs prototype characterization. */
 static bool power_budget_fits(uint8_t motor_v, uint16_t source_mv) {
   const float current = 2.423f;
   const float minimum_input_limit = (18000.0f / 7150.0f) * 0.9f / 1.01f;
   const float minimum_vbus = source_mv / 1000.0f * 0.95f;
   const float input_current =
-      (motor_v * current + current * current * 0.36f) /
+      (motor_v * 1.05f * current + current * current * 0.36f +
+       motor_v * motor_v * 1.05f * 1.05f / 940.0f) /
           (0.85f * (minimum_vbus - 0.55f)) +
       1.0f / minimum_vbus;
   return input_current <= minimum_input_limit;

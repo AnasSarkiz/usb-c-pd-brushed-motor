@@ -3,7 +3,7 @@
 /* Proposed timing/ADC windows require prototype verification. These timings
  * govern power/voltage changes only; no direction/reversal timer is introduced. */
 #define SAMPLE_MAX_AGE_MS 5u
-#define DECAY_TIMEOUT_MS 1000u
+#define DECAY_TIMEOUT_MS 3000u /* 1k bleeder, <=650uF design envelope. */
 #define FEEDBACK_SETTLE_MS 5u
 #define CONTRACT_TIMEOUT_MS 2000u
 #define RAIL_TIMEOUT_MS 200u

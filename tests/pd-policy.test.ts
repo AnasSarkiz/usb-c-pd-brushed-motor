@@ -2,7 +2,7 @@ import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
 test("compiled C PD policy rejects unsafe contracts and stale qualification", () => {
-  const executable = "evidence/pd-policy-bun-test-A10"
+  const executable = "evidence/pd-policy-bun-test-A11"
   const compile = spawnSync(
     "cc",
     [

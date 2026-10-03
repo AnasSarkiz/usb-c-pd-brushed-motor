@@ -1,0 +1,79 @@
+[
+  {
+    "check": "netlist",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/main-netlist-A11.log",
+    "artifact": "evidence/full-build-output-A11.circuit.json"
+  },
+  {
+    "check": "pin_specification",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/main-pin_specification-A11.log",
+    "artifact": "evidence/full-build-output-A11.circuit.json"
+  },
+  {
+    "check": "source",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/main-source-A11.log",
+    "artifact": "evidence/full-build-output-A11.circuit.json"
+  },
+  {
+    "check": "schematic-placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/main-schematic-placement-A11.log",
+    "artifact": "evidence/full-build-output-A11.circuit.json"
+  },
+  {
+    "check": "placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ],
+    "exitCode": 1,
+    "log": "evidence/main-placement-A11.log",
+    "artifact": "evidence/full-build-output-A11.circuit.json"
+  },
+  {
+    "check": "placement-explicit-full-json",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "evidence/full-build-output-A11.circuit.json"
+    ],
+    "exitCode": 1,
+    "log": "evidence/main-placement-explicit-A11.log"
+  }
+]

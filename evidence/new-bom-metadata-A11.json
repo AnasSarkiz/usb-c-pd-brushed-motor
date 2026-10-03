@@ -1,0 +1,19 @@
+[
+  {
+    "References": "R68",
+    "Quantity": 1,
+    "Value": "1kOhm",
+    "Manufacturer": "ROHM",
+    "Manufacturer_Part_Number": "ESR18EZPF1001",
+    "JLCPCB_LCSC_Number": "C2074262",
+    "Package": "1206",
+    "Function": "Motor-rail discharge",
+    "Supplier_Import": "imports/ESR18EZPF1001.tsx",
+    "Stock_Observed": "101150",
+    "Catalog_URL": "https://www.lcsc.com/product-detail/C2074262.html",
+    "Datasheet_URL": "https://datasheet.lcsc.com/datasheet/pdf/47b0f000b8781f6578038fbca26cc49a.pdf?productCode=C2074262",
+    "Review_Status": "A11 supplier probe pass; power/thermal and assembly qualification pending",
+    "Availability_Checked_On": "2026-10-03",
+    "Availability_Status": "LCSC stock observed; assembly eligibility not confirmed"
+  }
+]

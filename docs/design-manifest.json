@@ -1516,5 +1516,16 @@
     },
     "nc": [],
     "purpose": "10 k\u03a9 OV-reference lower divider"
+  },
+  {
+    "ref": "R68",
+    "code": "C2074262",
+    "sheet": "buck",
+    "pins": {
+      "pin1": "VM",
+      "pin2": "GND"
+    },
+    "nc": [],
+    "purpose": "1 kOhm/0.5 W motor-rail discharge; 3 s power-sequencing timeout; thermal verification pending"
   }
 ]

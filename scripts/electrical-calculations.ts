@@ -42,9 +42,11 @@ export function motorInputCurrentA({
   const assumedBridgeResistanceOhms = 0.36
   const assumedBuckEfficiency = 0.85
   const assumedAuxiliaryPowerW = 1
+  const maximumMotorRailV = motorVoltageV * 1.05
+  const bleederPowerW = maximumMotorRailV ** 2 / 940
   const bridgeLossW = motorCurrentA ** 2 * assumedBridgeResistanceOhms
   return (
-    (motorVoltageV * motorCurrentA + bridgeLossW) /
+    (maximumMotorRailV * motorCurrentA + bridgeLossW + bleederPowerW) /
       assumedBuckEfficiency /
       (minimumSourceVoltageV - assumedDiodeDropV) +
     assumedAuxiliaryPowerW / minimumSourceVoltageV

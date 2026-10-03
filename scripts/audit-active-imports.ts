@@ -12,9 +12,9 @@ const auditConfiguration = z
     process.argv[2]
       ? JSON.parse(await readFile(process.argv[2], "utf8"))
       : {
-          revision: "A10",
-          manifestPath: "evidence/active-supplier-inspection-manifest-A10.json",
-          reportPath: "evidence/active-import-audit-A10.json",
+          revision: "A11",
+          manifestPath: "evidence/active-supplier-inspection-manifest-A11.json",
+          reportPath: "evidence/active-import-audit-A11.json",
         },
   )
 const manifest = z

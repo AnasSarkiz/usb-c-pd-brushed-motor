@@ -1,3 +1,4 @@
+import { ESR18EZPF1001 } from "../imports/ESR18EZPF1001"
 import { CC0603KRX7R9BB104 } from "../imports/CC0603KRX7R9BB104"
 import { CL10C220JB8NNNC } from "../imports/CL10C220JB8NNNC"
 import { CL10B223KB8NNNC } from "../imports/CL10B223KB8NNNC"
@@ -257,6 +258,15 @@ export function MotorSupply() {
           pin1: "net.INPUT_PG",
           pin2: "net.BUCK_EN",
         }}
+      />
+      {/* Defined motor-rail discharge, independent of motor/IC load */}
+      <ESR18EZPF1001
+        name="R68"
+        schSheetName="buck"
+        schX={-5.5}
+        schY={-8}
+        schRotation={-90}
+        connections={{ pin1: "net.VM", pin2: "net.GND" }}
       />
       {/* Default buck disabled */}
       <A_0603WAF1003T5E

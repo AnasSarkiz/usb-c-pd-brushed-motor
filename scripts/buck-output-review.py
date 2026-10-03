@@ -10,6 +10,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--revision', default='A11')
 parser.add_argument('--candidate', choices=['C133439', 'C178373'], default='C178373')
 args = parser.parse_args()
 profile = {
@@ -18,7 +19,9 @@ profile = {
     'C178373': dict(part='35SVPK330M', esr_ohms=.018, rating_a=4.4, pwm_factor=.7,
                     low_factor=.3, status='active C18, provisional; Tx <=105 C only'),
 }[args.candidate]
-output_prefix = f'evidence/buck-output-{args.candidate}-A10'
+if not args.revision.startswith('A') or not args.revision[1:].isdigit():
+    parser.error('revision must be A followed by digits')
+output_prefix = f'evidence/buck-output-{args.candidate}-{args.revision}'
 
 FREQUENCY_HZ = np.geomspace(1, 300_000, 800)
 S = 2j * np.pi * FREQUENCY_HZ
@@ -35,7 +38,7 @@ def loop_response(case):
     z_comp_ohms = 1 / (1 / R_O_OHMS + S * C_O_F + S * C_POLE_F +
                       1 / (R_COMP_OHMS + 1 / (S * C_COMP_F)))
     load_ohms = case['motor_voltage_v'] / case['load_current_a']
-    admittance_siemens = 1 / load_ohms + S * case['bulk_capacitance_f'] / (
+    admittance_siemens = 1 / load_ohms + 1 / 1000 + S * case['bulk_capacitance_f'] / (
         1 + S * case['bulk_capacitance_f'] * case['bulk_esr_ohms'])
     admittance_siemens += S * case['ceramic_capacitance_f'] / (
         1 + S * case['ceramic_capacitance_f'] * case['ceramic_esr_ohms'])
@@ -115,7 +118,7 @@ peak_motor_current_a = 2.423
 screened_pwm_rms_a = peak_motor_current_a
 combined_rms_a = math.hypot(screened_pwm_rms_a, max_switch_ripple_a)
 report = dict(
-    revision='A10 candidate review', model='TI TPS54360 Sections 7.3.14-16 CCM equivalent circuit',
+    revision=args.revision + ' active output review', bleeder_ohms=1000, model='TI TPS54360 Sections 7.3.14-16 CCM equivalent circuit',
     status='conditional engineering screen only; no placement or hardware approval',
     candidate=f'{args.candidate} / {profile["part"]}', candidate_status=profile['status'],
     interpretation={

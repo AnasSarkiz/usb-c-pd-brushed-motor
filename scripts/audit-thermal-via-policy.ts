@@ -92,14 +92,14 @@ if (
 )
   issues.push("Main board policy mismatch")
 const report = {
-  revision: "A10",
+  revision: "A11",
   issues,
   reviewedVias,
   limitation:
     "Board-wide checker permission, not a per-via exception. No routing executed; assembler process and thermal copper still require review.",
 }
 await writeFile(
-  "evidence/thermal-via-policy-A10.json",
+  "evidence/thermal-via-policy-A11.json",
   JSON.stringify(report, null, 2) + "\n",
 )
 console.log(

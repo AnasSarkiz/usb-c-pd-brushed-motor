@@ -1,0 +1,47 @@
+{
+  "revision": "A11",
+  "assumptions": {
+    "capacitanceUpperF": 0.00065,
+    "resistanceMinimumOhms": 940,
+    "resistanceMaximumOhms": 1060,
+    "localAmbientMaximumC": 105,
+    "programmedTimeoutSeconds": 3,
+    "limitation": "Source and bridge inhibited, no external regenerative energy; actual temperature and decay must be measured"
+  },
+  "capacitorBasis": "330uF *1.2 initial *1.2 temperature + three 47uF *1.2 plus bypass reserve <650uF; not a measured bank value",
+  "oldPassiveTailSeconds": 34.86133515464977,
+  "deratedPowerW": 0.29411764705882354,
+  "cases": [
+    {
+      "initialVoltageV": 5.25,
+      "dischargeTo1VSeconds": 1.1425191447798337,
+      "maximumInitialPowerW": 0.029321808510638297,
+      "storedEnergyJ": 0.008957812499999999
+    },
+    {
+      "initialVoltageV": 9.45,
+      "dischargeTo1VSeconds": 1.5475041568973935,
+      "maximumInitialPowerW": 0.09500265957446806,
+      "storedEnergyJ": 0.029023312499999992
+    },
+    {
+      "initialVoltageV": 12.6,
+      "dischargeTo1VSeconds": 1.7457171048166706,
+      "maximumInitialPowerW": 0.1688936170212766,
+      "storedEnergyJ": 0.051597
+    },
+    {
+      "initialVoltageV": 14.43225,
+      "dischargeTo1VSeconds": 1.8392615819069957,
+      "maximumInitialPowerW": 0.2215849362367021,
+      "storedEnergyJ": 0.0676941980203125
+    },
+    {
+      "initialVoltageV": 15,
+      "dischargeTo1VSeconds": 1.8658465885594226,
+      "maximumInitialPowerW": 0.2393617021276596,
+      "storedEnergyJ": 0.073125
+    }
+  ],
+  "issues": []
+}
