@@ -16,7 +16,7 @@
   "stage3": "blocked",
   "hardwareRevision": "A19",
   "revision": "A21",
-  "sourceCommit": null,
+  "sourceCommit": "a7c5cde7d30d4f7a67a9579bbfe1e9993af97809",
   "scope": "Whole voltage intervals in PD/rail qualification and power sequence; raw ADC counts cannot directly qualify voltage. Back-drive abort during request/contract wait. Hardware/BOM/dependencies unchanged from A19; placement/routing/physical and remote gates remain open. README/VALIDATION/current-manifest bookkeeping excluded.",
   "files": {
     ".gitignore": "26dc6700f8a9a00bb1895fc9003366288ec453e5bd95b516b4bc045f545111bc",

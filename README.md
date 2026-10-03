@@ -57,3 +57,5 @@ A20 adds the actual ADC1 MMIO acquisition layer with bounded calibration and tim
 A20 source revision `5ccf142f12b49cfc26265af407ea83206467fa20` is committed locally. GitHub repository/branch/remote remains unspecified, so neither GitHub nor the tscircuit package has been updated.
 
 A21 replaces scalar voltage decisions with complete uncertainty intervals and aborts if VM rises during the PD request/contract wait. Calibrated measurement integration and actual target execution remain pending; hardware/BOM stay A19.
+
+A21 source revision `a7c5cde7d30d4f7a67a9579bbfe1e9993af97809` is committed locally. No configured GitHub repository/branch/remote exists, so neither remote update is complete.
