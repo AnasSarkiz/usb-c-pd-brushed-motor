@@ -1,0 +1,68 @@
+{
+  "revision": "A18",
+  "files": [
+    {
+      "path": "firmware/vendor/stm32g0/Include/stm32g030xx.h",
+      "source_url": "https://github.com/STMicroelectronics/cmsis-device-g0/blob/master/Include/stm32g030xx.h",
+      "git_blob": "ba40898b76cbaef5d6d6aee70aaea20cf991aecb",
+      "sha256": "9af2b7c64ebe6cbe486f8a5672c7e6f2f08c23cd5d24962c138205b1a49b833b",
+      "byte_exact": true
+    },
+    {
+      "path": "firmware/vendor/stm32g0/LICENSE.md",
+      "source_url": "https://github.com/STMicroelectronics/cmsis-device-g0/blob/master/LICENSE.md",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "byte_exact": true
+    },
+    {
+      "path": "firmware/vendor/stm32g0/Include/system_stm32g0xx.h",
+      "source_url": "https://github.com/STMicroelectronics/cmsis-device-g0/blob/master/Include/system_stm32g0xx.h",
+      "git_blob": "a1b094c71154f46e17c1fb9ad3e1e836e86f4204",
+      "sha256": "20ee999e4431472a7c351e2412537aa0ef7f5f5e499a21a92c1d4cc21f84ebf1",
+      "byte_exact": true
+    },
+    {
+      "path": "firmware/vendor/cmsis/Core/Include/core_cm0plus.h",
+      "source_url": "https://github.com/ARM-software/CMSIS_5/blob/5.9.0/CMSIS/Core/Include/core_cm0plus.h",
+      "git_blob": "4e7179a6146cd573f32cb8d1d96546de43d92f97",
+      "sha256": "a09fa9c6b8b21d1920bce15b98aa56182b027e9278cca0b154812bac2aea3cfa",
+      "byte_exact": true
+    },
+    {
+      "path": "firmware/vendor/cmsis/Core/Include/cmsis_compiler.h",
+      "source_url": "https://github.com/ARM-software/CMSIS_5/blob/5.9.0/CMSIS/Core/Include/cmsis_compiler.h",
+      "git_blob": "adbf296f15a47a93e5058abddad6742bb4b9854d",
+      "sha256": "b51963d271c1571ca3463654c76aa7ea50c4eac5d0a2710df10414ac64d9e0f8",
+      "byte_exact": true
+    },
+    {
+      "path": "firmware/vendor/cmsis/Core/Include/cmsis_gcc.h",
+      "source_url": "https://github.com/ARM-software/CMSIS_5/blob/5.9.0/CMSIS/Core/Include/cmsis_gcc.h",
+      "git_blob": "67bda4ef3c38dadc4471129d39eb4e870dc08fc7",
+      "sha256": "43bfd1fe69fbbc2ca70aaf7d43cc3e20f16e0c7f66e1bdef9b51af6dc14b2617",
+      "byte_exact": true
+    },
+    {
+      "path": "firmware/vendor/cmsis/Core/Include/cmsis_version.h",
+      "source_url": "https://github.com/ARM-software/CMSIS_5/blob/5.9.0/CMSIS/Core/Include/cmsis_version.h",
+      "git_blob": "8b4765f186efe577be5245b59c610056d3c54cbc",
+      "sha256": "184c19fd3ee73632edf35a0b4d49cd48be75fbf49e6ccb19d9db05fa83bea4b3",
+      "byte_exact": true
+    },
+    {
+      "path": "firmware/vendor/cmsis/LICENSE.txt",
+      "source_url": "https://github.com/ARM-software/CMSIS_5/blob/5.9.0/LICENSE.txt",
+      "git_blob": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "byte_exact": true
+    },
+    {
+      "path": "firmware/vendor/cmsis/Core/Include/mpu_armv7.h",
+      "source_url": "https://github.com/ARM-software/CMSIS_5/blob/5.9.0/CMSIS/Core/Include/mpu_armv7.h",
+      "git_blob": "d9eedf81a64c381157c7cfff6f9acfb2309ddff5",
+      "sha256": "29206b52ee02290ed6f5a5415ebd4187de802cf176d9b3cb844390d8e5571372",
+      "byte_exact": true
+    }
+  ]
+}

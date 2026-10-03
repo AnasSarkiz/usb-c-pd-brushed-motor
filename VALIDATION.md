@@ -1,4 +1,44 @@
-# A17 validation — 2026-10-03
+# A18 validation — 2026-10-03
+
+**Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Adds actual STM32 GPIO initialization/inhibition and digital reads; no motor-enable/feedback-changing API or flashable image.
+
+| Stage | Status | Current evidence /remaining work |
+|---|---|---|
+|1. Requirements|in progress|Explicit5/9/12 V selector and approximately2 A target retained; final mechanical/thermal/operating envelope open.|
+|2. Schematic/BOM|blocked|129 parts/55 supplier codes unchanged. A18 GPIO safety passes host/target-object checks; approved NVM image, fresh-response ownership, STM32 startup/clock/ADC/I2C/watchdog integration, full converter/thermal/current-sharing, capacitor land process and regeneration envelope remain open.|
+|3. Product placement|blocked|No product coordinates or mounting holes. A12 numeric native placement probe remains applicable; prior electrical/assembly gates remain.|
+|4. Routing|not started|Explicitly disabled; new routed via-in-pad prohibited.|
+|5. Routed checks|not started|No routed output/shorts/snapshot approval.|
+|6. Fabrication|not started|No assembly approval/release/order.|
+|7. Physical prototype|not started|No measured PD/motor/thermal/reversal/pin-transition evidence.|
+|8. Store release|not started|GitHub destination absent; neither remote published.|
+
+## Completed A18 step and checks
+
+The exact ST/CMSIS definitions compile unchanged on host and ARM. GPIO initialization first removes power permission, configures the transistor-base inhibit pin open-drain before raising its latch, and preserves charged-rail feedback and SWD state. Bonded aliases/remaps/ADC clamp/I2C AF/digital inputs and mandatory readback are implemented. LSE-active/configuration/write failures latch off. See docs/STM32-SAFE-GPIO.md for actual pin mapping, ownership requirements, source references and remaining boundaries.
+
+|Check|Actual result/evidence|
+|---|---|
+|Configured formatting/TypeScript|pass; format-check-A18.log/typecheck-A18.log.|
+|Configured Bun suite|pass:24 tests/403 expects, zero failures; tests-final-A18.log.|
+|GPIO C11 Wall/Wextra/Werror|pass:10,289,863 assertions; stm32-gpio-final-A18.log. Register-model execution only.|
+|Unmodified vendor definitions/licenses|all9 file SHA256/Git-blob identities checked in the suite.|
+|All seven Cortex-M0+ objects|pass; target-objects-A18.log, ARM GCC strict freestanding compilation, no linked/executed image.|
+|Power report|pass as calculation; power-report-A18.log. Prior assumptions/physical limits remain.|
+|Initial host/compiler/test failures|retained:cmsis-host-probe-A18.log,cmsis-host-normal-A18.log,stm32-gpio-initial-A18.log. Corrected canonical include dependency/test expectation; no vendor patch or suppression.|
+|A11 hardware/import/BOM/schematic|unchanged; hardware-unchanged-A18.diff empty. Previous schematic/import evidence remains applicable; no repeated product build/visual/placement approval claim.|
+
+Versions unchanged:tscircuit0.0.2742/CLI0.1.2237/core0.0.2056/props0.0.677/circuit-json0.0.510; Bun1.3.9/TypeScript5.9.3/Biome2.5.14. No purchased component, imported definition, hardware value, dependency, checker or threshold changed. All prior power/assembly/tooling failures remain explicit.
+
+## Revision and publication
+
+Exact hashes: evidence/source-manifest-A18.json. Source commit pending bookkeeping; hardware revision0f2693738e630c4997942d8536b3d913cb1bd5e5. **Publication blocker:** task Git branch main has no remote; destination repository/branch remains unanswered. Neither GitHub push nor tscircuit package update succeeded. Standing authorization is recorded; no destination is invented and no fabrication/hardware approval is implied.
+
+---
+
+A17 and earlier records below are historical. A18 supersedes GPIO/current software checks only; prior electrical/assembly/tooling/physical limitations remain applicable.
+
+# A17 historical validation — 2026-10-03
 
 **Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Corrects source/operating RDO current qualification and adds malformed-field rejection. No hardware current limit is increased.
 

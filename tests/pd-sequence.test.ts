@@ -2,7 +2,7 @@ import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
 test("compiled C power sequence inhibits stale contracts and unsafe voltage changes", () => {
-  const executable = "evidence/pd-sequence-bun-test-A17"
+  const executable = "evidence/pd-sequence-bun-test-A18"
   const compile = spawnSync(
     "cc",
     [

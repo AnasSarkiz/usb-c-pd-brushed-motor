@@ -1,0 +1,6 @@
+In file included from .cache/cmsis-host-probe-A18.c:1:
+In file included from firmware/vendor/stm32g0/Include/stm32g030xx.h:107:
+firmware/vendor/cmsis/Core/Include/core_cm0plus.h:1007:10: fatal error: 'mpu_armv7.h' file not found
+ 1007 | #include "mpu_armv7.h"
+      |          ^~~~~~~~~~~~~
+1 error generated.

@@ -1,0 +1,84 @@
+In file included from .cache/cmsis-host-probe-A18.c:1:
+firmware/vendor/stm32g0/Include/stm32g030xx.h:120:3: error: unknown type name '__IO'
+  120 |   __IO uint32_t ISR;          /*!< ADC interrupt and status register,             Address offset: 0x00 */
+      |   ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:120:16: error: expected ';' at end of declaration list
+  120 |   __IO uint32_t ISR;          /*!< ADC interrupt and status register,             Address offset: 0x00 */
+      |                ^
+      |                ;
+firmware/vendor/stm32g0/Include/stm32g030xx.h:121:3: error: unknown type name '__IO'
+  121 |   __IO uint32_t IER;          /*!< ADC interrupt enable register,                 Address offset: 0x04 */
+      |   ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:121:8: error: duplicate member 'uint32_t'
+  121 |   __IO uint32_t IER;          /*!< ADC interrupt enable register,                 Address offset: 0x04 */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:120:8: note: previous declaration is here
+  120 |   __IO uint32_t ISR;          /*!< ADC interrupt and status register,             Address offset: 0x00 */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:121:16: error: expected ';' at end of declaration list
+  121 |   __IO uint32_t IER;          /*!< ADC interrupt enable register,                 Address offset: 0x04 */
+      |                ^
+      |                ;
+firmware/vendor/stm32g0/Include/stm32g030xx.h:122:3: error: unknown type name '__IO'
+  122 |   __IO uint32_t CR;           /*!< ADC control register,                          Address offset: 0x08 */
+      |   ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:122:8: error: duplicate member 'uint32_t'
+  122 |   __IO uint32_t CR;           /*!< ADC control register,                          Address offset: 0x08 */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:120:8: note: previous declaration is here
+  120 |   __IO uint32_t ISR;          /*!< ADC interrupt and status register,             Address offset: 0x00 */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:122:16: error: expected ';' at end of declaration list
+  122 |   __IO uint32_t CR;           /*!< ADC control register,                          Address offset: 0x08 */
+      |                ^
+      |                ;
+firmware/vendor/stm32g0/Include/stm32g030xx.h:123:3: error: unknown type name '__IO'
+  123 |   __IO uint32_t CFGR1;        /*!< ADC configuration register 1,                  Address offset: 0x0C */
+      |   ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:123:8: error: duplicate member 'uint32_t'
+  123 |   __IO uint32_t CFGR1;        /*!< ADC configuration register 1,                  Address offset: 0x0C */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:120:8: note: previous declaration is here
+  120 |   __IO uint32_t ISR;          /*!< ADC interrupt and status register,             Address offset: 0x00 */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:123:16: error: expected ';' at end of declaration list
+  123 |   __IO uint32_t CFGR1;        /*!< ADC configuration register 1,                  Address offset: 0x0C */
+      |                ^
+      |                ;
+firmware/vendor/stm32g0/Include/stm32g030xx.h:124:3: error: unknown type name '__IO'
+  124 |   __IO uint32_t CFGR2;        /*!< ADC configuration register 2,                  Address offset: 0x10 */
+      |   ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:124:8: error: duplicate member 'uint32_t'
+  124 |   __IO uint32_t CFGR2;        /*!< ADC configuration register 2,                  Address offset: 0x10 */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:120:8: note: previous declaration is here
+  120 |   __IO uint32_t ISR;          /*!< ADC interrupt and status register,             Address offset: 0x00 */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:124:16: error: expected ';' at end of declaration list
+  124 |   __IO uint32_t CFGR2;        /*!< ADC configuration register 2,                  Address offset: 0x10 */
+      |                ^
+      |                ;
+firmware/vendor/stm32g0/Include/stm32g030xx.h:125:3: error: unknown type name '__IO'
+  125 |   __IO uint32_t SMPR;         /*!< ADC sampling time register,                    Address offset: 0x14 */
+      |   ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:125:8: error: duplicate member 'uint32_t'
+  125 |   __IO uint32_t SMPR;         /*!< ADC sampling time register,                    Address offset: 0x14 */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:120:8: note: previous declaration is here
+  120 |   __IO uint32_t ISR;          /*!< ADC interrupt and status register,             Address offset: 0x00 */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:125:16: error: expected ';' at end of declaration list
+  125 |   __IO uint32_t SMPR;         /*!< ADC sampling time register,                    Address offset: 0x14 */
+      |                ^
+      |                ;
+firmware/vendor/stm32g0/Include/stm32g030xx.h:128:3: error: unknown type name '__IO'
+  128 |   __IO uint32_t AWD1TR;       /*!< ADC analog watchdog 1 threshold register,      Address offset: 0x20 */
+      |   ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:128:8: error: duplicate member 'uint32_t'
+  128 |   __IO uint32_t AWD1TR;       /*!< ADC analog watchdog 1 threshold register,      Address offset: 0x20 */
+      |        ^
+firmware/vendor/stm32g0/Include/stm32g030xx.h:120:8: note: previous declaration is here
+  120 |   __IO uint32_t ISR;          /*!< ADC interrupt and status register,             Address offset: 0x00 */
+      |        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
