@@ -41,11 +41,13 @@ firmware/pd_sequence.c implements bounded, measured-rail power sequencing: inhib
 
 All eight sheets were inspected in evidence/schematic-overview-A10.png; the updated buck sheet was additionally inspected at full resolution (dist/review/3-buck-A10.png). A10 titles remain within A4, C18 clearly shows 330 µF and positive polarity, and warnings remain visible. BOM preview C18-A10.png confirms the exact part/value/package; artifact-tool reconciliation reports 128/54 and no duplicate references. Active supplier source hashes and current source/dependency/evidence hashes are recorded in source-manifest-A10.json. README/VALIDATION bookkeeping is outside the checksum map.
 
+Git whitespace review reports CRLF/trailing spaces in preserved raw manufacturer HTML/text downloads. These are source evidence retained byte-for-byte for hash verification, not executable-source defects; no raw data is normalized to hide that result. Configured source formatting passes.
+
 The mode-insensitive CLI cache can reuse schematic-only output for a placement check. docs/TOOLING-ISSUES.md records the traced cause, withdrawn result and full-artifact recheck. Full PCB evidence is archived under full-build-output-A10.circuit.json before regenerating schematic-only output. Do not accept a placement result without inspecting artifact PCB coverage.
 
 ## Publication status
 
-Local A10 implementation is being committed. GitHub destination repository/branch remains unknown; git remote -v returns no entries. Configured package @tsci/AnasSarkiz.usb-c-pd-brushed-motor remains version0.0.1/private. Standing authorization exists, but neither remote has been updated. This is a publication blocking issue, not fabrication approval or a request to stop independent design work.
+Local A10 implementation source commit: 924dbb21d83ec7619323d4d9ec1481e179e1259a. GitHub destination repository/branch remains unknown; git remote -v returns no entries. Configured package @tsci/AnasSarkiz.usb-c-pd-brushed-motor remains version0.0.1/private. Standing authorization exists, but neither remote has been updated. This is a publication blocking issue, not fabrication approval or a request to stop independent design work.
 
 ---
 

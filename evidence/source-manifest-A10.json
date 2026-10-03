@@ -1,7 +1,7 @@
 {
   "revision": "A10",
   "date": "2026-10-03",
-  "sourceCommit": "pending local commit",
+  "sourceCommit": "924dbb21d83ec7619323d4d9ec1481e179e1259a",
   "versions": {
     "tscircuit": "0.0.2742",
     "@tscircuit/cli": "0.1.2237",
