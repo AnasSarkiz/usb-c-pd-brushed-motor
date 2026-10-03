@@ -1,7 +1,7 @@
 {
   "revision": "A11",
   "date": "2026-10-03",
-  "sourceCommit": "pending local commit",
+  "sourceCommit": "0f2693738e630c4997942d8536b3d913cb1bd5e5",
   "versions": {
     "tscircuit": "0.0.2742",
     "@tscircuit/cli": "0.1.2237",
@@ -126,7 +126,7 @@
     "evidence/supplier-C859155-placement-A11.log": "7e5146ce79341771d60e4c25057811967b146260ab27af4ef6aecdb66cebd23f",
     "evidence/supplier-C859155-schematic-placement-A11.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
     "evidence/supplier-C859155-source-A11.log": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3",
-    "evidence/tests-A11.log": "1a9eee2d54e7f5d3261393d6a2ccadce1c5bf66764a43ba43f6807fe5e7cc173",
+    "evidence/tests-A11.log": "e078f97918e1fbc115b2384c4d9eceb898a89bf337e531cfd07ebaeea5ab6a86",
     "evidence/thermal-via-policy-A11.json": "4581195e8beccac21b25c4144ec5cf9473b1c29d10691cd50eee2a9f9656e905",
     "evidence/thermal-via-policy-A11.log": "4c206746f66dec5ab38a36e23425dcf723b517522eab8644ff8341c8b4f555b7",
     "evidence/typecheck-A11.log": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",

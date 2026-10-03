@@ -40,7 +40,7 @@ Visual review: all eight sheets in schematic-overview-A11.png, updated buck full
 
 ## Revision and publication
 
-A11 source hashes/dependencies/evidence are recorded in evidence/source-manifest-A11.json; source commit pending local commit. Raw manufacturer HTML/text evidence remains unchanged even where Git's whitespace review reports source CRLF/trailing spaces; source formatting passes. Stage results are limited to the evidence above. Git remote remains absent. Standing publish authorization exists, but unknown GitHub repository/branch plus incomplete validation block completing GitHub/package publication. Neither remote succeeded. No fabrication/hardware approval is implied.
+A11 source hashes/dependencies/evidence are recorded in evidence/source-manifest-A11.json; source commit 0f2693738e630c4997942d8536b3d913cb1bd5e5. Raw manufacturer HTML/text evidence remains unchanged even where Git's whitespace review reports source CRLF/trailing spaces; source formatting passes. Stage results are limited to the evidence above. Git remote remains absent. Standing publish authorization exists, but unknown GitHub repository/branch plus incomplete validation block completing GitHub/package publication. Neither remote succeeded. No fabrication/hardware approval is implied.
 
 ---
 
