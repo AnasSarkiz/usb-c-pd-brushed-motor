@@ -1,3 +1,42 @@
+# A15 validation — 2026-10-03
+
+**Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Adds bounded standby RAM initialization and a capability-acquisition SoftReset transaction. Completed command acknowledgement does not qualify motor power.
+
+| Stage | Status | Current evidence /remaining work |
+|---|---|---|
+| 1. Requirements | in progress | Explicit5/9/12 V selector, approximately2 A target and voltage-aware15/20 V policy retained; final operating/thermal/mechanical envelope open. |
+| 2. Schematic/BOM | blocked |129 parts/55 supplier codes; A11 electrical/import/schema evidence unchanged. A14 conditional CCM screen passes. NVM/fresh-response/STM32 integration, full regulator/thermal/current sharing, capacitor land process and regeneration envelope remain open. |
+| 3. Product placement | blocked | No product coordinates or mounting holes authored. A12 native numeric placement probe remains valid; electrical/assembly/firmware gates remain. |
+| 4. Routing | not started | Explicitly disabled; no new via-in-pad allowed. |
+| 5. Routed checks | not started | No routed output/shorts/snapshot approval. |
+| 6. Fabrication | not started | No process approval/release/order. |
+| 7. Physical prototype | not started | No measured PD/motor/thermal/decay/reversal evidence. |
+| 8. Store release | not started | GitHub repository/branch/remote still absent; neither remote published. |
+
+## Completed A15 step
+
+firmware/stusb4500_startup.c/.h implements a checked17-operation startup transaction under explicit motor-power/bridge inhibition and invalidated old provenance. It temporarily masks documented interrupts, retains/clears ten startup status bytes, checks persistent faults and attachment, verifies one fixed5 V/3 A RAM standby PDO and SoftReset header, unmasks alerts with readback and rechecks new events before SEND_COMMAND. Only completion of the acquisition command is published. Ambiguous I2C/partial clearing/deadlines/readback/precondition/token failures latch completion off and cannot retry implicitly. See docs/STUSB4500-STARTUP.md for operation boundaries, manufacturer discrepancies and remaining target work.
+
+The NVM requirement remains unchanged. RAM writes neither verify the manufacturing image nor instantly turn an existing contract into5 V. Boolean adapter preconditions are not physical GPIO proof. Fresh response association, SOP/event ownership, actual STM32 startup/peripherals/watchdog, complete converter/thermal/assembly approval and prototype measurements remain required. There is no new MCU direction/PWM logic or timed reversal circuit.
+
+| Check | Result |
+|---|---|
+| Configured formatting /TypeScript /Bun suite | pass:19 tests/369 expects, zero failures. |
+| Startup C11 Wall/Wextra/Werror harness | pass:13,969 assertions; all256 masks, all17 failed/late transfers, partial/ambiguous writes and clearing, readback bytes, detach/fault/events/old RX, deadlines/wrap/callbacks/preconditions/tokens. Mock bus only. |
+| Freestanding Cortex-M0+ startup object | pass; not a linked/flashable image. |
+| Existing policy/sequence/RX/request harnesses | pass in renewed configured suite; A15 executable paths preserve A14 artifacts. |
+| A11 hardware/import/BOM/schematic and A12/A14 evidence | unchanged and still applicable, including unresolved layout/assembly/power/tooling failures. No repeated product build/visual review or product placement claim. |
+
+Versions unchanged:tscircuit0.0.2742 /CLI0.1.2237 /core0.0.2056 /props0.0.677 /circuit-json0.0.510; Bun1.3.9 /TS5.9.3 /Biome2.5.14. No imported definition, hardware component, dependency, checker, schema or threshold changed. Current ST guide text was consulted; prior local download failures and unperformed rev3 visual review remain explicit.
+
+## Revision and publication
+
+A15 source/evidence hashes are recorded in evidence/source-manifest-A15.json; source commit pending. Hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. GitHub repository/branch/remote is still unknown. Standing publication authorization exists, but the missing destination blocks completing publication. Neither GitHub nor tscircuit remote update succeeded. No physical/fabrication approval is implied.
+
+---
+
+A14 and earlier records below are historical. A15 supersedes portable startup/current software checks only; all remaining hardware/assembly/power/tooling/physical limits remain applicable.
+
 # A14 current validation — 2026-10-03
 
 **Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Exact Panasonic frequency-dependent model gives a passing CCM loop screen. Current ST guide corrects alert-clearing semantics in mocks/documentation. No supplier model, emitted schema, checker or threshold is patched or suppressed.

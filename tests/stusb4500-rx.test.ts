@@ -2,7 +2,7 @@ import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
 test("STUSB4500 capture rejects late, changed and malformed PD messages", () => {
-  const executable = "evidence/stusb4500-rx-host-A14"
+  const executable = "evidence/stusb4500-rx-host-A15"
   const compiled = spawnSync(
     "cc",
     [

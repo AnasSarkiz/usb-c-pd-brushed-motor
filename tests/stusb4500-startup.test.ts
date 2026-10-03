@@ -1,8 +1,8 @@
 import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
-test("PD profile transaction rejects partial writes and never repeats an uncertain command", () => {
-  const executable = "evidence/stusb4500-request-host-A15"
+test("PD startup drains old events under inhibition and verifies standby acquisition", () => {
+  const executable = "evidence/stusb4500-startup-host-A15"
   const compiled = spawnSync(
     "cc",
     [
@@ -10,9 +10,8 @@ test("PD profile transaction rejects partial writes and never repeats an uncerta
       "-Wall",
       "-Wextra",
       "-Werror",
-      "firmware/pd_policy.c",
-      "firmware/stusb4500_request.c",
-      "firmware/stusb4500_request_test.c",
+      "firmware/stusb4500_startup.c",
+      "firmware/stusb4500_startup_test.c",
       "-o",
       executable,
     ],
@@ -21,5 +20,5 @@ test("PD profile transaction rejects partial writes and never repeats an uncerta
   expect(compiled.status, compiled.stderr).toBe(0)
   const result = spawnSync(`./${executable}`, [], { encoding: "utf8" })
   expect(result.status, result.stderr).toBe(0)
-  expect(result.stdout).toContain("STUSB4500 request host tests passed")
+  expect(result.stdout).toContain("STUSB4500 startup host tests passed")
 })

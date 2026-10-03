@@ -1,4 +1,4 @@
-# USB-C PD brushed DC motor controller — A14 model/PD review step
+# USB-C PD brushed DC motor controller — A15 PD startup step
 
 Connected tscircuit prototype for one 5/9/12 V brushed motor, targeting approximately 2 A continuous. One USB-C power input, regulated motor voltage, hardware speed potentiometer, FWD/OFF/REV switch, DRV8874 H-bridge, power/direction LEDs and one motor screw terminal. The user approved an MCU only for PD qualification; PWM remains hardware controlled.
 
@@ -11,6 +11,7 @@ Use this task directory for every command. Entry point: index.circuit.tsx. Depen
 - docs/ARCHITECTURE.md: connected circuit and electrical limitations.
 - docs/PD-QUALIFICATION.md: selector, voltage-aware contract policy and incomplete embedded port.
 - docs/STUSB4500-RX.md: bounded receive handling, manufacturer-register discrepancies and pending target integration.
+- docs/STUSB4500-STARTUP.md: checked standby initialization and new-capability acquisition with no motor-power permission.
 - docs/STUSB4500-REQUEST.md: verified RAM profile write/readback and pending fresh-contract integration.
 - docs/BUCK-MODEL.md: passing exact-manufacturer CCM screen and remaining electrical limits.
 - docs/DIRECTION-CONTROL.md and docs/SIMPLIFICATION.md: implemented direct-PWM architecture and part-count review.
@@ -34,3 +35,5 @@ A12 adds host-tested bounded PD message capture: 531 C assertions and freestandi
 A13 adds a bounded, verified RAM-PDO/SoftReset write transaction: 969 host assertions, renewed531 receive assertions and Cortex-M0+ objects. All18 configured tests/366 expects pass. Errors and ambiguous commands latch completion off without retry. A successful write is not a fresh negotiated contract; response provenance and the actual STM32 port remain open. Hardware/BOM are unchanged and neither placement nor routing starts.
 
 A14 uses the exact Panasonic model: all12,960 CCM sensitivity cases pass unchanged thresholds, while full converter/temperature/bias/transient/thermal approval remains open. The current ST guide also corrects alert-clearing semantics in the register mocks/documentation; request tests now pass974 assertions. All18 configured tests/366 expects pass. Hardware/BOM stay129/55, and product placement/routing remain unstarted.
+
+A15 implements checked standby initialization/capability acquisition:13,969 simulated C assertions and a Cortex-M0+ object, with19 configured tests/369 expects passing. NVM, fresh-response ownership and the STM32 target port remain incomplete. Hardware/BOM stay129/55; placement and routing are still unstarted.
