@@ -31,7 +31,7 @@ Versions unchanged:tscircuit0.0.2742 /CLI0.1.2237 /core0.0.2056 /props0.0.677 /c
 
 ## Revision and publication
 
-A15 source/evidence hashes are recorded in evidence/source-manifest-A15.json; source commit pending. Hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. GitHub repository/branch/remote is still unknown. Standing publication authorization exists, but the missing destination blocks completing publication. Neither GitHub nor tscircuit remote update succeeded. No physical/fabrication approval is implied.
+A15 source/evidence hashes are recorded in evidence/source-manifest-A15.json; source commit daac655276f3a9bf2dfce586c9781168cc290421. Hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. GitHub repository/branch/remote is still unknown. Standing publication authorization exists, but the missing destination blocks completing publication. Neither GitHub nor tscircuit remote update succeeded. No physical/fabrication approval is implied.
 
 ---
 
