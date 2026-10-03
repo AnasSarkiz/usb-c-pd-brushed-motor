@@ -36,7 +36,7 @@ The unchanged A11 schematic/BOM/supplier/thermal-via and power evidence remains 
 
 ## Revision and publication
 
-A12 source and evidence hashes are recorded in evidence/source-manifest-A12.json; source commit recorded after implementation commit. A11 hardware source is0f2693738e630c4997942d8536b3d913cb1bd5e5. Raw vendor PDF/text evidence is preserved byte-for-byte, including any source whitespace. GitHub remote/destination remains absent. Standing publication authorization exists, but unknown destination plus incomplete gates block fully publishing this step. Neither GitHub nor tscircuit update succeeded. This is not fabrication or hardware approval.
+A12 source and evidence hashes are recorded in evidence/source-manifest-A12.json; source commit 05cb4c0d6c0cf72e0810f0c61d3146364fb37717. A11 hardware source is0f2693738e630c4997942d8536b3d913cb1bd5e5. Raw vendor PDF/text evidence is preserved byte-for-byte, including any source whitespace. GitHub remote/destination remains absent. Standing publication authorization exists, but unknown destination plus incomplete gates block fully publishing this step. Neither GitHub nor tscircuit update succeeded. This is not fabrication or hardware approval.
 
 ---
 
