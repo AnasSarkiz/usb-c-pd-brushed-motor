@@ -37,3 +37,5 @@ Sources: [C855559 catalog](https://www.lcsc.com/product-detail/C855559.html), [C
 - A real component/reference corner can conservatively inhibit a physically nominal rail. Live reference calibration and measured noise/transients are needed for reliable assembly yield and broad charger/motor behavior.
 - For the initial precision screen, the decay upper-bound check allows codes≤102; the single-endurance screen allows≤101. Neither is implemented as a new nominal-point threshold. The actual adapter must deliver conservative bounds to the sequence; the sequencer's current millivolt model alone does not establish this.
 - No energy/current/thermal/assembly/physical requirement is declared passed by this change. Placement and routing remain disabled.
+
+A20 adds raw ADC1 acquisition and timestamping in firmware/stm32_adc.{c,h}; see STM32-ADC.md. The static intervals above are not yet integrated with raw counts/reference calibration or qualified at the selected8 MHz clock.

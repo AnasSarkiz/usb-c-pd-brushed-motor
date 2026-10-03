@@ -1,0 +1,37 @@
+{
+  "revision": "A20",
+  "hardwareSourceRevision": "A19",
+  "hardwareUnchangedFrom": "d0c562e",
+  "unchangedScope": [
+    "index.circuit.tsx",
+    "circuit",
+    "imports",
+    "docs/BOM.csv",
+    "package.json",
+    "bun.lock",
+    "tsconfig.json",
+    "tscircuit.config.json",
+    "tests/supplier-audit",
+    "scripts/audit-active-imports.ts",
+    "scripts/audit-schematic.ts"
+  ],
+  "comparisonExit": 0,
+  "reuseReason": "Only raw ADC firmware, test executable revision names and documentation changed. Exact supplier/circuit/dependency/BOM source unchanged; A19 native/schema/schematic/import/unplaced-board findings remain applicable. No fresh board build or placement pass claimed.",
+  "artifacts": {
+    "evidence/schematic-connectivity-audit-A19.json": {
+      "sha256": "bb3bfbc48c6f0e8e790082fa2950b1fa4ae5b6acbd5c45a9b2474942d99fe714"
+    },
+    "evidence/active-import-audit-A19.json": {
+      "sha256": "5778cc3b106a4aae10a800dd33eb37e9c9d8d603a35087439fa31a128daf791e"
+    },
+    "evidence/full-build-audit-A19.json": {
+      "sha256": "c0a0a44c21789e299292ecddbbe1996a96c73fc46ae1319c8a57d6747f06d9c6"
+    },
+    "evidence/full-build-output-A19.circuit.json": {
+      "sha256": "118eb4f10fb7e9d76ae6d1e2ef04fde09dc1434e919119a7ad03b64152ec82e5"
+    },
+    "evidence/schematic-only-output-final-A19.circuit.json": {
+      "sha256": "edba6de530688abf817ad7924145f909d0b159f8657d20b6fa87a8129bdad180"
+    }
+  }
+}

@@ -1,3 +1,43 @@
+# A20 validation — 2026-10-03
+
+**Unrouted WIP prototype; hardware/BOM remain A19,129 purchased components/57 supplier codes. Product placement is unstarted.** Adds bounded real-ADC1 raw acquisition/calibration, timestamps and fault inhibition. Raw counts do not qualify a motor voltage or PD contract.
+
+|Stage|Status|Current evidence /remaining work|
+|---|---|---|
+|1. Requirements|in progress|Explicit5/9/12 V selector and approximately2 A target retained; final mechanical/thermal/operating envelope open.|
+|2. Schematic/BOM|blocked|All57 active imported parts and connectivity remain validated under identical A19 circuit/source/dependency hashes. Raw ADC backend now exists; proven clock, calibrated intervals/noise/filter dynamics, actual I2C/event ownership, approved NVM image, converter/thermal/current-sharing, capacitor land process and regeneration envelope remain open.|
+|3. Product placement|blocked|No product coordinates/mounting holes. Actual full A19 unplaced-board overlap/clearance failures remain unresolved; no schematic-only cached pass accepted.|
+|4. Routing|not started|Explicitly disabled; no new routed via-in-pad permitted.|
+|5. Routed checks|not started|No routed output/shorts/snapshot approval.|
+|6. Fabrication|not started|No assembler/process approval/release/order.|
+|7. Physical prototype|not started|No measured motor/PD/ADC/noise/thermal/reversal evidence.|
+|8. Store release|not started|Destination repository/branch absent; neither remote published.|
+
+## Completed A20 step
+
+firmware/stm32_adc.{c,h} uses the unchanged ST register structures and actual ADC1/ADC1_COMMON/factory-word addresses. Initialization commands power/bridge inhibition first, verifies analog pins, chooses HSI16/2 asynchronous ADC clock, verifies settings before calibration, and observes bounded regulator/calibration/ready/reference delays. Each fresh PA0/PA1/VREFINT conversion waits for CCRDY/EOC/EOS, checks overrun/configuration/range and timestamps the complete frame. Invalid contexts, ambiguous/lost state or deadlines return all-zero invalid data and latch inhibition. There is no permission-setting API or motor/direction control in this module.
+
+|Check|Actual result/evidence|
+|---|---|
+|Primary-source acquisition|Unchanged ST LL ADC/RCC reference headers archived with Git-blob/SHA-256 provenance. Existing compiled vendor/CMSIS definitions remain byte-exact and configured integrity tests pass. No model/library patch.|
+|Strict C host ADC model|104,923 assertions pass; all4096 rail counts, fresh frames, every lost MMIO write, corrupted settings, missing flags, overrun/data/factory faults, stopped/backwards/late time, bounded polls and natural rollover. Evidence/stm32-adc-assertions-A20.log; test source remains inspectable.|
+|Configured tests|25 pass/0 fail/406 expects; tests-final-A20.log. Existing GPIO and portable PD/startup/request/NVM/sequence regressions rerun with separate A20 binaries.|
+|Formatting and TypeScript|Pass; format-check-final-A20.log/typecheck-final-A20.log. No imported definitions formatted or changed.|
+|Freestanding target compilation|All8 production Cortex-M0+ objects pass ARM GCC16.1 -Wall -Wextra -Werror; target-compile-A20.json and individual logs. Not linked, flashed or executed.|
+|Power calculations|Configured power report passes unchanged conditional assumptions; power-report-final-A20.log. Existing17 mA9 V/15 V margin and thermal/transient uncertainties remain unresolved.|
+|Prior board evidence reuse|Git comparison to d0c562e confirms circuit/import/BOM/dependency/audit sources unchanged; hardware-evidence-reuse-A20.json binds archived artifact hashes. No unnecessary new board build or visual/supplier/stock claim. A19 schema/connectivity/import and unplaced-board findings remain applicable.|
+|Failures retained|Lost-write testing found calibration lacked prior setting readback; production corrected. Rollover fixture artificially changed time backwards; corrected to natural rollover. First/second/third ADC logs retained. Initial target-command heredoc redirection failed before compilation; rerun succeeds and failure record remains. No failure suppressed.|
+
+Versions unchanged:tscircuit0.0.2742/CLI0.1.2237/core0.0.2056/props0.0.677/circuit-json0.0.510; Bun1.3.9/TypeScript5.9.3/Biome2.5.14. ADC timing uses a caller-supplied monotonic microsecond clock with no fallback; that actual clock, startup/watchdog/I2C and fresh PD-response owner still require integration.8 MHz ADC accuracy is not established by the35 MHz characterized datasheet error alone. VREFINT calibration supply/temperature/drift and divider/filter/noise intervals remain qualification work. See docs/STM32-ADC.md.
+
+## Revision and publication
+
+Exact hashes: evidence/source-manifest-A20.json. Source commit pending bookkeeping. **Publication blocker:** task branch main still has no GitHub remote; destination repository/branch is unspecified. Standing push/package authorization exists, but no destination is invented. Neither GitHub push nor tscircuit package update succeeded; this step is locally committed only. This missing destination is independent of continuing design work.
+
+---
+
+A19 and earlier records below are historical; their hardware findings remain applicable where unchanged.
+
 # A19 validation — 2026-10-03
 
 **Unrouted WIP prototype. Product placement is unstarted.** Replaces four existing ADC divider resistors with0.1% official supplier imports;129 purchased parts/57 supplier codes. Nominal values, PWM, current limits, regulated voltages and direction topology remain unchanged.

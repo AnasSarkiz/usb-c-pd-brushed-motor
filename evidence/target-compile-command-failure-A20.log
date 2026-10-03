@@ -1,0 +1,1 @@
+Initial orchestrated target compile exited1: output redirection was incorrectly appended to the heredoc delimiter, yielding Python SyntaxError before any compiler invocation. No target compilation was claimed. Rerun below uses correct heredoc redirection.
