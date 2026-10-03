@@ -1,0 +1,16 @@
+{
+  "revision": "A10",
+  "artifact_sha256": "eff6c5597189d6c8c0f0d1149240d7a2e7498085b1df96f73ea609d100ce66e3",
+  "pcb_component_count": 140,
+  "pcb_trace_count": 0,
+  "diagnostics": {
+    "source_refdes_convention_warning": 13,
+    "pcb_footprint_overlap_error": 6193,
+    "pcb_pad_pad_clearance_error": 297,
+    "pcb_courtyard_overlap_error": 1935,
+    "source_component_pins_underspecified_warning": 17,
+    "source_no_power_pin_defined_warning": 22,
+    "source_no_ground_pin_defined_warning": 18,
+    "schematic_component_styling_warning": 14
+  }
+}

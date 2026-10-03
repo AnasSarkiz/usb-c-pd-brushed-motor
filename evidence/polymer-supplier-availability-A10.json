@@ -1,0 +1,55 @@
+[
+  {
+    "code": "C136279",
+    "url": "https://www.lcsc.com/product-detail/C136279.html",
+    "checked_at_utc": "2026-10-03T11:11:08.532908+00:00",
+    "fetch_exit_code": 0,
+    "stock": 444,
+    "page_sha256": "0360a6529c126269db7dbcb1ee9e53475c3eb11896dc4bf823750158d1bfaa42",
+    "datasheet_urls": [
+      "https://datasheet.lcsc.com/datasheet/pdf/7b694a0c647f65c25ece598a255e6a74.pdf?productCode=C136279",
+      "https://datasheet.lcsc.com/datasheet/pdf/7b694a0c647f65c25ece598a255e6a74.pdf?productCode=C136279",
+      "https://datasheet.lcsc.com/certification/rohs/8a9cc23bc972de75c8dec2f69eda0ec1.pdf"
+    ]
+  },
+  {
+    "code": "C133439",
+    "url": "https://www.lcsc.com/product-detail/C133439.html",
+    "checked_at_utc": "2026-10-03T11:11:09.164576+00:00",
+    "fetch_exit_code": 0,
+    "stock": 1352,
+    "page_sha256": "df05526bb47898b8c6587d18a3c3acc2fce099396160506bcc6398d7509b4c31",
+    "datasheet_urls": [
+      "https://datasheet.lcsc.com/datasheet/pdf/0734cc8720594360ae87ad1184e97436.pdf?productCode=C133439",
+      "https://datasheet.lcsc.com/datasheet/pdf/0734cc8720594360ae87ad1184e97436.pdf?productCode=C133439",
+      "https://datasheet.lcsc.com/certification/rohs/3bab7aac418068e23bc59ac811fade1d.pdf"
+    ]
+  },
+  {
+    "code": "C178367",
+    "url": "https://www.lcsc.com/product-detail/C178367.html",
+    "checked_at_utc": "2026-10-03T11:11:09.727649+00:00",
+    "fetch_exit_code": 0,
+    "stock": 0,
+    "page_sha256": "ad3b5a102771aa22a6de74be3f8ece1d4898626f2aa12587b447b4c53bfa2a5e",
+    "datasheet_urls": [
+      "https://datasheet.lcsc.com/datasheet/pdf/0fd1e692253d44b89fe86bfd007eb810.pdf?productCode=C178367",
+      "https://datasheet.lcsc.com/datasheet/pdf/0fd1e692253d44b89fe86bfd007eb810.pdf?productCode=C178367",
+      "https://datasheet.lcsc.com/certification/rohs/8a9cc23bc972de75c8dec2f69eda0ec1.pdf",
+      "https://datasheet.lcsc.com/datasheet/pdf/aa4d3db842ca5c9da2e69017b8152d25.pdf?productCode=C42400419"
+    ]
+  },
+  {
+    "code": "C19191929",
+    "url": "https://www.lcsc.com/product-detail/C19191929.html",
+    "checked_at_utc": "2026-10-03T11:11:10.188507+00:00",
+    "fetch_exit_code": 0,
+    "stock": 0,
+    "page_sha256": "df67c72a94c9e3fec10cc2227155b00283db2fac663bafacf99e36b0c2e48422",
+    "datasheet_urls": [
+      "https://datasheet.lcsc.com/datasheet/pdf/6ed2fa56348efb259b15876ad7072a94.pdf?productCode=C19191929",
+      "https://datasheet.lcsc.com/datasheet/pdf/6ed2fa56348efb259b15876ad7072a94.pdf?productCode=C19191929",
+      "https://datasheet.lcsc.com/certification/rohs/dd09563ad5f89b6d046c83bf9f9eb58d.pdf"
+    ]
+  }
+]

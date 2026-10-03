@@ -20,12 +20,20 @@ struct pd_observation {
   uint32_t source_generation, rdo;
   uint16_t vbus_mv, motor_rail_mv;
 };
+struct pd_rail_check {
+  const struct pd_plan *plan;
+  const struct pd_observation *observation;
+  uint8_t selector_bits;
+};
 /* 00=5 V; bit 0=9 V; bit 1=12 V; 11=invalid. */
 uint8_t pd_motor_voltage(uint8_t selector_bits);
 struct pd_plan pd_make_plan(uint8_t selector_bits, const uint32_t *source_pdos,
                            size_t count, uint32_t source_generation);
+bool pd_plan_valid(const struct pd_plan *plan);
 bool pd_contract_qualified(const struct pd_plan *plan,
                            const struct pd_observation *observation);
+/* Rail check while the bridge is asleep; nFAULT is checked separately at wake. */
+bool pd_motor_rail_qualified(const struct pd_rail_check *check);
 bool pd_motor_qualified(const struct pd_plan *plan,
                        const struct pd_observation *observation,
                        uint8_t current_selector_bits);

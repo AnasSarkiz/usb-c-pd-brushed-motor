@@ -1,4 +1,4 @@
-# A9 PD qualification and voltage policy
+# A10 PD qualification and voltage policy
 
 2026-10-03. The user approved the MCU architecture. U11 is supplier-imported STM32G030F6P6TR / C529330, used only for power qualification. firmware/pd_policy.c is a portable policy library, tested on the host and compiled to a Cortex-M0+ object. It is **not a complete flashable firmware image**: STM32 startup, clocks, GPIO/ADC/I2C, STUSB4500 transport, watchdog, option bytes and programming-pad implementation remain open.
 
@@ -16,7 +16,17 @@ The 7.15 kOhm eFuse resistor gives 2.517 A nominal, 2.243 A minimum and 2.797 A 
 
 Assumptions: source -5%, series diode 0.55 V, buck 85% efficiency, hot bridge 0.36 Ohm, auxiliaries 1 W, peak motor current 2.423 A. Estimated selected-contract peak input currents are 1.292 A (5/15), 2.124 A (9/15), 2.041 A (12/20). These are engineering screens, not measured efficiency/current/temperature guarantees. The 5 V driver-limit accuracy and the narrow worst-case margin above 2 A remain qualification limits.
 
-## Required embedded sequence
+## Implemented portable sequence and required embedded adapter
+
+A10 adds firmware/pd_sequence.c/.h, a host-tested power state machine. It waits for measured VM ≤1 V before changing the feedback branch, settles for 5 ms, requests a new contract with a never-reused nonzero request token, waits for matching request completion and PS_RDY provenance, then enables the eFuse. VM must remain in range with fault clear for 10 ms before releasing nSLEEP. A bounded 2 ms wake interval accommodates TI's documented nFAULT pulse; persistent fault then latches both power and bridge off. ADC validity/age, polling age, contract, generation, selector and rail are checked each step. Proposed 1 s decay, 2 s request/contract and 200 ms rail timeouts latch inhibition. Recovery requires an explicit new begin operation; old feedback selection is retained while VM may be charged.
+
+The prior contract check incorrectly included MOTOR_FAULT_N: DRV8874 reports undervoltage while VM is off (TI §7.3.4.1), so that could prevent the eFuse ever starting. A10 contract qualification now checks PD/VBUS independently; motor qualification still rejects driver faults. The state machine checks fault after rail qualification and allows only the documented bounded wake interval. IMODE=GND uses fixed off-time chopping, so nFAULT is not the cycle-by-cycle chopping indicator. Hardware protection remains active throughout; no direction or reversal timer is added.
+
+The adapter must apply bridge inhibition before turning power off or changing feedback, perform each token's RAM programming/soft reset once, clear stale RX/PS_RDY records at initialization, and tag PS_RDY only after the corresponding successful request. It must maintain the capability generation and capture deadline; the state machine cannot infer these from an ADC voltage. Call it at least once per millisecond with calibrated, qualified 3.3 V ADC measurements; current 5 ms maximum ages are proposed software limits, not measured hardware timing guarantees. Reset/watchdog must force the existing hardware defaults. Do not treat an output command as proof that the GPIO/eFuse/driver actually responded.
+
+Both portable modules compile for Cortex-M0+ and the sequence has 298 host assertions. These are control-flow tests with simulated observations, not live charger tests or a flashable STM32 image. Startup/clocks/GPIO/ADC/I2C/STUSB4500 event transport/watchdog/option bytes remain to implement and review. The A9 pin-stress/brownout limitations still apply.
+
+### Embedded operations still required
 
 1. GPIO defaults hold HOST_ALLOW low and Q6 bridge inhibit asserted. Set PA7 as open drain: high/Hi-Z asserts inhibition; sinking its base releases it. Hardware PD_ENABLE_N/Q1 and input PG remain independent interlocks.
 2. Wait for valid 3.3 V and ST NVM-load completion; verify NVM/required registers. Provision a 5 V standby PDO only, POWER_ONLY_ABOVE_5V=1 and source-current flexibility disabled. Do not rely on factory high-voltage/current profiles.

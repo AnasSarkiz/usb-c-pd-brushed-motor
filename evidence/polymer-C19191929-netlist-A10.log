@@ -1,0 +1,17 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - C18: 118EC333
+
+
+EMPTY NET PINS:
+  - C18 pin1
+  - C18 pin2
+
+COMPONENT_PINS:
+C18 (118EC333)
+- pin1: NETS(PROBE_0)
+- pin2: NETS(PROBE_1)
+

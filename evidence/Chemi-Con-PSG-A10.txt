@@ -1,0 +1,260 @@
+                        CONDUCTIVE POLYMER ALUMINUM SOLID CAPACITORS                                                                                                                                                   Radial Lead
+
+
+
+                                PSG
+                                                                                                                                                                            PSW
+
+                        TM
+NPCAP                         -                                     Series                                                                                                        Downsized
+
+・High capacitance model has been introduced to the product range.
+・Super low ESR, high ripple current capability
+                                                                                                                                                                            PSG
+・Endurance: 15,000 to 20,000 hours at 105℃
+・Rated voltage : 16 to 35Vdc                                                                                                                                                      Downsized
+・RoHS2 Compliant
+・Halogen Free                                                                                                                                                                PSF
+
+
+
+◆SPECIFICATIONS
+             Items                                                                                                            Characteristics
+ Category
+                                      -55 to +105℃
+ Temperature Range
+ Rated Voltage                        16 to 35Vdc
+ Capacitance Tolerance                ±20% (M)                                                                                                                                                                       (at 20℃, 120Hz)
+ Leakage Current                      I=0.2CV or 500µA, whichever is greater
+ *Note                                Where, I : Max. leakage current (µA), C : Nominal capacitance (µF), V : Rated voltage (V)                                                                          (at 20℃ after 2 minutes)
+ Dissipation Factor
+                                      0.12 max.
+ (tanδ)                                                                                                                                                                                                              (at 20℃, 120Hz)
+ Low Temperature
+                                      Z(-25℃)/Z(+20℃)≦1.15
+ Characteristics
+                                      Z(-55℃)/Z(+20℃)≦1.25                                                                                                            (at 100kHz)
+ (Max.Impedance Ratio)
+ Endurance                            The following specifications shall be satisfied when the capacitors are restored to 20℃ after the rated voltage is applied for 20,000 hours
+                                      (20 to 35V : 15,000 hours) at 105℃.
+                                      Appearance                   No significant damage
+                                      Capacitance change           ≦±20% of the initial value
+                                      D.F. (tanδ)                  ≦150% of the initial specified value
+                                      ESR                          ≦150% of the initial specified value
+                                      Leakage current              ≦The initial specified value
+ Bias Humidity Test                   The following specifications shall be satisfied when the capacitors are restored to 20℃ after subjecting them to DC voltage at 60℃,
+                                      90 to 95% RH for 1,000 hours.
+                                      Appearance                   No significant damage
+                                      Capacitance change           ≦±20% of the initial value
+                                      D.F. (tanδ)                  ≦The initial specified value
+                                      ESR                          ≦150% of the initial specified value
+                                      Leakage current              ≦The initial specified value
+ Surge Voltage Test                   The capacitors shall be subjected to 1,000 cycles each consisting of charge with the surge voltage specified at 105℃ for 30 seconds
+                                      through a protective resistor(R=1kΩ) and discharge for 5 minutes 30 seconds.
+                                      Rated voltage (Vdc)            16          20        25        35
+                                      Surge voltage (Vdc)            18          23        29        40
+
+                                      Appearance                               No significant damage
+                                      Capacitance change                       ≦±20% of the initial value
+                                      D.F. (tanδ)                              ≦The initial specified value
+                                      ESR                                      ≦150% of the initial specified value
+                                      Leakage current                          ≦The initial specified value
+*Note : If any doubt arises, measure the leakage current after the following voltage treatment.
+        Voltage treatment : DC rated voltage is applied to the capacitors for 120 minutes at 105℃.
+
+
+◆DIMENSIONS [mm]
+ ●Terminal Code : E
+
+ F05,F08,H08
+              Coated Case                                                                                         Size code F05         F08   H08                    HB5          H16       H20        JB5        J16         J20
+                                                                                                F±0.5                               6.3                                     8.0                                   10.0
+                                                                                                                     φD
+                                         φd                                                                          φd    0.5 (Note2)                                        0.6
+                                                                                                                      F             2.5                                   3.5                                      5.0
+    φD'
+                                                                                                                     φD'                                                  φD+0.5max.
+                                                                                                                      L'        L+1.0max. (Note1)                                            L+1.5max.
+
+                                                                                                                  Note1: L+1.2 max. for 16V270μF (Rated ripple current 5,080mArms), for
+                        L'                  15min.                    4min.
+                                                                                                                         16V330μF (Rated ripple current 5,080mArms).
+                                                                                                                  Note2: 0.45 is planned to be discontinued.
+ HB5,H16,H20,JB5,J16,J20
+              Coated Case
+                                                                                                                                                ◆MARKING
+                                         φd                                                      F±0.5
+                                                                                                                                                     EX) 16V150µF
+    φD'
+                                                                                                                                                               G 6D6
+                                                                                                                                                               150
+                                                                                                                                                               16V
+
+                        L'                  15min.                    4min.
+
+
+
+Product specifications in this catalog are subject to change without notice.Request our product specifications before purchase and/or use. Please use our products based on the information contained in this catalog and product specifications.
+
+
+                                                                                                                                                                                              CAT. No. E1001A 2026
+                                CONDUCTIVE POLYMER ALUMINUM SOLID CAPACITORS                                                                                                                                           Radial Lead
+
+
+NPCAP
+                   TM
+                        PSGSeries
+                        -
+
+
+◆PART NUMBERING SYSTEM
+ 1    2   3    4    5       6   7   8   9   10   11   12   13    14    15   16   17   18
+
+A PSG                               E                            M
+                                                                                          Supplement code (Note2)                     (Note2) : ‌PSG series, 16V270μF (Rated ripple current
+                                                                                                         Size code                               5,080mArms), 16V330μF (Rated ripple current
+                                                                                        Capacitance tolerance code                               5,080mArms), 16V470μF (Rated ripple current
+                                                           Capacitance code (ex. 150µF:151,1,000µF:102)                                          5,400mArms), 16V560μF (Rated ripple current
+                                                                                      Lead forming·Taping code                                   5,400mArms), 16V560μF (Rated ripple current
+                                                                                                 Terminal code                                   6,100mArms), and 16V680μF (Rated ripple
+                                                                            Voltage code (ex. 16V:160,20V:200)                                   current 6,100mArms) have supplement code “J”.
+                                                                                                   Series code                                   Terminal and terminal plating are the same as all
+                                                                                                      Category                                   others in the PSG series.
+ Please refer to “Product code guide (conductive polymer type)”
+
+
+◆STANDARD RATINGS
+        WV                          Cap                      Case size                                 ESR                                         Rated ripple current
+                                                                                                                                                                                                                Part No.
+       (Vdc)                        (µF)                    φD×L (mm)                       (mΩ max./20℃, 100k to 300kHz)                        (mArms/105℃, 100kHz)
+                                      150                        6.3×5                                      20                                                  3,200                             APSG160E□□151MF05S
+                                      270                        6.3 ×8                                     10                                                  5,080                             APSG160E□□271MF08J
+                                      270                        6.3×8                                      15                                                  3,800                             APSG160E□□271MF08S
+                                      330                        6.3×8                                      10                                                  5,080                             APSG160E□□331MF08J
+                                      330                        6.3×8                                      15                                                  3,800                             APSG160E□□331MF08S
+                                      470                          8×8                                       8                                                  5,400                             APSG160E□□471MH08J
+                                      470                          8×8                                      16                                                  4,000                             APSG160E□□471MH08S
+                                      560                          8× 8                                      8                                                  5,400                             APSG160E□□561MH08J
+                                      560                          8× 8                                     16                                                  4,000                             APSG160E□□561MH08S
+                                      560                          8× 11.5                                   8                                                  6,100                             APSG160E□□561MHB5J
+                                      560                          8× 11.5                                  14                                                  4,970                             APSG160E□□561MHB5S
+                                      680                          8 × 11.5                                  8                                                  6,100                             APSG160E□□681MHB5J
+                                      680                          8 × 11.5                                 14                                                  4,970                             APSG160E□□681MHB5S
+          16
+                                      820                          8 × 16                                    8                                                  7,000                             APSG160E□□821MH16S
+                                      820                         10× 11.5                                  12                                                  5,400                             APSG160E□□821MJB5S
+                                    1,000                          8×16                                      8                                                  7,000                             APSG160E□□102MH16S
+                                    1,000                          8×20                                      8                                                  7,500                             APSG160E□□102MH20S
+                                    1,000                         10×11.5                                   12                                                  5,400                             APSG160E□□102MJB5S
+                                    1,200                          8×20                                      8                                                  7,500                             APSG160E□□122MH20S
+                                    1,200                         10×11.5                                   12                                                  5,400                             APSG160E□□122MJB5S
+                                    1,500                          8×20                                      8                                                  7,500                             APSG160E□□152MH20S
+                                    1,500                         10×16                                      8                                                  7,700                             APSG160E□□152MJ16S
+                                    1,800                         10×16                                      8                                                  7,700                             APSG160E□□182MJ16S
+                                    1,800                         10×20                                      8                                                  8,100                             APSG160E□□182MJ20S
+                                    2,200                         10×20                                      8                                                  8,100                             APSG160E□□222MJ20S
+                                    2,700                         10×20                                      8                                                  8,100                             APSG160E□□272MJ20S
+                                      120                        6.3×5                                      20                                                  3,200                             APSG200E□□121MF05S
+                                      180                        6.3 ×8                                     18                                                  3,460                             APSG200E□□181MF08S
+                                      330                          8 ×8                                     17                                                  3,880                             APSG200E□□331MH08S
+          20
+                                      390                          8×11.5                                   14                                                  4,970                             APSG200E□□391MHB5S
+                                      680                          8×16                                     10                                                  6,260                             APSG200E□□681MH16S
+                                      680                         10×11.5                                   12                                                  5,400                             APSG200E□□681MJB5S
+                                       56                        6.3× 5                                     30                                                  2,600                             APSG250E□□560MF05S
+                                       82                        6.3×8                                      28                                                  2,780                             APSG250E□□820MF08S
+                                      100                        6.3 × 8                                    28                                                  2,780                             APSG250E□□101MF08S
+                                      120                        6.3× 8                                     28                                                  2,780                             APSG250E□□121MF08S
+                                      150                        6.3 ×8                                     28                                                  2,780                             APSG250E□□151MF08S
+                                      180                          8 ×8                                     18                                                  3,770                             APSG250E□□181MH08S
+                                      180                          8×11.5                                   16                                                  4,650                             APSG250E□□181MHB5S
+                                      220                          8×8                                      18                                                  3,770                             APSG250E□□221MH08S
+                                      220                          8×11.5                                   16                                                  4,650                             APSG250E□□221MHB5S
+          25                          270                          8× 8                                     18                                                  3,770                             APSG250E□□271MH08S
+                                      270                          8× 11.5                                  16                                                  4,650                             APSG250E□□271MHB5S
+                                      330                          8 × 11.5                                 16                                                  4,650                             APSG250E□□331MHB5S
+                                      330                        10× 11.5                                   14                                                  5,000                             APSG250E□□331MJB5S
+                                      390                          8 ×11.5                                  16                                                  4,650                             APSG250E□□391MHB5S
+                                      390                        10× 11.5                                   14                                                  5,000                             APSG250E□□391MJB5S
+                                      470                        10 ×11.5                                   14                                                  5,000                             APSG250E□□471MJB5S
+                                      560                          8×16                                     14                                                  5,400                             APSG250E□□561MH16S
+                                      560                        10×11.5                                    14                                                  5,000                             APSG250E□□561MJB5S
+                                      680                        10×11.5                                    14                                                  5,000                             APSG250E□□681MJB5S
+                                       68                          8 ×11.5                                  18                                                  4,380                             APSG350E□□680MHB5S
+          35
+                                      120                        10× 11.5                                   16                                                  4,670                             APSG350E□□121MJB5S
+□□ : Enter the appropriate lead forming or taping code.
+
+
+◆RATED RIPPLE CURRENT MULTIPLIERS
+     ・Frequency Multipliers
+          Frequency（Hz）                      120                 1k              10k       50k    100k to 500k
+          Radial lead type                   0.10               0.35             0.60      0.80       1.00
+
+
+Product specifications in this catalog are subject to change without notice.Request our product specifications before purchase and/or use. Please use our products based on the information contained in this catalog and product specifications.
+
+
+                                                                                                                                                                                              CAT. No. E1001A 2026
+                        CONDUCTIVE POLYMER ALUMINUM SOLID CAPACITORS                                                                                                                                              Product Guide
+
+■ Always read "Notes on Use" before using the product in order to enable you to use the product correctly and prevent any faults
+  and accidents from occurring.
+
+■ Request the Product Specification on the product of NIPPON CHEMI-CON CORPORATION to refer to it as well as this brochure
+  prior to the order of the products. Some specific notes on use of the ordered product may be described in the specifications.
+
+■ The products listed in this catalog are designed and manufactured for general electronics equipment use and are not intended for
+  use in applications that can adversely affect human life; where the malfunction of equipment may cause damage to life or
+  property. In addition, our products are not intended to be used in specific applications that may cause a major social impact.
+  Please consult with us in advance of usage of our products in the following listed applications. ① Aerospace equipment ② Power
+  generation equipment such as thermal power, nuclear power etc. ③ Medical equipment ④ Transport equipment (automobiles,
+  trains, ships, etc.) ⑤ Transportation control equipment ⑥ Disaster prevention / crime prevention equipment ⑦ Highly publicized
+  information processing equipment ⑧ Submarine equipment ⑨ Other applications that are not considered general-purpose
+  applications.
+
+■ The circuits described as examples in this catalog and the "delivery specifications" are featured in order to show the operations
+  and usage of our products, however, this fact does not guarantee that the circuits are available to function in your equipment
+  systems. We are not in any case responsible for any failures or damage caused by the use of information contained herein. You
+  should examine our products, of which the characteristics are described in the "delivery specifications" and other documents, and
+  determine whether or not our products suit your requirements according to the specifications of your equipment systems.
+  Therefore, you bear final responsibility regarding the use of our products.
+  Please make sure that you take appropriate safety measures such as use of redundant design and malfunction prevention
+  measures in order to prevent fatal accidents and/or fires in the event any of our products malfunction.
+
+■ We strongly recommend our customers to purchase Nippon Chemi-Con products only through our official sales channels. We
+  assume no responsibility for any defects or damages caused by using products purchased from outside our official sales channel
+  or of counterfeit goods. In addition, we will ask the customer to pay the investigation cost for products purchased outside our
+  official sales channel.
+
+■ We reserve the right to discontinue production and delivery of products. We do not guarantee that all the products included in this
+  catalog will be available in the future.
+  The aforementioned does not apply in the case of individual agreements deviating from the foregoing for customer-specific
+  products
+
+■ We continually strive to improve the quality and reliability of our products, but in any case that our product does not meet our
+  published specifications, please stop using it promptly and contact us immediately. As for compensation for non-conforming
+  goods delivered by Chemi-Con, we will limit it only to goods found in non-compliance of our published specifications. This may be
+  accomplished by a no cost replacement of non-conforming individual products, a credit of the piece price paid per each individual
+  non-conforming product, or in other ways deemed necessary.
+  In addition, we have an established system with enhanced traceability, therefore we will limit the applicable lot items for any
+  potential compensation.
+
+Part Numbering System
+Part Numbering System (Appendix)
+Standardization
+Available Items by Manufacturing Locations
+Environmental Measures
+Technical Note
+Precautions and Guidelines
+Recommended Soldering Conditions
+Taping, Lead-preforming, Terminal and Packaging Options
+
+
+
+
+Product specifications in this catalog are subject to change without notice.Request our product specifications before purchase and/or use. Please use our products based on the information contained in this catalog and product specifications.
+
+
+                                                                                                                                                                                              CAT. No. E1001A 2026
+

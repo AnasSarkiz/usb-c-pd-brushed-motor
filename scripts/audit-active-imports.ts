@@ -2,6 +2,21 @@ import { readFile, writeFile } from "node:fs/promises"
 import { createHash } from "node:crypto"
 import { any_circuit_element } from "circuit-json"
 import { z } from "zod"
+const auditConfiguration = z
+  .object({
+    revision: z.string(),
+    manifestPath: z.string(),
+    reportPath: z.string(),
+  })
+  .parse(
+    process.argv[2]
+      ? JSON.parse(await readFile(process.argv[2], "utf8"))
+      : {
+          revision: "A10",
+          manifestPath: "evidence/active-supplier-inspection-manifest-A10.json",
+          reportPath: "evidence/active-import-audit-A10.json",
+        },
+  )
 const manifest = z
   .array(
     z.object({
@@ -12,14 +27,7 @@ const manifest = z
       nc: z.array(z.string()),
     }),
   )
-  .parse(
-    JSON.parse(
-      await readFile(
-        "evidence/active-supplier-inspection-manifest-A9.json",
-        "utf8",
-      ),
-    ),
-  )
+  .parse(JSON.parse(await readFile(auditConfiguration.manifestPath, "utf8")))
 const issues: string[] = []
 const parts = []
 let totalPcbTraces = 0
@@ -136,14 +144,14 @@ for (const part of manifest) {
   issues.push(...localIssues.map((i) => `${part.code} ${part.ref}: ${i}`))
 }
 const report = {
-  revision: "A9",
+  revision: auditConfiguration.revision,
   supplierCount: parts.length,
   totalPcbTraces,
   issues,
   parts,
 }
 await writeFile(
-  "evidence/active-import-audit-A9.json",
+  auditConfiguration.reportPath,
   JSON.stringify(report, null, 2) + "\n",
 )
 console.log(

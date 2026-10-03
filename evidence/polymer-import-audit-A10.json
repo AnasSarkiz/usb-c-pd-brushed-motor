@@ -1,0 +1,349 @@
+{
+  "revision": "A10 candidate review",
+  "supplierCount": 4,
+  "totalPcbTraces": 0,
+  "issues": [],
+  "parts": [
+    {
+      "code": "C136279",
+      "ref": "C18",
+      "sourceSha256": "02a6afbbcb25469004ba5802b820840166784726ce89e4a306af630357391b39",
+      "path": "dist/tests/supplier-audit/C136279/circuit.json",
+      "ports": [
+        {
+          "alias": "pin1",
+          "pinNumber": 1,
+          "pcbPortId": "pcb_port_1",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_0",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": -3.267202,
+              "y": 0,
+              "width": 4.1999916,
+              "height": 1.3999972,
+              "layer": "top",
+              "port_hints": [
+                "pin1"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_1",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        },
+        {
+          "alias": "pin2",
+          "pinNumber": 2,
+          "pcbPortId": "pcb_port_0",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_1",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": 3.267202,
+              "y": 0,
+              "width": 4.1999916,
+              "height": 1.3999972,
+              "layer": "top",
+              "port_hints": [
+                "pin2"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_0",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        }
+      ],
+      "pcbTraceCount": 0,
+      "diagnostics": [
+        {
+          "type": "source_part_not_found_warning",
+          "source_part_not_found_warning_id": "source_part_not_found_warning_YwxMYcoskK",
+          "warning_type": "source_part_not_found_warning",
+          "message": "Failed to fetch supplier footprint for <capacitor#0(.probe>.C18) /> (jlcpcb:C136279): Was there a typo in the url or port?",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_number": "C136279"
+        }
+      ],
+      "issues": [],
+      "status": "electrical/schema pass; metadata and mechanical approval separate"
+    },
+    {
+      "code": "C133439",
+      "ref": "C18",
+      "sourceSha256": "f53fcdb64f2fd23313179b5a52af1b13a8e767a905b626a1ab78d97eaf5a6520",
+      "path": "dist/tests/supplier-audit/C133439/circuit.json",
+      "ports": [
+        {
+          "alias": "pin1",
+          "pinNumber": 1,
+          "pcbPortId": "pcb_port_1",
+          "pads": [
+            {
+              "type": "pcb_plated_hole",
+              "shape": "circle",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "outer_diameter": 1.5999968,
+              "hole_diameter": 0.999998,
+              "is_covered_with_solder_mask": false,
+              "x": -2.54,
+              "y": 0,
+              "layers": [
+                "top",
+                "bottom"
+              ],
+              "port_hints": [
+                "unnamed_platedhole1",
+                "pin1"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_1",
+              "pcb_plated_hole_id": "pcb_plated_hole_0"
+            }
+          ]
+        },
+        {
+          "alias": "pin2",
+          "pinNumber": 2,
+          "pcbPortId": "pcb_port_0",
+          "pads": [
+            {
+              "type": "pcb_plated_hole",
+              "shape": "circle",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "outer_diameter": 1.5999968,
+              "hole_diameter": 0.999998,
+              "is_covered_with_solder_mask": false,
+              "x": 2.54,
+              "y": 0,
+              "layers": [
+                "top",
+                "bottom"
+              ],
+              "port_hints": [
+                "unnamed_platedhole2",
+                "pin2"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_0",
+              "pcb_plated_hole_id": "pcb_plated_hole_1"
+            }
+          ]
+        }
+      ],
+      "pcbTraceCount": 0,
+      "diagnostics": [
+        {
+          "type": "source_part_not_found_warning",
+          "source_part_not_found_warning_id": "source_part_not_found_warning_AmmApO8zyD",
+          "warning_type": "source_part_not_found_warning",
+          "message": "Failed to fetch supplier footprint for <capacitor#0(.probe>.C18) /> (jlcpcb:C133439): Was there a typo in the url or port?",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_number": "C133439"
+        }
+      ],
+      "issues": [],
+      "status": "electrical/schema pass; metadata and mechanical approval separate"
+    },
+    {
+      "code": "C19191929",
+      "ref": "C18",
+      "sourceSha256": "a7a87c288a126831d3d12bf2f698071d0f92a8a3ba217f8a52ce5392c51d8a0c",
+      "path": "dist/tests/supplier-audit/C19191929/circuit.json",
+      "ports": [
+        {
+          "alias": "pin1",
+          "pinNumber": 1,
+          "pcbPortId": "pcb_port_0",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_0",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": -3.294888,
+              "y": 0,
+              "width": 3.6100004,
+              "height": 1.2599924,
+              "layer": "top",
+              "port_hints": [
+                "pin1"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_0",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        },
+        {
+          "alias": "pin2",
+          "pinNumber": 2,
+          "pcbPortId": "pcb_port_1",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_1",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": 3.294888,
+              "y": 0,
+              "width": 3.6100004,
+              "height": 1.2599924,
+              "layer": "top",
+              "port_hints": [
+                "pin2"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_1",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        }
+      ],
+      "pcbTraceCount": 0,
+      "diagnostics": [
+        {
+          "type": "source_refdes_convention_warning",
+          "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+          "warning_type": "source_refdes_convention_warning",
+          "message": "The \"C\" prefix is being used with a <chip />, try using it with a <capacitor />",
+          "source_component_id": "source_component_0",
+          "refdes": "C18",
+          "source_component_ftype": "simple_chip",
+          "expected_prefixes": [
+            "U",
+            "IC"
+          ],
+          "actual_prefix": "C"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on C18 are underspecified (no pinAttributes set)",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "C18 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "C18 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "schematic_component_styling_warning",
+          "schematic_component_styling_warning_id": "schematic_component_styling_warning_0",
+          "warning_type": "schematic_component_styling_warning",
+          "message": "C18 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+          "schematic_component_id": "schematic_component_0",
+          "styling_issue_type": "missing_reference_designator_text",
+          "source_component_id": "source_component_0",
+          "schematic_sheet_id": "schematic_sheet_0"
+        },
+        {
+          "type": "source_part_not_found_warning",
+          "source_part_not_found_warning_id": "source_part_not_found_warning_IQmb1HOpDd",
+          "warning_type": "source_part_not_found_warning",
+          "message": "Failed to fetch supplier footprint for <chip#0(.probe>.C18) /> (jlcpcb:C19191929): Was there a typo in the url or port?",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_number": "C19191929"
+        }
+      ],
+      "issues": [],
+      "status": "electrical/schema pass; metadata and mechanical approval separate"
+    },
+    {
+      "code": "C178373",
+      "ref": "C18",
+      "sourceSha256": "81434531148c497612f0806dba8f336433d326a695d969beeed2eb408cec7987",
+      "path": "dist/tests/supplier-audit/C178373/circuit.json",
+      "ports": [
+        {
+          "alias": "pin1",
+          "pinNumber": 1,
+          "pcbPortId": "pcb_port_1",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_0",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": -4.499864,
+              "y": 0,
+              "width": 4.499991,
+              "height": 1.6500094,
+              "layer": "top",
+              "port_hints": [
+                "pin1"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_1",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        },
+        {
+          "alias": "pin2",
+          "pinNumber": 2,
+          "pcbPortId": "pcb_port_0",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_1",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": 4.499864,
+              "y": 0,
+              "width": 4.499991,
+              "height": 1.6500094,
+              "layer": "top",
+              "port_hints": [
+                "pin2"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_0",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        }
+      ],
+      "pcbTraceCount": 0,
+      "diagnostics": [],
+      "issues": [],
+      "status": "electrical/schema pass; metadata and mechanical approval separate"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - C18: 100uF capacitor
+
+
+EMPTY NET PINS:
+  - C18 pin1 (+)
+  - C18 pin2 (-)
+
+COMPONENT_PINS:
+C18 (100uF undefined)
+- pin1(pos): NETS(PROBE_0)
+- pin2(neg): NETS(PROBE_1)
+

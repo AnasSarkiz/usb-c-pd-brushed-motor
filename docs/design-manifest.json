@@ -537,13 +537,13 @@
   },
   {
     "ref": "C18",
-    "code": "C2918361",
+    "code": "C178373",
     "sheet": "buck",
     "pins": {
       "pin1": "VM",
       "pin2": "GND"
     },
-    "purpose": "220 uF/25 V motor bulk",
+    "purpose": "330 uF/35 V polymer motor bulk; compensation/thermal qualification pending",
     "nc": []
   },
   {

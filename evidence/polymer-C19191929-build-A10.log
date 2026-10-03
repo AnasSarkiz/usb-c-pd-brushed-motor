@@ -1,0 +1,25 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C19191929.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C19191929/circuit.json
+The "C" prefix is being used with a <chip />, try using it with a <capacitor />
+All pins on C18 are underspecified (no pinAttributes set)
+C18 has no pin with requires_power=true
+C18 has no pin with requires_ground=true
+C18 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <chip#0(.probe>.C18) /> (jlcpcb:C19191929): Was there a typo in the url or port?
+Generating preview images...
+[tests/supplier-audit/C19191929] Generating PCB SVG...
+[tests/supplier-audit/C19191929] Written pcb.svg
+[tests/supplier-audit/C19191929] Generating PCB PNG...
+[tests/supplier-audit/C19191929] Written pcb.png
+[tests/supplier-audit/C19191929] Generating schematic SVG...
+[tests/supplier-audit/C19191929] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

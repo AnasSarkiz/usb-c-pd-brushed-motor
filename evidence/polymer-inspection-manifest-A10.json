@@ -1,0 +1,42 @@
+[
+  {
+    "ref": "C18",
+    "code": "C136279",
+    "import_path": "imports/A_25SVPF100M.tsx",
+    "pins": {
+      "pin1": "positive",
+      "pin2": "negative"
+    },
+    "nc": []
+  },
+  {
+    "ref": "C18",
+    "code": "C133439",
+    "import_path": "imports/APSG250ELL331MJB5S.tsx",
+    "pins": {
+      "pin1": "positive",
+      "pin2": "negative"
+    },
+    "nc": []
+  },
+  {
+    "ref": "C18",
+    "code": "C19191929",
+    "import_path": "imports/A_118EC333.tsx",
+    "pins": {
+      "pin1": "positive",
+      "pin2": "negative"
+    },
+    "nc": []
+  },
+  {
+    "ref": "C18",
+    "code": "C178373",
+    "import_path": "imports/A_35SVPK330M.tsx",
+    "pins": {
+      "pin1": "positive",
+      "pin2": "negative"
+    },
+    "nc": []
+  }
+]

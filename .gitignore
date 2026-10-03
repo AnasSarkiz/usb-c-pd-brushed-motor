@@ -10,6 +10,8 @@ dist/
 
 # Independent upstream source checkout; preserve reviewed patch in evidence.
 tooling/core-coordinate-fix/
+tooling/power-review-venv/
+scripts/__pycache__/
 
 .yalc-store/
 tooling/**/.yalc/

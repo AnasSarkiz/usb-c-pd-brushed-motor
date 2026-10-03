@@ -1,0 +1,359 @@
+[
+  {
+    "code": "C136279",
+    "source_sha256": "02a6afbbcb25469004ba5802b820840166784726ce89e4a306af630357391b39",
+    "electrical_pads": [
+      {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_1",
+        "layer": "top",
+        "shape": "rect",
+        "width": 4.1999916,
+        "height": 1.3999972,
+        "port_hints": [
+          "pin1"
+        ],
+        "is_covered_with_solder_mask": false,
+        "x": -3.267202,
+        "y": 0,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_0",
+        "layer": "top",
+        "shape": "rect",
+        "width": 4.1999916,
+        "height": 1.3999972,
+        "port_hints": [
+          "pin2"
+        ],
+        "is_covered_with_solder_mask": false,
+        "x": 3.267202,
+        "y": 0,
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "paste_apertures": [
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_0",
+        "layer": "top",
+        "shape": "rect",
+        "width": 2.9399941199999997,
+        "height": 0.97999804,
+        "x": -3.267202,
+        "y": 0,
+        "pcb_component_id": "pcb_component_0",
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_1",
+        "layer": "top",
+        "shape": "rect",
+        "width": 2.9399941199999997,
+        "height": 0.97999804,
+        "x": 3.267202,
+        "y": 0,
+        "pcb_component_id": "pcb_component_0",
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "paste_intersects_tht_drill": [],
+    "process_status": "SMD geometry retained; mechanical and process review separate"
+  },
+  {
+    "code": "C133439",
+    "source_sha256": "f53fcdb64f2fd23313179b5a52af1b13a8e767a905b626a1ab78d97eaf5a6520",
+    "electrical_pads": [
+      {
+        "type": "pcb_plated_hole",
+        "pcb_plated_hole_id": "pcb_plated_hole_0",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_1",
+        "outer_diameter": 1.5999968,
+        "hole_diameter": 0.999998,
+        "shape": "circle",
+        "port_hints": [
+          "unnamed_platedhole1",
+          "pin1"
+        ],
+        "x": -2.54,
+        "y": 0,
+        "layers": [
+          "top",
+          "bottom"
+        ],
+        "is_covered_with_solder_mask": false,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_plated_hole",
+        "pcb_plated_hole_id": "pcb_plated_hole_1",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_0",
+        "outer_diameter": 1.5999968,
+        "hole_diameter": 0.999998,
+        "shape": "circle",
+        "port_hints": [
+          "unnamed_platedhole2",
+          "pin2"
+        ],
+        "x": 2.54,
+        "y": 0,
+        "layers": [
+          "top",
+          "bottom"
+        ],
+        "is_covered_with_solder_mask": false,
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "paste_apertures": [
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_0",
+        "layer": "top",
+        "shape": "circle",
+        "radius": 0.7999984,
+        "x": -2.54,
+        "y": 0,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_1",
+        "layer": "bottom",
+        "shape": "circle",
+        "radius": 0.7999984,
+        "x": -2.54,
+        "y": 0,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_2",
+        "layer": "top",
+        "shape": "circle",
+        "radius": 0.7999984,
+        "x": 2.54,
+        "y": 0,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_3",
+        "layer": "bottom",
+        "shape": "circle",
+        "radius": 0.7999984,
+        "x": 2.54,
+        "y": 0,
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "paste_intersects_tht_drill": [
+      {
+        "hole_id": "pcb_plated_hole_0",
+        "paste_id": "pcb_solder_paste_0",
+        "layer": "top",
+        "distance_mm": 0.0,
+        "paste_radius_mm": 0.7999984,
+        "drill_mm": 0.999998
+      },
+      {
+        "hole_id": "pcb_plated_hole_0",
+        "paste_id": "pcb_solder_paste_1",
+        "layer": "bottom",
+        "distance_mm": 0.0,
+        "paste_radius_mm": 0.7999984,
+        "drill_mm": 0.999998
+      },
+      {
+        "hole_id": "pcb_plated_hole_1",
+        "paste_id": "pcb_solder_paste_2",
+        "layer": "top",
+        "distance_mm": 0.0,
+        "paste_radius_mm": 0.7999984,
+        "drill_mm": 0.999998
+      },
+      {
+        "hole_id": "pcb_plated_hole_1",
+        "paste_id": "pcb_solder_paste_3",
+        "layer": "bottom",
+        "distance_mm": 0.0,
+        "paste_radius_mm": 0.7999984,
+        "drill_mm": 0.999998
+      }
+    ],
+    "process_status": "blocked: unapproved paste across THT drills"
+  },
+  {
+    "code": "C19191929",
+    "source_sha256": "a7a87c288a126831d3d12bf2f698071d0f92a8a3ba217f8a52ce5392c51d8a0c",
+    "electrical_pads": [
+      {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_0",
+        "layer": "top",
+        "shape": "rect",
+        "width": 3.6100004,
+        "height": 1.2599924,
+        "port_hints": [
+          "pin1"
+        ],
+        "is_covered_with_solder_mask": false,
+        "x": -3.294888,
+        "y": 0,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_1",
+        "layer": "top",
+        "shape": "rect",
+        "width": 3.6100004,
+        "height": 1.2599924,
+        "port_hints": [
+          "pin2"
+        ],
+        "is_covered_with_solder_mask": false,
+        "x": 3.294888,
+        "y": 0,
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "paste_apertures": [
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_0",
+        "layer": "top",
+        "shape": "rect",
+        "width": 2.5270002799999998,
+        "height": 0.8819946799999999,
+        "x": -3.294888,
+        "y": 0,
+        "pcb_component_id": "pcb_component_0",
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_1",
+        "layer": "top",
+        "shape": "rect",
+        "width": 2.5270002799999998,
+        "height": 0.8819946799999999,
+        "x": 3.294888,
+        "y": 0,
+        "pcb_component_id": "pcb_component_0",
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "paste_intersects_tht_drill": [],
+    "process_status": "SMD geometry retained; mechanical and process review separate"
+  },
+  {
+    "code": "C178373",
+    "source_sha256": "81434531148c497612f0806dba8f336433d326a695d969beeed2eb408cec7987",
+    "electrical_pads": [
+      {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_1",
+        "layer": "top",
+        "shape": "rect",
+        "width": 4.499991,
+        "height": 1.6500094,
+        "port_hints": [
+          "pin1"
+        ],
+        "is_covered_with_solder_mask": false,
+        "x": -4.499864,
+        "y": 0,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_smtpad",
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_0",
+        "layer": "top",
+        "shape": "rect",
+        "width": 4.499991,
+        "height": 1.6500094,
+        "port_hints": [
+          "pin2"
+        ],
+        "is_covered_with_solder_mask": false,
+        "x": 4.499864,
+        "y": 0,
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "paste_apertures": [
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_0",
+        "layer": "top",
+        "shape": "rect",
+        "width": 3.1499936999999996,
+        "height": 1.15500658,
+        "x": -4.499864,
+        "y": 0,
+        "pcb_component_id": "pcb_component_0",
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_1",
+        "layer": "top",
+        "shape": "rect",
+        "width": 3.1499936999999996,
+        "height": 1.15500658,
+        "x": 4.499864,
+        "y": 0,
+        "pcb_component_id": "pcb_component_0",
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "paste_intersects_tht_drill": [],
+    "process_status": "SMD pad/paste geometry pass; manufacturer recommended land differs; assembly-process approval pending",
+    "manufacturer_recommended_land_mm": {
+      "inner_gap": 4.3,
+      "outer_span": 13.1,
+      "pad_width": 1.9,
+      "pad_length": 4.4
+    },
+    "observed_land_mm": {
+      "inner_gap": 4.499737,
+      "outer_span": 13.499719,
+      "pad_width": 1.6500094,
+      "pad_length": 4.499991
+    },
+    "datasheet_body_mm": {
+      "diameter_max": 10.5,
+      "height_max": 12.7,
+      "base_width_max": 10.5,
+      "base_height_max": 10.5,
+      "terminal_span_min": 10.8,
+      "terminal_span_max": 11.2,
+      "terminal_width_min": 0.8,
+      "terminal_width_max": 1.1
+    }
+  }
+]

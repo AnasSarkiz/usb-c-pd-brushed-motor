@@ -1,0 +1,27 @@
+import type { CapacitorProps } from "@tscircuit/props"
+
+export const APSG250ELL331MJB5S = (props: Omit<CapacitorProps, "capacitance">) => {
+  const { name = "C1", ...restProps } = props
+
+  return (
+    <capacitor
+      name={name}
+      capacitance="330uF"
+      polarized
+      supplierPartNumbers={{
+  "jlcpcb": [
+    "C133439"
+  ]
+}}
+      manufacturerPartNumber="APSG250ELL331MJB5S"
+      footprint="radial_p5.08mm_id1mm"
+      cadModel={{
+        objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C133439.obj?uuid=f40519fab00548e1a81f96812540c2eb",
+        stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C133439.step?uuid=f40519fab00548e1a81f96812540c2eb",
+        pcbRotationOffset: 0,
+        modelOriginPosition: { x: 0.004999999999999893, y: 0.00041899999998573634, z: -12.510007000000002 },
+      }}
+      {...restProps}
+    />
+  )
+}

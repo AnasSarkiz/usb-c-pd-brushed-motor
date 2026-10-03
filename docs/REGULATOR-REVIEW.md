@@ -1,4 +1,4 @@
-# A9 regulator input and power review
+# A10 regulator input and power review
 
 C13/C14 were two nominal 1 µF/50 V ceramics. Their 2 µF nominal total cannot satisfy TPS54360's minimum 3 µF effective input capacitance even before DC-bias losses. Both are now unchanged official C138687 / Samsung CL32B106KBJNNNE 10 µF/50 V X7R 1210 imports. Component count remains 128; distinct supplier codes increase to 54.
 
@@ -10,7 +10,7 @@ The portable PD policy uses conservative 85% buck efficiency, hot bridge resista
 
 ## Remaining power gates
 
-The 27 kΩ/22 nF/22 pF compensation is not approved by the input-capacitor correction. Output MLCC DC bias, electrolytic ESR/tolerance, full loop response at each voltage, light-load operation and PWM load transients require further manufacturer/model review and subsequent measurements. No full-loop simulation or measured phase margin is claimed.
+The 27 kΩ/22 nF/22 pF compensation is not approved by the input-capacitor correction. Output MLCC DC bias, electrolytic ESR/tolerance, full loop response at each voltage, light-load operation and PWM load transients require further manufacturer/model review and subsequent measurements. No full-loop simulation or measured phase margin is claimed. A10 adds the explicitly limited CCM sensitivity and ripple screen in OUTPUT-CAPACITOR-REVIEW.md; its failing assumptions are retained and do not approve a candidate or this network. C18 is now the unchanged supplier-backed C178373 / Panasonic 35SVPK330M 330 µF/35 V polarized SMD polymer capacitor. Its conditional PWM ripple screen improves on the undocumented former part, while loop, mixed-frequency sharing, thermal and land/assembly qualification remain blocked.
 
 The 8.2 µH inductor screen uses its tolerance, low switching frequency and peak load to check headroom against the TPS54360 minimum peak limit. Actual inductor saturation, thermal rise, catch-diode heating, exposed-pad copper and narrow current paths must be checked. The approximate 2 A output and bounded peak target are not validated hardware ratings.
 

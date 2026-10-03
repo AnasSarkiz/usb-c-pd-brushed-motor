@@ -1,0 +1,5 @@
+{
+  "revision": "A10 candidate review",
+  "manifestPath": "evidence/polymer-inspection-manifest-A10.json",
+  "reportPath": "evidence/polymer-import-audit-A10.json"
+}

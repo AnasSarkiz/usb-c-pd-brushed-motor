@@ -1,0 +1,18 @@
+[
+  {
+    "References": "C18",
+    "Quantity": 1,
+    "Manufacturer": "Panasonic",
+    "Manufacturer_Part_Number": "35SVPK330M",
+    "JLCPCB_LCSC_Number": "C178373",
+    "Package": "SMD,D10xL12.6mm",
+    "Function": "330 uF/35 V polymer motor bulk; compensation/thermal qualification pending",
+    "Stock_Observed": 251,
+    "Availability_Status": "LCSC stock observed; JLC assembly eligibility/stock not confirmed",
+    "Datasheet_URL": "https://datasheet.lcsc.com/datasheet/pdf/b911616dc38d486084d05259d162b4ef.pdf?productCode=C178373",
+    "Availability_Checked_On": "2026-10-03",
+    "Value": "330uF",
+    "Supplier_Import": "imports/A_35SVPK330M.tsx",
+    "Catalog_URL": "https://www.lcsc.com/product-detail/C178373.html"
+  }
+]

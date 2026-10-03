@@ -1,4 +1,57 @@
-# A9 current validation — 2026-10-03
+# A10 current validation — 2026-10-03
+
+**WIP engineering prototype. Product placement has not started; routing remains disabled.** C18 is now an unchanged official Panasonic polymer import, and the portable PD/rail startup sequence is implemented. The active supplier and schematic audits pass; power/assembly qualification and the flashable MCU port remain blocked. No component model, schema, diagnostic or checker threshold was patched or suppressed.
+
+## Current gates
+
+| Stage | Status | Evidence / remaining work |
+|---|---|---|
+| 1. Requirements | in progress | One motor, explicit 5/9/12 V selection, 2 A target and qualified 15/20 V policy documented. 65 ×50 mm/two layers provisional; final thermal/mechanical/manufacturing envelope unproven. |
+| 2. Schematic and BOM | blocked | 54/54 active strict supplier audits pass. Eight connected A4 sheets, 128 purchased components. C178373 input/polarity/paste checks pass, but its recommended-land variation needs assembly approval. Buck loop/MLCC bias/current sharing/thermal, regeneration pulse-energy and embedded MCU/STUSB4500 port remain open. |
+| 3. Product placement | blocked | No product coordinates/mounting holes authored. Official coordinate-schema defect remains; full default geometry has native overlaps. The CLI cached-schematic false pass is withdrawn. |
+| 4. Routing | not started | routingDisabled=true; existing imported thermal vias allowed only by checker; autorouter.allowViaInPad=false. Zero PCB traces in current main/probes. |
+| 5. Routed checks | not started | Development checks below do not approve routed output. |
+| 6. Fabrication | not started | Land/paste/thermal-via/assembly processes unapproved. No fabrication release or order. |
+| 7. Physical prototype | not started | No actual startup/stall/PD/unplug/replug/reversal/bounce/thermal measurements. |
+| 8. Store release | not started | Publication blocker: task Git main has no configured remote or destination repository/branch. No GitHub or tscircuit remote update. Validation remains incomplete. |
+
+## A10 implementation and versions
+
+Official main dependencies remain tscircuit 0.0.2742 / CLI 0.1.2237 / core 0.0.2056 / props 0.0.677 / circuit-json 0.0.510; Bun 1.3.9 / TypeScript 5.9.3 / Biome 2.5.14. Latest registry checks still observe tscircuit 0.0.2742/core 0.0.2069/CLI 0.1.2237, already investigated in A9. No local core or dependency override is installed. A9 source/tooling patch evidence remains historical and applicable to the unchanged coordinate defect.
+
+C18 replaces C2918361 with **C178373 / Panasonic 35SVPK330M, 330 µF/35 V**, imported through the official exact-footprint workflow. Direct LCSC stock: 251 at 2026-10-03T11:27:43Z; not reserved and not an assertion of turnkey JLC assembly availability. The native polarized capacitor has two correct electrical pins/pads and positive pin1. All five native single-part checks, warning-free network-enabled build, strict full schema and electrical coverage pass. Body/mechanical and ripple datasheet pages and the generated footprint were inspected. Manufacturer F12 lands differ from the untouched import; actual terminals fit nominally, but tolerance/process approval remains a stage-2 blocker. Details: docs/OUTPUT-CAPACITOR-REVIEW.md and polymer-geometry-A10.json. Failed/unstocked/contradictory unused candidates are retained independently rather than substituted with custom models.
+
+The active capacitor's 10–100 kHz factor gives **3.08 A allowable ripple at PWM frequency**, conditional on manufacturer's Tx ≤105°C. The motor/buck screen is approximately 2.467 A RMS. Above 105°C the rating drops below this load; no 125°C motor rating is claimed. The active 18 mΩ CCM profile retains 1,570 sensitivity-threshold failures out of 16,200 assumed cases. These are not guaranteed hardware corners or proof of actual instability. The unapproved compensation stays 27 kΩ/22 nF/22 pF; full-band models, DCM, 600 kHz current sharing and measured transient/thermal behavior remain required. The unused C133439 sweep remains separately identifiable.
+
+firmware/pd_sequence.c implements bounded, measured-rail power sequencing: inhibit bridge, wait for VM decay, settle the selected feedback branch, request a fresh contract, require matching request/PS_RDY provenance, enable power, qualify VM, then wake the driver. Stale ADC/communication/contract, invalid selector, source generation/reset, bad rail and faults inhibit. A real startup bug was corrected: expected DRV8874 undervoltage while VM is off must not block PD contract qualification. Persistent driver fault after the documented wake interval still latches off. No PWM/direction/reversal timer is introduced. Proposed timing/ADC windows and discharge behavior need hardware review. Both modules compile for Cortex-M0+; **not a linked or flashable MCU image**. Actual GPIO/ADC/I2C/STUSB4500 transport, clocks/startup/watchdog/option bytes and programming pads remain open.
+
+## Checks and reviewed artifacts
+
+| Check | Result |
+|---|---|
+| Configured format / TypeScript / Bun tests | pass; 16 tests, 360 expect calls, zero failures. Sequencer C harness additionally reports 298 assertions. |
+| Active supplier strict full-document/schema/pin/pad audit | pass; 54 parts, zero issues/PCB traces. Unchanged A9 generated probes reused except new freshly built C178373; dependencies unchanged. |
+| Thermal-via policy/hash/EP association audit | pass; 12 existing imported vias unchanged, zero issues. No new routed via permitted in pads. |
+| Schematic-only official build / strict connectivity/A4/BOM/NC audit | pass; 128 components, 54 supplier codes, 84 exact-signature reviewed advisories, zero PCB traces. |
+| tsci check netlist / pin_specification / source / schematic-placement | pass, sequentially against full PCB build. |
+| tsci build current full unrouted board | fail; 6,193 footprint overlaps, 297 pad-clearance errors, 1,935 courtyard overlaps in default unplaced geometry. All retained. 128 source components /140 PCB records/zero traces. |
+| tsci check placement, including explicit archived full .circuit.json | fail on native default overlaps. Earlier schematic-cache exit-zero result withdrawn, never counted as passed. |
+| Active capacitor sensitivity/ripple screen | conditional PWM ripple margin only; sweep exits 1 with 1,570 retained threshold violations. Not compensation/thermal approval. |
+| Portable C host and Cortex-M0+ object checks | pass; no linked embedded image/live negotiation asserted. |
+
+All eight sheets were inspected in evidence/schematic-overview-A10.png; the updated buck sheet was additionally inspected at full resolution (dist/review/3-buck-A10.png). A10 titles remain within A4, C18 clearly shows 330 µF and positive polarity, and warnings remain visible. BOM preview C18-A10.png confirms the exact part/value/package; artifact-tool reconciliation reports 128/54 and no duplicate references. Active supplier source hashes and current source/dependency/evidence hashes are recorded in source-manifest-A10.json. README/VALIDATION bookkeeping is outside the checksum map.
+
+The mode-insensitive CLI cache can reuse schematic-only output for a placement check. docs/TOOLING-ISSUES.md records the traced cause, withdrawn result and full-artifact recheck. Full PCB evidence is archived under full-build-output-A10.circuit.json before regenerating schematic-only output. Do not accept a placement result without inspecting artifact PCB coverage.
+
+## Publication status
+
+Local A10 implementation is being committed. GitHub destination repository/branch remains unknown; git remote -v returns no entries. Configured package @tsci/AnasSarkiz.usb-c-pd-brushed-motor remains version0.0.1/private. Standing authorization exists, but neither remote has been updated. This is a publication blocking issue, not fabrication approval or a request to stop independent design work.
+
+---
+
+A9 and earlier sections below are historical; A10 supersedes active C18 and portable sequence evidence only. Unresolved electrical/tooling/mechanical/physical tests remain applicable.
+
+# A9 historical validation — 2026-10-03
 
 **WIP engineering prototype; placement and routing remain disabled.** Corrected a real TPS54360 input-capacitance shortfall, updated the official CLI, rebuilt every active supplier probe, completed the selector/simplification reviews, and tested an isolated coordinate-serialization fix. No electronic component definition, schema or diagnostic was patched or suppressed. The experimental library package was removed after testing; the main board keeps official dependencies.
 

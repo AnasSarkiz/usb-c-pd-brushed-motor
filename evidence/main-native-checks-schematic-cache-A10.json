@@ -1,0 +1,62 @@
+[
+  {
+    "check": "netlist",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/main-netlist-A10.log"
+  },
+  {
+    "check": "pin_specification",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/main-pin_specification-A10.log"
+  },
+  {
+    "check": "source",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/main-source-A10.log"
+  },
+  {
+    "check": "schematic-placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/main-schematic-placement-A10.log"
+  },
+  {
+    "check": "placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/main-placement-A10.log"
+  }
+]

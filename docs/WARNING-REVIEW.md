@@ -1,4 +1,12 @@
-# A2 warning review
+# A10 current warning status
+
+The A2 record below is historical. Current active-board metadata acceptance is per exact diagnostic signature, supplier source hash, reference and reviewed connection map in evidence/main-warning-review-A7.json. The A10 strict schematic audit matches all 84 active raw advisories to that ledger and rejects new/stale/unreviewed diagnostics; no warning is hidden. Active switch electrical-pin failures recorded at A2 have been replaced and independently revalidated. Additional schematic text supplies readable reference labels without editing imported symbols. Naming/classification and pin-annotation advisories are accepted only within their recorded datasheet/connection proof, not as footprint or power approval.
+
+The active C178373 network-enabled probe build has no diagnostics. Unused A10 capacitor-probe advisories remain raw and unapproved; they do not inherit active-board acceptance. A positive-size paste aperture passing schema is not evidence that a THT stencil process is correct. See OUTPUT-CAPACITOR-REVIEW.md for the C133439 process blocker and remaining mechanical/ripple reviews. Native probe checks do not complete product placement or manufacturing review.
+
+---
+
+# A2 historical warning review
 
 2026-10-02. The user permits warnings to be accepted only when explicitly proven harmless. No checks or warning rendering have been disabled, and no imported definitions were edited.
 

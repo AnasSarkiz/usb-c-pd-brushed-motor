@@ -50,10 +50,19 @@ struct pd_plan pd_make_plan(uint8_t bits, const uint32_t *pdos,
   return result;
 }
 
+bool pd_plan_valid(const struct pd_plan *p) {
+  return p && p->valid && p->source_generation &&
+         p->source_object_position >= 2 && p->source_object_position <= PD_MAX_OBJECTS &&
+         (p->motor_voltage_v == 5 || p->motor_voltage_v == 9 || p->motor_voltage_v == 12) &&
+         (p->voltage_mv == 15000 || p->voltage_mv == 20000) && p->current_ma == 3000 &&
+         p->sink_pdo == (((uint32_t)(p->voltage_mv / 50u) << 10) | 300u) &&
+         power_budget_fits(p->motor_voltage_v, p->voltage_mv);
+}
+
 bool pd_contract_qualified(const struct pd_plan *p,
                            const struct pd_observation *o) {
-  if (!p || !o || !p->valid || !o->attached || !o->communication_ok ||
-      !o->fresh_ps_rdy || o->motor_fault || o->pe_fsm_state != 0x18 ||
+  if (!pd_plan_valid(p) || !o || !o->attached || !o->communication_ok ||
+      !o->fresh_ps_rdy || o->pe_fsm_state != 0x18 ||
       o->source_generation != p->source_generation ||
       ((o->rdo >> 28) & 7u) != p->source_object_position ||
       (o->rdo & (1u << 26)) || (o->rdo & (1u << 27))) return false;
@@ -67,13 +76,21 @@ bool pd_contract_qualified(const struct pd_plan *p,
          (uint32_t)o->vbus_mv * 100u <= (uint32_t)p->voltage_mv * 105u;
 }
 
-bool pd_motor_qualified(const struct pd_plan *p,
-                       const struct pd_observation *o, uint8_t bits) {
+bool pd_motor_rail_qualified(const struct pd_rail_check *check) {
+  if (!check) return false;
+  const struct pd_plan *p = check->plan;
+  const struct pd_observation *o = check->observation;
   if (!pd_contract_qualified(p, o) ||
-      pd_motor_voltage(bits) != p->motor_voltage_v) return false;
+      pd_motor_voltage(check->selector_bits) != p->motor_voltage_v) return false;
   /* Independent VM measurement catches a wrong feedback branch or selector.
    * +/-5% is a proposed acceptance window, not a measured board tolerance. */
   const uint32_t target_mv = (uint32_t)p->motor_voltage_v * 1000u;
   return (uint32_t)o->motor_rail_mv * 100u >= target_mv * 95u &&
          (uint32_t)o->motor_rail_mv * 100u <= target_mv * 105u;
+}
+
+bool pd_motor_qualified(const struct pd_plan *p,
+                       const struct pd_observation *o, uint8_t bits) {
+  const struct pd_rail_check check = {.plan=p, .observation=o, .selector_bits=bits};
+  return pd_motor_rail_qualified(&check) && !o->motor_fault;
 }

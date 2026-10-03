@@ -23,3 +23,12 @@ The upstream canonical dependency installation fails resolving its pinned pcb-tr
 Whole-source TypeScript checking remains failed with eight pre-existing diagnostics: schematic-match-adapt return-type mismatch and six TI fixture symbol-type incompatibilities in this nested environment. The unchanged source and patched source produce exactly the same eight diagnostics; see core-typecheck-comparison-A9.json and both complete logs. None are suppressed or excluded from the source-project check. Board formatting, TypeScript and board tests are checked separately. No all-core-tests pass is claimed.
 
 Product placement remains blocked until a validated board toolchain and the remaining schematic/power gates pass. A local regression result does not authorize routing. No core PR or upstream publication was created.
+
+
+## A10 CLI cache mode issue
+
+CLI 0.1.2237's getOrGenerateCircuitJson cache is keyed by source file hashes, without the requested build mode. A placement check run after a schematic-only build therefore reused an artifact with zero PCB components and falsely returned success. That result is withdrawn in main-native-checks-schematic-cache-A10.json and main-placement-schematic-cache-A10.log. It is not accepted as placement evidence.
+
+A fresh full unrouted build was generated and archived as evidence/full-build-output-A10.circuit.json, with 128 purchased source components, 140 generated PCB-component records and zero PCB traces. Checks were then run sequentially against that full build. Netlist/pin_specification/source/schematic-placement pass; placement fails on the default overlaps. An additional official placement check directly reads the archived circuit.json-compatible filename and also fails. The unsupported arbitrary .json filename attempt is retained separately. Neither CLI source nor validation thresholds were modified.
+
+When reviewing schematic-only output, never accept subsequent cached placement results. Check that the artifact contains all expected PCB components, and directly check the archived full circuit.json. Coordinate-schema and power/firmware prerequisites remain unresolved; product placement remains unstarted.

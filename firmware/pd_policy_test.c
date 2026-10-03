@@ -32,6 +32,12 @@ int main(void) {
   assert(!pd_motor_qualified(&p,&o,1));
   o.vbus_mv=5000;assert(!pd_motor_qualified(&p,&o,2));o.vbus_mv=20000;
   o.motor_fault=true;assert(!pd_motor_qualified(&p,&o,2));
+  assert(pd_contract_qualified(&p,&o)); /* VM UVLO must not deadlock PD negotiation. */
+  struct pd_plan invalid=p;
+  invalid.voltage_mv=15000; invalid.sink_pdo=fixed(15000,3000);
+  assert(!pd_plan_valid(&invalid)); /* 12 V peak budget does not fit 15 V. */
+  invalid=p; invalid.source_object_position=1;assert(!pd_plan_valid(&invalid));
+  invalid=p; invalid.sink_pdo=fixed(20000,2250);assert(!pd_plan_valid(&invalid));
   puts("PD policy host tests passed; embedded transport and physical tests remain pending");
   return 0;
 }

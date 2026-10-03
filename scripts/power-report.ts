@@ -10,7 +10,7 @@ const inputLimitNominalA = 18_000 / 7_150
 const inputLimitMinimumA = (inputLimitNominalA * 0.9) / 1.01
 const inputLimitMaximumA = (inputLimitNominalA * 1.1) / 0.99
 console.log({
-  revision: "A9 draft",
+  revision: "A10 draft",
   warning:
     "Analytic assumptions; physical efficiency/thermal/peak tests pending",
   inputLimitNominalA,

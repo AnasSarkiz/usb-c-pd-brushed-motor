@@ -1,0 +1,33 @@
+{
+  "case_count": 16200,
+  "worst_phase_margin": {
+    "case": {
+      "motor_voltage_v": 12,
+      "load_current_a": 1,
+      "bulk_capacitance_f": 0.0002112,
+      "ceramic_capacitance_f": 0,
+      "bulk_esr_ohms": 0.6,
+      "ceramic_esr_ohms": 0.001,
+      "gm_product_factor": 0.5625,
+      "sample_delay_s": 1.0416666666666667e-06
+    },
+    "frequency_hz": 294637.25785013824,
+    "phase_margin_degrees": 3.601784151004411
+  },
+  "maximum_crossover": {
+    "case": {
+      "motor_voltage_v": 12,
+      "load_current_a": 1,
+      "bulk_capacitance_f": 0.0002112,
+      "ceramic_capacitance_f": 0,
+      "bulk_esr_ohms": 0.6,
+      "ceramic_esr_ohms": 0.001,
+      "gm_product_factor": 0.5625,
+      "sample_delay_s": 0
+    },
+    "frequency_hz": 294637.25785013824,
+    "phase_margin_degrees": 114.0924339234816
+  },
+  "violations": 1570,
+  "combined_rms_a": 2.4666476038819107
+}

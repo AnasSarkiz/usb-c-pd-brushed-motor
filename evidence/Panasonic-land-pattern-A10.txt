@@ -1,0 +1,84 @@
+                                                                                                  Conductive Polymer Aluminum Solid Capacitors
+
+
+Mounting specifications
+◇ Recommendable reflow soldering (SMD type)
+
+
+
+                                             TP
+
+
+
+                      Temperature on the     TL
+
+
+                      surface of capacitor
+                                             Tsmax
+                                             Tsmin
+
+
+                                                                  tS                         tL
+
+
+                                                                                   Time（sec.）
+
+
+                                                                        Condition A                     Condition B                      Condition C
+                                                                                                                                    Peak temperature 250 °C
+                  Reflow soldering                                 Peak temperature 260 °C         Peak temperature 250 °C
+                                                                                                                                    lead free soldering profile
+                                                                   lead free soldering profile     lead free soldering profile
+                                                                                                                                 (SVPG, SVPF, SVF, SVPK, SXV)
+               Peak temperature (TP)                                       260 °C              250 °C                                       250 °C
+                                 TL ≥ 245 °C                                            ー                                              30 seconds max.
+       Soldering time (tL)
+                                 TL ≥ 230 °C                                     40 seconds max.                                              ー
+             above
+                                 TL ≥ 220 °C                                     50 seconds max.                                              ー
+     soldering temperature
+                                 TL ≥ 217 °C                                            ー                                              90 seconds max.
+              (TL)
+                                 TL ≥ 200 °C                                     60 seconds max.                                              ー
+                   Temperature max. (Tsmax)                                           180 °C                                               200 °C*1
+      Preheat       Temperature min. (Tsmin)                                                       150 °C
+                 Time (tS) from (Tsmin) to (Tsmax)                                           120 seconds max.
+            The cycles of reflow soldering                                 1 times             2 times                                     2 times
+                                                                                                                                           *1 SXV series：180°C
+
+
+◇ Flow soldering (Radial lead type)
+                                                            Temperature                                 Time                             Flow number
+                                                            120 °C or less
+              Preheating                                 (ambient temperature)                    120 sec. or less                          1 time
+          Soldering condition                            260 °C+5 °C or less                      10+1 sec. or less                    2 times or less*1
+       *1：When soldering 2 times, total immersion time should be 10+1 sec. or less.
+
+◇ Soldering with a soldering iron
+     Tip of a soldering iron                         ：400 °C±10 °C
+     Working time                                    ：5 sec. max.
+
+Land Pattern
+                                                                                                                                                            Unit : mm
+                                                                                                         Size code                a            b            c
+                                                                                                            A5                   1.0          6.2          1.6
+                                                                                                            B45                  1.4          7.4          1.6
+                                                                                                            B6                   1.4          7.4          1.6
+                                                                                                            C6                   2.1          9.1          1.6
+                                                                                                            C65                  2.1          9.1          1.6
+                                                                                   c
+                                                                                                            C8                   2.1          9.1          1.6
+                                                                                                            C10                  2.1          9.1          1.6
+                                                                                                            C10L                 2.1          9.1          2.5
+                                                     a                                                      E7                   2.8         11.1          1.9
+                                                                                                            E10                  2.8         11.1          1.9
+                                                                                                            E12                  2.8         11.1          1.9
+                                                                                                            F8                   4.3         13.1          1.9
+                                                     b                                                      F10                  4.3         13.1          1.9
+                                                                                                            F12                  4.3         13.1          1.9
+
+
+
+
+                                                                                                                                                                 31-Oct-25
+

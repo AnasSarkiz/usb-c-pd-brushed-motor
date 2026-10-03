@@ -1,0 +1,262 @@
+[
+  {
+    "code": "C136279",
+    "check": "netlist",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "tests/supplier-audit/C136279.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C136279-netlist-A10.log"
+  },
+  {
+    "code": "C136279",
+    "check": "pin_specification",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "tests/supplier-audit/C136279.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C136279-pin_specification-A10.log"
+  },
+  {
+    "code": "C136279",
+    "check": "source",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "tests/supplier-audit/C136279.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C136279-source-A10.log"
+  },
+  {
+    "code": "C136279",
+    "check": "schematic-placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "tests/supplier-audit/C136279.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C136279-schematic-placement-A10.log"
+  },
+  {
+    "code": "C136279",
+    "check": "placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "tests/supplier-audit/C136279.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C136279-placement-A10.log"
+  },
+  {
+    "code": "C133439",
+    "check": "netlist",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "tests/supplier-audit/C133439.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C133439-netlist-A10.log"
+  },
+  {
+    "code": "C133439",
+    "check": "pin_specification",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "tests/supplier-audit/C133439.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C133439-pin_specification-A10.log"
+  },
+  {
+    "code": "C133439",
+    "check": "source",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "tests/supplier-audit/C133439.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C133439-source-A10.log"
+  },
+  {
+    "code": "C133439",
+    "check": "schematic-placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "tests/supplier-audit/C133439.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C133439-schematic-placement-A10.log"
+  },
+  {
+    "code": "C133439",
+    "check": "placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "tests/supplier-audit/C133439.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C133439-placement-A10.log"
+  },
+  {
+    "code": "C19191929",
+    "check": "netlist",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "tests/supplier-audit/C19191929.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C19191929-netlist-A10.log"
+  },
+  {
+    "code": "C19191929",
+    "check": "pin_specification",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "tests/supplier-audit/C19191929.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C19191929-pin_specification-A10.log"
+  },
+  {
+    "code": "C19191929",
+    "check": "source",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "tests/supplier-audit/C19191929.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C19191929-source-A10.log"
+  },
+  {
+    "code": "C19191929",
+    "check": "schematic-placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "tests/supplier-audit/C19191929.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C19191929-schematic-placement-A10.log"
+  },
+  {
+    "code": "C19191929",
+    "check": "placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "tests/supplier-audit/C19191929.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C19191929-placement-A10.log"
+  },
+  {
+    "code": "C178373",
+    "check": "netlist",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "tests/supplier-audit/C178373.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C178373-netlist-A10.log"
+  },
+  {
+    "code": "C178373",
+    "check": "pin_specification",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "tests/supplier-audit/C178373.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C178373-pin_specification-A10.log"
+  },
+  {
+    "code": "C178373",
+    "check": "source",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "tests/supplier-audit/C178373.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C178373-source-A10.log"
+  },
+  {
+    "code": "C178373",
+    "check": "schematic-placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "tests/supplier-audit/C178373.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C178373-schematic-placement-A10.log"
+  },
+  {
+    "code": "C178373",
+    "check": "placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "tests/supplier-audit/C178373.circuit.tsx"
+    ],
+    "exitCode": 0,
+    "log": "evidence/polymer-C178373-placement-A10.log"
+  }
+]

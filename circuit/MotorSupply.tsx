@@ -9,7 +9,7 @@ import { A_0603WAF2702T5E } from "../imports/A_0603WAF2702T5E"
 import { A_0603WAF5101T5E } from "../imports/A_0603WAF5101T5E"
 import { A_0603WAF1003T5E } from "../imports/A_0603WAF1003T5E"
 import { MHCC10040_8R2M_R7 } from "../imports/MHCC10040_8R2M_R7"
-import { RVT1E221M0607 } from "../imports/RVT1E221M0607"
+import { A_35SVPK330M } from "../imports/A_35SVPK330M"
 import { GRM31CR61E476ME44L } from "../imports/GRM31CR61E476ME44L"
 import { A_0603WAF2002T5E } from "../imports/A_0603WAF2002T5E"
 import { TPS54360DDAR } from "../imports/TPS54360DDAR"
@@ -131,8 +131,8 @@ export function MotorSupply() {
           pin2: "net.GND",
         }}
       />
-      {/* 220 uF/25 V motor bulk */}
-      <RVT1E221M0607
+      {/* 330 uF/35 V polymer bulk; compensation/thermal qualification pending */}
+      <A_35SVPK330M
         name="C18"
         schSheetName="buck"
         schX={5}

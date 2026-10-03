@@ -1,0 +1,443 @@
+                                 规格承认书
+                            Specification for approval
+
+         客户名称:
+
+   （Customer Name）
+
+         产品名称:                    贴片固态电解电容
+
+    （Product Name）               Aluminum solid electrolytic capacitor
+
+
+         客户料号：
+
+（Customer part number）
+
+                                 118EC333
+        科尼盛料号：
+
+                                 118EC333
+   （KNSCHA number）
+
+                                 E/C 220UF/25V 8*11.5mm MV
+          型号规格:
+
+                                 E/C 220UF/25V 8*11.5mm MV
+     （Specifications）
+                  制 造                                            客     户
+               (Manufacture)                                    (Customer)
+                 Approval                                       Approval
+    拟 制           审 核            核      准            检 验         审 核         核      准
+   (Fiction)      (Chief)       (Approval)          (Inspect)    (Chief)     (Approval)
+
+
+
+
+东莞市科尼盛电子有限公司
+DONG GUAN KNSCHA ELECTRONICS CO.,LTD.
+No. 8th floor, A3 building, R&D center (Phase I),
+Songshan Lake Intelligent Valley, Liaobu Town, Dongguan City.
+TEL:0769-83698067 81035570           FAX: 0769-83861559
+Email：sales@knscha.com Website: http://www.knscha.com
+规格表Table
+                                                                  纹波电流
+                                                                    Rated
+                额定电压                               漏电流       ESR    Ripple
+                 Rated   标称容量         尺寸      损耗正 Leakage +20℃ (mArms)
+    客户料号        voltage apacitance Case Size 切值tan Current 100K Hz 105℃             料号
+  Part Number     (V)      ( μF)   ΦD x L(mm)  δ    (μA)    (mΩ)   100KHz       Part Number
+
+
+
+                  25      220       8x11.5   0.12   1100     26     3800     118EC333
+一、概述 SCOPE
+本产品规格书适用于ＫＮＳＣＨＡ固态铝电解电容产品。
+The product specification is adapted to Polymer Aluminum Electrolytic Capacitorsof KNSCHA
+ELECTRONICS LIMITED
+
+二、外形图及尺寸表 Case size table
+                                                                                      ΦD             6.3
+                                                                                      L              9
+                                                                                      A              7.3
+                                                                                      B              6.6
+                                                                                      C              6.6
+                                                                                      E              2.1
+                                                                                      H              0.5to0.8
+三、技术性能 Specifications
+1、    系列号(SERIES)                                                     MV
+      额定电压
+2、                                                                    25
+      (rated voltage)
+      工作温度范围            工作温度范围是指电容器在额定电压下能持续工作所允许外部环境的温度范围
+      Operating         operating temperature range is the range of ambient temperature at which the capacitor can
+3、    temperature       be operated continuously at rated voltage
+      range             SPEC:-55~+105℃
+
+4、    电容容量              测量等效电路图
+      capacitance       测量温度20℃                           measuring temperature
+                        测量频率120HZ                         measuring frequency
+                        测量电压 0.5Vrms                      measuring voltage
+                        标称电容量允许偏差:±20% MAX Nominal Capacitance Tolerance:±20% MAX
+      损耗角正切值的测量应要和测量电容容量一样的条件下进行
+      Measurement should be made under the same conditions as those given for the measurement of capacitance
+
+5、    SPEC：
+      损耗正切值                                    25
+      （tan δ）                tanδ             0.12
+                      将额定电压加在电容和1000± 100Ω的保护电阻上。在充电2分钟后，按下列等式计算漏电流。
+                      the rated voltage shall be applied across the capacitor and its protective resistor which shall
+                      be
+                      1000±100Ω.The leakage current shall be then measured after an electrifications period of
+6、    漏电流             (A)min. The leakage current shall be calculated by the following equation.
+      leakage current 在加上额定电压一定时间后，应满足下列要求：1 ≤0.2CV or 200μA Which is greater（取较大
+                      者）（20℃、2分钟）
+                      SPEC: The following specifications shall be satisfied when the rated voltage is applied for the
+                      required time.
+      等效串联阻抗            测量等效电路图
+      Equivalent        measuring circuit equivalent series circuit
+      Series            测量温度20℃                                        measuring temperature
+7、
+      Resistance
+      (ESR）             测量频率100KHZ                                     measuring frequency
+                        测量电压0.5Vrms                                    measuring voltage
+      允许最大纹波电 在规定的某一频率下的最大交流电流，在该电流下电容器连续工作。即使在测过耐久性后，此
+      流              要求仍要满足。在此，DC电压加上最大纹波电压小于等于额定电压。
+8、    Maximum        The maximum sinusoidal alternating current of a frequency specified below, at which the
+      permissible    capacitor can be operated continuously. This requirement shall be satisfied even after the
+      ripple current measurement electrical endurance Where(DC voltage +peak ripple voltage)≤rated voltage
+      温度特性
+      Tempear
+      ture
+9、
+      Characte
+      ristics
+
+
+
+
+四、测试方法及要求 Tests
+       在规定温度下循环测试1000次，每次充电30±5秒，在放电大约5分30秒。在标准温度条件下存放使其稳
+       定，然后再测试。
+       he capacitor shall be subjected to 1000cycles at a temperature specified below, each consisting of a
+       charge period of 30±5sec, followed by a discharge period of approx. 5min30sec. And the capacitor
+       shall be stored under standard conditions thermal to obtain stability,after which measurements shall be
+       made. measurement circuit(测试电路图）
+                                                           VZ：浪涌电压                V1：直流电压
+                                                           Surge voltage          DC voltage
+
+
+                                                           R1：保护电阻                R2：放电电阻
+                                                           （1KΩ）                  Discharge resistor
+1     浪涌测试                                                 Protective resistor
+                                                           CX:测试电容                S:开关
+                                                           Test capacitor         Switch
+
+
+                 SPEC:       1)电容量变化Change in capacitance: ±10%初时值以内Within±10% of the initial value
+                             2)损耗正切值tangent of the loss angle: 小于等于初时值The initial specified value
+                             3)ESR（equivalent series resistance）：小于等于初时值The initial specified value or less
+                             4)漏电流leakage current：小于等于初时值The initial specified value or less
+                 电压设定： RATED VOLTAGE                         25V
+                             SURGE VOLTAGE                  28.8V
+                 1）拉力(tensile）                  d(mm)        [N]         Duration time
+                                                 0.6          10         10±2sec(秒）
+                 2)抗弯强度（Bending）
+
+2                端子应该在每一个方向上折弯一次，总共两次
+      端子强度
+                 The terminal shall be subjected to 1 bend in each direction to give a total 2 bends.
+                   d(mm)           [N]
+                     0.6     5.0（0.51KG)
+                 端子没有破损或松动 SPEC: No breaking and loosening of terminal
+                   焊料(Solder）：H60A. H60S or(或)H63A
+                   焊接温度(Solder temperature）：245±2℃
+                   浸入时间(Immersion time）：3±0.5sec(秒）
+      可焊性         浸入深度(Immersion depth）：离本体 1.5~2mm
+3
+    solderability 熔化：松香在酒精的浓度是25% Flux：25％ by weight of rosin in ethanol
+
+                   从含浸处到顶部，至少有3/4部分覆盖有新焊料
+                   SPEC:1)3/4 of the circumference of the surface up to the immersed shall be covered with
+                   new solder.
+                   焊料：(Solder）：H60A.H60S or（或）H63A
+                   焊接温度(Solder temperature）：350±10℃（or350±10℃）
+                   浸入时间(Immersion time）：10±1sec(秒）（or 或 3.5±0.5sec）
+                   绝热遮罩板的厚度（Thickness of heat shunt:1.6mm）：1.6mm
+      耐焊接热         SPEC: 1):电容量变化Change in capacitance: ±10%初时值以内Within±10%of the initial
+    Resistance
+4                         value
+    to soldering
+        hea               2)损耗正切角tangent of the loss angle:小于等于初始规定值The initial specified
+                          value or less
+                          3)ESR（equivalent series resistance）：小于等于初时值The initial specified value
+                          or less
+                          4)漏电流leakage current：小于等于初时值The initial specified value or less
+
+5   表示耐溶剂 标示应清晰可见
+      性   试剂：乙丙醇，浸入时间30±0.5sec
+                   电容器在温度60±2℃，相对湿度90%到95%条件下存放240±8个小时，然后在标准条件下放1
+                   到2小时后进行测量。the capacitor shall be stored at a temperature of 60±2℃ and relative huidity
+                   of 90 to 95% for 240±8hours。And then the capacitor shall be subjected to standard atmospheric
+                   conditions for 1 to 2hours, after which measurements shall be made
+      高温高湿 measurements shall be made.
+6   Dampheat, SPEC: 1)电容量变化Change in capacitance: ±20%初时值以内Within±20%of the initial value
+    steady state
+                    2)损耗正切角tangent of the loss angle:150%初始值规定以内within ±150%of the
+                           initial value
+                          3)ESR（equivalent series resistance）：150%初始值规定以内within ±150%of the
+                           initial value
+                          4)漏电流leakage current：小于等于初时值The initial specified value or less
+                   在+105温度下不外加电压储存，电容器存放1000小时。然后在标准条件下放1到2小时进行测量，并且
+                   在测漏电流前，必须满足以上条件。The capacitor shall be stored at +105℃ temperature
+                   specified below for 1000 hours.During which time no voltage shall be applied. And then the
+                   capacitor shall be sujected to standard atmospheic conditions for 1 to2hours, after which
+                   measurements shall be made, Prior to the measurement of leakage current, following conditioning
+                   may be made.
+7    高温储存
+                   SPEC: 1)电容量变化Change in capacitance: ±20%初时值以内Within±20%of the initial value
+                          2)损耗正切角tangent of the loss angle:不大於規範值的150%
+                                                               150% or less of initial specified value
+                          3)ESR（equivalent series resistance）：不大於規範值的150%
+                                                               150% or less of initial specified value
+                          4)漏电流leakage current：小于等于初时值The initial specified value or less
+                       在+105℃下，电容器施加带纹波电流的额定电压3000小时。在标准条件下放1到2小时后进行
+                       测量。The rated voltage with specified ripple current shall be applied continuously to the
+                       capacitor at maximum operating temperature +105℃ for 3000 hours. And then the
+                       capacitor shall be subjected to standard atmospheric conditions for 1to
+                       2hours, after which measurement shall be made.
+            耐久性        SPEC: 1)电容量变化Change in capacitance: ±20%初时值以内Within±20%of the initial value
+     8
+           load life
+                              2)损耗正切角tangent of the loss angle:150%初始值规定以内within ±150%of the
+                               initial value
+                              3)ESR（equivalent series resistance）：150%初始值规定以内within ±150%of
+                              the initial value
+                              4)漏电流leakage current：小于等于初时值The initial specified value or less.
+                       电容器要在图1的温度循环要求下保持5个循环，然后在标准条件下放1-2个小时后进行测量。
+                       The characteristics of a capacitor kept under the temperature cycle indicated in Figure1
+                       for 5 cycles . And then the capacitor shall be subjected to standard atmospheric conditions
+                       for 1to 2hours, after which measurement shall be made
+
+
+
+          温度循环测
+             试
+9           Rapid
+         temperature
+           change
+
+
+
+                       SPEC: 1)电容量变化Change in capacitance: ±10%初时值以内Within±10%of the initial value
+                              2)损耗正切角tangent of the loss angle:小于等于初时值The initial specified value or less
+                              3）ESR（equivalent series resistance）:小于等于初时值The initial specified value or less
+                              4）漏电流leakage current：小于等于初时值The initial specified value or less.
+                       电容器要在温度-55℃条件下存放72±2个小时。然后在标准条件下放1到2个小时进行测试。
+                       the capacitor shall be stored at a temperature of -55℃ for 72±2hours。And then the
+           低温测试 capacitor shall be subjected to standard atmospheric conditions for 1 to 2hours, after which
+            Low
+                     measurements shall be made
+10       temperature
+                     SPEC: 1)电容量变化Change in capacitance: ±10%初时值以内Within±10%of the initial value
+            test
+                           2)损耗正切角tangent of the loss angle:小于等于初时值The initial specified value or less
+                              3)ESR（equivalent series resistance）:小于等于初时值The initial specified value or less
+                              4)漏电流leakage current：小于等于初时值The initial specified value or less.
+                       在25±5℃的环境下，施加额定工作电压、1000Ω电阻，充电1S，放电1S，循环500000次。
+                       Ther capacitor shall be subjected to 500000 cycles application of rated voltage、1000Ωresistance
+                      at maximum operating temperature 25±5℃. each consisting of a charge period of 1sec,
+         充放电测试
+                     followed by a discharge period of approx.1sec
+          Charging
+                     SPEC: 1)电容量变化Change in capacitance: ±10%初时值以内Within±10%of the initial value
+11           and
+         discharging        2)损耗正切角tangent of the loss angle:不大於規範值的150%
+             test                                               150% or less of initial specified value
+                              3)ESR（equivalent series resistance）：不大於規範值的150%
+                                                                150% or less of initial specified value
+                              4)漏电流leakage current：小于等于初时值The initial specified value or less.
+五：结构图
+
+
+
+
+六:标志 Marking
+
+
+                                                   1,        代表容量 Rate Capacitance
+                                                   2,        代表电压 Rate Voltage
+                                                   3,        代表系列号Series
+
+
+
+七：包装 Packing
+包装标签标示 Packing Label Marked
+(下面项目应该体现在标签上 The following items shall be marked on the label)
+(盘/内盒/外箱 Reel/inside box/outer carton)
+           Series、Rate Capacitance、Rate Voltage
+系列、额定容值、额定电压
+尺寸                    Size
+数量                    Quantity
+物料编码                  P/N
+批号                    LOT Number
+■Reel Dimensions卷盘尺寸
+                                        Unreel direction
+
+
+
+
+                                   13.00.5
+
+
+                                                                   80.0±1.0
+                                       23.00.8
+
+
+
+
+                          B Max.                               3.0±1.0
+                                                           A
+
+
+                                                                                                                 (Unit:mm)
+                                                                                        10*12.7     12.5*13.5
+ΦD x L(mm) 4*5.4~5.8          5*5.4~6         6.3*5.4~9        8*9~11         10*10.5    ~13.5         ~16        16*16.5
+    A             14            14                 17           25.5           25.5      25.5            34.5       44
+    B             382          382                382           382            382       382             382       382
+■Packaging Box 包装箱
+
+
+
+
+        240±5
+
+
+
+
+                                    395±5
+
+
+
+
+                                                                                         Quantity/Carton
+        Size                       Quantity/Reel                   Reels/Box
+                                                                                              (pcs)
+     ΦD x L(mm)                       (pcs)                         卷盤/箱
+                                                                                            /
+                                                                                         數量 外箱（個）
+        尺寸                         數量/卷（個）
+
+          4x5.5                         2000                             12                     24,000
+        5x5.5~8                         1000                             12                     12,000
+          5x9                            750                             12                     9,000
+        6.3x5.5~8                       1000                             10                     10,000
+        6.3x9~9.5                        750                             10                     7,500
+          8x6.7                          750                             8                      6,000
+         8x8~12                          500                             8                      4,000
+        10x8~13                          450                             8                      3,600
+
+
+                                                                                          *For a small package
+♦Please order by minimum package quantity.
+♦请以最小包装数量订购。
+                                                  Reel             Reels/Box                    Carton
+                        P.N                       (pcs)                                          (pcs)
+                                                  750                    10                      7500
+  八、 铝电解电容使用注意事项。Guidelines For Using Aluminum Electrolytic Capacitor.
+  为了使你获得电解电容的最佳性能和延长电解电容的使用寿命，在使用电解电容前，请务必阅读本注意事项。
+  Upon using Aluminum Electrolytic Capacitors，please proper handing and observing to following important
+  points will insure optimum capacitor performance and long life.
+1 直流电解电容是有极性的。DC electrolytic capacitors are polarized.
+  确定极性，极性标志在电容器的基体上。以免因极性反可能引起电路短路或电容器损坏，当极性不固定或不确定
+  的，使用无极性电容器。注意直流电容器不能使用于交流。Make sure of the polarity. The polarity is marked to
+  on the body of the capacitor .Application of the reversed voltage cause a short circuit or damage the capacitor.
+  Use bipolar capacitors when the polarity is not determined or unknown. Note that DC electrolytic capacitors
+  can not be used for AC application.
+2 使用电压不要大于额定电压。Do not apply voltage higher than rated voltage.
+  使用电压大于额定电压，漏电流会增大，可能损坏电容器。建议工作电压为额定电压的70%-80%，电容器在建议
+  工作电压下使用可以延长电容器的寿命。If a voltage exceeding the rated voltage is applied, the leakage current
+  will increase, which damage the capacitor. Recommended working voltage is 70 to 80 percent of tatted voltage.
+  Using capacitors at recommended working voltage prolongs capacitor life.
+3 不要使用过量纹波电流通过电容器。Do not allow excessive ripple current through the capacitor.
+  流过电容器的纹波电流超过许可值，将会引起电容器发热，电容量减少，损耗电容器。通过电容器的纹波电流不
+  要大于允许值。The flow of ripple current over permissible ripple current will cause heat of the capacitor, which
+  may decrease the capacitance and damage the capacitor. Ripple current on the capacitor must be at or bellow
+  allowable level.
+4 快速充放点电路中，使用专门设计的电容器。Use specially designed capacitors for the circuits where charge
+  and discharge are frequency repeated.
+  在经受快速的周期性充放电电路中，电容器可能收到损害，它的寿命因容量下降、温升等原因而缩短，在这种电
+  路中，一定要使用专门设计的电容器。In the circuit subjected to rapid charge cycles, capacitors may be
+  damaged, its life may be shortened by capacitance decrease, heat rise, ect. Be sure and use special capacitors
+  in these applications.
+5 工作温度范围。Operating temperature range.
+  电容器的特性随工作温度变化而变化，在温度较高的情况下，容量，漏电流增大，损耗减少；在低温情况下，容量
+  和漏电流下降，损耗增大。电容器在较低温度下使用会确保延长寿命。The characteristics of capacitors change
+  with the operating temperature. The capacitance and leakage current increase and tgδ decrease at higher
+  temperatures. The capacitance and leakage current decrease and tgδ at increase lower temperature. Usage at
+  lower temperature will ensure longer life.
+6 核对工作频率。Check operating frequency.
+  电解电容器的容量通常是在100HZ或者120HZ下测得的。然而要记住容量随频率的升高而下降，tanδ随频率的升高
+  而增大，并使周围温度升高。The capacitance of electrolytic capacitors is usually measured at 100Hz or 120Hz.
+  However, remember that capacitance decrease and tgδ increase as the applied frequency becomes higher
+  whereas the ambient temperature becomes higher.
+7 长时间存放的电容器，在使用前加额定直流电压处理。
+  Apply rated DC voltage treatment to the capacitors which have been stored for a long time.
+  长时间的存放，实际对电容器的容量和tanδ没有多大的影响，然而往往会使漏电流增大，耐压降低。长时间存放
+  后的电容器处理，首先逐渐施加直流电压至额定电压，然后再使用。Long periods of storage have virtually no
+  effect on a capacitor’s capacitance and tgδ. Such periods tend however, to increase leakage current and
+  decrease withstand voltage. After removing capacitors from long-duration storage, first apply a gradually
+  increasing DC voltage to rated voltage and then use them.
+8 固态电容器的外殻为镀膜外壳, 与极性是绝缘的。The Case of Conductive Polymer Aluminum Solid Electrolytic
+  Capacitor is Resin coated case which is insulated with the terminals.
+9   The capacitor’s case and cathode terminal connect through the electrolyte. If the case is to be completely
+   insulated, that insulation must be at the capacitor’s mounting point.
+10 电容器的端子或者引线上不要施加过大的力。
+    Do not apply excessive force to the terminals and leads.
+    过大的力施加到端子和引线上，可能引起引线的断裂或端子分裂，转而会引起内部链接的破坏
+    The excessive strong force applied to the terminals and lead wires may cause leads to break or
+    terminals to separate and, in turn, cause the internal contact to fail.
+
+
+
+
+                                                             -12-
+                        有害物质目录表
+      Hazardous substances management table of contents
+                                                                      有害物质包含与否
+           物质名称（中文名）                 物质名称(英文名）
+区分 Type                                                                 （Test result)
+            Name(chinese)             Name(English)
+                                                                      有 Yes     无 No
+          铅以及它的化合物          Lead and its compounds                           NO
+          镉以及它的化合物          Cadmium and its compounds                        NO
+          水银以及它的化合物         Mercury and its compounds                        NO
+Level A-Ⅰ
+          六价铬以及它的化合物        Hexavalent chromium ang its compounds            NO
+          多溴化的联苯            Polybrominated biphenyls                         NO
+          聚溴二苯醚             Polybrominated diphenylethers                    NO
+          多氯化联苯（PCB）        Polybrominated biphenyls（PCB)                    NO
+          多氯化萘（PCN)         Polybrominated naphthalenes(PCN)                 NO
+          三磷酸盐              Polybrominated terphenyls(PCT)                   NO
+          氯化涂石蜡（SCCP）       Short-chain chlorinated paraffins(SCCP)          NO
+          石棉以及它的化合物         Asbestos ang its compounds                       NO
+Level A-Ⅱ 臭氧层破坏物质           Ozone Depleting Substances                       NO
+          偶氮化合物             Azo compounds                                    NO
+          镍以及它的化合物          Specific organic tin conpounds                   NO
+          有机锡类化合物           Nickel and its compounds                         NO
+          砷以及它的化合物          Specific organic tin conpounds                   NO
+          甲醛                Formaldehydes                                    NO
+          氯化乙烯树脂            Polyvinyl chloride,(PET)                         NO
+          磷苯二甲酸盐            Phthalates                                       NO
+          铍以及他的化合物          Berylium and its compounds                       NO
+          锑及其它的化合物          Antimony and its compounds                       NO
+ Level B 硒及其它的化合物           Selenium and its compounds                       NO
+          钯及其它的化合物          Palladium and its compounds                      NO
+          铋及其化合物            Bismuth and its compounds                        NO
+          其他氯类难燃试剂          Other chlorinated flame retardants               NO
+          其他溴类难燃试剂          Other brominnated flame retardants               NO
+  Note:
+          1，原则上按照公司的管理规定，但由管理总部提出根据Buyer等交易商的要求制定的另行有害物
+          质管理目录来执行的要求时，应优先按照管理总部的管理目录来记载。
+          2，确认合作企业现在是否在使用这类物质，应记录使用与否。
+
