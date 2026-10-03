@@ -1,8 +1,8 @@
 import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
-test("PD startup drains old events under inhibition and verifies standby acquisition", () => {
-  const executable = "evidence/stusb4500-startup-host-A16"
+test("NVM readback requires every approved byte and never programs memory", () => {
+  const executable = "evidence/stusb4500-nvm-host-A16"
   const compiled = spawnSync(
     "cc",
     [
@@ -10,8 +10,8 @@ test("PD startup drains old events under inhibition and verifies standby acquisi
       "-Wall",
       "-Wextra",
       "-Werror",
-      "firmware/stusb4500_startup.c",
-      "firmware/stusb4500_startup_test.c",
+      "firmware/stusb4500_nvm.c",
+      "firmware/stusb4500_nvm_test.c",
       "-o",
       executable,
     ],
@@ -20,5 +20,5 @@ test("PD startup drains old events under inhibition and verifies standby acquisi
   expect(compiled.status, compiled.stderr).toBe(0)
   const result = spawnSync(`./${executable}`, [], { encoding: "utf8" })
   expect(result.status, result.stderr).toBe(0)
-  expect(result.stdout).toContain("STUSB4500 startup host tests passed")
+  expect(result.stdout).toContain("STUSB4500 NVM host tests passed")
 })

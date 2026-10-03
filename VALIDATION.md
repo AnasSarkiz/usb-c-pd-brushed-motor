@@ -1,4 +1,45 @@
-# A15 validation — 2026-10-03
+# A16 validation — 2026-10-03
+
+**Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Adds full NVM readback transport, not a completed provisioning gate or flashable MCU.
+
+| Stage | Status | Current evidence /remaining work |
+|---|---|---|
+| 1. Requirements | in progress | Explicit5/9/12 V selector, approximately2 A target and voltage-aware15/20 V policy retained; final operating/thermal/mechanical envelope open. |
+| 2. Schematic/BOM | blocked |129 parts/55 supplier codes; A11 electrical/import/schema evidence unchanged, A14 conditional CCM screen passes. Approved NVM image, fresh-response/STM32 integration, full regulator/thermal/current sharing, land process and regeneration envelope open. Current RDO maximum-current comparison unnecessarily inhibits source profiles above3 A; correction pending. |
+| 3. Product placement | blocked | No product coordinates/mounting holes. A12 numeric native placement probe remains valid; required prior gates remain open. |
+| 4. Routing | not started | Explicitly disabled; no new routed via-in-pad allowed. |
+| 5. Routed checks | not started | No routed output/shorts/snapshot approval. |
+| 6. Fabrication | not started | No process approval/release/order. |
+| 7. Physical prototype | not started | No measured PD/motor/thermal/decay/reversal/NVM evidence. |
+| 8. Store release | not started | GitHub repository/branch/remote absent; neither remote published. |
+
+## Completed A16 step
+
+firmware/stusb4500_nvm.c/.h implements the manufacturer's customer-sector READ procedure with complete40-byte comparison, no erase/program opcodes and no buffer writes. Inhibition/provenance-invalidated adapter preconditions are mandatory; all faults/partial transfers/deadlines/controller-state/image mismatches latch approval off without implicit retry. A finite busy loop and timer-stall guard prevent unbounded waits. Null expected image is rejected; there is no guessed production image or factory fallback. See docs/STUSB4500-NVM.md.
+
+No approved manufacturer-tool image or physical readback/programming is available. The current JSON is configuration intent only. Exact equality still requires independent image review, actual cold-start NVM/PD behavior and target implementation. A16 source review additionally found the RDO-maximum-current issue for sources above3 A; the existing policy remains unchanged pending a tested correction. All earlier remaining power/assembly/firmware/tooling gates persist.
+
+| Check | Result |
+|---|---|
+| Configured formatting /TypeScript /Bun suite | pass:20 tests/372 expects, zero failures. |
+| NVM C11 Wall/Wextra/Werror harness | pass:20,639 assertions; all40 comparison bytes and all40 failed/late normal transfer positions, partial side effects, each sector-state mismatch, busy/clock faults, timing/wrap/callback/image/precondition rejection. Synthetic test memory only. |
+| Freestanding Cortex-M0+ NVM object | pass; no linked/flashable image. |
+| Prior policy/sequence/RX/request/startup harnesses | pass in renewed configured suite; A16 executable paths preserve prior artifacts. |
+| Manufacturer source review | both official NVM readers/constants retained byte-exact and Git-blob hashes checked; actual0x95/0x96/0x97/0x53 and READ-only operations agree. |
+| Attempted community PDF | failed as evidence retrieval: HTTP command0 returned HTML redirect, not PDF. Raw HTML retained losslessly compressed; no PDF/visual approval claimed. |
+| A11 hardware/import/BOM/schematic and A12/A14 evidence | unchanged and applicable, including unresolved layout/assembly/power/tooling failures. No repeated product build/visual review/placement claim. |
+
+Versions unchanged:tscircuit0.0.2742 /CLI0.1.2237 /core0.0.2056 /props0.0.677 /circuit-json0.0.510; Bun1.3.9 /TS5.9.3 /Biome2.5.14. No imported component, hardware value, dependency, schema, checker or threshold changed. Manufacturer timing/customer-mode lock and actual transport behavior remain physical qualifications.
+
+## Revision and publication
+
+A16 hashes are recorded in evidence/source-manifest-A16.json; source commit pending. Hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. GitHub repository/branch/remote still unknown. Standing authorization exists but missing destination blocks completing publication. Neither GitHub nor tscircuit remote update succeeded. No physical/fabrication approval is implied.
+
+---
+
+A15 and earlier records below are historical. A16 supersedes NVM transport/current software checks only; remaining hardware/assembly/power/tooling/physical limits remain applicable.
+
+# A15 historical validation — 2026-10-03
 
 **Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Adds bounded standby RAM initialization and a capability-acquisition SoftReset transaction. Completed command acknowledgement does not qualify motor power.
 

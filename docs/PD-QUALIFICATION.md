@@ -58,3 +58,6 @@ A13 implements the portable RAM-PDO write/readback and SoftReset transaction; th
 
 
 A15 implements portable standby initialization/capability acquisition under explicit inhibition and provenance invalidation. All documented alerts are configured with readback; ten startup status bytes are retained, one fixed5 V/3 A RAM PDO is selected and checked, and SoftReset is sent once.13,969 host assertions, Cortex-M0+ compilation and19 configured tests/369 expects pass. New responses must still be captured and associated; startup completion does not qualify power. NVM, actual event/peripheral integration and physical evidence remain open. See STUSB4500-STARTUP.md. Hardware/BOM and placement/routing are unchanged.
+
+
+A16 adds bounded complete40-byte NVM readback comparison under inhibition.20,639 simulated assertions and target-object compilation pass; the separately approved manufacturer-tool image and physical programming remain missing. All20 configured tests/372 expects pass. See STUSB4500-NVM.md and pd-manufacturing-profile.json. Current datasheet review also identifies a charger-compatibility defect: RDO maximum follows advertised source current, so the existing exact3 A maximum check unnecessarily inhibits sources above3 A. That policy change remains open in A16. No placement/routing change.

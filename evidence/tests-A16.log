@@ -1,0 +1,43 @@
+$ bun test ./tests
+bun test v1.3.9 (cf6cdbbb)
+
+tests/stusb4500-nvm.test.ts:
+(pass) NVM readback requires every approved byte and never programs memory [482.63ms]
+
+tests/stusb4500-request.test.ts:
+(pass) PD profile transaction rejects partial writes and never repeats an uncertain command [332.96ms]
+
+tests/pd-sequence.test.ts:
+(pass) compiled C power sequence inhibits stale contracts and unsafe voltage changes [407.30ms]
+
+tests/pd-policy.test.ts:
+(pass) compiled C PD policy rejects unsafe contracts and stale qualification [328.48ms]
+
+tests/electrical-calculations.test.ts:
+(pass) PD power qualification > rejects insufficient chargers including native 12 V [0.75ms]
+(pass) PD power qualification > selects 20 V for 12 V peaks and 15 V for 9 V peaks [0.23ms]
+(pass) PD power qualification > worst assumed 12 V continuous input fits minimum eFuse limit [0.34ms]
+(pass) 10 k potentiometer and selected motor rail > regulates all three modes within 0.1 percent nominal [0.04ms]
+(pass) 10 k potentiometer and selected motor rail > PWM has useful monotonically increasing range with finite end times [0.13ms]
+(pass) PD-enable default high survives transistor base loading
+
+tests/stusb4500-startup.test.ts:
+(pass) PD startup drains old events under inhibition and verifies standby acquisition [323.09ms]
+
+tests/motor-validation-calculations.test.ts:
+(pass) A7 voltage-aware PD policy engineering screen > 5/9 V peaks fit 15 V while 12 V peaks require 20 V
+(pass) A7 voltage-aware PD policy engineering screen > a low-power 20 V source fails despite enough nominal output watts
+(pass) A7 voltage-aware PD policy engineering screen > 5 V-only, native 12 V-only and unplugged sources inhibit
+(pass) A7 voltage-aware PD policy engineering screen > 20 V fallback fits a 9 V motor when 15 V is unavailable
+(pass) Motor and converter stress screening > running reversal can double unrestricted startup current [0.51ms]
+(pass) Motor and converter stress screening > output capacitance cannot absorb the example rotor energy [0.02ms]
+(pass) Motor and converter stress screening > screened inductor peaks remain below the 4.5 A minimum buck limit [0.01ms]
+(pass) A7 motor-rail-powered analog clamp > reference stays biased and clamp has hysteresis in all selected modes
+
+tests/stusb4500-rx.test.ts:
+(pass) STUSB4500 capture rejects late, changed and malformed PD messages [407.01ms]
+
+ 20 pass
+ 0 fail
+ 372 expect() calls
+Ran 20 tests across 8 files. [2.31s]

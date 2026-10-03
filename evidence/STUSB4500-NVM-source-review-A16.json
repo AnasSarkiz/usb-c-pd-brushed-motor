@@ -1,0 +1,38 @@
+{
+  "revision": "A16",
+  "date": "2026-10-03",
+  "manufacturerRepository": "https://github.com/usb-c/STUSB4500",
+  "files": [
+    {
+      "url": "https://github.com/usb-c/STUSB4500/blob/master/Firmware/Project/Src/USBPD_CUST_NVM_API.c",
+      "artifact": "evidence/STUSB4500-NVM-reference-A16.c",
+      "gitBlob": "ee94d6e4faebb3809fc7994fa151bdf46249797f",
+      "sha256": "5d8cfcc601b31d9db94a388dbd15fa8dc431b9c86389b2a4a51c7552da0b154b",
+      "byteExact": true
+    },
+    {
+      "url": "https://github.com/usb-c/STUSB4500/blob/master/NVM_Flasher/Src/NVM/USBPD_CUST_NVM_API.c",
+      "artifact": "evidence/STUSB4500-NVM-flasher-reference-A16.c",
+      "gitBlob": "0616d309ff1787cfc9dbc4e6b1da8a7822ea085a",
+      "sha256": "57d883e2840a8f825c42fcae550109cfe326e890b3facac67ac1a953b4edd1ab",
+      "byteExact": true
+    },
+    {
+      "url": "https://github.com/usb-c/STUSB4500/blob/master/NVM_Flasher/Src/NVM/USB_PD_defines.h",
+      "artifact": "evidence/STUSB4500-NVM-defines-A16.h",
+      "gitBlob": "7c0e6f8a42248b3d1cb47f7bdd9fbb7cb991c6d5",
+      "sha256": "717834017a16c852149c34ad4ec131e138c5e8ba58ad622567b2cad1947cdc89",
+      "byteExact": true
+    }
+  ],
+  "downloadFailure": {
+    "url": "https://community.st.com/ysqtg83639/attachments/ysqtg83639/interface-connectivity-ics-forum/6664/1/STUSB4500_NVM.pdf",
+    "httpCommandExit": 0,
+    "content": "HTML redirect rather than PDF",
+    "artifact": "evidence/STUSB4500-NVM-redirect-A16.html.gz",
+    "compressedLosslessly": true,
+    "noPdfReviewClaimed": true
+  },
+  "nvmImageApproved": false,
+  "prototypeTested": false
+}

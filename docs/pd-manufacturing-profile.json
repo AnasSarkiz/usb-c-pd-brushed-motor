@@ -1,0 +1,23 @@
+{
+  "revision": "A16",
+  "status": "configuration intent only; no approved binary image or physical programming",
+  "i2cAddress7BitHex": "0x28",
+  "numberOfActiveSinkPdos": 1,
+  "sinkPdo1": {
+    "type": "fixed",
+    "voltageV": 5,
+    "operatingCurrentA": 3
+  },
+  "POWER_ONLY_ABOVE_5V": 1,
+  "REQ_SRC_CURRENT": 0,
+  "inactiveProfiles": "PDO2/PDO3 must remain inactive at cold start; preserve manufacturer tool-generated reserved/device-specific settings",
+  "ramOperation": "A15 standby acquisition uses the same 5V/3A profile; A13 then activates exactly one policy-qualified 15/20V,3A high profile alongside mandatory PDO1. No native12V requirement.",
+  "requiredEvidence": [
+    "Generate full40-byte image with manufacturer-supported configuration tool for exact device revision",
+    "Independently review tool settings and complete image; no guessed bit encoding",
+    "Program using supported manufacturing workflow and read back all40 bytes",
+    "Archive exact binary, tool/device versions and image hash alongside firmware",
+    "Verify cold start, reset, insufficient/non-PD source and detach with actual analyzer and GPIO measurements"
+  ],
+  "motorOutputPermission": "None from NVM equality or standby command; fresh qualified high-voltage contract and rail sequence still mandatory"
+}
