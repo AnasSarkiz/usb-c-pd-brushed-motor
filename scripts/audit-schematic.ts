@@ -141,7 +141,7 @@ const importManifest = z
   .parse(
     JSON.parse(
       await readFile(
-        "evidence/active-supplier-inspection-manifest-A7.json",
+        "evidence/active-supplier-inspection-manifest-A9.json",
         "utf8",
       ),
     ),
@@ -181,7 +181,7 @@ for (const diagnostic of diagnostics) {
     )
 }
 const report = {
-  revision: "A8",
+  revision: "A9",
   artifactSha256: createHash("sha256")
     .update(JSON.stringify(raw))
     .digest("hex"),
@@ -194,7 +194,7 @@ const report = {
     "Raw diagnostics retained; exact source, message and wiring reviewed in main-warning-review-A7.json",
 }
 await writeFile(
-  "evidence/schematic-connectivity-audit-A8.json",
+  "evidence/schematic-connectivity-audit-A9.json",
   JSON.stringify(report, null, 2) + "\n",
 )
 console.log(

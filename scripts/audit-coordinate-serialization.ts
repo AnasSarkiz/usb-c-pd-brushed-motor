@@ -22,14 +22,14 @@ for (const [index, element] of raw.entries()) {
     failures.push({ index, element, issues: parsed.error.issues })
 }
 const report = {
-  revision: "A8",
+  revision: "A9",
   source: "tests/coordinate-serialization-probe.circuit.tsx",
   inputCoordinates: { pcbX: "2mm", pcbY: "-2mm" },
   status: failures.length ? "blocked: generated schema failure" : "passed",
   failures,
 }
 await writeFile(
-  "evidence/coordinate-serialization-A8.json",
+  "evidence/coordinate-serialization-A9.json",
   JSON.stringify(report, null, 2) + "\n",
 )
 console.log(JSON.stringify(report, null, 2))

@@ -482,24 +482,24 @@
   },
   {
     "ref": "C13",
-    "code": "C77083",
+    "code": "C138687",
     "sheet": "buck",
     "pins": {
       "pin1": "VIN_BUCK",
       "pin2": "GND"
     },
-    "purpose": "Buck input ceramic 1",
+    "purpose": "10 uF / 50 V X7R buck input ceramic; DC-bias and ripple screened",
     "nc": []
   },
   {
     "ref": "C14",
-    "code": "C77083",
+    "code": "C138687",
     "sheet": "buck",
     "pins": {
       "pin1": "VIN_BUCK",
       "pin2": "GND"
     },
-    "purpose": "Buck input ceramic 2",
+    "purpose": "10 uF / 50 V X7R buck input ceramic; DC-bias and ripple screened",
     "nc": []
   },
   {
@@ -1292,7 +1292,7 @@
       "pin4": "VOLTAGE_BIT_12"
     },
     "nc": [],
-    "purpose": "DIP voltage selector: 00=5 V / 10=9 V / 01=12 V / 11=inhibit"
+    "purpose": "DIP voltage selector: both OFF=5 V; right ON=9 V; left ON=12 V; both ON=inhibit"
   },
   {
     "ref": "C30",

@@ -1,0 +1,9 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [509]
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+error: @tscircuit/pcb-trace-linter@github:tscircuit/pcb-trace-linter#4c035f9d40ffb03ba547a08975b5e64b20371123 failed to resolve

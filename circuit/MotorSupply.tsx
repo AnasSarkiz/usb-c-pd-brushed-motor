@@ -13,7 +13,7 @@ import { RVT1E221M0607 } from "../imports/RVT1E221M0607"
 import { GRM31CR61E476ME44L } from "../imports/GRM31CR61E476ME44L"
 import { A_0603WAF2002T5E } from "../imports/A_0603WAF2002T5E"
 import { TPS54360DDAR } from "../imports/TPS54360DDAR"
-import { GRM21BR71H105KA12L } from "../imports/GRM21BR71H105KA12L"
+import { CL32B106KBJNNNE } from "../imports/CL32B106KBJNNNE"
 import { CRCW060310K0FKEA } from "../imports/CRCW060310K0FKEA"
 
 export function MotorSupply() {
@@ -72,7 +72,7 @@ export function MotorSupply() {
         }}
       />
       {/* Buck input ceramic 1 */}
-      <GRM21BR71H105KA12L
+      <CL32B106KBJNNNE
         name="C13"
         schSheetName="buck"
         schX={-8}
@@ -84,7 +84,7 @@ export function MotorSupply() {
         }}
       />
       {/* Buck input ceramic 2 */}
-      <GRM21BR71H105KA12L
+      <CL32B106KBJNNNE
         name="C14"
         schSheetName="buck"
         schX={-6}

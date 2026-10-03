@@ -6,7 +6,7 @@
       "name": "@tsci/AnasSarkiz.usb-c-pd-brushed-motor",
       "devDependencies": {
         "@biomejs/biome": "2.5.14",
-        "@tscircuit/cli": "0.1.2235",
+        "@tscircuit/cli": "0.1.2237",
         "@types/bun": "1.4.2",
         "tscircuit": "0.0.2742",
         "typescript": "5.9.3",
@@ -164,7 +164,7 @@
 
     "@tscircuit/circuit-json-util": ["@tscircuit/circuit-json-util@0.0.118", "", { "dependencies": { "@flatten-js/core": "^1.6.14", "parsel-js": "^1.1.2" }, "peerDependencies": { "circuit-json": "*", "transformation-matrix": "*", "zod": "3" } }, "sha512-MUF8dI8V8enIRfYhq+KDGBMJrMS5wDOvZ7IKSDjS3RuPUNBWFBZnNxQFe9DdvwYFmYXUWp2SPmBWBsGihmrrpw=="],
 
-    "@tscircuit/cli": ["@tscircuit/cli@0.1.2235", "", { "peerDependencies": { "circuit-json": "^0.0.489", "tscircuit": "*" }, "bin": { "tscircuit-cli": "cli/entrypoint.js" } }, "sha512-ZrLx2gBLyd3mN3Rk6Qe+pbP8YzQ5cCyh3W3wA66qYV/NEgRNBjQHMNXcq79ZfWJi8mtmGYaIgCuS23u1bdU0Ag=="],
+    "@tscircuit/cli": ["@tscircuit/cli@0.1.2237", "", { "peerDependencies": { "circuit-json": "^0.0.489", "tscircuit": "*" }, "bin": { "tscircuit-cli": "cli/entrypoint.js" } }, "sha512-iG8VTp8+6hNVbwFJlK+dVoTUUjmLxHbKQAzvJPa3GxI2Ioyuv0lwXamBmdm/eMUGfHVggwr7cMpFK098zIewrw=="],
 
     "@tscircuit/copper-pour-solver": ["@tscircuit/copper-pour-solver@0.0.62", "", { "dependencies": { "@tscircuit/manifold-2d": "^0.0.6" }, "peerDependencies": { "typescript": "^5" } }, "sha512-1bVypQqhpOBeRWAyoewv84PZLGLQMBFEuga3z4AOQ/S3XEvzbg1ewrGC8vc0Mqq27kWuFI80/JVO4qqrv+j+2A=="],
 
@@ -691,6 +691,8 @@
     "prebuild-install/tar-fs": ["tar-fs@2.1.5", "", { "dependencies": { "chownr": "^1.1.1", "mkdirp-classic": "^0.5.2", "pump": "^3.0.0", "tar-stream": "^2.1.4" } }, "sha512-OboTd8mmMhZDNPV+UjQcK9yKAatXu2aJ+r1w4im1Otd4M4fl2hwvdoXUxIYHFTHWK/3y3FarBP70v3vwmGlOxw=="],
 
     "react-reconciler/scheduler": ["scheduler@0.26.0", "", {}, "sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA=="],
+
+    "tscircuit/@tscircuit/cli": ["@tscircuit/cli@0.1.2235", "", { "peerDependencies": { "circuit-json": "^0.0.489", "tscircuit": "*" }, "bin": { "tscircuit-cli": "cli/entrypoint.js" } }, "sha512-ZrLx2gBLyd3mN3Rk6Qe+pbP8YzQ5cCyh3W3wA66qYV/NEgRNBjQHMNXcq79ZfWJi8mtmGYaIgCuS23u1bdU0Ag=="],
 
     "use-mouse-matrix-transform/react": ["react@18.3.1", "", { "dependencies": { "loose-envify": "^1.1.0" } }, "sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ=="],
 

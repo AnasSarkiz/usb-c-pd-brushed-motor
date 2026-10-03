@@ -1,0 +1,53 @@
+{
+  "revision": "A9",
+  "part": "C138687 / CL32B106KBJNNNE",
+  "references": [
+    "C13",
+    "C14"
+  ],
+  "maximumInputVoltageV": 21,
+  "upperBiasPoint": {
+    "x": 21.4265,
+    "y": -50.50233811883481
+  },
+  "nominalInputCapacitanceF": 0.00002,
+  "nominalBiasedCapacitanceF": 0.00000989953237623304,
+  "screenedEffectiveCapacitanceF": 0.000006058513814254621,
+  "requiredEffectiveCapacitanceF": 0.000003,
+  "effectiveCapacitanceMargin": 2.0195046047515404,
+  "maximumInputRippleCurrentA": 1.2115,
+  "worstSharedRipplePerCapacitorA": 0.6663250000000001,
+  "rippleCharacterizationLowPoints": [
+    {
+      "frequencyKhz": "10",
+      "firstPoint": {
+        "x": 0.785242,
+        "y": 5.1000000000000005
+      }
+    },
+    {
+      "frequencyKhz": "100",
+      "firstPoint": {
+        "x": 1.9887,
+        "y": 4.900000000000001
+      }
+    },
+    {
+      "frequencyKhz": "500",
+      "firstPoint": {
+        "x": 2.4925,
+        "y": 4.900000000000001
+      }
+    },
+    {
+      "frequencyKhz": "1000",
+      "firstPoint": {
+        "x": 2.4201,
+        "y": 4.8
+      }
+    }
+  ],
+  "oldInputNominalCapacitanceF": 0.000002,
+  "capacitanceScreenPass": true,
+  "interpretation": "Manufacturer curves are typical, not guaranteed minima. 10% initial tolerance, 15% temperature loss, and an additional 20% aging/design reserve are combined for engineering screening. Ripple sharing assumes 55/45 maximum imbalance; measure with the completed layout. This is not a measured capacitor or converter thermal rating."
+}

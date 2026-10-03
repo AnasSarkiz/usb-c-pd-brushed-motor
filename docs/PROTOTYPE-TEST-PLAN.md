@@ -1,6 +1,6 @@
 # Motor-controller validation matrix
 
-A4 review, 2026-10-02. **No physical tests have been performed.** This plan adds the requested cases; calculations and datasheet review are separately identified. Do not energize the current unapproved schematic. Use the eventual validated revision, programmed PD configuration and declared motor/load envelope.
+A9 review, 2026-10-03. **No physical tests have been performed.** This plan adds the requested cases; calculations and datasheet review are separately identified. Do not energize the current unapproved schematic. Use the eventual validated revision, programmed PD configuration and declared motor/load envelope.
 
 ## Setup and evidence
 
@@ -10,10 +10,10 @@ The provisional screening assumptions are 2 A continuous; the corrected analytic
 
 | Case | Required observation / acceptance basis | Current status |
 |---|---|---|
-| Voltage selection | Verify 5/9/12 V at no-load and full load; check default, missing shunt and invalid multiple selections. An invalid setting must not enable an overvoltage motor rail. Labels and assembly must make the setting unambiguous. | Nominal divider calculations pass; selector and invalid-state protection unimplemented. |
-| Adequate PD | Verify selected rail requests/accepts a qualified contract, matching advertised voltage AND current. Check 15 V and 20 V sources individually and together. Verify controller's actual RDO/current limit, not just VBUS voltage. | A2 policy calculations pass; hardware arbitration unresolved. |
+| Voltage selection | Verify 5/9/12 V at no-load and full load; check default, DIP default and invalid both-ON selections. An invalid setting must not enable an overvoltage motor rail. Labels and assembly must make the setting unambiguous. | DIP and branch-switch hardware wired; portable invalid-state policy tests pass; embedded implementation and physical continuity pending. |
+| Adequate PD | Verify selected rail requests/accepts a qualified contract, matching advertised voltage AND current. Check 15 V and 20 V sources individually and together. Verify controller's actual RDO/current limit, not just VBUS voltage. | A7/A9 qualification hardware and portable policy implemented; complete embedded transport and live negotiation pending. |
 | Insufficient PD / non-PD | Test 5 V-only, 9/12 V-only, insufficient 15/20 V current, failed negotiation, charger foldback and weak/long cable. Motor remains disabled; no sustained undervoltage operation. | Analytical qualification tested; no physical evidence. |
-| USB unplug/replug | Test unplug while OFF and loaded in either direction; short and long replug, hard reset and PD renegotiation. Capture eFuse, buck, nSLEEP, VM and outputs. No stale power-good signal may keep the motor path enabled. Define whether replug requires OFF re-arming; do not imply an interlock exists before it is implemented. | VBUS_EN_SNK/detach behavior reviewed; restart/arming policy incomplete. |
+| USB unplug/replug | Test unplug while OFF and loaded in either direction; short and long replug, hard reset and PD renegotiation. Capture eFuse, buck, nSLEEP, VM and outputs. No stale power-good signal may keep the motor path enabled. Define whether replug requires OFF re-arming; do not imply an interlock exists before it is implemented. | Default-off hardware and stale-generation rejection reviewed; brownout/ADC leakage and complete embedded restart sequence pending. |
 | OFF → FWD | At minimum/mid/max PWM, cold and hot motor, verify commanded polarity, current limit, supply droop and correct indicator. No bridge drive before qualified power and regulated rail. | Datasheet truth table reviewed; untested. |
 | OFF → REV | Same checks for opposite polarity and REV indicator. | Datasheet truth table reviewed; untested. |
 | FWD → REV | First test only after coasting to rest. Then characterize guarded direct transition at bounded speed/load. Measure current overshoot, braking energy, VM rise, protection and switch bounce. Do not approve arbitrary running reversal from an OFF-to-direction test. | First-order example shows up to twice unrestricted startup demand; safe running-reversal envelope unresolved. |

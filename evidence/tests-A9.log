@@ -1,0 +1,757 @@
+$ bun test tests
+bun test v1.3.9 (cf6cdbbb)
+
+tests/pd-policy.test.ts:
+(pass) compiled C PD policy rejects unsafe contracts and stale qualification [744.93ms]
+
+tests/electrical-calculations.test.ts:
+(pass) PD power qualification > rejects insufficient chargers including native 12 V [0.39ms]
+(pass) PD power qualification > selects 20 V for 12 V peaks and 15 V for 9 V peaks
+(pass) PD power qualification > worst assumed 12 V continuous input fits minimum eFuse limit [0.21ms]
+(pass) 10 k potentiometer and selected motor rail > regulates all three modes within 0.1 percent nominal [0.11ms]
+(pass) 10 k potentiometer and selected motor rail > PWM has useful monotonically increasing range with finite end times [0.10ms]
+(pass) PD-enable default high survives transistor base loading
+
+tests/motor-validation-calculations.test.ts:
+(pass) A7 voltage-aware PD policy engineering screen > 5/9 V peaks fit 15 V while 12 V peaks require 20 V [0.31ms]
+(pass) A7 voltage-aware PD policy engineering screen > a low-power 20 V source fails despite enough nominal output watts
+(pass) A7 voltage-aware PD policy engineering screen > 5 V-only, native 12 V-only and unplugged sources inhibit
+(pass) A7 voltage-aware PD policy engineering screen > 20 V fallback fits a 9 V motor when 15 V is unavailable
+(pass) Motor and converter stress screening > running reversal can double unrestricted startup current
+(pass) Motor and converter stress screening > output capacitance cannot absorb the example rotor energy
+(pass) Motor and converter stress screening > screened inductor peaks remain below the 4.5 A minimum buck limit
+(pass) A7 motor-rail-powered analog clamp > reference stays biased and clamp has hysteresis in all selected modes
+
+tooling/core-coordinate-fix/tests/createElementUsage.test.tsx:
+(pass) should allow usage of createElement without explicit React import [52.23ms]
+
+tooling/core-coordinate-fix/tests/getRunningAsyncEffects.test.ts:
+(pass) getRunningAsyncEffects returns currently running async effects [0.17ms]
+
+tooling/core-coordinate-fix/tests/readme.test.tsx:
+(pass) should create soup with various elements [36.71ms]
+
+tooling/core-coordinate-fix/tests/cadmodel-translucent.test.tsx:
+(pass) chip with nested cadmodel should respect showAsTranslucentModel [20.88ms]
+
+tooling/core-coordinate-fix/tests/external_footprint_load_error.test.ts:
+(pass) external_footprint_load_error parses [0.16ms]
+(pass) any_circuit_element includes external_footprint_load_error [7.69ms]
+
+tooling/core-coordinate-fix/tests/drc/custom-drc-check-default-error-type.test.tsx:
+(pass) custom drc check defaults missing error_type to source_component_misconfigured_error [42.52ms]
+
+tooling/core-coordinate-fix/tests/drc/trace-length.test.tsx:
+(pass) renderUntilSettled emits pcb_trace_too_long_error through board routing DRC [416.28ms]
+
+tooling/core-coordinate-fix/tests/drc/drc-check-failure.test.tsx:
+(pass) failed DRC checks are serialized without losing the circuit or successful diagnostics [25.51ms]
+
+tooling/core-coordinate-fix/tests/drc/trace-length-drc-disabled.test.tsx:
+(pass) routingDrcChecksDisabled suppresses length errors without removing manual copper [263.99ms]
+
+tooling/core-coordinate-fix/tests/drc/source-pin-voltage-mismatch-f1c.test.tsx:
+(pass) core reports the F1C100S AVCC 1.8 V versus 2.8 V mismatch through its normal netlist DRC [2265.45ms]
+
+tooling/core-coordinate-fix/tests/drc/courtyard-overlap1.test.tsx:
+(pass) drc courtyard overlap detects overlapping 0402 resistors (vertical) [347.13ms]
+
+tooling/core-coordinate-fix/tests/drc/dedupe-pcb-drc-errors.test.tsx:
+(pass) deduplicates generic PCB trace errors reported by separate DRC checks [3.68ms]
+
+tooling/core-coordinate-fix/tests/drc/trace-via-self-short3.test.tsx:
+(pass) reducing via copper clears the matched-route self-short [258.83ms]
+
+tooling/core-coordinate-fix/tests/drc/trace-via-self-short2.test.tsx:
+(pass) settling a matched route again does not duplicate its self-short diagnostic [248.89ms]
+
+tooling/core-coordinate-fix/tests/drc/pcb-component-overlap.test.tsx:
+(pass) design rule check detects overlapping PCB component pads [703.50ms]
+
+tooling/core-coordinate-fix/tests/drc/bus-length-skew.test.tsx:
+(pass) renderUntilSettled emits pcb_bus_length_skew_error through board routing DRC [341.32ms]
+
+tooling/core-coordinate-fix/tests/drc/pcb-plated-hole-overlap.test.tsx:
+(pass) design rule check detects overlapping plated holes [1155.75ms]
+
+tooling/core-coordinate-fix/tests/drc/custom-drc-check-connectivity-helpers.test.tsx:
+(pass) custom drc check connectivity helpers accept ports, nets, and components [50.09ms]
+
+tooling/core-coordinate-fix/tests/drc/pcb-port-not-connected-error.test.tsx:
+16 |   simulateIncompleteAutorouting?: boolean
+17 | } = {}) => {
+18 |   let currentJobId = 0
+19 |   const jobResults = new Map<string, any>()
+20 | 
+21 |   const server = serve({
+                      ^
+error: Failed to start server. Is port 0 in use?
+ syscall: "listen",
+   errno: 0,
+    code: "EADDRINUSE"
+
+      at getTestAutoroutingServer (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/fixtures/get-test-autorouting-server.tsx:21:18)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/drc/pcb-port-not-connected-error.test.tsx:7:36)
+(fail) check each PCB port is connected [4.97ms]
+
+tooling/core-coordinate-fix/tests/drc/source-pin-voltage-compatible-f1c.test.tsx:
+(pass) core accepts the correct 2.8 V supply for F1C100S AVCC [2062.02ms]
+
+tooling/core-coordinate-fix/tests/drc/pcb-trace-out-of-board1.test.tsx:
+(pass) design rule check detects trace crossing U-shaped board cutout [276.34ms]
+
+tooling/core-coordinate-fix/tests/drc/custom-drc-check-async-multiple.test.tsx:
+(pass) custom drc check supports async functions and multiple diagnostics [25.36ms]
+
+tooling/core-coordinate-fix/tests/drc/pcb-hole-overlap.test.tsx:
+(pass) design rule check detects overlapping holes [404.58ms]
+
+tooling/core-coordinate-fix/tests/drc/per-board-drc.test.tsx:
+(pass) multi-board DRC: panel with two boards, each has component outside board error [925.27ms]
+
+tooling/core-coordinate-fix/tests/drc/courtyard-overlap2.test.tsx:
+(pass) drc courtyard overlap detects overlapping 0603 capacitors (diagonal) [240.00ms]
+
+tooling/core-coordinate-fix/tests/drc/courtyard-overlap3.test.tsx:
+(pass) drc courtyard overlap detects overlapping 0805 inductors (one rotated 90°) [318.76ms]
+
+tooling/core-coordinate-fix/tests/drc/pcb-trace-out-of-board.test.tsx:
+(pass) design rule check detects traces outside board boundary [200.62ms]
+
+tooling/core-coordinate-fix/tests/drc/pcb-component-overlap-different-types.test.tsx:
+(pass) design rule check detects pad overlap between different component types [580.58ms]
+
+tooling/core-coordinate-fix/tests/drc/standalone-trace-length.test.tsx:
+(pass) standalone subcircuit emits the trace length error without a board [235.82ms]
+
+tooling/core-coordinate-fix/tests/drc/pcb-footprint-overlap.test.tsx:
+(pass) drc: pcb-footprint-overlap [301.51ms]
+
+tooling/core-coordinate-fix/tests/drc/trace-via-self-short1.test.tsx:
+(pass) board routing DRC detects a subtle via self-short on a matched trace [288.30ms]
+
+tooling/core-coordinate-fix/tests/drc/custom-drc-check.test.tsx:
+(pass) custom drc check can emit source_component_misconfigured_error [39.64ms]
+
+tooling/core-coordinate-fix/tests/drc/drc-check-sync-failure.test.tsx:
+(pass) a synchronously throwing check group does not prevent later groups from running [15.29ms]
+
+tooling/core-coordinate-fix/tests/drc/courtyard-overlap4.test.tsx:
+(pass) drc courtyard overlap detects overlapping 0603 capacitors (one rotated 45°) [463.81ms]
+
+tooling/core-coordinate-fix/tests/drc/source-pin-voltage-check-disabled.test.tsx:
+(pass) the voltage compatibility check honors netlist DRC disable settings [13.00ms]
+
+tooling/core-coordinate-fix/tests/root-circuit/get-client-origin.test.ts:
+(pass) returns window.location.origin when window is defined [0.22ms]
+(pass) returns self.location.origin when window is undefined but self exists
+
+tooling/core-coordinate-fix/tests/root-circuit/platform-fabricator-engine-disabled.test.tsx:
+(pass) fabricator checks require a preset and respect PCB and DRC disable flags [5.47ms]
+
+tooling/core-coordinate-fix/tests/root-circuit/platform-board-information-silkscreen.test.tsx:
+(pass) board information silkscreen added from platform config [340.21ms]
+
+tooling/core-coordinate-fix/tests/root-circuit/platform-drc-checks-disabled.test.tsx:
+(pass) platform netlistDrcChecksDisabled disables netlist DRC errors [15.51ms]
+(pass) platform placementDrcChecksDisabled disables placement DRC errors [5.47ms]
+(pass) pin specification checks [2.89ms]
+(pass) platform drcChecksDisabled disables all DRC errors [6.34ms]
+
+tooling/core-coordinate-fix/tests/root-circuit/platform-routing-disabled.test.tsx:
+16 |   simulateIncompleteAutorouting?: boolean
+17 | } = {}) => {
+18 |   let currentJobId = 0
+19 |   const jobResults = new Map<string, any>()
+20 | 
+21 |   const server = serve({
+                      ^
+error: Failed to start server. Is port 0 in use?
+ syscall: "listen",
+   errno: 0,
+    code: "EADDRINUSE"
+
+      at getTestAutoroutingServer (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/fixtures/get-test-autorouting-server.tsx:21:18)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/root-circuit/platform-routing-disabled.test.tsx:12:36)
+(fail) platform routingDisabled disables autorouting [1.01ms]
+
+tooling/core-coordinate-fix/tests/root-circuit/platform-fabricator-engine.test.tsx:
+(pass) platform fabricator engine receives final vias and inserts async diagnostics once [6.40ms]
+
+tooling/core-coordinate-fix/tests/root-circuit/source-drc-checks-disabled.test.tsx:
+(pass) source DRC honors platform disable settings before collecting ports and traces [36.95ms]
+
+tooling/core-coordinate-fix/tests/root-circuit/platform-pcb-disabled.test.tsx:
+(pass) pcbDisabled is set from platform config [17.98ms]
+
+tooling/core-coordinate-fix/tests/enclosure/enclosure-cutout-dimension-offsets.test.tsx:
+(pass) a side opening centres on the part's measured body [10.17ms]
+(pass) the offsets are passed through, signed [12.69ms]
+(pass) offsets accept units [4.52ms]
+
+tooling/core-coordinate-fix/tests/enclosure/enclosure-cutout-aperture-depth.test.tsx:
+(pass) the CAD body is reported in the part's own frame [5.35ms]
+(pass) the footprint is reported when a part declares no body size [3.27ms]
+(pass) board rotation is reported so the solver can project the body [4.26ms]
+(pass) an authored depth wins, but the body is still reported [3.17ms]
+
+tooling/core-coordinate-fix/tests/enclosure/enclosure-cutout-horizontal-ignores-cad-rotation-offset.test.tsx:
+(pass) a lid aperture ignores the CAD asset rotation offset [5.87ms]
+
+tooling/core-coordinate-fix/tests/enclosure/enclosure-fdm-box-usb-cutout.test.tsx:
+94 |   for (const cad of enclosureCadComponents) {
+95 |     expect(cad.show_as_translucent_model).toBe(false)
+96 |     expect(cad.show_hidden_edges).toBe(true)
+97 |   }
+98 | 
+99 |   await expect(circuit).toMatchSimple3dSnapshot(import.meta.path, {
+                             ^
+error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C165948.obj?uuid=617b05f9bba7410b96c001093d8189e4&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/enclosure/enclosure-fdm-box-usb-cutout.test.tsx:99:25)
+94 |   for (const cad of enclosureCadComponents) {
+95 |     expect(cad.show_as_translucent_model).toBe(false)
+96 |     expect(cad.show_hidden_edges).toBe(true)
+97 |   }
+98 | 
+99 |   await expect(circuit).toMatchSimple3dSnapshot(import.meta.path, {
+                             ^
+error: Matcher `toMatchSimple3dSnapshot` returned a promise that rejected
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/enclosure/enclosure-fdm-box-usb-cutout.test.tsx:99:25)
+(fail) generates an FDM enclosure and USB-C aperture with the enclosure solver [23.91ms]
+
+tooling/core-coordinate-fix/tests/enclosure/enclosure-cutout-direction-rotates-with-part.test.tsx:
+(pass) cutoutApertureDirection rotates with the part [3.90ms]
+
+tooling/core-coordinate-fix/tests/enclosure/enclosure-cutout-horizontal-bottom-layer-rotation.test.tsx:
+(pass) a bottom-layer floor aperture rolls with its footprint, not CAD Z [4.52ms]
+
+tooling/core-coordinate-fix/tests/enclosure/enclosure-cutout-direction-beats-insertion.test.tsx:
+(pass) cutoutApertureDirection places the opening instead of insertionDirection [7.44ms]
+
+tooling/core-coordinate-fix/tests/enclosure/enclosure-fdm-box-staged-props.test.tsx:
+(pass) enclosure.fdm.box forwards staged sizing props and disableCutouts [3.26ms]
+
+tooling/core-coordinate-fix/tests/enclosure/assembly-device-container.test.tsx:
+(pass) assembly.device wraps the staged board and enclosure [1.46ms]
+
+tooling/core-coordinate-fix/tests/enclosure/enclosure-cutout-vertical-faces.test.tsx:
+(pass) a from_above aperture cuts the face on its own side of the board [4.83ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-subassembly-cycles.test.tsx:
+(pass) screen attachment cycles are still rejected [5.38ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-subassembly-models.test.tsx:
+(pass) standalone assemblies accept CAD formats, null, and nested model-less containers [1.85ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-model.test.tsx:
+(pass) assembly model strings emit modelcdn GLBs and retain assembly placement [8.69ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-screen-dimension-derived-model.test.tsx:
+(pass) assembly.screen derives its default model from dimensions [14.90ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-motor-invalid-mount.test.tsx:
+(pass) motor mounts reject missing, ambiguous, invalid-face and sideways targets [7.48ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-model-screen.test.tsx:
+Failed to load GLB from https://modelcdn.tscircuit.com/jscad_models/flexscreen_w26.7mm_h19.26mm_sitsflat.glb: 24 |         model="flexscreen_w26.7mm_h19.26mm_sitsflat"
+25 |       />
+26 |     </assembly.device>,
+27 |   )
+28 |   await circuit.renderUntilSettled()
+29 |   await expect(circuit).toMatchSimple3dSnapshot(import.meta.path, {
+                             ^
+error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/jscad_models/flexscreen_w26.7mm_h19.26mm_sitsflat.glb",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/assembly-model-screen.test.tsx:29:25)
+
+24 |         model="flexscreen_w26.7mm_h19.26mm_sitsflat"
+25 |       />
+26 |     </assembly.device>,
+27 |   )
+28 |   await circuit.renderUntilSettled()
+29 |   await expect(circuit).toMatchSimple3dSnapshot(import.meta.path, {
+                             ^
+error: 
+
+Snapshot differs by 2.95% (> 1.000%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/__snapshots__/assembly-model-screen-simple-3d.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/assembly-model-screen.test.tsx:29:25)
+(fail) screen modelprinter string renders via modelcdn at its connector [554.63ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-subassembly-invalid-target.test.tsx:
+(pass) screen targets must resolve to exactly one placeable object [3.52ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-model-url-encoding.test.tsx:
+(pass) modelprinter strings remain a single encoded modelcdn path segment [2.50ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-screen-invalid-target.test.tsx:
+(pass) assembly.screen rejects missing, ambiguous, and non-PCB targets [19.75ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-motor-invalid-model.test.tsx:
+(pass) assembly.motor accepts only NEMA modelprinter specs [4.26ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-screen-cad-model.test.tsx:
+(pass) assembly.screen emits a connector-anchored modelprinter FlexScreen [270.19ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-subassembly-scope.test.tsx:
+(pass) screen selectors stay device-scoped inside subassembly containers [12.49ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-motor-pcb-disabled.test.tsx:
+(pass) schematic-only devices keep motor source records without CAD or PCB mounts [36.59ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-motor-custom-model.test.tsx:
+Failed to load GLB from https://modelcdn.tscircuit.com/jscad_models/nema17_bodylength48mm_shaftlength30mm_flatdepth0.5mm_flatlength18mm.glb: error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/jscad_models/nema17_bodylength48mm_shaftlength30mm_flatdepth0.5mm_flatlength18mm.glb",
+ errno: 0,
+  code: "ConnectionRefused"
+
+
+33 |     `https://modelcdn.tscircuit.com/jscad_models/${model}.glb`,
+34 |   )
+35 |   const bounds = await getRenderedMotorBounds(
+36 |     circuit.getCircuitJson().filter((el) => el.type === "cad_component"),
+37 |   )
+38 |   expect(bounds.min[1]).toBeCloseTo(1, 2)
+                             ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 1
+Received: 48
+
+Expected precision: 2
+Expected difference: < 0.005
+Received difference: 47
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/assembly-motor-custom-model.test.tsx:38:25)
+(fail) custom NEMA body length controls backface placement with zero default gap [3.72ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-motor-board-rotation.test.tsx:
+Failed to load GLB from https://modelcdn.tscircuit.com/jscad_models/nema17.glb: error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/jscad_models/nema17.glb",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+
+174 |       antialiasingTolerance: 4,
+175 |     })
+176 |     expect(
+177 |       differentFraction,
+178 |       `Annotated snapshot differs; see ${diffPath}`,
+179 |     ).toBeLessThanOrEqual(0.002)
+            ^
+error: Annotated snapshot differs; see /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/__snapshots__/assembly-motor-board-rotation-annotated.diff.png
+
+Expected: <= 0.002
+Received: 0.022779809324800837
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/fixtures/expect-assembly-snapshot.ts:179:7)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/assembly-motor-board-rotation.test.tsx:41:9)
+(fail) motor orientation follows the mounted board's non-cardinal PCB rotation [224.57ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-screen-placement-transform.test.tsx:
+(pass) assembly.screen follows top and bottom connector transforms [407.59ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-motor-standards.test.tsx:
+Failed to load GLB from https://modelcdn.tscircuit.com/jscad_models/nema8.glb: error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/jscad_models/nema8.glb",
+ errno: 0,
+  code: "ConnectionRefused"
+
+
+24 |       model_origin_position: { x: 0, y: 0, z: 0 },
+25 |     })
+26 |     expect(circuit.db.pcb_component.list()).toHaveLength(0)
+27 |     expect(circuit.db.schematic_component.list()).toHaveLength(0)
+28 |     const bounds = await getRenderedMotorBounds(circuit.getCircuitJson())
+29 |     expect(bounds.max[0]! - bounds.min[0]!).toBeCloseTo(width, 2)
+                                                 ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 20.3
+Received: 2
+
+Expected precision: 2
+Expected difference: < 0.005
+Received difference: 18.3
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/assembly-motor-standards.test.tsx:29:45)
+(fail) NEMA standards use modelprinter geometry without electrical footprints [3.74ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-model-http-url.test.tsx:
+(pass) model accepts HTTP(S) URLs across all assembly elements [5.57ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-screen-selector-scope.test.tsx:
+(pass) assembly.screen selectors are isolated to the nearest assembly.device [338.12ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-model-url-formats.test.tsx:
+(pass) assembly modelUrl supports cadmodel formats and unnamed device models [1.05ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-motor-shaft-directions.test.tsx:
+Failed to load GLB from https://modelcdn.tscircuit.com/jscad_models/nema17.glb: error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/jscad_models/nema17.glb",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+
+27 |         />
+28 |       </assembly.device>,
+29 |     )
+30 |     await circuit.renderUntilSettled()
+31 |     const bounds = await getRenderedMotorBounds(circuit.getCircuitJson())
+32 |     expect(bounds.min[sceneAxis]).toBeCloseTo(sign === 1 ? -38 : -24, 2)
+                                       ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: -24
+Received: -1
+
+Expected precision: 2
+Expected difference: < 0.005
+Received difference: 23
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/assembly-motor-shaft-directions.test.tsx:32:35)
+(fail) all six shaft directions orient the actual motor mesh [1.23ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-subassembly-cad-children.test.tsx:
+(pass) nested subassemblies group CAD children without attachment targets [1.18ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-subassembly-chain.test.tsx:
+(pass) screens can reference nested subassembly containers declared later [238.75ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-motor-multiple-boards.test.tsx:
+(pass) multiple boards cannot ambiguously determine one motor placement [4.01ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-model-url-disabled.test.tsx:
+(pass) device models respect pcbDisabled and model-less devices remain transparent [3.42ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-model-url.test.tsx:
+(pass) modelUrl renders device, subassembly, alias and connector-attached screen models [8.12ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-motor-board-mounting.test.tsx:
+Failed to load GLB from https://modelcdn.tscircuit.com/jscad_models/nema17.glb: error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/jscad_models/nema17.glb",
+ errno: 0,
+  code: "ConnectionRefused"
+
+
+57 |             el.type === "cad_component" &&
+58 |             el.cad_component_id === motor.cad_component_id,
+59 |         ),
+60 |     )
+61 |     const rearZ = direction === "z+" ? bounds.min[1]! : bounds.max[1]!
+62 |     expect(Math.abs(rearZ) - board.thickness / 2).toBeCloseTo(6, 2)
+                                                       ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 6
+Received: 42.99999923706055
+
+Expected precision: 2
+Expected difference: < 0.005
+Received difference: 36.99999923706055
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/assembly-motor-board-mounting.test.tsx:62:51)
+(fail) board backface mounts preserve PCB geometry and leave a 6 mm surface gap [16.54ms]
+
+tooling/core-coordinate-fix/tests/assembly/assembly-motor-mount-scope.test.tsx:
+Failed to load GLB from https://modelcdn.tscircuit.com/jscad_models/nema8.glb: error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/jscad_models/nema8.glb",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+
+Failed to load GLB from https://modelcdn.tscircuit.com/jscad_models/nema23.glb: error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/jscad_models/nema23.glb",
+ errno: 0,
+  code: "ConnectionRefused"
+
+
+174 |       antialiasingTolerance: 4,
+175 |     })
+176 |     expect(
+177 |       differentFraction,
+178 |       `Annotated snapshot differs; see ${diffPath}`,
+179 |     ).toBeLessThanOrEqual(0.002)
+            ^
+error: Annotated snapshot differs; see /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/__snapshots__/assembly-motor-mount-scope-annotated.diff.png
+
+Expected: <= 0.002
+Received: 0.043044492489758765
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/fixtures/expect-assembly-snapshot.ts:179:7)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/assembly/assembly-motor-mount-scope.test.tsx:89:9)
+(fail) identical motor names in sibling devices resolve within each device [559.11ms]
+
+tooling/core-coordinate-fix/tests/sel/sel-common-nets.test.ts:
+(pass) sel.net.VBUS = net.VBUS [1.18ms]
+(pass) sel.net.SWCLK = net.SWCLK
+(pass) sel.net.USB_DM = net.USB_DM
+(pass) sel.net.USB_DP = net.USB_DP
+(pass) sel.net.QSPI_SS = net.QSPI_SS
+(pass) sel.net.XIN = net.XIN
+(pass) sel.net.XOUT = net.XOUT
+(pass) sel.net.RUN = net.RUN
+(pass) sel.net.SWD = net.SWD
+(pass) sel.net.GPIO0 = net.GPIO0
+(pass) sel.net.GPIO28 = net.GPIO28
+
+tooling/core-coordinate-fix/tests/sel/sel3.test.tsx:
+(pass) sel3 - sel with connections prop [0.56ms]
+(pass) sel3 - sel with selectors prop [0.20ms]
+AutoroutingPipelineSolver9_PreloadedTraceGraph error: Error: Unexpected numItems value: 0.
+Async effect error in PcbTraceRender "autorouting":
+AutorouterError: Unexpected numItems value: 0. (capacity-autorouter@0.0.941)
+    at runCycleAndQueueNextCycle (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/utils/autorouting/CapacityMeshAutorouter.ts:326:19)
+    at processTicksAndRejections (native:7:39)
+(pass) sel3 in real circuit [72.05ms]
+
+tooling/core-coordinate-fix/tests/sel/sel2.test.tsx:
+(pass) sel2 - sel.U1(MyChip).CUSTOM_DATA_1 = .U1 > .CUSTOM_DATA_1 [0.05ms]
+(pass) sel2 - selU2.CUSTOM_DATA_1 = .U2 > .CUSTOM_DATA_1
+(pass) sel2 - selU2.CUSTOM_DATA_1 = .U2 > .CUSTOM_DATA_1 [0.17ms]
+(pass) sel2 - ChipProps<"custompin1" | "custompin2">
+(pass) sel2 - sel.J1(MyChip).CUSTOM_DATA_1 = .J1 > .CUSTOM_DATA_1
+(pass) sel2 - selJ2.CUSTOM_DATA_1 = .J2 > .CUSTOM_DATA_1
+(pass) sel2 - sel.J1<"custompin1">().custompin1 = .J1 > .custompin1
+(pass) sel2 - dynamic refdes sel<"custompin">("SJ1")
+
+tooling/core-coordinate-fix/tests/sel/sel1.test.ts:
+(pass) sel1 - sel.R1.pos = .R1 > .pos [0.06ms]
+(pass) sel1 - sel.U1.VCC = .U1 > .VCC [0.02ms]
+(pass) sel1 - invalid refdes [0.01ms]
+(pass) sel1 - invalid net [0.03ms]
+(pass) sel1 - invalid pin number [0.04ms]
+(pass) sel1 - sel.net.VCC = net.VCC [0.02ms]
+(pass) sel1 - sel.net.VIN = net.VIN [0.06ms]
+(pass) sel1 - sel.net.EN = net.EN [0.02ms]
+(pass) sel1 - sel.net.SHLD = net.SHLD [0.03ms]
+(pass) sel1 - sel.U1.SHLD = .U1 > .SHLD [0.02ms]
+(pass) sel1 - sel.CN1.pin1 = .CN1 > .pin1
+(pass) sel1 - sel.CN20.pin10 = .CN20 > .pin10 [0.05ms]
+(pass) sel1 - sel.F1.pin2 = .F1 > .pin2 [0.02ms]
+(pass) sel1 - sel.SW1.pin3 = .SW1 > .pin3 [0.02ms]
+(pass) sel1 - sel.SW1.pin4 = .SW1 > .pin4 [0.02ms]
+(pass) sel1 - invalid CN pin number [0.02ms]
+(pass) sel1 - sel.subcircuit.S1.U1.pin1 = subcircuit.S1 > .pin1 [0.07ms]
+(pass) sel1 - sel.net.INT = net.INT [0.02ms]
+(pass) sel1 - sel.U1.INT = .U1 > .INT
+(pass) sel1 - sel.net.N_INT = net.N_INT [0.03ms]
+(pass) sel1 - sel.U1.N_INT = .U1 > .N_INT [0.03ms]
+(pass) sel1 - sel.net.N_CS = net.N_CS [0.01ms]
+(pass) sel1 - sel.U1.N_CS = .U1 > .N_CS [0.01ms]
+(pass) sel1 - sel.TP1.pin1 = .TP1 > .pin1 [0.02ms]
+
+tooling/core-coordinate-fix/tests/sel/sel-net-generic.test.ts:
+(pass) sel-net-generic - custom net names via generics [0.07ms]
+
+tooling/core-coordinate-fix/tests/sel/net-name-plus.test.ts:
+(pass) preprocessSelector - plus sign in net name throws [0.16ms]
+
+tooling/core-coordinate-fix/tests/sel/net-name-minus.test.ts:
+(pass) preprocessSelector - minus sign in net name throws [0.06ms]
+
+tooling/core-coordinate-fix/tests/sel/net-name-start-number.test.ts:
+(pass) preprocessSelector - net name starting with number throws [0.05ms]
+
+tooling/core-coordinate-fix/tests/sel/sel-mosfet-gate-source-drain-access.test.tsx:
+(pass) sel supports MOSFET pin names (gate, source, drain) [1354.58ms]
+
+tooling/core-coordinate-fix/tests/sel/net-name-period.test.ts:
+(pass) preprocessSelector - dot after net prefix throws
+
+tooling/core-coordinate-fix/tests/pinout/pinout-pico.test.tsx:
+(pass) pinout basic [372.10ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map-cadmodel.test.tsx:
+(pass) footprint library map cadModel [7.89ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-circuitjson-schematic-symbol.test.tsx:
+(pass) footprint circuitjson rehydrates schematic symbol [483.88ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-local-kicad-port-attachment.test.tsx:
+(pass) local KiCad footprint attaches existing resistor ports before autorouting [250.79ms]
+
+tooling/core-coordinate-fix/tests/footprint/blob-url-footprint-with-extension.test.tsx:
+(pass) blob footprint with an extension uses the configured file parser [210.26ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map2.test.tsx:
+1 | import { serve } from "bun"
+2 | import { afterEach } from "bun:test"
+3 | 
+4 | export const getTestFootprintServer = (json: any) => {
+5 |   const server = serve({
+                     ^
+error: Failed to start server. Is port 0 in use?
+ syscall: "listen",
+   errno: 0,
+    code: "EADDRINUSE"
+
+      at getTestFootprintServer (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/fixtures/get-test-footprint-server.tsx:5:18)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/footprint/footprint-library-map2.test.tsx:7:39)
+(fail) footprint library map 2 [0.57ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map3.test.tsx:
+1 | import { serve } from "bun"
+2 | import { afterEach } from "bun:test"
+3 | 
+4 | export const getTestFootprintServer = (json: any) => {
+5 |   const server = serve({
+                     ^
+error: Failed to start server. Is port 0 in use?
+ syscall: "listen",
+   errno: 0,
+    code: "EADDRINUSE"
+
+      at getTestFootprintServer (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/fixtures/get-test-footprint-server.tsx:5:18)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/footprint/footprint-library-map3.test.tsx:7:39)
+(fail) footprint library map 3 [0.34ms]
+
+tooling/core-coordinate-fix/tests/footprint/repro1-footprint-with-relative-path-failed-fetch.test.tsx:
+(pass) should properly resolve ./ relative paths to full URLs with projectBaseUrl [3.27ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-missing-library-prefix-invalid-prop-error.test.tsx:
+(pass) library-style footprint without prefix reports source_invalid_component_property_error [184.24ms]
+
+tooling/core-coordinate-fix/tests/footprint/async-footprint-library-map-render-complete-race.test.tsx:
+(pass) async footprint library map can complete after last render pass [10.93ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map-empty-result-error.test.tsx:
+Async effect error in PcbFootprintStringRender "load-lib-footprint":
+Error: Footprint resolver returned no circuit elements for "custom:R_0402".
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/NormalComponent/NormalComponent_doInitialPcbFootprintStringRender.ts:252:21)
+    at processTicksAndRejections (native:7:39)
+(pass) empty footprint library resolver result reports a load error [170.03ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map4.test.tsx:
+1 | import { serve } from "bun"
+2 | import { afterEach } from "bun:test"
+3 | 
+4 | export const getTestFootprintServer = (json: any) => {
+5 |   const server = serve({
+                     ^
+error: Failed to start server. Is port 0 in use?
+ syscall: "listen",
+   errno: 0,
+    code: "EADDRINUSE"
+
+      at getTestFootprintServer (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/fixtures/get-test-footprint-server.tsx:5:18)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/footprint/footprint-library-map4.test.tsx:7:39)
+(fail) footprint library map 4 - pcbPack [3.58ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-kicad-url-in-group.test.tsx:
+(pass) chip with kicad url footprint renders inside group [4.89ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-resolver-url.test.tsx:
+(pass) prefers platform resolver for static footprint imports [4.07ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-circuitjson-coppertext.test.tsx:
+(pass) footprint circuitjson rehydrates pcb_copper_text [171.77ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map1.test.tsx:
+1 | import { serve } from "bun"
+2 | import { afterEach } from "bun:test"
+3 | 
+4 | export const getTestFootprintServer = (json: any) => {
+5 |   const server = serve({
+                     ^
+error: Failed to start server. Is port 0 in use?
+ syscall: "listen",
+   errno: 0,
+    code: "EADDRINUSE"
+
+      at getTestFootprintServer (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/fixtures/get-test-footprint-server.tsx:5:18)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/footprint/footprint-library-map1.test.tsx:7:39)
+(fail) footprint library map 1 [3.80ms]
+
+tooling/core-coordinate-fix/tests/footprint/render-until-settled-skips-idle-polls.test.tsx:
+(pass) renderUntilSettled waits for a footprint without repeating idle render cycles [508.15ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-dot-relative-path.test.tsx:
+(pass) loads and renders footprint from path starting with ./ (relative path) [0.89ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-repeated-pad-numbers.test.tsx:
+(pass) library footprint with separated pads that repeat pin numbers [353.98ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-missing-jlcpcb-prefix-invalid-prop-error.test.tsx:
+(pass) jlcpcb part number without prefix reports source_invalid_component_property_error [3.57ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map-missing-resolver-error.test.tsx:
+Async effect error in PcbFootprintStringRender "load-lib-footprint":
+Error: No footprint resolver is configured for library "missing".
+    at loadFootprintLibraryResultOrThrow (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/NormalComponent/NormalComponent_doInitialPcbFootprintStringRender.ts:81:15)
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/NormalComponent/NormalComponent_doInitialPcbFootprintStringRender.ts:240:30)
+    at _queueAsyncEffect (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/Renderable.ts:315:16)
+    at NormalComponent_doInitialPcbFootprintStringRender (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/NormalComponent/NormalComponent_doInitialPcbFootprintStringRender.ts:238:5)
+    at doInitialPcbFootprintStringRender (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/NormalComponent/NormalComponent.ts:1454:5)
+    at runRenderPhase (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/Renderable.ts:524:34)
+    at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/Renderable.ts:545:13)
+    at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/normal-components/Board/Board.ts:689:11)
+    at runRenderCycle (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/Renderable.ts:460:12)
+    at render (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/IsolatedCircuit.ts:211:16)
+(pass) missing footprint library resolver reports a load error [180.03ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map-error.test.tsx:
+Async effect error in PcbFootprintStringRender "load-lib-footprint":
+Error: footprint not found
+    at kicad (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/footprint/footprint-library-map-error.test.tsx:9:21)
+    at loadFootprintLibraryResultOrThrow (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/NormalComponent/NormalComponent_doInitialPcbFootprintStringRender.ts:86:10)
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/NormalComponent/NormalComponent_doInitialPcbFootprintStringRender.ts:240:30)
+    at _queueAsyncEffect (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/Renderable.ts:315:16)
+    at NormalComponent_doInitialPcbFootprintStringRender (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/NormalComponent/NormalComponent_doInitialPcbFootprintStringRender.ts:238:5)
+    at doInitialPcbFootprintStringRender (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/NormalComponent/NormalComponent.ts:1454:5)
+    at runRenderPhase (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/Renderable.ts:524:34)
+    at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/Renderable.ts:545:13)
+    at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/normal-components/Board/Board.ts:689:11)
+    at runRenderCycle (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/base-components/Renderable.ts:460:12)
+(pass) footprint library map error attaches to db [3.02ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map-jlcpcb-cadmodel-fallback.test.tsx:
+(pass) jlcpcb footprint library map falls back to a bounding-box cad component when no cad model is available [4.83ms]
+
+tooling/core-coordinate-fix/tests/footprint/blob-url-footprint-without-extension.test.tsx:
+(pass) blob footprint without an extension is not treated as a library reference [169.09ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-parser-support.test.tsx:
+(pass) should correctly load and render a KiCad footprint from a given URL [238.21ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-circuitjson.test.tsx:
+(pass) footprint library map circuitjson [214.22ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-relative-url.test.tsx:
+(pass) loads and renders footprint from relative URL accurately [244.58ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map-supplier-parts-engine-fallback.test.tsx:
+(pass) supplier footprint falls back to the parts engine without a library resolver [220.67ms]
+
+tooling/core-coordinate-fix/tests/footprint/footprint-library-map-jlcpcb-cadmodel.test.tsx:
+(pass) jlcpcb footprint library map extracts cadModel from fetched circuit json [16.39ms]
+
+tooling/core-coordinate-fix/tests/features/autoroutingphase-event-error-index.test.tsx:
+Async effect error in PcbTraceRender "autorouting":
+Error: test routing failure
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/features/autoroutingphase-event-error-index.test.tsx:17:21)
+    at start (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/tests/fixtures/createBasicAutorouter.ts:42:32)
+    at _runLocalAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-coordinate-fix/lib/components/primitive-components/Group/Group.ts:1823:28)
+    at processTicksAndRejections (native:7:39)
+(pass) failed routing preserves declared phase identity and execution order [14.81ms]
+
+tooling/core-coordinate-fix/tests/features/autorouter-bus-lanes-pair-skew.test.tsx:
+(pass) bus_lanes honors differential pair maxLengthSkew through SRJ lengthTolerance [488.75ms]
+
+tooling/core-coordinate-fix/tests/features/autorouter-allow-via-in-pad.test.tsx:
+(pass) board autorouter passes allowViaInPad to SimpleRouteJson [40.02ms]
+
+tooling/core-coordinate-fix/tests/features/ten-layer-forced-autorouting.test.tsx:
+(pass) pipeline 7 routes a TSX layer maze that requires exactly ten layers [485.11ms]
+
+tooling/core-coordinate-fix/tests/features/autorouter-bus-lanes-am3352.test.tsx:
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `footprint`. It was passed a child from AM3352. See https://react.dev/link/warning-keys for more information.

@@ -7,3 +7,10 @@ dist/
 
 .tscircuit/
 .publication/
+
+# Independent upstream source checkout; preserve reviewed patch in evidence.
+tooling/core-coordinate-fix/
+
+.yalc-store/
+tooling/**/.yalc/
+tooling/**/yalc.lock

@@ -15,7 +15,7 @@ const manifest = z
   .parse(
     JSON.parse(
       await readFile(
-        "evidence/active-supplier-inspection-manifest-A7.json",
+        "evidence/active-supplier-inspection-manifest-A9.json",
         "utf8",
       ),
     ),
@@ -136,14 +136,14 @@ for (const part of manifest) {
   issues.push(...localIssues.map((i) => `${part.code} ${part.ref}: ${i}`))
 }
 const report = {
-  revision: "A8",
+  revision: "A9",
   supplierCount: parts.length,
   totalPcbTraces,
   issues,
   parts,
 }
 await writeFile(
-  "evidence/active-import-audit-A8.json",
+  "evidence/active-import-audit-A9.json",
   JSON.stringify(report, null, 2) + "\n",
 )
 console.log(

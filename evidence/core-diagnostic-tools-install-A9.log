@@ -1,0 +1,27 @@
+bun add v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [20]
+warn: incorrect peer dependency "react-dom@18.3.1"
+
+warn: incorrect peer dependency "react@19.2.0"
+
+warn: incorrect peer dependency "circuit-json@0.0.512"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+Saved lockfile
+
+installed @resvg/resvg-js@2.6.2
+installed @tscircuit/log-soup@1.0.2
+installed bun-match-svg@0.0.12 with binaries:
+ - bun-match-svg
+installed circuit-json-to-gltf@0.0.141
+installed @tscircuit/ngspice-spice-engine@0.0.20
+installed tsup@8.5.0 with binaries:
+ - tsup
+ - tsup-node
+installed @biomejs/biome@1.8.3 with binaries:
+ - biome
+
+140 packages installed [3.86s]
+
+Blocked 1 postinstall. Run `bun pm untrusted` for details.

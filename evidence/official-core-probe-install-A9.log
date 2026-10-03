@@ -1,0 +1,9 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [128]
+warn: incorrect peer dependency "react@18.3.1"
+Saved lockfile
+
++ @tscircuit/core@0.0.2069
+
+114 packages installed [5.51s]

@@ -1,0 +1,22 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C23892.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C23892/circuit.json
+All pins on U8 are underspecified (no pinAttributes set)
+U8 has no pin with requires_power=true
+U8 has no pin with requires_ground=true
+U8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <chip#0(.probe>.U8) /> (jlcpcb:C23892): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[tests/supplier-audit/C23892] Generating PCB SVG...
+[tests/supplier-audit/C23892] Written pcb.svg
+[tests/supplier-audit/C23892] Generating schematic SVG...
+[tests/supplier-audit/C23892] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

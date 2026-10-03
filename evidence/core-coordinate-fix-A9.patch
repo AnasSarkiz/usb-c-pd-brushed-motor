@@ -1,0 +1,306 @@
+diff --git a/lib/components/base-components/NormalComponent/NormalComponent.ts b/lib/components/base-components/NormalComponent/NormalComponent.ts
+index 06ef9b3..b5e91df 100644
+--- a/lib/components/base-components/NormalComponent/NormalComponent.ts
++++ b/lib/components/base-components/NormalComponent/NormalComponent.ts
+@@ -1,3 +1,4 @@
++import { formatPcbDisplayOffset } from "lib/utils/format-pcb-display-offset"
+ import { resolveManufacturerPartNumber } from "@tscircuit/props"
+ import { getFoldedCadComponentPlacement } from "lib/utils/cad/get-folded-cad-component-placement"
+ import { fp } from "@tscircuit/footprinter"
+@@ -402,10 +403,10 @@ export class NormalComponent<
+               aliases: [
+                 ...(hasPropLabel
+                   ? []
+-                  : (opts.additionalAliases?.[`pin${pinNumber}`] ?? [])),
++                  : opts.additionalAliases?.[`pin${pinNumber}`] ?? []),
+                 ...otherLabels,
+                 ...(hasPropLabel
+-                  ? (opts.additionalAliases?.[`pin${pinNumber}`] ?? [])
++                  ? opts.additionalAliases?.[`pin${pinNumber}`] ?? []
+                   : []),
+               ],
+             },
+@@ -2002,7 +2003,7 @@ export class NormalComponent<
+       (decomposedTransform.rotation.angle * 180) / Math.PI
+     const totalRotation =
+       pcbComponent?.position_mode === "packed"
+-        ? (pcbComponent.rotation ?? preLayoutRotation)
++        ? pcbComponent.rotation ?? preLayoutRotation
+         : preLayoutRotation
+     const isBottomLayer = computedLayer === "bottom"
+ 
+@@ -2354,19 +2355,19 @@ export class NormalComponent<
+     const pcbLeftEdgeX =
+       typeof rawProps.pcbLeftEdgeX === "string"
+         ? rawProps.pcbLeftEdgeX
+-        : (props.pcbLeftEdgeX ?? rawProps.pcbLeftEdgeX)
++        : props.pcbLeftEdgeX ?? rawProps.pcbLeftEdgeX
+     const pcbRightEdgeX =
+       typeof rawProps.pcbRightEdgeX === "string"
+         ? rawProps.pcbRightEdgeX
+-        : (props.pcbRightEdgeX ?? rawProps.pcbRightEdgeX)
++        : props.pcbRightEdgeX ?? rawProps.pcbRightEdgeX
+     const pcbTopEdgeY =
+       typeof rawProps.pcbTopEdgeY === "string"
+         ? rawProps.pcbTopEdgeY
+-        : (props.pcbTopEdgeY ?? rawProps.pcbTopEdgeY)
++        : props.pcbTopEdgeY ?? rawProps.pcbTopEdgeY
+     const pcbBottomEdgeY =
+       typeof rawProps.pcbBottomEdgeY === "string"
+         ? rawProps.pcbBottomEdgeY
+-        : (props.pcbBottomEdgeY ?? rawProps.pcbBottomEdgeY)
++        : props.pcbBottomEdgeY ?? rawProps.pcbBottomEdgeY
+ 
+     const hasExplicitPcbPosition =
+       props.pcbX !== undefined ||
+@@ -2450,7 +2451,7 @@ export class NormalComponent<
+ 
+     const positionedRelativeToBoardId = positionedRelativeToGroupId
+       ? undefined
+-      : (this._getBoard()?.pcb_board_id ?? undefined)
++      : this._getBoard()?.pcb_board_id ?? undefined
+ 
+     const resolvedPcbX =
+       this._resolvedPcbCalcOffsetX ??
+@@ -2488,8 +2489,8 @@ export class NormalComponent<
+       position_mode: "relative_to_group_anchor",
+       positioned_relative_to_pcb_group_id: positionedRelativeToGroupId,
+       positioned_relative_to_pcb_board_id: positionedRelativeToBoardId,
+-      display_offset_x: resolvedPcbX as any,
+-      display_offset_y: resolvedPcbY as any,
++      display_offset_x: formatPcbDisplayOffset(resolvedPcbX),
++      display_offset_y: formatPcbDisplayOffset(resolvedPcbY),
+     })
+   }
+ 
+diff --git a/lib/components/primitive-components/Group/Group.ts b/lib/components/primitive-components/Group/Group.ts
+index a42a557..6e3c749 100644
+--- a/lib/components/primitive-components/Group/Group.ts
++++ b/lib/components/primitive-components/Group/Group.ts
+@@ -1,3 +1,4 @@
++import { formatPcbDisplayOffset } from "lib/utils/format-pcb-display-offset"
+ import { getAutoroutingPhasePcbTracePaths } from "./get-autorouting-phase-pcb-trace-paths"
+ import {
+   type SimpleRouteJson as AutorouterSimpleRouteJson,
+@@ -545,7 +546,7 @@ export class Group<Props extends z.ZodType<any, any, any> = typeof groupProps>
+             trace_clearance: props.autorouter.traceClearance,
+           }
+         : undefined,
+-      anchor_alignment: props.pcbAnchorAlignment ?? null,
++      anchor_alignment: props.pcbAnchorAlignment,
+     })
+     this.pcb_group_id = pcb_group.pcb_group_id
+ 
+@@ -589,10 +590,10 @@ export class Group<Props extends z.ZodType<any, any, any> = typeof groupProps>
+       // Preserve explicit positioning when pcbX/pcbY are set
+       // Otherwise use calculated center from outline
+       const center = hasExplicitPositioning
+-        ? (db.pcb_group.get(this.pcb_group_id)?.center ?? {
++        ? db.pcb_group.get(this.pcb_group_id)?.center ?? {
+             x: centerX,
+             y: centerY,
+-          })
++          }
+         : { x: centerX, y: centerY }
+ 
+       // For groups with outline, don't set width/height
+@@ -2657,15 +2658,15 @@ export class Group<Props extends z.ZodType<any, any, any> = typeof groupProps>
+           : undefined
+ 
+         const positionedRelativeToBoardId = !pcbParentGroupId
+-          ? (this._getBoard()?.pcb_board_id ?? undefined)
++          ? this._getBoard()?.pcb_board_id ?? undefined
+           : undefined
+ 
+         db.pcb_group.update(this.pcb_group_id, {
+           position_mode: "relative_to_group_anchor",
+           positioned_relative_to_pcb_group_id: pcbParentGroupId,
+           positioned_relative_to_pcb_board_id: positionedRelativeToBoardId,
+-          display_offset_x: props.pcbX,
+-          display_offset_y: props.pcbY,
++          display_offset_x: formatPcbDisplayOffset(props.pcbX),
++          display_offset_y: formatPcbDisplayOffset(props.pcbY),
+         })
+       }
+     }
+diff --git a/lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts b/lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts
+index 15583c7..8927ad0 100644
+--- a/lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts
++++ b/lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts
+@@ -1,3 +1,4 @@
++import { formatPcbDisplayOffset } from "lib/utils/format-pcb-display-offset"
+ import type { Group } from "./Group"
+ import { getBoundsOfPcbComponents } from "lib/utils/get-bounds-of-pcb-components"
+ import { getBoundsFromPoints } from "@tscircuit/math-utils"
+@@ -119,7 +120,7 @@ export function Group_doInitialPcbComponentAnchorAlignment(
+   db.pcb_group.update(group.pcb_group_id, {
+     anchor_position: targetPosition,
+     anchor_alignment: pcbPositionAnchor,
+-    display_offset_x: pcbX,
+-    display_offset_y: pcbY,
++    display_offset_x: formatPcbDisplayOffset(pcbX),
++    display_offset_y: formatPcbDisplayOffset(pcbY),
+   })
+ }
+diff --git a/lib/utils/format-pcb-display-offset.ts b/lib/utils/format-pcb-display-offset.ts
+new file mode 100644
+index 0000000..1158858
+--- /dev/null
++++ b/lib/utils/format-pcb-display-offset.ts
+@@ -0,0 +1,7 @@
++// PCB offsets are displacements in their parent anchor frame: +X right,
++// +Y top. Resolved numeric distances are millimeters; expressions stay text.
++export function formatPcbDisplayOffset(
++  offset: number | string | undefined,
++): string | undefined {
++  return typeof offset === "number" ? `${offset}mm` : offset
++}
+diff --git a/tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx b/tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx
+index 0f9b335..54a6126 100644
+--- a/tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx
++++ b/tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx
+@@ -84,22 +84,22 @@ test("pcb edge positioning props support calc expressions and are visible in pcb
+   expect(top).toBeDefined()
+   expect(bottom).toBeDefined()
+ 
+-  expect(left?.display_offset_x).toBeCloseTo(
++  expect(Number.parseFloat(left?.display_offset_x ?? "")).toBeCloseTo(
+     boardMinX + 2 + (left?.width ?? 0) / 2,
+   )
+-  expect(right?.display_offset_x).toBeCloseTo(
++  expect(Number.parseFloat(right?.display_offset_x ?? "")).toBeCloseTo(
+     boardMaxX - 2 - (right?.width ?? 0) / 2,
+   )
+-  expect(leftPlus2?.display_offset_x).toBeCloseTo(
+-    Number(left?.display_offset_x ?? 0) +
++  expect(Number.parseFloat(leftPlus2?.display_offset_x ?? "")).toBeCloseTo(
++    Number.parseFloat(left?.display_offset_x ?? "") +
+       (left?.width ?? 0) / 2 +
+       2 +
+       (leftPlus2?.width ?? 0) / 2,
+   )
+-  expect(top?.display_offset_y).toBeCloseTo(
++  expect(Number.parseFloat(top?.display_offset_y ?? "")).toBeCloseTo(
+     boardMaxY - 2 - (top?.height ?? 0) / 2,
+   )
+-  expect(bottom?.display_offset_y).toBeCloseTo(
++  expect(Number.parseFloat(bottom?.display_offset_y ?? "")).toBeCloseTo(
+     boardMinY + 2 + (bottom?.height ?? 0) / 2,
+   )
+ 
+diff --git a/tests/components/pcb/pcb-position-display-offset-schema.test.tsx b/tests/components/pcb/pcb-position-display-offset-schema.test.tsx
+new file mode 100644
+index 0000000..fa81eac
+--- /dev/null
++++ b/tests/components/pcb/pcb-position-display-offset-schema.test.tsx
+@@ -0,0 +1,110 @@
++import { expect, test } from "bun:test"
++import { any_circuit_element } from "circuit-json"
++import { getTestFixture } from "tests/fixtures/get-test-fixture"
++
++test("explicit PCB component and group offsets conform to Circuit JSON without changing placement", () => {
++  const { circuit } = getTestFixture()
++  circuit.add(
++    <board width={40} height={30} routingDisabled schematicDisabled>
++      <resistor
++        name="R_NUMBER"
++        resistance="1k"
++        footprint="0402"
++        pcbX={2}
++        pcbY={-2}
++      />
++      <resistor
++        name="R_UNIT"
++        resistance="1k"
++        footprint="0402"
++        pcbX="0.2cm"
++        pcbY="3mm"
++      />
++      <resistor name="R_X_ONLY" resistance="1k" footprint="0402" pcbX={5} />
++      <resistor name="R_Y_ONLY" resistance="1k" footprint="0402" pcbY={6} />
++      <resistor
++        name="R_CALC"
++        resistance="1k"
++        footprint="0402"
++        pcbX="calc(R_NUMBER.x + 6mm)"
++        pcbY="-2mm"
++      />
++      <resistor
++        name="R_EDGE"
++        resistance="1k"
++        footprint="0402"
++        pcbLeftEdgeX="calc(board.minX + 2mm)"
++        pcbY={-8}
++      />
++      <group name="G_NUMBER" subcircuit pcbX={10} pcbY={10}>
++        <resistor
++          name="R_CHILD"
++          resistance="1k"
++          footprint="0402"
++          pcbX={1}
++          pcbY={1}
++        />
++      </group>
++      <group
++        name="G_ANCHOR"
++        subcircuit
++        pcbX={-10}
++        pcbY={10}
++        pcbPositionAnchor="center"
++      >
++        <resistor name="R_ANCHOR" resistance="1k" footprint="0402" />
++      </group>
++    </board>,
++  )
++  circuit.render()
++  const output = circuit.getCircuitJson()
++  // Parse the emitted document, without rewriting metadata or relaxing its schema.
++  for (const element of output)
++    expect(
++      any_circuit_element.safeParse(element).success,
++      JSON.stringify(element),
++    ).toBe(true)
++  const sourceByName = new Map(
++    circuit.db.source_component
++      .list()
++      .map((source) => [source.name, source.source_component_id]),
++  )
++  const components = new Map(
++    circuit.db.pcb_component
++      .list()
++      .map((component) => [component.source_component_id, component]),
++  )
++  const component = (name: string) => {
++    const sourceId = sourceByName.get(name)
++    const placed = sourceId ? components.get(sourceId) : undefined
++    if (!placed) throw new Error(`Missing PCB component ${name}`)
++    return placed
++  }
++  expect(component("R_NUMBER").center).toEqual({ x: 2, y: -2 })
++  expect(component("R_NUMBER").display_offset_x).toBe("2mm")
++  expect(component("R_NUMBER").display_offset_y).toBe("-2mm")
++  expect(component("R_UNIT").center).toEqual({ x: 2, y: 3 })
++  expect(component("R_UNIT").display_offset_x).toBe("2mm")
++  expect(component("R_X_ONLY").display_offset_x).toBe("5mm")
++  expect(component("R_X_ONLY").display_offset_y).toBeUndefined()
++  expect(component("R_Y_ONLY").display_offset_x).toBeUndefined()
++  expect(component("R_Y_ONLY").display_offset_y).toBe("6mm")
++  expect(component("R_CALC").center.x).toBeCloseTo(8)
++  expect(component("R_CALC").display_offset_x).toBe("8mm")
++  const edge = component("R_EDGE")
++  expect(edge.center.x - edge.width / 2).toBeCloseTo(-18)
++  expect(Number.parseFloat(edge.display_offset_x ?? "")).toBeCloseTo(
++    edge.center.x,
++  )
++  expect(component("R_CHILD").center).toEqual({ x: 11, y: 11 })
++  for (const group of circuit.db.pcb_group.list()) {
++    if (group.name === "G_NUMBER") {
++      expect(group.display_offset_x).toBe("10mm")
++      expect(group.display_offset_y).toBe("10mm")
++    }
++    if (group.name === "G_ANCHOR") {
++      expect(group.display_offset_x).toBe("-10mm")
++      expect(group.display_offset_y).toBe("10mm")
++    }
++  }
++})

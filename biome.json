@@ -16,7 +16,8 @@
       "!imports/**",
       "!evidence/**",
       "!dist/**",
-      "!init.log"
+      "!init.log",
+      "!tooling/**"
     ]
   }
 }

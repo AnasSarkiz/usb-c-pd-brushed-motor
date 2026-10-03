@@ -1,0 +1,256 @@
+{
+  "revision": "A9",
+  "pcbTraces": 0,
+  "errorCounts": {
+    "pcb_footprint_overlap_error": 6286,
+    "pcb_pad_pad_clearance_error": 297,
+    "pcb_courtyard_overlap_error": 1842
+  },
+  "firstPerType": {
+    "pcb_footprint_overlap_error": {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_0",
+      "error_type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_component_overlap_pcb_component_0_pcb_component_1",
+      "pcb_component_ids": [
+        "pcb_component_0",
+        "pcb_component_1"
+      ],
+      "message": "J1 overlaps U1: 6 footprint overlaps, 6 pad clearance violations, 1 courtyard conflict. Move the components apart.",
+      "related_errors": [
+        {
+          "type": "pcb_footprint_overlap_error",
+          "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_1_pcb_smtpad_29",
+          "error_type": "pcb_footprint_overlap_error",
+          "message": "pcb_smtpad J1.A5 overlaps with pcb_smtpad U1.VBUS_VS_DISCH",
+          "pcb_component_ids": [
+            "pcb_component_0",
+            "pcb_component_1"
+          ],
+          "pcb_smtpad_ids": [
+            "pcb_smtpad_1",
+            "pcb_smtpad_29"
+          ]
+        },
+        {
+          "type": "pcb_footprint_overlap_error",
+          "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_2_pcb_smtpad_28",
+          "error_type": "pcb_footprint_overlap_error",
+          "message": "pcb_smtpad J1.B7 overlaps with pcb_smtpad U1.A_B_SIDE",
+          "pcb_component_ids": [
+            "pcb_component_0",
+            "pcb_component_1"
+          ],
+          "pcb_smtpad_ids": [
+            "pcb_smtpad_2",
+            "pcb_smtpad_28"
+          ]
+        },
+        {
+          "type": "pcb_footprint_overlap_error",
+          "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_3_pcb_smtpad_27",
+          "error_type": "pcb_footprint_overlap_error",
+          "message": "pcb_smtpad J1.A6 overlaps with pcb_smtpad U1.VBUS_EN_SNK",
+          "pcb_component_ids": [
+            "pcb_component_0",
+            "pcb_component_1"
+          ],
+          "pcb_smtpad_ids": [
+            "pcb_smtpad_3",
+            "pcb_smtpad_27"
+          ]
+        },
+        {
+          "type": "pcb_footprint_overlap_error",
+          "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_4_pcb_smtpad_26",
+          "error_type": "pcb_footprint_overlap_error",
+          "message": "pcb_smtpad J1.A7 overlaps with pcb_smtpad U1.GPIO",
+          "pcb_component_ids": [
+            "pcb_component_0",
+            "pcb_component_1"
+          ],
+          "pcb_smtpad_ids": [
+            "pcb_smtpad_4",
+            "pcb_smtpad_26"
+          ]
+        },
+        {
+          "type": "pcb_footprint_overlap_error",
+          "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_5_pcb_smtpad_25",
+          "error_type": "pcb_footprint_overlap_error",
+          "message": "pcb_smtpad J1.B6 overlaps with pcb_smtpad U1.POWER_OK3",
+          "pcb_component_ids": [
+            "pcb_component_0",
+            "pcb_component_1"
+          ],
+          "pcb_smtpad_ids": [
+            "pcb_smtpad_5",
+            "pcb_smtpad_25"
+          ]
+        },
+        {
+          "type": "pcb_footprint_overlap_error",
+          "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_6_pcb_smtpad_24",
+          "error_type": "pcb_footprint_overlap_error",
+          "message": "pcb_smtpad J1.A8 overlaps with pcb_smtpad U1.ADDR1",
+          "pcb_component_ids": [
+            "pcb_component_0",
+            "pcb_component_1"
+          ],
+          "pcb_smtpad_ids": [
+            "pcb_smtpad_6",
+            "pcb_smtpad_24"
+          ]
+        },
+        {
+          "type": "pcb_pad_pad_clearance_error",
+          "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_smtpad_1_pcb_smtpad_29",
+          "error_type": "pcb_pad_pad_clearance_error",
+          "message": "Pads pcb_port[.J1 > .A5] and pcb_port[.U1 > .VBUS_VS_DISCH] are too close (clearance: -0.14mm, minimum: 0.1mm)",
+          "pcb_pad_ids": [
+            "pcb_smtpad_1",
+            "pcb_smtpad_29"
+          ],
+          "minimum_clearance": 0.1,
+          "actual_clearance": -0.1400048,
+          "center": {
+            "x": -1.249934,
+            "y": 2.0870196
+          }
+        },
+        {
+          "type": "pcb_pad_pad_clearance_error",
+          "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_smtpad_2_pcb_smtpad_28",
+          "error_type": "pcb_pad_pad_clearance_error",
+          "message": "Pads pcb_port[.J1 > .B7] and pcb_port[.U1 > .A_B_SIDE] are too close (clearance: -0.14mm, minimum: 0.1mm)",
+          "pcb_pad_ids": [
+            "pcb_smtpad_2",
+            "pcb_smtpad_28"
+          ],
+          "minimum_clearance": 0.1,
+          "actual_clearance": -0.1400048,
+          "center": {
+            "x": -0.750062,
+            "y": 2.0870196
+          }
+        },
+        {
+          "type": "pcb_pad_pad_clearance_error",
+          "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_smtpad_27_pcb_smtpad_3",
+          "error_type": "pcb_pad_pad_clearance_error",
+          "message": "Pads pcb_port[.J1 > .A6] and pcb_port[.U1 > .VBUS_EN_SNK] are too close (clearance: -0.14mm, minimum: 0.1mm)",
+          "pcb_pad_ids": [
+            "pcb_smtpad_3",
+            "pcb_smtpad_27"
+          ],
+          "minimum_clearance": 0.1,
+          "actual_clearance": -0.1400048,
+          "center": {
+            "x": -0.249936,
+            "y": 2.0870196
+          }
+        },
+        {
+          "type": "pcb_pad_pad_clearance_error",
+          "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_smtpad_26_pcb_smtpad_4",
+          "error_type": "pcb_pad_pad_clearance_error",
+          "message": "Pads pcb_port[.J1 > .A7] and pcb_port[.U1 > .GPIO] are too close (clearance: -0.14mm, minimum: 0.1mm)",
+          "pcb_pad_ids": [
+            "pcb_smtpad_4",
+            "pcb_smtpad_26"
+          ],
+          "minimum_clearance": 0.1,
+          "actual_clearance": -0.1400048,
+          "center": {
+            "x": 0.249936,
+            "y": 2.0870196
+          }
+        },
+        {
+          "type": "pcb_pad_pad_clearance_error",
+          "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_smtpad_25_pcb_smtpad_5",
+          "error_type": "pcb_pad_pad_clearance_error",
+          "message": "Pads pcb_port[.J1 > .B6] and pcb_port[.U1 > .POWER_OK3] are too close (clearance: -0.14mm, minimum: 0.1mm)",
+          "pcb_pad_ids": [
+            "pcb_smtpad_5",
+            "pcb_smtpad_25"
+          ],
+          "minimum_clearance": 0.1,
+          "actual_clearance": -0.1400048,
+          "center": {
+            "x": 0.750062,
+            "y": 2.0870196
+          }
+        },
+        {
+          "type": "pcb_pad_pad_clearance_error",
+          "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_smtpad_24_pcb_smtpad_6",
+          "error_type": "pcb_pad_pad_clearance_error",
+          "message": "Pads pcb_port[.J1 > .A8] and pcb_port[.U1 > .ADDR1] are too close (clearance: -0.14mm, minimum: 0.1mm)",
+          "pcb_pad_ids": [
+            "pcb_smtpad_6",
+            "pcb_smtpad_24"
+          ],
+          "minimum_clearance": 0.1,
+          "actual_clearance": -0.1400048,
+          "center": {
+            "x": 1.2498070000000001,
+            "y": 2.0870196
+          }
+        },
+        {
+          "type": "pcb_courtyard_overlap_error",
+          "pcb_error_id": "pcb_courtyard_overlap_pcb_component_0_pcb_component_1",
+          "error_type": "pcb_courtyard_overlap_error",
+          "message": "Courtyard of J1 overlaps with courtyard of U1",
+          "pcb_component_ids": [
+            "pcb_component_0",
+            "pcb_component_1"
+          ]
+        }
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_1",
+        "pcb_smtpad_2",
+        "pcb_smtpad_24",
+        "pcb_smtpad_25",
+        "pcb_smtpad_26",
+        "pcb_smtpad_27",
+        "pcb_smtpad_28",
+        "pcb_smtpad_29",
+        "pcb_smtpad_3",
+        "pcb_smtpad_4",
+        "pcb_smtpad_5",
+        "pcb_smtpad_6"
+      ]
+    },
+    "pcb_pad_pad_clearance_error": {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "pcb_pad_pad_clearance_error_0",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Pads pcb_port[.U1 > .SCL] and pcb_port[.R45 > .pin2] are too close (clearance: 0.075mm, minimum: 0.1mm)",
+      "pcb_pad_ids": [
+        "pcb_smtpad_18",
+        "pcb_smtpad_364"
+      ],
+      "minimum_clearance": 0.1,
+      "actual_clearance": 0.07503160000000023,
+      "center": {
+        "x": 2.5331420000000002,
+        "y": -0.624967
+      }
+    },
+    "pcb_courtyard_overlap_error": {
+      "type": "pcb_courtyard_overlap_error",
+      "pcb_courtyard_overlap_error_id": "pcb_courtyard_overlap_error_0",
+      "pcb_error_id": "pcb_courtyard_overlap_pcb_component_0_pcb_component_4",
+      "error_type": "pcb_courtyard_overlap_error",
+      "message": "Courtyard of J1 overlaps with courtyard of D1",
+      "pcb_component_ids": [
+        "pcb_component_0",
+        "pcb_component_4"
+      ]
+    }
+  },
+  "note": "Full board remains unplaced. These errors are not suppressed or counted as a passed full build."
+}

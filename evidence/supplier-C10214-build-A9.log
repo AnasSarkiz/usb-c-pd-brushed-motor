@@ -1,0 +1,22 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C10214.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C10214/circuit.json
+All pins on D1 are underspecified (no pinAttributes set)
+D1 has no pin with requires_power=true
+D1 has no pin with requires_ground=true
+D1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <chip#0(.probe>.D1) /> (jlcpcb:C10214): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[tests/supplier-audit/C10214] Generating PCB SVG...
+[tests/supplier-audit/C10214] Written pcb.svg
+[tests/supplier-audit/C10214] Generating schematic SVG...
+[tests/supplier-audit/C10214] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

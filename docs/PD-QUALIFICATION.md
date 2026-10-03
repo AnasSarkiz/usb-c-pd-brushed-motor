@@ -1,10 +1,10 @@
-# A7 PD qualification and voltage policy
+# A9 PD qualification and voltage policy
 
 2026-10-03. The user approved the MCU architecture. U11 is supplier-imported STM32G030F6P6TR / C529330, used only for power qualification. firmware/pd_policy.c is a portable policy library, tested on the host and compiled to a Cortex-M0+ object. It is **not a complete flashable firmware image**: STM32 startup, clocks, GPIO/ADC/I2C, STUSB4500 transport, watchdog, option bytes and programming-pad implementation remain open.
 
 ## User voltage selection
 
-SW2 / C3293142 is a two-pole DIP. Logical bits: 00=5 V, 01=9 V, 10=12 V, 11=invalid/inhibit (bit 0 is the 9 V input). The schematic note names the two bits rather than guessing physical slider numbering. Pin 1/3 connect to 3.3 V; pin 2/4 to pull-down-equipped GPIO inputs. Manufacturer contacts are 1–2 and 3–4; the physical pad/slider orientation needs reconciliation. Either plausible pole pairing places one supply and one input on each physical pole, but the 9/12 physical labels cannot be approved from an unnumbered mechanical drawing alone.
+SW2 / C3293142 is a two-pole DIP. Logical bits: 00=5 V, 01=9 V, 10=12 V, 11=invalid/inhibit (bit 0 is the 9 V input). The schematic note names the two bits rather than guessing physical slider numbering. Pin 1/3 connect to 3.3 V; pin 2/4 to pull-down-equipped GPIO inputs. The manufacturer depicts two independent sliders aligned with two vertical terminal pairs; its land-pattern drawing does not number pads. The official imported footprint labels left bottom/top as pin1/pin4 and right bottom/top as pin2/pin3. Each physical vertical pair has exactly one 3.3 V terminal and one input: left slider reads the 12 V bit; right slider reads the 9 V bit, viewed from the component side with ON at the top. These are footprint-local labels; do not claim they equal the unnumbered manufacturer land identifiers. Physical continuity/assembly orientation must still be tested on the prototype. See SELECTOR-MECHANICS.md.
 
 Q7/Q8 independently ground the selected feedback branches; their gates default low. They isolate the feedback rail from unpowered MCU pins. Both off defaults to 5 V. Both on must never be commanded. Nominal regulated rails are 5.004 / 9.008 / 12.011 V. This explicitly selects a motor rating; the board does not discover it.
 
@@ -36,3 +36,5 @@ Host C tests exercise source voltage/current selection, invalid selectors, missi
 References: [STUSB4500 datasheet](https://www.st.com/resource/en/datasheet/stusb4500.pdf); [official ST PD reference firmware](https://github.com/usb-c/STUSB4500); [STM32G0 CMSIS device definitions](https://github.com/STMicroelectronics/cmsis-device-g0). Retained source files in evidence identify the register operations reviewed. No NVM or hardware programming is claimed.
 
 The PD-enable input has a 4.7 kOhm pull-up and 20 kOhm Q1 base resistor. The old 10 kOhm/10 kOhm network loaded the inactive signal to about 2 V, below a conservative 0.7*VDD MCU high threshold. The revised nominal inactive level is about 2.8 V while retaining sufficient transistor base drive. A resistor/supply/VBE/leakage screen is recorded in the board tests; actual startup timing remains a measurement.
+
+A9 pin-power review: PA1_CDEN (SYSCFG_CFGR2 bit 16) resets disabled and must remain disabled; PA0/PA1 stay analog/no-pull. Above-VDD stress tolerance does not qualify ADC samples during brownout. See MCU-POWER-SEQUENCING.md for calculations and required unplug/replug measurements.

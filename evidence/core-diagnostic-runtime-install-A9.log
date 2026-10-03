@@ -1,0 +1,16 @@
+bun add v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [46]
+Saved lockfile
+
+installed @tscircuit/bus-lanes-solver@https://jscdn.tscircuit.com/@tscircuit/bus-lanes-solver/0.0.9.tgz
+installed @tscircuit/dogbone-solver@https://jscdn.tscircuit.com/@tscircuit/dogbone-solver/0.0.1.tgz
+installed @tscircuit/flex-utils@https://jscdn.tscircuit.com/@tscircuit/flex-utils/0.0.8.tgz
+installed @tscircuit/schematic-trace-solver@https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.224.tgz
+installed @tscircuit/fanout-solver@0.0.78
+installed @tscircuit/implicit-copper-pour-solver@github:tscircuit/implicit-copper-pour-solver#a5cbbda
+installed @tscircuit/jlcpcb-manufacturing-specs@github:tscircuit/jlcpcb-manufacturing-specs#2326050
+installed @tscircuit/via-stitch-solver@github:tscircuit/via-stitch-solver#64f2ac7
+installed @tscircuit/winding-breakout-point-solver@github:tscircuit/winding-breakout-point-solver#202dbe9
+
+20 packages installed [2.00s]

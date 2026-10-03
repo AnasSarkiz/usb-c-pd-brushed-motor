@@ -1,0 +1,19 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C1849461.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C1849461/circuit.json
+U4 has no pin with requires_power=true
+Failed to fetch supplier footprint for <chip#0(.probe>.U4) /> (jlcpcb:C1849461): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[tests/supplier-audit/C1849461] Generating PCB SVG...
+[tests/supplier-audit/C1849461] Written pcb.svg
+[tests/supplier-audit/C1849461] Generating schematic SVG...
+[tests/supplier-audit/C1849461] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

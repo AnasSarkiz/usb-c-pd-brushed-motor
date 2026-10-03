@@ -1,6 +1,6 @@
 # Requirements and reference review
 
-Review date: 2026-10-02. Scope: schematic, manufacturer/JLCPCB BOM and unrouted component placement for one reversible brushed DC motor. This document records intent; it does not establish tested operating ratings.
+Review date: 2026-10-03 (A9). Scope: schematic, manufacturer/JLCPCB BOM and unrouted component placement for one reversible brushed DC motor. This document records intent; it does not establish tested operating ratings.
 
 ## Product reference
 
@@ -14,9 +14,9 @@ Our intended function remains simple motor speed and direction control. The adde
 |---|---|
 | Motor | One brushed DC motor; selected rated voltage 5, 9 or 12 V |
 | Continuous current | Approximately 2 A target; thermal and current-path validation required |
-| Peak margin | Nominal 2.22 A driver chopping limit; 20 V PD preferred for peak margin; accuracy and duration untested |
+| Peak margin | Nominal 2.22 A driver chopping limit; qualified contract selected by power/current screen; 5 V accuracy and peak duration untested |
 | Input | Exactly one USB-C receptacle; power input only; no USB programming interface |
-| PD | Autonomous controller; accept adequate 15/20 V contracts and regulate down; no dependence on a 12 V PDO |
+| PD | STUSB4500 with approved qualification MCU; accept adequate 15/20 V contracts and regulate down; no dependence on a 12 V PDO |
 | Motor output | Two-pin screw terminal wired directly to the integrated H-bridge |
 | Controls | Top-access speed potentiometer and REV/OFF/FWD three-position switch |
 | Indicators | Power, FWD, REV; direction indications represent commands, not measured shaft motion |
@@ -24,11 +24,11 @@ Our intended function remains simple motor speed and direction control. The adde
 | Layout | USB-C left edge, motor terminal right edge, all controls on top |
 | Layers | Initial two-layer FR-4, 1.6 mm thickness, 1 oz outer copper; increase area or layer/copper weight if thermal review requires it |
 | Temperature | Initial supervised bench-prototype planning range 0-40 C ambient, not a verified rating |
-| Simplicity | Hardware PWM preferred; no MCU currently proposed; no display, radio, CAN or sensors |
-| Schematic | Seven native A4 sheets: USB/PD, input protection, buck, controls, rail monitor, dump, bridge |
-| Current stage | No routing, copper pours, fabrication exports, ordering or publication |
+| Simplicity | Hardware PWM; MCU only for PD/voltage qualification; no display, radio, CAN or motor sensors |
+| Schematic | Eight native A4 sheets: USB/PD, input protection, buck, controls, rail monitor, dump, bridge, qualification |
+| Current stage | Schematic/BOM validation; no product placement, routing, copper pours, fabrication exports or ordering |
 
-The draft adds a 9 / 5 / 12 V three-position selector, center/default 5 V, with a separate pole tracking the overvoltage threshold. Change the selector only with USB unplugged. All motor modes require a qualified high-voltage 3 A PD contract. Turning PWM down does not replace selecting the correct motor voltage.
+Motor voltage is explicitly selected by the two-slider SW2 DIP: both OFF=5 V, right ON=9 V, left ON=12 V, both ON=invalid/inhibit, viewed from above with ON at the top. See SELECTOR-MECHANICS.md for the manufacturer's unnumbered lands and imported footprint mapping. Change settings only with USB unplugged. A fresh adequate fixed high-voltage contract and correct measured VM are required before drive. Turning PWM down does not replace selecting the motor's rated voltage.
 
 ## Initial fabrication rules
 
@@ -38,14 +38,14 @@ Motor and input power paths reserve 2 mm nominal copper and short lengths, plus 
 
 ## Remaining design-critical requirements
 
-- The failed C6738614 candidate is superseded by successfully imported C5710902. Its exact 10 kΩ linear identity and manufacturer rear-mount geometry have been reviewed; knob/enclosure fit remains pending.
-- All 54 instantiated supplier parts showed nonzero LCSC stock on 2026-10-02. This does not establish JLCPCB assembly stock or eligibility, particularly for through-hole controls.
-- Multi-terminal switch imports currently omit required schematic ports. Replacement candidates were tried; the defect must be resolved through a supported importer/component model before schematic approval or placement.
-- Missing reference labels and incomplete pin-attribute metadata in supplier imports remain explicit validation issues; no hand-authored substitutions are allowed.
-- Actual motor startup/stall current, inductance, inertia and external back-driving are unknown. Do not approve clamp energy, reversal or fault behavior without these bounds and tests.
-- PD NVM must be provisioned/read back; adequate 15/20 V at 3 A is required. Other chargers deliberately leave the motor disabled.
-- 12 V/2 A continuous is an analytic target. Peak margin at 15 V is limited at worst-case input-current tolerance; 20 V is preferred.
-- Buck loop/ESR/DC-bias review, exposed-pad/thermal design and all actual footprint/body/courtyard checks remain incomplete.
-- The 65 × 50 mm mechanical envelope is provisional. Component placement and four physical holes are not yet instantiated.
+- All 54 active supplier probes build successfully on CLI 0.1.2237 and pass strict electrical-port, footprint-pad and schema checks. C5710902 and C908270 remain the unchanged supplier controls. Availability dates and exact SKU stock observations are in BOM.csv; they do not reserve JLCPCB assembly inventory.
+- Imported thermal vias are accepted under the authorized board checker policy; new routed via-in-pad remains prohibited. Copper/assembler processing is still required.
+- Reference-label and optional pin-metadata advisories remain individually reviewed in WARNING-REVIEW.md; the audit rejects unknown or stale advisories. No imported definition is patched.
+- Official core 0.0.2069 still emits invalid display offsets. An isolated source fix passes the coordinate regression; it is not a published dependency. Product placement remains gated.
+- Source capability parsing, contract generation and RDO qualification are implemented/tested as a portable policy. A complete embedded STM32/STUSB4500 port and prototype negotiation tests remain required. A 5 V-only/non-PD or insufficient source inhibits the motor.
+- The power screen selects 15 V/3 A for 5/9 V, 20 V/3 A for 12 V, and permits adequate 20 V fallback for lower modes. A native 12 V PDO is never assumed. Peak input demand is checked against eFuse tolerance and source current, rather than choosing 20 V blindly.
+- Buck input capacitance was corrected to two 10 µF/50 V X7R C138687 ceramics: the old nominal 2 µF bank violated TI's 3 µF effective minimum. The manufacturer-curve screen gives approximately 6.06 µF at the recorded worst-input assumptions. Output capacitance, compensation, current/thermal and load-transient qualification remain open.
+- Actual motor startup/stall behavior, 5 V current-regulation accuracy, winding/inertia/back-drive bounds, both reversal directions and regenerative dump energy need prototype evidence. No universal startup/reversal guarantee or continuous braking rating is claimed.
+- The 65 × 50 mm envelope is provisional. Four holes, connector/control access, bodies/courtyards and current-path widths will be checked at placement after its gates pass.
 
-Requirements confirmation remains in progress. No physical operating rating is established.
+Requirements confirmation remains in progress. The continuous-current target is not a measured operating rating.

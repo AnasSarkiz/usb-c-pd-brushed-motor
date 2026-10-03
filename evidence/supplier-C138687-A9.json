@@ -1,0 +1,12 @@
+{
+  "code": "C138687",
+  "date": "2026-10-03",
+  "url": "https://www.lcsc.com/product-detail/C138687.html",
+  "stock": 16700,
+  "mpn": "CL32B106KBJNNNE",
+  "manufacturer": "Samsung Electro-Mechanics",
+  "package": "1210",
+  "datasheet_url": "https://product.samsungsem.com/mlcc/CL32B106KBJNNN.do",
+  "stock_evidence": "Exact product page read via web tool; direct shell fetch returned HTTP 403, not used for stock.",
+  "characterization_sha256": "bd4e6544d65545b842f45fdaf627a5bd600e0d9a1c5f7db2e178b51b18d445a7"
+}

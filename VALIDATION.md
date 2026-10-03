@@ -1,3 +1,70 @@
+# A9 current validation — 2026-10-03
+
+**WIP engineering prototype; placement and routing remain disabled.** Corrected a real TPS54360 input-capacitance shortfall, updated the official CLI, rebuilt every active supplier probe, completed the selector/simplification reviews, and tested an isolated coordinate-serialization fix. No electronic component definition, schema or diagnostic was patched or suppressed. The experimental library package was removed after testing; the main board keeps official dependencies.
+
+## Current gates
+
+| Stage | Status | Evidence / remaining work |
+|---|---|---|
+| 1. Requirements | in progress | Current requirements, explicit two-slider 5/9/12 V selection and qualified 15/20 V policy documented. Reference board dimensions, final thermal/manufacturing envelope and mechanical fit remain unproven. |
+| 2. Schematic and BOM | blocked | 54/54 fresh supplier builds and strict electrical/pad/schema audits pass; eight A4 sheets and 128-component BOM reconcile. Input-capacitance correction, selector nominal mechanics and simplification review complete. Output-capacitance/loop/current/thermal qualification and complete embedded MCU/STUSB4500 port remain open. |
+| 3. Product placement | blocked | Official coordinate schema defect persists. A local core fix passes the probe and positioning suite but is not a validated published toolchain. No product placement authored; native placement/full build report default overlaps. |
+| 4. Routing | not started | routingDisabled remains set in source/config; autorouter.allowViaInPad=false. Main/probe outputs contain zero pcb_trace elements. |
+| 5. Routed checks | not started | Development checks do not approve routed output. |
+| 6. Fabrication | not started | Thermal copper, solder-wicking, filling/capping/tenting and assembler process remain to review. No fabrication files or order. |
+| 7. Physical prototype | not started | No measured PD, voltage/current, temperature, startup/stall, bounce, unplug/replug or reversal evidence. |
+| 8. Store release | not started | Publication blocked: task repository has no remote/known destination branch, and validation gates remain incomplete. Neither GitHub nor tscircuit package updated. |
+
+## A9 implementation and versions
+
+Main project: tscircuit 0.0.2742 / CLI **0.1.2237** / core 0.0.2056 / props 0.0.677 / circuit-json 0.0.510; Bun 1.3.9 / TypeScript 5.9.3 / Biome 2.5.14. Exact dependencies and source checksums identify this revision. evidence/prechange-A9.zip preserves the prior manifest/docs/dependency state. The published peer-dependency warning remains recorded; no main dependency override is forced.
+
+C13/C14 change from two nominal 1 µF ceramics to unchanged supplier import C138687 / Samsung CL32B106KBJNNNE, two 10 µF/50 V X7R 1210 parts. TI requires at least 3 µF effective input capacitance, so the old 2 µF nominal bank fails even before DC bias. Manufacturer characterization plus recorded tolerance/temperature/aging reserves screens the replacement at **6.06 µF** at the 21 V envelope. Ripple-current sharing and actual temperature still require layout/prototype review. The successfully imported C13585 X5R candidate is not used because its bias loss fails that capacitance screen. BOM: **128 components / 54 supplier codes**. See REGULATOR-REVIEW.md and buck-input-review-A9.json.
+
+Every active supplier probe was freshly built on CLI 0.1.2237 with routing disabled: **54 exit-zero builds**, recorded individually and in supplier-build-results-A9.json. Strict full-document schema, expected source/schematic/PCB electrical ports and electrical-pad coverage pass in active-import-audit-A9.json. No component is counted as approved solely because a model exists. C5710902 potentiometer and C908270 SPDT ON-OFF-ON remain unchanged. Their earlier independent datasheet audits remain applicable; fresh builds/schema/pad checks are renewed. THT paste/pin failures are resolved.
+
+The authorized board checker/router policy remains: isViaInPadAllowed=true accepts the 12 existing imported thermal vias; autorouter.allowViaInPad=false prohibits new ones in pads. Fresh A9 output is rechecked against the A7 supplier SHA-256 values in thermal-via-policy-A9.json. No model changes; existing EP/net associations remain. This is a board-wide checker permission, not a new per-via exception or an approved assembler process.
+
+The SW2 mechanical contact columns and imported footprint-local pad labels are reconciled in SELECTOR-MECHANICS.md. Viewed from above with ON at the top: both OFF=5 V, right ON=9 V, left ON=12 V, both ON=inhibit. Manufacturer lands are unnumbered; physical continuity and assembly orientation remain prototype checks. All current documentation/BOM uses this explicit selection. The architecture simplification pass is complete for A9; SIMPLIFICATION.md records per-sheet counts and the retained 128-part tradeoff. A synchronous buck redesign is considered, not silently substituted or claimed as a completed reduction.
+
+MCU-POWER-SEQUENCING.md verifies PA1_CDEN, its disabled reset state, no-pull analog configuration and divider stress calculations. Above-VDD tolerance does not establish zero leakage, valid brownout ADC values or a complete firmware port. No speculative backup circuit was added. The portable PD policy remains tested; it is not flashable firmware or evidence of charger negotiation.
+
+## Tooling investigation
+
+An independent official core 0.0.2069 / circuit-json 0.0.512 probe still emits numeric display_offset_x/y. The unchanged board probe fails the schema on the main official toolchain as well. evidence/coordinate-serialization-A9.json and official-core-coordinate-A9.json retain the failures. No coercion or ignored error.
+
+An isolated core source patch at upstream commit 24d72602641a1bccb3516d6ab9fad7b95ec523bd serializes numeric offsets as millimeter strings and omits an absent group anchor instead of invalid null. Full emitted-document regression fails before and passes after; **26 related tests / five existing snapshots pass**, and ESM/declaration builds pass. The yalc-built package passes the actual unchanged supplier-coordinate probe. It was removed and official core restored, reproducing the official failure. Main board dependencies never used the local link. Reviewed patch: evidence/core-coordinate-fix-A9.patch; detail: TOOLING-ISSUES.md.
+
+Canonical upstream dependency installation fails resolving its pinned Git dependency. The separate diagnostic environment is explicit, not represented as a successful canonical install. Whole-source TypeScript checking fails with **eight identical baseline and patched diagnostics** (matcher return type and TI fixture type identities); none are suppressed. See core-typecheck-comparison-A9.json and both full logs. A source fix is not claimed production-ready or published, and no upstream PR was created.
+
+## Checks and visual review
+
+| Check | Actual result |
+|---|---|
+| Configured formatting / format check / board TypeScript | pass |
+| Configured board tests (`bun test ./tests`) | pass: 15 tests, 357 assertions |
+| tsci check netlist / pin_specification / source / schematic-placement | pass; individual A9 logs |
+| tsci check placement | fail: default unplaced component/courtyard overlaps; retained |
+| Schematic-only build, --disable-pcb --routing-disabled --schematic-svgs | pass |
+| Strict schematic connectivity / A4 / supplier / NC / reviewed-advisory audit | pass: 128 components, 54 suppliers, zero issues, 84 individually reviewed raw advisories |
+| Full configured board build | fail: 6,286 footprint overlaps, 297 pad-clearance errors, 1,842 courtyard overlaps in default unplaced output; zero routed traces. full-build-diagnostics-A9.json and complete log retained. |
+| Independent supplier native builds + strict audit | pass: 54/54; zero routed traces |
+| BOM quantities/metadata/import paths | pass: 128/54, no duplicate references or missing required fields |
+| Official explicit-coordinate schema check | fail, reproduced after restoring official core |
+| Isolated core regression / positioning suite / ESM+DTS build | pass; whole-source TypeScript remains failed as described above |
+
+Source-only Git whitespace checks pass. Raw vendor HTML preserves CRLF, patch context preserves blank lines and diagnostic logs preserve tool whitespace; their whitespace-only Git advisories are harmless evidence formatting, not altered circuit content. Board checks and independent library checks have separate project scopes. The board's TypeScript/format configuration excludes tooling/; the upstream source project receives its own complete TypeScript check and failures remain recorded. An early `bun test tests` filter also selected nested library tests and was stopped; that log is retained as withdrawn, not a board-suite pass. The final configured `bun test ./tests` checks the board tests only.
+
+A7 advisory signatures remain applicable: unchanged supplier hashes/messages and wiring for those warnings; the strict audit rejects new/stale reviews. No warning is hidden. All eight regenerated A9 A4 sheets were inspected in evidence/schematic-overview-A9.png; the changed buck sheet was additionally inspected at full resolution in dist/review/3-buck-A9.png. C13/C14 show 10 µF, titles/labels fit the sheet boundary, and advisories remain visible. The BOM preview/reconciliation and exact metadata were reviewed. No unplaced PCB rendering is treated as placement approval.
+
+## Publication and revision status
+
+Task-local Git repository: main, no configured remote. Package configured as @tsci/AnasSarkiz.usb-c-pd-brushed-motor, version 0.0.1. Registry identity was previously verified as AnasSarkiz without exposing credentials. The pending request for the GitHub repository/branch remains unanswered. **Blocking issue:** no destination for the required GitHub push, plus incomplete validation prevents claiming a fully published step. Neither remote update succeeded. Local source commit is recorded after capture; a local commit does not satisfy publication. No merge, fabrication order or hardware approval is implied.
+
+---
+
+A8 and earlier records below are historical; this A9 section controls current status.
+
 # A8 current validation — 2026-10-03
 
 **WIP engineering prototype.** Applied the user-authorized existing settings: `isViaInPadAllowed={true}` and `autorouter={{ allowViaInPad: false }}` with `routingDisabled` retained. This accepts existing imported vias in the checker and prohibits the router from creating new via-in-pad routes. It is a board-wide checker permission, not the proposed future per-via thermal exception. No supplier model, schema or diagnostic was patched or suppressed.

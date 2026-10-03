@@ -20,11 +20,11 @@
     "format:check": "biome format .",
     "check:preroute": "tsci check netlist index.circuit.tsx && tsci check pin_specification index.circuit.tsx && tsci check source index.circuit.tsx && tsci check schematic-placement index.circuit.tsx && tsci check placement index.circuit.tsx",
     "power:report": "bun scripts/power-report.ts",
-    "test": "bun test"
+    "test": "bun test ./tests"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
-    "@tscircuit/cli": "0.1.2235",
+    "@tscircuit/cli": "0.1.2237",
     "@types/bun": "1.4.2",
     "tscircuit": "0.0.2742",
     "typescript": "5.9.3"

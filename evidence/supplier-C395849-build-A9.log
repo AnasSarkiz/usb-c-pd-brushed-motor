@@ -1,0 +1,22 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C395849.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C395849/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+All pins on J2 are underspecified (no pinAttributes set)
+J2 has no pin with requires_power=true
+J2 has no pin with requires_ground=true
+Failed to fetch supplier footprint for <chip#0(.probe>.J2) /> (jlcpcb:C395849): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[tests/supplier-audit/C395849] Generating PCB SVG...
+[tests/supplier-audit/C395849] Written pcb.svg
+[tests/supplier-audit/C395849] Generating schematic SVG...
+[tests/supplier-audit/C395849] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

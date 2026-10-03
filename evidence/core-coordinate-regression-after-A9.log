@@ -1,0 +1,9 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/components/pcb/pcb-position-display-offset-schema.test.tsx:
+(pass) explicit PCB component and group offsets conform to Circuit JSON without changing placement [115.95ms]
+
+ 1 pass
+ 0 fail
+ 171 expect() calls
+Ran 1 test across 1 file. [830.00ms]

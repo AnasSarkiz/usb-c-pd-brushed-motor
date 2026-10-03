@@ -1,0 +1,23 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C5710902.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C5710902/circuit.json
+The "R" prefix is being used with a <chip />, try using it with a <resistor />
+All pins on RV1 are underspecified (no pinAttributes set)
+RV1 has no pin with requires_power=true
+RV1 has no pin with requires_ground=true
+RV1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <chip#0(.probe>.RV1) /> (jlcpcb:C5710902): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[tests/supplier-audit/C5710902] Generating PCB SVG...
+[tests/supplier-audit/C5710902] Written pcb.svg
+[tests/supplier-audit/C5710902] Generating schematic SVG...
+[tests/supplier-audit/C5710902] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

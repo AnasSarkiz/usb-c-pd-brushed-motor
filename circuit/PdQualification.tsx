@@ -39,7 +39,7 @@ export function PdQualification() {
           pin19: "net.SWCLK",
         }}
       />
-      {/* DIP voltage selector: 00=5 V / 10=9 V / 01=12 V / 11=inhibit */}
+      {/* DIP voltage selector: 00=5 V / bit 0=9 V / bit 1=12 V / both=inhibit */}
       <DSHP02TSGER
         name="SW2"
         schSheetName="pdhost"

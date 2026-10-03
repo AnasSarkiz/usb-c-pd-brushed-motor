@@ -1,0 +1,59 @@
+{
+  "revision": "A9",
+  "source": "tests/coordinate-serialization-probe.circuit.tsx",
+  "inputCoordinates": {
+    "pcbX": "2mm",
+    "pcbY": "-2mm"
+  },
+  "status": "blocked: generated schema failure",
+  "failures": [
+    {
+      "index": 18,
+      "element": {
+        "type": "pcb_component",
+        "pcb_component_id": "pcb_component_0",
+        "center": {
+          "x": 2,
+          "y": -2
+        },
+        "width": 2.3132034,
+        "height": 0.8640064000000001,
+        "layer": "top",
+        "rotation": 0,
+        "source_component_id": "source_component_0",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "do_not_place": false,
+        "obstructs_within_bounds": true,
+        "is_allowed_to_be_off_board": false,
+        "position_mode": "relative_to_group_anchor",
+        "positioned_relative_to_pcb_board_id": "pcb_board_0",
+        "display_offset_x": 2,
+        "display_offset_y": -2,
+        "pin1_location": "topside_left",
+        "supplier_pin1_location_map": {
+          "jlcpcb": "topside_left"
+        }
+      },
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    }
+  ]
+}
