@@ -1,15 +1,16 @@
-# USB-C PD brushed DC motor controller — A11 prototype
+# USB-C PD brushed DC motor controller — A12 firmware/tooling step
 
 Connected tscircuit prototype for one 5/9/12 V brushed motor, targeting approximately 2 A continuous. One USB-C power input, regulated motor voltage, hardware speed potentiometer, FWD/OFF/REV switch, DRV8874 H-bridge, power/direction LEDs and one motor screw terminal. The user approved an MCU only for PD qualification; PWM remains hardware controlled.
 
-**Not ready for placement, routing or fabrication.** All 54 active supplier models pass the electrical/pad/schema audit. The 12 imported thermal vias are accepted under the explicitly authorized checker policy; new routed via-in-pad remains prohibited. The explicit-coordinate defect remains in official packages; an isolated source fix passes the probe and 26 related tests, with whole-source tooling issues still recorded. Power/firmware qualification remains open. Selector mechanics and the simplification pass are documented. No physical hardware has been tested.
+**Not ready for placement, routing or fabrication.** All 55 active supplier models pass the electrical/pad/schema audit. The 12 imported thermal vias are accepted under the explicitly authorized checker policy; new routed via-in-pad remains prohibited. The explicit-coordinate defect remains in official packages. A12 independently validates the native numeric manual-placement API on a supplier-backed probe; unit-string manual placement still fails. Power/firmware qualification remains open. Selector mechanics and the simplification pass are documented. No physical hardware has been tested.
 
 Use this task directory for every command. Entry point: index.circuit.tsx. Dependencies are pinned to tscircuit 0.0.2742 / CLI 0.1.2237 / core 0.0.2056. Every electronic component is an unchanged official JLCPCB import; no custom or patched component is used.
 
-- docs/BOM.csv: current 128 components / 54 supplier parts, dates and pending approvals.
+- docs/BOM.csv: current 129 components / 55 supplier parts, dates and pending approvals.
 - VALIDATION.md: current gates, checks and historical evidence.
 - docs/ARCHITECTURE.md: connected circuit and electrical limitations.
 - docs/PD-QUALIFICATION.md: selector, voltage-aware contract policy and incomplete embedded port.
+- docs/STUSB4500-RX.md: bounded receive handling, manufacturer-register discrepancies and pending target integration.
 - docs/DIRECTION-CONTROL.md and docs/SIMPLIFICATION.md: implemented direct-PWM architecture and part-count review.
 - dist/review/1-usb.svg through 8-pdhost.svg: eight native A4 schematic sheets, with warnings visible.
 
@@ -25,3 +26,5 @@ A10 independently audits replacement output-capacitor candidates, records actual
 
 
 A11 adds one supplier-backed 1 kΩ/0.5 W VM discharge resistor and a measured-decay sequence with a 3 s timeout. The power budget includes +5% rail tolerance and bleeder load; see docs/RAIL-DISCHARGE.md. BOM now 129 components/55 supplier codes. Placement and routing remain unstarted.
+
+A12 adds host-tested bounded PD message capture: 531 C assertions and freestanding Cortex-M0+ compilation, with 17 configured tests/363 expects passing. No flashable controller or measured charger negotiation is claimed. Hardware/BOM remain A11. A numeric native placement probe passes strict schema, pad/port geometry and all five checks; it is not product placement. Explicit/unit-string defects and unsuccessful command attempts remain recorded. Neither GitHub nor tscircuit is published because the GitHub destination is still unknown.

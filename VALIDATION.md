@@ -1,4 +1,48 @@
-# A11 current validation — 2026-10-03
+# A12 current validation — 2026-10-03
+
+**Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Adds bounded PD receive handling and independently audits the supported numeric manual-placement API. No imported electronic definition, output schema or checker is patched or suppressed.
+
+| Stage | Status | Current evidence / remaining work |
+|---|---|---|
+| 1. Requirements | in progress | Explicit 5/9/12 V selection, approximately2 A target and qualified15/20 V policy retained. Final thermal/mechanical/manufacturing envelope remains open. |
+| 2. Schematic/BOM | blocked | A11:129 purchased components/55 supplier codes, eight A4 sheets and passing electrical/schema audits. Buck loop/current-sharing/thermal, land-process approval, regeneration limits and complete STM32/STUSB4500 integration remain unresolved. |
+| 3. Product placement | blocked | No product coordinates/mounting holes authored. Numeric manual API passes its isolated full-geometry probe; explicit/unit-string APIs still fail. Electrical/assembly/firmware gates remain. |
+| 4. Routing | not started | routingDisabled retained, new via-in-pad prohibited, zero product PCB traces. |
+| 5. Routed checks | not started | No routed output or snapshot/shorts approval. |
+| 6. Fabrication | not started | No process approval or fabrication release/order. |
+| 7. Physical prototype | not started | No measured charger, motor, decay, thermal or reversal evidence. |
+| 8. Store release | not started | GitHub repository/branch missing, no task remote. Neither GitHub nor tscircuit published. |
+
+## Completed A12 implementation and checks
+
+firmware/stusb4500_rx.c/.h implements bounded source-capability/control capture through an explicit bus interface. Data remain little-endian and source PDO indices unchanged. Four reads check initial protocol status, RX frame, stable prefix and absence of a new protocol event. Changed/late/malformed/unsupported messages, reset/error indications and failed reads leave the output zero. Zero-object controls tolerate an old count byte without interpreting stale objects. Header IDs are not request tokens. The module does not issue a contract request, qualify SOP provenance, publish fresh_ps_rdy or enable HOST_ALLOW. See docs/STUSB4500-RX.md for manufacturer discrepancies and pending target integration.
+
+UM2650 rev2 and the official register map were downloaded and retained with extracted text. Guide pages5/22 were visually inspected. The public guide reserves PHY_STATUS/RX_BYTE_CNT and protocol bits1/7 that older ST reference source names; no SOP encoding is guessed. The implemented RX count behavior follows the active manufacturer reference. A proposed2.5 ms deadline and read-to-clear consistency guards require actual interrupt/I2C/buffer-ordering measurements. Cortex-M0+ object compilation is not linked firmware or live negotiation.
+
+| Check | Result |
+|---|---|
+| Configured formatting /TypeScript /Bun tests | pass:17 tests/363 expects, zero failures. |
+| Receive C11 Wall/Wextra/Werror compile +host harness | pass:531 assertions, including stale control data, all four read failures, reset/new receive during capture, malformed headers, late/future timestamps and timer wrap. Simulated registers only. |
+| Freestanding Cortex-M0+ RX object | pass; target transport/startup/peripherals/watchdog and linked image pending. |
+| Unchanged policy/sequence host tests | pass in configured suite; A12 executable names preserve prior A11 evidence. |
+| Numeric native manual-placement network build +strict full JSON/geometry audit | pass on isolated two-component supplier-backed probe:correct centers/rotation/pad-port coincidence, zero errors/warnings/traces. |
+| Numeric probe native netlist/pin_specification/source/schematic-placement/placement | pass; netlist consumes source, other four full archived artifact. PCB rendering visually inspected. |
+| Explicit pcbX/Y and unit-string manual placement strict audit | fail retained:1 and24 top-level schema issues respectively. Combined diagnostic exits1. Native explicit build exit0 does not imply strict schema validity; unit-string build exits1. |
+| Earlier sandbox network warnings /netlist-JSON attempt | unsuccessful/superseded, retained separately; not accepted as passes. Correct network builds and source netlist check recorded. |
+
+Official versions unchanged:tscircuit0.0.2742 /CLI0.1.2237 /core0.0.2056 /props0.0.677 /circuit-json0.0.510; Bun1.3.9 /TS5.9.3 /Biome2.5.14. Numeric manual placement is a public API option proven for this probe, not a claim that the explicit-coordinate defect is fixed. No product placement begins. docs/TOOLING-ISSUES.md records raw-vs-parsed-center root cause and all retained failed attempts.
+
+The unchanged A11 schematic/BOM/supplier/thermal-via and power evidence remains applicable because circuit/import/dependency sources are unchanged. Full unplaced product build/placement failures and84 reviewed schematic advisories remain visible; no cached schematic-only placement result is accepted. No repeat product build or new schematic visual review is claimed for A12.
+
+## Revision and publication
+
+A12 source and evidence hashes are recorded in evidence/source-manifest-A12.json; source commit recorded after implementation commit. A11 hardware source is0f2693738e630c4997942d8536b3d913cb1bd5e5. Raw vendor PDF/text evidence is preserved byte-for-byte, including any source whitespace. GitHub remote/destination remains absent. Standing publication authorization exists, but unknown destination plus incomplete gates block fully publishing this step. Neither GitHub nor tscircuit update succeeded. This is not fabrication or hardware approval.
+
+---
+
+A11 and earlier entries below are historical. A12 supersedes receive/tooling and current software checks only; unresolved hardware, assembly, electrical and physical gates remain applicable.
+
+# A11 historical validation — 2026-10-03
 
 **Unrouted WIP engineering prototype; product placement is unstarted.** Adds a supplier-backed passive VM discharge resistor and corrects the power-change timeout/budget. All 55 active supplier audits and the connected 129-part schematic pass their electrical/schema checks. Complete power/assembly/firmware approval remains blocked.
 

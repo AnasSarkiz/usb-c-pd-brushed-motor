@@ -1,0 +1,215 @@
+{
+  "revision": "A12",
+  "productPlacementStarted": false,
+  "officialDependenciesUnchanged": true,
+  "completeReportPath": "evidence/native-placement-audit-A12-full.json.gz",
+  "completeReportSha256": "8d4f6a7469a0efdda07ec68ed6d74c5ed24309d9a0aa2653f1b4dee9ed344e3e",
+  "reports": [
+    {
+      "probe": "coordinate-serialization-probe",
+      "sourcePath": "tests/coordinate-serialization-probe.circuit.tsx",
+      "sourceSha256": "b57da9aba75342b5360c71abb6d819ee6f8ba759c7b8795b27e98ceb878d74f4",
+      "outputSha256": "21dd15f03429889ba96d0993b01f0195e2c7a368bdcf9fa480aaa64d670e250f",
+      "status": "failed: retained",
+      "issues": [],
+      "components": [],
+      "schemaIssueCount": 1,
+      "schemaDiagnostics": "Complete unfiltered issues in lossless archive"
+    },
+    {
+      "probe": "native-manual-placement-probe",
+      "sourcePath": "tests/native-manual-placement-probe.circuit.tsx",
+      "sourceSha256": "c385fa41c9b27fde02436bb8711d787375bc830a13de7a6e1adfd08264269ff5",
+      "outputSha256": "1cbfa31f7da22dbbd9a92860c068714c9e5571e692704803065b554bc91b97a5",
+      "status": "failed: retained",
+      "issues": [],
+      "components": [],
+      "schemaIssueCount": 24,
+      "schemaDiagnostics": "Complete unfiltered issues in lossless archive"
+    },
+    {
+      "probe": "native-numeric-placement-probe",
+      "sourcePath": "tests/native-numeric-placement-probe.circuit.tsx",
+      "sourceSha256": "85c4511f585da6b673b41260960cc58095d7898e7817c1798c28a5afce4d6d15",
+      "outputSha256": "c93247a25e4a42762deafc1a2a61c8455c7a6492c07c3fcd65da82bc33b7d072",
+      "status": "passed",
+      "issues": [],
+      "components": [
+        {
+          "name": "R1",
+          "pcb": {
+            "type": "pcb_component",
+            "pcb_component_id": "pcb_component_0",
+            "source_component_id": "source_component_0",
+            "center": {
+              "x": -4,
+              "y": 3
+            },
+            "layer": "top",
+            "rotation": 0,
+            "width": 2.3132034000000004,
+            "height": 0.8640064000000001,
+            "do_not_place": false,
+            "is_allowed_to_be_off_board": false,
+            "subcircuit_id": "subcircuit_source_group_0",
+            "pin1_location": "topside_left",
+            "supplier_pin1_location_map": {
+              "jlcpcb": "topside_left"
+            },
+            "obstructs_within_bounds": true
+          },
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_0",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": -3.246636,
+              "y": 3,
+              "width": 0.8064754,
+              "height": 0.8640064,
+              "layer": "top",
+              "port_hints": [
+                "pin2"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_1",
+              "is_covered_with_solder_mask": false
+            },
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_1",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": -4.753364,
+              "y": 3,
+              "width": 0.8064754,
+              "height": 0.8640064,
+              "layer": "top",
+              "port_hints": [
+                "pin1"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_0",
+              "is_covered_with_solder_mask": false
+            }
+          ],
+          "ports": [
+            {
+              "type": "pcb_port",
+              "pcb_port_id": "pcb_port_0",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "source_port_id": "source_port_0",
+              "pcb_component_id": "pcb_component_0",
+              "x": -4.753364,
+              "y": 3,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "type": "pcb_port",
+              "pcb_port_id": "pcb_port_1",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "source_port_id": "source_port_1",
+              "pcb_component_id": "pcb_component_0",
+              "x": -3.246636,
+              "y": 3,
+              "layers": [
+                "top"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "R2",
+          "pcb": {
+            "type": "pcb_component",
+            "pcb_component_id": "pcb_component_1",
+            "source_component_id": "source_component_1",
+            "center": {
+              "x": 4,
+              "y": -3
+            },
+            "layer": "top",
+            "rotation": 90,
+            "width": 0.8640063999999996,
+            "height": 2.3132033999999995,
+            "do_not_place": false,
+            "is_allowed_to_be_off_board": false,
+            "subcircuit_id": "subcircuit_source_group_0",
+            "pin1_location": "topside_left",
+            "supplier_pin1_location_map": {
+              "jlcpcb": "topside_left"
+            },
+            "obstructs_within_bounds": true
+          },
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_2",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": 4,
+              "y": -2.246636,
+              "width": 0.8640064,
+              "height": 0.8064754,
+              "layer": "top",
+              "port_hints": [
+                "pin2"
+              ],
+              "pcb_component_id": "pcb_component_1",
+              "pcb_port_id": "pcb_port_3",
+              "is_covered_with_solder_mask": false
+            },
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_3",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": 4,
+              "y": -3.753364,
+              "width": 0.8640064,
+              "height": 0.8064754,
+              "layer": "top",
+              "port_hints": [
+                "pin1"
+              ],
+              "pcb_component_id": "pcb_component_1",
+              "pcb_port_id": "pcb_port_2",
+              "is_covered_with_solder_mask": false
+            }
+          ],
+          "ports": [
+            {
+              "type": "pcb_port",
+              "pcb_port_id": "pcb_port_2",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "source_port_id": "source_port_2",
+              "pcb_component_id": "pcb_component_1",
+              "x": 4,
+              "y": -3.753364,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "type": "pcb_port",
+              "pcb_port_id": "pcb_port_3",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "source_port_id": "source_port_3",
+              "pcb_component_id": "pcb_component_1",
+              "x": 4,
+              "y": -2.246636,
+              "layers": [
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "schemaIssueCount": 0,
+      "schemaDiagnostics": "Complete unfiltered issues in lossless archive"
+    }
+  ]
+}

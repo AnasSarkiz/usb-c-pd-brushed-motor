@@ -1,0 +1,20 @@
+[
+  {
+    "probe": "coordinate-serialization-probe",
+    "status": "failed: retained",
+    "schemaIssueCount": 1,
+    "issues": []
+  },
+  {
+    "probe": "native-manual-placement-probe",
+    "status": "failed: retained",
+    "schemaIssueCount": 24,
+    "issues": []
+  },
+  {
+    "probe": "native-numeric-placement-probe",
+    "status": "passed",
+    "schemaIssueCount": 0,
+    "issues": []
+  }
+]

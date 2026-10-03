@@ -1,0 +1,12 @@
+Building 1 file(s)...
+Building tests/coordinate-serialization-probe.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/coordinate-serialization-probe/circuit.json
+Failed to fetch supplier footprint for <resistor#0(.probe>.R2) /> (jlcpcb:C23162): Unable to connect. Is the computer able to access the url?
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

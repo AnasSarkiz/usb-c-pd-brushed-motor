@@ -1,0 +1,72 @@
+Building 1 file(s)...
+Building tests/native-manual-placement-probe.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/native-manual-placement-probe/circuit.json
+DRC could not complete (placement): pcb_smtpad_0: Illegal Parameters
+Generating preview images...
+[tests/native-manual-placement-probe] Generating PCB SVG...
+[tests/native-manual-placement-probe] Failed to generate PCB SVG: 34 |         return {
+35 |             success: false,
+36 |             get error() {
+37 |                 if (this._error)
+38 |                     return this._error;
+39 |                 const error = new ZodError(ctx.common.issues);
+                                   ^
+ZodError: [
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "string",
+            "received": "null",
+            "path": [],
+            "message": "Expected string, received null"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "number",
+            "received": "null",
+            "path": [],
+            "message": "Expected number, received null"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [],
+    "message": "Invalid input"
+  }
+]
+    issues: [
+  [Object ...]
+],
+  addIssue: [Function],
+ addIssues: [Function],
+
+      at error (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/zod/v3/types.js:39:31)
+      at parse (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/zod/v3/types.js:114:15)
+      at updateBounds (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-to-svg/dist/index.js:9123:31)
+      at getComprehensivePcbBounds (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-to-svg/dist/index.js:8816:9)
+      at convertCircuitJsonToPcbSvg (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-to-svg/dist/index.js:9994:7)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/tscircuit/node_modules/@tscircuit/cli/dist/cli/main.js:180948:22)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/tscircuit/node_modules/@tscircuit/cli/dist/cli/main.js:181057:9)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/tscircuit/node_modules/@tscircuit/cli/dist/cli/main.js:182635:17)
+
+[tests/native-manual-placement-probe] Generating schematic SVG...
+[tests/native-manual-placement-probe] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

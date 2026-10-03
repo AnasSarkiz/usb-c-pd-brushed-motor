@@ -1,0 +1,1512 @@
+         1. SPIRIT identification of st_com_Leon2_STUSB_1_0
+Vendor                     Library          Name                    Version
+st.com                     Leon2            STUSB                   1.0
+
+
+         2. SPIRIT address block STUSB_MAP
+Base address               Size             Address block           Description
+0x0                        0x1000           STUSB_BLOCK
+
+
+
+STUSB_BLOCK Register Summary
+
+         3. STUSB_BLOCK register list
+Offset               Register name                 Description                         Page
+0x06      BCD_TYPEC_REV_LOW           BCD_TYPEC_REV_LOW register                         0
+0x07      BCD_TYPEC_REV_HIGH          BCD_TYPEC_REV_HIGH register                        0
+0x08      BCD_USBPD_REV_LOW           BCD_USBPD_REV_LOW register                         0
+0x09      BCD_USBPD_REV_HIGH          BCD_USBPD_REV_HIGH register                        0
+0x0A      DEVICE_CAPAB_HIGH           DEVICE_CAPAB_HIGH register                         0
+0x0B      ALERT_STATUS_1              ALERT_STATUS_1 register                            0
+0x0C      ALERT_STATUS_1_MASK         ALERT_STATUS_1_MASK register                       0
+0x0D      PORT_STATUS_0               PORT_STATUS_0 register                             0
+0x0E      PORT_STATUS_1               PORT_STATUS_1 register                             0
+0x0F      TYPEC_MONITORING_STATUS_0   TYPEC_MONITORING_STATUS_0
+                                                                                         0
+                                      register
+0x10      TYPEC_MONITORING_STATUS_1   TYPEC_MONITORING_STATUS_1
+                                                                                         0
+                                      register
+0x11      CC_STATUS                   CC_STATUS register                                 0
+0x12      CC_HW_FAULT_STATUS_0        CC_HW_FAULT_STATUS_0 register                      0
+0x13      CC_HW_FAULT_STATUS_1        CC_HW_FAULT_STATUS_1 register                      0
+0x14      PD_TYPEC_STATUS             PD_TYPEC_STATUS register                    PD_TYPEC_STATUS
+0x15      TYPEC_STATUS                TYPEC_STATUS register                              0
+0x16      PRT_STATUS                  PRT_STATUS register                                0
+0x17      reserved                    reserved
+ to
+0x1F
+0x20      MONITORING_CTRL_0           MONITORING_CTRL_0 register                         0
+0x21      reserved                    reserved
+0x22      MONITORING_CTRL_2           MONITORING_CTRL_2 register                         0
+0x23      RESET_CTRL                  RESET_CTRL register                           RESET_CTRL
+0x24      reserved                    reserved
+0x25      VBUS_DISCHARGE_TIME_CTRL    VBUS_DISCHARGE_TIME_CTRL
+                                                                                      VBUS_0
+                                      register
+0x26      VBUS_DISCHARGE_CTRL         VBUS_DISCHARGE_CTRL register                    VBUS_0
+0x27      VBUS_CTRL                   VBUS_CTRL register                                 0
+0x28      reserved                    reserved
+0x29      reserved                    reserved
+0x2B      reserved                    reserved
+
+
+                                                                                        1 /28
+ 0x2C   reserved         reserved
+ 0x2D   GPIO3_SW_GPIO    GPIO3_SW_GPIO register    GPIO3_SW_GPIO
+ 0x2E   reserved         reserved
+ 0x2F   reserved         reserved
+ 0x30   reserved         reserved
+ 0x31   RX_HEADER_LOW    RX_HEADER_LOW register          0
+ 0x32   RX_HEADER_HIGH   RX_HEADER_HIGH register         0
+ 0x33   RX_DATA_OBJ1_0   RX_DATA_OBJ1_0 register         0
+ 0x34   RX_DATA_OBJ1_1   RX_DATA_OBJ1_1 register
+ 0x35   RX_DATA_OBJ1_2   RX_DATA_OBJ1_2 register
+ 0x36   RX_DATA_OBJ1_3   RX_DATA_OBJ1_3 register
+ 0x37   RX_DATA_OBJ2_0   RX_DATA_OBJ2_0 register         0
+ 0x38   RX_DATA_OBJ2_1   RX_DATA_OBJ2_1 register
+ 0x39   RX_DATA_OBJ2_2   RX_DATA_OBJ2_2 register
+ 0x3A   RX_DATA_OBJ2_3   RX_DATA_OBJ2_3 register
+ 0x3B   RX_DATA_OBJ3_0   RX_DATA_OBJ3_0 register         0
+ 0x3C   RX_DATA_OBJ3_1   RX_DATA_OBJ3_1 register
+ 0x3D   RX_DATA_OBJ3_2   RX_DATA_OBJ3_2 register
+ 0x3E   RX_DATA_OBJ3_3   RX_DATA_OBJ3_3 register
+ 0x3F   RX_DATA_OBJ4_0   RX_DATA_OBJ4_0 register         0
+ 0x40   RX_DATA_OBJ4_1   RX_DATA_OBJ4_1 register
+ 0x41   RX_DATA_OBJ4_2   RX_DATA_OBJ4_2 register
+ 0x42   RX_DATA_OBJ4_3   RX_DATA_OBJ4_3 register
+ 0x43   RX_DATA_OBJ5_0   RX_DATA_OBJ5_0 register         0
+ 0x44   RX_DATA_OBJ5_1   RX_DATA_OBJ5_1 register
+ 0x45   RX_DATA_OBJ5_2   RX_DATA_OBJ5_2 register
+ 0x46   RX_DATA_OBJ5_3   RX_DATA_OBJ5_3 register
+ 0x47   RX_DATA_OBJ6_0   RX_DATA_OBJ6_0 register         0
+ 0x48   RX_DATA_OBJ6_1   RX_DATA_OBJ6_1 register
+ 0x49   RX_DATA_OBJ6_2   RX_DATA_OBJ6_2 register
+ 0x4A   RX_DATA_OBJ6_3   RX_DATA_OBJ6_3 register
+ 0x4B   RX_DATA_OBJ7_0   RX_DATA_OBJ7_0 register         0
+ 0x4C   RX_DATA_OBJ7_1   RX_DATA_OBJ7_1 register
+ 0x4D   RX_DATA_OBJ7_2   RX_DATA_OBJ7_2 register
+ 0x4E   RX_DATA_OBJ7_3   RX_DATA_OBJ7_3 register
+ 0x50   reserved         reserved
+  to
+ 0x6F
+ 0x70   DPM_PDO_NUMB     DPM_PDO_NUMB register           0
+ 0x71   reserved         reserved
+  to
+ 0x84
+ 0x85   DPM_SNK_PDO1_0   DPM_SNK_PDO1_0 register         0
+ 0x86   DPM_SNK_PDO1_1   DPM_SNK_PDO1_1 register
+ 0x87   DPM_SNK_PDO1_2   DPM_SNK_PDO1_2 register
+ 0x88   DPM_SNK_PDO1_3   DPM_SNK_PDO1_3 register
+
+
+2 /28
+0x89       DPM_SNK_PDO2_0                     DPM_SNK_PDO2_0 register
+0x8A       DPM_SNK_PDO2_1                     DPM_SNK_PDO2_1 register
+0x8B       DPM_SNK_PDO2_2                     DPM_SNK_PDO2_2 register
+0x8C       DPM_SNK_PDO2_3                     DPM_SNK_PDO2_3 register
+0x8D       DPM_SNK_PDO3_0                     DPM_SNK_PDO3_0 register
+0x8E       DPM_SNK_PDO3_1                     DPM_SNK_PDO3_1 register
+0x8F       DPM_SNK_PDO3_2                     DPM_SNK_PDO3_2 register
+0x90       DPM_SNK_PDO3_3                     DPM_SNK_PDO3_3 register
+0x91       DPM_REQ_RDO3_0                     DPM_REQ_RDO3_0 register
+0x92       DPM_REQ_RDO3_1                     DPM_REQ_RDO3_1 register
+0x93       DPM_REQ_RDO3_2                     DPM_REQ_RDO3_2 register
+0x94       DPM_REQ_RDO3_3                     DPM_REQ_RDO3_3 register
+
+
+
+STUSB_BLOCK register descriptions
+
+BCD_TYPEC_REV_LOW
+                                     BCD_TYPEC_REV_LOW register
+       7         6            5           4            3           2             1   0
+                                        BCD_TYPEC_REV_7_0
+                                                 R
+
+  Address:        STUSB_BLOCKBaseAddress + 0x06
+  Type:           R
+  Reset:          0x12
+  Description:    BCD_TYPEC_REV_LOW register
+   [7:0]    BCD_TYPEC_REV_7_0: Defined Type-C release supported by the device
+
+
+
+
+BCD_TYPEC_REV_HIGH
+                                     BCD_TYPEC_REV_HIGH register
+       7         6            5           4            3           2             1   0
+                                        BCD_TYPEC_REV_15_8
+                                                 R
+
+  Address:        STUSB_BLOCKBaseAddress + 0x07
+  Type:           R
+  Reset:          0x00
+  Description:    BCD_TYPEC_REV_HIGH register
+   [7:0]    BCD_TYPEC_REV_15_8: Defined Type-C release supported by the device
+
+
+
+
+                                                                                         3 /28
+BCD_USBPD_REV_LOW
+                                         BCD_USBPD_REV_LOW register
+         7           6            5           4            3           2            1        0
+                                             BCD_USBPD_REV_7_0
+                                                     R
+
+    Address:          STUSB_BLOCKBaseAddress + 0x08
+    Type:             R
+    Reset:            0x11
+    Description:      BCD_USBPD_REV_LOW register
+        [7:0]   BCD_USBPD_REV_7_0: Defined Power Delivery release supported by the device
+
+
+
+
+BCD_USBPD_REV_HIGH
+                                         BCD_USBPD_REV_HIGH register
+         7           6            5           4            3           2            1        0
+                                            BCD_USBPD_REV_15_8
+                                                     R
+
+    Address:          STUSB_BLOCKBaseAddress + 0x09
+    Type:             R
+    Reset:            0x20
+    Description:      BCD_USBPD_REV_HIGH register
+        [7:0]   BCD_USBPD_REV_15_8: Defined Power Delivery release supported by the device
+
+
+
+
+DEVICE_CAPAB_HIGH
+                                         DEVICE_CAPAB_HIGH register
+         7           6            5           4            3           2            1        0
+
+                                             DEVICE_CAPAB_HIGH
+
+                                                     R
+
+    Address:          STUSB_BLOCKBaseAddress + 0x0A
+    Type:             R
+    Reset:            0x00
+    Description:      DEVICE_CAPAB_HIGH register
+        [7:0]   DEVICE_CAPAB_HIGH: Not used
+
+
+
+
+4 /28
+ALERT_STATUS_1
+                                                 ALERT_STATUS_1 register
+     7                  6              5               4              3          2             1             0
+
+
+  HARD_RESET_        PORT_STATUS
+                                   TYPEC_MONIT
+                                                    CC_HW_FAUL     PD_TYPEC_ST              PRT_STATUS_   PHY_STATUS_
+
+                                                                                 RESERVED
+                                   ORING_STATU
+
+      AL                 _AL           S_AL         T_STATUS_AL      ATUS_AL                     AL            AL
+
+   RC                   R             R                R              R          R             R             R
+
+  Address:                STUSB_BLOCKBaseAddress + 0x0B
+  Type:                   R
+  Reset:                  0x30
+  Description:            ALERT_STATUS_1 register
+        [7]     HARD_RESET_AL: TBD
+        [6]     PORT_STATUS_AL: TBD
+        [5]     TYPEC_MONITORING_STATUS_AL: TBD
+        [4]     CC_HW_FAULT_STATUS_AL: TBD
+        [3]     PD_TYPEC_STATUS_AL: PD Typec alert
+                0: (NO_ALERT) PD_TYPEC_STATUS register (0x14) is equal to 0
+                1: (ALERT) PD_TYPEC_STATUS register (0x14) is different of 0
+        [1]     PRT_STATUS_AL: TBD
+        [0]     PHY_STATUS_AL: TBD
+
+
+
+
+ALERT_STATUS_1_MASK
+                                                 ALERT_STATUS_1_MASK register
+     7                  6              5               4              3          2             1             0
+
+
+  HARD_RESET_        PORT_STATUS
+                                   TYPEC_MONIT     CC_FAULT_ST    PD_TYPEC_ST
+                                                                                            PRT_STATUS_   PHY_STATUS_
+
+                                                                                 RESERVED
+                                   ORING_STATU     ATUS_AL_MAS    ATUS_AL_MAS
+
+    AL_MASK           _AL_MASK       S_MASK             K              K                      AL_MASK       AL_MASK
+
+  R/W                R/W            R/W             R/W            R/W           R          R/W           R/W
+
+  Address:                STUSB_BLOCKBaseAddress + 0x0C
+  Type:                   R/W
+  Reset:                  0xFB
+  Description:            ALERT_STATUS_1_MASK register
+        [7]     HARD_RESET_AL_MASK
+                0: (UNMASKED) Interrupt unmasked
+                1: (MASKED) Interrupt masked
+                Initiated by FTP_ALERT_STATUS_1_MASK[7]
+        [6]     PORT_STATUS_AL_MASK
+                0: (UNMASKED) Interrupt unmasked
+                1: (MASKED) Interrupt masked
+                Initiated by FTP_ALERT_STATUS_1_MASK[6]
+        [5]     TYPEC_MONITORING_STATUS_MASK
+                0: (UNMASKED) Interrupt unmasked
+                1: (MASKED) Interrupt masked
+
+
+                                                                                                                        5 /28
+                 Initiated by FTP_ALERT_STATUS_1_MASK[5]
+          [4]    CC_FAULT_STATUS_AL_MASK
+                 0: (UNMASKED) Interrupt unmasked
+                 1: (MASKED) Interrupt masked
+                 Initiated by FTP_ALERT_STATUS_1_MASK[4]
+          [3]    PD_TYPEC_STATUS_AL_MASK
+                 0: (UNMASKED) Interrupt unmasked
+                 1: (MASKED) Interrupt masked
+                 Initiated by FTP_ALERT_STATUS_1_MASK[3]
+          [1]    PRT_STATUS_AL_MASK:
+                 0: (UNMASKED) Interrupt unmasked
+                 1: (MASKED) Interrupt masked
+                 Initiated by FTP_ALERT_STATUS_1_MASK[1]
+          [0]    PHY_STATUS_AL_MASK:
+                 0: (UNMASKED) Interrupt unmasked
+                 1: (MASKED) Interrupt masked
+                 Initiated by FTP_ALERT_STATUS_1_MASK[0]
+
+
+
+
+PORT_STATUS_0
+                                            PORT_STATUS_0 register
+         7             6             5            4              3             2          1           0
+
+
+                                                                                                   ATTACH_TRAN
+
+                                                  RESERVED
+                                                                                                        S
+
+                                                  R                                                 RC
+
+    Address:            STUSB_BLOCKBaseAddress + 0x0D
+    Type:               R
+    Reset:              0x00
+    Description:        PORT_STATUS_0 register
+          [0]    ATTACH_TRANS:
+                 0: (NO_TRANS) No transition detected in attached states
+                 1: (TRANS) Transition detected in attached state
+
+
+
+
+PORT_STATUS_1
+                                            PORT_STATUS_1 register
+         7             6             5            4              3             2          1           0
+                                              LOW_POWE
+                ATTACHED_DEVICE                              POWER_MODE    DATA_MODE   reserved   ATTACH
+                                              R_STANDBY
+                       R                          R              R            R           R           R
+
+    Address:            STUSB_BLOCKBaseAddress + 0x0E
+    Type:               RC
+    Reset:              0x00
+    Description:        PORT_STATUS_1 register
+        [7:5]    ATTACHED_DEVICE:
+
+
+6 /28
+             000: (NONE_ATT) No device connected
+             001: (SNK_ATT) Sink device connected
+             010: (SRC_ATT) Source device connected
+             011: (DBG_ATT) Debug accessory device connected
+             100: (AUD_ATT) Audio accessory device connected
+             101: (POW_ACC_ATT) Powered accessory device connected
+             Others: Do not use
+    [4]      LOW_POWER_STANDBY:
+             0: (LP_OFF) Device is operating in normal mode
+             1: (LP_ON) Device is operating in standby mode
+    [3]      POWER_MODE:
+             0: (POW_SNK)
+             1: (POW_SRC)
+    [2]      DATA_MODE:
+             0: (UFP)
+             1: (DFP)
+    [1]      reserved
+    [0]      ATTACH:
+             0: (UNATTACHED)
+             1: (ATTACHED)
+
+
+
+
+TYPEC_MONITORING_STATUS_0
+                      TYPEC_MONITORING_STATUS_0 register
+   7                  6           5             4             3            2             1          0
+
+
+                               VBUS_HIGH_S   VBUS_LOW_S   VBUS_READY_   VBUS_VSAFE0   VBUS_VALID_
+
+           RESERVED                                                                                 RESERVED
+                                  TATUS         TATUS        TRANS        V_TRANS      SNK_TRANS
+
+           R                    RC            RC           RC            RC            RC           R
+
+  Address:            STUSB_BLOCKBaseAddress + 0x0F
+  Type:               R
+  Reset:              0x0F
+  Description:        TYPEC_MONITORING_STATUS_0 register
+    [5]      VBUS_HIGH_STATUS: VBUS_HIGH status updated during VBUS_READY transtion from HIGH
+             to LOW
+             0: (VBUS_HIGH_OK) VBUS below high threshold
+             1: (VBUS_HIGH_KO) VBUS above high threshold (Over voltage condition)
+    [4]      VBUS_LOW_STATUS: VBUS_LOW status updated during VBUS_READY transition from HIGH
+             to LOW
+             0: (VBUS_LOW_OK) VBUS above low threshold
+             1: (VBUS_LOW_KO) VBUS below low threshold (Under voltage condition)
+    [3]      VBUS_READY_TRANS:
+             0: (NO_TRANS) status cleared
+             1: (TRANS_DETECTED) Transition detected on VBUS_READY bit
+    [2]      VBUS_VSAFE0V_TRANS:
+             0: (NO_TRANS) status cleared
+             1: (TRANS_DETECTED) Transition detected on VBUS_VSAFE0V bit
+    [1]      VBUS_VALID_SNK_TRANS:
+             0: (NO_TRANS) status cleared
+             1: (TRANS_DETECTED) Transition detected on VBUS_VALID_SNK bit
+
+
+                                                                                                               7 /28
+        [0]     reserved
+
+
+
+
+TYPEC_MONITORING_STATUS_1
+                      TYPEC_MONITORING_STATUS_1 register
+        7                6                    5                4         3                           2             1                      0
+
+
+                                                                                                  VBUS_VSAFE0
+
+
+                                                                         VBUS_READY
+                                                                                                                VBUS_VALID_
+
+                                RESERVED                                                                                                  RESERVED
+                                                                                                       V           SNK
+
+                                R                                        R                           R             R                      R
+
+    Address:             STUSB_BLOCKBaseAddress + 0x10
+    Type:                R
+    Reset:               0x0E
+    Description:         TYPEC_MONITORING_STATUS_1 register
+        [3]     VBUS_READY:
+                0: (NO_VBUS_READY) VBUS disconnected (Unpowered or vSafe0V)
+                1: (VBUS_READY) VBUS connected (vSafe5V or negotiated power level)
+        [2]     VBUS_VSAFE0V:
+                0: (NO_VSAFE0V) VBUS is higher than 0.8V
+                1: (VSAFE0V) VBUS is lower than 0.8V
+        [1]     VBUS_VALID_SNK:
+                0: (NO_VBUS_VALID_SNK) VBUS is lower than 1.9V or 3.5V (depending of
+                VBUS_SNK_DISC_THRESHOLD value)
+                1: (VBUS_VALID_SNK) VBUS is higher than 1.9V or 3.5V (depending of
+                VBUS_SNK_DISC_THRESHOLD value)
+        [0]     reserved
+
+
+
+
+CC_STATUS
+                                                         CC_STATUS register
+        7                6                    5                4         3                           2             1                      0
+
+
+                                           LOOKING_4_C      CONNECT_RE
+
+              RESERVED                                                                CC2_STATE                               CC1_STATE
+                                            ONNECTION          SULT
+
+              R
+
+    Address:             STUSB_BLOCKBaseAddress + 0x11
+    Type:                R
+    Reset:               0x00
+    Description:         CC_STATUS register
+        [5]     LOOKING_4_CONNECTION:
+                0: (NOT_LOOKING) The device is not actively looking for a connection. A transition from '1' to '0'
+                indicates a potential connection has been found. When the device is in power-up sequence or
+                when TYPE-C FSM is in the following states: Attached.SRC (+intermediate states
+                SRC_2_SNK_PR_SWAP and SRC_2_SNK_PR_SWAP_RD), AudioAcessory,
+                UnorientedDebugAccessory.SRC, OrientedDebugAccessory.SRC, Powered.Accessory,
+
+
+
+8 /28
+              Attached.SNK (+ intermediate state SNK_2_SRC_PR_SWAP), DebugAccessory.SNK
+              1: (LOOKING) The device is looking for a connection (toggling as a DRP or looking for a
+              connection as Sink/Source only condition
+        [4]   CONNECT_RESULT:
+              0: (PRESENT_RP) The device is presenting Rp. When TYPE-C FSM is in the following states:
+              Attached.SRC (+intermediate state SRC_2_SNK_PR_SWAP), AudioAcessory,
+              UnorientedDebugAccessory.SRC, OrientedDebugAccessory.SRC, Powered.Accessory.
+              1: (PRESENT_RD) The device is presenting Rd. When when TYPE-C FSM is in the following
+              states: Attached.SNK (+ intermediate states SNK_2_SRC_PR_SWAP and
+              SRC_2_SNK_PR_SWAP_RD), DebugAccessory.SNK
+  [3:2]       CC2_STATE:
+              00: (OPEN) SRC.Open (Open, Rp) when CONNECT_RESULT = 0
+                         SNK.Open (below maximum vRa) when CONNECT_RESULT = 1
+              01: (RA_DEFAULT) SRC.Ra (below maximum vRa) when CONNECT_RESULT = 0
+                                SNK.Default (Above minimum vRd-Connect) when CONNECT_RESULT = 1
+              10: (RD_RP1_5A) SRC.Rd (within the vRd range) when CONNECT_RESULT = 0
+                            SNK.Power1.5 (Above minimum vRd-Connect) when CONNECT_RESULT = 1
+              11: (RP3_0A) Reserved when CONNECT_RESULT = 0
+                           SNK.Power3.0 (Above minimum vRd-Connect) when CONNECT_RESULT = 1
+
+              This field returns 00b if (LOOKING_4_CONNECTION=1).
+  [1:0]       CC1_STATE:
+              00: (OPEN) SRC.Open (Open, Rp) when CONNECT_RESULT = 0
+                         SNK.Open (below maximum vRa) when CONNECT_RESULT = 1
+              01: (RA_DEFAULT) SRC.Ra (below maximum vRa) when CONNECT_RESULT = 0
+                                SNK.Default (Above minimum vRd-Connect) when CONNECT_RESULT = 1
+              10: (RD_RP1_5A) SRC.Rd (within the vRd range) when CONNECT_RESULT = 0
+                            SNK.Power1.5 (Above minimum vRd-Connect) when CONNECT_RESULT = 1
+              11: (RP3_0A) Reserved when CONNECT_RESULT = 0
+                           SNK.Power3.0 (Above minimum vRd-Connect) when CONNECT_RESULT = 1
+
+              This field returns 00b if (LOOKING_4_CONNECTION=1).
+
+
+
+
+CC_HW_FAULT_STATUS_0
+                                               CC_HW_FAULT_STATUS_0 register
+   7                6               5               4              3         2            1             0
+
+
+                                 VPU_OVP_FAU
+                                                               VBUS_VSRC_
+                                                 VPU_VALID_T
+
+   RESERVED         RESERVED                                                 RESERVED     RESERVED      RESERVED
+                                                               DISCH_FAULT
+
+                                   LT_TRANS         RANS          _TRANS
+   R                R             RC              RC             RC          R            R             R
+
+  Address:             STUSB_BLOCKBaseAddress + 0x12
+  Type:                R
+  Reset:               0x10
+  Description:         CC_HW_FAULT_STATUS_0 register
+        [7]   reserved
+        [5]   VPU_OVP_FAULT_TRANS:
+              0: (NO_TRANS) Cleared
+              1: (TRANS_DETECTED) Transition occured on VPU_OVP_FAULT bit
+        [4]   VPU_VALID_TRANS:
+
+
+
+                                                                                                                   9 /28
+               0: (NO_TRANS) Cleared
+               1: (TRANS_DETECTED) Transition occured on VPU_VALID bit
+         [3]   VBUS_VSRC_DISCH_FAULT_TRANS:
+               0: (NO_TRANS) No transition occurs on VBUS_DISCH_FAULT_VDDH_I and
+               VSRC_DISCH_FAULT_VDDH_I inputs
+               1: (TRANS_DETECTED) Transition occurs on VBUS_DISCH_FAULT_VDDH_I or
+               VSRC_DISCH_FAULT_VDDH_I inputs
+         [2]   reserved
+         [1]   reserved
+         [0]   reserved
+
+
+
+
+CC_HW_FAULT_STATUS_1
+                                          CC_HW_FAULT_STATUS_1 register
+         7           6            5             4            3             2            1             0
+ VPU_OVP_F                                VBUS_DISCH_FAVSRC_DISCH_FA
+                 VPU_VALID    RESERVED                                 RESERVED     RESERVED      RESERVED
+   AULT                                        ULT          ULT
+         R           R            R             R            R             R            R             R
+
+    Address:          STUSB_BLOCKBaseAddress + 0x13
+    Type:             R
+    Reset:            0x40
+    Description:      CC_HW_FAULT_STATUS_1 register
+         [7]   VPU_OVP_FAULT:
+               0: (NO_FAULT) No over voltage condition on CC pins when in Pull-up mode (CC pins voltage is
+               below over voltage threshold of 6.0 V)
+               1: (FAULT) Over voltage condition has occurred on CC pins when in Pull-up mode (CC pins
+               voltage is above over voltage threshold of 6.0 V)
+         [6]   VPU_VALID:
+               0: (NO_VALID) CC pins pull-up voltage is below UVLO threshold of 2.8 V when in pull-up mode
+               1: (VALID) CC pins pull-up voltage is above UVLO threshold of 2.8 V when in pull-up mode
+               (normal operating condition)
+         [4]   VBUS_DISCH_FAULT:
+               0: (NO_FAULT) No VBUS discharge issue
+               1: (FAULT) VBUS discharge issue has occured
+         [3]   VSRC_DISCH_FAULT:
+               0: (NO_FAULT) No VSRC discharge issue
+               1: (FAULT) VSRC discharge issue has occured
+         [2]   reserved
+         [1]   reserved
+         [0]   reserved
+
+
+
+
+10 /28
+PD_TYPEC_STATUS
+                                       PD_TYPEC_STATUS register
+    7            6              5          4            3            2            1          0
+
+
+
+                     RESERVED                                     PD_TYPEC_HAND_CHECK
+
+
+
+                        R                                                  RC
+
+  Address:       STUSB_BLOCKBaseAddress + 0x14
+  Type:          R
+  Reset:         0x00
+  Description:   PD_TYPEC_STATUS_0 register
+   [3:0]   PD_TYPEC_HAND_CHECK: hand checking sent by Type C to Power Delivery to feedback
+           requested action
+           0000: (CLEARED) cleared
+           0001: (PD_PR_SWAP_PS_RDY_ACK)
+           0010: (PD_PR_SWAP_RP_ASSERT_ACK)
+           0011: (PD_PR_SWAP_RD_ASSERT_ACK)
+           0100: (PD_DR_SWAP_PORT_CHANGE_2_DFP_ACK)
+           0101: (PD_DR_SWAP_PORT_CHANGE_2_UFP_ACK)
+           0110: reserved
+           0111: reserved
+           1000: (PD_HARD_RESET_COMPLETE_ACK)
+           1001: reserved
+           1010: (PD_HARD_RESET_PORT_CHANGE_2_DFP_ACK)
+           1011: (PD_HARD_RESET_PORT_CHANGE_2_UFP_ACK)
+           1100: (PD_PR_SWAP_SNK_VBUS_OFF_ACK)
+           1101: (PD_PR_SWAP_SRC_VBUS_OFF_ACK)
+           1110: (PD_HARD_RESET_RECEIVED_ACK)
+           1111: (PD_HARD_RESET_SEND_ACK)
+
+
+
+
+TYPEC_STATUS
+                                       TYPEC_STATUS register
+    7            6              5          4            3            2            1          0
+ REVERSE     RESERVED       RESERVED                          TYPEC_FSM_STATE
+   R             R              R                                    R
+
+  Address:       STUSB_BLOCKBaseAddress + 0x15
+  Type:          R
+  Reset:         0x00
+  Description:   TYPEC_STATUS register
+     [7]   REVERSE: Connection orientation, indicates CC pin used for PD communication
+           0: (STRAIGHT_CC1) CC1 is attached
+
+
+                                                                                                 11 /28
+                    1: (TWISTED_CC2) CC2 is attached
+              [6]   reserved
+              [5]   reserved
+     [4:0]          TYPEC_FSM_STATE: Indicates Type-C FSM state
+                    00000: (UNATTACHED_SNK)
+                    00001: (ATTACHWAIT_SNK)
+                    00010: (ATTACHED_SNK)
+                    00011: (DEBUGACCESSORY_SNK)
+                    00100: (B_0x4) Reserved
+                    00101: (B_0x5) Reserved
+                    00110: (SNK_2_SRC_PR_SWAP) Intermediate state during PR Swap from sink to source
+                    00111: (TRYWAIT_SNK)
+                    01000: (UNATTACHED_SRC)
+                    01001: (ATTACHWAIT_SRC)
+                    01010: (ATTACHED_SRC)
+                    01011: (SRC_2_SNK_PR_SWAP) Intermediate state during PR Swap from source to sink
+                    01100: (TRY_SRC)
+                    01101: (UNATTACHED_ACCESSORY)
+                    01110: (ATTACHWAIT_ACCESSORY)
+                    01111: (AUDIOACCESSORY)
+                    10000: (UNORIENTEDDEBUGACCESSORY_SRC)
+                    10001: (POWERED_ACCESSORY)
+                    10010: (UNSUPPORTED_ACCESSORY)
+                    10011: (TYPEC_ERRORRECOVERY)
+                    10100: (TRYDEBOUNCE_SNK) Intermediate state towards TRY_SNK state
+                    10101: (TRY_SNK)
+                    10110: (B_0x16) Reserved
+                    10111: (TRYWAIT_SRC)
+                    11000: (UNATTACHEDWAIT_SRC)
+                    11001: (ORIENTEDDEBUGACCESSORY_SRC)
+                    11010: (SRC_2_SNK_PR_SWAP_RD) Intermediate state during PR Swap from source to sink
+
+
+
+
+PRT_STATUS
+                                                  PRT_STATUS register
+         7                6            5                4          3             2         1             0
+
+
+                                                     PRT_BIST_RE              PRL_MSG_RE              PRL_HW_RST_
+
+         RESERVED         RESERVED     RESERVED                    RESERVED                RESERVED
+                                                       CEIVED                   CEIVED                  RECEIVED
+
+         R                R            R              RC           R           RC          R           RC
+
+    Address:                 STUSB_BLOCKBaseAddress + 0x16
+    Type:                    R
+    Reset:                   0x00
+    Description:             PRT_STATUS register
+     [7:3]          reserved
+              [2]   PRL_MSG_RECEIVED:
+                    0: (NO_MSG_RECEIVED) Cleared by I2C master
+                    1: (MSG_RECEIVED) Interrupt for Protocol Layer Message Received
+              [1]   reserved
+
+
+12 /28
+    [0]    PRL_HW_RST_RECEIVED:
+           0: (NO_HW_RST) Cleared by I2C master
+           1: (HW_RST_RECEIVED) Interrupt for a PD hardware reset request coming from RX
+
+
+
+
+MONITORING_CTRL_0
+                                        MONITORING_CTRL_0 register
+   7             6                  5          4               3             2                  1             0
+
+
+                                                                                                           EXT_VBUS_LO
+                                                           VBUS_SNK_DI   MONITORING_
+                                                                                             EXT_VBUS_HI
+
+                         RESERVED
+                                                           SC_THRESHO    INT_THRES_B
+
+                                                               LD             YP                 GH             W
+
+                         R                                  R/W           R/W                R/W           R/W
+
+  Address:        STUSB_BLOCKBaseAddress + 0x20
+  Type:           R/W
+  Reset:          0x10
+  Description:    MONITORING_CTRL_0 register
+  [7:4]    reserved
+    [3]    VBUS_SNK_DISC_THRESHOLD: VBUS Threshold for TYPE-C state machine deconnection
+           0: (SNK_DISC_HIGH) Select a VBUS threshold at 3.5V - Reset value
+           1: (SNK_DISC_LOW) Select a VBUS threshold at 1.9V
+    [2]    MONITORING_INT_THRES_BYP: Internal VBUS monitoring comparators bypass
+           0: (INT_COMP) Internal comparators selected (vbus_low/vbus_high) internally computed – Reset
+           value
+           1: (EXT_COMP) EXT_VBUS_HIGH and EXT_VBUS_LOW selected for VBUS monitoring inputs
+    [1]    EXT_VBUS_HIGH: External VBUS high comparator
+           0: (VBUS_VALID) VBUS in valid range
+           1: (VBUS_ABOVE) VBUS above valid range
+    [0]    EXT_VBUS_LOW: External VBUS low comparator
+           0: (VBUS_VALID) VBUS in valid range
+           1: (VBUS_BELOW) VBUS below valid range
+
+
+
+
+MONITORING_CTRL_2
+                                        MONITORING_CTRL_2 register
+   7             6                  5          4               3             2                  1             0
+                     VSHIFT_HIGH                                                 VSHIFT_LOW
+                        R/W                                                            R/W
+
+  Address:        STUSB_BLOCKBaseAddress + 0x22
+  Type:           R/W
+  Reset:          0xFF
+  Description:    MONITORING_CTRL_2 register
+  [7:4]    VSHIFT_HIGH: shift register initialisation high level (set OVP level )
+  [3:0]    VSHIFT_LOW: shift register initialisation low level (set UVP level )
+
+
+
+
+                                                                                                                         13 /28
+RESET_CTRL
+                                                RESET_CTRL register
+         7                 6                5       4          3                2           1             0
+                                                                                                      RESET_SW_
+                                                 RESERVED
+                                                                                                         EN
+                                                   R/W                                                   R/W
+
+    Address:                 STUSB_BLOCKBaseAddress + 0x23
+    Type:                    R/W
+    Reset:                   0x00
+    Description:             RESET_CTRL register
+           [0]     RESET_SW_EN: Software reset
+                   0: (SW_RESET_OFF) Software reset disabled
+                   1: (SW_RESET_ON) Software reset enabled
+
+
+
+
+VBUS_DISCHARGE_TIME_CTRL
+                      VBUS_DISCHARGE_TIME_CTRL register
+         7                 6                5       4          3                2           1             0
+                     DISCHARGE_TIME_TO_0V                                 DISCHARGE_TIME_TRANSITION
+                                      R/W                                           R/W
+
+    Address:                 STUSB_BLOCKBaseAddress + 0x25
+    Type:                    R/W
+    Reset:                   0x0
+    Description:             VBUS_DISCHARGE_TIME_CTRL register
+     [7:4]         DISCHARGE_TIME_TO_0V: Discharge time from any contract to OV 800 ms is the default in
+                   standard
+                   Initialized by FTP_DISCHARGE_TIME_CTRL[7:4]
+     [3:0]         DISCHARGE_TIME_TRANSITION: Discharge time from any contract to next one the default in
+                   standard is 270ms
+                   Initialized by FTP_DISCHARGE_TIME_CTRL[3:0]
+
+
+
+
+VBUS_DISCHARGE_CTRL
+                                                VBUS_DISCHARGE_CTRL register
+         7                 6                5       4          3                2           1             0
+
+
+     VBUS_DISCHA        VSRC_DISCHA
+
+                                                                     RESERVED
+       RGE_EN             RGE_EN
+
+     R/W                R/W                                          R
+
+    Address:                 STUSB_BLOCKBaseAddress + 0x26
+    Type:                    R/W
+
+14 /28
+  Reset:          0x00
+  Description:    VBUS_DISCHARGE_CTRL register
+    [7]    VBUS_DISCHARGE_EN:
+           0: (DISABLE) Disable the forced assertion of VBUS discharge path
+           1: (ENABLE) Force the assertion of VBUS discharge path
+    [6]    VSRC_DISCHARGE_EN:
+           0: (DISABLE) Disable the forced assertion of VSRC discharge path
+           1: (ENABLE) Force the assertion of VSRC discharge path
+
+
+
+
+VBUS_CTRL
+                                         VBUS_CTRL register
+   7             6            5                    4       3           2          1              0
+
+
+                                                                               SINK_VBUS_E
+
+                                     RESERVED                                                   RESERVED
+                                                                                    N
+
+                                     R                                            R             R
+
+  Address:        STUSB_BLOCKBaseAddress + 0x27
+  Type:           R
+  Reset:          0x00
+  Description:    VBUS_CTRL register
+    [1]    SINK_VBUS_EN
+           0: (VBUS_EN_SNK_FORCE_DIS) Disable the forced VBUS_EN_SNK pin assertion
+           1: (VBUS_EN_SNK_FORCE) Force the VBUS EN SNK pin assertion
+    [0]    reserved
+
+
+
+
+GPIO3_SW_GPIO
+                                         GPIO3_SW_GPIO register
+   7             6            5                    4       3           2          1              0
+                                                                                             GPIO3_SW_
+                                                RESERVED
+                                                                                                GPIO
+                                                   R                                           R/W
+
+  Address:        STUSB_BLOCKBaseAddress + 0x2D
+  Type:           R/W
+  Reset:          0x00
+  Description:    GPIO3_SW_GPIO register
+    [0]    GPIO3_SW_GPIO: GPIO3 output value - Useful only in SNK autorun configuration (DEV_CUT =
+           01b) when GPIO3_CTRL = 00b (bit[5:4] @0xC8)
+           0: (DISABLE) GPIO3 value is Hi-Z
+           1: (ENABLE) GPIO3 value is 0b
+
+
+
+
+                                                                                                           15 /28
+RX_HEADER_LOW
+                                      RX_HEADER_LOW register
+         7             6          5        4            3       2       1       0
+                                            RX_HEADER_7_0
+                                                  R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x31
+    Type:              R
+    Reset:             0x00
+    Description:       RX_HEADER_LOW register
+     [7:0]   RX_HEADER_7_0: TBD
+
+
+
+
+RX_HEADER_HIGH
+                                      RX_HEADER_HIGH register
+         7             6          5        4            3       2       1       0
+                                           RX_HEADER_15_8
+                                                  R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x32
+    Type:              R
+    Reset:             0x00
+    Description:       RX_HEADER_HIGH register
+     [7:0]   RX_HEADER_15_8: TBD
+
+
+
+
+RX_DATA_OBJ1_0
+                                      RX_DATA_OBJ1_0 register
+     7             6          5        4          3         2       1       0
+                                      RX_DATA_OBJ1_0
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x33
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ1_0 register
+   [7:0]     RX_DATA_OBJ1_0
+
+
+
+
+16 /28
+RX_DATA_OBJ1_1
+                                    RX_DATA_OBJ1_1 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ1_1
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x34
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ1_1 register
+ [7:0]     RX_DATA_OBJ1_1
+
+
+RX_DATA_OBJ1_2
+                                    RX_DATA_OBJ1_2 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ1_2
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x35
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ1_2 register
+ [7:0]     RX_DATA_OBJ1_2
+
+
+RX_DATA_OBJ1_3
+                                    RX_DATA_OBJ1_3 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ1_3
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x36
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ1_3 register
+ [7:0]     RX_DATA_OBJ1_3
+
+
+RX_DATA_OBJ2_0
+                                    RX_DATA_OBJ2_0 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ2_0
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x37
+  Type:              R
+  Reset:             0x00
+
+
+                                                                  17 /28
+    Description:       RX_DATA_OBJ2_0 register
+   [7:0]     RX_DATA_OBJ2_0
+
+
+RX_DATA_OBJ2_1
+                                      RX_DATA_OBJ2_1 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ2_1
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x38
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ2_1 register
+   [7:0]     RX_DATA_OBJ2_1
+
+
+RX_DATA_OBJ2_2
+                                      RX_DATA_OBJ2_2 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ2_2
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x39
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ2_2 register
+   [7:0]     RX_DATA_OBJ2_2
+
+
+RX_DATA_OBJ2_3
+                                      RX_DATA_OBJ2_3 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ2_3
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x3A
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ2_3 register
+   [7:0]     RX_DATA_OBJ2_3
+
+
+RX_DATA_OBJ3_0
+                                      RX_DATA_OBJ3_0 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ3_0
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x3B
+    Type:              R
+    Reset:             0x00
+
+
+18 /28
+  Description:       RX_DATA_OBJ3_0 register
+ [7:0]     RX_DATA_OBJ3_0
+
+
+RX_DATA_OBJ3_1
+                                    RX_DATA_OBJ3_1 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ3_1
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x3C
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ3_1 register
+ [7:0]     RX_DATA_OBJ3_1
+
+
+RX_DATA_OBJ3_2
+                                    RX_DATA_OBJ3_2 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ3_2
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x3D
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ3_2 register
+ [7:0]     RX_DATA_OBJ3_2
+
+
+RX_DATA_OBJ3_3
+                                    RX_DATA_OBJ3_3 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ3_3
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x3E
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ3_3 register
+ [7:0]     RX_DATA_OBJ3_3
+
+
+RX_DATA_OBJ4_0
+                                    RX_DATA_OBJ4_0 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ4_0
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x3F
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ4_0 register
+
+
+                                                                  19 /28
+   [7:0]     RX_DATA_OBJ4_0
+
+
+RX_DATA_OBJ4_1
+                                      RX_DATA_OBJ4_1 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ4_1
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x40
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ4_1 register
+   [7:0]     RX_DATA_OBJ4_1
+
+
+RX_DATA_OBJ4_2
+                                      RX_DATA_OBJ4_2 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ4_2
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x41
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ4_2 register
+   [7:0]     RX_DATA_OBJ4_2
+
+
+RX_DATA_OBJ4_3
+                                      RX_DATA_OBJ4_3 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ4_3
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x42
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ4_3 register
+   [7:0]     RX_DATA_OBJ4_3
+
+
+RX_DATA_OBJ5_0
+                                      RX_DATA_OBJ5_0 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ5_0
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x43
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ5_0 register
+
+
+20 /28
+ [7:0]     RX_DATA_OBJ5_0
+
+
+RX_DATA_OBJ5_1
+                                    RX_DATA_OBJ5_1 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ5_1
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x44
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ5_1 register
+ [7:0]     RX_DATA_OBJ5_1
+
+
+RX_DATA_OBJ5_2
+                                    RX_DATA_OBJ5_2 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ5_2
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x45
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ5_2 register
+ [7:0]     RX_DATA_OBJ5_2
+
+
+RX_DATA_OBJ5_3
+                                    RX_DATA_OBJ5_3 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ5_3
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x46
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ5_3 register
+ [7:0]     RX_DATA_OBJ5_3
+
+
+RX_DATA_OBJ6_0
+                                    RX_DATA_OBJ6_0 register
+   7             6          5        4          3    2    1   0
+                                    RX_DATA_OBJ6_0
+                                          R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x47
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ6_0 register
+
+
+
+                                                                  21 /28
+   [7:0]     RX_DATA_OBJ6_0
+
+
+RX_DATA_OBJ6_1
+                                      RX_DATA_OBJ6_1 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ6_1
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x48
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ6_1 register
+   [7:0]     RX_DATA_OBJ6_1
+
+
+RX_DATA_OBJ6_2
+                                      RX_DATA_OBJ6_2 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ6_2
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x49
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ6_2 register
+   [7:0]     RX_DATA_OBJ6_2
+
+
+RX_DATA_OBJ6_3
+                                      RX_DATA_OBJ6_3 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ6_3
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x4A
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ6_3 register
+   [7:0]     RX_DATA_OBJ6_3
+
+
+RX_DATA_OBJ7_0
+                                      RX_DATA_OBJ7_0 register
+     7             6          5        4          3    2    1   0
+                                      RX_DATA_OBJ7_0
+                                            R
+
+    Address:           STUSB_BLOCKBaseAddress + 0x4B
+    Type:              R
+    Reset:             0x00
+    Description:       RX_DATA_OBJ7_0 register
+
+
+22 /28
+ [7:0]     RX_DATA_OBJ7_0
+
+
+RX_DATA_OBJ7_1
+                                       RX_DATA_OBJ7_1 register
+   7             6          5          4           3        2       1           0
+                                       RX_DATA_OBJ7_1
+                                             R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x4C
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ7_1 register
+ [7:0]     RX_DATA_OBJ7_1
+
+
+RX_DATA_OBJ7_2
+                                       RX_DATA_OBJ7_2 register
+   7             6          5          4           3        2       1           0
+                                       RX_DATA_OBJ7_2
+                                             R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x4D
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ7_2 register
+ [7:0]     RX_DATA_OBJ7_2
+
+
+RX_DATA_OBJ7_3
+                                       RX_DATA_OBJ7_3 register
+   7             6          5          4           3        2       1           0
+                                       RX_DATA_OBJ7_3
+                                             R
+
+  Address:           STUSB_BLOCKBaseAddress + 0x4E
+  Type:              R
+  Reset:             0x00
+  Description:       RX_DATA_OBJ7_3 register
+ [7:0]     RX_DATA_OBJ7_3
+
+
+DPM_PDO_NUMB
+                                       DPM_PDO_NUMB register
+    7                6          5           4           3       2          1           0
+                            RESERVED                                DPM_SNK_PDO_NUMB
+                                R                                         R/W
+
+  Address:           STUSB_BLOCKBaseAddress + 0x70
+  Type:              R/W
+  Reset:             0x0
+  Description:       DPM_PDO_NUMB register
+
+
+
+                                                                                           23 /28
+     [7:3]   reserved
+     [2:0]   DPM_SNK_PDO_NUMB:
+             Initialized by SNK_PDO_FILL_0[6] + 0x2
+
+
+DPM_SNK_PDO1_0
+                                       DPM_SNK_PDO1_0 register
+     7             6          5         4             3   2   1   0
+                                       DPM_SNK_PDO1_0
+                                             R/W
+
+    Address:           STUSB_BLOCKBaseAddress + 0x85
+    Type:              R/W
+    Reset:             0x00
+    Description:       DPM_SNK_PDO1_0 register
+   [7:0]     DPM_SNK_PDO1_0
+
+
+DPM_SNK_PDO1_1
+                                       DPM_SNK_PDO1_1 register
+     7             6          5         4             3   2   1   0
+                                       DPM_SNK_PDO1_1
+                                             R/W
+
+    Address:           STUSB_BLOCKBaseAddress + 0x86
+    Type:              R/W
+    Reset:             0x00
+    Description:       DPM_SNK_PDO1_1 register
+   [7:0]     DPM_SNK_PDO1_1
+
+
+DPM_SNK_PDO1_2
+                                       DPM_SNK_PDO1_2 register
+     7             6          5         4             3   2   1   0
+                                       DPM_SNK_PDO1_2
+                                             R/W
+
+    Address:           STUSB_BLOCKBaseAddress + 0x87
+    Type:              R/W
+    Reset:             0x00
+    Description:       DPM_SNK_PDO1_2 register
+   [7:0]     DPM_SNK_PDO1_2
+
+
+DPM_SNK_PDO1_3
+                                       DPM_SNK_PDO1_3 register
+     7             6          5         4             3   2   1   0
+                                       DPM_SNK_PDO1_3
+                                             R/W
+
+    Address:           STUSB_BLOCKBaseAddress + 0x88
+    Type:              R/W
+
+
+24 /28
+  Reset:             0x00
+  Description:       DPM_SNK_PDO1_3 register
+ [7:0]     DPM_SNK_PDO1_3
+
+
+DPM_SNK_PDO2_0
+                                    DPM_SNK_PDO2_0 register
+   7             6          5       4          3     2    1   0
+                                   DPM_SNK_PDO2_0
+                                        R/W
+
+  Address:           STUSB_BLOCKBaseAddress + 0x89
+  Type:              R/W
+  Reset:             0x00
+  Description:       DPM_SNK_PDO2_0 register
+ [7:0]     DPM_SNK_PDO2_0
+
+
+DPM_SNK_PDO2_1
+                                    DPM_SNK_PDO2_1 register
+   7             6          5       4          3     2    1   0
+                                   DPM_SNK_PDO2_1
+                                        R/W
+
+  Address:           STUSB_BLOCKBaseAddress + 0x8A
+  Type:              R/W
+  Reset:             0x00
+  Description:       DPM_SNK_PDO2_1 register
+ [7:0]     DPM_SNK_PDO2_1
+
+
+DPM_SNK_PDO2_2
+                                    DPM_SNK_PDO2_2 register
+   7             6          5       4          3     2    1   0
+                                   DPM_SNK_PDO2_2
+                                        R/W
+
+  Address:           STUSB_BLOCKBaseAddress + 0x8B
+  Type:              R/W
+  Reset:             0x00
+  Description:       DPM_SNK_PDO2_2 register
+ [7:0]     DPM_SNK_PDO2_2
+
+
+DPM_SNK_PDO2_3
+                                    DPM_SNK_PDO2_3 register
+   7             6          5       4          3     2    1   0
+                                   DPM_SNK_PDO2_3
+                                        R/W
+
+  Address:           STUSB_BLOCKBaseAddress + 0x8C
+  Type:              R/W
+  Reset:             0x00
+
+
+                                                                  25 /28
+    Description:       DPM_SNK_PDO2_3 register
+   [7:0]     DPM_SNK_PDO2_3
+
+
+DPM_SNK_PDO3_0
+                                      DPM_SNK_PDO3_0 register
+     7             6          5       4          3     2    1   0
+                                     DPM_SNK_PDO3_0
+                                          R/W
+
+    Address:           STUSB_BLOCKBaseAddress + 0x8D
+    Type:              R/W
+    Reset:             0x00
+    Description:       DPM_SNK_PDO3_0 register
+   [7:0]     DPM_SNK_PDO3_0
+
+
+DPM_SNK_PDO3_1
+                                      DPM_SNK_PDO3_1 register
+     7             6          5       4          3     2    1   0
+                                     DPM_SNK_PDO3_1
+                                          R/W
+
+    Address:           STUSB_BLOCKBaseAddress + 0x8E
+    Type:              R/W
+    Reset:             0x00
+    Description:       DPM_SNK_PDO3_1 register
+   [7:0]     DPM_SNK_PDO3_1
+
+
+DPM_SNK_PDO3_2
+                                      DPM_SNK_PDO3_2 register
+     7             6          5       4          3     2    1   0
+                                     DPM_SNK_PDO3_2
+                                          R/W
+
+    Address:           STUSB_BLOCKBaseAddress + 0x8F
+    Type:              R/W
+    Reset:             0x00
+    Description:       DPM_SNK_PDO3_2 register
+   [7:0]     DPM_SNK_PDO3_2
+
+
+DPM_SNK_PDO3_3
+                                      DPM_SNK_PDO3_3 register
+     7             6          5       4          3     2    1   0
+                                     DPM_SNK_PDO3_3
+                                          R/W
+
+    Address:           STUSB_BLOCKBaseAddress + 0x90
+    Type:              R/W
+    Reset:             0x00
+
+
+26 /28
+  Description:       DPM_SNK_PDO3_3 register
+ [7:0]     DPM_SNK_PDO3_3
+
+
+DPM_REQ_RDO3_0
+                                    DPM_REQ_RDO3_0 register
+   7             6          5       4          3     2    1   0
+                                   DPM_REQ_RDO3_0
+                                        R/W
+
+  Address:           STUSB_BLOCKBaseAddress + 0x91
+  Type:              R/W
+  Reset:             0x00
+  Description:       DPM_REQ_RDO3_0 register
+ [7:0]     DPM_REQ_RDO3_0
+
+
+DPM_REQ_RDO3_1
+                                    DPM_REQ_RDO3_1 register
+   7             6          5       4          3     2    1   0
+                                   DPM_REQ_RDO3_1
+                                        R/W
+
+  Address:           STUSB_BLOCKBaseAddress + 0x92
+  Type:              R/W
+  Reset:             0x00
+  Description:       DPM_REQ_RDO3_1 register
+ [7:0]     DPM_REQ_RDO3_1
+
+
+DPM_REQ_RDO3_2
+                                    DPM_REQ_RDO3_2 register
+   7             6          5       4          3     2    1   0
+                                   DPM_REQ_RDO3_2
+                                        R/W
+
+  Address:           STUSB_BLOCKBaseAddress + 0x93
+  Type:              R/W
+  Reset:             0x00
+  Description:       DPM_REQ_RDO3_2 register
+ [7:0]     DPM_REQ_RDO3_2
+
+
+DPM_REQ_RDO3_3
+                                    DPM_REQ_RDO3_3 register
+   7             6          5       4          3     2    1   0
+                                   DPM_REQ_RDO3_3
+                                        R/W
+
+  Address:           STUSB_BLOCKBaseAddress + 0x94
+  Type:              R/W
+  Reset:             0x00
+  Description:       DPM_REQ_RDO3_3 register
+
+
+                                                                  27 /28
+   [7:0]   DPM_REQ_RDO3_3
+
+
+
+
+28 /28
+

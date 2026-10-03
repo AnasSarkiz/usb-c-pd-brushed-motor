@@ -1,0 +1,26 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - R1: 4.7kΩ resistor
+ - R2: 4.7kΩ resistor
+
+NET: SCL
+  - R2 pin1
+  - R1 pin2
+
+
+EMPTY NET PINS:
+  - R1 pin1
+  - R2 pin2
+
+COMPONENT_PINS:
+R1 (4.7kΩ undefined)
+- pin1(anode, pos, left): NETS(VCC3V3)
+- pin2(cathode, neg, right): NETS(SCL)
+
+R2 (4.7kΩ undefined)
+- pin1(anode, pos, left): NETS(SCL)
+- pin2(cathode, neg, right): NETS(GND)
+

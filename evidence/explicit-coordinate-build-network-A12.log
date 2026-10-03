@@ -1,0 +1,11 @@
+Building 1 file(s)...
+Building tests/coordinate-serialization-probe.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/coordinate-serialization-probe/circuit.json
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully
