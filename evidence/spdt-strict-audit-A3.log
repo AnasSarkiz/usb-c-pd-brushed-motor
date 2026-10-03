@@ -1,0 +1,34 @@
+{
+  "revision": "A3 C221539 exact-footprint import probe",
+  "supplierCode": "C221539",
+  "approved": false,
+  "failures": [
+    "Element 46 pcb_solder_paste: : Invalid input",
+    "Element 47 pcb_solder_paste: : Invalid input",
+    "Element 49 pcb_solder_paste: : Invalid input",
+    "Element 50 pcb_solder_paste: : Invalid input",
+    "Element 59 pcb_solder_paste: : Invalid input",
+    "Element 60 pcb_solder_paste: : Invalid input",
+    "Element 62 pcb_solder_paste: : Invalid input",
+    "Element 63 pcb_solder_paste: : Invalid input",
+    "SW_DEFAULT pin1: hole 0.9139936 × 0.9139936 mm cannot fit nominal 1.27 mm-wide terminal",
+    "SW_DEFAULT pin3: schematic port missing",
+    "SW_SPDT pin1: hole 0.9139936 × 0.9139936 mm cannot fit nominal 1.27 mm-wide terminal",
+    "SW_SPDT: physical common pin 2 is drawn as a throw; native common is pin 1"
+  ],
+  "pcbTraceCount": 0,
+  "manufacturerReference": "https://www.ckswitches.com/media/1429/1000.pdf",
+  "manufacturerCommonPin": 2,
+  "manufacturerStates": [
+    "1–2",
+    "open",
+    "2–3"
+  ],
+  "manufacturerBodyMm": [
+    12.7,
+    6.6
+  ],
+  "manufacturerPitchMm": 4.7,
+  "manufacturerRecommendedRoundDrillMm": 1.85,
+  "mechanicalMountingFeatures": "M2 has no mounting tabs; all three plated pads are electrical"
+}

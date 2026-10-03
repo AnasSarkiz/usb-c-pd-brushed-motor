@@ -1,0 +1,15 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C44377.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C44377/circuit.json
+Via hole at (0.50mm, 0.50mm) overlaps SMD pad U5.EP at (0.00mm, 0.00mm)
+Via hole at (-0.50mm, 0.50mm) overlaps SMD pad U5.EP at (0.00mm, 0.00mm)
+Via hole at (-0.50mm, -0.50mm) overlaps SMD pad U5.EP at (0.00mm, 0.00mm)
+Via hole at (0.50mm, -0.50mm) overlaps SMD pad U5.EP at (0.00mm, 0.00mm)
+
+Build complete
+  Circuits  0 passed 1 failed
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

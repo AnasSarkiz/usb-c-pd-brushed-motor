@@ -1,0 +1,9 @@
+{
+  "tscircuit": "0.0.2742",
+  "@tscircuit/cli": "0.1.2235",
+  "@tscircuit/core": "0.0.2056",
+  "@tscircuit/props": "0.0.677",
+  "circuit-json": "0.0.510",
+  "typescript": "5.9.3",
+  "@biomejs/biome": "2.5.14"
+}

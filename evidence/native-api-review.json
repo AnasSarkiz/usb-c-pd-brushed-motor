@@ -1,0 +1,7 @@
+{
+  "props_version": "0.0.672",
+  "schematic_sheet_props_excerpt": "var schematicSheetProps = z139.object({\n  name: z139.string().optional(),\n  displayName: z139.string().optional(),\n  sheetIndex: z139.number().optional(),\n  sheetSize: z139.enum([\"A4\", \"ANSI_B\"]).default(\"A4\"),\n  sheetWidth: distance43.pipe(z139.number().positive()).optional(),\n  sheetHeight: distance43.pipe(z139.number().positive()).optional(),\n  children: z139.any().optional()\n});\nexpectTypesMatch(true);\n\n// lib/components/schematic-graphic.ts\nimport { z as z140 } from \"zod\";\nvar nonemptyUrl = url.refine((value) ",
+  "routing_disabled_config": {
+    "routingDisabled": true
+  }
+}

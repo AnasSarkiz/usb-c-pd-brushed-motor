@@ -1,0 +1,16 @@
+{
+  "query": "SS23D03",
+  "results": [
+    {
+      "source": "jlcpcb",
+      "lcsc": 2078536,
+      "mfr": "ERJ-3BQF2R0V",
+      "package": "0603",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+155℃ 250mW 2Ω Thick Film Resistor ±1% ±200ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
+      "stock": 4,
+      "price": 0.1102
+    }
+  ]
+}

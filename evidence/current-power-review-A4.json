@@ -1,0 +1,135 @@
+{
+  "revision": "A4",
+  "status": "analytical screening only; PD selection hardware unimplemented; overshoot and 5 V accuracy unqualified",
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/drv8874.pdf",
+    "https://www.ti.com/lit/ds/symlink/tps7a16.pdf"
+  ],
+  "assumptions": {
+    "referenceTolerance": 0.02,
+    "resistorTolerance": 0.01,
+    "mirrorTolerance": 0.055,
+    "mirrorGuaranteedMinimumVM": 5.5
+  },
+  "nominalCurrentLimitA": 2.2222222222222223,
+  "minimumCurrentLimitA": 2.0438062763622336,
+  "maximumCurrentLimitA": 2.4228172376320525,
+  "rails": [
+    {
+      "motorVoltageV": 5,
+      "mirrorCornerGuaranteed": false,
+      "pd": {
+        "implementationStatus": "Analysis only; hardware selection unresolved",
+        "nominalInputLimitA": 2.5174825174825175,
+        "minimumInputLimitA": 2.2433012532022434,
+        "maximumInputLimitA": 2.7972027972027975,
+        "candidates": [
+          {
+            "voltageV": 15,
+            "currentA": 3,
+            "requiredInputCurrentA": 1.2616824543328902,
+            "maximumTotalFaultCurrentA": 2.867378235799289,
+            "rejectionReasons": [],
+            "qualified": true
+          },
+          {
+            "voltageV": 20,
+            "currentA": 3,
+            "requiredInputCurrentA": 0.9373820459169437,
+            "maximumTotalFaultCurrentA": 2.849834376150166,
+            "rejectionReasons": [],
+            "qualified": true
+          }
+        ],
+        "selectedContract": {
+          "voltageV": 15,
+          "currentA": 3,
+          "requiredInputCurrentA": 1.2616824543328902,
+          "maximumTotalFaultCurrentA": 2.867378235799289,
+          "rejectionReasons": [],
+          "qualified": true
+        },
+        "motorMustRemainInhibited": false
+      },
+      "screenedBuckInductorPeakA": 3.190965508683924
+    },
+    {
+      "motorVoltageV": 9,
+      "mirrorCornerGuaranteed": true,
+      "pd": {
+        "implementationStatus": "Analysis only; hardware selection unresolved",
+        "nominalInputLimitA": 2.5174825174825175,
+        "minimumInputLimitA": 2.2433012532022434,
+        "maximumInputLimitA": 2.7972027972027975,
+        "candidates": [
+          {
+            "voltageV": 15,
+            "currentA": 3,
+            "requiredInputCurrentA": 2.093908212214231,
+            "maximumTotalFaultCurrentA": 2.867378235799289,
+            "rejectionReasons": [],
+            "qualified": true
+          },
+          {
+            "voltageV": 20,
+            "currentA": 3,
+            "requiredInputCurrentA": 1.5553491398450938,
+            "maximumTotalFaultCurrentA": 2.849834376150166,
+            "rejectionReasons": [],
+            "qualified": true
+          }
+        ],
+        "selectedContract": {
+          "voltageV": 15,
+          "currentA": 3,
+          "requiredInputCurrentA": 2.093908212214231,
+          "maximumTotalFaultCurrentA": 2.867378235799289,
+          "rejectionReasons": [],
+          "qualified": true
+        },
+        "motorMustRemainInhibited": false
+      },
+      "screenedBuckInductorPeakA": 3.459817403552079
+    },
+    {
+      "motorVoltageV": 12,
+      "mirrorCornerGuaranteed": true,
+      "pd": {
+        "implementationStatus": "Analysis only; hardware selection unresolved",
+        "nominalInputLimitA": 2.5174825174825175,
+        "minimumInputLimitA": 2.2433012532022434,
+        "maximumInputLimitA": 2.7972027972027975,
+        "candidates": [
+          {
+            "voltageV": 15,
+            "currentA": 3,
+            "requiredInputCurrentA": 2.7180775306252363,
+            "maximumTotalFaultCurrentA": 2.867378235799289,
+            "rejectionReasons": [
+              "Peak load exceeds minimum input current limit"
+            ],
+            "qualified": false
+          },
+          {
+            "voltageV": 20,
+            "currentA": 3,
+            "requiredInputCurrentA": 2.018824460291206,
+            "maximumTotalFaultCurrentA": 2.849834376150166,
+            "rejectionReasons": [],
+            "qualified": true
+          }
+        ],
+        "selectedContract": {
+          "voltageV": 20,
+          "currentA": 3,
+          "requiredInputCurrentA": 2.018824460291206,
+          "maximumTotalFaultCurrentA": 2.849834376150166,
+          "rejectionReasons": [],
+          "qualified": true
+        },
+        "motorMustRemainInhibited": false
+      },
+      "screenedBuckInductorPeakA": 3.459817403552079
+    }
+  ]
+}

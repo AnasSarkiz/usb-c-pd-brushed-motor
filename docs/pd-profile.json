@@ -1,0 +1,33 @@
+{
+  "revision": "A1",
+  "purpose": "STUSB4500 manufacturing configuration intent; not a binary NVM image",
+  "i2cAddress7BitHex": "0x28",
+  "sinkPdosInPriorityOrder": [
+    {
+      "pdoIndex": 3,
+      "voltageV": 20,
+      "operatingCurrentA": 3
+    },
+    {
+      "pdoIndex": 2,
+      "voltageV": 15,
+      "operatingCurrentA": 3
+    },
+    {
+      "pdoIndex": 1,
+      "voltageV": 5,
+      "operatingCurrentA": 0.5
+    }
+  ],
+  "numberOfSinkPdos": 3,
+  "POWER_ONLY_ABOVE_5V": 1,
+  "REQ_SRC_CURRENT": 0,
+  "verificationRequiredBeforeMotorUse": [
+    "Generate NVM image using the manufacturer-supported tool and exact device revision",
+    "Program and read back the complete NVM, including both PDO currents and above-5-V gating",
+    "Cold-start and verify negotiated voltage/current with a USB PD analyzer",
+    "Verify motor power remains off on 5 V, 9 V, native 12 V and insufficient 15/20 V sources",
+    "Verify detach, brownout and hard reset disable the motor power path"
+  ],
+  "status": "WITHDRAWN A1 configuration intent; not an approved A2 manufacturing profile"
+}

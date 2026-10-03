@@ -1,0 +1,79 @@
+Building 1 file(s)...
+Building tests/active-supplier-import-probe.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/active-supplier-import-probe/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "R" prefix is being used with a <chip />, try using it with a <resistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+All pins on D1 are underspecified (no pinAttributes set)
+All pins on D2 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on RV1 are underspecified (no pinAttributes set)
+All pins on SW1 are underspecified (no pinAttributes set)
+All pins on U8 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on Q3 are underspecified (no pinAttributes set)
+All pins on D10 are underspecified (no pinAttributes set)
+All pins on J2 are underspecified (no pinAttributes set)
+All pins on SW2 are underspecified (no pinAttributes set)
+J1 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+U3 has no pin with requires_power=true
+D1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+U4 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+RV1 has no pin with requires_power=true
+SW1 has no pin with requires_power=true
+U8 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Q3 has no pin with requires_power=true
+U10 has no pin with requires_power=true
+D10 has no pin with requires_power=true
+J2 has no pin with requires_power=true
+SW2 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+D1 has no pin with requires_ground=true
+D2 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+RV1 has no pin with requires_ground=true
+SW1 has no pin with requires_ground=true
+U8 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+Q3 has no pin with requires_ground=true
+D10 has no pin with requires_ground=true
+J2 has no pin with requires_ground=true
+SW2 has no pin with requires_ground=true
+D1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+RV1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+U8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q3 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D10 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Via hole at (-83.40mm, -38.10mm) overlaps SMD pad U4.EP at (-84.00mm, -37.50mm)
+Via hole at (-83.40mm, -36.90mm) overlaps SMD pad U4.EP at (-84.00mm, -37.50mm)
+Via hole at (-84.60mm, -36.90mm) overlaps SMD pad U4.EP at (-84.00mm, -37.50mm)
+Via hole at (-84.60mm, -38.10mm) overlaps SMD pad U4.EP at (-84.00mm, -37.50mm)
+Via hole at (-83.50mm, -12.00mm) overlaps SMD pad U5.EP at (-84.00mm, -12.50mm)
+Via hole at (-84.50mm, -12.00mm) overlaps SMD pad U5.EP at (-84.00mm, -12.50mm)
+Via hole at (-84.50mm, -13.00mm) overlaps SMD pad U5.EP at (-84.00mm, -12.50mm)
+Via hole at (-83.50mm, -13.00mm) overlaps SMD pad U5.EP at (-84.00mm, -12.50mm)
+Via hole at (27.50mm, 63.00mm) overlaps SMD pad U10.EP at (28.00mm, 62.50mm)
+Via hole at (28.50mm, 63.00mm) overlaps SMD pad U10.EP at (28.00mm, 62.50mm)
+Via hole at (27.50mm, 62.00mm) overlaps SMD pad U10.EP at (28.00mm, 62.50mm)
+Via hole at (28.50mm, 62.00mm) overlaps SMD pad U10.EP at (28.00mm, 62.50mm)
+
+Build complete
+  Circuits  0 passed 1 failed
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

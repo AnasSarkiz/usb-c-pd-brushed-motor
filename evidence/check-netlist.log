@@ -1,0 +1,26 @@
+Error in createContainer
+1 | // No board is implemented while required JLCPCB import B01 is blocked.
+2 | export default function UsbCPdBrushedMotorController(): never {
+3 |   throw new Error(
+                ^
+error: DESIGN BLOCKED: potentiometer C6738614 has no importable EasyEDA model. Schematic and placement are unfinished; see VALIDATION.md.
+      at UsbCPdBrushedMotorController (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/index.circuit.tsx:3:13)
+      at react-stack-bottom-frame (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:15859:20)
+      at renderWithHooks (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:3221:22)
+      at updateFunctionComponent (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:6475:19)
+      at runWithFiberInDEV (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:1738:13)
+      at performUnitOfWork (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:12834:22)
+      at workLoopSync (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:12644:41)
+      at renderRootSync (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:12624:11)
+      at performWorkOnRoot (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:12135:44)
+      at performSyncWorkOnRoot (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:2446:7)
+      at flushSyncWorkAcrossRoots_impl (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:2294:21)
+      at flushSyncWork (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/cjs/react-reconciler.development.js:12394:12)
+      at createInstanceFromReactElement (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:8539:14)
+      at add (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:69129:19)
+      at generateCircuitJson (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/tscircuit/node_modules/@tscircuit/cli/dist/cli/main.js:167580:10)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/tscircuit/node_modules/@tscircuit/cli/dist/cli/main.js:182844:27)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/tscircuit/node_modules/@tscircuit/cli/dist/cli/main.js:182877:33)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/tscircuit/node_modules/@tscircuit/cli/dist/cli/main.js:182908:28)
+
+DESIGN BLOCKED: potentiometer C6738614 has no importable EasyEDA model. Schematic and placement are unfinished; see VALIDATION.md.

@@ -1,0 +1,12 @@
+[
+  {
+    "file": "dist/tests/sp3t-import-probe/pcb-A2.png",
+    "sha256": "6a89ad89442f4d9c30a245bff63a35f90f6dc7fca2661aad6c54d87eb822ef51",
+    "unchangedSinceVisualInspection": true
+  },
+  {
+    "file": "dist/tests/sp3t-import-probe/schematic-A2.png",
+    "sha256": "732e6e86b59358ee8b5a38e8490950eb3d79d00c40f73ff1160ab75d370d1537",
+    "unchangedSinceVisualInspection": true
+  }
+]

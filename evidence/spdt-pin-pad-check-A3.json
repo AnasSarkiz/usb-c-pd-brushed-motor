@@ -1,0 +1,445 @@
+{
+  "revision": "A3 C221539 exact-footprint import probe",
+  "supplierCode": "C221539",
+  "approved": false,
+  "failures": [
+    "Element 46 pcb_solder_paste: : Invalid input",
+    "Element 47 pcb_solder_paste: : Invalid input",
+    "Element 49 pcb_solder_paste: : Invalid input",
+    "Element 50 pcb_solder_paste: : Invalid input",
+    "Element 59 pcb_solder_paste: : Invalid input",
+    "Element 60 pcb_solder_paste: : Invalid input",
+    "Element 62 pcb_solder_paste: : Invalid input",
+    "Element 63 pcb_solder_paste: : Invalid input",
+    "SW_DEFAULT pin1: hole 0.9139936 × 0.9139936 mm cannot fit nominal 1.27 mm-wide terminal",
+    "SW_DEFAULT pin3: schematic port missing",
+    "SW_SPDT pin1: hole 0.9139936 × 0.9139936 mm cannot fit nominal 1.27 mm-wide terminal",
+    "SW_SPDT: physical common pin 2 is drawn as a throw; native common is pin 1"
+  ],
+  "pcbTraceCount": 0,
+  "pinReports": [
+    {
+      "componentName": "SW_DEFAULT",
+      "pinNumber": 1,
+      "sourcePort": {
+        "type": "source_port",
+        "pin_number": 1,
+        "port_hints": [
+          "pin1",
+          "1"
+        ],
+        "name": "pin1",
+        "source_port_id": "source_port_0",
+        "source_component_id": "source_component_0",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net0"
+      },
+      "schematicPort": {
+        "type": "schematic_port",
+        "schematic_port_id": "schematic_port_0",
+        "source_port_id": "source_port_0",
+        "schematic_sheet_id": "schematic_sheet_0",
+        "schematic_component_id": "schematic_component_0",
+        "center": {
+          "x": -6.38,
+          "y": 0
+        },
+        "facing_direction": "left",
+        "distance_from_component_edge": 0.4,
+        "pin_number": 1,
+        "is_connected": true
+      },
+      "pcbPort": {
+        "type": "pcb_port",
+        "pcb_port_id": "pcb_port_0",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "source_port_id": "source_port_0",
+        "pcb_component_id": "pcb_component_0",
+        "x": -4.700016,
+        "y": 0,
+        "layers": [
+          "top",
+          "bottom"
+        ]
+      },
+      "pad": {
+        "type": "pcb_plated_hole",
+        "shape": "rotated_pill_hole_with_rect_pad",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "hole_shape": "rotated_pill",
+        "pad_shape": "rect",
+        "hole_width": 0.9139936,
+        "hole_height": 0.9139936,
+        "hole_ccw_rotation": 0,
+        "rect_pad_width": 1.524,
+        "rect_pad_height": 2.1999956,
+        "rect_ccw_rotation": 0,
+        "hole_offset_x": 0,
+        "hole_offset_y": 0,
+        "is_covered_with_solder_mask": false,
+        "x": -4.700016,
+        "y": 0,
+        "layers": [
+          "top",
+          "bottom"
+        ],
+        "port_hints": [
+          "unnamed_platedhole1",
+          "pin1"
+        ],
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_0",
+        "pcb_plated_hole_id": "pcb_plated_hole_0"
+      }
+    },
+    {
+      "componentName": "SW_DEFAULT",
+      "pinNumber": 2,
+      "sourcePort": {
+        "type": "source_port",
+        "pin_number": 2,
+        "port_hints": [
+          "pin2",
+          "2"
+        ],
+        "name": "pin2",
+        "source_port_id": "source_port_1",
+        "source_component_id": "source_component_0",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net1"
+      },
+      "schematicPort": {
+        "type": "schematic_port",
+        "schematic_port_id": "schematic_port_1",
+        "source_port_id": "source_port_1",
+        "schematic_sheet_id": "schematic_sheet_0",
+        "schematic_component_id": "schematic_component_0",
+        "center": {
+          "x": -5.62,
+          "y": 0
+        },
+        "facing_direction": "right",
+        "distance_from_component_edge": 0.4,
+        "pin_number": 2,
+        "is_connected": true
+      },
+      "pcbPort": {
+        "type": "pcb_port",
+        "pcb_port_id": "pcb_port_1",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "source_port_id": "source_port_1",
+        "pcb_component_id": "pcb_component_0",
+        "x": 1.1102230246251565e-16,
+        "y": 0,
+        "layers": [
+          "top",
+          "bottom"
+        ]
+      },
+      "pad": {
+        "type": "pcb_plated_hole",
+        "shape": "pill",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "outer_width": 1.524,
+        "outer_height": 2.1999956,
+        "hole_width": 0.9139936,
+        "hole_height": 1.5899892,
+        "is_covered_with_solder_mask": false,
+        "x": 1.1102230246251565e-16,
+        "y": 0,
+        "ccw_rotation": 0,
+        "layers": [
+          "top",
+          "bottom"
+        ],
+        "port_hints": [
+          "unnamed_platedhole2",
+          "pin2"
+        ],
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_1",
+        "pcb_plated_hole_id": "pcb_plated_hole_1"
+      }
+    },
+    {
+      "componentName": "SW_DEFAULT",
+      "pinNumber": 3,
+      "sourcePort": {
+        "type": "source_port",
+        "pin_number": 3,
+        "port_hints": [
+          "pin3",
+          "3"
+        ],
+        "name": "pin3",
+        "source_port_id": "source_port_2",
+        "source_component_id": "source_component_0",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net2"
+      },
+      "pcbPort": {
+        "type": "pcb_port",
+        "pcb_port_id": "pcb_port_2",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "source_port_id": "source_port_2",
+        "pcb_component_id": "pcb_component_0",
+        "x": 4.700016,
+        "y": 0,
+        "layers": [
+          "top",
+          "bottom"
+        ]
+      },
+      "pad": {
+        "type": "pcb_plated_hole",
+        "shape": "pill",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "outer_width": 1.524,
+        "outer_height": 2.1999956,
+        "hole_width": 0.9139936,
+        "hole_height": 1.5899892,
+        "is_covered_with_solder_mask": false,
+        "x": 4.700016,
+        "y": 0,
+        "ccw_rotation": 0,
+        "layers": [
+          "top",
+          "bottom"
+        ],
+        "port_hints": [
+          "unnamed_platedhole3",
+          "pin3"
+        ],
+        "pcb_component_id": "pcb_component_0",
+        "pcb_port_id": "pcb_port_2",
+        "pcb_plated_hole_id": "pcb_plated_hole_2"
+      }
+    },
+    {
+      "componentName": "SW_SPDT",
+      "pinNumber": 1,
+      "sourcePort": {
+        "type": "source_port",
+        "pin_number": 1,
+        "port_hints": [
+          "pin1",
+          "1"
+        ],
+        "name": "pin1",
+        "source_port_id": "source_port_3",
+        "source_component_id": "source_component_1",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net3"
+      },
+      "schematicPort": {
+        "type": "schematic_port",
+        "schematic_port_id": "schematic_port_2",
+        "source_port_id": "source_port_3",
+        "schematic_sheet_id": "schematic_sheet_0",
+        "schematic_component_id": "schematic_component_1",
+        "center": {
+          "x": 5.63,
+          "y": 0.03
+        },
+        "facing_direction": "left",
+        "distance_from_component_edge": 0.4,
+        "pin_number": 1,
+        "is_connected": true
+      },
+      "pcbPort": {
+        "type": "pcb_port",
+        "pcb_port_id": "pcb_port_3",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "source_port_id": "source_port_3",
+        "pcb_component_id": "pcb_component_1",
+        "x": -4.713732000000052,
+        "y": -8.408799999999928,
+        "layers": [
+          "top",
+          "bottom"
+        ]
+      },
+      "pad": {
+        "type": "pcb_plated_hole",
+        "shape": "rotated_pill_hole_with_rect_pad",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "hole_shape": "rotated_pill",
+        "pad_shape": "rect",
+        "hole_width": 0.9139936,
+        "hole_height": 0.9139936,
+        "hole_ccw_rotation": 0,
+        "rect_pad_width": 1.524,
+        "rect_pad_height": 2.1999956,
+        "rect_ccw_rotation": 0,
+        "hole_offset_x": 0,
+        "hole_offset_y": 0,
+        "is_covered_with_solder_mask": false,
+        "x": -4.713732000000052,
+        "y": -8.408799999999928,
+        "layers": [
+          "top",
+          "bottom"
+        ],
+        "port_hints": [
+          "unnamed_platedhole4",
+          "pin1"
+        ],
+        "pcb_component_id": "pcb_component_1",
+        "pcb_port_id": "pcb_port_3",
+        "pcb_plated_hole_id": "pcb_plated_hole_3"
+      }
+    },
+    {
+      "componentName": "SW_SPDT",
+      "pinNumber": 2,
+      "sourcePort": {
+        "type": "source_port",
+        "pin_number": 2,
+        "port_hints": [
+          "pin2",
+          "2"
+        ],
+        "name": "pin2",
+        "source_port_id": "source_port_4",
+        "source_component_id": "source_component_1",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net4"
+      },
+      "schematicPort": {
+        "type": "schematic_port",
+        "schematic_port_id": "schematic_port_3",
+        "source_port_id": "source_port_4",
+        "schematic_sheet_id": "schematic_sheet_0",
+        "schematic_component_id": "schematic_component_1",
+        "center": {
+          "x": 6.37,
+          "y": 0.17
+        },
+        "facing_direction": "right",
+        "distance_from_component_edge": 0.4,
+        "pin_number": 2,
+        "is_connected": true
+      },
+      "pcbPort": {
+        "type": "pcb_port",
+        "pcb_port_id": "pcb_port_4",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "source_port_id": "source_port_4",
+        "pcb_component_id": "pcb_component_1",
+        "x": -0.013716000000051909,
+        "y": -8.408799999999928,
+        "layers": [
+          "top",
+          "bottom"
+        ]
+      },
+      "pad": {
+        "type": "pcb_plated_hole",
+        "shape": "pill",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "outer_width": 1.524,
+        "outer_height": 2.1999956,
+        "hole_width": 0.9139936,
+        "hole_height": 1.5899892,
+        "is_covered_with_solder_mask": false,
+        "x": -0.013716000000051909,
+        "y": -8.408799999999928,
+        "ccw_rotation": 0,
+        "layers": [
+          "top",
+          "bottom"
+        ],
+        "port_hints": [
+          "unnamed_platedhole5",
+          "pin2"
+        ],
+        "pcb_component_id": "pcb_component_1",
+        "pcb_port_id": "pcb_port_4",
+        "pcb_plated_hole_id": "pcb_plated_hole_4"
+      }
+    },
+    {
+      "componentName": "SW_SPDT",
+      "pinNumber": 3,
+      "sourcePort": {
+        "type": "source_port",
+        "pin_number": 3,
+        "port_hints": [
+          "pin3",
+          "3"
+        ],
+        "name": "pin3",
+        "source_port_id": "source_port_5",
+        "source_component_id": "source_component_1",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net5"
+      },
+      "schematicPort": {
+        "type": "schematic_port",
+        "schematic_port_id": "schematic_port_4",
+        "source_port_id": "source_port_5",
+        "schematic_sheet_id": "schematic_sheet_0",
+        "schematic_component_id": "schematic_component_1",
+        "center": {
+          "x": 6.37,
+          "y": -0.06
+        },
+        "facing_direction": "right",
+        "distance_from_component_edge": 0.4,
+        "pin_number": 3,
+        "is_connected": true
+      },
+      "pcbPort": {
+        "type": "pcb_port",
+        "pcb_port_id": "pcb_port_5",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "source_port_id": "source_port_5",
+        "pcb_component_id": "pcb_component_1",
+        "x": 4.686299999999948,
+        "y": -8.408799999999928,
+        "layers": [
+          "top",
+          "bottom"
+        ]
+      },
+      "pad": {
+        "type": "pcb_plated_hole",
+        "shape": "pill",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "outer_width": 1.524,
+        "outer_height": 2.1999956,
+        "hole_width": 0.9139936,
+        "hole_height": 1.5899892,
+        "is_covered_with_solder_mask": false,
+        "x": 4.686299999999948,
+        "y": -8.408799999999928,
+        "ccw_rotation": 0,
+        "layers": [
+          "top",
+          "bottom"
+        ],
+        "port_hints": [
+          "unnamed_platedhole6",
+          "pin3"
+        ],
+        "pcb_component_id": "pcb_component_1",
+        "pcb_port_id": "pcb_port_5",
+        "pcb_plated_hole_id": "pcb_plated_hole_5"
+      }
+    }
+  ],
+  "manufacturerReference": "https://www.ckswitches.com/media/1429/1000.pdf",
+  "manufacturerCommonPin": 2,
+  "manufacturerStates": [
+    "1–2",
+    "open",
+    "2–3"
+  ],
+  "manufacturerBodyMm": [
+    12.7,
+    6.6
+  ],
+  "manufacturerPitchMm": 4.7,
+  "manufacturerRecommendedRoundDrillMm": 1.85,
+  "mechanicalMountingFeatures": "M2 has no mounting tabs; all three plated pads are electrical"
+}

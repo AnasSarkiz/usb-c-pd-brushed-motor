@@ -1,0 +1,174 @@
+{
+  "revision": "A7",
+  "blockerCount": 12,
+  "blockers": [
+    {
+      "code": "C1849461",
+      "ref": "U4",
+      "sourceSha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (0.60mm, -0.60mm) overlaps SMD pad U4.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_0",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C1849461",
+      "ref": "U4",
+      "sourceSha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (0.60mm, 0.60mm) overlaps SMD pad U4.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_1",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C1849461",
+      "ref": "U4",
+      "sourceSha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (-0.60mm, 0.60mm) overlaps SMD pad U4.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_2",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C1849461",
+      "ref": "U4",
+      "sourceSha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (-0.60mm, -0.60mm) overlaps SMD pad U4.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_3",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C44377",
+      "ref": "U5",
+      "sourceSha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (0.50mm, 0.50mm) overlaps SMD pad U5.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_0",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C44377",
+      "ref": "U5",
+      "sourceSha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (-0.50mm, 0.50mm) overlaps SMD pad U5.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_1",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C44377",
+      "ref": "U5",
+      "sourceSha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (-0.50mm, -0.50mm) overlaps SMD pad U5.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_2",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C44377",
+      "ref": "U5",
+      "sourceSha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (0.50mm, -0.50mm) overlaps SMD pad U5.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_3",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C1855818",
+      "ref": "U10",
+      "sourceSha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (-0.50mm, 0.50mm) overlaps SMD pad U10.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_0",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C1855818",
+      "ref": "U10",
+      "sourceSha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (0.50mm, 0.50mm) overlaps SMD pad U10.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_1",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C1855818",
+      "ref": "U10",
+      "sourceSha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (-0.50mm, -0.50mm) overlaps SMD pad U10.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_2",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    },
+    {
+      "code": "C1855818",
+      "ref": "U10",
+      "sourceSha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "diagnostic": {
+        "error_type": "pcb_placement_error",
+        "message": "Via hole at (0.50mm, -0.50mm) overlaps SMD pad U10.EP at (0.00mm, 0.00mm)",
+        "type": "pcb_placement_error",
+        "pcb_placement_error_id": "pcb_placement_error_3",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "affectedStage": "Supplier footprint / board placement",
+      "disposition": "Unresolved blocking issue; model and check unchanged"
+    }
+  ]
+}

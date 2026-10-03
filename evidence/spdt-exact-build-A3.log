@@ -1,0 +1,19 @@
+Building 1 file(s)...
+Building tests/spdt-import-probe.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/spdt-import-probe/circuit.json
+Failed to fetch supplier footprint for <switch#5 name=".SW_SPDT" /> (jlcpcb:C221539): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <switch#1 name=".SW_DEFAULT" /> (jlcpcb:C221539): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[tests/spdt-import-probe] Generating PCB SVG...
+[tests/spdt-import-probe] Written pcb.svg
+[tests/spdt-import-probe] Generating schematic SVG...
+[tests/spdt-import-probe] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

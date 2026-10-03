@@ -1,0 +1,12 @@
+Building 1 file(s)...
+Building tests/supplier-audit/*.circuit.tsx...
+Generating circuit JSON...
+error: Cannot find module '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tests/supplier-audit/*.circuit.tsx' from '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js'
+Fatal error [circuit_generation_failed]: ResolveMessage: Cannot find module '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tests/supplier-audit/*.circuit.tsx' from '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js'
+
+Build complete
+  Circuits  0 passed 1 failed
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

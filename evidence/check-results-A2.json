@@ -1,0 +1,22 @@
+[
+  {
+    "command": "bun run format:check",
+    "exitCode": 0,
+    "log": "evidence/format-check-A2.log"
+  },
+  {
+    "command": "bun run typecheck",
+    "exitCode": 0,
+    "log": "evidence/typecheck-A2.log"
+  },
+  {
+    "command": "bun test",
+    "exitCode": 0,
+    "log": "evidence/test-A2.log"
+  },
+  {
+    "command": "bun scripts/audit-sp3t-imports.ts",
+    "exitCode": 1,
+    "log": "evidence/sp3t-pin-pad-check-A2.log"
+  }
+]

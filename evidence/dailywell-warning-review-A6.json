@@ -1,0 +1,114 @@
+[
+  {
+    "supplierCode": "C908270",
+    "importedSourceSha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+    "type": "source_refdes_convention_warning",
+    "message": "The \"S\" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />",
+    "source_component_id": "source_component_0",
+    "reason": "Manufacturer part is a mechanical SPDT switch. SW1 is appropriate. Official importer emits a chip solely for complete supplier pin coverage; inspected core check tests primitive category/prefix, not electrical connectivity.",
+    "evidence": [
+      "evidence/C908270-manufacturer-A4.pdf",
+      "evidence/C908270-function-A4.png",
+      "node_modules/@tscircuit/checks/dist/index.js:6187-6288",
+      "node_modules/@tscircuit/core/dist/index.js:14920-14988"
+    ]
+  },
+  {
+    "supplierCode": "C908270",
+    "importedSourceSha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+    "type": "source_component_pins_underspecified_warning",
+    "message": "All pins on SW1 are underspecified (no pinAttributes set)",
+    "source_component_id": "source_component_0",
+    "reason": "All three manufacturer terminals are passive bidirectional contacts. Their common/throw roles and 2-3 / OPEN / 2-1 function were checked against manufacturer tables. No powered IC pin is omitted. Inspected checks code warns for every simple_chip with no pinAttributes regardless of physical device type.",
+    "evidence": [
+      "evidence/C908270-manufacturer-A4.pdf",
+      "evidence/C908270-function-A4.png",
+      "node_modules/@tscircuit/checks/dist/index.js:6187-6288",
+      "node_modules/@tscircuit/core/dist/index.js:14920-14988"
+    ]
+  },
+  {
+    "supplierCode": "C908270",
+    "importedSourceSha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+    "type": "source_no_power_pin_defined_warning",
+    "message": "SW1 has no pin with requires_power=true",
+    "source_component_id": "source_component_0",
+    "reason": "This passive three-terminal mechanical switch needs no dedicated supply terminal. Pin 2 carries PWM; falsely declaring it a required power pin would be incorrect. Inspected check applies powered-chip assumptions to supplier box imports.",
+    "evidence": [
+      "evidence/C908270-manufacturer-A4.pdf",
+      "evidence/C908270-function-A4.png",
+      "node_modules/@tscircuit/checks/dist/index.js:6187-6288",
+      "node_modules/@tscircuit/core/dist/index.js:14920-14988"
+    ]
+  },
+  {
+    "supplierCode": "C908270",
+    "importedSourceSha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+    "type": "source_no_ground_pin_defined_warning",
+    "message": "SW1 has no pin with requires_ground=true",
+    "source_component_id": "source_component_0",
+    "reason": "The mechanical switch has no ground terminal. Both throws are signal contacts; the H-bridge provides their input bias. Inspected check applies powered-chip assumptions to all simple_chip components.",
+    "evidence": [
+      "evidence/C908270-manufacturer-A4.pdf",
+      "evidence/C908270-function-A4.png",
+      "node_modules/@tscircuit/checks/dist/index.js:6187-6288",
+      "node_modules/@tscircuit/core/dist/index.js:14920-14988"
+    ]
+  },
+  {
+    "supplierCode": "C908281",
+    "importedSourceSha256": "3ed81c46f5ec47461764dea2ebc3e0eef1ddb339f392a4ab5301c3d9a7a32b48",
+    "type": "source_refdes_convention_warning",
+    "message": "The \"S\" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />",
+    "source_component_id": "source_component_0",
+    "reason": "Manufacturer part is a mechanical SPDT switch. SW1 is appropriate. Official importer emits a chip solely for complete supplier pin coverage; inspected core check tests primitive category/prefix, not electrical connectivity.",
+    "evidence": [
+      "evidence/C908281-manufacturer-A4.pdf",
+      "evidence/C908281-function-A4.png",
+      "node_modules/@tscircuit/checks/dist/index.js:6187-6288",
+      "node_modules/@tscircuit/core/dist/index.js:14920-14988"
+    ]
+  },
+  {
+    "supplierCode": "C908281",
+    "importedSourceSha256": "3ed81c46f5ec47461764dea2ebc3e0eef1ddb339f392a4ab5301c3d9a7a32b48",
+    "type": "source_component_pins_underspecified_warning",
+    "message": "All pins on SW1 are underspecified (no pinAttributes set)",
+    "source_component_id": "source_component_0",
+    "reason": "All three manufacturer terminals are passive bidirectional contacts. Their common/throw roles and 2-3 / OPEN / 2-1 function were checked against manufacturer tables. No powered IC pin is omitted. Inspected checks code warns for every simple_chip with no pinAttributes regardless of physical device type.",
+    "evidence": [
+      "evidence/C908281-manufacturer-A4.pdf",
+      "evidence/C908281-function-A4.png",
+      "node_modules/@tscircuit/checks/dist/index.js:6187-6288",
+      "node_modules/@tscircuit/core/dist/index.js:14920-14988"
+    ]
+  },
+  {
+    "supplierCode": "C908281",
+    "importedSourceSha256": "3ed81c46f5ec47461764dea2ebc3e0eef1ddb339f392a4ab5301c3d9a7a32b48",
+    "type": "source_no_power_pin_defined_warning",
+    "message": "SW1 has no pin with requires_power=true",
+    "source_component_id": "source_component_0",
+    "reason": "This passive three-terminal mechanical switch needs no dedicated supply terminal. Pin 2 carries PWM; falsely declaring it a required power pin would be incorrect. Inspected check applies powered-chip assumptions to supplier box imports.",
+    "evidence": [
+      "evidence/C908281-manufacturer-A4.pdf",
+      "evidence/C908281-function-A4.png",
+      "node_modules/@tscircuit/checks/dist/index.js:6187-6288",
+      "node_modules/@tscircuit/core/dist/index.js:14920-14988"
+    ]
+  },
+  {
+    "supplierCode": "C908281",
+    "importedSourceSha256": "3ed81c46f5ec47461764dea2ebc3e0eef1ddb339f392a4ab5301c3d9a7a32b48",
+    "type": "source_no_ground_pin_defined_warning",
+    "message": "SW1 has no pin with requires_ground=true",
+    "source_component_id": "source_component_0",
+    "reason": "The mechanical switch has no ground terminal. Both throws are signal contacts; the H-bridge provides their input bias. Inspected check applies powered-chip assumptions to all simple_chip components.",
+    "evidence": [
+      "evidence/C908281-manufacturer-A4.pdf",
+      "evidence/C908281-function-A4.png",
+      "node_modules/@tscircuit/checks/dist/index.js:6187-6288",
+      "node_modules/@tscircuit/core/dist/index.js:14920-14988"
+    ]
+  }
+]

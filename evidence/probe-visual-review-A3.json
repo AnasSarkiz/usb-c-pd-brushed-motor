@@ -1,0 +1,32 @@
+{
+  "revision": "A3",
+  "reviewed": true,
+  "notes": "Inspected generated A4 schematic and exact PCB render, manufacturer C&K contact/C-terminal drawings and Dailywell 2MS3 contact drawing; no product placement approval. Native common/pin fit/paste audit fails.",
+  "artifacts": [
+    {
+      "path": "dist/tests/spdt-import-probe/pcb-A3.png",
+      "sha256": "4de0fcdfa47591f46593db69c4a478c6d4c55c5e2f580d057abbce5af725bb1f",
+      "bytes": 9877
+    },
+    {
+      "path": "dist/tests/spdt-import-probe/schematic-A3.png",
+      "sha256": "94d274fed2418044eecfbf413da0955d425e4f5a64d8e8526c12ac458d48a00d",
+      "bytes": 13584
+    },
+    {
+      "path": "evidence/C221539-function-drawing-A3.png",
+      "sha256": "841596d93d37ff5f21456ddd73373bc384a5489003c3c40698f2e423cefb3e00",
+      "bytes": 247297
+    },
+    {
+      "path": "evidence/C221539-PC-terminal-drawing-A3.png",
+      "sha256": "5125844b2c54ef658b5827d93abbf8abd2fefd8c994dae21b8514aee7a32399a",
+      "bytes": 228060
+    },
+    {
+      "path": "evidence/Dailywell-2M-function-drawing-A3.png",
+      "sha256": "3d6b0a907de79652e953715c6f5e4e3c6e4a749d8b0f45a1d8d6cabb09cce6fc",
+      "bytes": 242753
+    }
+  ]
+}

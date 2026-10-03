@@ -1,0 +1,739 @@
+                                                                           Features
+                                                                           n Carbon element
+                                                                           n Insulated shaft
+                                                                           n Wide variety of mounting styles
+                                                                           n Center detent option
+                                                                           n RoHS compliant*
+
+
+
+
+                                                                           PTV09 Series - 9 mm Potentiometer
+
+                 Electrical Characteristics                                  Product Dimensions
+              Taper. ..................................... Linear, audio   PTV09A-1                                                                  PTV09A-2
+              Standard Resistance Range                                    (Horizontal/Rear Mount w/Sleeve Bushing)                                  (Vertical/Side Mount,
+                   . ........................ 1 K ohms to 1 M ohms                                                                                   Bushingless, 10 mm Height)
+F-Type                                                                                                                  0.5
+              Standard Resistance Tolerance. ......±20 %                                                         L±                                                                       L±
+                                                                                                                                                                                                 0.5
+                  0.5                                                                                                 (.020)                                                                   (.020)
+              Residual
+             L±
+                (.020)
+                             Resistance                                                          6.8                              1.2                                                               1.2
+                   . ......................500 ohms or ±1 % max.                               (.268)                           (.047)                                                            (.047)
+                       F                                                                                                                                   5.5
+                                                                                                                                                         (.217)                                     0.8
+                 Environmental Characteristics                                                                3.8
+                                                                                                                                      4.5                                                         (.031)
+                                                                                                                                    (.177)
+                                                                                                            (.150)
+              Operating Temperature. ...-10 °C to +50 °C                                   2.0                                               F
+              Power Rating 4.5
+                                                                                         (.079)
+                  (Linear    and Audio). .................0.05 watt
+                         (.177)                                                                                                                           10.0
+              Maximum        Operating Voltage
+                       6.0 +0.0/-0.1
+                                                                                                                                                         (.394)
+                                                                                                                                                                    3.8                                       F
+
+                  (Linear
+                    (.236 and       Audio). ..... 20 VDC, 50 VAC
+                           +.000/-.004)
+                                                                                                                                                                  (.150)
+              Sliding Noise......................... 100 mV max.                                                                           6.8
+                                                                                           5.5                                           (.268)
+                                                                                                                                                             2.0
+                 Mechanical Characteristics                                              (.217)                                           DIA.             (.078)
+                                                                                       7.0                                                                   3.3
+              Mechanical Angle......................280 ° ±10 °                      (.276)                                                                (.129)                            6.8
+              Rotational Torque...............10 to 100 g-cm                                               FULL CCW POSITION                                  2.4                          (.267)
+              Detent Torque....................20 to 200 gf-cm                                                9.7                                           (.094)
+              Stop Strength........................ 2 kg-cm min.                                            (.382)                                                                 FULL CCW POSITION
+S-Type        Rotational Life...................... 10,000 cycles                                                                                                                     9.7
+              Soldering Condition
+                  0.5                                                                                                            40 ° ±10 °
+                                                                                                                                                                                    (.382)
+             L±
+                   . .............300 °C max. within 3 seconds
+                (.020)
+              Hardware.............
+                        A              One flat washer and one                                                                                                                                      40 ° ±10 °
+
+                   hex nut 1.5  supplied with
+                                          1.0 bushing version
+                                (.059)      (.039)                                                                                    5.5
+               How To Order                                                                                                         (.216)
+
+                                PTV09A - 2 0 20 F - B 203                                                                      3 PLCS.
+                                                                                                                                 1.5
+              Model                                                                          5.0                               (.059)
+   18 TEETH KNURL
+                                                                                           (.196)
+              Terminal
+                 6.0        Configuration
+                      +0.0/-0.1                                                                              11.4
+                                                                                                                                                                                                  3 PLCS.
+              (Pin Layout)
+              (.236  +.000/-.004)                                                                           (.449)                                                                                   0.8
+                   1 = Horizontal/Rear Mount                                                                                                                         5.0                           (.031)
+              		          w/Sleeve Bushing                                                                                                                         (.196)                        7.4
+                   2 = Vertical/Side Mount,                                RECOMMENDED PCB LAYOUT                                                                                              (.291)
+              		 Bushingless,                                              (HORIZONTAL/REAR MOUNT)
+              		          10 mm Height                                                                                 10.6
+                   3 = Vertical/Side Mount,                                                                                                          RECOMMENDED PCB LAYOUT
+                                                                                        +0.2
+                                                                                    1.8 -0.0 2 PLCS.                  (.417)                         (VERTICAL/SIDE MOUNT)
+              		 Bushingless,                                                                                                                                                                    8.2
+              		          6.5 mm Height                                          (.071 +0.008
+                                                                                                                                                                     +0.2                      (.323)
+                                                                                          -0.0 )                                                                1.8 -0.0
+                                                                                      +0.2                                                                                   2 PLCS.
+                   4 = Horizontal/Rear Mount,                                    2.2 -0.0 2 PLCS.                                           7.0              (.071 +0.008
+                                                                                                                                                                      -0.0 )
+U-Type        		 Bushingless                                                         +0.008
+                                                                              (.087 -0.0 )                                                (.276)
+                                                                                                                                                                  +0.2
+                                                                                                                                                             2.2 -0.0 2 PLCS.                                   3.3
+             L ± 5 = Horizontal/Rear Mount
+                     0.5                                                                                                                                  (.087 +0.008
+                                                                                                                                                                   -0.0 )                                     (.130)
+              		(.020)w/Plastic Plain    1.5 Bushing
+                   6 = Horizontal/Rear
+                          A            (.059) Mount                                                                   1    2    3
+                                                                                                                                                                                               1    2    3
+
+              		          w/Metal Threaded                                                 +0.2                                                                   1.0 -0.0
+                                                                                                                                                                            +0.2
+                                                                                                                                                                              3 PLCS.
+              		 Bushing                                                               1.0 -0.0
+                                                                                                       3 PLCS.                                                 (.039 +0.008
+                                                                                                                                                                       -0.0 )
+                                                                                                                                                                                                             5.0
+                                                                                                                                   5.0                                                                     (.197)
+                   7 = Vertical/Side Mount                                          (.039 +0.008
+                                                                                            -0.0   )
+                                                                                                                                 (.197)
+              		          w/Sleeve Bushing,
+              		          6.5 mm Height                                                                                                                 Standard Resistance Table
+ 40 TEETH KNURL 8 = Vertical/Side Mount        0.7                                                                           MM
+              		 3.1      w/Sleeve Bushing,                                                    DIMENSIONS:                                                  Resistance                                  Resistance
+                                             (.028)                                                                       (INCHES)                            (Ohms)                                      Code
+              		
+               (.122) 10 mm height
+                       6.0 +0.0/-0.1                                                                                                                            1,000                                      102
+              Option
+                   0(.236 +.000/-.004)
+                       = No   Detent 2 = Center                              Schematic                                                                          2,000                                      202
+                                                                                                                                                                5,000                                      502
+              Standard Shaft Length                                                                                   2                                        10,000                                      103
+                   15 = 15 mm** 25 = 25 mm                                                                                                                     20,000                                      203
+                   20 = 20 mm 30 = 30 mm                                                                                                                       50,000                                      503
+                                                                                                                                                              100,000                                      104
+              Shaft Style                                                                                                                                     200,000                                      204
+                   F = Flat Type Insulated Shaft                                                                                                              500,000                                      504
+                   S = Insulated Knurled (18 Teeth)                             1                                                                3           1,000,000                                     105
+                   U = Insulated Knurled (40 Teeth)                                                       SCHEMATIC
+              Resistance Taper                                                                                                                       Specifications are subject to change without notice.
+                   Taper Series followed by Curve Number                                                                                             Users should verify actual device performance in their
+              Resistance Code (See Table)
+                                                                               WARNING Cancer and Reproductive Harm                                  specific applications. The products described herein and
+                                                                                    www.P65Warnings.ca.gov                                           this document are subject to specific legal disclaimers as
+              Other styles available.                                                                                                                set forth on the last page of this document, and at www.
+              ** Bushingless version only.                                 *RoHS Directive 2015/863, Mar 31, 2015 and Annex.                         bourns.com/docs/legal/disclaimer.pdf.
+Applications
+n Commercial communications equipment
+n Portable electronics
+n Amplifiers/mixers/drum machines/synthesizers
+n Consumer goods
+n Commercial appliances
+
+
+
+
+          PTV09 Series - 9 mm Potentiometer
+   Product Dimensions (Continued)
+PTV09A-3                                                                     PTV09A-4                                                                                  PTV09A-5
+(Vertical/Side Mount,                                                        (Horizontal/Rear Mount, Bushingless)                                                      (Horizontal/Rear Mount
+Bushingless, 6.5 mm Height)                                                                                                                                            w/Plastic Plain Bushing)
+                                                                                          3.8                               0.5                                                                                     0.5
+                                                                                                                   L±                                                                                     L±
+                                             0.5                                        (.150)                            (.020)                                               8.4
+                                      L±                                                                                                                                                                          (.020)
+                                           (.020)                                                                                       1.2                                  (.315)
+                                                  1.2                                                                                 (.047)                           F-Type              3.5 ± 0.3                      5.1
+                                                (.047)                                                                           0.8                                                    (.138 ± .012)                   (.201)
+      5.5                                                                                                                                                                                     0.5
+                                                  0.8                                                                          (.031)                                     2.0          L±
+    (.217)                                                                                  2.0                                                                                             (.020)
+                                                (.031)                                    (.079)                                                                        (.079)
+                                                                                                                                                                                                      F
+
+
+
+               3.8
+                                                                                                                                         F                                                                                                  7.9
+             (.150)                                     F                                                                                                                                                 5.9
+                                                                                                                                                                                                          4.5                             (.311)
+                                                                                                                              6.8                                                                       (.232)
+                                                                                                                                                                                                       (.177)
+                                                                                            6.0 ± 0.5
+      6.5                                                                                                                                                                                      3.0 ± 0.3
+                                                                                         (.236 ± .020)                      (.268)                                                                   6.0 +0.0/-0.1
+    (.256)                                                                                                                                                                                  (.118 ± .012)
+                                                                                        7.0                                                                                  7.0 ± 0.3            (.236 +.000/-.004)
+           2.0                                                                        (.276)                                                                               (.276 ± .012)
+         (.078)
+                                                                                                                                                                                     1.2 +0/-0.2
+           3.3
+                                                                                                   FULL CCW POSITION                                                             (.047 +.000/-.008)
+         (.129)                              6.8                                                     10.0
+           2.4                             (.267)                                                   (.394)                                                                       1
+         (.094)                                                                                                                                                                  2
+                                FULL CCW POSITION                                                                            40 ° ±10 °                                          3       PTV09A-1
+                                   9.7
+                                 (.382)
+                                                                                                                                                                                         (Horizontal/Rear Mount w/Sleeve Bushing)
+                                                                                                                                                                       S-Type                                                             7.9
+                                                                                                                                                                                      0.8 +0/-0.1
+                                                                             F-Type                                                                                                           0.5                                       0.5
+                                                                                                                                                                                                                                        (.311)
+                                                                                                                                                                             1.5 (.031 L ±+.000/-.004)                           L±
+                                                       40 ° ±10 °                                0.5                           5.5                                         (.059)           (.020)                                    (.020)
+                                                                                            L±                                                                                                                                                    1.2
+                                                                                               (.020)                        (.216)                                        11.4 +0/-0.5            A             6.8
+                                                                                                                                                                                                               (.268)
+                                                                                                                                                                                                                   1.5                          (.047)
+                                                                                                          F                                                             (.055 +.000/-.020)           10.0                      1.0
+                                                                                                                          3 PLCS.                                                                   (.394)       (.059) 5.5 (.039)
+                                                                                                                            1.5                                                                                        (.216)                         4.5
+                                                                                                                                                                                                                            3.8
+                                                                                         5.0                              (.059)                                                                                                                    (.177)
+                                                                                                                                                                                                                          (.150)
+                                                                                       (.196)                                                                                                                2.0                                             F
+                                                                                                      11.4                                                                                                 (.079)
+                                                                                                     (.449) 4.5
+                                                   3 PLCS.                                                 (.177)                      18 TEETH KNURL
+                                                     0.8                                                                                              6.0 +0.0/-0.1
+                                                                                                            6.0 +0.0/-0.1
+                    5.0                            (.031)                                                                                         (.236 +.000/-.004)
+                                                                                                         (.236 +.000/-.004)
+                                                                                                                         MM
+                  (.196)                          7.4                                          DIMENSIONS:                                             5.0                    6.5
+                                                                                                                                                                                                   6.8
+                                                                                                            (INCHES)                                 (.197)                  .256)
+                                                (.291)                                                                                                                                           (.268)
+                                                                                                                                                                    5.5
+                                                                                                                                                SHAFT SHOWN IN(.217) CENTER POSITION              DIA.
+                                                                                                                                                                 7.0
+                                                                                                                                                               (.276)
+                                                                                                                                                                               FULL CCW POSITION
+                                                                                              PTV09A-1
+   Shaft Styles                                                                               (Horizontal/Rear Mount w/Sleeve Bushing)
+                                                                                                                                                                                  9.7
+                                                                                                                                                                                (.382)
+F-Type                                                                       S-Type                                                              0.5                   U-Type
+                                                                                                                                         L±                                                   0.5
+                         0.5                                                                       0.5                                         (.020)                                  L±                                                          40 ° ±10 °
+                  L±                                                                        L±                                                            1.2                               (.020)
+                       (.020)                                                                    (.020)                  6.8                                                                                              1.5
+                                                                                                                       (.268)                           (.047)                                       A                  (.059)
+                                F                                                                         A
+                                                                                                                            1.5            1.0              4.5
+                                                                                                                          (.059)       3.8
+                                                                                                                                         (.039)                                                                                                       5.5
+                                                                                                                                                          (.177)
+                                                                                                                                     (.150)                                                                                                         (.216)
+                                                                                                                   2.0                                             F
+                                                                                                                 (.079)
+                                       4.5                                                                                                                                                                                      3 PLCS.
+                                                                                                                                                                        40 TEETH KNURL                             0.7            1.5
+                                     (.177)                                                                                                                                            3.1               5.0     (.028)         (.059)
+                               6.0 +0.0/-0.1                                   18 TEETH KNURL                                                                                        (.122)            (.196)
+                            (.236 +.000/-.004)                                               6.0 +0.0/-0.1                                                                                  6.0 +0.0/-0.1           11.4
+                                                                                          (.236 +.000/-.004)                                                       6.8                   (.236 +.000/-.004)        (.449)
+                                                                                                                  5.5                                            (.268)
+                    15                20              25            30                        15                 20
+                                                                                                                 (.217)         25                30              DIA.                 15           20 PCB LAYOUT
+                                                                                                                                                                                                                25           30
+     L                                                                          L                                                                                           L         RECOMMENDED
+                  (.591)            (.787)          (.984)       (1.181)                    (.591)             (.787)
+                                                                                                               7.0            (.984)           (1.181)                              (.591)        (.787) MOUNT)
+                                                                                                                                                                                      (HORIZONTAL/REAR        (.984)      (1.181)
+                                                                                                              (.276)
+                     6                 7              12              12                       7                  7              FULL CCW 7
+                                                                                                                                 7       POSITION                                          6               7                 7           7
+                                                                                                                                                                                                                                       10.6
+     F                                                                          A                                                                                           A
+                  (.236)            (.275)          (.472)          (.472)                  (.275)             (.275)         (.275)9.7 (.275)                                          (.236)        (.275)
+                                                                                                                                                                                                          +0.2
+                                                                                                                                                                                                    1.8 -0.0         (.275)           (.275)
+                                                                                                                                                                                                                                      (.417)
+                                                                                                                                     (.382)                                                                      2 PLCS.
+                                                                                                                                                                                                 (.071 +0.008
+                                                                                                                                                                                                          -0.0 )
+S-Type
+Specifications are subject to change without notice.
+                                                                                                                                                                                                      +0.2
+                                                                                                                                                                                                  2.2 -0.0 2 PLCS.                                         7.0
+                                                                   U-Type
+                   0.5actual device performance in their specific applications.                                               40 ° ±10 °                                                      (.087 +0.008
+                                                                                                                                                                                                       -0.0 )                                            (.276)
+Users shouldLverify
+               ±                                                                        0.5
+                 (.020) herein and this document are subject to specific legal L ±
+The products described                                                          disclaimers
+                                                                                      (.020) as set forth on the last page of this document, and at www.bourns.com/docs/legal/disclaimer.pdf.
+                                A                                                                                             1.5
+                                                1.5                                                       A                 (.059)                                                                                                    1     2   3
+                                                               1.0
+                                              (.059)         (.039)                                                                                       5.5                                                    +0.2
+        PTV09 Series - 9 mm Potentiometer
+   Product Dimensions (Continued)
+
+PTV09A-6                                                         PTV09A-7                                                                   PTV09A-8
+(Horizontal/Rear Mount                                           (Vertical/Side Mount                                                       (Vertical/Side Mount
+w/Metal Threaded Bushing)                                        w/Sleeve Bushing, 6.5 mm Height)                                           w/Sleeve Bushing, 10 mm Height)
+                                           0.5                                                                  0.5                                                                    0.5
+                                    L±                                                                  L±                                                                     L±
+                                         (.020)                                                               (.020)                                                                 (.020)
+   2.0 ± 0.15           8.4                                                         6.8                             4.5                                     6.8                             4.5
+ (.079 ± .006)        (.315)                                                      (.268)                          (.177)                                  (.268)                          (.177)
+                                                                        5.5                   1.2                                                5.5                 1.2
+                     3.5 ± 0.3                 5.0                    (.217)                (.047)                                             (.217)              (.047)
+                  (.138 ± .012)              (.197)
+                                                                                                                           F
+
+
+
+                                                                                 3.5                                                            10.0
+                                                                               (.138)                                        6.8               (.394)                                              F
+                                                                                                                           (.267)                         3.5
+                                                        0.75            6.5                                                                             (.138)                                       6.8
+                                    5.9           M9 X                                                                                                                                             (.267)
+                                                       (.030)         (.256)
+                                  (.232)                                   2.0
+                         3.0 ± 0.3                                       (.078)                        3.3
+                      (.118 ± .012)                                        2.4                       (.129)                                        2.0
+         7.0 ± 0.3                                                       (.094)                                                                  (.078)                       3.3
+      (.276 ± .012)                                                                                                                                2.4                      (.129)
+                                                                                              FULL CCW POSITION                                  (.094)
+           1.2 +0/-0.2                                                                           9.7
+       (.047 +.000/-.008)                                                                      (.382)                                                              FULL CCW POSITION
+                                                                                                                                                                      9.7
+        1                                                                                                                                                           (.382)
+        2                                                                                                              40 ° ±10 °
+
+        3                                                                                                                                                                                40 ° ±10 °
+
+                 0.8 +0/-0.1
+      1.5 (.031 +.000/-.004)
+    (.059)
+    11.4 +0/-0.5
+ (.055 +.000/-.020)                                                                                               3 PLCS.
+                                10.0                                                                                 0.8
+                                                    5.5                                                            (.031)
+                               (.394)                                                5.0
+                                                  (.216)
+                                                                                   (.196)                        7.4                                                                    3 PLCS.
+                                                                                                               (.291)                                                                      0.8
+                                                                                                                                                          5.0                            (.031)
+                                                                                                                                                        (.196)                         7.4
+                                                                                                            MM                                                                       (.291)
+                                                                                   DIMENSIONS:
+                                                                                                         (INCHES)
+                      5.0                          6.5
+                    (.197)                        .256)
+             SHAFT SHOWN IN CENTER POSITION
+
+
+
+
+   Mounting Hardware
+
+                                                                                    0.75
+                                                                          M9 X
+                                                                                   (.030)                  DIA.
+                                                                                                        9.1 ± 0.3
+                                                                                                     (.358 ± .012)
+
+                                                                                                          DIA.
+                                                                                                       15.0 ± 1.0
+                                                                                                     (.591 ± .039)
+                                                                                                2.0 ± 0.2                           0.4
+                                                                                             (.079 ± .008)                        (.016)
+                                                                           11.0 ± 0.5
+                                                                                                                                THICKNESS
+                                                                         (.433 ± .020)
+
+
+
+
+Specifications are subject to change without notice.
+Users should verify actual device performance in their specific applications.
+The products described herein and this document are subject to specific legal disclaimers as set forth on the last page of this document, and at www.bourns.com/docs/legal/disclaimer.pdf.
+                                                                                                                                                                                                                                                                                                                                                     A Series Tapers
+                                                                                                                                                                                                                                                                                                                        100
+
+                                                                                                                                                                                                                                                                                                                         90
+
+                                                                                                                                                                                                                                                                                                                         80
+
+
+
+
+                                                                                                                                                                                                                                                                               Terminal 1-2 Output Voltage
+                                                                                                                                                                                                                                                                                                                         70
+
+                                                                                                                                                                                                                                                                                                                         60
+
+
+
+
+                                                                                                                                                                                                                                                                                                           X 100 (%)
+                                                                                                                                                                                                                                                                                                                         50
+
+
+
+
+                                                                                                                                                                                                                                                                                Terminal 1-3 Input Voltage
+                                                                                                                                                                                                                                                                                                                         40
+
+                                                                                                                                                                                                                                                                                                                        30                                   A6
+                                                                                                                                                                                                                                                                                                                                                          ): ): A5
+                                                                                                                                                                                                                                                                                                                                                      0A       A
+                                                                                                                                                                                                                                                                                                                                                    (3      (25 : A4
+                                                                                                                                                                                                                                                                                                                        20                                     A)
+                                                                                                                                                                                                                                                                                                                                                           (20 5A): A
+                                                                                                                                                                                                                                                                                                                                                                (1
+                                                                                                                                                                                                                                                                                                                                                                     A2 1
+                                                                                                                                                                                                                                                                                                                         10                                      A):
+                                                                                                                                                                                                                                                                                                                                                             (10 5A): A
+                                                                                                                                                                                                                                                                                                                                                                   (0
+
+
+
+
+                                               PTV09 Series - 9 mm Potentiometer
+                                                                                                                                                                                                                                                                                                                              0   10   20   30       40        50      60         70       80          90   100
+                                                                                                                                                                                                                                                                                                                                                 Rotational Travel (%)
+
+
+
+                                                                                                                                                                                                                                                                                                                                                     B Series Tapers
+                            Derating Curve
+                                                                                                                                                                                                                   A Series Tapers
+                                                                                                                                                                                                                                                                                                                        100
+                                                                                                                                                                                      100
+                                                                                                                                                                                                                                                                                                                                                                                                 1
+                                                                                                                                                                                                                                                                                                                                                                                       (5B
+                                                                                                                                                                                                                                                                                                                         90                                               (4B): B           ): B
+
+
+
+
+                                                                                                                    Rating Power Ratio (%)
+                                                                                                                                                                                                                                                                                                                                                                                                5
+                                                                                                                                                                                       90                                                                                                                                                                                         4
+                                                                                                                                                                                                                                                                                                                                                                                 (3B  ): B  3
+                                                                                                                                                                                                                                                                                                                                                                                    (2B
+                                                                                                                                                                                                                                                                                                                         80
+                                                                                                                                             100 80
+                                                                                                                                                                                                                                                                                                                                                                                          ): B
+                                                                                                                                                                                                                                                                                                                                                                                  (B          2
+
+
+
+
+                                                                                                                                                                                                                                                                                Terminal 1-2 Output Voltage
+                                                                                                                                                                                                                                                                                                                                                                                     ): (1B
+                                                                                                                                                                                                                                                                                                                                                                                        B       ):
+
+
+
+
+                                                                                                                                             Terminal 1-2 Output Voltage
+                                                                                                                                                                                                                                                                                                                                                                                                   B
+                                                                                                                                                                                                                                                                                                                         70
+                                                                                                                                                         80 70
+
+
+
+                                                                                                                                                                                                                                                                                                            X 100 (%)
+                                                                                                                                                         60 60                                                                                                                                                           60
+
+
+
+
+                                                                                                                                                                         X 100 (%)
+                                                                                                                                                         40 50                                                                                                                                                           50
+
+
+
+
+                                                                                                                                                                                                                                                                                 Terminal 1-3 Input Voltage
+                                                                                                                                                         33
+
+
+                                                                                                                                              Terminal 1-3 Input Voltage
+                                                                                                                                                         20 40                                                                                                                                                           40
+
+                                                                                                                                                          0 30                 6
+                                                                                                                                                                                                                                                                                                                         30
+                                                                                                                                                            0 10 20 30 (3040
+                                                                                                                                                                           A) A): 50
+                                                                                                                                                                             :A   A5
+                                                                                                                                                                             (25 A4
+                                                                                                                                                                                     60 70 80 90 100
+                                                                                                                                                                                      20                                   A):                                                                                           20
+                                                                                                                                                                                                                        (20 5A): A
+
+                                                                                                                                                                                       10
+                                                                                                                                                                                                     Ambient Temperature (°C)
+                                                                                                                                                                                                                            (1
+                                                                                                                                                                                                                             A):
+                                                                                                                                                                                                                                 A2 1
+                                                                                                                                                                                                                                                                                                                         10
+                                                                                                                                                                                                                         (10 5A): A
+                                                                                                                                                                                                                               (0
+
+
+                                                                                                                                                                                            0   10   20   30       40       50     60          70      80           90   100                                                  0   10   20   30      40         50      60         70      80       90       100
+
+                            Tapers                                                                                                                                                                             Rotational Travel (%)                                                                                                             Rotational Travel (%)
+
+
+
+                                                                      A Series Tapers                                                                                                                              B Series Tapers                                                                                                                   C Series Tapers
+                                         100                                                                                                                                          100                                                                                                                               100
+                                                                                                                                                                                                                                                              1
+                                          90                                                                                                                                           90                                                5         ): B
+                                                                                                                                                                                                                                                 (2B 3
+                                                                                                                                                                                                                                                                                                                         90
+                                                                                                                                                                                                                                        ): B          ): B
+                                                                                                                                                                                                                                    (5B        (B          2
+                                                                                                                                                                                                                                                  ): (1B
+                                                                                                                                                                                                                                                    B
+                                          80                                                                                                                                           80
+                                                                                                                                                                                                                                           4
+                                                                                                                                                                                                                                          (3B
+                                                                                                                                                                                                                                                             ): B                                                        80
+                                                                                                                                                                                                                                        ): B
+
+
+
+
+                                                                                                                                              Terminal 1-2 Output Voltage                                                                                                       Terminal 1-2 Output Voltage
+Terminal 1-2 Output Voltage
+                                                                                                                                                                                                                                    (4B
+                                          70                                                                                                                                           70                                                                                                                                70
+
+
+
+
+                                                                                                                                                                          X 100 (%)                                                                                                                         X 100 (%)
+                                          60                                                                                                                                                                                                                                                                             60
+
+
+
+
+                            X 100 (%)
+                                                                                                                                                                                       60
+
+                                         50                                                                                                                                            50                                                                                                                                50
+
+
+
+
+                                                                                                                                               Terminal 1-3 Input Voltage                                                                                                        Terminal 1-3 Input Voltage
+ Terminal 1-3 Input Voltage
+                                          40                                                                                                                                           40                                                                                                                                40
+                                                                                                                                                                                                                                                                                                                                                                 (3
+                                         30                                                                                                                                            30                                                                                                                                30                                  (25 0C):
+                                                                            A6 A5                                                                                                                                                                                                                                                                                C    C
+                                                                         ):
+                                                                       0A 5A)
+                                                                                 :                                                                                                                                                                                                                                                                         (20 ): C 6
+                                                                     (3                                                                                                                                                                                                                                                                                        C    5
+                                                                           (2 : A4                                                                                                                                                                                                                                                                       (15 ): C
+                                         20                                   A)                                                                                                                                                                                                                                         20                                  C) 4
+                                                                          ( 0 5A): A
+                                                                            2                                                                                                          20                                                                                                                                                              (10 : C
+                                                                               (1                                                                                                                                                                                                                                                                   (05 C): C
+                                                                                     A2 1                                                                                                                                                                                                                                                                       2
+                                          10                                    A):                                                                                                                                                                                                                                                                    C)
+                                                                            (10 5A): A                                                                                                 10                                                                                                                                10                               :C
+                                                                                                                                                                                                                                                                                                                                                             1
+                                                                                   (0
+
+
+                                               0   10   20   30       40        50      60          70   80    90   100                                                                     0   10   20   30      40        50     60          70      80       90       100                                                  0   10   20   30      40         50      60         70      80       90       100
+                                                                  Rotational Travel (%)                                                                                                                        Rotational Travel (%)                                                                                                             Rotational Travel (%)
+
+
+                                                                      B Series Tapers                                                                                                                              C Series Tapers
+                                         100                                                                                                                                          100
+                                                                                                              1
+                                                                                              (5B
+                                          90                                             4
+                                                                                        (3B
+                                                                                                   ): B 5
+                                                                                                                                                                                       90
+                                                                                             ): B  3
+                                                                                           (2B   ): B
+                                                                                         (B           2
+                                                                                            ): (1B
+                                          80                                                   B        ): B                                                                           80
+                                                                                             ): B
+
+
+
+
+ Terminal 1-2 Output Voltage                                                                                                                  Terminal 1-2 Output Voltage
+                                                                                        (4B
+                                          70                                                                                                                                           70
+
+
+
+
+                             X 100 (%)
+                                          60
+
+
+
+
+                                                                                                                                                                          X 100 (%)
+                                                                                                                                                                                       60
+
+                                          50                                                                                                                                           50
+
+
+
+
+  Terminal 1-3 Input Voltage                                                                                                                   Terminal 1-3 Input Voltage
+                                          40                                                                                                                                           40
+
+                                          30                                                                  Asia-Pacific: Tel:
+                                                                                                                             30 +886-2 2562-4117 (25 0C): • Email: asiacus@bourns.com
+                                                                                                                                                     (3
+                                                                                                                                                         C
+                                                                                                                                                     C
+                                                                                                                                               (20 ): C 6
+                                          20                                                                  EMEA: Tel: +362088 885 877 • (1
+                                                                                                                                          Email:
+                                                                                                                                               5C : C4 eurocus@bourns.com
+                                                                                                                                                   C) 5
+                                                                                                                                            (10 ): C
+
+                                          10
+                                                                                                              The Americas: Tel: +1-951 (05C):
+                                                                                                                                         781-5500
+                                                                                                                                               C)
+                                                                                                                                                  :C
+                                                                                                                                                     2     • Email: americus@bourns.com
+                                                                                                                             10                C1
+                                                                                                              www.bourns.com
+                                               0   10   20   30      40         50      60          70   80    90   100                                                                     0   10   20   30      40        50     60          70      80       90       100
+                                                                  Rotational Travel (%)                                                                                                                        Rotational Travel (%)
+
+
+                                                                      C Series Tapers
+                                         100
+
+                                          90
+
+                                          80
+
+
+
+
+ inal 1-2 Output Voltage
+       REV.7001/20
+
+
+                         X 100 (%)
+       Specifications are subject to change without notice.
+           60
+       Users should verify actual device performance in their specific applications.
+
+
+  inal 1-3 Input Voltage
+       The 50
+          products described herein and this document are subject to specific legal disclaimers as set forth on the last page of this document, and at www.bourns.com/docs/legal/disclaimer.pdf.
+                                          40
+                                                                                (30
+                                          30                                (      C)
+     Legal Disclaimer Notice
+This legal disclaimer applies to purchasers and users of Bourns® products manufactured by or on behalf of Bourns, Inc. and its
+affiliates (collectively, “Bourns”).
+
+Unless otherwise expressly indicated in writing, Bourns® products and data sheets relating thereto are subject to change
+without notice. Users should check for and obtain the latest relevant information and verify that such information is current and
+complete before placing orders for Bourns® products.
+
+The characteristics and parameters of a Bourns® product set forth in its data sheet are based on laboratory conditions, and
+statements regarding the suitability of products for certain types of applications are based on Bourns’ knowledge of typical
+requirements in generic applications. The characteristics and parameters of a Bourns® product in a user application may vary
+from the data sheet characteristics and parameters due to (i) the combination of the Bourns® product with other components
+in the user’s application, or (ii) the environment of the user application itself. The characteristics and parameters of a Bourns®
+product also can and do vary in different applications and actual performance may vary over time. Users should always verify
+the actual performance of the Bourns® product in their specific devices and applications, and make their own independent
+judgments regarding the amount of additional test margin to design into their device or application to compensate for
+differences between laboratory and real world conditions.
+
+Unless Bourns has explicitly designated an individual Bourns® product as meeting the requirements of a particular industry
+standard (e.g., ISO/TS 16949) or a particular qualification (e.g., UL listed or recognized), Bourns is not responsible for any
+failure of an individual Bourns® product to meet the requirements of such industry standard or particular qualification. Users of
+Bourns® products are responsible for ensuring compliance with safety-related requirements and standards applicable to their
+devices or applications.
+
+Bourns® products are not recommended, authorized or intended for use in nuclear, lifesaving, life-critical or life-sustaining ap-
+plications, nor in any other applications where failure or malfunction may result in personal injury, death, or severe property or
+environmental damage. Unless expressly and specifically approved in writing by two authorized Bourns representatives on a
+case-by-case basis, use of any Bourns® products in such unauthorized applications might not be safe and thus is at the user’s
+sole risk. Life-critical applications include devices identified by the U.S. Food and Drug Administration as Class III devices and
+generally equivalent classifications outside of the United States.
+
+Bourns expressly identifies those Bourns® standard products that are suitable for use in automotive applications on such
+products’ data sheets in the section entitled “Applications.” Unless expressly and specifically approved in writing by two
+authorized Bourns representatives on a case-by-case basis, use of any other Bourns® standard products in an automotive
+application might not be safe and thus is not recommended, authorized or intended and is at the user’s sole risk. If Bourns
+expressly identifies a sub-category of automotive application in the data sheet for its standard products (such as infotainment
+or lighting), such identification means that Bourns has reviewed its standard product and has determined that if such Bourns®
+standard product is considered for potential use in automotive applications, it should only be used in such sub-category of
+automotive applications. Any reference to Bourns® standard product in the data sheet as compliant with the AEC-Q standard
+or “automotive grade” does not by itself mean that Bourns has approved such product for use in an automotive application.
+
+Bourns® standard products are not tested to comply with United States Federal Aviation Administration standards generally
+or any other generally equivalent governmental organization standard applicable to products designed or manufactured for
+use in aircraft or space applications. Bourns expressly identifies Bourns® standard products that are suitable for use in aircraft
+or space applications on such products’ data sheets in the section entitled “Applications.” Unless expressly and specifically
+approved in writing by two authorized Bourns representatives on a case-by-case basis, use of any other Bourns® standard
+product in an aircraft or space application might not be safe and thus is not recommended, authorized or intended and is at the
+user’s sole risk.
+
+The use and level of testing applicable to Bourns® custom products shall be negotiated on a case-by-case basis by Bourns and
+the user for which such Bourns® custom products are specially designed. Absent a written agreement between Bourns and the
+user regarding the use and level of such testing, the above provisions applicable to Bourns® standard products shall also apply
+to such Bourns® custom products.
+
+Users shall not sell, transfer, export or re-export any Bourns® products or technology for use in activities which involve the
+design, development, production, use or stockpiling of nuclear, chemical or biological weapons or missiles, nor shall they use
+Bourns® products or technology in any facility which engages in activities relating to such devices. The foregoing restrictions
+apply to all uses and applications that violate national or international prohibitions, including embargos or international
+regulations. Further, Bourns® products and Bourns technology and technical data may not under any circumstance be
+exported or re-exported to countries subject to international sanctions or embargoes. Bourns® products may not, without prior
+authorization from Bourns and/or the U.S. Government, be resold, transferred, or re-exported to any party not eligible
+to receive U.S. commodities, software, and technical data.
+
+To the maximum extent permitted by applicable law, Bourns disclaims (i) any and all liability for special, punitive, consequential,
+incidental or indirect damages or lost revenues or lost profits, and (ii) any and all implied warranties, including implied warranties
+of fitness for particular purpose, non-infringement and merchantability.
+For your convenience, copies of this Legal Disclaimer Notice with German, Spanish, Japanese, Traditional Chinese and Simplified Chinese
+bilingual versions are available at:
+		Web Page: http://www.bourns.com/legal/disclaimers-terms-and-policies
+		                         PDF: http://www.bourns.com/docs/Legal/disclaimer.pdf
+                                                                                                                           C1753 05/17/18R
+

@@ -1,0 +1,24 @@
+{
+  "revision": "A2 import probe",
+  "failures": [
+    "Element 50 pcb_component: display_offset_x: Expected string, received number; display_offset_y: Expected string, received number",
+    "Element 51 pcb_component: display_offset_x: Expected string, received number; display_offset_y: Expected string, received number",
+    "Element 83 pcb_solder_paste: : Invalid input",
+    "Element 84 pcb_solder_paste: : Invalid input",
+    "Element 86 pcb_solder_paste: : Invalid input",
+    "Element 87 pcb_solder_paste: : Invalid input",
+    "Element 89 pcb_solder_paste: : Invalid input",
+    "Element 90 pcb_solder_paste: : Invalid input",
+    "Element 92 pcb_solder_paste: : Invalid input",
+    "Element 93 pcb_solder_paste: : Invalid input",
+    "Element 95 pcb_solder_paste: : Invalid input",
+    "Element 96 pcb_solder_paste: : Invalid input",
+    "Element 98 pcb_solder_paste: : Invalid input",
+    "Element 99 pcb_solder_paste: : Invalid input",
+    "SW_ALPS pin3: electrical schematic port missing",
+    "SW_ALPS pin4: electrical schematic port missing",
+    "SW_CK pin3: electrical schematic port missing",
+    "SW_CK pin4: electrical schematic port missing"
+  ],
+  "pcbTraceCount": 0
+}

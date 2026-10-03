@@ -1,0 +1,29 @@
+[
+  {
+    "code": "C160871",
+    "stock": "489",
+    "mpn": "SSSS211900",
+    "manufacturer": "ALPSALPINE",
+    "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/edb82004edc64b8c822138310e9d5802.pdf?productCode=C160871",
+    "date": "2026-10-02",
+    "sha256": "4735a070ed5f18c4f3298d0830231aa2c99a88d0183fc5a8d08e2530d4a93c3f"
+  },
+  {
+    "code": "C221831",
+    "stock": "458",
+    "mpn": "OS103011MS8QP1",
+    "manufacturer": "C\\u0026K",
+    "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/9e68893bade4341f8dc17b91bf8fc979.pdf?productCode=C221831",
+    "date": "2026-10-02",
+    "sha256": "c3790fd3bcac683a1a2126299d2c7965d6a00f9a4b1699ad976126eaadcc08d8"
+  },
+  {
+    "code": "C2857677",
+    "stock": "4140",
+    "mpn": "SK-13D07-5",
+    "manufacturer": "ROCPU Switches",
+    "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/776d5b076bbc05064b16b7996b800162.pdf?productCode=C2857677",
+    "date": "2026-10-02",
+    "sha256": "34c8d14717ad865ff0fb8f6e1353278c90e9ff32592ebb8e44ddd646010df3e3"
+  }
+]

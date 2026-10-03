@@ -1,0 +1,36 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - SW_ALPS: SW_ALPS, source_component
+ - SW_CK: SW_CK, source_component
+
+
+EMPTY NET PINS:
+  - SW_ALPS pin1
+  - SW_ALPS pin2
+  - SW_ALPS pin3
+  - SW_ALPS pin4
+  - SW_CK pin1
+  - SW_CK pin2
+  - SW_CK pin3
+  - SW_CK pin4
+  - SW_CK pin5
+  - SW_CK pin6
+
+COMPONENT_PINS:
+SW_ALPS (SSSS211900)
+- pin1: NETS(ALPS_1)
+- pin2: NETS(ALPS_2)
+- pin3: NETS(ALPS_3)
+- pin4: NETS(ALPS_4)
+
+SW_CK (OS103011MS8QP1)
+- pin1: NETS(CK_1)
+- pin2: NETS(CK_2)
+- pin3: NETS(CK_3)
+- pin4: NETS(CK_4)
+- pin5: NETS(CK_CASE_5)
+- pin6: NETS(CK_CASE_6)
+

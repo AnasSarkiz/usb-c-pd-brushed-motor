@@ -1,0 +1,26 @@
+{
+  "revision": "A3 import validation only",
+  "date": "2026-10-02",
+  "supplierCode": "C221539",
+  "manufacturer": "C&K",
+  "manufacturerPartNumber": "1103M2S3CQE2",
+  "supplierUrl": "https://www.lcsc.com/product-detail/C221539.html",
+  "supplierStock": 69,
+  "unitPriceUsdQty1": "5.1720",
+  "unitPriceUsdQty10": "4.4275",
+  "jlcAssemblyStock": "not verified",
+  "approved": false,
+  "sourcePage": {
+    "path": "evidence/C221539-stock-page-A3.html",
+    "sha256": "d91ec950c1888026ecd04616308d4fd442d569c2db9c2ce42b3f2a8f00f33526",
+    "bytes": 398407
+  },
+  "audit": "evidence/spdt-pin-pad-check-A3.json",
+  "DailywellStatus": "2MS3 contact topology verified in manufacturer catalog; exact stocked/importable SKU unverified",
+  "unusedSearchMatches": [
+    "C48687540 GEO 3F-12MS3F",
+    "C597349 08053D226MAT2A"
+  ],
+  "routing": "disabled",
+  "productPlacement": "not started"
+}

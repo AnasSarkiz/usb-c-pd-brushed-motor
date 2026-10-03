@@ -1,0 +1,88 @@
+{
+  "revision": "A0",
+  "review_date": "2026-10-02",
+  "source_commit": null,
+  "status": "blocked_before_schematic_and_placement",
+  "source_and_dependencies": [
+    {
+      "path": "README.md",
+      "sha256": "c3f0e18a831d4d7a57bf5666b3b23c47a504329dc687f57e359fca190a23589c"
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "57436573d83691909164e51e06fe1d573a2a6fb7015af401be41d9ecf4a6f845"
+    },
+    {
+      "path": "package.json",
+      "sha256": "8f2e892dc7c4de9c2cd724bfce04bbf7af766563f8b2113410e61d888f3a0ab7"
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "c0abac04656ed1c4600589d9eb0bfa9e2458061d0d0707ca2bd2ca38b23d5e1e"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "135e07455d67d68dd6158b700e978a6ec372c272a2f4ef1cee63ab8e69395fbf"
+    },
+    {
+      "path": "biome.json",
+      "sha256": "a1d3383ee3d019dda7c0d1cdfa1e093fc7c836020c14a638a18de71a2998c284"
+    },
+    {
+      "path": "tscircuit.config.json",
+      "sha256": "22c2cefeeabcee5931e1d01a7a6316b4577a9084b7fcedea05500e39d0baf3ef"
+    },
+    {
+      "path": "index.circuit.tsx",
+      "sha256": "1451572a6dd4593626163544d6e272c611ff988d5cf063caf64d10366360c2ae"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "0b64a441020077bd26972bf48093afc1ded51498765aa7d546bc27d452ebf3ea"
+    },
+    {
+      "path": ".npmrc",
+      "sha256": "aa5229e8ba9836aaa12b83d0b0ef38c3dea2e432bcbcd6296dfdd6e9c5b75670"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "6028ab3c90800cc37229703ede24d9f698fdc3e4883379d99cc3f92a44386871"
+    },
+    {
+      "path": "docs/BOM.csv",
+      "sha256": "15104f676c252904505967cb40910eddc0ca1952ae036f5a0f2b34a6e9d29780"
+    },
+    {
+      "path": "docs/PLACEMENT.md",
+      "sha256": "646505cebcc06e8dbce480a167935db6b778258a9fc02ecde5cca999f1aecff6"
+    },
+    {
+      "path": "docs/REQUIREMENTS.md",
+      "sha256": "f40c9321bb4b9d7695d16ecb03f68281d82ddc3ae9a1f2f5ccf4e816412c1d30"
+    },
+    {
+      "path": "imports/DRV8874PWPR.tsx",
+      "sha256": "bce4a3b3f7b91a970a7fd3c2a5e3fa7c2e4e8f37b707f4df7e19b2a0bbcd9747"
+    },
+    {
+      "path": "imports/KH_SS23D03_G6.tsx",
+      "sha256": "07e3cb54f5996eed030c491d36ca235e06789c034f0ec1ffe40398bca3c7d70f"
+    },
+    {
+      "path": "imports/STUSB4500QTR.tsx",
+      "sha256": "f9acdc195538fe06d3ad46bf0a1ee3b4014e2de9c7c58731866a34c0d231f1d7"
+    },
+    {
+      "path": "imports/TLC555CDR.tsx",
+      "sha256": "80964cdac247fc06fd8948bfc11c43e6743f1a480ef2105615fae7e7d7a3ea1b"
+    },
+    {
+      "path": "imports/TPS54302DDCR.tsx",
+      "sha256": "77537a73e1d88dcae7a7e50bb6bfe6e22da447501c97b3fcc49012ec9b38038b"
+    },
+    {
+      "path": "scripts/power-report.ts",
+      "sha256": "f999d1498a7f69706019e42e0f9848c79941dcb261ade25da76f123f3c2f4a02"
+    }
+  ]
+}

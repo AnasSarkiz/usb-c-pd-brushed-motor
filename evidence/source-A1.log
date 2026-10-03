@@ -1,0 +1,5 @@
+Errors: 0
+Warnings: 3
+- source_property_ignored_warning: schPinSpacing is deprecated and will be ignored. Pin spacing is always 0.2.
+- source_property_ignored_warning: schPinSpacing is deprecated and will be ignored. Pin spacing is always 0.2.
+- source_property_ignored_warning: schPinSpacing is deprecated and will be ignored. Pin spacing is always 0.2.

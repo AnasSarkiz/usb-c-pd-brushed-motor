@@ -1,0 +1,10 @@
+{
+  "componentCount": 128,
+  "supplierPartCount": 52,
+  "issues": [
+    "R2: supplier identity mismatch",
+    "R3: supplier identity mismatch"
+  ],
+  "pcbTraceCount": 0,
+  "diagnostics": 84
+}

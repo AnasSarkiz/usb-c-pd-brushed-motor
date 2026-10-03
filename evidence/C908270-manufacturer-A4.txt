@@ -1,0 +1,1148 @@
+                                                                                                      1M Series
+                                                                                            Miniature Toggle Switches
+
+                                                      SPECIFICATIONS
+                                                      CONTACT RATING: Dependent upon contact material See page 11.
+                                                      MECHANICAL LIFE: 40,000 make-and-break cycles.
+                                                      CONTACT RESISTANCE: 10mȟmax. initial @ 2-4VDC
+                                                               100mA for both silver and gold plated contacts.
+                                                      INSULATION RESISTANCE: 1,000 Mȟġmin.
+                                                      DIELECTRIC STRENGTH: 1,000 Vrms min.@sea level.
+
+
+
+
+                                                                                                                                       Toggle Switches
+                                                      OPERATING TEMPERATURE: -40°C to 85°C.
+                                                                                                                                      1M
+                                                      MATERIALS
+                                                      CASE: Diallyl phthalate (DAP) (UL94v-0).
+                                                      ACTUATOR: Brass,chrome plated.
+                                                      BUSHING: Brass, nickel plated.
+                                                      HOUSING: Stainless steel.
+                                                      SWITCH SUPPORT: Brass, tin plated.
+                                                      CONTACT / TERMINALS: Copper alloy, Silver or gold plated.
+                                                                                (See Page 11)
+
+
+
+         HOW TO ORDER
+ MODEL NO.       ACTUATOR           BUSHING            TERMINATIONS            TERMINAL            SEAL            RoHS
+                                                                                PLATING                          SOLDERING
+
+
+
+
+Model NO.                                              Terminations
+                                                                                         Terminal
+                       Actuator                        M1 Solder lug                     plating            Seal
+1MS1 SP On-None-On
+                       T1 10.41 high                   M2 PC thru-hole                   Q Silver           E EPOXY (std)
+1MS2 SP On-None-Mom
+                       T2 5.08 high                    M3 Quick connect                  R Gold             N NO EPOXY
+1MS3 SP On-Off-On
+                       T3 13.97 high                   M51 18.70 high, wire wrap         C Gold over silver
+1MS4 SP Mom-Off-Mom
+                       T4 16.26 high                   M52 24.20 high, wire wrap
+1MS5 SP On-Off-Mom
+                       T5 21.34 high                   M53 10.55 high, wire wrap
+1MD1 DP On-None-On
+                       T6 Flatted,anti-rotation        M54 26.97 high, wire wrap
+1MD2 DP On-None-Mom
+                            12.30 high                 M6 Right angle, PC thru-hole
+1MD3 DP On-Off -On
+                       T61 Flatted,anti-rotation       M6N Right angle, Snap-in, PC thru-hole
+1MD4 DP Mom-Off-Mom
+                            21.0 high                  M7 Vertical right angle, PC thru-hole
+1MD5 DP On-Off-Mom
+                       T62 Lever handle with cap       VS2 11.68 high, V-bracket
+1MD6 DP On-On-On
+                            13.49 high                 V2N 11.68 high, Snap-in. V-bracket
+1MD7 DP Mom-On-Mom
+                       T63 Flatted,anti-rotation       VS3 16.00 high, V-bracket
+1MD8 DP On-On-Mom
+                            6.35 high                  VS4 11.68 high, V-bracket
+1M31 3P On-None-On
+                       T7 12.37 high, 15/32 bushing    VS5 16.00 high, V-bracket
+1M32 3P On-None-Mom                                                                                   RoHS soldering
+1M33 3P On-Off-On      T8 17.56 high, 15/32 bushing    Bushing                                        S RoHS & Lead Free
+1M34 3P Mom-Off-Mom.   T88 17.5 high, 15/32 bushing    B1 8.89 high, keyway (thd std)
+1M35 3P On-Off-Mom     T9 Plastic, 21.3 high           B2 8.89 high, keyway (non-thd)
+1M41 4P On-None-On     TL1 Locking lever 16.00 high    B3 7.10 high, keyway (thd)
+1M42 4P On-None-Mom    TL2 Locking lever 16.26 high    B4 7.10 high, keyway (non-thd)
+1M43 4P On-Off-On      TL3 Locking lever 17.28 high    B5 7.52 high, flat (torque)
+1M44 4P Mom-Off-Mom                                    B6 8.00 high, keyway (torque)
+1M45 4P On-Off-Mom                                     B7 8.89 high, flat (thd std)
+1M46 4P On-On-On                                       B8 8.89 high, keyway (metric thd)
+1M47 4P Mom-On-Mom                                     B9 7.52 high, flat (splash proof)
+1M48 4P On-On-Mom                                      B11 7.55 high, keyway (thd std)
+                                                       B12 7.55 high, keyway (non-thd)
+                                                       B13 11.38 high, keyway (15/32 bushing)
+                                                       B14 11.90 high, flat (splash proof)
+                                                       B15 7.55 high, flat (thd std)
+                                                       B16 7.55 high, flat (non-thd)
+                                                       B17 3.50 high, keyway
+                                                       B18 11.38 high, keyway (15/32 bushing)
+                                                       B20 11.38 high, keyway (15/32 bushing)
+                                                       B25 8.00 high, keyway, locking lever (thd)
+                                                       B26 8.00 high, keyway, locking lever (non-thd)
+                                                       B52 11.70 high, flat (15/32 bushing)
+                                                                                                         We have invented the rules
+                                                                                                         www.dailywell.com.tw          01
+                   1M Series
+                   Miniature Toggle Switches
+
+                               SWITCH FUNCTION
+
+                                                        SWITCH FUNCTION                          CONNECTED TERMINALS / SCHEMATIC
+                           UL/CSA
+                      NO.         MODEL
+                           MODEL                       POS.1   POS.2    POS.3                    POS.1                                POS.2                         POS.3
+                     POLES         NO.
+                            NO.
+
+
+
+
+ Toggle Switches
+1M
+                         SP           Q1111     1MS1    ON     NONE       ON
+                                                                                                                                       N/A
+                                      Q1112     1MS2    ON     NONE      MOM                         2-3                                                                   2-1
+                                      Q1113     1MS3    ON      OFF       ON
+                                                                                                          2 (COMM)                                                          2 (COMM)
+                                      Q1114     1MS4   MOM      OFF      MOM                     1          3                         OPEN                         1          3
+
+
+                                      Q1115     1MS5    ON      OFF      MOM
+
+                         DP           Q1121     1MD1    ON     NONE       ON
+                                                                                                                                       N/A
+                                      Q1122     1MD2    ON     NONE      MOM                    2-3,5-6                                                            2-1,5-4
+                                      Q1123     1MD3    ON      OFF       ON
+                                                                                                2 (COMM)            5                                             2 (COMM)            5
+                                      Q1124     1MD4   MOM      OFF      MOM          1          3              4            6        OPEN          1              3              4          6
+
+
+                                      Q1125     1MD5    ON      OFF      MOM
+
+                                      Q1126     1MD6    ON       ON       ON
+
+                                      Q1127     1MD7   MOM       ON      MOM                    2-3,5-6                               2-3,5-4                      2-1,5-4
+
+                                      Q1128     1MD8    ON       ON      MOM
+
+                          3P          Q1131     1M31    ON     NONE       ON
+                                                                                                                                       N/A
+                                      Q1132     1M32    ON     NONE      MOM
+                                                                                           2-3,5-6,8-9                                                       2-1,5-4,8-7
+                                      Q1133     1M33    ON      OFF       ON
+                                                                                           2             5 (COMM) 8                                          2             5 (COMM) 8
+                                      Q1134     1M34   MOM      OFF      MOM      1             3 4             6 7              9    OPEN      1                 3 4             6 7            9
+
+
+                                      Q1135     1M35    ON      OFF      MOM
+
+                          4P          Q1141     1M41    ON     NONE       ON
+                                                                                                                                       N/A
+                                      Q1142     1M42    ON     NONE      MOM      2-3,5-6,8-9,11-12                                             2-1,5-4,8-7,11-10
+                                      Q1143     1M43    ON      OFF       ON          2          5(COMM) 8              11                              2           5(COMM) 8             11
+
+                                                                                  1       3 4        6     7        9 10         12             1           3 4        6     7        9 10       12
+
+                                      Q1144     1M44   MOM      OFF      MOM                                                          OPEN
+
+                                      Q1145     1M45    ON      OFF      MOM
+
+                                      Q1146     1M46    ON       ON       ON
+
+                                      Q1147     1M47   MOM       ON      MOM
+
+                                      Q1148     1M48    ON       ON      MOM
+
+                     MOM= MOMENTARY
+                          Please check the availability in advance before order
+
+
+
+
+                   We have invented the rules
+02                 www.dailywell.com.tw
+                                                                                                       1M Series
+                                                                                        Miniature Toggle Switches
+
+       POLE OPTIONS
+
+
+                                              .410           .350
+                                             10.41           8.89
+                                                                    .350                                                    KEYWAY
+                                                                    8.89       EPOXY SEAL                                   THIS SIDE
+                    KEYWAY
+                                                                                .030
+                                                                                0.76 .185
+                                                                                                                        3
+                                                                                     4.70
+
+
+
+
+                                                                                                                                         Toggle Switches
+                      .500
+                     12.70
+                                                                                                                        2
+                                                                                                                                        1M
+                                                                                                                        1
+                                                     Ø.115
+                                      .270           Ø2.92                      .156                                     .080
+                                      6.86                                      3.96                                     2.03
+                                                              1/4-40 UNS-2A
+
+
+SPDT
+           Part No. Shown : 1MS1T1B1M1QES
+
+
+
+
+                                             .410            .350      .506
+                                             10.41           8.89     12.85
+                                                                    .350       EPOXY SEAL                               KEYWAY
+                     KEYWAY                                                                                             THIS SIDE
+                                                                    8.89        .030
+                                                                                0.76 .185
+                                                                                                       6                    3
+                                                                                     4.70
+                    .500                                                                               5                    2
+                    12.70
+                                                                                                       4                    1
+                                                     Ø.115                                     .190
+                                                     Ø2.92
+                                                                              .060
+                               .450                                           1.52             4.83
+                              11.43                                                                                     .080
+                                                              1/4-40 UNS-2A
+                                                                                                                        2.03
+
+
+DPDT
+           Part No. Shown : 1MD1T1B1M1QES
+
+
+
+
+                                             .410            .350      .570
+                                             10.41           8.89     14.48
+                                                                                 EPOXY SEAL                              KEYWAY
+                    KEYWAY                                           .415                                                THIS SIDE
+                                                                    10.54        .030
+                                                                                 0.76 .185
+                                                                                                   9                            3
+                                                                                      4.70                      5 6
+                    .500                                                                           8                            2
+                   12.70                                                                                        4
+                                                                                                   7                            1
+                                                     Ø.115
+                                                                               .060                .190
+                               .650                  Ø2.92
+                                                                               1.52                4.83
+                              16.51
+                                                              1/4-40 UNS-2A                           .080
+                                                                                                      2.03
+
+
+
+3PDT
+           Part No. Shown : 1M31T1B1M1QES
+
+
+
+
+                                             .410            .350     .570
+                                             10.41           8.89    14.48
+                                                                                 EPOXY SEAL                             KEYWAY
+                    KEYWAY                                          .415                                                THIS SIDE
+                                                                    10.54        .030
+                                                                                 0.76 .185
+                                                                                              12                                    3
+                                                                                      4.70                  8 9 56
+                  .500                                                                        11                                    2
+                 12.70                                                                                      7       4
+                                                                                              10                                    1
+
+                                                     Ø.115
+                               .850                  Ø2.92
+                                                                               .060            .190
+                              21.59                                            1.52            4.83                         .080
+                                                              1/4-40 UNS-2A                                                 2.03
+
+
+
+4PDT
+           Part No. Shown : 1M41T1B1M1QES
+
+
+                                                                                                           We have invented the rules
+                                                                                                           www.dailywell.com.tw          03
+                   1M Series
+                   Miniature Toggle Switches
+
+                                   3-WAY SWITCH                                                                                             3-Way Wiring Diagram Schematics
+
+
+                     SINGLE POLE, 3 POSITION                                                             KEYWAY
+
+                                          POS 1     POS 2 POS 3
+                       Model                                              POS 3
+
+                        No.                                               POS 2
+                                                                          POS 1
+                        1MD6               ON        ON          ON
+
+
+
+
+ Toggle Switches
+1M
+                       Term.
+                                          2-3,5-6 2-3,5-4 2-1,5-4
+                       Comm.
+                                                                                         6                3                           6      3                  6     3                  6    3
+
+                                                                                         5                2                           5      2                  5     2                  5    2
+
+                                                                                         4                   1                        4      1                  4     1                  4    1
+                     DOUBLE POLE, 3 POSITION
+                                                                                                                                     POS. 1                   POS. 2                    POS. 3
+                                          POS 1     POS 2 POS 3
+                       Model
+                        No.
+                        1M46               ON        ON          ON                12            9   6
+                                                                                                                 3              12    9      6    3       12     9     6   3       12     9   6       3
+
+                                                                                                                 2              11    8      5    2       11     8     5   2       11     8   5       2
+                       Term.               2-3,5-6   2-3,5-4   2-1,5-4
+                                                                                  11
+                                                                                    10
+                                                                                             8
+                                                                                                 7   4
+                                                                                                         5
+
+                                                                                                                                10    7      4    1       10     7     4   1       10     7   4       1
+                       Comm.              8-9,11-12 8-9,11-10 8-7,11-10                                          1
+
+
+                                                                                                                                     POS. 1                   POS. 2                    POS. 3
+
+
+
+
+                            ACTUATOR OPTIONS
+                      T1 STD                                T2                           T3                                           T4                                   T5
+                                                                                                                                                                               Ø.130
+                                                                                                                                          Ø.130                                Ø3.30
+                                                                                             Ø.130
+                                                                                                                                          Ø3.30
+                                                                                             Ø3.30
+                        Ø.115
+                        Ø2.92
+                                                             Ø.105
+                                                             Ø2.67
+                                                                                                                                                                                                  .840
+                                                                                                                         .550                                  .640                               21.34
+                                             .410                                                                       13.97                                 16.26
+                                            10.41                         .200
+                                                                          5.08
+
+
+
+
+                         NOTE : T1 ~ T5 Actuator shown with standard B1 Bushing ;
+                                Add .070 (1.78) for B3 Bushing ;
+                                Subtract .020 (0.51) for B6 Bushing ;
+                                Std for M1 , M2 Terminal sub .016 (0.40) for M6 , M7 , VSX (Exclude B1/B2 bushing)
+
+
+                       T88B52
+                       SPLASH PROOF
+                       Std SPDT for M1.M2 Terminal
+                                                                                                                                 .457
+                                                                                                                                11.70                                                          Ø.512
+                                                                                                                                                  .079
+                                                                                                                       .453                       2.00                                        Ø13.00
+                                                        Ø.709             FLAT                                        11.50                           .020
+                                                        Ø18.00                                                                                         0.51
+                                                                                                                     seal
+
+
+
+                                                                                                                                                                                               .467
+                                                                                                                                                                                              11.85
+                                                                                  Ø.240
+                                                                                  Ø6.09
+                                                                                                                                                                        PANEL MOUNTING
+                                                                                                                      .661                                            Without locking ring (Flat)
+                                                                                                                      16.8                15/32-32 UNS-2A
+                                                                                                                     .689
+                                                                                                                     17.5
+
+
+
+                   We have invented the rules
+04                 www.dailywell.com.tw
+                                                                                                                                          1M Series
+                                                                                                                             Miniature Toggle Switches
+T6      FLATTED WITH                                 T61                                                       T63
+        ANTIROTATION
+                                                           .100
+                                                                                          Ø.200
+                                                           2.54
+                                                                                          Ø5.08
+                Ø.200
+  .100          Ø5.08
+  2.54                                                                                                                   .108
+                                                                                                                         2.75
+                                                                                                                                                          .197
+                                                          .827                                                                                            5.00
+ .484                                                     21.0
+12.30                                                                                                                   .250
+                                                                                                                        6.35
+
+
+
+
+                                                                                                                                                                           Toggle Switches
+                                                                                                                                                                          1M
+
+
+
+
+T62                                              Plastic No.Color :
+                                                    ITEM NO       COLOR
+
+                 .216
+                                                      1       White
+                 5.50                                 2       Black (Std)
+              .094        .255
+              2.40        6.48                        3       Red                     NOTE: T6,T61,T62 ,T63 use with B11, B12, B15,
+                                                      4       Orange
+                                                                                                     %EXVKÕQJRQO\
+                                 .500                 5       Yellow
+                                 12.70                6       Green
+                                                      7       Blue
+                                                      8       Brown
+                                                      9       Gray
+                                                 ＊Besides standard color,
+                                                  other colors need to check
+                                                  stocks available.
+
+
+
+
+T7                                                   T8                                                        T9
+
+                                                                       Ø.240                                                    Ø.129
+                                                                       Ø6.09                                                    Ø3.28
+            Ø.240
+            Ø6.09
+
+
+                                                                                        .691                                                     .630
+                              .487                                                     17.56                        Gloss Finish                16.00 .839
+15/32-32 UNS-2A              12.37                     15/32-32 UNS-2A                                              Plastic                           21.3
+
+
+                              .448                                                                                     Chrome
+                                                                                        .448
+                             11.38        .020                                         11.38       .020                Finish
+                                          0.51                                                     0.51
+
+
+
+
+     Use with B13 bushing                                          Use with B13 bushing                                 B1 / B2 bushing std
+     Use with B18,B20 the lever is antirotation                    Use with B18,B20 the lever is antirotation           with black(T92) and red(T93) color
+     andthe size of lever is 13.00mm                               and the size of lever is 18.00mm                     only(std.)
+
+
+
+TL1B25 THD STD                                            TL2B25 THD STD                                         TL3B25 THD STD
+   B26 NON-THD                                               B26 NON-THD                                            B26 NON-THD
+                                  .215                                                    .215                                                        .215
+                                  5.44                                                    5.44                                                        5.44
+
+
+   .630    .567                                           .640    .579                                             .681    .611
+  16.00   14.40                                          16.26   14.73                                            17.28   15.50
+UNLOCKED LOCKED                                        UNLOCKED LOCKED                                          UNLOCKED LOCKED
+                                         1/4-40                                                  1/4-40                                                      1/4-40
+                                         UNS-2A                                                  UNS-2A                                                      UNS-2A
+                .314                         .055                           .314                        .055                       .314                           .055
+                8.00                         1.40                           8.00                        1.40                       8.00                           1.40
+
+
+
+
+                                                                                                          1.            2.                1. 2 Positions Lock
+                                                                                                                                          2. 3 Positions Lock
+
+
+
+
+                                                                                                                                             We have invented the rules
+                                                                                                                                             www.dailywell.com.tw          05
+                   1M Series
+                   Miniature Toggle Switches
+
+                              BUSHING OPTIONS
+
+                       B1 THD STD                                                             B3 THD                                             B5 HIGH TORQUE
+                       B2 NON-THD                                                             B4 NON-THD
+
+                                                                                                                                                                            Ø.314
+                                                                                                                                                                            Ø7.98
+                                   .040                                                                    .040
+                                                     .028                                                  1.02            .028                             .225
+                                   1.02                                                                                    0.71                             5.72
+
+
+
+
+ Toggle Switches
+1M
+                                                     0.71
+
+
+
+                        1/4-40 UNS-2A                                                             1/4-40 UNS-2A                               1/4-40 UNS-2A
+                                                                .350                                                           .280                                        .296
+                                                                8.89                                                           7.10                                        7.52
+
+                                                                                                                                                    .020                          .040
+                                                                                                                                                    0.51                          1.02
+                         Subtract .016 (0.40) for M6,                                               B4 is standard for M6,
+                         M7 and VS2~5 termination options.                                          M7 and VS2~5 termination options.
+
+                       B6 HIGH TORQUE                                                         B7 THD STD                                         B8 METRIC THD
+
+
+
+                                                            Ø.314
+                                                            Ø7.98
+                                    .040                                                                                                             .040
+                                    1.02                                                                                .225                         1.02           .028
+                                                         .028                                                           5.72                                        0.71
+                                                         0.71
+
+
+                        1/4-40 UNS-2A                                                   1/4-40 UNS-2A
+                                                                                                                                              M6x0.75 THD
+                                                            .315          .040                                          .350                                                .350
+                                                            8.00          1.02                                          8.89                                                8.90
+
+                                   .020
+                                   0.51
+
+
+
+                       B9 SPLASH PROOF                                                                                                            B11 THD STD
+                                                                                                                                                  B12 NON-THD
+                                                                                                   .031
+                                                                                                   0.80
+                                                                                                                                                                            Ø.314
+                                                                                  Ø.465                                                                                     Ø7.98
+                                                                                  Ø11.81
+
+                                                                                                                                                     .040
+                                                                                 .225              CP-1TEB                                           1.02           .028
+                                                 SEALS                           5.72                                                                               0.71
+
+
+                                                                                                           Ø.400
+                                                                                                          Ø10.20
+                                                                                                                                              1/4-40 UNS-2A
+                                                     1/4-40                                                                        .053
+                                                     UNS-2A                                                                                                                .297          .057
+                                                                                 .296      .057                                    1.35                                                  1.44
+                                                                                           1.44                                                                            7.55
+                                                                                 7.52
+
+
+                                                    .020                                                                   O-Ring
+                                                    0.51                                                                                            Use with T6 actuators only
+                                                                                                                   supplied with B9 bushing
+
+
+
+                       B15 THD STD                                                            B17                                             B13
+                       B16 NON-THD
+                                                                  Ø.314                                                    Ø.250
+                                                                  Ø7.98                                                    Ø6.35                    .065
+                                                                                                                                                    1.65
+                                                                                                                                                                   .031
+                                           .225                                                   .040                                                             0.79
+                                           5.72                                                   1.02
+
+                                                                                                                                          15/32-32 UNS-2A
+                                                                  1/4-40 UNS-2A                                            .138                                               .448
+                            .057          .297                                                                             3.50                                                           .020
+                            1.44                                                        1/4-40 UNS-2A                                                                        11.38
+                                          7.55                                                                                                                                            0.51
+
+
+
+
+                                                                                                                                                 Use with T7,T8 actuators only
+                                     Use with T6 actuators only                                                                                  B13 Bear strength from top of actuator
+                                                                                                                                                 up to 10kg aside up to 15kg
+
+                   We have invented the rules
+06                 www.dailywell.com.tw
+                                                                                                                                 1M Series
+                                                                                                                      Miniature Toggle Switches
+
+
+ B14 SPLASH PROOF                                          B18                                                B20
+                                                                                         POM                                               POM
+
+
+
+                                      Ø.748                        .065                                               .065
+                                     Ø19.00                        1.65                                               1.65
+                                                                                 .031                                               .031
+                                                                                 0.79                                               0.79
+
+
+
+
+                                                                                                                                                                   Toggle Switches
+            .429                                                                                                                                                  1M
+            10.90
+                                                     15/32-32 UNS-2A                                      15/32-32 UNS-2A
+                                                                                          .448                                                    .448
+                                                                                         11.38     .020                                          11.38     .020
+15/32-32 UNS-2A                                                                                    0.51                                                    0.51
+                                   .350       .118
+                                   8.90       3.00
+
+
+                                                               Use with T7,T8 and TA actuators only              Use with T7,T8 and TA actuators only
+                                                               with Plastic (POM) Insert                         with Plastic (POM) Insert
+        Use with T7 , T8 actuators only
+                                                                B18 , B20 Bear strength from top of actuator up to 20kg aside up to 15kg
+
+   OPTIONAL TOGGLE CAP
+ CP-T1XX                                                                  CAP Color :
+                                                                          ITEM NO     COLOR         ＊Besides standard color,
+            .453                                                             1       White           other colors need to check stocks available.
+           11.50                                                             2       Black (Std)
+                                                                             3       Red
+                                                                             5       Yellow
+                                                                             6       Green
+                                    Use with T1 actuator                     7       Blue
+                                                                             9       Gray
+
+       PANEL MOUNTING
+  1/4 IN BUSHING
+                                   Ø.250                                         Ø.250                        .240                Ø.250
+                                   Ø6.35                                         Ø6.35                        6.10                Ø6.35
+
+
+
+
+             .033                                                                                           Ø.094
+             0.85           .022                                              .234                          Ø2.38
+                            0.55                                              5.95
+
+         Without locking ring (Keyway)                         Without locking ring (Flat)                   With standard locking ring.
+
+
+
+  METRIC BUSHING
+                                                               .248
+                                   Ø.250                                          Ø.250
+                                                               6.30
+                                   Ø6.35                                          Ø6.35
+
+
+
+
+            .031
+            0.80                                         Ø.094
+                            .028                         Ø2.40
+                            0.70
+
+         Without locking ring (Keyway)                         With standard locking ring.
+
+
+
+  15/32 IN BUSHING                                                                                         SPLASH PROOF BUSHING
+                                                            .378
+                                     Ø.469                  9.60                        Ø.469                                               Ø.492
+                                     Ø11.91                                             Ø11.91                                              Ø12.5
+
+
+
+
+          .065                                         Ø.150
+          1.65           .031                          Ø3.81
+                         0.79                                                                                                             .440
+                                                                                                                                          11.1
+
+         Without locking ring (Keyway)                         With standard locking ring.                           Without locking ring (Flat)
+
+                                                                                                                                    We have invented the rules
+                                                                                                                                    www.dailywell.com.tw           07
+                   1M Series
+                   Miniature Toggle Switches
+
+                            TERMINATION OPTIONS
+                            M1 Solder lug                          M2 PC Thru-hole                                  M3 Quick connect                                         M5 Wire Wrap
+                                                                                                                                                                                                               .075
+                                                                                                                                                                                                               1.91
+
+
+                           EPOXY                  .156             EPOXY
+                                                  3.96                                               .260               EPOXY                               .260             EPOXY
+                            SEAL                                    SEAL                    .201     6.60                                              .201 6.60              SEAL
+                                                                                            5.10                        SEAL                           5.10
+                              .078                                                                                                                                                                            'A'
+                              1.98
+
+
+
+
+ Toggle Switches
+1M                                                .047
+                                                  1.19                    .050                                                      .062
+                                                                          1.27                                                      1.57
+                                  .080
+                                  2.03                                                                                                                                         .050
+                                                                                                                                                                               1.27
+
+                                  .030(0.76) THK.                          .030(0.76) THK.                                             .030(0.76) THK.                                .030(0.76) THK.
+
+                                                 OTHER TERMINATION OPTIONS                                                                                                    OPTION
+                                                                                                                                                                                                 DIM. 'A'
+                                                                                                                                                                               CODE
+                            M6            Right angle P.C. Mount                                M6N          Right angle P.C. Mount
+                                                                                                                                                                               M51           .736 (18.70)
+                            M7            Vertical right angle P.C. Mount                                    with snap-in bracket
+                                                                                                                                                                               M52           .953 (24.20)
+                            VS2           Vertical bracket P.C. Mount                           V2N          Vertical bracket P.C. Mount
+                                                                                                                                                                               M53           .415 (10.55)
+                            VS3           Vertical bracket P.C. Mount                                        with snap-in bracket
+                                                                                                                                                                               M54           1.062 (26.97)
+                            VS5           Vertical bracket P.C. Mount
+
+
+                      M6                                                                         Ø.245                                                                       P.C. MOUNTING
+                                                            .500                                 Ø6.22                          EPOXY
+                                                           12.70                        Ø.105
+                                                                                                              A                 SEAL                                                                 .185
+                                                                                        Ø2.67
+                                                                          .125                                                                                                                       4.70
+                                                  .270                                                                                             1    2    3
+                                                  6.86                    3.17                                                                                                    3      2       1
+
+                                                                                                              A
+                                                                                 .254                                                                                                                  .500
+                                                    .030                                                                              .050                                                             12.7
+                                                                                 6.46                                                 1.27                        .048
+                                                    0.76
+                                                                      .185                        .288       .500                                                 1.22
+                                                                      4.70                        7.31       12.7
+                                                                                                                                                                 .200                                   Ø.073
+                                                                                                                                                                 5.08          .200                     Ø1.85
+                                                                                                                                                                               5.08
+                                                                                                                                                SECTION A-A
+                                                                                                                                               TERM. NOS. FOR
+                      SPDT                                                                                                                    REFERENCE ONLY
+                                                Part No. Shown : 1MS1T2B4M6QES
+
+
+                      M6                                    .500
+                                                                                                Ø.245                               EPOXY                                    P.C. MOUNTING
+                                                           12.70
+                                                                                                Ø6.22
+                                                                                                              A                     SEAL
+                                                                             Ø.105
+                                                                             Ø2.67                                                                4              6                                   .185
+                                                                                                                                                         5                                           4.70
+                                                  .450                                                                                                                                                        .150
+                                                 11.43                     .126                                                                                                                               3.81
+                                                                           3.17                                                                                                      6   5       4
+                                                                                                                                                   1     2       3
+                                                                                                                                                                                     3   2       1
+                                                                                                              A         1       4
+                                                                                 .254
+                                                                                 6.46                                                       .050
+                                                                   .030                           .288       .500                           1.27                                                             .500
+                                                                   0.76                                                                                           .050                                       12.7
+                                                 .185                                             7.31       12.7                                                 1.27
+                                                                                                                                           .150
+                                                 4.70                                                                                      3.81                  .200
+                                                                                                                                                                 5.08
+                                                                                                                                                                                                            Ø.073
+                                                                                                                                                SECTION A-A                    .200                         Ø1.85
+                                                                                                                                               TERM. NOS. FOR                  5.08
+                      DPDT                                                                                                                    REFERENCE ONLY
+                                                Part No. Shown : 1MD1T2B4M6RES
+
+
+                      M7                                                                  Ø.245                     EPOXY                     .270                           P.C. MOUNTING
+                                                                                          Ø6.22                     SEAL                      6.86
+                                                                                                         A
+                                                                     Ø.105
+                                                                                                                                                             3                               3          .150
+                                                                     Ø2.67
+                                                                                                                                                                      .500                              3.81
+                                                                                                                                                             2                               2
+                                                                                                                                           .125                      12.70
+                                                                                                                                           3.18              1                               1
+                                                                          .254                           A
+                                                                          6.46                                1     2       3
+                                                                                                                                                                                                       .500
+                                                   .050                                                                                     .030                      .048                             12.7
+                                                   1.27                          .288                 .500                                                            1.22
+                                                                                 7.31                 12.7                                  0.76
+                                                                                                                                    .150                             .200
+                                                                                                                                    3.81                             5.08
+                                                                                                                                                                                                        Ø.073
+                                                                                                                                                                                                        Ø1.85
+                                                                                                                                                    SECTION A-A                .200
+                                                                                                                                                   TERM. NOS. FOR              5.08
+                      SPDT                      Part No. Shown : 1MS1T2B4M7QES                                                                    REFERENCE ONLY
+
+
+                   We have invented the rules
+08                 www.dailywell.com.tw
+                                                                                                                                                         1M Series
+                                                                                                                                            Miniature Toggle Switches
+
+
+
+M7
+                                                     Ø.245                    EPOXY                                                               P.C. MOUNTING
+                                                     Ø6.22                    SEAL
+                                                               A
+                                    Ø.105                                                                                                                                          .190
+                                                                                                                 6                   3
+                                    Ø2.67                                                                                                                                          4.83
+                                                                                                     .125                               .500
+                                                                                                                 5                   2
+                                                                                                     3.18                              12.70                      3       6          .150
+                                                                                                                 4                   1                                               3.81
+                                                                                                                                                                  2       5
+
+
+
+
+                                                                                                                                                                                                    Toggle Switches
+                                                                                                                                                                                                   1M
+                                     .254                      A
+                                     6.46                             4       5       6                                                                           1       4
+            .050                                                                                                                      .048
+            1.27                             .288            .500                                    .030                             1.22
+                                   .190      7.31            12.7                                    0.76                                                                           .500
+                                   4.83                                                       .150                                       .200                                       12.7
+                                                                                              3.81                                       5.08
+
+                                                                                                                                                                                     Ø.073
+                                                                                                              SECTION A-A                           .200                             Ø1.85
+                                                                                                             TERM. NOS. FOR                         5.08
+DPDT                                                                                                        REFERENCE ONLY
+            Part No. Shown : 1MD1T2B4M7QES
+
+
+M7
+                                                     Ø.245
+                                                                                  EPOXY                                   .650
+                                                                                  SEAL                                                            P.C. MOUNTING
+                                            Ø.105    Ø6.22                                                               16.51
+                                                                  A
+                                            Ø2.67                                                                                                                             .190
+                                                                                                             9
+                                                                                                                           6     3                                            4.83          .150
+                                                                                                                                           .500                                             3.81
+                                                                                                     .125 8                               12.70           3       6       9
+                                                                                                     3.18 7               4 5 12
+                                                                                                                                                          2       5       8
+                                                                  A       7       8       9                                                               1       4       7
+                                    .254                                                                                                .048
+                               .050 6.46             .288     .565                                                                      1.22
+                               1.27                                                                .030                                                                             .565
+                                                     7.31     14.35                                0.76                               .200
+                                                                                                                                      5.08                                         14.35
+                             .190                                                              .150
+                             4.83                                                              3.81
+                                                                                                              SECTION A-A                         Ø.073
+                                                                                                             TERM. NOS. FOR                       Ø1.85                            .200
+                                                                                                            REFERENCE ONLY                                                         5.08
+3PDT
+            Part No. Shown : 1M31T2B4M7QES
+
+
+
+M7                                                                                EPOXY
+                                                                                                                      .850
+                                                     Ø.245                                                           21.59
+                                             Ø.105   Ø6.22                        SEAL                                                            P.C. MOUNTING
+                                             Ø2.67                A                                                                                                                .190
+                                                                                                      12                                                                           4.83
+                                                                                                                     9    6      3                                                         .150
+                                                                                                                                           .500                                            3.81
+                                                                                                      11                                  12.70      3        6       9       12
+                                                                                                                 7 8 4 5 12
+                                                                                                      10                                             2        5       8       11
+                                                                  A                                                                                  1        4       7       10
+                                      .254                            10 11 12
+                                                                                                                                     .048
+                             .050     6.46                                                           .125                            1.22
+                                                     .288     .565                                   3.18
+                             1.27                    7.31    14.35                                                                                                                         .565
+                                                                                                                                 .200                                                     14.35
+                                                             .150                                                                5.08
+                            .190                                                                     .030
+                            4.83                             3.81
+                                                                                                     0.76
+                                                                                                                                                  Ø.073
+                                                                                                              SECTION A-A                         Ø1.85
+                                                                                                                                                                                   .200
+                                                                                                             TERM. NOS. FOR                                                        5.08
+4PDT                                                                                                        REFERENCE ONLY
+            Part No. Shown : 1M41T2B4M7QES
+
+
+
+VS2 - VS3
+                                                             .254
+                                                             6.46                                                                                 P.C. MOUNTING
+                                                                                                             OPTION
+                                                                                                             CODE
+                                                                                                                               DIM. 'A'
+
+                                                                                                                                  .460                    .125
+                                                                                                                 VS2                                      3.18
+                                                     .280                                                                        11.68
+                                                     7.11                                                                                                                             .185
+                   Dim'A'                                                                                                         .630                                                4.70
+                                            .185                                                                 VS3             16.00
+                                            4.70                                                                                                                      3
+
+                                                     EPOXY                                                                                          .620              2
+                                                      SEAL            1       2           3                                                         15.75
+                                                                                                                                                                      1
+               .125                                     .020                                         .030
+               3.18                                     0.51                                         0.76
+                                     .048
+                                     1.22                  .185                                                                                      Ø.073
+                            .320                           4.70                                                                                      Ø1.85
+                                                                          .620
+                            8.13                                          15.75
+SPDT
+            Part No. Shown : 1MS1T2B4VS2QES
+
+
+                                                                                                                                                              We have invented the rules
+                                                                                                                                                              www.dailywell.com.tw                  09
+                   1M Series
+                   Miniature Toggle Switches
+
+
+
+                      VS2 - VS3                                                                    .254
+                                                                                                   6.46                                                                 P.C. MOUNTING
+                                                  .450                                                                                             OPTION
+                                                                                                                                                   CODE
+                                                                                                                                                            DIM. 'A'
+                                                 11.43
+                                                                                                                                                              .460           .125
+                                                                                                                                                    VS2                      3.18
+                                                                                           .280                                                              11.68
+                                                                                           7.11                                                                                                  .185
+                                                  Dim 'A'                                                                                                     .630                               4.70
+                                                                               .185                                                                 VS3      16.00                  3   6
+
+
+
+
+ Toggle Switches
+1M
+                                                                               4.70
+                                                                                                                                                                           .620     2   5
+                                                                                           EPOXY
+                                                                                            SEAL              4       5       6                                           15.75
+                                                                                                                                                                                    1   4
+                                                    .048                                     .020                                      .030
+                                                    1.22                                     0.51                                      0.76
+                                                                        .125
+                                                                        3.18                   .185                                                                         Ø.073
+                                                        .320                                   4.70                                                                         Ø1.85
+                                                        8.13                                                       .620                                                                        .190
+                                                                                                                   15.75                                                                       4.83
+                      DPDT
+                                                Part No. Shown : 1MD1T2B4VS3QES
+
+
+                      VS5
+                                                                                                  .254
+                                                                                                  6.46                                             OPTION               P.C. MOUNTING
+                                                                                                                                                   CODE
+                                                                                                                                                            DIM. 'A'
+                                                                                                                                                                                            .250
+                                                .450                                                                                                                                        6.35
+                                                11.43                                                                                                         .460
+                                                                                                                                                    VS4
+                                                                                                                                                             11.68                                 .185
+                                                                                       .280                                                                                                        4.70
+                                                                                       7.11                                                                   .630                  3   6
+                                                 Dim 'A'                                                                                            VS5      16.00
+                                                                             .185
+                                                                             4.70                                                                                          .750     2   5
+                                                                                                                                                                          19.05
+                                                                                       EPOXY                                                                                        1   4
+                                                                                         SEAL             4       5       6
+
+                                                  .050                                 .020                                          .030
+                                                  1.27                                 0.51                                          0.76
+                                                                        .250                 .185                                                                        Ø.073
+                                                                        6.35                 4.70                                                                        Ø1.85                 .190
+                                                               .360                                                                                                                            4.83
+                                                               9.14                                                .750
+                                                                                                                  19.05
+                      DPDT
+                                                Part No. Shown : 1MD1T2B4VS5QES
+
+
+                           SNAP-IN TERMINATION OPTIONS
+                                  M6N                                                                              V2N
+
+
+
+
+                                          HARDWARE
+                       1/4 NUT                                        DRESS NUT                                           METRIC NUT                                   LOCKWASHER
+
+                                                                                    .352                                                    .358
+                                     .362                                                                                                   9.10
+                                     9.19                                           8.94
+
+
+                                                                      Ø.372                                                   .315                                       Ø.425
+                           .312
+                                                                      Ø9.45                                                   8.00                                       Ø10.80
+                           7.92
+
+                                            1/4-40 UNS-2A                                    1/4-40 UNS-2A                                           M6x0.75 THD
+                                                                                                                                                                                    .018 THK
+                                                                                                                                                                                    0.46
+
+                        .062                                                                                              .062
+                        1.57                                          .118                                                1.57
+                                                                      3.00
+                               MNU-1M01A                                      MNU-1M29                                                 MNU-1M04                              MNU-1M03
+
+
+                    Supplied standard with                                                                                Supplied standard with                       Supplied standard with
+                    B1, B3, B5, B6 and B9 options                                                                         B8 metric bushing                            B1 / B3 bushing
+
+
+                   We have invented the rules
+10                 www.dailywell.com.tw
+                                                                                                                        1M Series
+                                                                                                            Miniature Toggle Switches
+
+LOCKING RING                                          LOCKING RING                                     LOCKING RING
+                                                                                                               Ø.718
+       Ø.468                                                    Ø.468                                         Ø18.24
+                                                                                                                                          .040
+                                 .029                                                      .029                                           1.02
+       Ø11.89                                                   Ø11.89
+                                 0.74                                                      0.74
+
+
+
+
+                                 .065
+                                                                                           .065
+
+
+
+
+                                                                                                                                                        Toggle Switches
+                                                                                                                                                       1M
+                                 1.65
+                                                                                           1.65                                          .098
+                                                                                                                                         2.50
+                MNU-1M02                                              MNU-1M11                                     MNU-1M08
+Locking ring supplied standard                        Locking ring supplied with B5 bushing            Locking ring
+                                                                                                       supplied with B13,B18,B20 bushing
+
+
+LOCKING RING                                          15/32 NUT                                        LOCKWASHER
+                                                                            .630                                         Ø.625
+        Ø.472 DIA.
+                                        .065                               16.00                                        Ø15.90
+          Ø11.99
+                                        1.65
+
+
+                                                            .551
+                                                           14.00
+
+
+                                        .028                                         15/32-32 UNS-2A
+                                        0.70             .078
+                                                         1.98
+                                                                                                                        .039 THK
+                                                                                                                        1.0
+
+                MNU-1M05                                                 MNU1M07                                       MNU-1M09
+Locking ring supplied with B8 bushing                 Supplied standard with B13 bushing               Supplied standard with B13 bushing
+
+OPTIONAL RUBBER HOOD                                  DRESS NUT                                        DRESS NUT
+SEALING
+                                                                                         .060                                              .175
+                                                                                         1.50                                              4.50
+
+                 .331
+                 8.40
+                                                                   1/4-40 UNS-2A                               1/4-40 UNS-2A
+                                                                                         Controlled               Ø.314 DIA              Controlled
+      .216                                                       Ø.314 DIA               Knurl                    Ø8.00                  Knurl
+      5.50                                                       Ø8.00
+                         Ø.472
+                        Ø12.00
+
+K1=Metric
+E1=Inch (Std.)                                                        MNU-1M18                                     MNU-1M24
+for actuator T1, T2 and
+B1, B3, B5, B6 Bushing only
+
+
+
+
+     CONTACT MATERIAL OPTIONS
+
+        CONTACT PLATING                        TERMINAL PLATING                                        RATINGS
+
+ Q               Silver                  Q = Silver                                5 Amps with resistant load @ 120VAC or 28VDC
+
+ C      Gold over Silver                 C = Gold over silver                      2 Amps with resistant load @ 250VAC
+
+ R               Gold                    R = Gold                                  0.4 Volt - Amps ( VA ) max. @ 20V max. ( AC or DC )
+
+
+
+
+SOLDERING PROCESSES
+MANUAL SOLDERING: Use soldering iron of 30 watts, controlled at 350oC
+                  approximately 5 seconds while applying solder.
+WAVE SOLDERING: Recommended Soldering Temperature: 270 ± 5oC
+                 Duration of Solder Immersion: Max 5 sec. (PCB is 1.6mm in thickness)
+
+
+                                                                                                                          We have invented the rules
+                                                                                                                          www.dailywell.com.tw          11
+

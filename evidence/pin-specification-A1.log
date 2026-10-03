@@ -1,0 +1,47 @@
+Errors: 0
+Warnings: 45
+- source_component_pins_underspecified_warning: All pins on D1 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on D2 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on J3 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Q1 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on RV1 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on U8 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Q2 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Q3 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Q4 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Q5 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on D10 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on D11 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on J2 are underspecified (no pinAttributes set)
+- source_no_power_pin_defined_warning: J1 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: U2 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: U3 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: D1 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: D2 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: J3 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: U4 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q1 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: RV1 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: U8 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q2 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q3 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q4 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q5 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: U10 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: D10 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: D11 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: J2 has no pin with requires_power=true
+- source_no_ground_pin_defined_warning: J1 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: D1 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: D2 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: J3 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Q1 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: RV1 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: U8 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Q2 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Q3 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Q4 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Q5 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: D10 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: D11 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: J2 has no pin with requires_ground=true

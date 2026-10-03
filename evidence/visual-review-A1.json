@@ -1,0 +1,54 @@
+{
+  "revision": "A1",
+  "reviewDate": "2026-10-02",
+  "reviewedInSession": true,
+  "remainingIssues": [
+    "Required switch ports omitted",
+    "11 imported reference labels omitted",
+    "2 custom TVS orientation issues"
+  ],
+  "sheets": [
+    {
+      "svg": "dist/review/2-input.svg",
+      "reviewedPng": "dist/review/2-input-A1-cli2226.png",
+      "unchangedSinceVisualInspection": true,
+      "sha256": "1f1efcf894597e61d3c363e1bdab72dd240c47bc7f278cba5e613d80ae58d143"
+    },
+    {
+      "svg": "dist/review/3-buck.svg",
+      "reviewedPng": "dist/review/3-buck-A1-cli2226.png",
+      "unchangedSinceVisualInspection": true,
+      "sha256": "5e99e32e130b24892540bdc405884d1e6db9393187ccea96ad1e2ae92af7c723"
+    },
+    {
+      "svg": "dist/review/1-usb.svg",
+      "reviewedPng": "dist/review/1-usb-A1-cli2226.png",
+      "unchangedSinceVisualInspection": true,
+      "sha256": "1f654b0d06ad7c663d91bd17c431024c97ca0d931c6333e1a1cd43dff8e20db9"
+    },
+    {
+      "svg": "dist/review/7-motor.svg",
+      "reviewedPng": "dist/review/7-motor-A1-cli2226.png",
+      "unchangedSinceVisualInspection": true,
+      "sha256": "6b7bb81036c0c7f6ac54c02c7019a34ad4c55c9cba6b5b6590e3955cf678472f"
+    },
+    {
+      "svg": "dist/review/4-controls.svg",
+      "reviewedPng": "dist/review/4-controls-A1-cli2226.png",
+      "unchangedSinceVisualInspection": true,
+      "sha256": "81f7e334b8b67ae65e1b2fdff0a6c14c6dace9f1b4619b8dbb00cac7a7c1dbcc"
+    },
+    {
+      "svg": "dist/review/6-dump.svg",
+      "reviewedPng": "dist/review/6-dump-A1-cli2226.png",
+      "unchangedSinceVisualInspection": true,
+      "sha256": "1610e721f681d38c3dd8c20e5b35989465d139a8db74055e225a891079522ad5"
+    },
+    {
+      "svg": "dist/review/5-protection.svg",
+      "reviewedPng": "dist/review/5-protection-A1-cli2226.png",
+      "unchangedSinceVisualInspection": true,
+      "sha256": "9b7aac858a2db75eff2858e38d6c36ebe2f5b7691633c22cd5aff1872efa1076"
+    }
+  ]
+}

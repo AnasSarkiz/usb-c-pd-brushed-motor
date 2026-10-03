@@ -1,0 +1,11 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C57112.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C57112/circuit.json
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

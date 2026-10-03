@@ -1,0 +1,1596 @@
+ Molding Power Choke – MHCC/MHCI Series
+
+
+MHCC、MHCI Series
+
+                                                                      MHCC series is designed for low profile type with low RDC and ultra
+                                                                      large current. Its molded magnetic shielded type is suitable for
+                                                                      high-density mounting and ultra low buzz noise. Soldering conditions
+                                                                      can be easily confirmed when mounting onto the board. This series
+                                                                      also provides customers with embossed carrier type packaging for
+                                                                      automatic mounting machine.
+
+
+Features                                                              Applications
+ RoHS, Halogen Free and REACH Compliance                              Laptops and PCs
+ High rated current                                                   Switchs and servers
+ Ultra low buzz noise                                                 Base stations
+                                                                       DC/DC converters
+
+
+Product Identification
+
+
+
+
+Shape and Dimensions                                                  Recommended Pattern
+
+
+
+
+Dimensions in mm                                                      Dimensions in mm
+     TYPE              A      B Max     C Max       D         F            TYPE                A                B                C
+     04012         4.1±0.2    4.6±0.2     1.2     1.5±0.3   1.0±0.5        04012              2.5              3.7               1.5
+     04015         4.1±0.2    4.6±0.2     1.5     1.5±0.3   1.0±0.5        04015              2.5              3.7               1.5
+     04020         4.1±0.2    4.6±0.2     2.0     1.5±0.3   1.0±0.5        04020              2.5              3.7               1.5
+     05012         5.4±0.35   5.7±0.2     1.2     2.0±0.3   1.5±0.3        05012              2.5              4.1               1.9
+     05015         5.4±0.35   5.7±0.2     1.5     2.0±0.3   1.5±0.3        05015              2.5              4.1               1.9
+     05018         5.4±0.35   5.7±0.2     1.8     2.0±0.3   1.5±0.3        05018              2.5              4.1               1.9
+     05020         5.4±0.35   5.7±0.2   1.8±0.2   2.0±0.3   1.5±0.3        05020              2.5              4.1               1.9
+     05030         5.4±0.35   5.7±0.2     3.0     2.0±0.3   1.5±0.3        05030              2.5              4.1               1.9
+     06012         6.6±0.2      7.3       1.2       2.9     1.6±0.5        06012              3.5              6.05             2.35
+     06015         6.6±0.2      7.3     1.3±0.2     2.9     1.6±0.5        06015              3.5              6.05             2.35
+     06018         6.6±0.2      7.3     1.6±0.2     2.9     1.6±0.5        06018              3.5              6.05             2.35
+     06024         6.6±0.2      7.3       2.4       2.9     1.6±0.5        06024              3.5              6.05             2.35
+     06030         6.6±0.2      7.3       3.0       2.9     1.6±0.5        06030              3.5              6.05             2.35
+     06050         6.6±0.2      7.3       5.0       2.9     1.6±0.5        06050              3.5              6.05             2.35
+     10030         10.1±0.3    11.6       3.0       3.0     2.5±0.5        10030              4.0              9.5               3.5
+     10040         10.1±0.3    11.6       4.0       3.0     2.5±0.5        10040              4.0              9.5               3.5
+     12050         12.6±0.2    13.8       5.0       3.7     2.7±0.7        12050              5.0              10.5              4.0
+     12060         12.6±0.2    13.8       6.0       3.7     2.7±0.7        12060              5.5              10.5              4.0
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                                Test
+                                                 Inductance                    Tolerance                                       RDC                    Isat                           Irms
+            Part Number                                                                       Frequency
+                                                        (uH)                     (±%)                                     (mΩ) Max                   (A)Typ.                     (A)Typ.
+                                                                                                (kHz)
+
+    MHCI04012-R22M-R8                                   0.22                      20             100                            12                    11.5                           8.5
+
+    MHCI04012-R33M-R8                                   0.33                      20             100                            19                        8.5                        6.5
+
+    MHCI04012-R47M-R8                                   0.47                      20             100                            25                        7.0                        5.0
+
+    MHCI04012-R68M-R8                                   0.68                      20             100                            36                        6.0                        4.5
+
+    MHCI04012-1R0M-R8                                   1.0                       20             100                            47                        5.2                        4.2
+
+    MHCI04012-1R5M-R8                                   1.5                       20             100                            75                        4.0                        3.25
+
+    MHCI04012-2R2M-R8                                   2.2                       20             100                           83.5                       3.5                        2.75
+
+    MHCI04012-3R3M-R8                                   3.3                       20             100                           165                        3.0                        2.0
+
+    MHCI04012-4R7M-R8                                   4.7                       20             100                           195                        2.8                        1.8
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+     Operating temperature range－55℃～125℃(Including self - temperature rise)
+     Isat for Inductance drop 30% from its value without current
+     Irms for a 40℃ temperature rise from 25℃ ambient with current
+     Absolute maximum voltage 30VDC
+     Measure Equipment：
+       L：WK 3260B or WK 6500P, 100kHz 0.5V
+       RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                                  Inductance vs DC Current                                                                Tem perature Change v.s DC Current
+             5                                                                                              140
+
+            4.5                                                                                                                      2R2
+                                                                                                            120                4R7
+                                                                                                                                                     1R0        R47
+             4                                                                                                                   3R3
+                                                                                                                                           1R5        R68                 R33        R22
+            3.5                                                                                             100
+
+             3                        4R7
+
+    L(uH)                                                                                         △ T(℃ )
+                                                                                                            80
+            2.5                        3R3
+                                                                                                            60
+             2
+
+            1.5                             2R2                                                             40
+             1                                    1R5
+                                                        1R0                                                 20
+                                                               R68
+            0.5
+                                                                     R47 R33            R22
+             0                                                                                               0
+                  0   1   2   3   4    5     6     7     8     9   10 11 12 13 14 15 16 17                        0   1    2    3     4    5     6    7         8     9   10    11    12    13
+
+                                              DC Current(A)                                                                                    DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                    Test
+                                     Inductance             Tolerance                                         RDC                       Isat                       Irms
+             Part Number                                                          Frequency
+                                        (uH)                     (±%)                                     (mΩ) Max              (A)Typ.                           (A)Typ.
+                                                                                    (kHz)
+
+    MHCI04015-1R0M-R8                    1.0                     20                  100                      42                         7                          4
+
+    MHCI04015-1R5M-R8                    1.5                     20                  100                      50                         6                          3.5
+
+    MHCI04015-2R2M-R8                    2.2                     20                  100                      79                         5                          3
+
+    MHCI04015-3R3M-R8                    3.3                     20                  100                      132                       4.5                         2.3
+
+    MHCI04015-4R7M-R8                    4.7                     20                  100                      146                        4                          2
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+     L：WK 3260B or WK 6500P, 100kHz 0.5V
+     RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+
+                           Inductance vs DC Current                                                       Tem perature Change v.s DC Current
+              5                                                                                 140
+                                                                                                                              2R2
+             4.5                                                                                                    4R7 3R3                        1R5
+                                                                                                120
+              4                                                                                                                                         1R0
+
+             3.5                                                                                100
+                                               4R7
+
+                                                                                        △T(℃)
+              3
+
+     L(uH)
+                                                                                                80
+             2.5                                     3R3
+              2                                                                                 60
+                                                           2R2
+             1.5
+                                                                                                40
+                                                                 1R5
+              1                                                         1R0
+             0.5                                                                                20
+
+              0
+                                                                                                 0
+                   0   1    2    3       4      5     6          7      8     9
+                                                                                                      0   1    2    3     4         5          6    7         8     9       10
+                                     DC Current(A)
+                                                                                                                         DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                                          Test
+                                               Inductance                     Tolerance                                                  RDC                        Isat                       Irms
+            Part Number                                                                                 Frequency
+                                                     (uH)                          (±%)                                               (mΩ) Max                    (A)Typ.                     (A)Typ.
+                                                                                                          (kHz)
+
+    MHCI04020-R10M-R8                                0.10                          20                     100                                 4                         25                     12.0
+
+    MHCI04020-R22M-R8                                0.22                          20                     100                                6.6                    12.5                        9.0
+
+    MHCI04020-R47M-R8                                0.47                          20                     100                                14                         9.5                     7.0
+
+    MHCI04020-R56M-R8                                0.56                          20                     100                                16                     10.0                        6.5
+
+    MHCI04020-R68M-R8                                0.68                          20                      100                               21                         8.0                     5.2
+
+    MHCI04020-1R0M-R8                                 1.0                          20                     100                                27                         7.0                     4.5
+
+    MHCI04020-1R5M-R8                                 1.5                          20                      100                               46                         6.0                     4.0
+
+    MHCI04020-2R2M-R8                                 2.2                          20                     100                                58                         5.0                     3.0
+
+    MHCI04020-3R3M-R8                                 3.3                          20                      100                               87                         4.0                     2.5
+
+    MHCI04020-4R7M-R8                                 4.7                          20                     100                                126                        3.0                     2.2
+
+    MHCI04020-6R8M-R8                                 6.8                          20                     100                                135                        2.5                     2.0
+
+    MHCI04020-8R2M-R8                                 8.2                          20                     100                                216                        2.5                     2.0
+
+    MHCI04020-100M-R8                                 10                           20                     100                                258                        2.0                     1.6
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+       L：WK 3260B or WK 6500P, 100KHz 0.5V
+       RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                                   Inductance vs DC Current                                                                     Tem perature Change v.s DC Current
+            11                                                                                                        140
+                                                                                                                                             3R3
+            10                                                                                                                                    2R2 1R5         R47
+                                                                                                                      120            100 6R8
+             9                                                                                                                        8R2
+                                                                                                                                                                    R68                         R10
+                                                                                                                                                       1R0                    R22
+             8                                                                                                        100
+                         100
+                                                                                                                                                                    R56
+             7                                                                                                                          4R7
+                         8R2
+
+                                                                                                            △ T(℃ )
+                                                                                                                      80
+
+    L(uH)
+             6
+
+             5               6R8                                                                                      60
+             4
+                         4R7
+                                                                                                                      40
+             3
+                                   3R3
+             2
+                                   2R2 1R5                                                                            20
+             1                           1R0 R68
+                                                    R56 R47     R22                     R10
+             0                                                                                                         0
+                 0   2   4     6     8    10   12    14   16   18   20   22   24   26    28   30   32                       0    2       4         6    8    10     12        14    16   18     20    22
+
+                                               DC Current(A)                                                                                            DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                Test
+                                 Inductance            Tolerance                                            RDC                  Isat                Irms
+         Part Number                                                        Frequency
+                                       (uH)               (±%)                                            (mΩ) Max           (A)Typ.               (A)Typ.
+                                                                               (kHz)
+
+ MHCI05012-1R0M-R8A                    1.0                 20                   100                          30                   6.0                5.0
+
+ MHCI05012-2R2M-R8A                    2.2                 20                   100                          76                   4.0                3.5
+
+ MHCI05012-6R8M-R8A                    6.8                 20                   100                         250                   2.3                2.0
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+   Operating temperature range－55℃～125℃(Including self - temperature rise)
+   Isat for Inductance drop 30% from its value without current
+   Irms for a 40℃ temperature rise from 25℃ ambient with current
+   Absolute maximum voltage 30VDC
+   Measure Equipment：
+     L：WK 3260B or WK 6500P, 100kHz 0.5V
+     RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                      Inductance vs DC Current
+                                                                                                      Tem perature Change v.s DC Current
+              8
+                                                                                            140
+              7
+                                                                                            120                                                1R0
+              6                                                                                                   6R8
+                                 6R8                                                                                             2R2
+                                                                                            100
+              5
+
+      L(uH)
+                                                                                  △ T(℃ )
+              4                                                                             80
+
+              3                                                                             60
+                                              2R2
+              2
+                                                                 1R0                        40
+              1
+                                                                                            20
+              0
+                  0    2           4           6           8           10                    0
+                                                                                                  0   1     2     3     4    5         6   7   8     9      10
+                                 DC Current(A)
+                                                                                                                        DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                                     Test
+                                            Inductance                   Tolerance                                                  RDC                               Isat                    Irms
+            Part Number                                                                            Frequency
+                                                 (uH)                         (±%)                                            (mΩ) Max                            (A)Typ.                    (A)Typ.
+                                                                                                     (kHz)
+
+    MHCI05015-R47M-R8                            0.47                         20                     100                                16                            12                          8.0
+
+    MHCI05015-R68M-R8                            0.68                         20                     100                                23                            10                          6.0
+
+    MHCI05015-1R0M-R8                             1.0                         20                      100                               33                            8.0                         5.0
+
+    MHCI05015-1R5M-R8                             1.5                         20                      100                               50                            6.0                         4.0
+
+    MHCI05015-2R2M-R8                             2.2                         20                      100                               68                            6.0                         3.3
+
+    MHCI05015-3R3M-R8                             3.3                         20                      100                               84                            5.0                         3.0
+
+    MHCI05015-4R7M-R8                             4.7                         20                      100                               135                           4.0                         2.5
+
+    MHCI05015-5R6M-R8                             5.6                         20                      100                               175                           3.5                         2.2
+
+    MHCI05015-6R8M-R8                             6.8                         20                      100                               192                           3.0                         2.0
+
+    MHCI05015-100M-R8                             10                          20                      100                               195                           2.0                         1.5
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+       L：WK 3260B or WK 6500P, 100kHz 0.5V
+       RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                               Inductance vs DC Current                                                                   Tem perature Change v.s DC Current
+            11                                                                                               140
+                                                                                                                                                      3R3       2R2
+            10
+                                                                                                                                         6R8 5R6
+                                                                                                             120
+            9                                                                                                                                    4R7                    1R0
+                                                                                                                                                                                                  R47
+            8                                                                                                                     100                       1R5               R68
+                                                                                                             100
+            7                100
+
+
+                                                                                                       △ T(℃ )
+                                                                                                                 80
+    L(uH)
+            6
+
+            5
+                                         6R8                                                                     60
+            4                             5R6
+                                       4R7
+            3                                                                                                    40
+                                                 3R3
+            2                                          2R2
+                                                         1R5                                                     20
+            1                                                      1R0
+                                                                                   R68
+                                                                                          R47
+            0                                                                                                    0
+                 0   1   2    3    4    5    6    7      8     9    10   11   12    13   14   15                      0   1   2     3        4   5     6    7     8     9     10   11   12   13    14   15
+                                            DC Current(A)                                                                                            DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                           Test
+                                        Inductance                Tolerance                                             RDC                    Isat                Irms
+            Part Number                                                                  Frequency
+                                             (uH)                     (±%)                                           (mΩ) Max                 (A)Typ.         (A)Typ.
+                                                                                           (kHz)
+
+ MHCI05015-1R0M-R8A                          1.0                      20                    100                         23                      9                  6.5
+
+ MHCI05015-2R2M-R8A                          2.2                      20                    100                         64                      6                  3.3
+
+ MHCI05015-4R7M-R8A                          4.7                      20                    100                         106                     4                  3.0
+
+ MHCI05015-100M-R8A                            10                     20                   100                          170                     3                  2.0
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+      L：WK 3260B or WK 6500P, 100kHz 0.5V
+      RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                             Inductance vs DC Current                                                             Tem perature Change v.s DC Current
+            12                                                                                          140
+
+                                                                                                                         100
+                                                                                                        120
+            10
+                                                                                                                                  4R7
+                                                                                                                                        2R2             1R0
+                                                                                                        100
+            8
+
+
+
+                                                                                             △ T( ℃ )
+                                                                                                        80
+
+    L(uH)
+            6                    100
+
+                                                                                                        60
+            4
+                                         4R7                                                            40
+
+            2                                           2R2                                             20
+                                                                                  1R0
+
+            0                                                                                            0
+                 0   1   2   3    4      5      6   7         8   9    10    11     12                        0     2         4         6       8       10    12          14
+                                       DC current (A)                                                                               DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                              Test
+                                         Inductance                  Tolerance                                              RDC                            Isat               Irms
+            Part Number                                                                     Frequency
+                                               (uH)                    (±%)                                              (mΩ) Max                     (A)Typ.                (A)Typ.
+                                                                                              (kHz)
+
+ MHCI05018-R47M-R8A                            0.47                        20                  100                              9.0                       15.5                10.5
+
+ MHCI05018-1R0M-R8A                            1.0                         20                  100                              17                         9.0                 8.0
+
+ MHCI05018-2R2M-R8A                            2.2                         20                  100                              35                         6.5                 5.0
+
+ MHCI05018-3R3M-R8A                            3.3                         20                  100                              58                         5.0                 4.5
+
+ MHCI05018-4R7M-R8A                            4.7                         20                  100                              85                         4.0                 3.5
+
+ MHCI05018-6R8M-R8A                            6.8                         20                  100                          120                            3.4                 2.8
+
+ MHCI05018-100M-R8A                             10                         20                  100                          155                            3.0                 2.5
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+      L：WK 3260B or WK 6500P, 100kHz 0.5V
+      RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                          Inductance vs DC Current                                                                       Tem perature Change v.s DC Current
+            10                                                                                             140
+                                                                                                                                       4R7
+            9                                                                                                                    6R8
+                                                                                                           120
+            8                                                                                                             100              3R3
+
+            7                 100                                                                          100
+
+
+
+                                                                                                △ T( ℃ )
+                                                                                                                                                                       R47
+            6
+                                                                                                           80
+
+    L(uH)
+                                                                                                                                           2R2
+            5
+                                        6R8                                                                                                          1R0
+                                                                                                           60
+            4
+                                                   4R7
+            3                                                                                              40
+                                        3R3
+            2
+                                              2R2                                                          20
+            1                                             1R0
+                                                                                 R47
+            0                                                                                               0
+                 0   2    4         6          8         10     12    14        16     18                        0   2      4          6         8   10      12   14   16     18     20
+                                    DC Current(A)                                                                                            DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                          Test
+                                   Inductance                     Tolerance                                         RDC                   Isat                    Irms
+             Part Number                                                                Frequency
+                                         (uH)                         (±%)                                      (mΩ) Max             (A)Typ.                     (A)Typ.
+                                                                                          (kHz)
+    MHCI05020-R47M-R8                    0.47                          20                 100                         9                   15.5                       10.5
+
+    MHCI05020-1R0M-R8                    1.0                           20                  100                       30                   7.0                        6.0
+
+    MHCI05020-1R5M-R8                    1.5                           20                  100                       35                   6.5                        5.5
+
+    MHCI05020-2R2M-R8                    2.2                           20                  100                       45                   6.0                        4.0
+
+    MHCI05020-3R3M-R8                    3.3                           20                 100                        60                   5.5                        3.5
+
+    MHCI05020-4R7M-R8                    4.7                           20                 100                        90                   5.0                        3.0
+
+    MHCI05020-5R6M-R8                    5.6                           20                  100                       120                  4.5                        2.8
+
+    MHCI05020-6R8M-R8                    6.8                           20                  100                       125                  4.5                        2.8
+
+    MHCI05020-100M-R8                    10                            20                  100                       180                  4.0                        2.3
+
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+     L：WK 3260B or WK 6500P, 100kHz 0.5V
+     RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                          Inductance v.s DC Current                                                                 Tem perature Change v.s DC Current
+             12                                                                                       140
+                                                                                                                                                 6R8
+             11                                                                                                                     100
+                                                                                                                                                     5R6
+                                                                                                      120
+             10
+                                                                                                                                                     4R7
+              9
+                                                                                                      100
+              8                      100
+              7                                                                                       80                                         2R2
+
+     L(uH)                                                                                  △ T(℃ )
+              6
+                                                                                                                                                                 1R0
+              5                                 6R8                                                   60                                                   1R5
+                                                                                                                                    3R3
+              4                                     5R6         4R7
+                                                                                                      40
+              3                                           3R3
+              2                                                 2R2                                   20
+                                                                      1R5
+              1                                                              1R0
+              0                                                                                        0
+                  0   1    2   3     4          5         6      7      8     9    10                       0   1         2   3     4            5         6     7          8
+                                                                                                                              DC Current (A)
+                                    DC Current (A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                      Test
+                                       Inductance            Tolerance                                             RDC                    Isat              Irms
+            Part Number                                                             Frequency
+                                          (uH)                 (±%)                                           (mΩ)Max                (A)Typ.               (A)Typ.
+                                                                                      (kHz)
+
+    MHCI05030-R20M-R8                     0.20                  20                     100                         3.9                   14.5               17.0
+    MHCI05030-R47M-R8                     0.47                  20                     100                          8                     14                10.0
+    MHCI05030-R68M-R8                     0.68                  20                     100                         12                     14                 8.0
+    MHCI05030-1R0M-R8                         1.0               20                    100                          15                     11                 7.0
+    MHCI05030-1R2M-R8                         1.2               20                    100                          15                     11                 6.5
+    MHCI05030-1R5M-R8                         1.5               20                    100                          25                     10                 6.0
+    MHCI05030-2R2M-R8                         2.2               20                    100                          35                      8                 5.0
+    MHCI05030-3R3M-R8                         3.3               20                    100                          46                      7                 4.5
+    MHCI05030-4R7M-R8                         4.7               20                    100                          60                      6                 4.0
+    MHCI05030-6R8M-R8                         6.8               20                    100                          110                     5                 3.0
+    MHCI05030-100M-R8                         10                20                     100                         126                    4.5                1.5
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+      L：WK 3260B or WK 6500P, 100kHz 0.5V
+      RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                          Inductance v.s DC Current                                                         Tem perature Change v.s DC Current
+            7                                                                                  160
+
+                                                                                               140                 4R7
+            6                                                                                                6R8     3R3        1R0
+                                                                                                                               1R2  R68                    R20
+                                                                                               120                       2R2
+            5                                                                                                              1R5
+                          6R8
+
+
+    L(uH)
+                                                                                               100
+
+
+                                                                                        △ T( ℃ )
+            4
+                                4R7                                                                80
+            3
+                                3R3                                                                60
+            2
+                                      2R2                                                          40
+                                        1R5
+            1                                  1R2
+                                              1R0 R68                                              20
+                                                                         R20
+            0                                                                                      0
+                0    5            10            15      20       25            30                       0      5           10       15           20   25           30
+                                       DC Current(A)                                                                       DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                    Test
+                                     Inductance          Tolerance                                              RDC                 Isat             Irms
+            Part Number                                                           Frequency
+                                        (uH)               (±%)                                            (mΩ) Max             (A)Typ.          (A)Typ.
+                                                                                    (kHz)
+
+ MHCI06012-4R7M-R8A                     4.7                 20                       100                        122                 3.5              2.5
+
+ MHCI06012-6R8M-R8A                     6.8                 20                       100                        210                 2.8              2.2
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+     Operating temperature range－55℃～125℃(Including self - temperature rise)
+     Isat for Inductance drop 30% from its value without current
+     Irms for a 40℃ temperature rise from 25℃ ambient with current
+     Absolute maximum voltage 30VDC
+     Measure Equipment：
+       L：WK 3260B or WK 6500P, 100kHz 0.5V
+       RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                          Inductance vs DC Current                                                        Tem perature Change v.s DC Current
+            8                                                                                   120
+                                                                                                                              6R8
+            7
+                                                                                                100
+                                                                                                                                           4R7
+            6
+                                                                                                80
+            5                                                         6R8
+
+
+    L(uH)
+            4                                                                         △ T(℃ )   60
+                                                                      4R7
+            3
+                                                                                                40
+            2
+                                                                                                20
+            1
+
+            0                                                                                    0
+                0   0.5   1    1.5      2      2.5   3     3.5    4         4.5                       0     1         2        3           4     5          6
+                               DC Current(A)                                                                              DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                           Test
+                                      Inductance                  Tolerance                                              RDC                Isat                Irms
+            Part Number                                                                  Frequency
+                                               (uH)                     (±%)                                         (mΩ)Max               (A)Typ.          (A)Typ.
+                                                                                           (kHz)
+
+    MHCI06015-2R2M-R8                          2.2                      20                  100                          54                  6.0                3.5
+
+    MHCI06015-3R3M-R8                          3.3                      20                  100                          63                  5.5                3.3
+
+    MHCI06015-4R7M-R8                          4.7                      20                  100                          105                 4.5                3.2
+
+    MHCI06015-6R8M-R8                          6.8                      20                  100                          140                 4.0                2.5
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+      L：WK 3260B or WK 6500P, 100kHz 0.5V
+      RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                             Inductance v.s DC Current                                                            Tem perature Change v.s DC Current
+            10                                                                                          120
+                                                                                                                                     6R8      4R7
+            9
+                                                                                                        100                                       3R3
+            8
+
+            7                                                                                                                                     2R2
+                                                                                                        80
+            6
+
+
+    L(uH)                                                                                    △ T( ℃ )
+            5                        6R8                                                                60
+
+            4
+                                                                                                        40
+            3                                     4R7
+                                                            3R3
+            2
+                                                                  2R2                                   20
+            1
+
+            0                                                                                            0
+                 0   1   2   3   4         5     6      7   8     9      10    11   12                        1      2         3      4       5         6   7          8
+                                 DC Current (A)                                                                                    DC Current (A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                    Test
+                                      Inductance         Tolerance                                              RDC                 Isat                     Irms
+            Part Number                                                           Frequency
+                                         (uH)                (±%)                                           (mΩ)Max                (A)Typ.               (A)Typ.
+                                                                                    (kHz)
+
+ MHCI06015-1R0M-R8A                          1.0             20                      100                        21                   9.0                     5.5
+
+ MHCI06015-3R3M-R8A                          3.3             20                      100                        63                   5.5                     3.3
+
+ MHCI06015-100M-R8A                          10              20                      100                        175                  3.0                     2.0
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+      L：WK 3260B or WK 6500P, 100kHz 0.5V
+      RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                         Inductance vs DC Current                                                          Tem perature Change v.s DC Current
+            12                                                                                   120
+
+                                                                                                                     100     3R3                  1R0
+            10                                                                                   100
+
+
+            8                                                                                    80
+
+
+    L(uH)                                                                             △ T( ℃ )
+                                100
+
+            6                                                                                    60
+
+
+            4                                                                                    40
+
+                                              3R3
+            2                                                                                    20
+                                                                       1R0
+
+            0                                                                                     0
+                 0   2      4            6          8   10        12         14                        0    2         4       6      8       10         12          14
+                                      DC Current(A)                                                                        DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                          Test
+                                        Inductance                   Tolerance                                         RDC                            Isat                       Irms
+             Part Number                                                                Frequency
+                                             (uH)                      (±%)                                          (mΩ)Max                        (A)Typ.                 (A)Typ.
+                                                                                          (kHz)
+
+ MHCI06018-R22M-R8A                          0.22                       20                 100                             5.2                            29                     14
+
+ MHCI06018-R33M-R8A                          0.33                       20                 100                             6.8                            22                     12
+
+ MHCI06018-R47M-R8A                          0.47                       20                 100                             8.4                            18                      11
+
+ MHCI06018-R68M-R8A                          0.68                       20                 100                             12.7                           17                      9
+
+ MHCI06018-1R0M-R8A                           1.0                       20                 100                             17                             14                      7
+
+ MHCI06018-1R5M-R8A                           1.5                       20                 100                             26                             12                     6.5
+
+ MHCI06018-2R2M-R8A                           2.2                       20                 100                             35                             10                     6.0
+
+ MHCI06018-4R7M-R8A                           4.7                       20                 100                             70                             5                      3.5
+
+ MHCI06018-6R8M-R8A                           6.8                       20                 100                             110                            3.5                    2.8
+
+ MHCI06018-100M-R8A                           10                        20                 100                             155                            2.5                    2.3
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+     Operating temperature range－55℃～125℃(Including self - temperature rise)
+     Isat for Inductance drop 30% from its value without current
+     Irms for a 40℃ temperature rise from 25℃ ambient with current
+     Absolute maximum voltage 30VDC
+     Measure Equipment：
+       L：WK 3260B or WK 6500P, 100kHz 0.5V
+       RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                           Inductance vs DC Current                                                                  Tem perature Change v.s DC Current
+            11                                                                                             140
+                                                                                                                                                    1R0                     R22
+            10
+                                                                                                           120                         2R2    1R5               R47   R33
+            9
+                                                                                                                           6R8
+                                                                                                           100                   4R7
+            8                                                                                                        100
+
+
+                                                                                                 △ T(℃ )
+            7        100
+                                                                                                           80
+
+    L(uH)
+            6
+
+            5                     6R8                                                                      60
+            4               4R7
+                                                                                                           40
+            3
+            2                                                                                              20
+                                                    2R2
+            1                                1R5               1R0
+                                                                      R47        R22
+                                                                                                            0
+            0
+                 0     5                10                15           20          25                            0          5            10          15               20    25          30
+
+                                   DC Current(A)                                                                                              DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                                Test
+                                           Inductance                  Tolerance                                                   RDC                          Isat                Irms
+             Part Number                                                                      Frequency
+                                               (uH)                      (±%)                                                    (mΩ)Max                    (A)Typ.                (A)Typ.
+                                                                                                (kHz)
+
+ MHCI06024-R22M-R8A                             0.22                         20                  100                               3.2                          34                      21
+
+ MHCI06024-R33M-R8A                             0.33                         20                  100                               4.1                          24.5                    18
+
+ MHCI06024-R47M-R8A                             0.47                         20                 100                                5.1                          22                      15
+
+ MHCI06024-1R0M-R8A                             1.0                          20                  100                               13.5                         16                      9
+
+ MHCI06024-1R5M-R8A                             1.5                          20                 100                                 20                          15                      9
+
+ MHCI06024-2R2M-R8A                             2.2                          20                  100                                28                          14                      7
+
+ MHCI06024-3R3M-R8A                             3.3                          20                  100                                39                          10                      5.5
+
+ MHCI06024-4R7M-R8A                             4.7                          20                  100                                50                          10                      5.0
+
+ MHCI06024-6R8M-R8A                             6.8                          20                  100                                70                          6.0                     4.0
+
+ MHCI06024-100M-R8A                             10                           20                 100                                101                          4.0                     3.1
+
+ MHCI06024-150M-R8A                             15                           20                  100                               160                          3.3                     2.5
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+      L：WK 3260B or WK 6500P, 100kHz 0.5V
+      RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                             Inductance vs DC Current                                                                        Tem perature Change v.s DC Current
+            16                                                                                               160
+
+            14                                                                                               140             6R8        3R3
+                                                                                                                                               1R5
+                                                                                                                                  4R7                1R0                           R22
+            12                                                                                               120
+                                                                                                                                         2R2
+                                                                                                                         100
+
+
+                                                                                                  △ T( ℃ )
+            10       150                                                                                               150
+                                                                                                             100                                                  R47
+
+    L(uH)
+                                                                                                                                                                        R33
+            8                                                                                                80
+                     100
+            6                                                                                                60
+                           6R8
+            4                    4R7                                                                         40
+                                   3R3
+            2                        2R2 1R5                                                                 20
+                                               1R0
+                                                     R47    R33                    R22
+            0                                                                                                 0
+                 0   5       10       15       20      25         30    35        40     45                        0         5          10      15         20          25     30   35         40
+                                      DC Current(A)                                                                                             DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                    Test
+                                   Inductance              Tolerance                                              RDC                        Isat                Irms
+             Part Number                                                          Frequency
+                                        (uH)                  (±%)                                              (mΩ) Max                   (A)Typ.              (A)Typ.
+                                                                                    (kHz)
+
+    MHCI06030-R10M-R8                   0.10                      20                 100                          1.5                         45                  37
+
+    MHCI06030-R22M-R8                   0.22                      20                 100                          2.8                         40                  23
+
+    MHCI06030-R33M-R8                   0.33                      20                 100                          4.2                         33                  20
+
+    MHCI06030-R47M-R8                   0.47                      20                 100                          5.5                         27                 16.5
+
+    MHCI06030-R56M-R8                   0.56                      20                 100                          5.5                         27                 16.5
+
+    MHCI06030-R68M-R8                   0.68                      20                 100                          6.3                         24                  15
+
+    MHCI06030-R82M-R8                   0.82                      20                 100                          8.0                         23                  13
+
+    MHCI06030-1R0M-R8                    1.0                      20                 100                           10                         22                  12
+
+    MHCI06030-1R5M-R8                    1.5                      20                 100                           15                         18                  9.5
+
+    MHCI06030-1R8M-R8                    1.8                      20                 100                           15                         14                  9.5
+
+    MHCI06030-2R2M-R8                    2.2                      20                 100                           20                         14                  8.5
+
+    MHCI06030-3R3M-R8                    3.3                      20                 100                           35                         12                  6.0
+
+    MHCI06030-4R7M-R8                    4.7                      20                 100                           40                            9                5.5
+
+    MHCI06030-5R6M-R8                    5.6                      20                 100                           40                            8                5.5
+
+    MHCI06030-6R8M-R8                    6.8                      20                 100                           60                            8                4.5
+
+ MHCC06030-8R2M-R7                       8.2                      20                 100                           60                            6                4.5
+
+ MHCC06030-100M-R7                       10                       20                 100                           68                        5.5                  4.0
+
+    MHCI06030-150M-R8                    15                       20                 100                          122                        5.0                  3.0
+
+    MHCI06030-220M-R8                    22                       20                 100                          145                        3.2                  3.0
+
+    MHCI06030-330M-R8                    33                       20                 100                          270                        3.0                  2.0
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+       Operating temperature range－55℃～125℃(Including self - temperature rise)
+       Isat for Inductance drop 30% from its value without current
+       Irms for a 40℃ temperature rise from 25℃ ambient with current
+       Absolute maximum voltage 30VDC
+       Measure Equipment：
+            L：WK 3260B or WK 6500P, 100kHz 0.5V
+            RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+
+                            Inductance v.s DC Current                                                       Tem perature Change v.s DC Current
+            12                                                                                  100
+                                                                                                          100          2R2
+                                                                                                90
+            10                                                                                              8R2         1R5                          R22
+                                                                                                80          6R8                            R33
+                                                                                                                                   R68
+                                                                                                70          4R7 3R3      R82                                      R10
+             8
+                                                                                                                             1R0
+                      100                                                                                                           R47
+                                                                                                60
+
+    L(uH)
+                                                                                      △ T(℃ )
+             6        8R2
+                                                                                                50
+                        6R8
+                                                                                                40
+             4
+                       4R7
+                                                                                                30
+
+             2                  3R3                                                             20
+                                      2R2
+                                       1R5 1R0 R82                                              10
+                                                     R68 R47 R33       R22 R10
+             0                                                                                   0
+                 0     10          20          30            40              50                       0           10                20               30    40             50
+                                 DC Current (A)                                                                                    DC Current (A)
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                  Test
+                                         Inductance         Tolerance                                          RDC                               Isat                     Irms
+            Part Number                                                         Frequency
+                                            (uH)                (±%)                                         (mΩ)Max                        (A)Typ.                      (A)Typ.
+                                                                                  (kHz)
+
+ MHCI06030-R10M-R8A                         0.10                 20                100                             1.7                           60                       32.5
+
+ MHCI06030-R15M-R8A                         0.15                 20                100                             2.5                           40                        30
+
+ MHCI06030-R22M-R8A                         0.22                 20                100                             3.0                           34                        23
+
+ MHCI06030-R33M-R8A                         0.33                 20                100                             3.5                           25                        21
+
+ MHCI06030-R36M-R8A                         0.36                 20                100                             3.9                           24                        20
+
+ MHCI06030-R47M-R8A                         0.47                 20                100                             4.1                           20                        18
+
+ MHCI06030-R56M-R8A                         0.56                 20                100                             4.5                           18                       16.5
+
+ MHCI06030-R68M-R8A                         0.68                 20                100                             5.3                           17                        16
+
+ MHCI06030-R82M-R8A                         0.82                 20                100                             6.0                           16                        14
+
+ MHCI06030-1R0M-R8A                             1.0              20                100                             7.4                           15                        12
+
+ MHCI06030-1R2M-R8A                             1.2              20                100                             10                            14                        10
+
+ MHCI06030-1R5M-R8A                             1.5              20                100                         12.1                              14                        10
+
+ MHCI06030-2R2M-R8A                             2.2              20                100                             15                            10                        8
+
+ MHCI06030-3R3M-R8A                             3.3              20                100                             22                            9.5                       6.5
+
+ MHCI06030-4R7M-R8A                             4.7              20                100                             33                            6.5                       5.5
+
+ MHCI06030-6R8M-R8A                             6.8              20                100                             50                             6                        4.5
+
+ MHCI06030-100M-R8A                             10               20                100                             68                            5.5                       4
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+     Operating temperature range－55℃～125℃(Including self - temperature rise)
+     Isat for Inductance drop 30% from its value without current
+     Irms for a 40℃ temperature rise from 25℃ ambient with current
+     Absolute maximum voltage 30VDC
+     Measure Equipment：
+       L：WK 3260B or WK 6500P, 100kHz 0.5V
+       RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                              Inductance vs DC Current                                                       Tem perature Change v.s DC Current
+            11                                                                                 140
+            10                                                                                                                                             R33
+                                                                                               120
+            9                                                                                                                                                      R15
+                                                                                                                              1R2
+            8                                                                                                       3R3                                      R22           R10
+                                                                                               100           6R8          2R2   1R0
+                     100
+
+
+                                                                                    △ T( ℃ )
+            7                                                                                                  4R7                R68
+
+
+    L(uH)
+                                                                                               80        100              1R5
+            6
+                      6R8                                                                                                             R47
+            5
+                                                                                               60
+            4
+                       4R7
+            3                                                                                  40
+                           3R3
+            2                 2R2
+                                1R5                                                            20
+            1                      1R2
+                                         1R0 R68 R22            R10
+            0                                                                                   0
+                 0     10        20        30         40   50         60   70                        0   5         10     15     20         25        30     35    40     45       50
+                                      DC Current(A)                                                                             DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                 Test
+                                 Inductance            Tolerance                                         RDC                   Isat                Irms
+            Part Number                                                        Frequency
+                                       (uH)                  (±%)                                      (mΩ) Max            (A)Typ.               (A)Typ.
+                                                                                 (kHz)
+ MHCI06050-R56M-R8A                    0.56                   20                  100                     3.3                  20                  20
+
+ MHCI06050-1R0M-R8A                     1.0                   20                  100                     6.5                  15                  13
+
+ MHCI06050-2R2M-R8A                     2.2                   20                  100                     12.5                 12                   8
+
+ MHCI06050-3R3M-R8A                     3.3                   20                  100                     20.9                  9                   7
+
+ MHCI06050-4R7M-R8A                     4.7                   20                  100                     25.0                  7                  6.5
+
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+      Operating temperature range－55℃～125℃(Including self - temperature rise)
+      Isat for Inductance drop 30% from its value without current
+      Irms for a 40℃ temperature rise from 25℃ ambient with current
+      Absolute maximum voltage 30VDC
+      Measure Equipment：
+        L：WK 3260B or WK 6500P, 100kHz 0.5V
+        RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                          Inductance vs DC Current                                                     Tem perature Change v.s DC Current
+            5                                                                                140
+                                                                                                                                      2R2
+                                                                                             120
+            4                                                                                                            3R3
+                                                                                             100                   4R7
+                                                                                                                                             1R0
+                                      4R7
+
+                                                                                   △ T(℃ )
+            3
+    L(uH)
+                                                                                             80                                                         R56
+                                            3R3
+
+            2                                                                                60
+
+
+                                                       2R2                                   40
+            1
+                                                              1R0                            20
+                                                                    R56
+
+            0                                                                                 0
+                0     5          10               15     20               25                       0      5        10            15         20            25
+                                DC Current(A)                                                                      DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                           Test
+                                     Inductance                   Tolerance                                             RDC                      Isat               Irms
+             Part Number                                                                 Frequency
+                                           (uH)                     (±%)                                              (mΩ) Max               (A)Typ.               (A)Typ.
+                                                                                           (kHz)
+
+MHCC10030-R33M-R7A                         0.33                         20                  100                          1.6                     32                  23
+
+MHCC10030-1R0M-R7A                          1.0                         20                  100                          6.0                     21                  15
+
+MHCC10030-3R3M-R7A                          3.3                         20                  100                          16.0                    14                  9
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+      L：WK 3260B or WK 6500P, 100kHz 0.5V
+      RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                            Inductance vs DC Current                                                                  Tem perature Change v.s DC Current
+             4                                                                                          160
+
+            3.5                                                                                         140
+
+             3                                                                                          120                                  1R0
+                                                                                                                                3R3
+                                                                                                                                                             R33
+
+
+                                                                                             △ T( ℃ )
+            2.5                                                                                         100
+
+    L(uH)    2                       3R3                                                                80
+
+            1.5                                                                                         60
+
+             1                                                                                          40
+                                                       1R0
+            0.5                                                                                         20
+                                                                              R33
+             0                                                                                           0
+                  0   5    10   15         20     25         30    35        40     45                        0   5     10      15     20   25     30   35   40     45     50
+                                 DC Current(A)                                                                                        DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                          Test
+                                         Inductance              Tolerance                                                RDC                         Isat                       Irms
+            Part Number                                                                 Frequency
+                                             (uH)                     (±%)                                              (mΩ) Max                 (A)Typ.                        (A)Typ.
+                                                                                          (kHz)
+
+ MHCC10040-R22M-R7                           0.22                      20                 100                                 0.6                     45                          35
+
+ MHCC10040-R36M-R7                           0.36                      20                 100                                 1.2                     42                          34
+
+ MHCC10040-R45M-R7                           0.45                      20                  100                                1.2                     38                          33
+
+ MHCC10040-R47M-R7                           0.47                      20                 100                                 1.2                     38                          33
+
+ MHCC10040-R56M-R7                           0.56                      20                  100                            1.55                        32                          27
+
+ MHCC10040-R68M-R7                           0.68                      20                 100                             1.55                        30                          27
+
+ MHCC10040-1R0M-R7                           1.0                       20                  100                                3.1                     26                          20
+
+ MHCC10040-1R5M-R7                           1.5                       20                 100                                 4.2                     22                          16
+
+ MHCC10040-1R8M-R7                           1.8                       20                  100                                 5                      16                         15.3
+
+ MHCC10040-2R2M-R7                           2.2                       20                 100                                  7                      16                          14
+
+ MHCC10040-3R3M-R7                           3.3                       20                 100                             13.2                        12                          11
+
+MHCC10040-4R7M-R7                            4.7                       20                  100                            16.5                        12                          9
+
+MHCC10040-6R8M-R7                            6.8                       20                  100                                25                      10                          6
+
+MHCC10040-8R2M-R7                            8.2                       20                  100                                30                       9                          6
+
+ MHCC10040-100M-R7                           10                        20                  100                                30                       7                          6.5
+
+ MHCC10040-150M-R7                           15                        20                  100                                45                       6                         6.25
+
+ MHCC10040-220M-R7                           22                        20                  100                                72                      5.5                         5
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+    Operating temperature range－55℃～125℃(Including self - temperature rise)
+    Isat for Inductance drop 30% from its value without current
+    Irms for a 40℃ temperature rise from 25℃ ambient with current
+    Absolute maximum voltage 30VDC
+    Measure Equipment：
+      L：WK 3260B or WK 6500P, 100kHz 0.5V
+      RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+
+                            Inductance v.s DC Current                                                            Tem perature Change v.s DC Current
+            25                                                                                         140
+                                                                                                                        100
+
+                                                                                                       120                         4R7
+
+            20                                                                                                                6R8
+                                                                                                       100
+                     220                                                                                          220
+
+
+
+                                                                                            △ T( ℃ )
+            15
+
+    L(uH)
+                                                                                                       80
+                                                                                                                                  2R2
+                                                                                                                                                             R68
+                                                                                                                               3R3 1R8          1R0                R56
+                                                                                                       60                                                                R47
+            10                                                                                                                                                            R36
+                                                                                                                                         1R5
+                                                                                                       40                                                                 R22
+                     100
+
+            5              6R8                                                                         20
+                                 4R7
+                                        3R3 2R2
+                                                    1R5 1R0   R68    R56 R47R36
+                                                                                  R22                   0
+            0
+                                                                                                             0            10               20           30               40             50
+                 0         10           20          30          40           50
+                                       DC Current (A)                                                                                    DC Current (A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                Test
+                                     Inductance        Tolerance                                           RDC                     Isat                    Irms
+            Part Number                                                      Frequency
+                                          (uH)             (±%)                                          (mΩ) Max                 (A)Typ.                 (A)Typ.
+                                                                               (kHz)
+
+ MHCC12050-R47M-R7                        0.47             20                   100                            1.2                  46                      37
+
+ MHCC12050-1R0M-R7                        1.0              20                   100                            2.5                  37                      29
+
+ MHCC12050-1R5M-R7                        1.5              20                   100                            3.0                  28                      28
+
+ MHCC12050-4R7M-R7                        4.7              20                   100                            11.5                 16                      11
+
+ MHCC12050-6R8M-R7                        6.8              20                   100                            22                   14                      9
+
+    MHCC12050-100M-R7                     10               20                   100                            35                   13                      7
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+     Operating temperature range－55℃～125℃(Including self - temperature rise)
+     Isat for Inductance drop 30% from its value without current
+     Irms for a 40℃ temperature rise from 25℃ ambient with current
+     Absolute maximum voltage 30VDC
+     Measure Equipment：
+       L：WK 3260B or WK 6500P, 100kHz 0.5V
+       RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+
+                          Inductance v.s DC Current                                                  Tem perature Change v.s DC Current
+            12                                                                          120
+            11                                                                          110                100
+                                                                                                                       4R7                     1R0
+            10                                                                          100                     6R8
+            9                                                                               90
+                                                                                                                                                            R47
+            8                                                                               80
+
+
+                                                                                  ΔT( ℃ )
+            7                100                                                            70
+
+    L(uH)   6                                                                               60
+            5                6R8                                                            50
+            4                                                                               40
+            3                       4R7
+                                                                                            30
+            2                                                                               20
+            1                                                   1R0                         10
+                                                                       R47
+            0                                                                               0
+                 0   10             20           30   40          50                             0   5    10      15    20   25   30      35   40    45    50     55
+                                   DC Current (A)                                                                        DC Current (A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+    Molding Power Choke – MHCC/MHCI Series
+
+Electrical Characteristics
+                                                                                           Test
+                                   Inductance                   Tolerance                                              RDC                     Isat                   Irms
+            Part Number                                                                  Frequency
+                                       (uH)                       (±%)                                               (mΩ) Max                 (A)Typ.                (A)Typ.
+                                                                                           (kHz)
+
+MHCC12060-100M-R7A                         10                      20                       100                        20.7                    12.5                    10
+
+MHCC12060-150M-R7A                         15                      20                       100                        29.0                     9.0                    6.0
+
+MHCC12060-220M-R7A                         22                      20                       100                        39.5                     7.5                    5.0
+
+MHCC12060-330M-R7A                         33                      20                       100                         75                      6.0                    4.0
+Note: When ordering, please specify tolerance code. Tolerance: M=±20%
+     Operating temperature range－55℃～125℃(Including self - temperature rise)
+     Isat for Inductance drop 30% from its value without current
+     Irms for a 40℃ temperature rise from 25℃ ambient with current
+     Absolute maximum voltage 30VDC
+     Measure Equipment：
+       L：WK 3260B or WK 6500P, 100kHz 0.5V
+       RDC：CHEN HWA 502 or CHEN HWA 46502B
+
+Test Instruments：WK3260B Impedance / Material Analyzer
+
+
+                         Inductance vs DC Current                                                                Tem perature Change v.s DC Current
+            50                                                                                         120
+
+                                                                                                                                                                       100
+                                                                                                       100                          330         220
+            40
+                                                                                                                                                     150
+                                                                                                       80
+
+                                                                                             △ T(℃ )
+            30
+    L(uH)                            330
+                                                                                                       60
+            20
+                                                     220                                               40
+                                                     150
+            10
+                                                                              100                      20
+
+
+            0                                                                                           0
+                 0   2    4    6       8        10         12     14     16         18                       0   2      4       6         8     10         12   14    16       18
+
+                                   DC Current(A)                                                                                     DC Current(A)
+
+
+
+
+Please be sure to request approval specifications that provide further details of the products. Kindly note that
+the content of these specifications are subject to change or may be discontinued without advance
+notice. Please contact our sales department before ordering.
+ Molding Power Choke – MHCC/MHCI Series
+
+
+Packaging Specifications
+                         Tape Dimensions                                              Tape Material
+
+
+
+
+                         Reel Dimensions
+
+
+
+
+Dimensions in mm
+
+                                               Tape Dimensions                         Reel Dimensions        Quantity
+    TYPE
+                   A0     B0     K0        D        E     W      P    P0   P2   A      B        C        D   PCS / REEL
+
+    04012          4.6    5.0    1.5   1.55        1.75   12     8    4    2    330   100       13    13.4     2000
+    04015          4.4    4.9    1.8   1.55        1.75   12     8    4    2    330   100       13    13.4     2000
+    04020          4.3    4.9    2.4   1.55        1.75   12     8    4    2    330   100       13    13.4     2000
+    05012          5.9    6.2    1.5   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    05015          5.7    6.1    1.9   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    05018          5.9    6.2    2.2   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    05020          5.7    5.9    2.4   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    05030          5.9    6.2    3.4   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    06012          6.9    7.6    1.6   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    06015          6.9    7.6    1.9   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    06018          6.9    7.6    2.2   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    06024          6.9    7.6    2.9   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    06030          6.9    7.6    3.4   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    06050          6.9    7.6    5.4   1.55        1.75   16     12   4    2    330   100       13    16.0     1000
+    10030      10.6      11.7   3.25   1.55        1.75   24     16   4    2    330   100       13    24.4      500
+    10040      10.6      11.7   4.25   1.55        1.75   24     16   4    2    330   100       13    24.4      500
+    12050          13     14    5.25   1.55        1.75   24     16   4    2    330   100       13    24.4      500
+    12060          13     14    6.25   1.55        1.75   24     16   4    2    330   100       13    24.4      500
+

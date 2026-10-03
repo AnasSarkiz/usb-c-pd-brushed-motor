@@ -1,0 +1,14 @@
+Building 1 file(s)...
+Building tests/active-supplier-import-probe.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/active-supplier-import-probe/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+J1 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

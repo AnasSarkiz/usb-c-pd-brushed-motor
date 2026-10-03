@@ -1,0 +1,19 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - SW1: SW1, source_component
+
+
+EMPTY NET PINS:
+  - SW1 pin1
+  - SW1 pin2
+  - SW1 pin3
+
+COMPONENT_PINS:
+SW1 (2MS3T1B1M1QES-5)
+- pin1: NETS(IN1)
+- pin2: NETS(PWM)
+- pin3: NETS(IN2)
+

@@ -1,0 +1,307 @@
+{
+  "revision": "A2 review",
+  "buildLog": "evidence/sp3t-probe-build-A2.log",
+  "routingDisabled": true,
+  "pcbTraceCount": 0,
+  "candidates": [
+    {
+      "code": "C160871",
+      "sourcePins": [
+        "pin1",
+        "pin2",
+        "pin3",
+        "pin4"
+      ],
+      "schematicPins": [
+        "pin1",
+        "pin2"
+      ],
+      "physicalPads": [
+        {
+          "type": "pcb_plated_hole",
+          "pcb_plated_hole_id": "pcb_plated_hole_0",
+          "pcb_component_id": "pcb_component_0",
+          "pcb_port_id": "pcb_port_0",
+          "outer_diameter": 1.7999964,
+          "hole_diameter": 1.1999976,
+          "shape": "circle",
+          "port_hints": [
+            "unnamed_platedhole1",
+            "pin1"
+          ],
+          "x": -19.999992,
+          "y": 1.700022,
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_plated_hole",
+          "pcb_plated_hole_id": "pcb_plated_hole_1",
+          "pcb_component_id": "pcb_component_0",
+          "pcb_port_id": "pcb_port_1",
+          "outer_diameter": 1.7999964,
+          "hole_diameter": 1.1999976,
+          "shape": "circle",
+          "port_hints": [
+            "unnamed_platedhole2",
+            "pin2"
+          ],
+          "x": -17.999996,
+          "y": -1.700022,
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_plated_hole",
+          "pcb_plated_hole_id": "pcb_plated_hole_2",
+          "pcb_component_id": "pcb_component_0",
+          "pcb_port_id": "pcb_port_2",
+          "outer_diameter": 1.7999964,
+          "hole_diameter": 1.1999976,
+          "shape": "circle",
+          "port_hints": [
+            "unnamed_platedhole3",
+            "pin3"
+          ],
+          "x": -14.000004,
+          "y": -1.700022,
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_plated_hole",
+          "pcb_plated_hole_id": "pcb_plated_hole_3",
+          "pcb_component_id": "pcb_component_0",
+          "pcb_port_id": "pcb_port_3",
+          "outer_diameter": 1.7999964,
+          "hole_diameter": 1.1999976,
+          "shape": "circle",
+          "port_hints": [
+            "unnamed_platedhole4",
+            "pin4"
+          ],
+          "x": -12.000008,
+          "y": 1.700022,
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "status": "blocked",
+      "missingElectricalSchematicPins": [
+        "pin3",
+        "pin4"
+      ],
+      "physicalPadCount": 4,
+      "manufacturerCommonPin": 3,
+      "mechanicalDiscrepancies": [
+        "Imported transverse row separation 3.400044 mm; manufacturer 3.3 mm",
+        "Imported drill diameter 1.1999976 mm; manufacturer recommended 0.8 mm; not approved"
+      ]
+    },
+    {
+      "code": "C221831",
+      "sourcePins": [
+        "pin1",
+        "pin2",
+        "pin3",
+        "pin4",
+        "pin5",
+        "pin6"
+      ],
+      "schematicPins": [
+        "pin1",
+        "pin2"
+      ],
+      "physicalPads": [
+        {
+          "type": "pcb_plated_hole",
+          "pcb_plated_hole_id": "pcb_plated_hole_4",
+          "pcb_component_id": "pcb_component_1",
+          "pcb_port_id": "pcb_port_4",
+          "outer_width": 1.599946,
+          "outer_height": 1.299972,
+          "hole_width": 1.100074,
+          "hole_height": 0.8001,
+          "shape": "pill",
+          "port_hints": [
+            "unnamed_platedhole5",
+            "pin1"
+          ],
+          "x": 12.000008,
+          "y": 0,
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0",
+          "ccw_rotation": 180
+        },
+        {
+          "type": "pcb_plated_hole",
+          "pcb_plated_hole_id": "pcb_plated_hole_5",
+          "pcb_component_id": "pcb_component_1",
+          "pcb_port_id": "pcb_port_6",
+          "outer_width": 1.599946,
+          "outer_height": 1.299972,
+          "hole_width": 1.100074,
+          "hole_height": 0.8001,
+          "shape": "pill",
+          "port_hints": [
+            "unnamed_platedhole6",
+            "pin3"
+          ],
+          "x": 17.999996,
+          "y": 0,
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0",
+          "ccw_rotation": 180
+        },
+        {
+          "type": "pcb_plated_hole",
+          "pcb_plated_hole_id": "pcb_plated_hole_6",
+          "pcb_component_id": "pcb_component_1",
+          "pcb_port_id": "pcb_port_5",
+          "outer_width": 1.599946,
+          "outer_height": 1.299972,
+          "hole_width": 1.100074,
+          "hole_height": 0.8001,
+          "shape": "pill",
+          "port_hints": [
+            "unnamed_platedhole7",
+            "pin2"
+          ],
+          "x": 15.993396,
+          "y": 0,
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0",
+          "ccw_rotation": 180
+        },
+        {
+          "type": "pcb_plated_hole",
+          "pcb_plated_hole_id": "pcb_plated_hole_7",
+          "pcb_component_id": "pcb_component_1",
+          "pcb_port_id": "pcb_port_9",
+          "outer_width": 2.999994,
+          "outer_height": 1.999996,
+          "hole_width": 2.1000212,
+          "hole_height": 1.1000232,
+          "shape": "pill",
+          "port_hints": [
+            "unnamed_platedhole8",
+            "pin6"
+          ],
+          "x": 22.100064,
+          "y": 0,
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0",
+          "ccw_rotation": 270
+        },
+        {
+          "type": "pcb_plated_hole",
+          "pcb_plated_hole_id": "pcb_plated_hole_8",
+          "pcb_component_id": "pcb_component_1",
+          "pcb_port_id": "pcb_port_8",
+          "outer_width": 2.999994,
+          "outer_height": 1.999996,
+          "hole_width": 2.1000212,
+          "hole_height": 1.1000232,
+          "shape": "pill",
+          "port_hints": [
+            "unnamed_platedhole9",
+            "pin5"
+          ],
+          "x": 9.899936,
+          "y": 0,
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0",
+          "ccw_rotation": 270
+        },
+        {
+          "type": "pcb_plated_hole",
+          "pcb_plated_hole_id": "pcb_plated_hole_9",
+          "pcb_component_id": "pcb_component_1",
+          "pcb_port_id": "pcb_port_7",
+          "outer_width": 1.599946,
+          "outer_height": 1.299972,
+          "hole_width": 1.100074,
+          "hole_height": 0.8001,
+          "shape": "pill",
+          "port_hints": [
+            "unnamed_platedhole10",
+            "pin4"
+          ],
+          "x": 19.999992,
+          "y": 0,
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0",
+          "ccw_rotation": 180
+        }
+      ],
+      "status": "blocked",
+      "missingElectricalSchematicPins": [
+        "pin3",
+        "pin4"
+      ],
+      "physicalPadCount": 6,
+      "manufacturerCommonPin": 2,
+      "casePads": [
+        "pin5",
+        "pin6"
+      ],
+      "mechanicalObservations": [
+        "Four electrical pads are separate from two case tabs; generated plated pill dimensions retained unchanged",
+        "Electrical x positions -3.999992, -0.006604, 1.999996, 3.999992 mm relative to PCB component center; tab x positions +/-6.100064 mm",
+        "Imported holes are plated slots whereas manufacturer recommended holes are circular; assembly fit remains unapproved"
+      ]
+    }
+  ],
+  "failedCandidate": {
+    "code": "C2857677",
+    "reason": "Component not found in EasyEDA library search",
+    "importExitCode": 1
+  },
+  "visualReview": [
+    "Supplier manufacturer drawings C160871 and C221831",
+    "dist/tests/sp3t-import-probe/pcb-A2.png",
+    "dist/tests/sp3t-import-probe/schematic-A2.png"
+  ],
+  "rawImportComparison": "Official --exclude-pin-attributes path for C160871 produces identical source and does not fix the defect; checks not suppressed",
+  "schemaValidation": "Also blocked: two generated component offsets and twelve generated plated-slot paste elements fail the installed Circuit JSON schema; neither output nor imports patched."
+}

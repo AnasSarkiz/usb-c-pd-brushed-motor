@@ -1,0 +1,13 @@
+bun add v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [170]
+warn: incorrect peer dependency "circuit-json@0.0.509"
+Saved lockfile
+
+installed tscircuit@0.0.2729 with binaries:
+ - tsci
+ - tscircuit
+installed @tscircuit/cli@0.1.2228 with binaries:
+ - tscircuit-cli
+
+16 packages installed [4.79s]

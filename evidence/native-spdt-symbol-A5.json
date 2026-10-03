@@ -1,0 +1,259 @@
+{
+  "paths": {
+    "path1": {
+      "type": "path",
+      "points": [
+        {
+          "x": -0.37,
+          "y": 0.03
+        },
+        {
+          "x": -0.13,
+          "y": 0.03
+        }
+      ],
+      "color": "primary",
+      "fill": false
+    },
+    "path-1-3": {
+      "type": "path",
+      "points": [
+        {
+          "x": -0.07,
+          "y": 0.03
+        },
+        {
+          "x": 0.11,
+          "y": 0.14
+        }
+      ],
+      "color": "primary",
+      "fill": false
+    },
+    "path2": {
+      "type": "path",
+      "points": [
+        {
+          "x": 0.1,
+          "y": -0.06
+        },
+        {
+          "x": 0.37,
+          "y": -0.06
+        }
+      ],
+      "color": "primary",
+      "fill": false
+    },
+    "path3": {
+      "type": "path",
+      "points": [
+        {
+          "x": 0.12,
+          "y": 0.17
+        },
+        {
+          "x": 0.37,
+          "y": 0.17
+        }
+      ],
+      "color": "primary",
+      "fill": false
+    }
+  },
+  "texts": {
+    "top1": {
+      "type": "text",
+      "text": "{REF}",
+      "x": 0,
+      "y": 0.4
+    },
+    "bottom1": {
+      "type": "text",
+      "text": "{VAL}",
+      "x": 0,
+      "y": -0.4
+    }
+  },
+  "refblocks": {
+    "left1": {
+      "x": -0.37,
+      "y": 0.03
+    },
+    "right1": {
+      "x": 0.37,
+      "y": -0.06
+    },
+    "right3": {
+      "x": 0.37,
+      "y": 0.17
+    }
+  },
+  "bounds": {
+    "minX": -0.4,
+    "maxX": 0.4,
+    "minY": -0.4,
+    "maxY": 0.4,
+    "width": 0.79,
+    "height": 0.79,
+    "centerX": 0,
+    "centerY": 0
+  },
+  "circles": {
+    "circle-3": {
+      "type": "circle",
+      "x": 0.08,
+      "y": -0.07,
+      "radius": 0.02,
+      "color": "primary",
+      "fill": false
+    },
+    "circle-1": {
+      "type": "circle",
+      "x": -0.1,
+      "y": 0.03,
+      "radius": 0.02,
+      "color": "primary",
+      "fill": false
+    },
+    "circle-2": {
+      "type": "circle",
+      "x": 0.08,
+      "y": 0.17,
+      "radius": 0.02,
+      "color": "primary",
+      "fill": false
+    }
+  },
+  "primitives": [
+    {
+      "type": "path",
+      "points": [
+        {
+          "x": -0.37,
+          "y": 0.03
+        },
+        {
+          "x": -0.13,
+          "y": 0.03
+        }
+      ],
+      "color": "primary",
+      "fill": false
+    },
+    {
+      "type": "path",
+      "points": [
+        {
+          "x": -0.07,
+          "y": 0.03
+        },
+        {
+          "x": 0.11,
+          "y": 0.14
+        }
+      ],
+      "color": "primary",
+      "fill": false
+    },
+    {
+      "type": "path",
+      "points": [
+        {
+          "x": 0.1,
+          "y": -0.06
+        },
+        {
+          "x": 0.37,
+          "y": -0.06
+        }
+      ],
+      "color": "primary",
+      "fill": false
+    },
+    {
+      "type": "path",
+      "points": [
+        {
+          "x": 0.12,
+          "y": 0.17
+        },
+        {
+          "x": 0.37,
+          "y": 0.17
+        }
+      ],
+      "color": "primary",
+      "fill": false
+    },
+    {
+      "type": "text",
+      "text": "{REF}",
+      "x": 0,
+      "y": 0.4,
+      "anchor": "middle_bottom"
+    },
+    {
+      "type": "text",
+      "text": "{VAL}",
+      "x": 0,
+      "y": -0.4,
+      "anchor": "middle_top"
+    },
+    {
+      "type": "circle",
+      "x": 0.08,
+      "y": -0.07,
+      "radius": 0.02,
+      "color": "primary",
+      "fill": false
+    },
+    {
+      "type": "circle",
+      "x": -0.1,
+      "y": 0.03,
+      "radius": 0.02,
+      "color": "primary",
+      "fill": false
+    },
+    {
+      "type": "circle",
+      "x": 0.08,
+      "y": 0.17,
+      "radius": 0.02,
+      "color": "primary",
+      "fill": false
+    }
+  ],
+  "ports": [
+    {
+      "x": -0.37,
+      "y": 0.03,
+      "labels": [
+        "1"
+      ]
+    },
+    {
+      "x": 0.37,
+      "y": -0.06,
+      "labels": [
+        "3"
+      ]
+    },
+    {
+      "x": 0.37,
+      "y": 0.17,
+      "labels": [
+        "2"
+      ]
+    }
+  ],
+  "center": {
+    "x": 0,
+    "y": 0
+  },
+  "size": {
+    "width": 0.74,
+    "height": 0.8
+  }
+}

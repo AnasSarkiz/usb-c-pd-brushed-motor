@@ -1,0 +1,56 @@
+$ bun scripts/power-report.ts
+A0 preliminary budget only: efficiency, losses, peak duration and thermal performance are unverified.
+{
+  motorVoltageV: 5,
+  continuousMotorPowerW: 10,
+  peakMotorPowerW: 12.5,
+  assumedContinuousSourcePowerW: 12.11111111111111,
+  assumedPeakSourcePowerW: 14.88888888888889,
+  proposedContractMarginsW: [
+    {
+      voltageV: 15,
+      currentA: 2.5,
+      assumedPeakMarginW: 22.61111111111111,
+    }, {
+      voltageV: 20,
+      currentA: 2,
+      assumedPeakMarginW: 25.11111111111111,
+    }
+  ],
+}
+{
+  motorVoltageV: 9,
+  continuousMotorPowerW: 18,
+  peakMotorPowerW: 22.5,
+  assumedContinuousSourcePowerW: 21,
+  assumedPeakSourcePowerW: 26,
+  proposedContractMarginsW: [
+    {
+      voltageV: 15,
+      currentA: 2.5,
+      assumedPeakMarginW: 11.5,
+    }, {
+      voltageV: 20,
+      currentA: 2,
+      assumedPeakMarginW: 14,
+    }
+  ],
+}
+{
+  motorVoltageV: 12,
+  continuousMotorPowerW: 24,
+  peakMotorPowerW: 30,
+  assumedContinuousSourcePowerW: 27.666666666666664,
+  assumedPeakSourcePowerW: 34.333333333333336,
+  proposedContractMarginsW: [
+    {
+      voltageV: 15,
+      currentA: 2.5,
+      assumedPeakMarginW: 3.1666666666666643,
+    }, {
+      voltageV: 20,
+      currentA: 2,
+      assumedPeakMarginW: 5.666666666666664,
+    }
+  ],
+}

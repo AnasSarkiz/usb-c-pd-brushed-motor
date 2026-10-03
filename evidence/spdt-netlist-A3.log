@@ -1,0 +1,28 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - SW_DEFAULT: SW_DEFAULT, source_component
+ - SW_SPDT: SW_SPDT, source_component
+
+
+EMPTY NET PINS:
+  - SW_DEFAULT pin1
+  - SW_DEFAULT pin2
+  - SW_DEFAULT pin3
+  - SW_SPDT pin1
+  - SW_SPDT pin2
+  - SW_SPDT pin3
+
+COMPONENT_PINS:
+SW_DEFAULT (1103M2S3CQE2)
+- pin1: NETS(DEFAULT_FWD)
+- pin2: NETS(DEFAULT_COMMON)
+- pin3: NETS(DEFAULT_REV)
+
+SW_SPDT (1103M2S3CQE2)
+- pin1: NETS(SPDT_FWD)
+- pin2: NETS(SPDT_COMMON)
+- pin3: NETS(SPDT_REV)
+

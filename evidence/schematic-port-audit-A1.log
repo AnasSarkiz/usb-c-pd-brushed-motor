@@ -1,0 +1,18 @@
+{
+  "revision": "A1",
+  "componentCount": 118,
+  "requiredPinsWithoutSchematicPorts": [
+    "SW2 C2848921 pin3 -> GND: required connection has no schematic port",
+    "SW2 C2848921 pin4 -> SELECT_12: required connection has no schematic port",
+    "SW2 C2848921 pin5 -> OV_SELECT_12: required connection has no schematic port",
+    "SW2 C2848921 pin6 -> GND: required connection has no schematic port",
+    "SW2 C2848921 pin8 -> OV_SELECT_9: required connection has no schematic port",
+    "SW2 C2848921 pin9 -> GND: required connection has no schematic port",
+    "SW2 C2848921 pin10 -> GND: required connection has no schematic port",
+    "SW1 C2848921 pin3 -> VCC3V3: required connection has no schematic port",
+    "SW1 C2848921 pin4 -> FWD_CMD: required connection has no schematic port",
+    "SW1 C2848921 pin9 -> GND: required connection has no schematic port",
+    "SW1 C2848921 pin10 -> GND: required connection has no schematic port"
+  ],
+  "pcbTraceCount": 0
+}

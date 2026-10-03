@@ -1,0 +1,27 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/pd-policy.test.ts:
+(pass) compiled C PD policy rejects unsafe contracts and stale qualification [678.34ms]
+
+tests/electrical-calculations.test.ts:
+(pass) PD power qualification > rejects insufficient chargers including native 12 V [0.55ms]
+(pass) PD power qualification > selects 20 V for 12 V peaks and 15 V for 9 V peaks [0.46ms]
+(pass) PD power qualification > worst assumed 12 V continuous input fits minimum eFuse limit [0.35ms]
+(pass) 10 k potentiometer and selected motor rail > regulates all three modes within 0.1 percent nominal [0.22ms]
+(pass) 10 k potentiometer and selected motor rail > PWM has useful monotonically increasing range with finite end times [0.18ms]
+(pass) PD-enable default high survives transistor base loading
+
+tests/motor-validation-calculations.test.ts:
+(pass) A7 voltage-aware PD policy engineering screen > 5/9 V peaks fit 15 V while 12 V peaks require 20 V [0.86ms]
+(pass) A7 voltage-aware PD policy engineering screen > a low-power 20 V source fails despite enough nominal output watts
+(pass) A7 voltage-aware PD policy engineering screen > 5 V-only, native 12 V-only and unplugged sources inhibit
+(pass) A7 voltage-aware PD policy engineering screen > 20 V fallback fits a 9 V motor when 15 V is unavailable
+(pass) Motor and converter stress screening > running reversal can double unrestricted startup current
+(pass) Motor and converter stress screening > output capacitance cannot absorb the example rotor energy
+(pass) Motor and converter stress screening > screened inductor peaks remain below the 4.5 A minimum buck limit
+(pass) A7 motor-rail-powered analog clamp > reference stays biased and clamp has hysteresis in all selected modes
+
+ 15 pass
+ 0 fail
+ 357 expect() calls
+Ran 15 tests across 3 files. [709.00ms]

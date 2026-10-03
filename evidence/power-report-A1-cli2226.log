@@ -1,0 +1,147 @@
+$ bun scripts/power-report.ts
+{
+  revision: "A1 draft",
+  warning: "Analytic assumptions; physical efficiency/thermal/peak tests pending",
+  inputLimitNominalA: 2.6470588235294117,
+  inputLimitMinimumA: 2.3587652882935353,
+  inputLimitMaximumA: 2.9411764705882355,
+  regulatedVoltagesV: [ 5.0040000000000004, 9.007809523809525, 12.010666666666667 ],
+  pwmAtMinimum: {
+    frequencyHz: 19412.193355098618,
+    dutyFraction: 0.028645452148261377,
+  },
+  pwmAtMidpoint: {
+    frequencyHz: 20140.05343582184,
+    dutyFraction: 0.48001516799627475,
+  },
+  pwmAtMaximum: {
+    frequencyHz: 20924.62202086584,
+    dutyFraction: 0.966551672296271,
+  },
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 15,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 1.0319616129202354,
+  minimumInputLimitMarginA: 1.3268036753733,
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 15,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 1.1503403162263754,
+  minimumInputLimitMarginA: 1.2084249720671598,
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 15,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 1.249050492267595,
+  minimumInputLimitMarginA: 1.1097147960259404,
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 20,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 0.7668034265481973,
+  minimumInputLimitMarginA: 1.591961861745338,
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 20,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 0.8547052279191525,
+  minimumInputLimitMarginA: 1.5040600603743828,
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 20,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 0.9280022150066702,
+  minimumInputLimitMarginA: 1.430763073286865,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 15,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 1.7189517374371956,
+  minimumInputLimitMarginA: 0.6398135508563396,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 15,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 1.912899354440201,
+  minimumInputLimitMarginA: 0.4458659338533342,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 15,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 2.0734386416879467,
+  minimumInputLimitMarginA: 0.2853266466055886,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 20,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 1.2769261748345038,
+  minimumInputLimitMarginA: 1.0818391134590315,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 20,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 1.4209414785169523,
+  minimumInputLimitMarginA: 0.937823809776583,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 20,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 1.5401495129502378,
+  minimumInputLimitMarginA: 0.8186157753432974,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 15,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 2.2341943308249155,
+  minimumInputLimitMarginA: 0.12457095746861979,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 15,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 2.484818633100571,
+  minimumInputLimitMarginA: -0.12605334480703556,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 15,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 2.6917297537532106,
+  minimumInputLimitMarginA: -0.3329644654596753,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 20,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 1.6595182360492335,
+  minimumInputLimitMarginA: 0.6992470522443017,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 20,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 1.8456186664653027,
+  minimumInputLimitMarginA: 0.5131466218282326,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 20,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 1.9992599864079135,
+  minimumInputLimitMarginA: 0.3595053018856218,
+}

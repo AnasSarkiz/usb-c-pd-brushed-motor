@@ -1,0 +1,8 @@
+{
+  "supplierCode": "C908270",
+  "failures": [
+    "Generated symbol does not represent SPDT center-off or its common pin 2",
+    "Electrical pin 3: schematic port missing"
+  ],
+  "pcbTraceCount": 0
+}

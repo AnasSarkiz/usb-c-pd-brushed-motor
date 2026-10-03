@@ -1,0 +1,115 @@
+{
+  "query": "PTV09",
+  "results": [
+    {
+      "source": "jlcpcb",
+      "lcsc": 5139625,
+      "mfr": "RAT022403FTH",
+      "package": "0402",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+155℃ 240kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
+      "stock": 6910,
+      "price": 0.0031
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 3758451,
+      "mfr": "SDT8A120P5-13",
+      "package": "PowerDI-5",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "",
+      "stock": 4965,
+      "price": 0.7549
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 5139629,
+      "mfr": "RAT054301FTP",
+      "package": "0805",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+155℃ 125mW 150V 4.3kΩ Thick Film Resistor ±1% ±100ppm/℃ 0805 Chip Resistor - Surface Mount ROHS",
+      "stock": 4271,
+      "price": 0.0088
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 5147983,
+      "mfr": "X2001WV-2x04B-6TV01",
+      "package": "-",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "- IDC Connectors ROHS",
+      "stock": 2592,
+      "price": 0.2115
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 5236681,
+      "mfr": "SI2333CDS",
+      "package": "SOT-23",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+150℃ 1 P-Channel 1.225nF 1.6W 12V 260pF 315pF 35mΩ@4.5V 400mV 5.1A 9nC@4.5V SOT-23 MOSFETs ROHS",
+      "stock": 2415,
+      "price": 0.0524
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 5196922,
+      "mfr": "HC-XHD-8P",
+      "package": "插件,P=2.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-25℃~+85℃ 1 1x8P 2.5mm 22.5mm 250V 3A 5.8mm 8 8P 9.5mm Brass DF1B PA Through Hole Tin Plugin,P=2.5mm Wire To Board Connector ROHS",
+      "stock": 1256,
+      "price": 0.2613
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 5164057,
+      "mfr": "2-292207-4",
+      "package": "插件,P=1.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "",
+      "stock": 860,
+      "price": 0.1099
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 5146296,
+      "mfr": "X2016WR-06-N0SN",
+      "package": "弯插,P=2mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-25℃~+85℃ 1 100V 14mm 1x6P 2A 2mm 6 Brass PA66 Right Angle Tin UL94V-0 弯插,P=2mm Wire To Board Connector ROHS",
+      "stock": 832,
+      "price": 0.0469
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 5173377,
+      "mfr": "9001-17481C00A",
+      "package": "插件,P=2.54mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+125℃ 2.54mm 2A 3 48P Through Hole 插件,P=2.54mm DIN41612 Connectors ROHS",
+      "stock": 410,
+      "price": 0.9794
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 5161388,
+      "mfr": "SMBJ45A",
+      "package": "DO-214AA(SMB)",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "",
+      "stock": 250,
+      "price": 0.0746
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C211759.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C211759/circuit.json
+All pins on D10 are underspecified (no pinAttributes set)
+D10 has no pin with requires_power=true
+D10 has no pin with requires_ground=true
+D10 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

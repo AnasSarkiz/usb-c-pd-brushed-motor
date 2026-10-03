@@ -1,0 +1,45 @@
+bun install v1.3.9 (cf6cdbbb)
+error: NoSpaceLeft when create temporary directory named ".dedbd6fede7f71b9-00000123.runframe" (while extracting "@tscircuit/runframe")
+error: NoSpaceLeft when create temporary directory named ".98dbdcbe5ffbbf39-00000124.eval" (while extracting "@tscircuit/eval")
+error: NoSpaceLeft when create temporary directory named ".9adedcfd76c79bd4-00000125.tscircuit" (while extracting "tscircuit")
+error: NoSpaceLeft when create temporary directory named ".98dbffbeeff3dc5b-00000126.eval" (while extracting "@tscircuit/eval")
+error: NoSpaceLeft when create temporary directory named ".79dffdbc7f5a3cbd-00000127.cli" (while extracting "@tscircuit/cli")
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/solver-utils in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/create-fdm-enclosure/node_modules
+NoSpaceLeft: Failed to open node_modules folder for jscad-planner in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/create-fdm-enclosure/node_modules
+NoSpaceLeft: Failed to open node_modules folder for graphics-debug in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/create-fdm-enclosure/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/solver-utils in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/fanout-solver/node_modules
+NoSpaceLeft: Failed to open node_modules folder for graphics-debug in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/fanout-solver/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/capacity-autorouter in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/fanout-solver/node_modules
+NoSpaceLeft: Failed to open node_modules folder for react in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/calculate-cell-boundaries/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/solver-utils in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/calculate-cell-boundaries/node_modules
+NoSpaceLeft: Failed to open node_modules folder for react-dom in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/calculate-cell-boundaries/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/math-utils in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-connectivity-map/node_modules
+NoSpaceLeft: Failed to open node_modules folder for jscad-planner in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-gltf/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/circuit-json-util in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-pnp-csv/node_modules
+NoSpaceLeft: Failed to open node_modules folder for circuit-json in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-pnp-csv/node_modules
+NoSpaceLeft: Failed to open node_modules folder for circuit-json-to-connectivity-map in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-spice/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @types/node in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-to-svg/node_modules
+NoSpaceLeft: Failed to open node_modules folder for transformation-matrix in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/graphics-debug/node_modules
+NoSpaceLeft: Failed to open node_modules folder for calculate-elbow in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/pcb-trace-linter/node_modules
+NoSpaceLeft: Failed to open node_modules folder for circuit-json in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/pcb-trace-linter/node_modules
+NoSpaceLeft: Failed to open node_modules folder for graphics-debug in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/pcb-trace-linter/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/solver-utils in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/pcb-trace-linter/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/core in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/pcb-trace-linter/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/copper-pour-solver in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/pcb-trace-linter/node_modules
+NoSpaceLeft: Failed to open node_modules folder for scheduler in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/react-reconciler/node_modules
+NoSpaceLeft: Failed to open node_modules folder for transformation-matrix in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/create-fdm-enclosure/node_modules/graphics-debug/node_modules
+NoSpaceLeft: Failed to open node_modules folder for transformation-matrix in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/fanout-solver/node_modules/graphics-debug/node_modules
+NoSpaceLeft: Failed to open node_modules folder for scheduler in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/calculate-cell-boundaries/node_modules/react-dom/node_modules
+NoSpaceLeft: Failed to open node_modules folder for circuit-json in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/jscad-electronics/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/math-utils in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-spice/node_modules/circuit-json-to-connectivity-map/node_modules
+NoSpaceLeft: Failed to open node_modules folder for undici-types in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-to-svg/node_modules/@types/node/node_modules
+NoSpaceLeft: Failed to open node_modules folder for react in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/use-mouse-matrix-transform/node_modules
+NoSpaceLeft: Failed to open node_modules folder for transformation-matrix in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/use-mouse-matrix-transform/node_modules
+NoSpaceLeft: Failed to open node_modules folder for calculate-packing in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/pcb-trace-linter/node_modules/@tscircuit/core/node_modules
+NoSpaceLeft: Failed to open node_modules folder for calculate-cell-boundaries in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/pcb-trace-linter/node_modules/@tscircuit/core/node_modules
+NoSpaceLeft: Failed to open node_modules folder for transformation-matrix in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/pcb-trace-linter/node_modules/graphics-debug/node_modules
+NoSpaceLeft: Failed to open node_modules folder for js-tokens in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/loose-envify/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/mm in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/modelprinter/node_modules
+NoSpaceLeft: Failed to open node_modules folder for zod in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/modelprinter/node_modules
+NoSpaceLeft: Failed to open node_modules folder for react in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/pcb-trace-linter/node_modules/@tscircuit/core/node_modules/calculate-cell-boundaries/node_modules
+NoSpaceLeft: Failed to open node_modules folder for @tscircuit/solver-utils in NoSpaceLeft: Failed to open node_modules folder for react-dom in NoSpaceLeftNoSpaceLeftNoSpaceLeftNoSpaceLefterror: NoSpaceLeft creating node-gyp tempdir

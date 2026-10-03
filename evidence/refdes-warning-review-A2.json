@@ -1,0 +1,74 @@
+[
+  {
+    "reference": "J1",
+    "supplierCode": "C165948",
+    "manufacturerPartNumber": "TYPE-C-31-M-12",
+    "sourceType": "simple_chip",
+    "message": "The \"J\" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />",
+    "assessment": "Reference-prefix advisory only; correct supplier identity and complete required source/schematic port coverage retained. Not a waiver of separate label or power-attribute warnings."
+  },
+  {
+    "reference": "J3",
+    "supplierCode": "C124378",
+    "manufacturerPartNumber": "B-2100S04P-A110",
+    "sourceType": "simple_chip",
+    "message": "The \"J\" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />",
+    "assessment": "Reference-prefix advisory only; correct supplier identity and complete required source/schematic port coverage retained. Not a waiver of separate label or power-attribute warnings."
+  },
+  {
+    "reference": "Q1",
+    "supplierCode": "C7420353",
+    "manufacturerPartNumber": "MMBT3904",
+    "sourceType": "simple_chip",
+    "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+    "assessment": "Reference-prefix advisory only; correct supplier identity and complete required source/schematic port coverage retained. Not a waiver of separate label or power-attribute warnings."
+  },
+  {
+    "reference": "RV1",
+    "supplierCode": "C5710902",
+    "manufacturerPartNumber": "PTV09A-4015F-B103",
+    "sourceType": "simple_chip",
+    "message": "The \"R\" prefix is being used with a <chip />, try using it with a <resistor />",
+    "assessment": "Reference-prefix advisory only; correct supplier identity and complete required source/schematic port coverage retained. Not a waiver of separate label or power-attribute warnings."
+  },
+  {
+    "reference": "Q2",
+    "supplierCode": "C53444",
+    "manufacturerPartNumber": "MMBT3906LT1G",
+    "sourceType": "simple_chip",
+    "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+    "assessment": "Reference-prefix advisory only; correct supplier identity and complete required source/schematic port coverage retained. Not a waiver of separate label or power-attribute warnings."
+  },
+  {
+    "reference": "Q3",
+    "supplierCode": "C20917",
+    "manufacturerPartNumber": "AO3400A",
+    "sourceType": "simple_chip",
+    "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+    "assessment": "Reference-prefix advisory only; correct supplier identity and complete required source/schematic port coverage retained. Not a waiver of separate label or power-attribute warnings."
+  },
+  {
+    "reference": "Q4",
+    "supplierCode": "C7420353",
+    "manufacturerPartNumber": "MMBT3904",
+    "sourceType": "simple_chip",
+    "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+    "assessment": "Reference-prefix advisory only; correct supplier identity and complete required source/schematic port coverage retained. Not a waiver of separate label or power-attribute warnings."
+  },
+  {
+    "reference": "Q5",
+    "supplierCode": "C7420353",
+    "manufacturerPartNumber": "MMBT3904",
+    "sourceType": "simple_chip",
+    "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+    "assessment": "Reference-prefix advisory only; correct supplier identity and complete required source/schematic port coverage retained. Not a waiver of separate label or power-attribute warnings."
+  },
+  {
+    "reference": "J2",
+    "supplierCode": "C395849",
+    "manufacturerPartNumber": "DB126V-5.0-2P-GN-P",
+    "sourceType": "simple_chip",
+    "message": "The \"J\" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />",
+    "assessment": "Reference-prefix advisory only; correct supplier identity and complete required source/schematic port coverage retained. Not a waiver of separate label or power-attribute warnings."
+  }
+]

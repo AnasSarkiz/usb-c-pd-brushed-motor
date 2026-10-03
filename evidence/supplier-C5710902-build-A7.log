@@ -1,0 +1,16 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C5710902.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C5710902/circuit.json
+The "R" prefix is being used with a <chip />, try using it with a <resistor />
+All pins on RV1 are underspecified (no pinAttributes set)
+RV1 has no pin with requires_power=true
+RV1 has no pin with requires_ground=true
+RV1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

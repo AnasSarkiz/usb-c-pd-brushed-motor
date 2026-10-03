@@ -1,0 +1,39 @@
+Building 1 file(s)...
+Building tests/switch-import-probe.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/switch-import-probe/circuit.json
+Port pin1 on SW_A is missing a trace
+Port pin2 on SW_A is missing a trace
+Port pin5 on SW_A is missing a trace
+Port pin6 on SW_A is missing a trace
+Port pin7 on SW_A is missing a trace
+Port pin8 on SW_A is missing a trace
+Port pin9 on SW_A is missing a trace
+Port pin10 on SW_A is missing a trace
+Port pin9_internal_1 on SW_A is missing a trace
+Port pin10_internal_1 on SW_A is missing a trace
+Port pin1 on SW_B is missing a trace
+Port pin2 on SW_B is missing a trace
+Port pin5 on SW_B is missing a trace
+Port pin6 on SW_B is missing a trace
+Port pin7 on SW_B is missing a trace
+Port pin8 on SW_B is missing a trace
+Port pin1 on SW_C is missing a trace
+Port pin2 on SW_C is missing a trace
+Port pin5 on SW_C is missing a trace
+Port pin6 on SW_C is missing a trace
+Port pin7 on SW_C is missing a trace
+Port pin8 on SW_C is missing a trace
+Port pin9 on SW_C is missing a trace
+Port pin10 on SW_C is missing a trace
+Generating preview images...
+[tests/switch-import-probe] Generating schematic SVG...
+[tests/switch-import-probe] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

@@ -1,0 +1,9 @@
+{
+  "supplierCount": 53,
+  "totalPcbTraces": 0,
+  "issues": [
+    "C1849461 U4: Native generated error diagnostics remain",
+    "C44377 U5: Native generated error diagnostics remain",
+    "C1855818 U10: Native generated error diagnostics remain"
+  ]
+}

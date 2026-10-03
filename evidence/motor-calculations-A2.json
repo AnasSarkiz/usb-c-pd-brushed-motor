@@ -1,0 +1,137 @@
+{
+  "revision": "A2 analysis only",
+  "hardwarePolicyImplemented": false,
+  "contracts": [
+    {
+      "motorVoltageV": 5,
+      "review": {
+        "implementationStatus": "Analysis only; hardware selection unresolved",
+        "nominalInputLimitA": 2.5174825174825175,
+        "minimumInputLimitA": 2.2433012532022434,
+        "maximumInputLimitA": 2.7972027972027975,
+        "candidates": [
+          {
+            "voltageV": 15,
+            "currentA": 3,
+            "requiredInputCurrentA": 1.249050492267595,
+            "maximumTotalFaultCurrentA": 2.867378235799289,
+            "rejectionReasons": [],
+            "qualified": true
+          },
+          {
+            "voltageV": 20,
+            "currentA": 3,
+            "requiredInputCurrentA": 0.9280022150066702,
+            "maximumTotalFaultCurrentA": 2.849834376150166,
+            "rejectionReasons": [],
+            "qualified": true
+          }
+        ],
+        "selectedContract": {
+          "voltageV": 15,
+          "currentA": 3,
+          "requiredInputCurrentA": 1.249050492267595,
+          "maximumTotalFaultCurrentA": 2.867378235799289,
+          "rejectionReasons": [],
+          "qualified": true
+        },
+        "motorMustRemainInhibited": false
+      }
+    },
+    {
+      "motorVoltageV": 9,
+      "review": {
+        "implementationStatus": "Analysis only; hardware selection unresolved",
+        "nominalInputLimitA": 2.5174825174825175,
+        "minimumInputLimitA": 2.2433012532022434,
+        "maximumInputLimitA": 2.7972027972027975,
+        "candidates": [
+          {
+            "voltageV": 15,
+            "currentA": 3,
+            "requiredInputCurrentA": 2.0734386416879467,
+            "maximumTotalFaultCurrentA": 2.867378235799289,
+            "rejectionReasons": [],
+            "qualified": true
+          },
+          {
+            "voltageV": 20,
+            "currentA": 3,
+            "requiredInputCurrentA": 1.5401495129502378,
+            "maximumTotalFaultCurrentA": 2.849834376150166,
+            "rejectionReasons": [],
+            "qualified": true
+          }
+        ],
+        "selectedContract": {
+          "voltageV": 15,
+          "currentA": 3,
+          "requiredInputCurrentA": 2.0734386416879467,
+          "maximumTotalFaultCurrentA": 2.867378235799289,
+          "rejectionReasons": [],
+          "qualified": true
+        },
+        "motorMustRemainInhibited": false
+      }
+    },
+    {
+      "motorVoltageV": 12,
+      "review": {
+        "implementationStatus": "Analysis only; hardware selection unresolved",
+        "nominalInputLimitA": 2.5174825174825175,
+        "minimumInputLimitA": 2.2433012532022434,
+        "maximumInputLimitA": 2.7972027972027975,
+        "candidates": [
+          {
+            "voltageV": 15,
+            "currentA": 3,
+            "requiredInputCurrentA": 2.6917297537532106,
+            "maximumTotalFaultCurrentA": 2.867378235799289,
+            "rejectionReasons": [
+              "Peak load exceeds minimum input current limit"
+            ],
+            "qualified": false
+          },
+          {
+            "voltageV": 20,
+            "currentA": 3,
+            "requiredInputCurrentA": 1.9992599864079135,
+            "maximumTotalFaultCurrentA": 2.849834376150166,
+            "rejectionReasons": [],
+            "qualified": true
+          }
+        ],
+        "selectedContract": {
+          "voltageV": 20,
+          "currentA": 3,
+          "requiredInputCurrentA": 1.9992599864079135,
+          "maximumTotalFaultCurrentA": 2.849834376150166,
+          "rejectionReasons": [],
+          "qualified": true
+        },
+        "motorMustRemainInhibited": false
+      }
+    }
+  ],
+  "exampleMotor": {
+    "unrestrictedStartupCurrentA": 8,
+    "unrestrictedReversalCurrentA": 16,
+    "windingEnergyAtCurrentLimitJ": 0.00043199999999999993,
+    "possibleReversalOvershootA": 0.528
+  },
+  "capacitorMarginJ": 0.006850494000000002,
+  "inductorPeaks": [
+    {
+      "outputVoltageV": 5,
+      "peakA": 3.1681482710518716
+    },
+    {
+      "outputVoltageV": 9,
+      "peakA": 3.4370001659200264
+    },
+    {
+      "outputVoltageV": 12,
+      "peakA": 3.4370001659200264
+    }
+  ]
+}

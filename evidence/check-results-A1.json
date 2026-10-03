@@ -1,0 +1,57 @@
+[
+  {
+    "command": "bun run format:check",
+    "exitCode": 0,
+    "log": "evidence/format-check-A1-cli2226.log"
+  },
+  {
+    "command": "bun run typecheck",
+    "exitCode": 0,
+    "log": "evidence/typecheck-A1-cli2226.log"
+  },
+  {
+    "command": "bun test",
+    "exitCode": 0,
+    "log": "evidence/test-A1-cli2226.log"
+  },
+  {
+    "command": "bun run power:report",
+    "exitCode": 0,
+    "log": "evidence/power-report-A1-cli2226.log"
+  },
+  {
+    "command": "node_modules/.bin/tsci check netlist index.circuit.tsx",
+    "exitCode": 0,
+    "log": "evidence/netlist-A1-cli2226.log"
+  },
+  {
+    "command": "node_modules/.bin/tsci check pin_specification index.circuit.tsx",
+    "exitCode": 0,
+    "log": "evidence/pin-specification-A1-cli2226.log"
+  },
+  {
+    "command": "node_modules/.bin/tsci check source index.circuit.tsx",
+    "exitCode": 0,
+    "log": "evidence/source-A1-cli2226.log"
+  },
+  {
+    "command": "node_modules/.bin/tsci check schematic-placement index.circuit.tsx",
+    "exitCode": 0,
+    "log": "evidence/schematic-placement-A1-cli2226.log"
+  },
+  {
+    "command": "node_modules/.bin/tsci build index.circuit.tsx --disable-pcb --routing-disabled --schematic-svgs",
+    "exitCode": 0,
+    "log": "evidence/schematic-build-A1-cli2226.log"
+  },
+  {
+    "command": "bun scripts/render-schematic-sheets.ts",
+    "exitCode": 0,
+    "log": "evidence/render-schematic-sheets-A1-cli2226.log"
+  },
+  {
+    "command": "bun scripts/audit-schematic.ts",
+    "exitCode": 1,
+    "log": "evidence/schematic-port-audit-A1-cli2226.log"
+  }
+]

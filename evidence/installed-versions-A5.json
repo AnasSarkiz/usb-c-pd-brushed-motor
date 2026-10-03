@@ -1,0 +1,8 @@
+{
+  "tscircuit": "0.0.2734",
+  "@tscircuit/cli": "0.1.2231",
+  "@tscircuit/core": "0.0.2052",
+  "@tscircuit/props": "0.0.676",
+  "circuit-json": "0.0.509",
+  "circuit-to-svg": "0.0.437"
+}

@@ -1,0 +1,52 @@
+{
+  "netlist": {
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 1,
+    "log": "evidence/check-netlist.log"
+  },
+  "pin_specification": {
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 1,
+    "log": "evidence/check-pin_specification.log"
+  },
+  "source": {
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 1,
+    "log": "evidence/check-source.log"
+  },
+  "schematic-placement": {
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 1,
+    "log": "evidence/check-schematic-placement.log"
+  },
+  "placement": {
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 1,
+    "log": "evidence/check-placement.log"
+  }
+}

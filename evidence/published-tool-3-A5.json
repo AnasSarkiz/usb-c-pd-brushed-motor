@@ -1,0 +1,92 @@
+{
+  "bugs": {
+    "url": "https://github.com/tscircuit/circuit-json/issues"
+  },
+  "dist": {
+    "shasum": "ff1c2e99a1551885417195a6213af3b94472b465",
+    "tarball": "https://registry.npmjs.org/circuit-json/-/circuit-json-0.0.510.tgz",
+    "fileCount": 5,
+    "integrity": "sha512-Qi61Gu0XwZg8YcD4phn3DfxrLP6+FCMWpRZjHvzqQa2/LCI3tlX/q2z9nmHg+332rXakBAurO/Zce/J08yL6qA==",
+    "signatures": [
+      {
+        "sig": "MEUCIQDjmqyWWw0WdfMjYM26Te6XI2AwlwXd/2Xr6fcibDdZsAIgWqbvIJr5TxQRPh84tGx5hIxTG18p0hC++NRPsytmaK4=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEQCIEfX9jl01vUX1UdlYMj8gTPsMsmt1BrLAFxRYoZiUo1+AiBvlzv69S0Vu58lhrmt9gqKMtc7JaOeclI9FYerjOj14w==",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/circuit-json@0.0.510",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 4403879
+  },
+  "main": "dist/index.mjs",
+  "name": "circuit-json",
+  "author": "",
+  "gitHead": "4eb485adf569620fbb8f18b3f6f00a1b1bcef4d7",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsup-node ./src/index.ts --format esm --dts --sourcemap",
+    "format": "biome format . --write",
+    "lint:zod": "bun run scripts/zod-lint.ts",
+    "prepublish": "npm run build",
+    "generate-docs": "bun scripts/generate-readme-docs.ts && prettier --no-semi -w README.md",
+    "check-snake-case": "bun run scripts/check-snake-case.ts"
+  },
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "8a6b9f79-2b15-43d1-9b95-c33394d56708"
+    }
+  },
+  "homepage": "https://github.com/tscircuit/circuit-json#readme",
+  "keywords": [],
+  "repository": {
+    "url": "git+https://github.com/tscircuit/circuit-json.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.19.0",
+  "description": "Definitions for the tscircuit intermediary JSON format",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "seveibar",
+      "email": "seveibar@gmail.com"
+    }
+  ],
+  "_nodeVersion": "24.21.0",
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "zod": "3",
+    "tsup": "^8.3.0",
+    "esbuild": "^0.20.2",
+    "ts-node": "^10.9.2",
+    "prettier": "^3.4.2",
+    "ts-expect": "^1.3.0",
+    "@types/bun": "^1.1.15",
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.2",
+    "@biomejs/biome": "^1.9.4",
+    "format-si-unit": "^0.0.7",
+    "@anthropic-ai/sdk": "^0.30.1",
+    "@types/convert-units": "^2.3.9",
+    "@typescript-eslint/parser": "^8.18.1",
+    "@typescript-eslint/typescript-estree": "^8.18.1"
+  },
+  "peerDependencies": {
+    "format-si-unit": "*"
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/circuit-json_0.0.510_1790962328226_0.3007019068773251",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "circuit-json@0.0.510",
+  "version": "0.0.510"
+}

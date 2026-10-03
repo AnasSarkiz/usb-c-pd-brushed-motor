@@ -1,0 +1,11 @@
+2 | import { createHash } from "node:crypto"
+3 | import { any_circuit_element } from "circuit-json"
+4 | import { z } from "zod"
+5 | const raw = JSON.parse(await readFile("dist/tests/active-supplier-import-probe/circuit.json", "utf8"))
+6 | const parsed = z.array(any_circuit_element).safeParse(raw)
+7 | if(!parsed.success){await writeFile("evidence/active-import-audit-A7.json",JSON.stringify({revision:"A7",status:"failed",schemaIssues:parsed.error.issues},null,2)+"\n");throw new Error("Full generated supplier fixture fails circuit-json schema; see evidence")}
+                                                                                                                                                                                       ^
+error: Full generated supplier fixture fails circuit-json schema; see evidence
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/audit-active-imports.ts:7:180
+
+Bun v1.3.9 (macOS arm64)

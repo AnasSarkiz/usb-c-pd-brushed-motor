@@ -1,0 +1,9 @@
+node_modules/
+.cache/
+dist/
+*.tsbuildinfo
+.env
+.DS_Store
+
+.tscircuit/
+.publication/

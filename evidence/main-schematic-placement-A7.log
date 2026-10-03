@@ -1,0 +1,112 @@
+<SchematicSheet name="usb" id="schematic_sheet_0">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U2" positionAnchor="center" schX="-0.855" schY="3.2" width="1.2" height="1.2" />
+<SchematicBoxPlacement componentName="U3" positionAnchor="center" schX="-4.065" schY="3" width="1.2" height="1.2" />
+<SchematicBoxPlacement componentName="R1" positionAnchor="center" schX="1.835" schY="2.905" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="D3" positionAnchor="center" schX="1.315" schY="4.935" width="0.54" height="1.04" />
+<SchematicBoxPlacement componentName="C2" positionAnchor="center" schX="-8.353" schY="4.63" width="0.9" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<SchematicTextCollision schematicTextId="schematic_text_29" text="D2 · PESD24VS2UT" collidingObjectType="component" collidingObjectId="schematic_component_9" newSchX="-10.3" newSchY="4.65" message="Text &quot;D2 · PESD24VS2UT&quot; overlaps component C2; reposition the text to leave its visible area clear." />
+<DiodeResistorNotAligned diodeComponentName="D3" diodePin="cathode" resistorComponentName="R1" resistorPin="cathode" message="trace has corners — align D3 and R1 on same axis and rotate so D3.cathode faces R1.cathode" />
+<ComponentPinsWouldAlignWithVerticalShift firstComponentName="U3" secondComponentName="U2" targetComponentName="U2" deltaSchY="0.3" newSchY="3.5" currentlyAlignedPinCount="0" alignedPinCount="2" message="shift U2 vertically by +0.3 to align 2 connected pin pairs" />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="buck" id="schematic_sheet_3">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U5" positionAnchor="center" schX="0" schY="0" width="1.3" height="1.2" />
+<SchematicBoxPlacement componentName="C12" positionAnchor="center" schX="-2.56" schY="0.18" width="0.6" height="0.65" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<CapacitorSymbolHorizontal componentName="C12" schX="-2.56" schY="0.18" width="0.6" height="0.65" message="Use schOrientation=&quot;vertical&quot; on this capacitor to fix the symbol orientation" />
+<ComponentNetLabelCollision pair1="C12/U5">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="C12" newSchX="-3.37" newSchY="0.18" />
+    <Move componentName="U5" newSchX="0.81" newSchY="0" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="controls" id="schematic_sheet_4">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="SW1" positionAnchor="center" schX="0" schY="-2" width="1.2" height="0.6" />
+<SchematicBoxPlacement componentName="R29" positionAnchor="center" schX="-2.51" schY="-1.9" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R30" positionAnchor="center" schX="2.51" schY="-2.777" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="LED3" positionAnchor="center" schX="4.51" schY="-2.982" width="0.62" height="1.08" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<DiodeResistorNotAligned diodeComponentName="LED3" diodePin="anode" resistorComponentName="R30" resistorPin="cathode" message="trace has corners — align LED3 and R30 on same axis and rotate so LED3.anode faces R30.cathode" />
+<TwoPinComponentCouldBeFlipped traceName="SW1.pin1 to R29.pin1" targetComponentName="R29" connectedComponentName="SW1" targetPin="pin1" currentFacingDirection="left" suggestedFacingDirection="right" deltaSchRotation="180" currentTurnCount="4" suggestedTurnCount="0" message="rotate R29 by 180° so pin1 faces SW1 and reduce this trace from 4 turns to 0" />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="protection" id="schematic_sheet_5">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U9" positionAnchor="center" schX="0" schY="0" width="1.6" height="1" />
+<SchematicBoxPlacement componentName="R34" positionAnchor="center" schX="-0.72" schY="2.005" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="D8" positionAnchor="center" schX="1.49" schY="2.04" width="1.04" height="0.54" />
+<SchematicBoxPlacement componentName="R39" positionAnchor="center" schX="1.39" schY="-1.1" width="0.9" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<DiodeResistorNotAligned diodeComponentName="D8" diodePin="anode" resistorComponentName="R34" resistorPin="cathode" message="trace has corners — align D8 and R34 on same axis and rotate so D8.anode faces R34.cathode" />
+<ComponentNetLabelCollision pair1="U9/R39">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="U9" newSchX="-0.59" newSchY="0" />
+    <Move componentName="R39" newSchX="1.99" newSchY="-1.1" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="dump" id="schematic_sheet_7">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="R43" positionAnchor="center" schX="-1.81" schY="-0.07" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R44" positionAnchor="center" schX="-4.74" schY="-0.915" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="D9" positionAnchor="center" schX="-2.625" schY="-0.915" width="0.54" height="1.04" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<DiodeResistorNotAligned diodeComponentName="D9" diodePin="cathode" resistorComponentName="R44" resistorPin="anode" message="trace has corners — align D9 and R44 on same axis and rotate so D9.cathode faces R44.anode" />
+<DiodeResistorNotAligned diodeComponentName="D9" diodePin="anode" resistorComponentName="R44" resistorPin="cathode" message="trace has corners — align D9 and R44 on same axis and rotate so D9.anode faces R44.cathode" />
+<DiodeResistorNotAligned diodeComponentName="D9" diodePin="cathode" resistorComponentName="R43" resistorPin="cathode" message="trace has corners — align D9 and R43 on same axis and rotate so D9.cathode faces R43.cathode" />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="pdhost" id="schematic_sheet_1">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U11" positionAnchor="center" schX="0" schY="0" width="2.6" height="2.2" />
+<SchematicBoxPlacement componentName="C30" positionAnchor="center" schX="-2.92" schY="-0.2" width="0.65" height="0.6" />
+<SchematicBoxPlacement componentName="R56" positionAnchor="center" schX="3.245" schY="-1.215" width="0.65" height="0.6" />
+<SchematicBoxPlacement componentName="Q6" positionAnchor="center" schX="0.1" schY="2.705" width="0.2" height="0.4" />
+<SchematicBoxPlacement componentName="R60" positionAnchor="center" schX="-3.59" schY="2.413" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="Q7" positionAnchor="center" schX="1.95" schY="2.705" width="0.68" height="0.4" />
+<SchematicBoxPlacement componentName="Q8" positionAnchor="center" schX="3.45" schY="0.695" width="0.68" height="0.4" />
+<SchematicBoxPlacement componentName="R63" positionAnchor="center" schX="3.245" schY="-3.025" width="0.65" height="0.6" />
+<SchematicBoxPlacement componentName="R66" positionAnchor="center" schX="-2" schY="-4.44" width="0.6" height="0.65" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="R60" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R60 by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="R66" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R66 by -90° so its power-connected pin faces up and the component is vertical" />
+<ComponentNetLabelCollision pair1="C30/U11" pair2="U11/Q8" pair3="R56/R63" pair4="Q6/Q7">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="C30" newSchX="-3.39" newSchY="-0.2" />
+    <Move componentName="U11" newSchX="-0.08" newSchY="0" />
+    <Move componentName="Q8" newSchX="4" newSchY="0.69" />
+    <Move componentName="R56" newSchX="2.98" newSchY="-1.22" />
+    <Move componentName="R63" newSchX="3.51" newSchY="-3.03" />
+    <Move componentName="Q6" newSchX="-0.36" newSchY="2.71" />
+    <Move componentName="Q7" newSchX="2.41" newSchY="2.7" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="input" id="schematic_sheet_2">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U4" positionAnchor="center" schX="0" schY="0" width="1.2" height="2.4" />
+<SchematicBoxPlacement componentName="R10" positionAnchor="center" schX="-0.405" schY="2.705" width="0.9" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<ComponentNetLabelCollision pair1="U4/R10">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="R10" newSchX="-0.6" newSchY="2.7" />
+    <Move componentName="U4" newSchX="0.2" newSchY="0" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>

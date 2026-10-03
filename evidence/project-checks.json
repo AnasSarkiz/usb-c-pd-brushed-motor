@@ -1,0 +1,29 @@
+{
+  "format-check": {
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "log": "evidence/format-check.log"
+  },
+  "typecheck": {
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "log": "evidence/typecheck.log"
+  },
+  "power-report": {
+    "command": [
+      "bun",
+      "run",
+      "power:report"
+    ],
+    "exit_code": 0,
+    "log": "evidence/power-report.log"
+  }
+}

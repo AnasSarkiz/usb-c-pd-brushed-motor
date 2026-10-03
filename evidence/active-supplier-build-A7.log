@@ -1,0 +1,131 @@
+Building 1 file(s)...
+Building tests/active-supplier-import-probe.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/active-supplier-import-probe/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "R" prefix is being used with a <chip />, try using it with a <resistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+All pins on D1 are underspecified (no pinAttributes set)
+All pins on D2 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on RV1 are underspecified (no pinAttributes set)
+All pins on SW1 are underspecified (no pinAttributes set)
+All pins on U8 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on Q3 are underspecified (no pinAttributes set)
+All pins on D10 are underspecified (no pinAttributes set)
+All pins on J2 are underspecified (no pinAttributes set)
+All pins on SW2 are underspecified (no pinAttributes set)
+J1 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+U3 has no pin with requires_power=true
+D1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+U4 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+RV1 has no pin with requires_power=true
+SW1 has no pin with requires_power=true
+U8 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Q3 has no pin with requires_power=true
+U10 has no pin with requires_power=true
+D10 has no pin with requires_power=true
+J2 has no pin with requires_power=true
+SW2 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+D1 has no pin with requires_ground=true
+D2 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+RV1 has no pin with requires_ground=true
+SW1 has no pin with requires_ground=true
+U8 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+Q3 has no pin with requires_ground=true
+D10 has no pin with requires_ground=true
+J2 has no pin with requires_ground=true
+SW2 has no pin with requires_ground=true
+D1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+RV1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+U8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q3 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D10 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <chip#0(.supplier1>.J1) /> (jlcpcb:C165948): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#71(.supplier7>.R1) /> (jlcpcb:C21190): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#69(.supplier6>.D2) /> (jlcpcb:C477999): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#67(.supplier5>.D1) /> (jlcpcb:C10214): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#56(.supplier4>.U3) /> (jlcpcb:C181239): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#45(.supplier3>.U2) /> (jlcpcb:C468238): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#18(.supplier2>.U1) /> (jlcpcb:C2678061): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#75(.supplier8>.D3) /> (jlcpcb:C2109): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#95(.supplier13>.R4) /> (jlcpcb:C25803): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#91(.supplier12>.R2) /> (jlcpcb:C23162): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#87(.supplier11>.C4) /> (jlcpcb:C19666): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#83(.supplier10>.C2) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#79(.supplier9>.C1) /> (jlcpcb:C77083): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#99(.supplier14>.D4) /> (jlcpcb:C22452): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#140(.supplier20>.R13) /> (jlcpcb:C25980): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#136(.supplier19>.R11) /> (jlcpcb:C4184): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#132(.supplier18>.R10) /> (jlcpcb:C22815): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#128(.supplier17>.R5) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#126(.supplier16>.Q1) /> (jlcpcb:C7420353): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#103(.supplier15>.U4) /> (jlcpcb:C1849461): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#144(.supplier21>.C9) /> (jlcpcb:C21122): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#179(.supplier28>.R21) /> (jlcpcb:C22790): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#175(.supplier27>.R20) /> (jlcpcb:C22956): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#171(.supplier26>.R55) /> (jlcpcb:C23186): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#167(.supplier25>.C18) /> (jlcpcb:C2918361): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#163(.supplier24>.C16) /> (jlcpcb:C403725): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#159(.supplier23>.L1) /> (jlcpcb:C285788): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#148(.supplier22>.U5) /> (jlcpcb:C44377): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#183(.supplier29>.R22) /> (jlcpcb:C22967): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#203(.supplier33>.R25) /> (jlcpcb:C23138): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#201(.supplier32>.RV1) /> (jlcpcb:C5710902): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#191(.supplier31>.U6) /> (jlcpcb:C6986): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#187(.supplier30>.C20) /> (jlcpcb:C1653): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#207(.supplier34>.D6) /> (jlcpcb:C8598): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#215(.supplier36>.C22) /> (jlcpcb:C57112): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#211(.supplier35>.C21) /> (jlcpcb:C440183): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#219(.supplier37>.SW1) /> (jlcpcb:C908270): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#230(.supplier40>.U9) /> (jlcpcb:C67470): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#228(.supplier39>.U8) /> (jlcpcb:C23892): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <led#224(.supplier38>.LED2) /> (jlcpcb:C2986030): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#240(.supplier41>.R32) /> (jlcpcb:C23348): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <diode#250(.supplier44>.D9) /> (jlcpcb:C2103): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#248(.supplier43>.Q2) /> (jlcpcb:C53444): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#244(.supplier42>.R40) /> (jlcpcb:C22935): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#254(.supplier45>.Q3) /> (jlcpcb:C20917): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#279(.supplier48>.R50) /> (jlcpcb:C25890): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#260(.supplier47>.U10) /> (jlcpcb:C1855818): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#256(.supplier46>.R45) /> (jlcpcb:C2991665): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#283(.supplier49>.D10) /> (jlcpcb:C211759): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#289(.supplier51>.U11) /> (jlcpcb:C529330): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#285(.supplier50>.J2) /> (jlcpcb:C395849): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#311(.supplier52>.SW2) /> (jlcpcb:C3293142): Was there a typo in the url or port?
+Via hole at (-83.40mm, -38.10mm) overlaps SMD pad U4.EP at (-84.00mm, -37.50mm)
+Via hole at (-83.40mm, -36.90mm) overlaps SMD pad U4.EP at (-84.00mm, -37.50mm)
+Via hole at (-84.60mm, -36.90mm) overlaps SMD pad U4.EP at (-84.00mm, -37.50mm)
+Via hole at (-84.60mm, -38.10mm) overlaps SMD pad U4.EP at (-84.00mm, -37.50mm)
+Via hole at (-83.50mm, -12.00mm) overlaps SMD pad U5.EP at (-84.00mm, -12.50mm)
+Via hole at (-84.50mm, -12.00mm) overlaps SMD pad U5.EP at (-84.00mm, -12.50mm)
+Via hole at (-84.50mm, -13.00mm) overlaps SMD pad U5.EP at (-84.00mm, -12.50mm)
+Via hole at (-83.50mm, -13.00mm) overlaps SMD pad U5.EP at (-84.00mm, -12.50mm)
+Via hole at (27.50mm, 63.00mm) overlaps SMD pad U10.EP at (28.00mm, 62.50mm)
+Via hole at (28.50mm, 63.00mm) overlaps SMD pad U10.EP at (28.00mm, 62.50mm)
+Via hole at (27.50mm, 62.00mm) overlaps SMD pad U10.EP at (28.00mm, 62.50mm)
+Via hole at (28.50mm, 62.00mm) overlaps SMD pad U10.EP at (28.00mm, 62.50mm)
+
+Build complete
+  Circuits  0 passed 1 failed
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

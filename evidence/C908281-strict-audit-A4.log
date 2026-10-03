@@ -1,0 +1,14 @@
+{
+  "supplierCode": "C908281",
+  "failures": [
+    "Element 24 pcb_solder_paste: circuit schema rejects generated element",
+    "Element 25 pcb_solder_paste: circuit schema rejects generated element",
+    "Element 27 pcb_solder_paste: circuit schema rejects generated element",
+    "Element 28 pcb_solder_paste: circuit schema rejects generated element",
+    "Element 30 pcb_solder_paste: circuit schema rejects generated element",
+    "Element 31 pcb_solder_paste: circuit schema rejects generated element",
+    "Generated symbol does not represent SPDT center-off or its common pin 2",
+    "Electrical pin 3: schematic port missing"
+  ],
+  "pcbTraceCount": 0
+}

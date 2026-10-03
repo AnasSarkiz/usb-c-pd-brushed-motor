@@ -1,0 +1,74 @@
+[
+  {
+    "reference": "SW_A",
+    "supplier": {
+      "jlcpcb": [
+        "C2848921"
+      ]
+    },
+    "source_pin_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      null,
+      null
+    ],
+    "schematic_pin_numbers": [
+      1,
+      2
+    ]
+  },
+  {
+    "reference": "SW_B",
+    "supplier": {
+      "jlcpcb": [
+        "C5274495"
+      ]
+    },
+    "source_pin_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "schematic_pin_numbers": [
+      1,
+      2
+    ]
+  },
+  {
+    "reference": "SW_C",
+    "supplier": {
+      "jlcpcb": [
+        "C5274498"
+      ]
+    },
+    "source_pin_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "schematic_pin_numbers": [
+      1,
+      2
+    ]
+  }
+]
