@@ -1,7 +1,7 @@
 {
   "revision": "A13",
   "date": "2026-10-03",
-  "sourceCommit": null,
+  "sourceCommit": "3fda417c558ba0293f72b84010cc75b1d01f9b47",
   "versions": {
     "tscircuit": "0.0.2742",
     "@tscircuit/cli": "0.1.2237",

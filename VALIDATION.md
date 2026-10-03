@@ -33,7 +33,7 @@ Versions unchanged:tscircuit0.0.2742 /CLI0.1.2237 /core0.0.2056 /props0.0.677 /c
 
 ## Revision and publication
 
-A13 hashes/dependencies/evidence are recorded in evidence/source-manifest-A13.json; source commit recorded after implementation commit. A11 hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. Git remote/destination remains unknown. Standing publication authorization exists, but missing repository/branch and incomplete gates block fully publishing this step. Neither GitHub nor tscircuit remote update succeeded. No fabrication/hardware approval implied.
+A13 hashes/dependencies/evidence are recorded in evidence/source-manifest-A13.json; source commit 3fda417c558ba0293f72b84010cc75b1d01f9b47. A11 hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. Git remote/destination remains unknown. Standing publication authorization exists, but missing repository/branch and incomplete gates block fully publishing this step. Neither GitHub nor tscircuit remote update succeeded. No fabrication/hardware approval implied.
 
 ---
 
