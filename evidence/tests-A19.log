@@ -1,0 +1,48 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/stusb4500-nvm.test.ts:
+(pass) NVM readback requires every approved byte and never programs memory [745.59ms]
+
+tests/stusb4500-request.test.ts:
+(pass) PD profile transaction rejects partial writes and never repeats an uncertain command [373.56ms]
+
+tests/pd-sequence.test.ts:
+(pass) compiled C power sequence inhibits stale contracts and unsafe voltage changes [376.24ms]
+
+tests/pd-policy.test.ts:
+(pass) compiled C PD policy rejects unsafe contracts and stale qualification [371.87ms]
+
+tests/electrical-calculations.test.ts:
+(pass) PD power qualification > rejects insufficient chargers including native 12 V [0.42ms]
+(pass) PD power qualification > selects 20 V for 12 V peaks and 15 V for 9 V peaks [0.18ms]
+(pass) PD power qualification > a 5 A source retains a 3 A operating request and malformed currents fail
+(pass) PD power qualification > worst assumed 12 V continuous input fits minimum eFuse limit
+(pass) 10 k potentiometer and selected motor rail > regulates all three modes within 0.1 percent nominal [0.51ms]
+(pass) 10 k potentiometer and selected motor rail > PWM has useful monotonically increasing range with finite end times [0.22ms]
+(pass) PD-enable default high survives transistor base loading
+
+tests/stusb4500-startup.test.ts:
+(pass) PD startup drains old events under inhibition and verifies standby acquisition [366.17ms]
+
+tests/motor-validation-calculations.test.ts:
+(pass) A7 voltage-aware PD policy engineering screen > 5 A advertisements remain separate from the 3 A operating request
+(pass) A7 voltage-aware PD policy engineering screen > 5/9 V peaks fit 15 V while 12 V peaks require 20 V
+(pass) A7 voltage-aware PD policy engineering screen > a low-power 20 V source fails despite enough nominal output watts
+(pass) A7 voltage-aware PD policy engineering screen > 5 V-only, native 12 V-only and unplugged sources inhibit [0.86ms]
+(pass) A7 voltage-aware PD policy engineering screen > 20 V fallback fits a 9 V motor when 15 V is unavailable [0.07ms]
+(pass) Motor and converter stress screening > running reversal can double unrestricted startup current [0.10ms]
+(pass) Motor and converter stress screening > output capacitance cannot absorb the example rotor energy [0.04ms]
+(pass) Motor and converter stress screening > screened inductor peaks remain below the 4.5 A minimum buck limit [0.12ms]
+(pass) A7 motor-rail-powered analog clamp > reference stays biased and clamp has hysteresis in all selected modes
+
+tests/stusb4500-rx.test.ts:
+(pass) STUSB4500 capture rejects late, changed and malformed PD messages [379.90ms]
+
+tests/stm32-gpio.test.ts:
+(pass) STM32 GPIO safety ordering and feedback preservation [420.90ms]
+(pass) vendor MCU and CMSIS definitions remain byte-exact [1.75ms]
+
+ 24 pass
+ 0 fail
+ 403 expect() calls
+Ran 24 tests across 9 files. [3.07s]

@@ -1,0 +1,904 @@
+placement summary: 6053 pad overlaps, 381 connector-body intrusions, 1992 footprint intrusions, 3 suboptimal orientations
+
+worst issues:
+1. RV1 intrudes 6.498mm into J1 connector body. Suggested move: move RV1 6.498mm down.
+2. U11 intrudes 6.214mm into J1 connector body. Suggested move: move U11 6.214mm left.
+3. U4 intrudes 5.921mm into J1 connector body. Suggested move: move U4 5.921mm down.
+4. U10 intrudes 4.893mm into J1 connector body. Suggested move: move U10 4.893mm right.
+5. U1 intrudes 4.7mm into J1 connector body. Suggested move: move U1 4.7mm right.
+
+likely bad clusters:
+- U1 cluster: U1, J2, J1, U10, U4, U5, C1, C6, C7, C31, C11, D2, Q6, Q7, Q8, Q1, Q2, Q3, Q4, Q5, C13, C14, LED2, LED3, LED1, U2, U3, R1, R2, R3, R4, R56, R57, R58, R59, R60, R61, R62, R63, R64, R66, R67, R5, R6, R7, R8, R9, R10, R11, R12, R13, R16, R17, R18, R55, R19, R20, R21, R22, R23, R24, R25, R26, R29, R30, R31, R32, R33, R34, R39, R65, R40, R51, R41, R42, R43, R44, R49, C2, C3, C4, C5, C8, C30, C32, C33, C34, C9, C10, C12, C15, C19, C20, C21, C22, C23, C25, C26, C27, C28, U8, C16, C17, C29, R68, R45, R46, R47, R48, SW1, L1, U6, U9, U11, D10, D11, D1, D4, D5, C18, D6, D7, D8, R50, R54, RV1, SW2, D3, D9
+
+board top-layer utilization:
+- occupied: 6.468% (210.194mm^2 of 3250mm^2)
+- empty spaces over 5% of board area:
+  - 39.231% (1275.007mm^2); bounds=(minX=-32.5mm, maxX=-7mm, minY=-25mm, maxY=25mm)
+  - 39.231% (1275.007mm^2); bounds=(minX=7mm, maxX=32.5mm, minY=-25mm, maxY=25mm)
+
+board-edge status:
+- J1: 21.326mm inside top edge
+- U1: 22.65mm inside top edge
+- U2: 22.038mm inside top edge
+- U3: 22.038mm inside top edge
+- D1: 23.904mm inside top edge
+- D2: 23.725mm inside top edge
+- R1: 24.568mm inside top edge
+- D3: 24.425mm inside top edge
+- C1: 24.325mm inside top edge
+- C2: 24.55mm inside top edge
+- C3: 24.55mm inside top edge
+- C4: 24.55mm inside top edge
+- C5: 24.55mm inside top edge
+- C6: 24.325mm inside top edge
+- C7: 24.325mm inside top edge
+- C8: 24.55mm inside top edge
+- R2: 24.568mm inside top edge
+- R3: 24.568mm inside top edge
+- R4: 24.568mm inside top edge
+- U11: 21.258mm inside top edge
+- SW2: 20.428mm inside top edge
+- C30: 24.55mm inside top edge
+- C31: 24.325mm inside top edge
+- C32: 24.55mm inside top edge
+- R56: 24.568mm inside top edge
+- R57: 24.568mm inside top edge
+- Q6: 23.725mm inside top edge
+- R58: 24.568mm inside top edge
+- R59: 24.568mm inside top edge
+- R60: 24.568mm inside top edge
+- R61: 24.568mm inside top edge
+- C33: 24.55mm inside top edge
+- R62: 24.568mm inside top edge
+- Q7: 23.725mm inside top edge
+- Q8: 23.725mm inside top edge
+- R63: 24.568mm inside top edge
+- R64: 24.568mm inside top edge
+- R66: 24.568mm inside top edge
+- R67: 24.568mm inside top edge
+- C34: 24.55mm inside top edge
+- D4: 24.23mm inside top edge
+- U4: 21.903mm inside top edge
+- Q1: 23.725mm inside top edge
+- R5: 24.568mm inside top edge
+- R6: 24.568mm inside top edge
+- R7: 24.568mm inside top edge
+- R8: 24.568mm inside top edge
+- R9: 24.568mm inside top edge
+- R10: 24.568mm inside top edge
+- R11: 24.568mm inside top edge
+- R12: 24.568mm inside top edge
+- R13: 24.568mm inside top edge
+- R16: 24.568mm inside top edge
+- C9: 24.55mm inside top edge
+- C10: 24.55mm inside top edge
+- C11: 24.325mm inside top edge
+- U5: 21.212mm inside top edge
+- D5: 24.23mm inside top edge
+- L1: 23mm inside top edge
+- C12: 24.55mm inside top edge
+- C13: 23.65mm inside top edge
+- C14: 23.65mm inside top edge
+- C15: 24.55mm inside top edge
+- C16: 24.136mm inside top edge
+- C17: 24.136mm inside top edge
+- C18: 24.175mm inside top edge
+- R17: 24.568mm inside top edge
+- R18: 24.568mm inside top edge
+- R55: 24.568mm inside top edge
+- R19: 24.568mm inside top edge
+- R20: 24.568mm inside top edge
+- R21: 24.568mm inside top edge
+- R22: 24.568mm inside top edge
+- C19: 24.55mm inside top edge
+- C20: 24.55mm inside top edge
+- R23: 24.568mm inside top edge
+- R68: 24.149mm inside top edge
+- R24: 24.568mm inside top edge
+- U6: 21.32mm inside top edge
+- RV1: 19.55mm inside bottom edge
+- R25: 24.568mm inside top edge
+- D6: 24.525mm inside top edge
+- D7: 24.525mm inside top edge
+- R26: 24.568mm inside top edge
+- C21: 24.55mm inside top edge
+- C22: 24.55mm inside top edge
+- C23: 24.55mm inside top edge
+- SW1: 19.4mm inside top edge
+- R29: 24.568mm inside top edge
+- R30: 24.568mm inside top edge
+- LED2: 24.5mm inside top edge
+- LED3: 24.5mm inside top edge
+- U8: 23.75mm inside top edge
+- R31: 24.568mm inside top edge
+- U9: 21.32mm inside top edge
+- R32: 24.568mm inside top edge
+- R33: 24.568mm inside top edge
+- R34: 24.568mm inside top edge
+- D8: 24.525mm inside top edge
+- R39: 24.568mm inside top edge
+- R65: 24.568mm inside top edge
+- R40: 24.568mm inside top edge
+- C25: 24.55mm inside top edge
+- U10: 21.253mm inside top edge
+- R50: 24.73mm inside top edge
+- R51: 24.568mm inside top edge
+- C26: 24.55mm inside top edge
+- C27: 24.55mm inside top edge
+- C28: 24.55mm inside top edge
+- C29: 24.136mm inside top edge
+- D10: 23.8mm inside top edge
+- D11: 23.8mm inside top edge
+- J2: 23.65mm inside top edge
+- R54: 24.73mm inside top edge
+- LED1: 24.5mm inside top edge
+- Q2: 23.725mm inside top edge
+- R41: 24.568mm inside top edge
+- R42: 24.568mm inside top edge
+- R43: 24.568mm inside top edge
+- R44: 24.568mm inside top edge
+- D9: 24.425mm inside top edge
+- Q3: 23.725mm inside top edge
+- R45: 23.272mm inside top edge
+- R46: 23.272mm inside top edge
+- R47: 23.272mm inside top edge
+- R48: 23.272mm inside top edge
+- Q4: 23.725mm inside top edge
+- R49: 24.568mm inside top edge
+- Q5: 23.725mm inside top edge
+
+flagged components:
+- J1
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, -0.425mm) on top; bounds=(minX=-4.925mm, maxX=4.925mm, minY=-3.674mm, maxY=2.824mm); size=(width=9.85mm, height=6.498mm); anchor_alignment="center"
+  board edge status: 21.326mm inside top edge
+  issues:
+  - RV1 intrudes 6.498mm into J1 connector body. Suggested move: move RV1 6.498mm down.
+  - U11 intrudes 6.214mm into J1 connector body. Suggested move: move U11 6.214mm left.
+  - U4 intrudes 5.921mm into J1 connector body. Suggested move: move U4 5.921mm down.
+  - U10 intrudes 4.893mm into J1 connector body. Suggested move: move U10 4.893mm right.
+  - U1 intrudes 4.7mm into J1 connector body. Suggested move: move U1 4.7mm right.
+  - U5 intrudes 4.384mm into J1 connector body. Suggested move: move U5 4.384mm right.
+  - U6 intrudes 4.378mm into J1 connector body. Suggested move: move U6 4.378mm right.
+  - U9 intrudes 4.378mm into J1 connector body. Suggested move: move U9 4.378mm right.
+  - L1 intrudes 4mm into J1 connector body. Suggested move: move L1 4mm down.
+  - R45 intrudes 3.456mm into J1 connector body. Suggested move: move R45 3.456mm down.
+  - R46 intrudes 3.456mm into J1 connector body. Suggested move: move R46 3.456mm down.
+  - R47 intrudes 3.456mm into J1 connector body. Suggested move: move R47 3.456mm down.
+  - R48 intrudes 3.456mm into J1 connector body. Suggested move: move R48 3.456mm down.
+  - SW1 intrudes 3.4mm into J1 connector body. Suggested move: move SW1 3.4mm right.
+  - C13 intrudes 2.7mm into J1 connector body. Suggested move: move C13 2.7mm down.
+  - C14 intrudes 2.7mm into J1 connector body. Suggested move: move C14 2.7mm down.
+  - D2 intrudes 2.55mm into J1 connector body. Suggested move: move D2 2.55mm down.
+  - Q6 intrudes 2.55mm into J1 connector body. Suggested move: move Q6 2.55mm down.
+  - Q7 intrudes 2.55mm into J1 connector body. Suggested move: move Q7 2.55mm down.
+  - Q8 intrudes 2.55mm into J1 connector body. Suggested move: move Q8 2.55mm down.
+  - Q1 intrudes 2.55mm into J1 connector body. Suggested move: move Q1 2.55mm down.
+  - Q2 intrudes 2.55mm into J1 connector body. Suggested move: move Q2 2.55mm down.
+  - Q3 intrudes 2.55mm into J1 connector body. Suggested move: move Q3 2.55mm down.
+  - Q4 intrudes 2.55mm into J1 connector body. Suggested move: move Q4 2.55mm down.
+  - Q5 intrudes 2.55mm into J1 connector body. Suggested move: move Q5 2.55mm down.
+  - J2 intrudes 2.5mm into J1 connector body. Suggested move: move J2 2.5mm down.
+  - U8 intrudes 2.5mm into J1 connector body. Suggested move: move U8 2.5mm down.
+  - D10 intrudes 2.4mm into J1 connector body. Suggested move: move D10 2.4mm down.
+  - D11 intrudes 2.4mm into J1 connector body. Suggested move: move D11 2.4mm down.
+  - U2 intrudes 2.314mm into J1 connector body. Suggested move: move U2 2.314mm right.
+  - U3 intrudes 2.314mm into J1 connector body. Suggested move: move U3 2.314mm right.
+  - D1 intrudes 2.192mm into J1 connector body. Suggested move: move D1 2.192mm down.
+  - SW2 intrudes 2.032mm into J1 connector body. Suggested move: move SW2 2.032mm right.
+  - C16 intrudes 1.728mm into J1 connector body. Suggested move: move C16 1.728mm down.
+  - C17 intrudes 1.728mm into J1 connector body. Suggested move: move C17 1.728mm down.
+  - C29 intrudes 1.728mm into J1 connector body. Suggested move: move C29 1.728mm down.
+  - R68 intrudes 1.701mm into J1 connector body. Suggested move: move R68 1.701mm down.
+  - C18 intrudes 1.65mm into J1 connector body. Suggested move: move C18 1.65mm down.
+  - D4 intrudes 1.539mm into J1 connector body. Suggested move: move D4 1.539mm down.
+  - D5 intrudes 1.539mm into J1 connector body. Suggested move: move D5 1.539mm down.
+  - C1 intrudes 1.35mm into J1 connector body. Suggested move: move C1 1.35mm down.
+  - C6 intrudes 1.35mm into J1 connector body. Suggested move: move C6 1.35mm down.
+  - C7 intrudes 1.35mm into J1 connector body. Suggested move: move C7 1.35mm down.
+  - C31 intrudes 1.35mm into J1 connector body. Suggested move: move C31 1.35mm down.
+  - C11 intrudes 1.35mm into J1 connector body. Suggested move: move C11 1.35mm down.
+  - D3 intrudes 1.15mm into J1 connector body. Suggested move: move D3 1.15mm down.
+  - D9 intrudes 1.15mm into J1 connector body. Suggested move: move D9 1.15mm down.
+  - LED2 intrudes 1mm into J1 connector body. Suggested move: move LED2 1mm down.
+  - LED3 intrudes 1mm into J1 connector body. Suggested move: move LED3 1mm down.
+  - LED1 intrudes 1mm into J1 connector body. Suggested move: move LED1 1mm down.
+  - D6 intrudes 0.95mm into J1 connector body. Suggested move: move D6 0.95mm down.
+  - D7 intrudes 0.95mm into J1 connector body. Suggested move: move D7 0.95mm down.
+  - D8 intrudes 0.95mm into J1 connector body. Suggested move: move D8 0.95mm down.
+  - C2 intrudes 0.9mm into J1 connector body. Suggested move: move C2 0.9mm down.
+  - C3 intrudes 0.9mm into J1 connector body. Suggested move: move C3 0.9mm down.
+  - C4 intrudes 0.9mm into J1 connector body. Suggested move: move C4 0.9mm down.
+  - C5 intrudes 0.9mm into J1 connector body. Suggested move: move C5 0.9mm down.
+  - C8 intrudes 0.9mm into J1 connector body. Suggested move: move C8 0.9mm down.
+  - C30 intrudes 0.9mm into J1 connector body. Suggested move: move C30 0.9mm down.
+  - C32 intrudes 0.9mm into J1 connector body. Suggested move: move C32 0.9mm down.
+  - C33 intrudes 0.9mm into J1 connector body. Suggested move: move C33 0.9mm down.
+  - C34 intrudes 0.9mm into J1 connector body. Suggested move: move C34 0.9mm down.
+  - C9 intrudes 0.9mm into J1 connector body. Suggested move: move C9 0.9mm down.
+  - C10 intrudes 0.9mm into J1 connector body. Suggested move: move C10 0.9mm down.
+  - C12 intrudes 0.9mm into J1 connector body. Suggested move: move C12 0.9mm down.
+  - C15 intrudes 0.9mm into J1 connector body. Suggested move: move C15 0.9mm down.
+  - C19 intrudes 0.9mm into J1 connector body. Suggested move: move C19 0.9mm down.
+  - C20 intrudes 0.9mm into J1 connector body. Suggested move: move C20 0.9mm down.
+  - C21 intrudes 0.9mm into J1 connector body. Suggested move: move C21 0.9mm down.
+  - C22 intrudes 0.9mm into J1 connector body. Suggested move: move C22 0.9mm down.
+  - C23 intrudes 0.9mm into J1 connector body. Suggested move: move C23 0.9mm down.
+  - C25 intrudes 0.9mm into J1 connector body. Suggested move: move C25 0.9mm down.
+  - C26 intrudes 0.9mm into J1 connector body. Suggested move: move C26 0.9mm down.
+  - C27 intrudes 0.9mm into J1 connector body. Suggested move: move C27 0.9mm down.
+  - C28 intrudes 0.9mm into J1 connector body. Suggested move: move C28 0.9mm down.
+  - R1 intrudes 0.864mm into J1 connector body. Suggested move: move R1 0.864mm down.
+  - R2 intrudes 0.864mm into J1 connector body. Suggested move: move R2 0.864mm down.
+  - R3 intrudes 0.864mm into J1 connector body. Suggested move: move R3 0.864mm down.
+  - R4 intrudes 0.864mm into J1 connector body. Suggested move: move R4 0.864mm down.
+  - R56 intrudes 0.864mm into J1 connector body. Suggested move: move R56 0.864mm down.
+  - R57 intrudes 0.864mm into J1 connector body. Suggested move: move R57 0.864mm down.
+  - R58 intrudes 0.864mm into J1 connector body. Suggested move: move R58 0.864mm down.
+  - R59 intrudes 0.864mm into J1 connector body. Suggested move: move R59 0.864mm down.
+  - R60 intrudes 0.864mm into J1 connector body. Suggested move: move R60 0.864mm down.
+  - R61 intrudes 0.864mm into J1 connector body. Suggested move: move R61 0.864mm down.
+  - R62 intrudes 0.864mm into J1 connector body. Suggested move: move R62 0.864mm down.
+  - R63 intrudes 0.864mm into J1 connector body. Suggested move: move R63 0.864mm down.
+  - R64 intrudes 0.864mm into J1 connector body. Suggested move: move R64 0.864mm down.
+  - R66 intrudes 0.864mm into J1 connector body. Suggested move: move R66 0.864mm down.
+  - R67 intrudes 0.864mm into J1 connector body. Suggested move: move R67 0.864mm down.
+  - R5 intrudes 0.864mm into J1 connector body. Suggested move: move R5 0.864mm down.
+  - R6 intrudes 0.864mm into J1 connector body. Suggested move: move R6 0.864mm down.
+  - R7 intrudes 0.864mm into J1 connector body. Suggested move: move R7 0.864mm down.
+  - R8 intrudes 0.864mm into J1 connector body. Suggested move: move R8 0.864mm down.
+  - R9 intrudes 0.864mm into J1 connector body. Suggested move: move R9 0.864mm down.
+  - R10 intrudes 0.864mm into J1 connector body. Suggested move: move R10 0.864mm down.
+  - R11 intrudes 0.864mm into J1 connector body. Suggested move: move R11 0.864mm down.
+  - R12 intrudes 0.864mm into J1 connector body. Suggested move: move R12 0.864mm down.
+  - R13 intrudes 0.864mm into J1 connector body. Suggested move: move R13 0.864mm down.
+  - R16 intrudes 0.864mm into J1 connector body. Suggested move: move R16 0.864mm down.
+  - R17 intrudes 0.864mm into J1 connector body. Suggested move: move R17 0.864mm down.
+  - R18 intrudes 0.864mm into J1 connector body. Suggested move: move R18 0.864mm down.
+  - R55 intrudes 0.864mm into J1 connector body. Suggested move: move R55 0.864mm down.
+  - R19 intrudes 0.864mm into J1 connector body. Suggested move: move R19 0.864mm down.
+  - R20 intrudes 0.864mm into J1 connector body. Suggested move: move R20 0.864mm down.
+  - R21 intrudes 0.864mm into J1 connector body. Suggested move: move R21 0.864mm down.
+  - R22 intrudes 0.864mm into J1 connector body. Suggested move: move R22 0.864mm down.
+  - R23 intrudes 0.864mm into J1 connector body. Suggested move: move R23 0.864mm down.
+  - R24 intrudes 0.864mm into J1 connector body. Suggested move: move R24 0.864mm down.
+  - R25 intrudes 0.864mm into J1 connector body. Suggested move: move R25 0.864mm down.
+  - R26 intrudes 0.864mm into J1 connector body. Suggested move: move R26 0.864mm down.
+  - R29 intrudes 0.864mm into J1 connector body. Suggested move: move R29 0.864mm down.
+  - R30 intrudes 0.864mm into J1 connector body. Suggested move: move R30 0.864mm down.
+  - R31 intrudes 0.864mm into J1 connector body. Suggested move: move R31 0.864mm down.
+  - R32 intrudes 0.864mm into J1 connector body. Suggested move: move R32 0.864mm down.
+  - R33 intrudes 0.864mm into J1 connector body. Suggested move: move R33 0.864mm down.
+  - R34 intrudes 0.864mm into J1 connector body. Suggested move: move R34 0.864mm down.
+  - R39 intrudes 0.864mm into J1 connector body. Suggested move: move R39 0.864mm down.
+  - R65 intrudes 0.864mm into J1 connector body. Suggested move: move R65 0.864mm down.
+  - R40 intrudes 0.864mm into J1 connector body. Suggested move: move R40 0.864mm down.
+  - R51 intrudes 0.864mm into J1 connector body. Suggested move: move R51 0.864mm down.
+  - R41 intrudes 0.864mm into J1 connector body. Suggested move: move R41 0.864mm down.
+  - R42 intrudes 0.864mm into J1 connector body. Suggested move: move R42 0.864mm down.
+  - R43 intrudes 0.864mm into J1 connector body. Suggested move: move R43 0.864mm down.
+  - R44 intrudes 0.864mm into J1 connector body. Suggested move: move R44 0.864mm down.
+  - R49 intrudes 0.864mm into J1 connector body. Suggested move: move R49 0.864mm down.
+  - R50 intrudes 0.54mm into J1 connector body. Suggested move: move R50 0.54mm down.
+  - R54 intrudes 0.54mm into J1 connector body. Suggested move: move R54 0.54mm down.
+  - J1 and U5 pad overlap by 0.3mm. Suggested move: move U5 0.3mm right.
+  - J1 and U6 pad overlap by 0.3mm. Suggested move: move U6 0.3mm right.
+  - J1 and U9 pad overlap by 0.3mm. Suggested move: move U9 0.3mm right.
+  - J1 and U1 pad overlap by 0.28mm. Suggested move: move U1 0.28mm right.
+  - J1 and U2 pad overlap by 0.257mm. Suggested move: move U2 0.257mm right.
+  - J1 and U3 pad overlap by 0.257mm. Suggested move: move U3 0.257mm right.
+  - J1 and U11 pad overlap by 0.257mm. Suggested move: move U11 0.257mm left.
+  - J1 and U10 pad overlap by 0.247mm. Suggested move: move U10 0.247mm right.
+- U1
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-2.35mm, maxX=2.35mm, minY=-2.35mm, maxY=2.35mm); size=(width=4.7mm, height=4.7mm); anchor_alignment="center"
+  board edge status: 22.65mm inside top edge
+  issues:
+  - U1 intrudes 4.7mm into J1 connector body. Suggested move: move U1 4.7mm right.
+  - U11 intrudes 4.7mm into U1 connector body. Suggested move: move U11 4.7mm left.
+  - U4 intrudes 4.7mm into U1 connector body. Suggested move: move U4 4.7mm right.
+  - RV1 intrudes 4.7mm into U1 connector body. Suggested move: move RV1 4.7mm right.
+  - U10 intrudes 4.7mm into U1 connector body. Suggested move: move U10 4.7mm right.
+  - U5 intrudes 4.384mm into U1 connector body. Suggested move: move U5 4.384mm right.
+  - U6 intrudes 4.378mm into U1 connector body. Suggested move: move U6 4.378mm right.
+  - U9 intrudes 4.378mm into U1 connector body. Suggested move: move U9 4.378mm right.
+  - L1 intrudes 4mm into U1 connector body. Suggested move: move L1 4mm down.
+  - R45 intrudes 3.456mm into U1 connector body. Suggested move: move R45 3.456mm down.
+  - R46 intrudes 3.456mm into U1 connector body. Suggested move: move R46 3.456mm down.
+  - R47 intrudes 3.456mm into U1 connector body. Suggested move: move R47 3.456mm down.
+  - R48 intrudes 3.456mm into U1 connector body. Suggested move: move R48 3.456mm down.
+  - SW1 intrudes 3.4mm into U1 connector body. Suggested move: move SW1 3.4mm right.
+  - U1 and U4 pad overlap by 2.585mm. Suggested move: move U4 2.585mm right.
+  - U1 and U10 pad overlap by 2.46mm. Suggested move: move U10 2.46mm down.
+  - C13 intrudes 2.7mm into U1 connector body. Suggested move: move C13 2.7mm down.
+  - C14 intrudes 2.7mm into U1 connector body. Suggested move: move C14 2.7mm down.
+  - U1 and U5 pad overlap by 2mm. Suggested move: move U5 2mm right.
+  - D2 intrudes 2.55mm into U1 connector body. Suggested move: move D2 2.55mm down.
+  - Q6 intrudes 2.55mm into U1 connector body. Suggested move: move Q6 2.55mm down.
+  - Q7 intrudes 2.55mm into U1 connector body. Suggested move: move Q7 2.55mm down.
+  - Q8 intrudes 2.55mm into U1 connector body. Suggested move: move Q8 2.55mm down.
+  - Q1 intrudes 2.55mm into U1 connector body. Suggested move: move Q1 2.55mm down.
+  - Q2 intrudes 2.55mm into U1 connector body. Suggested move: move Q2 2.55mm down.
+  - Q3 intrudes 2.55mm into U1 connector body. Suggested move: move Q3 2.55mm down.
+  - Q4 intrudes 2.55mm into U1 connector body. Suggested move: move Q4 2.55mm down.
+  - Q5 intrudes 2.55mm into U1 connector body. Suggested move: move Q5 2.55mm down.
+  - J2 intrudes 2.5mm into U1 connector body. Suggested move: move J2 2.5mm up.
+  - U8 intrudes 2.5mm into U1 connector body. Suggested move: move U8 2.5mm down.
+  - D10 intrudes 2.4mm into U1 connector body. Suggested move: move D10 2.4mm down.
+  - D11 intrudes 2.4mm into U1 connector body. Suggested move: move D11 2.4mm down.
+  - U2 intrudes 2.314mm into U1 connector body. Suggested move: move U2 2.314mm right.
+  - U3 intrudes 2.314mm into U1 connector body. Suggested move: move U3 2.314mm right.
+  - D1 intrudes 2.192mm into U1 connector body. Suggested move: move D1 2.192mm down.
+  - SW2 intrudes 2.032mm into U1 connector body. Suggested move: move SW2 2.032mm right.
+  - U1 and U2 pad overlap by 1.5mm. Suggested move: move U2 1.5mm down.
+  - U1 and U3 pad overlap by 1.5mm. Suggested move: move U3 1.5mm down.
+  - C16 intrudes 1.728mm into U1 connector body. Suggested move: move C16 1.728mm down.
+  - C17 intrudes 1.728mm into U1 connector body. Suggested move: move C17 1.728mm down.
+  - C29 intrudes 1.728mm into U1 connector body. Suggested move: move C29 1.728mm down.
+  - R68 intrudes 1.701mm into U1 connector body. Suggested move: move R68 1.701mm down.
+  - C18 intrudes 1.65mm into U1 connector body. Suggested move: move C18 1.65mm down.
+  - D4 intrudes 1.539mm into U1 connector body. Suggested move: move D4 1.539mm down.
+  - D5 intrudes 1.539mm into U1 connector body. Suggested move: move D5 1.539mm down.
+  - U1 and C1 pad overlap by 1.118mm. Suggested move: move C1 1.118mm right.
+  - U1 and C6 pad overlap by 1.118mm. Suggested move: move C6 1.118mm right.
+  - U1 and C7 pad overlap by 1.118mm. Suggested move: move C7 1.118mm right.
+  - U1 and C31 pad overlap by 1.118mm. Suggested move: move C31 1.118mm right.
+  - U1 and C11 pad overlap by 1.118mm. Suggested move: move C11 1.118mm right.
+  - C1 intrudes 1.35mm into U1 connector body. Suggested move: move C1 1.35mm down.
+  - C6 intrudes 1.35mm into U1 connector body. Suggested move: move C6 1.35mm down.
+  - C7 intrudes 1.35mm into U1 connector body. Suggested move: move C7 1.35mm down.
+  - C31 intrudes 1.35mm into U1 connector body. Suggested move: move C31 1.35mm down.
+  - C11 intrudes 1.35mm into U1 connector body. Suggested move: move C11 1.35mm down.
+  - U1 and LED2 pad overlap by 0.9mm. Suggested move: move LED2 0.9mm right.
+  - U1 and LED3 pad overlap by 0.9mm. Suggested move: move LED3 0.9mm right.
+  - U1 and LED1 pad overlap by 0.9mm. Suggested move: move LED1 0.9mm right.
+  - D3 intrudes 1.15mm into U1 connector body. Suggested move: move D3 1.15mm down.
+  - D9 intrudes 1.15mm into U1 connector body. Suggested move: move D9 1.15mm down.
+  - U1 and R1 pad overlap by 0.806mm. Suggested move: move R1 0.806mm right.
+  - U1 and R2 pad overlap by 0.806mm. Suggested move: move R2 0.806mm right.
+  - U1 and R3 pad overlap by 0.806mm. Suggested move: move R3 0.806mm right.
+  - U1 and R4 pad overlap by 0.806mm. Suggested move: move R4 0.806mm right.
+  - U1 and R56 pad overlap by 0.806mm. Suggested move: move R56 0.806mm right.
+  - U1 and R57 pad overlap by 0.806mm. Suggested move: move R57 0.806mm right.
+  - U1 and R58 pad overlap by 0.806mm. Suggested move: move R58 0.806mm right.
+  - U1 and R59 pad overlap by 0.806mm. Suggested move: move R59 0.806mm right.
+  - U1 and R60 pad overlap by 0.806mm. Suggested move: move R60 0.806mm right.
+  - U1 and R61 pad overlap by 0.806mm. Suggested move: move R61 0.806mm right.
+  - U1 and R62 pad overlap by 0.806mm. Suggested move: move R62 0.806mm right.
+  - U1 and R63 pad overlap by 0.806mm. Suggested move: move R63 0.806mm right.
+  - U1 and R64 pad overlap by 0.806mm. Suggested move: move R64 0.806mm right.
+  - U1 and R66 pad overlap by 0.806mm. Suggested move: move R66 0.806mm right.
+  - U1 and R67 pad overlap by 0.806mm. Suggested move: move R67 0.806mm right.
+  - U1 and R5 pad overlap by 0.806mm. Suggested move: move R5 0.806mm right.
+  - U1 and R6 pad overlap by 0.806mm. Suggested move: move R6 0.806mm right.
+  - U1 and R7 pad overlap by 0.806mm. Suggested move: move R7 0.806mm right.
+  - U1 and R8 pad overlap by 0.806mm. Suggested move: move R8 0.806mm right.
+  - U1 and R9 pad overlap by 0.806mm. Suggested move: move R9 0.806mm right.
+  - U1 and R10 pad overlap by 0.806mm. Suggested move: move R10 0.806mm right.
+  - U1 and R11 pad overlap by 0.806mm. Suggested move: move R11 0.806mm right.
+  - U1 and R12 pad overlap by 0.806mm. Suggested move: move R12 0.806mm right.
+  - U1 and R13 pad overlap by 0.806mm. Suggested move: move R13 0.806mm right.
+  - U1 and R16 pad overlap by 0.806mm. Suggested move: move R16 0.806mm right.
+  - U1 and R17 pad overlap by 0.806mm. Suggested move: move R17 0.806mm right.
+  - U1 and R18 pad overlap by 0.806mm. Suggested move: move R18 0.806mm right.
+  - U1 and R55 pad overlap by 0.806mm. Suggested move: move R55 0.806mm right.
+  - U1 and R19 pad overlap by 0.806mm. Suggested move: move R19 0.806mm right.
+  - U1 and R20 pad overlap by 0.806mm. Suggested move: move R20 0.806mm right.
+  - U1 and R21 pad overlap by 0.806mm. Suggested move: move R21 0.806mm right.
+  - U1 and R22 pad overlap by 0.806mm. Suggested move: move R22 0.806mm right.
+  - U1 and R23 pad overlap by 0.806mm. Suggested move: move R23 0.806mm right.
+  - U1 and R24 pad overlap by 0.806mm. Suggested move: move R24 0.806mm right.
+  - U1 and R25 pad overlap by 0.806mm. Suggested move: move R25 0.806mm right.
+  - U1 and R26 pad overlap by 0.806mm. Suggested move: move R26 0.806mm right.
+  - U1 and R29 pad overlap by 0.806mm. Suggested move: move R29 0.806mm right.
+  - U1 and R30 pad overlap by 0.806mm. Suggested move: move R30 0.806mm right.
+  - U1 and R31 pad overlap by 0.806mm. Suggested move: move R31 0.806mm right.
+  - U1 and R32 pad overlap by 0.806mm. Suggested move: move R32 0.806mm right.
+  - U1 and R33 pad overlap by 0.806mm. Suggested move: move R33 0.806mm right.
+  - U1 and R34 pad overlap by 0.806mm. Suggested move: move R34 0.806mm right.
+  - U1 and R39 pad overlap by 0.806mm. Suggested move: move R39 0.806mm right.
+  - U1 and R65 pad overlap by 0.806mm. Suggested move: move R65 0.806mm right.
+  - U1 and R40 pad overlap by 0.806mm. Suggested move: move R40 0.806mm right.
+  - U1 and R51 pad overlap by 0.806mm. Suggested move: move R51 0.806mm right.
+  - U1 and R41 pad overlap by 0.806mm. Suggested move: move R41 0.806mm right.
+  - U1 and R42 pad overlap by 0.806mm. Suggested move: move R42 0.806mm right.
+  - U1 and R43 pad overlap by 0.806mm. Suggested move: move R43 0.806mm right.
+  - U1 and R44 pad overlap by 0.806mm. Suggested move: move R44 0.806mm right.
+  - U1 and R49 pad overlap by 0.806mm. Suggested move: move R49 0.806mm right.
+  - U1 and C2 pad overlap by 0.8mm. Suggested move: move C2 0.8mm right.
+  - U1 and C3 pad overlap by 0.8mm. Suggested move: move C3 0.8mm right.
+  - U1 and C4 pad overlap by 0.8mm. Suggested move: move C4 0.8mm right.
+  - U1 and C5 pad overlap by 0.8mm. Suggested move: move C5 0.8mm right.
+  - U1 and C8 pad overlap by 0.8mm. Suggested move: move C8 0.8mm right.
+  - U1 and C30 pad overlap by 0.8mm. Suggested move: move C30 0.8mm right.
+  - U1 and C32 pad overlap by 0.8mm. Suggested move: move C32 0.8mm right.
+  - U1 and C33 pad overlap by 0.8mm. Suggested move: move C33 0.8mm right.
+  - U1 and C34 pad overlap by 0.8mm. Suggested move: move C34 0.8mm right.
+  - U1 and C9 pad overlap by 0.8mm. Suggested move: move C9 0.8mm right.
+  - U1 and C10 pad overlap by 0.8mm. Suggested move: move C10 0.8mm right.
+  - U1 and C12 pad overlap by 0.8mm. Suggested move: move C12 0.8mm right.
+  - U1 and C15 pad overlap by 0.8mm. Suggested move: move C15 0.8mm right.
+  - U1 and C19 pad overlap by 0.8mm. Suggested move: move C19 0.8mm right.
+  - U1 and C20 pad overlap by 0.8mm. Suggested move: move C20 0.8mm right.
+  - U1 and C21 pad overlap by 0.8mm. Suggested move: move C21 0.8mm right.
+  - U1 and C22 pad overlap by 0.8mm. Suggested move: move C22 0.8mm right.
+  - U1 and C23 pad overlap by 0.8mm. Suggested move: move C23 0.8mm right.
+  - U1 and C25 pad overlap by 0.8mm. Suggested move: move C25 0.8mm right.
+  - U1 and C26 pad overlap by 0.8mm. Suggested move: move C26 0.8mm right.
+  - U1 and C27 pad overlap by 0.8mm. Suggested move: move C27 0.8mm right.
+  - U1 and C28 pad overlap by 0.8mm. Suggested move: move C28 0.8mm right.
+  - U1 and C13 pad overlap by 0.713mm. Suggested move: move C13 0.713mm right.
+  - U1 and C14 pad overlap by 0.713mm. Suggested move: move C14 0.713mm right.
+  - LED2 intrudes 1mm into U1 connector body. Suggested move: move LED2 1mm down.
+  - LED3 intrudes 1mm into U1 connector body. Suggested move: move LED3 1mm down.
+  - LED1 intrudes 1mm into U1 connector body. Suggested move: move LED1 1mm down.
+  - D6 intrudes 0.95mm into U1 connector body. Suggested move: move D6 0.95mm down.
+  - D7 intrudes 0.95mm into U1 connector body. Suggested move: move D7 0.95mm down.
+  - D8 intrudes 0.95mm into U1 connector body. Suggested move: move D8 0.95mm down.
+  - U1 and D2 pad overlap by 0.65mm. Suggested move: move D2 0.65mm down.
+  - U1 and Q6 pad overlap by 0.65mm. Suggested move: move Q6 0.65mm down.
+  - U1 and Q7 pad overlap by 0.65mm. Suggested move: move Q7 0.65mm down.
+  - U1 and Q8 pad overlap by 0.65mm. Suggested move: move Q8 0.65mm down.
+  - U1 and Q1 pad overlap by 0.65mm. Suggested move: move Q1 0.65mm down.
+  - U1 and Q2 pad overlap by 0.65mm. Suggested move: move Q2 0.65mm down.
+  - U1 and Q3 pad overlap by 0.65mm. Suggested move: move Q3 0.65mm down.
+  - U1 and Q4 pad overlap by 0.65mm. Suggested move: move Q4 0.65mm down.
+  - U1 and Q5 pad overlap by 0.65mm. Suggested move: move Q5 0.65mm down.
+  - C2 intrudes 0.9mm into U1 connector body. Suggested move: move C2 0.9mm down.
+  - C3 intrudes 0.9mm into U1 connector body. Suggested move: move C3 0.9mm down.
+  - C4 intrudes 0.9mm into U1 connector body. Suggested move: move C4 0.9mm down.
+  - C5 intrudes 0.9mm into U1 connector body. Suggested move: move C5 0.9mm down.
+  - C8 intrudes 0.9mm into U1 connector body. Suggested move: move C8 0.9mm down.
+  - C30 intrudes 0.9mm into U1 connector body. Suggested move: move C30 0.9mm down.
+  - C32 intrudes 0.9mm into U1 connector body. Suggested move: move C32 0.9mm down.
+  - C33 intrudes 0.9mm into U1 connector body. Suggested move: move C33 0.9mm down.
+  - C34 intrudes 0.9mm into U1 connector body. Suggested move: move C34 0.9mm down.
+  - C9 intrudes 0.9mm into U1 connector body. Suggested move: move C9 0.9mm down.
+  - C10 intrudes 0.9mm into U1 connector body. Suggested move: move C10 0.9mm down.
+  - C12 intrudes 0.9mm into U1 connector body. Suggested move: move C12 0.9mm down.
+  - C15 intrudes 0.9mm into U1 connector body. Suggested move: move C15 0.9mm down.
+  - C19 intrudes 0.9mm into U1 connector body. Suggested move: move C19 0.9mm down.
+  - C20 intrudes 0.9mm into U1 connector body. Suggested move: move C20 0.9mm down.
+  - C21 intrudes 0.9mm into U1 connector body. Suggested move: move C21 0.9mm down.
+  - C22 intrudes 0.9mm into U1 connector body. Suggested move: move C22 0.9mm down.
+  - C23 intrudes 0.9mm into U1 connector body. Suggested move: move C23 0.9mm down.
+  - C25 intrudes 0.9mm into U1 connector body. Suggested move: move C25 0.9mm down.
+  - C26 intrudes 0.9mm into U1 connector body. Suggested move: move C26 0.9mm down.
+  - C27 intrudes 0.9mm into U1 connector body. Suggested move: move C27 0.9mm down.
+  - C28 intrudes 0.9mm into U1 connector body. Suggested move: move C28 0.9mm down.
+  - U1 and U8 pad overlap by 0.6mm. Suggested move: move U8 0.6mm down.
+  - R1 intrudes 0.864mm into U1 connector body. Suggested move: move R1 0.864mm down.
+  - R2 intrudes 0.864mm into U1 connector body. Suggested move: move R2 0.864mm down.
+  - R3 intrudes 0.864mm into U1 connector body. Suggested move: move R3 0.864mm down.
+  - R4 intrudes 0.864mm into U1 connector body. Suggested move: move R4 0.864mm down.
+  - R56 intrudes 0.864mm into U1 connector body. Suggested move: move R56 0.864mm down.
+  - R57 intrudes 0.864mm into U1 connector body. Suggested move: move R57 0.864mm down.
+  - R58 intrudes 0.864mm into U1 connector body. Suggested move: move R58 0.864mm down.
+  - R59 intrudes 0.864mm into U1 connector body. Suggested move: move R59 0.864mm down.
+  - R60 intrudes 0.864mm into U1 connector body. Suggested move: move R60 0.864mm down.
+  - R61 intrudes 0.864mm into U1 connector body. Suggested move: move R61 0.864mm down.
+  - R62 intrudes 0.864mm into U1 connector body. Suggested move: move R62 0.864mm down.
+  - R63 intrudes 0.864mm into U1 connector body. Suggested move: move R63 0.864mm down.
+  - R64 intrudes 0.864mm into U1 connector body. Suggested move: move R64 0.864mm down.
+  - R66 intrudes 0.864mm into U1 connector body. Suggested move: move R66 0.864mm down.
+  - R67 intrudes 0.864mm into U1 connector body. Suggested move: move R67 0.864mm down.
+  - R5 intrudes 0.864mm into U1 connector body. Suggested move: move R5 0.864mm down.
+  - R6 intrudes 0.864mm into U1 connector body. Suggested move: move R6 0.864mm down.
+  - R7 intrudes 0.864mm into U1 connector body. Suggested move: move R7 0.864mm down.
+  - R8 intrudes 0.864mm into U1 connector body. Suggested move: move R8 0.864mm down.
+  - R9 intrudes 0.864mm into U1 connector body. Suggested move: move R9 0.864mm down.
+  - R10 intrudes 0.864mm into U1 connector body. Suggested move: move R10 0.864mm down.
+  - R11 intrudes 0.864mm into U1 connector body. Suggested move: move R11 0.864mm down.
+  - R12 intrudes 0.864mm into U1 connector body. Suggested move: move R12 0.864mm down.
+  - R13 intrudes 0.864mm into U1 connector body. Suggested move: move R13 0.864mm down.
+  - R16 intrudes 0.864mm into U1 connector body. Suggested move: move R16 0.864mm down.
+  - R17 intrudes 0.864mm into U1 connector body. Suggested move: move R17 0.864mm down.
+  - R18 intrudes 0.864mm into U1 connector body. Suggested move: move R18 0.864mm down.
+  - R55 intrudes 0.864mm into U1 connector body. Suggested move: move R55 0.864mm down.
+  - R19 intrudes 0.864mm into U1 connector body. Suggested move: move R19 0.864mm down.
+  - R20 intrudes 0.864mm into U1 connector body. Suggested move: move R20 0.864mm down.
+  - R21 intrudes 0.864mm into U1 connector body. Suggested move: move R21 0.864mm down.
+  - R22 intrudes 0.864mm into U1 connector body. Suggested move: move R22 0.864mm down.
+  - R23 intrudes 0.864mm into U1 connector body. Suggested move: move R23 0.864mm down.
+  - R24 intrudes 0.864mm into U1 connector body. Suggested move: move R24 0.864mm down.
+  - R25 intrudes 0.864mm into U1 connector body. Suggested move: move R25 0.864mm down.
+  - R26 intrudes 0.864mm into U1 connector body. Suggested move: move R26 0.864mm down.
+  - R29 intrudes 0.864mm into U1 connector body. Suggested move: move R29 0.864mm down.
+  - R30 intrudes 0.864mm into U1 connector body. Suggested move: move R30 0.864mm down.
+  - R31 intrudes 0.864mm into U1 connector body. Suggested move: move R31 0.864mm down.
+  - R32 intrudes 0.864mm into U1 connector body. Suggested move: move R32 0.864mm down.
+  - R33 intrudes 0.864mm into U1 connector body. Suggested move: move R33 0.864mm down.
+  - R34 intrudes 0.864mm into U1 connector body. Suggested move: move R34 0.864mm down.
+  - R39 intrudes 0.864mm into U1 connector body. Suggested move: move R39 0.864mm down.
+  - R65 intrudes 0.864mm into U1 connector body. Suggested move: move R65 0.864mm down.
+  - R40 intrudes 0.864mm into U1 connector body. Suggested move: move R40 0.864mm down.
+  - R51 intrudes 0.864mm into U1 connector body. Suggested move: move R51 0.864mm down.
+  - R41 intrudes 0.864mm into U1 connector body. Suggested move: move R41 0.864mm down.
+  - R42 intrudes 0.864mm into U1 connector body. Suggested move: move R42 0.864mm down.
+  - R43 intrudes 0.864mm into U1 connector body. Suggested move: move R43 0.864mm down.
+  - R44 intrudes 0.864mm into U1 connector body. Suggested move: move R44 0.864mm down.
+  - R49 intrudes 0.864mm into U1 connector body. Suggested move: move R49 0.864mm down.
+  - U1 and C16 pad overlap by 0.563mm. Suggested move: move C16 0.563mm right.
+  - U1 and C17 pad overlap by 0.563mm. Suggested move: move C17 0.563mm right.
+  - U1 and C29 pad overlap by 0.563mm. Suggested move: move C29 0.563mm right.
+  - U1 and R50 pad overlap by 0.54mm. Suggested move: move R50 0.54mm down.
+  - U1 and R54 pad overlap by 0.54mm. Suggested move: move R54 0.54mm down.
+  - U1 and R68 pad overlap by 0.538mm. Suggested move: move R68 0.538mm right.
+  - R50 intrudes 0.54mm into U1 connector body. Suggested move: move R50 0.54mm down.
+  - R54 intrudes 0.54mm into U1 connector body. Suggested move: move R54 0.54mm down.
+  - U1 and D6 pad overlap by 0.313mm. Suggested move: move D6 0.313mm right.
+  - U1 and D7 pad overlap by 0.313mm. Suggested move: move D7 0.313mm right.
+  - U1 and D8 pad overlap by 0.313mm. Suggested move: move D8 0.313mm right.
+  - J1 and U1 pad overlap by 0.28mm. Suggested move: move U1 0.28mm right.
+  - U1 and D1 pad overlap by 0.28mm. Suggested move: move D1 0.28mm down.
+  - U1 and D3 pad overlap by 0.28mm. Suggested move: move D3 0.28mm down.
+  - U1 and D4 pad overlap by 0.28mm. Suggested move: move D4 0.28mm down.
+  - U1 and D5 pad overlap by 0.28mm. Suggested move: move D5 0.28mm down.
+  - U1 and U6 pad overlap by 0.28mm. Suggested move: move U6 0.28mm right.
+  - U1 and U9 pad overlap by 0.28mm. Suggested move: move U9 0.28mm right.
+  - U1 and D10 pad overlap by 0.28mm. Suggested move: move D10 0.28mm down.
+  - U1 and D11 pad overlap by 0.28mm. Suggested move: move D11 0.28mm down.
+  - U1 and J2 pad overlap by 0.28mm. Suggested move: move J2 0.28mm up.
+  - U1 and D9 pad overlap by 0.28mm. Suggested move: move D9 0.28mm down.
+  - U1 and RV1 pad overlap by 0.25mm. Suggested move: move RV1 0.25mm down.
+  - U1 and U11 pad overlap by 0.247mm. Suggested move: move U11 0.247mm left.
+  - U1 and C18 pad overlap by 0.1mm. Suggested move: move C18 0.1mm right.
+- U2
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-1.157mm, maxX=1.157mm, minY=-2.962mm, maxY=2.962mm); size=(width=2.314mm, height=5.924mm); anchor_alignment="center"
+  board edge status: 22.038mm inside top edge
+  issues:
+  - U2 intrudes 2.314mm into J1 connector body. Suggested move: move U2 2.314mm right.
+  - U2 intrudes 2.314mm into U1 connector body. Suggested move: move U2 2.314mm right.
+  - U2 intrudes 2.314mm into J2 connector body. Suggested move: move U2 2.314mm left.
+  - U1 and U2 pad overlap by 1.5mm. Suggested move: move U2 1.5mm down.
+  - U2 and U3 pad overlap by 1.5mm. Suggested move: move U3 1.5mm down.
+  - U2 and U4 pad overlap by 1.5mm. Suggested move: move U2 1.5mm down.
+  - U2 and U5 pad overlap by 1.5mm. Suggested move: move U2 1.5mm down.
+  - U2 and U10 pad overlap by 1.5mm. Suggested move: move U2 1.5mm down.
+  - U2 and L1 footprint intrusion by 2.314mm. Suggested move: move U2 2.314mm right.
+  - U2 and SW1 footprint intrusion by 2.314mm. Suggested move: move U2 2.314mm right.
+  - U2 and D10 footprint intrusion by 2.314mm. Suggested move: move U2 2.314mm right.
+  - U2 and D11 footprint intrusion by 2.314mm. Suggested move: move U2 2.314mm right.
+  - U2 and R45 footprint intrusion by 2.314mm. Suggested move: move U2 2.314mm right.
+  - U2 and R46 footprint intrusion by 2.314mm. Suggested move: move U2 2.314mm right.
+  - U2 and R47 footprint intrusion by 2.314mm. Suggested move: move U2 2.314mm right.
+  - U2 and R48 footprint intrusion by 2.314mm. Suggested move: move U2 2.314mm right.
+  - U2 and D1 footprint intrusion by 2.192mm. Suggested move: move U2 2.192mm down.
+  - U2 and SW2 footprint intrusion by 2.032mm. Suggested move: move U2 2.032mm right.
+  - U2 and C1 pad overlap by 0.605mm. Suggested move: move C1 0.605mm right.
+  - U2 and C6 pad overlap by 0.605mm. Suggested move: move C6 0.605mm right.
+  - U2 and C7 pad overlap by 0.605mm. Suggested move: move C7 0.605mm right.
+  - U2 and C31 pad overlap by 0.605mm. Suggested move: move C31 0.605mm right.
+  - U2 and C11 pad overlap by 0.605mm. Suggested move: move C11 0.605mm right.
+  - U2 and C2 pad overlap by 0.6mm. Suggested move: move C2 0.6mm right.
+  - U2 and C3 pad overlap by 0.6mm. Suggested move: move C3 0.6mm right.
+  - U2 and C4 pad overlap by 0.6mm. Suggested move: move C4 0.6mm right.
+  - U2 and C5 pad overlap by 0.6mm. Suggested move: move C5 0.6mm right.
+  - U2 and C8 pad overlap by 0.6mm. Suggested move: move C8 0.6mm right.
+  - U2 and C30 pad overlap by 0.6mm. Suggested move: move C30 0.6mm right.
+  - U2 and C32 pad overlap by 0.6mm. Suggested move: move C32 0.6mm right.
+  - U2 and C33 pad overlap by 0.6mm. Suggested move: move C33 0.6mm right.
+  - U2 and C34 pad overlap by 0.6mm. Suggested move: move C34 0.6mm right.
+  - U2 and C9 pad overlap by 0.6mm. Suggested move: move C9 0.6mm right.
+  - U2 and C10 pad overlap by 0.6mm. Suggested move: move C10 0.6mm right.
+  - U2 and C12 pad overlap by 0.6mm. Suggested move: move C12 0.6mm right.
+  - U2 and C15 pad overlap by 0.6mm. Suggested move: move C15 0.6mm right.
+  - U2 and C19 pad overlap by 0.6mm. Suggested move: move C19 0.6mm right.
+  - U2 and C20 pad overlap by 0.6mm. Suggested move: move C20 0.6mm right.
+  - U2 and C21 pad overlap by 0.6mm. Suggested move: move C21 0.6mm right.
+  - U2 and C22 pad overlap by 0.6mm. Suggested move: move C22 0.6mm right.
+  - U2 and C23 pad overlap by 0.6mm. Suggested move: move C23 0.6mm right.
+  - U2 and C25 pad overlap by 0.6mm. Suggested move: move C25 0.6mm right.
+  - U2 and C26 pad overlap by 0.6mm. Suggested move: move C26 0.6mm right.
+  - U2 and C27 pad overlap by 0.6mm. Suggested move: move C27 0.6mm right.
+  - U2 and C28 pad overlap by 0.6mm. Suggested move: move C28 0.6mm right.
+  - U2 and R1 pad overlap by 0.55mm. Suggested move: move R1 0.55mm right.
+  - U2 and R2 pad overlap by 0.55mm. Suggested move: move R2 0.55mm right.
+  - U2 and R3 pad overlap by 0.55mm. Suggested move: move R3 0.55mm right.
+  - U2 and R4 pad overlap by 0.55mm. Suggested move: move R4 0.55mm right.
+  - U2 and R56 pad overlap by 0.55mm. Suggested move: move R56 0.55mm right.
+  - U2 and R57 pad overlap by 0.55mm. Suggested move: move R57 0.55mm right.
+  - U2 and R58 pad overlap by 0.55mm. Suggested move: move R58 0.55mm right.
+  - U2 and R59 pad overlap by 0.55mm. Suggested move: move R59 0.55mm right.
+  - U2 and R60 pad overlap by 0.55mm. Suggested move: move R60 0.55mm right.
+  - U2 and R61 pad overlap by 0.55mm. Suggested move: move R61 0.55mm right.
+  - U2 and R62 pad overlap by 0.55mm. Suggested move: move R62 0.55mm right.
+  - U2 and R63 pad overlap by 0.55mm. Suggested move: move R63 0.55mm right.
+  - U2 and R64 pad overlap by 0.55mm. Suggested move: move R64 0.55mm right.
+  - U2 and R66 pad overlap by 0.55mm. Suggested move: move R66 0.55mm right.
+  - U2 and R67 pad overlap by 0.55mm. Suggested move: move R67 0.55mm right.
+  - U2 and R5 pad overlap by 0.55mm. Suggested move: move R5 0.55mm right.
+  - U2 and R6 pad overlap by 0.55mm. Suggested move: move R6 0.55mm right.
+  - U2 and R7 pad overlap by 0.55mm. Suggested move: move R7 0.55mm right.
+  - U2 and R8 pad overlap by 0.55mm. Suggested move: move R8 0.55mm right.
+  - U2 and R9 pad overlap by 0.55mm. Suggested move: move R9 0.55mm right.
+  - U2 and R10 pad overlap by 0.55mm. Suggested move: move R10 0.55mm right.
+  - U2 and R11 pad overlap by 0.55mm. Suggested move: move R11 0.55mm right.
+  - U2 and R12 pad overlap by 0.55mm. Suggested move: move R12 0.55mm right.
+  - U2 and R13 pad overlap by 0.55mm. Suggested move: move R13 0.55mm right.
+  - U2 and R16 pad overlap by 0.55mm. Suggested move: move R16 0.55mm right.
+  - U2 and R17 pad overlap by 0.55mm. Suggested move: move R17 0.55mm right.
+  - U2 and R18 pad overlap by 0.55mm. Suggested move: move R18 0.55mm right.
+  - U2 and R55 pad overlap by 0.55mm. Suggested move: move R55 0.55mm right.
+  - U2 and R19 pad overlap by 0.55mm. Suggested move: move R19 0.55mm right.
+  - U2 and R20 pad overlap by 0.55mm. Suggested move: move R20 0.55mm right.
+  - U2 and R21 pad overlap by 0.55mm. Suggested move: move R21 0.55mm right.
+  - U2 and R22 pad overlap by 0.55mm. Suggested move: move R22 0.55mm right.
+  - U2 and R23 pad overlap by 0.55mm. Suggested move: move R23 0.55mm right.
+  - U2 and R24 pad overlap by 0.55mm. Suggested move: move R24 0.55mm right.
+  - U2 and R25 pad overlap by 0.55mm. Suggested move: move R25 0.55mm right.
+  - U2 and R26 pad overlap by 0.55mm. Suggested move: move R26 0.55mm right.
+  - U2 and R29 pad overlap by 0.55mm. Suggested move: move R29 0.55mm right.
+  - U2 and R30 pad overlap by 0.55mm. Suggested move: move R30 0.55mm right.
+  - U2 and R31 pad overlap by 0.55mm. Suggested move: move R31 0.55mm right.
+  - U2 and R32 pad overlap by 0.55mm. Suggested move: move R32 0.55mm right.
+  - U2 and R33 pad overlap by 0.55mm. Suggested move: move R33 0.55mm right.
+  - U2 and R34 pad overlap by 0.55mm. Suggested move: move R34 0.55mm right.
+  - U2 and R39 pad overlap by 0.55mm. Suggested move: move R39 0.55mm right.
+  - U2 and R65 pad overlap by 0.55mm. Suggested move: move R65 0.55mm right.
+  - U2 and R40 pad overlap by 0.55mm. Suggested move: move R40 0.55mm right.
+  - U2 and R51 pad overlap by 0.55mm. Suggested move: move R51 0.55mm right.
+  - U2 and R41 pad overlap by 0.55mm. Suggested move: move R41 0.55mm right.
+  - U2 and R42 pad overlap by 0.55mm. Suggested move: move R42 0.55mm right.
+  - U2 and R43 pad overlap by 0.55mm. Suggested move: move R43 0.55mm right.
+  - U2 and R44 pad overlap by 0.55mm. Suggested move: move R44 0.55mm right.
+  - U2 and R49 pad overlap by 0.55mm. Suggested move: move R49 0.55mm right.
+  - U2 and R50 pad overlap by 0.54mm. Suggested move: move R50 0.54mm down.
+  - U2 and R54 pad overlap by 0.54mm. Suggested move: move R54 0.54mm down.
+  - U2 and C18 footprint intrusion by 1.65mm. Suggested move: move U2 1.65mm down.
+  - U2 and LED2 pad overlap by 0.5mm. Suggested move: move LED2 0.5mm right.
+  - U2 and LED3 pad overlap by 0.5mm. Suggested move: move LED3 0.5mm right.
+  - U2 and LED1 pad overlap by 0.5mm. Suggested move: move LED1 0.5mm right.
+  - U2 and D4 footprint intrusion by 1.539mm. Suggested move: move D4 1.539mm down.
+  - U2 and D5 footprint intrusion by 1.539mm. Suggested move: move D5 1.539mm down.
+  - U2 and D2 pad overlap by 0.4mm. Suggested move: move D2 0.4mm right.
+  - U2 and Q6 pad overlap by 0.4mm. Suggested move: move Q6 0.4mm right.
+  - U2 and Q7 pad overlap by 0.4mm. Suggested move: move Q7 0.4mm right.
+  - U2 and Q8 pad overlap by 0.4mm. Suggested move: move Q8 0.4mm right.
+  - U2 and Q1 pad overlap by 0.4mm. Suggested move: move Q1 0.4mm right.
+  - U2 and Q2 pad overlap by 0.4mm. Suggested move: move Q2 0.4mm right.
+  - U2 and Q3 pad overlap by 0.4mm. Suggested move: move Q3 0.4mm right.
+  - U2 and Q4 pad overlap by 0.4mm. Suggested move: move Q4 0.4mm right.
+  - U2 and Q5 pad overlap by 0.4mm. Suggested move: move Q5 0.4mm right.
+  - U2 and RV1 pad overlap by 0.364mm. Suggested move: move U2 0.364mm right.
+  - U2 and U11 pad overlap by 0.364mm. Suggested move: move U2 0.364mm right.
+  - J1 and U2 pad overlap by 0.257mm. Suggested move: move U2 0.257mm right.
+  - U2 and C13 pad overlap by 0.2mm. Suggested move: move C13 0.2mm right.
+  - U2 and C14 pad overlap by 0.2mm. Suggested move: move C14 0.2mm right.
+  - U2 and U8 pad overlap by 0.2mm. Suggested move: move U8 0.2mm right.
+  - U2 and D3 footprint intrusion by 1.15mm. Suggested move: move D3 1.15mm down.
+  - U2 and D9 footprint intrusion by 1.15mm. Suggested move: move D9 1.15mm down.
+  - U2 and U6 pad overlap by 0.156mm. Suggested move: move U2 0.156mm right.
+  - U2 and U9 pad overlap by 0.156mm. Suggested move: move U2 0.156mm right.
+  - U2 and D6 footprint intrusion by 0.95mm. Suggested move: move D6 0.95mm down.
+  - U2 and D7 footprint intrusion by 0.95mm. Suggested move: move D7 0.95mm down.
+  - U2 and D8 footprint intrusion by 0.95mm. Suggested move: move D8 0.95mm down.
+  - U2 and C16 pad overlap by 0.05mm. Suggested move: move C16 0.05mm right.
+  - U2 and C17 pad overlap by 0.05mm. Suggested move: move C17 0.05mm right.
+  - U2 and C29 pad overlap by 0.05mm. Suggested move: move C29 0.05mm right.
+  - U2 and R68 pad overlap by 0.025mm. Suggested move: move R68 0.025mm right.
+- U3
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-1.157mm, maxX=1.157mm, minY=-2.962mm, maxY=2.962mm); size=(width=2.314mm, height=5.924mm); anchor_alignment="center"
+  board edge status: 22.038mm inside top edge
+  issues:
+  - U3 intrudes 2.314mm into J1 connector body. Suggested move: move U3 2.314mm right.
+  - U3 intrudes 2.314mm into U1 connector body. Suggested move: move U3 2.314mm right.
+  - U3 intrudes 2.314mm into J2 connector body. Suggested move: move U3 2.314mm left.
+  - U1 and U3 pad overlap by 1.5mm. Suggested move: move U3 1.5mm down.
+  - U2 and U3 pad overlap by 1.5mm. Suggested move: move U3 1.5mm down.
+  - U3 and U4 pad overlap by 1.5mm. Suggested move: move U3 1.5mm down.
+  - U3 and U5 pad overlap by 1.5mm. Suggested move: move U3 1.5mm down.
+  - U3 and U10 pad overlap by 1.5mm. Suggested move: move U3 1.5mm down.
+  - U3 and L1 footprint intrusion by 2.314mm. Suggested move: move U3 2.314mm right.
+  - U3 and SW1 footprint intrusion by 2.314mm. Suggested move: move U3 2.314mm right.
+  - U3 and D10 footprint intrusion by 2.314mm. Suggested move: move U3 2.314mm right.
+  - U3 and D11 footprint intrusion by 2.314mm. Suggested move: move U3 2.314mm right.
+  - U3 and R45 footprint intrusion by 2.314mm. Suggested move: move U3 2.314mm right.
+  - U3 and R46 footprint intrusion by 2.314mm. Suggested move: move U3 2.314mm right.
+  - U3 and R47 footprint intrusion by 2.314mm. Suggested move: move U3 2.314mm right.
+  - U3 and R48 footprint intrusion by 2.314mm. Suggested move: move U3 2.314mm right.
+  - U3 and D1 footprint intrusion by 2.192mm. Suggested move: move U3 2.192mm down.
+  - U3 and SW2 footprint intrusion by 2.032mm. Suggested move: move U3 2.032mm right.
+  - U3 and C1 pad overlap by 0.605mm. Suggested move: move C1 0.605mm right.
+  - U3 and C6 pad overlap by 0.605mm. Suggested move: move C6 0.605mm right.
+  - U3 and C7 pad overlap by 0.605mm. Suggested move: move C7 0.605mm right.
+  - U3 and C31 pad overlap by 0.605mm. Suggested move: move C31 0.605mm right.
+  - U3 and C11 pad overlap by 0.605mm. Suggested move: move C11 0.605mm right.
+  - U3 and C2 pad overlap by 0.6mm. Suggested move: move C2 0.6mm right.
+  - U3 and C3 pad overlap by 0.6mm. Suggested move: move C3 0.6mm right.
+  - U3 and C4 pad overlap by 0.6mm. Suggested move: move C4 0.6mm right.
+  - U3 and C5 pad overlap by 0.6mm. Suggested move: move C5 0.6mm right.
+  - U3 and C8 pad overlap by 0.6mm. Suggested move: move C8 0.6mm right.
+  - U3 and C30 pad overlap by 0.6mm. Suggested move: move C30 0.6mm right.
+  - U3 and C32 pad overlap by 0.6mm. Suggested move: move C32 0.6mm right.
+  - U3 and C33 pad overlap by 0.6mm. Suggested move: move C33 0.6mm right.
+  - U3 and C34 pad overlap by 0.6mm. Suggested move: move C34 0.6mm right.
+  - U3 and C9 pad overlap by 0.6mm. Suggested move: move C9 0.6mm right.
+  - U3 and C10 pad overlap by 0.6mm. Suggested move: move C10 0.6mm right.
+  - U3 and C12 pad overlap by 0.6mm. Suggested move: move C12 0.6mm right.
+  - U3 and C15 pad overlap by 0.6mm. Suggested move: move C15 0.6mm right.
+  - U3 and C19 pad overlap by 0.6mm. Suggested move: move C19 0.6mm right.
+  - U3 and C20 pad overlap by 0.6mm. Suggested move: move C20 0.6mm right.
+  - U3 and C21 pad overlap by 0.6mm. Suggested move: move C21 0.6mm right.
+  - U3 and C22 pad overlap by 0.6mm. Suggested move: move C22 0.6mm right.
+  - U3 and C23 pad overlap by 0.6mm. Suggested move: move C23 0.6mm right.
+  - U3 and C25 pad overlap by 0.6mm. Suggested move: move C25 0.6mm right.
+  - U3 and C26 pad overlap by 0.6mm. Suggested move: move C26 0.6mm right.
+  - U3 and C27 pad overlap by 0.6mm. Suggested move: move C27 0.6mm right.
+  - U3 and C28 pad overlap by 0.6mm. Suggested move: move C28 0.6mm right.
+  - U3 and R1 pad overlap by 0.55mm. Suggested move: move R1 0.55mm right.
+  - U3 and R2 pad overlap by 0.55mm. Suggested move: move R2 0.55mm right.
+  - U3 and R3 pad overlap by 0.55mm. Suggested move: move R3 0.55mm right.
+  - U3 and R4 pad overlap by 0.55mm. Suggested move: move R4 0.55mm right.
+  - U3 and R56 pad overlap by 0.55mm. Suggested move: move R56 0.55mm right.
+  - U3 and R57 pad overlap by 0.55mm. Suggested move: move R57 0.55mm right.
+  - U3 and R58 pad overlap by 0.55mm. Suggested move: move R58 0.55mm right.
+  - U3 and R59 pad overlap by 0.55mm. Suggested move: move R59 0.55mm right.
+  - U3 and R60 pad overlap by 0.55mm. Suggested move: move R60 0.55mm right.
+  - U3 and R61 pad overlap by 0.55mm. Suggested move: move R61 0.55mm right.
+  - U3 and R62 pad overlap by 0.55mm. Suggested move: move R62 0.55mm right.
+  - U3 and R63 pad overlap by 0.55mm. Suggested move: move R63 0.55mm right.
+  - U3 and R64 pad overlap by 0.55mm. Suggested move: move R64 0.55mm right.
+  - U3 and R66 pad overlap by 0.55mm. Suggested move: move R66 0.55mm right.
+  - U3 and R67 pad overlap by 0.55mm. Suggested move: move R67 0.55mm right.
+  - U3 and R5 pad overlap by 0.55mm. Suggested move: move R5 0.55mm right.
+  - U3 and R6 pad overlap by 0.55mm. Suggested move: move R6 0.55mm right.
+  - U3 and R7 pad overlap by 0.55mm. Suggested move: move R7 0.55mm right.
+  - U3 and R8 pad overlap by 0.55mm. Suggested move: move R8 0.55mm right.
+  - U3 and R9 pad overlap by 0.55mm. Suggested move: move R9 0.55mm right.
+  - U3 and R10 pad overlap by 0.55mm. Suggested move: move R10 0.55mm right.
+  - U3 and R11 pad overlap by 0.55mm. Suggested move: move R11 0.55mm right.
+  - U3 and R12 pad overlap by 0.55mm. Suggested move: move R12 0.55mm right.
+  - U3 and R13 pad overlap by 0.55mm. Suggested move: move R13 0.55mm right.
+  - U3 and R16 pad overlap by 0.55mm. Suggested move: move R16 0.55mm right.
+  - U3 and R17 pad overlap by 0.55mm. Suggested move: move R17 0.55mm right.
+  - U3 and R18 pad overlap by 0.55mm. Suggested move: move R18 0.55mm right.
+  - U3 and R55 pad overlap by 0.55mm. Suggested move: move R55 0.55mm right.
+  - U3 and R19 pad overlap by 0.55mm. Suggested move: move R19 0.55mm right.
+  - U3 and R20 pad overlap by 0.55mm. Suggested move: move R20 0.55mm right.
+  - U3 and R21 pad overlap by 0.55mm. Suggested move: move R21 0.55mm right.
+  - U3 and R22 pad overlap by 0.55mm. Suggested move: move R22 0.55mm right.
+  - U3 and R23 pad overlap by 0.55mm. Suggested move: move R23 0.55mm right.
+  - U3 and R24 pad overlap by 0.55mm. Suggested move: move R24 0.55mm right.
+  - U3 and R25 pad overlap by 0.55mm. Suggested move: move R25 0.55mm right.
+  - U3 and R26 pad overlap by 0.55mm. Suggested move: move R26 0.55mm right.
+  - U3 and R29 pad overlap by 0.55mm. Suggested move: move R29 0.55mm right.
+  - U3 and R30 pad overlap by 0.55mm. Suggested move: move R30 0.55mm right.
+  - U3 and R31 pad overlap by 0.55mm. Suggested move: move R31 0.55mm right.
+  - U3 and R32 pad overlap by 0.55mm. Suggested move: move R32 0.55mm right.
+  - U3 and R33 pad overlap by 0.55mm. Suggested move: move R33 0.55mm right.
+  - U3 and R34 pad overlap by 0.55mm. Suggested move: move R34 0.55mm right.
+  - U3 and R39 pad overlap by 0.55mm. Suggested move: move R39 0.55mm right.
+  - U3 and R65 pad overlap by 0.55mm. Suggested move: move R65 0.55mm right.
+  - U3 and R40 pad overlap by 0.55mm. Suggested move: move R40 0.55mm right.
+  - U3 and R51 pad overlap by 0.55mm. Suggested move: move R51 0.55mm right.
+  - U3 and R41 pad overlap by 0.55mm. Suggested move: move R41 0.55mm right.
+  - U3 and R42 pad overlap by 0.55mm. Suggested move: move R42 0.55mm right.
+  - U3 and R43 pad overlap by 0.55mm. Suggested move: move R43 0.55mm right.
+  - U3 and R44 pad overlap by 0.55mm. Suggested move: move R44 0.55mm right.
+  - U3 and R49 pad overlap by 0.55mm. Suggested move: move R49 0.55mm right.
+  - U3 and R50 pad overlap by 0.54mm. Suggested move: move R50 0.54mm down.
+  - U3 and R54 pad overlap by 0.54mm. Suggested move: move R54 0.54mm down.
+  - U3 and C18 footprint intrusion by 1.65mm. Suggested move: move U3 1.65mm down.
+  - U3 and LED2 pad overlap by 0.5mm. Suggested move: move LED2 0.5mm right.
+  - U3 and LED3 pad overlap by 0.5mm. Suggested move: move LED3 0.5mm right.
+  - U3 and LED1 pad overlap by 0.5mm. Suggested move: move LED1 0.5mm right.
+  - U3 and D4 footprint intrusion by 1.539mm. Suggested move: move D4 1.539mm down.
+  - U3 and D5 footprint intrusion by 1.539mm. Suggested move: move D5 1.539mm down.
+  - U3 and D2 pad overlap by 0.4mm. Suggested move: move D2 0.4mm right.
+  - U3 and Q6 pad overlap by 0.4mm. Suggested move: move Q6 0.4mm right.
+  - U3 and Q7 pad overlap by 0.4mm. Suggested move: move Q7 0.4mm right.
+  - U3 and Q8 pad overlap by 0.4mm. Suggested move: move Q8 0.4mm right.
+  - U3 and Q1 pad overlap by 0.4mm. Suggested move: move Q1 0.4mm right.
+  - U3 and Q2 pad overlap by 0.4mm. Suggested move: move Q2 0.4mm right.
+  - U3 and Q3 pad overlap by 0.4mm. Suggested move: move Q3 0.4mm right.
+  - U3 and Q4 pad overlap by 0.4mm. Suggested move: move Q4 0.4mm right.
+  - U3 and Q5 pad overlap by 0.4mm. Suggested move: move Q5 0.4mm right.
+  - U3 and RV1 pad overlap by 0.364mm. Suggested move: move U3 0.364mm right.
+  - U3 and U11 pad overlap by 0.364mm. Suggested move: move U3 0.364mm right.
+  - J1 and U3 pad overlap by 0.257mm. Suggested move: move U3 0.257mm right.
+  - U3 and C13 pad overlap by 0.2mm. Suggested move: move C13 0.2mm right.
+  - U3 and C14 pad overlap by 0.2mm. Suggested move: move C14 0.2mm right.
+  - U3 and U8 pad overlap by 0.2mm. Suggested move: move U8 0.2mm right.
+  - U3 and D3 footprint intrusion by 1.15mm. Suggested move: move D3 1.15mm down.
+  - U3 and D9 footprint intrusion by 1.15mm. Suggested move: move D9 1.15mm down.
+  - U3 and U6 pad overlap by 0.156mm. Suggested move: move U3 0.156mm right.
+  - U3 and U9 pad overlap by 0.156mm. Suggested move: move U3 0.156mm right.
+  - U3 and D6 footprint intrusion by 0.95mm. Suggested move: move D6 0.95mm down.
+  - U3 and D7 footprint intrusion by 0.95mm. Suggested move: move D7 0.95mm down.
+  - U3 and D8 footprint intrusion by 0.95mm. Suggested move: move D8 0.95mm down.
+  - U3 and C16 pad overlap by 0.05mm. Suggested move: move C16 0.05mm right.
+  - U3 and C17 pad overlap by 0.05mm. Suggested move: move C17 0.05mm right.
+  - U3 and C29 pad overlap by 0.05mm. Suggested move: move C29 0.05mm right.
+  - U3 and R68 pad overlap by 0.025mm. Suggested move: move R68 0.025mm right.
+- D1
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-3.384mm, maxX=3.384mm, minY=-1.096mm, maxY=1.096mm); size=(width=6.769mm, height=2.192mm); anchor_alignment="center"
+  board edge status: 23.904mm inside top edge
+  issues:
+  - D1 and J2 pad overlap by 2.047mm. Suggested move: move D1 2.047mm left.
+  - D1 and D10 pad overlap by 2.017mm. Suggested move: move D1 2.017mm right.
+  - D1 and D11 pad overlap by 2.017mm. Suggested move: move D1 2.017mm right.
+  - D1 intrudes 2.192mm into J1 connector body. Suggested move: move D1 2.192mm down.
+  - D1 intrudes 2.192mm into U1 connector body. Suggested move: move D1 2.192mm down.
+  - D1 intrudes 2.192mm into J2 connector body. Suggested move: move D1 2.192mm down.
+  - D1 and D4 pad overlap by 1.539mm. Suggested move: move D4 1.539mm down.
+  - D1 and D5 pad overlap by 1.539mm. Suggested move: move D5 1.539mm down.
+  - D1 and C18 pad overlap by 1.135mm. Suggested move: move D1 1.135mm right.
+  - D1 and C16 pad overlap by 0.998mm. Suggested move: move C16 0.998mm right.
+  - D1 and C17 pad overlap by 0.998mm. Suggested move: move C17 0.998mm right.
+  - D1 and C29 pad overlap by 0.998mm. Suggested move: move C29 0.998mm right.
+  - D1 and C13 pad overlap by 0.998mm. Suggested move: move C13 0.998mm right.
+  - D1 and C14 pad overlap by 0.998mm. Suggested move: move C14 0.998mm right.
+  - D1 and R45 pad overlap by 0.959mm. Suggested move: move D1 0.959mm right.
+  - D1 and R46 pad overlap by 0.959mm. Suggested move: move D1 0.959mm right.
+  - D1 and R47 pad overlap by 0.959mm. Suggested move: move D1 0.959mm right.
+  - D1 and R48 pad overlap by 0.959mm. Suggested move: move D1 0.959mm right.
+  - D1 and D6 pad overlap by 0.95mm. Suggested move: move D6 0.95mm down.
+  - D1 and D7 pad overlap by 0.95mm. Suggested move: move D7 0.95mm down.
+  - D1 and D8 pad overlap by 0.95mm. Suggested move: move D8 0.95mm down.
+  - U2 and D1 footprint intrusion by 2.192mm. Suggested move: move U2 2.192mm down.
+  - U3 and D1 footprint intrusion by 2.192mm. Suggested move: move U3 2.192mm down.
+  - D1 and U11 footprint intrusion by 2.192mm. Suggested move: move D1 2.192mm down.
+  - D1 and U5 footprint intrusion by 2.192mm. Suggested move: move D1 2.192mm down.
+  - D1 and U6 footprint intrusion by 2.192mm. Suggested move: move D1 2.192mm down.
+  - D1 and RV1 footprint intrusion by 2.192mm. Suggested move: move D1 2.192mm up.
+  - D1 and SW1 footprint intrusion by 2.192mm. Suggested move: move D1 2.192mm down.
+  - D1 and U9 footprint intrusion by 2.192mm. Suggested move: move D1 2.192mm down.
+  - D1 and D3 pad overlap by 0.83mm. Suggested move: move D3 0.83mm right.
+  - D1 and D9 pad overlap by 0.83mm. Suggested move: move D9 0.83mm right.
+  - D1 and SW2 footprint intrusion by 2.032mm. Suggested move: move D1 2.032mm right.
+  - D1 and R68 pad overlap by 0.746mm. Suggested move: move R68 0.746mm right.
+  - D1 and U10 pad overlap by 0.438mm. Suggested move: move D1 0.438mm right.
+  - D1 and U8 pad overlap by 0.433mm. Suggested move: move U8 0.433mm right.
+  - D1 and C1 pad overlap by 0.368mm. Suggested move: move C1 0.368mm right.
+  - D1 and C6 pad overlap by 0.368mm. Suggested move: move C6 0.368mm right.
+  - D1 and C7 pad overlap by 0.368mm. Suggested move: move C7 0.368mm right.
+  - D1 and C31 pad overlap by 0.368mm. Suggested move: move C31 0.368mm right.
+  - D1 and C11 pad overlap by 0.368mm. Suggested move: move C11 0.368mm right.
+  - D1 and U4 pad overlap by 0.343mm. Suggested move: move D1 0.343mm down.
+  - D1 and L1 pad overlap by 0.334mm. Suggested move: move D1 0.334mm right.
+  - U1 and D1 pad overlap by 0.28mm. Suggested move: move D1 0.28mm down.
+  - D1 and D2 pad overlap by 0.163mm. Suggested move: move D2 0.163mm right.
+  - D1 and Q6 pad overlap by 0.163mm. Suggested move: move Q6 0.163mm right.
+  - D1 and Q7 pad overlap by 0.163mm. Suggested move: move Q7 0.163mm right.
+  - D1 and Q8 pad overlap by 0.163mm. Suggested move: move Q8 0.163mm right.
+  - D1 and Q1 pad overlap by 0.163mm. Suggested move: move Q1 0.163mm right.
+  - D1 and Q2 pad overlap by 0.163mm. Suggested move: move Q2 0.163mm right.
+  - D1 and Q3 pad overlap by 0.163mm. Suggested move: move Q3 0.163mm right.
+  - D1 and Q4 pad overlap by 0.163mm. Suggested move: move Q4 0.163mm right.
+  - D1 and Q5 pad overlap by 0.163mm. Suggested move: move Q5 0.163mm right.
+  - D1 and LED2 footprint intrusion by 1mm. Suggested move: move LED2 1mm down.
+  - D1 and LED3 footprint intrusion by 1mm. Suggested move: move LED3 1mm down.
+  - D1 and LED1 footprint intrusion by 1mm. Suggested move: move LED1 1mm down.
+  - D1 and C2 footprint intrusion by 0.9mm. Suggested move: move C2 0.9mm down.
+  - D1 and C3 footprint intrusion by 0.9mm. Suggested move: move C3 0.9mm down.
+  - D1 and C4 footprint intrusion by 0.9mm. Suggested move: move C4 0.9mm down.
+  - D1 and C5 footprint intrusion by 0.9mm. Suggested move: move C5 0.9mm down.
+  - D1 and C8 footprint intrusion by 0.9mm. Suggested move: move C8 0.9mm down.
+  - D1 and C30 footprint intrusion by 0.9mm. Suggested move: move C30 0.9mm down.
+  - D1 and C32 footprint intrusion by 0.9mm. Suggested move: move C32 0.9mm down.
+  - D1 and C33 footprint intrusion by 0.9mm. Suggested move: move C33 0.9mm down.
+  - D1 and C34 footprint intrusion by 0.9mm. Suggested move: move C34 0.9mm down.
+  - D1 and C9 footprint intrusion by 0.9mm. Suggested move: move C9 0.9mm down.
+  - D1 and C10 footprint intrusion by 0.9mm. Suggested move: move C10 0.9mm down.
+  - D1 and C12 footprint intrusion by 0.9mm. Suggested move: move C12 0.9mm down.
+  - D1 and C15 footprint intrusion by 0.9mm. Suggested move: move C15 0.9mm down.
+  - D1 and C19 footprint intrusion by 0.9mm. Suggested move: move C19 0.9mm down.
+  - D1 and C20 footprint intrusion by 0.9mm. Suggested move: move C20 0.9mm down.
+  - D1 and C21 footprint intrusion by 0.9mm. Suggested move: move C21 0.9mm down.
+  - D1 and C22 footprint intrusion by 0.9mm. Suggested move: move C22 0.9mm down.
+  - D1 and C23 footprint intrusion by 0.9mm. Suggested move: move C23 0.9mm down.
+  - D1 and C25 footprint intrusion by 0.9mm. Suggested move: move C25 0.9mm down.
+  - D1 and C26 footprint intrusion by 0.9mm. Suggested move: move C26 0.9mm down.
+  - D1 and C27 footprint intrusion by 0.9mm. Suggested move: move C27 0.9mm down.
+  - D1 and C28 footprint intrusion by 0.9mm. Suggested move: move C28 0.9mm down.
+  - D1 and R1 footprint intrusion by 0.864mm. Suggested move: move R1 0.864mm down.
+  - D1 and R2 footprint intrusion by 0.864mm. Suggested move: move R2 0.864mm down.
+  - D1 and R3 footprint intrusion by 0.864mm. Suggested move: move R3 0.864mm down.
+  - D1 and R4 footprint intrusion by 0.864mm. Suggested move: move R4 0.864mm down.
+  - D1 and R56 footprint intrusion by 0.864mm. Suggested move: move R56 0.864mm down.
+  - D1 and R57 footprint intrusion by 0.864mm. Suggested move: move R57 0.864mm down.
+  - D1 and R58 f

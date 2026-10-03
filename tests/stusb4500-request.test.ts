@@ -2,7 +2,7 @@ import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
 test("PD profile transaction rejects partial writes and never repeats an uncertain command", () => {
-  const executable = "evidence/stusb4500-request-host-A18"
+  const executable = "evidence/stusb4500-request-host-A19"
   const compiled = spawnSync(
     "cc",
     [

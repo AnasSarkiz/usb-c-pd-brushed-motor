@@ -1,0 +1,15 @@
+node:internal/fs/promises:697
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: ENOENT: no such file or directory, open '../../docs/BOM.csv'
+    at async open (node:internal/fs/promises:697:25)
+    at async Object.readFile (node:internal/fs/promises:1348:14)
+    at async file:///Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/.cache/bom-A19/update.mjs:4:41 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '../../docs/BOM.csv'
+}
+
+Node.js v24.19.0

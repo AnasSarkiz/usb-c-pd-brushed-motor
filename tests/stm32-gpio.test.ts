@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs"
 import { createHash } from "node:crypto"
 
 test("STM32 GPIO safety ordering and feedback preservation", () => {
-  const executable = "evidence/stm32-gpio-bun-test-A18"
+  const executable = "evidence/stm32-gpio-bun-test-A19"
   const compile = spawnSync(
     "cc",
     [

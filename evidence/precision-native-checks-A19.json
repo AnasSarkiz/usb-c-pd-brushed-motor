@@ -1,0 +1,122 @@
+[
+  {
+    "code": "C855559",
+    "check": "netlist",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "tests/supplier-audit/C855559.circuit.tsx"
+    ],
+    "exit": 0
+  },
+  {
+    "code": "C855559",
+    "check": "pin_specification",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "tests/supplier-audit/C855559.circuit.tsx"
+    ],
+    "exit": 0
+  },
+  {
+    "code": "C855559",
+    "check": "source",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "tests/supplier-audit/C855559.circuit.tsx"
+    ],
+    "exit": 0
+  },
+  {
+    "code": "C855559",
+    "check": "schematic-placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "tests/supplier-audit/C855559.circuit.tsx"
+    ],
+    "exit": 0
+  },
+  {
+    "code": "C855559",
+    "check": "placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "tests/supplier-audit/C855559.circuit.tsx"
+    ],
+    "exit": 0
+  },
+  {
+    "code": "C95204",
+    "check": "netlist",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "tests/supplier-audit/C95204.circuit.tsx"
+    ],
+    "exit": 0
+  },
+  {
+    "code": "C95204",
+    "check": "pin_specification",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "tests/supplier-audit/C95204.circuit.tsx"
+    ],
+    "exit": 0
+  },
+  {
+    "code": "C95204",
+    "check": "source",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "tests/supplier-audit/C95204.circuit.tsx"
+    ],
+    "exit": 0
+  },
+  {
+    "code": "C95204",
+    "check": "schematic-placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "tests/supplier-audit/C95204.circuit.tsx"
+    ],
+    "exit": 0
+  },
+  {
+    "code": "C95204",
+    "check": "placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "tests/supplier-audit/C95204.circuit.tsx"
+    ],
+    "exit": 0
+  }
+]

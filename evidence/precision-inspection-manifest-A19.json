@@ -1,0 +1,22 @@
+[
+  {
+    "ref": "R60",
+    "code": "C855559",
+    "import_path": "imports/AT0603BRD07100KL.tsx",
+    "pins": {
+      "pin1": "upper",
+      "pin2": "lower"
+    },
+    "nc": []
+  },
+  {
+    "ref": "R61",
+    "code": "C95204",
+    "import_path": "imports/RT0603BRD0710KL.tsx",
+    "pins": {
+      "pin1": "upper",
+      "pin2": "lower"
+    },
+    "nc": []
+  }
+]

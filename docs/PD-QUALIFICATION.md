@@ -1,6 +1,6 @@
 # A17 PD qualification and voltage policy
 
-2026-10-03. The user approved the MCU architecture. U11 is supplier-imported STM32G030F6P6TR / C529330, used only for power qualification. firmware/pd_policy.c is a portable policy library, tested on the host and compiled to a Cortex-M0+ object. It is **not a complete flashable firmware image**: STM32 startup, clocks, GPIO/ADC/I2C, STUSB4500 transport, watchdog, option bytes and programming-pad implementation remain open.
+2026-10-03. The user approved the MCU architecture. U11 is supplier-imported STM32G030F6P6TR / C529330, used only for power qualification. firmware/pd_policy.c is a portable policy library, tested on the host and compiled to a Cortex-M0+ object. It is **not a complete flashable firmware image**: STM32 startup, clocks, ADC/I2C, STUSB4500 transport, watchdog, option bytes and programming-pad implementation remain open.
 
 ## User voltage selection
 
@@ -64,3 +64,5 @@ A16 adds bounded complete40-byte NVM readback comparison under inhibition.20,639
 
 
 A17 corrects the current-field issue identified in A16. The plan retains the exact selected source PDO; RDO operating remains3 A and maximum must equal that advertisement. Reserved RDO31/23:20, capability mismatch and GiveBack are rejected.3–5 A sources are supported by the portable policy, without increasing hardware limits.60,202 policy assertions,11,518 sequence assertions and1,037 request assertions pass; all22 configured tests/382 expects and all six Cortex-M0+ module objects pass. Source/rail/contract provenance and target integration are still required; these are simulated/compiled results. See PD-RDO-CURRENT.md.
+
+A18 supplies the actual GPIO initialization/inhibit/input backend with preserved feedback and SWD state (STM32-SAFE-GPIO.md). A19 replaces the four ADC divider resistors with0.1% parts and screens conservative voltage intervals (ADC-SENSING.md). The ADC/peripheral/sequence-output adapter remains incomplete; nominal ADC scaling must not be used as an exact safety measurement.

@@ -1,0 +1,294 @@
+{
+  "revision": "A19",
+  "status": "conditional static screening only",
+  "adc_error_lsb": 7.0,
+  "vdda_mv": [
+    3234,
+    3366
+  ],
+  "input_leakage_na": 70,
+  "corner_checks": 261568,
+  "profiles": [
+    {
+      "profile": "A11_initial_1_percent",
+      "top_tolerance": 0.01,
+      "bottom_tolerance": 0.01,
+      "rails": [
+        {
+          "nominal_mv": 5000,
+          "nominal_code": 564,
+          "nominal_interval_mv": [
+            4743,
+            5264
+          ],
+          "accept_code_min": null,
+          "accept_code_max": null,
+          "accept_code_count": 0,
+          "nominal_accepted": false
+        },
+        {
+          "nominal_mv": 9000,
+          "nominal_code": 1016,
+          "nominal_interval_mv": [
+            8598,
+            9425
+          ],
+          "accept_code_min": 1011,
+          "accept_code_max": 1018,
+          "accept_code_count": 8,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 12000,
+          "nominal_code": 1354,
+          "nominal_interval_mv": [
+            11481,
+            12536
+          ],
+          "accept_code_min": 1345,
+          "accept_code_max": 1360,
+          "accept_code_count": 16,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 15000,
+          "nominal_code": 1693,
+          "nominal_interval_mv": [
+            14372,
+            15657
+          ],
+          "accept_code_min": 1679,
+          "accept_code_max": 1703,
+          "accept_code_count": 25,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 20000,
+          "nominal_code": 2257,
+          "nominal_interval_mv": [
+            19182,
+            20849
+          ],
+          "accept_code_min": 2236,
+          "accept_code_max": 2273,
+          "accept_code_count": 38,
+          "nominal_accepted": true
+        }
+      ],
+      "decay_code_max": 100
+    },
+    {
+      "profile": "A11_initial_plus_80C_TCR",
+      "top_tolerance": 0.018,
+      "bottom_tolerance": 0.018,
+      "rails": [
+        {
+          "nominal_mv": 5000,
+          "nominal_code": 564,
+          "nominal_interval_mv": [
+            4674,
+            5341
+          ],
+          "accept_code_min": null,
+          "accept_code_max": null,
+          "accept_code_count": 0,
+          "nominal_accepted": false
+        },
+        {
+          "nominal_mv": 9000,
+          "nominal_code": 1016,
+          "nominal_interval_mv": [
+            8474,
+            9563
+          ],
+          "accept_code_min": null,
+          "accept_code_max": null,
+          "accept_code_count": 0,
+          "nominal_accepted": false
+        },
+        {
+          "nominal_mv": 12000,
+          "nominal_code": 1354,
+          "nominal_interval_mv": [
+            11315,
+            12720
+          ],
+          "accept_code_min": null,
+          "accept_code_max": null,
+          "accept_code_count": 0,
+          "nominal_accepted": false
+        },
+        {
+          "nominal_mv": 15000,
+          "nominal_code": 1693,
+          "nominal_interval_mv": [
+            14165,
+            15887
+          ],
+          "accept_code_min": null,
+          "accept_code_max": null,
+          "accept_code_count": 0,
+          "nominal_accepted": false
+        },
+        {
+          "nominal_mv": 20000,
+          "nominal_code": 2257,
+          "nominal_interval_mv": [
+            18906,
+            21155
+          ],
+          "accept_code_min": null,
+          "accept_code_max": null,
+          "accept_code_count": 0,
+          "nominal_accepted": false
+        }
+      ],
+      "decay_code_max": 99
+    },
+    {
+      "profile": "A19_initial_plus_80C_TCR",
+      "top_tolerance": 0.003,
+      "bottom_tolerance": 0.003,
+      "rails": [
+        {
+          "nominal_mv": 5000,
+          "nominal_code": 564,
+          "nominal_interval_mv": [
+            4804,
+            5197
+          ],
+          "accept_code_min": 558,
+          "accept_code_max": 569,
+          "accept_code_count": 12,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 9000,
+          "nominal_code": 1016,
+          "nominal_interval_mv": [
+            8708,
+            9306
+          ],
+          "accept_code_min": 998,
+          "accept_code_max": 1031,
+          "accept_code_count": 34,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 12000,
+          "nominal_code": 1354,
+          "nominal_interval_mv": [
+            11628,
+            12378
+          ],
+          "accept_code_min": 1328,
+          "accept_code_max": 1378,
+          "accept_code_count": 51,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 15000,
+          "nominal_code": 1693,
+          "nominal_interval_mv": [
+            14556,
+            15459
+          ],
+          "accept_code_min": 1658,
+          "accept_code_max": 1725,
+          "accept_code_count": 68,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 20000,
+          "nominal_code": 2257,
+          "nominal_interval_mv": [
+            19428,
+            20585
+          ],
+          "accept_code_min": 2208,
+          "accept_code_max": 2302,
+          "accept_code_count": 95,
+          "nominal_accepted": true
+        }
+      ],
+      "decay_code_max": 102
+    },
+    {
+      "profile": "A19_single_endurance_screen",
+      "top_tolerance": 0.006,
+      "bottom_tolerance": 0.0081,
+      "rails": [
+        {
+          "nominal_mv": 5000,
+          "nominal_code": 564,
+          "nominal_interval_mv": [
+            4769,
+            5236
+          ],
+          "accept_code_min": 562,
+          "accept_code_max": 565,
+          "accept_code_count": 4,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 9000,
+          "nominal_code": 1016,
+          "nominal_interval_mv": [
+            8644,
+            9375
+          ],
+          "accept_code_min": 1005,
+          "accept_code_max": 1024,
+          "accept_code_count": 20,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 12000,
+          "nominal_code": 1354,
+          "nominal_interval_mv": [
+            11542,
+            12469
+          ],
+          "accept_code_min": 1338,
+          "accept_code_max": 1368,
+          "accept_code_count": 31,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 15000,
+          "nominal_code": 1693,
+          "nominal_interval_mv": [
+            14449,
+            15573
+          ],
+          "accept_code_min": 1670,
+          "accept_code_max": 1712,
+          "accept_code_count": 43,
+          "nominal_accepted": true
+        },
+        {
+          "nominal_mv": 20000,
+          "nominal_code": 2257,
+          "nominal_interval_mv": [
+            19285,
+            20738
+          ],
+          "accept_code_min": 2224,
+          "accept_code_max": 2285,
+          "accept_code_count": 62,
+          "nominal_accepted": true
+        }
+      ],
+      "decay_code_max": 101
+    }
+  ],
+  "limitations": [
+    "No actual ADC conversion/calibration/peripheral/sample provenance",
+    "Characterized TUE at35MHz; target clock/sample-rate accuracy and noise remain unqualified",
+    "VDD ripple and reference sampling must be bounded; interval is not valid during brownout",
+    "Divider capacitor leakage/PCB contamination and tolerance accumulation require measurement",
+    "ADC filter dynamics and back-drive are not represented by static intervals",
+    "Real component corners can safely inhibit a nominal rail; live reference calibration needed for robust yield",
+    "Single-endurance screen does not prove cumulative field aging or lifetime reliability"
+  ]
+}

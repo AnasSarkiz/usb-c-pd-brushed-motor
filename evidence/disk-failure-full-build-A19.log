@@ -1,0 +1,29 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+167990 |         solverDiagnostics: options?.solverDiagnostics
+167991 |       });
+167992 |       circuitJson = result.circuitJson;
+167993 |     }
+167994 |     fs29.mkdirSync(path31.dirname(output), { recursive: true });
+167995 |     fs29.writeFileSync(output, JSON.stringify(circuitJson, null, 2));
+                  ^
+ENOSPC: no space left on device, write
+      fd: 6,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/tscircuit/node_modules/@tscircuit/cli/dist/cli/main.js:167995:10)
+
+Fatal error [circuit_generation_failed]: ENOSPC: no space left on device, write
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

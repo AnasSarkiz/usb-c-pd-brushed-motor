@@ -1,4 +1,48 @@
-# A18 validation — 2026-10-03
+# A19 validation — 2026-10-03
+
+**Unrouted WIP prototype. Product placement is unstarted.** Replaces four existing ADC divider resistors with0.1% official supplier imports;129 purchased parts/57 supplier codes. Nominal values, PWM, current limits, regulated voltages and direction topology remain unchanged.
+
+|Stage|Status|Current evidence /remaining work|
+|---|---|---|
+|1. Requirements|in progress|Explicit5/9/12 V selector, approximately2 A target and voltage-aware15/20 V policy retained; final mechanical/thermal/operating envelope open.|
+|2. Schematic/BOM|blocked|All57 active supplier electrical/pad/schema audits pass; product schematic connectivity passes. Actual ADC calibration/reference/filter dynamics, approved NVM image, fresh-response ownership/STM32 integration, complete converter/thermal/current-sharing, capacitor land process and regeneration envelope remain open.|
+|3. Product placement|blocked|No product coordinates/mounting holes. Full unplaced board fails actual overlap/clearance checks; no cached schematic-only pass is accepted. A12 native numeric placement probe remains applicable.|
+|4. Routing|not started|Explicitly disabled; no new routed via-in-pad permitted.|
+|5. Routed checks|not started|No routed output/shorts/snapshot approval.|
+|6. Fabrication|not started|No assembler/process approval/release/order.|
+|7. Physical prototype|not started|No measured motor/PD/ADC/noise/thermal/reversal evidence.|
+|8. Store release|not started|GitHub destination absent; neither remote published.|
+
+## Completed A19 step
+
+R60/R66=C855559/YAGEO AT0603BRD07100KL100 kΩ; R61/R67=C95204/YAGEO RT0603BRD0710KL10 kΩ. Both0.1%/25 ppm/°C. Four replacements, zero added placements, two supplier codes. Both import unchanged using the official exact-footprint workflow; BOM/design/import manifests and simplification documentation updated. Source-backed static interval screening shows the old1%5 V acceptance window is empty and the new initial/TCR window is558–56912-bit counts; nominal-code bounds4.804–5.197 V. See docs/ADC-SENSING.md for full assumptions and physical/integration limits.
+
+|Check|Actual result/evidence|
+|---|---|
+|Official imports|both pass network-enabled import; first sandbox C855559 network failure retained. No custom definition/model patch/suppression.|
+|Stock/specification evidence|raw catalog pages/PDFs retained with hashes:7,670/392,640 observed LCSC stock on2026-10-03. JLC assembly eligibility/stock remains unconfirmed.|
+|Each new isolated probe build and five native checks|both builds/all10 checks exit0. Strict schema/pin/pad/paste audit passes. Exactly2 open-pin warnings per unwired probe retained and explained; not product connectivity failures.|
+|All active supplier audit|57 pass, zero issues/zero routes.55 unchanged A11 probe outputs reused under identical imported-source hashes/dependencies, plus2 new A19 outputs.|
+|Full product schematic/connectivity|pass:129 components/57 suppliers/zero issues/zero copper routes.84 raw diagnostics match exact prior source/hash/wiring warning reviews; none suppressed or implicitly accepted.|
+|Native A4 visual review|all8 final A19 rendered sheets inspected; correct prototype revision, readable symbols/net labels, retained advisory overlays. Supplier native pads/detail views and manufacturer mechanical pages inspected.|
+|ADC static uncertainty screen|pass:261,568 independent corner checks; initial/TCR and separate single-endurance scenarios. No ADC peripheral/physical or lifetime qualification claim.|
+|Configured formatting/TypeScript/Bun/power report|pass:24 tests/403 expects, zero failures; named A19 logs. Power report remains conditional on prior assumptions.|
+|Full native unrouted build|exit1, actual PCB artifact generated. Strict schema passes;129 source/141 PCB components/0 routed traces.6301 footprint overlaps/297 pad-clearance/1955 courtyard overlaps from intentional default unplacement remain unresolved.|
+|Five required main source checks|netlist/pin_specification/source/schematic-placement exit0; placement exit1. Explicit archived full-artifact placement check also exits1. Full-build/placement failures retained, no fabricated approval.|
+|Disk-space failure and cache recovery|first final full build failed ENOSPC and left old schematic-only output. The early audit/copy is withdrawn as board evidence and renamed stale-schematic-cache-*. Only this task's disposable .cache/bun dependency cache removed; network dependencies/sources unchanged. Fresh full rerun produces the actual141-PCB artifact and unresolved placement findings. Raw failure/check logs retained.|
+|BOM authoring/reconciliation|Artifact Tool edits verified all129 unique references/57 codes, quantities and supplier identity; untouched rows preserved exactly. Before/after changed ranges inspected. Raw CSV correctly preserves0603 identifiers even where preview displays603. CSV export API unavailable; RFC4180 serialized verified range.values. No extra XLSX deliverable.|
+
+Versions unchanged:tscircuit0.0.2742/CLI0.1.2237/core0.0.2056/props0.0.677/circuit-json0.0.510; Bun1.3.9/TypeScript5.9.3/Biome2.5.14. A18 GPIO/software checks remain applicable; no firmware behavior changed. A14 converter and other A11 evidence remain applicable to unchanged regulator/current/PWM/energy parts, with their limitations intact. The previous1% divider accuracy/stress calculations are superseded by A19 where applicable; above-VDD/brownout/injection/filter qualifications remain open.
+
+## Revision and publication
+
+Exact hashes: evidence/source-manifest-A19.json. Source commit pending bookkeeping. **Publication blocker:** task branch main has no GitHub remote; destination repository/branch remains unspecified. Standing authorization exists, but neither GitHub push nor tscircuit package update succeeded. No remote completion, placement, fabrication or physical approval is implied.
+
+---
+
+A18 and earlier records below are historical. A19 supersedes the four ADC sensing parts, corresponding schematic/BOM and current checks only. Prior unresolved electrical/assembly/tooling/physical limitations remain explicit.
+
+# A18 historical validation — 2026-10-03
 
 **Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Adds actual STM32 GPIO initialization/inhibition and digital reads; no motor-enable/feedback-changing API or flashable image.
 

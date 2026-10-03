@@ -27,3 +27,5 @@ Primary references: [DRV8874](https://www.ti.com/lit/ds/symlink/drv8874.pdf), [T
 The PD-enable input has a 4.7 kOhm pull-up and 20 kOhm Q1 base resistor. The old 10 kOhm/10 kOhm network loaded the inactive signal to about 2 V, below a conservative 0.7*VDD MCU high threshold. The revised nominal inactive level is about 2.8 V while retaining sufficient transistor base drive. A resistor/supply/VBE/leakage screen is recorded in the board tests; actual startup timing remains a measurement.
 
 A9 ADC power sequencing review is in MCU-POWER-SEQUENCING.md: keep SYSCFG_CFGR2.PA1_CDEN disabled, use analog/no-pull inputs, invalidate measurements during brownout, and measure unplug/replug leakage. This review does not implement a flashable firmware port.
+
+A19 sensing update: R60/R66=C855559, R61/R67=C95204, unchanged100 kΩ/10 kΩ nominal11:1 dividers. Total129 placements/57 supplier codes. ADC bounds, source evidence and remaining calibration/transient limits are in ADC-SENSING.md. No power/current/feedback/PWM limits changed.

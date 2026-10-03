@@ -1,0 +1,166 @@
+{
+  "revision": "A19",
+  "supplierCount": 2,
+  "totalPcbTraces": 0,
+  "issues": [],
+  "parts": [
+    {
+      "code": "C855559",
+      "ref": "R60",
+      "sourceSha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99",
+      "path": "dist/tests/supplier-audit/C855559/circuit.json",
+      "ports": [
+        {
+          "alias": "pin1",
+          "pinNumber": 1,
+          "pcbPortId": "pcb_port_0",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_1",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": -0.753364,
+              "y": 0,
+              "width": 0.8064754,
+              "height": 0.8640064,
+              "layer": "top",
+              "port_hints": [
+                "pin1"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_0",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        },
+        {
+          "alias": "pin2",
+          "pinNumber": 2,
+          "pcbPortId": "pcb_port_1",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_0",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": 0.753364,
+              "y": 0,
+              "width": 0.8064754,
+              "height": 0.8640064,
+              "layer": "top",
+              "port_hints": [
+                "pin2"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_1",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        }
+      ],
+      "pcbTraceCount": 0,
+      "diagnostics": [
+        {
+          "type": "source_pin_missing_trace_warning",
+          "source_pin_missing_trace_warning_id": "source_pin_missing_trace_warning_0",
+          "warning_type": "source_pin_missing_trace_warning",
+          "message": "Port pin1 on R60 is missing a trace",
+          "source_component_id": "source_component_0",
+          "source_port_id": "source_port_0",
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_pin_missing_trace_warning",
+          "source_pin_missing_trace_warning_id": "source_pin_missing_trace_warning_1",
+          "warning_type": "source_pin_missing_trace_warning",
+          "message": "Port pin2 on R60 is missing a trace",
+          "source_component_id": "source_component_0",
+          "source_port_id": "source_port_1",
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "issues": [],
+      "status": "electrical/schema pass; metadata and mechanical approval separate"
+    },
+    {
+      "code": "C95204",
+      "ref": "R61",
+      "sourceSha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81",
+      "path": "dist/tests/supplier-audit/C95204/circuit.json",
+      "ports": [
+        {
+          "alias": "pin1",
+          "pinNumber": 1,
+          "pcbPortId": "pcb_port_0",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_1",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": -0.753364,
+              "y": 0,
+              "width": 0.8064754,
+              "height": 0.8640064,
+              "layer": "top",
+              "port_hints": [
+                "pin1"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_0",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        },
+        {
+          "alias": "pin2",
+          "pinNumber": 2,
+          "pcbPortId": "pcb_port_1",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_0",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": 0.753364,
+              "y": 0,
+              "width": 0.8064754,
+              "height": 0.8640064,
+              "layer": "top",
+              "port_hints": [
+                "pin2"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_1",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        }
+      ],
+      "pcbTraceCount": 0,
+      "diagnostics": [
+        {
+          "type": "source_pin_missing_trace_warning",
+          "source_pin_missing_trace_warning_id": "source_pin_missing_trace_warning_0",
+          "warning_type": "source_pin_missing_trace_warning",
+          "message": "Port pin1 on R61 is missing a trace",
+          "source_component_id": "source_component_0",
+          "source_port_id": "source_port_0",
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_pin_missing_trace_warning",
+          "source_pin_missing_trace_warning_id": "source_pin_missing_trace_warning_1",
+          "warning_type": "source_pin_missing_trace_warning",
+          "message": "Port pin2 on R61 is missing a trace",
+          "source_component_id": "source_component_0",
+          "source_port_id": "source_port_1",
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "issues": [],
+      "status": "electrical/schema pass; metadata and mechanical approval separate"
+    }
+  ]
+}

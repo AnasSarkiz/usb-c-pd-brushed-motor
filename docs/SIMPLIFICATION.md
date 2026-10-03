@@ -1,6 +1,6 @@
-# A11 architecture simplification — 2026-10-03
+# A19 architecture simplification — 2026-10-03
 
-The user approved a small MCU for PD qualification. Hardware PWM and the mechanical direction switch remain independent of it. The active BOM contains **129 placements / 55 supplier part numbers**, compared with the historical 118 / 54 assembly. This is a connected prototype draft; the A9 simplification review is retained; A11 adds one required rail-discharge resistor, with the part-count tradeoff below retained for review. This does not pass electrical, placement or hardware gates.
+The user approved a small MCU for PD qualification. Hardware PWM and the mechanical direction switch remain independent of it. The active BOM contains **129 placements / 57 supplier part numbers**, compared with the historical 118 / 54 assembly. This is a connected prototype draft; the A9 simplification review is retained; A11 adds one required rail-discharge resistor, with the part-count tradeoff below retained for review. This does not pass electrical, placement or hardware gates.
 
 | Change from the historical assembly | Placement change |
 |---|---:|
@@ -57,3 +57,5 @@ Retain this connected architecture for electrical qualification. A synchronous b
 ## A11 essential discharge addition
 
 One R68/C2074262 1 kΩ/0.5 W passive VM bleeder makes rail decay independent of the attached motor and uncertain below-range IC loading. It avoids a discharge transistor/driver network, adds one part, and retains hardware PWM/direct direction switching. Current total: 129 purchased components/55 supplier codes; buck sheet 22, other sheet counts unchanged. No debug/sensor/communication/reversal-delay circuit is added. See RAIL-DISCHARGE.md for calculations, stock and independent import audit. The portable voltage-change sequence waits for measured decay and still inhibits on timeout; actual operating limits remain unapproved.
+
+A19 replaces the four existing ADC divider resistors with0.1% supplier-backed parts: no placement-count increase, two additional supplier codes. This is required by the conservative voltage-error screen, not extra sensing circuitry. See ADC-SENSING.md. The imported10 kΩ speed potentiometer/330 Ω/5.6 nF network and direct switch-fed H-bridge remain unchanged.

@@ -1385,25 +1385,25 @@
   },
   {
     "ref": "R60",
-    "code": "C25803",
+    "code": "C855559",
     "sheet": "pdhost",
     "pins": {
       "pin1": "VBUS",
       "pin2": "ADC_VBUS"
     },
     "nc": [],
-    "purpose": "VBUS ADC divider upper"
+    "purpose": "VBUS ADC divider upper; 0.1% precision sensing"
   },
   {
     "ref": "R61",
-    "code": "C844918",
+    "code": "C95204",
     "sheet": "pdhost",
     "pins": {
       "pin1": "ADC_VBUS",
       "pin2": "GND"
     },
     "nc": [],
-    "purpose": "VBUS ADC divider lower; 11:1 scale"
+    "purpose": "VBUS ADC divider lower; 11:1 scale; 0.1% precision sensing"
   },
   {
     "ref": "C33",
@@ -1475,25 +1475,25 @@
   },
   {
     "ref": "R66",
-    "code": "C25803",
+    "code": "C855559",
     "sheet": "pdhost",
     "pins": {
       "pin1": "VM",
       "pin2": "ADC_VM"
     },
     "nc": [],
-    "purpose": "Motor-rail ADC divider upper"
+    "purpose": "Motor-rail ADC divider upper; 0.1% precision sensing"
   },
   {
     "ref": "R67",
-    "code": "C844918",
+    "code": "C95204",
     "sheet": "pdhost",
     "pins": {
       "pin1": "ADC_VM",
       "pin2": "GND"
     },
     "nc": [],
-    "purpose": "Motor-rail ADC divider lower; independent absolute-rail qualification"
+    "purpose": "Motor-rail ADC divider lower; independent absolute-rail qualification; 0.1% precision sensing"
   },
   {
     "ref": "C34",

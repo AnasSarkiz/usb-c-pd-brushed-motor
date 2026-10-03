@@ -30,12 +30,12 @@ export default function UsbCPdBrushedMotorController() {
       <net name="MOTOR_N" nominalTraceWidth="2mm" />
       <schematicsheet
         name="usb"
-        displayName="USB-C PD and quiet supplies · A11"
+        displayName="USB-C PD and quiet supplies · A19"
         sheetSize="A4"
         sheetIndex={1}
       >
         <schematictext
-          text="A11 PROTOTYPE | USB-C PD and quiet supplies · A11 | 1/8"
+          text="A19 PROTOTYPE | USB-C PD and quiet supplies · A19 | 1/8"
           schX={0}
           schY={10.2}
           fontSize={0.3}
@@ -50,12 +50,12 @@ export default function UsbCPdBrushedMotorController() {
       </schematicsheet>
       <schematicsheet
         name="pdhost"
-        displayName="PD power qualification and voltage selection · A11"
+        displayName="PD power qualification and voltage selection · A19"
         sheetSize="A4"
         sheetIndex={8}
       >
         <schematictext
-          text="A11 PROTOTYPE | PD qualification / voltage selection | 8/8"
+          text="A19 PROTOTYPE | PD qualification / voltage selection | 8/8"
           schY={10.2}
           fontSize={0.3}
         />
@@ -68,12 +68,12 @@ export default function UsbCPdBrushedMotorController() {
       </schematicsheet>
       <schematicsheet
         name="input"
-        displayName="Contract-controlled input protection · A11"
+        displayName="Contract-controlled input protection · A19"
         sheetSize="A4"
         sheetIndex={2}
       >
         <schematictext
-          text="A11 PROTOTYPE | Contract-controlled input protection · A11 | 2/8"
+          text="A19 PROTOTYPE | Contract-controlled input protection · A19 | 2/8"
           schX={0}
           schY={10.2}
           fontSize={0.3}
@@ -88,12 +88,12 @@ export default function UsbCPdBrushedMotorController() {
       </schematicsheet>
       <schematicsheet
         name="buck"
-        displayName="Regulated 5 / 9 / 12 V motor supply · A11"
+        displayName="Regulated 5 / 9 / 12 V motor supply · A19"
         sheetSize="A4"
         sheetIndex={3}
       >
         <schematictext
-          text="A11 PROTOTYPE | Regulated 5 / 9 / 12 V motor supply · A11 | 3/8"
+          text="A19 PROTOTYPE | Regulated 5 / 9 / 12 V motor supply · A19 | 3/8"
           schX={0}
           schY={10.2}
           fontSize={0.3}
@@ -108,12 +108,12 @@ export default function UsbCPdBrushedMotorController() {
       </schematicsheet>
       <schematicsheet
         name="controls"
-        displayName="Hardware PWM and REV / OFF / FWD · A11"
+        displayName="Hardware PWM and REV / OFF / FWD · A19"
         sheetSize="A4"
         sheetIndex={4}
       >
         <schematictext
-          text="A11 PROTOTYPE | Hardware PWM and REV / OFF / FWD · A11 | 4/8"
+          text="A19 PROTOTYPE | Hardware PWM and REV / OFF / FWD · A19 | 4/8"
           schX={0}
           schY={10.2}
           fontSize={0.3}
@@ -134,12 +134,12 @@ export default function UsbCPdBrushedMotorController() {
       </schematicsheet>
       <schematicsheet
         name="protection"
-        displayName="Motor rail UV / OV monitoring · A11"
+        displayName="Motor rail UV / OV monitoring · A19"
         sheetSize="A4"
         sheetIndex={5}
       >
         <schematictext
-          text="A11 PROTOTYPE | Motor rail UV / OV monitoring · A11 | 5/8"
+          text="A19 PROTOTYPE | Motor rail UV / OV monitoring · A19 | 5/8"
           schX={0}
           schY={10.2}
           fontSize={0.3}
@@ -154,12 +154,12 @@ export default function UsbCPdBrushedMotorController() {
       </schematicsheet>
       <schematicsheet
         name="motor"
-        displayName="Integrated H-bridge and motor output · A11"
+        displayName="Integrated H-bridge and motor output · A19"
         sheetSize="A4"
         sheetIndex={7}
       >
         <schematictext
-          text="A11 PROTOTYPE | Integrated H-bridge and motor output · A11 | 7/8"
+          text="A19 PROTOTYPE | Integrated H-bridge and motor output · A19 | 7/8"
           schX={0}
           schY={10.2}
           fontSize={0.3}
@@ -174,12 +174,12 @@ export default function UsbCPdBrushedMotorController() {
       </schematicsheet>
       <schematicsheet
         name="dump"
-        displayName="Regenerative energy dump · A11"
+        displayName="Regenerative energy dump · A19"
         sheetSize="A4"
         sheetIndex={6}
       >
         <schematictext
-          text="A11 PROTOTYPE | Regenerative energy dump · A11 | 6/8"
+          text="A19 PROTOTYPE | Regenerative energy dump · A19 | 6/8"
           schX={0}
           schY={10.2}
           fontSize={0.3}

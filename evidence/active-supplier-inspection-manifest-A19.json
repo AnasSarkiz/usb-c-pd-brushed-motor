@@ -1,0 +1,817 @@
+[
+  {
+    "ref": "J1",
+    "code": "C165948",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "GND",
+      "pin2": "GND",
+      "pin3": "GND",
+      "pin4": "GND",
+      "pin6": "CC1",
+      "pin12": "CC2",
+      "pin13": "GND",
+      "pin14": "GND",
+      "pin15": "VBUS",
+      "pin16": "VBUS"
+    },
+    "purpose": "Single USB-C power input",
+    "nc": [
+      "pin5",
+      "pin7",
+      "pin8",
+      "pin9",
+      "pin10",
+      "pin11"
+    ],
+    "import_path": "imports/TYPE_C_31_M_12.tsx"
+  },
+  {
+    "ref": "U1",
+    "code": "C2678061",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "CC1",
+      "pin2": "CC1",
+      "pin4": "CC2",
+      "pin5": "CC2",
+      "pin6": "PD_RESET",
+      "pin7": "SCL",
+      "pin8": "SDA",
+      "pin10": "GND",
+      "pin12": "GND",
+      "pin13": "GND",
+      "pin16": "PD_ENABLE_N",
+      "pin18": "VBUS_SENSE",
+      "pin21": "VREG_1V2",
+      "pin22": "GND",
+      "pin23": "VREG_2V7",
+      "pin24": "VDD5",
+      "pin25": "GND",
+      "pin19": "PD_ALERT_N"
+    },
+    "purpose": "STUSB4500 sink with MCU-driven runtime matching",
+    "nc": [
+      "pin3",
+      "pin9",
+      "pin11",
+      "pin14",
+      "pin15",
+      "pin17",
+      "pin20"
+    ],
+    "import_path": "imports/STUSB4500QTR.tsx"
+  },
+  {
+    "ref": "U2",
+    "code": "C468238",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "VDD5",
+      "pin4": "GND",
+      "pin5": "VBUS",
+      "pin8": "VBUS",
+      "pin9": "GND"
+    },
+    "purpose": "60 V rated 5 V PD/monitor supply",
+    "nc": [
+      "pin2",
+      "pin3",
+      "pin6",
+      "pin7"
+    ],
+    "import_path": "imports/TPS7A1650DGNR.tsx"
+  },
+  {
+    "ref": "U3",
+    "code": "C181239",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "VCC3V3",
+      "pin4": "GND",
+      "pin5": "VBUS",
+      "pin8": "VBUS",
+      "pin9": "GND"
+    },
+    "purpose": "60 V rated logic supply",
+    "nc": [
+      "pin2",
+      "pin3",
+      "pin6",
+      "pin7"
+    ],
+    "import_path": "imports/TPS7A1633DGNR.tsx"
+  },
+  {
+    "ref": "D1",
+    "code": "C10214",
+    "sheet": "usb",
+    "pins": {
+      "K": "VBUS",
+      "A": "GND"
+    },
+    "purpose": "22 V standoff input TVS; main ICs rated 60 V",
+    "nc": [],
+    "import_path": "imports/SMBJ22A.tsx"
+  },
+  {
+    "ref": "D2",
+    "code": "C477999",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "CC1",
+      "pin2": "CC2",
+      "pin3": "GND"
+    },
+    "purpose": "Dual CC ESD protection",
+    "nc": [],
+    "import_path": "imports/PESD24VS2UT_215.tsx"
+  },
+  {
+    "ref": "R1",
+    "code": "C21190",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "VBUS",
+      "pin2": "VBUS_SENSE"
+    },
+    "purpose": "VBUS sense/discharge current limiting",
+    "nc": [],
+    "import_path": "imports/A_0603WAF1001T5E.tsx"
+  },
+  {
+    "ref": "D3",
+    "code": "C2109",
+    "sheet": "usb",
+    "pins": {
+      "cathode": "VBUS_SENSE",
+      "anode": "GND"
+    },
+    "purpose": "24 V local PD-sense transient clamp",
+    "nc": [],
+    "import_path": "imports/BZT52C24.tsx"
+  },
+  {
+    "ref": "C1",
+    "code": "C77083",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "VBUS",
+      "pin2": "GND"
+    },
+    "purpose": "Connector bulk, 1 uF/50 V",
+    "nc": [],
+    "import_path": "imports/GRM21BR71H105KA12L.tsx"
+  },
+  {
+    "ref": "C2",
+    "code": "C14663",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "VBUS",
+      "pin2": "GND"
+    },
+    "purpose": "U2 input bypass",
+    "nc": [],
+    "import_path": "imports/CC0603KRX7R9BB104.tsx"
+  },
+  {
+    "ref": "C4",
+    "code": "C19666",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "VDD5",
+      "pin2": "GND"
+    },
+    "purpose": "5 V LDO stability",
+    "nc": [],
+    "import_path": "imports/CL10A475KO8NNNC.tsx"
+  },
+  {
+    "ref": "R2",
+    "code": "C23162",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "VCC3V3",
+      "pin2": "SCL"
+    },
+    "purpose": "4.7 kOhm I2C pull-up; 400 kHz rise-time qualification requires bus capacitance <=75 pF",
+    "nc": [],
+    "import_path": "imports/A_0603WAF4701T5E.tsx"
+  },
+  {
+    "ref": "R4",
+    "code": "C25803",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "PD_RESET",
+      "pin2": "GND"
+    },
+    "purpose": "Default run/reset low",
+    "nc": [],
+    "import_path": "imports/A_0603WAF1003T5E.tsx"
+  },
+  {
+    "ref": "D4",
+    "code": "C22452",
+    "sheet": "input",
+    "pins": {
+      "anode": "VBUS",
+      "cathode": "EFUSE_IN"
+    },
+    "purpose": "5 A/40 V reverse-current blocking diode",
+    "nc": [],
+    "import_path": "imports/SS54.tsx"
+  },
+  {
+    "ref": "U4",
+    "code": "C1849461",
+    "sheet": "input",
+    "pins": {
+      "pin1": "EFUSE_IN",
+      "pin2": "EFUSE_IN",
+      "pin3": "EFUSE_IN",
+      "pin6": "EFUSE_IN",
+      "pin7": "INPUT_UV",
+      "pin8": "INPUT_OV",
+      "pin9": "GND",
+      "pin10": "SLEW",
+      "pin11": "INPUT_ILIM",
+      "pin13": "POWER_ENABLE",
+      "pin16": "INPUT_PG",
+      "pin18": "VIN_BUCK",
+      "pin19": "VIN_BUCK",
+      "pin20": "VIN_BUCK",
+      "pin21": "GND"
+    },
+    "purpose": "Input inrush, overload latch-off and UV/OV cut-off",
+    "nc": [
+      "pin4",
+      "pin5",
+      "pin12",
+      "pin14",
+      "pin15",
+      "pin17"
+    ],
+    "import_path": "imports/TPS16630PWPR.tsx"
+  },
+  {
+    "ref": "Q1",
+    "code": "C7420353",
+    "sheet": "input",
+    "pins": {
+      "B": "PD_INHIBIT",
+      "E": "GND",
+      "C": "POWER_ENABLE"
+    },
+    "purpose": "Invert active-low PD enable; default inhibits motor path",
+    "nc": [],
+    "import_path": "imports/MMBT3904.tsx"
+  },
+  {
+    "ref": "R5",
+    "code": "C844918",
+    "sheet": "input",
+    "pins": {
+      "pin1": "VCC3V3",
+      "pin2": "PD_ENABLE_N"
+    },
+    "purpose": "Default disable for PD output high impedance",
+    "nc": [],
+    "import_path": "imports/CRCW060310K0FKEA.tsx"
+  },
+  {
+    "ref": "R10",
+    "code": "C22815",
+    "sheet": "input",
+    "pins": {
+      "pin1": "EFUSE_IN",
+      "pin2": "INPUT_OV_TOP"
+    },
+    "purpose": "OV divider top segment",
+    "nc": [],
+    "import_path": "imports/A_0603WAF1623T5E.tsx"
+  },
+  {
+    "ref": "R11",
+    "code": "C4184",
+    "sheet": "input",
+    "pins": {
+      "pin1": "INPUT_OV_TOP",
+      "pin2": "INPUT_OV"
+    },
+    "purpose": "23.04 V OV threshold top segment",
+    "nc": [],
+    "import_path": "imports/A_0603WAF2002T5E.tsx"
+  },
+  {
+    "ref": "R13",
+    "code": "C25980",
+    "sheet": "input",
+    "pins": {
+      "pin1": "INPUT_ILIM",
+      "pin2": "GND"
+    },
+    "purpose": "7.15 k\u03a9 eFuse limit; 2.243\u20132.797 A including IC/resistor tolerances",
+    "nc": [],
+    "import_path": "imports/A_0603WAF7151T5E.tsx"
+  },
+  {
+    "ref": "C9",
+    "code": "C21122",
+    "sheet": "input",
+    "pins": {
+      "pin1": "SLEW",
+      "pin2": "GND"
+    },
+    "purpose": "22 nF inrush slew control",
+    "nc": [],
+    "import_path": "imports/CL10B223KB8NNNC.tsx"
+  },
+  {
+    "ref": "U5",
+    "code": "C44377",
+    "sheet": "buck",
+    "pins": {
+      "BOOT": "BOOT",
+      "VIN": "VIN_BUCK",
+      "EN": "BUCK_EN",
+      "pin4": "RT",
+      "FB": "MOTOR_FB",
+      "COMP": "COMP",
+      "GND": "GND",
+      "SW": "SWITCH_NODE",
+      "EP": "GND"
+    },
+    "purpose": "60 V / 3.5 A buck regulator",
+    "nc": [],
+    "import_path": "imports/TPS54360DDAR.tsx"
+  },
+  {
+    "ref": "L1",
+    "code": "C285788",
+    "sheet": "buck",
+    "pins": {
+      "pin1": "SWITCH_NODE",
+      "pin2": "VM"
+    },
+    "purpose": "8.2 uH power inductor",
+    "nc": [],
+    "import_path": "imports/MHCC10040_8R2M_R7.tsx"
+  },
+  {
+    "ref": "C16",
+    "code": "C403725",
+    "sheet": "buck",
+    "pins": {
+      "pin1": "VM",
+      "pin2": "GND"
+    },
+    "purpose": "47 uF/25 V output ceramic 1",
+    "nc": [],
+    "import_path": "imports/GRM31CR61E476ME44L.tsx"
+  },
+  {
+    "ref": "C18",
+    "code": "C178373",
+    "sheet": "buck",
+    "pins": {
+      "pin1": "VM",
+      "pin2": "GND"
+    },
+    "purpose": "220 uF/25 V motor bulk",
+    "nc": [],
+    "import_path": "imports/A_35SVPK330M.tsx"
+  },
+  {
+    "ref": "R55",
+    "code": "C23186",
+    "sheet": "buck",
+    "pins": {
+      "pin1": "FB_TOP_MID",
+      "pin2": "MOTOR_FB"
+    },
+    "purpose": "5.1 k feedback upper segment; total 105.1 k",
+    "nc": [],
+    "import_path": "imports/A_0603WAF5101T5E.tsx"
+  },
+  {
+    "ref": "R20",
+    "code": "C22956",
+    "sheet": "buck",
+    "pins": {
+      "pin1": "MOTOR_FB",
+      "pin2": "SELECT_9"
+    },
+    "purpose": "21 k parallel lower: 9.008 V",
+    "nc": [],
+    "import_path": "imports/A_0603WAF2102T5E.tsx"
+  },
+  {
+    "ref": "R21",
+    "code": "C22790",
+    "sheet": "buck",
+    "pins": {
+      "pin1": "MOTOR_FB",
+      "pin2": "SELECT_12"
+    },
+    "purpose": "12 k parallel lower: 12.011 V",
+    "nc": [],
+    "import_path": "imports/A_0603WAF1202T5E.tsx"
+  },
+  {
+    "ref": "R22",
+    "code": "C22967",
+    "sheet": "buck",
+    "pins": {
+      "pin1": "COMP",
+      "pin2": "COMP_ZERO"
+    },
+    "purpose": "27 k type-II compensation",
+    "nc": [],
+    "import_path": "imports/A_0603WAF2702T5E.tsx"
+  },
+  {
+    "ref": "C20",
+    "code": "C1653",
+    "sheet": "buck",
+    "pins": {
+      "pin1": "COMP",
+      "pin2": "GND"
+    },
+    "purpose": "22 pF HF compensation pole",
+    "nc": [],
+    "import_path": "imports/CL10C220JB8NNNC.tsx"
+  },
+  {
+    "ref": "U6",
+    "code": "C6986",
+    "sheet": "controls",
+    "pins": {
+      "GND": "GND",
+      "TRIG": "TIMING",
+      "OUT": "PWM",
+      "RESET": "MOTOR_READY",
+      "CONT": "TIMER_CONT",
+      "THRES": "TIMING",
+      "DISCH": "WIPER",
+      "VDD": "VCC3V3"
+    },
+    "purpose": "Hardware potentiometer PWM",
+    "nc": [],
+    "import_path": "imports/TLC555CDR.tsx"
+  },
+  {
+    "ref": "RV1",
+    "code": "C5710902",
+    "sheet": "controls",
+    "pins": {
+      "pin1": "POT_CHARGE",
+      "pin2": "WIPER",
+      "pin3": "POT_DISCHARGE",
+      "pin4": "GND",
+      "pin5": "GND"
+    },
+    "purpose": "Bourns vertical 10 k linear speed pot",
+    "nc": [],
+    "import_path": "imports/PTV09A_4015F_B103.tsx"
+  },
+  {
+    "ref": "R25",
+    "code": "C23138",
+    "sheet": "controls",
+    "pins": {
+      "pin1": "VCC3V3",
+      "pin2": "WIPER"
+    },
+    "purpose": "Charge end resistance",
+    "nc": [],
+    "import_path": "imports/A_0603WAF3300T5E.tsx"
+  },
+  {
+    "ref": "D6",
+    "code": "C8598",
+    "sheet": "controls",
+    "pins": {
+      "anode": "POT_CHARGE",
+      "cathode": "TIMING"
+    },
+    "purpose": "Steer charging through one pot segment",
+    "nc": [],
+    "import_path": "imports/B5819W_SL.tsx"
+  },
+  {
+    "ref": "C21",
+    "code": "C440183",
+    "sheet": "controls",
+    "pins": {
+      "pin1": "TIMING",
+      "pin2": "GND"
+    },
+    "purpose": "5.6 nF C0G PWM timing",
+    "nc": [],
+    "import_path": "imports/GRM1885C1H562JA01D.tsx"
+  },
+  {
+    "ref": "C22",
+    "code": "C57112",
+    "sheet": "controls",
+    "pins": {
+      "pin1": "TIMER_CONT",
+      "pin2": "GND"
+    },
+    "purpose": "Timer threshold bypass",
+    "nc": [],
+    "import_path": "imports/A_0603B103K500NT.tsx"
+  },
+  {
+    "ref": "SW1",
+    "code": "C908270",
+    "sheet": "controls",
+    "pins": {
+      "pin1": "IN1",
+      "pin2": "PWM",
+      "pin3": "IN2"
+    },
+    "purpose": "SPDT ON-OFF-ON routes hardware PWM; common physical pin 2",
+    "nc": [],
+    "import_path": "imports/A_1MS3T1B1M2QES_5.tsx"
+  },
+  {
+    "ref": "LED2",
+    "code": "C2986030",
+    "sheet": "controls",
+    "pins": {
+      "anode": "R29_LED",
+      "cathode": "GND"
+    },
+    "purpose": "Forward command indicator",
+    "nc": [],
+    "import_path": "imports/A_19_217_G7C_AN1P2_6T.tsx"
+  },
+  {
+    "ref": "U8",
+    "code": "C23892",
+    "sheet": "protection",
+    "pins": {
+      "CATHODE": "VREF2V5",
+      "REF": "VREF2V5",
+      "ANODE": "GND"
+    },
+    "purpose": "2.495 V reference",
+    "nc": [],
+    "import_path": "imports/TL431AIDBZR.tsx"
+  },
+  {
+    "ref": "U9",
+    "code": "C67470",
+    "sheet": "protection",
+    "pins": {
+      "1OUT": "MOTOR_READY",
+      "1IN_NEG": "UV_REF",
+      "1IN_POS": "MOTOR_FB",
+      "GND": "GND",
+      "2IN_POS": "OV_REF",
+      "2IN_NEG": "MOTOR_FB",
+      "2OUT": "OV_ACTIVE_N",
+      "VCC": "VDD5"
+    },
+    "purpose": "Selected feedback-relative UV/OV; independent VM ADC catches selector/feedback mismatch",
+    "nc": [],
+    "import_path": "imports/LM393DR.tsx"
+  },
+  {
+    "ref": "R32",
+    "code": "C23348",
+    "sheet": "protection",
+    "pins": {
+      "pin1": "VREF2V5",
+      "pin2": "UV_REF"
+    },
+    "purpose": "0.727 V undervoltage reference top",
+    "nc": [],
+    "import_path": "imports/A_0603WAF2432T5E.tsx"
+  },
+  {
+    "ref": "R40",
+    "code": "C22935",
+    "sheet": "protection",
+    "pins": {
+      "pin1": "OV_ACTIVE_N",
+      "pin2": "OV_REF"
+    },
+    "purpose": "OV hysteresis feedback",
+    "nc": [],
+    "import_path": "imports/A_0603WAF1004T5E.tsx"
+  },
+  {
+    "ref": "Q2",
+    "code": "C53444",
+    "sheet": "dump",
+    "pins": {
+      "B": "DUMP_BASE",
+      "E": "VM",
+      "C": "DUMP_DRIVE"
+    },
+    "purpose": "Dump MOSFET gate driver",
+    "nc": [],
+    "import_path": "imports/MMBT3906LT1G.tsx"
+  },
+  {
+    "ref": "D9",
+    "code": "C2103",
+    "sheet": "dump",
+    "pins": {
+      "cathode": "DUMP_GATE",
+      "anode": "GND"
+    },
+    "purpose": "10 V gate protection",
+    "nc": [],
+    "import_path": "imports/BZT52C10.tsx"
+  },
+  {
+    "ref": "Q3",
+    "code": "C20917",
+    "sheet": "dump",
+    "pins": {
+      "G": "DUMP_GATE",
+      "S": "GND",
+      "D": "DUMP_LOAD"
+    },
+    "purpose": "Switched regenerative energy dump",
+    "nc": [],
+    "import_path": "imports/AO3400A.tsx"
+  },
+  {
+    "ref": "R45",
+    "code": "C2991665",
+    "sheet": "dump",
+    "pins": {
+      "pin1": "VM",
+      "pin2": "DUMP_MID_A"
+    },
+    "purpose": "10 ohm/2 W; two 20 ohm parallel branches",
+    "nc": [],
+    "import_path": "imports/RPL_12K10R0FT.tsx"
+  },
+  {
+    "ref": "U10",
+    "code": "C1855818",
+    "sheet": "motor",
+    "pins": {
+      "pin1": "IN1",
+      "pin2": "IN2",
+      "pin3": "MOTOR_READY",
+      "pin4": "MOTOR_FAULT_N",
+      "pin5": "VCC3V3",
+      "pin6": "IPROPI",
+      "pin7": "GND",
+      "pin8": "MOTOR_P",
+      "pin9": "GND",
+      "pin10": "MOTOR_N",
+      "pin11": "VM",
+      "pin12": "VCP",
+      "pin13": "CPH",
+      "pin14": "CPL",
+      "pin15": "GND",
+      "pin16": "VCC3V3",
+      "pin17": "GND"
+    },
+    "purpose": "Integrated PWM-mode H bridge, nominal 2.22 A chopping",
+    "nc": [],
+    "import_path": "imports/DRV8874PWPR.tsx"
+  },
+  {
+    "ref": "R50",
+    "code": "C25890",
+    "sheet": "motor",
+    "pins": {
+      "pin1": "IPROPI",
+      "pin2": "GND"
+    },
+    "purpose": "3.3 k current-sense resistor",
+    "nc": [],
+    "import_path": "imports/A_0402WGF3301TCE.tsx"
+  },
+  {
+    "ref": "D10",
+    "code": "C211759",
+    "sheet": "motor",
+    "pins": {
+      "pin1": "MOTOR_P",
+      "pin2": "MOTOR_N"
+    },
+    "purpose": "Bidirectional motor terminal TVS, 24.4 V nominal surge clamp",
+    "nc": [],
+    "import_path": "imports/SMBJ15CA.tsx"
+  },
+  {
+    "ref": "J2",
+    "code": "C395849",
+    "sheet": "motor",
+    "pins": {
+      "pin1": "MOTOR_P",
+      "pin2": "MOTOR_N"
+    },
+    "purpose": "Direct 2-pin 5 mm motor screw terminal",
+    "nc": [],
+    "import_path": "imports/DB126V_5_0_2P_GN_P.tsx"
+  },
+  {
+    "ref": "U11",
+    "code": "C529330",
+    "sheet": "pdhost",
+    "pins": {
+      "pin1": "SCL",
+      "pin2": "SDA",
+      "pin3": "PD_ALERT_N",
+      "pin4": "VCC3V3",
+      "pin5": "GND",
+      "pin6": "MCU_NRST",
+      "pin7": "ADC_VBUS",
+      "pin8": "ADC_VM",
+      "pin9": "VOLTAGE_BIT_9",
+      "pin10": "VOLTAGE_BIT_12",
+      "pin11": "VOLTAGE_DRIVE_9",
+      "pin12": "VOLTAGE_DRIVE_12",
+      "pin13": "HOST_ALLOW",
+      "pin14": "HOST_INHIBIT_B",
+      "pin15": "PD_ENABLE_N",
+      "pin16": "PD_RESET",
+      "pin17": "MOTOR_FAULT_N",
+      "pin18": "SWDIO",
+      "pin19": "SWCLK"
+    },
+    "nc": [
+      "pin20"
+    ],
+    "purpose": "PD qualification only; hardware PWM independent",
+    "import_path": "imports/STM32G030F6P6TR.tsx"
+  },
+  {
+    "ref": "SW2",
+    "code": "C3293142",
+    "sheet": "pdhost",
+    "pins": {
+      "pin1": "VCC3V3",
+      "pin2": "VOLTAGE_BIT_9",
+      "pin3": "VCC3V3",
+      "pin4": "VOLTAGE_BIT_12"
+    },
+    "nc": [],
+    "purpose": "DIP voltage selector: 00=5 V / 10=9 V / 01=12 V / 11=inhibit",
+    "import_path": "imports/DSHP02TSGER.tsx"
+  },
+  {
+    "ref": "R31",
+    "code": "C22975",
+    "sheet": "protection",
+    "pins": {
+      "pin1": "VM",
+      "pin2": "VREF2V5"
+    },
+    "purpose": "2 kOhm motor-rail-powered TL431 reference bias; independent of USB supply",
+    "nc": [],
+    "import_path": "imports/A_0603WAF2001T5E.tsx"
+  },
+  {
+    "ref": "C13",
+    "code": "C138687",
+    "import_path": "imports/CL32B106KBJNNNE.tsx",
+    "pins": {
+      "pin1": "net.VIN_BUCK",
+      "pin2": "net.GND"
+    },
+    "nc": []
+  },
+  {
+    "ref": "R68",
+    "code": "C2074262",
+    "import_path": "imports/ESR18EZPF1001.tsx",
+    "pins": {
+      "pin1": "VM",
+      "pin2": "GND"
+    },
+    "nc": []
+  },
+  {
+    "ref": "R60",
+    "code": "C855559",
+    "import_path": "imports/AT0603BRD07100KL.tsx",
+    "pins": {
+      "pin1": "upper",
+      "pin2": "lower"
+    },
+    "nc": []
+  },
+  {
+    "ref": "R61",
+    "code": "C95204",
+    "import_path": "imports/RT0603BRD0710KL.tsx",
+    "pins": {
+      "pin1": "upper",
+      "pin2": "lower"
+    },
+    "nc": []
+  }
+]

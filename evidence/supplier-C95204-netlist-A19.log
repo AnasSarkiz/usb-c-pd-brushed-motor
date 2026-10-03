@@ -1,0 +1,13 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - R61: 10kΩ resistor
+
+
+COMPONENT_PINS:
+R61 (10kΩ undefined)
+- pin1(anode, pos, left): NOT_CONNECTED
+- pin2(cathode, neg, right): NOT_CONNECTED
+

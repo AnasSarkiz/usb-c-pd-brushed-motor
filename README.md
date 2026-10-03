@@ -1,14 +1,15 @@
-# USB-C PD brushed DC motor controller — A18 safe GPIO step
+# USB-C PD brushed DC motor controller — A19 precision rail-sensing step
 
 Connected tscircuit prototype for one 5/9/12 V brushed motor, targeting approximately 2 A continuous. One USB-C power input, regulated motor voltage, hardware speed potentiometer, FWD/OFF/REV switch, DRV8874 H-bridge, power/direction LEDs and one motor screw terminal. The user approved an MCU only for PD qualification; PWM remains hardware controlled.
 
-**Not ready for placement, routing or fabrication.** All 55 active supplier models pass the electrical/pad/schema audit. The 12 imported thermal vias are accepted under the explicitly authorized checker policy; new routed via-in-pad remains prohibited. The explicit-coordinate defect remains in official packages. A12 independently validates the native numeric manual-placement API on a supplier-backed probe; unit-string manual placement still fails. Power/firmware qualification remains open. Selector mechanics and the simplification pass are documented. No physical hardware has been tested.
+**Not ready for placement, routing or fabrication.** All 57 active supplier models pass the electrical/pad/schema audit. The 12 imported thermal vias are accepted under the explicitly authorized checker policy; new routed via-in-pad remains prohibited. The explicit-coordinate defect remains in official packages. A12 independently validates the native numeric manual-placement API on a supplier-backed probe; unit-string manual placement still fails. Power/firmware qualification remains open. Selector mechanics and the simplification pass are documented. No physical hardware has been tested.
 
 Use this task directory for every command. Entry point: index.circuit.tsx. Dependencies are pinned to tscircuit 0.0.2742 / CLI 0.1.2237 / core 0.0.2056. Every electronic component is an unchanged official JLCPCB import; no custom or patched component is used.
 
-- docs/BOM.csv: current 129 components / 55 supplier parts, dates and pending approvals.
+- docs/BOM.csv: current 129 components / 57 supplier parts, dates and pending approvals.
 - VALIDATION.md: current gates, checks and historical evidence.
 - docs/ARCHITECTURE.md: connected circuit and electrical limitations.
+- docs/ADC-SENSING.md: precision sensing replacements and conservative rail/decay uncertainty screen.
 - docs/STM32-SAFE-GPIO.md: actual STM32 pin initialization/inhibition, bonded aliases and unchanged vendor definitions.
 - docs/PD-RDO-CURRENT.md: source/operating-current correction, malformed-RDO rejection and passing regression evidence.
 - docs/PD-QUALIFICATION.md: selector, voltage-aware contract policy and incomplete embedded port.
@@ -46,3 +47,5 @@ A16 adds complete NVM readback transport:20,639 simulated assertions and a Corte
 A17 corrects RDO current qualification for3–5 A sources while keeping3 A operating/hardware limits, and rejects reserved/malformed fields.60,202 policy/11,518 sequence/1,037 request assertions and22 configured tests/382 expects pass. All six portable target objects compile; no flashable MCU or physical result is claimed. Product placement/routing remain unstarted.
 
 A18 adds the actual STM32 GPIO backend with open-drain bridge inhibition, safe startup ordering and preserved feedback/SWD state.24 configured tests/403 expects and10,289,863 GPIO-model assertions pass; all seven Cortex-M0+ objects compile. A flashable MCU image and remaining PD/peripheral/power gates are incomplete; product placement and routing remain unstarted.
+
+A19 replaces four ADC-divider resistors with validated0.1% JLCPCB imports.129 placements/57 supplier codes; static rail-error screening passes261,568 independent corners and creates a5 V acceptance window. Actual ADC calibration/peripheral/noise/transient qualification remains open. Product placement and routing are still unstarted.

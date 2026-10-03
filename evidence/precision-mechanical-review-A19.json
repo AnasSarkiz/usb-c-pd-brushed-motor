@@ -1,0 +1,126 @@
+[
+  {
+    "code": "C855559",
+    "import_sha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99",
+    "artifact_sha256": "90a9d9cea191d977b17d3d63f649445d2aa921c148871ae616d1e1f447f4ee65",
+    "pad_centers_x_mm": [
+      0.753364,
+      -0.753364
+    ],
+    "pad_width_mm": 0.8064754,
+    "pad_height_mm": 0.8640064,
+    "inner_gap_mm": 0.7002526000000001,
+    "outer_span_mm": 2.3132034,
+    "nominal_centered_minimum_longitudinal_overlap_mm": 0.09999999999999998,
+    "paste": [
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_0",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.56453278,
+        "height": 0.60480448,
+        "x": 0.753364,
+        "y": 0,
+        "pcb_component_id": "pcb_component_0",
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_1",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.56453278,
+        "height": 0.60480448,
+        "x": -0.753364,
+        "y": 0,
+        "pcb_component_id": "pcb_component_0",
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "manufacturer_body_mm": {
+      "length": [
+        1.5,
+        1.7
+      ],
+      "width": [
+        0.7,
+        0.9
+      ],
+      "height": [
+        0.35,
+        0.55
+      ],
+      "terminal": [
+        0.1,
+        0.4
+      ]
+    },
+    "status": "schema/electrical/nominal mechanical screen passed; solder-joint/assembler/tolerance stack pending",
+    "probe_warning_review": "Exactly2 open source pins per isolated unwired probe. All pins independently verified; product uses both pins wired. Warnings retained, no suppression."
+  },
+  {
+    "code": "C95204",
+    "import_sha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81",
+    "artifact_sha256": "5940b6840c5d509317f612a0b755d4702e7d6b04ea363c197ded84185ee841e0",
+    "pad_centers_x_mm": [
+      0.753364,
+      -0.753364
+    ],
+    "pad_width_mm": 0.8064754,
+    "pad_height_mm": 0.8640064,
+    "inner_gap_mm": 0.7002526000000001,
+    "outer_span_mm": 2.3132034,
+    "nominal_centered_minimum_longitudinal_overlap_mm": 0.09999999999999998,
+    "paste": [
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_0",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.56453278,
+        "height": 0.60480448,
+        "x": 0.753364,
+        "y": 0,
+        "pcb_component_id": "pcb_component_0",
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      {
+        "type": "pcb_solder_paste",
+        "pcb_solder_paste_id": "pcb_solder_paste_1",
+        "layer": "top",
+        "shape": "rect",
+        "width": 0.56453278,
+        "height": 0.60480448,
+        "x": -0.753364,
+        "y": 0,
+        "pcb_component_id": "pcb_component_0",
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "manufacturer_body_mm": {
+      "length": [
+        1.5,
+        1.7
+      ],
+      "width": [
+        0.7,
+        0.9
+      ],
+      "height": [
+        0.35,
+        0.55
+      ],
+      "terminal": [
+        0.1,
+        0.4
+      ]
+    },
+    "status": "schema/electrical/nominal mechanical screen passed; solder-joint/assembler/tolerance stack pending",
+    "probe_warning_review": "Exactly2 open source pins per isolated unwired probe. All pins independently verified; product uses both pins wired. Warnings retained, no suppression."
+  }
+]

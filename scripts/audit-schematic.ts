@@ -3,6 +3,23 @@ import { createHash } from "node:crypto"
 import { any_circuit_element } from "circuit-json"
 import { z } from "zod"
 
+const auditConfiguration = z
+  .object({
+    revision: z.string(),
+    importManifestPath: z.string(),
+    reportPath: z.string(),
+  })
+  .parse(
+    process.argv[2]
+      ? JSON.parse(await readFile(process.argv[2], "utf8"))
+      : {
+          revision: "A19",
+          importManifestPath:
+            "evidence/active-supplier-inspection-manifest-A19.json",
+          reportPath: "evidence/schematic-connectivity-audit-A19.json",
+        },
+  )
+
 const raw = JSON.parse(await readFile("dist/index/circuit.json", "utf8"))
 const circuitJson = z.array(any_circuit_element).parse(raw)
 const manifest = z
@@ -139,12 +156,7 @@ const warningReview = z
 const importManifest = z
   .array(z.object({ code: z.string(), import_path: z.string() }))
   .parse(
-    JSON.parse(
-      await readFile(
-        "evidence/active-supplier-inspection-manifest-A11.json",
-        "utf8",
-      ),
-    ),
+    JSON.parse(await readFile(auditConfiguration.importManifestPath, "utf8")),
   )
 if (warningReview.unreviewedWarnings.length)
   issues.push("Manual diagnostic review has unreviewed warnings")
@@ -181,7 +193,7 @@ for (const diagnostic of diagnostics) {
     )
 }
 const report = {
-  revision: "A11",
+  revision: auditConfiguration.revision,
   artifactSha256: createHash("sha256")
     .update(JSON.stringify(raw))
     .digest("hex"),
@@ -194,7 +206,7 @@ const report = {
     "Raw diagnostics retained; exact source, message and wiring reviewed in main-warning-review-A7.json",
 }
 await writeFile(
-  "evidence/schematic-connectivity-audit-A11.json",
+  auditConfiguration.reportPath,
   JSON.stringify(report, null, 2) + "\n",
 )
 console.log(

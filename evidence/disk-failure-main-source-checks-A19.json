@@ -1,0 +1,62 @@
+[
+  {
+    "check": "netlist",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "exit": 0,
+    "artifact_note": "Source placement can read schematic-only cache; not PCB approval."
+  },
+  {
+    "check": "pin_specification",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "exit": 0,
+    "artifact_note": "Source placement can read schematic-only cache; not PCB approval."
+  },
+  {
+    "check": "source",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "exit": 0,
+    "artifact_note": "Source placement can read schematic-only cache; not PCB approval."
+  },
+  {
+    "check": "schematic-placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "exit": 0,
+    "artifact_note": "Source placement can read schematic-only cache; not PCB approval."
+  },
+  {
+    "check": "placement",
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ],
+    "exit": 1,
+    "artifact_note": "Source placement can read schematic-only cache; not PCB approval."
+  }
+]

@@ -1,3 +1,5 @@
+import { AT0603BRD07100KL } from "../imports/AT0603BRD07100KL"
+import { RT0603BRD0710KL } from "../imports/RT0603BRD0710KL"
 import { STM32G030F6P6TR } from "../imports/STM32G030F6P6TR"
 import { DSHP02TSGER } from "../imports/DSHP02TSGER"
 import { CC0603KRX7R9BB104 } from "../imports/CC0603KRX7R9BB104"
@@ -128,7 +130,7 @@ export function PdQualification() {
         connections={{ pin1: "net.VOLTAGE_BIT_12", pin2: "net.GND" }}
       />
       {/* VBUS ADC divider upper */}
-      <A_0603WAF1003T5E
+      <AT0603BRD07100KL
         name="R60"
         schSheetName="pdhost"
         schX={-11.0}
@@ -136,7 +138,7 @@ export function PdQualification() {
         connections={{ pin1: "net.VBUS", pin2: "net.ADC_VBUS" }}
       />
       {/* VBUS ADC divider lower; 11:1 scale */}
-      <CRCW060310K0FKEA
+      <RT0603BRD0710KL
         name="R61"
         schSheetName="pdhost"
         schX={-5.5}
@@ -214,7 +216,7 @@ export function PdQualification() {
         connections={{ pin1: "net.VOLTAGE_DRIVE_12", pin2: "net.GND" }}
       />
       {/* Motor-rail ADC divider upper */}
-      <A_0603WAF1003T5E
+      <AT0603BRD07100KL
         name="R66"
         schSheetName="pdhost"
         schX={5.5}
@@ -222,7 +224,7 @@ export function PdQualification() {
         connections={{ pin1: "net.VM", pin2: "net.ADC_VM" }}
       />
       {/* Motor-rail ADC divider lower; independent absolute-rail qualification */}
-      <CRCW060310K0FKEA
+      <RT0603BRD0710KL
         name="R67"
         schSheetName="pdhost"
         schX={11.0}

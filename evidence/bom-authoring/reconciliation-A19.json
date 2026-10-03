@@ -1,0 +1,12 @@
+{
+  "componentCount": 129,
+  "supplierCount": 57,
+  "inspections": [
+    "{\"kind\":\"table\",\"sheet\":\"BOM\",\"address\":\"A14:G14\",\"rows\":1,\"cols\":7,\"values\":[[\"R4,R8,R18,R24,R56,R58,R59,R63,R64\",9,\"100kohm\",\"UNI-ROYAL\",\"0603WAF1003T5E\",\"C25803\",\"0603\"]]}",
+    "{\"kind\":\"table\",\"sheet\":\"BOM\",\"address\":\"A19:G19\",\"rows\":1,\"cols\":7,\"values\":[[\"R7,R9,R12,R16,R23,R33,R41,R42,R44,R49,R51,R57,R62,R65\",14,\"10kohm\",\"VISHAY\",\"CRCW060310K0FKEA\",\"C844918\",\"0603\"]]}",
+    "{\"kind\":\"table\",\"sheet\":\"BOM\",\"address\":\"A57:O58\",\"rows\":2,\"cols\":15,\"values\":[[\"R60,R66\",2,\"100kohm\",\"YAGEO\",\"AT0603BRD07100KL\",\"C855559\",\"0603\",\"VBUS ADC divider upper; 0.1% precision sensing; Motor-rail ADC divider upper; 0.1% precision sensing\",\"imports/AT0603BRD07100KL.tsx\",7670,\"LCSC stock observed; JLC assembly eligibility/stock not confirmed\",\"https://www.lcsc.com/product-detail/C855559.html\",\"https://datasheet.lcsc.com/datasheet/pdf/837b5ba54f8063c3882b949c35751654.pdf?productCode=C855559\",\"A19 official import/schema/pin/pad audit passed; assembly and ADC port qualification pending\",\"2026-10-03\"],[\"R61,R67\",2,\"10kohm\",\"YAGEO\",\"RT0603BRD0710KL\",\"C95204\",\"0603\",\"VBUS ADC divider lower; 11:1 scale; 0.1% precision sensing; Motor-rail ADC divider lower; independent absolute-rail qualification; 0.1% precision sensing\",\"imports/RT0603BRD0710KL.tsx\",392640,\"LCSC stock observed; JLC assembly eligibility/stock not confirmed\",\"https://www.lcsc.com/product-detail/C95204.html\",\"https://datasheet.lcsc.com/datasheet/pdf/46d7760c582640714d605308a25a220a.pdf?productCode=C95204\",\"A19 official import/schema/pin/pad audit passed; assembly and ADC port qualification pending\",\"2026-10-03\"]]}"
+  ],
+  "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "export": "RFC4180 serialized Artifact Tool range.values; public CSV export API unavailable",
+  "untouchedRowsPreserved": true
+}
