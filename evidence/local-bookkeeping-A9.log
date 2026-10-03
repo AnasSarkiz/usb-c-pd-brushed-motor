@@ -1,0 +1,4 @@
+[main 2b53d42] Record A9 source revision and publication blockers
+ 4 files changed, 155 insertions(+), 2 deletions(-)
+ create mode 100644 evidence/local-commit-A9.log
+ create mode 100644 evidence/source-whitespace-check-A9.log
