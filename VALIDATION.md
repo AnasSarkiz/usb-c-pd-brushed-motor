@@ -32,7 +32,7 @@ Versions unchanged:tscircuit0.0.2742/CLI0.1.2237/core0.0.2056/props0.0.677/circu
 
 ## Revision and publication
 
-Exact hashes: evidence/source-manifest-A18.json. Source commit pending bookkeeping; hardware revision0f2693738e630c4997942d8536b3d913cb1bd5e5. **Publication blocker:** task Git branch main has no remote; destination repository/branch remains unanswered. Neither GitHub push nor tscircuit package update succeeded. Standing authorization is recorded; no destination is invented and no fabrication/hardware approval is implied.
+Exact hashes: evidence/source-manifest-A18.json. Source commit ee2b14af5814266e0b186ebdf5713df6c7ce911a; hardware revision0f2693738e630c4997942d8536b3d913cb1bd5e5. **Publication blocker:** task Git branch main has no remote; destination repository/branch remains unanswered. Neither GitHub push nor tscircuit package update succeeded. Standing authorization is recorded; no destination is invented and no fabrication/hardware approval is implied.
 
 ---
 
