@@ -43,7 +43,7 @@ All eight regenerated A8 sheets were inspected in evidence/schematic-overview-A8
 
 ## Publication status
 
-Local task Git repository: main branch, no configured remote. Configured package: @tsci/AnasSarkiz.usb-c-pd-brushed-motor, version 0.0.1. Existing registry identity @AnasSarkiz verified without exposing credentials. GitHub repository/branch requested from the user. Neither GitHub nor package remote has been updated; a source-only local commit does not fulfill the publication requirement. Publication must retain WIP labels and the recorded validation blockers. No fabrication/hardware approval is implied.
+Local task Git repository: main branch, no configured remote. A8 implementation source commit: e1eb848a8cf4b9e14f5b91f32bccee9f0afb3957. Documentation-only bookkeeping follows that source commit; circuit/import/dependency files are unchanged. Configured package: @tsci/AnasSarkiz.usb-c-pd-brushed-motor, version 0.0.1. Existing registry identity @AnasSarkiz verified without exposing credentials. GitHub repository/branch requested from the user. Neither GitHub nor package remote has been updated; a source-only local commit does not fulfill the publication requirement. Publication must retain WIP labels and the recorded validation blockers. No fabrication/hardware approval is implied.
 
 ---
 

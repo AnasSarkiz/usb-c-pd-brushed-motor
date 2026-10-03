@@ -1,7 +1,7 @@
 {
   "revision": "A8",
   "date": "2026-10-03",
-  "sourceCommit": null,
+  "sourceCommit": "e1eb848a8cf4b9e14f5b91f32bccee9f0afb3957",
   "versions": {
     "tscircuit": "0.0.2742",
     "@tscircuit/cli": "0.1.2235",
@@ -18,7 +18,7 @@
   "stage3": "blocked",
   "files": {
     "README.md": "55c21cd2edec8739d42c7d2eb214488cbe85e1a22337de14f3af0275e9db55c1",
-    "VALIDATION.md": "172b443816ebf947e2967ee7f11b24000349f7f70e067fda9220e12bcf65baf7",
+    "VALIDATION.md": "e1ccb55fa96145f296f13b5afeefd4312cd8222aaf01c42588325584bfda76d7",
     "biome.json": "936be28e21dd496b555828a6ad6d91252548aa930fb0a996727935ded11c46b1",
     "bun.lock": "7c4cae0f557408845217a38d922c624bd7c184dc866ff8b21c49cb974b1e2647",
     "circuit/EnergyDump.tsx": "4393f5481f1f88b6fd3c36e5f2c53fcac50c519c28a4df1a1b74c785e0fd734e",
@@ -243,7 +243,7 @@
     "evidence/typecheck-final-A8.log": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
     "evidence/format-check-final-A8.log": "ebb64e243446467cb95553cc2b31344ebf7cf0d68f54d81e748f0d36551ace7a"
   },
-  "sourceCommitIdentification": "Initial task-local A8 commit on main; exact source hashes below",
+  "sourceCommitIdentification": "A8 implementation source commit; subsequent bookkeeping changes only validation metadata.",
   "checkerViaInPadAllowed": true,
   "routerAllowViaInPad": false,
   "supplierNativeErrors": 0
