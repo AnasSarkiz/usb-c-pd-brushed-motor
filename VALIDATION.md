@@ -36,7 +36,7 @@ Official versions unchanged:tscircuit0.0.2742 /CLI0.1.2237 /core0.0.2056 /props0
 
 ## Revision and publication
 
-A14 source/evidence hashes are recorded in evidence/source-manifest-A14.json; source commit recorded after implementation commit. Hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. Manufacturer files remain unchanged even where raw CRLF/trailing spaces produce whitespace advisories. GitHub repository/branch/remote remains unknown. Standing publication authorization exists, but missing destination and incomplete gates block a fully published step. Neither GitHub nor tscircuit remote update succeeded. No physical/fabrication approval implied.
+A14 source/evidence hashes are recorded in evidence/source-manifest-A14.json; source commit 0043efe65c49d99623e0190574272916fde2acf2. Hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. Manufacturer files remain unchanged even where raw CRLF/trailing spaces produce whitespace advisories. GitHub repository/branch/remote remains unknown. Standing publication authorization exists, but missing destination and incomplete gates block a fully published step. Neither GitHub nor tscircuit remote update succeeded. No physical/fabrication approval implied.
 
 ---
 
