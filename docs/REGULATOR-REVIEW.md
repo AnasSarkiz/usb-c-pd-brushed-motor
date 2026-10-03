@@ -20,3 +20,5 @@ References: [TI TPS54360](https://www.ti.com/lit/ds/symlink/tps54360.pdf), §8.2
 
 
 A11: R68/C2074262 adds a 1 kΩ/0.5 W rail-discharge load. Active count 129/55. +5% VM and worst bleeder load are included in both C and host power screens, with selected peak inputs 1.347/2.226/2.145 A. The 9 V/15 V combined-corner margin is 17 mA; transient/thermal validation remains required. See RAIL-DISCHARGE.md. Existing loop/input-capacitor limitations remain.
+
+A14 obtains the exact Panasonic frequency-dependent model. The current27 kΩ/22 nF/22 pF CCM screen now passes12,960 declared sensitivity cases under the unchanged45°/48 kHz thresholds: minimum77.77°, maximum crossover31.848 kHz. Model/S-parameter arithmetic agrees within0.22%; actual characteristic/model differences and absent temperature data are explicit. Earlier constant-ESR failures remain retained. This supersedes the claim that no manufacturer-based CCM screen passes, but is not full switching/temperature/bias/current-sharing or hardware approval. See BUCK-MODEL.md for complete scope and remaining limits. No compensation value, supplier import or PCB geometry is changed.

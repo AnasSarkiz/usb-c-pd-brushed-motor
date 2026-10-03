@@ -1,0 +1,65 @@
+{
+  "case_count": 12960,
+  "maximum_model_s_parameter_relative_error": 0.002194468722658051,
+  "worst_phase_margin": {
+    "case": {
+      "voltage_v": 12,
+      "load_a": 1,
+      "r_scale": 0.75,
+      "c_scale": 1.5,
+      "ceramic_f": 0.0001692,
+      "ceramic_r": 0.001,
+      "gm_scale": 0.5625,
+      "delay_s": 1.0416666666666667e-06
+    },
+    "crossover_hz": 1042.2543330794063,
+    "phase_margin_deg": 77.76728226762008
+  },
+  "highest_crossover": {
+    "case": {
+      "voltage_v": 5,
+      "load_a": 1,
+      "r_scale": 2,
+      "c_scale": 0.6,
+      "ceramic_f": 0,
+      "ceramic_r": 0.001,
+      "gm_scale": 1.5625,
+      "delay_s": 0
+    },
+    "crossover_hz": 31848.343900252323,
+    "phase_margin_deg": 116.83199186371594
+  },
+  "samples": [
+    {
+      "frequency_hz": 120,
+      "esr_ohms": 0.07462523156568003,
+      "magnitude_ohms": 3.90052376360242
+    },
+    {
+      "frequency_hz": 1000,
+      "esr_ohms": 0.019002327656570814,
+      "magnitude_ohms": 0.4777126054430858
+    },
+    {
+      "frequency_hz": 10000,
+      "esr_ohms": 0.013125968211301985,
+      "magnitude_ohms": 0.05033521828424567
+    },
+    {
+      "frequency_hz": 20000,
+      "esr_ohms": 0.012704099757760623,
+      "magnitude_ohms": 0.027758458846186083
+    },
+    {
+      "frequency_hz": 100000,
+      "esr_ohms": 0.010138398046713563,
+      "magnitude_ohms": 0.010549884987102732
+    },
+    {
+      "frequency_hz": 600000,
+      "esr_ohms": 0.009533216945694279,
+      "magnitude_ohms": 0.022273100068714545
+    }
+  ]
+}
+Unchanged threshold failures: 0; hardware/model exclusions remain

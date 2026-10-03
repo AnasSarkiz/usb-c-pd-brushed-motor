@@ -1,0 +1,139 @@
+{
+  "revision": "A14",
+  "manufacturer_part": "35SVPK330M",
+  "model_conditions": "20C,0V DC bias",
+  "source_model_sha256": "84312597b54d1a5e5b37d221a42c49896cdf964386081e3a705a6caf293e1bea",
+  "source_s_parameter_sha256": "54fff4953953ff2fc6d7e46b64011a827f9838f32ea80ecfb67ff85751460eb0",
+  "passive_element_count": 20,
+  "s_parameter_row_count": 401,
+  "maximum_model_s_parameter_relative_error": 0.002194468722658051,
+  "published_graph_comparison": {
+    "point_count": 215,
+    "frequency_units": "MHz converted to Hz",
+    "maximum_magnitude_relative_difference": 0.09232810247073789,
+    "maximum_esr_relative_difference": 0.22986652953593037,
+    "temperature_data_status": "CC/TanD/TESR absent in published characteristic source",
+    "interpretation": "Typical model and published characteristic are not guaranteed identical; no temperature limits inferred"
+  },
+  "samples": [
+    {
+      "frequency_hz": 120,
+      "esr_ohms": 0.07462523156568003,
+      "magnitude_ohms": 3.90052376360242
+    },
+    {
+      "frequency_hz": 1000,
+      "esr_ohms": 0.019002327656570814,
+      "magnitude_ohms": 0.4777126054430858
+    },
+    {
+      "frequency_hz": 10000,
+      "esr_ohms": 0.013125968211301985,
+      "magnitude_ohms": 0.05033521828424567
+    },
+    {
+      "frequency_hz": 20000,
+      "esr_ohms": 0.012704099757760623,
+      "magnitude_ohms": 0.027758458846186083
+    },
+    {
+      "frequency_hz": 100000,
+      "esr_ohms": 0.010138398046713563,
+      "magnitude_ohms": 0.010549884987102732
+    },
+    {
+      "frequency_hz": 600000,
+      "esr_ohms": 0.009533216945694279,
+      "magnitude_ohms": 0.022273100068714545
+    }
+  ],
+  "case_axes": {
+    "voltage_v": [
+      5,
+      9,
+      12
+    ],
+    "load_a": [
+      1,
+      2,
+      2.423
+    ],
+    "r_scale": [
+      0.75,
+      1,
+      1.5,
+      2
+    ],
+    "c_scale": [
+      0.6,
+      0.8,
+      1,
+      1.2,
+      1.5
+    ],
+    "ceramic_f": [
+      0,
+      4e-05,
+      0.0001128,
+      0.0001692
+    ],
+    "ceramic_r": [
+      0.001,
+      0.005,
+      0.02
+    ],
+    "gm_scale": [
+      0.5625,
+      1,
+      1.5625
+    ],
+    "delay_s": [
+      0,
+      1.0416666666666667e-06
+    ]
+  },
+  "case_count": 12960,
+  "failures": [],
+  "worst_phase_margin": {
+    "case": {
+      "voltage_v": 12,
+      "load_a": 1,
+      "r_scale": 0.75,
+      "c_scale": 1.5,
+      "ceramic_f": 0.0001692,
+      "ceramic_r": 0.001,
+      "gm_scale": 0.5625,
+      "delay_s": 1.0416666666666667e-06
+    },
+    "crossover_hz": 1042.2543330794063,
+    "phase_margin_deg": 77.76728226762008
+  },
+  "highest_crossover": {
+    "case": {
+      "voltage_v": 5,
+      "load_a": 1,
+      "r_scale": 2,
+      "c_scale": 0.6,
+      "ceramic_f": 0,
+      "ceramic_r": 0.001,
+      "gm_scale": 1.5625,
+      "delay_s": 0
+    },
+    "crossover_hz": 31848.343900252323,
+    "phase_margin_deg": 116.83199186371594
+  },
+  "status": "conditional CCM sensitivity screen; not hardware/temperature/bias approval",
+  "thresholds": {
+    "minimum_phase_margin_deg": 45,
+    "maximum_crossover_hz": 48000
+  },
+  "variation_status": "R/C/GM/delay scalings are sensitivity assumptions, not manufacturer guarantees",
+  "remaining": [
+    "DCM/Eco-mode",
+    "full switching/slope compensation model",
+    "actual temperature/bias/aging bounds",
+    "ceramic bias and current sharing",
+    "layout parasitics",
+    "startup/stall/reversal/transient/thermal measurements"
+  ]
+}

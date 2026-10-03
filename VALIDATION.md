@@ -1,4 +1,48 @@
-# A13 current validation — 2026-10-03
+# A14 current validation — 2026-10-03
+
+**Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Exact Panasonic frequency-dependent model gives a passing CCM loop screen. Current ST guide corrects alert-clearing semantics in mocks/documentation. No supplier model, emitted schema, checker or threshold is patched or suppressed.
+
+| Stage | Status | Current evidence /remaining work |
+|---|---|---|
+| 1. Requirements | in progress | Explicit5/9/12 V user selection, approximately2 A target and voltage-aware15/20 V policy retained; final thermal/mechanical/manufacturing envelope open. |
+| 2. Schematic/BOM | blocked |129 parts/55 suppliers and eight A4 sheets pass earlier electrical/import/schema audits. CCM screen now passes. Full switching/temperature/bias/thermal/current sharing, land-process approval, regenerative-energy limits and complete STM32/PD fresh negotiation remain open. |
+| 3. Product placement | blocked | No product coordinates or mounting holes authored. A12 numeric native API remains validated for its isolated probe; electrical/assembly/firmware gates remain. |
+| 4. Routing | not started | Explicitly disabled, zero product PCB traces, no new via-in-pad allowed. |
+| 5. Routed checks | not started | No routed output/snapshot/shorts approval. |
+| 6. Fabrication | not started | No process/release approval or order. |
+| 7. Physical prototype | not started | No actual charger/motor/thermal/decay/reversal evidence. |
+| 8. Store release | not started | No configured GitHub destination/remote; neither GitHub nor tscircuit published. |
+
+## A14 completed model and register review
+
+The exact35SVPK330M manufacturer ZIP contains an unchanged20 C/0 V SPICE library, separate series-connected S-parameters and curve PDF. Generic nodal analysis preserves all20 passive elements and checks current residuals. Model-vs-two-port complex impedance agrees within0.21945% across the complete published S-parameter set, passing1% consistency. The raw characteristic viewer/arrays are also preserved; up to48 kHz model-vs-published-curve differences reach9.23% magnitude/22.99% ESR. Missing temperature curves remain explicit. No guaranteed model/temperature equivalence is claimed.
+
+The existing27 kΩ/22 nF/22 pF compensation with1 kΩ bleed and exact capacitor impedance passes12,960 CCM sensitivity cases under unchanged≥45° /≤48 kHz thresholds. Worst77.77° at1.042 kHz; highest crossover31.848 kHz. R/C/GM/delay scalings remain engineering assumptions; zero ceramic credit is included. Historical constant-ESR1,570 failures remain retained. This conditional screen does not complete DCM/Eco-mode, full switching/slope compensation, actual DC-bias/temperature/aging, current sharing, final-layout parasitics or prototype measurements. See docs/BUCK-MODEL.md.
+
+Current UM2650 rev3(January2023)§1.11 clarifies0x0B summary reads do not clear events; associated0x0D/0x0F/0x12/0x16 do. Request mocks now preserve non-protocol alarms and clear only the protocol summary bit when0x16 is consumed. Production request/receive functions already read protocol status; no motor-enable logic changes. Pending port/fault/monitor events remain inhibited. A13's broader alarm-clearing prose is corrected. Current primary PDF text was read through the browser research tool; failed local main/mirror downloads and terminated stalled task-owned read are recorded. No local Rev3 PDF or complete PDF visual review claimed.
+
+| Check | Result |
+|---|---|
+| Configured formatting /TypeScript /Bun suite | pass:18 tests/366 expects, zero failures. |
+| Current request C host harness | pass:974 assertions with corrected read-clear mocks and retained pending-alarm tests. Mock evidence only. |
+| Current receive C host harness | pass:531 assertions; live capture/provenance/peripheral measurements remain open. |
+| Request/receive Cortex-M0+ object compilation | pass; no linked/flashable STM32 image. |
+| Manufacturer-model analysis/S-parameter consistency | pass under stated scope;12,960 cases/zero threshold failures. No compensation-value or PCB-component change. |
+| A11 hardware/import/schematic/power and A12 native placement checks | unchanged and applicable, including unresolved errors. No repeat product build/visual review or product placement claimed. |
+
+Visual review: manufacturer model curve PDF rendering and current generated Bode plot inspected. Artifact paths/source hashes/model conditions/axes/differences/remaining limits are in buck-manufacturer-model-A14.json/log/png and retained Panasonic sources. Initial graph printing encountered null temperature arrays; those are explicitly recorded as unavailable, never fabricated. All unsuccessful source-download attempts remain documented.
+
+Official versions unchanged:tscircuit0.0.2742 /CLI0.1.2237 /core0.0.2056 /props0.0.677 /circuit-json0.0.510; Bun1.3.9 /TS5.9.3 /Biome2.5.14. Unchanged imports/PCB/BOM verified against A11; no current product placement/routing or fabrication claim.
+
+## Revision and publication
+
+A14 source/evidence hashes are recorded in evidence/source-manifest-A14.json; source commit recorded after implementation commit. Hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. Manufacturer files remain unchanged even where raw CRLF/trailing spaces produce whitespace advisories. GitHub repository/branch/remote remains unknown. Standing publication authorization exists, but missing destination and incomplete gates block a fully published step. Neither GitHub nor tscircuit remote update succeeded. No physical/fabrication approval implied.
+
+---
+
+A13 and earlier records below are historical. A14 supersedes the current CCM screen and alert-model documentation only; remaining hardware/assembly/firmware/tooling/physical limits remain applicable.
+
+# A13 historical validation — 2026-10-03
 
 **Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Implements a bounded RAM profile-write/readback and SoftReset transaction. Successful programming does not qualify motor power or complete the embedded controller.
 

@@ -34,8 +34,12 @@ static bool read_register(void *context, const struct stusb_read *transfer) {
   if (mock->calls == mock->fail_call) return false;
   memcpy(transfer->bytes, &mock->registers[transfer->register_address], transfer->byte_count);
   if (mock->calls == mock->corrupt_call) transfer->bytes[mock->corrupt_byte] ^= 1u;
-  if (transfer->register_address == 0x0b || transfer->register_address == 0x16)
-    mock->registers[transfer->register_address] = 0;
+  /* UM2650 rev3 1.11: reading the alert summary does not acknowledge it.
+   * Only its associated read-clear status register clears that event. */
+  if (transfer->register_address == 0x16) {
+    mock->registers[0x16] = 0;
+    mock->registers[0x0b] &= (uint8_t)~2u;
+  }
   return true;
 }
 static bool write_register(void *context, const struct stusb_write *transfer) {
@@ -146,6 +150,7 @@ int main(void) {
   for (unsigned bit=3; bit<8; ++bit) {
     initialize(&test, 1); test.mock.registers[0x0b] |= 1u<<bit;
     CHECK(execute(&test) == STUSB_REQUEST_PENDING_FAULT);
+    CHECK(test.mock.registers[0x0b] & (1u<<bit)); /* Summary read cannot clear this event. */
     CHECK(test.mock.commands == 0); check_fault(&test);
   }
   for (unsigned bit=0; bit<8; ++bit) {

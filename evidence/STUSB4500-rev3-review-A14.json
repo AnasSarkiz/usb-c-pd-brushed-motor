@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-03",
+  "source_url": "https://www.st.com/resource/en/user_manual/um2650-the-stusb4500-software-programing-guide-stmicroelectronics.pdf",
+  "document": "UM2650 Rev3 January2023",
+  "page_count": 45,
+  "method": "Current official PDF text accessed with browser research tool. No local PDF retained or complete PDF visual review claimed.",
+  "checked_sections": [
+    "1.3-1.6 RAM/SoftReset operations unchanged",
+    "1.11 alert acknowledgement",
+    "3.60 count bits2:0"
+  ],
+  "alert_read_clear_registers": {
+    "port": "0x0D",
+    "monitor": "0x0F",
+    "hardware_fault": "0x12",
+    "protocol": "0x16"
+  },
+  "alert_summary": "0x0B reading alone does not clear events",
+  "download_attempts": [
+    {
+      "method": "main server HTTP2",
+      "exit": 92
+    },
+    {
+      "method": "main server HTTP1.1",
+      "exit": 143,
+      "result": "task-owned stalled download terminated"
+    },
+    {
+      "method": "official ST regional mirror HTTP2 with25s limit",
+      "exit": 92
+    }
+  ],
+  "remaining": "Actual initialization, SOP/event provenance and target peripheral measurements remain open."
+}
