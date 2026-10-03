@@ -113,7 +113,7 @@ void pd_sequence_step(struct pd_sequence *sequence,
     if (sequence->state == PD_SEQUENCE_RAIL) {
       if (elapsed_ms >= RAIL_TIMEOUT_MS) {
         pd_sequence_abort(sequence);
-      } else if (pd_motor_qualified(&sequence->plan, observation, sample->selector_bits)) {
+      } else if (pd_motor_qualified(&rail_check)) {
         if (!sequence->rail_stable) {
           sequence->rail_stable = true;
           sequence->rail_stable_since_ms = sample->now_ms;

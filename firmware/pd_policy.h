@@ -10,6 +10,7 @@ struct pd_plan {
   uint8_t source_object_position;
   uint8_t motor_voltage_v;
   uint32_t source_generation;
+  uint32_t source_pdo; /* Exact selected advertisement, not the sink request. */
   uint16_t voltage_mv;
   uint16_t current_ma;
   uint32_t sink_pdo;
@@ -25,16 +26,18 @@ struct pd_rail_check {
   const struct pd_observation *observation;
   uint8_t selector_bits;
 };
+struct pd_capabilities {
+  const uint32_t *source_pdos;
+  size_t count;
+  uint32_t source_generation;
+};
 /* 00=5 V; bit 0=9 V; bit 1=12 V; 11=invalid. */
 uint8_t pd_motor_voltage(uint8_t selector_bits);
-struct pd_plan pd_make_plan(uint8_t selector_bits, const uint32_t *source_pdos,
-                           size_t count, uint32_t source_generation);
+struct pd_plan pd_make_plan(uint8_t selector_bits, const struct pd_capabilities *capabilities);
 bool pd_plan_valid(const struct pd_plan *plan);
 bool pd_contract_qualified(const struct pd_plan *plan,
                            const struct pd_observation *observation);
 /* Rail check while the bridge is asleep; nFAULT is checked separately at wake. */
 bool pd_motor_rail_qualified(const struct pd_rail_check *check);
-bool pd_motor_qualified(const struct pd_plan *plan,
-                       const struct pd_observation *observation,
-                       uint8_t current_selector_bits);
+bool pd_motor_qualified(const struct pd_rail_check *check);
 #endif

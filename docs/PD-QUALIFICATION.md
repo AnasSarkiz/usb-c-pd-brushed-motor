@@ -1,4 +1,4 @@
-# A13 PD qualification and voltage policy
+# A17 PD qualification and voltage policy
 
 2026-10-03. The user approved the MCU architecture. U11 is supplier-imported STM32G030F6P6TR / C529330, used only for power qualification. firmware/pd_policy.c is a portable policy library, tested on the host and compiled to a Cortex-M0+ object. It is **not a complete flashable firmware image**: STM32 startup, clocks, GPIO/ADC/I2C, STUSB4500 transport, watchdog, option bytes and programming-pad implementation remain open.
 
@@ -10,7 +10,7 @@ Q7/Q8 independently ground the selected feedback branches; their gates default l
 
 ## Contract selection and power screen
 
-Only fixed 15/20 V PDOs advertising at least 3 A are accepted. No native 12 V PDO is assumed; PPS/variable/battery PDOs are ignored. Mandatory source PDO1 must be fixed 5 V. Prefer the lowest adequate voltage using source current, conservative eFuse bounds and peak output power. The current screen selects 15 V for 5/9 V motors and 20 V for a 12 V motor. A 20 V-only qualified source is a valid fallback for 5/9 V. A 15 V-only source is inhibited in 12 V mode because its peak input demand exceeds the minimum eFuse current limit. A 5 V-only/non-PD source powers control circuitry only.
+Only fixed 15/20 V PDOs advertising3–5 A are accepted. The operating request remains3 A; RDO maximum current must equal the selected source advertisement, as defined by STUSB4500. REQ_SRC_CURRENT=0 is required. No native 12 V PDO is assumed; PPS/variable/battery PDOs are ignored. Mandatory source PDO1 must be fixed 5 V. Prefer the lowest adequate voltage using source current, conservative eFuse bounds and peak output power. The current screen selects 15 V for 5/9 V motors and 20 V for a 12 V motor. A 20 V-only qualified source is a valid fallback for 5/9 V. A 15 V-only source is inhibited in 12 V mode because its peak input demand exceeds the minimum eFuse current limit. A 5 V-only/non-PD source powers control circuitry only.
 
 The 7.15 kOhm eFuse resistor gives 2.517 A nominal, 2.243 A minimum and 2.797 A maximum with the recorded IC/resistor tolerance assumptions. Auxiliary fault budget is <=2.867 A total at 15 V. A 20 V/2.25 A source is rejected even when nominal watts appear adequate, because hardware fault current could exceed that contract.
 
@@ -33,7 +33,7 @@ Both portable modules compile for Cortex-M0+ and the sequence has 11,506 host as
 3. Capture fresh Source_Capabilities via ALERT before the RX buffer can be overwritten (ST example warns approximately 3 ms). Re-request capabilities with motor inhibited if the initial message was missed. Bound I2C retries/timeouts and fail closed.
 4. Increment a connection/capability generation on detach, hard reset or changed capabilities. Decode fixed PDOs; call pd_make_plan. No candidate means HOST_ALLOW remains low and bridge remains inhibited.
 5. Program the selected 15/20 V, 3 A sink PDO through RAM and request renegotiation. The manufacturer's example writes SoftReset header 0x000D to 0x51 and command 0x26 to 0x1A. Sink PDO count is 0x70, sink objects start at 0x85, RDO at 0x91. Source RX header/data are 0x31/0x33; PE state is 0x29. These are checked against the retained official ST reference source.
-6. Require fresh PS_RDY, PE_SNK_READY=0x18, matching source object/generation, no capability mismatch/giveback, 3 A RDO operating/maximum current and valid measured VBUS. A voltage reading or POWER_OK flag alone is insufficient. The policy rejects stale/incorrect contracts.
+6. Require fresh PS_RDY, PE_SNK_READY=0x18, matching source object/generation, no capability mismatch/giveback, 3 A RDO operating current and maximum current matching the selected source advertisement(3–5 A) and valid measured VBUS. A voltage reading or POWER_OK flag alone is insufficient. The policy rejects stale/incorrect contracts, reserved RDO bits and malformed source-current fields.
 7. With bridge inhibited and eFuse off, wait for VM to decay before changing feedback branch. Apply only the selected branch; enable the eFuse after contract qualification. Require actual VM in the selected acceptance window before releasing Q6. ADC dividers are 11:1; filters have approximately 0.91 ms time constants.
 8. Detach, hard reset, selector change/invalid bits, lost contract, stale/invalid ADC, I2C failure, driver fault or out-of-range VM must inhibit the bridge and power path before further negotiation. A watchdog/reset must return GPIOs to the default-off hardware state. Transport must validate ADC calibration/sample age and fresh PS_RDY provenance; policy parameters are not substitutes for those checks.
 
@@ -61,3 +61,6 @@ A15 implements portable standby initialization/capability acquisition under expl
 
 
 A16 adds bounded complete40-byte NVM readback comparison under inhibition.20,639 simulated assertions and target-object compilation pass; the separately approved manufacturer-tool image and physical programming remain missing. All20 configured tests/372 expects pass. See STUSB4500-NVM.md and pd-manufacturing-profile.json. Current datasheet review also identifies a charger-compatibility defect: RDO maximum follows advertised source current, so the existing exact3 A maximum check unnecessarily inhibits sources above3 A. That policy change remains open in A16. No placement/routing change.
+
+
+A17 corrects the current-field issue identified in A16. The plan retains the exact selected source PDO; RDO operating remains3 A and maximum must equal that advertisement. Reserved RDO31/23:20, capability mismatch and GiveBack are rejected.3–5 A sources are supported by the portable policy, without increasing hardware limits.60,202 policy assertions,11,518 sequence assertions and1,037 request assertions pass; all22 configured tests/382 expects and all six Cortex-M0+ module objects pass. Source/rail/contract provenance and target integration are still required; these are simulated/compiled results. See PD-RDO-CURRENT.md.

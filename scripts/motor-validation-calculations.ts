@@ -29,10 +29,16 @@ export function reviewMotorContracts({
       rejectionReasons.push("Only qualified 15/20 V fixed PDOs are allowed")
     if (source.currentA < 3 || source.currentA < maximumTotalFaultCurrentA)
       rejectionReasons.push("Source current is below worst-case fault demand")
+    if (!Number.isFinite(source.currentA) || source.currentA > 5)
+      rejectionReasons.push(
+        "Source current is outside the supported fixed-PDO range",
+      )
     if (requiredInputCurrentA > minimumInputLimitA)
       rejectionReasons.push("Peak load exceeds minimum input current limit")
     return {
       ...source,
+      requestedOperatingCurrentA: 3,
+      expectedMaximumCurrentA: source.currentA,
       requiredInputCurrentA,
       maximumTotalFaultCurrentA,
       rejectionReasons,

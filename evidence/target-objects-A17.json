@@ -1,0 +1,116 @@
+[
+  {
+    "command": [
+      "clang",
+      "-target",
+      "arm-none-eabi",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "firmware/pd_policy.c",
+      "-o",
+      "evidence/pd-policy-cortex-m0-A17.o"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "clang",
+      "-target",
+      "arm-none-eabi",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "firmware/pd_sequence.c",
+      "-o",
+      "evidence/pd-sequence-cortex-m0-A17.o"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "clang",
+      "-target",
+      "arm-none-eabi",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "firmware/stusb4500_rx.c",
+      "-o",
+      "evidence/stusb4500-rx-cortex-m0-A17.o"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "clang",
+      "-target",
+      "arm-none-eabi",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "firmware/stusb4500_request.c",
+      "-o",
+      "evidence/stusb4500-request-cortex-m0-A17.o"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "clang",
+      "-target",
+      "arm-none-eabi",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "firmware/stusb4500_startup.c",
+      "-o",
+      "evidence/stusb4500-startup-cortex-m0-A17.o"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "clang",
+      "-target",
+      "arm-none-eabi",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-std=c11",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "firmware/stusb4500_nvm.c",
+      "-o",
+      "evidence/stusb4500-nvm-cortex-m0-A17.o"
+    ],
+    "exitCode": 0
+  }
+]

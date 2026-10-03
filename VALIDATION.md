@@ -1,4 +1,46 @@
-# A16 validation — 2026-10-03
+# A17 validation — 2026-10-03
+
+**Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Corrects source/operating RDO current qualification and adds malformed-field rejection. No hardware current limit is increased.
+
+| Stage | Status | Current evidence /remaining work |
+|---|---|---|
+| 1. Requirements | in progress | Explicit5/9/12 V selector, approximately2 A target and voltage-aware15/20 V policy retained; final operating/thermal/mechanical envelope open. |
+| 2. Schematic/BOM | blocked |129 parts/55 supplier codes; A11 electrical/import/schema unchanged, A14 conditional CCM screen passes. A17 resolves RDO compatibility for3–5 A sources. Approved NVM image, fresh-response/STM32 integration, full converter/thermal/current-sharing, land process and regeneration envelope remain open. |
+| 3. Product placement | blocked | No product coordinates/mounting holes. A12 numeric native placement probe remains valid; prior required gates remain open. |
+| 4. Routing | not started | Explicitly disabled; no new routed via-in-pad allowed. |
+| 5. Routed checks | not started | No routed output/shorts/snapshot approval. |
+| 6. Fabrication | not started | No process approval/release/order. |
+| 7. Physical prototype | not started | No measured PD/motor/thermal/decay/reversal/NVM evidence. |
+| 8. Store release | not started | GitHub repository/branch/remote absent; neither remote published. |
+
+## Completed A17 step
+
+The portable plan retains the exact selected source PDO. Qualification requires3 A operating and maximum matching its3–5 A source advertisement, consistent with current manufacturer behavior. Reserved RDO31/23:20, mismatch/GiveBack and malformed source profiles are rejected. The sink write remains3 A. Named capability/rail API structures replace excess positional arguments; all local callers are updated. Host reports distinguish operating from maximum current. See docs/PD-RDO-CURRENT.md.
+
+The baseline reproduces six discrepancies and remains retained. Initial suite failure from a manually constructed fixture missing source_pdo was corrected by adding its real15 V/3 A advertisement; the original unsafe12 V rejection and valid9 V timeout assertions remain. This does not complete freshness, target integration or electrical/physical approval.
+
+| Check | Result |
+|---|---|
+| A16 baseline reproduction | expected failure, exit1:six current/reserved-bit discrepancies retained with source revision and binary. |
+| Configured formatting /TypeScript /Bun suite | pass:22 tests/382 expects, zero failures; initial fixture failure retained separately. |
+| Policy C11 Wall/Wextra/Werror harness | pass:60,202 assertions; all source/current-field codes, modes/voltages, reserved/mismatch/GiveBack and malformed-profile cases. Simulated observations only. |
+| Sequence/request host harnesses | pass:11,518/1,037 assertions; full startup on5 A source for all modes, changed maximum inhibits, sink writes remain3 A. |
+| RX/startup/NVM host harnesses | pass through renewed configured suite; capture/event/NVM physical limits remain. |
+| All six portable Cortex-M0+ objects | pass; no linked/flashable image. |
+| Power report | pass as an engineering calculation; unchanged input/current/thermal assumptions, no physical qualification. |
+| A11 hardware/import/BOM/schematic and A12/A14 evidence | unchanged and applicable, including unresolved layout/assembly/power/tooling failures. No repeated product build/visual review/placement claim. |
+
+Versions unchanged:tscircuit0.0.2742 /CLI0.1.2237 /core0.0.2056 /props0.0.677 /circuit-json0.0.510; Bun1.3.9 /TS5.9.3 /Biome2.5.14. No purchased component, imported definition, hardware value, dependency, checker/schema or threshold changed. Any wider charger compatibility requires actual fresh negotiation and prototype evidence.
+
+## Revision and publication
+
+A17 hashes are recorded in evidence/source-manifest-A17.json; source commit pending. Hardware source remains0f2693738e630c4997942d8536b3d913cb1bd5e5. GitHub repository/branch/remote still unknown. Standing authorization exists but missing destination blocks completing publication. Neither GitHub nor tscircuit remote update succeeded. No physical/fabrication approval is implied.
+
+---
+
+A16 and earlier records below are historical. A17 supersedes RDO current handling/current software checks only; remaining hardware/assembly/power/tooling/physical limits remain applicable.
+
+# A16 historical validation — 2026-10-03
 
 **Unrouted WIP prototype; hardware/BOM remain A11. Product placement is unstarted.** Adds full NVM readback transport, not a completed provisioning gate or flashable MCU.
 

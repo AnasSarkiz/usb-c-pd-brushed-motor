@@ -1,4 +1,4 @@
-# USB-C PD brushed DC motor controller — A16 NVM readback step
+# USB-C PD brushed DC motor controller — A17 PD current qualification step
 
 Connected tscircuit prototype for one 5/9/12 V brushed motor, targeting approximately 2 A continuous. One USB-C power input, regulated motor voltage, hardware speed potentiometer, FWD/OFF/REV switch, DRV8874 H-bridge, power/direction LEDs and one motor screw terminal. The user approved an MCU only for PD qualification; PWM remains hardware controlled.
 
@@ -9,6 +9,7 @@ Use this task directory for every command. Entry point: index.circuit.tsx. Depen
 - docs/BOM.csv: current 129 components / 55 supplier parts, dates and pending approvals.
 - VALIDATION.md: current gates, checks and historical evidence.
 - docs/ARCHITECTURE.md: connected circuit and electrical limitations.
+- docs/PD-RDO-CURRENT.md: source/operating-current correction, malformed-RDO rejection and passing regression evidence.
 - docs/PD-QUALIFICATION.md: selector, voltage-aware contract policy and incomplete embedded port.
 - docs/STUSB4500-RX.md: bounded receive handling, manufacturer-register discrepancies and pending target integration.
 - docs/STUSB4500-NVM.md: complete stored-image readback transport; approved manufacturer image still pending.
@@ -40,3 +41,5 @@ A14 uses the exact Panasonic model: all12,960 CCM sensitivity cases pass unchang
 A15 implements checked standby initialization/capability acquisition:13,969 simulated C assertions and a Cortex-M0+ object, with19 configured tests/369 expects passing. NVM, fresh-response ownership and the STM32 target port remain incomplete. Hardware/BOM stay129/55; placement and routing are still unstarted.
 
 A16 adds complete NVM readback transport:20,639 simulated assertions and a Cortex-M0+ object;20 configured tests/372 expects pass. No approved manufacturing binary or actual programming/readback is available. The RDO current-field handling for sources above3 A needs correction. Placement/routing remain unstarted.
+
+A17 corrects RDO current qualification for3–5 A sources while keeping3 A operating/hardware limits, and rejects reserved/malformed fields.60,202 policy/11,518 sequence/1,037 request assertions and22 configured tests/382 expects pass. All six portable target objects compile; no flashable MCU or physical result is claimed. Product placement/routing remain unstarted.

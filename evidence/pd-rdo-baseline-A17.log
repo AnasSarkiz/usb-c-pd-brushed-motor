@@ -1,0 +1,7 @@
+Matched5A source,3A operating/5A maximum: expected1 actual0
+RDO reserved0x80000000: expected0 actual1
+RDO reserved0x00800000: expected0 actual1
+RDO reserved0x00400000: expected0 actual1
+RDO reserved0x00200000: expected0 actual1
+RDO reserved0x00100000: expected0 actual1
+Baseline mismatches:6

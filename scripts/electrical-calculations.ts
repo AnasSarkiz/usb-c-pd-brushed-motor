@@ -7,9 +7,9 @@ export interface PdCapability {
 // Conservative engineering screen; hardware efficiency/thermal measurements pending.
 export function chooseMotorContract(
   sourceCapabilities: PdCapability[],
-  motorVoltageV: 5 | 9 | 12,
-  peakMotorCurrentA = 2.423,
+  selection: { motorVoltageV: 5 | 9 | 12; peakMotorCurrentA?: number },
 ) {
+  const { motorVoltageV, peakMotorCurrentA = 2.423 } = selection
   const minimumLimitA = ((18_000 / 7_150) * 0.9) / 1.01
   const maximumLimitA = ((18_000 / 7_150) * 1.1) / 0.99
   const adequate = sourceCapabilities
@@ -17,6 +17,7 @@ export function chooseMotorContract(
       (source) =>
         (source.voltageV === 15 || source.voltageV === 20) &&
         source.currentA >= 3 &&
+        source.currentA <= 5 &&
         source.currentA >= maximumLimitA + 1 / (source.voltageV * 0.95) &&
         motorInputCurrentA({
           motorVoltageV,

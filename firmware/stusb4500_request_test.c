@@ -67,7 +67,7 @@ static void initialize(struct test_request *test, uint8_t selector) {
   test->mock.registers[0x16] = 4; /* Old RX must be cleared before SEND. */
   memset(&test->mock.registers[0x8d], 0xa5, 4); /* Old PDO3 must stay inactive. */
   const uint32_t source_pdos[] = {(100u<<10)|300u, (300u<<10)|300u, (400u<<10)|300u};
-  test->plan = pd_make_plan(selector, source_pdos, 3, 77);
+  test->plan = pd_make_plan(selector, &(struct pd_capabilities){.source_pdos=source_pdos, .count=3, .source_generation=77});
   CHECK(test->plan.valid);
   test->request = (struct stusb_request){
     .state=&test->state, .plan=&test->plan, .request_id=8, .source_generation=77,
@@ -108,6 +108,13 @@ int main(void) {
     CHECK(test.mock.registers[0x0b] == 0 && test.mock.registers[0x16] == 0);
     CHECK(execute(&test) == STUSB_REQUEST_REUSED_TOKEN);
     CHECK(test.mock.commands == 1); check_fault(&test);
+  }
+  for (uint8_t selector=0; selector<3; ++selector) {
+    initialize(&test, selector);
+    test.plan.source_pdo=(test.plan.source_pdo & ~1023u)|500u;
+    CHECK(execute(&test) == STUSB_REQUEST_SENT);
+    CHECK((pdo_at(&test.mock, 0x89) & 1023u) == 300u);
+    CHECK(test.state.completed_request_id == 8 && !test.state.faulted);
   }
   for (unsigned failed=1; failed<=14; ++failed) {
     initialize(&test, 1); test.mock.fail_call=failed;

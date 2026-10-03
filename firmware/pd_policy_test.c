@@ -1,43 +1,109 @@
 #include "pd_policy.h"
 #include <assert.h>
 #include <stdio.h>
+static unsigned checks;
+#define CHECK(condition) do { ++checks; assert(condition); } while (0)
 static uint32_t fixed(unsigned mv, unsigned ma) {
   return ((mv / 50u) << 10) | (ma / 10u);
 }
+static void check_source_currents(void) {
+  const uint16_t source_voltages_mv[] = {15000,20000};
+  const uint32_t rejected_rdo_bits[] = {1u<<31,1u<<23,1u<<22,1u<<21,1u<<20,1u<<27,1u<<26};
+  for (uint8_t bits=0; bits<3; ++bits) {
+    for (unsigned voltage=0; voltage<2; ++voltage) {
+      for (unsigned source_units=0; source_units<1024; ++source_units) {
+        const uint32_t source_pdos[] = {fixed(5000,3000),fixed(source_voltages_mv[voltage],source_units*10u)};
+        const struct pd_capabilities capabilities = {.source_pdos=source_pdos,.count=2,.source_generation=77};
+        const struct pd_plan plan=pd_make_plan(bits,&capabilities);
+        const bool adequate=source_units>=300 && source_units<=500 && !(bits==2 && voltage==0);
+        CHECK(plan.valid == adequate);
+        if (!adequate) continue;
+        CHECK(pd_plan_valid(&plan) && plan.source_pdo == source_pdos[1]);
+        CHECK(plan.current_ma == 3000 && (plan.sink_pdo & 1023u) == 300u);
+        struct pd_observation observation={.attached=true,.communication_ok=true,
+          .fresh_ps_rdy=true,.pe_fsm_state=0x18,.source_generation=77,
+          .rdo=(2u<<28)|(300u<<10)|source_units,.vbus_mv=source_voltages_mv[voltage],
+          .motor_rail_mv=plan.motor_voltage_v*1000u};
+        const struct pd_rail_check rail_check={.plan=&plan,.observation=&observation,.selector_bits=bits};
+        CHECK(pd_contract_qualified(&plan,&observation) && pd_motor_qualified(&rail_check));
+        for (unsigned rejected=0; rejected<7; ++rejected) {
+          observation.rdo |= rejected_rdo_bits[rejected];
+          CHECK(!pd_contract_qualified(&plan,&observation));
+          observation.rdo &= ~rejected_rdo_bits[rejected];
+        }
+        /* USB communication/NoSuspend flags do not change the current fields. */
+        observation.rdo |= (1u<<25)|(1u<<24);
+        CHECK(pd_contract_qualified(&plan,&observation));
+        observation.rdo &= ~((1u<<25)|(1u<<24));
+        if (source_units == 300 || source_units == 301 || source_units == 450 || source_units == 500) {
+          for (unsigned maximum_units=0; maximum_units<1024; ++maximum_units) {
+            observation.rdo=(2u<<28)|(300u<<10)|maximum_units;
+            CHECK(pd_contract_qualified(&plan,&observation) == (maximum_units == source_units));
+          }
+          for (unsigned operating_units=0; operating_units<1024; ++operating_units) {
+            observation.rdo=(2u<<28)|(operating_units<<10)|source_units;
+            CHECK(pd_contract_qualified(&plan,&observation) == (operating_units == 300));
+          }
+        }
+        struct pd_plan malformed=plan;
+        malformed.source_pdo=fixed(9000,source_units*10u);
+        CHECK(!pd_plan_valid(&malformed));
+        malformed=plan; malformed.source_pdo |= 1u<<30;
+        CHECK(!pd_plan_valid(&malformed));
+      }
+    }
+  }
+  const uint32_t source_pdos[]={fixed(5000,3000),fixed(20000,5000)};
+  struct pd_capabilities capabilities={.source_pdos=source_pdos,.count=2,.source_generation=77};
+  CHECK(!pd_make_plan(0,NULL).valid);
+  capabilities.count=0; CHECK(!pd_make_plan(0,&capabilities).valid);
+  capabilities.count=8; CHECK(!pd_make_plan(0,&capabilities).valid);
+  capabilities.count=2; capabilities.source_generation=0; CHECK(!pd_make_plan(0,&capabilities).valid);
+  capabilities.source_generation=77; capabilities.source_pdos=NULL; CHECK(!pd_make_plan(0,&capabilities).valid);
+  CHECK(!pd_motor_qualified(NULL));
+  const struct pd_rail_check missing={0}; CHECK(!pd_motor_qualified(&missing));
+  const uint32_t invalid_first[]={fixed(5000,0),fixed(5000,5010),fixed(9000,3000),0xc1234567u};
+  for (unsigned first=0;first<4;++first) {
+    const uint32_t bad_pdos[]={invalid_first[first],fixed(20000,5000)};
+    const struct pd_capabilities bad={.source_pdos=bad_pdos,.count=2,.source_generation=77};
+    CHECK(!pd_make_plan(0,&bad).valid);
+  }
+}
 int main(void) {
   uint32_t caps[] = {fixed(5000,3000),fixed(15000,3000),fixed(20000,3000)};
-  struct pd_plan p = pd_make_plan(0,caps,3,1);
-  assert(p.valid && p.voltage_mv==15000 && p.source_object_position==2);
-  assert(pd_make_plan(1,caps,3,1).voltage_mv==15000);
-  p=pd_make_plan(2,caps,3,1);
-  assert(p.valid && p.voltage_mv==20000 && p.source_object_position==3);
-  assert(!pd_make_plan(3,caps,3,1).valid);
-  assert(!pd_make_plan(0,caps,1,1).valid);
+  struct pd_plan p = pd_make_plan(0,&(struct pd_capabilities){.source_pdos=caps,.count=3,.source_generation=1});
+  CHECK(p.valid && p.voltage_mv==15000 && p.source_object_position==2);
+  CHECK(pd_make_plan(1,&(struct pd_capabilities){.source_pdos=caps,.count=3,.source_generation=1}).voltage_mv==15000);
+  p=pd_make_plan(2,&(struct pd_capabilities){.source_pdos=caps,.count=3,.source_generation=1});
+  CHECK(p.valid && p.voltage_mv==20000 && p.source_object_position==3);
+  CHECK(!pd_make_plan(3,&(struct pd_capabilities){.source_pdos=caps,.count=3,.source_generation=1}).valid);
+  CHECK(!pd_make_plan(0,&(struct pd_capabilities){.source_pdos=caps,.count=1,.source_generation=1}).valid);
   caps[2]=fixed(20000,2250);
-  assert(!pd_make_plan(2,caps,3,1).valid);
+  CHECK(!pd_make_plan(2,&(struct pd_capabilities){.source_pdos=caps,.count=3,.source_generation=1}).valid);
   caps[2]=fixed(20000,3000);
   struct pd_observation o = {.attached=true,.communication_ok=true,
     .fresh_ps_rdy=true,.pe_fsm_state=0x18,.source_generation=1,
     .rdo=(3u<<28)|(300u<<10)|300u,.vbus_mv=20000,.motor_rail_mv=12000};
-  assert(pd_motor_qualified(&p,&o,2));
-  o.fresh_ps_rdy=false;assert(!pd_motor_qualified(&p,&o,2));o.fresh_ps_rdy=true;
-  o.source_generation=2;assert(!pd_motor_qualified(&p,&o,2));o.source_generation=1;
-  o.rdo |= 1u<<26;assert(!pd_motor_qualified(&p,&o,2));o.rdo &= ~(1u<<26);
-  o.rdo=(2u<<28)|(300u<<10)|300u;assert(!pd_motor_qualified(&p,&o,2));
-  o.rdo=(3u<<28)|(225u<<10)|225u;assert(!pd_motor_qualified(&p,&o,2));
+  CHECK(pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));
+  o.fresh_ps_rdy=false;CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));o.fresh_ps_rdy=true;
+  o.source_generation=2;CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));o.source_generation=1;
+  o.rdo |= 1u<<26;CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));o.rdo &= ~(1u<<26);
+  o.rdo=(2u<<28)|(300u<<10)|300u;CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));
+  o.rdo=(3u<<28)|(225u<<10)|225u;CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));
   o.rdo=(3u<<28)|(300u<<10)|300u;
-  o.attached=false;assert(!pd_motor_qualified(&p,&o,2));o.attached=true;
-  o.communication_ok=false;assert(!pd_motor_qualified(&p,&o,2));o.communication_ok=true;
-  o.motor_rail_mv=9000;assert(!pd_motor_qualified(&p,&o,2));o.motor_rail_mv=12000;
-  assert(!pd_motor_qualified(&p,&o,1));
-  o.vbus_mv=5000;assert(!pd_motor_qualified(&p,&o,2));o.vbus_mv=20000;
-  o.motor_fault=true;assert(!pd_motor_qualified(&p,&o,2));
-  assert(pd_contract_qualified(&p,&o)); /* VM UVLO must not deadlock PD negotiation. */
+  o.attached=false;CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));o.attached=true;
+  o.communication_ok=false;CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));o.communication_ok=true;
+  o.motor_rail_mv=9000;CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));o.motor_rail_mv=12000;
+  CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=1}));
+  o.vbus_mv=5000;CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));o.vbus_mv=20000;
+  o.motor_fault=true;CHECK(!pd_motor_qualified(&(struct pd_rail_check){.plan=&p,.observation=&o,.selector_bits=2}));
+  CHECK(pd_contract_qualified(&p,&o)); /* VM UVLO must not deadlock PD negotiation. */
   struct pd_plan invalid=p;
   invalid.voltage_mv=15000; invalid.sink_pdo=fixed(15000,3000);
-  assert(!pd_plan_valid(&invalid)); /* 12 V peak budget does not fit 15 V. */
-  invalid=p; invalid.source_object_position=1;assert(!pd_plan_valid(&invalid));
-  invalid=p; invalid.sink_pdo=fixed(20000,2250);assert(!pd_plan_valid(&invalid));
-  puts("PD policy host tests passed; embedded transport and physical tests remain pending");
+  CHECK(!pd_plan_valid(&invalid)); /* 12 V peak budget does not fit 15 V. */
+  invalid=p; invalid.source_object_position=1;CHECK(!pd_plan_valid(&invalid));
+  invalid=p; invalid.sink_pdo=fixed(20000,2250);CHECK(!pd_plan_valid(&invalid));
+  check_source_currents();
+  printf("PD policy host tests passed (%u assertions); embedded transport and physical tests remain pending\n",checks);
   return 0;
 }

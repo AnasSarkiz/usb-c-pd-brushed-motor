@@ -7,6 +7,24 @@ import {
 } from "../scripts/motor-validation-calculations"
 
 describe("A7 voltage-aware PD policy engineering screen", () => {
+  test("5 A advertisements remain separate from the 3 A operating request", () => {
+    const review = reviewMotorContracts({
+      motorVoltageV: 12,
+      peakMotorCurrentA: 2.423,
+      sourceCapabilities: [{ voltageV: 20, currentA: 5 }],
+    })
+    expect(review.motorMustRemainInhibited).toBe(false)
+    expect(review.selectedContract?.requestedOperatingCurrentA).toBe(3)
+    expect(review.selectedContract?.expectedMaximumCurrentA).toBe(5)
+    for (const currentA of [5.01, Number.POSITIVE_INFINITY, Number.NaN])
+      expect(
+        reviewMotorContracts({
+          motorVoltageV: 12,
+          peakMotorCurrentA: 2.423,
+          sourceCapabilities: [{ voltageV: 20, currentA }],
+        }).motorMustRemainInhibited,
+      ).toBe(true)
+  })
   test("5/9 V peaks fit 15 V while 12 V peaks require 20 V", () => {
     for (const motorVoltageV of [5, 9, 12] as const) {
       const review = reviewMotorContracts({

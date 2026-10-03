@@ -82,7 +82,7 @@ int main(void) {
   CHECK(message.source_pdos[0] == ((100u<<10)|300u));
   CHECK(message.source_pdos[5] == 0xc1234567u && message.source_pdos[6] == 0x81234567u);
   for (uint8_t selector=0; selector<3; ++selector) {
-    const struct pd_plan plan = pd_make_plan(selector, message.source_pdos, message.object_count, 77);
+    const struct pd_plan plan = pd_make_plan(selector, &(struct pd_capabilities){.source_pdos=message.source_pdos, .count=message.object_count, .source_generation=77});
     CHECK(plan.valid && plan.source_generation == 77);
     CHECK(plan.source_object_position == (selector == 2 ? 5 : 4));
     CHECK(plan.voltage_mv == (selector == 2 ? 20000 : 15000));

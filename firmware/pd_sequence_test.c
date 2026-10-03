@@ -15,7 +15,7 @@ static void make_ready(struct pd_sequence *sequence, struct pd_sequence_sample *
   const uint32_t source_pdos[] = {(100u << 10) | 300u, (300u << 10) | 300u,
                                  (400u << 10) | 300u};
   const struct pd_sequence_request request = {
-    .plan=pd_make_plan(sample->selector_bits, source_pdos, 3, 1), .now_ms=0
+    .plan=pd_make_plan(sample->selector_bits, &(struct pd_capabilities){.source_pdos=source_pdos, .count=3, .source_generation=1}), .now_ms=0
   };
   *sequence = (struct pd_sequence){0};
   sample->now_ms = 0;
@@ -65,7 +65,7 @@ static void make_ready(struct pd_sequence *sequence, struct pd_sequence_sample *
 static void check_slow_discharge(uint8_t bits) {
   const uint32_t source_pdos[] = {(100u<<10)|300u, (300u<<10)|300u, (400u<<10)|300u};
   struct pd_sequence sequence = {0};
-  const struct pd_sequence_request request = {.plan=pd_make_plan(bits, source_pdos, 3, 1)};
+  const struct pd_sequence_request request = {.plan=pd_make_plan(bits, &(struct pd_capabilities){.source_pdos=source_pdos, .count=3, .source_generation=1})};
   struct pd_sequence_sample sample = {.selector_bits=bits, .adc_valid=true, .observation={
     .attached=true, .communication_ok=true, .source_generation=1, .motor_fault=true
   }};
@@ -87,8 +87,36 @@ static void check_slow_discharge(uint8_t bits) {
   CHECK(sequence.outputs.drive_12v == (bits==2));
 }
 
+static void check_ready_five_amp_source(uint8_t bits) {
+  const uint32_t source_pdos[]={(100u<<10)|300u,(400u<<10)|500u};
+  const struct pd_capabilities capabilities={.source_pdos=source_pdos,.count=2,.source_generation=77};
+  const struct pd_sequence_request request={.plan=pd_make_plan(bits,&capabilities)};
+  struct pd_sequence sequence={0};
+  struct pd_sequence_sample sample={.selector_bits=bits,.adc_valid=true,.observation={
+    .attached=true,.communication_ok=true,.fresh_ps_rdy=true,.pe_fsm_state=0x18,
+    .source_generation=77,.vbus_mv=20000,.rdo=(2u<<28)|(300u<<10)|500u,.motor_fault=true
+  }};
+  CHECK(pd_sequence_begin(&sequence,&request));
+  for (unsigned ms=0;ms<40;++ms) {
+    if (sequence.state == PD_SEQUENCE_REQUEST)
+      sample.completed_request_id=sequence.outputs.request_id;
+    if (sequence.state == PD_SEQUENCE_CONTRACT)
+      sample.ps_rdy_request_id=sequence.outputs.request_id;
+    if (sequence.outputs.host_allow) {
+      sample.observation.motor_rail_mv=request.plan.motor_voltage_v*1000u;
+      sample.observation.motor_fault=false;
+    }
+    tick(&sequence,&sample);
+  }
+  CHECK(sequence.state == PD_SEQUENCE_READY && sequence.outputs.host_allow && sequence.outputs.release_bridge);
+  CHECK(sequence.plan.current_ma == 3000 && (sequence.plan.source_pdo & 1023u) == 500u);
+  sample.observation.rdo=(2u<<28)|(300u<<10)|300u; /* Wrong maximum for this advertisement. */
+  tick(&sequence,&sample);
+  CHECK(sequence.state == PD_SEQUENCE_FAULT && !sequence.outputs.host_allow && !sequence.outputs.release_bridge);
+}
 int main(void) {
   for (uint8_t bits=0; bits<3; ++bits) {
+    check_ready_five_amp_source(bits);
     check_slow_discharge(bits);
     struct pd_sequence sequence = {0};
     struct pd_sequence_sample sample = {.selector_bits=bits};
@@ -137,7 +165,8 @@ int main(void) {
   struct pd_sequence sequence = {0};
   struct pd_sequence_request request = {.plan={
     .valid=true, .motor_voltage_v=12, .voltage_mv=15000, .current_ma=3000,
-    .source_generation=1, .source_object_position=2, .sink_pdo=(300u<<10)|300u
+    .source_generation=1, .source_object_position=2, .sink_pdo=(300u<<10)|300u,
+    .source_pdo=(300u<<10)|300u
   }};
   CHECK(!pd_sequence_begin(&sequence, &request));
   request.plan.motor_voltage_v=9;
