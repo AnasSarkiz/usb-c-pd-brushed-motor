@@ -1,0 +1,20 @@
+{
+  "stages": [
+    {
+      "stage": "1c22640-public-A43",
+      "source_commit": "1c22640e1b5979f30debd2074f216bfe58acb1f4",
+      "files": 425,
+      "all_bytes_match_committed_source": true,
+      "manifest_sha256": "f38e5573851f0cd11231fa850f95acfc86c2a37a882ef43ff78aa90f4ab9a319",
+      "removal_reason": "Reproducible task-owned staging directory; prevents duplicate root Biome configuration in ordinary checks"
+    },
+    {
+      "stage": "1c22640-source-public-A43",
+      "source_commit": "1c22640e1b5979f30debd2074f216bfe58acb1f4",
+      "files": 425,
+      "all_bytes_match_committed_source": true,
+      "manifest_sha256": "72de7261a66cde0d28a59d1413c73739fa40a62f432464fdcabff802be808efb",
+      "removal_reason": "Reproducible task-owned staging directory; prevents duplicate root Biome configuration in ordinary checks"
+    }
+  ]
+}

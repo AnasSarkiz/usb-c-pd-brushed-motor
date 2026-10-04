@@ -1,3 +1,36 @@
+# A43 both public source destinations verified —1c22640
+
+2026-10-04. Board source commit1c22640e1b5979f30debd2074f216bfe58acb1f4 is
+pushed to https://github.com/AnasSarkiz/usb-c-pd-brushed-motor, branch main,
+and publicly published at https://tscircuit.com/AnasSarkiz/usb-c-pd-brushed-motor
+as `0.0.1-a43-unrouted-1c22640-9fcc6e41`. The supported publisher exits0; all425 staged file
+names are present remotely. Anonymous visibility checks establish public GitHub
+and public/not-private/not-unlisted/public-dist tscircuit access. All163 critical
+board/component/config/dependency/BOM/manifest/circuit file hashes match the
+committed manifest; four runtime binaries are downloaded through the official
+package_files/download API. Remaining staged bytes match the exact source commit
+before/after upload. Both destinations contain identical validated circuit JSON:
+4c770dfb3efe52ca285848c2ad6f7fbafe6434048517d3ead1b3c66522d9b6ac. It has zero routed PCB traces. The cloud-generated preview/build is still
+pending without a reported error; source publication is not cloud-build approval.
+
+Evidence: github-public-board-revision-A43.json, publication-source-1c22640-*
+manifest/result/anonymous-verification-A43.json and publisher/check logs. The
+published source manifest explicitly records source inclusion and omitted large
+historical diagnostics. Both temporary publication stages were removed only
+after complete file/hash/committed-byte checks, with proof in
+publication-stage-cleanup-A43.json. Fresh normal formatting passes afterward.
+This receipt commit changes documentation/evidence only; the active board sources,
+BOM, imports, dependencies, configuration and required circuit artifact remain
+exactly the published1c22640 board revision. The receipt is pushed to main;
+its anonymous readback is recorded separately, without introducing a new board
+version or republishing recursively.
+
+Stages2/3 remain blocked by the five C165948 USB-C pad gaps below0.20mm.
+Stage4 remains blocked; both routing controls stay disabled. Stage6 has no
+accepted fabrication package and stage7 has no physical test evidence. Repository
+creation/public synchronization resolves the publication-destination blocker,
+not the manufacturing or hardware qualification gates.
+
 # A43 public GitHub destination and fresh publication checks
 
 2026-10-04. The user requested a new public destination. Repository

@@ -1,0 +1,10 @@
+{
+  "source_commit": "1c22640e1b5979f30debd2074f216bfe58acb1f4",
+  "version": "0.0.1-a43-unrouted-1c22640-9fcc6e41",
+  "publisher_exit_code": 0,
+  "staged_bytes_before_and_after_match_commit": true,
+  "files": 425,
+  "artifact_sha256": "4c770dfb3efe52ca285848c2ad6f7fbafe6434048517d3ead1b3c66522d9b6ac",
+  "log": "evidence/publication-source-1c22640-A43.log",
+  "public_verification": "pending; publication exit does not prove public visibility or cloud build"
+}
