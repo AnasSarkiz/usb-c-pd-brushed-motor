@@ -1,0 +1,7 @@
+{
+  "source_commit": "9ebf605bb35b945b82f5aab67299d38cd30cf650",
+  "files": 471,
+  "all_bytes_match_committed_source": true,
+  "manifest_sha256": "d1d61570200f0c7d06640abe95ac9f7360671fc8780fbc16b4027f0f32d19392",
+  "removal_reason": "Reproducible task-owned publication stage removed after exact byte proof to avoid duplicate root Biome configuration"
+}

@@ -68,12 +68,12 @@ No fabrication order has been placed. The project is now synchronized to the pub
 `main`. Initial commit57abd45 and its committed circuit JSON were independently
 verified accessible without signing in; see evidence/github-public-initial-A43.json.
 The existing [tscircuit package](https://tscircuit.com/AnasSarkiz/usb-c-pd-brushed-motor)
-remains public. [Board source revision1c22640](https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/commit/1c22640e1b5979f30debd2074f216bfe58acb1f4)
+remains public. [Board source revision9ebf605](https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/commit/9ebf605bb35b945b82f5aab67299d38cd30cf650)
 is verified publicly in both destinations as
-`0.0.1-a43-unrouted-1c22640-9fcc6e41`. All425 source file names and163 critical file hashes
-match, including identical current unrouted circuit JSON. The tscircuit cloud
-preview/build is still pending. Documentation/evidence receipts do not change this
-published board revision.
+`0.0.1-a44-pad-adjusted-unrouted-9ebf605-d109812e`. All471 source file names and163 critical file hashes
+match, including the corrected supplier footprint and identical current unrouted
+circuit JSON. The tscircuit cloud preview/build is still pending.
+Documentation/evidence receipts do not change this published board revision.
 Neither publication constitutes fabrication approval or physical testing.
 
 The USB-C connector opens toward the correct board edge. A44 applies the user's

@@ -1,0 +1,10 @@
+{
+  "source_commit": "9ebf605bb35b945b82f5aab67299d38cd30cf650",
+  "version": "0.0.1-a44-pad-adjusted-unrouted-9ebf605-d109812e",
+  "publisher_exit_code": 0,
+  "staged_bytes_before_and_after_match_commit": true,
+  "files": 471,
+  "artifact_sha256": "b83b47f32ae9c1055c44804afc1c02d9bf358b2ba3193fd3e9ff886eb1a57527",
+  "log": "evidence/publication-source-9ebf605-A44.log",
+  "public_verification": "pending"
+}

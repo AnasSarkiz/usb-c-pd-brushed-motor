@@ -1,3 +1,28 @@
+# A44 corrected pad revision published publicly —9ebf605
+
+Board source commit9ebf605bb35b945b82f5aab67299d38cd30cf650 is pushed to public
+GitHub main and published at the public tscircuit package as `0.0.1-a44-pad-adjusted-unrouted-9ebf605-d109812e`.
+Anonymous verification confirms all471 source file names and163 critical file
+hashes, including the corrected supplier footprint, all included imports,
+configuration/BOM/runtime dependencies and generated circuit JSON. GitHub and
+tscircuit both contain artifactb83b47f32ae9c1055c44804afc1c02d9bf358b2ba3193fd3e9ff886eb1a57527.
+It remains unrouted. The publisher exits0; staged bytes match the exact commit
+before and after upload. Public visibility is verified without credentials.
+The cloud preview/build is pending; source readback is not cloud-build approval.
+
+See publication-source-9ebf605-*-A44.json/.log,
+github-public-board-revision-A44.json and publication-stage-cleanup-A44.json.
+The reproducible publication stage is removed only after complete file/hash/Git
+byte checks. Fresh ordinary formatting passes afterward. This receipt changes
+documentation/evidence only; the active board sources, imports, BOM, dependency
+versions, configuration and circuit artifact remain the published9ebf605 revision.
+It is pushed to main separately without introducing another board version.
+
+The requested manual pad spacing correction is complete and validated. The
+20V manufacturer rating versus21V PD upper budget remains unresolved; routing
+and fabrication stay blocked by that separate qualification. No hardware test
+or fabrication order is claimed.
+
 # A44 user-authorized manual USB-C pad positions
 
 Current native artifact SHA256:b83b47f32ae9c1055c44804afc1c02d9bf358b2ba3193fd3e9ff886eb1a57527. Fresh native build, all five required
