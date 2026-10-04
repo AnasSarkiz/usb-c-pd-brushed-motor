@@ -1,0 +1,14 @@
+{
+  "part": "C3445864",
+  "model": "GCT USB4120-03-C",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Official import succeeds, but current manufacturer page confirms vertical top-entry; incompatible with required USB mouth facing the board edge. Not adopted.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C3445864-import-A42.log",
+      "sha256": "95e0a9cd74a8d017977736ac7b2fa9dab0a0047ee062b1e319fba6ac56208a36"
+    }
+  ]
+}

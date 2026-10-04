@@ -1,0 +1,56 @@
+bun pack v1.4.2 (744846f84)
+
+packed 1.43KB package.json
+packed 1.1KB LICENSE
+packed 9.0KB README.md
+packed 20.64KB fixture-support/DrcProblemsFixture.tsx
+packed 11.41KB fixture-support/VisualizedGlobalDrcForceImproveSolver.ts
+packed 2.86KB fixture-support/getConnectivityMapFromSimpleRouteJson.ts
+packed 33.94KB lib/drc/AutoroutingDrcEngine.ts
+packed 218B lib/drc/index.ts
+packed 0.76KB lib/index.ts
+packed 53B lib/solvers/BaseSolver.ts
+packed 22.85KB lib/solvers/GlobalDrcForceImproveSolver/GlobalDrcBranchPortfolioSolver.ts
+packed 56.0KB lib/solvers/GlobalDrcForceImproveSolver/GlobalDrcForceImproveSolver.ts
+packed 2.18KB lib/solvers/GlobalDrcForceImproveSolver/broadNetMatchers.ts
+packed 49B lib/solvers/GlobalDrcForceImproveSolver/drc-snapshot.ts
+packed 242B lib/solvers/GlobalDrcForceImproveSolver/drcPresets.ts
+packed 11.75KB lib/solvers/GlobalDrcForceImproveSolver/findPadClearanceViaPosition.ts
+packed 3.11KB lib/solvers/GlobalDrcForceImproveSolver/findTraceClearanceViaPositions.ts
+packed 4.1KB lib/solvers/GlobalDrcForceImproveSolver/getDrcErrors.ts
+packed 0.70KB lib/solvers/GlobalDrcForceImproveSolver/index.ts
+packed 0.74KB lib/solvers/GlobalDrcForceImproveSolver/internalTypes.ts
+packed 2.13KB lib/solvers/GlobalDrcForceImproveSolver/netUtils.ts
+packed 2.96KB lib/solvers/GlobalDrcForceImproveSolver/solverConfig.ts
+packed 145.58KB lib/solvers/GlobalDrcForceImproveSolver/solverHelpers.ts
+packed 4.73KB lib/solvers/GlobalDrcForceImproveSolver/spatialIndex.ts
+packed 18.44KB lib/solvers/GlobalDrcForceImproveSolver/traceToPadClearanceRelaxation.ts
+packed 3.13KB lib/solvers/GlobalDrcForceImproveSolver/types.ts
+packed 8.0KB lib/solvers/GlobalDrcForceImproveSolver/viaToPadClearanceRelaxation.ts
+packed 72B lib/solvers/utils/convertToCircuitJson.ts
+packed 30B lib/types.ts
+packed 217B lib/types/high-density-types.ts
+packed 224B lib/types/index.ts
+packed 0.96KB lib/types/srj-types.ts
+packed 3.0KB lib/utils/convertHdRouteToSimplifiedRoute.ts
+packed 20.72KB lib/utils/convertToCircuitJson.ts
+packed 1.34KB lib/utils/getViaLayers.ts
+packed 224B lib/utils/mapZToLayerName.ts
+packed 245B types/capacity-edges-to-port-segments-types.ts
+packed 0.94KB types/capacity-mesh-types.ts
+packed 445B types/capacity-pathing-types.ts
+packed 0KB types/capacity-segment-to-point-types.ts
+packed 0.74KB types/graphics-debug-types.ts
+packed 0KB types/high-density-router-types.ts
+packed 2.23KB types/high-density-types.ts
+packed 201B types/index.ts
+packed 3.71KB types/srj-types.ts
+packed 0.69KB utils/connection-point-utils.ts
+
+/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/high-density-repair03-0.0.1-a41.tgz
+
+Total files: 46
+Shasum: c5efecab0fcdd9cc70b7aa446d0bfcdbe1d2b919
+Integrity: sha512-QyUq8oMsFK27r[...]8ikOx4Snbw+ww==
+Unpacked size: 0.40MB
+Packed size: 81.38KB

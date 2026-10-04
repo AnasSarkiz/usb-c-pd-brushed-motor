@@ -1,0 +1,14 @@
+{
+  "part": "C2689970",
+  "model": "HRO TYPE-C-31-M-30",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Official import succeeds; pin labels include nonexistent USB B13/B14 contacts and the SMT row has sub0.20mm gaps. Not adopted.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C2689970-import-A42.log",
+      "sha256": "c86dcc837e93029ac43e99ac66efba99a9cc13cbe036e38b9421af0a2e958abc"
+    }
+  ]
+}

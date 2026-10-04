@@ -1,0 +1,35 @@
+import { expect, test } from "bun:test"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("breakout honors its router version while remaining board routes inherit the board version", async () => {
+  const { circuit } = getTestFixture()
+  const versions: Array<string | undefined> = []
+  circuit.on("autorouting:start", (event) => {
+    if (event.autorouterName === "tscircuit")
+      versions.push(event.autorouterVersion)
+  })
+  circuit.add(
+    <board width={18} height={10} autorouterVersion="beta_pipeline7">
+      <net name="SIGNAL" />
+      <breakout name="pin_escape" autorouterVersion="beta_pipeline9">
+        <net name="SIGNAL" />
+        <chip name="U1" footprint="soic8" pcbX={-1} />
+        <breakoutpoint connection="U1.1" pcbX={3.9999} pcbY={1.905} />
+        <trace from="U1.1" to="net.SIGNAL" />
+      </breakout>
+      <resistor name="R2" resistance="1k" footprint="0402" pcbX={7} />
+      <trace from="U1.1" to="net.SIGNAL" />
+      <trace from="R2.1" to="net.SIGNAL" />
+      <pcbnotetext
+        text="Pin escape: Pipeline9; remaining board: Pipeline7"
+        pcbY={4}
+        fontSize={0.32}
+      />
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  expect(versions).toEqual(["beta_pipeline9", "beta_pipeline7"])
+  expect(circuit.db.pcb_autorouting_error.list()).toEqual([])
+  expect(circuit.db.pcb_trace.list().length).toBeGreaterThan(1)
+  await expect(circuit).toMatchPcbSnapshot(import.meta.path)
+})

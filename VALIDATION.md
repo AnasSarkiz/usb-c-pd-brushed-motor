@@ -1,3 +1,125 @@
+# A22 revision42 — USB-C supplier replacement audit in progress
+
+A new independent preroute all-copper gate reproduces five connector land
+violations and138 pour clearance violations (0.19302–0.19836mm).
+The pour setting is increased from0.20 to0.23mm; the acceptance rule remains
+0.20mm. A fresh full native build passes. Its strict geometry audit removes
+all138 pour issues and retains all five J1 issues. Artifact SHA256
+3a2ebba27de9793260f8dfc20b3d75900ee324a0e797ae6f7e9b3160e7de03b1
+has140 purchased components and no routed traces. See
+`evidence/routing42-static-copper-clearance-A22.json` and the native build log.
+TypeScript passes and42 board tests/468 assertions pass, including a new
+regression that rejects the actual sub-rule connector/pour gaps without
+changing the rule or circular-geometry tolerance. Formatting passes (156files).
+
+The native 3D viewer and official full-board GLB were reviewed from both
+connector edges. J1 opens toward PCB−X at the left edge; J2 opens toward PCB+X
+at the right edge with clear access above both screws. Current source rotations
+−90°/+90° are correct. Measured model insets are0.225mm/1.985mm respectively.
+Current connector records exactly match the reviewed GLB baseline; a reproducible
+hash-bound model audit passes. See `docs/CONNECTOR-ORIENTATION-A42.md` and
+`evidence/connector-orientation-A42.json`. Actual plug/wire/enclosure fit remains
+a physical prototype test. Any replacement connector requires a fresh 3D review.
+
+The permanent `scripts/run-native-routing.py` gate regenerates electrical
+ownership and audits actual preroute copper before accepting source bindings
+and native check logs. Its current run fails on the same five J1 gaps; the
+artifact hash remains unchanged and no native route build is started. Supplier
+code imports and exact-MPN query results are independently checked for identity;
+two MPN searches returned unrelated components and were rejected. Candidate
+status files retain these results. No candidate has been adopted or patched.
+Fresh final formatting and TypeScript pass;42 tests/468 assertions pass.
+The review scripts and227 source/dependency records bind the current artifact
+in `routing42-source-binding-A22.json`. Git tracks the required circuit JSON
+through an explicit ignore exception. PDF/GLB assets have binary Git metadata.
+The initial whole-diff whitespace check reports immutable supplier whitespace,
+PDF text-classification noise and required unified-patch context spaces; these
+are preserved without modifying imported definitions or source patch evidence. The public connector review is WIP:
+stage2 is blocked at J1 qualification; stage3 retains reviewed body placement
+but is blocked at actual copper prerequisites; stage4 is blocked and no final
+fabrication ZIP exists. See `docs/USB-C-QUALIFICATION-A42.md`.
+
+The official C3197922 import builds, but its VBUS lands are0.6999986mm
+wide against Molex recommended0.76mm (default±0.05mm). This exceeds the
+drawing allowance by0.0100014mm; no supplier component is patched and no
+exception is accepted. Additional official imports are being independently
+screened; none has been adopted merely because it imports. Stock, rating,
+mechanical drawing, electrical pin mapping and unchanged spacing rules all apply.
+Stages2/3 remain in progress for replacement; routing is blocked pending
+validated supplier geometry and fresh board prerequisite checks.
+
+# A22 revision41 — ordinary-via clearance and native MCU escapes
+
+Revision40 was stopped after the independent partial-route audit found24
+ordinary via drill-to-component-pad gaps of0.150001–0.1548mm, below the
+unchanged0.20mm rule. Its67 partial traces are diagnostic only. The final
+artifact remains preroute SHA dc06f764745aec6ab1b426a264e954f869ab50e1a20d13f9626c8824a83756c0;
+no full route or fabrication package is accepted. See
+`routing40-partial-sensing-drill-diagnostic-A22.json` and the retained native40
+phase inputs/outputs. Solver completion is not accepted as physical DRC evidence.
+
+The canonical repairs distinguish fixed routed copper from component lands,
+honor the explicit0.20mm manufacturing rule separately from0.25mm routing
+search margin, and project ordinary vias clear of connected component pads
+when `allowViaInPad=false`. This prevents same-net pad tangency from leaving
+only0.15mm drill clearance. Fixed-wire ownership does not exempt component
+pads or foreign copper. Changes are made in canonical source, built and packed;
+installed dependencies and supplier imports are never edited. Regressions
+cover explicit clearance, fixed-copper ownership and no-via-in-pad projection.
+
+The MCU pad exits now use supported native `FanoutTracePath` source rather
+than the previous automatically generated bends. Supplier geometry, electrical
+connections, component placement and18 breakout targets are unchanged. All18
+candidate paths/16 ordinary vias pass the independent source-geometry screen:
+minimum drill-to-all-component-pad gap0.4580339mm. This planning check does not
+replace inspection and DRC of native emitted routes.
+
+Core affected tests:12 tests/359 assertions pass with explicit test-runner
+timeout; initial default-timeout failures remain recorded. Capacity affected
+tests:10 tests/67 assertions pass. Repair affected tests:11 tests/83 assertions
+pass. Repair full suite retains112 passing tests and the independently proven
+pre-existing floating-coordinate failure; no assertion is suppressed or
+rewritten. Packaging checks exposed omitted fixture/type-helper directories;
+canonical package contents are corrected and rebuilt before board integration.
+Fresh board formatting, TypeScript and41 tests/466 assertions pass. All seven
+independent prerequisites pass on2154d1fabbbb878543f4a1128380edc76300aaaadc9ab5e6c4a76d4be479615a,
+with140 purchased/152 PCB components,31 identical native breakout targets,
+12 original imported thermal vias and zero preroute traces. Physical PCB and
+all eight A4 schematic record types exactly match revision40. The223 source,
+import, audit and dependency bindings match. All five native prerequisites pass; placement reports0 errors/0 warnings.
+Native41 was stopped after a stricter all-copper audit found five C165948/J1
+pad gaps0.1996186–0.1999107mm below the unchanged0.20mm rule. The emitted
+partial routes are diagnostic only; accepted output remains unrouted. See
+`routing41-partial-escape-physical-A22.json`. A supplier-backed replacement
+is being independently imported and reviewed before any further routing. Prior
+placement acceptance alone does not qualify revised routed geometry.
+
+Canonical core2091-a41 and autorouter960-a41 build/typecheck/pack successfully.
+Source, packed and installed JavaScript/types/manifests are byte-identical.
+The compiled autorouter source map independently binds the exact configured
+root repair03 source. Repair04 retains its separate unchanged upstream nested
+repair dependency; no claim is made that all nested implementations changed.
+The required capacity Blacksmith benchmark service is unavailable in this
+session. No substitute local capacity benchmark or benchmark pass is claimed.
+
+Public publication of committed69ff9a9 is incomplete. The official compressed
+upload returns413 and its individual-file upload records28 failures/493 of1515
+acknowledgements. That exact upload was stopped; no successful publication or
+cloud build is claimed. The existing package is independently verified public
+and remains public only. The next release will contain exact committed current
+source/dependencies/artifact and explicit release evidence, with redundant
+historical diagnostic files retained locally instead of retransmitted. GitHub
+push remains externally blocked because this task has no configured remote.
+
+Remaining implementation: install/bind canonical builds; rerun strict schema,
+all imports/connectivity/placement and five native prerequisites; generate and
+validate complete native routes; inspect four copper layers/eight A4 sheets;
+export and inspect one hash-bound native fabrication/assembly package; commit
+and verify public release. Hardware qualification/provisioning and manufacturer
+assembly/CAM acceptance remain external and cannot be represented as tested.
+
+---
+
 # A22 revision40 — assign escape nets to their declared native phase
 
 Native39 correctly rejects the saved escape phase: it receives zero connections

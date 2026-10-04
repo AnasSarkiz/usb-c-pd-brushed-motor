@@ -1,0 +1,151 @@
+diff --git a/lib/drc/AutoroutingDrcEngine.ts b/lib/drc/AutoroutingDrcEngine.ts
+index 6e017a8..37786df 100644
+--- a/lib/drc/AutoroutingDrcEngine.ts
++++ b/lib/drc/AutoroutingDrcEngine.ts
+@@ -63,6 +63,7 @@ type Via = {
+ 
+ type StaticObstacle = {
+   kind: "obstacle"
++  isCopperTrace: boolean
+   obstacleType: "pcb_smtpad" | "pcb_plated_hole"
+   obstacleId: string
+   connectedTo: string[]
+@@ -114,6 +115,13 @@ export interface AutoroutingDrcEngineOptions {
+   viaClearance?: number
+   /** Copper-edge clearance used for via-to-pad checks. */
+   viaToPadClearance?: number
++  /**
++   * Apply the physical via-to-pad gap to connected pads too. Electrical
++   * connectivity does not remove this manufacturing clearance. Omitted/false
++   * preserves legacy same-net copper exemptions; routing callers that prohibit
++   * new via-in-pad placement can explicitly enable it.
++   */
++  enforceSameNetViaToPadClearance?: boolean
+   /**
+    * Optional broad-phase cell size. The engine derives one from the board
+    * bounds when this is omitted.
+@@ -380,6 +388,7 @@ export class AutoroutingDrcEngine {
+   private readonly traceClearance: number
+   private readonly viaClearance: number
+   private readonly viaToPadClearance: number
++  private readonly enforceSameNetViaToPadClearance: boolean
+   private readonly cellSize: number
+   private readonly connMap?: ConnectivityMap
+   private readonly includeTraceViaOwnerMetadata: boolean
+@@ -413,6 +422,8 @@ export class AutoroutingDrcEngine {
+       options.viaToPadClearance ??
+       this.srj.minViaEdgeToPadEdgeClearance ??
+       DEFAULT_VIA_TO_PAD_CLEARANCE
++    this.enforceSameNetViaToPadClearance =
++      options.enforceSameNetViaToPadClearance ?? false
+     this.connMap = options.connMap
+     this.includeTraceViaOwnerMetadata =
+       options.includeTraceViaOwnerMetadata ?? false
+@@ -560,6 +571,7 @@ export class AutoroutingDrcEngine {
+         Math.abs(obstacle.width - obstacle.height) < 0.001
+       obstacles.push({
+         kind: "obstacle",
++        isCopperTrace: obstacle.isCopperTrace ?? false,
+         obstacleType,
+         obstacleId,
+         connectedTo: obstacle.connectedTo,
+@@ -851,7 +863,11 @@ export class AutoroutingDrcEngine {
+     via: Via,
+     obstacle: StaticObstacle,
+   ): AutoroutingDrcError | undefined {
+-    if (this.obstacleSharesNet(via.netId, obstacle)) return undefined
++    if (
++      (!this.enforceSameNetViaToPadClearance || obstacle.isCopperTrace) &&
++      this.obstacleSharesNet(via.netId, obstacle)
++    )
++      return undefined
+     this.lastRunStats.exactCheckCount += 1
+ 
+     const obstacleBounds = getObstacleLocalBounds(obstacle)
+diff --git a/lib/solvers/GlobalDrcForceImproveSolver/findPadClearanceViaPosition.ts b/lib/solvers/GlobalDrcForceImproveSolver/findPadClearanceViaPosition.ts
+index 9f1a2b8..f978c95 100644
+--- a/lib/solvers/GlobalDrcForceImproveSolver/findPadClearanceViaPosition.ts
++++ b/lib/solvers/GlobalDrcForceImproveSolver/findPadClearanceViaPosition.ts
+@@ -202,6 +202,11 @@ const getPadRegions = (
+     .filter(
+       (obstacle) =>
+         !obstacle.isCopperPour &&
++        !(
++          obstacle.isCopperTrace &&
++          (obstacleSharesNet(getRootConnectionName(route), obstacle, connMap) ||
++            obstacleSharesNet(route.connectionName, obstacle, connMap))
++        ) &&
+         obstacle.layers.some((layer) => layers.has(layer)),
+     )
+     .map((obstacle) => {
+@@ -224,7 +229,10 @@ const getPadRegions = (
+         obstacleSharesNet(getRootConnectionName(route), obstacle, connMap) ||
+         obstacleSharesNet(route.connectionName, obstacle, connMap)
+       const clearance =
+-        viaRadius + (sameNet ? 0 : getViaEdgeToPadEdgeClearance(srj))
++        viaRadius +
++        (sameNet && srj.allowViaInPad !== false
++          ? 0
++          : getViaEdgeToPadEdgeClearance(srj))
+       const bounds = getBoundsFromPoints(
+         applyToPoints(localToWorld, [
+           { x: -halfWidth, y: -halfHeight },
+diff --git a/lib/solvers/GlobalDrcForceImproveSolver/solverHelpers.ts b/lib/solvers/GlobalDrcForceImproveSolver/solverHelpers.ts
+index 604d600..0da2334 100644
+--- a/lib/solvers/GlobalDrcForceImproveSolver/solverHelpers.ts
++++ b/lib/solvers/GlobalDrcForceImproveSolver/solverHelpers.ts
+@@ -3677,7 +3677,7 @@ export const applySafeTraceLayerMoveForError = (
+     ) {
+       return undefined
+     }
+-    if (!adjustViaClearance) return escape
++    if (!adjustViaClearance && srj.allowViaInPad !== false) return escape
+     const clearEscape = findPadClearanceViaPosition(
+       srj,
+       route,
+diff --git a/package.json b/package.json
+index 59cb7c1..ea79489 100644
+--- a/package.json
++++ b/package.json
+@@ -4,7 +4,10 @@
+   "type": "module",
+   "private": true,
+   "files": [
+-    "lib"
++    "lib",
++    "types",
++    "fixture-support",
++    "utils"
+   ],
+   "scripts": {
+     "start": "cosmos",
+@@ -41,5 +44,6 @@
+     "react-cosmos-plugin-vite": "^7.3.0",
+     "typescript": "^6.0.3",
+     "vite": "^8.0.10"
+-  }
++  },
++  "version": "0.0.1-a41"
+ }
+diff --git a/types/srj-types.ts b/types/srj-types.ts
+index 1a09c5f..8e8c128 100644
+--- a/types/srj-types.ts
++++ b/types/srj-types.ts
+@@ -48,6 +48,8 @@ export interface SimpleRouteJson {
+   minViaDiameter?: number
+   /** Enables partial via spans; autorouted vias span the board by default. */
+   allowBlindAndBuriedVias?: boolean
++  /** False requires configured clearance from connected component lands. */
++  allowViaInPad?: boolean
+   minBoardEdgeClearance?: number
+   minTraceToPadEdgeClearance?: number
+   minViaEdgeToPadEdgeClearance?: number
+@@ -75,6 +77,8 @@ export interface Obstacle {
+   ccwRotationDegrees?: number
+   connectedTo: Array<TraceId | NetId>
+   isCopperPour?: boolean
++  /** Fixed routed copper, distinct from a purchased component land. */
++  isCopperTrace?: boolean
+   netIsAssignable?: boolean
+   offBoardConnectsTo?: Array<OffBoardConnectionId>
+ }

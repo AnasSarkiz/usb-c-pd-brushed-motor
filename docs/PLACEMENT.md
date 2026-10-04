@@ -1,4 +1,20 @@
-# A22 functional placement validated — 2026-10-04
+# A22 revision42 — connector orientation reviewed; routing blocked
+
+Current board:80 ×65 ×1.6mm, four layers,140 purchased components and152
+native PCB components. The earlier two-layer records below are historical.
+Native 3D inspection confirms USB-C opens toward the left edge and the motor
+terminal toward the right, with top access to screws and controls. Source
+rotations−90°/+90° are correct. See `CONNECTOR-ORIENTATION-A42.md`.
+
+The strict current preroute copper gate fails five C165948/J1 pad gaps below
+the required0.20mm clearance. Component-body placement and orientation do not
+resolve those imported-land violations. Revision42 remains unrouted while a
+qualified supplier replacement is sought; there is no accepted fabrication
+package. The new gate prevents stale placement reports from enabling routing.
+
+---
+
+# A22 functional placement validated — historical review
 
 All five native preroute checks, strict full-artifact schema, unchanged supplier
 geometry, full native placement, connectivity and163 text labels pass.

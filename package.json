@@ -34,14 +34,14 @@
   "author": "AnasSarkiz",
   "private": true,
   "dependencies": {
-    "@tscircuit/capacity-autorouter": "./tooling/tscircuit-capacity-autorouter-0.0.959-a39.tgz",
-    "@tscircuit/core": "./tooling/tscircuit-core-0.0.2090-A22.tgz",
+    "@tscircuit/capacity-autorouter": "./tooling/tscircuit-capacity-autorouter-0.0.960-a41.tgz",
+    "@tscircuit/core": "./tooling/tscircuit-core-0.0.2091-a41.tgz",
     "@tscircuit/props": "./tooling/tscircuit-props-0.0.683-A22.tgz"
   },
   "overrides": {
-    "@tscircuit/core": "file:./tooling/tscircuit-core-0.0.2090-A22.tgz",
+    "@tscircuit/core": "file:./tooling/tscircuit-core-0.0.2091-a41.tgz",
     "@tscircuit/props": "file:./tooling/tscircuit-props-0.0.683-A22.tgz",
-    "@tscircuit/capacity-autorouter": "file:./tooling/tscircuit-capacity-autorouter-0.0.959-a39.tgz"
+    "@tscircuit/capacity-autorouter": "file:./tooling/tscircuit-capacity-autorouter-0.0.960-a41.tgz"
   },
   "packageManager": "bun@1.4.2"
 }

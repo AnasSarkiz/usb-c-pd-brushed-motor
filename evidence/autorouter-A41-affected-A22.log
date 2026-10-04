@@ -1,0 +1,41 @@
+bun test v1.4.2 (744846f84)
+
+tests/pipeline7-no-via-in-pad-policy.test.ts:
+(pass) Pipeline7 explicit no-via-in-pad policy enforces connected-pad clearance [9.71ms]
+
+tests/pipeline7-relaxed-drc-evaluator.test.ts:
+(pass) Pipeline7 repair uses the benchmark relaxed DRC path [13.47ms]
+
+tests/pipeline7-autorouting-drc-evaluator.test.ts:
+(pass) Pipeline7 autorouting DRC finds every reference trace collision [1.69ms]
+(pass) Pipeline7 candidate conversion reuses static obstacle connectivity [0.26ms]
+
+tests/pipeline7-configured-copper-clearance.test.ts:
+(pass) Pipeline7 repair honors explicit copper clearance above its legacy minimum [0.39ms]
+
+tests/features/pipeline7-exact-drc-no-fallback.test.ts:
+(pass) Pipeline7 disables speculative fallback inside its exact DRC portfolio [31.89ms]
+
+tests/features/pipeline7-dataset01-circuit143-trace-clearance.test.ts:
+(fail) pipeline7 dataset01 circuit143 clears every routed trace [7287.21ms]
+  ^ this test timed out after 5000ms.
+
+tests/features/pipeline7-preloaded-trace-drc-feedback.test.ts:
+(pass) Pipeline7 DRC feedback includes preloaded traces [1983.82ms]
+
+tests/features/pipeline7-dataset01-circuit144-pad-clearance.test.ts:
+(pass) pipeline7 keeps dataset01 circuit144 pad clearance clean without broad fallback [798.42ms]
+
+tests/bugs/bugreport99-nrf52810-drc-identity-swap.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+error: Cannot find module 'high-density-repair03/fixture-support/VisualizedGlobalDrcForceImproveSolver' from '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/autorouter-manufacturing-A22/tests/bugs/bugreport99-nrf52810-drc-identity-swap.test.ts'
+-------------------------------
+
+
+ 8 pass
+ 2 fail
+ 1 error
+ 56 expect() calls
+Ran 10 tests across 9 files. [11.15s]

@@ -1,0 +1,14 @@
+{
+  "part": "C53207146",
+  "model": "BXCONN TYPE-C-24P-SMD",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Official import succeeds; two SMT rows use0.2999994mm lands at alternating0.499872mm pitch, leaving sub0.20mm gaps. Further drawing/stock qualification not completed. Not adopted.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C53207146-import-A42.log",
+      "sha256": "be488f2bfb1890b5c1139625a4c1d5e90ba69672abc7c30ce4295c94f6edde77"
+    }
+  ]
+}

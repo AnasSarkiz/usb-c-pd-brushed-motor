@@ -1,0 +1,82 @@
+import { expect, test } from "bun:test"
+import { Fragment } from "react"
+import { createAutoroutingPhaseIoStack } from "tests/fixtures/create-autorouting-phase-io-stack"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("dogbone routing owns its pad escapes while plane drops remain in the following phase", async () => {
+  const { circuit } = getTestFixture()
+  const phaseStack = createAutoroutingPhaseIoStack(circuit)
+  circuit.add(
+    <board
+      width={20}
+      height={16}
+      minViaPadDiameter={0.6}
+      minViaHoleDiameter={0.3}
+    >
+      <copperpour layer="top" connectsTo="net.GND" />
+      <copperpour layer="bottom" connectsTo="net.GND" />
+      <autoroutingphase fanoutPourNetMap={{ bottom: "GND" }} />
+      <fanout
+        name="pad_escape"
+        autorouter="dogbone"
+        fanoutRoutingLayers={["bottom"]}
+      >
+        <chip
+          name="U1"
+          footprint={
+            <footprint>
+              {[1, 2, 3, 4].map((pinNumber) => (
+                <Fragment key={pinNumber}>
+                  <smtpad
+                    portHints={[`pin${pinNumber}`]}
+                    shape="circle"
+                    radius={0.25}
+                    pcbX={((pinNumber - 1) % 2) * 1.6}
+                    pcbY={Math.floor((pinNumber - 1) / 2) * 1.6}
+                  />
+                </Fragment>
+              ))}
+            </footprint>
+          }
+          pcbX={-4}
+          connections={{ pin1: "net.GND", pin2: "net.SIGNAL" }}
+        />
+      </fanout>
+      <resistor
+        name="R1"
+        resistance="1k"
+        footprint="0805"
+        pcbX={5}
+        connections={{ pin1: "net.SIGNAL", pin2: "net.GND" }}
+      />
+      <pcbnotetext
+        pcbY={6}
+        text="Dogbone pad escapes precede ground-plane drops"
+        fontSize={0.35}
+      />
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  expect(circuit.db.pcb_autorouting_error.list()).toEqual([])
+  const padEscapeGroup = circuit.db.pcb_group.getWhere({ name: "pad_escape" })!
+  const escapeInput = phaseStack[0]!.startSimpleRouteJson!
+  expect(escapeInput.connections.length).toBeGreaterThan(0)
+  expect(
+    escapeInput.connections.every(
+      (connection) =>
+        connection.routingPcbGroupId === padEscapeGroup.pcb_group_id,
+    ),
+  ).toBe(true)
+  expect(
+    phaseStack
+      .slice(1)
+      .some((phase) =>
+        phase.startSimpleRouteJson?.buses?.some(
+          (bus) => bus.termination?.type === "plane",
+        ),
+      ),
+  ).toBe(true)
+  expect(circuit.db.pcb_trace.list().length).toBeGreaterThan(0)
+  expect(circuit.db.pcb_port_not_connected_error.list()).toEqual([])
+  await expect(circuit).toMatchPcbSnapshot(import.meta.path)
+})

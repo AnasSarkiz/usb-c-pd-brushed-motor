@@ -4,6 +4,7 @@ Ownership is selected by the official connectivity map. Different nets are
 always compared on their actual layers, including pours, pads and via annuli.
 Ordinary drill-to-pad and drill-to-drill geometry is checked separately.
 """
+import argparse
 import hashlib
 import json
 import math
@@ -16,12 +17,33 @@ from copper_clearance_geometry import wire_copper_segments
 EPS_MM = 1e-5  # Circular polygon sag at radius0.3mm/128 quadrants is <6e-6mm.
 
 
-def audit():
-    raw = Path('dist/index/circuit.json').read_bytes()
+def foreign_copper_issues(copper):
+    issues = []
+    comparisons = 0
+    for layer in ('top', 'inner1', 'inner2', 'bottom'):
+        selected = [primitive for primitive in copper if primitive['layer'] == layer]
+        tree = STRtree([primitive['geometry'] for primitive in selected])
+        for index, primitive in enumerate(selected):
+            for other_index in tree.query(primitive['geometry'].buffer(.2)):
+                if other_index <= index:
+                    continue
+                other = selected[other_index]
+                if primitive['net'] == other['net']:
+                    continue
+                comparisons += 1
+                gap_mm = primitive['geometry'].distance(other['geometry'])
+                if gap_mm + EPS_MM < .2:
+                    issues.append({'rule': 'foreign_copper_clearance', 'first': primitive['id'], 'second': other['id'], 'firstKind': primitive['kind'], 'secondKind': other['kind'], 'layer': layer, 'clearanceMm': gap_mm})
+    return {'issues': issues, 'comparisons': comparisons}
+
+
+def audit(configuration):
+    raw = configuration.artifact.read_bytes()
     elements = json.loads(raw)
-    if sum(element['type'] == 'source_component' for element in elements) != 140 or not any(element['type'] == 'pcb_trace' for element in elements):
-        raise ValueError('The complete routed140-part artifact is required')
-    ownership = json.loads(Path('evidence/copper-net-map-A22.json').read_text())
+    has_traces = any(element['type'] == 'pcb_trace' for element in elements)
+    if sum(element['type'] == 'source_component' for element in elements) != 140 or has_traces == configuration.preroute:
+        raise ValueError('A complete140-part artifact with the requested routing phase is required')
+    ownership = json.loads(configuration.ownership.read_text())
     board = next(element for element in elements if element['type'] == 'pcb_board')
     if board['num_layers'] != 4 or board.get('outline'):
         raise ValueError('Review requires the recorded rectangular four-layer outline')
@@ -60,26 +82,19 @@ def audit():
             if not outline.covers(geometry) or edge_gap_mm + EPS_MM < .5:
                 issues.append({'rule': 'copper_to_edge', 'id': identifier, 'layer': segment['layer'], 'clearanceMm': edge_gap_mm})
             copper.append({'id': identifier, 'kind': kind, 'net': ownership[owner_id], **segment})
-    comparisons = 0
-    for layer in ('top', 'inner1', 'inner2', 'bottom'):
-        selected = [primitive for primitive in copper if primitive['layer'] == layer]
-        tree = STRtree([primitive['geometry'] for primitive in selected])
-        for index, primitive in enumerate(selected):
-            for other_index in tree.query(primitive['geometry'].buffer(.2)):
-                if other_index <= index:
-                    continue
-                other = selected[other_index]
-                if primitive['net'] == other['net']:
-                    continue
-                comparisons += 1
-                gap_mm = primitive['geometry'].distance(other['geometry'])
-                if gap_mm + EPS_MM < .2:
-                    issues.append({'rule': 'foreign_copper_clearance', 'first': primitive['id'], 'second': other['id'], 'firstKind': primitive['kind'], 'secondKind': other['kind'], 'layer': layer, 'clearanceMm': gap_mm})
-    report = {'artifactSha256': hashlib.sha256(raw).hexdigest(), 'copperPrimitives': len(copper), 'nearbyForeignComparisons': comparisons, 'rulesMm': {'width': .2, 'foreignCopper': .2, 'edge': .5}, 'issues': issues, 'limitations': 'Physical geometric spacing only. No electrical, thermal or power rating is inferred. Unsupported route interpolation is rejected.'}
-    Path('evidence/routed-copper-clearance-A39.json').write_text(json.dumps(report, indent=2) + '\n')
+    foreign_clearances = foreign_copper_issues(copper)
+    comparisons = foreign_clearances['comparisons']
+    issues.extend(foreign_clearances['issues'])
+    report = {'artifactSha256': hashlib.sha256(raw).hexdigest(), 'routingPhase': 'unrouted' if configuration.preroute else 'routed', 'copperPrimitives': len(copper), 'nearbyForeignComparisons': comparisons, 'rulesMm': {'width': .2, 'foreignCopper': .2, 'edge': .5}, 'issues': issues, 'limitations': 'Physical geometric spacing only. No electrical, thermal or power rating is inferred. Unsupported route interpolation is rejected.'}
+    configuration.report.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps({'copperPrimitives': len(copper), 'nearbyForeignComparisons': comparisons, 'issues': len(issues)}))
     return bool(issues)
 
 
 if __name__ == '__main__':
-    raise SystemExit(audit())
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--artifact', type=Path, default=Path('dist/index/circuit.json'))
+    parser.add_argument('--ownership', type=Path, default=Path('evidence/copper-net-map-A22.json'))
+    parser.add_argument('--report', type=Path, default=Path('evidence/routed-copper-clearance-A39.json'))
+    parser.add_argument('--preroute', action='store_true')
+    raise SystemExit(audit(parser.parse_args()))

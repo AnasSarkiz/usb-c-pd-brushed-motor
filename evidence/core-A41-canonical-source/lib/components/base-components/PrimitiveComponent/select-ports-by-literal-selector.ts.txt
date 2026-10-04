@@ -1,0 +1,28 @@
+import type { Port } from "lib/components/primitive-components/Port"
+
+/** Resolve the existing component-pin alias syntax independently of cache warming.
+ * Symbol containers do not change ownership of a component's electrical ports.
+ */
+export function selectPortsByLiteralSelector({
+  ports,
+  selector,
+}: {
+  ports: Port[]
+  selector: string
+}): Port[] | undefined {
+  const match = selector.match(/^\.([A-Za-z0-9_-]+)\s*>\s*\.([A-Za-z0-9_-]+)$/)
+  if (!match) return undefined
+  const [, componentAlias, portAlias] = match
+  const directPorts = ports.filter(
+    (port) =>
+      port.parent?.isMatchingNameOrAlias(componentAlias!) &&
+      port.isMatchingNameOrAlias(portAlias!),
+  )
+  // Explicit schematic-symbol ownership takes precedence over mapped chip ownership.
+  if (directPorts.length > 0) return directPorts
+  return ports.filter(
+    (port) =>
+      port.getParentNormalComponent()?.isMatchingNameOrAlias(componentAlias!) &&
+      port.isMatchingNameOrAlias(portAlias!),
+  )
+}

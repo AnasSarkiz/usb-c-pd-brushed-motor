@@ -1,0 +1,54 @@
+import { expect, test } from "bun:test"
+import { AutoroutingDrcEngine } from "../lib/drc/AutoroutingDrcEngine"
+import type { SimpleRouteJson, SimplifiedPcbTraces } from "../lib/types"
+
+test("same-net land enforcement distinguishes fixed wire reservations and still checks foreign copper", (): void => {
+  const traces: SimplifiedPcbTraces = [
+    {
+      type: "pcb_trace",
+      pcb_trace_id: "signal_trace",
+      connection_name: "signal",
+      route: [
+        { route_type: "wire", x: -0.5, y: 0, layer: "top", width: 0.2 },
+        { route_type: "wire", x: 0, y: 0, layer: "top", width: 0.2 },
+        {
+          route_type: "via",
+          x: 0,
+          y: 0,
+          from_layer: "top",
+          to_layer: "bottom",
+          via_diameter: 0.6,
+        },
+        { route_type: "wire", x: 0, y: 0, layer: "bottom", width: 0.2 },
+      ],
+    },
+  ]
+  for (const isCopperTrace of [undefined, false, true]) {
+    for (const obstacleNet of ["signal", "foreign"]) {
+      const srj: SimpleRouteJson = {
+        bounds: { minX: -2, maxX: 2, minY: -2, maxY: 2 },
+        layerCount: 2,
+        minTraceWidth: 0.2,
+        minViaEdgeToPadEdgeClearance: 0.2,
+        connections: [{ name: "signal", pointsToConnect: [] }],
+        obstacles: [
+          {
+            type: "rect",
+            isCopperTrace,
+            layers: ["top"],
+            center: { x: 0, y: 0 },
+            width: 0.2,
+            height: 0.2,
+            connectedTo: ["pcb_port_shared", obstacleNet],
+          },
+        ],
+      }
+      const result = new AutoroutingDrcEngine(srj, {
+        enforceSameNetViaToPadClearance: true,
+      }).evaluate(traces)
+      expect(result.errors).toHaveLength(
+        obstacleNet === "foreign" ? 2 : isCopperTrace ? 0 : 1,
+      )
+    }
+  }
+})

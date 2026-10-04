@@ -1,0 +1,9 @@
+{
+  "part": "C456014",
+  "reviewedOn": "2026-10-04",
+  "adoptedOnBoard": false,
+  "status": "not approved",
+  "issue": "Current exact catalog and import are BF90 USB Type-B, not Type-C. Search-result PDF title was stale; the actual PDF content also identifies BF90. Rejected for identity/function mismatch.",
+  "importLog": "evidence/usb-c-C456014-import-A42.log",
+  "importLogSha256": "4380712f0eb4792db24eb4fd8698e88ca22b006beabf3a1c33bd37e24993bf67"
+}

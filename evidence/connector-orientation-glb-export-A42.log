@@ -1,0 +1,22 @@
+15293 |   const timeoutId = setTimeout(() => {
+15294 |     timedOut = true;
+15295 |     controller.abort();
+15296 |   }, timeoutMs);
+15297 |   try {
+15298 |     return await fetch(url, {
+                         ^
+TypeError: getaddrinfo ENOTFOUND modelcdn.tscircuit.com
+     path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C165948.obj?uuid=617b05f9bba7410b96c001093d8189e4&cachebust_origin=",
+  syscall: "getaddrinfo",
+ hostname: "modelcdn.tscircuit.com",
+    errno: 4,
+     code: "ENOTFOUND"
+
+      at async fetchWithTimeout (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-gltf/dist/index.js:15298:18)
+      at async loadOBJ (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-gltf/dist/index.js:17021:26)
+      at async convertCircuitJsonTo3D (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-gltf/dist/index.js:18444:24)
+      at async convertCircuitJsonToGltf (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-gltf/dist/index.js:19979:25)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js:354155:41)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js:354513:11)
+
+Bun v1.4.2 (macOS arm64)

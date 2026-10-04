@@ -1,0 +1,70 @@
+import type {
+  PartsEngine,
+  PlatformConfig,
+  SupplierName,
+} from "@tscircuit/props"
+import { any_circuit_element, type AnyCircuitElement } from "circuit-json"
+import { z } from "zod"
+
+type SupplierCircuitCacheKey =
+  `supplier-circuit-json:v1:${SupplierName}:${string}`
+const cachedSupplierCircuit = z.object({
+  fetchedAtMs: z.number().finite().nonnegative(),
+  elements: z.array(any_circuit_element),
+})
+const requestsByEngine = new WeakMap<
+  PartsEngine,
+  Map<SupplierCircuitCacheKey, Promise<AnyCircuitElement[] | undefined>>
+>()
+/** Share authoritative supplier geometry between orientation and mismatch checks.
+ * Valid cached results expire after24h; malformed caches and fetch errors propagate.
+ * Failures are never cached or converted to a successful supplier definition.
+ */
+export function getSupplierCircuitJson({
+  partsEngine,
+  supplierName,
+  supplierPartNumber,
+  localCacheEngine,
+  platformFetch,
+}: {
+  partsEngine: PartsEngine
+  supplierName: SupplierName
+  supplierPartNumber: string
+  localCacheEngine?: PlatformConfig["localCacheEngine"]
+  platformFetch?: typeof fetch
+}): Promise<AnyCircuitElement[] | undefined> {
+  const cacheKey: SupplierCircuitCacheKey = `supplier-circuit-json:v1:${supplierName}:${supplierPartNumber}`
+  let requests = requestsByEngine.get(partsEngine)
+  if (!requests) {
+    requests = new Map()
+    requestsByEngine.set(partsEngine, requests)
+  }
+  const existing = requests.get(cacheKey)
+  if (existing) return existing
+  const request = (async () => {
+    const cached = await localCacheEngine?.getItem(cacheKey)
+    if (cached) {
+      const parsed = cachedSupplierCircuit.parse(JSON.parse(cached))
+      const ageMs = Date.now() - parsed.fetchedAtMs
+      if (ageMs >= 0 && ageMs < 86400000) return parsed.elements
+    }
+    if (!partsEngine.fetchPartCircuitJson)
+      throw new Error("Supplier circuit fetch API unavailable")
+    const elements = await partsEngine.fetchPartCircuitJson({
+      supplierPartNumber,
+      platformFetch,
+    })
+    if (elements?.length)
+      await localCacheEngine?.setItem(
+        cacheKey,
+        JSON.stringify({ fetchedAtMs: Date.now(), elements }),
+      )
+    return elements
+  })()
+  requests.set(cacheKey, request)
+  void request.then(
+    () => requests.delete(cacheKey),
+    () => requests.delete(cacheKey),
+  )
+  return request
+}

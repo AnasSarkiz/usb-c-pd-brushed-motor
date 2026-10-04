@@ -1,0 +1,14 @@
+{
+  "part": "C134092",
+  "model": "Molex1054500101",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Official import succeeds; SMT width0.2999994mm and alternating0.499872mm pitch leave sub0.20mm gaps. Mechanical/datasheet qualification not completed. Not adopted.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C134092-import-A42.log",
+      "sha256": "425865ec3f6d3cbacea5a82aaec98fb6430b34b485b7b6c3378e8f36f222aa19"
+    }
+  ]
+}

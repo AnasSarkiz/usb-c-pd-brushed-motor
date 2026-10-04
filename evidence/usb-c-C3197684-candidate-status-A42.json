@@ -1,0 +1,14 @@
+{
+  "part": "C3197684",
+  "model": "Molex2171790001",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Official import succeeds;0.2999994mm fine lands at alternating0.499872mm pitch leave sub0.20mm gaps. Manufacturer confirms48VAC/DC but recommended0.6mm board; mechanical qualification not completed. Not adopted.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C3197684-import-A42.log",
+      "sha256": "28903a0825860883a696deca32d6ac1a481551fff04bb190ecb1e2a0f531d48c"
+    }
+  ]
+}

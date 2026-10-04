@@ -1,0 +1,23 @@
+{
+  "part": "C2830802",
+  "model": "Wurth632723300011",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Official import succeeds; polygon SMT lands span0.299974mm at alternating0.499872mm pitch, leaving sub0.20mm gaps. Current manufacturer drawing confirms48VDC/5A and1.6mm board. JLC page reviewed stock77/order67. Not adopted.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C2830802-import-A42.log",
+      "sha256": "8137c92976d9233d8d659990ad9fe7adb1907127cb7156c492c65a3076ebb21b"
+    }
+  ],
+  "stock": {
+    "checked": "2026-10-04",
+    "source": "https://jlcpcb.com/partdetail/WURTHELEKTRONIK-632723300011/C2830802",
+    "inStock": 77,
+    "availableOrderQuantity": 67,
+    "assembly": "Economic and Standard SMT",
+    "reserved": false
+  },
+  "manufacturerSource": "https://www.we-online.com/components/products/datasheet/632723300011.pdf"
+}

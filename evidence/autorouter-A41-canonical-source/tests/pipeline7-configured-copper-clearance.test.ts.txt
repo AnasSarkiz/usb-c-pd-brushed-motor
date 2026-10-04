@@ -1,0 +1,76 @@
+import { expect, test } from "bun:test"
+import { createPipeline7AutoroutingDrcEvaluator } from "lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/create-pipeline7-autorouting-drc-evaluator"
+import type { SimpleRouteJson } from "lib/types"
+import type { HighDensityRoute } from "lib/types/high-density-types"
+import { getConnectivityMapFromSimpleRouteJson } from "lib/utils/getConnectivityMapFromSimpleRouteJson"
+
+test("Pipeline7 repair honors explicit copper clearance above its legacy minimum", () => {
+  const srj: SimpleRouteJson = {
+    layerCount: 2,
+    minTraceWidth: 0.2,
+    minTraceToPadEdgeClearance: 0.2,
+    defaultObstacleMargin: 0.25,
+    bounds: { minX: -2, minY: -2, maxX: 2, maxY: 2 },
+    obstacles: [],
+    connections: [
+      {
+        name: "lower",
+        pointsToConnect: [
+          { x: -1, y: 0, layer: "top", pointId: "lower_start" },
+          { x: 1, y: 0, layer: "top", pointId: "lower_end" },
+        ],
+      },
+      {
+        name: "upper",
+        pointsToConnect: [
+          { x: -1, y: 0.35, layer: "top", pointId: "upper_start" },
+          { x: 1, y: 0.35, layer: "top", pointId: "upper_end" },
+        ],
+      },
+    ],
+  }
+  const routes: HighDensityRoute[] = [
+    {
+      connectionName: "lower",
+      route: [{ x: -1, y: 0, z: 0 }, { x: 1, y: 0, z: 0 }],
+      vias: [],
+      traceThickness: 0.2,
+      viaDiameter: 0.6,
+    },
+    {
+      connectionName: "upper",
+      route: [{ x: -1, y: 0.35, z: 0 }, { x: 1, y: 0.35, z: 0 }],
+      vias: [],
+      traceThickness: 0.2,
+      viaDiameter: 0.6,
+    },
+  ]
+  const evaluator = createPipeline7AutoroutingDrcEvaluator({
+    connections: srj.connections,
+    originalConnections: srj.connections,
+    layerCount: 2,
+    obstacles: [],
+    defaultViaHoleDiameter: 0.3,
+    connMap: getConnectivityMapFromSimpleRouteJson(srj),
+    srjWithPointPairs: srj,
+    originalSrj: srj,
+  })
+  const result = evaluator({ traces: [], routes })
+  if (Array.isArray(result)) throw new Error("Expected centered DRC result")
+  expect(result.errors).toHaveLength(1)
+  expect(result.errors[0]).toMatchObject({
+    type: "pcb_trace_error",
+    minimum_clearance: 0.2,
+  })
+  expect(result.errors[0]?.actual_clearance).toBeCloseTo(0.15)
+  // Search margin is not a physical DRC requirement. Already-routed copper
+  // meeting the explicit 0.20mm rule must not block the repair portfolio.
+  const compliantRoutes = routes.map((route) =>
+    route.connectionName === "upper"
+      ? { ...route, route: route.route.map((point) => ({ ...point, y: 0.41 })) }
+      : route,
+  )
+  const compliantResult = evaluator({ traces: [], routes: compliantRoutes })
+  if (Array.isArray(compliantResult)) throw new Error("Expected centered DRC result")
+  expect(compliantResult.errors).toEqual([])
+})

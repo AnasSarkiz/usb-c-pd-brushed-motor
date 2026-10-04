@@ -1,0 +1,33 @@
+{
+  "upstreamCommit": "d010db4155513fad6e1cef325180d99a28d6201f",
+  "canonicalSourceDirectory": "tooling/autorouter-manufacturing-A22",
+  "packageVersion": "0.0.960-a41",
+  "sourcePatchSha256": "11620fe6faa800cc06a4b41ef36b4d9ea2e6807280c2899fc4676bee17d0f9b6",
+  "records": [
+    {
+      "path": "lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/create-pipeline7-autorouting-drc-evaluator.ts",
+      "archive": "evidence/autorouter-A41-canonical-source/lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/create-pipeline7-autorouting-drc-evaluator.ts.txt",
+      "sha256": "24171cdeeb684d9c9e0e4de1603a63d07d88e5ecf816c429e2748fbd5cf28d35"
+    },
+    {
+      "path": "lib/types/srj-types.ts",
+      "archive": "evidence/autorouter-A41-canonical-source/lib/types/srj-types.ts.txt",
+      "sha256": "1825ffac79e7d09265a307060e2df478e1c40574f9c29425942493b2678622ad"
+    },
+    {
+      "path": "package.json",
+      "archive": "evidence/autorouter-A41-canonical-source/package.json.txt",
+      "sha256": "8850beff1dab25d6a11289d6ded95c2576cf8e249b0cf9edecb615662d93b643"
+    },
+    {
+      "path": "tests/pipeline7-configured-copper-clearance.test.ts",
+      "archive": "evidence/autorouter-A41-canonical-source/tests/pipeline7-configured-copper-clearance.test.ts.txt",
+      "sha256": "0ccb5a4bf247e926bdf9177285123c75508b976faa70a223f32aeb388b781c16"
+    },
+    {
+      "path": "tests/pipeline7-no-via-in-pad-policy.test.ts",
+      "archive": "evidence/autorouter-A41-canonical-source/tests/pipeline7-no-via-in-pad-policy.test.ts.txt",
+      "sha256": "d87c0afbac315e448c5ce37f9f4f8b5995c881f8b3d79bbb504949a3fabe9887"
+    }
+  ]
+}

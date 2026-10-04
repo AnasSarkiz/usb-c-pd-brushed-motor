@@ -1,0 +1,29 @@
+bun test v1.4.2 (744846f84)
+
+tests/no-via-in-pad-terminal-projection.test.ts:
+(pass) explicit no-via-in-pad policy applies configured clearance to connected lands [3.04ms]
+
+tests/through-via-bottom-pad-relaxation.test.ts:
+(pass) via placement and relaxation clear bottom pads according to the board setting [32.91ms]
+
+tests/unconditional-via-pad-portfolio.test.ts:
+(pass) repairs a via-to-pad error without a caller-controlled flag [12.08ms]
+
+tests/autorouting-drc-same-net-pad-policy.test.ts:
+(pass) explicit physical same-net via-to-pad clearance preserves legacy default [0.57ms]
+
+tests/autorouting-drc-fixed-copper-role.test.ts:
+(pass) same-net land enforcement distinguishes fixed wire reservations and still checks foreign copper [0.89ms]
+
+tests/targeted-via-pad-clearance.test.ts:
+(pass) moves only the via reported by a via-to-pad clearance error [15.51ms]
+(pass) does not trade a via-to-pad error for a pre-existing DRC type [0.14ms]
+(pass) repairs legacy DRC errors before newly detected via-to-pad errors [0.09ms]
+(pass) does not spend the legacy repair budget on via-to-pad count changes [1.38ms]
+(pass) keeps complete snapshots while prioritizing legacy DRC repairs [0.91ms]
+(pass) preserves worst-contact scoring during the legacy-only repair phase [1.57ms]
+
+ 11 pass
+ 0 fail
+ 83 expect() calls
+Ran 11 tests across 6 files. [439.00ms]

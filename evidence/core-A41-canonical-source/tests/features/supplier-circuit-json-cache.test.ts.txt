@@ -1,0 +1,84 @@
+import { expect, test } from "bun:test"
+import type { LocalCacheEngine, PartsEngine } from "@tscircuit/props"
+import type { AnyCircuitElement } from "circuit-json"
+import { getSupplierCircuitJson } from "lib/utils/get-supplier-circuit-json"
+
+type SupplierCacheKey = Parameters<LocalCacheEngine["getItem"]>[0]
+test("supplier cache deduplicates concurrent calls, expires success, and propagates failures", async () => {
+  const entries = new Map<SupplierCacheKey, string>()
+  const localCacheEngine: LocalCacheEngine = {
+    getItem: async (key) => entries.get(key) ?? null,
+    setItem: async (key, entry) => {
+      entries.set(key, entry)
+    },
+  }
+  const elements: AnyCircuitElement[] = [
+    {
+      type: "pcb_smtpad",
+      pcb_smtpad_id: "supplier_pad",
+      shape: "circle",
+      x: 0,
+      y: 0,
+      radius: 1,
+      layer: "top",
+    },
+  ]
+  let fetchCalls = 0
+  let fail = false
+  const partsEngine: PartsEngine = {
+    findPart: () => ({ jlcpcb: ["C1"] }),
+    fetchPartCircuitJson: async () => {
+      fetchCalls++
+      await Promise.resolve()
+      if (fail) throw new Error("Supplier rejected request")
+      return elements
+    },
+  }
+  const request = {
+    partsEngine,
+    supplierName: "jlcpcb" as const,
+    supplierPartNumber: "C1",
+    localCacheEngine,
+  }
+  const [first, second] = await Promise.all([
+    getSupplierCircuitJson(request),
+    getSupplierCircuitJson(request),
+  ])
+  expect(first).toEqual(elements)
+  expect(second).toEqual(elements)
+  expect(fetchCalls).toBe(1)
+  await getSupplierCircuitJson({ ...request, partsEngine: { ...partsEngine } })
+  expect(fetchCalls).toBe(1)
+  entries.set(
+    "supplier-circuit-json:v1:jlcpcb:C1",
+    JSON.stringify({ fetchedAtMs: Date.now() - 86400001, elements }),
+  )
+  await getSupplierCircuitJson(request)
+  expect(fetchCalls).toBe(2)
+  entries.set(
+    "supplier-circuit-json:v1:jlcpcb:C1",
+    JSON.stringify({ fetchedAtMs: Date.now() + 10000, elements }),
+  )
+  await getSupplierCircuitJson(request)
+  expect(fetchCalls).toBe(3)
+  entries.set(
+    "supplier-circuit-json:v1:jlcpcb:C1",
+    '{"elements":[{"type":"invalid"}]}',
+  )
+  await expect(getSupplierCircuitJson(request)).rejects.toThrow()
+  expect(fetchCalls).toBe(3)
+  entries.clear()
+  fail = true
+  await expect(getSupplierCircuitJson(request)).rejects.toThrow(
+    "Supplier rejected request",
+  )
+  await expect(getSupplierCircuitJson(request)).rejects.toThrow(
+    "Supplier rejected request",
+  )
+  expect(fetchCalls).toBe(5)
+  expect(entries.size).toBe(0)
+  fail = false
+  await getSupplierCircuitJson({ ...request, supplierPartNumber: "C2" })
+  expect(fetchCalls).toBe(6)
+  expect(entries.has("supplier-circuit-json:v1:jlcpcb:C2")).toBe(true)
+})

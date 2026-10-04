@@ -1,7 +1,7 @@
 # A22 implementation checklist — in progress
 
 The intended endpoint is a routed prototype and reviewed fabrication package.
-This checklist records remaining work; it does not grant routing or fabrication approval.
+This checklist records remaining work under the user’s authorization to complete native routing and prepare prototype manufacturing files. It does not qualify hardware or authorize an order.
 
 - [x] Update tscircuit to 0.0.2743 and recheck supplier imports.
 - [x] Fix native mounting-hole and board-label associations in core source; preserve strict schemas.
@@ -24,7 +24,7 @@ This checklist records remaining work; it does not grant routing or fabrication 
 - [x] Finish canonical fanout drill/corner regression suite; integrate validated source-built core2089/fanout83 and checksum-verified Bun1.4.2.
 - [x] Validate four-layer JLC04161H-7628 placement, unchanged imports/full-stack vias and inner-copper audits after two-layer routing failures.
 - [x] Correct canonical repair clearance propagation and same-net via/pad policy; retain independent regressions and exact installed package binding.
-- [ ] Complete native39 routing and pours; measure actual geometry/current paths.
+- [ ] Complete native41 routing and pours; measure actual geometry/current paths.
 - [ ] Run routed strict checks, shorts, snapshots and visual copper review.
 - [ ] Generate and review Gerber/drill/BOM/PnP outputs bound to exact source/firmware/dependency hashes.
 - [ ] Commit and publish each validated milestone to known destinations; continue implementation afterward.

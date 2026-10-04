@@ -1,0 +1,20 @@
+import { expect, test } from "bun:test"
+import { getPresetAutoroutingConfig } from "lib/utils/autorouting/getPresetAutoroutingConfig"
+test("normalized supported presets retain explicitly authored safety settings", () => {
+  for (const preset of [
+    "auto",
+    "auto_local",
+    "default",
+    "subcircuit",
+    "dogbone",
+    "simplify",
+  ] as const) {
+    const config = getPresetAutoroutingConfig({
+      preset,
+      allowViaInPad: false,
+      traceClearance: 0.25,
+    })
+    expect(config.allowViaInPad).toBe(false)
+    expect(config.traceClearance).toBe(0.25)
+  }
+})

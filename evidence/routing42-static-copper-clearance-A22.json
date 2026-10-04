@@ -1,0 +1,59 @@
+{
+  "artifactSha256": "3a2ebba27de9793260f8dfc20b3d75900ee324a0e797ae6f7e9b3160e7de03b1",
+  "routingPhase": "unrouted",
+  "copperPrimitives": 505,
+  "nearbyForeignComparisons": 345,
+  "rulesMm": {
+    "width": 0.2,
+    "foreignCopper": 0.2,
+    "edge": 0.5
+  },
+  "issues": [
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_0",
+      "second": "pcb_smtpad_11",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "clearanceMm": 0.1999106999999993
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_1",
+      "second": "pcb_smtpad_2",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "clearanceMm": 0.19987259999999996
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_3",
+      "second": "pcb_smtpad_4",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "clearanceMm": 0.1998725999999995
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_5",
+      "second": "pcb_smtpad_6",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "clearanceMm": 0.19961859999999998
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_9",
+      "second": "pcb_smtpad_10",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "clearanceMm": 0.19982180000000005
+    }
+  ],
+  "limitations": "Physical geometric spacing only. No electrical, thermal or power rating is inferred. Unsupported route interpolation is rejected."
+}

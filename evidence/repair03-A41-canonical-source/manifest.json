@@ -1,0 +1,48 @@
+{
+  "upstreamCommit": "5ec441040f04f40715051af23987bd6dde72c6c8",
+  "canonicalSourceDirectory": "tooling/repair03-manufacturing-A39",
+  "packageVersion": "0.0.1-a41",
+  "sourcePatchSha256": "73cc925c90499133d51a26292fd418279aae6f563a1992db8c3db4eac5189ed3",
+  "records": [
+    {
+      "path": "lib/drc/AutoroutingDrcEngine.ts",
+      "archive": "evidence/repair03-A41-canonical-source/lib/drc/AutoroutingDrcEngine.ts.txt",
+      "sha256": "34a345b70bd68e8016493b64c246760f187a35a1327e56da5a82c21ee09d20c7"
+    },
+    {
+      "path": "lib/solvers/GlobalDrcForceImproveSolver/findPadClearanceViaPosition.ts",
+      "archive": "evidence/repair03-A41-canonical-source/lib/solvers/GlobalDrcForceImproveSolver/findPadClearanceViaPosition.ts.txt",
+      "sha256": "327ef77a3a0f5ab32133a354c6088f40b59ee3182127d1b619259d9a0fb67ee5"
+    },
+    {
+      "path": "lib/solvers/GlobalDrcForceImproveSolver/solverHelpers.ts",
+      "archive": "evidence/repair03-A41-canonical-source/lib/solvers/GlobalDrcForceImproveSolver/solverHelpers.ts.txt",
+      "sha256": "ae24d21abdf7aad854e809591dc17221b5817fc5301d51c49b46e581c119d945"
+    },
+    {
+      "path": "package.json",
+      "archive": "evidence/repair03-A41-canonical-source/package.json.txt",
+      "sha256": "1eeaf7555567df6e9f6510ec0ad060d7c9ffcb294133e444f81dc5e90e34fcff"
+    },
+    {
+      "path": "tests/autorouting-drc-fixed-copper-role.test.ts",
+      "archive": "evidence/repair03-A41-canonical-source/tests/autorouting-drc-fixed-copper-role.test.ts.txt",
+      "sha256": "505d717acd89f862e4a428b00d72594c9c207d52d29448e4f8a5e62f5e39e846"
+    },
+    {
+      "path": "tests/autorouting-drc-same-net-pad-policy.test.ts",
+      "archive": "evidence/repair03-A41-canonical-source/tests/autorouting-drc-same-net-pad-policy.test.ts.txt",
+      "sha256": "d31b6c261a00da3bbc461d2930c9c01a3c827a709c2bc09bba87a87baf299e50"
+    },
+    {
+      "path": "tests/no-via-in-pad-terminal-projection.test.ts",
+      "archive": "evidence/repair03-A41-canonical-source/tests/no-via-in-pad-terminal-projection.test.ts.txt",
+      "sha256": "1f2a01767df8bb9a0560a7ffb496ad2b42499782909f040ab4ce97d2703c80e6"
+    },
+    {
+      "path": "types/srj-types.ts",
+      "archive": "evidence/repair03-A41-canonical-source/types/srj-types.ts.txt",
+      "sha256": "e556719e8d78179d184f3a5c0d89eed26c191c939f090fd90a1758971cdc35fc"
+    }
+  ]
+}

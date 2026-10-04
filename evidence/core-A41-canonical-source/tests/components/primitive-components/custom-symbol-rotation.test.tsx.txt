@@ -1,0 +1,79 @@
+import { test, expect } from "bun:test"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("custom symbol rotation moves graphics, electrical pins and facing together", async () => {
+  const { circuit } = getTestFixture()
+  circuit.add(
+    <board
+      width={24}
+      height={10}
+      routingDisabled
+      schLayout={{ layoutMode: "relative" }}
+    >
+      {[0, 90, 180, 270, -90].map((ccwRotationDegrees, index) => (
+        <chip
+          key={ccwRotationDegrees}
+          name={`U${index + 1}`}
+          schX={index * 4}
+          schY={3}
+          schRotation={ccwRotationDegrees}
+          symbol={
+            <symbol>
+              <schematicrect schX={0} schY={0} width={0.4} height={0.2} />
+              <schematiccircle center={{ x: 0.2, y: 0.1 }} radius={0.05} />
+              <schematicarc
+                center={{ x: 0, y: 0 }}
+                radius={0.3}
+                startAngleDegrees={0}
+                endAngleDegrees={90}
+              />
+              <schematicpath
+                points={[
+                  { x: -0.5, y: -0.25 },
+                  { x: 0.5, y: 0 },
+                  { x: -0.5, y: 0.25 },
+                ]}
+              />
+              <schematictext text="+" schX={0.3} schY={0.2} fontSize={0.15} />
+              <port
+                name="A"
+                pinNumber={1}
+                schX={1}
+                schY={0}
+                direction="right"
+              />
+              <port
+                name="K"
+                pinNumber={2}
+                schX={-1}
+                schY={0}
+                direction="left"
+              />
+            </symbol>
+          }
+        />
+      ))}
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  const ports = circuit.db.schematic_port.list()
+  const expected = [
+    { x: 1, y: 3, direction: "right" },
+    { x: 4, y: 4, direction: "up" },
+    { x: 7, y: 3, direction: "left" },
+    { x: 12, y: 2, direction: "down" },
+    { x: 16, y: 2, direction: "down" },
+  ] as const
+  for (const [index, position] of expected.entries()) {
+    const port = ports.filter((p) => p.pin_number === 1)[index]!
+    expect(port.center.x).toBeCloseTo(position.x, 8)
+    expect(port.center.y).toBeCloseTo(position.y, 8)
+    expect(port.facing_direction).toBe(position.direction)
+    const path = circuit.db.schematic_path.list()[index]!
+    expect(path.points[1]!.x).toBeCloseTo((port.center.x + index * 4) / 2, 8)
+    expect(path.points[1]!.y).toBeCloseTo((port.center.y + 3) / 2, 8)
+  }
+  expect(circuit).toMatchSchematicSnapshot(import.meta.path, {
+    drawPorts: true,
+  })
+})

@@ -1,0 +1,43 @@
+import { expect, test } from "bun:test"
+import { any_circuit_element } from "circuit-json"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("transparent fanout groups emit valid enclosing-subcircuit associations and optional anchors", async () => {
+  const { circuit } = getTestFixture()
+  circuit.add(
+    <board width={20} height={16} routingDisabled>
+      <fanout
+        name="PIN_ESCAPE"
+        autorouter="dogbone"
+        fanoutRoutingLayers={["bottom"]}
+      >
+        <chip
+          name="U1"
+          footprint="soic8"
+          connections={{ pin1: "net.SIGNAL" }}
+        />
+      </fanout>
+      <pcbnotetext
+        pcbY={5}
+        text="Transparent fanout inherits board subcircuit; no anchor specified"
+        fontSize={0.35}
+      />
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  for (const element of circuit.getCircuitJson())
+    expect(any_circuit_element.safeParse(element).success).toBe(true)
+  const board = circuit.db.source_group
+    .list()
+    .find((group) => group.is_subcircuit)!
+  const pcbGroup = circuit.db.pcb_group
+    .list()
+    .find((group) => group.name === "PIN_ESCAPE")!
+  const schematicGroup = circuit.db.schematic_group
+    .list()
+    .find((group) => group.name === "PIN_ESCAPE")!
+  expect(pcbGroup.subcircuit_id).toBe(board.subcircuit_id!)
+  expect(schematicGroup.subcircuit_id).toBe(board.subcircuit_id!)
+  expect(pcbGroup.anchor_alignment).toBeUndefined()
+  await expect(circuit).toMatchPcbSnapshot(import.meta.path)
+})

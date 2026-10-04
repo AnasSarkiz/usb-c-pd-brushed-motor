@@ -1,0 +1,67 @@
+import { expect, test } from "bun:test"
+import {
+  checkDanglingTraces,
+  checkEachPcbPortConnectedToPcbTraces,
+} from "@tscircuit/checks"
+import type { SimplifiedPcbTrace } from "lib/utils/autorouting/SimpleRouteJson"
+import { getSourceTraceIdForRoutedTrace } from "lib/components/primitive-components/Group/get-source-trace-id-for-routed-trace"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+import { any_circuit_element } from "circuit-json"
+import { z } from "zod"
+
+test("interior router pieces retain net ownership without concealing disconnected copper", async () => {
+  const { circuit } = getTestFixture()
+  circuit.add(
+    <board width={20} height={20} routingDisabled>
+      <resistor
+        name="R1"
+        footprint="0603"
+        resistance="1k"
+        pcbX={-4}
+        connections={{ pin1: "net.SIGNAL" }}
+      />
+      <resistor
+        name="R2"
+        footprint="0603"
+        resistance="1k"
+        pcbX={4}
+        connections={{ pin1: "net.SIGNAL" }}
+      />
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  const net = circuit.db.source_net.list().find((net) => net.name === "SIGNAL")!
+  const piece: SimplifiedPcbTrace = {
+    type: "pcb_trace",
+    pcb_trace_id: "interior_piece",
+    connection_name: net.source_net_id,
+    route: [
+      { route_type: "wire", x: -1, y: 3, width: 0.2, layer: "bottom" },
+      { route_type: "wire", x: 1, y: 3, width: 0.2, layer: "bottom" },
+    ],
+  }
+  const sourceTraceId = getSourceTraceIdForRoutedTrace({
+    db: circuit.db,
+    trace: piece,
+  })
+  expect(sourceTraceId).toBeDefined()
+  expect(
+    circuit.db.source_trace.get(sourceTraceId!)?.connected_source_net_ids,
+  ).toContain(net.source_net_id)
+  const copper = z
+    .array(any_circuit_element)
+    .parse([
+      ...circuit.getCircuitJson(),
+      { ...piece, source_trace_id: sourceTraceId },
+    ])
+  expect(checkDanglingTraces(copper)).toHaveLength(2)
+  expect(
+    checkEachPcbPortConnectedToPcbTraces(copper).length,
+  ).toBeGreaterThanOrEqual(2)
+  expect(
+    getSourceTraceIdForRoutedTrace({
+      db: circuit.db,
+      trace: { ...piece, connection_name: "unknown_net" },
+    }),
+  ).toBeUndefined()
+})

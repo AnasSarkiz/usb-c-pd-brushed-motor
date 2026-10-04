@@ -1,6 +1,9 @@
 node_modules/
 .cache/
-dist/
+dist/*
+!dist/index/
+dist/index/*
+!dist/index/circuit.json
 *.tsbuildinfo
 .env
 .DS_Store

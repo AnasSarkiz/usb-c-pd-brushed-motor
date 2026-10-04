@@ -2,7 +2,8 @@ import { Fragment } from "react"
 
 // Native routing targets in board-world millimetres (+X right, +Y up).
 // These are PCB features; supplier symbols, pin maps and lands are untouched.
-// The native router must solve each pad-to-target route and its vias under DRC.
+// PD pad exits are solved natively; MCU exits use native saved FanoutTracePaths.
+// Every emitted path and via must pass the same independent copper/drill checks.
 // Ground pins remain at their real component pads for native plane fanout.
 // FanoutSolver requires component endpoints and cannot start at an escaped point.
 // U1 EP pin25 has no imported thermal vias and requires a real ground escape.

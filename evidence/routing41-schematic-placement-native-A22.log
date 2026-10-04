@@ -1,0 +1,14 @@
+<SchematicSheet name="dump" id="schematic_sheet_7">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="R46" positionAnchor="center" schX="5.5" schY="4" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R48" positionAnchor="center" schX="-11" schY="0" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R70" positionAnchor="center" schX="-5.5" schY="-4" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R72" positionAnchor="center" schX="5.5" schY="-4" width="0.6" height="0.65" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="R46" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R46 by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="R48" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R48 by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="R70" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R70 by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="R72" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R72 by -90° so its power-connected pin faces up and the component is vertical" />
+</SchematicPlacementIssues>
+</SchematicSheet>

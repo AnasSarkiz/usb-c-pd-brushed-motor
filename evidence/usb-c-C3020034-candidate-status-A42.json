@@ -1,0 +1,13 @@
+{
+  "part": "C3020034",
+  "issue": "Manufacturer drawing20V and0.8mm board vs1.6mm design; inactive. Catalog30V mismatch.",
+  "stock": 1388,
+  "availableOrder": 1384,
+  "date": "2026-10-04",
+  "status": "not approved; alternative search continues",
+  "sources": [
+    "official importer log",
+    "JLCPCB visible assembly detail page",
+    "supplier manufacturer drawing where downloaded"
+  ]
+}

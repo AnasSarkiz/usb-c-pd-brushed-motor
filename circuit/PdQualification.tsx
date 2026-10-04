@@ -1,7 +1,7 @@
 import { CL10C220JB8NNNC } from "../imports/CL10C220JB8NNNC"
 import { A_5015 } from "../imports/A_5015"
 import { productPlacement } from "./product-placement"
-import { PinBreakoutPoints } from "./PinBreakouts"
+import { mcuPadEscapePaths } from "./McuPadEscapes"
 import { AT0603BRD07100KL } from "../imports/AT0603BRD07100KL"
 import { RT0603BRD0710KL } from "../imports/RT0603BRD0710KL"
 import { STM32G030F6P6TR } from "../imports/STM32G030F6P6TR"
@@ -17,7 +17,7 @@ export function PdQualification() {
   return (
     <>
       {/* PD qualification only; hardware PWM independent */}
-      <breakout name="mcu_pin_escape" autorouterVersion="beta_pipeline9">
+      <breakout name="mcu_pin_escape" pcbTracePaths={mcuPadEscapePaths}>
         <STM32G030F6P6TR
           name="U11"
           pcbRotation={productPlacement.U11.ccwRotationDegrees}
@@ -47,7 +47,6 @@ export function PdQualification() {
             pin19: "net.SWCLK",
           }}
         />
-        <PinBreakoutPoints reference="U11" />
       </breakout>
       {/* DIP voltage selector: 00=5 V / bit 0=9 V / bit 1=12 V / both=inhibit */}
       <DSHP02TSGER

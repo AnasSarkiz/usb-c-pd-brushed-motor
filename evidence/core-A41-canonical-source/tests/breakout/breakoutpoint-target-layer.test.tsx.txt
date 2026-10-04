@@ -1,0 +1,68 @@
+import { expect, test } from "bun:test"
+import { any_circuit_element } from "circuit-json"
+import { createAutoroutingPhaseIoStack } from "tests/fixtures/create-autorouting-phase-io-stack"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("explicit breakout target layers survive both escape and global routing", async () => {
+  const { circuit } = getTestFixture()
+  const phases = createAutoroutingPhaseIoStack(circuit)
+  circuit.add(
+    <board
+      width={20}
+      height={14}
+      minViaPadDiameter={0.6}
+      minViaHoleDiameter={0.3}
+      autorouter={{ preset: "auto_local", allowViaInPad: false }}
+    >
+      <breakout name="pin_escapes">
+        <resistor
+          name="R1"
+          resistance="1k"
+          footprint="0805"
+          pcbX={-5}
+          pcbY={2}
+        />
+        <resistor
+          name="R2"
+          resistance="1k"
+          footprint="0805"
+          pcbX={-5}
+          pcbY={-2}
+        />
+        <breakoutpoint connection="R1.pin2" pcbX={-1} pcbY={2} layer="bottom" />
+        <breakoutpoint connection="R2.pin2" pcbX={-1} pcbY={-2} />
+      </breakout>
+      <resistor name="R3" resistance="1k" footprint="0805" pcbX={5} pcbY={2} />
+      <resistor name="R4" resistance="1k" footprint="0805" pcbX={5} pcbY={-2} />
+      <trace from="R1.pin2" to="R3.pin1" />
+      <trace from="R2.pin2" to="R4.pin1" />
+      <pcbnotetext
+        pcbY={5.5}
+        text="Explicit bottom escape; omitted layer preserves top"
+        fontSize={0.35}
+      />
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  for (const element of circuit.getCircuitJson())
+    any_circuit_element.parse(element)
+  const [bottomTarget, defaultTarget] = circuit.db.pcb_breakout_point.list()
+  expect(bottomTarget?.layer).toBe("bottom")
+  expect(defaultTarget?.layer).toBeUndefined()
+  expect(phases).toHaveLength(2)
+  for (const phase of phases) {
+    const exit = phase.startSimpleRouteJson?.connections
+      .flatMap((connection) => connection.pointsToConnect)
+      .find((point) => point.pointId === bottomTarget?.pcb_breakout_point_id)
+    expect(exit?.layer).toBe("bottom")
+  }
+  expect(circuit.db.pcb_autorouting_error.list()).toEqual([])
+  expect(circuit.db.pcb_port_not_connected_error.list()).toEqual([])
+  const vias = circuit.db.pcb_via.list()
+  expect(vias.length).toBeGreaterThan(0)
+  for (const via of vias) {
+    expect(via.hole_diameter).toBe(0.3)
+    expect(via.outer_diameter).toBe(0.6)
+  }
+  await expect(circuit).toMatchPcbSnapshot(import.meta.path)
+})

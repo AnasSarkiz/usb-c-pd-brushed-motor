@@ -5,16 +5,16 @@ input, regulated motor voltage, hardware10 kΩ speed potentiometer,
 FWD/OFF/REV switch, DRV8874, three LEDs and one motor terminal. The MCU only
 qualifies PD power and rail voltage; speed and direction remain hardware controlled.
 
-**Four-layer placement is validated; native routing is in progress.**
+**Four-layer placement is implemented; routing is blocked by USB-C land spacing.**
 The80×65×1.6 mm board has140 purchased components/58 unchanged official
 JLCPCB imports and four3.2 mm mounting holes. Revision31 selects
 JLC04161H-7628 with35um outer/15.2um inner copper and ordinary through vias;
 see docs/STACKUP-A31.md. Prior placement and8 A4 reviews remain evidence for
 unchanged bodies/pads/sheets. Fresh layer-span/import/connectivity/placement
 audits, all5 native prerequisites, formatting/TypeScript and41 board tests pass.
-Canonical autorouter959-a39 now carries the configured clearance and same-net
-via policy into repair; exact built/installed artifacts and regressions are
-recorded. Its repair dependency retains one independently reproduced upstream
+Canonical revision41 repairs distinguish component lands from fixed routed
+copper and enforce connected-pad clearance for ordinary vias. Native MCU
+escape paths are independently screened; fresh integration gates are pending. Its repair dependency retains one independently reproduced upstream
 floating-coordinate test failure. Actual routed copper and manufacturing checks remain pending. No physical
 hardware or continuous-current rating is verified.
 
@@ -24,8 +24,8 @@ put its directory first in PATH for this task. Bun1.3.9 exhibits a native routin
 regression that passes with source-identical1.4.2. Install with
 `bun install --frozen-lockfile`.
 Use `bun run format:check`, `bun run typecheck`, `bun run test`, `bun run power:report`
-and `bun run build`. Task-local core2090 preserves independent symbol terminals
-and now honors each breakout's router version. Its71 affected routing test files
+and `bun run build`. Task-local canonical core preserves independent symbol terminals, each
+breakout's router version and physical fixed-copper ownership. Its71 affected routing test files
 pass71 tests/2200 assertions with three existing skips; the earlier core2089
 146-test isolation suite remains historical evidence for unchanged behavior. The current board audit
 also checks derived internal links against distinct intended nets.
@@ -62,14 +62,14 @@ Initial motor tests are limited to≤1 mJ stored energy; further braking,5 V cur
 regulation and2 A thermal ratings require prototype measurements.
 
 No fabrication order has been placed. This independent Git main has no remote;
-GitHub publication remains blocked by the missing repository/branch. The known
-private tscircuit package has the source milestone release
-`0.0.1-a22-adc-source-5a015d5-verified-ffe2435d` (565 files acknowledged; source hashes match Git); its server build is unverified. Local work continues.
-Current workspace publication requires public destinations and matching
-Circuit JSON. The known package's signed-out page returns404; its earlier
-private release does not satisfy that rule. The subsequent73ab2a5 upload
-failed on ten network timeouts and was never marked ready. Both limitations
-remain explicit while local fabrication preparation continues.
+GitHub publication remains blocked by the missing repository/branch.
+The existing [tscircuit package](https://tscircuit.com/AnasSarkiz/usb-c-pd-brushed-motor)
+was independently verified public in revision41 and must remain public only.
+Its latest attempted committed69ff9a9 publication is incomplete: the official
+compressed upload returned413 and the individual upload recorded28 failures.
+No successful current publication, cloud build or matching remote circuit JSON
+is claimed. Local design work continues while these publication issues remain
+explicit. Earlier private releases do not satisfy the public publication rule.
 
 ## Historical implementation notes
 

@@ -1,0 +1,18 @@
+{
+  "part": "C5438410",
+  "model": "GCT USB4135-GF-A",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Code and MPN imports fail. Independent JLC library preview explicitly states no library is currently available. No custom component or patched substitute is created.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C5438410-import-A42.log",
+      "sha256": "e5aaf60a99fef9c154ccfab7531bf0d432128cd0639c211546cd6477007b3fcf"
+    },
+    {
+      "path": "evidence/usb-c-C5438410-mpn-import-A42.log",
+      "sha256": "e5aaf60a99fef9c154ccfab7531bf0d432128cd0639c211546cd6477007b3fcf"
+    }
+  ]
+}

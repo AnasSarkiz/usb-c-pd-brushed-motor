@@ -1,0 +1,24 @@
+Building 1 file(s)...
+Building .cache/usb-c-candidates-A42/C3197922/index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/.cache/usb-c-candidates-A42/C3197922/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+All pins on J1 are underspecified (no pinAttributes set)
+J1 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+Generating preview images...
+[.cache/usb-c-candidates-A42/C3197922/index] Generating PCB SVG...
+[.cache/usb-c-candidates-A42/C3197922/index] Written pcb.svg
+[.cache/usb-c-candidates-A42/C3197922/index] Generating PCB PNG...
+[.cache/usb-c-candidates-A42/C3197922/index] Written pcb.png
+[.cache/usb-c-candidates-A42/C3197922/index] Generating schematic SVG...
+[.cache/usb-c-candidates-A42/C3197922/index] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

@@ -1,0 +1,58 @@
+import { expect, test } from "bun:test"
+import type { Port } from "lib/components/primitive-components/Port"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+test("custom JSX symbol resolves the same physical PCB port through routing selectors", async () => {
+  const { circuit } = getTestFixture()
+  circuit.add(
+    <board width={20} height={20} routingDisabled>
+      <chip
+        name="Q1"
+        pinLabels={{ pin1: ["B"], pin2: ["E"], pin3: ["C"] }}
+        symbol={
+          <symbol name="body">
+            <port
+              name="pin2"
+              pinNumber={2}
+              aliases={["E"]}
+              direction="down"
+              schX={0.2}
+              schY={-0.4}
+            />
+            <port
+              name="pin1"
+              pinNumber={1}
+              aliases={["B"]}
+              direction="left"
+              schX={-0.2}
+              schY={0}
+            />
+            <port
+              name="pin3"
+              pinNumber={3}
+              aliases={["C"]}
+              direction="up"
+              schX={0.2}
+              schY={0.4}
+            />
+          </symbol>
+        }
+        footprint="sot23"
+      />
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  const port = (circuit.selectAll("port") as Port[]).find(
+    (p) => p.props.name === "pin1",
+  )!
+  const selected = circuit.selectOne(port.getPortSelector(), {
+    type: "port",
+  }) as Port | null
+  const all = circuit.selectAll("port") as Port[]
+
+  const physicalPorts = all.filter(
+    (p) => p.pcb_port_id === selected?.pcb_port_id,
+  )
+  expect(port.getPortSelector()).toBe(".Q1 > symbol.body > port.pin1")
+  expect(selected?.pcb_port_id).toBeDefined()
+  expect(selected).toBe(physicalPorts.at(-1) ?? null)
+})

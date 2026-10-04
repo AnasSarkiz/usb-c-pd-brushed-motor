@@ -1,0 +1,10 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-saved-trace-paths-transforms.test.tsx:
+(fail) saved fanout routes follow placement and preserve physical via layers [5648.56ms]
+  ^ this test timed out after 5000ms.
+
+ 0 pass
+ 1 fail
+ 50 expect() calls
+Ran 1 test across 1 file. [7.36s]

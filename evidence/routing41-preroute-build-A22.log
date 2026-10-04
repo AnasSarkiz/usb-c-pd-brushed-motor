@@ -1,0 +1,34 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+126474 |         if (!(child instanceof BreakoutPoint) || child === point6) return false;
+126475 |         child._matchConnection();
+126476 |         return child.matchedPort === point6.matchedPort;
+126477 |       });
+126478 |       if (duplicate)
+126479 |         throw new Error(`Duplicate fanout exit for "${path.connection}"`);
+                           ^
+error: Duplicate fanout exit for "U11.pin1"
+      at doInitialCreateAutoplacedBreakoutPoints (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:126479:19)
+      at runRenderPhase (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:623:24)
+      at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:633:13)
+      at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:632:13)
+      at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:120981:11)
+      at runRenderCycle (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:571:12)
+      at render (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:119631:16)
+      at generateCircuitJson (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js:167864:10)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js:167984:28)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js:182506:38)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js:182628:15)
+
+Fatal error [circuit_generation_failed]: Duplicate fanout exit for "U11.pin1"
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

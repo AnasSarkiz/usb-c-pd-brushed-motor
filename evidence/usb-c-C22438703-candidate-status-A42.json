@@ -1,0 +1,12 @@
+{
+  "part": "C22438703",
+  "issue": "Official importer: Component not found in EasyEDA library search",
+  "stock": 890,
+  "date": "2026-10-04",
+  "status": "not approved; alternative search continues",
+  "sources": [
+    "official importer log",
+    "JLCPCB visible assembly detail page",
+    "supplier manufacturer drawing where downloaded"
+  ]
+}

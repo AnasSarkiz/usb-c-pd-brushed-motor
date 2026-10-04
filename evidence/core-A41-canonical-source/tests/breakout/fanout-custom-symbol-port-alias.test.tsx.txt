@@ -1,0 +1,69 @@
+import { expect, test } from "bun:test"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("fanout resolves imported-style symbol aliases after source ports and traces exist", async () => {
+  const { circuit } = getTestFixture()
+  circuit.add(
+    <board width={20} height={16} routingDisabled>
+      <fanout
+        name="escape"
+        autorouter="dogbone"
+        fanoutRoutingLayers={["bottom"]}
+      >
+        <chip
+          name="U1"
+          footprint="soic8"
+          pcbX={-4}
+          connections={{ pin1: "net.SIGNAL" }}
+        />
+      </fanout>
+      <chip
+        name="D1"
+        footprint="0805"
+        pcbX={4}
+        pinLabels={{ pin1: ["A"], pin2: ["K"] }}
+        symbol={
+          <symbol name="body">
+            <port
+              name="pin1"
+              pinNumber={1}
+              aliases={["A"]}
+              direction="left"
+              schX={-0.4}
+            />
+            <port
+              name="pin2"
+              pinNumber={2}
+              aliases={["K"]}
+              direction="right"
+              schX={0.4}
+            />
+          </symbol>
+        }
+        connections={{ K: "net.SIGNAL", A: "net.GND" }}
+      />
+      <pcbnotetext
+        pcbY={5}
+        text="Dogbone scan includes a nested symbol with A/K aliases"
+        fontSize={0.4}
+      />
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  const errors = circuit
+    .getCircuitJson()
+    .filter((element) => element.type.endsWith("_error"))
+  expect(errors).toEqual([])
+  const traces = circuit.db.source_trace.list()
+  expect(traces).toHaveLength(3)
+  expect(
+    traces.every((trace) => trace.connected_source_port_ids.length === 1),
+  ).toBe(true)
+  const exits = circuit.db.pcb_breakout_point.list()
+  expect(exits).toHaveLength(1)
+  expect(exits[0]!.source_trace_id).toBeDefined()
+  expect(
+    traces.some((trace) => trace.source_trace_id === exits[0]!.source_trace_id),
+  ).toBe(true)
+  await expect(circuit).toMatchPcbSnapshot(import.meta.path)
+})

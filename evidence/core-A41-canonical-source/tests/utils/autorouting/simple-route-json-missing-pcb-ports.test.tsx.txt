@@ -1,0 +1,30 @@
+import { expect, test } from "bun:test"
+import { getSimpleRouteJsonFromCircuitJson } from "lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("schematic-only terminals do not produce invalid routing connections", async () => {
+  const { circuit } = getTestFixture()
+  circuit.pcbRoutingDisabled = true
+  circuit.add(
+    <board width={10} height={10}>
+      <chip
+        name="U1"
+        symbol={
+          <symbol>
+            <port name="OUT" schX={0} schY={0} />
+          </symbol>
+        }
+      />
+      <capacitor name="C1" capacitance="10uF" schX={4} />
+      <trace from="U1.OUT" to="C1.pin1" />
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  expect(circuit.db.source_trace.list()).toHaveLength(1)
+  expect(circuit.db.pcb_port.list()).toHaveLength(0)
+  const { simpleRouteJson } = getSimpleRouteJsonFromCircuitJson({
+    db: circuit.db,
+    subcircuitComponent: circuit.firstChild!,
+  })
+  expect(simpleRouteJson.connections).toHaveLength(0)
+})

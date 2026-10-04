@@ -1,0 +1,14 @@
+{
+  "part": "C961732",
+  "model": "HRO TYPE-C-31-E-06",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Official import succeeds. Midmount geometry requires a reviewed edge cutout; DC operating voltage and meaning of the per-contact1.25A/group5A rating require further evidence. Not adopted.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C961732-import-A42.log",
+      "sha256": "f04b8c46613dc26c61066f7d8b30a6327fdafd22359e0ec3644cfbe9bb64487c"
+    }
+  ]
+}

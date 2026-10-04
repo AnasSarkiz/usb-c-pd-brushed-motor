@@ -1,0 +1,43 @@
+import { expect, test } from "bun:test"
+import type { HighDensityRoute, SimpleRouteJson } from "../lib"
+import { findPadClearanceViaPosition } from "../lib/solvers/GlobalDrcForceImproveSolver/findPadClearanceViaPosition"
+
+test("explicit no-via-in-pad policy applies configured clearance to connected lands", (): void => {
+  const route: HighDensityRoute = {
+    connectionName: "signal",
+    route: [],
+    vias: [],
+    viaDiameter: 0.6,
+    traceThickness: 0.2,
+  }
+  for (const allowViaInPad of [undefined, true, false]) {
+    const srj: SimpleRouteJson = {
+      bounds: { minX: -2, maxX: 2, minY: -2, maxY: 2 },
+      layerCount: 2,
+      minTraceWidth: 0.2,
+      allowViaInPad,
+      minViaEdgeToPadEdgeClearance: 0.2,
+      connections: [{ name: "signal", pointsToConnect: [] }],
+      obstacles: [
+        {
+          type: "rect",
+          layers: ["top"],
+          center: { x: 0, y: 0 },
+          width: 0.4,
+          height: 0.4,
+          connectedTo: ["pcb_smtpad_connected", "signal"],
+        },
+      ],
+    }
+    const position = findPadClearanceViaPosition(
+      srj,
+      route,
+      { x: 0.5, y: 0 },
+      0.3,
+      [0, 1],
+    )
+    expect(position).toBeDefined()
+    expect(position!.y).toBe(0)
+    expect(position!.x).toBeCloseTo(allowViaInPad === false ? 0.7 : 0.5, 5)
+  }
+})

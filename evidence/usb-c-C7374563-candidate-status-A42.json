@@ -1,0 +1,13 @@
+{
+  "part": "C7374563",
+  "issue": "Current GCT manufacturer page confirms48VDC/3A; this supersedes the20V statement in the previously downloaded drawing. Candidate remains unapproved because0.8mm midmount fit conflicts with the1.6mm board and imported shell land height2.20mm differs from recommended2.10mm beyond drawing tolerance. JLC stock7/order7; Standard only.",
+  "stock": 7,
+  "date": "2026-10-04",
+  "status": "not approved; alternative search continues",
+  "sources": [
+    "official importer log",
+    "JLCPCB visible assembly detail page",
+    "supplier manufacturer drawing where downloaded"
+  ],
+  "manufacturerSource": "https://gct.co/connector/usb4515"
+}

@@ -1,0 +1,92 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-saved-complete-fanout-paths.test.tsx:
+(pass) a complete saved fanout path with a pad via needs no follow-up routing [267.14ms]
+
+tests/utils/with-fixed-traces-copper-role.test.ts:
+(pass) fixed trace reservations retain their copper role separately from component pads [0.11ms]
+
+tests/utils/with-fixed-trace-taper-envelope.test.ts:
+(pass) fixed obstacles reserve tapered copper while preserving constant pad entries [18.13ms]
+
+tests/breakout/fanout-saved-trace-paths-via-endpoints.test.tsx:
+(pass) saved fanout paths support leading and trailing vias [1355.08ms]
+
+tests/breakout/fanout-saved-trace-paths.test.tsx:
+(pass) saved fanout paths preserve bends and hand off to global routing [400.40ms]
+
+tests/breakout/fanout-saved-trace-paths-validation.test.tsx:
+Async effect error in PcbTraceRender "autorouting":
+Error: Saved fanout path "U1.1" must start at its PCB port on an available layer
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Breakout/get-saved-fanout-traces.ts:80:19)
+    at map (native:1:11)
+    at getSavedFanoutTraces (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Breakout/get-saved-fanout-traces.ts:31:62)
+    at getPrecomputedRoutingResult (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts:511:19)
+    at _runLocalAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:1756:26)
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2075:14)
+    at _queueAsyncEffect (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/base-components/Renderable.ts:317:16)
+    at _startAsyncAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2074:12)
+    at doInitialPcbTraceRender (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2123:10)
+    at runRenderPhase (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/base-components/Renderable.ts:526:34)
+    at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/fanout-saved-trace-paths-validation.test.tsx:90:19)
+Async effect error in PcbTraceRender "autorouting":
+Error: Saved fanout path "U1.1" uses a layer unavailable on this board
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Breakout/get-saved-fanout-traces.ts:39:21)
+    at map (native:1:11)
+    at getSavedFanoutTraces (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Breakout/get-saved-fanout-traces.ts:31:62)
+    at getPrecomputedRoutingResult (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts:511:19)
+    at _runLocalAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:1756:26)
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2075:14)
+    at _queueAsyncEffect (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/base-components/Renderable.ts:317:16)
+    at _startAsyncAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2074:12)
+    at doInitialPcbTraceRender (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2123:10)
+    at runRenderPhase (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/base-components/Renderable.ts:526:34)
+    at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/fanout-saved-trace-paths-validation.test.tsx:90:19)
+Async effect error in PcbTraceRender "autorouting":
+Error: pcbTracePaths must cover every fanout connection; missing: breakout:pcb_breakout_point_0
+    at getSavedFanoutTraces (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Breakout/get-saved-fanout-traces.ts:181:15)
+    at getPrecomputedRoutingResult (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts:511:19)
+    at _runLocalAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:1756:26)
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2075:14)
+    at _queueAsyncEffect (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/base-components/Renderable.ts:317:16)
+    at _startAsyncAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2074:12)
+    at doInitialPcbTraceRender (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2123:10)
+    at runRenderPhase (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/base-components/Renderable.ts:526:34)
+    at runRenderCycle (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/base-components/Renderable.ts:463:12)
+    at render (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/IsolatedCircuit.ts:211:16)
+    at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/fanout-saved-trace-paths-validation.test.tsx:90:19)
+Async effect error in PcbTraceRender "autorouting":
+Error: Saved fanout path "U1.1" starts with a via at a pad; enable allowViaInPad
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Breakout/get-saved-fanout-traces.ts:85:19)
+    at map (native:1:11)
+    at getSavedFanoutTraces (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Breakout/get-saved-fanout-traces.ts:31:62)
+    at getPrecomputedRoutingResult (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts:511:19)
+    at _runLocalAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:1756:26)
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2075:14)
+    at _queueAsyncEffect (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/base-components/Renderable.ts:317:16)
+    at _startAsyncAutorouting (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2074:12)
+    at doInitialPcbTraceRender (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/primitive-components/Group/Group.ts:2123:10)
+    at runRenderPhase (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/base-components/Renderable.ts:526:34)
+    at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/fanout-saved-trace-paths-validation.test.tsx:90:19)
+(pass) saved fanout paths reject invalid layers, anchors, and incomplete coverage [41.70ms]
+
+tests/breakout/fanout-saved-trace-paths-transforms.test.tsx:
+(pass) saved fanout routes follow placement and preserve physical via layers [3338.84ms]
+
+tests/utils/autorouting/simple-route-json-ignores-routed-subcircuit-traces.test.ts:
+(pass) board simple route json ignores source traces already routed by child subcircuits [6.37ms]
+
+tests/utils/autorouting/simple-route-json-ignores-existing-top-level-pcb-traces.test.ts:
+(pass) simple route json ignores existing top-level pcb traces as routing state [0.25ms]
+(pass) simple route json keeps existing pcb traces as routing state inside subcircuits [0.17ms]
+
+tests/utils/autorouting/simple-route-json-preserves-routed-vias-as-traces.test.ts:
+(pass) preserved routed vias stay in SRJ traces instead of obstacles [0.48ms]
+
+tests/utils/autorouting/obstacles-preserve-circuit-element-identities.test.ts:
+(pass) pad obstacles preserve opaque Circuit JSON identities [0.10ms]
+
+ 12 pass
+ 0 fail
+ 359 expect() calls
+Ran 12 tests across 11 files. [6.07s]

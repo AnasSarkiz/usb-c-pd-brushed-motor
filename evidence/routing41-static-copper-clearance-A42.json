@@ -1,0 +1,1301 @@
+{
+  "artifactSha256": "2154d1fabbbb878543f4a1128380edc76300aaaadc9ab5e6c4a76d4be479615a",
+  "routingPhase": "unrouted",
+  "copperPrimitives": 505,
+  "nearbyForeignComparisons": 345,
+  "rulesMm": {
+    "width": 0.2,
+    "foreignCopper": 0.2,
+    "edge": 0.5
+  },
+  "issues": [
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_0",
+      "second": "pcb_smtpad_11",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "clearanceMm": 0.1999106999999993
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_1",
+      "second": "pcb_smtpad_2",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "clearanceMm": 0.19987259999999996
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_3",
+      "second": "pcb_smtpad_4",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "clearanceMm": 0.1998725999999995
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_5",
+      "second": "pcb_smtpad_6",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "clearanceMm": 0.19961859999999998
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_9",
+      "second": "pcb_smtpad_10",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "clearanceMm": 0.19982180000000005
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_12",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198362550965533
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_13",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198362550965533
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_14",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198362550965533
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_15",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553262
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_16",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198362550965533
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_17",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198362550965533
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_18",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553304
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_19",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553296
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_20",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553304
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_22",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198362550965533
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_25",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553257
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_26",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553218
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_27",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553257
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_28",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553257
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_29",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553257
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_30",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198362550965533
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_31",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198362550965533
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_32",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198362550965533
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_34",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553296
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_35",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19836255096553304
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_37",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449589043
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_38",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1981601805891933
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_39",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449589043
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_41",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449589043
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_42",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058918988
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_43",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058918988
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_44",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449588807
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_46",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449589043
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_47",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1981601805891933
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_48",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449589043
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_50",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449589043
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_51",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1981601805891933
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_52",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1981601805891933
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_53",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449588807
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_88",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449575537
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_89",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058916457
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_90",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198160180589087
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_91",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1981601244958576
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_93",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1981601244959469
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_94",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058915738
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_95",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058916735
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_96",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058916507
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_97",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449585507
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_98",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449575537
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_99",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058916457
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_100",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.198160180589087
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_101",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058915738
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_102",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1981601805891378
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_103",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058910656
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_104",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058915738
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_105",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058916735
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_106",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816018058916504
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_107",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19816012449585507
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_159",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_160",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_161",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19821110932641897
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_162",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_163",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_164",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19821110932641897
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_165",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_166",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19821110932641897
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_168",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_169",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_170",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_171",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19821110932641897
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_172",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_173",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_174",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19821110932641897
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_175",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_176",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19821110932641897
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_177",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_178",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_209",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19765458576002146
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_210",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19765458576002187
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_211",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19765458576002187
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_212",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1976545857600211
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_213",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19765458576002226
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_215",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19765458576002187
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_216",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19765458576002187
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_261",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1976680437660038
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_262",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1976680437660038
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_263",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600405
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_264",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600286
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_265",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600264
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_266",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600264
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_267",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600286
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_4",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19446206434313404
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_5",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19446206434313337
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_6",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19446206434313337
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_9",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_10",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_11",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_295",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600383
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_296",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600383
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_297",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600383
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_299",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600366
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_300",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600366
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_301",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600364
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_302",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19766804376600364
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_319",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_320",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19821110932641897
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_321",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_322",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_323",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19821110932641897
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_324",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_326",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_327",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_329",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_330",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_331",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19821110932641897
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_332",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1982111093264195
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_smtpad_333",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19821110932641897
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_12",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.19301749161391502
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_13",
+      "second": "pcb_copper_pour_0",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "top",
+      "clearanceMm": 0.1930174916139149
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_4",
+      "second": "pcb_copper_pour_2",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner1",
+      "clearanceMm": 0.19446206434313404
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_5",
+      "second": "pcb_copper_pour_2",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner1",
+      "clearanceMm": 0.19446206434313337
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_6",
+      "second": "pcb_copper_pour_2",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner1",
+      "clearanceMm": 0.19446206434313337
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_9",
+      "second": "pcb_copper_pour_2",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner1",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_10",
+      "second": "pcb_copper_pour_2",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner1",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_11",
+      "second": "pcb_copper_pour_2",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner1",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_12",
+      "second": "pcb_copper_pour_2",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner1",
+      "clearanceMm": 0.19301749161391502
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_13",
+      "second": "pcb_copper_pour_2",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner1",
+      "clearanceMm": 0.1930174916139149
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_4",
+      "second": "pcb_copper_pour_3",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner2",
+      "clearanceMm": 0.19446206434313404
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_5",
+      "second": "pcb_copper_pour_3",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner2",
+      "clearanceMm": 0.19446206434313337
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_6",
+      "second": "pcb_copper_pour_3",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner2",
+      "clearanceMm": 0.19446206434313337
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_9",
+      "second": "pcb_copper_pour_3",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner2",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_10",
+      "second": "pcb_copper_pour_3",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner2",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_11",
+      "second": "pcb_copper_pour_3",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner2",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_12",
+      "second": "pcb_copper_pour_3",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner2",
+      "clearanceMm": 0.19301749161391502
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_13",
+      "second": "pcb_copper_pour_3",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "inner2",
+      "clearanceMm": 0.1930174916139149
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_4",
+      "second": "pcb_copper_pour_1",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "bottom",
+      "clearanceMm": 0.19446206434313404
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_5",
+      "second": "pcb_copper_pour_1",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "bottom",
+      "clearanceMm": 0.19446206434313337
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_6",
+      "second": "pcb_copper_pour_1",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "bottom",
+      "clearanceMm": 0.19446206434313337
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_9",
+      "second": "pcb_copper_pour_1",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "bottom",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_10",
+      "second": "pcb_copper_pour_1",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "bottom",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_11",
+      "second": "pcb_copper_pour_1",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "bottom",
+      "clearanceMm": 0.19470281862101008
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_12",
+      "second": "pcb_copper_pour_1",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "bottom",
+      "clearanceMm": 0.19301749161391502
+    },
+    {
+      "rule": "foreign_copper_clearance",
+      "first": "pcb_plated_hole_13",
+      "second": "pcb_copper_pour_1",
+      "firstKind": "pcb_plated_hole",
+      "secondKind": "pcb_copper_pour",
+      "layer": "bottom",
+      "clearanceMm": 0.1930174916139149
+    }
+  ],
+  "limitations": "Physical geometric spacing only. No electrical, thermal or power rating is inferred. Unsupported route interpolation is rejected."
+}

@@ -1,0 +1,18 @@
+{
+  "part": "C45082808",
+  "model": "CUI UJC-H-G-SMT-P6-TR",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Supplier-code import fails. Exact-MPN query imports unrelated C42459724/SDH8594ESTR; rejected. No valid candidate model.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C45082808-mpn-import-A42.log",
+      "sha256": "83162aaf53f145e8301f5fe16141b08c6fd09166b1fe3b1da6b14c893d46e767"
+    },
+    {
+      "path": "evidence/usb-c-C45082808-import-A42.log",
+      "sha256": "ffcb200514946082f65b4556e272062ec69528cec359d237c6a67a3ef3faca89"
+    }
+  ]
+}

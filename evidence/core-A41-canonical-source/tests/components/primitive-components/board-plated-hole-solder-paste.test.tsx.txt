@@ -1,0 +1,90 @@
+import { expect, test } from "bun:test"
+import { any_circuit_element, type LayerRef } from "circuit-json"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("plated-hole assembly layers preserve copper and SMT stencil apertures", () => {
+  for (const selection of [
+    undefined,
+    "both",
+    "top",
+    "bottom",
+    "none",
+  ] as const) {
+    const { circuit } = getTestFixture()
+    circuit.add(
+      <board
+        width={24}
+        height={12}
+        routingDisabled
+        pcbPlatedHoleSolderPaste={selection}
+        manualEdits={{
+          pcb_placements: [{ selector: "R1", center: { x: 0, y: -3 } }],
+        }}
+      >
+        <platedhole
+          shape="circle"
+          outerDiameter={2}
+          holeDiameter={1}
+          pcbX={-6}
+        />
+        <platedhole
+          shape="pill"
+          outerWidth={2}
+          outerHeight={3}
+          holeWidth={1}
+          holeHeight={2}
+          pcbX={0}
+          pcbRotation={90}
+        />
+        <platedhole
+          shape="oval"
+          outerWidth={2}
+          outerHeight={3}
+          holeWidth={1}
+          holeHeight={2}
+          pcbX={6}
+        />
+        <resistor name="R1" resistance="1k" footprint="0402" />
+        <pcbnotetext
+          text={`Plated-hole paste: ${selection ?? "legacy both"}; SMT unchanged`}
+          pcbY={4}
+          fontSize={0.5}
+        />
+      </board>,
+    )
+    circuit.render()
+    const holes = circuit.db.pcb_plated_hole.list()
+    expect(holes).toHaveLength(3)
+    expect(circuit.db.pcb_smtpad.list()).toHaveLength(2)
+    const expectedLayers: LayerRef[] =
+      selection === "none"
+        ? []
+        : selection === "top"
+          ? ["top"]
+          : selection === "bottom"
+            ? ["bottom"]
+            : ["top", "bottom"]
+    for (const hole of holes) {
+      expect(hole.layers).toEqual(["top", "bottom"])
+      expect(
+        circuit.db.pcb_solder_paste
+          .list()
+          .filter((paste) => paste.x === hole.x && paste.y === hole.y)
+          .map((paste) => paste.layer),
+      ).toEqual(expectedLayers)
+    }
+    expect(
+      circuit.db.pcb_solder_paste.list().filter((paste) => paste.y === -3),
+    ).toHaveLength(2)
+    for (const element of circuit.getCircuitJson()) {
+      expect(
+        any_circuit_element.safeParse(element).success,
+        JSON.stringify(element),
+      ).toBe(true)
+    }
+    if (selection === "none")
+      expect(circuit).toMatchPcbSnapshot(import.meta.path, {
+        showSolderPaste: true,
+      })
+  }
+})

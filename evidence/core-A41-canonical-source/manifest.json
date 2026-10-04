@@ -1,0 +1,348 @@
+{
+  "upstreamCommit": "51b3b57d60b9153e8e7a0449023bbefdba18ec23",
+  "canonicalSourceDirectory": "tooling/core-manufacturing-A22",
+  "packageVersion": "0.0.2091-a41",
+  "sourcePatchSha256": "8300f6bea0f10f7c21c9610b2526f8ff2615284797822e2a92688d9503979196",
+  "records": [
+    {
+      "path": "bun.lock",
+      "archive": "evidence/core-A41-canonical-source/bun.lock.txt",
+      "sha256": "1a984852c1ae171a40c4eefed2a18b090fe32c281bcdb32fbbdb13a2d5a4e3d2"
+    },
+    {
+      "path": "lib/components/base-components/NormalComponent/NormalComponent.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/base-components/NormalComponent/NormalComponent.ts.txt",
+      "sha256": "c83bd08c457233f01abd3f70ddce995cc368a22d1ccb4db2fc312112facd2cbd"
+    },
+    {
+      "path": "lib/components/base-components/NormalComponent/NormalComponent_doInitialPartOrientationAnalysis.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/base-components/NormalComponent/NormalComponent_doInitialPartOrientationAnalysis.ts.txt",
+      "sha256": "ee303b71ded7a098a4012d3c45ece45db52ea4879a2d6773e7025adf37eea1d8"
+    },
+    {
+      "path": "lib/components/base-components/NormalComponent/NormalComponent_doInitialSupplierFootprintMismatchWarning.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/base-components/NormalComponent/NormalComponent_doInitialSupplierFootprintMismatchWarning.ts.txt",
+      "sha256": "81a7e2b94968e5b57c69f6d91d62c33bfd4647b05a063883f3f2c50d5d61fbf7"
+    },
+    {
+      "path": "lib/components/base-components/NormalComponent/NormalComponent_rotateCustomSchematicSymbol.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/base-components/NormalComponent/NormalComponent_rotateCustomSchematicSymbol.ts.txt",
+      "sha256": "5ddb511fcd1ae334043bba2d3aba43a865322910c9600c7b36edabdc9f0fdd9a"
+    },
+    {
+      "path": "lib/components/base-components/NormalComponent/utils/inferInternallyConnectedPinNamesFromPorts.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/base-components/NormalComponent/utils/inferInternallyConnectedPinNamesFromPorts.ts.txt",
+      "sha256": "6c6144072735fc0401616d961114280eee0b2702dcbc81ce9bedde9a3ef9f7e9"
+    },
+    {
+      "path": "lib/components/base-components/PrimitiveComponent/PrimitiveComponent.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/base-components/PrimitiveComponent/PrimitiveComponent.ts.txt",
+      "sha256": "c95bdff9abc6224d01a08af9058614a07fd00d285988636babd8922961564f4b"
+    },
+    {
+      "path": "lib/components/base-components/PrimitiveComponent/select-ports-by-literal-selector.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/base-components/PrimitiveComponent/select-ports-by-literal-selector.ts.txt",
+      "sha256": "d08e11a78a4319442fd3ea4c6df2b9c25f92993e6163b5d844f398bfc17c6029"
+    },
+    {
+      "path": "lib/components/base-components/Renderable.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/base-components/Renderable.ts.txt",
+      "sha256": "1411c48fa9310fd88e4bc7733750a9aa085a593ca5009329e0078a1c372f3f93"
+    },
+    {
+      "path": "lib/components/primitive-components/BreakoutPoint.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/primitive-components/BreakoutPoint.ts.txt",
+      "sha256": "aab6cb414b1487d4e596b4395a473821563bc199917542a6baab9912625de693"
+    },
+    {
+      "path": "lib/components/primitive-components/Group/Group.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/primitive-components/Group/Group.ts.txt",
+      "sha256": "c3a4be85e1b2342cf2fc782b38f257053726216268ca6b3c7ba6228bc0d5e721"
+    },
+    {
+      "path": "lib/components/primitive-components/Group/GroupRoutingPhasePlan.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/primitive-components/Group/GroupRoutingPhasePlan.ts.txt",
+      "sha256": "87d07adebf14391d95db6d857a3fce04c8f1358107b8f36efff3005229c1cf02"
+    },
+    {
+      "path": "lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts.txt",
+      "sha256": "72a17dbba5b885f66d9847b00f0dbef6c5741717ca79855885b14fc4b2723e29"
+    },
+    {
+      "path": "lib/components/primitive-components/Group/Group_phasedAutoroutingUtils.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/primitive-components/Group/Group_phasedAutoroutingUtils.ts.txt",
+      "sha256": "38a7db5768b86288d46f6343dfa3c560d5ce76f48508d69c66d2ce51a182132a"
+    },
+    {
+      "path": "lib/components/primitive-components/Group/get-source-trace-id-for-routed-trace.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/primitive-components/Group/get-source-trace-id-for-routed-trace.ts.txt",
+      "sha256": "cad33f65efa83e76a295a93e9c6c085d1c6a42f6c29af4e725bea8afc0e41726"
+    },
+    {
+      "path": "lib/components/primitive-components/Hole.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/primitive-components/Hole.ts.txt",
+      "sha256": "b5340c0566bc361e90fa85bbc4ff8d7adf51487f9cf5c1877e2129067cee2dbd"
+    },
+    {
+      "path": "lib/components/primitive-components/PlatedHole.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/primitive-components/PlatedHole.ts.txt",
+      "sha256": "2a522dbab0a3011766f6999918a2e8bea3b2f031f22a4e2f5c8dfd6611107a0e"
+    },
+    {
+      "path": "lib/components/primitive-components/Port/Port.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/primitive-components/Port/Port.ts.txt",
+      "sha256": "b356b8c767e1143c64a39fce39d4ff8a592cfebbbb77c6a5bd27d549a86167fb"
+    },
+    {
+      "path": "lib/components/primitive-components/SilkscreenText.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/components/primitive-components/SilkscreenText.ts.txt",
+      "sha256": "ac7ddad4f3efd313c3a294e4fbe291c97fbe16e6160e162f2bf183e959b49380"
+    },
+    {
+      "path": "lib/utils/autorouting/FanoutAutorouter.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/utils/autorouting/FanoutAutorouter.ts.txt",
+      "sha256": "f91cac596a8782402ec930e2ef26f8decdfdd30be07a862b2ef0f5861e2ce74a"
+    },
+    {
+      "path": "lib/utils/autorouting/SimpleRouteJson.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/utils/autorouting/SimpleRouteJson.ts.txt",
+      "sha256": "f7345f3eb21babb34915554f9d9fad68328d29914b05dc883d7f1df095d82abf"
+    },
+    {
+      "path": "lib/utils/autorouting/getBoundsForSchematic.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/utils/autorouting/getBoundsForSchematic.ts.txt",
+      "sha256": "95fd24a50485715744dd398a19396b5424fcc772da09efcf11135f1cee617322"
+    },
+    {
+      "path": "lib/utils/autorouting/getPresetAutoroutingConfig.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/utils/autorouting/getPresetAutoroutingConfig.ts.txt",
+      "sha256": "d6d9e786c9d508c80a8cfeeadda36d6803d7b96c4f4825246d8b97bb98c9150f"
+    },
+    {
+      "path": "lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson.ts.txt",
+      "sha256": "366a0a3a8ee237c8d1f82068f61348da9e9e668ccb8fbf25433e47d281235866"
+    },
+    {
+      "path": "lib/utils/autorouting/with-fixed-traces.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/utils/autorouting/with-fixed-traces.ts.txt",
+      "sha256": "6105d40332af28f7938108362479c7a007dbb09a7e448bde821f514be4160bfb"
+    },
+    {
+      "path": "lib/utils/get-supplier-circuit-json.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/utils/get-supplier-circuit-json.ts.txt",
+      "sha256": "a34d599e1237b0f52d4b43b3d7f3aaf8170cf4f403bf6453271d02a6116618ef"
+    },
+    {
+      "path": "lib/utils/obstacles/getObstaclesFromRoute.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/utils/obstacles/getObstaclesFromRoute.ts.txt",
+      "sha256": "e2a796b7bcc60e812464a77a919a21c89f19e1ade2cd1c9716d94fc5b3d7e016"
+    },
+    {
+      "path": "lib/utils/obstacles/types.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/utils/obstacles/types.ts.txt",
+      "sha256": "78acfc5bc5b0065c5e6365db23abcffa095e03a8331327390de7d0d81be0b65d"
+    },
+    {
+      "path": "lib/utils/reverse-pcb-trace-route.ts",
+      "archive": "evidence/core-A41-canonical-source/lib/utils/reverse-pcb-trace-route.ts.txt",
+      "sha256": "a73919f4871db92f52428bf7be68f7f257a24cd817dc13870a79261758c09fa5"
+    },
+    {
+      "path": "package-lock.json",
+      "archive": "evidence/core-A41-canonical-source/package-lock.json.txt",
+      "sha256": "dc46931f87ef5629e0978bb862ffad6b131f5c90471e1b52bf93517bddd9f442"
+    },
+    {
+      "path": "package.json",
+      "archive": "evidence/core-A41-canonical-source/package.json.txt",
+      "sha256": "1e3591bbd5c3704d243046c3b6ba3c8c7d8d520954130690205f229efc270281"
+    },
+    {
+      "path": "tests/breakout/__snapshots__/breakoutpoint-target-layer-pcb.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/breakout/__snapshots__/breakoutpoint-target-layer-pcb.snap.svg.txt",
+      "sha256": "cfb2df795b9d98ad360dfd9239db126013e26a9e67459eb5efe990bbffef70ca"
+    },
+    {
+      "path": "tests/breakout/__snapshots__/dogbone-plane-drop-phase-isolation-pcb.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/breakout/__snapshots__/dogbone-plane-drop-phase-isolation-pcb.snap.svg.txt",
+      "sha256": "38d34307188da1720f9044583345372b281652dbf3884d53fc443b2d6ba70067"
+    },
+    {
+      "path": "tests/breakout/__snapshots__/fanout-custom-symbol-port-alias-pcb.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/breakout/__snapshots__/fanout-custom-symbol-port-alias-pcb.snap.svg.txt",
+      "sha256": "6033a7a4d5fd2d877920dd3ed62aa0a69dce8c4ef725cd8d4dc5749b5a47325c"
+    },
+    {
+      "path": "tests/breakout/__snapshots__/fanout-group-schema-pcb.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/breakout/__snapshots__/fanout-group-schema-pcb.snap.svg.txt",
+      "sha256": "11ea7616031d166dd1a99e0a58f7491a4cabfffb48ce0b285733cf7f6553dc14"
+    },
+    {
+      "path": "tests/breakout/__snapshots__/fanout-soic8-sensor-to-i2c-header-autorouting-srj.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/breakout/__snapshots__/fanout-soic8-sensor-to-i2c-header-autorouting-srj.snap.svg.txt",
+      "sha256": "ca1789dd04c90c8d04049ffd12f96f95de12b8692c06ef0d5b344eb33ea6ab15"
+    },
+    {
+      "path": "tests/breakout/breakoutpoint-target-layer.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/breakout/breakoutpoint-target-layer.test.tsx.txt",
+      "sha256": "5b6a08db3f141a27e041de36e1ea77f9802ee61db604489c063c2ca7b3708199"
+    },
+    {
+      "path": "tests/breakout/dogbone-plane-drop-phase-isolation.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/breakout/dogbone-plane-drop-phase-isolation.test.tsx.txt",
+      "sha256": "e936ed84239aa10c65db1225d9d89c7027aa0fd838b7d90f7bd07f4baac05a36"
+    },
+    {
+      "path": "tests/breakout/fanout-custom-symbol-port-alias.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/breakout/fanout-custom-symbol-port-alias.test.tsx.txt",
+      "sha256": "ea45ac34463e21b50bfe8f692622a6f7aa29b83a1ffd0b0b1cd31510b34545f9"
+    },
+    {
+      "path": "tests/breakout/fanout-group-schema.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/breakout/fanout-group-schema.test.tsx.txt",
+      "sha256": "443053a06d897b3e64e13114b4a8d3d97b36b92d343abcd3f9014a5f080c819c"
+    },
+    {
+      "path": "tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx.txt",
+      "sha256": "158ce88fd0f99d7983d5032d40b0e1edae97c9d70bc023218751363413272588"
+    },
+    {
+      "path": "tests/components/primitive-components/__snapshots__/board-mounted-hole-schema-pcb.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/components/primitive-components/__snapshots__/board-mounted-hole-schema-pcb.snap.svg.txt",
+      "sha256": "ba09fd7f83ab5bb6cb2782d40c30208b028934fd5e06e32fbafebd805b793dbf"
+    },
+    {
+      "path": "tests/components/primitive-components/__snapshots__/board-plated-hole-solder-paste-pcb.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/components/primitive-components/__snapshots__/board-plated-hole-solder-paste-pcb.snap.svg.txt",
+      "sha256": "b4c75c1e5791d57c736c975d66e4567a4349952d7b5f57ece8f452d183306e6a"
+    },
+    {
+      "path": "tests/components/primitive-components/__snapshots__/board-silkscreen-schema-pcb.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/components/primitive-components/__snapshots__/board-silkscreen-schema-pcb.snap.svg.txt",
+      "sha256": "5d4ee87369a074fbff6a7099df35311f71b71d216eb3d474d373d3a1fe2eb11b"
+    },
+    {
+      "path": "tests/components/primitive-components/__snapshots__/custom-symbol-rotation-schematic.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/components/primitive-components/__snapshots__/custom-symbol-rotation-schematic.snap.svg.txt",
+      "sha256": "ebb46567d065a5dad14e7c3335c72deb213b69dcd1444c9d30dace6718f1e9e3"
+    },
+    {
+      "path": "tests/components/primitive-components/board-mounted-hole-schema.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/components/primitive-components/board-mounted-hole-schema.test.tsx.txt",
+      "sha256": "f4e0a832727204cf8ab92ebca5030c0ede9e864ba94ba09325c1c02686b9ffcd"
+    },
+    {
+      "path": "tests/components/primitive-components/board-plated-hole-solder-paste.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/components/primitive-components/board-plated-hole-solder-paste.test.tsx.txt",
+      "sha256": "89a1a45cfa6050cd82e156dbec4fc254cb7bfa0f5b738ddfc369023ac5ce101a"
+    },
+    {
+      "path": "tests/components/primitive-components/board-silkscreen-schema.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/components/primitive-components/board-silkscreen-schema.test.tsx.txt",
+      "sha256": "a7f0ce08ef7f4ff601f6606ac55ec1f3af7f0453a61cafa8346377d52bb17b9b"
+    },
+    {
+      "path": "tests/components/primitive-components/custom-symbol-rotation.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/components/primitive-components/custom-symbol-rotation.test.tsx.txt",
+      "sha256": "55b46ae0c82b7e28400cc1944dabc350b32dbc1180b78d66404097afbbf2de10"
+    },
+    {
+      "path": "tests/features/__snapshots__/breakout-autorouter-version-pcb.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/features/__snapshots__/breakout-autorouter-version-pcb.snap.svg.txt",
+      "sha256": "5cf5c2fa6f19f689b78e0f0b39d6685086f35f002842618a1bb1c96d1bc715e9"
+    },
+    {
+      "path": "tests/features/autorouter-preset-explicit-settings.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/features/autorouter-preset-explicit-settings.test.tsx.txt",
+      "sha256": "07c015df4581a0aefa414feaec1342cc13c7d6137045f4b9f8430d39919adb8b"
+    },
+    {
+      "path": "tests/features/autorouter-preset-explicit-settings2.test.ts",
+      "archive": "evidence/core-A41-canonical-source/tests/features/autorouter-preset-explicit-settings2.test.ts.txt",
+      "sha256": "a3d94d81fca3a3a14037e07e46189564dab40ebe162da2bba415accc9806396e"
+    },
+    {
+      "path": "tests/features/breakout-autorouter-version.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/features/breakout-autorouter-version.test.tsx.txt",
+      "sha256": "8487ca47990e17006acabe12e928b18feabc98b5b4da70d2107b7b9fa541398d"
+    },
+    {
+      "path": "tests/features/custom-symbol-pcb-port-selector.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/features/custom-symbol-pcb-port-selector.test.tsx.txt",
+      "sha256": "1ce8eea0952a9271250597585728265523f72f493147b26830687afc67704a61"
+    },
+    {
+      "path": "tests/features/supplier-circuit-json-cache.test.ts",
+      "archive": "evidence/core-A41-canonical-source/tests/features/supplier-circuit-json-cache.test.ts.txt",
+      "sha256": "d4acfb6516b1470b66608e62c1561a489e8e72dfc3a9eb76436d9add51107fa5"
+    },
+    {
+      "path": "tests/fixtures/pesd24vs2ut-import.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/fixtures/pesd24vs2ut-import.tsx.txt",
+      "sha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6"
+    },
+    {
+      "path": "tests/repros/__snapshots__/repro-symbol-alias-is-not-internal-short-pcb.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/repros/__snapshots__/repro-symbol-alias-is-not-internal-short-pcb.snap.svg.txt",
+      "sha256": "f23ef934e73d978f5923167f4474febdcb36f978c1a467cd2e02d303f3b697de"
+    },
+    {
+      "path": "tests/repros/__snapshots__/repro-symbol-alias-is-not-internal-short-schematic.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/repros/__snapshots__/repro-symbol-alias-is-not-internal-short-schematic.snap.svg.txt",
+      "sha256": "df7950755f6db242573abed6025447f014f08c7897acd26ca02b7d8bbb804ad5"
+    },
+    {
+      "path": "tests/repros/repro-routed-net-piece-attribution.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/repros/repro-routed-net-piece-attribution.test.tsx.txt",
+      "sha256": "0fa42b57bbae44c20de477b21595adfcc37166d7c3408bd854c1eda69996d11d"
+    },
+    {
+      "path": "tests/repros/repro-symbol-alias-is-not-internal-short.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/repros/repro-symbol-alias-is-not-internal-short.test.tsx.txt",
+      "sha256": "32c5eb4e0d27fcb0e099f58aba28305e334f88edd25e4a2093357229d1d3e521"
+    },
+    {
+      "path": "tests/utils/__snapshots__/with-fixed-trace-taper-envelope-pcb.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/utils/__snapshots__/with-fixed-trace-taper-envelope-pcb.snap.svg.txt",
+      "sha256": "c8c3d57303c863f7168e9bdf210051ea69c814e5af90130238b131e264ebc1fa"
+    },
+    {
+      "path": "tests/utils/autorouting/__snapshots__/plane-direction-physical-pad.snap.svg",
+      "archive": "evidence/core-A41-canonical-source/tests/utils/autorouting/__snapshots__/plane-direction-physical-pad.snap.svg.txt",
+      "sha256": "1c65b884046f60768f4f61a6beb7dd6ce48e7afaa6c9751498e3296f6082bbbe"
+    },
+    {
+      "path": "tests/utils/autorouting/plane-direction-physical-pad.test.ts",
+      "archive": "evidence/core-A41-canonical-source/tests/utils/autorouting/plane-direction-physical-pad.test.ts.txt",
+      "sha256": "7bfbcf0d255e4e04e57f028b0e57421fb98d7efb73063e530b41b8adb8cafb2a"
+    },
+    {
+      "path": "tests/utils/autorouting/simple-route-json-missing-pcb-ports.test.tsx",
+      "archive": "evidence/core-A41-canonical-source/tests/utils/autorouting/simple-route-json-missing-pcb-ports.test.tsx.txt",
+      "sha256": "0c68d06706b9a7c313e8440f6c375f6aa0b5636f590a7eab7047531123a601e2"
+    },
+    {
+      "path": "tests/utils/reverse-pcb-trace-route.test.ts",
+      "archive": "evidence/core-A41-canonical-source/tests/utils/reverse-pcb-trace-route.test.ts.txt",
+      "sha256": "d8f052dd7b45661422a8fc17d1b2caf0bb02d170342a64f46c098bcb7d0ba11b"
+    },
+    {
+      "path": "tests/utils/reverse-via-layer-route.test.ts",
+      "archive": "evidence/core-A41-canonical-source/tests/utils/reverse-via-layer-route.test.ts.txt",
+      "sha256": "e03dc6ae47f637bfc662b89bf0031c7f9417a7642020d48f20b471e11cca06cd"
+    },
+    {
+      "path": "tests/utils/with-fixed-trace-taper-envelope.test.ts",
+      "archive": "evidence/core-A41-canonical-source/tests/utils/with-fixed-trace-taper-envelope.test.ts.txt",
+      "sha256": "9d4feea504172a19d1cbf065ea0ff2267c3cb486bc32d5242cf8e8b33f97d971"
+    },
+    {
+      "path": "tests/utils/with-fixed-traces-copper-role.test.ts",
+      "archive": "evidence/core-A41-canonical-source/tests/utils/with-fixed-traces-copper-role.test.ts.txt",
+      "sha256": "95acf1f7a9aa9c0909bbf8cb5bde50e00e774f0cc06ff258526d3c94f98cd922"
+    }
+  ]
+}

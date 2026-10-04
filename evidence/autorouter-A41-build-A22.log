@@ -1,0 +1,14 @@
+$ tsup ./lib/index.ts --minify terser --external @tscircuit/core --external circuit-to-svg --format esm --dts --sourcemap
+CLI Building entry: lib/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Target: esnext
+ESM Build start
+DTS Build start
+TERSER Minifying with Terser
+TERSER Terser Minification success
+ESM dist/index.js     2.97 MB
+ESM dist/index.js.map 14.73 MB
+ESM ⚡️ Build success in 45039ms
+DTS ⚡️ Build success in 48455ms
+DTS dist/index.d.ts 303.33 KB

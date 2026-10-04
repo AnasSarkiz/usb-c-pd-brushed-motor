@@ -43,3 +43,36 @@ print('Physical copper clearance regression passed')
   expect(regression.status).toBe(0)
   expect(regression.stderr).toBe("")
 })
+
+test("static copper rejects sub-rule supplier lands without exempting pours", () => {
+  const regression = spawnSync(
+    "tooling/power-review-venv/bin/python",
+    [
+      "-c",
+      `
+import sys, importlib.util
+sys.path.insert(0, 'scripts')
+from shapely.geometry import box
+spec = importlib.util.spec_from_file_location('clearance_audit', 'scripts/audit-routed-copper-clearances.py')
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+first = dict(id='pad1', kind='pcb_smtpad', net='CC1', layer='top', geometry=box(-.15,-.6,.15,.6))
+for gap in [.19302,.19836,.1996186,.1998726,.1999107]:
+    second = dict(id='pad2', kind='pcb_smtpad', net='CC2', layer='top', geometry=box(.15+gap,-.6,.45+gap,.6))
+    result = module.foreign_copper_issues([first,second])
+    assert len(result['issues']) == 1, gap
+    assert not module.foreign_copper_issues([first,{**second,'net':'CC1'}])['issues']
+    assert not module.foreign_copper_issues([first,{**second,'layer':'bottom'}])['issues']
+    assert module.foreign_copper_issues([first,{**second,'kind':'pcb_copper_pour'}])['issues']
+for gap in [.2,.2001,.23]:
+    second = dict(id='pad2',kind='pcb_smtpad',net='CC2',layer='top',geometry=box(.15+gap,-.6,.45+gap,.6))
+    assert not module.foreign_copper_issues([first,second])['issues'], gap
+assert module.EPS_MM == 1e-5
+print('Static pad/pour clearance regressions passed')
+`,
+    ],
+    { encoding: "utf8" },
+  )
+  expect(regression.status).toBe(0)
+  expect(regression.stderr).toBe("")
+})

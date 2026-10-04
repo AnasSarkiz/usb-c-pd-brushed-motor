@@ -1,0 +1,12 @@
+bun test v1.4.2 (744846f84)
+
+tests/utils/with-fixed-traces-copper-role.test.ts:
+(pass) fixed trace reservations retain their copper role separately from component pads [2.26ms]
+
+tests/utils/with-fixed-trace-taper-envelope.test.ts:
+(pass) fixed obstacles reserve tapered copper while preserving constant pad entries [50.91ms]
+
+ 2 pass
+ 0 fail
+ 214 expect() calls
+Ran 2 tests across 2 files. [1435.00ms]

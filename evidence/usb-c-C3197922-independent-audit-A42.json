@@ -1,0 +1,35 @@
+{
+  "part": "C3197922",
+  "manufacturer": "Molex",
+  "model": "2171750001",
+  "importSha256": "cc25cede0f9206c8b7de5339496a5054b8090bbf12a418b2200c1687843fa154",
+  "drawingSha256": "4bfa389c40d7309e8ef3299f63aeb366f19df4b97f5b564c27464358e687be02",
+  "visualReview": [
+    "manufacturer drawing pages1/2 rendered and inspected",
+    "pin labels correspond to contact table",
+    "four shield mounting slots0.60x1.20 with1.10x1.70 annular lands",
+    "CC lands0.70x1.20 and GND0.80x1.20 match drawing"
+  ],
+  "issues": [
+    {
+      "rule": "manufacturer_recommended_land",
+      "pins": [
+        "pin9/A9",
+        "pin12/B9"
+      ],
+      "expectedWidthMm": 0.76,
+      "importedWidthMm": 0.6999986,
+      "drawingDefaultToleranceMm": 0.05,
+      "differenceMm": 0.0600014
+    }
+  ],
+  "status": "blocked; supplier model unchanged; alternative search in progress",
+  "stock": {
+    "source": "https://jlcpcb.com/partdetail/MOLEX-2171750001/C3197922",
+    "checked": "2026-10-04",
+    "inStock": 5472,
+    "availableOrderQuantity": 5058,
+    "assembly": "Economic and Standard SMT",
+    "reserved": false
+  }
+}

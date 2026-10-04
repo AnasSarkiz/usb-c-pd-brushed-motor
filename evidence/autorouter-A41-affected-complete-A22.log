@@ -1,0 +1,34 @@
+bun test v1.4.2 (744846f84)
+
+tests/pipeline7-no-via-in-pad-policy.test.ts:
+(pass) Pipeline7 explicit no-via-in-pad policy enforces connected-pad clearance [17.74ms]
+
+tests/pipeline7-relaxed-drc-evaluator.test.ts:
+(pass) Pipeline7 repair uses the benchmark relaxed DRC path [15.46ms]
+
+tests/pipeline7-autorouting-drc-evaluator.test.ts:
+(pass) Pipeline7 autorouting DRC finds every reference trace collision [3.43ms]
+(pass) Pipeline7 candidate conversion reuses static obstacle connectivity [0.38ms]
+
+tests/pipeline7-configured-copper-clearance.test.ts:
+(pass) Pipeline7 repair honors explicit copper clearance above its legacy minimum [0.96ms]
+
+tests/features/pipeline7-exact-drc-no-fallback.test.ts:
+(pass) Pipeline7 disables speculative fallback inside its exact DRC portfolio [64.55ms]
+
+tests/features/pipeline7-dataset01-circuit143-trace-clearance.test.ts:
+(pass) pipeline7 dataset01 circuit143 clears every routed trace [27300.05ms]
+
+tests/features/pipeline7-preloaded-trace-drc-feedback.test.ts:
+(pass) Pipeline7 DRC feedback includes preloaded traces [7694.89ms]
+
+tests/features/pipeline7-dataset01-circuit144-pad-clearance.test.ts:
+(pass) pipeline7 keeps dataset01 circuit144 pad clearance clean without broad fallback [4532.38ms]
+
+tests/bugs/bugreport99-nrf52810-drc-identity-swap.test.ts:
+(pass) bugreport99 keeps nRF exact DRC net aliases electrically equivalent [20210.29ms]
+
+ 10 pass
+ 0 fail
+ 67 expect() calls
+Ran 10 tests across 9 files. [61.04s]

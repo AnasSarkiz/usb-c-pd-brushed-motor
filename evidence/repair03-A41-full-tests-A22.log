@@ -1,0 +1,328 @@
+bun test v1.4.2 (744846f84)
+
+tests/targeted-trace-pair-layer-move-terminal.test.ts:
+(pass) does not add a via by moving a connected terminal segment [0.32ms]
+
+tests/srj18-sample5-repair.test.ts:
+(pass) repairs captured SRJ18 sample 5 without losing terminal connections [168.09ms]
+
+tests/targeted-trace-pair-layer-move.test.ts:
+(pass) moves one exact conflicting trace segment to another layer [0.22ms]
+
+tests/reference-drc-output-guard.test.ts:
+(pass) rejects a repair candidate that regresses the reference DRC [0.82ms]
+
+tests/trace-pair-displacement-chain.test.ts:
+(pass) propagates a trace-pair displacement into a newly constrained via [1.39ms]
+
+tests/no-via-in-pad-terminal-projection.test.ts:
+(pass) explicit no-via-in-pad policy applies configured clearance to connected lands [0.52ms]
+
+tests/low-count-trace-topology-repair.test.ts:
+(pass) tries trace topology repair when the initial DRC count is three [0.36ms]
+
+tests/high-count-trace-layer-corridor.test.ts:
+(pass) reroutes a shared trace-pair route when it removes two of eight DRC errors [0.40ms]
+
+tests/drc-branch-portfolio-large-board-via-phase.test.ts:
+(pass) runs the bounded via-in-pad phase on large high-error boards [2.35ms]
+
+tests/broad-net-match-cache.test.ts:
+(pass) broad net caches preserve ordered aliases, unknown IDs and false results [0.34ms]
+(pass) broad force calls refresh net matches after live connectivity and obstacle changes [2.06ms]
+(pass) oversized net tables retain uncached predicates [0.07ms]
+
+tests/same-root-via-site-repair.test.ts:
+(pass) visualizes repair of a shared same-root via site [1.37ms]
+
+tests/through-via-bottom-pad-relaxation.test.ts:
+(pass) via placement and relaxation clear bottom pads according to the board setting [2.33ms]
+
+tests/solver-route-behavior.test.ts:
+(pass) moves an overlapping trace-pad run as a segment [0.94ms]
+(pass) moves a jittered trace-pad run as one segment run [0.29ms]
+(pass) does not move a trace away from a same-net pad [0.34ms]
+(pass) moves a trace until its edge clears an inferred different-net via edge [1.04ms]
+(pass) moves a via until its edge clears a different-net pad edge [0.19ms]
+(pass) moves a via until its edge clears a same-net pad edge when not attached [0.09ms]
+(pass) does not move an attached via centered on a same-net pad [0.05ms]
+(pass) treats composite root names as same-net when checking pad attachments [0.88ms]
+(pass) does not push close vias from mst-suffixed routes on the same net [0.18ms]
+(pass) preserves width, via diameter, and endpoint port ids in DRC traces [0.35ms]
+
+tests/autorouting-drc-via-drill-span.test.ts:
+(pass) uses Core's through-via geometry unless blind and buried vias are enabled [0.66ms]
+
+tests/broad-repulsion-contact-ties.test.ts:
+22 |       1,
+23 |       undefined,
+24 |       false,
+25 |       false,
+26 |     )
+27 |     expect(output).toEqual(fixture.expected)
+                        ^
+error: expect(received).toEqual(expected)
+
+  [
+    {
+      "connectionName": "first",
+      "rootConnectionName": "first",
+      "route": [
+        {
+          "x": -2,
+          "y": 0,
+          "z": 0,
+        },
+        {
+          "x": -1.0003008444361705,
+-         "y": -0.0929988098973326,
++         "y": -0.09299880989733263,
+          "z": 0,
+        },
+        {
+          "x": 1.0003008444361707,
+          "y": -0.09299880989733257,
+          "z": 0,
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "z": 0,
+        },
+      ],
+      "traceThickness": 0.15,
+      "viaDiameter": 0.3,
+      "vias": [],
+    },
+    {
+      "connectionName": "second",
+      "rootConnectionName": "second",
+      "route": [
+        {
+          "x": -2,
+          "y": 0.08,
+          "z": 0,
+        },
+        {
+          "x": -0.9996632038107305,
+-         "y": 0.1732078357076641,
++         "y": 0.17320783570766413,
+          "z": 0,
+        },
+        {
+          "x": 0.9996632038107305,
+          "y": 0.17320783570766407,
+          "z": 0,
+        },
+        {
+          "x": 2,
+          "y": 0.08,
+          "z": 0,
+        },
+      ],
+      "traceThickness": 0.15,
+      "viaDiameter": 0.3,
+      "vias": [],
+    },
+  ]
+
+- Expected  - 2
++ Received  + 2
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/repair03-manufacturing-A39/tests/broad-repulsion-contact-ties.test.ts:27:20)
+(fail) broad repulsion keeps the established contact choice for equal distances [4.31ms]
+
+tests/dataset01-circuit143-exact-repair.test.ts:
+(pass) repairs the exact dataset01 circuit143 DRC chain without broad fallback [83.49ms]
+
+tests/via-layer-span.test.ts:
+(pass) separates route spans from physical drill spans [0.12ms]
+
+tests/broad-repulsion-trace-pad-width.test.ts:
+(pass) broad pad repulsion uses the actual trace copper width [0.54ms]
+
+tests/broad-repulsion-via-pad-diameter.test.ts:
+(pass) broad pad repulsion uses each via's actual copper diameter [0.21ms]
+
+tests/autorouting-drc-via-span-pad.test.ts:
+(pass) checks via-to-pad clearance on intermediate layers only within the span [0.15ms]
+
+tests/smoke.test.ts:
+(pass) solves in a single step [0.10ms]
+(pass) improves routes when a DRC evaluator reports conflicts [0.25ms]
+
+tests/single-trace-obstacle-topology-repair.test.ts:
+(pass) repairs a low-count trace-to-obstacle conflict with a topology detour [0.76ms]
+
+tests/smt-pad-terminal-layer-escape.test.ts:
+(pass) visualizes a terminal trace trapped against foreign SMT pads [5.79ms]
+
+tests/trace-layer-phase-via-pad-selection.test.ts:
+(pass) keeps trace-layer improvements for via-pad repair without accepting via-trace regressions [1.29ms]
+
+tests/broad-repulsion-via-trace-clearance.test.ts:
+(pass) broad repulsion preserves via-to-trace clearance while escaping pads [10.86ms]
+
+tests/drc-snapshot-centered-errors.test.ts:
+(pass) external DRC snapshots preserve location-aware errors [1.44ms]
+
+tests/same-root-via-site-collection.test.ts:
+(pass) root-scoped via collection retains ordered live groups and shared-site boundaries [1038.09ms]
+
+tests/srj18-sample9-pad-repair.test.ts:
+(pass) repairs SRJ18 sample 9 with original pads and safe layer transitions [1274.61ms]
+
+tests/terminal-via-trace-paired-repair.test.ts:
+(pass) preserves terminal-aware movement after paired via-trace repair [1.24ms]
+
+tests/drc-force-detour-via-indices.test.ts:
+(pass) preserves a via when a preceding terminal detour shifts its point indices [1.14ms]
+
+tests/trace-pair-detour-search-budget.test.ts:
+(pass) bounds detour search when an exact trace pair cannot be resolved [4.54ms]
+
+tests/high-count-portfolio-order.test.ts:
+(pass) runs broad repair before exhaustive safe-layer search for high DRC counts [2.62ms]
+
+tests/targeted-same-net-via-clearance.test.ts:
+(pass) canonicalizes same-net vias only in exact targeted repair [0.33ms]
+(pass) canonicalizes an untagged stitching endpoint without moving a PCB terminal [0.10ms]
+(pass) prioritizes exact same-net via canonicalization over a trace repair [0.22ms]
+
+tests/targeted-trace-pair-detour.test.ts:
+(pass) repairs an exact trace pair in the safe topology phase [0.69ms]
+
+tests/unconditional-via-pad-portfolio.test.ts:
+(pass) repairs a via-to-pad error without a caller-controlled flag [0.18ms]
+
+tests/collect-via-node-groups.test.ts:
+(pass) collects terminal and repeated via groups without changing route inputs [0.16ms]
+
+tests/safe-trace-layer-move.test.ts:
+(pass) moves terminal-reaching trace transitions outside connected pads [2.97ms]
+(pass) reuses existing transitions around an internal trace conflict [0.37ms]
+
+tests/broad-repulsion-minimum-width-stability.test.ts:
+(pass) broad pad repulsion uses the minimum-width geometry without floating-point reassociation [0.31ms]
+
+tests/solver-iteration-budget.test.ts:
+(pass) scales max iterations with initial DRC error count [0.14ms]
+(pass) honors explicit max iterations over DRC-scaled budget [0.09ms]
+(pass) stops after two DRC-count plateau checks [0.20ms]
+(pass) does not plateau-stop high DRC boards before broad fallback window [3.55ms]
+(pass) stops large-route boards after repeated broad fallback misses [18.68ms]
+
+tests/broad-repulsion-wide-trace-pad-query.test.ts:
+(pass) broad pad repulsion uses the actual trace copper width across spatial buckets [0.45ms]
+
+tests/convert-hd-via-span.test.ts:
+(pass) HD conversion expands a four-layer via span using the actual stack [0.64ms]
+
+tests/autorouting-drc-same-net-pad-policy.test.ts:
+(pass) explicit physical same-net via-to-pad clearance preserves legacy default [0.26ms]
+
+tests/broad-fallback-option.test.ts:
+(pass) can skip speculative broad-force candidates [0.68ms]
+
+tests/targeted-clearance-sweep.test.ts:
+(pass) repairs multiple exact geometry errors in one accepted sweep [0.29ms]
+(pass) can preserve an already clean route without post-solve relaxation [0.05ms]
+(pass) rejects post-solve relaxation that introduces a DRC error [0.45ms]
+
+tests/trace-topology-detour-helpers.test.ts:
+(pass) creates bounded same-layer span and waypoint detours [0.46ms]
+
+tests/autorouting-drc-engine.test.ts:
+(pass) matches the relaxed reference checks for autorouting collision types [1.44ms]
+(pass) classifies close via pairs by canonical SRJ net [0.22ms]
+(pass) uses an injected connectivity map for equivalent net identifiers [0.10ms]
+(pass) uses the spatial broad phase instead of comparing every trace pair [0.67ms]
+(pass) the repair solver uses an injected AutoroutingDrcEngine [0.17ms]
+
+tests/targeted-via-trace-clearance.test.ts:
+(pass) repairs an exact via-trace pair when its reported center is distant [0.12ms]
+(pass) opts into promoted via-owner targeting while retaining the legacy default [0.14ms]
+(pass) keeps raw engine trace-via errors on the primary segment route [0.17ms]
+
+tests/targeted-trace-pair-clearance.test.ts:
+(pass) separates the exact trace pair encoded by a checks error id [0.07ms]
+
+tests/autorouting-drc-engine-via-pad-clearance.test.ts:
+(pass) detects different-net via-to-pad clearance [0.10ms]
+(pass) reports via-to-pad errors while legacy DRC errors remain [0.17ms]
+
+tests/targeted-different-net-via-clearance.test.ts:
+(pass) prioritizes different-net via clearance over a trace topology repair [0.21ms]
+(pass) limits different-net via priority so trace topology still progresses [0.28ms]
+
+tests/solver-boundary-guards.test.ts:
+(pass) does not push an obstacle-repair segment run outside board outline [0.44ms]
+(pass) does not push a near-edge trace segment closer to the board boundary [0.13ms]
+(pass) clips outward via motion and keeps tangential slide near the boundary [0.10ms]
+(pass) does not let a trace jump into the board-edge zone in one move [0.22ms]
+
+tests/force-improvement-best-effort.test.ts:
+(pass) force improvement and its branch portfolio are best effort [0.21ms]
+
+tests/routes-only-drc-evaluator.test.ts:
+(pass) routes-only evaluators skip net normalization and retain repair trace ownership [0.32ms]
+(pass) default evaluators retain fresh normalized input and live connectivity changes [0.18ms]
+(pass) a falsy routes-only result preserves normalized engine and reference fallback [0.74ms]
+(pass) portfolio legacy input mode follows the currently selected evaluator [0.20ms]
+
+tests/via-in-pad-drc.test.ts:
+(pass) terminal via relocation moves a surface escape span onto the inner layer [0.84ms]
+(pass) via-in-pad layer move lowers full DRC on a terminal route [0.53ms]
+(pass) via-in-pad repairs require the drill to fit inside the terminal pad [0.10ms]
+(pass) the branch portfolio runs via-in-pad repair as its final phase [0.54ms]
+
+tests/autorouting-drc-fixed-copper-role.test.ts:
+(pass) same-net land enforcement distinguishes fixed wire reservations and still checks foreign copper [0.32ms]
+
+tests/autorouting-drc-engine-connmap-canonical-alias.test.ts:
+(pass) connMap net ids canonicalize full and partial SRJ alias groups [1.16ms]
+
+tests/layer-compatible-trace-obstacle-repair.test.ts:
+(pass) repairs the obstacle-layer segment when a wrong-layer segment is nearer [0.86ms]
+
+tests/autorouting-drc-via-endpoint-span.test.ts:
+(pass) DRC checks forward and reversed via endpoint spans identically [0.25ms]
+
+tests/autorouting-drc-engine-edge-cases.test.ts:
+(pass) does not report crossings on different copper layers [0.10ms]
+(pass) does not report same-net trace crossings or same-net pads [0.07ms]
+(pass) applies the reference DRC tolerance at the clearance boundary [0.06ms]
+(pass) reports the worst contact when a trace pair contacts more than once [0.06ms]
+(pass) does not report two vias at the exact same location [0.06ms]
+(pass) does not miss reference errors across randomized route geometry [56.83ms]
+
+tests/drc-branch-portfolio-incumbent.test.ts:
+(pass) keeps an accepted safe-layer candidate when a later broad branch only ties it [3.03ms]
+
+tests/sparse-route-candidate-copy.test.ts:
+(pass) copies and materializes only affected candidate routes [0.06ms]
+
+tests/drc-branch-portfolio-regression.test.ts:
+(pass) keeps the baseline when the broad candidate has more DRC errors [12.83ms]
+
+tests/drc-branch-portfolio.test.ts:
+(pass) uses a broad branch only when it lowers the exact DRC count [3.62ms]
+
+tests/targeted-via-pad-clearance.test.ts:
+(pass) moves only the via reported by a via-to-pad clearance error [0.28ms]
+(pass) does not trade a via-to-pad error for a pre-existing DRC type [0.09ms]
+(pass) repairs legacy DRC errors before newly detected via-to-pad errors [0.09ms]
+(pass) does not spend the legacy repair budget on via-to-pad count changes [0.16ms]
+(pass) keeps complete snapshots while prioritizing legacy DRC repairs [0.26ms]
+(pass) preserves worst-contact scoring during the legacy-only repair phase [0.08ms]
+
+tests/spatial-candidate-order.test.ts:
+(pass) bitset candidate enumeration preserves exact ascending spatial indexes [1116.20ms]
+
+1 tests failed:
+(fail) broad repulsion keeps the established contact choice for equal distances [4.31ms]
+
+ 112 pass
+ 1 fail
+ 28845 expect() calls
+Ran 113 tests across 65 files. [4.20s]

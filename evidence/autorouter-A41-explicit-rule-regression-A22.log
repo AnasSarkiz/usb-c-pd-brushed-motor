@@ -1,0 +1,12 @@
+bun test v1.4.2 (744846f84)
+
+tests/pipeline7-no-via-in-pad-policy.test.ts:
+(pass) Pipeline7 explicit no-via-in-pad policy enforces connected-pad clearance [12.68ms]
+
+tests/pipeline7-configured-copper-clearance.test.ts:
+(pass) Pipeline7 repair honors explicit copper clearance above its legacy minimum [3.45ms]
+
+ 2 pass
+ 0 fail
+ 8 expect() calls
+Ran 2 tests across 2 files. [617.00ms]

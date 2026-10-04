@@ -1,0 +1,16 @@
+bun pack v1.4.2 (744846f84)
+
+packed 7.72KB package.json
+packed 1.1KB LICENSE
+packed 9.27KB README.md
+packed 0.31MB dist/index.d.ts
+packed 3.12MB dist/index.js
+packed 15.44MB dist/index.js.map
+
+/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/tscircuit-capacity-autorouter-0.0.960-a41.tgz
+
+Total files: 6
+Shasum: 8b4301f7ca80341d258df7e34b080828ca2d0e06
+Integrity: sha512-11T7hSTpImWj0[...]sLWvwK6zkvrog==
+Unpacked size: 18.89MB
+Packed size: 3.70MB

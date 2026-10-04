@@ -1,0 +1,25 @@
+import { expect, test } from "bun:test"
+import { any_circuit_element, pcb_hole } from "circuit-json"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("standalone mounting holes omit an absent component association", () => {
+  const { circuit } = getTestFixture()
+  circuit.add(
+    <board width="30mm" height="20mm" routingDisabled>
+      <hole diameter="3.2mm" pcbX={-10} pcbY={5} />
+      <hole shape="rect" width="2mm" height="1mm" pcbX={10} pcbY={5} />
+      <hole shape="oval" width="3mm" height="1mm" pcbX={-10} pcbY={-5} />
+      <hole shape="pill" width="3mm" height="1mm" pcbX={10} pcbY={-5} />
+      <pcbnotetext text="Four native NPTH mounting holes" pcbY={0} />
+    </board>,
+  )
+  circuit.render()
+  expect(circuit.db.pcb_hole.list()).toHaveLength(4)
+  for (const hole of circuit.db.pcb_hole.list()) {
+    expect(hole.pcb_component_id).toBeUndefined()
+    pcb_hole.parse(hole)
+  }
+  for (const element of circuit.getCircuitJson())
+    any_circuit_element.parse(element)
+  expect(circuit).toMatchPcbSnapshot(import.meta.path)
+})

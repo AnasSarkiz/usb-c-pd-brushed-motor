@@ -1,0 +1,74 @@
+{
+  "reviewedOn": "2026-10-04",
+  "artifactSha256": "3a2ebba27de9793260f8dfc20b3d75900ee324a0e797ae6f7e9b3160e7de03b1",
+  "modelBaselineArtifactSha256": "2154d1fabbbb878543f4a1128380edc76300aaaadc9ab5e6c4a76d4be479615a",
+  "glbSha256": "a8bee5da558157612d3b389cf87a6d717f44d72550edf27e39923aa40c9b273b",
+  "currentConnectorRecordsMatchReviewedBaseline": true,
+  "exporterCoordinateMapping": "PCB(x,y,z) = (-GLB.x, GLB.z, GLB.y)",
+  "visualReview": "Native 3D viewer: USB mouth outward from left edge; both motor wire openings outward from right edge; top screw access clear. Rotated isometric and connector-facing views inspected.",
+  "connectors": [
+    {
+      "reference": "J1",
+      "supplierCodes": [
+        "C165948"
+      ],
+      "pcbCenterMm": {
+        "x": -34.42504355,
+        "y": 4
+      },
+      "pcbCcwRotationDegrees": 270,
+      "cadRotationDegrees": {
+        "x": 0,
+        "y": 0,
+        "z": 90
+      },
+      "modelObjUrl": "https://modelcdn.tscircuit.com/easyeda_models/assets/C165948.obj?uuid=617b05f9bba7410b96c001093d8189e4&cachebust_origin=",
+      "minimumPcbXyzMm": [
+        -39.77507254169922,
+        -0.4699997901916504,
+        -0.05001099109649654
+      ],
+      "maximumPcbXyzMm": [
+        -31.875072446331785,
+        8.46999979019165,
+        4.050988960266113
+      ],
+      "vertices": 56220,
+      "outwardFaceInsetFromBoardEdgeMm": 0.2249274583007832,
+      "openingDirectionObservedInNativeViewer": "negative_x",
+      "mechanicalFingerprintSha256": "48485c845729b7f559b8c71ecb6882724c62e90169e444b0c4ecacd6055c5849"
+    },
+    {
+      "reference": "J2",
+      "supplierCodes": [
+        "C395849"
+      ],
+      "pcbCenterMm": {
+        "x": 34.099949,
+        "y": 8.000126999999999
+      },
+      "pcbCcwRotationDegrees": 90,
+      "cadRotationDegrees": {
+        "x": 0,
+        "y": 0,
+        "z": 270
+      },
+      "modelObjUrl": "https://modelcdn.tscircuit.com/easyeda_models/assets/C395849.obj?uuid=6da7a3e4055f4f749492a0377ad92fa1&cachebust_origin=",
+      "minimumPcbXyzMm": [
+        30.214909670471194,
+        2.5913473788757315,
+        -2.6999930858612062
+      ],
+      "maximumPcbXyzMm": [
+        38.01490962278748,
+        13.009161633636474,
+        11.000008392333985
+      ],
+      "vertices": 33048,
+      "outwardFaceInsetFromBoardEdgeMm": 1.9850903772125221,
+      "openingDirectionObservedInNativeViewer": "positive_x",
+      "mechanicalFingerprintSha256": "b150bc99a119b600a71099f273371e305d6bd07af4f83306de0ac89990acd746"
+    }
+  ],
+  "limitations": "Mesh extents and visual orientation are checked. Plug overmold, wire insertion, enclosure and actual supplier sample fit require physical tests. J1 has a separate unresolved land-spacing blocker; this model review does not approve its footprint."
+}

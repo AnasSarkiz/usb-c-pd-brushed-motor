@@ -1,0 +1,10 @@
+{
+  "code": "C970566",
+  "artifactSha256": "4b14074ec4887381067d864294b1bc8adc2310c20c3b389e7c73d0e4ba91d0ea",
+  "sourcePorts": 10,
+  "pads": 6,
+  "platedHoles": 4,
+  "schemaNotYetReviewed": true,
+  "foreignCopperIssues": [],
+  "nativeErrors": []
+}

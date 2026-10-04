@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "package": "@tscircuit/core",
+      "path": "package.json",
+      "sha256": "1e3591bbd5c3704d243046c3b6ba3c8c7d8d520954130690205f229efc270281",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "@tscircuit/core",
+      "path": "dist/index.js",
+      "sha256": "2069a7f5ead9563c4e99749768a483a5fe574f0257ed0416d7504f4a27a541bf",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "@tscircuit/core",
+      "path": "dist/index.d.ts",
+      "sha256": "99985f58ac92bde50b837f923d5d21d458d16088810891371c9df24f9b2df415",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "@tscircuit/core",
+      "tarball": "tooling/tscircuit-core-0.0.2091-a41.tgz",
+      "sha256": "171f104768cf6be3259a7ef9ba9bb1b5bae79c6cf7eb7f1ed4cd4b05b07c6581"
+    },
+    {
+      "package": "@tscircuit/capacity-autorouter",
+      "path": "package.json",
+      "sha256": "8850beff1dab25d6a11289d6ded95c2576cf8e249b0cf9edecb615662d93b643",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "@tscircuit/capacity-autorouter",
+      "path": "dist/index.js",
+      "sha256": "4fc99536462c57d3064699d100933b086cdf396289a03c67ff620d874d6d46db",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "@tscircuit/capacity-autorouter",
+      "path": "dist/index.d.ts",
+      "sha256": "3f9de7df3d13e50998fd7fd655d91436fbb38a371fcf11655d356ececf906b6f",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "@tscircuit/capacity-autorouter",
+      "tarball": "tooling/tscircuit-capacity-autorouter-0.0.960-a41.tgz",
+      "sha256": "7f6ef0301fae52b8f96d8d85027445e17446e667c76a042e6942acf154220c83"
+    },
+    {
+      "package": "high-density-repair03",
+      "path": "package.json",
+      "sha256": "1eeaf7555567df6e9f6510ec0ad060d7c9ffcb294133e444f81dc5e90e34fcff",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "high-density-repair03",
+      "path": "types/srj-types.ts",
+      "sha256": "e556719e8d78179d184f3a5c0d89eed26c191c939f090fd90a1758971cdc35fc",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "high-density-repair03",
+      "path": "lib/drc/AutoroutingDrcEngine.ts",
+      "sha256": "34a345b70bd68e8016493b64c246760f187a35a1327e56da5a82c21ee09d20c7",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "high-density-repair03",
+      "path": "lib/solvers/GlobalDrcForceImproveSolver/findPadClearanceViaPosition.ts",
+      "sha256": "327ef77a3a0f5ab32133a354c6088f40b59ee3182127d1b619259d9a0fb67ee5",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "high-density-repair03",
+      "path": "lib/solvers/GlobalDrcForceImproveSolver/solverHelpers.ts",
+      "sha256": "ae24d21abdf7aad854e809591dc17221b5817fc5301d51c49b46e581c119d945",
+      "sourcePackedInstalledEqual": true
+    },
+    {
+      "package": "high-density-repair03",
+      "path": "utils/connection-point-utils.ts",
+      "sha256": "698943f52cd5f5e50904625805b62ec8a0db05b2ef5eac32cdd88f57c8dd95cb",
+      "sourcePackedInstalledEqual": true
+    }
+  ],
+  "benchmarks": "Capacity Blacksmith benchmark tools are unavailable in this session; no local substitute benchmark is claimed."
+}

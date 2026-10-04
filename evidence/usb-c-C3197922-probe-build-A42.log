@@ -1,0 +1,15 @@
+Building 1 file(s)...
+Building .cache/usb-c-candidates-A42/C3197922/index.circuit.tsx...
+Generating circuit JSON...
+error: Cannot find module '../../../..//imports/A_2171750001' from '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/.cache/usb-c-candidates-A42/C3197922/index.circuit.tsx'
+Fatal error [circuit_generation_failed]: Cannot find module '../../../..//imports/A_2171750001' imported from /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/.cache/usb-c-candidates-A42/C3197922/index.circuit.tsx
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

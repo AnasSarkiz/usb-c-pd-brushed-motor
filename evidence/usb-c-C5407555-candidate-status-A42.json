@@ -1,0 +1,18 @@
+{
+  "part": "C5407555",
+  "model": "Amphenol 10164359-00011LF",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Supplier-code import fails. Exact-MPN query imports unrelated C4550712/MAX4081SAUA+; rejected. Current manufacturer page rates30V/3A, but linked2017 family specification rates20V; not resolved and no model accepted.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C5407555-import-A42.log",
+      "sha256": "9e4fbf129550bd18ff64211c8773cce778c66f3a3312a4e782ab2c4e00d58c72"
+    },
+    {
+      "path": "evidence/usb-c-C5407555-mpn-import-A42.log",
+      "sha256": "72addbafbbf96b1789334166995d385ac74026b767b96692f560f535bd8ac7f2"
+    }
+  ]
+}

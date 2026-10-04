@@ -1,0 +1,9 @@
+{
+  "part": "C54829840",
+  "reviewedOn": "2026-10-04",
+  "adoptedOnBoard": false,
+  "status": "not approved",
+  "issue": "Exact supplier-code import fails: model not found in EasyEDA.",
+  "importLog": "evidence/usb-c-C54829840-import-A42.log",
+  "importLogSha256": "da7a0d7741b1790d98dd3efc1bf4ebef6ee920ea5915c97d2b0acc761773ad44"
+}

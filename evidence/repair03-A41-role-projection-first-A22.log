@@ -1,0 +1,28 @@
+bun test v1.4.2 (744846f84)
+
+tests/no-via-in-pad-terminal-projection.test.ts:
+(pass) explicit no-via-in-pad policy applies configured clearance to connected lands [1.99ms]
+
+tests/autorouting-drc-same-net-pad-policy.test.ts:
+(pass) explicit physical same-net via-to-pad clearance preserves legacy default [3.67ms]
+
+tests/autorouting-drc-fixed-copper-role.test.ts:
+11 |   ] }]
+12 |   for (const isCopperTrace of [undefined, false, true]) {
+13 |     for (const obstacleNet of ["signal", "foreign"]) {
+14 |       const srj: SimpleRouteJson = { bounds: { minX: -2, maxX: 2, minY: -2, maxY: 2 }, layerCount: 2, minTraceWidth: .2, minViaEdgeToPadEdgeClearance: .2, connections: [{ name: "signal", pointsToConnect: [] }], obstacles: [{ type: "rect", isCopperTrace, layers: ["top"], center: { x: 0, y: 0 }, width: .2, height: .2, connectedTo: ["pcb_port_shared", obstacleNet] }] }
+15 |       const result = new AutoroutingDrcEngine(srj, { enforceSameNetViaToPadClearance: true }).evaluate(traces)
+16 |       expect(result.errors).toHaveLength(isCopperTrace && obstacleNet === "signal" ? 0 : 1)
+                                 ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 1
+Received length: 2
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/repair03-manufacturing-A39/tests/autorouting-drc-fixed-copper-role.test.ts:16:29)
+(fail) same-net land enforcement distinguishes fixed wire reservations and still checks foreign copper [8.02ms]
+
+ 2 pass
+ 1 fail
+ 14 expect() calls
+Ran 3 tests across 3 files. [51.00ms]

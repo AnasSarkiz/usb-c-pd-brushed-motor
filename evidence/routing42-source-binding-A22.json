@@ -1,0 +1,914 @@
+{
+  "revision": "A22 revision42 unrouted WIP; connector orientation reviewed; current copper prerequisite fails5 J1 land gaps",
+  "artifact_preroute_sha256": "3a2ebba27de9793260f8dfc20b3d75900ee324a0e797ae6f7e9b3160e7de03b1",
+  "records": [
+    {
+      "path": ".gitattributes",
+      "sha256": "388f810e8b73642cb9a85c2072c3da521fbc80d8b789174ddc95530c63b59350"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "1d691808e406a96718eb882542cbdc3e8b403d11d5a2ae589150603e920c05d8"
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "47bea03a17253a711662154c81f2ad6b7a4d944755e35860e4684a0056c415f5"
+    },
+    {
+      "path": "circuit/EnergyDump.tsx",
+      "sha256": "9c144f2340a4f38555e53c16b2689f024e42c54d2408c521d5df837193f4c7fe"
+    },
+    {
+      "path": "circuit/InputProtection.tsx",
+      "sha256": "8d31cf52e3e48fb3bd7e2ad831f87cbdb41fb58c384a0a23644c48c5986a496a"
+    },
+    {
+      "path": "circuit/LogicPadEscapes.tsx",
+      "sha256": "fa4eac333cc93b2d59b9df8ad169d08df726075ba0809c54d84d3912ebb7e926"
+    },
+    {
+      "path": "circuit/McuPadEscapes.ts",
+      "sha256": "8841496ea4a3466dfced2bc76b4a884e49966afda661f52596024fe7fd08a59f"
+    },
+    {
+      "path": "circuit/MechanicalFeatures.tsx",
+      "sha256": "e829cbdd1ab35562685846abab9e4465dfe653bb2b30bf630e440ccc464b6bb5"
+    },
+    {
+      "path": "circuit/MotorBridge.tsx",
+      "sha256": "b7caeabc3d66792d0908d506d6a5ecdc5ebadd8fcd3c2a6a1cbe0d7b4d2dcf2c"
+    },
+    {
+      "path": "circuit/MotorSupply.tsx",
+      "sha256": "c445e243c7e2b3d6364146fe48c6a5bcf06e6bc5351311bfc17790f3d88dc744"
+    },
+    {
+      "path": "circuit/PdQualification.tsx",
+      "sha256": "63b36bbbaa753d2c9e962cb761397e63a420ab9f2041adde0e08839eb5615c30"
+    },
+    {
+      "path": "circuit/PinBreakouts.tsx",
+      "sha256": "acd8d57ab4062a60df292f398d1bb5347f1ad0183fa71477564b8ef8a7c865d7"
+    },
+    {
+      "path": "circuit/PowerRouting.tsx",
+      "sha256": "b00c303781e5c0bdfc19c559931fca202771002871d1272bfabb772e4c170a47"
+    },
+    {
+      "path": "circuit/PwmControls.tsx",
+      "sha256": "025f9e68e82258d903c2416371ad1005863567c59e15a0c34f5cad306caeafa6"
+    },
+    {
+      "path": "circuit/RailProtection.tsx",
+      "sha256": "515015940d3f3608800112ee5592f75546b485f3c3c24209ce486ebe9c9d5c9f"
+    },
+    {
+      "path": "circuit/RoutingNets.tsx",
+      "sha256": "681eb76e8f3d2319782c34a7dc401834c73a1e0c783b4c0da54b3257497afbf8"
+    },
+    {
+      "path": "circuit/UsbInput.tsx",
+      "sha256": "08c678b1b7e57d78d49bf6a5b83b456e607f79001c988f9920056c09c16f3239"
+    },
+    {
+      "path": "circuit/product-placement.ts",
+      "sha256": "78a7dbf5885411081f8bfd7c6ded8c8f68c43d81a4aef94d1b1efcdb0d82aa6d"
+    },
+    {
+      "path": "circuit/underside-label-offsets.ts",
+      "sha256": "c199cd8e98a86c396e7499e88a8e34162da86e3b14c67d273c0a6a3dbb9901d8"
+    },
+    {
+      "path": "imports/ADR421ARZ_REEL7.tsx",
+      "sha256": "885270ea5812382d25aa19c1965f674034896115d1712873c27b74692c466ab9"
+    },
+    {
+      "path": "imports/AO3400A.tsx",
+      "sha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6"
+    },
+    {
+      "path": "imports/AP2204K_5_0TRG1.tsx",
+      "sha256": "ac7839a8eec5ae6a633fbcbb2d77453c244b50c33de1ac69b3c5e0abb7a5b946"
+    },
+    {
+      "path": "imports/APSG250ELL331MJB5S.tsx",
+      "sha256": "f53fcdb64f2fd23313179b5a52af1b13a8e767a905b626a1ab78d97eaf5a6520"
+    },
+    {
+      "path": "imports/AT0603BRD07100KL.tsx",
+      "sha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99"
+    },
+    {
+      "path": "imports/A_0402WGF3301TCE.tsx",
+      "sha256": "3b9cf6de2088a252c5e3da65ae3d9667df8fd38602f47bcc99def2f0dada2731"
+    },
+    {
+      "path": "imports/A_0603B103K500NT.tsx",
+      "sha256": "f94d58f906b97c568d280edac96a7c06c35ce0b7165db8fefc50cdb9a977abef"
+    },
+    {
+      "path": "imports/A_0603WAF1000T5E.tsx",
+      "sha256": "3438363e6c15be8a308923b2c96c7dd4a845595f04db3c47bbb306949b070637"
+    },
+    {
+      "path": "imports/A_0603WAF1001T5E.tsx",
+      "sha256": "5902e8307dd04e282fc33a5c3a8637a05b4bc0c6265ec150b6acc1e2dd8cfdfb"
+    },
+    {
+      "path": "imports/A_0603WAF1002T5E.tsx",
+      "sha256": "5bdb2b8ab1b18c4f68d790341f6d7046e10705ee9e9817e771556e67dfc791b3"
+    },
+    {
+      "path": "imports/A_0603WAF1003T5E.tsx",
+      "sha256": "03a087ff0e23fdbfbb78619d3019aa2d705a0a18edf8f5775a2ad35736129777"
+    },
+    {
+      "path": "imports/A_0603WAF1004T5E.tsx",
+      "sha256": "8bfdabf9cf75e71e43a99391224c435e7479bfe2f93e568790d217ec6826f929"
+    },
+    {
+      "path": "imports/A_0603WAF1053T5E.tsx",
+      "sha256": "6f530f03254210be28f4e38106f30ea47b76567542fb68f6bb12fc759cd28663"
+    },
+    {
+      "path": "imports/A_0603WAF1102T5E.tsx",
+      "sha256": "e52692c9e5924cd71491838f6bd50920b881d6fe1b243d75bb717affc40651f5"
+    },
+    {
+      "path": "imports/A_0603WAF1103T5E.tsx",
+      "sha256": "071851efb71bc4068ea0e62c838dc239b5897fb1abbd76b1297549e59289fb33"
+    },
+    {
+      "path": "imports/A_0603WAF1202T5E.tsx",
+      "sha256": "ab5764c0cdd81a1b6114f7728a2a090ab236eca3b37687d1e1d8e856b8f36695"
+    },
+    {
+      "path": "imports/A_0603WAF1302T5E.tsx",
+      "sha256": "83263fd00787d5809133c992d3413943e680e9e5787ca4df8ed0b25183845ea7"
+    },
+    {
+      "path": "imports/A_0603WAF1623T5E.tsx",
+      "sha256": "cffc68d597f9996543e2183ef0e0af30581079956d933a7004f2e1a79642a089"
+    },
+    {
+      "path": "imports/A_0603WAF2001T5E.tsx",
+      "sha256": "251cc9030dc8096b74016eb21a07bb8f28f15a7210499c4673a242a88aa57077"
+    },
+    {
+      "path": "imports/A_0603WAF2002T5E.tsx",
+      "sha256": "75957bbcc45f275e2a0560bd86b246d8c6a223144936821aec5a351074a5cdef"
+    },
+    {
+      "path": "imports/A_0603WAF2102T5E.tsx",
+      "sha256": "b42069dd4e1311c8f6eb6947ea81dc4356c8b4432ebb816919221643bec14c22"
+    },
+    {
+      "path": "imports/A_0603WAF2431T5E.tsx",
+      "sha256": "315a69936a48338c7c9c0932b2dd0cdf4e222cb3b2c828454ebcd7748c5153e0"
+    },
+    {
+      "path": "imports/A_0603WAF2432T5E.tsx",
+      "sha256": "e2d131b6fa2f079c304acaddf974d6db365ee6448b012b75663bf1a92b15732b"
+    },
+    {
+      "path": "imports/A_0603WAF2612T5E.tsx",
+      "sha256": "c785f9538f33103fdca1a79e88ebcbcd73750a3bb794bb2686dc9fb2874fef90"
+    },
+    {
+      "path": "imports/A_0603WAF2702T5E.tsx",
+      "sha256": "fd8a8ace33b6046e96b7700fa2b4791bf6c0e177eadc9bfa3ef3812dc9fead22"
+    },
+    {
+      "path": "imports/A_0603WAF3242T5E.tsx",
+      "sha256": "ec4a9f97616913ac3b7293dfd266bca1b6d69c083f9e854da9bce04796b1033d"
+    },
+    {
+      "path": "imports/A_0603WAF3300T5E.tsx",
+      "sha256": "942c41cd7d58ee6a0290f6a090277c2b9a2875c50dd9465edaa5aedac91026e6"
+    },
+    {
+      "path": "imports/A_0603WAF4701T5E.tsx",
+      "sha256": "7d47f4ea58f80777dd9d5c5eadd4332639c687c11e320a7223ba12983b59d109"
+    },
+    {
+      "path": "imports/A_0603WAF5101T5E.tsx",
+      "sha256": "27f22e23e54192f5bac6a357c2a79509f81007988352553e78c8a44833805070"
+    },
+    {
+      "path": "imports/A_0603WAF5601T5E.tsx",
+      "sha256": "4fc51b69b0c553deda3765b36ff299061f1fcbc5b19b8efa16b54ee95247a4dc"
+    },
+    {
+      "path": "imports/A_0603WAF5622T5E.tsx",
+      "sha256": "2831fbf310cae85fb0c91614d3e78d255693d9a069b9e126ba1829ce33ac3455"
+    },
+    {
+      "path": "imports/A_0603WAF6801T5E.tsx",
+      "sha256": "d03e86729be7163f725aa25dc24c47ac1f0b8bee1140214a16219951f94d8e99"
+    },
+    {
+      "path": "imports/A_0603WAF6981T5E.tsx",
+      "sha256": "ffdcc9d4f748b20bc7d60213769060137d54146c130a979a431bc42671ee6850"
+    },
+    {
+      "path": "imports/A_0603WAF7151T5E.tsx",
+      "sha256": "16f78e179f033163bcd8d34b4702d3c87e2a31f34b22ce9823e5f63056e110a3"
+    },
+    {
+      "path": "imports/A_0603WAF8062T5E.tsx",
+      "sha256": "3829630316f288feaa59050b170b7a579d0949c137199a56b7d1354a7f4b1388"
+    },
+    {
+      "path": "imports/A_0603WAF8201T5E.tsx",
+      "sha256": "b6996ae9d005cbddee3b38055afab6348b131b3a26696299156bdad4ddfd07a8"
+    },
+    {
+      "path": "imports/A_0603WAF820JT5E.tsx",
+      "sha256": "62186e22b861469d9b5e80ef77d39960bc9fe264880148a5de5154f66a8a6650"
+    },
+    {
+      "path": "imports/A_08053D226MAT2A.tsx",
+      "sha256": "39c4cf956e43feb53853a37ecda0ccd708aa82af90a839d34de420ecda11d4a8"
+    },
+    {
+      "path": "imports/A_1103M2S3CQE2.tsx",
+      "sha256": "3f9eb63632e1e4f48b857a958f3496424cdb931284946ef20a1cdb98959eca3c"
+    },
+    {
+      "path": "imports/A_118EC333.tsx",
+      "sha256": "a7a87c288a126831d3d12bf2f698071d0f92a8a3ba217f8a52ce5392c51d8a0c"
+    },
+    {
+      "path": "imports/A_1210B473K501CT.tsx",
+      "sha256": "6863c6c98d569be4734fabb0ea28e2490e9824faf605e6d06d951193b24a9a60"
+    },
+    {
+      "path": "imports/A_19_213_BHC_AP1Q2_3T.tsx",
+      "sha256": "5375392b1df083f0742b381f8fc942f2fc18072188f0965da980f35830f81cf3"
+    },
+    {
+      "path": "imports/A_19_217_G7C_AN1P2_6T.tsx",
+      "sha256": "c2bafbbedfc255df5e274606ff00eac4347fd9549fef10bf4b2686c53f75d69f"
+    },
+    {
+      "path": "imports/A_1MS3T1B1M2QES_5.tsx",
+      "sha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de"
+    },
+    {
+      "path": "imports/A_1N4148W.tsx",
+      "sha256": "da33325e0227d616476868a31a63b7d51fce36aae5aebb20e58992378c7418da"
+    },
+    {
+      "path": "imports/A_25SVPF100M.tsx",
+      "sha256": "02a6afbbcb25469004ba5802b820840166784726ce89e4a306af630357391b39"
+    },
+    {
+      "path": "imports/A_25SVPF330M.tsx",
+      "sha256": "5abdba99b8c0c0f803a60ea1e47781a1d19fbf26f20d4514f13e73a072fbe07a"
+    },
+    {
+      "path": "imports/A_2MS3T1B1M1QES_5.tsx",
+      "sha256": "3ed81c46f5ec47461764dea2ebc3e0eef1ddb339f392a4ab5301c3d9a7a32b48"
+    },
+    {
+      "path": "imports/A_35SVPK330M.tsx",
+      "sha256": "81434531148c497612f0806dba8f336433d326a695d969beeed2eb408cec7987"
+    },
+    {
+      "path": "imports/A_5015.tsx",
+      "sha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8"
+    },
+    {
+      "path": "imports/B5819W_SL.tsx",
+      "sha256": "7a11383d915188d9ae949f11683e74558f42ec89c962fe61ade095f811d48b4a"
+    },
+    {
+      "path": "imports/BZT52C10.tsx",
+      "sha256": "0343e82f6274fedd7475112549678e9a28cafa45d8fcb2681a906b3096834fd5"
+    },
+    {
+      "path": "imports/BZT52C24.tsx",
+      "sha256": "8ae660a88c78bbeaceb386fc84c54cd61f462132b0d24e1028d0b93e87230f8b"
+    },
+    {
+      "path": "imports/B_2100S04P_A110.tsx",
+      "sha256": "bd9129ee7253e757bcb161d634bb106a229b3242547559444552dffb37f9ce71"
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104.tsx",
+      "sha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2"
+    },
+    {
+      "path": "imports/CL10A105KB8NNNC.tsx",
+      "sha256": "cf176b8dcffdbecbfb2f5ce69b43a0bf0bced7a5f9264d2ecd78e3e14e9b439a"
+    },
+    {
+      "path": "imports/CL10A475KO8NNNC.tsx",
+      "sha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462"
+    },
+    {
+      "path": "imports/CL10B223KB8NNNC.tsx",
+      "sha256": "9da3dedeadd7fdd03ee32c819841773086149daed2f086c13a36f0ecc74f9cb1"
+    },
+    {
+      "path": "imports/CL10C220JB8NNNC.tsx",
+      "sha256": "41cc61b4d9466ec5f554480830bdf048d1b47fa5fc09c6e9d9427215166a4d56"
+    },
+    {
+      "path": "imports/CL10C331JB8NNNC.tsx",
+      "sha256": "b3cdc21548b9c07a5b5d1bc60e00f70da1a0d643bb6d2063606cb2ad1e3a4f3d"
+    },
+    {
+      "path": "imports/CL21B105KBFNNNE.tsx",
+      "sha256": "8c1aa3942d3210aaa6dcc0b88f4a9bd705c2c46770beb922847c292fdefbfae9"
+    },
+    {
+      "path": "imports/CL31A106KBHNNNE.tsx",
+      "sha256": "4d04352d003f455d74abe0a1c5228c17495162d72a8a8a423919f814e088374b"
+    },
+    {
+      "path": "imports/CL32B106KBJNNNE.tsx",
+      "sha256": "1e82266b998724227ca723578b492d42c2b82bc123c0f5e60a769c9c58abddb0"
+    },
+    {
+      "path": "imports/CRCW060310K0FKEA.tsx",
+      "sha256": "bb8cf3d001fe06c7cf2d1f7db55f7bf0954310500b009a438010f7fcc2cd0eb6"
+    },
+    {
+      "path": "imports/D882_RANGE_160_320_.tsx",
+      "sha256": "5e08b45d3a8247fa9f18689c66fc4e86bcadf39627757098b35b9ecde8c48d77"
+    },
+    {
+      "path": "imports/DB126V_5_0_2P_GN_P.tsx",
+      "sha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0"
+    },
+    {
+      "path": "imports/DRV8874PWPR.tsx",
+      "sha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7"
+    },
+    {
+      "path": "imports/DSHP02TSGER.tsx",
+      "sha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa"
+    },
+    {
+      "path": "imports/ESR18EZPF1001.tsx",
+      "sha256": "5bd8e0a6639e7ac4d34d826219eaf66a58771b5c54028b714707512b8ccfdd76"
+    },
+    {
+      "path": "imports/FRC0603F8062TS.tsx",
+      "sha256": "79c22b89072e89e32e100576490d047452ea9246691698db9316759a1c71f311"
+    },
+    {
+      "path": "imports/GEO_3F_12MS3F.tsx",
+      "sha256": "6fdae0580be5aced47f50d1132bd7ce609c538871d878d643166300a7241b92a"
+    },
+    {
+      "path": "imports/GRM1885C1H562JA01D.tsx",
+      "sha256": "ae57d221c1ca4ea607bbcd93bf844c40ccdfe0a2f5b22ebd8dc95de4da1f121f"
+    },
+    {
+      "path": "imports/GRM21BR71H105KA12L.tsx",
+      "sha256": "02065c55ec3ab96a9a3f305102e3989d52c153723776d6043c62e9cd18ce9fa6"
+    },
+    {
+      "path": "imports/GRM31CR61E476ME44L.tsx",
+      "sha256": "567d871c3c483e2e156691930e842185fc85e758eb6878d32403e22c8486ed1b"
+    },
+    {
+      "path": "imports/KH_SS23D03_G6.tsx",
+      "sha256": "07e3cb54f5996eed030c491d36ca235e06789c034f0ec1ffe40398bca3c7d70f"
+    },
+    {
+      "path": "imports/KH_SS23E06_G8.tsx",
+      "sha256": "c9d3ef2f631f11592ad49edf36463cec838e047dcb7570eeb00ac08a43c0fba4"
+    },
+    {
+      "path": "imports/KH_SS23F06_G6.tsx",
+      "sha256": "8353459f2ede571da7bb9659c730707788e9d30ca4b4581e51630a50bcd222ee"
+    },
+    {
+      "path": "imports/LM358DR2G.tsx",
+      "sha256": "e5cc31ca1a26bbaffc275eadf4174b4acf6d03c157e2ee517d418a96f9f453a0"
+    },
+    {
+      "path": "imports/LM393DR.tsx",
+      "sha256": "5e20beaffa770f57c1fa179ea78b01bcb80522d6afcef13a9606db5f8cbf19db"
+    },
+    {
+      "path": "imports/LMR33630ADDAR.tsx",
+      "sha256": "441e5929ef6edad659201dfa957837380647490e2d08e955a179d2fc1227c688"
+    },
+    {
+      "path": "imports/MHCC10040_8R2M_R7.tsx",
+      "sha256": "12de0c462a2c8eb5be066751305f75721305a15c302f6b3acd0575cc9617d35a"
+    },
+    {
+      "path": "imports/MMBD4148CC.tsx",
+      "sha256": "0533efae818154f386b903030b3ab03763a448095b7e1aeef6635aa345d9746d"
+    },
+    {
+      "path": "imports/MMBT3904.tsx",
+      "sha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab"
+    },
+    {
+      "path": "imports/MMBT3904_RANGE_100_300_.tsx",
+      "sha256": "bf651bf4c7a16e75ddba030c0731b7a252b5ab3a2d41e520e340c9d478c0fe0e"
+    },
+    {
+      "path": "imports/MMBT3906LT1G.tsx",
+      "sha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a"
+    },
+    {
+      "path": "imports/OS103011MS8QP1.tsx",
+      "sha256": "91380f75dc491d2f1b3f4397270604a6f98b145381e00d5cc7cdbc1bf67da58f"
+    },
+    {
+      "path": "imports/PESD24VS2UT_215.tsx",
+      "sha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55"
+    },
+    {
+      "path": "imports/PTV09A_4015F_B103.tsx",
+      "sha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6"
+    },
+    {
+      "path": "imports/RC1206FR_7W1KL.tsx",
+      "sha256": "9d3d0d6b784e6152de826cc9615e5bfae56959049b014ada19c66a8f944039a8"
+    },
+    {
+      "path": "imports/RPL_12K10R0FT.tsx",
+      "sha256": "2438409a625ad7fe574c01aa43f88ad235a40c0af5e2566c64a9048e32b64a87"
+    },
+    {
+      "path": "imports/RT0603BRD0710KL.tsx",
+      "sha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81"
+    },
+    {
+      "path": "imports/RVT1E221M0607.tsx",
+      "sha256": "cf35f51f4ec19d35cfb1787172039aa00de588889459661396a1ea1eda9ce813"
+    },
+    {
+      "path": "imports/SMBJ15CA.tsx",
+      "sha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508"
+    },
+    {
+      "path": "imports/SMBJ22A.tsx",
+      "sha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1"
+    },
+    {
+      "path": "imports/SN74LVC2G08DCUR.tsx",
+      "sha256": "88b100341a691acb27276415bb2fe648acb5426ba41857e8211b663b5ea08d47"
+    },
+    {
+      "path": "imports/SRV05_4_P_T7.tsx",
+      "sha256": "6375b69cd72cd0e7f7e55c0667017e9acde6588696a5fcd87a08e8944694eb93"
+    },
+    {
+      "path": "imports/SS54.tsx",
+      "sha256": "dbb814bf82b9771e25ab0b4b970f526310234853c749be7ecbe4055bcb516c6c"
+    },
+    {
+      "path": "imports/SSSS211900.tsx",
+      "sha256": "1ba78cc54e261bfff595470d86bc785ca5544259e9f81d78b14cbb3c21d34cc0"
+    },
+    {
+      "path": "imports/SS_23D03_G080.tsx",
+      "sha256": "112cca3105967d18622883f8dea247282296b59fbb87949b2678516fb48d367d"
+    },
+    {
+      "path": "imports/STM32G030F6P6TR.tsx",
+      "sha256": "8341d8be4d4d2ba11868533ad8cb0fe51462fffd50b2418151e2fc2106332b63"
+    },
+    {
+      "path": "imports/STUSB4500QTR.tsx",
+      "sha256": "f9acdc195538fe06d3ad46bf0a1ee3b4014e2de9c7c58731866a34c0d231f1d7"
+    },
+    {
+      "path": "imports/T491C107M010AT.tsx",
+      "sha256": "12d71b52c601584f54a803e16223c6eb96578962a4061d7887015c31aa1ce006"
+    },
+    {
+      "path": "imports/TC4538S.tsx",
+      "sha256": "0471365c2a3df744dc948c79834024b94e4410936cfe92679b65e5a2ea8506c3"
+    },
+    {
+      "path": "imports/TL431AIDBZR.tsx",
+      "sha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff"
+    },
+    {
+      "path": "imports/TLC555CDR.tsx",
+      "sha256": "80964cdac247fc06fd8948bfc11c43e6743f1a480ef2105615fae7e7d7a3ea1b"
+    },
+    {
+      "path": "imports/TPS16630PWPR.tsx",
+      "sha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b"
+    },
+    {
+      "path": "imports/TPS26630RGER.tsx",
+      "sha256": "41685107ec7a3dda7058355c1b06047b958678c2452505ebf1b3ebfbb7b18bee"
+    },
+    {
+      "path": "imports/TPS54302DDCR.tsx",
+      "sha256": "77537a73e1d88dcae7a7e50bb6bfe6e22da447501c97b3fcc49012ec9b38038b"
+    },
+    {
+      "path": "imports/TPS54360DDAR.tsx",
+      "sha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2"
+    },
+    {
+      "path": "imports/TPS7A1633DGNR.tsx",
+      "sha256": "c78527d69b202bbb0a416928a072cd0ffabecea2adf05b60df3ece5bac8b54e2"
+    },
+    {
+      "path": "imports/TPS7A1650DGNR.tsx",
+      "sha256": "9468fa1522c45d3420702b99400458cb24fbd0b29e06296f630be1f87503479b"
+    },
+    {
+      "path": "imports/TS_103.tsx",
+      "sha256": "cb44dcec9f9c4d27648ad359e7e45c14c6245d4e7a790c4c7be2e7dc50e1359a"
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12.tsx",
+      "sha256": "7d3f0afe8f5b014edcfb3716ccf542929ae9d45550701aaa8bc63f2700c77bda"
+    },
+    {
+      "path": "index.circuit.tsx",
+      "sha256": "522d7e93d9f1566a0f79ff4a96490b8fdfb3dd53cbd77ca7939402e89fdae569"
+    },
+    {
+      "path": "package.json",
+      "sha256": "82534c84ced8d87ab0bc6f176e348665b8398b74dd9612c0a464b412a8d076ca"
+    },
+    {
+      "path": "scripts/adc-sensing-review.py",
+      "sha256": "78f75faf711e3ba1f154290d7fd5687648738e7d1b75bcda69296e8cbf5dfe40"
+    },
+    {
+      "path": "scripts/assembly_packet.py",
+      "sha256": "694f2ee45e48b37a6a5db4c1809c6b832a9f911b47e4257c183f3c2198002018"
+    },
+    {
+      "path": "scripts/audit-active-imports.ts",
+      "sha256": "38e21a1570b15f529731211149923744575ac9aff065962d50eafc7334eb2b03"
+    },
+    {
+      "path": "scripts/audit-breakout-targets.py",
+      "sha256": "eeaf6e0a37159bce735ac5b9ab0eff1131990c5f965c597b42cdf051d5c8fc1a"
+    },
+    {
+      "path": "scripts/audit-circuit-schema.ts",
+      "sha256": "3789980a6706bd603f17fa6651c13540153f808f1e0e9d61ed5d5aa3c22373d9"
+    },
+    {
+      "path": "scripts/audit-coordinate-serialization.ts",
+      "sha256": "664dc7169cec9fd142d2c730ef3117e2c0336d77019a116dce92448578aa1b3f"
+    },
+    {
+      "path": "scripts/audit-dailywell-import.ts",
+      "sha256": "389294568023098766b45800e7c6fc34c9af0346218c8c26be740dfa0e1c8d95"
+    },
+    {
+      "path": "scripts/audit-ground-copper.py",
+      "sha256": "f6d65114f159432cbf0db0311ea6236a639036b12d37ad53e3484bb2e5cb200c"
+    },
+    {
+      "path": "scripts/audit-native-fabrication.py",
+      "sha256": "2fa7f2233d818ae8377a03ee67ae100b7b0ae0a380722ee4dd629cc10b8249ea"
+    },
+    {
+      "path": "scripts/audit-native-placement.ts",
+      "sha256": "d5dfeb9047d6d193e1b86bb61ba405bda4c0eb9da613ab1a27c3be2839e09fc6"
+    },
+    {
+      "path": "scripts/audit-power-routing-intent.py",
+      "sha256": "e55aa66537443c5bcaa8e83bacfcd57d92bffc90abadfc4c0223309e0fa410ec"
+    },
+    {
+      "path": "scripts/audit-product-artwork.ts",
+      "sha256": "9a29643212a709433c340144460085e036e8aba54e11625258e2fce190ffa532"
+    },
+    {
+      "path": "scripts/audit-product-placement.ts",
+      "sha256": "791b3adaad0cdd1ef704984a703ff0e3bd7521e977c1e57885e2c0ef8822d812"
+    },
+    {
+      "path": "scripts/audit-routed-copper-clearances.py",
+      "sha256": "1353db53606038f351f9087ee17b66844f7ec06d74b539dced88867617b83428"
+    },
+    {
+      "path": "scripts/audit-routed-drills.py",
+      "sha256": "2c180766e29c93589dabb71c2af9a1bffc04cf90f50f581413ade8912c769a04"
+    },
+    {
+      "path": "scripts/audit-schematic.ts",
+      "sha256": "2ea48a5bc93bc036c133f9650b83d0f1a4545dd149eacf2e47da25f7bc0e26ee"
+    },
+    {
+      "path": "scripts/audit-sp3t-imports.ts",
+      "sha256": "9b136f154dc5140690b5d566f9cf922963b84bc90cf4c62efb9a8dd3106c2018"
+    },
+    {
+      "path": "scripts/audit-spdt-imports.ts",
+      "sha256": "581d59be72a6d65a7eca40d4aeee7fa383700783c1fda99be02ef68f69373c88"
+    },
+    {
+      "path": "scripts/audit-supplier-pnp.ts",
+      "sha256": "ead3dcf0b7dd978ff2c80534f1e157bedb38f231b52fa94bd6067cee3ad72b52"
+    },
+    {
+      "path": "scripts/audit-thermal-via-policy.ts",
+      "sha256": "6293a64789cdd3c822cb55c09ab6a47adda29e91213079098404de31d65cd9ed"
+    },
+    {
+      "path": "scripts/buck-input-review.ts",
+      "sha256": "26f93a9630b7878c0ff0f1bccdf5139b5424367488af678d0d3ac84c83259985"
+    },
+    {
+      "path": "scripts/buck-manufacturer-model-review.py",
+      "sha256": "2484909ca86ba466cef95ccee596e357175a41bf4974332c18be3cf809018d9d"
+    },
+    {
+      "path": "scripts/buck-output-review.py",
+      "sha256": "96c69e2f58b3de0a6c9c0236dc64fc31abc0270a3fcdd10e2144700b34174c35"
+    },
+    {
+      "path": "scripts/buck-switching-review.py",
+      "sha256": "f3b876a0bb23b984e29b70cd64235a25492efedd20f4b64dbc373e607f45aaac"
+    },
+    {
+      "path": "scripts/build-firmware.ts",
+      "sha256": "7bd24b69a4b2ecbf5a15a25c416a2273c6666b8f17d52b02981c82cd68c9909b"
+    },
+    {
+      "path": "scripts/check-full-placement.ts",
+      "sha256": "34bd8c5686bbbc2653977e8377ba1f7db17532f8a5f00e4d389d554bf0a1a28b"
+    },
+    {
+      "path": "scripts/check-routed-board.ts",
+      "sha256": "8ea6cffb21cb6c86d33d683ae8bce47f02c4e482174994f37a16bd65516e4749"
+    },
+    {
+      "path": "scripts/copper_clearance_geometry.py",
+      "sha256": "75dd020ed31eba4519a4e492182d8c2d5f50540d307a0b78f9cb05f129583b89"
+    },
+    {
+      "path": "scripts/copper_pulse_geometry.py",
+      "sha256": "7361772bf5b4c9407e228de2d8169506b35a45d6e05f4f9f4e604aedf8206b4c"
+    },
+    {
+      "path": "scripts/discharge-review.ts",
+      "sha256": "b6479737941fedaeb2f68adbb6ff31bf8e36222686617ae807541745ba20d3e2"
+    },
+    {
+      "path": "scripts/electrical-calculations.ts",
+      "sha256": "7937347fc87c8bea600aa743e67cdf1eba756b8f634c35c2c05f457bdd0f1707"
+    },
+    {
+      "path": "scripts/export-copper-net-map.ts",
+      "sha256": "ba81ede13ad2c29935d6e58f8d4d3fe6870d95b74d0a12788beae5bbedc3b8f8"
+    },
+    {
+      "path": "scripts/export-power-routing-intent.ts",
+      "sha256": "94dad3d48acc87c421a6e192da2f2ed210e16f8086864c828a674dce7cce98d5"
+    },
+    {
+      "path": "scripts/fabrication_drill_geometry.py",
+      "sha256": "beeeefb623b4fcb18aec9a6f19f77b000d077942b8f8c874e2880b7ec131a24f"
+    },
+    {
+      "path": "scripts/ground_copper_geometry.py",
+      "sha256": "4cf479b026580d4660e6ad65f8a993aa055e87f30db4ffc756596b05555cb4a5"
+    },
+    {
+      "path": "scripts/i2c-timing-envelope.ts",
+      "sha256": "b7c6453df672ff94c4565a20b6730e4b119a7f39d00593005536f3ad6c8b119a"
+    },
+    {
+      "path": "scripts/motor-validation-calculations.ts",
+      "sha256": "1bebe2baa0579b860ac9cfc30015592353d433bd1aa616e7e81305aa2716e287"
+    },
+    {
+      "path": "scripts/plan-local-decoupling.py",
+      "sha256": "e6b628a4a6d4c3c6033731e83b1da5af7e818cf15cc0de265a4d82748898d46d"
+    },
+    {
+      "path": "scripts/plan-product-placement.ts",
+      "sha256": "dc281fce62bd7fa514243e6300f3285b62d5e2d635f72d978a45246fdafb3d2a"
+    },
+    {
+      "path": "scripts/plan-underside-labels.ts",
+      "sha256": "9b804377f1fee110e92d9ff12b9de9ec4612ac7bde179d2ca6b3b75a655554aa"
+    },
+    {
+      "path": "scripts/power-prototype-envelope.ts",
+      "sha256": "b8f33fcaab5356a06648bc7a297089b215b78141f1a406c8a82d087084079054"
+    },
+    {
+      "path": "scripts/power-report.ts",
+      "sha256": "77725bea33209d28d678edcdd94f059335506af82c359d8a6d8a7db5a8cd44c0"
+    },
+    {
+      "path": "scripts/power_copper_geometry.py",
+      "sha256": "2c0bbebbe95d80a74025683c12485fe2b9c7de5d0cd2fd345d0ac0f4e042c5e8"
+    },
+    {
+      "path": "scripts/read-supplier-pages.py",
+      "sha256": "6c09bd7232dd32e2869d326b9c61dcc65a6f70582efa94827abf12b5f4f870ee"
+    },
+    {
+      "path": "scripts/rebuild-supplier-probes.ts",
+      "sha256": "244dd05c693dd4d753f6436b06776cc2fb2c5f30ed50c6b7a6c0165e07f16002"
+    },
+    {
+      "path": "scripts/relevant-schema-issues.ts",
+      "sha256": "0650a5413f21d0105b7841a2816428852bf9eff96513c0b72403934d8053dd64"
+    },
+    {
+      "path": "scripts/render-board-layers.ts",
+      "sha256": "ae96e2baa4014a2f7d122b31577f98988f5d4a1dfe2c31ee70b12f0fbaff8365"
+    },
+    {
+      "path": "scripts/render-native-fabrication.ts",
+      "sha256": "8a5b033f4f8286a106b66ffe30f07d7fd50be5686b7408a01940215508f935aa"
+    },
+    {
+      "path": "scripts/render-schematic-sheets.ts",
+      "sha256": "d966b3a154fe8f6286080fd03a66b55d3b1a2bacc99ba01fbaefae67461d9d44"
+    },
+    {
+      "path": "scripts/review-connector-model-bounds.py",
+      "sha256": "a65216a76b4240002d19178dcbab1f802ba1cf47a106f9db2afe6074f97094e4"
+    },
+    {
+      "path": "scripts/review-firmware-stack.py",
+      "sha256": "427254c086a051a585cbde6400582892f785df402d63f5bc0eef099d7fb4f90f"
+    },
+    {
+      "path": "scripts/review-i2c-timing.ts",
+      "sha256": "57d89153d9fe4a98ea3a7d86d3a9eac91640eee946d020cfe90c2085afaaf0ee"
+    },
+    {
+      "path": "scripts/review-power-envelope.ts",
+      "sha256": "3f4d8bae9931c593eab1e7d88adc649582d82acbed499e92b19c3527bf859bf4"
+    },
+    {
+      "path": "scripts/review-routed-dump-pulse.py",
+      "sha256": "4dc86789424024aa0d5b027dddbe8654b06960216d091f9d8a547fc459630fee"
+    },
+    {
+      "path": "scripts/review-routed-power-paths.py",
+      "sha256": "329ea6f98d199a15eb8d0592f6e36a185e461ce26026c2181e974431c03051e4"
+    },
+    {
+      "path": "scripts/run-native-routing.py",
+      "sha256": "fe006ccd1c8c230fd0dc76b12df366807ef0da2d51c32dbf7de511ecd9a04b6b"
+    },
+    {
+      "path": "scripts/silkscreen-geometry.ts",
+      "sha256": "6fd934cc3f88fe32f4b07076df7ecc3f53de762e7ad314735afd20adce27711b"
+    },
+    {
+      "path": "scripts/split-native-assembly.py",
+      "sha256": "d6710cc7cf128937df14660e4f92fba8dc5b4da3c020ff783dca53f92382895f"
+    },
+    {
+      "path": "scripts/test_assembly_packet.py",
+      "sha256": "8b269860e8c25260ec8f3c367efa1b6c23a4eae83b1b9d1832d25e0843669b64"
+    },
+    {
+      "path": "tests/coordinate-serialization-probe.circuit.tsx",
+      "sha256": "b57da9aba75342b5360c71abb6d819ee6f8ba759c7b8795b27e98ceb878d74f4"
+    },
+    {
+      "path": "tests/copper-clearance-geometry.test.ts",
+      "sha256": "35815c3a6230d5c1ca2b750d22a672163e34015287e76dcf67db695721c5153e"
+    },
+    {
+      "path": "tests/copper-pulse-geometry.test.ts",
+      "sha256": "83d0c9b9c5036ec8bbac39c86a29091ca0d38941020dff93704c2c508dac1ab0"
+    },
+    {
+      "path": "tests/dailywell-1m-import-probe.circuit.tsx",
+      "sha256": "e3b4f6b0cdd12e86a3910f862199ffe0bec6ce6c3147577bcd56691129732c52"
+    },
+    {
+      "path": "tests/dailywell-2m-import-probe.circuit.tsx",
+      "sha256": "360b9d6ca9c3d9f7d0e430c81ad30adaa06d5e15eee37f3c7f67f794318ac73e"
+    },
+    {
+      "path": "tests/electrical-calculations.test.ts",
+      "sha256": "995c990e8dabb0c86d1915d139301388ad58ac24b4b40ab41284b2980c9d744e"
+    },
+    {
+      "path": "tests/fabrication-drill-geometry.test.ts",
+      "sha256": "ed634686121f49f9981ddf06d26c635a983f270ce8f4a8408eca03aab1fe0446"
+    },
+    {
+      "path": "tests/ground-copper-geometry.test.ts",
+      "sha256": "451b1211f34ede940031e38747bfff47057b97f1f7c5848449764e0f6dde577d"
+    },
+    {
+      "path": "tests/motor-measurement.test.ts",
+      "sha256": "fee3a62a64cacdc6d254abff3683e1db5f4099ad87de52adde528c35b40642a4"
+    },
+    {
+      "path": "tests/motor-owner.test.ts",
+      "sha256": "c9d8d0478a75b98779ade5ed1bcbbd14d36ad7d98c1478b7dd60f60ed04c20e0"
+    },
+    {
+      "path": "tests/motor-validation-calculations.test.ts",
+      "sha256": "9fe084adf8837522db8a3d266a017a3079cd294fcbed696e81e7796a4acb81e6"
+    },
+    {
+      "path": "tests/native-manual-placement-probe.circuit.tsx",
+      "sha256": "c385fa41c9b27fde02436bb8711d787375bc830a13de7a6e1adfd08264269ff5"
+    },
+    {
+      "path": "tests/native-numeric-placement-probe.circuit.tsx",
+      "sha256": "85c4511f585da6b673b41260960cc58095d7898e7817c1798c28a5afce4d6d15"
+    },
+    {
+      "path": "tests/pd-interval.test.ts",
+      "sha256": "b457df9b8cc213f29aece174a4f33c98e5e65e7a911eb16483629c3de9e2d746"
+    },
+    {
+      "path": "tests/pd-policy.test.ts",
+      "sha256": "b85fdb4e1b407c7e6bc48c2298412e43c2791a7ba015cf78e20e2c6d99441bd6"
+    },
+    {
+      "path": "tests/pd-sequence.test.ts",
+      "sha256": "a34f20fbaa3e74a18fc6103929116f645b5dfa9e1edadc730dcc6cfc092e55f2"
+    },
+    {
+      "path": "tests/power-copper-geometry.test.ts",
+      "sha256": "27977cab69e955687667e1f4df8ebf0e144c249c7f6222da3c24b03c540d9d5c"
+    },
+    {
+      "path": "tests/power-prototype-envelope.test.ts",
+      "sha256": "63abafd9e427eed8c01de72a9bb76ae47de3e3d4d2ff7be4eaa422c805565d1d"
+    },
+    {
+      "path": "tests/schema-diagnostic.test.ts",
+      "sha256": "81100ea266f58a691d8d472e9473ba953ff00ff83ab3a5247740eb1de4880366"
+    },
+    {
+      "path": "tests/sp3t-import-probe.circuit.tsx",
+      "sha256": "a8dc1c86ac10d8129e7f344d09e3bceb8d228521cf06b19fb1a8929860a4b90f"
+    },
+    {
+      "path": "tests/spdt-import-probe.circuit.tsx",
+      "sha256": "ce46ef9d5df1dbe18a5383eeb1e1538803821313f62530fe6829bceaf5f18d96"
+    },
+    {
+      "path": "tests/stm32-adc.test.ts",
+      "sha256": "157d6ff7562df82392efd2064d78cab6205ffd21fe0c1199c7760e51fe9fb3d7"
+    },
+    {
+      "path": "tests/stm32-gpio-outputs.test.ts",
+      "sha256": "06a460bdb6b34af2431b96fc6b58474a4a0ce669141919cd900213e15765fbdc"
+    },
+    {
+      "path": "tests/stm32-gpio.test.ts",
+      "sha256": "e2b553de42d1529b485a21b10195b57ef113049f17e3368e202652af31d74a2c"
+    },
+    {
+      "path": "tests/stm32-i2c.test.ts",
+      "sha256": "6b59eae4ddafa47edb75e7450f6b569ef76ea20fb6a484237f60f25b5c9fa9de"
+    },
+    {
+      "path": "tests/stusb4500-nvm.test.ts",
+      "sha256": "78ef55f01367cebfd62b8cf8308d60d5a7e1d416ea28165ef1fd4570faa0cac4"
+    },
+    {
+      "path": "tests/stusb4500-request.test.ts",
+      "sha256": "289db12f34d33974ee347be408d2a73e4ccc1e7e70d399bccf60986697ca022e"
+    },
+    {
+      "path": "tests/stusb4500-rx.test.ts",
+      "sha256": "4ba970359eb5919fa4d8ff93e9fc9c50e3133559ec4a4008ac6b07767002b724"
+    },
+    {
+      "path": "tests/stusb4500-startup.test.ts",
+      "sha256": "6bd3a633f50b32e0dcb1347aa8ac9e4c67a3c85ddb33cfa7af21e89517b22713"
+    },
+    {
+      "path": "tests/switch-import-probe.circuit.tsx",
+      "sha256": "95a6defa764805d6d61a739812bd86707686b6068ff3a09dac204307c4e36cee"
+    },
+    {
+      "path": "tooling/tscircuit-capacity-autorouter-0.0.960-a41.tgz",
+      "sha256": "7f6ef0301fae52b8f96d8d85027445e17446e667c76a042e6942acf154220c83"
+    },
+    {
+      "path": "tooling/tscircuit-core-0.0.2091-a41.tgz",
+      "sha256": "171f104768cf6be3259a7ef9ba9bb1b5bae79c6cf7eb7f1ed4cd4b05b07c6581"
+    },
+    {
+      "path": "tooling/tscircuit-props-0.0.683-A22.tgz",
+      "sha256": "6f468f3240c16076806ef0319ea6c78f412ea311a574af75f0a26d1239751e75"
+    },
+    {
+      "path": "tscircuit.config.json",
+      "sha256": "c53278451bfef9b0ea89d3b5a3bcecdd6ecc18952dca2a078a5ebe6b10ebfb14"
+    }
+  ]
+}

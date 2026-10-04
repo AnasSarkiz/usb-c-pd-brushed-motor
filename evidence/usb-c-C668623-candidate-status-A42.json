@@ -1,0 +1,13 @@
+{
+  "part": "C668623",
+  "issue": "Manufacturer drawing5V; unsuitable PD20V input; inactive.",
+  "stock": 171921,
+  "availableOrder": 167270,
+  "date": "2026-10-04",
+  "status": "not approved; alternative search continues",
+  "sources": [
+    "official importer log",
+    "JLCPCB visible assembly detail page",
+    "supplier manufacturer drawing where downloaded"
+  ]
+}

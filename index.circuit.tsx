@@ -53,7 +53,7 @@ export default function UsbCPdBrushedMotorController() {
         name="ground_top"
         layer="top"
         connectsTo="net.GND"
-        clearance={0.2}
+        clearance={0.23}
         boardEdgeMargin={0.5}
         useThermalReliefs={false}
       />
@@ -61,7 +61,7 @@ export default function UsbCPdBrushedMotorController() {
         name="ground_bottom"
         layer="bottom"
         connectsTo="net.GND"
-        clearance={0.2}
+        clearance={0.23}
         boardEdgeMargin={0.5}
         useThermalReliefs={false}
       />
@@ -69,7 +69,7 @@ export default function UsbCPdBrushedMotorController() {
         name="ground_inner1"
         layer="inner1"
         connectsTo="net.GND"
-        clearance={0.2}
+        clearance={0.23}
         boardEdgeMargin={0.5}
         useThermalReliefs={false}
       />
@@ -77,7 +77,7 @@ export default function UsbCPdBrushedMotorController() {
         name="ground_inner2"
         layer="inner2"
         connectsTo="net.GND"
-        clearance={0.2}
+        clearance={0.23}
         boardEdgeMargin={0.5}
         useThermalReliefs={false}
       />

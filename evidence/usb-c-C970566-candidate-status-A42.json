@@ -1,0 +1,14 @@
+{
+  "part": "C970566",
+  "model": "HRO TYPE-C-31-E-07",
+  "reviewedOn": "2026-10-04",
+  "status": "not approved; supplier replacement search remains open",
+  "adoptedOnBoard": false,
+  "issue": "Native probe passes foreign-copper spacing. Manufacturer recommended circular annuli1.60mm vs imported1.3999972mm; midmount needs a reviewed native edge cutout. Drawing30VAC does not explicitly establish DC operating voltage. Qualification remains incomplete.",
+  "evidence": [
+    {
+      "path": "evidence/usb-c-C970566-import-A42.log",
+      "sha256": "b376f431cbb438e331257c464fe0193e3a32f976c3c96d07e9f5ee8e7332366c"
+    }
+  ]
+}

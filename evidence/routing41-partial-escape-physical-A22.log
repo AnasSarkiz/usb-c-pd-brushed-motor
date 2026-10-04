@@ -1,0 +1,54 @@
+{
+  "diagnosticOnly": true,
+  "traces": 41,
+  "ordinaryVias": 10,
+  "minimumDrillToAllPadsMm": 0.36150514601135997,
+  "minimumDrillToOtherDrillMm": 0.3395886824407311,
+  "issues": [
+    {
+      "rule": "foreign_copper",
+      "first": "pcb_smtpad_0",
+      "second": "pcb_smtpad_11",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "gapMm": 0.1999106999999993
+    },
+    {
+      "rule": "foreign_copper",
+      "first": "pcb_smtpad_1",
+      "second": "pcb_smtpad_2",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "gapMm": 0.19987259999999996
+    },
+    {
+      "rule": "foreign_copper",
+      "first": "pcb_smtpad_3",
+      "second": "pcb_smtpad_4",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "gapMm": 0.1998725999999995
+    },
+    {
+      "rule": "foreign_copper",
+      "first": "pcb_smtpad_5",
+      "second": "pcb_smtpad_6",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "gapMm": 0.19961859999999998
+    },
+    {
+      "rule": "foreign_copper",
+      "first": "pcb_smtpad_9",
+      "second": "pcb_smtpad_10",
+      "firstKind": "pcb_smtpad",
+      "secondKind": "pcb_smtpad",
+      "layer": "top",
+      "gapMm": 0.19982180000000005
+    }
+  ]
+}

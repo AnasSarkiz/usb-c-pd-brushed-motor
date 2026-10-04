@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/.cache/audit-mcu-pad-escapes-A41.py", line 31, in <module>
+    if source_ports[pad_port['source_port_id']]['subcircuit_connectivity_map_key']==primitive['net']:continue
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'subcircuit_connectivity_map_key'

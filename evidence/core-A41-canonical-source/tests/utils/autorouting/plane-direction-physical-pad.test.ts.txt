@@ -1,0 +1,85 @@
+import { expect, test } from "bun:test"
+import "tests/fixtures/extend-expect-circuit-snapshot"
+import { getSvgFromGraphicsObject } from "graphics-debug"
+import { FanoutAutorouter } from "lib/utils/autorouting/FanoutAutorouter"
+import type { SimpleRouteJson } from "lib/utils/autorouting/SimpleRouteJson"
+import { FanoutSolver } from "@tscircuit/fanout-solver"
+
+// Board-world millimetres: +X right, +Y up. Net aliases identify electrical
+// membership, whereas geometric containment identifies the source package.
+test("plane direction uses the physical pad rather than a distant same-net package", async () => {
+  const input: SimpleRouteJson = {
+    layerCount: 2,
+    minTraceWidth: 0.2,
+    minViaPadDiameter: 0.6,
+    minViaHoleDiameter: 0.3,
+    minTraceToPadEdgeClearance: 0.2,
+    minViaEdgeToPadEdgeClearance: 0.2,
+    bounds: { minX: -10, maxX: 5, minY: -5, maxY: 5 },
+    obstacles: [
+      {
+        componentId: "distant",
+        type: "rect",
+        center: { x: -8, y: 0 },
+        width: 1,
+        height: 1,
+        layers: ["top"],
+        connectedTo: ["GND", "source-port"],
+      },
+      {
+        componentId: "package",
+        type: "rect",
+        center: { x: -1, y: 0 },
+        width: 0.7,
+        height: 0.3,
+        layers: ["top"],
+        connectedTo: ["GND", "source-port"],
+      },
+      {
+        componentId: "package",
+        type: "rect",
+        center: { x: 1, y: 0 },
+        width: 0.7,
+        height: 0.3,
+        layers: ["top"],
+        connectedTo: ["other-port"],
+      },
+    ],
+    connections: [
+      {
+        name: "GND",
+        pointsToConnect: [
+          { x: -1, y: 0, layer: "top", pointId: "source-port" },
+        ],
+      },
+    ],
+    buses: [
+      {
+        busId: "ground",
+        connectionNames: ["GND"],
+        termination: { type: "plane", layer: "bottom" },
+      },
+    ],
+  }
+  let solver: FanoutSolver | undefined
+  const router = new FanoutAutorouter(input, {
+    mode: "fanout",
+    allowBlindAndBuriedVias: false,
+    fanoutBounds: { minX: -4, maxX: 4, minY: -3, maxY: 3 },
+    onSolverStarted: ({ solverConstructorArgs }) => {
+      expect(solverConstructorArgs[1].busDirections?.ground).toBe("left")
+      expect(solverConstructorArgs[1].allowSameNetMerges).toBe(true)
+      solver = new FanoutSolver(...solverConstructorArgs)
+    },
+  })
+  const traces = router.solveSync()
+  expect(traces).toHaveLength(1)
+  if (!solver) throw new Error("Native solver constructor was not captured")
+  solver.solve()
+  expect(solver.failed).toBe(false)
+  const output = solver.getOutput()
+  expect(output.planeTerminations[0].via.center.x).toBeLessThan(-1.35 - 0.3)
+  expect(getSvgFromGraphicsObject(solver.visualize())).toMatchSvgSnapshot(
+    import.meta.path,
+  )
+})

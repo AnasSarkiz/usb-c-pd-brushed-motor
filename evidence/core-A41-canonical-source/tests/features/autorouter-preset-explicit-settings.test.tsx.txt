@@ -1,0 +1,30 @@
+import { expect, test } from "bun:test"
+import type { SimpleRouteJson } from "lib/utils/autorouting/SimpleRouteJson"
+import { getPresetAutoroutingConfig } from "lib/utils/autorouting/getPresetAutoroutingConfig"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("local preset preserves explicit clearance and via prohibition in actual router input", async () => {
+  const { circuit } = getTestFixture()
+  let input: SimpleRouteJson | undefined
+  circuit.on("autorouting:start", ({ simpleRouteJson }) => {
+    input = simpleRouteJson
+  })
+  circuit.add(
+    <board
+      width="15mm"
+      height="10mm"
+      autorouter={{
+        preset: "auto_local",
+        allowViaInPad: false,
+        traceClearance: "0.25mm",
+      }}
+    >
+      <resistor name="R1" resistance="1k" footprint="0603" pcbX={-3} />
+      <resistor name="R2" resistance="1k" footprint="0603" pcbX={3} />
+      <trace from=".R1 > .pin2" to=".R2 > .pin1" />
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  expect(input?.allowViaInPad).toBe(false)
+  expect(input?.defaultObstacleMargin).toBe(0.25)
+})

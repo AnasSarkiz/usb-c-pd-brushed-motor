@@ -1,0 +1,47 @@
+import { expect, test } from "bun:test"
+import type { SimpleRouteJson } from "lib/utils/autorouting/SimpleRouteJson"
+import { withFixedTraces } from "lib/utils/autorouting/with-fixed-traces"
+
+test("fixed trace reservations retain their copper role separately from component pads", () => {
+  const input: SimpleRouteJson = {
+    layerCount: 2,
+    minTraceWidth: 0.2,
+    bounds: { minX: -2, maxX: 2, minY: -2, maxY: 2 },
+    obstacles: [],
+    connections: [],
+    traces: [
+      {
+        type: "pcb_trace",
+        pcb_trace_id: "fixed",
+        connection_name: "signal",
+        connectsTo: ["pcb_port_signal"],
+        route: [
+          { route_type: "wire", x: -1, y: 0, width: 0.2, layer: "top" },
+          { route_type: "wire", x: 0, y: 0, width: 0.2, layer: "top" },
+          {
+            route_type: "via",
+            x: 0,
+            y: 0,
+            from_layer: "top",
+            to_layer: "bottom",
+            via_diameter: 0.6,
+          },
+          { route_type: "wire", x: 0, y: 0, width: 0.2, layer: "bottom" },
+          { route_type: "wire", x: 1, y: 0, width: 0.2, layer: "bottom" },
+        ],
+      },
+    ],
+  }
+  const before = structuredClone(input)
+  const output = withFixedTraces(input, new Set(["fixed"]))
+  expect(output.obstacles.length).toBeGreaterThan(2)
+  expect(
+    output.obstacles.every((obstacle) => obstacle.isCopperTrace === true),
+  ).toBe(true)
+  expect(
+    output.obstacles.every((obstacle) =>
+      obstacle.connectedTo.includes("pcb_port_signal"),
+    ),
+  ).toBe(true)
+  expect(input).toEqual(before)
+})
