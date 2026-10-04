@@ -1,0 +1,13 @@
+{
+  "artifactSha256": "7f9f79e04b52b5cc55240e050ba615b2e19a7ad23409d59716f759a81bff8984",
+  "prior": "evidence/drill-corner-fourteenth-preroute-A22.json.gz",
+  "allNonmetadataRecordsIdentical": true,
+  "recordCount": 4979,
+  "changedRecordCount": 1,
+  "generation_exit_code": 0,
+  "metadataTypesExcluded": [
+    "circuit_json_metadata",
+    "source_project_metadata"
+  ],
+  "onlyDifference": "source_project_metadata.source_filesystem_md5_hash; all physical, electrical, schematic and warning records are identical"
+}

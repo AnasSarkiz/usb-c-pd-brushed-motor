@@ -1,0 +1,19 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 7,
+  "phaseOrdinal": 8,
+  "phaseCount": 8,
+  "elapsedMs": 37642,
+  "connectionCount": 76,
+  "obstacleCount": 490,
+  "previousTraceCount": 37,
+  "autorouterName": "tscircuit",
+  "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "effort": 1,
+  "cacheStatus": "miss",
+  "cacheKey": "routes:core@0.0.2080:solver:0f4472dc30628a43:srj:11456083f0515533",
+  "error": {
+    "message": "Pipeline9 primary high-density routing failed: B01 failed: No path found for source_net_0_mst16; regional fallback failed: Failed to solve 1 nodes, cmn_145. err0: GrowShrinkHighDensityIntraNodeSolver failed after resizing to 8x. Last error: High-density scale solution rejected by validator. (capacity-autorouter@0.0.958)"
+  }
+}

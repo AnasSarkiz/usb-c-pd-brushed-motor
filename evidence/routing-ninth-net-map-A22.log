@@ -1,0 +1,11 @@
+ 7 |   .parse(JSON.parse(await readFile("dist/index/circuit.json", "utf8")))
+ 8 | if (
+ 9 |   elements.filter((e) => e.type === "source_component").length !== 140 ||
+10 |   !elements.some((e) => e.type === "pcb_trace")
+11 | )
+12 |   throw new Error("Full routed board required")
+                 ^
+error: Full routed board required
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/export-copper-net-map.ts:12:13
+
+Bun v1.3.9 (macOS arm64)

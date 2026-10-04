@@ -1,0 +1,2 @@
+$ bunx tsc --noEmit
+tests/shared-via-drill-identity.test.ts(55,5): error TS2353: Object literal may only specify known properties, and 'clearance' does not exist in type '{ bus: PreparedBus; terminal: ViaMinimalWindingTerminal; targetLayer: string; targetLayerPoints: Point2D[]; sourceEscapePoints?: readonly Point2D[] | undefined; ... 4 more ...; allowBlindAndBuriedVias: boolean; }'.

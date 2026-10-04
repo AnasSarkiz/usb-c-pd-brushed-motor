@@ -1,0 +1,6 @@
+$ bun benchmarks/run-benchmark.ts --limit "1" --concurrency "1" --sample-timeout-seconds "120" --output-directory "../../evidence/fanout-source-fix-A22/benchmark-current"
+Capturing 1 dataset 31 inputs from upstream TSX (8eabec2)
+Running 1 dataset 31 samples; concurrency 1; deadline 120s; assignment budget sample defaults
+[1/1] dataset31/01-top-left-offset: solved, 135/135, 31.95s
+Solved 1/1; partial 0; errors 0; timeouts 0
+Reports: ../../evidence/fanout-source-fix-A22/benchmark-current/benchmark.json and ../../evidence/fanout-source-fix-A22/benchmark-current/benchmark.md; solved SVGs: ../../evidence/fanout-source-fix-A22/benchmark-current/*.svg

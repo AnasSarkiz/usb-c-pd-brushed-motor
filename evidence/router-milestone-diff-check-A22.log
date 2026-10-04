@@ -1,0 +1,32 @@
+evidence/core-source-fix-A22/core-A22-final.patch:45: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:309: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:381: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:425: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:433: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:438: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:712: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:1046: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:1484: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:1487: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:1492: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:1498: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:1523: trailing whitespace.
++ 
+evidence/core-source-fix-A22/core-A22-final.patch:2140: trailing whitespace.
+++                
+evidence/core-source-fix-A22/core-A22-final.patch:2159: trailing whitespace.
+++                const tx = matrix.e; 
+evidence/core-source-fix-A22/core-A22-final.patch:2165: trailing whitespace.
+++                

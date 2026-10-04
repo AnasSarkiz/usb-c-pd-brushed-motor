@@ -1,0 +1,31 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/autoroutingphase-saved-complete-fanout-paths.test.tsx:
+(pass) a complete saved fanout path with a pad via needs no follow-up routing [225.84ms]
+
+tests/features/autorouter-fanout-plane-termination.test.tsx:
+(pass) fanout drops source-only power and ground connections to internal planes [154.49ms]
+(pass) fanout infers plane nets from copper pours [25.06ms]
+
+tests/repros/repro-routed-net-piece-attribution.test.tsx:
+(pass) interior router pieces retain net ownership without concealing disconnected copper [37.60ms]
+
+tests/breakout/fanout-dogbone-global-handoff.test.tsx:
+(pass) global routing continues from a local dogbone via [393.08ms]
+
+tests/breakout/dogbone-plane-drop-phase-isolation.test.tsx:
+(pass) dogbone routing owns its pad escapes while plane drops remain in the following phase [421.23ms]
+
+tests/breakout/fanout-dogbone-no-site.test.tsx:
+Async effect error in PcbTraceRender "autorouting":
+Error: No complete local dogbone assignment within clearance/search limits
+    at tick (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/node_modules/@tscircuit/dogbone-solver/lib/dogbone-autorouter.ts:176:24)
+(pass) dogbone failure does not publish partial handoffs [18.97ms]
+
+tests/breakout/manual-breakoutpoints-preserve-plane-fanout.test.tsx:
+(pass) manual breakout points preserve fanout for automatic plane drops [574.08ms]
+
+ 8 pass
+ 0 fail
+ 70 expect() calls
+Ran 8 tests across 7 files. [2.42s]

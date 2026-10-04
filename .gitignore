@@ -26,3 +26,16 @@ yalc.lock
 
 tooling/autorouter-manufacturing-A22/
 tooling/trace-simplification-manufacturing-A22/
+
+# Canonical solver checkouts; source diffs and provenance are retained in evidence.
+tooling/fanout-manufacturing-A22/
+tooling/fanout-baseline-A22/
+
+# Source-only regression isolation; manifest and results retained in evidence.
+tooling/fanout-drill-isolation-A22/
+tooling/fanout-corner-isolation-A22/
+tooling/fanout-drill-search-isolation-A22/
+tooling/fanout-drill-audit-isolation-A22/
+
+# Checksum-verified task-local runtime; provenance retained in evidence.
+tooling/bun-1.4.2/

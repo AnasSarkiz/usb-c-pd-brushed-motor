@@ -1,0 +1,26 @@
+{
+  "beforeSha256": "7d8318ab79a3845b9647d50bdfc1771e8098032503482ead220d8fc17a843956",
+  "afterSha256": "bada97505136a63252e98db2afde87eb045ffefe6875297a1dd331843b2d6184",
+  "changes": [
+    {
+      "index": 3060,
+      "type": "pcb_breakout_point",
+      "changes": {
+        "layer": {
+          "before": null,
+          "after": "bottom"
+        }
+      }
+    },
+    {
+      "index": 4984,
+      "type": "source_project_metadata",
+      "changes": {
+        "source_filesystem_md5_hash": {
+          "before": "92f0e0c94db7ab8885d624c6bbd82ee6",
+          "after": "26f7fe397ae78a850a94f31d165ba5e6"
+        }
+      }
+    }
+  ]
+}

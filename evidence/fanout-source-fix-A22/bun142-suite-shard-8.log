@@ -1,0 +1,145 @@
+Running test shard 8/8: 33 of 271 files
+- tests/am62l-ddr4-full-fanout.test.ts
+- tests/am62l-lpddr4-three-bus-through-all-repro.test.ts
+- tests/benchmark-catalog.test.ts
+- tests/boundary-tail-cut-join.test.ts
+- tests/boundary-tail-wide-exit-phase.test.ts
+- tests/bus-length-matching-additional-vias.test.ts
+- tests/bus-length-matching-segmented-copper.test.ts
+- tests/bus-max-length-skew-invalid.test.ts
+- tests/component-dogbone-via-site-matching.test.ts
+- tests/dataset01-multi-footprint.test.ts
+- tests/dataset31-bottom-left-offset.test.ts
+- tests/dataset31-imx6ull-top-center.test.ts
+- tests/dataset31-left-top-offset.test.ts
+- tests/dense-through-all-singleton-deferral-priority.test.ts
+- tests/expect-svg-snapshot-with-actual.test.ts
+- tests/fanout-repair-before-grouped-beam.test.ts
+- tests/final-fanout-normalization.test.ts
+- tests/inferred-source-boundary.test.ts
+- tests/layer-reserved-approach-retry.test.ts
+- tests/layered-winding-respects-escape-layers.test.ts
+- tests/literal-corner-direction-pairs.test.ts
+- tests/normalized-hairpin-clearance.test.ts
+- tests/path-only-boundary-vias.test.ts
+- tests/plane-termination.test.ts
+- tests/reroute-overlong-pair-transaction.test.ts
+- tests/reserved-via-source-layer-transit.test.ts
+- tests/route-via-minimal-winding-route-orders.test.ts
+- tests/select-compatible-candidates.test.ts
+- tests/single-layer-clamped-boundary-tracks.test.ts
+- tests/source-origin-physical-phase.test.ts
+- tests/split-fixed-source-policy.test.ts
+- tests/srj29-solution-snapshots.test.ts
+- tests/via-between-bga-pads.test.ts
+bun test v1.4.2 (744846f84)
+
+tests/boundary-tail-wide-exit-phase.test.ts:
+(pass) aligns widely separated exits to narrow approach corridors without moving their vias [465.08ms]
+
+tests/dataset31-imx6ull-top-center.test.ts:
+(pass) retries untunable wide source routes with fresh reservations and a higher source cost [44855.55ms]
+
+tests/dataset31-bottom-left-offset.test.ts:
+(pass) routes raw dataset31 bottom-left with all signals and plane drops [25806.90ms]
+
+tests/route-via-minimal-winding-route-orders.test.ts:
+(pass) bounded route-order iteration is lazy and preserves dedupe order [0.96ms]
+
+tests/bus-max-length-skew-invalid.test.ts:
+(pass) rejects invalid bus maxLengthSkew values [0.77ms]
+
+tests/dataset31-left-top-offset.test.ts:
+(pass) routes raw dataset31 left-top with all signals and plane drops [13217.37ms]
+
+tests/select-compatible-candidates.test.ts:
+(pass) selects one compatible value from each independent candidate group [0.96ms]
+
+tests/inferred-source-boundary.test.ts:
+(pass) the inferred fanout boundary excludes destination footprints [0.54ms]
+(pass) a fanout operation can select the destination component explicitly [0.28ms]
+
+tests/boundary-tail-cut-join.test.ts:
+(pass) boundary repair joins retained copper without reversing search spurs [480.18ms]
+
+tests/plane-termination.test.ts:
+(pass) a source-only plane target dogbones to a through-all via [7.65ms]
+(pass) plane targets validate their layer and cannot request a border exit [0.49ms]
+
+tests/am62l-lpddr4-three-bus-through-all-repro.test.ts:
+(pass) routes the AM62L three-bus fanout around through-all plane dogbones [1440.13ms]
+
+tests/benchmark-catalog.test.ts:
+(pass) benchmark includes all six upstream dataset 31 families and rejects other datasets [0.63ms]
+
+tests/component-dogbone-via-site-matching.test.ts:
+(pass) component-wide dogbone matching assigns deterministic legal interstitial vias [1.69ms]
+(pass) component-wide dogbone matching fails within geometry and search bounds [0.16ms]
+(pass) dogbone candidates clear board obstacles and already-routed vias [0.26ms]
+
+tests/expect-svg-snapshot-with-actual.test.ts:
+(pass) failed SVG comparisons retain exact received artifacts and passing comparisons keep the original matcher behavior [986.25ms]
+
+tests/bus-length-matching-additional-vias.test.ts:
+(pass) opens a permitted transit tuning window with a clear through via and preserves both complete lanes [3313.70ms]
+
+tests/srj29-solution-snapshots.test.ts:
+(pass) SRJ29 sample001 validated fanout solution [1999.04ms]
+(pass) SRJ29 sample005 validated fanout solution [5041.79ms]
+(pass) SRJ29 sample009 validated fanout solution [2270.38ms]
+
+tests/final-fanout-normalization.test.ts:
+(pass) final tuning normalization chamfers a sub-grid corner while preserving source copper and exact exits [387.93ms]
+
+tests/dataset01-multi-footprint.test.ts:
+(pass) dataset01 solves samples containing one through five footprints [2869.09ms]
+
+tests/source-origin-physical-phase.test.ts:
+(pass) physical source phase ignores discarded provisional vias and preserves all retained copper [679.32ms]
+
+tests/path-only-boundary-vias.test.ts:
+(pass) same-layer cuts do not create virtual barrels and still respect reserved physical vias [4.28ms]
+
+tests/single-layer-clamped-boundary-tracks.test.ts:
+(pass) spreads clamped single-layer K230 control targets into ordered boundary slots [439.84ms]
+
+tests/via-between-bga-pads.test.ts:
+(pass) escape vias sit in the gap between adjacent BGA pads [1170.41ms]
+
+tests/bus-length-matching-segmented-copper.test.ts:
+(pass) matches the same physical meander with compact or finely segmented retained copper [451.92ms]
+
+tests/layer-reserved-approach-retry.test.ts:
+(pass) failed wide length matching and downstream narrow groups retry the entire pipeline with fresh reservations [1.41ms]
+
+tests/split-fixed-source-policy.test.ts:
+(pass) stronger source cost follows opposite source geometry through every rotation [44.05ms]
+
+tests/reserved-via-source-layer-transit.test.ts:
+(pass) source-layer transit crosses a blocked target layer while preserving fixed source and plane copper [269.75ms]
+
+tests/reroute-overlong-pair-transaction.test.ts:
+(pass) shortens both pair lanes atomically when the first rewrite alone increases skew [310.01ms]
+
+tests/normalized-hairpin-clearance.test.ts:
+(pass) normalization rejects new copper crossing a retained hairpin arm despite valid turns [624.12ms]
+
+tests/fanout-repair-before-grouped-beam.test.ts:
+(pass) visual regression: targeted repair solves a bounded assignment budget [2747.22ms]
+
+tests/layered-winding-respects-escape-layers.test.ts:
+(pass) layered winding never uses a crossover layer excluded from escapeLayers [4.52ms]
+
+tests/am62l-ddr4-full-fanout.test.ts:
+(pass) routes every connection in the exact AM62L DDR4 SoC fanout [10213.05ms]
+
+tests/dense-through-all-singleton-deferral-priority.test.ts:
+(pass) prioritizes three singletons deterministically by centered then inward target [1.76ms]
+
+tests/literal-corner-direction-pairs.test.ts:
+(pass) literal corner exits support every compatible direction and corner [9.03ms]
+
+ 39 pass
+ 0 fail
+ 19099 expect() calls
+Ran 39 tests across 33 files. [120.62s]

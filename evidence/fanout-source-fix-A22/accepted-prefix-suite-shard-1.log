@@ -1,0 +1,163 @@
+Running test shard 1/8: 34 of 271 files
+- tests/adaptive-available-corners-and-sides.test.ts
+- tests/am62l-ddr4-memory-fanout-repro.test.ts
+- tests/am62l-real-decoupling-copper.test.tsx
+- tests/benchmark-cli.test.ts
+- tests/boundary-tail-early-contact.test.ts
+- tests/boundary-terminal-copper.test.ts
+- tests/bus-length-matching-atomic-failure.test.ts
+- tests/bus-length-matching-self-short-via.test.ts
+- tests/bus-max-length-skew-no-op.test.ts
+- tests/compressed-exit-convergence.test.ts
+- tests/dataset02-stress.test.ts
+- tests/dataset31-bottom-right-offset.test.ts
+- tests/dataset31-imx6ull-top-right-offset.test.ts
+- tests/dataset31-right-bottom-offset.test.ts
+- tests/diagonal-grid-neighbors.test.ts
+- tests/fanout-exit-position-availability.test.ts
+- tests/fanout-solution-validation.test.ts
+- tests/fixed-corner-exit-offset.test.ts
+- tests/inner-pads-fanout.test.ts
+- tests/layer-reserved-solver-integration.test.ts
+- tests/layered-winding-same-band-reservations.test.ts
+- tests/literal-corner-edge-rail-reservations.test.ts
+- tests/opposed-pair-source-escapes.test.ts
+- tests/peripheral-bus-length-repair.test.ts
+- tests/pr-benchmark-authorization.test.ts
+- tests/reserved-narrow-bus-band.test.ts
+- tests/reserved-via-terminal-approaches.test.ts
+- tests/routed-copper-drc-through-all-via.test.ts
+- tests/sequential-fanout-output-identities.test.ts
+- tests/singleton-package-edge-via.test.ts
+- tests/source-origin-route-self-clear.test.ts
+- tests/srj19-dataset.test.ts
+- tests/staged-perimeter-coincident-track.test.ts
+- tests/via-channel-grid-phase.test.ts
+bun test v1.3.9 (cf6cdbbb)
+
+tests/dataset31-imx6ull-top-right-offset.test.ts:
+(pass) retains future approaches with a higher source cost after the fresh source retry cannot route [103948.73ms]
+
+tests/srj19-dataset.test.ts:
+(pass) SRJ19 adapts a representative sample into a BGA fanout problem [2.74ms]
+(pass) SRJ19 keeps all obstacles and only connections touching the BGA
+
+tests/bus-max-length-skew-no-op.test.ts:
+(pass) a loose bus length-skew constraint leaves fanout geometry unchanged [34.04ms]
+
+tests/opposed-pair-source-escapes.test.ts:
+(pass) multiple tight pairs split between advancing local vias and opposite-edge remote vias select joint source routing [258.38ms]
+
+tests/fixed-corner-exit-offset.test.ts:
+(pass) fixed corner slots preserve bus order when the upper bus routes first [437.12ms]
+
+tests/routed-copper-drc-through-all-via.test.ts:
+(pass) through-all DRC checks obstacles beyond a via's logical transition [0.44ms]
+
+tests/staged-perimeter-coincident-track.test.ts:
+(pass) staged lanes continue directly when their boundary tracks coincide with their roofs [225.45ms]
+
+tests/bus-length-matching-atomic-failure.test.ts:
+(pass) rejects a complete fanout atomically when its corridor cannot fit length matching [18.72ms]
+
+tests/layer-reserved-solver-integration.test.ts:
+(pass) dense competing bus layers run the reserved strategy before layer probes and commit only a complete fanout [685.71ms]
+
+tests/pr-benchmark-authorization.test.ts:
+(pass) PR benchmark authorizes writers and resolves open heads or merged commits [1.02ms]
+
+tests/boundary-terminal-copper.test.ts:
+(pass) terminal elbows negotiate intervening copper and physical barrels after finalize, rip, and reroute [2.21ms]
+
+tests/source-origin-route-self-clear.test.ts:
+(pass) TOP returns and through-vias cannot shortcut retained copper on their own net [280.26ms]
+
+tests/reserved-via-terminal-approaches.test.ts:
+(pass) off-grid packed terminals retain perpendicular approaches and all fixed source copper [305.53ms]
+
+tests/singleton-package-edge-via.test.ts:
+(pass) a trapped singleton reaches a package-edge via after local escapes fail [665.04ms]
+
+tests/fanout-exit-position-availability.test.ts:
+(pass) canonical positions use physical-edge availability [3.42ms]
+
+tests/dataset31-right-bottom-offset.test.ts:
+(pass) reserves source escapes for embedded singletons on different target layers [5209.30ms]
+
+tests/sequential-fanout-output-identities.test.ts:
+(pass) visual regression: sequential fanouts keep both real copper escapes [341.79ms]
+
+tests/fanout-solution-validation.test.ts:
+(pass) validation rejects different-net trace intersections [0.63ms]
+(pass) validation rejects same-layer traces inside different-net pads [0.28ms]
+(pass) validation rejects vias inside different-net obstacles on an intermediate layer [0.18ms]
+(pass) validation requires explicit fanout exits to reach their declared edge [0.29ms]
+(pass) validation follows merged same-net copper to prove every branch breaks out [0.31ms]
+(pass) validation does not count a disconnected same-net branch as broken out [0.09ms]
+
+tests/dataset31-bottom-right-offset.test.ts:
+(pass) routes raw dataset31 bottom-right with all signals and plane drops [49049.68ms]
+
+tests/boundary-tail-early-contact.test.ts:
+(pass) a clear tail that reaches the boundary early is repaired before its exact exit [479.69ms]
+
+tests/diagonal-grid-neighbors.test.ts:
+(pass) diagonal grid edges preserve cardinal costs and exclude clipped cells [1.01ms]
+
+tests/compressed-exit-convergence.test.ts:
+(pass) compressed perpendicular exits choose first vias for intact competing buses and preserve every other source [711.56ms]
+
+tests/am62l-real-decoupling-copper.test.tsx:
+75 |         fontSize: 0.6,
+76 |         anchorSide: "bottom_left",
+77 |       },
+78 |     ],
+79 |   })
+80 |   await expect(getSvgFromGraphicsObject(visualization)).toMatchSvgSnapshot(
+                                                             ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/__snapshots__/am62l-real-decoupling-copper.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/am62l-real-decoupling-copper.test.tsx:80:57)
+(fail) routes the AM62L fanout with real decoupling copper [36188.53ms]
+
+tests/benchmark-cli.test.ts:
+(pass) benchmark shell entrypoint writes complete ordered JSON and Markdown reports [33269.70ms]
+
+tests/am62l-ddr4-memory-fanout-repro.test.ts:
+(pass) captures the isolated AM62L DDR4 memory fanout [331.25ms]
+
+tests/peripheral-bus-length-repair.test.ts:
+(pass) reroutes an untunable pair while preserving its vias and neighboring copper [249.59ms]
+
+tests/adaptive-available-corners-and-sides.test.ts:
+(pass) adaptive single-layer routing respects available boundary regions [12685.25ms]
+
+tests/bus-length-matching-self-short-via.test.ts:
+(pass) rejects a tuning via that would short a retained source prefix through another layer [2961.89ms]
+
+tests/reserved-narrow-bus-band.test.ts:
+(pass) moves a blocked pair within its corner band while retaining original targets and fixed vias [1246.79ms]
+
+tests/via-channel-grid-phase.test.ts:
+(pass) phases a uniform grid to fit two legal traces between reserved vias [1089.95ms]
+
+tests/dataset02-stress.test.ts:
+(pass) Dataset 02 completely breaks out a four-layer BGA400 [959.92ms]
+
+tests/layered-winding-same-band-reservations.test.ts:
+(pass) layered winding buses sharing a corner reserve distinct boundary exits [4.38ms]
+
+tests/inner-pads-fanout.test.ts:
+(pass) inner BGA pads receive via fanouts [4126.98ms]
+
+tests/literal-corner-edge-rail-reservations.test.ts:
+(pass) upper and lower bands safely reuse right-edge rail depths [3.40ms]
+
+1 tests failed:
+(fail) routes the AM62L fanout with real decoupling copper [36188.53ms]
+
+ 39 pass
+ 1 fail
+ 21639 expect() calls
+Ran 40 tests across 34 files. [256.37s]

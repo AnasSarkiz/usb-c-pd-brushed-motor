@@ -1,0 +1,18 @@
+{
+  "lib/route-bus.ts": "c3f6371e09fe277a0f4e85efee11f1dcfd509ea240c00baa97fd2b21af1300aa",
+  "lib/get-routed-trace-copper.ts": "f4aa9ea26b39c2dde93371ca82b4d4be236dbe44aa9a3f45343f78548a71c996",
+  "lib/validate-routed-copper-drc.ts": "e6ee37ebd8b93c427b4f92c65046d6121e04bdf855d4c6d0f1b614fbacdd1f5f",
+  "lib/via-drills-are-clear.ts": "b3678b6059a6d665cf25f1766b6c1f1f6ce75535c2976cdb597b86a70d7f9f37",
+  "lib/normalize-layered-path.ts": "d1176df1d9afc618858608cd704d485c1b427060ab37323636101a30597dc5b3",
+  "lib/validate-fanout-solution.ts": "ea035fea8f204d5a949078660878efa945be36c5bf696071ec17593e0755e7cb",
+  "lib/types.ts": "922ac7254bf461d6d322c5a3b5f110e11fcb388dfe0564cf5740a36f50edf0b5",
+  "tests/coincident-path-corner.test.ts": "543b8dbb7996393c7c3023a4a03805056eb923e286cedd1e372c9c198b87c92d",
+  "tests/plane-ground-drill-clearance.test.ts": "b50dc04a680949983363bd725bc27bed5af1537eb72bb8ff41725ff6b618d4c2",
+  "tests/same-net-drill-drc.test.ts": "64cf1c78b18587b72f119c08f52cf6cee4f1e19b45d2b9fbaa786bf14f524b8a",
+  "tests/fixtures/plane-ground-clearance.json": "ebc0e54aa0941030705a2bd2dc6d36f35e595ab155ab8ba432e2228a8205b1eb",
+  "tests/__snapshots__/coincident-path-corner.snap.svg": "9c51cff4867457e5333c907e2ca50dc2d2b1bce773ccd76a72ab7c92d9bc64c5",
+  "tests/__snapshots__/plane-ground-drill-clearance.snap.svg": "51220f15d3ba5b105c51b8277224e239ef57a163350933526dbfad31586ae8f8",
+  "tests/__snapshots__/same-net-drill-drc.snap.svg": "e82fe658d170ff0b42f6e2499c77741c69ca55732294a936ab1a042f7af72e08",
+  "tests/__snapshots__/dataset31-imx6ull-top-center.snap.svg": "7b230e910e70578fa45388a37828e15b961b6349cb48e656db773b0e4a3507f6",
+  "package.json": "b59bd3784d6dfbc70a6ccc31fea51ff55c055879f57b34eb55614d3722c07fe7"
+}

@@ -1,0 +1,341 @@
+--- a/lib/route-bus.ts
++++ b/lib/route-bus.ts
+@@ -1,3 +1,4 @@
++import { viaDrillsAreClear } from "./via-drills-are-clear"
+ import { RouteSegmentSpatialIndex } from "./route-segment-spatial-index"
+ import type {
+   Obstacle,
+@@ -1940,6 +1941,14 @@
+         allowSameNetMerges &&
+         obstacleSharesElectricalNet(srj, obstacle, plan.connectionName)
+       ) {
++        // Joining same-net copper does not authorize a new via inside a land.
++        // Preserve offset sites while permitting annuli to join existing copper.
++        if (
++          !allowsViaInPad(srj) &&
++          distancePointToObstacle(via.center, obstacle) <
++            via.diameter / 2 - 1e-9
++        )
++          return false
+         continue
+       }
+       if (
+@@ -1955,6 +1964,14 @@
+     srj,
+     allowBlindAndBuriedVias,
+   )) {
++    for (const planVia of getPlanVias(plan)) {
++      for (const existingVia of traceCopper.vias) {
++        if (
++          !viaDrillsAreClear({ srj, firstVia: planVia, secondVia: existingVia })
++        )
++          return false
++      }
++    }
+     if (
+       plan.connectionName === traceCopper.connectionName ||
+       (allowSameNetMerges &&
+@@ -2038,6 +2055,22 @@
+   const planSegments = getPlanSegments(plan)
+   const planVias = getPlanVias(plan)
+   for (const otherPlan of otherPlans) {
++    // Copper may join on the same net, but distinct physical drills must clear.
++    for (const planVia of planVias) {
++      for (const otherVia of getPlanVias(otherPlan)) {
++        if (
++          !viaDrillsAreClear({ srj, firstVia: planVia, secondVia: otherVia })
++        ) {
++          if (otherPlan.busId !== plan.busId) {
++            blockingBusCounts?.set(
++              otherPlan.busId,
++              (blockingBusCounts.get(otherPlan.busId) ?? 0) + 1,
++            )
++          }
++          return false
++        }
++      }
++    }
+     if (
+       allowSameNetMerges &&
+       connectionsShareElectricalNet(
+--- a/lib/get-routed-trace-copper.ts
++++ b/lib/get-routed-trace-copper.ts
+@@ -8,6 +8,7 @@
+ export interface RoutedTraceVia {
+   center: Point2D
+   diameter: number
++  holeDiameter?: number
+   spanLayers: string[]
+ }
+ 
+@@ -40,6 +41,10 @@
+           srj.min_via_pad_diameter ??
+           srj.minViaDiameter ??
+           srj.minTraceWidth,
++        holeDiameter:
++          routePoint.via_hole_diameter ??
++          srj.minViaHoleDiameter ??
++          srj.min_via_hole_diameter,
+         spanLayers: getRouteViaSpanLayers({
+           fromLayer: routePoint.from_layer,
+           toLayer: routePoint.to_layer,
+--- a/lib/validate-routed-copper-drc.ts
++++ b/lib/validate-routed-copper-drc.ts
+@@ -1,3 +1,4 @@
++import { viaDrillsAreClear } from "./via-drills-are-clear"
+ import type {
+   SimpleRouteJson,
+   SimplifiedPcbTrace,
+@@ -30,6 +31,7 @@
+   | "different-net-trace-clearance"
+   | "different-net-trace-via-clearance"
+   | "different-net-via-clearance"
++  | "via_drill_clearance"
+ 
+ export interface RoutedCopperDrcIssue {
+   code: RoutedCopperDrcIssueCode
+@@ -53,6 +55,7 @@
+ interface RoutedVia {
+   center: Point2D
+   diameter: number
++  holeDiameter?: number
+   spanLayers: string[]
+ }
+ 
+@@ -157,6 +160,10 @@
+         center: { x: routePoint.x, y: routePoint.y },
+         diameter:
+           routePoint.via_diameter ?? srj.minViaPadDiameter ?? srj.minTraceWidth,
++        holeDiameter:
++          routePoint.via_hole_diameter ??
++          srj.minViaHoleDiameter ??
++          srj.min_via_hole_diameter,
+         spanLayers,
+       })
+       if (
+@@ -388,6 +395,21 @@
+       secondIndex++
+     ) {
+       const second = traceCopper[secondIndex]!
++      for (const firstVia of first.vias) {
++        for (const secondVia of second.vias) {
++          if (!viaDrillsAreClear({ srj: inputSrj, firstVia, secondVia })) {
++            addIssue(issues, {
++              code: "via_drill_clearance",
++              traceId: first.trace.pcb_trace_id,
++              connectionName: first.connectionName,
++              otherTraceId: second.trace.pcb_trace_id,
++              otherConnectionName: second.connectionName,
++              message:
++                "Distinct via drills violate the declared hole-edge clearance",
++            })
++          }
++        }
++      }
+       if (
+         connectionsShareElectricalNet(
+           inputSrj,
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "@tscircuit/fanout-solver",
+-  "version": "0.0.78",
++  "version": "0.0.79",
+   "description": "BGA fanout solver with coordinated bus-layer escapes for SimpleRouteJson",
+   "module": "lib/index.ts",
+   "type": "module",
+--- /dev/null
++++ b/lib/via-drills-are-clear.ts
+@@ -0,0 +1,48 @@
++import type { SimpleRouteJson } from "@tscircuit/capacity-autorouter"
++import { distance } from "./geometry"
++import type { RoutedVia } from "./types"
++
++/** Newer host SRJs carry this optional manufacturing constraint in mm. */
++export interface SimpleRouteJsonWithViaDrillRules extends SimpleRouteJson {
++  minViaHoleEdgeToViaHoleEdgeClearance?: number
++}
++
++type ViaDrill = Pick<RoutedVia, "center" | "spanLayers"> & {
++  holeDiameter?: number
++}
++
++/** Board-world mm (+X right, +Y up); drill spacing is independent of net identity. */
++export function viaDrillsAreClear(params: {
++  srj: SimpleRouteJsonWithViaDrillRules
++  firstVia: ViaDrill
++  secondVia: ViaDrill
++}): boolean {
++  const { srj, firstVia, secondVia } = params
++  const clearance = srj.minViaHoleEdgeToViaHoleEdgeClearance
++  // Hosts which omit the rule retain their existing copper-clearance policy.
++  if (clearance === undefined) return true
++  if (!Number.isFinite(clearance) || clearance < 0) {
++    throw new Error("Via drill clearance must be finite and nonnegative")
++  }
++  if (
++    !firstVia.spanLayers.some((layer) => secondVia.spanLayers.includes(layer))
++  ) {
++    return true
++  }
++  const firstDiameter = firstVia.holeDiameter
++  const secondDiameter = secondVia.holeDiameter
++  if (
++    firstDiameter === undefined ||
++    secondDiameter === undefined ||
++    !Number.isFinite(firstDiameter) ||
++    !Number.isFinite(secondDiameter) ||
++    firstDiameter <= 0 ||
++    secondDiameter <= 0
++  ) {
++    throw new Error("Declared drill clearance requires both via hole diameters")
++  }
++  return (
++    distance(firstVia.center, secondVia.center) >=
++    (firstDiameter + secondDiameter) / 2 + clearance - 1e-9
++  )
++}
+--- /dev/null
++++ b/tests/plane-ground-drill-clearance.test.ts
+@@ -0,0 +1,54 @@
++import { expect, test } from "bun:test"
++import { getSvgFromGraphicsObject } from "graphics-debug"
++import { FanoutSolver } from "lib/fanout-solver"
++import { distance, distancePointToObstacle } from "lib/geometry"
++import { validateRoutedCopperDrc } from "lib/validate-routed-copper-drc"
++
++// Unmodified native solver input from a placed QFN board. Board-world mm,
++// +X right/+Y up. The plane stage explicitly permits same-net copper joins.
++test("merged QFN ground escapes preserve ordinary drill and pad clearances", async () => {
++  const args: ConstructorParameters<typeof FanoutSolver> = await Bun.file(
++    new URL("./fixtures/plane-ground-clearance.json", import.meta.url),
++  ).json()
++  const solver = new FanoutSolver(args[0], {
++    ...args[1],
++    allowSameNetMerges: true,
++  })
++  solver.solve()
++  expect(solver.failed).toBe(false)
++  const output = solver.getOutput()
++  expect(output.planeTerminations).toHaveLength(5)
++  const vias = output.planeTerminations.map((termination) => termination.via)
++  for (const [firstIndex, firstVia] of vias.entries()) {
++    for (const secondVia of vias.slice(firstIndex + 1)) {
++      const drillGapMm =
++        distance(firstVia.center, secondVia.center) -
++        (firstVia.holeDiameter + secondVia.holeDiameter) / 2
++      expect(drillGapMm).toBeGreaterThanOrEqual(0.25 - 1e-9)
++    }
++    for (const obstacle of args[0].obstacles) {
++      if (
++        !obstacle.componentId ||
++        !obstacle.layers.some((layer) => firstVia.spanLayers.includes(layer))
++      )
++        continue
++      expect(
++        distancePointToObstacle(firstVia.center, obstacle) -
++          firstVia.diameter / 2,
++      ).toBeGreaterThanOrEqual(0.2 - 1e-9)
++    }
++  }
++  const drc = validateRoutedCopperDrc({
++    inputSrj: args[0],
++    // Audit the five newly emitted routes of this plane phase. The thirteen
++    // retained signal prefixes are inputs from a preceding phase, whose
++    // connection declarations are deliberately absent from this phase SRJ.
++    routedSrj: { ...output.simpleRouteJson, traces: output.fanoutTraces },
++    clearance: 0.2,
++    allowBlindAndBuriedVias: false,
++  })
++  expect(drc).toMatchObject({ valid: true, issues: [] })
++  expect(getSvgFromGraphicsObject(solver.visualize())).toMatchSvgSnapshot(
++    import.meta.path,
++  )
++})
+--- /dev/null
++++ b/tests/same-net-drill-drc.test.ts
+@@ -0,0 +1,83 @@
++import { expect, test } from "bun:test"
++import { getSvgFromGraphicsObject } from "graphics-debug"
++import { validateRoutedCopperDrc } from "lib/validate-routed-copper-drc"
++import type { SimpleRouteJsonWithViaDrillRules } from "lib/via-drills-are-clear"
++import { visualizeSimpleRouteJson } from "lib/visualize-simple-route-json"
++
++// Board-world mm: two distinct 0.3 mm holes on GND have only 0.2 mm gap.
++test("the independent copper audit rejects same-net drill spacing", () => {
++  const inputSrj: SimpleRouteJsonWithViaDrillRules = {
++    bounds: { minX: -1, maxX: 3, minY: -2, maxY: 2 },
++    layerCount: 2,
++    minTraceWidth: 0.2,
++    minViaHoleEdgeToViaHoleEdgeClearance: 0.25,
++    obstacles: [],
++    connections: [
++      {
++        name: "GND",
++        pointsToConnect: [
++          { x: 0, y: 0, layer: "top" },
++          { x: 2.5, y: 0, layer: "top" },
++        ],
++      },
++    ],
++  }
++  const routedSrj: SimpleRouteJsonWithViaDrillRules = {
++    ...inputSrj,
++    traces: [0, 1].map((index) => ({
++      type: "pcb_trace" as const,
++      pcb_trace_id: `ground-${index}`,
++      connection_name: "GND",
++      route: [
++        {
++          route_type: "wire" as const,
++          x: index * 2.5,
++          y: 0,
++          layer: "top",
++          width: 0.2,
++        },
++        {
++          route_type: "wire" as const,
++          x: 1 + index * 0.5,
++          y: 0,
++          layer: "top",
++          width: 0.2,
++        },
++        {
++          route_type: "via" as const,
++          x: 1 + index * 0.5,
++          y: 0,
++          from_layer: "top",
++          to_layer: "bottom",
++          via_diameter: 0.6,
++          via_hole_diameter: 0.3,
++        },
++        {
++          route_type: "wire" as const,
++          x: 1 + index * 0.5,
++          y: 0,
++          layer: "bottom",
++          width: 0.2,
++        },
++        {
++          route_type: "wire" as const,
++          x: 1 + index * 0.5,
++          y: -0.8,
++          layer: "bottom",
++          width: 0.2,
++        },
++      ],
++    })),
++  }
++  expect(
++    validateRoutedCopperDrc({
++      inputSrj,
++      routedSrj,
++      clearance: 0.2,
++      allowBlindAndBuriedVias: false,
++    }),
++  ).toMatchObject({ valid: false, issues: [{ code: "via_drill_clearance" }] })
++  expect(
++    getSvgFromGraphicsObject(visualizeSimpleRouteJson(routedSrj)),
++  ).toMatchSvgSnapshot(import.meta.path)
++})

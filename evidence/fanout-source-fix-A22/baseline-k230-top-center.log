@@ -1,0 +1,9 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/dataset31-k230-top-center.test.ts:
+(pass) routes opposite-side control buses after the fixed-source strategy fails [130083.43ms]
+
+ 1 pass
+ 0 fail
+ 48184 expect() calls
+Ran 1 test across 1 file. [130.34s]

@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/dataset31-imx6ull-bottom-left-offset.test.ts:
+(pass) shortens overlong source prefixes and repairs a blocked constrained bus lane [35099.98ms]
+
+ 1 pass
+ 0 fail
+ 24597 expect() calls
+Ran 1 test across 1 file. [35.26s]

@@ -1,0 +1,25 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/utils/autorouting/plane-direction-physical-pad.test.ts:
+24 |   let solver: FanoutSolver | undefined
+25 |   const router = new FanoutAutorouter(input, {
+26 |     mode: "fanout", allowBlindAndBuriedVias: false,
+27 |     fanoutBounds: { minX: -4, maxX: 4, minY: -3, maxY: 3 },
+28 |     onSolverStarted: ({ solverConstructorArgs }) => {
+29 |       expect(solverConstructorArgs[1].busDirections?.ground).toBe("left")
+                                                                  ^
+error: expect(received).toBe(expected)
+
+Expected: "left"
+Received: "right"
+
+      at onSolverStarted (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/utils/autorouting/plane-direction-physical-pad.test.ts:29:62)
+      at solveFanout (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/utils/autorouting/FanoutAutorouter.ts:524:18)
+      at solveSync (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/utils/autorouting/FanoutAutorouter.ts:647:62)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/utils/autorouting/plane-direction-physical-pad.test.ts:33:25)
+(fail) plane direction uses the physical pad rather than a distant same-net package [1.74ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [523.00ms]

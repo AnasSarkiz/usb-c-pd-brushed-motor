@@ -1,0 +1,5 @@
+$ bun benchmarks/run-benchmark.ts --limit "1" --concurrency "1" --sample-timeout-seconds "120" --output-directory "../../evidence/fanout-source-fix-A22/benchmark-baseline"
+error: Cannot find module '@tscircuit/dataset-fanout31-am62l/lib/am3352-fanout-directions' from '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-baseline-A22/scripts/generate-repro/dataset31-source.ts'
+
+Bun v1.3.9 (macOS arm64)
+error: script "benchmark" exited with code 1

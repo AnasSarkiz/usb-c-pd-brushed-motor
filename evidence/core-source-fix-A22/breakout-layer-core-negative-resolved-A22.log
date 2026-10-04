@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout/breakoutpoint-target-layer.test.tsx:
+23 |     </board>,
+24 |   )
+25 |   await circuit.renderUntilSettled()
+26 |   for (const element of circuit.getCircuitJson()) any_circuit_element.parse(element)
+27 |   const [bottomTarget, defaultTarget] = circuit.db.pcb_breakout_point.list()
+28 |   expect(bottomTarget?.layer).toBe("bottom")
+                                   ^
+error: expect(received).toBe(expected)
+
+Expected: "bottom"
+Received: undefined
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/breakoutpoint-target-layer.test.tsx:28:31)
+(fail) explicit breakout target layers survive both escape and global routing [228.21ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [919.00ms]

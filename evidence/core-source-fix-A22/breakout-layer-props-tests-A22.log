@@ -1,0 +1,898 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/bus-ddr-routing-constraints.test.ts:
+(pass) parses DDR bus routing constraints into canonical units [2.11ms]
+(pass) rejects invalid DDR bus routing constraints [0.41ms]
+
+tests/differentialpair3.test.ts:
+(pass) requires maximum length skew to be non-negative [0.08ms]
+
+tests/chip-internal-circuit.test.tsx:
+(pass) chip internalCircuit accepts an internalcircuit element [0.38ms]
+(pass) chip internalCircuit rejects a fragment without the wrapper [0.28ms]
+(pass) chip internalCircuit rejects objects that are not React elements
+
+tests/pcb-note-dimension-offset.test.ts:
+(pass) PCB note dimension offsets preserve unitless directions [0.54ms]
+
+tests/board-route-remaining.test.ts:
+(pass) routeRemaining preserves explicit booleans without setting a default [1.18ms]
+(pass) routeRemaining rejects non-boolean values [0.23ms]
+
+tests/jumper.test.ts:
+(pass) should parse 2-pin jumper with pins 1-2 internally connected
+(pass) should parse 2-pin jumper with numeric internallyConnectedPins
+(pass) should parse 3-pin jumper with pins 1-2 internally connected
+(pass) should parse 3-pin jumper with pins 2-3 internally connected
+(pass) should parse 3-pin jumper with no internallyConnectedPins
+(pass) should parse 3-pin jumper with two bridges (1-2 and 2-3)
+(pass) should fail for invalid internallyConnectedPins (not an array of arrays) [0.38ms]
+(pass) should parse jumper props with single string connections [0.01ms]
+(pass) should parse jumper props with array connections [0.13ms]
+(pass) should allow optional connections [0.03ms]
+
+tests/board-plated-hole-solder-paste.test.ts:
+(pass) board plated-hole paste accepts explicit assembly layers and preserves omission [0.44ms]
+
+tests/led.test.ts:
+(pass) should parse led props with single string connections
+(pass) should parse led props with array connections [0.19ms]
+(pass) should parse led props with all connection keys [0.07ms]
+(pass) should reject connections with invalid keys [0.05ms]
+(pass) should handle empty string and array connection values [0.01ms]
+(pass) should allow optional connections
+(pass) should parse supplier-specific LED pin labels
+
+tests/via.test.ts:
+(pass) should parse ViaProps with name and connectsTo [0.21ms]
+(pass) should parse ViaProps with layers and net assignability flag [0.13ms]
+
+tests/opamp.test.ts:
+(pass) should parse opamp props with connections
+(pass) should reject connections with invalid keys
+(pass) should allow optional connections
+
+tests/chip1-basic.test.ts:
+(pass) should parse chip props [0.13ms]
+(pass) should parse chip props with single string connections
+(pass) should parse chip props with array connections [0.13ms]
+(pass) should parse chip props with mixed string and array connections
+(pass) should parse chip props with noConnect pins
+(pass) should parse chip props with connections and other properties [0.17ms]
+(pass) should handle invalid connection values
+(pass) should work with generic type parameter for pin labels
+
+tests/schematic-graphic7.test.ts:
+(pass) should reject an empty graphic source
+
+tests/ammeter.test.ts:
+(pass) should parse ammeter with pos and neg connections [0.07ms]
+(pass) should parse ammeter with pin1 and pin2 connections [0.04ms]
+(pass) should parse ammeter with color and graph display name
+(pass) should parse ammeter graph scaling props
+(pass) should reject missing ammeter connections
+(pass) should reject incomplete ammeter connection pairs
+(pass) should reject ammeter connections with invalid keys [0.17ms]
+
+tests/copper-pour.test.ts:
+(pass) should parse a valid copper pour
+(pass) type inference for CopperPourProps [0.18ms]
+(pass) should parse coveredWithSolderMask when true [0.01ms]
+(pass) should parse clearance
+(pass) should parse boardEdgeMargin
+(pass) should parse cutoutMargin [0.12ms]
+(pass) should parse useThermalReliefs [0.01ms]
+(pass) should parse unbroken
+
+tests/schematic-line.test.ts:
+(pass) schematic line parses with defaults [0.12ms]
+(pass) schematic line accepts style overrides
+
+tests/assembly-motor.test.ts:
+(pass) assembly.motor registers its schema and preserves modelprinter usage
+(pass) accepts all six shaft directions without changing their axis or sign
+(pass) defaults only the shaft direction to the native positive Z axis
+(pass) selects each NEMA standard without requiring a modelprinter string [0.35ms]
+(pass) rejects unsupported standards and competing model selections [0.04ms]
+(pass) rejects missing motor identity or selection instead of choosing a motor [0.13ms]
+(pass) rejects invalid shaft directions and ambiguous direction aliases [0.08ms]
+
+tests/symbol.test.ts:
+(pass) should parse SymbolProps without facing direction [0.28ms]
+(pass) should parse SymbolProps with provided facing direction [0.06ms]
+
+tests/solderjumper.test.ts:
+(pass) should parse solderjumper with bridged pins
+(pass) should parse solderjumper without bridged pins
+(pass) should parse solderjumper with multiple bridges
+(pass) should parse solderjumper with all pins bridged
+(pass) should parse solderjumper with bridged set to false
+(pass) should fail for invalid bridgedPins
+
+tests/resistor.test.ts:
+(pass) should parse schOrientation for resistor
+(pass) should parse tolerance percentage for resistor
+(pass) should parse resistance strings to numbers [0.20ms]
+(pass) should map supported resistor imperial footprints [0.04ms]
+(pass) should preserve non-generic resistor footprints
+
+tests/via-tenting.test.ts:
+(pass) board and via tenting accept the same modes and normalize aliases [0.47ms]
+(pass) omitted tenting stays unspecified for board inheritance
+(pass) explicit false remains an exposed override instead of unspecified
+(pass) board and via tenting reject unsupported modes and object inputs [0.55ms]
+(pass) stampboards inherit the same default via tenting schema [0.46ms]
+
+tests/currentsource.test.ts:
+(pass) should parse current source props
+(pass) should parse with only a name
+(pass) should fail with invalid waveShape
+(pass) should parse DC current source
+(pass) should parse square wave props
+(pass) should parse triangle wave props
+(pass) should parse with phase
+(pass) should parse AC source with DC offset
+(pass) should parse small-signal AC source props
+(pass) should parse duty cycle [0.43ms]
+(pass) should parse current source props with single string connections
+(pass) should parse current source props with array connections
+(pass) should reject connections with invalid keys
+(pass) should allow optional connections
+
+tests/footprintLibraryMap-cadModel.test.ts:
+(pass) footprintLibraryMap function may return cadModel [0.68ms]
+
+tests/switch.test.ts:
+(pass) should parse switch props with type value
+(pass) should parse switch props with flag value [0.12ms]
+(pass) should fail to parse switch props with invalid switch type
+(pass) should parse switch props with connections [0.04ms]
+(pass) should parse switch props with noConnect pins [0.04ms]
+(pass) spst preserves readonly noConnect aliases with either type syntax [0.04ms]
+(pass) spdt preserves readonly noConnect aliases with either type syntax
+(pass) dpst preserves readonly noConnect aliases with either type syntax [0.07ms]
+(pass) dpdt preserves readonly noConnect aliases with either type syntax
+(pass) noConnect is optional and accepts an empty array
+(pass) rejects invalid noConnect input "pin3"
+(pass) rejects invalid noConnect input 3
+(pass) rejects invalid noConnect input "invalid label"
+(pass) rejects invalid noConnect input ""
+
+tests/trace-teardrops.test.ts:
+(pass) teardrop booleans preserve explicit endpoint overrides for all connection forms [0.70ms]
+(pass) teardrop props reject non-booleans and introduce no defaults [0.83ms]
+
+tests/trace.test.ts:
+(pass) parses arbitrary schStroke and highlightColor on trace
+(pass) accepts nullable routingPhaseIndex on trace
+(pass) accepts pin selector strings within pcbPath [0.24ms]
+(pass) accepts multiple pcbPaths
+(pass) accepts pcbPath via entries with toLayer
+(pass) supports pcbStraightLine flag
+(pass) supports limiting the maximum number of PCB vias [0.29ms]
+(pass) accepts start/end aliases for trace endpoints
+
+tests/voltagesource.test.ts:
+(pass) should parse voltage source props [0.04ms]
+(pass) should parse with only a name
+(pass) should fail with invalid waveShape
+(pass) should parse DC voltage source
+(pass) should parse square wave props [0.20ms]
+(pass) should parse triangle wave props
+(pass) should parse with phase
+(pass) should parse AC source with DC offset
+(pass) should parse small-signal AC source props [0.09ms]
+(pass) should parse duty cycle [0.07ms]
+(pass) should parse square wave pulse timing controls
+(pass) should parse voltage source props with single string connections
+(pass) should parse voltage source props with array connections
+(pass) should reject connections with invalid keys
+(pass) should allow optional connections
+
+tests/schematic-graphic6.test.ts:
+(pass) should reject non-positive or non-finite graphic dimensions [0.67ms]
+
+tests/footprint.test.ts:
+(pass) should parse footprint name
+(pass) should parse footprint insertionDirection options [0.11ms]
+(pass) should fail for invalid footprint insertionDirection [0.07ms]
+
+tests/battery.test.ts:
+(pass) should parse voltage and standard for battery
+(pass) should fail with invalid standard
+
+tests/autorouter.test.ts:
+(pass) supports freerouting preset
+(pass) supports simplify preset [0.07ms]
+(pass) supports snake_case presets
+(pass) supports default preset
+(pass) supports auto jumper preset
+(pass) supports opting in to via-in-pad routing
+(pass) supports an implicit breakout point solver override [0.13ms]
+(pass) supports laser prefab preset
+(pass) supports tscircuit beta preset
+(pass) supports krt preset
+(pass) supports fanout presets [0.21ms]
+(pass) still supports deprecated kebab-case presets
+(pass) supports shared routing tolerances [0.09ms]
+(pass) supports pipeline-based autorouter versions [0.15ms]
+(pass) warns and falls back to latest for unknown autorouter versions
+
+tests/diode-led-sch-size.test.ts:
+(pass) diodes and LEDs accept the existing schematic symbol size API [0.48ms]
+
+tests/board.test.ts:
+(pass) fabricatorPreset accepts the supported presets unchanged [0.13ms]
+(pass) fabricatorPreset is optional without a default [0.04ms]
+(pass) fabricatorPreset rejects unsupported values [0.11ms]
+(pass) via stitching is opt-in and pitch does not enable it [0.11ms]
+(pass) via stitch pitch accepts distances and normalizes to millimeters [0.11ms]
+(pass) via stitch pitch rejects nonpositive and nonfinite distances [0.17ms]
+(pass) should parse square and area props [0.04ms]
+(pass) should parse layers prop [0.03ms]
+(pass) should allow single-layer boards [0.02ms]
+(pass) should allow 6, 8, and 10 layer boards [0.07ms]
+(pass) should parse flex board material
+(pass) should parse borderRadius prop [0.05ms]
+(pass) should parse castellated holes on board outline points [0.10ms]
+(pass) should require both diameters for a castellated outline hole
+(pass) should require isCastellatedHole for flattened hole props [0.12ms]
+(pass) should parse boardAnchorPosition prop
+(pass) should parse boardAnchorAlignment prop
+(pass) should parse anchorAlignment prop
+(pass) should prefer anchorAlignment over boardAnchorAlignment
+(pass) should parse board color customization props
+(pass) should parse schematicDisabled prop
+(pass) should parse isViaInPadAllowed prop
+(pass) should parse automaticPoursEnabled prop
+(pass) should parse placementDrcChecksDisabled prop
+
+tests/copper-pour-crosshatch.test.ts:
+(pass) crosshatch accepts only booleans and preserves omitted solid-fill behavior [0.50ms]
+
+tests/schematicPinLabels.test.ts:
+(pass) Schematic pinLabels should reject labels with invalid characters [0.09ms]
+
+tests/breakout.test.ts:
+(pass) should parse breakout props with padding
+(pass) breakout accepts a fanout margin
+(pass) breakout rejects a negative fanout margin
+(pass) breakout and fanout elements default to the fanout autorouter
+(pass) breakout accepts scalar fanout boundary padding
+(pass) breakout accepts directional fanout boundary padding
+(pass) breakout rejects negative fanout boundary padding [0.50ms]
+(pass) breakout accepts fanout bus directions and routing layers [0.06ms]
+(pass) breakout accepts a fanout pour net map
+(pass) should parse breakout point props
+(pass) should parse breakout point offsets and position mode
+(pass) breakout point preserves an explicit physical target layer
+
+tests/pcb-stiffener.test.ts:
+(pass) rect stiffener normalizes geometry, placement and separate material thicknesses [0.07ms]
+(pass) polygon stiffener normalizes local outline without applying layout transforms
+(pass) stiffener requires shape, attachment face, material and geometry [0.79ms]
+(pass) stiffener rejects nonpositive dimensions and negative adhesive thickness [0.45ms]
+(pass) stiffener rejects conflicting shape geometry [0.45ms]
+(pass) stiffener rejects underspecified, degenerate and nonfinite polygon outlines
+
+tests/differentialpair2.test.ts:
+(pass) requires both differential-pair connections [0.63ms]
+
+tests/pin-header-connects-from.test.ts:
+(pass) connectsFromBelow resolves to layer bottom
+(pass) connectsFromAbove resolves to layer top
+(pass) an explicit layer wins over the alias
+(pass) layer is left alone when neither alias is given
+(pass) the two aliases are opposites, so both together is an error [0.19ms]
+
+tests/pinAttributes.test.ts:
+(pass) pinAttributes allows doNotConnect [0.26ms]
+
+tests/smtpad.test.ts:
+(pass) should parse PolygonSmtPadProps [0.15ms]
+(pass) type inference for SmtPadProps
+(pass) should parse RotatedPillSmtPadProps
+(pass) should parse RectSmtPadProps with individual solder mask margins
+(pass) should parse solder paste margin on every smtpad shape [0.29ms]
+
+tests/platformConfig.unitPreference.test.ts:
+(pass) unitPreference accepts mm, in, and mil [0.35ms]
+(pass) unitPreference rejects unsupported values
+
+tests/resonator.test.ts:
+(pass) should parse resonator props with no_ground variant
+(pass) should parse resonator props with ground_pin variant
+(pass) should fail to parse resonator props with invalid pin variant
+(pass) should enforce correct types for resonator props [0.19ms]
+
+tests/schematic-graphic4.test.ts:
+(pass) should parse an image URL schematic graphic [0.28ms]
+
+tests/cad-model-prop.test.ts:
+(pass) cadModel accepts a Footprinter string as the procedural model
+
+tests/cadmodel.test.ts:
+(pass) cadmodel accepts pcb coordinates
+(pass) cadmodel accepts calc pcb coordinates
+(pass) cadmodel accepts pcb edge coordinates
+(pass) cadmodel accepts pcb offsets
+(pass) cadmodel accepts optional stepUrl
+(pass) cadmodel accepts zOffsetFromSurface
+(pass) cadmodel accepts showAsTranslucentModel
+(pass) cadmodel accepts modelBoardNormalDirection and pcbRotationOffset
+
+tests/pin-header.test.ts:
+(pass) should parse pin header props with single string connections
+(pass) should parse pin header props with array connections
+(pass) should allow optional connections
+(pass) should parse rightAngle property
+(pass) should parse pcbOrientation property
+(pass) should parse pinLabels as array
+(pass) should parse pinLabels as record
+(pass) should snapshot schematic props for pin header
+
+tests/pcbMargin.test.ts:
+(pass) should parse pcbMargin props [0.57ms]
+
+tests/interconnect.test.ts:
+(pass) allows footprint and interconnect standard
+(pass) rejects unsupported interconnect standards
+(pass) allows internallyConnectedPins [0.19ms]
+(pass) rejects invalid internallyConnectedPins shape
+(pass) allows pinLabels
+
+tests/platformConfig.drcChecksDisabled.test.ts:
+(pass) platformConfig accepts optional DRC check disable flags
+
+tests/bus.test.ts:
+(pass) busProps accepts one or more connection references [0.02ms]
+(pass) busProps rejects an empty connections array [0.03ms]
+(pass) busProps accepts preferred routing layers [0.03ms]
+(pass) busProps rejects an empty preferredLayers array
+
+tests/mosfet.test.ts:
+(pass) should parse mosfet props for n channel type and enhancement mode
+(pass) should parse mosfet props for p channel type and depletion mode
+(pass) should fail to parse mosfet with invalid channelType
+(pass) should parse mosfet props with connections
+(pass) should parse mosfet connections using pin aliases
+(pass) should reject mosfet connections with invalid keys
+(pass) should allow optional mosfet connections
+(pass) should parse mosfet schematic symbol port sides
+(pass) should reject invalid mosfet schematic symbol port sides
+
+tests/platformConfig.analogSimulationDisabled.test.ts:
+(pass) platformConfig accepts analogSimulationDisabled
+
+tests/schematic-arc.test.ts:
+(pass) schematic arc parses defaults
+(pass) schematic arc allows overriding styling
+
+tests/fanout-boundary-position.test.ts:
+(pass) canonical and legacy fanout directions parse in both forms [0.19ms]
+
+tests/pcbPositionAnchor.test.ts:
+(pass) pcbPositionAnchor defaults allow padcenter [0.27ms]
+(pass) pcbPositionAnchor accepts arbitrary strings
+
+tests/manufacturer-part-number-aliases.test.ts:
+(pass) component schemas retain mpn and consumers resolve it canonically [0.16ms]
+(pass) supports existing names, matching aliases, and missing part numbers
+(pass) rejects conflicting manufacturer part number aliases [0.05ms]
+
+tests/cad-model-bounds.test.ts:
+(pass) cadModel parses optional modelBounds dimensions [0.37ms]
+
+tests/differentialpair1.test.ts:
+(pass) parses a differential pair with maximum length skew
+
+tests/assembly-device.test.ts:
+(pass) parses assembly.device props
+(pass) exposes device props through the assembly namespace
+
+tests/panel.test.ts:
+(pass) should parse outline routing panelization [0.12ms]
+(pass) should reject noncanonical outline routing spelling [0.04ms]
+
+tests/projectBaseUrl.test.ts:
+(pass) projectBaseUrl can be set [0.20ms]
+
+tests/inductor.test.ts:
+(pass) should parse inductor props with single string connections [0.02ms]
+(pass) should parse inductor props with array connections [0.05ms]
+(pass) should reject connections with invalid keys [0.03ms]
+(pass) should allow optional connections
+
+tests/schematic-circle.test.ts:
+(pass) schematic circle parses minimal props [0.24ms]
+(pass) schematic circle allows styling overrides
+
+tests/copper-pour-crosshatch-sizing.test.ts:
+(pass) crosshatch sizing parses distances and validates enabled mesh dimensions [0.25ms]
+
+tests/bus-lanes.test.ts:
+(pass) bus_lanes is accepted as an autorouter preset
+(pass) single_layer_routing is a typed alias that normalizes to bus_lanes [0.08ms]
+(pass) single-layer routing preserves canonical presets, custom strings, and defaults
+
+tests/spicemodel.test.tsx:
+(pass) spicemodel props parse source and spice pin mapping
+(pass) chip spiceModel accepts a spicemodel element
+(pass) chip spiceModel rejects plain model objects
+
+tests/analog-simulations.test.ts:
+(pass) analog transient simulation parses defaults and timing units [0.59ms]
+(pass) analog DC analyses parse operating-point and sweep props
+(pass) analog AC sweep enforces sweep-specific sample settings
+(pass) analog parameter sweep accepts values or a complete range
+
+tests/assembly-screen.test.ts:
+(pass) validates and normalizes assembly.screen props [0.40ms]
+
+tests/board-allow-blind-and-buried-vias.test.ts:
+(pass) should allow blind and buried autorouter vias when enabled
+
+tests/group.test.ts:
+(pass) should parse cellBorder
+(pass) should parse border
+(pass) should allow null for cellBorder
+(pass) should allow null for border
+(pass) should parse schPadding [0.21ms]
+(pass) should parse pcbPadding
+(pass) should parse layout padding [0.03ms]
+(pass) should parse schTitle
+(pass) should parse schSheetName on groups and subcircuits
+(pass) should parse relative flags
+(pass) should parse relative layout mode
+(pass) should parse new packOrderStrategy enums
+(pass) should parse pcb layout props
+(pass) should parse layout grid gaps
+(pass) should parse schematic layout props
+(pass) should parse schematic box customizations
+(pass) should parse schMaxTraceDistance
+(pass) should parse exposedNets
+
+tests/schematic-graphic5.test.ts:
+(pass) should parse a static-file import shaped imageUrl [0.57ms]
+
+tests/footprint-cutout-aperture-direction.test.ts:
+(pass) footprint parses cutoutApertureDirection independently of insertionDirection [0.02ms]
+
+tests/net.test.ts:
+(pass) should parse NetProps with connectsTo [0.25ms]
+(pass) should parse NetProps with nullable routingPhaseIndex
+
+tests/preflight-routing-check-policy.test.ts:
+(pass) autoroutingphase preserves all three preflight routing check policies
+(pass) autoroutingphase leaves the preflight routing check policy unset
+(pass) autoroutingphase rejects unsupported preflight routing check policies
+(pass) board preserves all three preflight routing check policies
+(pass) board leaves the preflight routing check policy unset
+(pass) board rejects unsupported preflight routing check policies
+(pass) subcircuit preserves all three preflight routing check policies
+(pass) subcircuit leaves the preflight routing check policy unset
+(pass) subcircuit rejects unsupported preflight routing check policies
+(pass) preflight routing check policy types are optional and narrow [0.65ms]
+
+tests/platform-fabricator-engine.test.ts:
+(pass) platformConfig preserves synchronous and asynchronous fabricator engines [0.18ms]
+(pass) platformConfig rejects invalid fabricator engines
+
+tests/chip2-schematic-port-arrangement.test.ts:
+(pass) should parse chip props (number)
+(pass) should parse chip props (string)
+(pass) should apply default directions for pin arrays [0.26ms]
+(pass) should work with string literal pin labels
+
+tests/platform-use-cloud-autorouter.test.ts:
+(pass) platform cloud autorouting is an optional boolean preserved by parsing [0.38ms]
+
+tests/potentiometer.test.ts:
+(pass) should parse potentiometer props with two_pin variant
+(pass) should parse potentiometer props with three_pin variant [0.08ms]
+(pass) should enforce correct types for potentiometer props
+
+tests/mountedboard.test.ts:
+(pass) should parse footprint and common layout props
+(pass) should parse chip-compatible props
+
+tests/chip3-type-tests.test.tsx:
+(pass) [typetest] example chip props usage
+(pass) [typetest] get connections type, get pin labels from Chip function
+(pass) [typetest] ChipConnections<ChipProps<"custompin1" | "custompin2">>
+(pass) [typetest] pinAttributes type matches pin labels
+(pass) [typetest] connections can reference pin numbers
+(pass) [typetest] noConnect matches chip pin labels
+
+tests/crystal.test.ts:
+(pass) should parse crystal props with 2pin variant
+(pass) should parse manufacturerPartNumber and mpn
+(pass) should parse maxTraceLength
+(pass) should parse crystal props with 4pin variant
+(pass) should allow optional connections
+(pass) should parse crystal props with connections
+(pass) should parse four-pin crystal props with numbered connections
+
+tests/fabrication-note.test.ts:
+(pass) fabrication note rect parses minimal props [0.04ms]
+(pass) fabrication note rect accepts pcb offsets and position mode [0.03ms]
+(pass) fabrication note rect allows styling overrides [0.03ms]
+(pass) fabrication note path parses route points [0.06ms]
+(pass) fabrication note text accepts pcbSx fabrication note text visibility
+
+tests/pcb-soldermask-opening.test.ts:
+(pass) solder-mask openings parse local geometry and ordinary PCB placement [0.30ms]
+(pass) solder-mask openings require a face and reject invalid or conflicting geometry [0.29ms]
+
+tests/schMargin.test.ts:
+(pass) should parse schMargin props [0.07ms]
+
+tests/voltageprobe.test.ts:
+(pass) should parse voltageprobe with name
+(pass) should parse voltageprobe without name
+(pass) should parse voltageprobe with color
+(pass) should parse voltageprobe with referenceTo
+(pass) should parse voltageprobe with name, reference, color, and graph display name
+(pass) should parse voltageprobe graph scaling props [0.04ms]
+(pass) should not parse voltageprobe with array connectsTo [0.03ms]
+
+tests/schematic-path.test.ts:
+(pass) schematic path accepts dash distance parameters [0.06ms]
+
+tests/schematic-box.test.ts:
+(pass) should parse schematic box with schX and schY [0.10ms]
+(pass) should parse schematic box chip reference props [0.09ms]
+(pass) should parse schematic box with only overlay [0.02ms]
+(pass) should fail if neither width/height nor overlay is provided
+(pass) should fail if both width/height and overlay are provided
+
+tests/platform-config-pack-solver-timeout.test.ts:
+(pass) platformConfig accepts only positive finite pack solver timeouts [0.07ms]
+
+tests/assembly-model-url.test.ts:
+(pass) assembly model URLs preserve URLs and imported asset defaults without adding defaults [0.17ms]
+(pass) assembly model URLs conflict with cadModel and replace the default screen model [0.06ms]
+
+tests/differentialpair4.test.ts:
+(pass) requires maximum length skew to be finite [0.05ms]
+
+tests/drc-check.test.ts:
+(pass) should parse drc check props [0.44ms]
+
+tests/assembly-model.test.ts:
+(pass) assembly model strings are trimmed and preserved for all elements [0.17ms]
+(pass) model conflicts with cadModel and preserves screen dimension validation [0.17ms]
+
+tests/port.test.ts:
+(pass) should parse PortProps without direction
+(pass) should parse PortProps without name
+(pass) should parse PortProps with provided direction
+(pass) should parse schematic pin-label font-size distances
+(pass) should parse schematic pin-label font-size presets [0.23ms]
+(pass) should leave schematic pin-label font size undefined by default
+(pass) should reject invalid schematic pin-label font sizes [0.08ms]
+
+tests/enclosure-fdm-box.test.ts:
+(pass) parses enclosure.fdm.box props with a boardRef [0.17ms]
+(pass) exposes the box schema through the enclosure namespace
+(pass) allows dimensions to be inferred from boardRef
+(pass) requires a non-empty boardRef [0.03ms]
+(pass) defaults wallThickness to 2mm
+
+tests/fanout-trace-path-interpolation.test.ts:
+(pass) saved route interpolation retains modes and normalizes point widths
+(pass) ordinary differing widths remain unchanged and interpolation can end at a via contact [0.50ms]
+(pass) interpolation rejects terminal, coincident, via and cross-layer endpoints [0.09ms]
+
+tests/dogbone.test.ts:
+(pass) dogbone is a typed and validated fanout autorouter preset
+
+tests/autoroutingphase.test.ts:
+(pass) autorouting phase accepts a name
+(pass) autorouting phase accepts autorouter and phase index
+(pass) autorouting phase accepts per-bus fanout directions
+(pass) autorouting phase rejects low-level solver boundary-region names
+(pass) autorouting phase accepts fanout routing layers
+(pass) autorouting phase accepts a fanout pour net map
+(pass) autorouting phase accepts scalar fanout boundary padding
+(pass) autorouting phase accepts directional fanout boundary padding
+(pass) autorouting phase accepts a single connection
+(pass) autorouting phase accepts reroute connections
+(pass) autorouting phase accepts reroute connection
+(pass) autorouting phase accepts autorouter config
+(pass) autorouting phase warns when simplify is used without reroute
+(pass) autorouting phase does not warn when simplify reroutes [0.51ms]
+(pass) autorouting phase accepts routing tolerances
+(pass) autorouting phase accepts region with reroute
+(pass) autorouting phase accepts bounds-only reroute region
+(pass) autorouting phase requires region when reroute is provided
+
+tests/schematic-table.test.ts:
+(pass) should parse schematic table props
+
+tests/differentialpair5.test.ts:
+(pass) parses DDR differential-pair constraints into canonical units
+(pass) rejects invalid DDR differential-pair constraints
+
+tests/connector.test.ts:
+(pass) should parse connector with usb_c standard
+(pass) should parse connector with m2 standard
+(pass) should parse connector with jst_sh standard
+(pass) should parse connector with jst_gh standard
+(pass) should parse connector with jst_zh standard
+(pass) should parse connector with jst_ph standard
+(pass) should parse connector with jst_xh standard
+(pass) should parse connector with jst_vh standard
+(pass) should parse connector without standard
+(pass) should fail for invalid connector standard
+(pass) should reject a contradictory JST family and pitch
+(pass) should parse an optional connector pin count
+(pass) should reject invalid connector pin count 0
+(pass) should reject invalid connector pin count -1
+(pass) should reject invalid connector pin count 2.5
+(pass) should reject invalid connector pin count Infinity
+
+tests/led2-backward-compatible-pin-labels.test.ts:
+(pass) normalizes legacy numeric LED pin-label keys [0.23ms]
+
+tests/antenna.test.ts:
+(pass) accepts supported antenna design intent
+(pass) rejects unknown antenna design intent
+(pass) antennaShape encodes its frequency band
+(pass) does not assume antenna design intent
+(pass) accepts a pcbPath using trace path syntax
+(pass) applies trace pcbPath via validation
+(pass) requires a component name
+
+tests/pcb-keepout-permissions.test.ts:
+(pass) keepout permissions preserve booleans and omission across all shapes [0.60ms]
+
+tests/capacitor.test.ts:
+(pass) parses maxDecouplingTraceLength with distance units
+(pass) parses numeric maxDecouplingTraceLength as millimeters
+
+tests/footprintFileParserMap.test.ts:
+(pass) footprintFileParserMap loadFromUrl returns footprint data [0.83ms]
+
+tests/courtyard.test.ts:
+(pass) courtyard rect parses dimensions
+(pass) courtyard rect accepts styling overrides
+(pass) courtyard outline parses outline points
+(pass) courtyard circle parses radius
+(pass) courtyard pill parses dimensions
+
+tests/schematic-cell.test.ts:
+(pass) should parse schematic cell props [0.14ms]
+(pass) should parse schematic cell props with spans
+(pass) should parse schematic cell props without children
+
+tests/hole.test.ts:
+(pass) circle holes compute missing diameter and accept pcbRotation [0.10ms]
+(pass) pill holes require width and height [0.04ms]
+(pass) oval holes require width and height
+(pass) pill holes without required dimensions throw
+
+tests/schematic-graphic1.test.ts:
+(pass) should parse an SVG schematic graphic
+
+tests/board-default-allow-blind-and-buried-vias.test.ts:
+(pass) should default blind and buried autorouter vias to disabled
+
+tests/pcb-bend.test.ts:
+(pass) bend normalizes coordinates, radius and signed angles
+(pass) bend requires explicit design choices
+(pass) tear reliefs are opt-in without an implicit radius
+(pass) tear relief radius normalizes to mm independently of the fold [1.00ms]
+(pass) tear relief radius rejects invalid or nonpositive dimensions [0.18ms]
+(pass) bend rejects degenerate centerlines after unit conversion [0.09ms]
+(pass) bend rejects nonphysical dimensions, invalid sides and nonfinite geometry
+
+tests/common-shape.test.ts:
+(pass) common shape props contain discriminated shape geometry
+(pass) common shape props require geometry for each discriminator
+(pass) CommonShapeProps narrows to shape-specific geometry
+(pass) common shape props reject component-specific shapes
+
+tests/silkscreen-graphic.test.ts:
+(pass) should parse a silkscreen graphic from an image [0.23ms]
+(pass) should parse a static-file import shaped imageUrl
+
+tests/schematic-text.test.ts:
+(pass) should parse schematic text with all fields
+(pass) should parse schematic text with only required fields
+
+tests/schematic-row.test.ts:
+(pass) should parse schematic row props [0.34ms]
+
+tests/board-mounting.test.ts:
+(pass) board accepts an assembly face target and parses the mounting gap
+(pass) board mounting references are trimmed without interpreting the target
+(pass) mountGap accepts zero, millimeters, and unit-bearing distances
+(pass) mounting preserves existing board defaults and the schema extension API
+(pass) mounting references reject missing identity text and non-string values
+(pass) mounting gaps reject negative, nonfinite, and invalid distances [0.60ms]
+
+tests/diode.test.ts:
+(pass) should parse diode props with single string connections
+(pass) should parse diode props with array connections [0.08ms]
+(pass) should parse diode props with mixed string and array connections
+(pass) should parse diode props with all connection keys
+(pass) should reject connections with invalid keys [0.10ms]
+(pass) should handle empty string and array connection values [0.02ms]
+(pass) should allow optional connections
+(pass) should parse diode pinLabels
+(pass) should reject diode pinLabels with invalid pin keys
+(pass) should reject diode pinLabels with invalid schematic labels
+(pass) should default to standard variant when no variant is specified
+(pass) should set the schottky flag when variant is schottky
+(pass) should set the zener flag when variant is zener
+(pass) should set the photo flag when variant is photo
+(pass) should set the tvs flag when variant is tvs
+(pass) should reject invalid variant values
+(pass) should throw error when multiple variant flags are set directly
+(pass) should accept variant with connections
+(pass) should parse schOrientation for diode
+
+tests/assembly-subassembly.test.ts:
+(pass) assembly.cadassembly is the same schema as assembly.subassembly [0.11ms]
+(pass) preserves nested children [0.22ms]
+(pass) permits empty containers and existing CAD model forms without defaults
+(pass) rejects missing and empty identities
+(pass) connectsTo is not a subassembly prop on either alias
+
+tests/pinAttributes2.test.ts:
+(pass) pinAttributes allows mustBeConnected [0.26ms]
+
+tests/pcb-keepout.test.ts:
+(pass) should parse keepout layer prop
+(pass) should parse keepout layers prop
+(pass) should parse keepout excludeRefs selectors
+
+tests/platform-config-allow-legacy-autorouters.test.ts:
+(pass) platformConfig accepts the legacy autorouter override [0.39ms]
+
+tests/stampboard.test.ts:
+(pass) should parse stampboard props
+(pass) should handle optional properties [0.09ms]
+(pass) should parse numeric and string pitch values
+
+tests/schematic-graphic3.test.ts:
+(pass) should parse imageUrl and svgContent together [0.25ms]
+
+tests/schematic-sheet.test.ts:
+(pass) should parse schematic sheet with name, displayName, and children [0.03ms]
+(pass) should parse ANSI B schematic sheet size
+(pass) should parse explicit schematic sheet dimensions
+(pass) should parse schematic sheet without children
+(pass) should parse an unnamed schematic sheet
+(pass) should fail with an unsupported sheet size
+(pass) should fail with non-positive explicit sheet dimensions
+
+tests/min-trace-to-hole-clearance.test.ts:
+(pass) trace-to-hole clearance parses units, preserves omission and zero, and rejects invalid distances [0.52ms]
+
+tests/spiceEngine.test.ts:
+(pass) spiceEngineMap simulate returns simulation result
+
+tests/testpoint.test.ts:
+(pass) should parse pad testpoint
+(pass) should parse pad testpoint without padDiameter
+(pass) should parse through_hole testpoint
+(pass) should require holeDiameter for through_hole variant
+(pass) should require pin1 connection when connections provided
+(pass) should reject unknown connection labels
+
+tests/transistor.test.ts:
+(pass) should parse transistor props for npn transistor [0.05ms]
+(pass) should parse transistor props for pnp transistor
+(pass) should fail to parse transistor props with invalid transistor type [0.02ms]
+(pass) should enforce correct types for transistor props [0.02ms]
+
+tests/pinAttributes-electrical-flags.test.ts:
+(pass) chip preserves true and false for isInput [0.08ms]
+(pass) chip preserves true and false for isOutput
+(pass) chip preserves true and false for isPassive
+(pass) chip preserves true and false for isBidirectional [0.07ms]
+(pass) chip preserves true and false for canUseTriState [0.02ms]
+(pass) chip preserves true and false for isUsingTriState
+(pass) chip preserves true and false for canUseOpenCollector [0.05ms]
+(pass) chip preserves true and false for isUsingOpenCollector [0.03ms]
+(pass) chip preserves true and false for canUseOpenEmitter
+(pass) chip preserves true and false for isUsingOpenEmitter
+(pass) rejects non-boolean values for isInput
+(pass) rejects non-boolean values for isOutput
+(pass) rejects non-boolean values for isPassive
+(pass) rejects non-boolean values for isBidirectional
+(pass) rejects non-boolean values for canUseTriState
+(pass) rejects non-boolean values for isUsingTriState
+(pass) rejects non-boolean values for canUseOpenCollector
+(pass) rejects non-boolean values for isUsingOpenCollector
+(pass) rejects non-boolean values for canUseOpenEmitter
+(pass) rejects non-boolean values for isUsingOpenEmitter
+(pass) electrical flags compose with existing attributes without inferred defaults [0.37ms]
+(pass) electrical flags are boolean at compile time
+
+tests/fanout-trace-paths.test.ts:
+(pass) breakout retains JSON-serializable saved routes and normalizes distances
+(pass) autorouting phase retains JSON-serializable saved routes and normalizes distances [0.03ms]
+(pass) saved fanout paths reject invalid geometry and layer transitions [0.14ms]
+(pass) saved fanout paths accept vias at start with continuous layers [0.01ms]
+(pass) saved fanout paths accept vias at end with continuous layers
+(pass) saved fanout paths accept vias at both with continuous layers [0.08ms]
+(pass) saved fanout paths accept vias at consecutive vias with continuous layers
+(pass) consecutive endpoint vias must have continuous layers
+
+tests/symbol-prop.test.ts:
+(pass) dummy
+
+tests/platedhole.test.ts:
+(pass) should parse CircularHoleWithRectPlatedProps with all required fields
+(pass) should parse PillPlatedHoleProps with all required fields [0.27ms]
+(pass) should parse PillPlatedHoleProps with all required fields
+(pass) should parse OvalPlatedHoleProps with all required fields
+(pass) should parse PlatedHoleProps with name and connectsTo
+(pass) should infer circle shape when plated hole diameter props are provided
+(pass) should default to pinheader circle plated hole when shape is omitted
+(pass) should infer pill_hole_with_rect_pad when rect pad props are provided
+
+tests/enclosure-cutout-aperture.test.ts:
+(pass) enclosure cutout aperture props normalize dimensions to millimeters [0.63ms]
+(pass) exposes cutout aperture props through the enclosure namespace
+(pass) enclosure cutout aperture props reject missing geometry and unknown shapes
+
+tests/schematic-graphic2.test.ts:
+(pass) should require at least one graphic source
+
+tests/cutout.test.ts:
+(pass) should parse RectCutoutProps
+(pass) should parse CircleCutoutProps
+(pass) should parse PolygonCutoutProps with pcbX and pcbY [0.27ms]
+(pass) should parse PolygonCutoutProps without optional pcbX/pcbY
+(pass) should parse cutout edge-positioned coordinates
+(pass) type inference for CutoutProps
+
+tests/resolveProjectStaticFileImportUrl.test.ts:
+(pass) resolveProjectStaticFileImportUrl returns the provided string
+
+tests/projectConfig.test.ts:
+(pass) projectConfig only includes project-specific fields
+(pass) projectConfig includes disabled rendering flags when provided
+(pass) projectConfig includes snapshotsDir when provided
+
+tests/pinout1-basic.test.ts:
+(pass) should parse pinout props
+
+tests/footprint-autocomplete.test.ts:
+(pass) dummy
+
+tests/platform-config-part-orientation-analysis.test.ts:
+(pass) platformConfig accepts part orientation analysis and a local cache
+(pass) platformConfig rejects invalid orientation analysis and cache values
+
+tests/analogsimulation.test.ts:
+(pass) analog simulation defaults to spice transient analysis
+(pass) analog simulation accepts name
+(pass) analog simulation accepts time parameters
+(pass) analog simulation accepts spice engine selection
+(pass) analog simulation accepts spice options
+(pass) analog simulation accepts independent graph axes
+
+tests/pcbPinLabels.test.ts:
+(pass) Component props should validate pcbPinLabels as an optional object
+
+tests/schematic-rect.test.ts:
+(pass) schematic rect parses minimal props [0.07ms]
+(pass) schematic rect allows styling overrides [0.03ms]
+
+tests/schematic-symbol.test.ts:
+(pass) schematic symbol parses a physical component projection
+(pass) schematic symbol allows optional chipRef and connections
+(pass) schematic symbol rejects an empty connections map
+
+tests/fabrication-note-dimension-offset.test.ts:
+(pass) dimension offsets parse distance units and preserve unitless directions
+
+ 602 pass
+ 0 fail
+ 7 snapshots, 2072 expect() calls
+Ran 602 tests across 145 files. [140.00ms]

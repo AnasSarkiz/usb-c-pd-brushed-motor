@@ -1,0 +1,50 @@
+Running test shard 2/8: 34 of 269 files
+- tests/adaptive-left-crossbar-bus.test.ts
+- tests/am62l-ddr4-processor-fanout-repro.test.ts
+- tests/am62l-soc-length-matching.test.ts
+- tests/benchmark-dataset31-capture.test.ts
+- tests/boundary-tail-endpoint-phase.test.ts
+- tests/boundary-terminal-returning-tail.test.ts
+- tests/bus-length-matching-crowded-spans.test.ts
+- tests/bus-length-matching-singleton-repair.test.ts
+- tests/bus-max-length-skew-plane-termination.test.ts
+- tests/connected-copper-obstacles.test.ts
+- tests/dataset03-mixed-footprint.test.ts
+- tests/dataset31-imx6ull-bottom-left-offset.test.ts
+- tests/dataset31-k230-bottom-right-offset.test.ts
+- tests/dataset31-right-top-offset.test.ts
+- tests/differential-pair-length-validation.test.ts
+- tests/fanout-exit-position-inferred-bus-merge.test.ts
+- tests/fanout31-am62l-left-byte1-prefix.test.ts
+- tests/fixed-source-singleton-boundary.test.ts
+- tests/interstitial-via-escape.test.ts
+- tests/layer-reserved-source-escapes.test.ts
+- tests/layered-winding-single-escape-layer.test.ts
+- tests/literal-corner-opt-in.test.ts
+- tests/opposite-bottom-crossbar-bus.test.ts
+- tests/peripheral-buses.test.ts
+- tests/pr-benchmark-report.test.ts
+- tests/reserved-narrow-group-interior-gap.test.ts
+- tests/retained-boundary-tail-repair.test.ts
+- tests/routed-copper-drc-via-in-pad.test.ts
+- tests/shallow-split-perimeter-bus.test.ts
+- tests/soft-plane-via-reservation-repair.test.ts
+- tests/source-origin-transit-layers.test.ts
+- tests/srj19-sample022.test.ts
+- tests/step-granularity.test.ts
+- tests/winding-interior-exit-approach.test.ts
+bun test v1.3.9 (cf6cdbbb)
+
+tests/step-granularity.test.ts:
+(pass) step exposes candidate, bus-routing, and max-flow work incrementally [1468.42ms]
+
+tests/shallow-split-perimeter-bus.test.ts:
+(pass) shortens a lower perimeter while preserving all pending source escapes [2061.92ms]
+
+tests/benchmark-dataset31-capture.test.ts:
+(pass) dataset 31 capture preserves every upstream connection, obstacle, and bus constraint [255305.70ms]
+
+tests/soft-plane-via-reservation-repair.test.ts:
+(pass) soft plane reservations preserve a complete via assignment during wide-bus repair [46897.86ms]
+
+tests/dataset31-imx6ull-bottom-left-offset.test.ts:

@@ -1,0 +1,93 @@
+/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/props-manufacturing-A22/biome.json:2:14 deserialize ━━━━━━━━━━
+
+  i The configuration schema version does not match the CLI version 2.5.14
+  
+    1 │ {
+  > 2 │   "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+      │              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    3 │   "organizeImports": {
+    4 │     "enabled": true
+  
+  i   Expected:                     2.5.14
+      Found:                        1.7.3
+  
+  
+  i Run the command biome migrate to migrate the configuration file.
+  
+
+/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/props-manufacturing-A22/biome.json:3:3 deserialize ━━━━━━━━━━
+
+  × Found an unknown key `organizeImports`.
+  
+    1 │ {
+    2 │   "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+  > 3 │   "organizeImports": {
+      │   ^^^^^^^^^^^^^^^^^
+    4 │     "enabled": true
+    5 │   },
+  
+  i Known keys:
+  
+  - $schema
+  - root
+  - extends
+  - vcs
+  - files
+  - formatter
+  - linter
+  - javascript
+  - json
+  - css
+  - graphql
+  - grit
+  - html
+  - overrides
+  - plugins
+  - assist
+  
+
+/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/props-manufacturing-A22/biome.json:11:5 deserialize ━━━━━━━━━━
+
+  × Found an unknown key `ignore`.
+  
+     9 │   },
+    10 │   "files": {
+  > 11 │     "ignore": ["cosmos-export", "dist", "package.json"]
+       │     ^^^^^^^^
+    12 │   },
+    13 │   "javascript": {
+  
+  i Known keys:
+  
+  - maxSize
+  - ignoreUnknown
+  - includes
+  - experimentalScannerIgnores
+  
+
+/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/props-manufacturing-A22/biome.json:24:13 deserialize  DEPRECATED  ━━━━━━━━━━
+
+  i The use of the recommended field has been deprecated, and will removed in the next major version of Biome. Use preset instead.
+  
+    22 │     }
+    23 │   },
+  > 24 │   "linter": {
+       │             ^
+  > 25 │     "enabled": true,
+        ...
+  > 42 │     }
+  > 43 │   }
+       │   ^
+    44 │ }
+    45 │ 
+  
+  i Migrate the configuration with the proper command
+  
+  $ biome migrate
+  
+
+configuration ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Biome exited because the configuration resulted in errors. Please fix them.
+  
+

@@ -1,0 +1,145 @@
+Running test shard 5/8: 34 of 271 files
+- tests/am62l-core-progressive-dram.test.ts
+- tests/am62l-lpddr4-five-bus-singleton-through-all-dram-repro.test.ts
+- tests/am62l-top-edge-breakout-solved-repro.test.ts
+- tests/benchmark-workflow-permissions.test.ts
+- tests/boundary-tail-repair.test.ts
+- tests/bus-allowed-layers.test.ts
+- tests/bus-length-matching-diagonal.test.ts
+- tests/bus-length-matching-via-stub.test.ts
+- tests/centered-layered-exit-targets.test.ts
+- tests/corner-boundary-channel.test.ts
+- tests/dataset06-clad1-rp2040-repro.test.ts
+- tests/dataset31-imx6ull-left-center.test.ts
+- tests/dataset31-k230-top-right-offset.test.ts
+- tests/dataset31-top-right-offset.test.ts
+- tests/empty-via-neighborhoods.test.ts
+- tests/fanout-exit-position-precedence.test.ts
+- tests/fanout31-am62l-left-solved.test.ts
+- tests/future-boundary-approach-reservations.test.ts
+- tests/large-guided-track-fallback.test.ts
+- tests/layered-boundary-target-merge.test.ts
+- tests/left-lower-crossbar.test.ts
+- tests/multi-edge-reserved-buses.test.ts
+- tests/outward-crossbar-port-window.test.ts
+- tests/plane-reserved-source-escapes.test.ts
+- tests/repro03-step-granularity.test.ts
+- tests/reserved-via-local-repair.test.ts
+- tests/rotated-obstacle-geometry.test.ts
+- tests/same-net-drill-drc.test.ts
+- tests/should-use-adaptive-dense-plane-routing.test.ts
+- tests/source-origin-buses.test.ts
+- tests/source-origin-transit-search.test.ts
+- tests/srj19-sample064.test.ts
+- tests/transit-length-repair.test.ts
+- tests/winding-large-fine-grid.test.ts
+bun test v1.3.9 (cf6cdbbb)
+
+tests/source-origin-transit-search.test.ts:
+(pass) native search keys distinguish TOP history and reset for new connections and retries [7.27ms]
+
+tests/centered-layered-exit-targets.test.ts:
+(pass) centered fanout separates overlapping targets from different layers [341.74ms]
+
+tests/reserved-via-local-repair.test.ts:
+(pass) bounded local repair completes a fenced bus while retaining all fixed vias and exact targets [366.40ms]
+
+tests/left-lower-crossbar.test.ts:
+(pass) mirrors a lower-corner crossbar while retaining pad identity and target metadata [312.11ms]
+
+tests/srj19-sample064.test.ts:
+(pass) SRJ19 sample064 solves on six layers [1452.44ms]
+
+tests/fanout31-am62l-left-solved.test.ts:
+(pass) routes the complete AM62L RAM-left sample with its timing constraints [10282.40ms]
+
+tests/plane-reserved-source-escapes.test.ts:
+(pass) partial source escapes preserve plane copper and via capacity for every remaining pad [229.37ms]
+
+tests/repro03-step-granularity.test.ts:
+(pass) repro03 exposes dense winding search as incremental subsolver steps [113.88ms]
+
+tests/transit-length-repair.test.ts:
+(pass) transit cleanup repairs complete bus skew without moving other copper or source escapes [188.20ms]
+
+tests/dataset31-imx6ull-left-center.test.ts:
+(pass) retries shared source reservations when downstream pairs cannot route [35541.24ms]
+
+tests/dataset31-k230-top-right-offset.test.ts:
+(pass) matches offset split buses after protecting aligned opposite approaches [93012.82ms]
+
+tests/source-origin-buses.test.ts:
+(pass) a whole bus can choose first vias beyond a blocked target layer without moving other sources [664.87ms]
+
+tests/benchmark-workflow-permissions.test.ts:
+(pass) comment reporting uses trusted workflow code on a different runner from PR execution [3.12ms]
+
+tests/am62l-core-progressive-dram.test.ts:
+(pass) routes every connection in core's complete AM62L progressive DRAM input [84017.24ms]
+
+tests/multi-edge-reserved-buses.test.ts:
+(pass) routes intact buses jointly per edge with distinct legal layers and retained plane sources [204.54ms]
+
+tests/fanout-exit-position-precedence.test.ts:
+(pass) canonical exit positions are atomic and reject conflicting legacy fields [1.50ms]
+
+tests/bus-allowed-layers.test.ts:
+(pass) visual regression: bus allowedLayers constrain fanout layers [190.62ms]
+
+tests/future-boundary-approach-reservations.test.ts:
+(pass) joint first vias leave the later layer's boundary approach available [363.19ms]
+
+tests/am62l-lpddr4-five-bus-singleton-through-all-dram-repro.test.ts:
+(pass) routes the AM62L-to-LPDDR4 five-bus DRAM fanout with a deferred singleton dogbone [2634.63ms]
+
+tests/outward-crossbar-port-window.test.ts:
+(pass) moves crossbar source ports around an occupied central window [230.59ms]
+
+tests/layered-boundary-target-merge.test.ts:
+(pass) merges layered lane sequences into clear routes without changing any packed track or within-layer order [177.76ms]
+
+tests/winding-large-fine-grid.test.ts:
+(pass) routes a fine winding grid across a 28.65 mm shared boundary [201.21ms]
+
+tests/rotated-obstacle-geometry.test.ts:
+(pass) rotated rectangular pads use their oriented geometry for clearance
+
+tests/large-guided-track-fallback.test.ts:
+(pass) visual regression: guided tracks stay inside the fanout boundary [11253.41ms]
+
+tests/am62l-top-edge-breakout-solved-repro.test.ts:
+(pass) routes every AM62L top-edge breakout with its original timing constraints [8701.85ms]
+
+tests/same-net-drill-drc.test.ts:
+(pass) the independent copper audit rejects same-net drill spacing [175.00ms]
+
+tests/dataset06-clad1-rp2040-repro.test.ts:
+(pass) dataset06 routes the spaced 0603 clad1 RP2040 fanout on one layer [7280.24ms]
+
+tests/corner-boundary-channel.test.ts:
+(pass) up/down escapes terminate in quarter-centered bands on the right edge [208.75ms]
+
+tests/boundary-tail-repair.test.ts:
+(pass) repairs a boundary endpoint cluster while preserving the complete bus and real source vias [367.81ms]
+
+tests/empty-via-neighborhoods.test.ts:
+(pass) cached via neighborhoods skip only cells without live primary or shared owners
+
+tests/should-use-adaptive-dense-plane-routing.test.ts:
+(pass) adaptive dense-plane routing selection is rotation invariant [0.65ms]
+(pass) an edge-aligned memory field keeps the simpler routing strategy
+(pass) a straight-through opposite-edge field keeps the simpler strategy
+
+tests/bus-length-matching-via-stub.test.ts:
+(pass) length matches a lane connected to its via through a short grid stub [363.72ms]
+
+tests/dataset31-top-right-offset.test.ts:
+(pass) routes the raw dataset31 top-right sample on pad-aligned winding channels [26517.28ms]
+
+tests/bus-length-matching-diagonal.test.ts:
+(pass) matches a diagonal bus without losing explicitly enabled via-in-pad endpoint metadata [1.39ms]
+
+ 36 pass
+ 0 fail
+ 71044 expect() calls
+Ran 36 tests across 34 files. [285.89s]

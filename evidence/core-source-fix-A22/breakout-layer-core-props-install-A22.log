@@ -1,0 +1,5 @@
+bun install v1.3.9 (cf6cdbbb)
+[4.86ms] migrated lockfile from package-lock.json
+Resolving dependencies
+Resolved, downloaded and extracted [4]
+error: no commit matching "a5cbbda0cd65fd4707c5c1af25779837c25aba92" found for "@tscircuit/implicit-copper-pour-solver" (but repository exists)

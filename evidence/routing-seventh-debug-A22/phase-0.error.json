@@ -1,0 +1,19 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 0,
+  "phaseOrdinal": 1,
+  "phaseCount": 6,
+  "elapsedMs": 435,
+  "connectionCount": 23,
+  "obstacleCount": 437,
+  "previousTraceCount": 0,
+  "autorouterName": "dogbone",
+  "solverName": "DogboneFanoutSolver",
+  "effort": 1,
+  "cacheStatus": "disabled",
+  "cacheDisabledReason": "strategy_not_cacheable",
+  "error": {
+    "message": "Dogbone connection source_trace_17 has no source pad"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "direction": "left",
+  "pitchX": 0.49987199999999987,
+  "pitchY": 0.49987199999999987,
+  "xCoordinates": [
+    -26.399995999999998,
+    -25.649934,
+    -25.150062,
+    -24.649936,
+    -24.3873,
+    -24.150063999999997,
+    -23.649938,
+    -23.150066,
+    -22.400004
+  ],
+  "yCoordinates": [
+    2.0000039999999997,
+    2.750066,
+    3.249938,
+    3.750064,
+    4,
+    4.249936,
+    4.750062,
+    5.249934,
+    5.999996
+  ],
+  "config": {
+    "traceWidth": 0.2,
+    "viaDiameter": 0.6,
+    "viaHoleDiameter": 0.3,
+    "clearance": 0.2,
+    "compactBusTracks": true,
+    "allowBlindAndBuriedVias": false,
+    "allowSameNetMerges": false,
+    "densePlaneReservationBusIds": [],
+    "denseUnrestrictedPlaneRoutingBusIds": [],
+    "singleLayerPushAndShove": false,
+    "singleLayerAdaptiveExits": false,
+    "borderDistribution": "even",
+    "layerNames": [
+      "top",
+      "bottom"
+    ],
+    "escapeLayers": [
+      "top",
+      "bottom"
+    ],
+    "maxLayerCombinations": 256,
+    "balanceLayerLoadByConnectionCount": false
+  }
+}
+NATURAL undefined
+-27.25 undefined
+-27.5 [
+  {
+    center: {
+      x: -27.5,
+      y: 3.750064,
+    },
+    diameter: 0.6,
+    holeDiameter: 0.3,
+    fromLayer: "top",
+    toLayer: "bottom",
+    spanLayers: [ "top", "bottom" ],
+  }
+]
+-27.75 [
+  {
+    center: {
+      x: -27.75,
+      y: 3.750064,
+    },
+    diameter: 0.6,
+    holeDiameter: 0.3,
+    fromLayer: "top",
+    toLayer: "bottom",
+    spanLayers: [ "top", "bottom" ],
+  }
+]
+-27.9 [
+  {
+    center: {
+      x: -27.9,
+      y: 3.750064,
+    },
+    diameter: 0.6,
+    holeDiameter: 0.3,
+    fromLayer: "top",
+    toLayer: "bottom",
+    spanLayers: [ "top", "bottom" ],
+  }
+]
+-28 [
+  {
+    center: {
+      x: -28,
+      y: 3.750064,
+    },
+    diameter: 0.6,
+    holeDiameter: 0.3,
+    fromLayer: "top",
+    toLayer: "bottom",
+    spanLayers: [ "top", "bottom" ],
+  }
+]

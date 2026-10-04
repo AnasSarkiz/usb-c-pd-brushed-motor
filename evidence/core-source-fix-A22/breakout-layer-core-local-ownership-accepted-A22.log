@@ -1,0 +1,23 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout/fanout-breakout-routes-before-global.test.tsx:
+(pass) fanout breakout routes signals and plane drops before global routing [667.51ms]
+
+tests/breakout/dogbone-plane-drop-phase-isolation.test.tsx:
+(pass) dogbone routing owns its pad escapes while plane drops remain in the following phase [375.71ms]
+
+tests/breakout/manual-breakoutpoints-use-default-autorouter.test.tsx:
+(pass) manual breakout points use the default autorouter before global routing [357.40ms]
+(pass) an explicit fanout autorouter is preserved with a manual breakout point [11.34ms]
+(pass) breakout owns nested nets and shares stable boundary point identities with its parent [67.16ms]
+
+tests/breakout/breakout-bga36-decoupling-caps.test.tsx:
+(pass) breakout defaults to fanout for a 6x6 BGA surrounded by four 0603 decoupling caps [356.59ms]
+
+tests/breakout/breakoutpoint-target-layer.test.tsx:
+(pass) explicit breakout target layers survive both escape and global routing [463.16ms]
+
+ 7 pass
+ 0 fail
+ 117 expect() calls
+Ran 7 tests across 5 files. [2.87s]

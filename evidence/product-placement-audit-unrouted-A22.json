@@ -2,7 +2,7 @@
   "revision": "A22",
   "routingPhase": "unrouted",
   "routedTraceCount": 0,
-  "artifactSha256": "f2125d20d7df28d03ad39f37ca5c87125816afe3000917c4297f63f2fb14be91",
+  "artifactSha256": "7f9f79e04b52b5cc55240e050ba615b2e19a7ad23409d59716f759a81bff8984",
   "purchasedComponentCount": 140,
   "inspectedCount": 140,
   "importedThermalVias": 12,

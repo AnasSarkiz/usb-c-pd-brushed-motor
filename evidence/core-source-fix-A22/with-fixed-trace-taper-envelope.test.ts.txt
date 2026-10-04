@@ -1,0 +1,135 @@
+import { expect, test } from "bun:test"
+import "../fixtures/extend-expect-circuit-snapshot"
+import { any_circuit_element, type AnyCircuitElement } from "circuit-json"
+import type { SimpleRouteJson } from "lib/utils/autorouting/SimpleRouteJson"
+import { withFixedTraces } from "lib/utils/autorouting/with-fixed-traces"
+
+test("fixed obstacles reserve tapered copper while preserving constant pad entries", async () => {
+  const input: SimpleRouteJson = {
+    bounds: { minX: -2, maxX: 7, minY: -5, maxY: 6 },
+    layerCount: 2,
+    minTraceWidth: 0.2,
+    obstacles: [],
+    connections: [],
+    traces: [
+      {
+        type: "pcb_trace",
+        pcb_trace_id: "linear",
+        connection_name: "linear",
+        route: [
+          {
+            route_type: "wire",
+            x: 0,
+            y: 3,
+            width: 0.3,
+            layer: "top",
+            width_interpolation_mode: "linear",
+            start_width: 0.3,
+            end_width: 2,
+          },
+          { route_type: "wire", x: 5, y: 3, width: 2, layer: "top" },
+        ],
+      },
+      {
+        type: "pcb_trace",
+        pcb_trace_id: "quadratic",
+        connection_name: "quadratic",
+        route: [
+          {
+            route_type: "wire",
+            x: 0,
+            y: 0,
+            width: 2,
+            layer: "top",
+            width_interpolation_mode: "quadratic",
+            start_width: 2,
+            end_width: 0.3,
+          },
+          { route_type: "wire", x: 5, y: 0, width: 0.3, layer: "top" },
+        ],
+      },
+      {
+        type: "pcb_trace",
+        pcb_trace_id: "constant",
+        connection_name: "constant",
+        route: [
+          { route_type: "wire", x: 0, y: -3, width: 0.3, layer: "top" },
+          { route_type: "wire", x: 5, y: -3, width: 2, layer: "top" },
+        ],
+      },
+    ],
+  }
+  const original = structuredClone(input)
+  const result = withFixedTraces(
+    input,
+    new Set(["linear", "quadratic", "constant"]),
+  )
+  const covers = ({
+    connectionName,
+    x,
+    y,
+  }: { connectionName: string; x: number; y: number }) =>
+    result.obstacles.some(
+      (obstacle) =>
+        obstacle.connectedTo.includes(connectionName) &&
+        Math.abs(x - obstacle.center.x) <= obstacle.width / 2 + 1e-9 &&
+        Math.abs(y - obstacle.center.y) <= obstacle.height / 2 + 1e-9,
+    )
+  expect(covers({ connectionName: "linear", x: 4.9, y: 3.9 })).toBe(true)
+  expect(covers({ connectionName: "linear", x: 0, y: 3.8 })).toBe(false)
+  // Circuit JSON's quadratic descending midpoint width is 0.725 mm.
+  expect(covers({ connectionName: "quadratic", x: 2.5, y: 0.36 })).toBe(true)
+  expect(covers({ connectionName: "quadratic", x: 4.9, y: 0.8 })).toBe(false)
+  expect(covers({ connectionName: "constant", x: 4.9, y: -2.1 })).toBe(false)
+  for (let sampleIndex = 0; sampleIndex <= 100; sampleIndex++) {
+    const fraction = sampleIndex / 100
+    const width = 0.3 + 1.7 * fraction
+    for (const side of [-1, 1]) {
+      expect(
+        covers({
+          connectionName: "linear",
+          x: fraction * 5,
+          y: 3 + (side * width) / 2,
+        }),
+      ).toBe(true)
+    }
+  }
+  expect(result.traces).toEqual([])
+  expect(input).toEqual(original)
+  const elements: AnyCircuitElement[] = [
+    {
+      type: "pcb_board",
+      pcb_board_id: "board",
+      center: { x: 2.5, y: 0 },
+      width: 10,
+      height: 11,
+      num_layers: 2,
+      thickness: 1.6,
+      material: "fr4",
+    },
+    ...result.obstacles.map(
+      (obstacle, index): AnyCircuitElement => ({
+        type: "pcb_keepout",
+        pcb_keepout_id: `reserved_${index}`,
+        shape: "rect",
+        center: obstacle.center,
+        width: obstacle.width,
+        height: obstacle.height,
+        layers: ["top"],
+      }),
+    ),
+    {
+      type: "pcb_silkscreen_text",
+      pcb_silkscreen_text_id: "label",
+      pcb_component_id: "board",
+      text: "LINEAR / QUADRATIC / CONSTANT",
+      anchor_position: { x: 2.5, y: 5 },
+      anchor_alignment: "center",
+      layer: "top",
+      font: "tscircuit2024",
+      font_size: 0.35,
+    },
+  ]
+  for (const element of elements) any_circuit_element.parse(element)
+  await expect(elements).toMatchPcbSnapshot(import.meta.path)
+})

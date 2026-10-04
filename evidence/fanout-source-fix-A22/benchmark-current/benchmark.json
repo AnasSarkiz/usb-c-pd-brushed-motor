@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dataset": "dataset31",
+  "datasetSource": {
+    "repository": "https://github.com/tscircuit/dataset-fanout31-am62l",
+    "commit": "8eabec2516c5066d43ec7672511a1134430c5d45"
+  },
+  "generatedAt": "2026-10-04T05:45:46.956Z",
+  "commit": "c265655ebfcc5db899755b68959a7ba1921cdd3c",
+  "configuration": {
+    "concurrency": 1,
+    "sampleTimeoutSeconds": 120
+  },
+  "wallClockMilliseconds": 32093,
+  "totalSamples": 1,
+  "rows": [
+    {
+      "dataset": "dataset31",
+      "sample": "01-top-left-offset",
+      "status": "solved",
+      "scope": "fanout",
+      "connections": 135,
+      "routed": 135,
+      "validatedBreakouts": 135,
+      "attempts": 1,
+      "vias": 135,
+      "milliseconds": 31945
+    }
+  ]
+}

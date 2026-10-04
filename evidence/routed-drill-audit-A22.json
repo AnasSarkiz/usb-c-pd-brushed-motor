@@ -1,53 +1,257 @@
 {
   "revision": "A22",
-  "artifactSha256": "41775586131558ac1e462fe675a96d62381e4c7cda33a6f43b487ee9abc2a90f",
-  "ordinaryVias": 292,
+  "artifactSha256": "4dfac1f4ef1d6e9d07dea81c0cef3bc23f85e99caf8bf83ced9f8a3d6e761cec",
+  "ordinaryVias": 298,
   "originalThermalVias": 12,
-  "drills": 324,
-  "minimumDrillDrillMm": 0.34226393925144066,
+  "drills": 330,
+  "minimumDrillDrillMm": 0.0,
   "minimumOrdinaryDrillPadWithinSearchMm": 0.0,
   "issues": [
     {
       "rule": "ordinary_drill_to_component_pad",
-      "via": "pcb_via_54",
-      "pad": "pcb_smtpad_245",
+      "via": "pcb_via_12",
+      "pad": "pcb_smtpad_99",
       "clearanceMm": 0.0
     },
     {
       "rule": "ordinary_drill_to_component_pad",
-      "via": "pcb_via_130",
-      "pad": "pcb_smtpad_147",
-      "clearanceMm": 0.15909885851494215
+      "via": "pcb_via_16",
+      "pad": "pcb_smtpad_101",
+      "clearanceMm": 0.0
     },
     {
       "rule": "ordinary_drill_to_component_pad",
-      "via": "pcb_via_192",
-      "pad": "pcb_smtpad_148",
-      "clearanceMm": 0.16839829999999975
+      "via": "pcb_via_18",
+      "pad": "pcb_smtpad_102",
+      "clearanceMm": 0.0
     },
     {
       "rule": "ordinary_drill_to_component_pad",
-      "via": "pcb_via_196",
-      "pad": "pcb_smtpad_239",
-      "clearanceMm": 0.1933983
+      "via": "pcb_via_24",
+      "pad": "pcb_smtpad_92",
+      "clearanceMm": 0.14160981301017242
     },
     {
       "rule": "ordinary_drill_to_component_pad",
-      "via": "pcb_via_240",
-      "pad": "pcb_smtpad_71",
-      "clearanceMm": 0.1500010022470764
+      "via": "pcb_via_37",
+      "pad": "pcb_smtpad_313",
+      "clearanceMm": 0.19699999999999918
     },
     {
       "rule": "ordinary_drill_to_component_pad",
-      "via": "pcb_via_241",
-      "pad": "pcb_smtpad_79",
-      "clearanceMm": 0.15000111298594732
+      "via": "pcb_via_57",
+      "pad": "pcb_smtpad_242",
+      "clearanceMm": 0.19843482474873397
     },
     {
       "rule": "ordinary_drill_to_component_pad",
-      "via": "pcb_via_297",
-      "pad": "pcb_smtpad_112",
-      "clearanceMm": 0.11501501330280117
+      "via": "pcb_via_59",
+      "pad": "pcb_smtpad_216",
+      "clearanceMm": 0.07863701190344763
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_60",
+      "pad": "pcb_smtpad_240",
+      "clearanceMm": 0.16860841220132627
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_70",
+      "pad": "pcb_smtpad_173",
+      "clearanceMm": 0.17340269716542767
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_73",
+      "pad": "pcb_smtpad_187",
+      "clearanceMm": 0.0
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_116",
+      "pad": "pcb_smtpad_141",
+      "clearanceMm": 0.1489600432246914
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_135",
+      "pad": "pcb_smtpad_129",
+      "clearanceMm": 0.17442597888274894
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_138",
+      "pad": "pcb_smtpad_113",
+      "clearanceMm": 0.11284911777918359
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_155",
+      "pad": "pcb_smtpad_27",
+      "clearanceMm": 0.017257335217907534
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_156",
+      "pad": "pcb_smtpad_59",
+      "clearanceMm": 0.07979344562868639
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_161",
+      "pad": "pcb_smtpad_20",
+      "clearanceMm": 0.1917367059570261
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_162",
+      "pad": "pcb_smtpad_22",
+      "clearanceMm": 0.0
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_184",
+      "pad": "pcb_smtpad_57",
+      "clearanceMm": 0.12792870147125512
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_209",
+      "pad": "pcb_smtpad_91",
+      "clearanceMm": 0.1970996971702003
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_210",
+      "pad": "pcb_smtpad_113",
+      "clearanceMm": 0.0
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_211",
+      "pad": "pcb_smtpad_46",
+      "clearanceMm": 0.06246691804820159
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_212",
+      "pad": "pcb_smtpad_73",
+      "clearanceMm": 0.150000900000002
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_213",
+      "pad": "pcb_smtpad_113",
+      "clearanceMm": 0.0
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_236",
+      "pad": "pcb_smtpad_74",
+      "clearanceMm": 0.100197329779974
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_238",
+      "pad": "pcb_smtpad_65",
+      "clearanceMm": 0.043060104275355116
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_254",
+      "pad": "pcb_smtpad_344",
+      "clearanceMm": 0.15700090000000344
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_255",
+      "pad": "pcb_smtpad_117",
+      "clearanceMm": 0.1500009999999996
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_294",
+      "pad": "pcb_smtpad_141",
+      "clearanceMm": 0.15103430000000007
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_295",
+      "pad": "pcb_smtpad_127",
+      "clearanceMm": 0.15000099999999875
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_19",
+      "second": "pcb_via_174",
+      "clearanceMm": 0.0
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_21",
+      "second": "pcb_via_153",
+      "clearanceMm": 0.10375350642451095
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_21",
+      "second": "pcb_via_158",
+      "clearanceMm": 0.12652064032680144
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_22",
+      "second": "pcb_via_102",
+      "clearanceMm": 0.21266925859050614
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_23",
+      "second": "pcb_via_110",
+      "clearanceMm": 0.0
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_26",
+      "second": "pcb_via_138",
+      "clearanceMm": 0.19840739340714197
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_102",
+      "second": "pcb_via_104",
+      "clearanceMm": 0.19045325440181257
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_153",
+      "second": "pcb_via_158",
+      "clearanceMm": 0.0
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_168",
+      "second": "pcb_via_213",
+      "clearanceMm": 0.18308482160193723
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_176",
+      "second": "pcb_via_180",
+      "clearanceMm": 0.0
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_176",
+      "second": "pcb_via_181",
+      "clearanceMm": 0.0
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_180",
+      "second": "pcb_via_181",
+      "clearanceMm": 0.0
     }
   ],
   "limitations": "No source-net exception for ordinary via drills. Original EP exclusions bind exact coordinates and sizes. Other routed copper checks are separately mandatory."

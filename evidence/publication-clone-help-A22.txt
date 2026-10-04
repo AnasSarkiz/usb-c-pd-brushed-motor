@@ -1,0 +1,12 @@
+Usage: tsci clone [options] [package]
+
+Clone a package from the registry
+
+Arguments:
+  package                     Package to clone (e.g. author/packageName or
+                              https://tscircuit.com/author/packageName)
+
+Options:
+  -a, --include-author        Include author name in the directory path
+  --bug-report <bugReportId>  Clone a bug report project
+  -h, --help                  display help for command

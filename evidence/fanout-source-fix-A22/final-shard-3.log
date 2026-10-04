@@ -1,0 +1,156 @@
+Running test shard 3/8: 34 of 269 files
+- tests/aligned-opposite-approach.test.ts
+- tests/am62l-ddr4-trace-finalization.test.ts
+- tests/am62l-soc-winding-fanout-repro.test.ts
+- tests/benchmark-process-isolation.test.ts
+- tests/boundary-tail-independent-clusters.test.ts
+- tests/boundary-terminal-self-contact.test.ts
+- tests/bus-length-matching-declared-pairs.test.ts
+- tests/bus-length-matching-source-prefix.test.ts
+- tests/cached-plan-clearance.test.ts
+- tests/connected-routed-trace.test.ts
+- tests/dataset04-package-surrounded-by-caps.test.ts
+- tests/dataset31-imx6ull-bottom-right-offset.test.ts
+- tests/dataset31-k230-right-center.test.ts
+- tests/dataset31-sample59-live-visualization.test.ts
+- tests/downstream-router-injection.test.ts
+- tests/fanout-exit-position-legacy-compatibility.test.ts
+- tests/fanout31-am62l-left-input.test.ts
+- tests/fixed-via-winding-reserved-exits.test.ts
+- tests/jlcpcb-design-rules.test.ts
+- tests/layer-reserved-source-transit.test.ts
+- tests/layered-winding-via-minimal.test.ts
+- tests/literal-corner-slot-reservations.test.ts
+- tests/opposite-wide-exit-over-source-field.test.ts
+- tests/peripheral-source-reservations.test.ts
+- tests/refine-adaptive-plane-reservations.test.ts
+- tests/reserved-narrow-interior-edge-gap.test.ts
+- tests/retained-tail-singleton-matching.test.ts
+- tests/routed-copper-drc.test.ts
+- tests/shortcut-fanout-plans.test.ts
+- tests/source-origin-buses.test.ts
+- tests/source-origin-transit-search.test.ts
+- tests/srj19-sample064.test.ts
+- tests/transit-length-repair.test.ts
+- tests/winding-large-fine-grid.test.ts
+bun test v1.3.9 (cf6cdbbb)
+
+tests/routed-copper-drc.test.ts:
+(pass) rejects a trace crossing a different-net pad on the same layer [1.10ms]
+(pass) does not treat visual overlap on a separate layer as a collision [0.26ms]
+(pass) rejects different-net trace intersections [0.27ms]
+(pass) rejects a via colliding with a different-net pad anywhere in its span [0.20ms]
+(pass) rejects a via placed directly at a moved breakout endpoint [0.34ms]
+(pass) allows a via at an interior point along a connected trace [0.09ms]
+(pass) rejects virtual through-obstacle transitions as emitted copper [0.06ms]
+(pass) allows a trace to leave its own component pad away from the package body [0.18ms]
+(pass) rejects a terminal trace directed through its package body [0.12ms]
+
+tests/layer-reserved-source-transit.test.ts:
+(pass) a reserved group retries permitted source-layer transit when its target layer is blocked [677.75ms]
+
+tests/source-origin-transit-search.test.ts:
+(pass) native search keys distinguish TOP history and reset for new connections and retries [1.20ms]
+
+tests/aligned-opposite-approach.test.ts:
+(pass) approach protection follows overlapping source and target corridors through every rotation [45.88ms]
+
+tests/srj19-sample064.test.ts:
+(pass) SRJ19 sample064 solves on six layers [1434.15ms]
+
+tests/transit-length-repair.test.ts:
+(pass) transit cleanup repairs complete bus skew without moving other copper or source escapes [174.04ms]
+
+tests/am62l-ddr4-trace-finalization.test.ts:
+(pass) finalizes the exact AM62L DDR4 clock escape [359.39ms]
+
+tests/benchmark-process-isolation.test.ts:
+(pass) a hung, crashed, or malformed benchmark worker cannot block subsequent samples [549.41ms]
+
+tests/source-origin-buses.test.ts:
+(pass) a whole bus can choose first vias beyond a blocked target layer without moving other sources [501.72ms]
+
+tests/dataset31-sample59-live-visualization.test.ts:
+(pass) shows dataset 31 sample 59 while the native router is still running [2757.07ms]
+
+tests/downstream-router-injection.test.ts:
+(pass) endpoint completion delegates unresolved board routes to the host [5501.23ms]
+
+tests/bus-length-matching-declared-pairs.test.ts:
+(pass) matches declared pairs within intact buses, including overlapping and pair-only constraints, without tuning outside scope [225.23ms]
+
+tests/shortcut-fanout-plans.test.ts:
+(pass) shortens an overlong lane around obstacles while preserving its source and additional via [408.90ms]
+
+tests/retained-tail-singleton-matching.test.ts:
+(pass) shortened singleton routing becomes length-matchable without changing other nets [200.15ms]
+
+tests/connected-routed-trace.test.ts:
+(pass) fanout may share copper with a connected routed trace [2.30ms]
+
+tests/dataset31-k230-right-center.test.ts:
+12 |     solverOptions: NonNullable<ConstructorParameters<typeof FanoutSolver>[1]>
+13 |   }
+14 |   const before = JSON.stringify(input)
+15 |   const solver = new FanoutSolver(input.simpleRouteJson, input.solverOptions)
+16 |   solver.solve()
+17 |   expect(solver.solved).toBe(true)
+                             ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/dataset31-k230-right-center.test.ts:17:25)
+(fail) routes coupled control buses and tunes their complete source-routed pairs [1008241.44ms]
+  ^ this test timed out after 240000ms.
+
+tests/cached-plan-clearance.test.ts:
+(pass) cached clearance rechecks replacement traces and vias during length tuning [242.98ms]
+
+tests/layered-winding-via-minimal.test.ts:
+(pass) layered winding is ordered at the first escape without crossover vias [16.51ms]
+
+tests/reserved-narrow-interior-edge-gap.test.ts:
+(pass) recovers a fixed-via singleton through an interior gap in its original corner band [2902.92ms]
+
+tests/boundary-terminal-self-contact.test.ts:
+(pass) terminal elbows reject retained same-net arms before and after corner normalization [557.65ms]
+
+tests/dataset04-package-surrounded-by-caps.test.ts:
+(pass) dataset04 breaks out larger BGAs and an RP2040-class thermal QFN, each surrounded by eight capacitors [387.25ms]
+
+tests/jlcpcb-design-rules.test.ts:
+(pass) the four-layer BGA400 clears JLCPCB copper and standard-via rules [815.48ms]
+
+tests/literal-corner-slot-reservations.test.ts:
+(pass) same-band buses reserve distinct right-edge slots and rails [3.50ms]
+
+tests/winding-large-fine-grid.test.ts:
+(pass) routes a fine winding grid across a 28.65 mm shared boundary [221.19ms]
+
+tests/bus-length-matching-source-prefix.test.ts:
+(pass) optionally tunes a source prefix while preserving the first pad leg, first via, and narrow target corridor [217.33ms]
+
+tests/fixed-via-winding-reserved-exits.test.ts:
+(pass) fixed-via single-layer winding retries with future exits reserved [656.92ms]
+
+tests/fanout-exit-position-legacy-compatibility.test.ts:
+(pass) canonical positions preserve explicit-tuple geometry and legacy behavior [1.68ms]
+
+tests/peripheral-source-reservations.test.ts:
+(pass) reserves every peripheral lead and exposed plane pad beyond long pad bodies [234.39ms]
+
+tests/opposite-wide-exit-over-source-field.test.ts:
+(pass) source retry priority follows opposite exits over the pad field through every rotation [77.01ms]
+
+tests/boundary-tail-independent-clusters.test.ts:
+(pass) repairs separated exit clusters on independent grid phases within one atomic bus [1278.80ms]
+
+tests/fanout31-am62l-left-input.test.ts:
+(pass) captures the unmodified fanout31 AM62L RAM-left sample [220.22ms]
+
+tests/am62l-soc-winding-fanout-repro.test.ts:
+(pass) routes the captured AM62L winding fanout [437.52ms]
+
+tests/dataset31-imx6ull-bottom-right-offset.test.ts:

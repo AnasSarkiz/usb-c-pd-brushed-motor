@@ -1,0 +1,95 @@
+{
+  "runtime": "Bun1.4.2/744846f84",
+  "prototype_fanout": "0.0.82",
+  "source": "final-source-files.json",
+  "library_source_matches_packed_tarball": true,
+  "normal_optimization": true,
+  "test_assertions_and_timeouts_unchanged": true,
+  "shards": [
+    {
+      "shard": 1,
+      "pass": 40,
+      "fail": 0,
+      "assertions": 21639,
+      "files": 34,
+      "seconds": 231.85,
+      "log": "evidence/fanout-source-fix-A22/bun142-suite-shard-1.log",
+      "sha256": "07369da5bb09b942f84c7fa5669e25a564cf1429a74ee4e1d1a22fd481cf7ff2"
+    },
+    {
+      "shard": 2,
+      "pass": 35,
+      "fail": 0,
+      "assertions": 173234,
+      "files": 34,
+      "seconds": 399.31,
+      "log": "evidence/fanout-source-fix-A22/bun142-suite-shard-2.log",
+      "sha256": "4a570eda705da8ae00c358ee8815c6fca5ef4e4e1936badb81a7b6fdc61d6aaa"
+    },
+    {
+      "shard": 3,
+      "pass": 42,
+      "fail": 0,
+      "assertions": 130099,
+      "files": 34,
+      "seconds": 184.89,
+      "log": "evidence/fanout-source-fix-A22/bun142-suite-shard-3.log",
+      "sha256": "a7144e28acadd247514317671920eb15048d102f1f9a293e75fa28c4fd5794e9"
+    },
+    {
+      "shard": 4,
+      "pass": 41,
+      "fail": 0,
+      "assertions": 69250,
+      "files": 34,
+      "seconds": 302.94,
+      "log": "evidence/fanout-source-fix-A22/bun142-suite-shard-4.log",
+      "sha256": "cba02155c9661216c16c0fb682d3b784b6c992b30891d86989b38d8f91ef0b84"
+    },
+    {
+      "shard": 5,
+      "pass": 36,
+      "fail": 0,
+      "assertions": 71044,
+      "files": 34,
+      "seconds": 244.97,
+      "log": "evidence/fanout-source-fix-A22/bun142-suite-shard-5.log",
+      "sha256": "0bc574e0cf42a11acb71239a2e3a434b756713ea3eec9d8444e3b70e4f1e1811"
+    },
+    {
+      "shard": 6,
+      "pass": 42,
+      "fail": 0,
+      "assertions": 16846,
+      "files": 34,
+      "seconds": 160.92,
+      "log": "evidence/fanout-source-fix-A22/bun142-suite-shard-6.log",
+      "sha256": "d3b459cc999fe1581bb866e4a0c9e5abd45213a052c828bb838fea2c7a0b4e44"
+    },
+    {
+      "shard": 7,
+      "pass": 39,
+      "fail": 0,
+      "assertions": 135718,
+      "files": 34,
+      "seconds": 132.94,
+      "log": "evidence/fanout-source-fix-A22/bun142-suite-shard-7.log",
+      "sha256": "f4d9dd1be9488409c83d3d11b7ee2745ba5139e2f8e986a71419769e0fc1dfdc"
+    },
+    {
+      "shard": 8,
+      "pass": 39,
+      "fail": 0,
+      "assertions": 19099,
+      "files": 33,
+      "seconds": 120.62,
+      "log": "evidence/fanout-source-fix-A22/bun142-suite-shard-8.log",
+      "sha256": "5fb73c08c87b54a4afe93934ac17145d4feb66f63d9b3fde549a93b01f5e84c3"
+    }
+  ],
+  "total_pass": 314,
+  "total_assertions": 636929,
+  "total_files": 271,
+  "fail": 0,
+  "status": "passed"
+}

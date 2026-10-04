@@ -1,0 +1,53 @@
+{
+  "review": "All eight fixture images individually inspected. Seven PCB snapshots are byte-identical after ownership repair; routing-stage snapshot changes were inspected separately. No threshold or functional expectation changed.",
+  "snapshots": [
+    {
+      "fixture": "breakout-qfp16-with-header-and-passives",
+      "beforeSha256": "5adbf29a36ce5ba7babd0f2f2524bed60a96f85af5108b8d858dcd3146822123",
+      "afterSha256": "5adbf29a36ce5ba7babd0f2f2524bed60a96f85af5108b8d858dcd3146822123",
+      "byteIdentical": true
+    },
+    {
+      "fixture": "fanoutpoint-chip-route",
+      "beforeSha256": "560a5acf3c966561fd8e15b8d03222feb1979734c38b46f73dca7f4decd7de20",
+      "afterSha256": "560a5acf3c966561fd8e15b8d03222feb1979734c38b46f73dca7f4decd7de20",
+      "byteIdentical": true
+    },
+    {
+      "fixture": "breakout-sot23-regulator-power-rail",
+      "beforeSha256": "ab5b31b1906af4a8fed930e960fd61497646eb0146bd6bb0b7416bab05b5fd6b",
+      "afterSha256": "ab5b31b1906af4a8fed930e960fd61497646eb0146bd6bb0b7416bab05b5fd6b",
+      "byteIdentical": true
+    },
+    {
+      "fixture": "soic8-srj",
+      "beforeSha256": "da17f42aa333e03a9c407b9e7e2cef49496d0992bcb5a2ade1c8c63464b15a16",
+      "afterSha256": "ca1789dd04c90c8d04049ffd12f96f95de12b8692c06ef0d5b344eb33ea6ab15",
+      "byteIdentical": false
+    },
+    {
+      "fixture": "autoplaced-breakoutpoints1",
+      "beforeSha256": "6b53146f88225ff99898dc4ddc6194488c7e7f8fd4e042a399d9f32bf04f1668",
+      "afterSha256": "6b53146f88225ff99898dc4ddc6194488c7e7f8fd4e042a399d9f32bf04f1668",
+      "byteIdentical": true
+    },
+    {
+      "fixture": "fanout-soic8-sensor-to-i2c-header",
+      "beforeSha256": "e13f7f55c009af6bd04d8f32dfc58f9babbda681c2295c59089868cafe3a6388",
+      "afterSha256": "e13f7f55c009af6bd04d8f32dfc58f9babbda681c2295c59089868cafe3a6388",
+      "byteIdentical": true
+    },
+    {
+      "fixture": "manualplaced-breakoutpoint",
+      "beforeSha256": "cb0adc8eb383842b02d488b16dea48073d340176e1692833ec0f1c42ba1a35ea",
+      "afterSha256": "cb0adc8eb383842b02d488b16dea48073d340176e1692833ec0f1c42ba1a35ea",
+      "byteIdentical": true
+    },
+    {
+      "fixture": "breakoutpoint-route",
+      "beforeSha256": "59451c760dcde54a2154546fbafa9b25997e3811773cd3788eb190a6c5841bb3",
+      "afterSha256": "59451c760dcde54a2154546fbafa9b25997e3811773cd3788eb190a6c5841bb3",
+      "byteIdentical": true
+    }
+  ]
+}

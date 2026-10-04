@@ -1,0 +1,51 @@
+{
+  "type": "autorouter_debug_summary",
+  "generatedAt": "2026-10-04T05:06:28.284Z",
+  "phaseCount": 2,
+  "phases": [
+    {
+      "subcircuit_id": "subcircuit_source_group_2",
+      "componentDisplayName": "<board#784 />",
+      "routingPhaseIndex": 0,
+      "phaseOrdinal": 1,
+      "phaseCount": 10,
+      "connectionCount": 17,
+      "obstacleCount": 437,
+      "previousTraceCount": 0,
+      "autorouterName": "tscircuit",
+      "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+      "effort": 1,
+      "cacheStatus": "miss",
+      "cacheKey": "routes:core@0.0.2082:solver:0f4472dc30628a43:srj:4e6079b2057af1ea",
+      "outputTraceCount": 17,
+      "outputJumperCount": 0,
+      "errorCount": 0,
+      "elapsedMs": 732,
+      "startedAt": "2026-10-04T05:06:26.761Z",
+      "completedAt": "2026-10-04T05:06:27.493Z"
+    },
+    {
+      "subcircuit_id": "subcircuit_source_group_2",
+      "componentDisplayName": "<board#784 />",
+      "routingPhaseIndex": 1,
+      "phaseOrdinal": 2,
+      "phaseCount": 10,
+      "connectionCount": 5,
+      "obstacleCount": 437,
+      "previousTraceCount": 17,
+      "autorouterName": "fanout",
+      "solverName": "FanoutSolver",
+      "effort": 1,
+      "cacheStatus": "disabled",
+      "cacheDisabledReason": "strategy_not_cacheable",
+      "elapsedMs": 10,
+      "error": {
+        "message": "FanoutSolver: bus \"source_trace_17\" does not have one component endpoint on every connection"
+      },
+      "startedAt": "2026-10-04T05:06:27.494Z",
+      "completedAt": "2026-10-04T05:06:27.504Z"
+    }
+  ],
+  "circuitJsonElementCount": 5275,
+  "targetPhaseReached": false
+}

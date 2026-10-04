@@ -1,0 +1,19 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 1,
+  "phaseOrdinal": 2,
+  "phaseCount": 10,
+  "elapsedMs": 10,
+  "connectionCount": 5,
+  "obstacleCount": 437,
+  "previousTraceCount": 17,
+  "autorouterName": "fanout",
+  "solverName": "FanoutSolver",
+  "effort": 1,
+  "cacheStatus": "disabled",
+  "cacheDisabledReason": "strategy_not_cacheable",
+  "error": {
+    "message": "FanoutSolver: bus \"source_trace_17\" does not have one component endpoint on every connection"
+  }
+}

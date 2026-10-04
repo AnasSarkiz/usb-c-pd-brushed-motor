@@ -1,0 +1,81 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/groups/group-pcb-anchor-center.test.tsx:
+(pass) group with center anchor [594.53ms]
+
+tests/groups/group-pcb-anchor-nested.test.tsx:
+(pass) nested group with anchor positioning [612.27ms]
+
+tests/groups/group-pcb-anchor-bottom-right.test.tsx:
+(pass) group with bottom_right anchor [514.60ms]
+
+tests/groups/group-pcb-anchor.test.tsx:
+(pass) group with top_left anchor should output anchor_position and anchor_alignment [501.32ms]
+
+tests/components/pcb/calc-pcb-position-via-board-relative.test.tsx:
+(pass) pcb calc supports board-relative references for via [155.95ms]
+
+tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx:
+82 |   expect(leftPlus2).toBeDefined()
+83 |   expect(right).toBeDefined()
+84 |   expect(top).toBeDefined()
+85 |   expect(bottom).toBeDefined()
+86 | 
+87 |   expect(left?.display_offset_x).toBeCloseTo(
+                                      ^
+TypeError: Expected received to be a number for 'expect'.
+ code: "ERR_INVALID_ARG_TYPE"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx:87:34)
+(fail) pcb edge positioning props support calc expressions and are visible in pcb notes [25.42ms]
+
+tests/components/pcb/calc-pcb-position-pad-relative.test.tsx:
+(pass) pcb calc supports pad-relative references [5.96ms]
+
+tests/components/pcb/calc-pcb-position-component-relative-unknown.test.tsx:
+(pass) pcb calc errors on unknown component references [2.17ms]
+
+tests/components/pcb/calc-pcb-position-component-relative.test.tsx:
+(pass) pcb calc supports component-relative references [8.69ms]
+
+tests/components/pcb/calc-pcb-position-edge-property-name.test.tsx:
+(pass) validate pcb coordinates reports original edge property name [3.06ms]
+
+tests/components/pcb/calc-pcb-position.test.tsx:
+(pass) pcb coordinates can use calc expressions with board bounds [3.41ms]
+(pass) legacy lowercase board bounds in calc expressions remain supported [2.49ms]
+(pass) calc expressions using board bounds fail for auto-sized boards [1.98ms]
+(pass) calc expressions on edge props fail for auto-sized boards [1.78ms]
+(pass) calc expressions using board bounds without a board report no-board error [2.02ms]
+
+tests/components/pcb/calc-pcb-position-component-relative-chain.test.tsx:
+(pass) pcb calc resolves chained component-relative references [9.01ms]
+
+tests/components/pcb/calc-pcb-position-primitive-component-relative.test.tsx:
+(pass) pcb calc supports component-relative references for primitives outside footprint [5.54ms]
+
+tests/components/pcb/calc-pcb-position-crystal-resonator.test.tsx:
+(pass) pcb calc supports crystal and resonator component-relative references [180.72ms]
+
+tests/components/pcb/calc-pcb-position-absolute-fast-path.test.tsx:
+(pass) absolute placements do not enumerate all pads to build calc variables [180.34ms]
+
+tests/components/pcb/calc-pcb-position-component-relative-chain-with-y.test.tsx:
+(pass) pcb calc resolves chained component-relative references with y references [12.80ms]
+
+tests/components/pcb/calc-pcb-position-chip.test.tsx:
+(pass) chip pcbX calc(board.*) resolves when component is attached to board [6.20ms]
+
+tests/components/pcb/calc-pcb-position-primitive-component-relative-footprint-error.test.tsx:
+(pass) pcb calc reports invalid property when primitive component-relative refs are used inside footprint [5.61ms]
+
+tests/components/pcb/calc-pcb-position-component-relative-cycle.test.tsx:
+(pass) pcb calc errors on circular component-relative references [5.34ms]
+
+1 tests failed:
+(fail) pcb edge positioning props support calc expressions and are visible in pcb notes [25.42ms]
+
+ 22 pass
+ 1 fail
+ 5 snapshots, 88 expect() calls
+Ran 23 tests across 19 files. [3.62s]

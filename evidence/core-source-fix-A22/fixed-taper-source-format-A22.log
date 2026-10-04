@@ -1,0 +1,8 @@
+tests/utils/with-fixed-trace-taper-envelope.test.ts internalError/io  INTERNAL  ━━━━━━━━━━━━━━━━━━━━
+
+  × No such file or directory (os error 2)
+  
+  ! This diagnostic was derived from an internal Biome error. Potential bug, please report it if necessary.
+  
+
+Formatted 2 files in 22ms. Fixed 1 file.

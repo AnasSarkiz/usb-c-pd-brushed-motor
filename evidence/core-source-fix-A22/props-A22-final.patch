@@ -1,0 +1,202 @@
+diff --git a/README.md b/README.md
+index 6af15e3..5c42110 100644
+--- a/README.md
++++ b/README.md
+@@ -490,6 +490,13 @@ export interface BoardProps extends Omit<
+   doubleSidedAssembly?: boolean;
+   /** Whether vias may be placed inside PCB pads */
+   isViaInPadAllowed?: boolean;
++  /**
++   * Stencil layers for plated through-hole pads: none for hand/wave soldering,
++   * top, bottom, or both for pin-in-paste. Omitted preserves legacy both-layer
++   * paste generation. Parsed unchanged; no aliases or conflicts. SMT paste is
++   * unaffected. Existing designs require no migration.
++   */
++  pcbPlatedHoleSolderPaste?: "none" | "top" | "bottom" | "both";
+   /**
+    * Whether implicit copper pours should be generated automatically. Defaults
+    * to false.
+@@ -553,8 +560,13 @@ export interface BreakoutProps
+ ```ts
+ export interface BreakoutPointProps extends Omit<
+   PcbLayoutProps,
+-  "pcbRotation" | "layer"
++  "pcbRotation"
+ > {
++  /** Physical PCB layer of the escape target. Omission preserves the current
++   * routing-layer choice. Uses the canonical layout layer input/normalization.
++   * A target on another layer requires actual routed vias; it does not move or
++   * alter the connected supplier pad. No aliases or changed default. */
++  layer?: PcbLayoutProps["layer"];
+   connection: string;
+ }
+ ```
+diff --git a/generated/COMPONENT_TYPES.md b/generated/COMPONENT_TYPES.md
+index 16de76e..7d7c3ee 100644
+--- a/generated/COMPONENT_TYPES.md
++++ b/generated/COMPONENT_TYPES.md
+@@ -1606,6 +1606,7 @@ export interface BoardProps
+   bottomSilkscreenColor?: BoardColor
+   doubleSidedAssembly?: boolean
+   isViaInPadAllowed?: boolean
++  pcbPlatedHoleSolderPaste?: "none" | "top" | "bottom" | "both"
+   automaticPoursEnabled?: boolean
+   enableViaStitching?: boolean
+   viaStitchPitch?: Distance
+@@ -1704,6 +1705,12 @@ export const boardProps = subcircuitGroupProps
+       .describe(
+         "Allows intentional via-in-pad designs to pass DRC. Omitted or false keeps via-in-pad disallowed.",
+       ),
++    pcbPlatedHoleSolderPaste: z
++      .enum(["none", "top", "bottom", "both"])
++      .optional()
++      .describe(
++        "Stencil layers for plated through-hole pads. none is for hand/wave soldering; top, bottom, or both select pin-in-paste layers. Omitted preserves legacy both-layer paste. Parsed unchanged, with no aliases or conflicts; SMT paste is unaffected and existing designs require no migration.",
++      ),
+     automaticPoursEnabled: z
+       .boolean()
+       .default(false)
+@@ -1762,11 +1769,16 @@ export const breakoutProps = subcircuitGroupProps.extend({
+ 
+ ```typescript
+ export interface BreakoutPointProps
+-  extends Omit<PcbLayoutProps, "pcbRotation" | "layer"> {
++  extends Omit<PcbLayoutProps, "pcbRotation"> {
++  layer?: PcbLayoutProps["layer"]
+   connection: string
+ }
++/** Physical PCB layer of the escape target. Omission preserves the current
++   * routing-layer choice. Uses the canonical layout layer input/normalization.
++   * A target on another layer requires actual routed vias; it does not move or
++   * alter the connected supplier pad. No aliases or changed default. */
+ export const breakoutPointProps = pcbLayoutProps
+-  .omit({ pcbRotation: true, layer: true })
++  .omit({ pcbRotation: true })
+   .extend({
+     connection: z.string(),
+   })
+diff --git a/generated/PROPS_OVERVIEW.md b/generated/PROPS_OVERVIEW.md
+index 4d9b658..a5542a5 100644
+--- a/generated/PROPS_OVERVIEW.md
++++ b/generated/PROPS_OVERVIEW.md
+@@ -558,6 +558,13 @@ export interface BoardProps
+   doubleSidedAssembly?: boolean
+   /** Whether vias may be placed inside PCB pads */
+   isViaInPadAllowed?: boolean
++  /**
++   * Stencil layers for plated through-hole pads: none for hand/wave soldering,
++   * top, bottom, or both for pin-in-paste. Omitted preserves legacy both-layer
++   * paste generation. Parsed unchanged; no aliases or conflicts. SMT paste is
++   * unaffected. Existing designs require no migration.
++   */
++  pcbPlatedHoleSolderPaste?: "none" | "top" | "bottom" | "both"
+   /**
+    * Whether implicit copper pours should be generated automatically. Defaults
+    * to false.
+@@ -580,7 +587,12 @@ export interface Border {
+ 
+ 
+ export interface BreakoutPointProps
+-  extends Omit<PcbLayoutProps, "pcbRotation" | "layer"> {
++  extends Omit<PcbLayoutProps, "pcbRotation"> {
++  /** Physical PCB layer of the escape target. Omission preserves the current
++   * routing-layer choice. Uses the canonical layout layer input/normalization.
++   * A target on another layer requires actual routed vias; it does not move or
++   * alter the connected supplier pad. No aliases or changed default. */
++  layer?: PcbLayoutProps["layer"]
+   connection: string
+ }
+ 
+diff --git a/lib/components/board.ts b/lib/components/board.ts
+index ec5e887..031ab9a 100644
+--- a/lib/components/board.ts
++++ b/lib/components/board.ts
+@@ -148,6 +148,13 @@ export interface BoardProps
+   doubleSidedAssembly?: boolean
+   /** Whether vias may be placed inside PCB pads */
+   isViaInPadAllowed?: boolean
++  /**
++   * Stencil layers for plated through-hole pads: none for hand/wave soldering,
++   * top, bottom, or both for pin-in-paste. Omitted preserves legacy both-layer
++   * paste generation. Parsed unchanged; no aliases or conflicts. SMT paste is
++   * unaffected. Existing designs require no migration.
++   */
++  pcbPlatedHoleSolderPaste?: "none" | "top" | "bottom" | "both"
+   /**
+    * Whether implicit copper pours should be generated automatically. Defaults
+    * to false.
+@@ -253,6 +260,12 @@ export const boardProps = subcircuitGroupProps
+       .describe(
+         "Allows intentional via-in-pad designs to pass DRC. Omitted or false keeps via-in-pad disallowed.",
+       ),
++    pcbPlatedHoleSolderPaste: z
++      .enum(["none", "top", "bottom", "both"])
++      .optional()
++      .describe(
++        "Stencil layers for plated through-hole pads. none is for hand/wave soldering; top, bottom, or both select pin-in-paste layers. Omitted preserves legacy both-layer paste. Parsed unchanged, with no aliases or conflicts; SMT paste is unaffected and existing designs require no migration.",
++      ),
+     automaticPoursEnabled: z
+       .boolean()
+       .default(false)
+diff --git a/lib/components/breakoutpoint.ts b/lib/components/breakoutpoint.ts
+index efbddc3..e97fe91 100644
+--- a/lib/components/breakoutpoint.ts
++++ b/lib/components/breakoutpoint.ts
+@@ -3,12 +3,17 @@ import { expectTypesMatch } from "lib/typecheck"
+ import { z } from "zod"
+ 
+ export interface BreakoutPointProps
+-  extends Omit<PcbLayoutProps, "pcbRotation" | "layer"> {
++  extends Omit<PcbLayoutProps, "pcbRotation"> {
++  /** Physical PCB layer of the escape target. Omission preserves the current
++   * routing-layer choice. Uses the canonical layout layer input/normalization.
++   * A target on another layer requires actual routed vias; it does not move or
++   * alter the connected supplier pad. No aliases or changed default. */
++  layer?: PcbLayoutProps["layer"]
+   connection: string
+ }
+ 
+ export const breakoutPointProps = pcbLayoutProps
+-  .omit({ pcbRotation: true, layer: true })
++  .omit({ pcbRotation: true })
+   .extend({
+     connection: z.string(),
+   })
+diff --git a/package.json b/package.json
+index 665dd5e..1b01edf 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "@tscircuit/props",
+-  "version": "0.0.682",
++  "version": "0.0.683",
+   "description": "Props for tscircuit builtin component types",
+   "main": "dist/index.js",
+   "type": "module",
+diff --git a/tests/breakout.test.ts b/tests/breakout.test.ts
+index 4f26146..21d0118 100644
+--- a/tests/breakout.test.ts
++++ b/tests/breakout.test.ts
+@@ -120,3 +120,21 @@ test("should parse breakout point offsets and position mode", () => {
+   expect(parsed.pcbOffsetY).toBeCloseTo(3)
+   expect(parsed.pcbPositionMode).toBe("relative_to_board_anchor")
+ })
++
++test("breakout point preserves an explicit physical target layer", () => {
++  expect(
++    breakoutPointProps.parse({ connection: "U1.pin1", layer: "bottom" }),
++  ).toHaveProperty("layer", "bottom")
++  expect(
++    breakoutPointProps.parse({
++      connection: "U1.pin1",
++      layer: { name: "inner1" },
++    }),
++  ).toHaveProperty("layer", "inner1")
++  expect(
++    breakoutPointProps.parse({ connection: "U1.pin1" }),
++  ).not.toHaveProperty("layer")
++  expect(() =>
++    breakoutPointProps.parse({ connection: "U1.pin1", layer: "invalid" }),
++  ).toThrow()
++})

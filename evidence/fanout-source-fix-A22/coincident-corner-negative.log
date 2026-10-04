@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/coincident-path-corner.test.ts:
+11 |   for(let index = 1; index < normalized.length - 1; index++) {
+12 |     const a=normalized[index-1]!, b=normalized[index]!, c=normalized[index+1]!
+13 |     const incoming={x:b.x-a.x,y:b.y-a.y}, outgoing={x:c.x-b.x,y:c.y-b.y}
+14 |     const cosine=(incoming.x*outgoing.x+incoming.y*outgoing.y)/(Math.hypot(incoming.x,incoming.y)*Math.hypot(outgoing.x,outgoing.y))
+15 |     expect(Number.isFinite(cosine)).toBe(true)
+16 |     expect(cosine).toBeGreaterThanOrEqual(Math.SQRT1_2-1e-7)
+                        ^
+error: expect(received).toBeGreaterThanOrEqual(expected)
+
+Expected: >= 0.7071066811865476
+Received: 0
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/coincident-path-corner.test.ts:16:20)
+(fail) coincident vertices cannot conceal a sharp copper corner [0.70ms]
+
+ 0 pass
+ 1 fail
+ 3 expect() calls
+Ran 1 test across 1 file. [54.00ms]

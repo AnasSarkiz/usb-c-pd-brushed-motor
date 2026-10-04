@@ -68,8 +68,8 @@ const powerPaths: FanoutTracePath[] = [
         layer: "top",
         width_interpolation_mode: "linear",
       },
-      { route_type: "wire", x: 29.1, y: -5.2, width: 2, layer: "top" },
-      { route_type: "wire", x: 29.1, y: -7.9, width: 2, layer: "top" },
+      { route_type: "wire", x: 30.5, y: -5.2, width: 2, layer: "top" },
+      { route_type: "wire", x: 30.5, y: -7.9, width: 2, layer: "top" },
       { route_type: "wire", x: 38, y: -7.9, width: 2, layer: "top" },
       { route_type: "wire", x: 38, y: 5.50006, width: 2, layer: "top" },
       { route_type: "wire", x: 34.09995, y: 5.50006, width: 2, layer: "top" },
@@ -134,10 +134,25 @@ const powerPaths: FanoutTracePath[] = [
 
 export function PowerRouting() {
   return (
-    <autoroutingphase
-      phaseIndex={0}
-      connections={["net.SWITCH_NODE", "net.MOTOR_P", "net.MOTOR_N"]}
-      pcbTracePaths={powerPaths}
-    />
+    <>
+      <autoroutingphase
+        phaseIndex={0}
+        // Fixed high-current paths precede the ground and signal routing stages.
+        fanoutPourNetMap={{}}
+        connections={["net.SWITCH_NODE", "net.MOTOR_P", "net.MOTOR_N"]}
+        pcbTracePaths={powerPaths}
+      />
+      <autoroutingphase
+        name="ground-plane-connections"
+        phaseIndex={1}
+        autorouter={{
+          preset: "fanout",
+          allowViaInPad: false,
+          traceClearance: 0.25,
+        }}
+        connections={["net.GND"]}
+        fanoutPourNetMap={{ bottom: "GND" }}
+      />
+    </>
   )
 }

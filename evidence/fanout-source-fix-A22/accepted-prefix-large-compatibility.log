@@ -1,0 +1,9 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/dataset31-imx6ull-top-right-offset.test.ts:
+(pass) retains future approaches with a higher source cost after the fresh source retry cannot route [73953.49ms]
+
+ 1 pass
+ 0 fail
+ 14729 expect() calls
+Ran 1 test across 1 file. [74.06s]

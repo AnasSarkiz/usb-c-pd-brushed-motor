@@ -1,0 +1,31 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/plane-ground-drill-clearance.test.ts:
+(pass) merged QFN ground escapes preserve ordinary drill and pad clearances [302.32ms]
+
+tests/same-net-drill-drc.test.ts:
+(pass) the independent copper audit rejects same-net drill spacing [141.49ms]
+
+tests/plane-source-same-net-copper.test.ts:
+(pass) normalizes plane sources through existing and emitted same-net copper without merging signal branches [271.60ms]
+
+tests/dataset31-imx6ull-top-center.test.ts:
+51 |           if (vector) {
+52 |             const dot = vector.x * next.x + vector.y * next.y
+53 |             const cross = Math.abs(vector.x * next.y - vector.y * next.x)
+54 |             expect(
+55 |               dot >= -1e-7 && (cross < 1e-7 || Math.abs(cross - dot) < 1e-7),
+56 |             ).toBe(true)
+                   ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/dataset31-imx6ull-top-center.test.ts:56:15)
+(fail) retries untunable wide source routes with fresh reservations and a higher source cost [40385.22ms]
+
+ 3 pass
+ 1 fail
+ 14049 expect() calls
+Ran 4 tests across 4 files. [41.22s]

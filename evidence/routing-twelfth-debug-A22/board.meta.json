@@ -1,0 +1,51 @@
+{
+  "type": "autorouter_debug_summary",
+  "generatedAt": "2026-10-04T05:22:43.496Z",
+  "phaseCount": 2,
+  "phases": [
+    {
+      "subcircuit_id": "subcircuit_source_group_2",
+      "componentDisplayName": "<board#779 />",
+      "routingPhaseIndex": 0,
+      "phaseOrdinal": 1,
+      "phaseCount": 10,
+      "connectionCount": 13,
+      "obstacleCount": 437,
+      "previousTraceCount": 0,
+      "autorouterName": "tscircuit",
+      "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+      "effort": 1,
+      "cacheStatus": "miss",
+      "cacheKey": "routes:core@0.0.2083:solver:0f4472dc30628a43:srj:39686548d1eb7854",
+      "outputTraceCount": 13,
+      "outputJumperCount": 0,
+      "errorCount": 0,
+      "elapsedMs": 693,
+      "startedAt": "2026-10-04T05:22:41.978Z",
+      "completedAt": "2026-10-04T05:22:42.671Z"
+    },
+    {
+      "subcircuit_id": "subcircuit_source_group_2",
+      "componentDisplayName": "<board#779 />",
+      "routingPhaseIndex": 1,
+      "phaseOrdinal": 2,
+      "phaseCount": 10,
+      "connectionCount": 5,
+      "obstacleCount": 437,
+      "previousTraceCount": 13,
+      "autorouterName": "fanout",
+      "solverName": "FanoutSolver",
+      "effort": 1,
+      "cacheStatus": "disabled",
+      "cacheDisabledReason": "strategy_not_cacheable",
+      "elapsedMs": 110,
+      "error": {
+        "message": "Fanout failed for U1: only 3 of 5 connections could escape to the breakout boundary. The breakout boundary is 0.55mm from the pads at its narrowest point, which all 5 escapes have to share. Give the fanout more room by increasing the breakout's padding, or by extending the breakout to include the parts crowding it (decoupling capacitors, series resistors) so their pads sit inside the boundary instead of against it."
+      },
+      "startedAt": "2026-10-04T05:22:42.672Z",
+      "completedAt": "2026-10-04T05:22:42.782Z"
+    }
+  ],
+  "circuitJsonElementCount": 5270,
+  "targetPhaseReached": false
+}

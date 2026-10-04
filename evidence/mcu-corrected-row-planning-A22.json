@@ -1,0 +1,211 @@
+[
+  {
+    "pin": 1,
+    "xMm": -15.65,
+    "yMm": -8.925,
+    "actualPad": {
+      "xMm": -17.129038000000037,
+      "yMm": -8.925064000000134
+    },
+    "minimumPadGapMm": 0.6080339033682693,
+    "nearestPadId": "pcb_smtpad_88"
+  },
+  {
+    "pin": 2,
+    "xMm": -14.8,
+    "yMm": -8.275,
+    "actualPad": {
+      "xMm": -17.129038000000037,
+      "yMm": -8.275078000000008
+    },
+    "minimumPadGapMm": 0.7199995999999995,
+    "nearestPadId": "pcb_smtpad_114"
+  },
+  {
+    "pin": 3,
+    "xMm": -15.65,
+    "yMm": -7.625,
+    "actualPad": {
+      "xMm": -17.129038000000037,
+      "yMm": -7.625092000000109
+    },
+    "minimumPadGapMm": 0.6080339069601743,
+    "nearestPadId": "pcb_smtpad_90"
+  },
+  {
+    "pin": 4,
+    "xMm": -15.65,
+    "yMm": -6.975,
+    "actualPad": {
+      "xMm": -17.129038000000037,
+      "yMm": -6.9751059999999825
+    },
+    "minimumPadGapMm": 0.6080339092396525,
+    "nearestPadId": "pcb_smtpad_91"
+  },
+  {
+    "pin": 5,
+    "xMm": -15.65,
+    "yMm": -6.325,
+    "actualPad": {
+      "xMm": -17.129038000000037,
+      "yMm": -6.324866000000043
+    },
+    "minimumPadGapMm": 0.6080339147656599,
+    "nearestPadId": "pcb_smtpad_92"
+  },
+  {
+    "pin": 6,
+    "xMm": -14.8,
+    "yMm": -5.675,
+    "actualPad": {
+      "xMm": -17.129038000000037,
+      "yMm": -5.674879999999916
+    },
+    "minimumPadGapMm": 0.7749768000000001,
+    "nearestPadId": "pcb_smtpad_117"
+  },
+  {
+    "pin": 7,
+    "xMm": -15.65,
+    "yMm": -5.025,
+    "actualPad": {
+      "xMm": -17.129038000000037,
+      "yMm": -5.0248940000000175
+    },
+    "minimumPadGapMm": 0.6080339092396525,
+    "nearestPadId": "pcb_smtpad_94"
+  },
+  {
+    "pin": 8,
+    "xMm": -15.65,
+    "yMm": -4.375,
+    "actualPad": {
+      "xMm": -17.129038000000037,
+      "yMm": -4.374908000000005
+    },
+    "minimumPadGapMm": 0.6080339069601743,
+    "nearestPadId": "pcb_smtpad_95"
+  },
+  {
+    "pin": 9,
+    "xMm": -15.65,
+    "yMm": -3.725,
+    "actualPad": {
+      "xMm": -17.129038000000037,
+      "yMm": -3.7249219999999923
+    },
+    "minimumPadGapMm": 0.6080339050030467,
+    "nearestPadId": "pcb_smtpad_96"
+  },
+  {
+    "pin": 10,
+    "xMm": -15.65,
+    "yMm": -3.075,
+    "actualPad": {
+      "xMm": -17.129038000000037,
+      "yMm": -3.0749359999999797
+    },
+    "minimumPadGapMm": 0.6080339033682693,
+    "nearestPadId": "pcb_smtpad_97"
+  },
+  {
+    "pin": 11,
+    "xMm": -24.35,
+    "yMm": -3.075,
+    "actualPad": {
+      "xMm": -22.870961999999963,
+      "yMm": -3.0749359999999797
+    },
+    "minimumPadGapMm": 0.6080339033682711,
+    "nearestPadId": "pcb_smtpad_107"
+  },
+  {
+    "pin": 12,
+    "xMm": -25.2,
+    "yMm": -3.725,
+    "actualPad": {
+      "xMm": -22.870961999999963,
+      "yMm": -3.7249219999999923
+    },
+    "minimumPadGapMm": 1.1850047000000041,
+    "nearestPadId": "pcb_smtpad_153"
+  },
+  {
+    "pin": 13,
+    "xMm": -24.35,
+    "yMm": -4.375,
+    "actualPad": {
+      "xMm": -22.870961999999963,
+      "yMm": -4.374908000000005
+    },
+    "minimumPadGapMm": 0.6080339069601761,
+    "nearestPadId": "pcb_smtpad_105"
+  },
+  {
+    "pin": 14,
+    "xMm": -25.2,
+    "yMm": -5.025,
+    "actualPad": {
+      "xMm": -22.870961999999963,
+      "yMm": -5.0248940000000175
+    },
+    "minimumPadGapMm": 1.4580339038531698,
+    "nearestPadId": "pcb_smtpad_104"
+  },
+  {
+    "pin": 15,
+    "xMm": -24.35,
+    "yMm": -5.675,
+    "actualPad": {
+      "xMm": -22.870961999999963,
+      "yMm": -5.674879999999916
+    },
+    "minimumPadGapMm": 0.6080339118414828,
+    "nearestPadId": "pcb_smtpad_103"
+  },
+  {
+    "pin": 16,
+    "xMm": -25.2,
+    "yMm": -6.325,
+    "actualPad": {
+      "xMm": -22.870961999999963,
+      "yMm": -6.324866000000043
+    },
+    "minimumPadGapMm": 1.1850047000000041,
+    "nearestPadId": "pcb_smtpad_154"
+  },
+  {
+    "pin": 17,
+    "xMm": -24.35,
+    "yMm": -6.975,
+    "actualPad": {
+      "xMm": -22.870961999999963,
+      "yMm": -6.9751059999999825
+    },
+    "minimumPadGapMm": 0.6080339092396543,
+    "nearestPadId": "pcb_smtpad_101"
+  },
+  {
+    "pin": 18,
+    "xMm": -25.2,
+    "yMm": -7.625,
+    "actualPad": {
+      "xMm": -22.870961999999963,
+      "yMm": -7.625092000000109
+    },
+    "minimumPadGapMm": 1.1850047000000041,
+    "nearestPadId": "pcb_smtpad_154"
+  },
+  {
+    "pin": 19,
+    "xMm": -24.35,
+    "yMm": -8.275,
+    "actualPad": {
+      "xMm": -22.870961999999963,
+      "yMm": -8.275078000000008
+    },
+    "minimumPadGapMm": 0.6080339050030484,
+    "nearestPadId": "pcb_smtpad_99"
+  }
+]

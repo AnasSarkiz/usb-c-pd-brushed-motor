@@ -1,0 +1,22 @@
+{
+  "fanout-drill-isolation-A22": {
+    "archive": "evidence/fanout-source-fix-A22/fanout-drill-isolation-A22-source.tgz",
+    "sha256": "4363cf5801d0595d8961ee0c2fb4dba937253fe00665872902d3d353f5f4d0f7",
+    "note": "Stopped isolated diagnostic source preserved before removing duplicate checkout; full original fixtures and source retained."
+  },
+  "fanout-corner-isolation-A22": {
+    "archive": "evidence/fanout-source-fix-A22/fanout-corner-isolation-A22-source.tgz",
+    "sha256": "803c9236850d06c392da8180e99228857637e310c7de9966a0cfe2f0f53ecf93",
+    "note": "Stopped isolated diagnostic source preserved before removing duplicate checkout; full original fixtures and source retained."
+  },
+  "fanout-drill-search-isolation-A22": {
+    "archive": "evidence/fanout-source-fix-A22/fanout-drill-search-isolation-A22-source.tgz",
+    "sha256": "d79905f026bdbc03e43c4e07e1b64428f708580e46c19c47b2439ed4c546350f",
+    "note": "Stopped isolated diagnostic source preserved before removing duplicate checkout; full original fixtures and source retained."
+  },
+  "fanout-drill-audit-isolation-A22": {
+    "archive": "evidence/fanout-source-fix-A22/fanout-drill-audit-isolation-A22-source.tgz",
+    "sha256": "7028e2da38fbba582cc9938b43725b49dcdb87e5aa4815448cf1bd43f09267a0",
+    "note": "Stopped isolated diagnostic source preserved before removing duplicate checkout; full original fixtures and source retained."
+  }
+}

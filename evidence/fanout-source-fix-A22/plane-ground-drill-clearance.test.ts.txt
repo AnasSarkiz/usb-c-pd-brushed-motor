@@ -1,0 +1,54 @@
+import { expect, test } from "bun:test"
+import { getSvgFromGraphicsObject } from "graphics-debug"
+import { FanoutSolver } from "lib/fanout-solver"
+import { distance, distancePointToObstacle } from "lib/geometry"
+import { validateRoutedCopperDrc } from "lib/validate-routed-copper-drc"
+
+// Unmodified native solver input from a placed QFN board. Board-world mm,
+// +X right/+Y up. The plane stage explicitly permits same-net copper joins.
+test("merged QFN ground escapes preserve ordinary drill and pad clearances", async () => {
+  const args: ConstructorParameters<typeof FanoutSolver> = await Bun.file(
+    new URL("./fixtures/plane-ground-clearance.json", import.meta.url),
+  ).json()
+  const solver = new FanoutSolver(args[0], {
+    ...args[1],
+    allowSameNetMerges: true,
+  })
+  solver.solve()
+  expect(solver.failed).toBe(false)
+  const output = solver.getOutput()
+  expect(output.planeTerminations).toHaveLength(5)
+  const vias = output.planeTerminations.map((termination) => termination.via)
+  for (const [firstIndex, firstVia] of vias.entries()) {
+    for (const secondVia of vias.slice(firstIndex + 1)) {
+      const drillGapMm =
+        distance(firstVia.center, secondVia.center) -
+        (firstVia.holeDiameter + secondVia.holeDiameter) / 2
+      expect(drillGapMm).toBeGreaterThanOrEqual(0.25 - 1e-9)
+    }
+    for (const obstacle of args[0].obstacles) {
+      if (
+        !obstacle.componentId ||
+        !obstacle.layers.some((layer) => firstVia.spanLayers.includes(layer))
+      )
+        continue
+      expect(
+        distancePointToObstacle(firstVia.center, obstacle) -
+          firstVia.diameter / 2,
+      ).toBeGreaterThanOrEqual(0.2 - 1e-9)
+    }
+  }
+  const drc = validateRoutedCopperDrc({
+    inputSrj: args[0],
+    // Audit the five newly emitted routes of this plane phase. The thirteen
+    // retained signal prefixes are inputs from a preceding phase, whose
+    // connection declarations are deliberately absent from this phase SRJ.
+    routedSrj: { ...output.simpleRouteJson, traces: output.fanoutTraces },
+    clearance: 0.2,
+    allowBlindAndBuriedVias: false,
+  })
+  expect(drc).toMatchObject({ valid: true, issues: [] })
+  expect(getSvgFromGraphicsObject(solver.visualize())).toMatchSvgSnapshot(
+    import.meta.path,
+  )
+})

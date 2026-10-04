@@ -1,0 +1,131 @@
+{
+  "official_commit": "53e16037bfe5a5616bad87c734d7b4590764e6eb",
+  "prototype_package": "0.0.82",
+  "changed_files": [
+    {
+      "path": "lib/coalesce-layered-path-points.ts",
+      "base_sha256": null,
+      "sha256": "2a0300abf12e63925c19e3f4416aaa2ab9f57230cd6c320829b5383c7ec4eb77"
+    },
+    {
+      "path": "lib/fanout-segments-have-valid-turns.ts",
+      "base_sha256": null,
+      "sha256": "2c6888b33089468e3b391daecd09e6bd6a5daa2751eb7820a95ea39ff03b3c3b"
+    },
+    {
+      "path": "lib/get-routed-trace-copper.ts",
+      "base_sha256": "8206add3640a716983d383a7e7e70ac86820ec5d0b2c3c59151c50b27884d41b",
+      "sha256": "f4aa9ea26b39c2dde93371ca82b4d4be236dbe44aa9a3f45343f78548a71c996"
+    },
+    {
+      "path": "lib/normalize-fanout-plan-corners.ts",
+      "base_sha256": "e4aade329d4a02ae75241da6a2d5c8f1c910e8088f834f7668b194ee124737ab",
+      "sha256": "5a7b3c8ba377beafba1fde06778d173e7dcc1465f42e71f6d40133f66d48d2bd"
+    },
+    {
+      "path": "lib/route-bus.ts",
+      "base_sha256": "44e8985937e4d67b0074a1e1f29784fbfc19a571b9cd7575834b2adbff810389",
+      "sha256": "c3f6371e09fe277a0f4e85efee11f1dcfd509ea240c00baa97fd2b21af1300aa"
+    },
+    {
+      "path": "lib/route-reserved-via-buses.ts",
+      "base_sha256": "bdfe45137effbed2ff529517e06886cb65dc3a522a65b27ef868bd0a732085c5",
+      "sha256": "be4002776496d9916b35bd6430bb8af25aecb21874b1ed869824749ab4b8afed"
+    },
+    {
+      "path": "lib/types.ts",
+      "base_sha256": "e20cb2039f26f09d810ef8bf914587c29f26705914961f8c114974e35f82ffef",
+      "sha256": "922ac7254bf461d6d322c5a3b5f110e11fcb388dfe0564cf5740a36f50edf0b5"
+    },
+    {
+      "path": "lib/validate-fanout-solution.ts",
+      "base_sha256": "3cd5f23cd02e5d894114bab95155f61308bace18cc8c83adfba31b866b404a46",
+      "sha256": "ea035fea8f204d5a949078660878efa945be36c5bf696071ec17593e0755e7cb"
+    },
+    {
+      "path": "lib/validate-routed-copper-drc.ts",
+      "base_sha256": "024cfbfcbe90af9ed8311c5dbe47fca8a7b75b4bbe3fdd2f0b80ff79c023ef61",
+      "sha256": "e6ee37ebd8b93c427b4f92c65046d6121e04bdf855d4c6d0f1b614fbacdd1f5f"
+    },
+    {
+      "path": "lib/via-drills-are-clear.ts",
+      "base_sha256": null,
+      "sha256": "7af0de4e743ada6e379cbc8d45908ce6ca3a77b1f387f2f0eb98af9b8822ac3c"
+    },
+    {
+      "path": "package.json",
+      "base_sha256": "90546b7e878e87fb593a89f53013fac4321349f4f0d3958ea555f2b288d501cd",
+      "sha256": "38df22a6acc2afbb14460f9528aabff917b31795769bbfc465c634afc48f40d9"
+    },
+    {
+      "path": "scripts/diagnose-imx6ull-corners.ts",
+      "base_sha256": null,
+      "sha256": "f9419c19aa9080d6adb60b00b7ec9b5e63bcc931b76976f7bc75bd9466377e64"
+    },
+    {
+      "path": "scripts/profile-fanout-fixture.ts",
+      "base_sha256": null,
+      "sha256": "740de5917670996f5ca3041fd557ffa03800afc11c9a9c7d2d4556bd259dd835"
+    },
+    {
+      "path": "tests/__snapshots__/am62l-real-decoupling-copper.snap.svg",
+      "base_sha256": "799be3da3efe1745fb945daca7a87482c0bc007d02fb8aaf45123a2dc40b3fd0",
+      "sha256": "9c5f7edb7e4d3315b6e6843b4bb42da54cb5ade7f1724eb02fb5f221bec79c26"
+    },
+    {
+      "path": "tests/__snapshots__/coincident-path-corner.snap.svg",
+      "base_sha256": null,
+      "sha256": "9c51cff4867457e5333c907e2ca50dc2d2b1bce773ccd76a72ab7c92d9bc64c5"
+    },
+    {
+      "path": "tests/__snapshots__/plane-ground-drill-clearance.snap.svg",
+      "base_sha256": null,
+      "sha256": "51220f15d3ba5b105c51b8277224e239ef57a163350933526dbfad31586ae8f8"
+    },
+    {
+      "path": "tests/__snapshots__/same-net-drill-drc.snap.svg",
+      "base_sha256": null,
+      "sha256": "e82fe658d170ff0b42f6e2499c77741c69ca55732294a936ab1a042f7af72e08"
+    },
+    {
+      "path": "tests/__snapshots__/source-origin-accepted-prefix.snap.svg",
+      "base_sha256": null,
+      "sha256": "2468f4eaea81737f0df38e5f8090518a8a9655653d92bdf8f4f68ecdc82bb5db"
+    },
+    {
+      "path": "tests/am62l-real-decoupling-copper.test.tsx",
+      "base_sha256": "b40200d7b0e433817afe809d46f59ebaaa4a5abebf72044da09f3de59e18ca00",
+      "sha256": "ee445b435bc99ababa7dc0c7b69e8be2c03966cdaddb6a884ba16d0cd5db0440"
+    },
+    {
+      "path": "tests/coincident-path-corner.test.ts",
+      "base_sha256": null,
+      "sha256": "4505ae23f65f3868cbb975a70aae17ae01fc7e73738189a3a3d251363bf61bda"
+    },
+    {
+      "path": "tests/fixtures/plane-ground-clearance.json",
+      "base_sha256": null,
+      "sha256": "ebc0e54aa0941030705a2bd2dc6d36f35e595ab155ab8ba432e2228a8205b1eb"
+    },
+    {
+      "path": "tests/plane-ground-drill-clearance.test.ts",
+      "base_sha256": null,
+      "sha256": "b50dc04a680949983363bd725bc27bed5af1537eb72bb8ff41725ff6b618d4c2"
+    },
+    {
+      "path": "tests/same-net-drill-drc.test.ts",
+      "base_sha256": null,
+      "sha256": "64cf1c78b18587b72f119c08f52cf6cee4f1e19b45d2b9fbaa786bf14f524b8a"
+    },
+    {
+      "path": "tests/shared-via-drill-identity.test.ts",
+      "base_sha256": null,
+      "sha256": "790476939ef4e31fe67d3b7afeadcfb538421193f5758ad42207fcf6ac82ec50"
+    },
+    {
+      "path": "tests/source-origin-accepted-prefix.test.ts",
+      "base_sha256": null,
+      "sha256": "1aa49b3ecf01b3d6b329aec457d2e05e65d1cab9c424c38e704d688b9d622e64"
+    }
+  ]
+}

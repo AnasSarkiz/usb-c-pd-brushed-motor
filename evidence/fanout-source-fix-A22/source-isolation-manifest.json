@@ -1,0 +1,43 @@
+{
+  "fanout-drill-isolation-A22": {
+    "base": "53e16037bfe5a5616bad87c734d7b4590764e6eb",
+    "changedFiles": {
+      "lib/route-bus.ts": "c3f6371e09fe277a0f4e85efee11f1dcfd509ea240c00baa97fd2b21af1300aa",
+      "lib/get-routed-trace-copper.ts": "f4aa9ea26b39c2dde93371ca82b4d4be236dbe44aa9a3f45343f78548a71c996",
+      "lib/validate-routed-copper-drc.ts": "e6ee37ebd8b93c427b4f92c65046d6121e04bdf855d4c6d0f1b614fbacdd1f5f",
+      "lib/validate-fanout-solution.ts": "ea035fea8f204d5a949078660878efa945be36c5bf696071ec17593e0755e7cb",
+      "lib/types.ts": "922ac7254bf461d6d322c5a3b5f110e11fcb388dfe0564cf5740a36f50edf0b5",
+      "lib/via-drills-are-clear.ts": "b3678b6059a6d665cf25f1766b6c1f1f6ce75535c2976cdb597b86a70d7f9f37"
+    },
+    "purpose": "Independent source-only diagnostic; no board artifact or installed dependency is altered."
+  },
+  "fanout-corner-isolation-A22": {
+    "base": "53e16037bfe5a5616bad87c734d7b4590764e6eb",
+    "changedFiles": {
+      "lib/normalize-fanout-plan-corners.ts": "5a7b3c8ba377beafba1fde06778d173e7dcc1465f42e71f6d40133f66d48d2bd",
+      "lib/coalesce-layered-path-points.ts": "2a0300abf12e63925c19e3f4416aaa2ab9f57230cd6c320829b5383c7ec4eb77",
+      "lib/fanout-segments-have-valid-turns.ts": "2c6888b33089468e3b391daecd09e6bd6a5daa2751eb7820a95ea39ff03b3c3b"
+    },
+    "purpose": "Independent source-only diagnostic; no board artifact or installed dependency is altered."
+  },
+  "fanout-drill-search-isolation-A22": {
+    "base": "53e16037bfe5a5616bad87c734d7b4590764e6eb",
+    "changedFiles": {
+      "lib/route-bus.ts": "c3f6371e09fe277a0f4e85efee11f1dcfd509ea240c00baa97fd2b21af1300aa",
+      "lib/get-routed-trace-copper.ts": "f4aa9ea26b39c2dde93371ca82b4d4be236dbe44aa9a3f45343f78548a71c996",
+      "lib/via-drills-are-clear.ts": "b3678b6059a6d665cf25f1766b6c1f1f6ce75535c2976cdb597b86a70d7f9f37"
+    },
+    "purpose": "Source-only search-versus-final-audit isolation; no installed dependency or board artifact changes."
+  },
+  "fanout-drill-audit-isolation-A22": {
+    "base": "53e16037bfe5a5616bad87c734d7b4590764e6eb",
+    "changedFiles": {
+      "lib/get-routed-trace-copper.ts": "f4aa9ea26b39c2dde93371ca82b4d4be236dbe44aa9a3f45343f78548a71c996",
+      "lib/validate-routed-copper-drc.ts": "e6ee37ebd8b93c427b4f92c65046d6121e04bdf855d4c6d0f1b614fbacdd1f5f",
+      "lib/validate-fanout-solution.ts": "ea035fea8f204d5a949078660878efa945be36c5bf696071ec17593e0755e7cb",
+      "lib/types.ts": "922ac7254bf461d6d322c5a3b5f110e11fcb388dfe0564cf5740a36f50edf0b5",
+      "lib/via-drills-are-clear.ts": "b3678b6059a6d665cf25f1766b6c1f1f6ce75535c2976cdb597b86a70d7f9f37"
+    },
+    "purpose": "Source-only search-versus-final-audit isolation; no installed dependency or board artifact changes."
+  }
+}

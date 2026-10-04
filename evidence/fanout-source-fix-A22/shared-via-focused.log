@@ -1,0 +1,18 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/shared-via-drill-identity.test.ts:
+(pass) shared immutable vias are not separate drills while distinct same-net holes retain clearance [2.24ms]
+
+tests/plane-ground-drill-clearance.test.ts:
+(pass) merged QFN ground escapes preserve ordinary drill and pad clearances [376.44ms]
+
+tests/cached-plan-clearance.test.ts:
+(pass) cached clearance rechecks replacement traces and vias during length tuning [151.70ms]
+
+tests/same-net-drill-drc.test.ts:
+(pass) the independent copper audit rejects same-net drill spacing [148.72ms]
+
+ 4 pass
+ 0 fail
+ 2190 expect() calls
+Ran 4 tests across 4 files. [788.00ms]

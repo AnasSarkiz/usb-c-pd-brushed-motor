@@ -1,0 +1,67 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/groups/group-pcb-anchor-center.test.tsx:
+(pass) group with center anchor [542.77ms]
+
+tests/groups/group-pcb-anchor-nested.test.tsx:
+(pass) nested group with anchor positioning [602.50ms]
+
+tests/groups/group-pcb-anchor-bottom-right.test.tsx:
+(pass) group with bottom_right anchor [511.89ms]
+
+tests/groups/group-pcb-anchor.test.tsx:
+(pass) group with top_left anchor should output anchor_position and anchor_alignment [492.12ms]
+
+tests/components/pcb/calc-pcb-position-via-board-relative.test.tsx:
+(pass) pcb calc supports board-relative references for via [154.17ms]
+
+tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx:
+(pass) pcb edge positioning props support calc expressions and are visible in pcb notes [306.37ms]
+
+tests/components/pcb/calc-pcb-position-pad-relative.test.tsx:
+(pass) pcb calc supports pad-relative references [6.65ms]
+
+tests/components/pcb/calc-pcb-position-component-relative-unknown.test.tsx:
+(pass) pcb calc errors on unknown component references [3.07ms]
+
+tests/components/pcb/calc-pcb-position-component-relative.test.tsx:
+(pass) pcb calc supports component-relative references [6.60ms]
+
+tests/components/pcb/calc-pcb-position-edge-property-name.test.tsx:
+(pass) validate pcb coordinates reports original edge property name [2.82ms]
+
+tests/components/pcb/calc-pcb-position.test.tsx:
+(pass) pcb coordinates can use calc expressions with board bounds [2.91ms]
+(pass) legacy lowercase board bounds in calc expressions remain supported [2.88ms]
+(pass) calc expressions using board bounds fail for auto-sized boards [2.58ms]
+(pass) calc expressions on edge props fail for auto-sized boards [1.89ms]
+(pass) calc expressions using board bounds without a board report no-board error [1.97ms]
+
+tests/components/pcb/calc-pcb-position-component-relative-chain.test.tsx:
+(pass) pcb calc resolves chained component-relative references [9.98ms]
+
+tests/components/pcb/calc-pcb-position-primitive-component-relative.test.tsx:
+(pass) pcb calc supports component-relative references for primitives outside footprint [3.19ms]
+
+tests/components/pcb/calc-pcb-position-crystal-resonator.test.tsx:
+(pass) pcb calc supports crystal and resonator component-relative references [178.40ms]
+
+tests/components/pcb/calc-pcb-position-absolute-fast-path.test.tsx:
+(pass) absolute placements do not enumerate all pads to build calc variables [177.22ms]
+
+tests/components/pcb/calc-pcb-position-component-relative-chain-with-y.test.tsx:
+(pass) pcb calc resolves chained component-relative references with y references [11.43ms]
+
+tests/components/pcb/calc-pcb-position-chip.test.tsx:
+(pass) chip pcbX calc(board.*) resolves when component is attached to board [5.41ms]
+
+tests/components/pcb/calc-pcb-position-primitive-component-relative-footprint-error.test.tsx:
+(pass) pcb calc reports invalid property when primitive component-relative refs are used inside footprint [5.31ms]
+
+tests/components/pcb/calc-pcb-position-component-relative-cycle.test.tsx:
+(pass) pcb calc errors on circular component-relative references [4.48ms]
+
+ 23 pass
+ 0 fail
+ 5 snapshots, 103 expect() calls
+Ran 23 tests across 19 files. [3.65s]

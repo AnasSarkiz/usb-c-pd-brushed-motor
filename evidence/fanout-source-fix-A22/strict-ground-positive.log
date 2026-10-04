@@ -1,0 +1,111 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/plane-ground-drill-clearance.test.ts:
+42 |     inputSrj: args[0],
+43 |     routedSrj: output.simpleRouteJson,
+44 |     clearance: 0.2,
+45 |     allowBlindAndBuriedVias: false,
+46 |   })
+47 |   expect(drc).toMatchObject({ valid: true, issues: [] })
+                   ^
+error: expect(received).toMatchObject(expected)
+
+  {
+-   "issues": [],
+-   "valid": true,
++   "checkedSegmentCount": 10,
++   "checkedTraceCount": 18,
++   "checkedViaCount": 5,
++   "issues": [
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_12",
++       "message": "Trace breakout:pcb_breakout_point_12_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_12_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_11",
++       "message": "Trace breakout:pcb_breakout_point_11_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_11_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_10",
++       "message": "Trace breakout:pcb_breakout_point_10_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_10_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_9",
++       "message": "Trace breakout:pcb_breakout_point_9_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_9_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_8",
++       "message": "Trace breakout:pcb_breakout_point_8_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_8_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_7",
++       "message": "Trace breakout:pcb_breakout_point_7_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_7_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_6",
++       "message": "Trace breakout:pcb_breakout_point_6_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_6_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_5",
++       "message": "Trace breakout:pcb_breakout_point_5_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_5_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_4",
++       "message": "Trace breakout:pcb_breakout_point_4_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_4_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_3",
++       "message": "Trace breakout:pcb_breakout_point_3_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_3_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_2",
++       "message": "Trace breakout:pcb_breakout_point_2_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_2_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_1",
++       "message": "Trace breakout:pcb_breakout_point_1_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_1_0",
++     },
++     {
++       "code": "unknown-trace-connection",
++       "connectionName": "breakout:pcb_breakout_point_0",
++       "message": "Trace breakout:pcb_breakout_point_0_0 does not identify an input connection",
++       "traceId": "breakout:pcb_breakout_point_0_0",
++     },
++   ],
++   "valid": false,
+  }
+
+- Expected  - 2
++ Received  + 84
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/plane-ground-drill-clearance.test.ts:47:15)
+(fail) merged QFN ground escapes preserve ordinary drill and pad clearances [135.13ms]
+
+ 0 pass
+ 1 fail
+ 2078 expect() calls
+Ran 1 test across 1 file. [519.00ms]

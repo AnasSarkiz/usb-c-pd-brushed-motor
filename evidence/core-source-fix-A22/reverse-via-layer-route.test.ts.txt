@@ -1,0 +1,54 @@
+import { expect, test } from "bun:test"
+import type { PcbTrace } from "circuit-json"
+import { reversePcbTraceRoute } from "lib/utils/reverse-pcb-trace-route"
+
+// This metadata regression preserves physical copper; a PCB image cannot
+// distinguish reversed from/to annotations on the same through barrel.
+test("reversing routes preserves wire-to-barrel layer continuity", () => {
+  const route: PcbTrace["route"] = [
+    { route_type: "wire", x: 0, y: 0, width: 0.2, layer: "top" },
+    { route_type: "wire", x: 1, y: 0, width: 0.2, layer: "top" },
+    {
+      route_type: "via",
+      x: 1,
+      y: 0,
+      from_layer: "top",
+      to_layer: "bottom",
+      outer_diameter: 0.6,
+      hole_diameter: 0.3,
+    },
+    { route_type: "wire", x: 1, y: 0, width: 0.2, layer: "bottom" },
+    { route_type: "wire", x: 3, y: 0, width: 0.2, layer: "bottom" },
+    {
+      route_type: "via",
+      x: 3,
+      y: 0,
+      from_layer: "bottom",
+      to_layer: "top",
+      outer_diameter: 0.6,
+      hole_diameter: 0.3,
+    },
+    { route_type: "wire", x: 3, y: 0, width: 0.2, layer: "top" },
+    { route_type: "wire", x: 4, y: 0, width: 0.2, layer: "top" },
+  ]
+  const original = structuredClone(route)
+  for (const mode of ["constant", "interpolated"] as const) {
+    const reversed = reversePcbTraceRoute(route, mode)
+    for (let index = 1; index < reversed.length - 1; index++) {
+      const point = reversed[index]!
+      if (point.route_type !== "via") continue
+      const before = reversed[index - 1]!
+      const after = reversed[index + 1]!
+      expect(before.route_type).toBe("wire")
+      expect(after.route_type).toBe("wire")
+      if (before.route_type !== "wire" || after.route_type !== "wire")
+        throw new Error("Fixture requires a wire on each side of the barrel")
+      expect(point.from_layer).toBe(before.layer)
+      expect(point.to_layer).toBe(after.layer)
+      expect(point.outer_diameter).toBe(0.6)
+      expect(point.hole_diameter).toBe(0.3)
+    }
+    expect(reversePcbTraceRoute(reversed, mode)).toEqual(route)
+    expect(route).toEqual(original)
+  }
+})

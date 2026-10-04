@@ -1,0 +1,5 @@
+lib/utils/reverse-pcb-trace-route.ts(30,56): error TS2698: Spread types may only be created from object types.
+tests/utils/reverse-via-layer-route.test.ts(17,7): error TS2353: Object literal may only specify known properties, and 'via_diameter' does not exist in type 'PcbTraceRoutePointVia'.
+tests/utils/reverse-via-layer-route.test.ts(28,7): error TS2353: Object literal may only specify known properties, and 'via_diameter' does not exist in type 'PcbTraceRoutePointVia'.
+tests/utils/reverse-via-layer-route.test.ts(48,20): error TS2339: Property 'via_diameter' does not exist on type 'PcbTraceRoutePointVia'.
+tests/utils/reverse-via-layer-route.test.ts(49,20): error TS2551: Property 'via_hole_diameter' does not exist on type 'PcbTraceRoutePointVia'. Did you mean 'hole_diameter'?

@@ -1,0 +1,35 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/same-net-drill-drc.test.ts:
+Writing snapshot to /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/__snapshots__/same-net-drill-drc.snap.svg
+(pass) the independent copper audit rejects same-net drill spacing [2.06ms]
+
+tests/plane-ground-drill-clearance.test.ts:
+(pass) merged QFN ground escapes preserve ordinary drill and pad clearances [297.21ms]
+
+tests/plane-termination.test.ts:
+(pass) a source-only plane target dogbones to a through-all via [1.13ms]
+(pass) plane targets validate their layer and cannot request a border exit [0.57ms]
+
+tests/same-net-plane-terminations.test.ts:
+(pass) same-net plane terminations use offset through-all vias [1.99ms]
+
+tests/plane-source-same-net-copper.test.ts:
+170 | 
+171 | test("normalizes plane sources through existing and emitted same-net copper without merging signal branches", async () => {
+172 |   const params = fixture()
+173 |   const before = JSON.stringify(params)
+174 |   const normalized = normalizeFanoutPlanCorners(params)
+175 |   expect(normalized).not.toBeNull()
+                               ^
+error: expect(received).not.toBeNull()
+
+Received: null
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/plane-source-same-net-copper.test.ts:175:26)
+(fail) normalizes plane sources through existing and emitted same-net copper without merging signal branches [1.01ms]
+
+ 5 pass
+ 1 fail
+ 2111 expect() calls
+Ran 6 tests across 5 files. [406.00ms]

@@ -1,0 +1,151 @@
+Running test shard 6/8: 34 of 271 files
+- tests/am62l-core-progressive-fanout.test.ts
+- tests/am62l-lpddr4-progressive-through-all-dram-repro.test.ts
+- tests/angular-local-via-assignment.test.ts
+- tests/bottom-crossbar-bus.test.ts
+- tests/boundary-tail-supplied-copper.test.ts
+- tests/bus-exit-preferences.test.ts
+- tests/bus-length-matching-multi-segment-window.test.ts
+- tests/bus-length-matching-work-budget.test.ts
+- tests/coincident-path-corner.test.ts
+- tests/corner-first-narrow-buses.test.ts
+- tests/dataset07-wider-boundary-never-routes-fewer.test.ts
+- tests/dataset31-imx6ull-left-top-offset.test.ts
+- tests/dataset31-left-bottom-address.test.ts
+- tests/dense-through-all-boundary-policy.test.ts
+- tests/endpoint-completion.test.ts
+- tests/fanout-exit-position-single-layer.test.ts
+- tests/fanout31-am62l-top-adaptive.test.ts
+- tests/get-dogbone-side-variants.test.ts
+- tests/layer-combinations.test.ts
+- tests/layered-exit-target-layer-validation.test.ts
+- tests/legacy-fallback-preserves-reservations.test.ts
+- tests/negotiated-route-progress.test.ts
+- tests/packed-boundary-bus-intervals.test.ts
+- tests/plane-source-corner-normalization.test.ts
+- tests/reroute-overlong-bus-lanes.test.ts
+- tests/reserved-via-mixed-targets.test.ts
+- tests/route-segment-spatial-index.test.ts
+- tests/same-net-plane-terminations.test.ts
+- tests/signal-source-corner-normalization.test.ts
+- tests/source-origin-length-repair.test.ts
+- tests/source-pad-reentry-repair.test.ts
+- tests/srj19-sample127.test.ts
+- tests/two-overlong-lane-repair.test.ts
+- tests/winding-preserves-source-escape-path.test.ts
+bun test v1.3.9 (cf6cdbbb)
+
+tests/layered-exit-target-layer-validation.test.ts:
+(pass) layered exit targets reject unavailable copper layers [6.08ms]
+
+tests/source-pad-reentry-repair.test.ts:
+(pass) repairs own-pad reentry through a clear pad end while retaining the first via and target copper [273.42ms]
+
+tests/plane-source-corner-normalization.test.ts:
+(pass) normalizes plane source corners without moving pads, physical vias, or neighboring copper [522.43ms]
+
+tests/bottom-crossbar-bus.test.ts:
+(pass) bottom crossbar permutes four lanes using only the bus permitted layers [302.78ms]
+
+tests/dataset31-left-bottom-address.test.ts:
+(pass) dataset31 left-bottom address bus escapes using local inward dogbones [16798.28ms]
+
+tests/route-segment-spatial-index.test.ts:
+(pass) segment broad phase retains every exact trace and spanning-via collision [7.75ms]
+
+tests/angular-local-via-assignment.test.ts:
+(pass) repairs angular signal order while retaining every neighboring plane escape [590.61ms]
+
+tests/negotiated-route-progress.test.ts:
+(pass) native negotiated counts equal output length through empty, partial, ripped, complete and failed states [12.83ms]
+
+tests/legacy-fallback-preserves-reservations.test.ts:
+(pass) legacy fallback cannot abandon fixed sources or hard reservations when winding fails [178.28ms]
+
+tests/signal-source-corner-normalization.test.ts:
+(pass) normalizes a rectangular BGA dogbone while retaining its target and prior-phase copper [175.72ms]
+
+tests/corner-first-narrow-buses.test.ts:
+(pass) routes corner-guided narrow buses before sweeping the center sources [4877.43ms]
+
+tests/am62l-core-progressive-fanout.test.ts:
+(pass) routes core's AM62L progressive fanout without widening the layer search [3622.35ms]
+
+tests/coincident-path-corner.test.ts:
+(pass) coincident vertices cannot conceal a sharp copper corner [173.38ms]
+
+tests/endpoint-completion.test.ts:
+(pass) SRJ29 endpoint completion only retains physically connected DRC-clean copper [3366.45ms]
+(pass) short outside-pad routes transition at an interior fanout-trace point [3164.60ms]
+
+tests/bus-exit-preferences.test.ts:
+(pass) buses can target an edge or corner while exits distribute along the border [4.80ms]
+
+tests/layer-combinations.test.ts:
+(pass) the solver evaluates bounded combinations of available layers [506.94ms]
+
+tests/reroute-overlong-bus-lanes.test.ts:
+(pass) bounded same-layer cleanup shortens a detour while preserving other lanes and a through-plane reservation [205.02ms]
+
+tests/source-origin-length-repair.test.ts:
+(pass) jointly shortens a mismatched pair without changing another source reservation [216.38ms]
+
+tests/dataset31-imx6ull-left-top-offset.test.ts:
+(pass) retries shared source reservations when a later flexible bus cannot length-match [53909.10ms]
+
+tests/dataset07-wider-boundary-never-routes-fewer.test.ts:
+(pass) Dataset 07 preserves the captured RP2350A breakout input
+(pass) widening the shared boundary never routes fewer connections [27752.53ms]
+(pass) Dataset 07 routes strictly more once the boundary clears srj.bounds
+(pass) Dataset 07 fanout at the boundary core resolves [209.05ms]
+(pass) Dataset 07 fanout with the boundary widened past srj.bounds [195.97ms]
+
+tests/fanout-exit-position-single-layer.test.ts:
+(pass) edge-center exit positions retain their edge in single-layer routing [2.65ms]
+
+tests/same-net-plane-terminations.test.ts:
+(pass) same-net plane terminations use offset through-all vias [3.02ms]
+
+tests/fanout31-am62l-top-adaptive.test.ts:
+(pass) adaptively routes the raw dataset31 AM62L top-center sample [26210.10ms]
+
+tests/dense-through-all-boundary-policy.test.ts:
+(pass) defers bounded singleton dogbones without changing the five- through seven-bus policy [0.36ms]
+(pass) promotes an embedded singleton ahead of its multi-layer wide bus [0.14ms]
+(pass) prepends dense corner lanes without moving the established lane grid [0.02ms]
+(pass) keeps topology diversity bounded in dense five- through nine-bus paths
+
+tests/bus-length-matching-work-budget.test.ts:
+(pass) matching work exhaustion is atomic and lets bounded lane cleanup finish a physically valid bus [204.55ms]
+
+tests/get-dogbone-side-variants.test.ts:
+(pass) local dogbone variants are bounded and rotate with the source rows [0.20ms]
+
+tests/two-overlong-lane-repair.test.ts:
+(pass) two overlong bus lanes share permitted transit while every first via and other source stays fixed [203.35ms]
+
+tests/winding-preserves-source-escape-path.test.ts:
+(pass) winding preserves the source-layer detour before its first through via [190.09ms]
+
+tests/bus-length-matching-multi-segment-window.test.ts:
+(pass) matches a declared pair through an exterior source-layer window across multiple segments [2504.86ms]
+
+tests/packed-boundary-bus-intervals.test.ts:
+(pass) packs and routes overlapping whole bus intervals without changing lane order or bounds [383.18ms]
+
+tests/srj19-sample127.test.ts:
+(pass) SRJ19 sample127 solves on six layers [1182.61ms]
+
+tests/boundary-tail-supplied-copper.test.ts:
+(pass) keeps prior-phase copper hard without requiring its old connection in the current phase [195.73ms]
+
+tests/reserved-via-mixed-targets.test.ts:
+(pass) joint routing keeps each crossing bus atomic on its mapped final layer [195.52ms]
+
+tests/am62l-lpddr4-progressive-through-all-dram-repro.test.ts:
+(pass) routes the AM62L nine-bus DRAM fanout with DMI1 [3398.51ms]
+
+ 42 pass
+ 0 fail
+ 16846 expect() calls
+Ran 42 tests across 34 files. [152.27s]

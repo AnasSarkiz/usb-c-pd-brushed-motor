@@ -1,0 +1,27 @@
+{
+  "@tsci/tscircuit.ti": {
+    "originalLocator": "github:tscircuit/ti#57e314be4b2b06bc546d4def7453e619604d1157",
+    "verifiedCommit": "57e314be4b2b06bc546d4def7453e619604d1157",
+    "archiveLocator": "https://codeload.github.com/tscircuit/ti/tar.gz/57e314be4b2b06bc546d4def7453e619604d1157"
+  },
+  "@tscircuit/bga-fanout-solver": {
+    "originalLocator": "github:tscircuit/bga-fanout-solver#247c835cb8d69b65e53891dcf869731079415b39",
+    "verifiedCommit": "247c835cb8d69b65e53891dcf869731079415b39",
+    "archiveLocator": "https://codeload.github.com/tscircuit/bga-fanout-solver/tar.gz/247c835cb8d69b65e53891dcf869731079415b39"
+  },
+  "@tscircuit/jlcpcb-manufacturing-specs": {
+    "originalLocator": "git+https://github.com/tscircuit/jlcpcb-manufacturing-specs#23260504fceffff2d64bf11720f74e974d1d9321",
+    "verifiedCommit": "23260504fceffff2d64bf11720f74e974d1d9321",
+    "archiveLocator": "https://codeload.github.com/tscircuit/jlcpcb-manufacturing-specs/tar.gz/23260504fceffff2d64bf11720f74e974d1d9321"
+  },
+  "@tscircuit/via-stitch-solver": {
+    "originalLocator": "github:tscircuit/via-stitch-solver#64f2ac7781b795bdc0d74ba411988e60767fa653",
+    "verifiedCommit": "64f2ac7781b795bdc0d74ba411988e60767fa653",
+    "archiveLocator": "https://codeload.github.com/tscircuit/via-stitch-solver/tar.gz/64f2ac7781b795bdc0d74ba411988e60767fa653"
+  },
+  "@tscircuit/winding-breakout-point-solver": {
+    "originalLocator": "github:tscircuit/winding-breakout-point-solver#202dbe9eb0088633b6fa094120dba6f2f41f8803",
+    "verifiedCommit": "202dbe9eb0088633b6fa094120dba6f2f41f8803",
+    "archiveLocator": "https://codeload.github.com/tscircuit/winding-breakout-point-solver/tar.gz/202dbe9eb0088633b6fa094120dba6f2f41f8803"
+  }
+}

@@ -1,0 +1,18 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [1]
+
++ @tsci/tscircuit.ti@https://codeload.github.com/tscircuit/ti/tar.gz/57e314be4b2b06bc546d4def7453e619604d1157
++ @tscircuit/bga-fanout-solver@https://codeload.github.com/tscircuit/bga-fanout-solver/tar.gz/247c835cb8d69b65e53891dcf869731079415b39
++ @tscircuit/bus-lanes-solver@https://jscdn.tscircuit.com/@tscircuit/bus-lanes-solver/0.0.15.tgz
++ @tscircuit/dogbone-solver@https://jscdn.tscircuit.com/@tscircuit/dogbone-solver/0.0.1.tgz
++ @tscircuit/fanout-solver@../tscircuit-fanout-solver-0.0.79-A22.tgz
++ @tscircuit/flex-utils@https://jscdn.tscircuit.com/@tscircuit/flex-utils/0.0.8.tgz
++ @tscircuit/implicit-copper-pour-solver@https://codeload.github.com/tscircuit/implicit-copper-pour-solver/tar.gz/a5cbbda0cd65fd4707c5c1af25779837c25aba92
++ @tscircuit/jlcpcb-manufacturing-specs@https://codeload.github.com/tscircuit/jlcpcb-manufacturing-specs/tar.gz/23260504fceffff2d64bf11720f74e974d1d9321
++ @tscircuit/props@../tscircuit-props-0.0.683-A22.tgz
++ @tscircuit/schematic-trace-solver@https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.224.tgz
++ @tscircuit/via-stitch-solver@https://codeload.github.com/tscircuit/via-stitch-solver/tar.gz/64f2ac7781b795bdc0d74ba411988e60767fa653
++ @tscircuit/winding-breakout-point-solver@https://codeload.github.com/tscircuit/winding-breakout-point-solver/tar.gz/202dbe9eb0088633b6fa094120dba6f2f41f8803
+
+30 packages installed [293.00ms]

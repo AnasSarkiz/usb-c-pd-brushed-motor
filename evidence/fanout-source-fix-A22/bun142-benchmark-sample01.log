@@ -1,0 +1,5 @@
+Capturing 1 dataset 31 inputs from upstream TSX (8eabec2)
+Running 1 dataset 31 samples; concurrency 1; deadline 120s; assignment budget sample defaults
+[1/1] dataset31/01-top-left-offset: solved, 135/135, 25.18s
+Solved 1/1; partial 0; errors 0; timeouts 0
+Reports: ../../evidence/fanout-source-fix-A22/bun142-benchmark-sample01/benchmark.json and ../../evidence/fanout-source-fix-A22/bun142-benchmark-sample01/benchmark.md; solved SVGs: ../../evidence/fanout-source-fix-A22/bun142-benchmark-sample01/*.svg

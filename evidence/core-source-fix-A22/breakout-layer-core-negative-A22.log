@@ -1,0 +1,14 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout/breakoutpoint-target-layer.test.tsx:
+
+# Unhandled error between tests
+-------------------------------
+SyntaxError: Export named 'matchComponentDogboneViaSites' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/node_modules/@tscircuit/fanout-solver/lib/index.ts'.
+-------------------------------
+
+
+ 0 pass
+ 1 fail
+ 1 error
+Ran 1 test across 1 file. [279.00ms]

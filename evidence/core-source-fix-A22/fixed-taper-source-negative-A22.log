@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/utils/with-fixed-trace-taper-envelope.test.ts:
+73 |       (obstacle) =>
+74 |         obstacle.connectedTo.includes(connectionName) &&
+75 |         Math.abs(x - obstacle.center.x) <= obstacle.width / 2 + 1e-9 &&
+76 |         Math.abs(y - obstacle.center.y) <= obstacle.height / 2 + 1e-9,
+77 |     )
+78 |   expect(covers({ connectionName: "linear", x: 4.9, y: 3.9 })).toBe(true)
+                                                                    ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/utils/with-fixed-trace-taper-envelope.test.ts:78:64)
+(fail) fixed obstacles reserve tapered copper while preserving constant pad entries
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [477.00ms]

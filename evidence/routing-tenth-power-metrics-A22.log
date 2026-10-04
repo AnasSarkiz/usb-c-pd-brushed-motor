@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/review-routed-power-paths.py", line 36, in <module>
+    for metrics in measure_trace_wire_segments(trace):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/power_copper_geometry.py", line 64, in measure_trace_wire_segments
+    raise ValueError("Power wire changes layer without barrel")
+ValueError: Power wire changes layer without barrel

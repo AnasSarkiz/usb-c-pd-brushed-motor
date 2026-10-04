@@ -1,0 +1,20 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout/dogbone-plane-drop-phase-isolation.test.tsx:
+(pass) dogbone routing owns its pad escapes while plane drops remain in the following phase [505.89ms]
+
+tests/breakout/manual-breakoutpoints-use-default-autorouter.test.tsx:
+(pass) manual breakout points use the default autorouter before global routing [374.58ms]
+(pass) an explicit fanout autorouter is preserved with a manual breakout point [12.90ms]
+(pass) breakout owns nested nets and shares stable boundary point identities with its parent [71.91ms]
+
+tests/breakout/manual-breakoutpoints-preserve-plane-fanout.test.tsx:
+(pass) manual breakout points preserve fanout for automatic plane drops [505.90ms]
+
+tests/breakout/breakoutpoint-target-layer.test.tsx:
+(pass) explicit breakout target layers survive both escape and global routing [469.81ms]
+
+ 6 pass
+ 0 fail
+ 41 expect() calls
+Ran 6 tests across 4 files. [2.52s]

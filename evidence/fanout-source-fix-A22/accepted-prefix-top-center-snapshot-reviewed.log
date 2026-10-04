@@ -1,0 +1,10 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/dataset31-imx6ull-top-center.test.ts:
+Updating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/__snapshots__/dataset31-imx6ull-top-center.snap.svg
+(pass) retries untunable wide source routes with fresh reservations and a higher source cost [59217.20ms]
+
+ 1 pass
+ 0 fail
+ 15105 expect() calls
+Ran 1 test across 1 file. [59.37s]

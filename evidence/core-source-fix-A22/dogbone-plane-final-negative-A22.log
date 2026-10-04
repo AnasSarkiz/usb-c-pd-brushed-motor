@@ -1,0 +1,36 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout/dogbone-plane-drop-phase-isolation.test.tsx:
+Async effect error in PcbTraceRender "autorouting":
+Error: Dogbone connection source_trace_0 has no source pad
+    at tick (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/node_modules/@tscircuit/dogbone-solver/lib/dogbone-autorouter.ts:176:24)
+22 |       <resistor name="R1" resistance="1k" footprint="0805" pcbX={5} connections={{ pin1: "net.SIGNAL", pin2: "net.GND" }} />
+23 |       <pcbnotetext pcbY={6} text="Dogbone pad escapes precede ground-plane drops" fontSize={0.35} />
+24 |     </board>,
+25 |   )
+26 |   await circuit.renderUntilSettled()
+27 |   expect(circuit.db.pcb_autorouting_error.list()).toEqual([])
+                                                       ^
+error: expect(received).toEqual(expected)
+
+- []
++ [
++   {
++     "error_type": "pcb_autorouting_error",
++     "message": "Dogbone connection source_trace_0 has no source pad",
++     "pcb_autorouting_error_id": "pcb_autorouting_error_0",
++     "pcb_error_id": "pcb_autorouter_error_subcircuit_subcircuit_source_group_1",
++     "type": "pcb_autorouting_error",
++   },
++ ]
+
+- Expected  - 1
++ Received  + 9
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/dogbone-plane-drop-phase-isolation.test.tsx:27:51)
+(fail) dogbone routing owns its pad escapes while plane drops remain in the following phase [103.10ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [654.00ms]

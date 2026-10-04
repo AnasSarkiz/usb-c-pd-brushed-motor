@@ -1,3 +1,395 @@
+# A22 validated native router toolchain — passed, 2026-10-04
+
+Fanout0.0.82 passes all eight canonical partitions on official Bun1.4.2:
+314 tests across271files, zero failures. Full log hashes and assertion totals
+are bound in `evidence/fanout-source-fix-A22/bun142-full-suite.json`.
+Source TypeScript/build/format pass (22 unchanged oversized-fixture formatting
+advisories remain explicit). Core2086 passes88tests/2110assertions with two
+pre-existing skips. Board38tests/460assertions and TypeScript pass; linked
+firmware hashes reproduce. Native benchmark sample01 solves135/135 in25.18s
+within its unchanged120s deadline. This is one benchmark sample, not72timed runs.
+Every library file matches the immutable packed source; temporary diagnostic
+instrumentation and interpreter flags are excluded from the accepted toolchain.
+
+The compatibility condition behind the automatic-review routed-build rejection
+is now resolved. Native board route14 proceeds after preserving the13MiB local
+CLI cache outside the active cache directory to force fresh generation. No DRC,
+schema, supplier model, test threshold or imported thermal-via geometry is changed.
+Actual routed output and fabrication gates are still in progress.
+
+---
+
+# A22 runtime comparison and routing gate — in progress, 2026-10-04
+
+The source-identical fanout0.0.82 native i.MX6ULL bottom-left regression fails
+its complete-plan invariant on Bun1.3.9 and passes on checksum-verified official
+Bun1.4.2 (24597 assertions,35.260 s, unchanged native snapshot). Instrumentation
+also changes the failure, so no diagnostic-only code is retained as a fix.
+All library files match the packed0.0.82 source exactly. Full canonical eight-
+shard compatibility runs are now repeated on1.4.2 with normal optimization and
+unchanged tests, deadlines, snapshots and manufacturing constraints. The older
+unfinished shard7 and interpreter-only diagnostic were terminated explicitly;
+neither is a passing check. Evidence: `accepted-prefix-runtime-comparison.json`
+and `bun-runtime-candidate-A22.json`. The runtime is task-local; no global update.
+
+Automatic approval review rejected the attempted routed build while the
+compatibility failure remained unresolved. No routed build from that attempt
+ran. Routing remains deferred until the current native compatibility gate passes.
+The independent fresh2086 prerequisite artifact has140 purchased components,
+152 PCB components,12 imported vias and0 traces. SHA256:
+7f9f79e04b52b5cc55240e050ba615b2e19a7ad23409d59716f759a81bff8984.
+Strict schema, supplier transforms, current A22 connectivity, full native placement
+and31 exact breakout targets pass. Nonmetadata records equal the preceding
+prerequisite-checked artifact; only the source-filesystem MD5 changed.
+The first connectivity invocation incorrectly used the historical A19 default:
+its failed output is preserved separately and the A19 report restored byte-exactly.
+The explicitly configured A22 run passes; the failed default does not count.
+
+Bun1.4.2 board TypeScript and38 tests/460 assertions pass. Rebuilt linked bring-up
+ELF/BIN retain their preceding SHA256 values. Qualified motor operation remains
+fail-closed pending independent manufacturer NVM, receive-path and measurement
+provisioning evidence. No physical measurements or fabrication approval is claimed.
+
+---
+
+# A22 distinct-drill reservation correction — in progress, 2026-10-04
+
+Untouched published fanout0.0.78 produces a complete102-connection native
+solution which passes the new independent copper/drill checker with zero
+issues. The final-stage corner-only source variant also passes the large
+first-failing i.MX6ULL case (14729 assertions,81.425 seconds). These comparisons
+retain the manufacturing rules and separate actual geometry from search defects.
+
+A focused negative regression identifies two genuine source defects. The drill
+helper previously compared an immutable via object to itself. Exact object
+identity now denotes one drill; separate objects at identical or nearby
+coordinates remain rejected, including same-net drills. Boundary finalization
+also re-reserved accepted connections as new source prefixes. It now includes
+accepted connection indices when reserving only unfinished prefixes, matching
+the existing full-plan validation policy. The accepted route remains an obstacle.
+The three-connection native regression fails before the caller fix and passes
+after it with exactly three independently checked traces/vias. Its native SVG
+has been inspected. The PD five-plane regression and separate-hole negative
+checker still pass. No imported component or generated board geometry is edited.
+
+Full source compatibility, final dependency integration, actual board routing
+and fabrication validation remain in progress; no incomplete or rejected run
+counts as a passed manufacturing gate. Diagnostic rejection traces and before/
+after regression logs are retained under`evidence/fanout-source-fix-A22/`.
+
+---
+
+# A22 final-stage corner validation correction — in progress, 2026-10-04
+
+The0.0.80 fanout candidate is not accepted. Its wider suite exposes an early
+boundary contact in the K230 case and a substantial routing slowdown after
+coincident vertices were removed during intermediate search. Both targeted
+cases pass against untouched published0.0.78 (i.MX6ULL top-right155.48 s and
+K230 top-center130.08 s). Original snapshot world-coordinate measurements show
+no drill-rule or component-land overlap in either accepted baseline geometry;
+there is no basis to weaken those constraints. Failure and interruption logs
+are retained, including all43 tests of shard4 and all37 passing tests of shard8.
+
+The root turn detector compared only neighboring segments, allowing a zero-length
+segment to conceal a90-degree turn. New canonical source0.0.81 compares consecutive
+real headings across such segments. Coincident-point cleanup is now applied only
+to selected final source/target paths, leaving intermediate candidate normalization
+byte-identical to the official source. Focused and larger regressions are running.
+No electronic component, imported via, schema or manufacturing rule changes.
+
+The source-built0.0.2085 candidate dependency passes88 core integration tests,
+source TypeScript/build, frozen installation,38 board tests/460 assertions,
+board TypeScript and formatting. Its fresh full unrouted artifact has140 purchased
+components,152 PCB components, twelve original vias and zero traces; SHA256:
+03ed29213c87954375b8cfb2cff555fa798a2d664de7bee3017c55fa547687ed.
+Strict schema, supplier transforms, current connectivity, native full placement
+and31 exact breakout targets pass. Every nonmetadata circuit record equals the
+immediately preceding artifact whose five required CLI gates passed; that exact
+equivalence is retained in`drill-corner-preroute-equivalence-A22.json`.
+Routing acceptance remains pending the final source regression results. A routed
+checker report now binds its results to the full artifact SHA256 to prevent
+stale reports from being used by the future manufacturing packet.
+
+---
+
+# A22 physical PD ground ownership and drill constraints — in progress, 2026-10-04
+
+Run13's remaining failed plane escape is U1 pin22 (VSYS wired to ground), not
+its exposed pad. The canonical core fanout caller previously attributed a point
+to the first same-net obstacle by an electrical alias; this could select an
+unrelated USB-C pad and the wrong escape direction. Core0.0.2084 identifies the
+physical containing component pad and its layer instead. Its negative regression
+fails against the original source.88 focused compatibility tests/2110 assertions
+pass with two pre-existing skips; full source TypeScript and build pass. The
+native regression image has been inspected. Same-net joining is enabled only for
+nonempty cohorts whose every bus terminates on a copper plane.
+
+The PD fanout boundary uses2.0 mm padding. The fresh full unrouted board has140
+purchased components,152 PCB components, twelve unchanged imported vias and zero
+traces. SHA256:b70cd282ce9dcaccf3b0ec71d942a96c6d08a7dec9885a7c598611085c8f1a46.
+Strict schema, all supplier transforms, current connectivity, full native
+placement and31 exact signal targets pass. All five mandatory prerequisite CLI
+checks finish with exit0; placement reports zero errors/warnings. The57 pin
+advisories retain their individual review.38 board tests/460 assertions, board
+TypeScript, formatting and frozen-lockfile installation pass.
+
+Canonical fanout source now checks declared drill spacing before same-net copper
+merge exemptions, checks all plan pairs and supplied trace vias, and independently
+audits emitted holes. Its real five-pad PD regression clears all component pads
+by at least0.20 mm and separates ordinary holes by at least0.25 mm. The old solver
+places two holes with only0.203795 mm clearance and fails the regression. A
+broader regression exposed coincident same-layer path vertices concealing a
+90-degree corner; normalization now removes those numerical duplicates while
+preserving layer transitions and exact terminals. The diagnostic reports zero
+sharp corners. Both changed images were visually reviewed before updating their
+snapshots through the repository's supported environment setting. The initial
+CLI snapshot flag did not reach the matcher; its failure log is retained.
+
+Full canonical fanout compatibility testing is in progress before installing
+local fanout0.0.80 into the next core build and generating the next board route.
+No failed routed artifact or incomplete test run counts as fabrication evidence.
+All source patches, baseline comparisons and logs are retained in
+`evidence/fanout-source-fix-A22/` and `evidence/core-source-fix-A22/`.
+The fabrication exporter was verified in installed CLI source to accept a saved
+Circuit JSON file directly; manufacturing files will be generated from the exact
+validated routed artifact. Stages4–6 remain in progress. No order or physical
+qualification is claimed.
+
+---
+
+# A22 PD ground escape space enlarged — in progress, 2026-10-04
+
+Native run12 reaches actual PD component endpoints, then rejects the five ground
+plane drops: only three escape inside the existing boundary, which has0.55 mm
+minimum pad-edge margin. Its full failed artifact and input/error are retained;
+zero output traces means it is not fabrication evidence. The source uses the
+supported1.5 mm fanout boundary padding for the PD group. This reserves routing
+search room without changing any purchased component, footprint, pad, placement,
+connection or manufacturing clearance. Fresh full build, strict schema,140 supplier transforms,31 exact signal targets,
+current A22 connectivity and native placement pass. Formatting/TypeScript pass.
+All nonmetadata element records remain identical to the prior fully checked
+unrouted artifact (`ground-padding-only-preroute-diff-A22.json`), so the five
+mandatory prerequisite results remain applicable. No new warning is hidden.
+Native run13 fails with four of five ground connections escaped. Its complete
+failed artifact is retained; no generated copper is accepted. The remaining
+connection is under independent solver diagnosis. U1 exposed pad25 has no
+imported thermal vias: the twelve reviewed original vias are four each at U4, U5
+and U10. The previous PinBreakouts comment incorrectly attributed vias to U1;
+that comment is corrected. U1 still needs a genuine, checked plane connection.
+Stage4 remains in progress; no fabrication or physical qualification is claimed.
+
+---
+
+# A22 fixed power-taper reservation repaired — in progress, 2026-10-04
+
+Canonical core0.0.2083 preserves the full width of saved linear/quadratic tapers
+when constructing fixed obstacles for later routing stages. The old function
+reserves only the first wire width, exposing wide copper to subsequent routes.
+The regression fails against the retained original function;9 focused tests/274
+assertions and37 complete breakout tests/1900 assertions pass (two existing skips).
+Source TypeScript and canonical build pass. Strict Circuit JSON validates the
+regression fixture; its native obstacle snapshot was visually inspected. The
+initial missing matcher/required schema fields are corrected and their failure
+logs remain. No import, installed dependency or emitted Circuit JSON was patched.
+
+The dependency is installed consistently through the reviewed source tarball and
+Bun override; frozen installation passes. Fresh full-board revalidation passes: strict schema,140 supplier transforms,
+31 exact signal targets, A22 connectivity and native placement.38 board tests/460
+assertions, board TypeScript and formatting pass. All nonmetadata circuit records
+are identical to the preceding checked ground-endpoint
+artifact (`fixed-taper-only-preroute-diff-A22.json`). The five mandatory prerequisite
+commands completed with exit0 immediately before this routing-only core correction;
+their unchanged placement/connectivity/schematic evidence remains applicable.
+Native routed run12 is in progress. Routing/fabrication remain unapproved until
+actual generated copper passes.
+No ordering or physical tests are claimed.
+
+---
+
+# A22 ground fanout endpoints retained — in progress, 2026-10-04
+
+The eleventh native routing run stops in the PD ground stage before emitting
+routed board copper. Its FanoutSolver requires an actual component pad endpoint;
+a peripheral breakout coordinate has no matching pad. The failed full artifact
+and native input/error are retained. It is not fabrication evidence.
+
+The four PD ground pins and MCU ground pin now remain at their unchanged imported
+component pads, allowing the documented native plane-termination fanout to own
+their escapes and through barrels. Only the thirteen PD and eighteen MCU signal
+pins have explicit peripheral targets. The target guard checks the exact pin sets
+as well as pad clearance, imported MCU row order and target layers. No supplier
+model, electrical connection, pad or component transform is changed.
+
+The seven saved power paths pass an independent source-intent/pad/edge screen.
+The MOTOR_P corridor moved from X29.1 to X30.5 mm to clear R41 and D11; this fixes
+a real pad intersection. Native emitted copper must still pass full routing checks.
+All five eleventh prerequisite checks completed with zero errors; the final path
+waypoint change does not emit unrouted copper or alter placement/connectivity.
+Fresh unrouted artifact SHA256:d760be976ff39ad0a4b63af140c2cf2299d54792e8219a1407613af3fd300852.
+Strict schema,140 supplier transforms,31 exact signal targets, current A22
+connectivity and full native placement pass. All five mandatory CLI gates complete
+with exit0;57 pin advisories match the retained individual review.38 board
+tests/460 assertions and fresh linked ELF/BIN rebuild pass with unchanged binary
+hashes. The top placement render was inspected. A newly reproduced canonical
+fixed-trace taper reservation defect is being repaired before the next route.
+
+The current PD qualification document now explicitly distinguishes the A22
+15 V preference for 5 V mode and 20 V requirement for both 9 V and 12 V modes
+from the retained historical A17 text. Hardware current limits, linked inhibited
+runtime and outstanding manufacturer/physical profiles are unchanged.
+Stage4 remains in progress. No prototype fabrication approval or hardware rating
+is claimed; physical testing and the missing GitHub destination remain pending.
+
+---
+
+# A22 route-reversal metadata fixed — in progress, 2026-10-04
+
+Core0.0.2082 is a canonical source-built dependency, with props0.0.683 and native
+capacity0.0.958. PCB route reversal now exchanges via from/to layer annotations;
+physical barrels, wire coordinates, widths and imported electronics are unchanged.
+The original canonical regression fails.5 reversal/taper/teardrop tests/52 assertions,
+37 breakout tests/1900 assertions (two existing skips), full source TypeScript and
+canonical build pass. No snapshot changed. Task-local npm packaging cache resolves
+sandbox cache permissions; the rejected cache attempt is retained. Frozen board
+installation, board TypeScript and38 tests/460 assertions pass.
+
+A fresh unrouted artifact differs from the previous core version only in source
+metadata (`reverse-via-only-preroute-diff-A22.json`), confirming that prerequisite
+hardware/schematic geometry remains unchanged. The power copper screen now includes
+wire-to-via and via-to-wire sections and checks layer continuity. Meaningful taper,
+barrel-boundary, nonfinite, wrong-layer and unsupported-primitive regressions pass.
+The old run10 fails this stricter screen on the reproduced reversed-via defect;
+its copper is still rejected independently for shorts and clearances.
+
+All peripheral breakout targets now remain on their component top layer. The
+native bottom-GND phase owns the ground barrel transition; this avoids requesting
+a redundant plane drop from an already-bottom source, which the supported fanout
+API explicitly rejects. Fresh full-board and prerequisite revalidation are running.
+No routed pass, prototype fabrication approval or physical rating is claimed.
+
+---
+
+# A22 MCU pin-row correction and explicit ground-plane routing — in progress, 2026-10-04
+
+Native routed run10 produced341 traces/310 vias but failed:564 direct routing
+checks,52 bitmap shorts and41 independent drill violations. Its95 required ground
+pads form one physical connected copper group; this isolated result does not
+approve the route. Full failed artifact, native checks, bitmap shorts, drill and
+physical-ground reports are retained. No failed copper is fabrication evidence.
+
+The MCU left escape targets incorrectly reversed the imported pin-row order.
+Their source coordinates are corrected against the actual imported PCB ports.
+A new planning guard checks row alignment against those ports; the original
+artifact fails the guard. Supplier symbols, lands, pins and placement are unchanged.
+The PD exposed pad no longer has an unnecessary top escape across its pin row;
+its original plated thermal vias remain. All17 connected PD peripheral pins and19
+MCU pins retain explicit targets. A native ground-plane routing phase now targets
+the bottom GND pour; actual barrels and physical connectivity remain mandatory.
+
+Fresh unrouted build:4984 records/140 purchased/152 PCB components/12 original EP
+vias/zero traces. SHA256:479d38ce587d2f1b3feedb48f9e9b161f02699bb5988807f5b3c47fb09c2cf15.
+Strict schema,140 supplier transforms,36 target positions/row order/layers, current
+A22 connectivity and native full placement pass. An initial connectivity invocation
+accidentally used historical A19/A7 defaults and reported stale TP reviews; the
+retained current-config run verifies unchanged A22 imports/wiring and91 reviewed
+advisories. No review record or threshold was altered to obtain that result.
+Hardware and schematic element records are identical to the preceding validated
+unrouted revision; only breakout records, their native group bounds and source
+metadata changed. Formatting/TypeScript and38 board tests/460 assertions pass. All five mandatory
+CLI gates completed with exit0 for the corrected row revision
+(`ground-phase-eleventh-prerequisites-A22.log`).
+Stage4 remains in progress; no fabrication approval or physical test claimed.
+
+---
+
+# A22 explicit physical breakout layers — in progress, 2026-10-04
+
+Canonical source-built core0.0.2081/props0.0.683 preserve explicit breakout target
+layers into Circuit JSON and both native routing phases. The MCU ground escape
+now targets the bottom layer; the ordinary native router must produce the actual
+via. Supplier import bytes, electrical connections and component placement remain
+unchanged. No emitted copper has yet passed routing checks.
+
+Original props/core regressions fail as expected;602 props tests/2072 assertions
+and37 breakout tests/1900 assertions pass (two pre-existing skips). Three phase
+compatibility tests/32 assertions pass (one pre-existing benchmark skip). Source
+TypeScript, canonical builds and frozen board installation pass. New layer copper
+snapshot and all seven restored/byte-identical PCB snapshots were inspected.
+The changed routing-stage snapshot was inspected separately; no assertion or
+snapshot threshold was weakened. Failed ownership cases are retained and repaired.
+Six fixed dependency commits are verified through authenticated GitHub; Bun's Git
+resolver failures were resolved with the exact same official commit archives.
+No installed dependency or imported component is patched.
+
+Fresh unrouted full-board build and38 board tests/460 assertions pass. Full schema, all140 supplier geometry/transforms, connectivity,37 target locations/
+explicit layer and native full placement pass. Artifact SHA256:
+`bada97505136a63252e98db2afde87eb045ffefe6875297a1dd331843b2d6184`.
+The artifact differs only in the one intended target layer and source metadata;
+all hardware geometry/schematic records remain identical to the preceding artifact.
+All five required CLI gates pass with exit0 for this revision
+(`breakout-layer-prerequisites-A22.log`): netlist, pin_specification, source,
+schematic-placement and placement. The57 pin metadata advisories match the
+individually reviewed retained record. Native routed run10 is in progress;
+no routing or fabrication pass is claimed.
+The immutable published c265655 staging archive now resides in
+`.cache/publication-placement-c265655`; relocation preserves every file byte and
+keeps its nested formatter configuration outside active-source discovery. Stage4 remains in progress; stages5–6 are not passed.
+Physical qualification and the documented provisioning approvals remain pending.
+GitHub publication still lacks a configured repository/branch. No order placed.
+
+---
+
+# A22 native breakout routing revision — in progress, 2026-10-04
+
+Validated local milestone commit:c265655. Registry upload acknowledged464 files
+and release `0.0.1-a22-placement-c265655` at
+https://tscircuit.com/AnasSarkiz/usb-c-pd-brushed-motor . This is an explicitly
+unrouted WIP prototype snapshot with exact source/artifact binding; the registry
+server build has not been independently verified. GitHub push remains blocked by
+missing configured repository/branch. Neither a GitHub link nor fully published
+milestone is claimed. Local routing work continues.
+
+Canonical core0.0.2080 now isolates local pad-escape cohorts from global plane
+connections sharing the source trace. A failing original-source regression,
+8 focused tests/70 assertions,27 phased tests/283 assertions and23 coordinate
+checks/103 assertions are retained. Source TypeScript and canonical build pass;
+the regression copper snapshot was inspected. Component display offsets now
+serialize canonical millimetre strings. Strict schema and missing-port/dangling
+checks remain enforced; imported electronics are unchanged.
+
+Native route6 stopped on ambiguous two-face plane intent;7 exposed cohort mixing;
+8 correctly reached the PD package and found no legal dogbone assignment under
+current rules. All failed artifacts/inputs are retained and excluded from fabrication
+approval. Native breakout points now use the ordinary router for this QFN/TSSOP
+pad geometry. All ground terminals remain routing targets; the two ground pours
+supplement actual routed copper rather than substituting implicit plane drops.
+
+Fresh native-breakout-preroute-A22.log passes:4985 records,140 purchased/152 PCB
+components,12 original EP vias and zero traces. Schema, supplier geometry,
+connectivity and full native placement pass. A separate target-only planning
+screen found5 insufficient clearances; source target positions were corrected.
+The fresh final target screen has37 targets/zero issues; schema, supplier geometry,
+connectivity and full native placement pass. All five required prerequisite CLI
+commands completed with exit0 (`native-breakout-prerequisites-A22.log`).
+The57 pin metadata advisories match the individually reviewed retained record.
+Final unrouted SHA256:7d8318ab79a3845b9647d50bdfc1771e8098032503482ead220d8fc17a843956.
+This does not assert that generated vias or copper pass. Native routed run9 failed in the global ground connection between the MCU
+escape and C30; zero output traces, twelve original EP vias. Its full artifact,
+inputs and canonical minimum-spanning-tree pair diagnosis are retained. It is
+excluded from fabrication approval.
+
+A new independent physical ground-copper graph keeps layer islands separate
+unless actual plated copper connects them, preserves pour cutouts, and rejects
+invalid geometry without snapping. Its island/layer/barrel/cutout regressions
+pass (`ground-copper-regression-A22.log`); full routed-board evidence is pending.
+
+Stages1–3:passed for the final native breakout revision; previous validated
+hardware remains applicable. Stage4:in progress. Stages5–6:not started; no manufacturing
+package approved. Stage7:not started; physical qualification pending. Stage8:
+blocked for GitHub, registry WIP upload acknowledged as above. No order placed.
+
+---
+
 # A22 functional placement validated — 2026-10-04
 
 Untested engineering prototype. All five native preroute commands pass on the

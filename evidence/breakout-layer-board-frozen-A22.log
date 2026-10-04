@@ -1,0 +1,6 @@
+bun install v1.3.9 (cf6cdbbb)
+
++ @tscircuit/core@./tooling/tscircuit-core-0.0.2081-A22.tgz
++ @tscircuit/props@./tooling/tscircuit-props-0.0.683-A22.tgz
+
+2 packages installed [17.00ms]

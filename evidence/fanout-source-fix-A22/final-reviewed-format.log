@@ -1,0 +1,21 @@
+Checked 0 files in 3ms. No fixes applied.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × No files were processed in the specified paths.
+  
+  i Check your biome.json or biome.jsonc to ensure the paths are not ignored by the configuration.
+  
+  i These paths were provided but ignored:
+  
+  - tooling/fanout-manufacturing-A22/lib/via-drills-are-clear.ts
+  - tooling/fanout-manufacturing-A22/lib/normalize-layered-path.ts
+  - tooling/fanout-manufacturing-A22/lib/get-routed-trace-copper.ts
+  - tooling/fanout-manufacturing-A22/lib/route-bus.ts
+  - tooling/fanout-manufacturing-A22/lib/validate-routed-copper-drc.ts
+  - tooling/fanout-manufacturing-A22/lib/validate-fanout-solution.ts
+  - tooling/fanout-manufacturing-A22/lib/types.ts
+  - tooling/fanout-manufacturing-A22/tests/coincident-path-corner.test.ts
+  - tooling/fanout-manufacturing-A22/tests/plane-ground-drill-clearance.test.ts
+  - tooling/fanout-manufacturing-A22/tests/same-net-drill-drc.test.ts
+  
+

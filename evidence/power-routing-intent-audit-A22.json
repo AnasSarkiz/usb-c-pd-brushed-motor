@@ -1,0 +1,35 @@
+{
+  "artifactSha256": "b6233bb52c5642db722ab8e05e5f16ff113ba31025ce12db7b7a6fd8dd07ff1a",
+  "paths": [
+    {
+      "connection": "U5.SW",
+      "minimumConservativeUnrelatedPadGapMm": 0.7330053999999997
+    },
+    {
+      "connection": "C12.pin2",
+      "minimumConservativeUnrelatedPadGapMm": 0.9000247999999971
+    },
+    {
+      "connection": "D5.cathode",
+      "minimumConservativeUnrelatedPadGapMm": 2.211691110182934
+    },
+    {
+      "connection": "U10.pin8",
+      "minimumConservativeUnrelatedPadGapMm": 0.30000240000000034
+    },
+    {
+      "connection": "D10.pin1",
+      "minimumConservativeUnrelatedPadGapMm": 2.0000535
+    },
+    {
+      "connection": "U10.pin10",
+      "minimumConservativeUnrelatedPadGapMm": 0.26993191897710456
+    },
+    {
+      "connection": "D10.pin2",
+      "minimumConservativeUnrelatedPadGapMm": 0.5149144999999997
+    }
+  ],
+  "issues": [],
+  "limitations": "Conservative pad/edge screen of native saved power-routing intent.\n\nThis does not inspect manufactured copper or establish ampacity. Linear-width\nsegments use the convex hull of their endpoint copper discs, a conservative\ncapsule envelope. Actual routed-artifact DRC remains mandatory.\n"
+}

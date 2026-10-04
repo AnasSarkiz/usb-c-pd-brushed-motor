@@ -1,0 +1,20 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout.test.ts:
+(pass) should parse breakout props with padding [2.66ms]
+(pass) breakout accepts a fanout margin [0.19ms]
+(pass) breakout rejects a negative fanout margin [0.15ms]
+(pass) breakout and fanout elements default to the fanout autorouter [0.25ms]
+(pass) breakout accepts scalar fanout boundary padding
+(pass) breakout accepts directional fanout boundary padding
+(pass) breakout rejects negative fanout boundary padding [0.39ms]
+(pass) breakout accepts fanout bus directions and routing layers [0.28ms]
+(pass) breakout accepts a fanout pour net map [0.15ms]
+(pass) should parse breakout point props
+(pass) should parse breakout point offsets and position mode [0.11ms]
+(pass) breakout point preserves an explicit physical target layer [0.07ms]
+
+ 12 pass
+ 0 fail
+ 21 expect() calls
+Ran 12 tests across 1 file. [27.00ms]

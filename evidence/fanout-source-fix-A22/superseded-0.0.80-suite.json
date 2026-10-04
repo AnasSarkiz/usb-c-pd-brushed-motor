@@ -1,0 +1,44 @@
+[
+  {
+    "log": "evidence/fanout-source-fix-A22/final-shard-1.log",
+    "completed": false,
+    "passLines": 0,
+    "failLines": [],
+    "status": "superseded; failed or interrupted, not accepted"
+  },
+  {
+    "log": "evidence/fanout-source-fix-A22/final-shard-2.log",
+    "completed": false,
+    "passLines": 4,
+    "failLines": [],
+    "status": "superseded; failed or interrupted, not accepted"
+  },
+  {
+    "log": "evidence/fanout-source-fix-A22/final-shard-3.log",
+    "completed": false,
+    "passLines": 39,
+    "failLines": [
+      "(fail) routes coupled control buses and tunes their complete source-routed pairs [1008241.44ms]"
+    ],
+    "status": "superseded; failed or interrupted, not accepted"
+  },
+  {
+    "log": "evidence/fanout-source-fix-A22/final-shard-4.log",
+    "completed": true,
+    "passLines": 41,
+    "failLines": [
+      "(fail) retries shared source reservations when a wide bus cannot length-match [88754.84ms]",
+      "(fail) routes opposite-side control buses after the fixed-source strategy fails [313465.74ms]",
+      "(fail) retries shared source reservations when a wide bus cannot length-match [88754.84ms]",
+      "(fail) routes opposite-side control buses after the fixed-source strategy fails [313465.74ms]"
+    ],
+    "status": "superseded; failed or interrupted, not accepted"
+  },
+  {
+    "log": "evidence/fanout-source-fix-A22/final-shard-8.log",
+    "completed": true,
+    "passLines": 37,
+    "failLines": [],
+    "status": "superseded; failed or interrupted, not accepted"
+  }
+]

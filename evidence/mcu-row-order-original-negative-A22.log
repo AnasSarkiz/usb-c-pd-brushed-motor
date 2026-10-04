@@ -1,0 +1,73 @@
+{
+  "targets": 37,
+  "issues": [
+    {
+      "reference": "U11",
+      "pin": "PA4",
+      "issue": "MCU target crosses the imported pin-row order",
+      "actualPadYMm": -3.0749359999999797,
+      "targetYMm": -8.925
+    },
+    {
+      "reference": "U11",
+      "pin": "PA5",
+      "issue": "MCU target crosses the imported pin-row order",
+      "actualPadYMm": -3.7249219999999923,
+      "targetYMm": -8.275
+    },
+    {
+      "reference": "U11",
+      "pin": "PA6",
+      "issue": "MCU target crosses the imported pin-row order",
+      "actualPadYMm": -4.374908000000005,
+      "targetYMm": -7.625
+    },
+    {
+      "reference": "U11",
+      "pin": "PA7",
+      "issue": "MCU target crosses the imported pin-row order",
+      "actualPadYMm": -5.0248940000000175,
+      "targetYMm": -6.975
+    },
+    {
+      "reference": "U11",
+      "pin": "PB0",
+      "issue": "MCU target crosses the imported pin-row order",
+      "actualPadYMm": -5.674879999999916,
+      "targetYMm": -6.325
+    },
+    {
+      "reference": "U11",
+      "pin": "PA11_PA9_",
+      "issue": "MCU target crosses the imported pin-row order",
+      "actualPadYMm": -6.324866000000043,
+      "targetYMm": -5.675
+    },
+    {
+      "reference": "U11",
+      "pin": "PA12_PA10_",
+      "issue": "MCU target crosses the imported pin-row order",
+      "actualPadYMm": -6.9751059999999825,
+      "targetYMm": -5.025
+    },
+    {
+      "reference": "U11",
+      "pin": "PA13",
+      "issue": "MCU target crosses the imported pin-row order",
+      "actualPadYMm": -7.625092000000109,
+      "targetYMm": -4.375
+    },
+    {
+      "reference": "U11",
+      "pin": "PA15",
+      "issue": "MCU target crosses the imported pin-row order",
+      "actualPadYMm": -8.275078000000008,
+      "targetYMm": -3.725
+    },
+    {
+      "issue": "Expected17 PD peripheral and19 MCU targets; PD EP uses imported thermal vias",
+      "expectedTargets": 36,
+      "actualTargets": 37
+    }
+  ]
+}

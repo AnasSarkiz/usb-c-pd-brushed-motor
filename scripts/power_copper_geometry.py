@@ -35,3 +35,47 @@ def measure_wire_segment(first, second, route_thickness_mode="constant"):
         "lengthBelow1mm": length_below_1mm,
         "resistanceOhm": resistance_ohm,
     }
+
+
+def measure_trace_wire_segments(trace):
+    """Measure all physical wire sections, including wire/barrel boundaries.
+
+    Barrels themselves require a separate via resistance/ampacity screen. A
+    taper ending at a barrel must specify its end width; no width is guessed.
+    """
+    mode = trace.get("route_thickness_mode", "constant")
+    if mode not in ("constant", "interpolated"):
+        raise ValueError("Unsupported trace thickness mode")
+    route = trace["route"]
+    if any(point["route_type"] not in ("wire", "via") for point in route):
+        raise ValueError("Unsupported power copper primitive")
+    measured = []
+    for first, second in zip(route, route[1:]):
+        if not all(math.isfinite(point[axis]) for point in (first, second) for axis in ("x", "y")):
+            raise ValueError("Power copper coordinates must be finite")
+        same_position = (first["x"], first["y"]) == (second["x"], second["y"])
+        if first["route_type"] == second["route_type"] == "via":
+            if same_position:
+                continue
+            raise ValueError("Power route moves between barrels without wire")
+        start_layer = first["layer"] if first["route_type"] == "wire" else first["to_layer"]
+        end_layer = second["layer"] if second["route_type"] == "wire" else second["from_layer"]
+        if start_layer != end_layer:
+            raise ValueError("Power wire changes layer without barrel")
+        if same_position:
+            continue
+        start = first
+        end = second
+        if first["route_type"] == "via":
+            start = {"x": first["x"], "y": first["y"], "width": second.get("start_width", second["width"])}
+            # The following wire defines the constant copper at its barrel
+            # entrance. Its own taper begins at that wire's outgoing segment.
+            segment_mode = "constant"
+        else:
+            segment_mode = mode
+        if second["route_type"] == "via":
+            if (first.get("width_interpolation_mode") or mode == "interpolated") and "end_width" not in first:
+                raise ValueError("Taper ending at barrel lacks end width")
+            end = {"x": second["x"], "y": second["y"], "width": first.get("end_width", first["width"])}
+        measured.append({"layer": start_layer, "start": {"x": first["x"], "y": first["y"]}, "end": {"x": second["x"], "y": second["y"]}, **measure_wire_segment(start, end, segment_mode)})
+    return measured

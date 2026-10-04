@@ -1,0 +1,5 @@
+bun install v1.3.9 (cf6cdbbb)
+[3.11ms] migrated lockfile from package-lock.json
+Resolving dependencies
+Resolved, downloaded and extracted [6]
+error: no commit matching "57e314be4b2b06bc546d4def7453e619604d1157" found for "@tsci/tscircuit.ti" (but repository exists)

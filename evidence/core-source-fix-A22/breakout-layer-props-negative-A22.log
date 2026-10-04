@@ -1,0 +1,36 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout.test.ts:
+(pass) should parse breakout props with padding [2.33ms]
+(pass) breakout accepts a fanout margin [0.34ms]
+(pass) breakout rejects a negative fanout margin [0.29ms]
+(pass) breakout and fanout elements default to the fanout autorouter [0.16ms]
+(pass) breakout accepts scalar fanout boundary padding
+(pass) breakout accepts directional fanout boundary padding [0.26ms]
+(pass) breakout rejects negative fanout boundary padding [0.08ms]
+(pass) breakout accepts fanout bus directions and routing layers [0.26ms]
+(pass) breakout accepts a fanout pour net map [0.17ms]
+(pass) should parse breakout point props
+(pass) should parse breakout point offsets and position mode [0.11ms]
+120 |   expect(parsed.pcbOffsetY).toBeCloseTo(3)
+121 |   expect(parsed.pcbPositionMode).toBe("relative_to_board_anchor")
+122 | })
+123 | 
+124 | test("breakout point preserves an explicit physical target layer", () => {
+125 |   expect(breakoutPointProps.parse({ connection: "U1.pin1", layer: "bottom" })).toHaveProperty("layer", "bottom")
+                                                                                     ^
+error: expect(received).toHaveProperty(path, value)
+
+Expected path: "layer"
+
+Expected value: "bottom"
+
+Unable to find property
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/props-manufacturing-A22/tests/breakout.test.ts:125:80)
+(fail) breakout point preserves an explicit physical target layer [0.23ms]
+
+ 11 pass
+ 1 fail
+ 18 expect() calls
+Ran 12 tests across 1 file. [30.00ms]

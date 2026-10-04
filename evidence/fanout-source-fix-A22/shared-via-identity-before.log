@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/shared-via-drill-identity.test.ts:
+38 |     sourceEscapePoints: [{ x: 0, y: 0 }, viaPoint],
+39 |     allowBlindAndBuriedVias: false,
+40 |   })
+41 |   const rules = { srj, sharedBoundary: bounds, clearance: 0.2, allowBlindAndBuriedVias: false, allowSameNetMerges: true }
+42 |   const cached = createFanoutPlanClearanceValidator(rules)
+43 |   expect(viaDrillsAreClear({ srj, firstVia: plan.via!, secondVia: plan.via! })).toBe(true)
+                                                                                     ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/shared-via-drill-identity.test.ts:43:81)
+(fail) shared immutable vias are not separate drills while distinct same-net holes retain clearance [0.99ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [22.00ms]

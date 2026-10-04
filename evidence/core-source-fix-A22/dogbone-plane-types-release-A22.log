@@ -1,0 +1,1 @@
+tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx(2,10): error TS2305: Module '"@tscircuit/props"' has no exported member 'distance'.

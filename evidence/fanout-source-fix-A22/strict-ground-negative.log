@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/plane-ground-drill-clearance.test.ts:
+22 |   for (const [firstIndex, firstVia] of vias.entries()) {
+23 |     for (const secondVia of vias.slice(firstIndex + 1)) {
+24 |       const drillGapMm =
+25 |         distance(firstVia.center, secondVia.center) -
+26 |         (firstVia.holeDiameter + secondVia.holeDiameter) / 2
+27 |       expect(drillGapMm).toBeGreaterThanOrEqual(0.25 - 1e-9)
+                              ^
+error: expect(received).toBeGreaterThanOrEqual(expected)
+
+Expected: >= 0.249999999
+Received: 0.20379519356303194
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/plane-ground-drill-clearance.test.ts:27:26)
+(fail) merged QFN ground escapes preserve ordinary drill and pad clearances [65.18ms]
+
+ 0 pass
+ 1 fail
+ 422 expect() calls
+Ran 1 test across 1 file. [165.00ms]

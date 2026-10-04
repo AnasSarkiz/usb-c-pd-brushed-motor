@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/same-net-drill-drc.test.ts:
+(pass) the independent copper audit rejects same-net drill spacing [152.83ms]
+
+tests/plane-ground-drill-clearance.test.ts:
+(pass) merged QFN ground escapes preserve ordinary drill and pad clearances [298.96ms]
+
+tests/plane-termination.test.ts:
+(pass) a source-only plane target dogbones to a through-all via [0.93ms]
+(pass) plane targets validate their layer and cannot request a border exit [0.53ms]
+
+tests/same-net-plane-terminations.test.ts:
+(pass) same-net plane terminations use offset through-all vias [1.55ms]
+
+tests/plane-source-same-net-copper.test.ts:
+(pass) normalizes plane sources through existing and emitted same-net copper without merging signal branches [268.81ms]
+
+ 6 pass
+ 0 fail
+ 2154 expect() calls
+Ran 6 tests across 5 files. [825.00ms]

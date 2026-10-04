@@ -1,0 +1,43 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout/fanout-breakout-routes-before-global.test.tsx:
+122 |   expect(autoroutingPhaseIoStack).toHaveLength(3)
+123 |   expect(
+124 |     autoroutingPhaseIoStack.map(
+125 |       (phaseIo) => phaseIo.startSimpleRouteJson?.connections.length,
+126 |     ),
+127 |   ).toEqual([5, 4, 4])
+          ^
+error: expect(received).toEqual(expected)
+
+  [
+-   5,
++   4,
+    4,
+    4,
+  ]
+
+- Expected  - 1
++ Received  + 1
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/fanout-breakout-routes-before-global.test.tsx:127:5)
+(fail) fanout breakout routes signals and plane drops before global routing [269.86ms]
+
+tests/breakout/dogbone-plane-drop-phase-isolation.test.tsx:
+(pass) dogbone routing owns its pad escapes while plane drops remain in the following phase [393.35ms]
+
+tests/breakout/manual-breakoutpoints-use-default-autorouter.test.tsx:
+(pass) manual breakout points use the default autorouter before global routing [351.62ms]
+(pass) an explicit fanout autorouter is preserved with a manual breakout point [11.21ms]
+(pass) breakout owns nested nets and shares stable boundary point identities with its parent [74.66ms]
+
+tests/breakout/breakout-bga36-decoupling-caps.test.tsx:
+(pass) breakout defaults to fanout for a 6x6 BGA surrounded by four 0603 decoupling caps [371.64ms]
+
+tests/breakout/breakoutpoint-target-layer.test.tsx:
+(pass) explicit breakout target layers survive both escape and global routing [465.22ms]
+
+ 6 pass
+ 1 fail
+ 82 expect() calls
+Ran 7 tests across 5 files. [2.55s]

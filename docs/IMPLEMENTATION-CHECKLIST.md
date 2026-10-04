@@ -20,7 +20,9 @@ This checklist records remaining work; it does not grant routing or fabrication 
 - [x] Implement bounded target I2C, timebase, clock, watchdog, startup/vector/linker and serialized runtime.
 - [x] Link ELF/BIN, measure flash/RAM, and run integrated fault regressions.
 - [ ] Establish documented fresh PD-message provenance ; independently manufacturer-approved40-byte NVM and measured RX-path approval remain external bring-up dependencies.
-- [ ] Enable routing only after prerequisites and placement pass; route/pour and measure actual geometry/current paths.
+- [x] Pass fresh complete-board prerequisite checks with physical pad ownership,2 mm PD fanout margin and unchanged supplier models.
+- [x] Finish canonical fanout drill/corner regression suite; integrate validated source-built core2086/fanout82 and checksum-verified Bun1.4.2.
+- [ ] Complete native routing and pours; measure actual geometry/current paths.
 - [ ] Run routed strict checks, shorts, snapshots and visual copper review.
 - [ ] Generate and review Gerber/drill/BOM/PnP outputs bound to exact source/firmware/dependency hashes.
 - [ ] Commit and publish each validated milestone to known destinations; continue implementation afterward.

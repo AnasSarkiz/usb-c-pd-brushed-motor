@@ -1,0 +1,11 @@
+{
+  "identical_library_source_files": 96,
+  "tarball_sha256": "d20fcd10705875d21b49a2426f7f7e6b33be0469d3961e3f4c5784c3fae64c8e",
+  "case": "dataset31-imx6ull-bottom-left-offset",
+  "bun139": "fail: overlong-lane complete plan invariant; no source instrumentation",
+  "bun142": "pass: 24597 assertions; 35.260 seconds; native SVG unchanged",
+  "temporary_diagnostic_guards_removed": true,
+  "superseded_bun139_shard7_and_nojit_diagnostic": "terminated after runtime comparison; neither counts as passed; canonical tests rerun on1.4.2",
+  "full_suite": "passed:314tests/271files; all eight canonical partitions onBun1.4.2; zero failures",
+  "full_suite_evidence": "evidence/fanout-source-fix-A22/bun142-full-suite.json"
+}

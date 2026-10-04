@@ -1,0 +1,24 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/plane-source-corner-normalization.test.ts:
+(pass) normalizes plane source corners without moving pads, physical vias, or neighboring copper [312.02ms]
+
+tests/signal-source-corner-normalization.test.ts:
+(pass) normalizes a rectangular BGA dogbone while retaining its target and prior-phase copper [158.73ms]
+
+tests/coincident-path-corner.test.ts:
+(pass) coincident vertices cannot conceal a sharp copper corner [158.32ms]
+
+tests/plane-ground-drill-clearance.test.ts:
+(pass) merged QFN ground escapes preserve ordinary drill and pad clearances [307.17ms]
+
+tests/same-net-drill-drc.test.ts:
+(pass) the independent copper audit rejects same-net drill spacing [158.78ms]
+
+tests/normalized-hairpin-clearance.test.ts:
+(pass) normalization rejects new copper crossing a retained hairpin arm despite valid turns [327.76ms]
+
+ 6 pass
+ 0 fail
+ 2184 expect() calls
+Ran 6 tests across 6 files. [1.54s]

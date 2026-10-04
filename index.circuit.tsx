@@ -8,6 +8,7 @@ import { PwmControls } from "./circuit/PwmControls"
 import { RailProtection } from "./circuit/RailProtection"
 import { EnergyDump } from "./circuit/EnergyDump"
 import { MotorBridge } from "./circuit/MotorBridge"
+import { PowerRouting } from "./circuit/PowerRouting"
 
 export default function UsbCPdBrushedMotorController() {
   return (
@@ -16,7 +17,6 @@ export default function UsbCPdBrushedMotorController() {
       height="65mm"
       thickness="1.6mm"
       layers={2}
-      routingDisabled
       minTraceWidth={0.2}
       minTraceToPadEdgeClearance={0.2}
       minPadEdgeToPadEdgeClearance={0.2}
@@ -44,6 +44,7 @@ export default function UsbCPdBrushedMotorController() {
       schLayout={{ layoutMode: "relative" }}
     >
       <MechanicalFeatures />
+      <PowerRouting />
       <copperpour
         name="ground_top"
         layer="top"
@@ -60,16 +61,21 @@ export default function UsbCPdBrushedMotorController() {
         boardEdgeMargin={0.5}
         useThermalReliefs={false}
       />
-      <net name="GND" isGroundNet />
+      <net name="GND" isGroundNet routingPhaseIndex={1} />
       <net name="VBUS" isPowerNet nominalTraceWidth="2mm" />
       <net name="VDD5" isPowerNet />
       <net name="VCC3V3" isPowerNet />
       <net name="EFUSE_IN" isPowerNet nominalTraceWidth="2mm" />
       <net name="VIN_BUCK" isPowerNet nominalTraceWidth="2mm" />
-      <net name="SWITCH_NODE" isPowerNet nominalTraceWidth="2mm" />
+      <net
+        name="SWITCH_NODE"
+        isPowerNet
+        nominalTraceWidth="2mm"
+        routingPhaseIndex={0}
+      />
       <net name="VM" isPowerNet nominalTraceWidth="2mm" />
-      <net name="MOTOR_P" nominalTraceWidth="2mm" />
-      <net name="MOTOR_N" nominalTraceWidth="2mm" />
+      <net name="MOTOR_P" nominalTraceWidth="2mm" routingPhaseIndex={0} />
+      <net name="MOTOR_N" nominalTraceWidth="2mm" routingPhaseIndex={0} />
       <schematicsheet
         name="usb"
         displayName="USB-C PD and quiet supplies · A22"

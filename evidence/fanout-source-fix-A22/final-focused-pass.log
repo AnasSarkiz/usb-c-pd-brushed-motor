@@ -1,0 +1,15 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/coincident-path-corner.test.ts:
+(pass) coincident vertices cannot conceal a sharp copper corner [295.85ms]
+
+tests/plane-ground-drill-clearance.test.ts:
+(pass) merged QFN ground escapes preserve ordinary drill and pad clearances [501.40ms]
+
+tests/same-net-drill-drc.test.ts:
+(pass) the independent copper audit rejects same-net drill spacing [201.71ms]
+
+ 3 pass
+ 0 fail
+ 2093 expect() calls
+Ran 3 tests across 3 files. [1228.00ms]

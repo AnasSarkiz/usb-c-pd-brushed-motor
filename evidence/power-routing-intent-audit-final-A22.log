@@ -1,0 +1,34 @@
+{
+  "paths": 7,
+  "reviews": [
+    {
+      "connection": "U5.SW",
+      "minimumConservativeUnrelatedPadGapMm": 0.7330053999999997
+    },
+    {
+      "connection": "C12.pin2",
+      "minimumConservativeUnrelatedPadGapMm": 0.9000247999999971
+    },
+    {
+      "connection": "D5.cathode",
+      "minimumConservativeUnrelatedPadGapMm": 2.211691110182934
+    },
+    {
+      "connection": "U10.pin8",
+      "minimumConservativeUnrelatedPadGapMm": 0.30000240000000034
+    },
+    {
+      "connection": "D10.pin1",
+      "minimumConservativeUnrelatedPadGapMm": 2.0000535
+    },
+    {
+      "connection": "U10.pin10",
+      "minimumConservativeUnrelatedPadGapMm": 0.26993191897710456
+    },
+    {
+      "connection": "D10.pin2",
+      "minimumConservativeUnrelatedPadGapMm": 0.5149144999999997
+    }
+  ],
+  "issues": []
+}

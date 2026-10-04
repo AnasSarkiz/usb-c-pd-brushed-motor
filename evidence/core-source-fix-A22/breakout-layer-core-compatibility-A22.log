@@ -1,0 +1,33 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout/dogbone-plane-drop-phase-isolation.test.tsx:
+(pass) dogbone routing owns its pad escapes while plane drops remain in the following phase [628.80ms]
+
+tests/breakout/manual-breakoutpoints-use-default-autorouter.test.tsx:
+(pass) manual breakout points use the default autorouter before global routing [406.83ms]
+(pass) an explicit fanout autorouter is preserved with a manual breakout point [13.26ms]
+119 |   const breakoutPointId =
+120 |     circuit.db.pcb_breakout_point.list()[0]?.pcb_breakout_point_id
+121 |   expect(breakoutPointId).toBeDefined()
+122 | 
+123 |   const [breakoutPhase, parentPhase] = autoroutingPhaseIoStack
+124 |   expect(breakoutPhase?.startSimpleRouteJson?.connections).toHaveLength(2)
+                                                                 ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 2
+Received length: 1
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/manual-breakoutpoints-use-default-autorouter.test.tsx:124:60)
+(fail) breakout owns nested nets and shares stable boundary point identities with its parent [67.44ms]
+
+tests/breakout/manual-breakoutpoints-preserve-plane-fanout.test.tsx:
+(pass) manual breakout points preserve fanout for automatic plane drops [575.17ms]
+
+tests/breakout/breakoutpoint-target-layer.test.tsx:
+(pass) explicit breakout target layers survive both escape and global routing [148.68ms]
+
+ 5 pass
+ 1 fail
+ 38 expect() calls
+Ran 6 tests across 4 files. [2.47s]

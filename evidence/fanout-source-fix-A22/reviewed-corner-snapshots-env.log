@@ -1,0 +1,14 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/dataset31-imx6ull-top-center.test.ts:
+Updating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/__snapshots__/dataset31-imx6ull-top-center.snap.svg
+(pass) retries untunable wide source routes with fresh reservations and a higher source cost [42322.43ms]
+
+tests/coincident-path-corner.test.ts:
+Updating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/__snapshots__/coincident-path-corner.snap.svg
+(pass) coincident vertices cannot conceal a sharp copper corner [154.45ms]
+
+ 2 pass
+ 0 fail
+ 12003 expect() calls
+Ran 2 tests across 2 files. [42.60s]

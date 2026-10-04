@@ -1,0 +1,18 @@
+[
+  {
+    "fixture": "dataset31-imx6ull-top-right-offset",
+    "vias": 108,
+    "minimumHoleGapMm": 0.24484183504905618,
+    "violations": 0,
+    "worst": [],
+    "basis": "Unmodified original snapshot data-x/data-y geometry; native fixture0.10 mm through holes, declared0.1016 mm hole-edge clearance."
+  },
+  {
+    "fixture": "dataset31-k230-top-center",
+    "vias": 203,
+    "minimumHoleGapMm": 0.3381519006006958,
+    "violations": 0,
+    "worst": [],
+    "basis": "Unmodified original snapshot data-x/data-y geometry; native fixture0.10 mm through holes, declared0.1016 mm hole-edge clearance."
+  }
+]

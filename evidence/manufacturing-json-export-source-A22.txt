@@ -1,0 +1,63 @@
+if (!rawCircuitJson)
+      return onExit(1);
+    try {
+      const parsedCircuitJson = JSON.parse(rawCircuitJson);
+      if (!Array.isArray(parsedCircuitJson)) {
+        onError("Error parsing circuit JSON file: expected an array");
+        return onExit(1);
+      }
+      circuitJson = parsedCircuitJson;
+    } catch (err) {
+      onError(`Error parsing circuit JSON file: ${err}`);
+      return onExit(1);
+    }
+  } else {
+    const isJlcpcbFabricationExport = format === "gerbers";
+    const fabricationPlatformConfig = isJlcpcbFabricationExport ? getPlatformConfigWithCliDefaults(mergePlatformConfigs(platformConfig, {
+      enablePartOrientationAnalysis: true
+    })) : platformConfig;
+    const generateCircuitData = isJlcpcbFabricationExport ? generateCircuitJson : getOrGenerateCircuitJson;
+    const circuitData = await generateCircuitData({
+      filePath,
+      saveToFile: format === "circuit-json",
+      platformConfig: fabricationPlatformConfig
+    }).catch((err) => {
+      onError(`Error generating circuit JSON: ${err}`);
+      return null;
+    });
+    if (!circuitData)
+      return onExit(1);
+    circuitJson = circuitData.circuitJson;
+  }
+  let outputContent;
+  switch (format) {
+    case "schematic-svg":
+      outputContent = convertCircuitJsonToStackedSchematicSheetsSvg(circuitJson);
+      break;
+    case "schematic-pdf":
+      outputContent = await convertCircuitJsonToSchematicPdf(circuitJson);
+      break;
+    case "pcb-svg":
+    case "pcb-png":
+      try {
+        const svg = convertCircuitJsonToP
+
+case "gerbers": {
+      const zip = new import_jszip5.default;
+      const gerberFiles = convertCircuitJsonToGerberFiles(circuitJson, {
+        flip_y_axis: false
+      });
+      for (const [fileName, fileContents] of Object.entries(gerberFiles)) {
+        zip.file(fileName, fileContents);
+      }
+      const bomRows = await convertCircuitJsonToBomRows({ circuitJson });
+      const bomCsv = await convertBomRowsToCsv(bomRows);
+      zip.file("bom.csv", bomCsv);
+      const pnpCsv = await convertCircuitJsonToPickAndPlaceCsv(circuitJson, {
+        supplier: "jlcpcb"
+      });
+      zip.file("pick_and_place.csv", pnpCsv);
+      outputContent = await zip.generateAsync({ type: "nodebuffer" });
+      break;
+    }
+    

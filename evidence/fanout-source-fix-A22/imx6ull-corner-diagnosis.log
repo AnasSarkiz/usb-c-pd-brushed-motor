@@ -1,0 +1,33 @@
+[
+  {
+    connection: "breakout:pcb_breakout_point_10",
+    pointIndex: 41,
+    dot: 0,
+    cross: 0.013212876799999789,
+    previous: {
+      route_type: "wire",
+      x: 2.194560000000002,
+      y: 9.02208,
+      layer: "bottom",
+      width: 0.08128,
+    },
+    point: {
+      route_type: "wire",
+      x: 2.27584,
+      y: 9.02208,
+      layer: "bottom",
+      width: 0.08128,
+    },
+    vector: {
+      x: 0,
+      y: -0.16256000000000093,
+    },
+    next: {
+      x: 0.08127999999999824,
+      y: 0,
+    },
+    route: [
+      [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...]
+    ],
+  }
+]

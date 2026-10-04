@@ -1,0 +1,48 @@
+import type { SimpleRouteJson } from "@tscircuit/capacity-autorouter"
+import { distance } from "./geometry"
+import type { RoutedVia } from "./types"
+
+/** Newer host SRJs carry this optional manufacturing constraint in mm. */
+export interface SimpleRouteJsonWithViaDrillRules extends SimpleRouteJson {
+  minViaHoleEdgeToViaHoleEdgeClearance?: number
+}
+
+type ViaDrill = Pick<RoutedVia, "center" | "spanLayers"> & {
+  holeDiameter?: number
+}
+
+/** Board-world mm (+X right, +Y up); drill spacing is independent of net identity. */
+export function viaDrillsAreClear(params: {
+  srj: SimpleRouteJsonWithViaDrillRules
+  firstVia: ViaDrill
+  secondVia: ViaDrill
+}): boolean {
+  const { srj, firstVia, secondVia } = params
+  const clearance = srj.minViaHoleEdgeToViaHoleEdgeClearance
+  // Hosts which omit the rule retain their existing copper-clearance policy.
+  if (clearance === undefined) return true
+  if (!Number.isFinite(clearance) || clearance < 0) {
+    throw new Error("Via drill clearance must be finite and nonnegative")
+  }
+  if (
+    !firstVia.spanLayers.some((layer) => secondVia.spanLayers.includes(layer))
+  ) {
+    return true
+  }
+  const firstDiameter = firstVia.holeDiameter
+  const secondDiameter = secondVia.holeDiameter
+  if (
+    firstDiameter === undefined ||
+    secondDiameter === undefined ||
+    !Number.isFinite(firstDiameter) ||
+    !Number.isFinite(secondDiameter) ||
+    firstDiameter <= 0 ||
+    secondDiameter <= 0
+  ) {
+    throw new Error("Declared drill clearance requires both via hole diameters")
+  }
+  return (
+    distance(firstVia.center, secondVia.center) >=
+    (firstDiameter + secondDiameter) / 2 + clearance - 1e-9
+  )
+}

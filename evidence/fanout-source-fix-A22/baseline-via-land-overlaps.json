@@ -1,0 +1,12 @@
+[
+  {
+    "fixture": "dataset31-imx6ull-top-right-offset",
+    "minimumDrillToComponentPad": 0.15353154622656218,
+    "overlaps": []
+  },
+  {
+    "fixture": "dataset31-k230-top-center",
+    "minimumDrillToComponentPad": 0.1609200421145935,
+    "overlaps": []
+  }
+]

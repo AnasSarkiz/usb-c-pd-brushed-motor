@@ -1,0 +1,22 @@
+{
+  solved: true,
+  failed: false,
+  error: null,
+  attempts: [
+    {
+      assignmentIndex: 0,
+      busLayerAssignments: [Object ...],
+      routedBusCount: 5,
+      routedConnectionCount: 5,
+      failedBusIds: [],
+      score: 8.572116804626411,
+    }, {
+      assignmentIndex: -1,
+      busLayerAssignments: [Object ...],
+      routedBusCount: 5,
+      routedConnectionCount: 5,
+      failedBusIds: [],
+      score: 8.572116804626411,
+    }
+  ],
+}

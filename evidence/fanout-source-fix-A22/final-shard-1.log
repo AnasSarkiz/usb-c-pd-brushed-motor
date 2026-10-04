@@ -1,0 +1,38 @@
+Running test shard 1/8: 34 of 269 files
+- tests/adaptive-available-corners-and-sides.test.ts
+- tests/am62l-ddr4-memory-fanout-repro.test.ts
+- tests/am62l-real-decoupling-copper.test.tsx
+- tests/benchmark-cli.test.ts
+- tests/boundary-tail-early-contact.test.ts
+- tests/boundary-terminal-copper.test.ts
+- tests/bus-length-matching-atomic-failure.test.ts
+- tests/bus-length-matching-self-short-via.test.ts
+- tests/bus-max-length-skew-no-op.test.ts
+- tests/compressed-exit-convergence.test.ts
+- tests/dataset02-stress.test.ts
+- tests/dataset31-bottom-right-offset.test.ts
+- tests/dataset31-imx6ull-top-right-offset.test.ts
+- tests/dataset31-right-bottom-offset.test.ts
+- tests/diagonal-grid-neighbors.test.ts
+- tests/fanout-exit-position-availability.test.ts
+- tests/fanout-solution-validation.test.ts
+- tests/fixed-corner-exit-offset.test.ts
+- tests/inner-pads-fanout.test.ts
+- tests/layer-reserved-solver-integration.test.ts
+- tests/layered-winding-same-band-reservations.test.ts
+- tests/literal-corner-edge-rail-reservations.test.ts
+- tests/opposed-pair-source-escapes.test.ts
+- tests/peripheral-bus-length-repair.test.ts
+- tests/pr-benchmark-authorization.test.ts
+- tests/reserved-narrow-bus-band.test.ts
+- tests/reserved-via-terminal-approaches.test.ts
+- tests/routed-copper-drc-through-all-via.test.ts
+- tests/sequential-fanout-output-identities.test.ts
+- tests/soc-dram-northeast-failure.test.ts
+- tests/source-origin-top-final.test.ts
+- tests/srj19-sample002.test.ts
+- tests/static-export-entry.test.ts
+- tests/winding-failed-prefix-cache.test.ts
+bun test v1.3.9 (cf6cdbbb)
+
+tests/dataset31-imx6ull-top-right-offset.test.ts:

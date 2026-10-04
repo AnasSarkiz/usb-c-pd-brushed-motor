@@ -1,0 +1,21 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/source-origin-accepted-prefix.test.ts:
+101 |       exitPoint: { x: 3, y: connection.targetPoint.y },
+102 |     })),
+103 |   })
+104 |   let next = steps.next()
+105 |   while (!next.done) next = steps.next()
+106 |   expect(next.value).not.toBeNull()
+                               ^
+error: expect(received).not.toBeNull()
+
+Received: null
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-drill-search-isolation-A22/tests/source-origin-accepted-prefix.test.ts:106:26)
+(fail) source-origin finalization retains an accepted plane without reserving its drill twice [15.29ms]
+
+ 0 pass
+ 1 fail
+ 3 expect() calls
+Ran 1 test across 1 file. [115.00ms]

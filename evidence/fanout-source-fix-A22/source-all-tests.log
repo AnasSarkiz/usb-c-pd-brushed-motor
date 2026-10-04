@@ -1,0 +1,57 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/layered-exit-target-layer-validation.test.ts:
+(pass) layered exit targets reject unavailable copper layers [2.80ms]
+
+tests/routed-copper-drc.test.ts:
+(pass) rejects a trace crossing a different-net pad on the same layer [0.87ms]
+(pass) does not treat visual overlap on a separate layer as a collision [0.25ms]
+(pass) rejects different-net trace intersections [0.09ms]
+(pass) rejects a via colliding with a different-net pad anywhere in its span [0.14ms]
+(pass) rejects a via placed directly at a moved breakout endpoint [0.08ms]
+(pass) allows a via at an interior point along a connected trace [0.04ms]
+(pass) rejects virtual through-obstacle transitions as emitted copper [0.01ms]
+(pass) allows a trace to leave its own component pad away from the package body [0.07ms]
+(pass) rejects a terminal trace directed through its package body [0.06ms]
+
+tests/source-pad-reentry-repair.test.ts:
+(pass) repairs own-pad reentry through a clear pad end while retaining the first via and target copper [159.01ms]
+
+tests/step-granularity.test.ts:
+(pass) step exposes candidate, bus-routing, and max-flow work incrementally [1260.80ms]
+
+tests/boundary-tail-wide-exit-phase.test.ts:
+(pass) aligns widely separated exits to narrow approach corridors without moving their vias [319.21ms]
+
+tests/dataset31-imx6ull-top-center.test.ts:
+51 |           if (vector) {
+52 |             const dot = vector.x * next.x + vector.y * next.y
+53 |             const cross = Math.abs(vector.x * next.y - vector.y * next.x)
+54 |             expect(
+55 |               dot >= -1e-7 && (cross < 1e-7 || Math.abs(cross - dot) < 1e-7),
+56 |             ).toBe(true)
+                   ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/dataset31-imx6ull-top-center.test.ts:56:15)
+(fail) retries untunable wide source routes with fresh reservations and a higher source cost [40398.60ms]
+
+tests/am62l-lpddr4-progressive-through-all-soc-repro.test.ts:
+(pass) routes the AM62L nine-bus SoC fanout with DMI1 [1569.69ms]
+
+tests/am62l-direct-decoupling-dram.test.ts:
+(pass) finalizes the real AM62L direct-decoupling DRAM fanout [65776.94ms]
+
+tests/unlayered-exit-targets-legacy-routing.test.ts:
+(pass) unlayered paired exits retain the legacy single-transition fanout [4.04ms]
+
+tests/plane-source-corner-normalization.test.ts:
+(pass) normalizes plane source corners without moving pads, physical vias, or neighboring copper [297.93ms]
+
+tests/cached-via-occupant-neighborhoods.test.ts:
+(pass) cached native via neighborhoods preserve order and read fresh owners after rip-ups [1.00ms]
+
+tests/dataset31-imx6ull-top-right-offset.test.ts:

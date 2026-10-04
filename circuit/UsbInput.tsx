@@ -1,5 +1,6 @@
 import { A_5015 } from "../imports/A_5015"
 import { productPlacement } from "./product-placement"
+import { PinBreakoutPoints } from "./PinBreakouts"
 import { SMBJ22A } from "../imports/SMBJ22A"
 import { CC0603KRX7R9BB104 } from "../imports/CC0603KRX7R9BB104"
 import { TYPE_C_31_M_12 } from "../imports/TYPE_C_31_M_12"
@@ -39,15 +40,7 @@ export function UsbInput() {
         }}
       />
       {/* Autonomous PD sink; NVM provisioning mandatory */}
-      <fanout
-        name="pd_pin_escape"
-        autorouter={{
-          preset: "dogbone",
-          allowViaInPad: false,
-          traceClearance: 0.25,
-        }}
-        fanoutRoutingLayers={["bottom"]}
-      >
+      <breakout name="pd_pin_escape" fanoutBoundaryPadding="2mm">
         <STUSB4500QTR
           name="U1"
           pcbRotation={productPlacement.U1.ccwRotationDegrees}
@@ -85,7 +78,8 @@ export function UsbInput() {
             pin25: "net.GND",
           }}
         />
-      </fanout>
+        <PinBreakoutPoints reference="U1" />
+      </breakout>
       {/* 60 V rated 5 V PD/monitor supply */}
       <TPS7A1650DGNR
         name="U2"

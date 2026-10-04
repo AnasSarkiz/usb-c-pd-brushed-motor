@@ -9,10 +9,14 @@ qualifies PD power and rail voltage; speed and direction remain hardware control
 The80×65×1.6 mm two-layer1 oz board has140 purchased components/58 unchanged
 official JLCPCB imports and four3.2 mm mounting holes. All8 A4 sheets and both
 placement faces were inspected. Strict schema, import/connectivity, five native
-preroute checks, artwork, formatting, TypeScript and36 tests pass. No physical
+preroute checks, artwork, formatting, TypeScript and38 tests pass. No physical
 hardware or continuous-current rating is verified.
 
-Run every command from this directory. Install with `bun install --frozen-lockfile`.
+Run every command from this directory with Bun1.4.2 (pinned in package.json).
+The checksum-verified local runtime is `tooling/bun-1.4.2/bun-darwin-aarch64/bun`;
+put its directory first in PATH for this task. Bun1.3.9 exhibits a native routing
+regression that passes with source-identical1.4.2. Install with
+`bun install --frozen-lockfile`.
 Use `bun run format:check`, `bun run typecheck`, `bun run test`, `bun run power:report`
 and `bun run build`. Core/props source fixes are reproducible tarballs with patches,
 upstream bases and regression evidence; no installed dependency or supplier part
@@ -42,7 +46,9 @@ Initial motor tests are limited to≤1 mJ stored energy; further braking,5 V cur
 regulation and2 A thermal ratings require prototype measurements.
 
 No fabrication order has been placed. This independent Git main has no remote;
-GitHub/package publication remains externally blocked without stopping local work.
+GitHub publication remains blocked by the missing repository/branch. The known
+private tscircuit package has the earlier WIP release
+`0.0.1-a22-placement-c265655`; its server build is unverified. Local work continues.
 
 ## Historical implementation notes
 

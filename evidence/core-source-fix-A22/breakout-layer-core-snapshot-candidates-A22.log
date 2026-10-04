@@ -1,0 +1,31 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout/fanoutpoint-chip-route.test.tsx:
+(pass) fanout routes a chip pin through a fanoutpoint [330.71ms]
+
+tests/breakout/manualplaced-breakoutpoint.test.tsx:
+Updating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/__snapshots__/manualplaced-breakoutpoint-autorouting-srj.snap.svg
+(pass) autoplaced breakout points skipped when manual breakoutpoint exists [407.41ms]
+
+tests/breakout/fanout-soic8-sensor-to-i2c-header.test.tsx:
+Updating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/__snapshots__/fanout-soic8-sensor-to-i2c-header-autorouting-srj.snap.svg
+(pass) fanout routes soic8 sensor support parts to an i2c header without fanoutpoints [717.96ms]
+
+tests/breakout/breakout-sot23-regulator-power-rail.test.tsx:
+Updating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/__snapshots__/breakout-sot23-regulator-power-rail-autorouting-srj.snap.svg
+(pass) breakout routes sot23 regulator power rail parts without breakoutpoints [805.83ms]
+
+tests/breakout/autoplaced-breakoutpoints1.test.tsx:
+(pass) autoplaced breakout points created for cross-boundary traces [409.06ms]
+
+tests/breakout/breakout-qfp16-with-header-and-passives.test.tsx:
+Updating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/__snapshots__/breakout-qfp16-with-header-and-passives-autorouting-srj.snap.svg
+(pass) breakout routes qfp16 controller pins to header and passives with auto breakout points [634.24ms]
+
+tests/breakout/breakoutpoint-route.test.tsx:
+(pass) autorouter uses breakout point [222.07ms]
+
+ 7 pass
+ 0 fail
+ 67 expect() calls
+Ran 7 tests across 7 files. [4.10s]

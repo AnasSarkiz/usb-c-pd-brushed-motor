@@ -1,0 +1,30 @@
+{
+  "type": "autorouter_debug_summary",
+  "generatedAt": "2026-10-04T03:43:28.365Z",
+  "phaseCount": 1,
+  "phases": [
+    {
+      "subcircuit_id": "subcircuit_source_group_2",
+      "componentDisplayName": "<board#747 />",
+      "routingPhaseIndex": 0,
+      "phaseOrdinal": 1,
+      "phaseCount": 6,
+      "connectionCount": 23,
+      "obstacleCount": 437,
+      "previousTraceCount": 0,
+      "autorouterName": "dogbone",
+      "solverName": "DogboneFanoutSolver",
+      "effort": 1,
+      "cacheStatus": "disabled",
+      "cacheDisabledReason": "strategy_not_cacheable",
+      "elapsedMs": 435,
+      "error": {
+        "message": "Dogbone connection source_trace_17 has no source pad"
+      },
+      "startedAt": "2026-10-04T03:43:27.231Z",
+      "completedAt": "2026-10-04T03:43:27.666Z"
+    }
+  ],
+  "circuitJsonElementCount": 5275,
+  "targetPhaseReached": false
+}

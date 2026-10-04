@@ -2,7 +2,7 @@
   "revision": "A22",
   "official_source_commit": "51b3b57d60b9153e8e7a0449023bbefdba18ec23",
   "official_source_url": "https://github.com/tscircuit/core",
-  "source_fix": "Native board mounting/plated-hole associations; board label association follows existing Board method; explicit plated-hole stencil layers with legacy both-layer default. Custom JSX symbol graphics and electrical ports rotate together; rotated rectangle bounds use world-space corners. Explicit autorouter preset safety settings survive normalization and trace clearance reaches SRJ. Shared authoritative supplier geometry cache deduplicates requests, expires after 24 hours and propagates failures. PCB port selectors include primitive-container ancestry, so custom JSX symbol ports remain selectable in saved routing paths. Fanout discovery runs after port alias indexing and source traces; literal pin selectors preserve schematic-symbol ownership and resolve nested imported ports without depending on warmed caches. Transparent schematic groups receive their enclosing subcircuit association; omitted PCB anchors and unset trace-clearance metadata remain optional instead of invalid null/undefined members. Interior PCB route pieces preserve exact known source-net ownership independently of pad endpoint geometry; physical dangling/missing-port checks remain enforced.",
+  "source_fix": "Native board mounting/plated-hole associations; board label association follows existing Board method; explicit plated-hole stencil layers with legacy both-layer default. Custom JSX symbol graphics and electrical ports rotate together; rotated rectangle bounds use world-space corners. Explicit autorouter preset safety settings survive normalization and trace clearance reaches SRJ. Shared authoritative supplier geometry cache deduplicates requests, expires after 24 hours and propagates failures. PCB port selectors include primitive-container ancestry, so custom JSX symbol ports remain selectable in saved routing paths. Fanout discovery runs after port alias indexing and source traces; literal pin selectors preserve schematic-symbol ownership and resolve nested imported ports without depending on warmed caches. Transparent schematic groups receive their enclosing subcircuit association; omitted PCB anchors and unset trace-clearance metadata remain optional instead of invalid null/undefined members. Interior PCB route pieces preserve exact known source-net ownership independently of pad endpoint geometry; physical dangling/missing-port checks remain enforced. Local routing cohorts exclude global plane-drop continuations sharing their source trace; downstream connections remain routed. Resolved component display offsets serialize canonical millimetre strings instead of invalid numeric schema fields. Explicit breakout-point layer intent is preserved from canonical props into Circuit JSON and both native routing phases. Local routing phase ownership retains declared local nets, fully internal port connections and intentional native fanout plane drops while rejecting unrelated global continuations. PCB route reversal exchanges via from/to layer annotations while preserving barrel dimensions, coordinates and copper widths. Fixed saved trace obstacles preserve the full linear/quadratic taper envelope and typed Circuit JSON width metadata while retaining narrow pad entries and constant outgoing wire semantics. Physical containing-pad attribution selects actual layer and pad for plane escape direction instead of a first same-net alias; plane-only routing cohorts retain same-net joining.",
   "distribution": "Canonical source build and npm pack; task-local tarball dependencies and Bun overrides; clean frozen-lockfile installation. Imported electronics and Circuit JSON schemas are unchanged.",
   "checks": {
     "tests": "5 focused core tests / 344 assertions",
@@ -14,7 +14,13 @@
     "port_selectors": "Original-source regression fails;5 regressions/122 assertions pass, TS/canonical build pass.",
     "fanout": "Original-source regression fails; 12 selector/alias compatibility tests /34 assertions pass;34 fanout tests/1808 assertions pass (2 pre-existing skipped), source TS/build pass, new snapshot inspected. Local-server test passes under escalated sandbox.",
     "fanout_schema": "Original-source strict-schema regression fails;7 group/fanout tests/97 assertions pass, source TS/build pass, new snapshot inspected.",
-    "route_net": "Original-source regression fails;7 routing attribution/fanout/saved-route tests/74 assertions pass, source TS/build pass. Regression still rejects isolated copper with2 dangling endpoints and missing physical ports; unknown source nets remain unattributed."
+    "route_net": "Original-source regression fails;7 routing attribution/fanout/saved-route tests/74 assertions pass, source TS/build pass. Regression still rejects isolated copper with2 dangling endpoints and missing physical ports; unknown source nets remain unattributed.",
+    "phase_isolation": "Original-source final regression fails with missing source pad;8 focused tests/70 assertions and27 phased-routing tests/283 assertions pass.23 coordinate/anchor tests/103 assertions pass with schema checks and unchanged physical-distance expectations. Source full TypeScript and canonical build pass; snapshot visually inspected. Earlier failed typing/import/pack attempts are retained.",
+    "breakout_layers": "Original props and core regressions fail;602 props tests/2072 assertions/7 snapshots pass.37 breakout tests/1900 assertions pass,2 pre-existing skips. Source TypeScript/canonical props and core builds pass. New layer copper snapshot, all seven unchanged PCB snapshots and the changed routing-stage snapshot individually inspected. Ownership failures were repaired without weakening assertions or thresholds.",
+    "reverse_via": "Canonical original-source regression fails.5 focused reversal/taper/teardrop tests/52 assertions and37 complete breakout tests/1900 assertions pass (two pre-existing skips). Full source TypeScript/canonical build pass; no snapshot changed. Sandbox ephemeral-localhost failure and initial invalid test fields are retained and resolved; final tests use canonical Circuit JSON types.",
+    "fixed_taper": "Original canonical obstacle function fails the unchanged regression.9 focused saved-path/reversal/fixed-path tests/274 assertions and37 complete breakout tests/1900 assertions pass (two existing skips). Source TypeScript and canonical build pass. New visual obstacle snapshot inspected; strict canonical Circuit JSON schema validates the fixture. Initial missing matcher/schema fields are retained and corrected without suppressions.",
+    "physical_pad": "88 native breakout/routing tests/2110 assertions passed; two pre-existing skips; negative original-source regression and actual SVG reviewed. Current-runtime rerun in progress.",
+    "current_runtime_compatibility": "Bun1.4.2:88 pass,2 pre-existing skips,2110 assertions across83files,36.84s; unchanged assertions and snapshots."
   },
   "sha256": {
     "evidence/core-source-fix-A22/board-silkscreen-schema-pcb.snap.svg": "5d4ee87369a074fbff6a7099df35311f71b71d216eb3d474d373d3a1fe2eb11b",
@@ -26,15 +32,33 @@
     "evidence/core-source-fix-A22/core.patch": "f0df38514891fbbf4519bfd3a7885da48d449348b773f6d95e0b968aa20e9b65",
     "evidence/core-source-fix-A22/development-package-lock.json": "f015b8086fcbdf19f501ee3e13ad2456de25a2f6990933b8a433e86afb9ba315",
     "tooling/tscircuit-core-0.0.2073-A22.tgz": "2986128f051f507a614a3c93a512cca189f005fd3be1c4310f6b3c35e8cb4a5b",
-    "node_modules/@tscircuit/core/dist/index.js": "e02f236c710d6818a9f9165622dd787805fca79c85c8e1a9d68bfd5b565f1de9",
-    "node_modules/@tscircuit/core/dist/index.d.ts": "319b1f0bbf407c8f76359daf18a9b21940d658052f98b7ed048ae0b44476d7fc",
-    "evidence/core-source-fix-A22/core-A22-final.patch": "bd06960b82224761df2a55e196467c36ea9c3cdb5dfe97e497956a6793e0272e",
+    "node_modules/@tscircuit/core/dist/index.js": "027474c9b6416aac6989056c995f9d210c3bb8f46246a1bea198996978930b40",
+    "node_modules/@tscircuit/core/dist/index.d.ts": "b8c0e210679d36f53f3a680af387a0a172c6dd3a8f5fe6e1c17976d25f004c70",
+    "evidence/core-source-fix-A22/core-A22-final.patch": "68441ccbdfd187265971583f77a8d7179daf8ff60a5007e9afe5805b04e5bf07",
     "tooling/tscircuit-core-0.0.2074-A22.tgz": "257fdc5dd682118e07e2c34d284893b9a5c37d0bbed98f80e3b25fbaa5d60df6",
     "tooling/tscircuit-core-0.0.2075-A22.tgz": "eb2629680c5f9f010e262cd558125ebaaacc368a45ec2f42436277648417cfac",
     "tooling/tscircuit-core-0.0.2076-A22.tgz": "654871abc7ba38c7647fa0a0073f58c2895e52228d43fc581449e5d4868d0cf8",
     "tooling/tscircuit-core-0.0.2077-A22.tgz": "b4ba57a8c033abf85fe78662ec760ad9e1e52e1d936bcd3037b29f6a30db4fe9",
     "tooling/tscircuit-core-0.0.2078-A22.tgz": "0b57ca2c9800db08089f34648e83f736910c90dea5e7d0eb6ed313c282b1775b",
-    "tooling/tscircuit-core-0.0.2079-A22.tgz": "3ca611995c2772dd4d1d196d160564ad35da552c40a0b777320cfad78af90af2"
+    "tooling/tscircuit-core-0.0.2079-A22.tgz": "3ca611995c2772dd4d1d196d160564ad35da552c40a0b777320cfad78af90af2",
+    "tooling/tscircuit-core-0.0.2080-A22.tgz": "6769737636674fc214324766155ec8b87482e7f260542abeab2309fcbdf09569",
+    "bun.lock": "ef908d2cc7eb7cdb7d5ef87a393b25b4e31c2dd2c44b262f99788c23858945cb",
+    "tooling/tscircuit-core-0.0.2081-A22.tgz": "12590f9f728b1c6b22921522511aa091050febd398e1fd1d1cc96c3880962a2d",
+    "tooling/tscircuit-props-0.0.683-A22.tgz": "6f468f3240c16076806ef0319ea6c78f412ea311a574af75f0a26d1239751e75",
+    "evidence/core-source-fix-A22/props-A22-final.patch": "82ffc8dfc7f3abef638efc6d4a778cbc49eb031214102084ddcc9b034c089b9f",
+    "evidence/core-source-fix-A22/breakoutpoint-target-layer.test.tsx.txt": "5b6a08db3f141a27e041de36e1ea77f9802ee61db604489c063c2ca7b3708199",
+    "evidence/core-source-fix-A22/breakoutpoint-target-layer-pcb.snap.svg": "cfb2df795b9d98ad360dfd9239db126013e26a9e67459eb5efe990bbffef70ca",
+    "tooling/tscircuit-core-0.0.2082-A22.tgz": "fa51245a99a69f724963d14b66334d856d8b508b24645fffb80b52aad331140a",
+    "evidence/core-source-fix-A22/reverse-via-layer-route.test.ts.txt": "e03dc6ae47f637bfc662b89bf0031c7f9417a7642020d48f20b471e11cca06cd",
+    "evidence/core-source-fix-A22/reverse-pcb-trace-route.test.ts.txt": "d8f052dd7b45661422a8fc17d1b2caf0bb02d170342a64f46c098bcb7d0ba11b",
+    "tooling/tscircuit-core-0.0.2083-A22.tgz": "3b69624bd50437314611a3c6f0e40ee8b64b61c1b93e61a937aa2f40e1cf3625",
+    "evidence/core-source-fix-A22/with-fixed-trace-taper-envelope.test.ts.txt": "9d4feea504172a19d1cbf065ea0ff2267c3cb486bc32d5242cf8e8b33f97d971",
+    "evidence/core-source-fix-A22/with-fixed-trace-taper-envelope-pcb.snap.svg": "c8c3d57303c863f7168e9bdf210051ea69c814e5af90130238b131e264ebc1fa",
+    "evidence/core-source-fix-A22/with-fixed-traces-original.ts.txt": "f6bbae90e4d43852a7ebf1ae5a6d82e311ea88d68198f810f24c51fa18c83566",
+    "tooling/tscircuit-core-0.0.2086-A22.tgz": "93aa2957a89c93d6b19abdc008f10482d1841f047bfd81f11485b22777476332"
   },
-  "current_package": "0.0.2079"
+  "current_package": "0.0.2086",
+  "current_props_package": "0.0.683",
+  "dependency_transport": "Bun Git resolver rejected existing fixed commits; authenticated GitHub verifies all six exact revisions. Canonical source manifest uses official fixed-commit archive URLs for the same source. No installed dependency is edited. Logs retain rejected attempts.",
+  "current_fanout_package": "0.0.82"
 }

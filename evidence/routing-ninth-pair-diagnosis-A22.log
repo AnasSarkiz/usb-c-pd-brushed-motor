@@ -1,0 +1,21 @@
+{
+  name: "source_net_0_mst16",
+  nominalTraceWidth: 0.2,
+  width: 0.2,
+  pointsToConnect: [
+    {
+      x: -13.099976000000002,
+      y: -7,
+      layer: "top",
+      pointId: "pcb_port_117",
+      pcb_port_id: "pcb_port_117",
+    }, {
+      x: -15.65,
+      y: -6.325,
+      layer: "top",
+      pointId: "pcb_breakout_point_22",
+    }
+  ],
+  __rootConnectionNames: [ "source_net_0" ],
+  __netConnectionName: undefined,
+}

@@ -1,0 +1,24 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/utils/reverse-tapered-trace-route.test.ts:
+(pass) reversing mixed saved wire segments preserves taper ownership and widths [0.59ms]
+
+tests/utils/reverse-pcb-trace-route.test.ts:
+(pass) preserves variable wire segment widths when reversing a PCB route [0.31ms]
+
+tests/utils/saved-trace-width-interpolation.test.tsx:
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `board`. See https://react.dev/link/warning-keys for more information.
+(pass) saved point widths render matching tapers in either route direction [471.96ms]
+
+tests/utils/reverse-via-layer-route.test.ts:
+(pass) reversing routes preserves wire-to-barrel layer continuity [0.10ms]
+
+tests/components/primitive-components/trace-teardrop-phase.test.tsx:
+(pass) teardrop phase honors logical endpoints, preserves its baseline, and is idempotent [475.62ms]
+
+ 5 pass
+ 0 fail
+ 52 expect() calls
+Ran 5 tests across 5 files. [1.66s]

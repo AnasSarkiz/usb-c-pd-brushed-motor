@@ -1,0 +1,36 @@
+{
+  "reviewed": [
+    {
+      "test": "coincident-path-corner",
+      "image": "coincident-reviewed.png",
+      "reason": "Numerical duplicates previously concealed an orthogonal corner; the native result preserves terminals with a legal 45-degree bevel."
+    },
+    {
+      "test": "dataset31-imx6ull-top-center",
+      "image": "imx6ull-current.png",
+      "reason": "Changed routes pass all connection, independent copper DRC, exact-terminal and corner assertions. Current diagnostic finds zero sharp corners. Updated through supported matcher environment setting."
+    },
+    {
+      "test": "dataset31-imx6ull-left-bottom-offset",
+      "image": "imx6ull-left-bottom-reviewed.png",
+      "reason": "Changed lower bundle inspected together with actual SVG and diff. All behavior and independent DRC assertions pass before the sole snapshot mismatch. Snapshot update pending."
+    },
+    {
+      "test": "source-origin-accepted-prefix",
+      "image": "source-origin-accepted-prefix.png",
+      "reason": "Native three-connection geometry inspected: accepted plane is retained, two signals escape through three distinct total vias; independent drill/copper checker passes."
+    },
+    {
+      "test": "dataset31-imx6ull-top-center",
+      "image": "imx6ull-accepted-prefix-reviewed.png",
+      "svg_sha256": "9f1974fcee3d08f9f7ae1565c8f7d631c67905ca676d7fc6178be8c8205d2c80",
+      "reason": "Final source reservation correction changes selected bus routes; all original validation/DRC/corner/input-immutability assertions passed before snapshot mismatch. Fresh completed native image and diff inspected; separate corner diagnostic reports zero issues. Targeted supported snapshot update running."
+    },
+    {
+      "test": "am62l-real-decoupling-copper",
+      "image": "am62l-real-accepted-prefix-reviewed.png",
+      "svg_sha256": "9c5f7edb7e4d3315b6e6843b4bb42da54cb5ade7f1724eb02fb5f221bec79c26",
+      "reason": "Actual native SVG and diff inspected; 135/135 connections, all102 plane drops, 135 vias and independent copper/drill audit pass before the sole snapshot mismatch. Targeted supported update passes with11 assertions."
+    }
+  ]
+}

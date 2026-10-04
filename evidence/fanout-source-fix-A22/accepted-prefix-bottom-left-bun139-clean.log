@@ -1,0 +1,26 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/dataset31-imx6ull-bottom-left-offset.test.ts:
+104 |       (connection) =>
+105 |         byIndex.get(connection.connectionIndex)?.connectionName !==
+106 |         connection.connection.name,
+107 |     )
+108 |   )
+109 |     throw new Error(
+                    ^
+error: FanoutSolver: overlong-lane rerouting requires every original plan
+      at rerouteOverlongBusLanesSteps (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/reroute-overlong-bus-lanes.ts:109:15)
+      at shortenCompletePlans (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/route-layer-reserved-buses.ts:685:42)
+      at routeLayerReservedAttemptSteps (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/route-layer-reserved-buses.ts:733:16)
+      at retryLayerReservedRoutingSteps (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/retry-layer-reserved-routing.ts:27:25)
+      at routeLayerReservedBusesSteps (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/route-layer-reserved-buses.ts:256:23)
+      at evaluateLayerReservedRoutingSteps (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/fanout-solver.ts:1307:20)
+      at _step (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/fanout-solver.ts:170:35)
+      at step (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/node_modules/.bun/@tscircuit+solver-utils@0.0.19+2f3c14648b61fd7c/node_modules/@tscircuit/solver-utils/dist/index.js:34:12)
+      at stepActiveOperation (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/fanout-solver.ts:1649:22)
+      at _step (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/fanout-solver.ts:6661:12)
+(fail) shortens overlong source prefixes and repairs a blocked constrained bus lane [38660.48ms]
+
+ 0 pass
+ 1 fail
+Ran 1 test across 1 file. [38.84s]

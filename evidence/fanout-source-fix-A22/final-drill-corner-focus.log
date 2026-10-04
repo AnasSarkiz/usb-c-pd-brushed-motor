@@ -1,0 +1,26 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/coincident-path-corner.test.ts:
+47 |   expect(
+48 |     getSvgFromGraphicsObject({
+49 |       lines: [{ points: normalized, strokeColor: "red", strokeWidth: 0.08 }],
+50 |       points: normalized.map((point) => ({ ...point, color: "blue" })),
+51 |     }),
+52 |   ).toMatchSvgSnapshot(import.meta.path)
+         ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/__snapshots__/coincident-path-corner.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/coincident-path-corner.test.ts:52:5)
+(fail) coincident vertices cannot conceal a sharp copper corner [260.16ms]
+
+tests/plane-ground-drill-clearance.test.ts:
+(pass) merged QFN ground escapes preserve ordinary drill and pad clearances [409.70ms]
+
+tests/same-net-drill-drc.test.ts:
+(pass) the independent copper audit rejects same-net drill spacing [182.45ms]
+
+ 2 pass
+ 1 fail
+ 2093 expect() calls
+Ran 3 tests across 3 files. [977.00ms]

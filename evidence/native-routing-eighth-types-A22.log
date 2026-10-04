@@ -1,0 +1,13 @@
+$ tsc --noEmit
+evidence/core-source-fix-A22/dogbone-plane-drop-phase-isolation.test.tsx(3,47): error TS2307: Cannot find module 'tests/fixtures/create-autorouting-phase-io-stack' or its corresponding type declarations.
+evidence/core-source-fix-A22/dogbone-plane-drop-phase-isolation.test.tsx(4,32): error TS2307: Cannot find module 'tests/fixtures/get-test-fixture' or its corresponding type declarations.
+evidence/core-source-fix-A22/dogbone-plane-drop-phase-isolation.test.tsx(66,8): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+evidence/core-source-fix-A22/dogbone-plane-drop-phase-isolation.test.tsx(73,14): error TS7006: Parameter 'phase' implicitly has an 'any' type.
+evidence/core-source-fix-A22/dogbone-plane-drop-phase-isolation.test.tsx(75,12): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+evidence/core-source-fix-A22/dogbone-plane-drop-phase-isolation.test.tsx(81,25): error TS2551: Property 'toMatchPcbSnapshot' does not exist on type 'Matchers<any>'. Did you mean 'toMatchSnapshot'?
+evidence/core-source-fix-A22/pcb-edge-positioning-with-calc-and-notes.test.tsx(3,32): error TS2307: Cannot find module 'tests/fixtures/get-test-fixture' or its corresponding type declarations.
+evidence/core-source-fix-A22/pcb-edge-positioning-with-calc-and-notes.test.tsx(71,43): error TS7006: Parameter 'component' implicitly has an 'any' type.
+evidence/core-source-fix-A22/pcb-edge-positioning-with-calc-and-notes.test.tsx(73,8): error TS7006: Parameter 'component' implicitly has an 'any' type.
+evidence/core-source-fix-A22/pcb-edge-positioning-with-calc-and-notes.test.tsx(114,43): error TS7006: Parameter 'dimension' implicitly has an 'any' type.
+evidence/core-source-fix-A22/pcb-edge-positioning-with-calc-and-notes.test.tsx(117,43): error TS7006: Parameter 'dimension' implicitly has an 'any' type.
+evidence/core-source-fix-A22/pcb-edge-positioning-with-calc-and-notes.test.tsx(131,25): error TS2551: Property 'toMatchPcbSnapshot' does not exist on type 'Matchers<any>'. Did you mean 'toMatchSnapshot'?

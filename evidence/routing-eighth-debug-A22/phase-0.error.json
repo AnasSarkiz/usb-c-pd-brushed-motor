@@ -1,0 +1,19 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 0,
+  "phaseOrdinal": 1,
+  "phaseCount": 6,
+  "elapsedMs": 444,
+  "connectionCount": 18,
+  "obstacleCount": 437,
+  "previousTraceCount": 0,
+  "autorouterName": "dogbone",
+  "solverName": "DogboneFanoutSolver",
+  "effort": 1,
+  "cacheStatus": "disabled",
+  "cacheDisabledReason": "strategy_not_cacheable",
+  "error": {
+    "message": "No complete local dogbone assignment within clearance/search limits"
+  }
+}

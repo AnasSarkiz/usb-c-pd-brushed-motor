@@ -1,0 +1,83 @@
+import { expect, test } from "bun:test"
+import { getSvgFromGraphicsObject } from "graphics-debug"
+import { validateRoutedCopperDrc } from "lib/validate-routed-copper-drc"
+import type { SimpleRouteJsonWithViaDrillRules } from "lib/via-drills-are-clear"
+import { visualizeSimpleRouteJson } from "lib/visualize-simple-route-json"
+
+// Board-world mm: two distinct 0.3 mm holes on GND have only 0.2 mm gap.
+test("the independent copper audit rejects same-net drill spacing", () => {
+  const inputSrj: SimpleRouteJsonWithViaDrillRules = {
+    bounds: { minX: -1, maxX: 3, minY: -2, maxY: 2 },
+    layerCount: 2,
+    minTraceWidth: 0.2,
+    minViaHoleEdgeToViaHoleEdgeClearance: 0.25,
+    obstacles: [],
+    connections: [
+      {
+        name: "GND",
+        pointsToConnect: [
+          { x: 0, y: 0, layer: "top" },
+          { x: 2.5, y: 0, layer: "top" },
+        ],
+      },
+    ],
+  }
+  const routedSrj: SimpleRouteJsonWithViaDrillRules = {
+    ...inputSrj,
+    traces: [0, 1].map((index) => ({
+      type: "pcb_trace" as const,
+      pcb_trace_id: `ground-${index}`,
+      connection_name: "GND",
+      route: [
+        {
+          route_type: "wire" as const,
+          x: index * 2.5,
+          y: 0,
+          layer: "top",
+          width: 0.2,
+        },
+        {
+          route_type: "wire" as const,
+          x: 1 + index * 0.5,
+          y: 0,
+          layer: "top",
+          width: 0.2,
+        },
+        {
+          route_type: "via" as const,
+          x: 1 + index * 0.5,
+          y: 0,
+          from_layer: "top",
+          to_layer: "bottom",
+          via_diameter: 0.6,
+          via_hole_diameter: 0.3,
+        },
+        {
+          route_type: "wire" as const,
+          x: 1 + index * 0.5,
+          y: 0,
+          layer: "bottom",
+          width: 0.2,
+        },
+        {
+          route_type: "wire" as const,
+          x: 1 + index * 0.5,
+          y: -0.8,
+          layer: "bottom",
+          width: 0.2,
+        },
+      ],
+    })),
+  }
+  expect(
+    validateRoutedCopperDrc({
+      inputSrj,
+      routedSrj,
+      clearance: 0.2,
+      allowBlindAndBuriedVias: false,
+    }),
+  ).toMatchObject({ valid: false, issues: [{ code: "via_drill_clearance" }] })
+  expect(
+    getSvgFromGraphicsObject(visualizeSimpleRouteJson(routedSrj)),
+  ).toMatchSvgSnapshot(import.meta.path)
+})

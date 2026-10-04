@@ -1,0 +1,19 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/local-autorouting-phase-cache.test.tsx:
+(pass) built-in local autorouting caches by solver options and custom algorithms bypass the cache [321.93ms]
+
+tests/features/phased-autorouting-net-power-first.test.tsx:
+(pass) phased autorouting routes thick power net before signal traces [732.70ms]
+
+tests/benchmarks/autorouting-phase-pcb-trace-paths.test.tsx:
+(skip) measure always-on PCB path export cost
+
+tests/utils/autorouting/phased-autorouting-bounds.test.ts:
+(pass) phased autorouting expands substituted bounds around phase connection points [2.02ms]
+
+ 3 pass
+ 1 skip
+ 0 fail
+ 32 expect() calls
+Ran 4 tests across 4 files. [1.85s]

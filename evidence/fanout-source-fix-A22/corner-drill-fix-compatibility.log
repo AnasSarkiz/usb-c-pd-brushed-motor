@@ -1,0 +1,33 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/coincident-path-corner.test.ts:
+Writing snapshot to /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/__snapshots__/coincident-path-corner.snap.svg
+(pass) coincident vertices cannot conceal a sharp copper corner [1.69ms]
+
+tests/plane-ground-drill-clearance.test.ts:
+(pass) merged QFN ground escapes preserve ordinary drill and pad clearances [384.95ms]
+
+tests/same-net-drill-drc.test.ts:
+(pass) the independent copper audit rejects same-net drill spacing [159.93ms]
+
+tests/plane-source-same-net-copper.test.ts:
+(pass) normalizes plane sources through existing and emitted same-net copper without merging signal branches [296.10ms]
+
+tests/dataset31-imx6ull-top-center.test.ts:
+60 |       }
+61 |       previous = point
+62 |     }
+63 |   }
+64 |   expect(JSON.stringify(input)).toBe(before)
+65 |   await expect(getSvgFromGraphicsObject(solver.visualize())).toMatchSvgSnapshot(
+                                                                  ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/__snapshots__/dataset31-imx6ull-top-center.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/dataset31-imx6ull-top-center.test.ts:65:62)
+(fail) retries untunable wide source routes with fresh reservations and a higher source cost [42524.22ms]
+
+ 4 pass
+ 1 fail
+ 14128 expect() calls
+Ran 5 tests across 5 files. [43.48s]

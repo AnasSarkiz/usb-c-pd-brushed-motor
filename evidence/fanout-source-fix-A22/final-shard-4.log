@@ -1,0 +1,183 @@
+Running test shard 4/8: 34 of 269 files
+- tests/am62l-core-decoupling-obstacles.test.ts
+- tests/am62l-direct-decoupling-dram.test.ts
+- tests/am62l-top-edge-breakout-repro.test.ts
+- tests/benchmark-validation.test.ts
+- tests/boundary-tail-near-via.test.ts
+- tests/boundary-terminal-side-entry.test.ts
+- tests/bus-length-matching-dense-boundary-split.test.ts
+- tests/bus-length-matching-transit-fold.test.ts
+- tests/cached-via-occupant-neighborhoods.test.ts
+- tests/connection-exit-targets.test.ts
+- tests/dataset05-rk3588.test.ts
+- tests/dataset31-imx6ull-left-bottom-offset.test.ts
+- tests/dataset31-k230-top-center.test.ts
+- tests/dataset31-top-left-offset.test.ts
+- tests/embedded-singleton-layer-assignment.test.ts
+- tests/fanout-exit-position-mapping.test.ts
+- tests/fanout31-am62l-left-planes-address.test.ts
+- tests/footprinter-benchmark.test.ts
+- tests/joint-boundary-via-reservation-policy.test.ts
+- tests/layer-routing-attempts.test.ts
+- tests/left-crossbar-bus.test.ts
+- tests/multi-edge-bus-targets.test.ts
+- tests/original-endpoint-connectivity.test.ts
+- tests/plane-ground-drill-clearance.test.ts
+- tests/rematch-unrouted-source-dogbones.test.ts
+- tests/reserved-via-buses.test.ts
+- tests/reversing-corner-opt-in.test.ts
+- tests/runtime-process.test.ts
+- tests/should-use-adaptive-dense-plane-routing.test.ts
+- tests/source-origin-length-repair.test.ts
+- tests/source-pad-reentry-repair.test.ts
+- tests/srj19-sample127.test.ts
+- tests/two-overlong-lane-repair.test.ts
+- tests/winding-preserves-source-escape-path.test.ts
+bun test v1.3.9 (cf6cdbbb)
+
+tests/source-pad-reentry-repair.test.ts:
+(pass) repairs own-pad reentry through a clear pad end while retaining the first via and target copper [292.77ms]
+
+tests/am62l-direct-decoupling-dram.test.ts:
+(pass) finalizes the real AM62L direct-decoupling DRAM fanout [99724.34ms]
+
+tests/cached-via-occupant-neighborhoods.test.ts:
+(pass) cached native via neighborhoods preserve order and read fresh owners after rip-ups [0.83ms]
+
+tests/runtime-process.test.ts:
+(pass) provides an empty environment when process is unavailable
+(pass) preserves runtime environment variables when process is available
+
+tests/bus-length-matching-dense-boundary-split.test.ts:
+(pass) length matches the outside portion of a 45-degree dense-boundary crossing [3.93ms]
+
+tests/fanout31-am62l-left-planes-address.test.ts:
+(pass) routes the RAM-left address/control bus with all 102 plane drops [43460.32ms]
+
+tests/plane-ground-drill-clearance.test.ts:
+(pass) merged QFN ground escapes preserve ordinary drill and pad clearances [547.97ms]
+
+tests/dataset31-imx6ull-left-bottom-offset.test.ts:
+ 7 |   svg: string,
+ 8 |   testPath: string,
+ 9 |   name?: string,
+10 | ) {
+11 |   try {
+12 |     return await expect(svg).toMatchSvgSnapshot(testPath, name)
+                                  ^
+error: 
+
+Snapshot does not match. Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/__snapshots__/dataset31-imx6ull-left-bottom-offset.diff.png
+      at expectSvgSnapshotWithActual (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/fixtures/expect-svg-snapshot-with-actual.ts:12:30)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/dataset31-imx6ull-left-bottom-offset.test.ts:66:9)
+(fail) retries shared source reservations when a wide bus cannot length-match [88754.84ms]
+
+tests/source-origin-length-repair.test.ts:
+(pass) jointly shortens a mismatched pair without changing another source reservation [221.82ms]
+
+tests/embedded-singleton-layer-assignment.test.ts:
+(pass) isolates a fixed-layer singleton enclosed by a mixed-layer wide source field [2.28ms]
+
+tests/dataset05-rk3588.test.ts:
+(pass) Dataset 05 preserves the exact RK3588 map and completes plane-aware fanout [3902.25ms]
+
+tests/dataset31-k230-top-center.test.ts:
+64 |       const exit = boundaryTargets.get(trace.connection_name!)
+65 |       if (exit && Math.hypot(point.x - exit.x, point.y - exit.y) > 1e-7) {
+66 |         expect(point.x).toBeGreaterThan(bounds.minX + 1e-7)
+67 |         expect(point.x).toBeLessThan(bounds.maxX - 1e-7)
+68 |         expect(point.y).toBeGreaterThan(bounds.minY + 1e-7)
+69 |         expect(point.y).toBeLessThan(bounds.maxY - 1e-7)
+                             ^
+error: expect(received).toBeLessThan(expected)
+
+Expected: < 14.3249999
+Received: 14.325
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/dataset31-k230-top-center.test.ts:69:25)
+(fail) routes opposite-side control buses after the fixed-source strategy fails [313465.74ms]
+  ^ this test timed out after 240000ms.
+
+tests/fanout-exit-position-mapping.test.ts:
+(pass) canonical fanout exit positions resolve to orthogonal routing fields [0.32ms]
+
+tests/reversing-corner-opt-in.test.ts:
+(pass) reversing corners require an explicit clear final repair with fixed terminals and vias [2201.03ms]
+
+tests/bus-length-matching-transit-fold.test.ts:
+(pass) grows a retained transit-layer fold atomically inside a narrow tuning window [515.03ms]
+
+tests/am62l-top-edge-breakout-repro.test.ts:
+(pass) captures the AM62L nine-bus top-edge breakout input [269.73ms]
+
+tests/original-endpoint-connectivity.test.ts:
+(pass) boundary contact does not replace original endpoint connectivity [1.50ms]
+(pass) a trace that physically enters the target pad connects the endpoint [0.16ms]
+(pass) visual overlap on another layer is not endpoint connectivity [0.08ms]
+(pass) a via creates a physical path from an inner-layer trace to a target pad [0.15ms]
+(pass) same-net dogbones connect through an explicitly declared plane [0.19ms]
+(pass) SRJ29 endpoint tracks connect signals directly without a completion pass [808.08ms]
+
+tests/rematch-unrouted-source-dogbones.test.ts:
+(pass) rematches only unfinished dogbones and rolls back an impossible assignment [196.72ms]
+
+tests/multi-edge-bus-targets.test.ts:
+(pass) allocates flexible whole buses across layers before packing multiple boundary edges [273.91ms]
+
+tests/joint-boundary-via-reservation-policy.test.ts:
+(pass) selects joint boundary routing only within bounded dense groups [0.37ms]
+
+tests/left-crossbar-bus.test.ts:
+(pass) uses only the allowed crossbar layer to preserve permuted corner targets [586.41ms]
+
+tests/footprinter-benchmark.test.ts:
+(pass) footprinter BGA64 benchmark escapes every pad [1485.76ms]
+
+tests/boundary-tail-near-via.test.ts:
+(pass) repairs boundary links after a real transit via inside the repair strip [447.58ms]
+
+tests/boundary-terminal-side-entry.test.ts:
+(pass) a side-first terminal entry clears a retained through-via while preserving the exact tail [197.44ms]
+
+tests/two-overlong-lane-repair.test.ts:
+(pass) two overlong bus lanes share permitted transit while every first via and other source stays fixed [208.41ms]
+
+tests/reserved-via-buses.test.ts:
+(pass) joint fixed-via routing crosses a blocked layer while preserving every source and permitted layer [207.40ms]
+
+tests/should-use-adaptive-dense-plane-routing.test.ts:
+(pass) adaptive dense-plane routing selection is rotation invariant [1.65ms]
+(pass) an edge-aligned memory field keeps the simpler routing strategy [0.15ms]
+(pass) a straight-through opposite-edge field keeps the simpler strategy [0.29ms]
+
+tests/winding-preserves-source-escape-path.test.ts:
+(pass) winding preserves the source-layer detour before its first through via [191.55ms]
+
+tests/am62l-core-decoupling-obstacles.test.ts:
+(pass) routes core's AM62L fanout around its future decoupling vias [17379.35ms]
+
+tests/srj19-sample127.test.ts:
+(pass) SRJ19 sample127 solves on six layers [1212.99ms]
+
+tests/benchmark-validation.test.ts:
+(pass) benchmark worker requires validated AM62L fanout and records constructor errors [146.25ms]
+
+tests/layer-routing-attempts.test.ts:
+(pass) layer retries preserve the first successful choice and distinguish topology from length failures [0.77ms]
+
+tests/dataset31-top-left-offset.test.ts:
+(pass) routes a centered layered bus beside a constrained corner band [52947.52ms]
+
+tests/connection-exit-targets.test.ts:
+(pass) connection exit targets align a breakout with its paired fanout [215.08ms]
+(pass) explicit exit targets clamp to the perpendicular boundary span [4.21ms]
+
+2 tests failed:
+(fail) retries shared source reservations when a wide bus cannot length-match [88754.84ms]
+(fail) routes opposite-side control buses after the fixed-source strategy fails [313465.74ms]
+  ^ this test timed out after 240000ms.
+
+ 41 pass
+ 2 fail
+ 71957 expect() calls
+Ran 43 tests across 34 files. [630.66s]

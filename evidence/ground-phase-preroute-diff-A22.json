@@ -1,0 +1,566 @@
+[
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_30",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_30",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_109",
+      "source_trace_id": "source_trace_83",
+      "source_net_id": "source_net_27",
+      "x": -24.35,
+      "y": -7.625
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_30",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_108",
+      "source_trace_id": "source_trace_84",
+      "source_net_id": "source_net_28",
+      "x": -25.2,
+      "y": -5.025
+    }
+  },
+  {
+    "type": "pcb_group",
+    "id": "pcb_group_0",
+    "before": {
+      "type": "pcb_group",
+      "pcb_group_id": "pcb_group_0",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "name": "pd_pin_escape",
+      "anchor_position": {
+        "x": 0,
+        "y": 0
+      },
+      "center": {
+        "x": -24.25,
+        "y": 4
+      },
+      "width": 6.100000000000001,
+      "height": 5.800000000000001,
+      "pcb_component_ids": [],
+      "source_group_id": "source_group_0"
+    },
+    "after": {
+      "type": "pcb_group",
+      "pcb_group_id": "pcb_group_0",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "name": "pd_pin_escape",
+      "anchor_position": {
+        "x": 0,
+        "y": 0
+      },
+      "center": {
+        "x": -24.4,
+        "y": 4
+      },
+      "width": 5.800000000000001,
+      "height": 5.800000000000001,
+      "pcb_component_ids": [],
+      "source_group_id": "source_group_0"
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_19",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_19",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_93",
+      "source_trace_id": "source_trace_72",
+      "source_net_id": "source_net_14",
+      "x": -14.8,
+      "y": -8.275
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_19",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_94",
+      "source_trace_id": "source_trace_73",
+      "source_net_id": "source_net_17",
+      "x": -15.65,
+      "y": -7.625
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_32",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_32",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_107",
+      "source_trace_id": "source_trace_85",
+      "source_net_id": "source_net_15",
+      "x": -24.35,
+      "y": -6.325
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_32",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_106",
+      "source_trace_id": "source_trace_86",
+      "source_net_id": "source_net_12",
+      "x": -25.2,
+      "y": -6.325
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_17",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_17",
+      "pcb_group_id": "pcb_group_0",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_40",
+      "source_trace_id": "source_trace_27",
+      "source_net_id": "source_net_0",
+      "x": -21.2,
+      "y": 4.45
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_17",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_92",
+      "source_trace_id": "source_trace_71",
+      "source_net_id": "source_net_13",
+      "x": -15.65,
+      "y": -8.925
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_33",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_33",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_106",
+      "source_trace_id": "source_trace_86",
+      "source_net_id": "source_net_12",
+      "x": -25.2,
+      "y": -5.675
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_33",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_105",
+      "source_trace_id": "source_trace_87",
+      "source_net_id": "source_net_29",
+      "x": -24.35,
+      "y": -6.975
+    }
+  },
+  {
+    "type": "source_project_metadata",
+    "id": null,
+    "before": {
+      "type": "source_project_metadata",
+      "source_filesystem_md5_hash": "26f7fe397ae78a850a94f31d165ba5e6"
+    },
+    "after": {
+      "type": "source_project_metadata",
+      "source_filesystem_md5_hash": "6aef8c028079d3b0cc51a81a2f34aae2"
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_35",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_35",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_104",
+      "source_trace_id": "source_trace_88",
+      "source_net_id": "source_net_30",
+      "x": -25.2,
+      "y": -4.375
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_35",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_103",
+      "source_trace_id": "source_trace_89",
+      "source_net_id": "source_net_31",
+      "x": -24.35,
+      "y": -8.275
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_29",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_29",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_110",
+      "source_trace_id": "source_trace_82",
+      "source_net_id": "source_net_26",
+      "x": -25.2,
+      "y": -8.275
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_29",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_109",
+      "source_trace_id": "source_trace_83",
+      "source_net_id": "source_net_27",
+      "x": -24.35,
+      "y": -4.375
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_23",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_23",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_97",
+      "source_trace_id": "source_trace_76",
+      "source_net_id": "source_net_20",
+      "x": -14.8,
+      "y": -5.675
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_23",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_98",
+      "source_trace_id": "source_trace_77",
+      "source_net_id": "source_net_21",
+      "x": -15.65,
+      "y": -5.025
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_21",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_21",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_95",
+      "source_trace_id": "source_trace_74",
+      "source_net_id": "source_net_3",
+      "x": -15.65,
+      "y": -6.975
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_21",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_96",
+      "source_trace_id": "source_trace_75",
+      "source_net_id": "source_net_0",
+      "layer": "bottom",
+      "x": -15.65,
+      "y": -6.325
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_26",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_26",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_100",
+      "source_trace_id": "source_trace_79",
+      "source_net_id": "source_net_23",
+      "x": -15.65,
+      "y": -3.725
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_26",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_101",
+      "source_trace_id": "source_trace_80",
+      "source_net_id": "source_net_24",
+      "x": -15.65,
+      "y": -3.075
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_20",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_20",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_94",
+      "source_trace_id": "source_trace_73",
+      "source_net_id": "source_net_17",
+      "x": -15.65,
+      "y": -7.625
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_20",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_95",
+      "source_trace_id": "source_trace_74",
+      "source_net_id": "source_net_3",
+      "x": -15.65,
+      "y": -6.975
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_28",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_28",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_111",
+      "source_trace_id": "source_trace_81",
+      "source_net_id": "source_net_25",
+      "x": -24.35,
+      "y": -8.925
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_28",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_110",
+      "source_trace_id": "source_trace_82",
+      "source_net_id": "source_net_26",
+      "x": -25.2,
+      "y": -3.725
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_18",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_18",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_92",
+      "source_trace_id": "source_trace_71",
+      "source_net_id": "source_net_13",
+      "x": -15.65,
+      "y": -8.925
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_18",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_93",
+      "source_trace_id": "source_trace_72",
+      "source_net_id": "source_net_14",
+      "x": -14.8,
+      "y": -8.275
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_25",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_25",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_99",
+      "source_trace_id": "source_trace_78",
+      "source_net_id": "source_net_22",
+      "x": -15.65,
+      "y": -4.375
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_25",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_100",
+      "source_trace_id": "source_trace_79",
+      "source_net_id": "source_net_23",
+      "x": -15.65,
+      "y": -3.725
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_31",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_31",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_108",
+      "source_trace_id": "source_trace_84",
+      "source_net_id": "source_net_28",
+      "x": -25.2,
+      "y": -6.975
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_31",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_107",
+      "source_trace_id": "source_trace_85",
+      "source_net_id": "source_net_15",
+      "x": -24.35,
+      "y": -5.675
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_24",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_24",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_98",
+      "source_trace_id": "source_trace_77",
+      "source_net_id": "source_net_21",
+      "x": -15.65,
+      "y": -5.025
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_24",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_99",
+      "source_trace_id": "source_trace_78",
+      "source_net_id": "source_net_22",
+      "x": -15.65,
+      "y": -4.375
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_27",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_27",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_101",
+      "source_trace_id": "source_trace_80",
+      "source_net_id": "source_net_24",
+      "x": -15.65,
+      "y": -3.075
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_27",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_111",
+      "source_trace_id": "source_trace_81",
+      "source_net_id": "source_net_25",
+      "x": -24.35,
+      "y": -3.075
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_36",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_36",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_103",
+      "source_trace_id": "source_trace_89",
+      "source_net_id": "source_net_31",
+      "x": -24.35,
+      "y": -3.725
+    },
+    "after": null
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_34",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_34",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_105",
+      "source_trace_id": "source_trace_87",
+      "source_net_id": "source_net_29",
+      "x": -24.35,
+      "y": -5.025
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_34",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_104",
+      "source_trace_id": "source_trace_88",
+      "source_net_id": "source_net_30",
+      "x": -25.2,
+      "y": -7.625
+    }
+  },
+  {
+    "type": "pcb_breakout_point",
+    "id": "pcb_breakout_point_22",
+    "before": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_22",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_96",
+      "source_trace_id": "source_trace_75",
+      "source_net_id": "source_net_0",
+      "layer": "bottom",
+      "x": -15.65,
+      "y": -6.325
+    },
+    "after": {
+      "type": "pcb_breakout_point",
+      "pcb_breakout_point_id": "pcb_breakout_point_22",
+      "pcb_group_id": "pcb_group_1",
+      "subcircuit_id": "subcircuit_source_group_2",
+      "source_port_id": "source_port_97",
+      "source_trace_id": "source_trace_76",
+      "source_net_id": "source_net_20",
+      "x": -14.8,
+      "y": -5.675
+    }
+  }
+]

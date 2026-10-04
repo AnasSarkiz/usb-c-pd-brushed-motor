@@ -1,0 +1,2 @@
+$ bunx tsc --noEmit && bunx tsc --project tsconfig.lib.json
+tests/coincident-path-corner.test.ts(49,37): error TS2353: Object literal may only specify known properties, and 'stroke' does not exist in type 'Line'.

@@ -1,0 +1,41 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/dataset31-imx6ull-top-center.test.ts:
+51 |           if (vector) {
+52 |             const dot = vector.x * next.x + vector.y * next.y
+53 |             const cross = Math.abs(vector.x * next.y - vector.y * next.x)
+54 |             expect(
+55 |               dot >= -1e-7 && (cross < 1e-7 || Math.abs(cross - dot) < 1e-7),
+56 |             ).toBe(true)
+                   ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/dataset31-imx6ull-top-center.test.ts:56:15)
+(fail) retries untunable wide source routes with fresh reservations and a higher source cost [39132.55ms]
+
+tests/plane-ground-drill-clearance.test.ts:
+33 |       )
+34 |         continue
+35 |       expect(
+36 |         distancePointToObstacle(firstVia.center, obstacle) -
+37 |           firstVia.diameter / 2,
+38 |       ).toBeGreaterThanOrEqual(0.2 - 1e-9)
+             ^
+error: expect(received).toBeGreaterThanOrEqual(expected)
+
+Expected: >= 0.199999999
+Received: -0.3
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/plane-ground-drill-clearance.test.ts:38:9)
+(fail) merged QFN ground escapes preserve ordinary drill and pad clearances [128.43ms]
+
+tests/same-net-drill-drc.test.ts:
+(pass) the independent copper audit rejects same-net drill spacing [155.98ms]
+
+ 1 pass
+ 2 fail
+ 12385 expect() calls
+Ran 3 tests across 3 files. [39.55s]

@@ -1,10 +1,39 @@
-# Current A22 update
+# Current A22 PD qualification and voltage policy
 
-A22 supersedes the older15 V/9 V policy,7.15 kOhm limit,100 nF filters and object-only runtime claims. See POWER-PROTOTYPE-A22.md and STM32-RUNTIME-A22.md for current6.98 kOhm,20 V9/12 V policy,22 pF sensing and linked inhibited runtime.
+The current implementation uses the qualification-only STM32G030. Speed PWM and
+direction remain hardware controlled. SW2 selects 5 / 9 / 12 V; both sliders ON
+inhibit motor power. Reset defaults to the 5 V feedback branch with motor power
+and the bridge inhibited.
+
+Only fixed 15 / 20 V source PDOs advertising 3–5 A qualify. The operating request
+is 3 A and the RDO maximum follows the source advertisement. A 5 V motor prefers
+an adequate 15 V contract, with 20 V as the fallback. Both 9 V and 12 V motors
+require 20 V; the current policy includes a 5% reserve above the conservative
+peak input-current screen. Native 12 V, PPS, variable and battery PDOs are not
+used. A 5 V-only, non-PD or insufficient source cannot enable the motor.
+
+R13 is 6.98 kΩ; the conservative eFuse current-limit interval is
+2.2754–2.89465 A. The three sense-filter capacitors are 22 pF C0G. Qualified
+voltage intervals include component, ADC, reference, timing and physical-profile
+uncertainty; a nominal reading does not grant motor permission.
+
+The runtime is linked into ELF/BIN with bounded transport, watchdog, ADC and GPIO
+sequencing. It remains inhibited until the manufacturer-approved 40-byte NVM
+image and measured RX/ADC approval profiles are available. No live charger
+negotiation, physical current rating or hardware test is claimed. See
+[POWER-PROTOTYPE-A22.md](POWER-PROTOTYPE-A22.md),
+[STM32-RUNTIME-A22.md](STM32-RUNTIME-A22.md) and
+[PD-VOLTAGE-INTERVALS.md](PD-VOLTAGE-INTERVALS.md) for the current implementation
+and evidence. The older section below is retained solely as revision history.
 
 ---
 
-# A17 PD qualification and voltage policy
+# Historical A17 PD qualification and voltage policy
+
+The following describes A17 and earlier revisions. Its 15 V / 9 V policy,
+7.15 kΩ resistor, 100 nF filters and object-only firmware status are superseded
+by the current A22 implementation above. Do not use these historical values
+for assembly or operation.
 
 2026-10-03. The user approved the MCU architecture. U11 is supplier-imported STM32G030F6P6TR / C529330, used only for power qualification. firmware/pd_policy.c is a portable policy library, tested on the host and compiled to a Cortex-M0+ object. It is **not a complete flashable firmware image**: STM32 startup, clocks, ADC/I2C, STUSB4500 transport, watchdog, option bytes and programming-pad implementation remain open.
 

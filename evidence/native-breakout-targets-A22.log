@@ -1,0 +1,45 @@
+{
+  "targets": 37,
+  "issues": [
+    {
+      "reference": "U1",
+      "pin": "CC2",
+      "xMm": -24.1,
+      "yMm": 1.2,
+      "gapMm": 0.45212507139459074,
+      "nearestComponent": "U1"
+    },
+    {
+      "reference": "U1",
+      "pin": "CC2DB",
+      "xMm": -23.25,
+      "yMm": 1.2,
+      "gapMm": 0.4584095907384663,
+      "nearestComponent": "U1"
+    },
+    {
+      "reference": "U11",
+      "pin": "VDDA",
+      "xMm": -14.8,
+      "yMm": -6.975,
+      "gapMm": 0.0,
+      "nearestComponent": "C30"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA1",
+      "xMm": -14.8,
+      "yMm": -4.375,
+      "gapMm": 0.0,
+      "nearestComponent": "C32"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA3",
+      "xMm": -14.8,
+      "yMm": -3.075,
+      "gapMm": 0.0,
+      "nearestComponent": "C32"
+    }
+  ]
+}
