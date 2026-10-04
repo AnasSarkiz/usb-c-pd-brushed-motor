@@ -1,0 +1,752 @@
+                                                    HIGH POWER THICK FILM CHIP FIXED RESISTOR
+
+
+
+
+               2W
+  High power up to 2W
+
+  Current detecting resistors for power supply, motor circuits etc
+      ROHS
+  Compliant with RoHS directive
+
+  Halogen f ree requirement
+
+
+
+
+  Switching Power Supply Over Current Protection in Audio Application Voltage Regulation
+  Module(VRM) DC-DC Converter Charger Automotive Engine Control Portable Devices etc.
+
+
+
+
+    RP                  G                  06                 M                 1003                     F                 T
+
+
+
+
+                    Rated Power                                               Resistance                             Packaging Style
+Product Code                         Type Code      T.C.R Series                                    Resistance
+                       Code                            Code                   Value Code                                 Code
+                                                                                                  Tolerance Code
+                                                                  T.C.R
+               Code   Rated Power   Code    Type   Type Code (ppm/        )     3 digit or
+                E        1/8W        03     0603                                 4 digit          Code               Code Packaging
+                                                                   500                                   Tolerance
+                                                                                 Example                                       Style
+                                                              M
+                Q        1/5W               0805   0603                       103 =10k
+                                     05                           1500
+ High Power                                                                   (E-24)                F        1%
+                F        1/4W                      0805
+                                            1206                              1R0 =1.0                                 T
+ Thick Film                         06             1206                       (E-24)                                        Tape &
+ Chip Fixed     G        1/2W                                 L    250                              G        2%
+                                                   1210                       1003=100k                                      Reel
+                                    1210    1210
+   Resistor     J           1W                                                (E-96)
+                                                   2010                                                      3%
+                                                                              R47=470m              H
+                K                    10     2010   2512
+                         1.5W                                                 R05=50m                                  C
+                                                              K    100        R047=47m
+                L                    12     2512                                                    J        5%                Case
+                            2W                                                4M7=4.7m
+
+
+
+
+                                                                                             Ceramic Substrate
+                                                                                       Bottom Electrode
+                                                                                       Top Electrode
+                                                                                       Resistor Layer
+                                                                                             Primary Overcoat
+                                                                                             Secondary Overcoat
+                                                                                       Edge Electrode
+                                                                                             Barrier Layer
+                                                                                             External Electrode
+
+
+
+                                                          1
+                                                                                Dimensions(mm)
+           Type
+                                    L                         W                         t                        a                          b
+
+       0603                  1.60       0.15               0.80    0.15          0.40       0.10          0.30       0.20            0.30       0.20
+
+       0805                  2.00       0.20               1.25    0.15          0.50       0.10          0.30       0.20            0.40       0.20
+
+       1206                  3.20       0.20               1.60    0.15          0.55       0.10          0.50       0.20            0.50       0.20
+
+       1210                  3.20       0.20               2.50    0.20          0.55       0.10          0.50       0.20            0.50       0.20
+
+       2010                  5.00       0.20               2.50    0.20          0.55       0.10          0.60       0.20            0.60       0.20
+
+       2512                  6.40       0.20               3.20    0.20          0.55       0.10          0.60       0.20            0.60       0.20
+
+
+
+
+                                                 -55                                 70
+                                        100
+
+                                         75
+                                                                                                                            Operating
+                                                                                                                            Temperature
+                                          50
+           Percent Rated Load                                                                                               Range:
+                                                                                                                            -55    155
+                                          25
+
+                                          0
+                                           -75       -50    -25        0    25  50    75   100            125   155
+                                                                           Ambient temperature (         )
+                              70                (      )
+  Note: For resistors operated in ambient over 70 ,rated load (rated power) shall be derated in accordance with
+  the above figure.
+
+
+
+
+                 70
+              Rating Power at 70               Limiting Element Voltage            Max. Overload Voltage
+Type                                                                                                                        Resistance Range
+                       (W)                                 (V)                              (V)
+
+0603              1/8       1/5                                   50                               100                      0.020     R 22M
+
+0805                1 /4                                      150                                  300                      0.01     R 22M
+
+1206                1 /2                                      200                                  400                      0.01     R 22M
+
+1210                1 /2                                      200                                  400                      0.01     R 22M
+
+2010                    1                                     200                                  400                      0.01     R 22M
+
+2512              1.5W      2W                                200                                  400                      0.0047     R 1M
+
+     Note:
+ 1
+     Voltage of DC or AC RMS value.
+ 2    E= P R
+      E=        or Limiting element voltage whichever is lower.
+      E           Rated voltage(V)
+       P           Rated power(W)
+       R           Normal resistance(            )
+
+
+
+
+                                                                           2
+                                               HIGH POWER THICK FILM CHIP FIXED RESISTOR
+
+
+
+
+                                                                    T.C.R (ppm/ )
+          70
+       Rating Power at 70                                       Resistance Tolerance
+Type                        Resistance Range                                           T.C.R Series
+                (W)                                       1%   2%      3%    5%           Code
+
+                            0.020    R 0.033                    1500
+
+                            0.033    R 0.068                    1000
+                                                                                            M
+                             0.068    R 0.1                         800
+
+                               0.1    R 1                           500
+0603         1/8W
+             1/5W
+                               1     R 10                           250                     L
+
+                              10     R 1M                           100                     K
+
+                             1M      R 10M                          250                     L
+
+                             10M     R 22M                          500                     M
+
+                             0.01    R 0.02                     1500
+
+                             0.02    R 0.05                     1000
+                                                                                            M
+                             0.05    R 0.1                          800
+0805      0805: 1/4W
+1206      1206: 1/2W           0.1    R 1                           500
+
+1210      1210 :1/2W
+                               1     R 10                           250                     L
+2010      2010:1W
+                              10     R 1M                           100                     K
+
+                             1M      R 10M                          250                     L
+
+                             10M     R 22M                          500                     M
+
+                            0.0047    R 0.02                    1500
+
+                             0.02    R 0.05                     1000
+                                                                                            M
+                             0.05    R 0.1                          800
+             1.5W
+                               0.1    R 1                           500
+
+                               1     R 10                           250                     L
+
+                              10     R 1M                           100                     K
+
+                             0.01    R 0.02                         1500
+
+2512                         0.02    R 0.1                          800                     M
+
+                               0.1    R 1                           500
+              2W
+                               1     R 10                           250                     L
+
+                              10     R 1M                           100                     K
+
+
+
+
+                                                 3
+                                                                                    (IEC 60115-1)
+       Item                Specifications                                 Test Methods (IEC 60115-1)
+                                                  IEC 60115-1 4.17
+                                  95%             245    5            3s 0.3s.
+   Solderability          95% Cover Min           Lead-free solder bath at 245        5   for 3s 0.3s.
+                                                  IEC 60115-1 4.18
+  Resistance to       No mechanical damage        270    5            10s 1s.
+  Soldering Heat        R   (1.0%R+0.05 )         Lead-free solder bath at 270        5   for 10s 1s.
+                                                  IEC 60115-1 4.33
+                      No mechanical damage               (Bending distance)
+   Substrate
+                        R   (1.0%R+0.05 )         0603 0805:5mm 1206 1210 4mm                  2010 2512 2mm
+  Bending Test
+                                                         (Duration) 60s 5s.
+                                                  IEC 60115-1 4.32
+                                                       (Applying force) 0603 5N 0805 9N 1206 1210 25N
+   Shear Test         No mechanical damage        2010 2512 45N.
+                                                         (Duration) 10s 1s.
+                                                  IEC 60115-1 4.8
+      T.C.R            Within specified T.C.R     +20 /-55 /+20 /+125 /+20
+
+
+                     No mechanical damage         IEC 60115-1 4.19
+ Rapid Change of     1%   R    (1.0%R 0.05      ) -55  (30   )     (5  ) 155 (30    ) 300
+  Temperature        2% 3% 5%                     -55 (30min) normal temperature(5min) 155 (30min)                 300 cycles.
+                      R   (2.0%R 0.05 )
+
+                                                  IEC 60115-1 4.13
+    Short Time        No mechanical damage        2.5                                         5    (2512   2W                2 )
+     Overload           R   (2.0%R 0.05 )         2.5 times rated voltage or max. overload voltage whichever is lower for 5s;
+                                                   (2s for 2512 type 2w power series).
+
+                                                  IEC 60115-1 4.24
+                                                  40    2    93% 3%RH 1000                             (      )
+   Damp Heat          No mechanical damage          1.5    / 0.5
+   Steady State         R   (3.0%R 0.05 )         40    2    93% 3%RH 1000h rated voltage or limiting element
+                                                  voltage whichever is lower for 1.5h ON/0.5h OFF
+                                                  IEC 60115-1 4.25.1
+    70               No mechanical damage         70    2    1000                            (       )    1.5            /
+    Endurance        1%   R    (1.0%R 0.05      ) 0.5
+                     2% 3% 5%                     70    2    1000h rated voltage or limiting element voltage
+      at 70
+                      R   (2.0%R 0.05 )           whichever is lower for 1.5h ON/0.5h OFF,
+
+                     No mechanical damage
+                     1%   R    (1.0%R 0.05      ) IEC 60115-1 4.25.3
+ Endurance at Upper
+                     2% 3% 5%                     155     2       1000h
+Category Temperature
+                      R   (2.0%R 0.05 )
+                                                  IEC 60115-1 4.36
+                     No mechanical damage         -55    5          1                            (        )45
+   Operation at      1%   R    (1.0%R 0.05      )     15
+ LowTemperature      2% 3% 5%                     -55    5 , 1h without load rated voltage or limiting element voltage
+                      R   (2.0%R 0.05 )           whichever is lower for 45min, 15min without load.
+                                                  IEC 60115-1 4.6
+                                                                   100V 15V               1
+    Insulation              1000M    Min
+                                                  Apply DC 100V 15V between substrate and terminations for 1min,
+   Resistance                                      then check insulation resistance.
+                                                  IEC 60115-1 4.7
+                                                                      100V/s
+                         No breakdown or                  60s 5s.
+  Voltage Proof             flashover             Apply max. overload voltage of AC RMS at a rate of approximately
+                                                   100V/s between substrate and terminations for 60s 5s.
+
+                                                  IEC 60115-1 4.29
+    Component         No mechanical damage              (IPA) 23      5         10    .
+Solvent Resistance      R   (1.0%R 0.05 )         Iso-propyl alcohol (IPA)     23    5     10h.
+
+                                        83   90         Packaging see the 83-90           Page .
+
+                                                              4
+                                          PACKAGING AND PRECAUTION OF CHIP RESISTOR
+
+
+
+
+         Chip fixed resistor
+
+
+
+
+                                                 C
+
+                                                     A
+                                                     B
+
+
+
+                             unit: mm                                                             unit: mm
+
+         Thick Film Resistor and
+           Thin Film Resistor
+                                                                       Metal Foil Resistor
+       Type     A       B           C                      Type                   A         B         C
+    01005      0.17    0.60        0.22                           R003~R004      0.4
+                                                          0603                              2.8      1.0
+     0201      0.23    0.84        0.38                           R005~R030      0.6
+     0402      0.45    1.45        0.60                           R003~R004      0.5
+                                                          0805                              3.2      1.4
+                                                                  R005~R047      0.8
+     0603      0.80    2.50        0.95
+                                                                  R003~R004      0.8
+     0805      1.05    3.25        1.40                   1206                              4.4      1.8
+                                                                  R005~R068      1.8
+    1206       1.90    4.50        1.75                           R003~R009      1.6
+     1210      2.00    4.60        2.70                   2010                              6.3      2.9
+                                                                  R010~R100      2.7
+     2010      3.50    6.50        2.70                           R002~R004      1.0
+     2512                          3.40
+                                                          2512                              8.0      3.4
+               4.80    7.80                                       R005~R200      3.8
+
+
+
+
+              Thick film chip network resistor
+
+
+
+
+                                                                                  A B
+
+
+
+
+                             Q1     Q2      Q3       Q2     Q3    Q2       Q1
+
+
+
+                                          RCMY08 / RCMT08 / RCML08
+                                                                                                           unit: mm
+
+  Type                 A                    B                     Q1                   Q2                    Q3
+
+RCMY08                0.30                 0.90                   0.20             0.20                    0.20
+
+RCMT08                0.38                 1.60                   0.40             0.20                    0.30
+
+RCML08                0.80                 2.70                   0.60             0.40                    0.40
+
+
+
+
+                                                     83
+        Paper Taping
+
+    01005 0201 0402 RCMY08 RCMT08
+For 01005 0201 0402 RCMY08 RCMT08
+
+
+
+
+                                                                                  unit: mm
+
+   Type               A            B               W                F              E
+
+01005          0.45 0.02      0.25 0.02        8.00 0.02         3.50 0.05      1.75 0.05
+ 0201          0.70 0.10      0.40 0.10        8.00 0.20         3.50 0.05      1.75 0.10
+ 0402          1.20 0.10      0.70 0.10        8.00 0.20         3.50 0.05      1.75 0.10
+RCMY08         1.57 0.05      0.77 0.05         8.00 0.20        3.50 0.05      1.75 0.10
+RCMT08         2.20 0.10      1.20 0.10         8.00 0.20        3.50 0.05      1.75 0.10
+
+
+                                                                                  unit: mm
+
+   Type           P           P0           P1               D0          T1             T
+
+01005         2.00 0.05    4.00 0.10   2.00 0.05       1.55 0.02    0.17 0.02   0.31 0.02
+0201          2.00 0.05    4.00 0.10   2.00 0.05       1.50 0.10    0.28 0.04   0.42 0.05
+0402          2.00 0.05    4.00 0.10   2.00 0.05       1.50 0.10        /       0.42 0.05
+RCMY08        2.00 0.05    4.00 0.10   2.00 0.05       1.50 0.10        /       0.60 0.10
+RCMT08        2.00 0.10    4.00 0.10   2.00 0.05       1.50 0.10        /       0.60 0.10
+
+
+
+
+    0603 0805 1206 1210 RCML08:
+For 0603 0805 1206 1210 RCML08:
+
+
+
+
+                                          84
+                                                           PACKAGING AND PRECAUTION OF CHIP RESISTOR
+
+
+
+                                                                                                                                   unit: mm
+
+       Type                 A                          B                       W                          F                           E
+
+  0603                   1.85 0.10              1.10 0.10               8.00 0.20                   3.50 0.05                  1.75 0.10
+
+  0805                   2.35 0.10              1.65 0.10               8.00 0.20                  3.50 0.05                   1.75 0.10
+
+  1206                   3.50 0.20              1.90 0.20               8.00 0.20                  3.50 0.05                   1.75 0.10
+
+  1210                   3.50 0.20              2.80 0.20               8.00 0.20                   3.50 0.05                  1.75 0.10
+
+ RCML08                  3.50 0.20              1.90 0.20               8.00 0.20                   3.50 0.05                  1.75 0.10
+
+                                                                                                                                   unit: mm
+                                                                                                                        T
+  Type               P                   P0                P1              D0
+                                                                                              Thick Film Resistor and
+                                                                                                Thin Film Resistor          Metal Foil Resistor
+
+
+ 0603         4.00       0.10     4.00    0.10       2.00    0.05       1.50   0.10              0.60     0.10                 0.75       0.10
+
+ 0805         4.00       0.10     4.00    0.10       2.00    0.05       1.50   0.10              0.75     0.10                 0.95       0.10
+
+ 1206         4.00       0.10     4.00    0.10       2.00    0.05       1.50   0.10              0.75     0.10                 0.95       0.10
+
+ 1210         4.00       0.10     4.00    0.10       2.00    0.05       1.50   0.10              0.75     0.10
+
+RCML08        4.00       0.10     4.00    0.10       2.00    0.05       1.50   0.10              0.75     0.10
+
+
+              Embossed Taping
+
+     2010 2512
+For 2010 2512
+
+
+
+
+                                                                                                                                   unit: mm
+
+       Type               A0                   B0                   W                     F                    E                          t
+
+  2010               5.50       0.15     2.82       0.15     12.00      0.10       5.50       0.10        1.75       0.10          0.25       0.05
+
+  2512               6.78       0.15     3.45    0.15        12.00      0.10       5.50       0.10        1.75       0.10          0.25       0.05
+
+                                                                                                                                   unit: mm
+                                                                                                                               K0
+ Type           P                  P0                P1                   D0                    D1
+                                                                                                         Thick Film Resistor and      Metal Foil
+                                                                                                           Thin Film Resistor         Resistor
+
+2010      4.00 0.10             4.00    0.10    2.00       0.05   1.50+0.10/-0 1.50               0.10        0.84      0.10       0.84       0.10
+
+2512      4.00 0.10             4.00    0.10    2.00       0.05   1.50+0.10/-0 1.50               0.10        0.81      0.10       1.00       0.10
+
+                                                                  85
+             Reel
+
+
+
+
+                                                                                                                          unit: mm
+
+               Type           M                    W                T            A               B                 C          D
+
+         01005 0201
+         0402 0603
+         0805 1206         178 2.0         9.5 1.0            12.5 1.5         2.0 0.5       13.0 0.5       21.0 0.5       58.0 2.0
+       1210 RCMY08
+      RCMT08 RCML08
+
+        2010 2512          178 2.0         13.0 0.5               15.5 1.5     2.0 0.5       13.0 0.5       21.0 0.5       57.0 2.0
+
+
+                   Packaging Quantity
+
+
+      Packaging style                          Tape & reel                                                  Case
+
+   M                                 W
+                                     0201 0402              0603 0805
+                                                                                T
+                                                                              2010
+                                                                                         01005
+                                                                                                       0603 0805
+                                                                                                         1206
+                                                                                                                       A     1210
+             Type         01005      RCMY08                 1206 1210                     0201                               2010
+                                                                              2512                   RCMY08 RCMT08
+                                      RCMT08                 RCML08                       0402                               2512
+                                                                                                        RCML08
+
+
+       Quantity(pcs)      20000       10000                   5000            4000       50000              10000            4000
+
+
+
+
+178         2.0           9.5              1.0                          12.5           1.5                  2.0            0.5        1
+        E-24        E-24 series( 10 n      )
+        (    unit 0.001     0.01     0.1       1       10         100    1k    10k    100k       1M     10M        100M     1000M )
+
+             1.0               1.5                          2.2                 3.3                   4.7                  6.8
+             1.1               1.6                          2.4
+178         2.0
+             1.2
+                          13.0
+                            1.8
+                                               0.52.7                   15.53.6
+                                                                            3.9
+                                                                                1.5 5.1
+                                                                                    5.6
+                                                                                        2.0                                7.5
+                                                                                                                           0.5
+                                                                                                                           8.2        1
+             1.3               2.0                          3.0                 4.3                   6.2                  9.1
+
+
+
+
+g Quantity                                                              86
+                                                                         PACKAGING AND PRECAUTION OF CHIP RESISTOR
+
+
+
+  E-96           E-96 series (             10 n     )
+  (      unit 0.001             0.01          0.1        1     10            100       1k        10k       100k        1M          10M        100M        1000M )
+
+      1.00               1.33                     1.78                  2.37                     3.16                4.22                5.62                 7.50
+      1.02               1.37                     1.82                  2.43                     3.24                4.32                5.76                 7.68
+      1.05               1.40                     1.87                  2.49                     3.32                4.42                5.90                 7.87
+      1.07               1.43                     1.91                  2.55                     3.40                4.53                6.04                 8.06
+      1.10               1.47                     1.96                  2.61                     3.48                4.64                6.19                 8.25
+      1.13               1.50                     2.00                  2.67                     3.57                4.75                6.34                 8.45
+      1.15               1.54                     2.05                  2.74                     3.65                4.87                6.49                 8.66
+      1.18               1.58                     2.10                  2.80                     3.74                4.99                6.65                 8.87
+      1.21               1.62                     2.15                  2.87                     3.83                5.11                6.81                 9.09
+      1.24               1.65                     2.21                  2.94                     3.92                5.23                6.98                 9.31
+      1.27               1.69                     2.26                  3.01                     4.02                5.36                7.15                 9.53
+      1.30               1.74                     2.32                  3.09                     4.12                5.49                7.32                 9.76
+
+
+  E 96          0603
+  E-96 series(0603) multiplied Cross-reference List and Resistance Cross-reference List
+
+      multiplied         10 0          10 1             10 2        10
+                                                                         3
+                                                                                   10 4           10 5        10 6          10 7          10 -1       10 -2      10 -3
+        code             A             B                C           D              E              F           G             H             X           Y          Z
+
+
+              E-96                                        E-96                                           E-96                                      E-96
+Code         E-96 resistance            Code             E-96 resistance               Code             E-96 resistance            Code           E-96 resistance
+ 01                100                     25                  178                          49               316                    73                 562
+ 02                102                     26                  182                        50                 324                   74                  576
+ 03                105                     27                  187                        51                 332                    75                 590
+ 04                107                     28                  191                        52                 340                   76                  604
+ 05                110                     29                  196                        53                 348                   77                  619
+ 06                113                     30                  200                        54                 357                   78                  634
+ 07                115                     31                  205                        55                 365                   79                  649
+ 08                118                     32                  210                        56                 374                   80                  665
+ 09                121                     33                  215                        57                 383                   81                  681
+ 10                124                     34                  221                        58                 392                   82                  698
+ 11                127                     35                  226                          59               402                    83                 715
+ 12                130                     36                  232                        60                  412                   84                 732
+ 13                133                     37                  237                        61                 422                    85                 750
+ 14                137                     38                  243                        62                 432                   86                 768
+ 15                140                     39                  249                        63                 442                    87                 787
+ 16                143                     40                  255                        64                 453                    88                 806
+ 17                147                     41                  261                        65                 464                   89                 825
+ 18                150                     42                  267                        66                 475                   90                  845
+ 19                154                     43                  274                        67                 487                    91                 866
+ 20                158                     44                  280                        68                 499                   92                  887
+ 21                162                     45                  287                          69                511                   93                 909
+ 22                165                     46                  294                        70                  523                  94                  931
+ 23                169                     47                  301                        71                  536                   95                 953
+ 24                174                     48                  309                        72                  549                   96                 976
+
+
+
+
+                                                                                   87
+Description for Resistance Value Code and Marking of Thick Film Chip Resistor
+           Resistance Value Code
+
+All the resistance value code of thick film chip resistor is corresponding with the marking .
+
+        Marking
+E-24    (0603     5%)                                                                 10
+E-24 series: Express resistance value on the glass side with three digits, the first tow digits
+should be significant and the third one denote number of zeros.
+
+     For example:                                 10K                                      33
+
+E-24    (0603    1%& 0.5%)
+E-24 series(0603   1%& 0.5%): One short bar under marking letter.
+
+
+     For example:
+
+
+E-96        E24          1%&   0.5%
+ 0805 1206 1210 2010 2512 4R02 4R03
+
+E-96 series & E-24 series:For the dimension type of 0805 1206 1210 2010 2512 4R02
+4R03 express the resistance value with four digits, the first three digits are significant figures
+and the fourth de notes the number of zeros.
+
+
+       For example:                              100K                                       133
+
+E-96
+  0603                           E-96
+For the dimension type of 0603, express the resistance value with three code, the first two digit
+code denote the resistance of E-96 series, and the third code of letter denote the multiplier
+(see the table three and four ).
+
+
+       For example:                               2M
+
+           R          The decimal point should be expressed by R        .
+
+
+       For example:                               5.6                                      1
+
+               0      The jumper should be expressed by       0
+
+
+       For example:                               0
+
+01005 0201 0402                 For the dimension type of 01005 0201         0402 there is no mark
+on the glass side.
+
+       For example:
+
+  IEC                                          IEC E24
+For the resistance which don't belong to IEC serial, use the resistance of IEC serial which is most
+close to the required resistance of non-IEC serial for replacement.
+
+
+To get agreement by both party if there special requirement for the marking.
+                                                   88
+                                          PACKAGING AND PRECAUTION OF CHIP RESISTOR
+
+
+
+
+ Description for Resistance Value Code and Marking of Thin Film Chip Resistor
+
+          Resistance Value Code
+                 0201 0402 0603 0805 1206 1210 2010 2512
+All resistance value code of thin film chip resistor,including 0201   0402 0603 0805 1206
+1210 2010 2512 size used four digits.
+    Example
+                  TD03G4701BT
+                                                      4701=4.7K       1R50=1.5
+                                  To use four digits code represent resistance value ,
+                                    Example 4701=4.7K          1R50=1.5
+       Marking
+
+                 E24 E96                  E96     .
+When resistance value belongs to E24 as well as E96 series, we suggest preferentially use E96 series.
+   Example 10K=1002,        103
+
+
+0805 1206 1210 2010 2512                Marking for 0805 1206 1210 2010 2512 Size Resistor
+
+  0805 1206 1210 2010 2512
+For 0805 1206 1210 2010 2512 size resistor , express the resistance value with four digits code;
+    Example
+                                         100K
+
+
+0603      Marking for 0603 Size Resistor
+
+  0603-E96
+For resistance value belongs to E96 series, express the resistance value with three digits code.
+    Example
+                                          2M
+
+
+   0603-E24
+For resistance value belongs to E24 series, express the resistance value with three digits code.
+    Example
+                                         10K
+
+
+
+                    The decimal point should be expressed by "R" .
+    Example
+                                          5.6
+
+
+0201 0402               For the dimension type of 0201 0402 there is no mark on the glass side.
+
+    Example
+
+
+
+
+                                                 89
+1
+2
+3
+4
+5
+6
+7
+
+
+1 Use in various types of liquid, including water, oils, chemicals, and organic solvents.
+2 Use outdoors where the products are exposed to direct sunlight, or in dusty places.
+3 Use in places where the products are exposed to sea winds or corrosive gases, including Cl2, H2S, Nh3,
+    SO2, and No2 etc.
+4 Use in places where the products are exposed to static electricity or electromagnetic waves.
+5 Use in proximity to heat-producing components, plastic cords, or other flammable items.
+6 Use involving sealing or coating the products with resin or other coating materials.
+7 Use involving unclean solder or use of water or water-soluble cleaning agents for cleaning after soldering.
+
+
+
+
+1
+2
+3
+4           :    5      30             30%   70%
+
+
+1 Avoid applying power exceeding normal rated power, exceeding the power rating under steady-state
+    loading condition may negatively affect product performance and reliability.
+2 Be careful when pick up the products with tweezers. There may be a care that the overcoat and / or
+    the body    can be chipped.
+3 Soldering tip shall not touch the product when install product manually.
+4 Storage conditions: T 5         30   , RH 30%    70%.
+
+
+
+
+                      Recommended reflow profile                          Recommended wave solder profile
+
+
+
+
+                     Recommended solder alloy      96.5Sn/3.0Ag/0.5Cu
+
+                                                      90
+

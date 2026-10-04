@@ -1,0 +1,16 @@
+bun install v1.3.9 (cf6cdbbb)
+9 |         "@tscircuit/core": "./tooling/tscircuit-core-0.0.2073.tgz",
+            ^
+warn: Duplicate key "@tscircuit/core" in object literal
+   at bun.lock:9:9
+Saved lockfile
+
++ @biomejs/biome@2.5.14
++ @tscircuit/cli@0.1.2237
++ @types/bun@1.4.2
++ tscircuit@0.0.2743
++ typescript@5.9.3
++ @tscircuit/core@./tooling/tscircuit-core-0.0.2073.tgz
++ @tscircuit/props@./tooling/tscircuit-props-0.0.682.tgz
+
+298 packages installed [2.70s]

@@ -1,0 +1,36 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/platform-autorouter-map-preset.test.tsx:
+(pass) board autorouter preset resolves through platform autorouterMap [196.15ms]
+(pass) krt preset receives default nominal trace width [2700.05ms]
+
+tests/features/autorouter-preset-beta-pipeline9.test.tsx:
+(pass) autorouter="beta_pipeline9" uses AutoroutingPipelineSolver9_PreloadedTraceGraph [93.39ms]
+
+tests/features/remote-autorouting-7-preset-config.test.tsx:
+16 |   simulateIncompleteAutorouting?: boolean
+17 | } = {}) => {
+18 |   let currentJobId = 0
+19 |   const jobResults = new Map<string, any>()
+20 | 
+21 |   const server = serve({
+                      ^
+error: Failed to start server. Is port 0 in use?
+ syscall: "listen",
+   errno: 0,
+    code: "EADDRINUSE"
+
+      at getTestAutoroutingServer (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/fixtures/get-test-autorouting-server.tsx:21:18)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/features/remote-autorouting-7-preset-config.test.tsx:6:36)
+(fail) remote-autorouter-7 with preset config [5.66ms]
+
+tests/components/normal-components/led-two-pad-orientation-cache.test.tsx:
+(pass) recomputes cached unknown LED orientation and reuses the new frame [2227.50ms]
+
+tests/components/normal-components/jst-ph-single-row-orientation-cache.test.tsx:
+(pass) recomputes a cached unknown JST PH orientation using the shared row analyzer [706.20ms]
+
+ 5 pass
+ 1 fail
+ 24 expect() calls
+Ran 6 tests across 5 files. [6.93s]

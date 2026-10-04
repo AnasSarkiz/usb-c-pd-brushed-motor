@@ -11,14 +11,17 @@ uint8_t pd_motor_voltage(uint8_t bits) {
  * is not guaranteed by the driver; it needs prototype characterization. */
 static bool power_budget_fits(uint8_t motor_v, uint16_t source_mv) {
   const float current = 2.423f;
-  const float minimum_input_limit = (18000.0f / 7150.0f) * 0.9f / 1.01f;
+  /* R13: 1% initial plus 100 ppm/K over a 100 K screen. */
+  const float minimum_input_limit = (18000.0f / 6980.0f) * 0.9f / 1.02f;
   const float minimum_vbus = source_mv / 1000.0f * 0.95f;
   const float input_current =
       (motor_v * 1.05f * current + current * current * 0.36f +
        motor_v * motor_v * 1.05f * 1.05f / 940.0f) /
           (0.85f * (minimum_vbus - 0.55f)) +
       1.0f / minimum_vbus;
-  return input_current <= minimum_input_limit;
+  /* Reserve 5% of calculated peak input current. This prevents marginal
+   * contracts; measured transient/thermal qualification is still required. */
+  return input_current * 1.05f <= minimum_input_limit;
 }
 
 struct pd_plan pd_make_plan(uint8_t bits, const struct pd_capabilities *capabilities) {

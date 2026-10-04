@@ -1,0 +1,261 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Wrote debug artifact: dist/autorouter-debug/placement-unrouted.png
+Autorouting <board#742 /> phase 1/1 start: connections=79, obstacles=437, previous_traces=0, router=tscircuit, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, cache=miss, cache_id=12cad7cd/cbaaa098
+  connections: net.GND, net.VBUS, net.VDD5, net.VCC3V3, net.EFUSE_IN, net.VIN_BUCK, net.VM, net.MOTOR_P, net.MOTOR_N, net.CC1, net.CC2, net.PD_RESET, net.SCL, net.SDA, net.PD_ENABLE_N, net.VBUS_SENSE, net.PD_ALERT_N, net.VREG_1V2, net.VREG_2V7, net.MCU_NRST, net.ADC_VBUS, net.ADC_VM, net.VOLTAGE_BIT_9, net.VOLTAGE_BIT_12, net.VOLTAGE_DRIVE_9, net.VOLTAGE_DRIVE_12, net.HOST_ALLOW, net.HOST_INHIBIT_B, net.MOTOR_FAULT_N, net.SWDIO, net.SWCLK, net.MOTOR_READY, net.SELECT_9, net.SELECT_12, net.INPUT_UV, net.INPUT_OV, net.SLEW, net.INPUT_ILIM, net.POWER_ENABLE, net.INPUT_PG, net.PD_INHIBIT, net.INPUT_OV_TOP, net.BOOT, net.BUCK_EN, net.RT, net.MOTOR_FB, net.COMP, net.SWITCH_NODE, net.FB_TOP_MID, net.COMP_ZERO, net.TIMING, net.PWM, net.TIMER_CONT, net.WIPER, net.POT_CHARGE, net.POT_DISCHARGE, net.DISCHARGE_END, net.IN1, net.IN2, net.R29_LED, net.R30_LED, net.VREF2V5, net.UV_REF, net.OV_REF, net.OV_ACTIVE_N, net.IPROPI, net.VCP, net.CPH, net.CPL, net.POWER_LED, net.DUMP_BASE, net.DUMP_DRIVE, net.DUMP_GATE, net.DUMP_LOAD, net.DUMP_MID_A, net.DUMP_MID_B, net.DUMP_MID_C, net.DUMP_MID_D, net.OV_INHIBIT
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=topologyPlanningSolver steps=1 progress=17% iterations_per_second=12640 elapsed=3.4s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=28 progress=52% iterations_per_second=4832 elapsed=13.6s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=60 progress=54% iterations_per_second=4172 elapsed=23.7s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=91 progress=56% iterations_per_second=7 elapsed=33.7s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityForceImproveSolver steps=115 progress=56% iterations_per_second=29 elapsed=44.5s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=traceWidthSolver steps=138 progress=76% iterations_per_second=19992 elapsed=54.6s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=pipeline9JointDrcRepairSolver steps=158 progress=87% iterations_per_second=2414 elapsed=64.8s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=pipeline9JointDrcRepairSolver steps=190 progress=87% iterations_per_second=7492 elapsed=75.0s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=powerTraceExpansionSolver steps=216 progress=96% iterations_per_second=71485 elapsed=85.1s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=powerTraceExpansionSolver steps=248 progress=96% iterations_per_second=61140 elapsed=95.2s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=powerTraceExpansionSolver steps=281 progress=96% iterations_per_second=440940 elapsed=105.4s
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=powerTraceExpansionSolver steps=314 progress=100% iterations_per_second=84564 elapsed=115.6s
+  phase 1/1 done: routed_traces=304, jumpers=0, errors=0, elapsed=119.5s
+Wrote debug artifact: dist/autorouter-debug/phase-0-routed.png
+Could not save autorouting paths for subcircuit_source_group_0: PCB port selector is not unique: .Q5 > port.pin1
+Wrote debug artifact: dist/autorouter-debug/board.meta.json
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "R" prefix is being used with a <chip />, try using it with a <resistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Failed to fetch supplier footprint for <diode#391(.input>.D4) /> (jlcpcb:C22452): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#329(.pdhost>.C31) /> (jlcpcb:C77083): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#252(.usb>.D2) /> (jlcpcb:C477999): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#321(.pdhost>.SW2) /> (jlcpcb:C3293142): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#497(.buck>.R17) /> (jlcpcb:C22815): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#355(.pdhost>.C33) /> (jlcpcb:C1653): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <diode#257(.usb>.D3) /> (jlcpcb:C2109): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#382(.pdhost>.TP2) /> (jlcpcb:C2906768): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#384(.pdhost>.TP3) /> (jlcpcb:C2906768): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#365(.pdhost>.R63) /> (jlcpcb:C25803): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#448(.input>.C9) /> (jlcpcb:C21122): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#341(.pdhost>.Q6) /> (jlcpcb:C7420353): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#266(.usb>.C3) /> (jlcpcb:C14663): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#521(.buck>.C20) /> (jlcpcb:C1653): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#272(.usb>.C5) /> (jlcpcb:C19666): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#332(.pdhost>.C32) /> (jlcpcb:C14663): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#343(.pdhost>.R58) /> (jlcpcb:C25803): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#187(.usb>.J1) /> (jlcpcb:C165948): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#358(.pdhost>.R62) /> (jlcpcb:C844918): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#421(.input>.R6) /> (jlcpcb:C4184): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#436(.input>.R11) /> (jlcpcb:C4184): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#377(.pdhost>.C34) /> (jlcpcb:C1653): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#295(.usb>.TP6) /> (jlcpcb:C2906768): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#518(.buck>.C19) /> (jlcpcb:C21122): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#275(.usb>.C6) /> (jlcpcb:C77083): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#503(.buck>.R55) /> (jlcpcb:C23186): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#300(.pdhost>.U11) /> (jlcpcb:C529330): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#368(.pdhost>.R64) /> (jlcpcb:C25803): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#361(.pdhost>.Q7) /> (jlcpcb:C20917): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#260(.usb>.C1) /> (jlcpcb:C77083): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#442(.input>.R13) /> (jlcpcb:C23215): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#287(.usb>.R3) /> (jlcpcb:C23162): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#386(.pdhost>.TP4) /> (jlcpcb:C2906768): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#263(.usb>.C2) /> (jlcpcb:C14663): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#230(.usb>.U2) /> (jlcpcb:C468238): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#363(.pdhost>.Q8) /> (jlcpcb:C20917): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#278(.usb>.C7) /> (jlcpcb:C77083): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#250(.usb>.D1) /> (jlcpcb:C10214): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#293(.usb>.TP5) /> (jlcpcb:C2906768): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#281(.usb>.C8) /> (jlcpcb:C14663): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#352(.pdhost>.R61) /> (jlcpcb:C95204): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#418(.input>.R5) /> (jlcpcb:C23162): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#204(.usb>.U1) /> (jlcpcb:C2678061): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#349(.pdhost>.R60) /> (jlcpcb:C855559): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#451(.input>.C10) /> (jlcpcb:C14663): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#445(.input>.R16) /> (jlcpcb:C844918): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#254(.usb>.R1) /> (jlcpcb:C21190): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#380(.pdhost>.TP1) /> (jlcpcb:C2906768): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#284(.usb>.R2) /> (jlcpcb:C23162): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#374(.pdhost>.R67) /> (jlcpcb:C95204): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#290(.usb>.R4) /> (jlcpcb:C25803): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#338(.pdhost>.R57) /> (jlcpcb:C844918): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#269(.usb>.C4) /> (jlcpcb:C19666): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#346(.pdhost>.R59) /> (jlcpcb:C25803): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#326(.pdhost>.C30) /> (jlcpcb:C14663): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#427(.input>.R8) /> (jlcpcb:C25803): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#371(.pdhost>.R66) /> (jlcpcb:C855559): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#240(.usb>.U3) /> (jlcpcb:C181239): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#335(.pdhost>.R56) /> (jlcpcb:C25803): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#416(.input>.Q1) /> (jlcpcb:C7420353): Failed to search for the component (HTTP 429)
+All pins on D1 are underspecified (no pinAttributes set)
+All pins on D2 are underspecified (no pinAttributes set)
+All pins on SW2 are underspecified (no pinAttributes set)
+All pins on Q6 are underspecified (no pinAttributes set)
+All pins on Q7 are underspecified (no pinAttributes set)
+All pins on Q8 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on RV1 are underspecified (no pinAttributes set)
+All pins on SW1 are underspecified (no pinAttributes set)
+All pins on U8 are underspecified (no pinAttributes set)
+All pins on D10 are underspecified (no pinAttributes set)
+All pins on D11 are underspecified (no pinAttributes set)
+All pins on J2 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on Q3 are underspecified (no pinAttributes set)
+All pins on Q4 are underspecified (no pinAttributes set)
+All pins on Q5 are underspecified (no pinAttributes set)
+J1 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+U3 has no pin with requires_power=true
+D1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+SW2 has no pin with requires_power=true
+Q6 has no pin with requires_power=true
+Q7 has no pin with requires_power=true
+Q8 has no pin with requires_power=true
+U4 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+RV1 has no pin with requires_power=true
+SW1 has no pin with requires_power=true
+U8 has no pin with requires_power=true
+U10 has no pin with requires_power=true
+D10 has no pin with requires_power=true
+D11 has no pin with requires_power=true
+J2 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Q3 has no pin with requires_power=true
+Q4 has no pin with requires_power=true
+Q5 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+D1 has no pin with requires_ground=true
+D2 has no pin with requires_ground=true
+SW2 has no pin with requires_ground=true
+Q6 has no pin with requires_ground=true
+Q7 has no pin with requires_ground=true
+Q8 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+RV1 has no pin with requires_ground=true
+SW1 has no pin with requires_ground=true
+U8 has no pin with requires_ground=true
+D10 has no pin with requires_ground=true
+D11 has no pin with requires_ground=true
+J2 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+Q3 has no pin with requires_ground=true
+Q4 has no pin with requires_ground=true
+Q5 has no pin with requires_ground=true
+D1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q6 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q7 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+RV1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+U8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D10 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D11 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q3 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q4 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q5 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+PCB trace .U11 > .pin17 to net.MOTOR_FAULT_N is too close to .C30 > .pin1 to net.VCC3V3 (gap: 0.114mm)
+PCB trace .U11 > .pin12 to net.VOLTAGE_DRIVE_12 is too close to .Q7 > .S to net.GND (gap: 0.175mm)
+PCB trace .U11 > .pin9 to net.VOLTAGE_BIT_9 is too close to .U1 > .pin24 to net.VDD5 (gap: 0.183mm)
+PCB trace .U11 > .pin9 to net.VOLTAGE_BIT_9 is too close to .U1 > .pin5 to net.CC2 (gap: 0.176mm)
+PCB trace .U11 > .pin9 to net.VOLTAGE_BIT_9 is too close to .J1 > .pin14 to net.GND (gap: 0.161mm)
+PCB trace .U1 > .pin23 to net.VREG_2V7 overlaps with .U1 > .pin18 to net.VBUS_SENSE (accidental contact)
+PCB trace .U1 > .pin23 to net.VREG_2V7 is too close to .U1 > .pin21 to net.VREG_1V2 (gap: 0.184mm)
+PCB trace .U1 > .pin23 to net.VREG_2V7 overlaps with pcb_via "unnamed via" (accidental contact)
+PCB trace .U1 > .pin21 to net.VREG_1V2 is too close to .J1 > .pin14 to net.GND (gap: 0.187mm)
+PCB trace .U1 > .pin21 to net.VREG_1V2 is too close to .J1 > .pin13 to net.GND (gap: 0.189mm)
+PCB trace .U1 > .pin21 to net.VREG_1V2 is too close to .U1 > .pin18 to net.VBUS_SENSE (gap: 0.113mm)
+PCB trace .U1 > .pin16 to net.PD_ENABLE_N is too close to .J1 > .pin14 to net.GND (gap: 0.191mm)
+PCB trace .U1 > .pin8 to net.SDA is too close to .U1 > .pin7 to net.SCL (gap: 0.102mm)
+PCB trace .U1 > .pin8 to net.SDA is too close to .U1 > .pin7 to net.SCL (gap: 0.119mm)
+PCB trace .U1 > .pin8 to net.SDA overlaps with pcb_smtpad "U1.SCL" (accidental contact)
+PCB trace .U1 > .pin5 to net.CC2 overlaps with .J1 > .pin14 to net.GND (accidental contact)
+PCB trace .J1 > .pin6 to net.CC1 is too close to .U1 > .pin24 to net.VDD5 (gap: 0.177mm)
+PCB trace .C30 > .pin1 to net.VCC3V3 overlaps with pcb_via "unnamed via" (accidental contact)
+PCB trace .U11 > .pin4 to net.VCC3V3 is too close to .R4 > .pin2 to net.GND (gap: 0.181mm)
+PCB trace .U11 > .pin4 to net.VCC3V3 overlaps with pcb_via "unnamed via" (accidental contact)
+PCB trace .U11 > .pin4 to net.VCC3V3 is too close to .C31 > .pin2 to net.GND (gap: 0.194mm)
+PCB trace .U1 > .pin24 to net.VDD5 overlaps with pcb_via "unnamed via" (accidental contact)
+PCB trace .U1 > .pin24 to net.VDD5 is too close to .J1 > .pin13 to net.GND (gap: 0.182mm)
+Copper pour unnamed copper pour (GND) shorts to .L1 > .pin2 to net.VM on top (accidental copper contact)
+Copper pour unnamed copper pour (GND) shorts to .R8 > .pin1 to net.EFUSE_IN on top (accidental copper contact)
+Pad C5.pin2 and trace .R22 > .pin1 to net.COMP are too close (clearance: 0.189mm, minimum: 0.2mm)
+Pad C11.pin2 and trace .U4 > .pin7 to net.INPUT_UV are too close (clearance: 0.187mm, minimum: 0.2mm)
+Pad C11.pin1 and trace .U4 > .pin7 to net.INPUT_UV are too close (clearance: 0.194mm, minimum: 0.2mm)
+Pad C32.pin2 and trace .U11 > .pin7 to net.ADC_VBUS are too close (clearance: 0.195mm, minimum: 0.2mm)
+Pad U1.EP and trace .U1 > .pin8 to net.SDA are too close (clearance: 0.121mm, minimum: 0.2mm)
+Pad U1.RESET and trace .U1 > .pin8 to net.SDA are too close (clearance: 0.195mm, minimum: 0.2mm)
+Pad C8.pin2 and trace .L1 > .pin2 to net.VM are too close (clearance: 0.191mm, minimum: 0.2mm)
+Pad U11.PB7 and trace .C30 > .pin1 to net.VCC3V3 are too close (clearance: 0.188mm, minimum: 0.2mm)
+Pad C33.pin2 and trace .C30 > .pin1 to net.VCC3V3 are too close (clearance: 0.195mm, minimum: 0.2mm)
+Pad U2.DELAY and trace .U2 > .pin5 to net.VBUS are too close (clearance: 0.164mm, minimum: 0.2mm)
+Pad U2.NC and trace .U2 > .pin5 to net.VBUS are too close (clearance: 0.155mm, minimum: 0.2mm)
+Pad U2.EP and trace .U2 > .pin5 to net.VBUS are too close (clearance: 0.182mm, minimum: 0.2mm)
+Pad U3.DELAY and trace .U3 > .pin5 to net.VBUS are too close (clearance: 0.164mm, minimum: 0.2mm)
+Pad U3.NC and trace .U3 > .pin5 to net.VBUS are too close (clearance: 0.155mm, minimum: 0.2mm)
+Pad U3.EP and trace .U3 > .pin5 to net.VBUS are too close (clearance: 0.182mm, minimum: 0.2mm)
+Via unnamed via and trace .U11 > .pin3 to net.PD_ALERT_N are too close (clearance: 0.064mm, minimum: 0.2mm)
+Via unnamed via and trace .U11 > .pin3 to net.PD_ALERT_N are too close (clearance: 0.035mm, minimum: 0.2mm)
+Via unnamed via and trace .U11 > .pin12 to net.VOLTAGE_DRIVE_12 are too close (clearance: 0.034mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin5 to net.CC2 are too close (clearance: 0.138mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin24 to net.VDD5 are too close (clearance: 0.078mm, minimum: 0.2mm)
+Via unnamed via and trace .R1 > .pin1 to net.VBUS are too close (clearance: 0.104mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin24 to net.VDD5 are too close (clearance: 0.136mm, minimum: 0.2mm)
+Via unnamed via and trace .J1 > .pin13 to net.GND are too close (clearance: 0.193mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin21 to net.VREG_1V2 are too close (clearance: 0.086mm, minimum: 0.2mm)
+Via unnamed via and trace .J1 > .pin14 to net.GND are too close (clearance: 0.176mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin23 to net.VREG_2V7 are too close (clearance: 0.16mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin21 to net.VREG_1V2 are too close (clearance: 0.091mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin16 to net.PD_ENABLE_N are too close (clearance: 0.194mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin5 to net.CC2 are too close (clearance: 0.171mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin21 to net.VREG_1V2 are too close (clearance: 0.023mm, minimum: 0.2mm)
+Via unnamed via and trace .U11 > .pin9 to net.VOLTAGE_BIT_9 are too close (clearance: 0.194mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin24 to net.VDD5 are too close (clearance: 0.181mm, minimum: 0.2mm)
+Via unnamed via and trace .U11 > .pin3 to net.PD_ALERT_N are too close (clearance: 0.169mm, minimum: 0.2mm)
+Via unnamed via and trace .R4 > .pin2 to net.GND are too close (clearance: 0.192mm, minimum: 0.2mm)
+Via unnamed via and trace .U11 > .pin3 to net.PD_ALERT_N are too close (clearance: 0.155mm, minimum: 0.2mm)
+Via unnamed via and trace .R4 > .pin2 to net.GND are too close (clearance: 0.132mm, minimum: 0.2mm)
+Via unnamed via and trace .U11 > .pin9 to net.VOLTAGE_BIT_9 are too close (clearance: 0.158mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin23 to net.VREG_2V7 are too close (clearance: 0.171mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin16 to net.PD_ENABLE_N are too close (clearance: 0.172mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin5 to net.CC2 are too close (clearance: 0.03mm, minimum: 0.2mm)
+Via unnamed via and trace .U1 > .pin16 to net.PD_ENABLE_N are too close (clearance: 0.067mm, minimum: 0.2mm)
+Via unnamed via and pad C31.pin2 are too close (clearance: 0.165mm, minimum: 0.2mm)
+Via unnamed via and pad J1.A4B9 are too close (clearance: 0.176mm, minimum: 0.2mm)
+Vias unnamed via and unnamed via from different nets are too close together (gap: 0.173mm)
+Vias unnamed via and unnamed via from different nets are too close together (gap: 0.097mm)
+Vias unnamed via and unnamed via from different nets are too close together (gap: 0.187mm)
+Vias unnamed via and unnamed via from different nets are too close together (gap: -0.024mm)
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs, autorouter-debug
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

@@ -1,3 +1,34 @@
+# A22 simplification reconciliation — 2026-10-04
+
+Current hardware contains140 purchased placements /58 supplier codes. The A19
+129-part baseline gains seven official Keystone5015 programming/measurement
+contacts and four additional10 Ω/2 W dump resistors; no debug connector, sensor,
+direction gate, timed-reversal circuit, MCU PWM, radio or display is added.
+The contacts satisfy the original request for programming test pads and make
+independent rail/prototype measurements possible using supplier-backed parts.
+Four20 Ω branches now form a5 Ω/16 W component-rating sum; this is not approval
+for continuous board-level braking dissipation.
+
+R13 is6.98 kΩ /C23215, screened with tolerance/TCR and5% input reserve. The PD
+policy prefers adequate15 V for5 V mode and requires20 V for9/12 V; a native12 V
+PDO is unnecessary. Hardware C5710902/330 Ω/5.6 nF remains unchanged. The single
+C908270 center-off switch directs hardware PWM to DRV8874 IN1 or IN2. PWM/direction
+remain independent of the qualification-only MCU. C33/C34 now share the existing
+C1653 22 pF C0G supplier part to reduce sensing lag; the distinct-code count remains58.
+
+80 ×65 mm is justified by actual component bodies, knob/switch access, mounting
+keepouts, larger regenerative bank and quiet measurement/programming access.
+Further reduction would require a new validated power/PD architecture; removing
+fault protection or pretending tests do not need access is not counted as simplification.
+A synchronous-converter redesign remains a future separate revision, not a substitute
+for finishing this connected prototype. Current assembly details are in
+ASSEMBLY-PROCESS-A22.md; placement/routing gate status is in VALIDATION.md.
+
+---
+
+Historical A19 and earlier rationale follows; its counts, R13 and placement status
+are superseded by the A22 section above.
+
 # A19 architecture simplification — 2026-10-03
 
 The user approved a small MCU for PD qualification. Hardware PWM and the mechanical direction switch remain independent of it. The active BOM contains **129 placements / 57 supplier part numbers**, compared with the historical 118 / 54 assembly. This is a connected prototype draft; the A9 simplification review is retained; A11 adds one required rail-discharge resistor, with the part-count tradeoff below retained for review. This does not pass electrical, placement or hardware gates.

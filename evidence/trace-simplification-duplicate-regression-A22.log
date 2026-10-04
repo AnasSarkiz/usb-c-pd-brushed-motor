@@ -1,0 +1,21 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/solvers/trace-simplification-preserves-duplicate-route-pieces.test.ts:
+TraceSimplificationSolver error: Error: TraceSimplificationSolver changed the preserved route set (expected 2, got 1)
+37 |       this._step()
+38 |     } catch (e) {
+39 |       this.error = `${this.getSolverName()} error: ${e}`
+40 |       console.error(this.error)
+41 |       this.failed = true
+42 |       throw e
+                 ^
+error: TraceSimplificationSolver changed the preserved route set (expected 2, got 1)
+      at step (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/trace-simplification-manufacturing-A22/lib/solvers/BaseSolver.ts:42:13)
+      at solve (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/trace-simplification-manufacturing-A22/lib/solvers/BaseSolver.ts:66:12)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/trace-simplification-manufacturing-A22/tests/solvers/trace-simplification-preserves-duplicate-route-pieces.test.ts:11:10)
+(fail) duplicate connection names preserve every physical route piece and reject missing or changed endpoints [2.48ms]
+
+ 0 pass
+ 1 fail
+ 6 expect() calls
+Ran 1 test across 1 file. [905.00ms]

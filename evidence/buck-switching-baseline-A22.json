@@ -1,0 +1,56 @@
+[
+  {
+    "signal": "voltage",
+    "end_s": 0.007,
+    "uncompressed_sha256": "f9a5b2bed402fb120e834273108d142eb2e872618e8b33195b6fb027ac50405e",
+    "segments": {
+      "startup": {
+        "min": -5.75305721e-22,
+        "max": 12.2775801,
+        "count": 911533
+      },
+      "load_step": {
+        "min": 11.7409655,
+        "max": 12.2677759,
+        "count": 244611
+      },
+      "loaded": {
+        "min": 11.9368829,
+        "max": 12.002418,
+        "count": 474489
+      },
+      "unload": {
+        "min": 12.0021541,
+        "max": 12.3394337,
+        "count": 653149
+      }
+    }
+  },
+  {
+    "signal": "current",
+    "end_s": 0.007,
+    "uncompressed_sha256": "aee62fa1712d2bc55afd5320c2ca7c487df2ef02bdb97d0f7370414af67e468d",
+    "segments": {
+      "startup": {
+        "min": -0.0539596217,
+        "max": 4.7401187,
+        "count": 911533
+      },
+      "load_step": {
+        "min": -0.0536756942,
+        "max": 2.64791729,
+        "count": 244611
+      },
+      "loaded": {
+        "min": 1.54360617,
+        "max": 2.55113541,
+        "count": 474489
+      },
+      "unload": {
+        "min": -0.0542045311,
+        "max": 2.43828687,
+        "count": 653149
+      }
+    }
+  }
+]

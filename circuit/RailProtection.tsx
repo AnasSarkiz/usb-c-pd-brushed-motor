@@ -1,8 +1,10 @@
+import { productPlacement } from "./product-placement"
 import { CC0603KRX7R9BB104 } from "../imports/CC0603KRX7R9BB104"
 import { A_0603WAF2001T5E } from "../imports/A_0603WAF2001T5E"
 import { A_0603WAF1001T5E } from "../imports/A_0603WAF1001T5E"
 import { A_0603WAF1004T5E } from "../imports/A_0603WAF1004T5E"
-import { A_0603WAF2432T5E } from "../imports/A_0603WAF2432T5E"
+import { A_0603WAF2702T5E } from "../imports/A_0603WAF2702T5E"
+import { A_0603WAF1102T5E } from "../imports/A_0603WAF1102T5E"
 import { TL431AIDBZR } from "../imports/TL431AIDBZR"
 import { A_0603WAF2002T5E } from "../imports/A_0603WAF2002T5E"
 import { LM393DR } from "../imports/LM393DR"
@@ -15,6 +17,7 @@ export function RailProtection() {
       {/* 2.495 V reference */}
       <TL431AIDBZR
         name="U8"
+        pcbRotation={productPlacement.U8.ccwRotationDegrees}
         schSheetName="protection"
         schX={-11.0}
         schY={8}
@@ -34,6 +37,7 @@ export function RailProtection() {
       {/* Motor-rail-powered reference; remains alive after USB unplug */}
       <A_0603WAF2001T5E
         name="R31"
+        pcbRotation={productPlacement.R31.ccwRotationDegrees}
         schSheetName="protection"
         schX={-5.5}
         schY={8}
@@ -46,6 +50,7 @@ export function RailProtection() {
       {/* Undervoltage motor disable and independent overvoltage dump */}
       <LM393DR
         name="U9"
+        pcbRotation={productPlacement.U9.ccwRotationDegrees}
         schSheetName="protection"
         schX={0.0}
         schY={8}
@@ -60,9 +65,10 @@ export function RailProtection() {
           VCC: "net.VM",
         }}
       />
-      {/* 0.727 V undervoltage reference top */}
-      <A_0603WAF2432T5E
+      {/* Approximately 0.674 V undervoltage reference; tolerance-separated from buck FB */}
+      <A_0603WAF2702T5E
         name="R32"
+        pcbRotation={productPlacement.R32.ccwRotationDegrees}
         schSheetName="protection"
         schX={5.5}
         schY={8}
@@ -75,6 +81,7 @@ export function RailProtection() {
       {/* Undervoltage reference bottom */}
       <CRCW060310K0FKEA
         name="R33"
+        pcbRotation={productPlacement.R33.ccwRotationDegrees}
         schSheetName="protection"
         schX={11.0}
         schY={8}
@@ -87,6 +94,7 @@ export function RailProtection() {
       {/* Motor readiness open-drain pull-up */}
       <A_0603WAF1001T5E
         name="R34"
+        pcbRotation={productPlacement.R34.ccwRotationDegrees}
         schSheetName="protection"
         schX={-11.0}
         schY={4}
@@ -99,6 +107,7 @@ export function RailProtection() {
       {/* Input-PG interlock on motor readiness */}
       <B5819W_SL
         name="D8"
+        pcbRotation={productPlacement.D8.ccwRotationDegrees}
         schSheetName="protection"
         schX={-5.5}
         schY={4}
@@ -110,6 +119,7 @@ export function RailProtection() {
       {/* OV hysteresis reference isolation */}
       <A_0603WAF2002T5E
         name="R39"
+        pcbRotation={productPlacement.R39.ccwRotationDegrees}
         schSheetName="protection"
         schX={-5.5}
         schY={0}
@@ -119,17 +129,21 @@ export function RailProtection() {
           pin2: "net.OV_REF",
         }}
       />
-      {/* OV reference divider lower; about 0.83 V before hysteresis */}
-      <CRCW060310K0FKEA
+      {/* 11 kOhm OV divider lower; tolerance-separated from normal 5 V operation */}
+      <A_0603WAF1102T5E
         name="R65"
+        pcbStyle={{ silkscreenTextVisibility: "hidden" }}
+        pcbRotation={productPlacement.R65.ccwRotationDegrees}
         schSheetName="protection"
         schX={5.5}
         schY={4}
+        schRotation={-90}
         connections={{ pin1: "net.OV_REF", pin2: "net.GND" }}
       />
       {/* OV hysteresis feedback */}
       <A_0603WAF1004T5E
         name="R40"
+        pcbRotation={productPlacement.R40.ccwRotationDegrees}
         schSheetName="protection"
         schX={0.0}
         schY={0}
@@ -141,6 +155,7 @@ export function RailProtection() {
       {/* Monitor local bypass */}
       <CC0603KRX7R9BB104
         name="C25"
+        pcbRotation={productPlacement.C25.ccwRotationDegrees}
         schSheetName="protection"
         schX={5.5}
         schY={0}

@@ -1,0 +1,199 @@
+{
+  "revision": "A22",
+  "analog": [
+    {
+      "limits": {
+        "uvFbMin": 0.6107076353015073,
+        "uvFbMax": 0.7393662866629771,
+        "ovFbMin": 0.8419884848889758,
+        "ovFbMax": 0.9974846331536023,
+        "tripMin": 5.093122306780875,
+        "tripMax": 6.453216655772605,
+        "releaseMin": 4.883590806787111,
+        "releaseMax": 6.189625959745714,
+        "minHysteresis": 0.17904399024764572,
+        "minReferenceBiasA": 0.000846746365212752,
+        "cases": 16384,
+        "referenceMinBiasRequiredA": 0.0007,
+        "commonModeMaximumV": 0.9,
+        "minimumValidRailV": 3,
+        "uvBelowBuckMinimumFb": true,
+        "ovAboveBuckMaximumFb": true,
+        "hysteresisPositive": true,
+        "referenceBiasScreen": true,
+        "status": "conditional component-bound screen; no response-delay maximum guaranteed"
+      }
+    },
+    {
+      "branchOhms": 21000,
+      "limits": {
+        "uvFbMin": 0.6175636587984569,
+        "uvFbMax": 0.7325102631660275,
+        "ovFbMin": 0.8787227797351613,
+        "ovFbMax": 1.0303826804130576,
+        "tripMin": 9.54066078989774,
+        "tripMax": 12.033352671499706,
+        "releaseMin": 8.83941485827717,
+        "releaseMax": 11.095641714439834,
+        "minHysteresis": 0.6465228470999076,
+        "minReferenceBiasA": 0.002709491463251968,
+        "cases": 16384,
+        "referenceMinBiasRequiredA": 0.0007,
+        "commonModeMaximumV": 0.9,
+        "minimumValidRailV": 3,
+        "uvBelowBuckMinimumFb": true,
+        "ovAboveBuckMaximumFb": true,
+        "hysteresisPositive": true,
+        "referenceBiasScreen": true,
+        "status": "conditional component-bound screen; no response-delay maximum guaranteed"
+      }
+    },
+    {
+      "branchOhms": 12000,
+      "limits": {
+        "uvFbMin": 0.6197059758652906,
+        "uvFbMax": 0.7303679460991938,
+        "ovFbMin": 0.9047220186821074,
+        "ovFbMax": 1.0601286876479556,
+        "tripMin": 13.085710055312134,
+        "tripMax": 16.522430126183487,
+        "releaseMin": 11.806282896894713,
+        "releaseMax": 14.775153530460427,
+        "minHysteresis": 1.2065273928158504,
+        "minReferenceBiasA": 0.0041065502867813795,
+        "cases": 16384,
+        "referenceMinBiasRequiredA": 0.0007,
+        "commonModeMaximumV": 0.9,
+        "minimumValidRailV": 3,
+        "uvBelowBuckMinimumFb": true,
+        "ovAboveBuckMaximumFb": true,
+        "hysteresisPositive": true,
+        "referenceBiasScreen": true,
+        "status": "conditional component-bound screen; no response-delay maximum guaranteed"
+      }
+    }
+  ],
+  "thermal": [
+    {
+      "motorVoltageV": 5,
+      "contractVoltageV": 15,
+      "ambientMaximumC": 40,
+      "junctionScreenC": 125,
+      "assumptions": "buck100ns switching edge; bridge0.36ohm hot; diode0.55V;15mA3V3/5mA5V aggregate; inductor core loss absent; measured effective θ/efficiency required",
+      "lossesW": {
+        "buck": 1.1658839391200049,
+        "catchDiode": 0.7193771626297579,
+        "inductorCopper": 0.12269598695633904,
+        "efuse": 0.08159619680235429,
+        "seriesDiode": 0.7406131023642533,
+        "bridge": 1.44,
+        "ldos": 0.24049999999999996,
+        "bleeder": 0.029321808510638297
+      },
+      "maximumEffectiveThetaCPerW": {
+        "buck": 72.906056210155,
+        "catchDiode": 118.15776815776813,
+        "inductorCopper": 692.7691940751654,
+        "efuse": 1041.71521873612,
+        "seriesDiode": 114.76977618766827,
+        "bridge": 59.02777777777778,
+        "ldos": 353.4303534303535,
+        "bleeder": 2898.8662131519277
+      },
+      "totalSemiconductorAllowanceW": 4.539988196383348,
+      "continuous2AStatus": "target; not thermally qualified"
+    },
+    {
+      "motorVoltageV": 9,
+      "contractVoltageV": 20,
+      "ambientMaximumC": 40,
+      "junctionScreenC": 125,
+      "assumptions": "buck100ns switching edge; bridge0.36ohm hot; diode0.55V;15mA3V3/5mA5V aggregate; inductor core loss absent; measured effective θ/efficiency required",
+      "lossesW": {
+        "buck": 1.5659485542739813,
+        "catchDiode": 0.5910025706940875,
+        "inductorCopper": 0.12589560316892867,
+        "efuse": 0.1230353451993901,
+        "seriesDiode": 0.9094344020423477,
+        "bridge": 1.44,
+        "ldos": 0.3455,
+        "bleeder": 0.09500265957446812
+      },
+      "maximumEffectiveThetaCPerW": {
+        "buck": 54.28019954295909,
+        "catchDiode": 143.82340147890386,
+        "inductorCopper": 675.1625780444904,
+        "efuse": 690.8583859560817,
+        "seriesDiode": 93.46468509340818,
+        "bridge": 59.02777777777778,
+        "ldos": 246.02026049204053,
+        "bleeder": 894.7117941826933
+      },
+      "totalSemiconductorAllowanceW": 5.195819134953203,
+      "continuous2AStatus": "target; not thermally qualified"
+    },
+    {
+      "motorVoltageV": 12,
+      "contractVoltageV": 20,
+      "ambientMaximumC": 40,
+      "junctionScreenC": 125,
+      "assumptions": "buck100ns switching edge; bridge0.36ohm hot; diode0.55V;15mA3V3/5mA5V aggregate; inductor core loss absent; measured effective θ/efficiency required",
+      "lossesW": {
+        "buck": 1.6867097574458418,
+        "catchDiode": 0.4213367609254499,
+        "inductorCopper": 0.125327036609495,
+        "efuse": 0.20702963368040395,
+        "seriesDiode": 1.1797030152478791,
+        "bridge": 1.44,
+        "ldos": 0.3455,
+        "bleeder": 0.16889361702127664
+      },
+      "maximumEffectiveThetaCPerW": {
+        "buck": 50.39396945726701,
+        "catchDiode": 201.73886516168392,
+        "inductorCopper": 678.2255632904692,
+        "efuse": 410.5692431027353,
+        "seriesDiode": 72.05203250424837,
+        "bridge": 59.02777777777778,
+        "ldos": 246.02026049204053,
+        "bleeder": 503.275384227765
+      },
+      "totalSemiconductorAllowanceW": 5.574499820930347,
+      "continuous2AStatus": "target; not thermally qualified"
+    }
+  ],
+  "regeneration": {
+    "railCeilingV": 16,
+    "pulseS": 0.02,
+    "periodS": 10,
+    "energyCeilingJ": 0.5,
+    "bank": {
+      "bankMinimumOhms": 4.7749999999999995,
+      "bankMaximumOhms": 5.225,
+      "minimumSinkCurrentA": 3.062200956937799,
+      "maximumSinkCurrentA": 3.3507853403141366,
+      "maximumBankPowerW": 53.612565445026185,
+      "worstResistorVoltageV": 8.36,
+      "worstResistorPowerW": 6.701570680628273,
+      "worstResistorPulseEnergyJ": 0.13403141361256546,
+      "worstResistorAveragePowerW": 0.013403141361256546,
+      "continuousPerResistorW": 2,
+      "overloadPerResistorW": 12.5,
+      "manufacturerSingleOverloadScreenPasses": true,
+      "averageComponentScreenPasses": true,
+      "repetitivePulseHardwareQualification": "pending"
+    },
+    "minimumBankCurrentAtCeilingA": 3.062200956937799,
+    "mosfetFullyOnLossW": 0.6736657438118471,
+    "mosfetHotResistanceAssumptionOhms": 0.06,
+    "capacitorEnergyUntilDumpJ": 0.012835680000000002,
+    "status": "initial supervised single-pulse test ceiling; not a repetitive braking or MOSFET linear-SOA guarantee",
+    "exclusions": [
+      "externally powered back-drive",
+      "unmeasured motor inertia",
+      "operation beyond20ms dump event",
+      "TVS clamp as steady voltage regulation",
+      "unqualified5V current regulation"
+    ]
+  }
+}

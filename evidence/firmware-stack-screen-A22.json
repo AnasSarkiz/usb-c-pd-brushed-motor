@@ -1,0 +1,1267 @@
+{
+  "revision": "A22",
+  "elfSha256": "d8eb299c191ce814e94a66ed5f986577eda4fae1be35bc8ef9453c7bfdd2fd20",
+  "method": "compiler static frames/direct and closed indirect call paths; linked library assembly conservative allocation sum",
+  "foreground": {
+    "bytes": 860,
+    "path": [
+      "motor_main",
+      "motor_owner_step",
+      "stusb_startup_acquire",
+      "read_checked",
+      "late",
+      "write_transfer",
+      "start.isra",
+      "wait_status.isra",
+      "configured",
+      "settings_valid",
+      "pins_valid.isra"
+    ]
+  },
+  "exti": {
+    "bytes": 16,
+    "path": [
+      "EXTI4_15_IRQHandler",
+      "motor_time_us"
+    ]
+  },
+  "timer": {
+    "bytes": 0,
+    "path": [
+      "TIM3_IRQHandler"
+    ]
+  },
+  "combinedUpperScreenBytes": 948,
+  "reservedBytes": 2048,
+  "issues": [],
+  "functions": {
+    "power_budget_fits": {
+      "calls": [
+        "__aeabi_fadd",
+        "__aeabi_fcmple",
+        "__aeabi_fdiv",
+        "__aeabi_fmul",
+        "__aeabi_fsub",
+        "__aeabi_i2f"
+      ],
+      "assemblyStack": 16,
+      "indirect": false,
+      "frame": 16,
+      "origin": [
+        "pd_policy.c.su"
+      ]
+    },
+    "pd_motor_voltage": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "pd_policy.c.su"
+      ]
+    },
+    "pd_make_plan": {
+      "calls": [
+        "memset",
+        "pd_motor_voltage",
+        "power_budget_fits"
+      ],
+      "assemblyStack": 96,
+      "indirect": false,
+      "frame": 96,
+      "origin": [
+        "pd_policy.c.su"
+      ]
+    },
+    "pd_plan_valid": {
+      "calls": [
+        "__udivsi3",
+        "power_budget_fits"
+      ],
+      "assemblyStack": 16,
+      "indirect": false,
+      "frame": 16,
+      "origin": [
+        "pd_policy.c.su"
+      ]
+    },
+    "pd_voltage_interval_valid": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "pd_policy.c.su"
+      ]
+    },
+    "pd_contract_qualified": {
+      "calls": [
+        "__aeabi_lmul",
+        "pd_plan_valid",
+        "pd_voltage_interval_valid"
+      ],
+      "assemblyStack": 24,
+      "indirect": false,
+      "frame": 24,
+      "origin": [
+        "pd_policy.c.su"
+      ]
+    },
+    "pd_motor_rail_qualified": {
+      "calls": [
+        "__aeabi_lmul",
+        "pd_contract_qualified",
+        "pd_motor_voltage",
+        "pd_voltage_interval_valid"
+      ],
+      "assemblyStack": 24,
+      "indirect": false,
+      "frame": 24,
+      "origin": [
+        "pd_policy.c.su"
+      ]
+    },
+    "pd_motor_qualified": {
+      "calls": [
+        "pd_motor_rail_qualified"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "pd_policy.c.su"
+      ]
+    },
+    "pd_sequence_abort": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "pd_sequence.c.su"
+      ]
+    },
+    "pd_sequence_begin": {
+      "calls": [
+        "pd_plan_valid"
+      ],
+      "assemblyStack": 32,
+      "indirect": false,
+      "frame": 32,
+      "origin": [
+        "pd_sequence.c.su"
+      ]
+    },
+    "pd_sequence_step": {
+      "calls": [
+        "__aeabi_lmul",
+        "__gnu_thumb1_case_uqi",
+        "pd_contract_qualified",
+        "pd_motor_qualified",
+        "pd_motor_rail_qualified",
+        "pd_motor_voltage",
+        "pd_voltage_interval_valid"
+      ],
+      "assemblyStack": 48,
+      "indirect": false,
+      "frame": 48,
+      "origin": [
+        "pd_sequence.c.su"
+      ]
+    },
+    "valid": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "target_bsrr": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "safety_readback": {
+      "calls": [],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "feedback_readback": {
+      "calls": [],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "configuration_readback": {
+      "calls": [
+        "feedback_readback",
+        "safety_readback"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "motor_gpio_target": {
+      "calls": [
+        "memset"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "motor_gpio_inhibit": {
+      "calls": [
+        "safety_readback",
+        "target_bsrr",
+        "valid"
+      ],
+      "assemblyStack": 8,
+      "indirect": true,
+      "frame": 8,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "apply_failure.isra": {
+      "calls": [
+        "motor_gpio_inhibit"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "motor_gpio_initialize": {
+      "calls": [
+        "configuration_readback",
+        "motor_gpio_inhibit",
+        "target_bsrr"
+      ],
+      "assemblyStack": 16,
+      "indirect": true,
+      "frame": 16,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "motor_gpio_read_inputs": {
+      "calls": [
+        "configuration_readback",
+        "motor_gpio_inhibit",
+        "valid"
+      ],
+      "assemblyStack": 24,
+      "indirect": false,
+      "frame": 24,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "motor_gpio_apply": {
+      "calls": [
+        "apply_failure.isra",
+        "configuration_readback",
+        "feedback_readback",
+        "motor_gpio_inhibit",
+        "target_bsrr",
+        "valid"
+      ],
+      "assemblyStack": 16,
+      "indirect": true,
+      "frame": 16,
+      "origin": [
+        "stm32_safe_gpio.c.su"
+      ]
+    },
+    "target_write": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "stm32_adc.c.su",
+        "stm32_i2c.c.su"
+      ]
+    },
+    "context_valid": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "stm32_adc.c.su"
+      ]
+    },
+    "write_reg": {
+      "calls": [
+        "motor_time_us",
+        "target_write"
+      ],
+      "assemblyStack": 32,
+      "indirect": true,
+      "frame": 16,
+      "origin": [
+        "stm32_adc.c.su",
+        "stm32_i2c.c.su"
+      ]
+    },
+    "wait_bits": {
+      "calls": [
+        "motor_time_us",
+        "target_write"
+      ],
+      "assemblyStack": 32,
+      "indirect": true,
+      "frame": 16,
+      "origin": [
+        "stm32_adc.c.su"
+      ]
+    },
+    "delay_us.constprop": {
+      "calls": [
+        "motor_time_us",
+        "target_write"
+      ],
+      "assemblyStack": 32,
+      "indirect": true,
+      "frame": 16,
+      "origin": [
+        "stm32_adc.c.su"
+      ]
+    },
+    "pins_valid.isra": {
+      "calls": [],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "stm32_adc.c.su"
+      ]
+    },
+    "settings_valid": {
+      "calls": [
+        "pins_valid.isra"
+      ],
+      "assemblyStack": 16,
+      "indirect": false,
+      "frame": 16,
+      "origin": [
+        "stm32_adc.c.su"
+      ]
+    },
+    "configured": {
+      "calls": [
+        "settings_valid"
+      ],
+      "assemblyStack": 20,
+      "indirect": false,
+      "frame": 12,
+      "origin": [
+        "stm32_adc.c.su",
+        "stm32_i2c.c.su"
+      ]
+    },
+    "fail.isra": {
+      "calls": [
+        "motor_gpio_inhibit",
+        "motor_time_us",
+        "target_write"
+      ],
+      "assemblyStack": 32,
+      "indirect": true,
+      "frame": 24,
+      "origin": [
+        "stm32_adc.c.su",
+        "stm32_i2c.c.su"
+      ]
+    },
+    "motor_adc_target": {
+      "calls": [
+        "memset"
+      ],
+      "assemblyStack": 16,
+      "indirect": false,
+      "frame": 16,
+      "origin": [
+        "stm32_adc.c.su"
+      ]
+    },
+    "motor_adc_initialize": {
+      "calls": [
+        "configured",
+        "context_valid",
+        "delay_us.constprop",
+        "fail.isra",
+        "motor_gpio_inhibit",
+        "motor_time_us",
+        "pins_valid.isra",
+        "settings_valid",
+        "target_write",
+        "wait_bits",
+        "write_reg"
+      ],
+      "assemblyStack": 160,
+      "indirect": true,
+      "frame": 160,
+      "origin": [
+        "stm32_adc.c.su"
+      ]
+    },
+    "motor_adc_capture": {
+      "calls": [
+        "configured",
+        "context_valid",
+        "fail.isra",
+        "memset",
+        "motor_time_us",
+        "settings_valid",
+        "target_write",
+        "wait_bits",
+        "write_reg"
+      ],
+      "assemblyStack": 232,
+      "indirect": true,
+      "frame": 232,
+      "origin": [
+        "stm32_adc.c.su"
+      ]
+    },
+    "bus_time": {
+      "calls": [
+        "motor_time_us",
+        "target_write"
+      ],
+      "assemblyStack": 8,
+      "indirect": true,
+      "frame": 8,
+      "origin": [
+        "stm32_i2c.c.su"
+      ]
+    },
+    "begin": {
+      "calls": [
+        "configured",
+        "motor_time_us",
+        "target_write"
+      ],
+      "assemblyStack": 24,
+      "indirect": true,
+      "frame": 24,
+      "origin": [
+        "stm32_i2c.c.su"
+      ]
+    },
+    "wait_status.isra": {
+      "calls": [
+        "configured",
+        "motor_time_us",
+        "target_write"
+      ],
+      "assemblyStack": 32,
+      "indirect": true,
+      "frame": 32,
+      "origin": [
+        "stm32_i2c.c.su"
+      ]
+    },
+    "start.isra": {
+      "calls": [
+        "wait_status.isra",
+        "write_reg"
+      ],
+      "assemblyStack": 32,
+      "indirect": false,
+      "frame": 32,
+      "origin": [
+        "stm32_i2c.c.su"
+      ]
+    },
+    "complete": {
+      "calls": [
+        "wait_status.isra",
+        "write_reg"
+      ],
+      "assemblyStack": 24,
+      "indirect": false,
+      "frame": 24,
+      "origin": [
+        "stm32_i2c.c.su"
+      ]
+    },
+    "read_transfer": {
+      "calls": [
+        "begin",
+        "complete",
+        "fail.isra",
+        "motor_time_us",
+        "start.isra",
+        "target_write",
+        "wait_status.isra",
+        "write_reg"
+      ],
+      "assemblyStack": 40,
+      "indirect": true,
+      "frame": 40,
+      "origin": [
+        "stm32_i2c.c.su"
+      ]
+    },
+    "write_transfer": {
+      "calls": [
+        "begin",
+        "complete",
+        "fail.isra",
+        "start.isra",
+        "wait_status.isra",
+        "write_reg"
+      ],
+      "assemblyStack": 56,
+      "indirect": false,
+      "frame": 56,
+      "origin": [
+        "stm32_i2c.c.su"
+      ]
+    },
+    "motor_i2c_target": {
+      "calls": [
+        "memset"
+      ],
+      "assemblyStack": 16,
+      "indirect": false,
+      "frame": 16,
+      "origin": [
+        "stm32_i2c.c.su"
+      ]
+    },
+    "motor_i2c_initialize": {
+      "calls": [
+        "configured",
+        "fail.isra",
+        "motor_gpio_inhibit",
+        "write_reg"
+      ],
+      "assemblyStack": 56,
+      "indirect": false,
+      "frame": 56,
+      "origin": [
+        "stm32_i2c.c.su"
+      ]
+    },
+    "motor_i2c_bus": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "stm32_i2c.c.su"
+      ]
+    },
+    "motor_clock_valid": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "stm32_clock.c.su"
+      ]
+    },
+    "motor_clock_initialize": {
+      "calls": [
+        "motor_clock_valid"
+      ],
+      "assemblyStack": 24,
+      "indirect": false,
+      "frame": 24,
+      "origin": [
+        "stm32_clock.c.su"
+      ]
+    },
+    "TIM3_IRQHandler": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "stm32_clock.c.su"
+      ]
+    },
+    "motor_time_us": {
+      "calls": [],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "stm32_clock.c.su"
+      ]
+    },
+    "motor_watchdog_initialize": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "stm32_clock.c.su"
+      ]
+    },
+    "motor_watchdog_refresh": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "stm32_clock.c.su"
+      ]
+    },
+    "motor_measurement_convert": {
+      "calls": [
+        "__aeabi_lmul",
+        "__aeabi_uldivmod",
+        "memset"
+      ],
+      "assemblyStack": 216,
+      "indirect": false,
+      "frame": 216,
+      "origin": [
+        "motor_measurement.c.su"
+      ]
+    },
+    "stusb_capture_message": {
+      "calls": [
+        "bus_time",
+        "memset",
+        "motor_gpio_inhibit",
+        "motor_time_us",
+        "read_transfer",
+        "write_transfer"
+      ],
+      "assemblyStack": 160,
+      "indirect": true,
+      "frame": 160,
+      "origin": [
+        "stusb4500_rx.c.su"
+      ]
+    },
+    "late": {
+      "calls": [
+        "bus_time",
+        "motor_gpio_inhibit",
+        "motor_time_us",
+        "read_transfer",
+        "write_transfer"
+      ],
+      "assemblyStack": 24,
+      "indirect": true,
+      "frame": 8,
+      "origin": [
+        "stusb4500_nvm.c.su",
+        "stusb4500_request.c.su",
+        "stusb4500_startup.c.su"
+      ]
+    },
+    "read_checked": {
+      "calls": [
+        "bus_time",
+        "late",
+        "motor_gpio_inhibit",
+        "motor_time_us",
+        "read_transfer",
+        "write_transfer"
+      ],
+      "assemblyStack": 48,
+      "indirect": true,
+      "frame": 16,
+      "origin": [
+        "stusb4500_nvm.c.su",
+        "stusb4500_request.c.su",
+        "stusb4500_startup.c.su"
+      ]
+    },
+    "write_checked": {
+      "calls": [
+        "bus_time",
+        "late",
+        "motor_gpio_inhibit",
+        "motor_time_us",
+        "read_transfer",
+        "write_transfer"
+      ],
+      "assemblyStack": 48,
+      "indirect": true,
+      "frame": 16,
+      "origin": [
+        "stusb4500_nvm.c.su",
+        "stusb4500_request.c.su",
+        "stusb4500_startup.c.su"
+      ]
+    },
+    "stusb_startup_acquire": {
+      "calls": [
+        "bus_time",
+        "memset",
+        "motor_gpio_inhibit",
+        "motor_time_us",
+        "read_checked",
+        "read_transfer",
+        "write_checked",
+        "write_transfer"
+      ],
+      "assemblyStack": 224,
+      "indirect": true,
+      "frame": 224,
+      "origin": [
+        "stusb4500_startup.c.su"
+      ]
+    },
+    "stusb_request_contract": {
+      "calls": [
+        "bus_time",
+        "memset",
+        "motor_gpio_inhibit",
+        "motor_time_us",
+        "pd_motor_voltage",
+        "pd_plan_valid",
+        "read_checked",
+        "read_transfer",
+        "write_checked",
+        "write_transfer"
+      ],
+      "assemblyStack": 192,
+      "indirect": true,
+      "frame": 192,
+      "origin": [
+        "stusb4500_request.c.su"
+      ]
+    },
+    "write_byte": {
+      "calls": [
+        "memset",
+        "write_checked"
+      ],
+      "assemblyStack": 40,
+      "indirect": false,
+      "frame": 40,
+      "origin": [
+        "stusb4500_nvm.c.su"
+      ]
+    },
+    "hold_reset": {
+      "calls": [
+        "bus_time",
+        "late",
+        "motor_gpio_inhibit",
+        "motor_time_us",
+        "read_transfer",
+        "write_transfer"
+      ],
+      "assemblyStack": 24,
+      "indirect": true,
+      "frame": 24,
+      "origin": [
+        "stusb4500_nvm.c.su"
+      ]
+    },
+    "stusb_nvm_verify": {
+      "calls": [
+        "hold_reset",
+        "memset",
+        "read_checked",
+        "write_byte",
+        "write_checked"
+      ],
+      "assemblyStack": 96,
+      "indirect": false,
+      "frame": 96,
+      "origin": [
+        "stusb4500_nvm.c.su"
+      ]
+    },
+    "owner_valid": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "motor_owner.c.su"
+      ]
+    },
+    "motor_owner_invalidate": {
+      "calls": [
+        "motor_gpio_inhibit",
+        "pd_sequence_abort"
+      ],
+      "assemblyStack": 16,
+      "indirect": false,
+      "frame": 16,
+      "origin": [
+        "motor_owner.c.su"
+      ]
+    },
+    "motor_owner_initialize": {
+      "calls": [
+        "bus_time",
+        "enter_critical",
+        "interrupt_pending",
+        "leave_critical",
+        "motor_gpio_inhibit",
+        "motor_owner_invalidate",
+        "owner_valid",
+        "read_transfer",
+        "stusb_nvm_verify",
+        "write_transfer"
+      ],
+      "assemblyStack": 32,
+      "indirect": true,
+      "frame": 32,
+      "origin": [
+        "motor_owner.c.su"
+      ]
+    },
+    "motor_owner_step": {
+      "calls": [
+        "__aeabi_uidivmod",
+        "__udivsi3",
+        "bus_time",
+        "enter_critical",
+        "interrupt_pending",
+        "leave_critical",
+        "memset",
+        "motor_adc_capture",
+        "motor_gpio_apply",
+        "motor_gpio_inhibit",
+        "motor_gpio_read_inputs",
+        "motor_measurement_convert",
+        "motor_owner_invalidate",
+        "owner_valid",
+        "pd_make_plan",
+        "pd_sequence_begin",
+        "pd_sequence_step",
+        "read_transfer",
+        "stusb_capture_message",
+        "stusb_request_contract",
+        "stusb_startup_acquire",
+        "write_transfer"
+      ],
+      "assemblyStack": 288,
+      "indirect": true,
+      "frame": 288,
+      "origin": [
+        "motor_owner.c.su"
+      ]
+    },
+    "interrupt_pending": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "motor_main.c.su"
+      ]
+    },
+    "enter_critical": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "motor_main.c.su"
+      ]
+    },
+    "leave_critical": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "motor_main.c.su"
+      ]
+    },
+    "motor_emergency_halt": {
+      "calls": [
+        "motor_gpio_inhibit",
+        "motor_gpio_target"
+      ],
+      "assemblyStack": 40,
+      "indirect": false,
+      "frame": 40,
+      "origin": [
+        "motor_main.c.su"
+      ]
+    },
+    "EXTI4_15_IRQHandler": {
+      "calls": [
+        "motor_time_us"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "motor_main.c.su"
+      ]
+    },
+    "motor_main": {
+      "calls": [
+        "motor_adc_initialize",
+        "motor_adc_target",
+        "motor_clock_initialize",
+        "motor_clock_valid",
+        "motor_emergency_halt",
+        "motor_gpio_inhibit",
+        "motor_gpio_initialize",
+        "motor_gpio_target",
+        "motor_i2c_bus",
+        "motor_i2c_initialize",
+        "motor_i2c_target",
+        "motor_owner_initialize",
+        "motor_owner_step",
+        "motor_time_us",
+        "motor_watchdog_initialize",
+        "motor_watchdog_refresh"
+      ],
+      "assemblyStack": 168,
+      "indirect": false,
+      "frame": 168,
+      "origin": [
+        "motor_main.c.su"
+      ]
+    },
+    "memset": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "freestanding_memory.c.su"
+      ]
+    },
+    "Reset_Handler": {
+      "calls": [
+        "motor_main"
+      ],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "Default_Handler": {
+      "calls": [
+        "motor_emergency_halt"
+      ],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__gnu_thumb1_case_uqi": {
+      "calls": [],
+      "assemblyStack": 4,
+      "indirect": false,
+      "frame": 4,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__udivsi3": {
+      "calls": [
+        "__aeabi_idiv0"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_uidivmod": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_idiv0": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_cfrcmple": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_cfcmpeq": {
+      "calls": [
+        "__lesf2"
+      ],
+      "assemblyStack": 24,
+      "indirect": false,
+      "frame": 24,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_fcmpeq": {
+      "calls": [
+        "__eqsf2"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_fcmplt": {
+      "calls": [
+        "__lesf2"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_fcmple": {
+      "calls": [
+        "__lesf2"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_fcmpgt": {
+      "calls": [
+        "__gesf2"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_fcmpge": {
+      "calls": [
+        "__gesf2"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_uldivmod": {
+      "calls": [
+        "__udivmoddi4"
+      ],
+      "assemblyStack": 28,
+      "indirect": false,
+      "frame": 28,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_lmul": {
+      "calls": [],
+      "assemblyStack": 24,
+      "indirect": false,
+      "frame": 24,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__udivmoddi4": {
+      "calls": [
+        "__clzdi2"
+      ],
+      "assemblyStack": 48,
+      "indirect": false,
+      "frame": 48,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_fadd": {
+      "calls": [
+        "__clzsi2"
+      ],
+      "assemblyStack": 24,
+      "indirect": false,
+      "frame": 24,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_fdiv": {
+      "calls": [
+        "__clzsi2"
+      ],
+      "assemblyStack": 32,
+      "indirect": false,
+      "frame": 32,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__eqsf2": {
+      "calls": [],
+      "assemblyStack": 12,
+      "indirect": false,
+      "frame": 12,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__gesf2": {
+      "calls": [],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__lesf2": {
+      "calls": [],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_fmul": {
+      "calls": [
+        "__clzsi2"
+      ],
+      "assemblyStack": 32,
+      "indirect": false,
+      "frame": 32,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_fsub": {
+      "calls": [
+        "__clzsi2"
+      ],
+      "assemblyStack": 24,
+      "indirect": false,
+      "frame": 24,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__aeabi_i2f": {
+      "calls": [
+        "__clzsi2"
+      ],
+      "assemblyStack": 16,
+      "indirect": false,
+      "frame": 16,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__clzsi2": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "__clzdi2": {
+      "calls": [
+        "__clzsi2"
+      ],
+      "assemblyStack": 8,
+      "indirect": false,
+      "frame": 8,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "voltage.0": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "CSWTCH.8": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "motor_environment_qualification_present": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    },
+    "motor_build_config": {
+      "calls": [],
+      "assemblyStack": 0,
+      "indirect": false,
+      "frame": 0,
+      "origin": [
+        "linked assembly conservative push/allocation sum"
+      ]
+    }
+  },
+  "limitations": [
+    "Callbacks must remain the closed production target set; configuration changes require reanalysis",
+    "Static screen is not stack high-water evidence on a physical MCU",
+    "Latency/watchdog/interrupt-masking duration still require target captures"
+  ]
+}

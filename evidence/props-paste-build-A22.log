@@ -1,0 +1,13 @@
+$ tsup lib/index.ts --format esm --dts --sourcemap
+CLI Building entry: lib/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Target: es2022
+ESM Build start
+DTS Build start
+ESM dist/index.js     1.07 MB
+ESM dist/index.js.map 1.53 MB
+ESM ⚡️ Build success in 367ms
+"length" is imported from external module "circuit-json" but never used in "lib/common/distance.ts".
+DTS ⚡️ Build success in 6324ms
+DTS dist/index.d.ts 10.60 MB

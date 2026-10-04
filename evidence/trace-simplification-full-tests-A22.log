@@ -1,0 +1,119 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/get-vector-length.test.ts:
+(pass) vector length uses repeatable arithmetic without overflowing or underflowing
+
+tests/shared-via-merge-cycle.test.ts:
+(pass) a shared via stays put when one attached route cannot follow a merge [1.53ms]
+
+tests/features/trace-simplification-immutable-routes.test.ts:
+(pass) trace simplification avoids immutable routed traces without emitting or mutating them [2.66ms]
+(pass) trace simplification visualizes immutable routed peers [1178.77ms]
+(pass) via removal keeps a layer detour that crosses an immutable route [1.25ms]
+(pass) same-net via merging collision-checks immutable routes without emitting them [0.52ms]
+(pass) same-net via merging treats unmapped immutable routes as blocking copper
+
+tests/solvers/useless-via-removal-obstacle-detour-cache.test.ts:
+(pass) reuses segment clearance while still finding late detours [1.63ms]
+
+tests/solvers/crossing-via-reduction-visual.test.ts:
+(pass) visualizes the Pipeline7 crossing via reduction [975.41ms]
+
+tests/solvers/vertex-shortcut-preserves-anchors.test.ts:
+(pass) vertex shortcuts preserve terminals, vias, widths and jumper anchors [0.95ms]
+
+tests/solvers/useless-via-removal-geometry-shortcut.test.ts:
+(pass) removes a via pair with a shorter clear 45-degree path [0.46ms]
+
+tests/solvers/useless-via-removal-endpoint-layer-proof.test.ts:
+(pass) removes the first-section via when endpoint metadata and its obstacle support both layers
+
+tests/solvers/single-simplified-path-fallback-tail.test.ts:
+(pass) keeps the next path aligned with the appended fallback vertex [0.35ms]
+✓ SVG snapshot matches (0.118% difference, within 1% threshold)
+(pass) visualizes the fallback-tail transition [1408.75ms]
+
+tests/solvers/useless-via-removal-synthetic-route-endpoint-connmap.test.ts:
+(pass) uses connMap to prove endpoint layer support for synthetic route ids [0.41ms]
+
+tests/solvers/useless-via-removal-preserves-pcb-terminal-layer.test.ts:
+(pass) preserves authoritative single-layer PCB-port terminals across simplification passes [162.23ms]
+
+tests/solvers/trace-simplification-preserves-duplicate-route-pieces.test.ts:
+TraceSimplificationSolver error: Error: TraceSimplificationSolver changed the preserved route set (expected 2, got 1)
+TraceSimplificationSolver error: Error: TraceSimplificationSolver changed a preserved endpoint for route "split_connection"
+(pass) duplicate connection names preserve every physical route piece and reject missing or changed endpoints [0.40ms]
+
+tests/solvers/same-net-via-merger-direct-overlap-star.test.ts:
+(pass) SameNetViaMergerSolver consolidates a chain within the near-merge radius [0.42ms]
+
+tests/solvers/trace-simplification-crossing-via-reduction.test.ts:
+(pass) Pipeline7 simplification reduces a three-via crossing to one via [0.97ms]
+
+tests/solvers/seeded-via-detour-simplification.test.ts:
+(pass) seeded added-via detours simplify back to the known optimum [20.15ms]
+
+tests/solvers/same-net-via-merger-duplicate-location.test.ts:
+(pass) same-net via merging handles repeated layer transitions at one location
+
+tests/solvers/crossing-via-reduction-through-obstacle.test.ts:
+(pass) preserves a marked through-obstacle layer transition
+
+tests/solvers/useless-via-removal-no-endpoint-obstacle-noop.test.ts:
+(pass) does not move endpoint sections when no endpoint obstacle proves layer support
+
+tests/solvers/trace-simplification-trial239-near-zero-segment.test.ts:
+(pass) does not create a near-zero segment from the exact Trial239 stitched route [10933.44ms]
+
+tests/solvers/vertex-shortcut-clearance.test.ts:
+(pass) vertex shortcuts stay clear of pads, thick peers, vias and the board edge [0.82ms]
+
+tests/solvers/vertex-shortcut-does-not-lengthen.test.ts:
+(pass) vertex shortcuts do not replace a short non-45-degree path with a longer dogleg
+
+tests/solvers/same-net-via-merger-immutable-anchor.test.ts:
+(pass) same-net via merging reuses an immutable via without mutating it [599.71ms]
+
+tests/solvers/useless-via-removal-geometry-shortcut-collision.test.ts:
+(pass) keeps a via pair when every 45-degree shortcut hits an obstacle
+
+tests/solvers/crossing-via-reduction-clearance.test.ts:
+(pass) keeps the three-via crossing when the relocated via is blocked [0.35ms]
+(pass) ignores pre-existing obstacle clearance outside changed sections [0.30ms]
+(pass) keeps vias that isolate unchanged obstacle conflicts from a changed section [0.21ms]
+(pass) checks changed geometry against static obstacles
+(pass) checks unchanged geometry against the modified partner route [0.20ms]
+
+tests/solvers/crossing-via-reduction-multi-route.test.ts:
+(pass) atomically relocates multiple crossing vias to remove one detour [0.57ms]
+(pass) relocates multiple sections of one crossing route atomically [0.28ms]
+(pass) rejects a multi-crossing rewrite with a pre-existing route conflict [0.25ms]
+
+tests/solvers/crossing-via-reduction-multi-crossing-visual.test.ts:
+(pass) visualizes atomic multi-crossing via reduction [982.72ms]
+
+tests/solvers/useless-via-removal-live-route-index.test.ts:
+(pass) later shortcuts are checked against earlier optimized routes
+
+tests/solvers/useless-via-removal-multilayer-collapse.test.ts:
+(pass) collapses a clear intermediate section between different outer layers
+
+tests/solvers/crossing-via-reduction-indexed-search.test.ts:
+(pass) indexes crossing discovery and repeated candidate clearance checks [20.65ms]
+
+tests/solvers/crossing-via-reduction-reversed-transition.test.ts:
+(pass) reduces the crossing when the transition route is reversed [0.74ms]
+
+tests/solvers/same-net-via-merger-preserves-route-endpoint-via.test.ts:
+(pass) same-net via merging preserves a route endpoint via
+
+tests/solvers/useless-via-removal-multilayer-collapse-collision.test.ts:
+(pass) keeps a multilayer section when both adjacent layers are blocked
+
+tests/solvers/trace-simplification-preserves-route-endpoint-layers.test.ts:
+(pass) trace simplification preserves endpoint layers for spliceable sections [0.40ms]
+
+ 44 pass
+ 0 fail
+ 425 expect() calls
+Ran 44 tests across 33 files. [16.41s]

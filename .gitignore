@@ -16,3 +16,13 @@ scripts/__pycache__/
 .yalc-store/
 tooling/**/.yalc/
 tooling/**/yalc.lock
+
+# Isolated upstream development clones; reproducible patch/package evidence retained.
+tooling/core-manufacturing-A22/
+tooling/pcb-trace-linter-A22/
+tooling/props-manufacturing-A22/
+.yalc/
+yalc.lock
+
+tooling/autorouter-manufacturing-A22/
+tooling/trace-simplification-manufacturing-A22/

@@ -1,0 +1,9 @@
+{
+  "labels": 162,
+  "issues": [
+    "top:5V BOTH OFF / 9V 9 ON / 12V 12 ON: ink closer than0.5mm to edge",
+    "top:BOTH ON: STOP: ink closer than0.5mm to edge",
+    "top:TP1 SWDIO: exposed pad/drill ink clearance",
+    "top:TP2 SWCLK: exposed pad/drill ink clearance"
+  ]
+}

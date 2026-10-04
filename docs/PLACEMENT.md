@@ -1,24 +1,64 @@
-# A9 placement intent — placement not started
+# A22 functional placement validated — 2026-10-04
 
-The required order is supplier/BOM/schematic/power approval, then component placement, then routing review. All 54 independent imports now pass. Product placement remains blocked by the official coordinate-schema defect and incomplete power/firmware qualification; the isolated library fix has not replaced the official board dependency. No product PCB coordinates or copper have been authored.
+All five native preroute checks, strict full-artifact schema, unchanged supplier
+geometry, full native placement, connectivity and163 text labels pass.
+Both faces and all8 A4 sheets were visually inspected. Fresh full-artifact binding
+and logs are listed in the newest VALIDATION.md entry. Native component moves and
+rotations reduce bypass-loop distance and keep compensation/feedback on the quiet
+side of the buck. Actual routed parasitics, return paths and ampacity remain pending.
 
-Provisional outline: **65 × 50 mm**, 2 layers, 1.6 mm FR-4. This replaces the earlier unproven 55 × 40 mm estimate. Four proposed 3.2 mm NPTH holes are at (±27.5, ±20) mm: 55 × 40 mm hole spacing. Reserve 7 mm diameter screw/washer clearance and check enclosure mechanics. These are intended dimensions, not instantiated or validated holes.
+---
 
-| Area | Placement intent |
-|---|---|
-| USB-C | Left edge, cable exits left, clear of mounting hardware |
-| Motor terminal | Right edge, wires exit right, screwdriver access above |
-| Speed knob | Upper left/center; actual Bourns body/tab/shaft and knob clearances |
-| Direction switch | Upper right/center; top access and REV / OFF / FWD markings |
-| Voltage selector | Two-slider service DIP: 5=both OFF, 9=right ON, 12=left ON, both ON=inhibit; change only unplugged |
-| LEDs | Visible near controls; POWER / FWD / REV labels |
-| Buck | Central lower region; short switch/current loops and quiet feedback |
-| Bridge | Close to motor terminal; exposed-pad ground/thermal area |
-| PD and LDOs | Near input, with separated quiet supply/CC routing and native programming-pad access |
-| Dump resistors | Away from controls/shaft/enclosure contact; pulse-energy/heat spacing |
+# A22 functional placement revision — validation in progress
 
-Actual bodies and courtyards, bottom solder tails, fastener clearance, shaft height, connector shroud and assembly accessibility must be reviewed before fitting everything into this outline. The added PD, buck, bridge and protection make this materially larger/more populated than the simple reference module. A smaller outline is not proven.
+The earlier geometric placement pass below is historical. A power-path review
+found multiple bypass/compensation parts far from their ICs. Native placements
+now relocate those parts, group the buck feedback network, and move output
+ceramics beside L1. The outline, controls and supplier imports are unchanged.
 
-Future silkscreen: USB-C PD INPUT; SPEED / MIN / MAX; REV / OFF / FWD; POWER / FWD / REV; MOTOR+ / MOTOR−; 5 / 9 / 12 selector legend; A9 PROTOTYPE. State that motor terminal polarity is defined for forward and reverses in reverse.
+The deterministic proposal screens unchanged supplier courtyards against a
+0.25 mm separation, fastener reservations and control-access regions. Actual
+supply-pin distances and chosen positions are recorded in
+`evidence/local-decoupling-proposal-A22.json`. This is planning evidence, not
+a routed parasitic or thermal pass. The 100 nF buck input bypass is 2.486 mm
+from VIN; the two output ceramics are 3.647/4.307 mm from L1 output; the
+bridge VM bypass is 4.392 mm from its supply pin. The wider input ceramics
+remain bulk branches; their real switching-loop return paths need copper review.
 
-No copper-width or thermal claim can be made from these reservations. Routing remains disabled in the source and config.
+Fresh native source checks, full-artifact audits, labels and both-face visual
+review are required before routing resumes.
+
+---
+
+# A22 product placement — validated before routing
+
+Native numeric manualEdits place all 140 purchased components on an 80 × 65 mm,
+2-layer, 1.6 mm board. This enlarges the former unplaced 65 × 50 mm estimate for
+actual body, shaft, switch, dump-bank and probe clearance. Four native 3.2 mm
+NPTH holes are at (±35, ±27.5) mm: 70 × 55 mm centers, with 7 mm top/bottom
+fastener reservations. Supplier definitions remain byte-exact imports.
+
+USB-C faces the left edge, the motor terminal faces right, speed/direction/voltage
+controls and three LEDs face upward. Actual knob clearance reserves 16 mm around
+the offset shaft center; switch access reserves 12 mm. Buck diode, inductor,
+bootstrap/input/bypass capacitors and H-bridge bypass have explicit nearby
+coordinates. Dump resistors occupy the lower perimeter away from controls.
+
+Seven supplier-backed contacts expose programming/reset/GND and 3V3/VBUS/VM.
+Probe and operator legend regions are reserved before placing remaining parts.
+Imported reference artwork is moved by native board styling to a complete bottom
+reference map; front operational legends are enlarged and separated. No imported
+symbol, footprint, pin map or copper is manually changed.
+
+All140 purchased components, four mounting holes and12 original EP vias pass
+fresh native checks and strict supplier-transform/pad/port geometry checks.
+The final board contains4939 records, including152 PCB component records
+(140 purchased plus12 imported via-associated records) and six NPTH features.
+162 legends pass ink/pad/edge checks. Both placement faces and all eight current
+schematic sheets were actually inspected. Accepted imported metadata advisories
+remain bound to exact messages and import hashes. The prerequisite artifact
+is archived with zero PCB traces.
+
+Routing may now begin for the explicitly limited diagnostic engineering prototype.
+No measured continuous-current/thermal rating is claimed. New routed via-in-pad
+remains prohibited; imported EP vias use the declared fill/cap assembly process.

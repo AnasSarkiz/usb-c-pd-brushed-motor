@@ -1,0 +1,21 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/components/primitive-components/board-silkscreen-schema.test.tsx:
+14 |   circuit.render()
+15 |   const boardLabels = circuit.db.pcb_silkscreen_text.list()
+16 |     .filter((label) => label.text.endsWith("BOARD LABEL"))
+17 |   expect(boardLabels.map((label) => label.layer)).toEqual(["top", "bottom"])
+18 |   for (const label of boardLabels) {
+19 |     expect(label.pcb_component_id).toBeUndefined()
+                                        ^
+error: expect(received).toBeUndefined()
+
+Received: null
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/components/primitive-components/board-silkscreen-schema.test.tsx:19:36)
+(fail) standalone board labels omit an absent component association [29.29ms]
+
+ 0 pass
+ 1 fail
+ 2 expect() calls
+Ran 1 test across 1 file. [799.00ms]

@@ -1,9 +1,10 @@
+import { productPlacement } from "./product-placement"
 import { CC0603KRX7R9BB104 } from "../imports/CC0603KRX7R9BB104"
 import { TPS16630PWPR } from "../imports/TPS16630PWPR"
 import { CL10B223KB8NNNC } from "../imports/CL10B223KB8NNNC"
 import { SS54 } from "../imports/SS54"
 import { A_0603WAF1623T5E } from "../imports/A_0603WAF1623T5E"
-import { A_0603WAF7151T5E } from "../imports/A_0603WAF7151T5E"
+import { A_0603WAF6981T5E } from "../imports/A_0603WAF6981T5E"
 import { A_0603WAF1003T5E } from "../imports/A_0603WAF1003T5E"
 import { A_0603WAF2002T5E } from "../imports/A_0603WAF2002T5E"
 import { MMBT3904 } from "../imports/MMBT3904"
@@ -17,6 +18,7 @@ export function InputProtection() {
       {/* 5 A/40 V reverse-current blocking diode */}
       <SS54
         name="D4"
+        pcbRotation={productPlacement.D4.ccwRotationDegrees}
         schSheetName="input"
         schX={-11.0}
         schY={8}
@@ -28,6 +30,7 @@ export function InputProtection() {
       {/* Input inrush, overload latch-off and UV/OV cut-off */}
       <TPS16630PWPR
         name="U4"
+        pcbRotation={productPlacement.U4.ccwRotationDegrees}
         schSheetName="input"
         schX={-5.5}
         schY={8}
@@ -53,6 +56,7 @@ export function InputProtection() {
       {/* Invert active-low PD enable; default inhibits motor path */}
       <MMBT3904
         name="Q1"
+        pcbRotation={productPlacement.Q1.ccwRotationDegrees}
         schSheetName="input"
         schX={0.0}
         schY={8}
@@ -72,6 +76,7 @@ export function InputProtection() {
       {/* Default disable for PD output high impedance */}
       <A_0603WAF4701T5E
         name="R5"
+        pcbRotation={productPlacement.R5.ccwRotationDegrees}
         schSheetName="input"
         schX={5.5}
         schY={8}
@@ -84,6 +89,7 @@ export function InputProtection() {
       {/* NPN base-current limit */}
       <A_0603WAF2002T5E
         name="R6"
+        pcbRotation={productPlacement.R6.ccwRotationDegrees}
         schSheetName="input"
         schX={11.0}
         schY={8}
@@ -95,6 +101,7 @@ export function InputProtection() {
       {/* eFuse enable pull-up */}
       <CRCW060310K0FKEA
         name="R7"
+        pcbRotation={productPlacement.R7.ccwRotationDegrees}
         schSheetName="input"
         schX={-11.0}
         schY={4}
@@ -107,6 +114,7 @@ export function InputProtection() {
       {/* 13.2 V input UV threshold top */}
       <A_0603WAF1003T5E
         name="R8"
+        pcbRotation={productPlacement.R8.ccwRotationDegrees}
         schSheetName="input"
         schX={-5.5}
         schY={4}
@@ -119,6 +127,7 @@ export function InputProtection() {
       {/* Input UV threshold bottom */}
       <CRCW060310K0FKEA
         name="R9"
+        pcbRotation={productPlacement.R9.ccwRotationDegrees}
         schSheetName="input"
         schX={0.0}
         schY={4}
@@ -131,6 +140,7 @@ export function InputProtection() {
       {/* OV divider top segment */}
       <A_0603WAF1623T5E
         name="R10"
+        pcbRotation={productPlacement.R10.ccwRotationDegrees}
         schSheetName="input"
         schX={5.5}
         schY={4}
@@ -143,6 +153,7 @@ export function InputProtection() {
       {/* 23.04 V OV threshold top segment */}
       <A_0603WAF2002T5E
         name="R11"
+        pcbRotation={productPlacement.R11.ccwRotationDegrees}
         schSheetName="input"
         schX={11.0}
         schY={4}
@@ -154,6 +165,7 @@ export function InputProtection() {
       {/* OV divider bottom */}
       <CRCW060310K0FKEA
         name="R12"
+        pcbRotation={productPlacement.R12.ccwRotationDegrees}
         schSheetName="input"
         schX={-11.0}
         schY={0}
@@ -164,8 +176,9 @@ export function InputProtection() {
         }}
       />
       {/* 2.52 A nominal input current limit */}
-      <A_0603WAF7151T5E
+      <A_0603WAF6981T5E
         name="R13"
+        pcbRotation={productPlacement.R13.ccwRotationDegrees}
         schSheetName="input"
         schX={-5.5}
         schY={0}
@@ -178,6 +191,7 @@ export function InputProtection() {
       {/* PG open-drain pull-up */}
       <CRCW060310K0FKEA
         name="R16"
+        pcbRotation={productPlacement.R16.ccwRotationDegrees}
         schSheetName="input"
         schX={0.0}
         schY={0}
@@ -190,6 +204,7 @@ export function InputProtection() {
       {/* 22 nF inrush slew control */}
       <CL10B223KB8NNNC
         name="C9"
+        pcbRotation={productPlacement.C9.ccwRotationDegrees}
         schSheetName="input"
         schX={5.5}
         schY={0}
@@ -202,6 +217,7 @@ export function InputProtection() {
       {/* eFuse local input bypass */}
       <CC0603KRX7R9BB104
         name="C10"
+        pcbRotation={productPlacement.C10.ccwRotationDegrees}
         schSheetName="input"
         schX={11.0}
         schY={0}
@@ -214,6 +230,7 @@ export function InputProtection() {
       {/* Protected input bulk */}
       <GRM21BR71H105KA12L
         name="C11"
+        pcbRotation={productPlacement.C11.ccwRotationDegrees}
         schSheetName="input"
         schX={-11.0}
         schY={-4}

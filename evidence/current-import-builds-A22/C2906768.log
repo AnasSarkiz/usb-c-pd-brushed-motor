@@ -1,0 +1,13 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C2906768.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C2906768/circuit.json
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+All pins on TP1 are underspecified (no pinAttributes set)
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

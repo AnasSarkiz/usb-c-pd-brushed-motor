@@ -1,0 +1,22 @@
+{
+  "componentCount": 140,
+  "supplierPartCount": 58,
+  "issues": [
+    "TP5: new or stale warning review for source_refdes_convention_warning",
+    "TP6: new or stale warning review for source_refdes_convention_warning",
+    "TP1: new or stale warning review for source_refdes_convention_warning",
+    "TP2: new or stale warning review for source_refdes_convention_warning",
+    "TP3: new or stale warning review for source_refdes_convention_warning",
+    "TP4: new or stale warning review for source_refdes_convention_warning",
+    "TP7: new or stale warning review for source_refdes_convention_warning",
+    "TP5: new or stale warning review for source_component_pins_underspecified_warning",
+    "TP6: new or stale warning review for source_component_pins_underspecified_warning",
+    "TP1: new or stale warning review for source_component_pins_underspecified_warning",
+    "TP2: new or stale warning review for source_component_pins_underspecified_warning",
+    "TP3: new or stale warning review for source_component_pins_underspecified_warning",
+    "TP4: new or stale warning review for source_component_pins_underspecified_warning",
+    "TP7: new or stale warning review for source_component_pins_underspecified_warning"
+  ],
+  "pcbTraceCount": 0,
+  "diagnostics": 98
+}

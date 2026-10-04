@@ -1,0 +1,10 @@
+Collecting shapely==2.1.2
+  Downloading shapely-2.1.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (6.8 kB)
+Requirement already satisfied: numpy>=1.21 in /Users/anassarkiz/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from shapely==2.1.2) (2.3.5)
+Downloading shapely-2.1.2-cp312-cp312-macosx_11_0_arm64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 15.7 MB/s eta 0:00:00
+Installing collected packages: shapely
+Successfully installed shapely-2.1.2
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/power-review-venv/bin/python -m pip install --upgrade pip

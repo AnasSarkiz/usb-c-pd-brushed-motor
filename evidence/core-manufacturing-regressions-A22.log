@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/components/primitive-components/plated-hole-paste-rotation.test.tsx:
+(pass) pill paste follows transformed holes on both outer layers [232.97ms]
+
+tests/components/primitive-components/board-mounted-hole-schema.test.tsx:
+(pass) standalone mounting holes omit an absent component association [175.18ms]
+
+tests/components/primitive-components/create-solderpaste-from-smtpad-and-plated-holes.test.tsx:
+(pass) create solderpaste from smtpad [15.48ms]
+
+tests/components/primitive-components/board-silkscreen-schema.test.tsx:
+(pass) standalone board labels use the native board artwork association [21.76ms]
+
+tests/components/primitive-components/board-plated-hole-solder-paste.test.tsx:
+Creating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/components/primitive-components/__snapshots__/board-plated-hole-solder-paste-pcb.snap.svg
+(pass) plated-hole assembly layers preserve copper and SMT stencil apertures [112.11ms]
+
+ 5 pass
+ 0 fail
+ 344 expect() calls
+Ran 5 tests across 5 files. [1194.00ms]

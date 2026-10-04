@@ -1,0 +1,27 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/autoroutingphase-saved-trace-paths.test.tsx:
+(pass) autoroutingphase preserves complete saved routes before later routing [583.73ms]
+
+tests/features/autoroutingphase-fixed-pcb-path.test.tsx:
+(pass) autorouting phases detour around a fixed hand-authored pcbPath [482.40ms]
+
+tests/repros/repro-routed-trace-attribution-ignores-opposite-layer-pad.test.tsx:
+(pass) routed trace endpoints over a large opposite-layer pad are attributed to the correct source trace [12.20ms]
+
+tests/repros/repro-routed-net-piece-attribution.test.tsx:
+(pass) interior router pieces retain net ownership without concealing disconnected copper [12.73ms]
+
+tests/breakout/fanout-dogbone-global-handoff.test.tsx:
+(pass) global routing continues from a local dogbone via [380.07ms]
+
+tests/breakout/fanout-saved-trace-paths.test.tsx:
+(pass) saved fanout paths preserve bends and hand off to global routing [350.63ms]
+
+tests/breakout/breakout-point-source-trace-ids.test.tsx:
+(pass) transparent breakout points use board source trace ids [45.29ms]
+
+ 7 pass
+ 0 fail
+ 74 expect() calls
+Ran 7 tests across 7 files. [2.67s]

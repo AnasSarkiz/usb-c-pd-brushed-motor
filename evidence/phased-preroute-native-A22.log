@@ -1,0 +1,3 @@
+$ tsci check netlist index.circuit.tsx && tsci check pin_specification index.circuit.tsx && tsci check source index.circuit.tsx && tsci check schematic-placement index.circuit.tsx && tsci check placement index.circuit.tsx
+Could not find port for selector ".D1 > .K". Component ".D1 > " found, but does not have pin "K". It has no ports
+error: script "check:preroute" exited with code 1

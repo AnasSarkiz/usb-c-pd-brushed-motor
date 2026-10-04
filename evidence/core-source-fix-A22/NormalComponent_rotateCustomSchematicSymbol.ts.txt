@@ -1,0 +1,119 @@
+import {
+  applyToPoint,
+  compose,
+  rotateDEG,
+  translate,
+} from "transformation-matrix"
+import { getRelativeDirection } from "lib/utils/get-relative-direction"
+import { SymbolComponent } from "../../primitive-components/Symbol/Symbol"
+import type { NormalComponent } from "./NormalComponent"
+
+/** Rotate emitted custom-symbol geometry in schematic world millimeters (+Y up).
+ * Points rotate around the component's world anchor; directions do not translate.
+ * Predefined symbols already select rotated graphics and must not enter this path.
+ */
+export function NormalComponent_rotateCustomSchematicSymbol(
+  component: NormalComponent,
+  ccwRotationDegrees: number,
+): void {
+  if (ccwRotationDegrees === 0 || !component.schematic_component_id) return
+  const { db } = component.root!
+  const symbolIds = new Set(
+    component.children
+      .filter(
+        (child): child is SymbolComponent => child instanceof SymbolComponent,
+      )
+      .map((child) => child.schematic_symbol_id),
+  )
+  if (symbolIds.size === 0) return
+  const anchor = component._getGlobalSchematicPositionBeforeLayout()
+  const schematicWorldToRotatedWorld = compose(
+    translate(anchor.x, anchor.y),
+    rotateDEG(ccwRotationDegrees),
+    translate(-anchor.x, -anchor.y),
+  )
+  for (const line of db.schematic_line.list()) {
+    if (line.schematic_component_id !== component.schematic_component_id)
+      continue
+    const start = applyToPoint(schematicWorldToRotatedWorld, {
+      x: line.x1,
+      y: line.y1,
+    })
+    const end = applyToPoint(schematicWorldToRotatedWorld, {
+      x: line.x2,
+      y: line.y2,
+    })
+    db.schematic_line.update(line.schematic_line_id, {
+      x1: start.x,
+      y1: start.y,
+      x2: end.x,
+      y2: end.y,
+    })
+  }
+  for (const path of db.schematic_path.list()) {
+    if (!symbolIds.has(path.schematic_symbol_id)) continue
+    db.schematic_path.update(path.schematic_path_id, {
+      points: path.points.map((point) =>
+        applyToPoint(schematicWorldToRotatedWorld, point),
+      ),
+    })
+  }
+  for (const rect of db.schematic_rect.list()) {
+    if (!symbolIds.has(rect.schematic_symbol_id)) continue
+    db.schematic_rect.update(rect.schematic_rect_id, {
+      center: applyToPoint(schematicWorldToRotatedWorld, rect.center),
+      rotation: (rect.rotation ?? 0) + ccwRotationDegrees,
+    })
+  }
+  for (const circle of db.schematic_circle.list()) {
+    if (!symbolIds.has(circle.schematic_symbol_id)) continue
+    db.schematic_circle.update(circle.schematic_circle_id, {
+      center: applyToPoint(schematicWorldToRotatedWorld, circle.center),
+    })
+  }
+  for (const arc of db.schematic_arc.list()) {
+    if (!symbolIds.has(arc.schematic_symbol_id)) continue
+    db.schematic_arc.update(arc.schematic_arc_id, {
+      center: applyToPoint(schematicWorldToRotatedWorld, arc.center),
+      start_angle_degrees: arc.start_angle_degrees + ccwRotationDegrees,
+      end_angle_degrees: arc.end_angle_degrees + ccwRotationDegrees,
+    })
+  }
+  for (const text of db.schematic_text.list()) {
+    if (!symbolIds.has(text.schematic_symbol_id)) continue
+    db.schematic_text.update(text.schematic_text_id, {
+      position: applyToPoint(schematicWorldToRotatedWorld, text.position),
+      rotation: (text.rotation ?? 0) + ccwRotationDegrees,
+    })
+  }
+  const directions = {
+    up: { x: 0, y: 1 },
+    down: { x: 0, y: -1 },
+    left: { x: -1, y: 0 },
+    right: { x: 1, y: 0 },
+  }
+  for (const port of db.schematic_port.list()) {
+    if (port.schematic_component_id !== component.schematic_component_id)
+      continue
+    const facing_direction = port.facing_direction
+      ? getRelativeDirection(
+          { x: 0, y: 0 },
+          applyToPoint(
+            rotateDEG(ccwRotationDegrees),
+            directions[port.facing_direction],
+          ),
+        )
+      : undefined
+    const side_of_component =
+      facing_direction === "up"
+        ? "top"
+        : facing_direction === "down"
+          ? "bottom"
+          : facing_direction
+    db.schematic_port.update(port.schematic_port_id, {
+      center: applyToPoint(schematicWorldToRotatedWorld, port.center),
+      facing_direction,
+      side_of_component,
+    })
+  }
+}

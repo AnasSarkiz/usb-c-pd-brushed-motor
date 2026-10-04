@@ -1,4 +1,5 @@
 #include "stm32_adc.h"
+#include "stm32_clock.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -7,7 +8,7 @@ static unsigned assertions;
 #define CHECK(x) do { ++assertions; if (!(x)) { fprintf(stderr, "%s:%d: %s\n", __FILE__, __LINE__, #x); exit(1); } } while (0)
 enum fault { NONE, HSI_STUCK, CAL_STUCK, READY_STUCK, CHANNEL_STUCK, CONVERSION_STUCK,
              OVERRUN, NO_EOS, BAD_DATA, ZERO_REFERENCE, CAL_NO_FLAG, BACKWARDS,
-             STALLED_TIME, JUMP_TIME };
+             STALLED_TIME, JUMP_TIME, DISABLE_STUCK };
 struct model {
   RCC_TypeDef rcc; SYSCFG_TypeDef syscfg;
   GPIO_TypeDef a, b, c;
@@ -15,6 +16,7 @@ struct model {
   uint16_t factory, codes[3];
   uint32_t now, hsi_due, cal_due, ready_due, channel_due, conversion_due;
   uint32_t regulator_at, calibration_done, reference_at;
+  unsigned rearms;
   unsigned writes, drop_write, calls, channels, corrupt_at;
   enum fault fault;
   bool hsi, cal, ready, channel, converting;
@@ -74,6 +76,11 @@ static void write_mmio(void *context, const struct motor_adc_write *op) {
     uint32_t previous = m->adc.CR;
     m->adc.CR = (op->value & ~rs) | ((op->value | previous) & rs);
     if ((op->value & ADC_CR_ADVREGEN) && !(previous & ADC_CR_ADVREGEN)) m->regulator_at = m->now;
+    if (op->value & ADC_CR_ADDIS) {
+      CHECK((previous & rs) == ADC_CR_ADEN);
+      ++m->rearms;
+      if (m->fault != DISABLE_STUCK) m->adc.CR &= ~(ADC_CR_ADEN | ADC_CR_ADDIS);
+    }
     if (op->value & ADC_CR_ADCAL) {
       CHECK(!(previous & rs)); CHECK((uint32_t)(m->now - m->regulator_at) >= 20);
       CHECK(m->adc.CFGR1 == 0); CHECK(m->adc.CFGR2 == 0);
@@ -105,6 +112,8 @@ static void setup(struct model *m) {
   m->factory = 1650; m->codes[0] = 2250; m->codes[1] = 1350; m->codes[2] = 1500;
   m->a.MODER = UINT32_C(0xabcdefab); m->a.ODR = UINT32_C(0xffff);
   m->rcc.CCIPR = UINT32_C(0x12345678);
+  m->rcc.CR = RCC_CR_PLLON | RCC_CR_PLLRDY;
+  m->rcc.PLLCFGR = MOTOR_PLL_CONFIG;
   m->gpio = (struct motor_gpio){.rcc=&m->rcc, .syscfg=&m->syscfg, .a=&m->a,
     .b=&m->b, .c=&m->c, .write_bsrr=bsrr};
   CHECK(motor_gpio_initialize(&m->gpio));
@@ -126,7 +135,7 @@ static void invalid_sample(struct model *m) {
   struct motor_adc_sample sample = motor_adc_capture(&m->port);
   CHECK(!sample.valid); CHECK(!sample.vbus && !sample.vm && !sample.vrefint && !sample.factory_vref);
   CHECK(!sample.started_us && !sample.completed_us);
-  for (unsigned i = 0; i < 3; ++i) CHECK(!sample.channel_completed_us[i]);
+  for (unsigned i = 0; i < 3; ++i) { CHECK(!sample.channel_completed_us[i]); CHECK(!sample.channel_started_us[i]); }
   check_off(m);
 }
 static void valid_sample(struct model *m) {
@@ -135,8 +144,11 @@ static void valid_sample(struct model *m) {
   CHECK(sample.vrefint == m->codes[2]); CHECK(sample.factory_vref == m->factory);
   CHECK((uint32_t)(sample.completed_us - sample.started_us) < 500);
   uint32_t last = sample.started_us;
-  for (unsigned i = 0; i < 3; ++i) {
-    CHECK((uint32_t)(sample.channel_completed_us[i] - last) >= 22);
+  const unsigned order[3]={2,0,1};
+  for (unsigned position = 0; position < 3; ++position) {
+    const unsigned i=order[position];
+    CHECK((uint32_t)(sample.channel_started_us[i] - last) < 500);
+    CHECK((uint32_t)(sample.channel_completed_us[i] - sample.channel_started_us[i]) >= 22);
     last = sample.channel_completed_us[i];
   }
 }
@@ -220,6 +232,27 @@ int main(void) {
   setup(&m); m.now = UINT32_MAX - 100; CHECK(motor_adc_initialize(&m.port)); valid_sample(&m);
   setup(&m); m.port.now_us = NULL; CHECK(!motor_adc_initialize(&m.port)); check_off(&m);
   setup(&m); m.port.write = NULL; CHECK(!motor_adc_initialize(&m.port)); check_off(&m);
+  /* A frame after a long idle must rearm before using a conversion. */
+  setup(&m); CHECK(motor_adc_initialize(&m.port)); valid_sample(&m);
+  CHECK(m.rearms == 0);
+  m.now += 1000u;
+  m.a.ODR = (m.a.ODR & ~UINT32_C(0xc0)) | UINT32_C(0x40);
+  uint32_t allowed_outputs = m.a.ODR & UINT32_C(0xc0);
+  valid_sample(&m); CHECK(m.rearms == 1);
+  CHECK((m.a.ODR & UINT32_C(0xc0)) == allowed_outputs);
+  valid_sample(&m); CHECK(m.rearms == 1);
+  for (enum fault f = READY_STUCK; f <= DISABLE_STUCK; f++) {
+    if (f != READY_STUCK && f != DISABLE_STUCK) continue;
+    setup(&m); CHECK(motor_adc_initialize(&m.port)); m.now += 1000u;
+    m.fault = f; invalid_sample(&m); CHECK(m.rearms == 1); CHECK(m.calls < 9000);
+  }
+  /* Lost disable/ready-clear/enable writes each fail closed on the rearm path. */
+  for (unsigned i = 1; i <= 3; ++i) {
+    setup(&m); CHECK(motor_adc_initialize(&m.port)); m.now += 1000u;
+    m.drop_write = m.writes + i; invalid_sample(&m); CHECK(m.calls < 9000);
+  }
+  setup(&m); m.now = UINT32_MAX - 500u; CHECK(motor_adc_initialize(&m.port));
+  m.now += 1000u; valid_sample(&m); CHECK(m.rearms == 1);
   CHECK(!motor_adc_initialize(NULL)); CHECK(!motor_adc_capture(NULL).valid);
   struct motor_adc_clock clock = {.context=&m, .now_us=now_us};
   struct motor_adc target = motor_adc_target(&m.gpio, &clock);

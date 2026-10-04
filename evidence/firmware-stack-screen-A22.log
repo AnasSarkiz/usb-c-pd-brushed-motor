@@ -1,0 +1,34 @@
+{
+  "foreground": {
+    "bytes": 860,
+    "path": [
+      "motor_main",
+      "motor_owner_step",
+      "stusb_startup_acquire",
+      "read_checked",
+      "late",
+      "write_transfer",
+      "start.isra",
+      "wait_status.isra",
+      "configured",
+      "settings_valid",
+      "pins_valid.isra"
+    ]
+  },
+  "exti": {
+    "bytes": 16,
+    "path": [
+      "EXTI4_15_IRQHandler",
+      "motor_time_us"
+    ]
+  },
+  "timer": {
+    "bytes": 0,
+    "path": [
+      "TIM3_IRQHandler"
+    ]
+  },
+  "combinedUpperScreenBytes": 948,
+  "reservedBytes": 2048,
+  "issues": []
+}

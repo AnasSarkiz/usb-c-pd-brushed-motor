@@ -1,0 +1,10 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/autorouter-preset-explicit-settings.test.tsx:
+(pass) local preset preserves explicit clearance and via prohibition in actual router input [136.03ms]
+(pass) normalized supported presets retain explicitly authored safety settings
+
+ 2 pass
+ 0 fail
+ 14 expect() calls
+Ran 2 tests across 1 file. [1011.00ms]

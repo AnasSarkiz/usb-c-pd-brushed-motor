@@ -2,7 +2,7 @@ import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
 test("PD qualification contains whole voltage intervals and rejects back-drive", () => {
-  const executable = "evidence/pd-interval-bun-test-A21"
+  const executable = "evidence/pd-interval-bun-test-A22"
   const compile = spawnSync(
     "cc",
     [

@@ -1,0 +1,11 @@
+ 9 | if (
+10 |   purchased !== 140 ||
+11 |   !elements.some((e) => e.type === "pcb_component") ||
+12 |   !traces
+13 | )
+14 |   throw new Error(
+                 ^
+error: Routed checks require the complete140-part PCB and actual traces
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/check-routed-board.ts:14:13
+
+Bun v1.3.9 (macOS arm64)

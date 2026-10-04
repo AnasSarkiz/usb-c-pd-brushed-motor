@@ -13,6 +13,8 @@
     "includes": [
       "**",
       "!.cache/**",
+      "!.tscircuit/**",
+      "!.yalc-store/**",
       "!imports/**",
       "!evidence/**",
       "!dist/**",

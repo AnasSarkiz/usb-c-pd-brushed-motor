@@ -2,7 +2,7 @@ import { expect, test } from "bun:test"
 import { spawnSync } from "node:child_process"
 
 test("NVM readback requires every approved byte and never programs memory", () => {
-  const executable = "evidence/stusb4500-nvm-host-A21"
+  const executable = "evidence/stusb4500-nvm-host-A22"
   const compiled = spawnSync(
     "cc",
     [

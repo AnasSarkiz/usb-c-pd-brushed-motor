@@ -1,0 +1,251 @@
+$ tsci build index.circuit.tsx --routing-disabled --pcb-png --pcb-svgs --schematic-svgs
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "R" prefix is being used with a <chip />, try using it with a <resistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+All pins on D1 are underspecified (no pinAttributes set)
+All pins on D2 are underspecified (no pinAttributes set)
+All pins on SW2 are underspecified (no pinAttributes set)
+All pins on Q6 are underspecified (no pinAttributes set)
+All pins on Q7 are underspecified (no pinAttributes set)
+All pins on Q8 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on RV1 are underspecified (no pinAttributes set)
+All pins on SW1 are underspecified (no pinAttributes set)
+All pins on U8 are underspecified (no pinAttributes set)
+All pins on D10 are underspecified (no pinAttributes set)
+All pins on D11 are underspecified (no pinAttributes set)
+All pins on J2 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on Q3 are underspecified (no pinAttributes set)
+All pins on Q4 are underspecified (no pinAttributes set)
+All pins on Q5 are underspecified (no pinAttributes set)
+J1 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+U3 has no pin with requires_power=true
+D1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+SW2 has no pin with requires_power=true
+Q6 has no pin with requires_power=true
+Q7 has no pin with requires_power=true
+Q8 has no pin with requires_power=true
+U4 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+RV1 has no pin with requires_power=true
+SW1 has no pin with requires_power=true
+U8 has no pin with requires_power=true
+U10 has no pin with requires_power=true
+D10 has no pin with requires_power=true
+D11 has no pin with requires_power=true
+J2 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Q3 has no pin with requires_power=true
+Q4 has no pin with requires_power=true
+Q5 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+D1 has no pin with requires_ground=true
+D2 has no pin with requires_ground=true
+SW2 has no pin with requires_ground=true
+Q6 has no pin with requires_ground=true
+Q7 has no pin with requires_ground=true
+Q8 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+RV1 has no pin with requires_ground=true
+SW1 has no pin with requires_ground=true
+U8 has no pin with requires_ground=true
+D10 has no pin with requires_ground=true
+D11 has no pin with requires_ground=true
+J2 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+Q3 has no pin with requires_ground=true
+Q4 has no pin with requires_ground=true
+Q5 has no pin with requires_ground=true
+D1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q6 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q7 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+RV1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+U8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D10 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D11 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q3 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q4 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q5 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <chip#728(.dump>.Q5) /> (jlcpcb:C7420353): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#725(.dump>.R49) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#723(.dump>.Q4) /> (jlcpcb:C7420353): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#720(.dump>.R72) /> (jlcpcb:C2991665): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#717(.dump>.R71) /> (jlcpcb:C2991665): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#714(.dump>.R70) /> (jlcpcb:C2991665): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#711(.dump>.R69) /> (jlcpcb:C2991665): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#708(.dump>.R48) /> (jlcpcb:C2991665): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#705(.dump>.R47) /> (jlcpcb:C2991665): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#702(.dump>.R46) /> (jlcpcb:C2991665): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#699(.dump>.R45) /> (jlcpcb:C2991665): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#697(.dump>.Q3) /> (jlcpcb:C20917): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#694(.dump>.D9) /> (jlcpcb:C2103): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#691(.dump>.R44) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#688(.dump>.R43) /> (jlcpcb:C21190): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#685(.dump>.R42) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#682(.dump>.R41) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#680(.dump>.Q2) /> (jlcpcb:C53444): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#675(.motor>.TP7) /> (jlcpcb:C2906768): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <led#672(.motor>.LED1) /> (jlcpcb:C2986030): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#669(.motor>.R54) /> (jlcpcb:C25890): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#666(.motor>.J2) /> (jlcpcb:C395849): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#664(.motor>.D11) /> (jlcpcb:C211759): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#662(.motor>.D10) /> (jlcpcb:C211759): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#659(.motor>.C29) /> (jlcpcb:C403725): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#656(.motor>.C28) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#653(.motor>.C27) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#650(.motor>.C26) /> (jlcpcb:C21122): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#647(.motor>.R51) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#644(.motor>.R50) /> (jlcpcb:C25890): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#626(.motor>.U10) /> (jlcpcb:C1855818): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#620(.protection>.C25) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#617(.protection>.R40) /> (jlcpcb:C22935): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#614(.protection>.R65) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#611(.protection>.R39) /> (jlcpcb:C4184): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#608(.protection>.D8) /> (jlcpcb:C8598): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#605(.protection>.R34) /> (jlcpcb:C21190): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#602(.protection>.R33) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#599(.protection>.R32) /> (jlcpcb:C23348): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#590(.protection>.U9) /> (jlcpcb:C67470): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#587(.protection>.R31) /> (jlcpcb:C22975): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#585(.protection>.U8) /> (jlcpcb:C23892): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <led#578(.controls>.LED3) /> (jlcpcb:C2986030): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <led#575(.controls>.LED2) /> (jlcpcb:C2986030): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#572(.controls>.R30) /> (jlcpcb:C21190): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#569(.controls>.R29) /> (jlcpcb:C21190): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#565(.controls>.SW1) /> (jlcpcb:C908270): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#562(.controls>.C23) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#559(.controls>.C22) /> (jlcpcb:C57112): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#556(.controls>.C21) /> (jlcpcb:C440183): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#553(.controls>.R26) /> (jlcpcb:C23138): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#550(.controls>.D7) /> (jlcpcb:C8598): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#547(.controls>.D6) /> (jlcpcb:C8598): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#544(.controls>.R25) /> (jlcpcb:C23138): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#542(.controls>.RV1) /> (jlcpcb:C5710902): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#533(.controls>.U6) /> (jlcpcb:C6986): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#527(.buck>.R24) /> (jlcpcb:C25803): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#524(.buck>.R68) /> (jlcpcb:C2074262): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#521(.buck>.R23) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#518(.buck>.C20) /> (jlcpcb:C1653): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#515(.buck>.C19) /> (jlcpcb:C21122): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#512(.buck>.R22) /> (jlcpcb:C22967): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#509(.buck>.R21) /> (jlcpcb:C22790): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#506(.buck>.R20) /> (jlcpcb:C22956): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#503(.buck>.R19) /> (jlcpcb:C4184): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#500(.buck>.R55) /> (jlcpcb:C23186): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#497(.buck>.R18) /> (jlcpcb:C25803): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#494(.buck>.R17) /> (jlcpcb:C22815): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#491(.buck>.C18) /> (jlcpcb:C178373): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#488(.buck>.C17) /> (jlcpcb:C403725): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#485(.buck>.C16) /> (jlcpcb:C403725): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#482(.buck>.C15) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#479(.buck>.C14) /> (jlcpcb:C138687): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#476(.buck>.C13) /> (jlcpcb:C138687): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#473(.buck>.C12) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#470(.buck>.L1) /> (jlcpcb:C285788): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#467(.buck>.D5) /> (jlcpcb:C22452): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#457(.buck>.U5) /> (jlcpcb:C44377): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#451(.input>.C11) /> (jlcpcb:C77083): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#448(.input>.C10) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#445(.input>.C9) /> (jlcpcb:C21122): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#442(.input>.R16) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#439(.input>.R13) /> (jlcpcb:C23215): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#436(.input>.R12) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#433(.input>.R11) /> (jlcpcb:C4184): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#430(.input>.R10) /> (jlcpcb:C22815): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#427(.input>.R9) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#424(.input>.R8) /> (jlcpcb:C25803): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#421(.input>.R7) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#418(.input>.R6) /> (jlcpcb:C4184): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#415(.input>.R5) /> (jlcpcb:C23162): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#413(.input>.Q1) /> (jlcpcb:C7420353): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#391(.input>.U4) /> (jlcpcb:C1849461): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#388(.input>.D4) /> (jlcpcb:C22452): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#383(.pdhost>.TP4) /> (jlcpcb:C2906768): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#381(.pdhost>.TP3) /> (jlcpcb:C2906768): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#379(.pdhost>.TP2) /> (jlcpcb:C2906768): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#377(.pdhost>.TP1) /> (jlcpcb:C2906768): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#374(.pdhost>.C34) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#371(.pdhost>.R67) /> (jlcpcb:C95204): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#368(.pdhost>.R66) /> (jlcpcb:C855559): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#365(.pdhost>.R64) /> (jlcpcb:C25803): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#362(.pdhost>.R63) /> (jlcpcb:C25803): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#360(.pdhost>.Q8) /> (jlcpcb:C20917): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#358(.pdhost>.Q7) /> (jlcpcb:C20917): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#355(.pdhost>.R62) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#352(.pdhost>.C33) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#349(.pdhost>.R61) /> (jlcpcb:C95204): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#346(.pdhost>.R60) /> (jlcpcb:C855559): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#343(.pdhost>.R59) /> (jlcpcb:C25803): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#340(.pdhost>.R58) /> (jlcpcb:C25803): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#338(.pdhost>.Q6) /> (jlcpcb:C7420353): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#335(.pdhost>.R57) /> (jlcpcb:C844918): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#332(.pdhost>.R56) /> (jlcpcb:C25803): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#329(.pdhost>.C32) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#326(.pdhost>.C31) /> (jlcpcb:C77083): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#323(.pdhost>.C30) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#318(.pdhost>.SW2) /> (jlcpcb:C3293142): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#297(.pdhost>.U11) /> (jlcpcb:C529330): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#292(.usb>.TP6) /> (jlcpcb:C2906768): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#290(.usb>.TP5) /> (jlcpcb:C2906768): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#287(.usb>.R4) /> (jlcpcb:C25803): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#284(.usb>.R3) /> (jlcpcb:C23162): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#281(.usb>.R2) /> (jlcpcb:C23162): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#278(.usb>.C8) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#275(.usb>.C7) /> (jlcpcb:C77083): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#272(.usb>.C6) /> (jlcpcb:C77083): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#269(.usb>.C5) /> (jlcpcb:C19666): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#266(.usb>.C4) /> (jlcpcb:C19666): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#263(.usb>.C3) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#260(.usb>.C2) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#257(.usb>.C1) /> (jlcpcb:C77083): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#254(.usb>.D3) /> (jlcpcb:C2109): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#251(.usb>.R1) /> (jlcpcb:C21190): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#249(.usb>.D2) /> (jlcpcb:C477999): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#247(.usb>.D1) /> (jlcpcb:C10214): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#237(.usb>.U3) /> (jlcpcb:C181239): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#227(.usb>.U2) /> (jlcpcb:C468238): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#201(.usb>.U1) /> (jlcpcb:C2678061): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#184(.usb>.J1) /> (jlcpcb:C165948): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

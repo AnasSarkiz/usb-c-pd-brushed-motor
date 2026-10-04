@@ -1,4 +1,5 @@
 #include "stm32_adc.h"
+#include "stm32_clock.h"
 
 #define RS (ADC_CR_ADCAL | ADC_CR_ADEN | ADC_CR_ADDIS | ADC_CR_ADSTART | ADC_CR_ADSTP)
 #define FLAGS (ADC_ISR_ADRDY | ADC_ISR_EOSMP | ADC_ISR_EOC | ADC_ISR_EOS | \
@@ -69,8 +70,11 @@ static bool pins_valid(const struct motor_adc *p) {
 static bool settings_valid(const struct motor_adc *p) {
   return pins_valid(p) && (p->gpio->rcc->CR & (RCC_CR_HSION | RCC_CR_HSIRDY)) ==
     (RCC_CR_HSION | RCC_CR_HSIRDY) &&
+    (p->gpio->rcc->CR & (RCC_CR_PLLON | RCC_CR_PLLRDY)) ==
+      (RCC_CR_PLLON | RCC_CR_PLLRDY) &&
+    p->gpio->rcc->PLLCFGR == MOTOR_PLL_CONFIG &&
     (p->gpio->rcc->APBENR2 & RCC_APBENR2_ADCEN) != 0 &&
-    (p->gpio->rcc->CCIPR & RCC_CCIPR_ADCSEL) == RCC_CCIPR_ADCSEL_1 &&
+    (p->gpio->rcc->CCIPR & RCC_CCIPR_ADCSEL) == RCC_CCIPR_ADCSEL_0 &&
     p->common->CCR == COMMON && p->adc->CFGR1 == 0 && p->adc->CFGR2 == 0 &&
     p->adc->SMPR == ADC_SMPR_SMP1 && p->adc->IER == 0;
 }
@@ -94,7 +98,7 @@ bool motor_adc_initialize(struct motor_adc *p) {
   if (!wait_bits(p, (struct wait_condition){&p->gpio->rcc->CR, RCC_CR_HSIRDY,
       RCC_CR_HSIRDY, started, INIT_LIMIT_US})) return fail(p);
   write_reg(p, (struct motor_adc_write){&p->gpio->rcc->CCIPR,
-    (p->gpio->rcc->CCIPR & ~RCC_CCIPR_ADCSEL) | RCC_CCIPR_ADCSEL_1});
+    (p->gpio->rcc->CCIPR & ~RCC_CCIPR_ADCSEL) | RCC_CCIPR_ADCSEL_0});
   write_reg(p, (struct motor_adc_write){&p->adc->IER, 0});
   write_reg(p, (struct motor_adc_write){&p->adc->CFGR1, 0});
   write_reg(p, (struct motor_adc_write){&p->adc->CFGR2, 0});
@@ -112,9 +116,10 @@ bool motor_adc_initialize(struct motor_adc *p) {
   if (!wait_bits(p, (struct wait_condition){&p->adc->CR, ADC_CR_ADCAL, 0, started, INIT_LIMIT_US}) ||
       !(p->adc->ISR & ADC_ISR_EOCAL)) return fail(p);
   uint32_t calibrated = p->now_us(p->context);
-  /* 1 us exceeds the required two ADC clocks at the nominal 8 MHz. */
+  /* 1 us exceeds two ADC clocks throughout the32 MHz +/-3% envelope. */
   if (!delay_us(p, (struct delay_condition){calibrated, 1, started, INIT_LIMIT_US})) return fail(p);
   write_reg(p, (struct motor_adc_write){&p->adc->ISR, ADC_ISR_ADRDY});
+  p->last_active_us = p->now_us(p->context);
   write_reg(p, (struct motor_adc_write){&p->adc->CR, ADC_CR_ADVREGEN | ADC_CR_ADEN});
   if (!wait_bits(p, (struct wait_condition){&p->adc->ISR, ADC_ISR_ADRDY,
       ADC_ISR_ADRDY, started, INIT_LIMIT_US})) return fail(p);
@@ -126,15 +131,34 @@ bool motor_adc_initialize(struct motor_adc *p) {
   p->initialized = true;
   return true;
 }
-struct channel_capture { uint32_t channel, started; uint16_t code; uint32_t completed; };
+/* DS12991 table56 permits at most100 us idle without rearm. The80 us
+ * command-time guard is conservative even with a5% slow timebase. It does
+ * not substitute for qualification of the selected ADC accuracy profile. */
+static bool rearm_if_idle(struct motor_adc *p, uint32_t started) {
+  uint32_t now = p->now_us(p->context);
+  if ((uint32_t)(now - p->last_active_us) < 80u) return true;
+  if (!configured(p) || (p->adc->CR & ADC_CR_ADSTART)) return false;
+  write_reg(p, (struct motor_adc_write){&p->adc->CR, ADC_CR_ADVREGEN | ADC_CR_ADDIS});
+  if (!wait_bits(p, (struct wait_condition){&p->adc->CR, RS, 0, started, CAPTURE_LIMIT_US}) ||
+      !settings_valid(p) || !(p->adc->CR & ADC_CR_ADVREGEN)) return false;
+  write_reg(p, (struct motor_adc_write){&p->adc->ISR, ADC_ISR_ADRDY});
+  if (p->adc->ISR & ADC_ISR_ADRDY) return false;
+  p->last_active_us = p->now_us(p->context);
+  write_reg(p, (struct motor_adc_write){&p->adc->CR, ADC_CR_ADVREGEN | ADC_CR_ADEN});
+  return wait_bits(p, (struct wait_condition){&p->adc->ISR, ADC_ISR_ADRDY,
+    ADC_ISR_ADRDY, started, CAPTURE_LIMIT_US}) && configured(p);
+}
+struct channel_capture { uint32_t channel, started; uint16_t code; uint32_t command_started, completed; };
 static bool capture_channel(struct motor_adc *p, struct channel_capture *c) {
-  if (!configured(p) || (p->adc->ISR & ADC_ISR_OVR)) return false;
+  if (!configured(p) || (p->adc->ISR & ADC_ISR_OVR) || !rearm_if_idle(p, c->started)) return false;
   write_reg(p, (struct motor_adc_write){&p->adc->ISR, CONVERSION_FLAGS});
   if (p->adc->ISR & CONVERSION_FLAGS) return false;
   write_reg(p, (struct motor_adc_write){&p->adc->CHSELR, c->channel});
   if (!wait_bits(p, (struct wait_condition){&p->adc->ISR, ADC_ISR_CCRDY,
       ADC_ISR_CCRDY, c->started, CAPTURE_LIMIT_US}) || p->adc->CHSELR != c->channel)
     return false;
+  p->last_active_us = p->now_us(p->context);
+  c->command_started = p->last_active_us;
   write_reg(p, (struct motor_adc_write){&p->adc->CR,
     ADC_CR_ADVREGEN | ADC_CR_ADSTART});
   if (!wait_bits(p, (struct wait_condition){&p->adc->ISR, ADC_ISR_EOC | ADC_ISR_EOS,
@@ -157,10 +181,15 @@ struct motor_adc_sample motor_adc_capture(struct motor_adc *p) {
     .started_us = p->now_us(p->context)};
   const uint32_t channels[3] = {ADC_CHSELR_CHSEL0, ADC_CHSELR_CHSEL1, ADC_CHSELR_CHSEL13};
   uint16_t codes[3];
-  for (unsigned i = 0; i < 3; ++i) {
+  /* VREF first, VBUS next, VM last: fastest possible fresh motor observation.
+   * Array identities remain VBUS=0, VM=1, VREF=2. Frame START is preserved. */
+  const unsigned order[3] = {2, 0, 1};
+  for (unsigned position = 0; position < 3; ++position) {
+    const unsigned i = order[position];
     struct channel_capture c = {.channel = channels[i], .started = result.started_us};
     if (!capture_channel(p, &c)) { (void)fail(p); return invalid; }
-    codes[i] = c.code; result.channel_completed_us[i] = c.completed;
+    codes[i] = c.code; result.channel_started_us[i] = c.command_started;
+    result.channel_completed_us[i] = c.completed;
   }
   result.completed_us = p->now_us(p->context);
   if (!codes[2] || !configured(p) || (p->adc->ISR & ADC_ISR_OVR) ||

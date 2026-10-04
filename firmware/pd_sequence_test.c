@@ -175,6 +175,10 @@ int main(void) {
   }};
   CHECK(!pd_sequence_begin(&sequence, &request));
   request.plan.motor_voltage_v=9;
+  CHECK(!pd_sequence_begin(&sequence, &request)); /* 9 V/15 V also lacks reserve. */
+  request.plan.voltage_mv=20000;
+  request.plan.sink_pdo=(400u<<10)|300u;
+  request.plan.source_pdo=(400u<<10)|300u;
   CHECK(pd_sequence_begin(&sequence, &request));
   struct pd_sequence_sample sample = {.adc_valid=true, .selector_bits=1,
     .observation={.attached=true, .communication_ok=true, .source_generation=1,.vbus=exact(5000),.motor_rail=exact(0)}};

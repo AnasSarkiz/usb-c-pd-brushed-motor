@@ -1,0 +1,15 @@
+49 | const sourceHashes = await Promise.all(sourcePaths.map(async (path) => ({ path, sha256: createHash("sha256").update(await readFile(path)).digest("hex") })))
+50 | const gcc = "/opt/homebrew/bin/arm-none-eabi-gcc"
+51 | const common = ["-mcpu=cortex-m0plus", "-mthumb", "-std=c11", "-Os", "-ffreestanding", "-fno-builtin", "-fno-common", "-ffunction-sections", "-fdata-sections", "-fno-unwind-tables", "-fno-asynchronous-unwind-tables", "-fstack-usage", "-Wall", "-Wextra", "-Werror", `-ffile-prefix-map=${process.cwd()}=.`, "-Ifirmware", "-Ifirmware/vendor/stm32g0/Include", "-Ifirmware/vendor/cmsis/Core/Include"]
+52 | function run(command: string, argumentsList: string[]) {
+53 |   const result = spawnSync(command, argumentsList, { encoding: "utf8" })
+54 |   if (result.status !== 0) throw new Error(`${command} failed (${result.status}): ${result.stdout}${result.stderr}`)
+                                          ^
+error: /opt/homebrew/bin/arm-none-eabi-gcc failed (1): /opt/homebrew/opt/arm-none-eabi-binutils/bin/arm-none-eabi-ld: warning: _clzdi2.o: missing .note.GNU-stack section implies executable stack
+/opt/homebrew/opt/arm-none-eabi-binutils/bin/arm-none-eabi-ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+collect2: error: ld returned 1 exit status
+
+      at run (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/build-firmware.ts:54:38)
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/build-firmware.ts:63:1
+
+Bun v1.3.9 (macOS arm64)

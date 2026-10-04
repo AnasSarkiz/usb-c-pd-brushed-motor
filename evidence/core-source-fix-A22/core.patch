@@ -1,0 +1,170 @@
+diff --git a/lib/components/primitive-components/Hole.ts b/lib/components/primitive-components/Hole.ts
+index f8a91dd..2251a0f 100644
+--- a/lib/components/primitive-components/Hole.ts
++++ b/lib/components/primitive-components/Hole.ts
+@@ -54,7 +54,8 @@ export class Hole extends PrimitiveComponent<typeof holeProps> {
+     const isCoveredWithSolderMask = props.coveredWithSolderMask ?? false
+     const pcb_component_id =
+       this.parent?.pcb_component_id ??
+-      this.getPrimitiveContainer()?.pcb_component_id
++      this.getPrimitiveContainer()?.pcb_component_id ??
++      undefined
+ 
+     this.emitSolderMaskMarginWarning(isCoveredWithSolderMask, soldermaskMargin)
+ 
+diff --git a/lib/components/primitive-components/PlatedHole.ts b/lib/components/primitive-components/PlatedHole.ts
+index bb78e15..c1fd994 100644
+--- a/lib/components/primitive-components/PlatedHole.ts
++++ b/lib/components/primitive-components/PlatedHole.ts
+@@ -127,11 +127,20 @@ export class PlatedHole extends PrimitiveComponent<typeof platedHoleProps> {
+     const position = this._getGlobalPcbPositionBeforeLayout()
+     const pcb_component_id =
+       this.parent?.pcb_component_id ??
+-      this.getPrimitiveContainer()?.pcb_component_id!
++      this.getPrimitiveContainer()?.pcb_component_id ??
++      undefined
+     const subcircuit = this.getSubcircuit()
+     const platedHoleLayers = this.getAvailablePcbLayers()
+     const soldermaskMargin = props.solderMaskMargin
+     const isCoveredWithSolderMask = props.coveredWithSolderMask ?? false
++    const solderPasteSelection =
++      this.root?._getBoard()?._parsedProps.pcbPlatedHoleSolderPaste ?? "both"
++    const solderPasteLayers: Array<"top" | "bottom"> =
++      solderPasteSelection === "none"
++        ? []
++        : solderPasteSelection === "both"
++          ? ["top", "bottom"]
++          : [solderPasteSelection]
+ 
+     this.emitSolderMaskMarginWarning(isCoveredWithSolderMask, soldermaskMargin)
+ 
+@@ -161,26 +170,17 @@ export class PlatedHole extends PrimitiveComponent<typeof platedHoleProps> {
+       })
+ 
+       this.pcb_plated_hole_id = pcb_plated_hole.pcb_plated_hole_id
+-      db.pcb_solder_paste.insert({
+-        layer: "top",
+-        shape: "circle",
+-        // @ts-ignore: no idea why this is triggering
+-        radius: props.outerDiameter / 2,
+-        x: position.x,
+-        y: position.y,
+-        subcircuit_id: subcircuit?.subcircuit_id ?? undefined,
+-        pcb_group_id: this.getGroup()?.pcb_group_id ?? undefined,
+-      })
+-      db.pcb_solder_paste.insert({
+-        layer: "bottom",
+-        shape: "circle",
+-        // @ts-ignore: no idea why this is triggering
+-        radius: props.outerDiameter / 2,
+-        x: position.x,
+-        y: position.y,
+-        subcircuit_id: subcircuit?.subcircuit_id ?? undefined,
+-        pcb_group_id: this.getGroup()?.pcb_group_id ?? undefined,
+-      })
++      for (const layer of solderPasteLayers)
++        db.pcb_solder_paste.insert({
++          layer,
++          shape: "circle",
++          // @ts-ignore: no idea why this is triggering
++          radius: props.outerDiameter / 2,
++          x: position.x,
++          y: position.y,
++          subcircuit_id: subcircuit?.subcircuit_id ?? undefined,
++          pcb_group_id: this.getGroup()?.pcb_group_id ?? undefined,
++        })
+     } else if (props.shape === "pill" && props.rectPad) {
+       const pcb_plated_hole = db.pcb_plated_hole.insert({
+         pcb_component_id,
+@@ -235,51 +235,31 @@ export class PlatedHole extends PrimitiveComponent<typeof platedHoleProps> {
+ 
+       this.pcb_plated_hole_id = pcb_plated_hole.pcb_plated_hole_id
+       if (props.shape === "pill") {
+-        db.pcb_solder_paste.insert({
+-          layer: "top",
+-          shape: "rotated_pill",
+-          radius: Math.min(props.outerWidth, props.outerHeight) / 2,
+-          ccw_rotation: finalRotationDegrees,
+-          width: props.outerWidth,
+-          height: props.outerHeight,
+-          x: position.x,
+-          y: position.y,
+-          subcircuit_id: subcircuit?.subcircuit_id ?? undefined,
+-          pcb_group_id: this.getGroup()?.pcb_group_id ?? undefined,
+-        })
+-        db.pcb_solder_paste.insert({
+-          layer: "bottom",
+-          shape: "rotated_pill",
+-          radius: Math.min(props.outerWidth, props.outerHeight) / 2,
+-          ccw_rotation: finalRotationDegrees,
+-          width: props.outerWidth,
+-          height: props.outerHeight,
+-          x: position.x,
+-          y: position.y,
+-          subcircuit_id: subcircuit?.subcircuit_id ?? undefined,
+-          pcb_group_id: this.getGroup()?.pcb_group_id ?? undefined,
+-        })
++        for (const layer of solderPasteLayers)
++          db.pcb_solder_paste.insert({
++            layer,
++            shape: "rotated_pill",
++            radius: Math.min(props.outerWidth, props.outerHeight) / 2,
++            ccw_rotation: finalRotationDegrees,
++            width: props.outerWidth,
++            height: props.outerHeight,
++            x: position.x,
++            y: position.y,
++            subcircuit_id: subcircuit?.subcircuit_id ?? undefined,
++            pcb_group_id: this.getGroup()?.pcb_group_id ?? undefined,
++          })
+       } else if (props.shape === "oval") {
+-        db.pcb_solder_paste.insert({
+-          layer: "top",
+-          shape: "oval",
+-          width: props.outerWidth,
+-          height: props.outerHeight,
+-          x: position.x,
+-          y: position.y,
+-          subcircuit_id: subcircuit?.subcircuit_id ?? undefined,
+-          pcb_group_id: this.getGroup()?.pcb_group_id ?? undefined,
+-        })
+-        db.pcb_solder_paste.insert({
+-          layer: "bottom",
+-          shape: "oval",
+-          width: props.outerWidth,
+-          height: props.outerHeight,
+-          x: position.x,
+-          y: position.y,
+-          subcircuit_id: subcircuit?.subcircuit_id ?? undefined,
+-          pcb_group_id: this.getGroup()?.pcb_group_id ?? undefined,
+-        })
++        for (const layer of solderPasteLayers)
++          db.pcb_solder_paste.insert({
++            layer,
++            shape: "oval",
++            width: props.outerWidth,
++            height: props.outerHeight,
++            x: position.x,
++            y: position.y,
++            subcircuit_id: subcircuit?.subcircuit_id ?? undefined,
++            pcb_group_id: this.getGroup()?.pcb_group_id ?? undefined,
++          })
+       }
+     } else if (props.shape === "circular_hole_with_rect_pad") {
+       const pcb_plated_hole = db.pcb_plated_hole.insert({
+diff --git a/lib/components/primitive-components/SilkscreenText.ts b/lib/components/primitive-components/SilkscreenText.ts
+index 3cf358c..f726332 100644
+--- a/lib/components/primitive-components/SilkscreenText.ts
++++ b/lib/components/primitive-components/SilkscreenText.ts
+@@ -148,7 +148,10 @@ export class SilkscreenText extends PrimitiveComponent<
+         layer: maybeFlipLayer(layer) as "top" | "bottom",
+         text: normalizeTextForCircuitJson(text),
+         ccw_rotation: rotation,
+-        pcb_component_id: container.pcb_component_id!,
++        // Match Board.updateBoardInformationSilkscreenText: standalone board
++        // artwork uses the board identity when there is no owning component.
++        pcb_component_id:
++          container.pcb_component_id ?? this.root!._getBoard()!.pcb_board_id!,
+         subcircuit_id: subcircuit?.subcircuit_id ?? undefined,
+         pcb_group_id: this.getGroup()?.pcb_group_id ?? undefined,
+         is_knockout: props.isKnockout,

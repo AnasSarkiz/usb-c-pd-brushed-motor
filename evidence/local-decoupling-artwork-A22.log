@@ -1,0 +1,15 @@
+{
+  "labels": 162,
+  "issues": [
+    "bottom:C28/C27: ink overlap/clearance",
+    "bottom:U4/R20: ink overlap/clearance",
+    "bottom:U5/R22: ink overlap/clearance",
+    "top:USB-C PD INPUT: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-28.299975200000002,\"right\":-27.499976800000002,\"bottom\":11.0500009,\"top\":11.9499991})",
+    "top:USB-C PD INPUT: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-29.7000232,\"right\":-28.9000248,\"bottom\":11.0500009,\"top\":11.9499991})",
+    "top:USB-C PD INPUT: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-24.3500232,\"right\":-23.5500248,\"bottom\":11.3000009,\"top\":12.1999991})",
+    "top:TP1 SWDIO: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-24.8999752,\"right\":-24.0999768,\"bottom\":-0.6499991,\"top\":0.24999909999999997})",
+    "top:TP1 SWDIO: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-26.3000232,\"right\":-25.5000248,\"bottom\":-0.6499991,\"top\":0.24999909999999997})",
+    "top:TP6 VBUS: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-22.750000999999997,\"right\":-21.750003,\"bottom\":9.3749543,\"top\":10.024965700000001})",
+    "top:TP6 VBUS: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-26.6999991,\"right\":-25.8000009,\"bottom\":8.8000248,\"top\":9.600023199999999})"
+  ]
+}

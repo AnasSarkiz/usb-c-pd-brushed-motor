@@ -1,0 +1,15 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/repros/repro-routed-trace-attribution-ignores-opposite-layer-pad.test.tsx:
+(pass) routed trace endpoints over a large opposite-layer pad are attributed to the correct source trace [60.25ms]
+
+tests/repros/repro-routed-net-piece-attribution.test.tsx:
+(pass) interior router pieces retain net ownership without concealing disconnected copper [24.88ms]
+
+tests/breakout/breakout-point-source-trace-ids.test.tsx:
+(pass) transparent breakout points use board source trace ids [62.08ms]
+
+ 3 pass
+ 0 fail
+ 25 expect() calls
+Ran 3 tests across 3 files. [749.00ms]

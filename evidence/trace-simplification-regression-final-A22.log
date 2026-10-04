@@ -1,0 +1,11 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/solvers/trace-simplification-preserves-duplicate-route-pieces.test.ts:
+TraceSimplificationSolver error: Error: TraceSimplificationSolver changed the preserved route set (expected 2, got 1)
+TraceSimplificationSolver error: Error: TraceSimplificationSolver changed a preserved endpoint for route "split_connection"
+(pass) duplicate connection names preserve every physical route piece and reject missing or changed endpoints [2.80ms]
+
+ 1 pass
+ 0 fail
+ 12 expect() calls
+Ran 1 test across 1 file. [71.00ms]

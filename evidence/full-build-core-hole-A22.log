@@ -1,0 +1,9 @@
+$ tsci build index.circuit.tsx --routing-disabled --pcb-png --pcb-svgs --schematic-svgs
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'resolveManufacturerPartNumber' not found in module '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/props/dist/index.js'.
+      at requestImportModule (2:1)
+
+Bun v1.3.9 (macOS arm64)
+error: script "build" exited with code 1

@@ -1,0 +1,9 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout/breakoutpoint-route.test.tsx:
+(pass) autorouter uses breakout point [314.89ms]
+
+ 1 pass
+ 0 fail
+ 8 expect() calls
+Ran 1 test across 1 file. [869.00ms]

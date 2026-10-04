@@ -1,0 +1,22 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/custom-symbol-pcb-port-selector.test.tsx:
+14 |  const port=(circuit.selectAll('port') as Port[]).find(p=>p.props.name==='pin1')!
+15 |  const selected=circuit.selectOne(port.getPortSelector(),{type:'port'}) as Port|null
+16 |  const all=circuit.selectAll('port') as Port[]
+17 | 
+18 |  const physicalPorts=all.filter(p=>p.pcb_port_id===selected?.pcb_port_id)
+19 |  expect(port.getPortSelector()).toBe('.Q1 > symbol > port.pin1')
+                                     ^
+error: expect(received).toBe(expected)
+
+Expected: ".Q1 > symbol > port.pin1"
+Received: ".Q1 > symbol.unnamed_symbol1 > port.pin1"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/features/custom-symbol-pcb-port-selector.test.tsx:19:33)
+(fail) custom JSX symbol resolves the same physical PCB port through routing selectors [36.81ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [631.00ms]

@@ -1,0 +1,92 @@
+diff --git a/README.md b/README.md
+index 6af15e3..9bec68c 100644
+--- a/README.md
++++ b/README.md
+@@ -490,6 +490,13 @@ export interface BoardProps extends Omit<
+   doubleSidedAssembly?: boolean;
+   /** Whether vias may be placed inside PCB pads */
+   isViaInPadAllowed?: boolean;
++  /**
++   * Stencil layers for plated through-hole pads: none for hand/wave soldering,
++   * top, bottom, or both for pin-in-paste. Omitted preserves legacy both-layer
++   * paste generation. Parsed unchanged; no aliases or conflicts. SMT paste is
++   * unaffected. Existing designs require no migration.
++   */
++  pcbPlatedHoleSolderPaste?: "none" | "top" | "bottom" | "both";
+   /**
+    * Whether implicit copper pours should be generated automatically. Defaults
+    * to false.
+diff --git a/generated/COMPONENT_TYPES.md b/generated/COMPONENT_TYPES.md
+index 16de76e..e68573c 100644
+--- a/generated/COMPONENT_TYPES.md
++++ b/generated/COMPONENT_TYPES.md
+@@ -1606,6 +1606,7 @@ export interface BoardProps
+   bottomSilkscreenColor?: BoardColor
+   doubleSidedAssembly?: boolean
+   isViaInPadAllowed?: boolean
++  pcbPlatedHoleSolderPaste?: "none" | "top" | "bottom" | "both"
+   automaticPoursEnabled?: boolean
+   enableViaStitching?: boolean
+   viaStitchPitch?: Distance
+@@ -1704,6 +1705,12 @@ export const boardProps = subcircuitGroupProps
+       .describe(
+         "Allows intentional via-in-pad designs to pass DRC. Omitted or false keeps via-in-pad disallowed.",
+       ),
++    pcbPlatedHoleSolderPaste: z
++      .enum(["none", "top", "bottom", "both"])
++      .optional()
++      .describe(
++        "Stencil layers for plated through-hole pads. none is for hand/wave soldering; top, bottom, or both select pin-in-paste layers. Omitted preserves legacy both-layer paste. Parsed unchanged, with no aliases or conflicts; SMT paste is unaffected and existing designs require no migration.",
++      ),
+     automaticPoursEnabled: z
+       .boolean()
+       .default(false)
+diff --git a/generated/PROPS_OVERVIEW.md b/generated/PROPS_OVERVIEW.md
+index 4d9b658..ed699a6 100644
+--- a/generated/PROPS_OVERVIEW.md
++++ b/generated/PROPS_OVERVIEW.md
+@@ -558,6 +558,13 @@ export interface BoardProps
+   doubleSidedAssembly?: boolean
+   /** Whether vias may be placed inside PCB pads */
+   isViaInPadAllowed?: boolean
++  /**
++   * Stencil layers for plated through-hole pads: none for hand/wave soldering,
++   * top, bottom, or both for pin-in-paste. Omitted preserves legacy both-layer
++   * paste generation. Parsed unchanged; no aliases or conflicts. SMT paste is
++   * unaffected. Existing designs require no migration.
++   */
++  pcbPlatedHoleSolderPaste?: "none" | "top" | "bottom" | "both"
+   /**
+    * Whether implicit copper pours should be generated automatically. Defaults
+    * to false.
+diff --git a/lib/components/board.ts b/lib/components/board.ts
+index ec5e887..031ab9a 100644
+--- a/lib/components/board.ts
++++ b/lib/components/board.ts
+@@ -148,6 +148,13 @@ export interface BoardProps
+   doubleSidedAssembly?: boolean
+   /** Whether vias may be placed inside PCB pads */
+   isViaInPadAllowed?: boolean
++  /**
++   * Stencil layers for plated through-hole pads: none for hand/wave soldering,
++   * top, bottom, or both for pin-in-paste. Omitted preserves legacy both-layer
++   * paste generation. Parsed unchanged; no aliases or conflicts. SMT paste is
++   * unaffected. Existing designs require no migration.
++   */
++  pcbPlatedHoleSolderPaste?: "none" | "top" | "bottom" | "both"
+   /**
+    * Whether implicit copper pours should be generated automatically. Defaults
+    * to false.
+@@ -253,6 +260,12 @@ export const boardProps = subcircuitGroupProps
+       .describe(
+         "Allows intentional via-in-pad designs to pass DRC. Omitted or false keeps via-in-pad disallowed.",
+       ),
++    pcbPlatedHoleSolderPaste: z
++      .enum(["none", "top", "bottom", "both"])
++      .optional()
++      .describe(
++        "Stencil layers for plated through-hole pads. none is for hand/wave soldering; top, bottom, or both select pin-in-paste layers. Omitted preserves legacy both-layer paste. Parsed unchanged, with no aliases or conflicts; SMT paste is unaffected and existing designs require no migration.",
++      ),
+     automaticPoursEnabled: z
+       .boolean()
+       .default(false)

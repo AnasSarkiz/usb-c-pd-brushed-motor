@@ -1,0 +1,17 @@
+import { expect, test } from "bun:test"
+import { boardProps } from "../lib/components/board"
+
+test("board plated-hole paste accepts explicit assembly layers and preserves omission", () => {
+  for (const pasteLayers of ["none", "top", "bottom", "both"] as const) {
+    expect(
+      boardProps.parse({ pcbPlatedHoleSolderPaste: pasteLayers })
+        .pcbPlatedHoleSolderPaste,
+    ).toBe(pasteLayers)
+  }
+  expect(boardProps.parse({}).pcbPlatedHoleSolderPaste).toBeUndefined()
+  for (const invalid of [true, false, "inner1", ["top"], null]) {
+    expect(
+      boardProps.safeParse({ pcbPlatedHoleSolderPaste: invalid }).success,
+    ).toBe(false)
+  }
+})

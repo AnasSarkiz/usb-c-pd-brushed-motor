@@ -1,0 +1,11 @@
+134 | const occupied = new Map<Reference, Bounds>()
+135 | for (const [reference, placement] of Object.entries(fixed)) {
+136 |   const bounds = componentBounds(reference, placement)
+137 |   for (const [otherReference, otherBounds] of occupied) {
+138 |     if (overlaps(bounds, otherBounds))
+139 |       throw new Error(
+                      ^
+error: Fixed overlap: R47/L1 {"left":12.812999999999988,"right":21.186999999999898,"bottom":-26.205800000000067,"top":-21.794199999999933} {"left":0.19667299999991883,"right":13.803072999999813,"bottom":-25.329999999999927,"top":-14.695399999999836}
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/plan-product-placement.ts:139:17
+
+Bun v1.3.9 (macOS arm64)

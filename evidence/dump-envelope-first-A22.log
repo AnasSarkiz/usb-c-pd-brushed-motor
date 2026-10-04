@@ -1,0 +1,20 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/motor-validation-calculations.test.ts:
+(pass) A7 voltage-aware PD policy engineering screen > 5 A advertisements remain separate from the 3 A operating request [0.58ms]
+(pass) A7 voltage-aware PD policy engineering screen > 5 V uses 15 V; 9/12 V retain reserve with 20 V
+(pass) A7 voltage-aware PD policy engineering screen > a low-power 20 V source fails despite enough nominal output watts
+(pass) A7 voltage-aware PD policy engineering screen > 5 V-only, native 12 V-only and unplugged sources inhibit
+(pass) A7 voltage-aware PD policy engineering screen > 20 V fallback fits a 9 V motor when 15 V is unavailable
+(pass) Motor and converter stress screening > running reversal can double unrestricted startup current
+(pass) Motor and converter stress screening > output capacitance cannot absorb the example rotor energy [0.34ms]
+(pass) Motor and converter stress screening > screened inductor peaks remain below the 4.5 A minimum buck limit [0.03ms]
+(pass) A7 motor-rail-powered analog clamp > reference stays biased and clamp has hysteresis in all selected modes
+(pass) Four-branch regenerative resistor screen > current headroom is retained even at the lowest clamp release
+(pass) Four-branch regenerative resistor screen > a 15 V, 100 ms pulse fits the component overload screen
+(pass) Four-branch regenerative resistor screen > continuous braking and excessive pulse length are rejected [0.56ms]
+
+ 12 pass
+ 0 fail
+ 52 expect() calls
+Ran 12 tests across 1 file. [69.00ms]

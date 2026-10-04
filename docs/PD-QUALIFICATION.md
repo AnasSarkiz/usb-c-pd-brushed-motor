@@ -1,3 +1,9 @@
+# Current A22 update
+
+A22 supersedes the older15 V/9 V policy,7.15 kOhm limit,100 nF filters and object-only runtime claims. See POWER-PROTOTYPE-A22.md and STM32-RUNTIME-A22.md for current6.98 kOhm,20 V9/12 V policy,22 pF sensing and linked inhibited runtime.
+
+---
+
 # A17 PD qualification and voltage policy
 
 2026-10-03. The user approved the MCU architecture. U11 is supplier-imported STM32G030F6P6TR / C529330, used only for power qualification. firmware/pd_policy.c is a portable policy library, tested on the host and compiled to a Cortex-M0+ object. It is **not a complete flashable firmware image**: STM32 startup, clocks, ADC/I2C, STUSB4500 transport, watchdog, option bytes and programming-pad implementation remain open.

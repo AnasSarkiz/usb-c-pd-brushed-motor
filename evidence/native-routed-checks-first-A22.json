@@ -1,0 +1,1120 @@
+{
+  "purchased": 140,
+  "traces": 304,
+  "checks": [
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U11 > .pin17 to net.MOTOR_FAULT_N is too close to .C30 > .pin1 to net.VCC3V3 (gap: 0.114mm)",
+      "pcb_trace_id": "source_net_28_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_28_mst1_0_source_net_3_mst5_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -15.951825695871282,
+        "y": -9.31871517077365
+      },
+      "pcb_port_ids": [
+        "pcb_port_105",
+        "pcb_port_375",
+        "pcb_port_116",
+        "pcb_port_118"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U11 > .pin12 to net.VOLTAGE_DRIVE_12 is too close to .Q7 > .S to net.GND (gap: 0.175mm)",
+      "pcb_trace_id": "source_net_25_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_25_mst0_0_source_net_0_mst41_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -17.68206263486733,
+        "y": 0.19816774845962634
+      },
+      "pcb_port_ids": [
+        "pcb_port_110",
+        "pcb_port_145",
+        "pcb_port_143",
+        "pcb_port_146"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U11 > .pin9 to net.VOLTAGE_BIT_9 is too close to .U1 > .pin24 to net.VDD5 (gap: 0.183mm)",
+      "pcb_trace_id": "source_net_22_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_22_mst1_0_source_net_2_mst0_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -30.337562790389764,
+        "y": 6.832075547937361
+      },
+      "pcb_port_ids": [
+        "pcb_port_100",
+        "pcb_port_129",
+        "pcb_port_39",
+        "pcb_port_41"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U11 > .pin9 to net.VOLTAGE_BIT_9 is too close to .U1 > .pin5 to net.CC2 (gap: 0.176mm)",
+      "pcb_trace_id": "source_net_22_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_22_mst1_0_source_net_10_mst2_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -29.99756045314722,
+        "y": 6.663035114124266
+      },
+      "pcb_port_ids": [
+        "pcb_port_100",
+        "pcb_port_129",
+        "pcb_port_20",
+        "pcb_port_61"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U11 > .pin9 to net.VOLTAGE_BIT_9 is too close to .J1 > .pin14 to net.GND (gap: 0.161mm)",
+      "pcb_trace_id": "source_net_22_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_22_mst1_0_source_net_0_mst54_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -30.006809991409455,
+        "y": 7.145956216358039
+      },
+      "pcb_port_ids": [
+        "pcb_port_100",
+        "pcb_port_129",
+        "pcb_port_13",
+        "pcb_port_37"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin23 to net.VREG_2V7 overlaps with .U1 > .pin18 to net.VBUS_SENSE (accidental contact)",
+      "pcb_trace_id": "source_net_18_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_18_0_source_net_15_mst1_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -28.59207126341819,
+        "y": 6.842908791767345
+      },
+      "pcb_port_ids": [
+        "pcb_port_38",
+        "pcb_port_80",
+        "pcb_port_33",
+        "pcb_port_66"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin23 to net.VREG_2V7 is too close to .U1 > .pin21 to net.VREG_1V2 (gap: 0.184mm)",
+      "pcb_trace_id": "source_net_18_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_18_0_source_net_17_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -28.556755045153867,
+        "y": 6.389909633216638
+      },
+      "pcb_port_ids": [
+        "pcb_port_38",
+        "pcb_port_80",
+        "pcb_port_36",
+        "pcb_port_78"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin23 to net.VREG_2V7 overlaps with pcb_via \"unnamed via\" (accidental contact)",
+      "pcb_trace_id": "source_net_18_0",
+      "center": {
+        "x": -28.558865097414603,
+        "y": 7.681115503729942
+      },
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_18_0_pcb_via_157",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_38",
+        "pcb_port_80"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin21 to net.VREG_1V2 is too close to .J1 > .pin14 to net.GND (gap: 0.187mm)",
+      "pcb_trace_id": "source_net_17_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_17_0_source_net_0_mst54_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -28.63731919873711,
+        "y": 4.197168382386405
+      },
+      "pcb_port_ids": [
+        "pcb_port_36",
+        "pcb_port_78",
+        "pcb_port_13",
+        "pcb_port_37"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin21 to net.VREG_1V2 is too close to .J1 > .pin13 to net.GND (gap: 0.189mm)",
+      "pcb_trace_id": "source_net_17_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_17_0_source_net_0_mst65_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -28.630992965620976,
+        "y": 4.190275517409889
+      },
+      "pcb_port_ids": [
+        "pcb_port_36",
+        "pcb_port_78",
+        "pcb_port_12",
+        "pcb_port_37"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin21 to net.VREG_1V2 is too close to .U1 > .pin18 to net.VBUS_SENSE (gap: 0.113mm)",
+      "pcb_trace_id": "source_net_17_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_17_0_source_net_15_mst1_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -28.28982242607001,
+        "y": 6.452272491978409
+      },
+      "pcb_port_ids": [
+        "pcb_port_36",
+        "pcb_port_78",
+        "pcb_port_33",
+        "pcb_port_66"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin16 to net.PD_ENABLE_N is too close to .J1 > .pin14 to net.GND (gap: 0.191mm)",
+      "pcb_trace_id": "source_net_14_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_14_mst1_0_source_net_0_mst54_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -30.71587006562386,
+        "y": 7.7649093436440655
+      },
+      "pcb_port_ids": [
+        "pcb_port_31",
+        "pcb_port_107",
+        "pcb_port_13",
+        "pcb_port_37"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin8 to net.SDA is too close to .U1 > .pin7 to net.SCL (gap: 0.102mm)",
+      "pcb_trace_id": "source_net_13_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_13_mst1_0_source_net_12_mst0_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -24.2389532343951,
+        "y": 2.3259256150107275
+      },
+      "pcb_port_ids": [
+        "pcb_port_23",
+        "pcb_port_93",
+        "pcb_port_22",
+        "pcb_port_85"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin8 to net.SDA is too close to .U1 > .pin7 to net.SCL (gap: 0.119mm)",
+      "pcb_trace_id": "source_net_13_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_13_mst1_0_source_net_12_mst1_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -24.231228960080593,
+        "y": 2.322199626463103
+      },
+      "pcb_port_ids": [
+        "pcb_port_23",
+        "pcb_port_93",
+        "pcb_port_22",
+        "pcb_port_92"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin8 to net.SDA overlaps with pcb_smtpad \"U1.SCL\" (accidental contact)",
+      "pcb_trace_id": "source_net_13_mst1_0",
+      "center": {
+        "x": -24.307656494715065,
+        "y": 2.749773055592096
+      },
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_13_mst1_0_pcb_smtpad_18",
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_23",
+        "pcb_port_93",
+        "pcb_port_22"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin5 to net.CC2 overlaps with .J1 > .pin14 to net.GND (accidental contact)",
+      "pcb_trace_id": "source_net_10_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_10_mst2_0_source_net_0_mst54_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -29.592492782475546,
+        "y": 6.912268209330355
+      },
+      "pcb_port_ids": [
+        "pcb_port_20",
+        "pcb_port_61",
+        "pcb_port_13",
+        "pcb_port_37"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .J1 > .pin6 to net.CC1 is too close to .U1 > .pin24 to net.VDD5 (gap: 0.177mm)",
+      "pcb_trace_id": "source_net_9_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_9_mst1_0_source_net_2_mst0_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -30.868177250243242,
+        "y": 5.301820020443375
+      },
+      "pcb_port_ids": [
+        "pcb_port_5",
+        "pcb_port_16",
+        "pcb_port_39",
+        "pcb_port_41"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .C30 > .pin1 to net.VCC3V3 overlaps with pcb_via \"unnamed via\" (accidental contact)",
+      "pcb_trace_id": "source_net_3_mst5_0",
+      "center": {
+        "x": -16.02869217207741,
+        "y": -9.254749986214764
+      },
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst5_0_pcb_via_109",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_116",
+        "pcb_port_118"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U11 > .pin4 to net.VCC3V3 is too close to .R4 > .pin2 to net.GND (gap: 0.181mm)",
+      "pcb_trace_id": "source_net_3_mst16_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst16_0_source_net_0_mst81_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -12.62289796189862,
+        "y": -9.325356002424122
+      },
+      "pcb_port_ids": [
+        "pcb_port_95",
+        "pcb_port_139",
+        "pcb_port_89",
+        "pcb_port_117"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U11 > .pin4 to net.VCC3V3 overlaps with pcb_via \"unnamed via\" (accidental contact)",
+      "pcb_trace_id": "source_net_3_mst16_0",
+      "center": {
+        "x": -12.892267111441692,
+        "y": -10.101870030745506
+      },
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst16_0_pcb_via_275",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_95",
+        "pcb_port_139"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U11 > .pin4 to net.VCC3V3 is too close to .C31 > .pin2 to net.GND (gap: 0.194mm)",
+      "pcb_trace_id": "source_net_3_mst16_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst16_0_source_net_0_mst68_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -12.992255928184726,
+        "y": -10.103365532777481
+      },
+      "pcb_port_ids": [
+        "pcb_port_95",
+        "pcb_port_139",
+        "pcb_port_119",
+        "pcb_port_123"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin24 to net.VDD5 overlaps with pcb_via \"unnamed via\" (accidental contact)",
+      "pcb_trace_id": "source_net_2_mst0_0",
+      "center": {
+        "x": -30.625909039358287,
+        "y": 7.130697112165531
+      },
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_2_mst0_0_pcb_via_273",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_39",
+        "pcb_port_41"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .pin24 to net.VDD5 is too close to .J1 > .pin13 to net.GND (gap: 0.182mm)",
+      "pcb_trace_id": "source_net_2_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_2_mst0_0_source_net_0_mst65_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -30.725276916125736,
+        "y": 7.119471023499868
+      },
+      "pcb_port_ids": [
+        "pcb_port_39",
+        "pcb_port_41",
+        "pcb_port_12",
+        "pcb_port_37"
+      ]
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_pour_short_pcb_copper_pour_0_source_net_6_mst7_0",
+      "error_type": "pcb_placement_error",
+      "message": "Copper pour unnamed copper pour (GND) shorts to .L1 > .pin2 to net.VM on top (accidental copper contact)",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_pour_short_pcb_copper_pour_0_source_net_4_mst6_0",
+      "error_type": "pcb_placement_error",
+      "message": "Copper pour unnamed copper pour (GND) shorts to .R8 > .pin1 to net.EFUSE_IN on top (accidental copper contact)",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_72_source_net_46_mst1_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad C5.pin2 and trace .R22 > .pin1 to net.COMP are too close (clearance: 0.189mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_72",
+      "pcb_trace_id": "source_net_46_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.18932789877481646,
+      "center": {
+        "x": 13.687780640263238,
+        "y": -14.20536085061259
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_207_source_net_34_mst1_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad C11.pin2 and trace .U4 > .pin7 to net.INPUT_UV are too close (clearance: 0.187mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_207",
+      "pcb_trace_id": "source_net_34_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1869020462270162,
+      "center": {
+        "x": -28.67563910033064,
+        "y": -19.201546728215842
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_208_source_net_34_mst1_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad C11.pin1 and trace .U4 > .pin7 to net.INPUT_UV are too close (clearance: 0.194mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_208",
+      "pcb_trace_id": "source_net_34_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1939152461560604,
+      "center": {
+        "x": -27.324337106070075,
+        "y": -18.801959791023492
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_116_source_net_20_mst2_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad C32.pin2 and trace .U11 > .pin7 to net.ADC_VBUS are too close (clearance: 0.195mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_116",
+      "pcb_trace_id": "source_net_20_mst2_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.19465270863774695,
+      "center": {
+        "x": -14.950246521777828,
+        "y": -3.5973012398221704
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_36_source_net_13_mst1_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad U1.EP and trace .U1 > .pin8 to net.SDA are too close (clearance: 0.121mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_36",
+      "pcb_trace_id": "source_net_13_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1210304942479091,
+      "center": {
+        "x": -24.526787552876044,
+        "y": 3.070444615389326
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_17_source_net_13_mst1_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad U1.RESET and trace .U1 > .pin8 to net.SDA are too close (clearance: 0.195mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_17",
+      "pcb_trace_id": "source_net_13_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.19464705372125038,
+      "center": {
+        "x": -24.539425884577412,
+        "y": 2.3193396016279917
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_78_source_net_6_mst13_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad C8.pin2 and trace .L1 > .pin2 to net.VM are too close (clearance: 0.191mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_78",
+      "pcb_trace_id": "source_net_6_mst13_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1911926756699188,
+      "center": {
+        "x": 14.439784582112623,
+        "y": -18.20442846216504
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_88_source_net_3_mst5_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad U11.PB7 and trace .C30 > .pin1 to net.VCC3V3 are too close (clearance: 0.188mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_88",
+      "pcb_trace_id": "source_net_3_mst5_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.187982535373881,
+      "center": {
+        "x": -16.22788999383284,
+        "y": -9.101604690454327
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_133_source_net_3_mst13_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad C33.pin2 and trace .C30 > .pin1 to net.VCC3V3 are too close (clearance: 0.195mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_133",
+      "pcb_trace_id": "source_net_3_mst13_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.19465607487848394,
+      "center": {
+        "x": -9.797301860893839,
+        "y": -7.6505167398654805
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_42_source_net_1_mst0_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad U2.DELAY and trace .U2 > .pin5 to net.VBUS are too close (clearance: 0.164mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_42",
+      "pcb_trace_id": "source_net_1_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.16366705676398885,
+      "center": {
+        "x": -33.21825068924643,
+        "y": 14.678641644964959
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_43_source_net_1_mst0_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad U2.NC and trace .U2 > .pin5 to net.VBUS are too close (clearance: 0.155mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_43",
+      "pcb_trace_id": "source_net_1_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1550256677751216,
+      "center": {
+        "x": -33.2225710018829,
+        "y": 15.328570202494156
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_45_source_net_1_mst0_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad U2.EP and trace .U2 > .pin5 to net.VBUS are too close (clearance: 0.182mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_45",
+      "pcb_trace_id": "source_net_1_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.18171792641870751,
+      "center": {
+        "x": -32.840857463209346,
+        "y": 14.326302903947008
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_51_source_net_1_mst1_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad U3.DELAY and trace .U3 > .pin5 to net.VBUS are too close (clearance: 0.164mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_51",
+      "pcb_trace_id": "source_net_1_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.16366705676397808,
+      "center": {
+        "x": -26.21825068924644,
+        "y": 14.678641644964959
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_52_source_net_1_mst1_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad U3.NC and trace .U3 > .pin5 to net.VBUS are too close (clearance: 0.155mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_52",
+      "pcb_trace_id": "source_net_1_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.15502566777511095,
+      "center": {
+        "x": -26.222571001882898,
+        "y": 15.328570202494152
+      }
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pad_trace_clearance_pcb_smtpad_54_source_net_1_mst1_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad U3.EP and trace .U3 > .pin5 to net.VBUS are too close (clearance: 0.182mm, minimum: 0.2mm)",
+      "pcb_pad_id": "pcb_smtpad_54",
+      "pcb_trace_id": "source_net_1_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.18171792641872173,
+      "center": {
+        "x": -25.84085746320936,
+        "y": 14.326302903947004
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_109_source_net_16_mst0_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U11 > .pin3 to net.PD_ALERT_N are too close (clearance: 0.064mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_109",
+      "pcb_trace_id": "source_net_16_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.06431047721755503,
+      "center": {
+        "x": -15.626021981988185,
+        "y": -9.680495766071818
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_110_source_net_16_mst0_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U11 > .pin3 to net.PD_ALERT_N are too close (clearance: 0.035mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_110",
+      "pcb_trace_id": "source_net_16_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.035165123247949986,
+      "center": {
+        "x": -15.535728412217093,
+        "y": -9.927093637408065
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_120_source_net_25_mst0_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U11 > .pin12 to net.VOLTAGE_DRIVE_12 are too close (clearance: 0.034mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_120",
+      "pcb_trace_id": "source_net_25_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.033631581130434934,
+      "center": {
+        "x": -17.95351368588358,
+        "y": 0.014818309850841739
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_129_source_net_10_mst2_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin5 to net.CC2 are too close (clearance: 0.138mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_129",
+      "pcb_trace_id": "source_net_10_mst2_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.13832027083936163,
+      "center": {
+        "x": -29.97644128087967,
+        "y": 6.455045554190887
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_129_source_net_2_mst0_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin24 to net.VDD5 are too close (clearance: 0.078mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_129",
+      "pcb_trace_id": "source_net_2_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.07790961734180998,
+      "center": {
+        "x": -30.59334255069595,
+        "y": 6.611051017883232
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_132_source_net_1_mst9_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .R1 > .pin1 to net.VBUS are too close (clearance: 0.104mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_132",
+      "pcb_trace_id": "source_net_1_mst9_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.10405837264377973,
+      "center": {
+        "x": -12.90397330595819,
+        "y": 1.112557925906332
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_139_source_net_2_mst0_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin24 to net.VDD5 are too close (clearance: 0.136mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_139",
+      "pcb_trace_id": "source_net_2_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.13592655962264424,
+      "center": {
+        "x": -29.288849712168574,
+        "y": 3.284133431983377
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_139_source_net_0_mst65_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .J1 > .pin13 to net.GND are too close (clearance: 0.193mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_139",
+      "pcb_trace_id": "source_net_0_mst65_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1929457436524116,
+      "center": {
+        "x": -28.948899879300434,
+        "y": 3.946355029297268
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_140_source_net_17_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin21 to net.VREG_1V2 are too close (clearance: 0.086mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_140",
+      "pcb_trace_id": "source_net_17_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.08590215345902344,
+      "center": {
+        "x": -28.847627707144206,
+        "y": 5.8087589831084525
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_140_source_net_0_mst54_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .J1 > .pin14 to net.GND are too close (clearance: 0.176mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_140",
+      "pcb_trace_id": "source_net_0_mst54_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.17566391386891858,
+      "center": {
+        "x": -29.176437124935433,
+        "y": 6.4458892836652595
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_149_source_net_18_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin23 to net.VREG_2V7 are too close (clearance: 0.16mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_149",
+      "pcb_trace_id": "source_net_18_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1595428247228501,
+      "center": {
+        "x": -29.074147075609666,
+        "y": 5.318225311786163
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_149_source_net_17_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin21 to net.VREG_1V2 are too close (clearance: 0.091mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_149",
+      "pcb_trace_id": "source_net_17_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.09080325550031124,
+      "center": {
+        "x": -28.809569052113314,
+        "y": 5.520133042037285
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_157_source_net_14_mst1_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin16 to net.PD_ENABLE_N are too close (clearance: 0.194mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_157",
+      "pcb_trace_id": "source_net_14_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.19432623444824074,
+      "center": {
+        "x": -29.011319079194035,
+        "y": 7.311513504798901
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_157_source_net_10_mst2_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin5 to net.CC2 are too close (clearance: 0.171mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_157",
+      "pcb_trace_id": "source_net_10_mst2_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.17138162117363712,
+      "center": {
+        "x": -29.23955940769897,
+        "y": 7.6467427235262155
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_159_source_net_17_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin21 to net.VREG_1V2 are too close (clearance: 0.023mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_159",
+      "pcb_trace_id": "source_net_17_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.022569232671243472,
+      "center": {
+        "x": -27.51123281997223,
+        "y": 7.154946278351309
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_174_source_net_22_mst1_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U11 > .pin9 to net.VOLTAGE_BIT_9 are too close (clearance: 0.194mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_174",
+      "pcb_trace_id": "source_net_22_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1936686040714908,
+      "center": {
+        "x": -30.67000672127162,
+        "y": 3.1590718259721413
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_175_source_net_2_mst0_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin24 to net.VDD5 are too close (clearance: 0.181mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_175",
+      "pcb_trace_id": "source_net_2_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.18128942110439708,
+      "center": {
+        "x": -30.496273244535388,
+        "y": 5.450258870489687
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_209_source_net_16_mst0_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U11 > .pin3 to net.PD_ALERT_N are too close (clearance: 0.169mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_209",
+      "pcb_trace_id": "source_net_16_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.16925294029840268,
+      "center": {
+        "x": -16.353898468535284,
+        "y": -10.639977712826088
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_209_source_net_0_mst40_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .R4 > .pin2 to net.GND are too close (clearance: 0.192mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_209",
+      "pcb_trace_id": "source_net_0_mst40_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.19182474696038157,
+      "center": {
+        "x": -15.699784948649645,
+        "y": -10.915432477949164
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_210_source_net_16_mst0_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U11 > .pin3 to net.PD_ALERT_N are too close (clearance: 0.155mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_210",
+      "pcb_trace_id": "source_net_16_mst0_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.15474084261700485,
+      "center": {
+        "x": -15.532732600212965,
+        "y": -11.650448570751358
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_210_source_net_0_mst40_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .R4 > .pin2 to net.GND are too close (clearance: 0.132mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_210",
+      "pcb_trace_id": "source_net_0_mst40_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1316195332652095,
+      "center": {
+        "x": -15.459788405356989,
+        "y": -11.18621378065292
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_266_source_net_22_mst1_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U11 > .pin9 to net.VOLTAGE_BIT_9 are too close (clearance: 0.158mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_266",
+      "pcb_trace_id": "source_net_22_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.15751772311245874,
+      "center": {
+        "x": -30.260227454055855,
+        "y": 7.891356632951157
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_267_source_net_18_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin23 to net.VREG_2V7 are too close (clearance: 0.171mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_267",
+      "pcb_trace_id": "source_net_18_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.17115434592804316,
+      "center": {
+        "x": -28.920435112076476,
+        "y": 6.489586984397759
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_267_source_net_14_mst1_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin16 to net.PD_ENABLE_N are too close (clearance: 0.172mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_267",
+      "pcb_trace_id": "source_net_14_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1724002868313589,
+      "center": {
+        "x": -29.139531755813323,
+        "y": 6.949386753664326
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_267_source_net_10_mst2_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin5 to net.CC2 are too close (clearance: 0.03mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_267",
+      "pcb_trace_id": "source_net_10_mst2_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.029599990654938374,
+      "center": {
+        "x": -29.547909861772162,
+        "y": 6.776985925547665
+      }
+    },
+    {
+      "type": "pcb_via_trace_clearance_error",
+      "pcb_via_trace_clearance_error_id": "via_trace_clearance_pcb_via_273_source_net_14_mst1_0",
+      "error_type": "pcb_via_trace_clearance_error",
+      "message": "Via unnamed via and trace .U1 > .pin16 to net.PD_ENABLE_N are too close (clearance: 0.067mm, minimum: 0.2mm)",
+      "pcb_via_id": "pcb_via_273",
+      "pcb_trace_id": "source_net_14_mst1_0",
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.06749013559303693,
+      "center": {
+        "x": -30.921259276726076,
+        "y": 7.431740149487526
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_pcb_via_110_pcb_smtpad_114",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Via unnamed via and pad C31.pin2 are too close (clearance: 0.165mm, minimum: 0.2mm)",
+      "pcb_pad_ids": [
+        "pcb_via_110",
+        "pcb_smtpad_114"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1646617471976004,
+      "center": {
+        "x": -14.957335873598801,
+        "y": -10.176930598159332
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_pcb_via_273_pcb_smtpad_11",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Via unnamed via and pad J1.A4B9 are too close (clearance: 0.176mm, minimum: 0.2mm)",
+      "pcb_pad_ids": [
+        "pcb_via_273",
+        "pcb_smtpad_11"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.17616466767691524,
+      "center": {
+        "x": -31.127724822621765,
+        "y": 6.773587976333609
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_110_pcb_via_209",
+      "message": "Vias unnamed via and unnamed via from different nets are too close together (gap: 0.173mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_110",
+        "pcb_via_209"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.17335651198073443,
+      "pcb_center": {
+        "x": -15.65460302046638,
+        "y": -10.401285712732914
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_129_pcb_via_175",
+      "message": "Vias unnamed via and unnamed via from different nets are too close together (gap: 0.097mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_129",
+        "pcb_via_175"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.09694456520538419,
+      "pcb_center": {
+        "x": -30.26924011469964,
+        "y": 6.045367613335914
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_130_pcb_via_266",
+      "message": "Vias unnamed via and unnamed via from different nets are too close together (gap: 0.187mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_130",
+        "pcb_via_266"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.18658717795636115,
+      "pcb_center": {
+        "x": -30.243791668141384,
+        "y": 8.389290565539044
+      }
+    },
+    {
+      "type": "pcb_via_clearance_error",
+      "pcb_error_id": "different_net_vias_close_pcb_via_140_pcb_via_267",
+      "message": "Vias unnamed via and unnamed via from different nets are too close together (gap: -0.024mm)",
+      "error_type": "pcb_via_clearance_error",
+      "pcb_via_ids": [
+        "pcb_via_140",
+        "pcb_via_267"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": -0.024336086131081403,
+      "pcb_center": {
+        "x": -29.115174345623743,
+        "y": 6.366852128662012
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C2074262.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C2074262/circuit.json
+Port pin1 on R68 is missing a trace
+Port pin2 on R68 is missing a trace
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

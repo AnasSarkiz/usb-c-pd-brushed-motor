@@ -1,0 +1,6 @@
+{
+  "version": "0.0.2743",
+  "dependencies.@tscircuit/core": "^0.0.2073",
+  "dependencies.@tscircuit/props": "^0.0.682",
+  "dependencies.circuit-json": "^0.0.511"
+}

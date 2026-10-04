@@ -1,0 +1,20 @@
+{
+  "revision": "A22",
+  "official_source_commit": "ba36eab999eecde4e912298f2069cc3a87e7d054",
+  "official_source_url": "https://github.com/tscircuit/props",
+  "source_fix": "Typed pcbPlatedHoleSolderPaste board assembly intent; unchanged omission default; generated API documentation.",
+  "distribution": "Canonical source build and npm pack; task-local tarball dependencies and Bun overrides; clean frozen-lockfile installation. Imported electronics and Circuit JSON schemas are unchanged.",
+  "checks": {
+    "tests": "601 complete props tests / 2068 assertions",
+    "typecheck": "passed",
+    "build": "passed",
+    "snapshots": "7 existing snapshots passed"
+  },
+  "sha256": {
+    "evidence/props-source-fix-A22/board-plated-hole-solder-paste.test.ts.txt": "599311c82bf71d56748e445b0f6e7ee3375b969bfcc0d037e95f98e8a5876827",
+    "evidence/props-source-fix-A22/props.patch": "41587c18c1bdd1a4b85a8f0789d4b80fdef0187635bca061c9f301f642bac43a",
+    "tooling/tscircuit-props-0.0.682-A22.tgz": "ebdb0602a54f64d17a84cc57e8eb3161ec2d54ff92290dd00775e74d161b4dbb",
+    "node_modules/@tscircuit/props/dist/index.js": "5c36640f1eb6c7741707662b2257b3498ec316a34db52722b3db8952ea26e97d",
+    "node_modules/@tscircuit/props/dist/index.d.ts": "0b943151c0c857be67c4928f65bd4a507b29130e48cb078eacbe1f45915e66ee"
+  }
+}

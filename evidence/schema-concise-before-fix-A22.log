@@ -1,0 +1,137 @@
+{
+  "elementCount": 4980,
+  "errorCount": 15,
+  "reportPath": "evidence/circuit-schema-A22.json",
+  "errors": [
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_hole",
+      "issues": [
+        {
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    }
+  ]
+}

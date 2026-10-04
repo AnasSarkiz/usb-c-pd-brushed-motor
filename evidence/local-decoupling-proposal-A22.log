@@ -1,0 +1,866 @@
+Preferred occupied R69 []
+R69 candidates 1
+chosen R69 {'x': -22.0, 'y': -29.5, 'ccwRotationDegrees': 0} 0
+Preferred occupied R70 []
+R70 candidates 1
+chosen R70 {'x': -12.5, 'y': -29.5, 'ccwRotationDegrees': 0} 0
+Preferred occupied R71 []
+R71 candidates 1
+chosen R71 {'x': -2.0, 'y': -29.5, 'ccwRotationDegrees': 0} 0
+Preferred occupied R72 []
+R72 candidates 1
+chosen R72 {'x': 7.5, 'y': -29.5, 'ccwRotationDegrees': 0} 0
+Preferred occupied U1 []
+U1 candidates 289
+chosen U1 {'x': -24.4, 'y': 4.0, 'ccwRotationDegrees': 0} 0
+Preferred occupied C18 []
+C18 candidates 250
+chosen C18 {'x': 25.5, 'y': -14.0, 'ccwRotationDegrees': 0} 0
+Preferred occupied R2 []
+R2 candidates 438
+chosen R2 {'x': -14.0, 'y': 6.0, 'ccwRotationDegrees': 0} 8.308593174086269
+Preferred occupied R3 [('R2', 0.161)]
+R3 candidates 842
+chosen R3 {'x': -13.0, 'y': 8.5, 'ccwRotationDegrees': 90} 10.420214589059754
+Preferred occupied D2 [('U1', 0.0)]
+D2 candidates 96
+chosen D2 {'x': -23.25, 'y': 8.75, 'ccwRotationDegrees': 0} 0
+Preferred occupied Q7 [('R68', 0.0)]
+Q7 candidates 304
+chosen Q7 {'x': -3.5, 'y': -11.25, 'ccwRotationDegrees': 0} 0
+Preferred occupied Q2 []
+Q2 candidates 833
+chosen Q2 {'x': 35.5, 'y': -11.0, 'ccwRotationDegrees': 0} 0
+Preferred occupied Q3 []
+Q3 candidates 441
+chosen Q3 {'x': 35.5, 'y': -15.0, 'ccwRotationDegrees': 0} 0
+Preferred occupied D9 [('C18', 0.091)]
+D9 candidates 534
+chosen D9 {'x': 35.0, 'y': -20.0, 'ccwRotationDegrees': 90} 0
+Preferred occupied C6 []
+C6 candidates 170
+chosen C6 {'x': -29.2, 'y': 6.5, 'ccwRotationDegrees': 90} 3.066401965901823
+Preferred occupied C7 []
+C7 candidates 45
+chosen C7 {'x': -29.2, 'y': 1.6, 'ccwRotationDegrees': 270} 2.874432864218499
+Preferred occupied C8 []
+C8 candidates 150
+chosen C8 {'x': -25.2, 'y': -0.2, 'ccwRotationDegrees': 0} 2.9921934724467536
+Preferred occupied C4 [('U2', 0.0), ('U3', 0.0)]
+C4 candidates 366
+chosen C4 {'x': -28.6, 'y': 11.5, 'ccwRotationDegrees': 0} 2.588194119045363
+Preferred occupied C5 [('TP6', 0.0), ('U3', 0.0), ('D2', 0.0)]
+C5 candidates 22
+chosen C5 {'x': -23.25, 'y': 11.75, 'ccwRotationDegrees': 180} 2.297145819302946
+Preferred occupied C2 [('U2', 0.0)]
+C2 candidates 808
+chosen C2 {'x': -36.25, 'y': 14.0, 'ccwRotationDegrees': 90} 2.239502601351692
+Preferred occupied C3 [('U3', 0.0), ('D2', 0.04), ('C4', 0.017), ('C5', 0.167)]
+C3 candidates 6
+chosen C3 {'x': -26.25, 'y': 8.5, 'ccwRotationDegrees': 270} 4.904657430600125
+Preferred occupied C16 []
+C16 candidates 24
+chosen C16 {'x': 15.2, 'y': -16.0, 'ccwRotationDegrees': 0} 4.307231196142715
+Preferred occupied C17 []
+C17 candidates 5
+chosen C17 {'x': 15.2, 'y': -19.5, 'ccwRotationDegrees': 0} 3.647223680695359
+Preferred occupied C15 [('Q7', 0.0)]
+C15 candidates 266
+chosen C15 {'x': -7.2, 'y': -13.75, 'ccwRotationDegrees': 0} 2.486371290905685
+Preferred occupied C13 []
+C13 candidates 40
+chosen C13 {'x': -9.2, 'y': -10.6, 'ccwRotationDegrees': 180} 5.643861392387309
+Preferred occupied C9 [('U4', 0.0), ('R6', 0.0)]
+C9 candidates 4
+chosen C9 {'x': -28.05, 'y': -21.0, 'ccwRotationDegrees': 180} 2.6438515261012685
+Preferred occupied C10 [('U4', 0.0), ('R62', 0.0)]
+C10 candidates 116
+chosen C10 {'x': -28.0, 'y': -16.2, 'ccwRotationDegrees': 180} 2.4299492365207964
+Preferred occupied C11 []
+C11 candidates 187
+chosen C11 {'x': -18.0, 'y': -13.8, 'ccwRotationDegrees': 0} 2.9276672083076645
+Preferred occupied R4 []
+R4 candidates 352
+chosen R4 {'x': -21.0, 'y': 0.0, 'ccwRotationDegrees': 0} 2.4394559233677007
+Preferred occupied R56 [('C31', 0.014), ('U11', 0.0)]
+R56 candidates 60
+chosen R56 {'x': -17.25, 'y': -10.7, 'ccwRotationDegrees': 0} 0
+Preferred occupied R17 [('C31', 0.0)]
+R17 candidates 20
+chosen R17 {'x': -13.45, 'y': -14.3, 'ccwRotationDegrees': 180} 2.846626963997917
+Preferred occupied R7 []
+R7 candidates 8
+chosen R7 {'x': -28.3, 'y': -18.65, 'ccwRotationDegrees': 0} 0
+Preferred occupied R8 [('Q1', 0.0), ('C9', 0.128)]
+R8 candidates 1
+chosen R8 {'x': -32.0, 'y': -22.75, 'ccwRotationDegrees': 270} 0
+Preferred occupied R9 [('Q1', 0.0), ('R6', 0.0), ('R10', 0.193)]
+R9 candidates 6
+chosen R9 {'x': -30.25, 'y': -27.75, 'ccwRotationDegrees': 90} 0
+Preferred occupied R22 []
+R22 candidates 18
+chosen R22 {'x': -9.5, 'y': -24.95, 'ccwRotationDegrees': 270} 2.4331290945578687
+Preferred occupied C20 []
+C20 candidates 9
+chosen C20 {'x': -13.3, 'y': -22.8, 'ccwRotationDegrees': 180} 3.42385843694508
+Preferred occupied C19 []
+C19 candidates 9
+chosen C19 {'x': -12.35, 'y': -25.05, 'ccwRotationDegrees': 180} 2.23212831185306
+Preferred occupied R19 [('C20', 0.231)]
+R19 candidates 8
+chosen R19 {'x': -17.05, 'y': -24.0, 'ccwRotationDegrees': 180} 6.113231508143626
+Preferred occupied R18 [('C11', 0.164)]
+R18 candidates 16
+chosen R18 {'x': -16.7, 'y': -17.0, 'ccwRotationDegrees': 270} 0
+Preferred occupied R55 []
+R55 candidates 12
+chosen R55 {'x': -16.7, 'y': -20.6, 'ccwRotationDegrees': 270} 0
+Preferred occupied R20 [('R19', 0.218)]
+R20 candidates 57
+chosen R20 {'x': -20.05, 'y': -25.4, 'ccwRotationDegrees': 270} 9.873610909428423
+Preferred occupied R21 []
+R21 candidates 11
+chosen R21 {'x': -16.1, 'y': -26.1, 'ccwRotationDegrees': 180} 6.421817302926021
+Preferred occupied C21 [('SW1', 0.0), ('U6', 0.0)]
+C21 candidates 498
+chosen C21 {'x': 4.9, 'y': 14.65, 'ccwRotationDegrees': 90} 2.576760224657312
+Preferred occupied C22 [('U6', 0.0), ('R34', 0.0)]
+C22 candidates 6
+chosen C22 {'x': 7.9, 'y': 13.25, 'ccwRotationDegrees': 0} 2.7665196277228907
+Preferred occupied C23 [('U6', 0.2), ('D6', 0.0)]
+C23 candidates 371
+chosen C23 {'x': -1.15, 'y': 13.5, 'ccwRotationDegrees': 90} 2.4977546827853216
+Preferred occupied C26 []
+C26 candidates 27
+chosen C26 {'x': 23.1, 'y': 5.5, 'ccwRotationDegrees': 0} 3.088733651906553
+Preferred occupied C27 []
+C27 candidates 50
+chosen C27 {'x': 26.0, 'y': 5.9, 'ccwRotationDegrees': 90} 2.4226396537801493
+Preferred occupied C28 []
+C28 candidates 5
+chosen C28 {'x': 28.3, 'y': 5.9, 'ccwRotationDegrees': 270} 4.392492625538717
+Preferred occupied C25 [('U9', 0.114), ('D8', 0.0)]
+C25 candidates 36
+chosen C25 {'x': 11.5, 'y': 9.95, 'ccwRotationDegrees': 180} 2.502129902817996
+[
+  {
+    "ref": "R69",
+    "placement": {
+      "x": -22.0,
+      "y": -29.5,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -26.187000000000012,
+      -31.705800000000067,
+      -17.813000000000102,
+      -27.294199999999933
+    ]
+  },
+  {
+    "ref": "R70",
+    "placement": {
+      "x": -12.5,
+      "y": -29.5,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -16.687000000000012,
+      -31.705800000000067,
+      -8.313000000000102,
+      -27.294199999999933
+    ]
+  },
+  {
+    "ref": "R71",
+    "placement": {
+      "x": -2.0,
+      "y": -29.5,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -6.187000000000012,
+      -31.705800000000067,
+      2.186999999999898,
+      -27.294199999999933
+    ]
+  },
+  {
+    "ref": "R72",
+    "placement": {
+      "x": 7.5,
+      "y": -29.5,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      3.312999999999988,
+      -31.705800000000067,
+      11.686999999999898,
+      -27.294199999999933
+    ]
+  },
+  {
+    "ref": "U1",
+    "placement": {
+      "x": -24.4,
+      "y": 4.0,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -26.999500000000033,
+      1.3944040000000086,
+      -21.800500000000078,
+      6.593404000000078
+    ]
+  },
+  {
+    "ref": "C18",
+    "placement": {
+      "x": 25.5,
+      "y": -14.0,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      18.500140500000157,
+      -19.399977000000035,
+      32.49985949999984,
+      -8.599997599999938
+    ]
+  },
+  {
+    "ref": "R2",
+    "placement": {
+      "x": -14.0,
+      "y": 6.0,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 8.308593174086269,
+    "courtyardBounds": [
+      -15.406601699999896,
+      5.317996799999946,
+      -12.593398300000217,
+      6.682003200000054
+    ]
+  },
+  {
+    "ref": "R3",
+    "placement": {
+      "x": -13.0,
+      "y": 8.5,
+      "ccwRotationDegrees": 90
+    },
+    "pinToTargetMm": 10.420214589059754,
+    "courtyardBounds": [
+      -13.682003200000054,
+      7.0933983000001035,
+      -12.317996799999946,
+      9.906601699999783
+    ]
+  },
+  {
+    "ref": "D2",
+    "placement": {
+      "x": -23.25,
+      "y": 8.75,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -24.998600000000124,
+      6.975999999999999,
+      -21.450600000000122,
+      10.524000000000001
+    ]
+  },
+  {
+    "ref": "Q7",
+    "placement": {
+      "x": -3.5,
+      "y": -11.25,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -5.248600000000124,
+      -13.024000000000001,
+      -1.7006000000001222,
+      -9.475999999999999
+    ]
+  },
+  {
+    "ref": "Q2",
+    "placement": {
+      "x": 35.5,
+      "y": -11.0,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      33.751399999999876,
+      -12.774000000000001,
+      37.29939999999988,
+      -9.225999999999999
+    ]
+  },
+  {
+    "ref": "Q3",
+    "placement": {
+      "x": 35.5,
+      "y": -15.0,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      33.751399999999876,
+      -16.774,
+      37.29939999999988,
+      -13.225999999999999
+    ]
+  },
+  {
+    "ref": "D9",
+    "placement": {
+      "x": 35.0,
+      "y": -20.0,
+      "ccwRotationDegrees": 90
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      33.860999999999876,
+      -22.409000000000106,
+      36.18979999999988,
+      -17.565600000000018
+    ]
+  },
+  {
+    "ref": "C6",
+    "placement": {
+      "x": -29.2,
+      "y": 6.5,
+      "ccwRotationDegrees": 90
+    },
+    "pinToTargetMm": 3.066401965901823,
+    "courtyardBounds": [
+      -30.3644,
+      4.294200000000046,
+      -28.06099999999999,
+      8.731199999999944
+    ]
+  },
+  {
+    "ref": "C7",
+    "placement": {
+      "x": -29.2,
+      "y": 1.6,
+      "ccwRotationDegrees": 270
+    },
+    "pinToTargetMm": 2.874432864218499,
+    "courtyardBounds": [
+      -30.33900000000001,
+      -0.6311999999999443,
+      -28.0356,
+      3.805799999999954
+    ]
+  },
+  {
+    "ref": "C8",
+    "placement": {
+      "x": -25.2,
+      "y": -0.2,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 2.9921934724467536,
+    "courtyardBounds": [
+      -26.84700000000016,
+      -1.1611999999999625,
+      -23.57839999999994,
+      0.7612000000000763
+    ]
+  },
+  {
+    "ref": "C4",
+    "placement": {
+      "x": -28.6,
+      "y": 11.5,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 2.588194119045363,
+    "courtyardBounds": [
+      -30.247000000000163,
+      10.538800000000037,
+      -26.978399999999944,
+      12.461200000000076
+    ]
+  },
+  {
+    "ref": "C5",
+    "placement": {
+      "x": -23.25,
+      "y": 11.75,
+      "ccwRotationDegrees": 180
+    },
+    "pinToTargetMm": 2.297145819302946,
+    "courtyardBounds": [
+      -24.871600000000058,
+      10.788799999999924,
+      -21.602999999999838,
+      12.711199999999963
+    ]
+  },
+  {
+    "ref": "C2",
+    "placement": {
+      "x": -36.25,
+      "y": 14.0,
+      "ccwRotationDegrees": 90
+    },
+    "pinToTargetMm": 2.239502601351692,
+    "courtyardBounds": [
+      -37.211200000000076,
+      12.352999999999838,
+      -35.28880000000004,
+      15.621600000000058
+    ]
+  },
+  {
+    "ref": "C3",
+    "placement": {
+      "x": -26.25,
+      "y": 8.5,
+      "ccwRotationDegrees": 270
+    },
+    "pinToTargetMm": 4.904657430600125,
+    "courtyardBounds": [
+      -27.211199999999963,
+      6.878399999999942,
+      -25.288799999999924,
+      10.147000000000162
+    ]
+  },
+  {
+    "ref": "C16",
+    "placement": {
+      "x": 15.2,
+      "y": -16.0,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 4.307231196142715,
+    "courtyardBounds": [
+      12.384599999999931,
+      -17.342199999999934,
+      18.015399999999953,
+      -14.657799999999952
+    ]
+  },
+  {
+    "ref": "C17",
+    "placement": {
+      "x": 15.2,
+      "y": -19.5,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 3.647223680695359,
+    "courtyardBounds": [
+      12.384599999999931,
+      -20.842199999999934,
+      18.015399999999953,
+      -18.157799999999952
+    ]
+  },
+  {
+    "ref": "C15",
+    "placement": {
+      "x": -7.2,
+      "y": -13.75,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 2.486371290905685,
+    "courtyardBounds": [
+      -8.847000000000161,
+      -14.711199999999963,
+      -5.578399999999942,
+      -12.788799999999924
+    ]
+  },
+  {
+    "ref": "C13",
+    "placement": {
+      "x": -9.2,
+      "y": -10.6,
+      "ccwRotationDegrees": 180
+    },
+    "pinToTargetMm": 5.643861392387309,
+    "courtyardBounds": [
+      -11.784895000000073,
+      -12.19999730000004,
+      -6.6151049999998115,
+      -9.000002699999959
+    ]
+  },
+  {
+    "ref": "C9",
+    "placement": {
+      "x": -28.05,
+      "y": -21.0,
+      "ccwRotationDegrees": 180
+    },
+    "pinToTargetMm": 2.6438515261012685,
+    "courtyardBounds": [
+      -29.67160000000006,
+      -21.961200000000076,
+      -26.40299999999984,
+      -20.038800000000037
+    ]
+  },
+  {
+    "ref": "C10",
+    "placement": {
+      "x": -28.0,
+      "y": -16.2,
+      "ccwRotationDegrees": 180
+    },
+    "pinToTargetMm": 2.4299492365207964,
+    "courtyardBounds": [
+      -29.621600000000058,
+      -17.161200000000076,
+      -26.352999999999838,
+      -15.238800000000037
+    ]
+  },
+  {
+    "ref": "C11",
+    "placement": {
+      "x": -18.0,
+      "y": -13.8,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 2.9276672083076645,
+    "courtyardBounds": [
+      -20.205799999999954,
+      -14.93900000000001,
+      -15.768800000000056,
+      -12.6356
+    ]
+  },
+  {
+    "ref": "R4",
+    "placement": {
+      "x": -21.0,
+      "y": 0.0,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 2.4394559233677007,
+    "courtyardBounds": [
+      -22.647000000000162,
+      -0.9103999999998678,
+      -19.378399999999942,
+      0.9103999999999814
+    ]
+  },
+  {
+    "ref": "R56",
+    "placement": {
+      "x": -17.25,
+      "y": -10.7,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -18.897000000000162,
+      -11.610399999999867,
+      -15.628399999999942,
+      -9.789600000000018
+    ]
+  },
+  {
+    "ref": "R17",
+    "placement": {
+      "x": -13.45,
+      "y": -14.3,
+      "ccwRotationDegrees": 180
+    },
+    "pinToTargetMm": 2.846626963997917,
+    "courtyardBounds": [
+      -15.071600000000057,
+      -15.210399999999982,
+      -11.802999999999837,
+      -13.389600000000133
+    ]
+  },
+  {
+    "ref": "R7",
+    "placement": {
+      "x": -28.3,
+      "y": -18.65,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -29.947000000000163,
+      -19.560399999999866,
+      -26.678399999999943,
+      -17.739600000000017
+    ]
+  },
+  {
+    "ref": "R8",
+    "placement": {
+      "x": -32.0,
+      "y": -22.75,
+      "ccwRotationDegrees": 270
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -32.91039999999987,
+      -24.371600000000058,
+      -31.08960000000002,
+      -21.102999999999838
+    ]
+  },
+  {
+    "ref": "R9",
+    "placement": {
+      "x": -30.25,
+      "y": -27.75,
+      "ccwRotationDegrees": 90
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -31.16039999999998,
+      -29.397000000000162,
+      -29.339600000000132,
+      -26.128399999999942
+    ]
+  },
+  {
+    "ref": "R22",
+    "placement": {
+      "x": -9.5,
+      "y": -24.95,
+      "ccwRotationDegrees": 270
+    },
+    "pinToTargetMm": 2.4331290945578687,
+    "courtyardBounds": [
+      -10.410399999999868,
+      -26.571600000000057,
+      -8.589600000000019,
+      -23.302999999999837
+    ]
+  },
+  {
+    "ref": "C20",
+    "placement": {
+      "x": -13.3,
+      "y": -22.8,
+      "ccwRotationDegrees": 180
+    },
+    "pinToTargetMm": 3.42385843694508,
+    "courtyardBounds": [
+      -14.921600000000058,
+      -23.761200000000077,
+      -11.652999999999839,
+      -21.838800000000038
+    ]
+  },
+  {
+    "ref": "C19",
+    "placement": {
+      "x": -12.35,
+      "y": -25.05,
+      "ccwRotationDegrees": 180
+    },
+    "pinToTargetMm": 2.23212831185306,
+    "courtyardBounds": [
+      -13.971600000000057,
+      -26.011200000000077,
+      -10.702999999999838,
+      -24.088800000000038
+    ]
+  },
+  {
+    "ref": "R19",
+    "placement": {
+      "x": -17.05,
+      "y": -24.0,
+      "ccwRotationDegrees": 180
+    },
+    "pinToTargetMm": 6.113231508143626,
+    "courtyardBounds": [
+      -18.67160000000006,
+      -24.91039999999998,
+      -15.402999999999839,
+      -23.089600000000132
+    ]
+  },
+  {
+    "ref": "R18",
+    "placement": {
+      "x": -16.7,
+      "y": -17.0,
+      "ccwRotationDegrees": 270
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -17.610399999999867,
+      -18.621600000000058,
+      -15.789600000000018,
+      -15.352999999999838
+    ]
+  },
+  {
+    "ref": "R55",
+    "placement": {
+      "x": -16.7,
+      "y": -20.6,
+      "ccwRotationDegrees": 270
+    },
+    "pinToTargetMm": 0,
+    "courtyardBounds": [
+      -17.610399999999867,
+      -22.22160000000006,
+      -15.789600000000018,
+      -18.95299999999984
+    ]
+  },
+  {
+    "ref": "R20",
+    "placement": {
+      "x": -20.05,
+      "y": -25.4,
+      "ccwRotationDegrees": 270
+    },
+    "pinToTargetMm": 9.873610909428423,
+    "courtyardBounds": [
+      -20.96039999999987,
+      -27.021600000000056,
+      -19.13960000000002,
+      -23.752999999999837
+    ]
+  },
+  {
+    "ref": "R21",
+    "placement": {
+      "x": -16.1,
+      "y": -26.1,
+      "ccwRotationDegrees": 180
+    },
+    "pinToTargetMm": 6.421817302926021,
+    "courtyardBounds": [
+      -17.72160000000006,
+      -27.010399999999983,
+      -14.45299999999984,
+      -25.189600000000134
+    ]
+  },
+  {
+    "ref": "C21",
+    "placement": {
+      "x": 4.9,
+      "y": 14.65,
+      "ccwRotationDegrees": 90
+    },
+    "pinToTargetMm": 2.576760224657312,
+    "courtyardBounds": [
+      3.938799999999924,
+      13.002999999999838,
+      5.861199999999963,
+      16.271600000000056
+    ]
+  },
+  {
+    "ref": "C22",
+    "placement": {
+      "x": 7.9,
+      "y": 13.25,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 2.7665196277228907,
+    "courtyardBounds": [
+      6.2529999999998385,
+      12.288800000000037,
+      9.521600000000058,
+      14.211200000000076
+    ]
+  },
+  {
+    "ref": "C23",
+    "placement": {
+      "x": -1.15,
+      "y": 13.5,
+      "ccwRotationDegrees": 90
+    },
+    "pinToTargetMm": 2.4977546827853216,
+    "courtyardBounds": [
+      -2.111200000000076,
+      11.852999999999838,
+      -0.18880000000003738,
+      15.121600000000058
+    ]
+  },
+  {
+    "ref": "C26",
+    "placement": {
+      "x": 23.1,
+      "y": 5.5,
+      "ccwRotationDegrees": 0
+    },
+    "pinToTargetMm": 3.088733651906553,
+    "courtyardBounds": [
+      21.45299999999984,
+      4.5388000000000375,
+      24.72160000000006,
+      6.461200000000076
+    ]
+  },
+  {
+    "ref": "C27",
+    "placement": {
+      "x": 26.0,
+      "y": 5.9,
+      "ccwRotationDegrees": 90
+    },
+    "pinToTargetMm": 2.4226396537801493,
+    "courtyardBounds": [
+      25.038799999999924,
+      4.2529999999998385,
+      26.961199999999963,
+      7.521600000000058
+    ]
+  },
+  {
+    "ref": "C28",
+    "placement": {
+      "x": 28.3,
+      "y": 5.9,
+      "ccwRotationDegrees": 270
+    },
+    "pinToTargetMm": 4.392492625538717,
+    "courtyardBounds": [
+      27.338800000000038,
+      4.278399999999943,
+      29.261200000000077,
+      7.547000000000162
+    ]
+  },
+  {
+    "ref": "C25",
+    "placement": {
+      "x": 11.5,
+      "y": 9.95,
+      "ccwRotationDegrees": 180
+    },
+    "pinToTargetMm": 2.502129902817996,
+    "courtyardBounds": [
+      9.878399999999942,
+      8.988799999999923,
+      13.147000000000162,
+      10.911199999999962
+    ]
+  }
+]

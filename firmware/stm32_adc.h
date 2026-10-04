@@ -14,12 +14,13 @@ struct motor_adc {
   /* Target performs the actual MMIO write. Tests emulate W1C/RS properties. */
   void (*write)(void *context, const struct motor_adc_write *operation);
   uint16_t factory_code;
+  uint32_t last_active_us;
   bool initialized, faulted;
 };
 struct motor_adc_clock { void *context; uint32_t (*now_us)(void *context); };
 struct motor_adc_sample {
   uint16_t vbus, vm, vrefint, factory_vref;
-  uint32_t started_us, completed_us, channel_completed_us[3];
+  uint32_t started_us, completed_us, channel_started_us[3], channel_completed_us[3];
   bool valid;
 };
 /* Requires a proven monotonic microsecond clock; no CPU-loop time substitute. */

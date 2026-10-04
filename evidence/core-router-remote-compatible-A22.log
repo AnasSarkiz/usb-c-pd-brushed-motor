@@ -1,0 +1,9 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/remote-autorouting-7-preset-config.test.tsx:
+(pass) remote-autorouter-7 with preset config [80.98ms]
+
+ 1 pass
+ 0 fail
+ 1 snapshots, 2 expect() calls
+Ran 1 test across 1 file. [682.00ms]

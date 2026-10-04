@@ -1,0 +1,26 @@
+<SchematicSheet name="dump" id="schematic_sheet_7">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="Q3" positionAnchor="center" schX="-5.36" schY="4" width="0.68" height="0.4" />
+<SchematicBoxPlacement componentName="R70" positionAnchor="center" schX="-5.5" schY="-4" width="0.6" height="0.65" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<SchematicTextCollision schematicTextId="schematic_text_68" text="Q3 · AO3400A" collidingObjectType="trace" collidingObjectId="schematic_trace_232" newSchX="-4.6" newSchY="3.35" message="Text &quot;Q3 · AO3400A&quot; overlaps trace schematic_trace_232; reposition the text to leave its visible area clear." />
+<SchematicTextCollision schematicTextId="schematic_text_69" text="Q4 · MMBT3904" collidingObjectType="trace" collidingObjectId="schematic_trace_232" newSchX="-4.6" newSchY="-0.65" message="Text &quot;Q4 · MMBT3904&quot; overlaps trace schematic_trace_232; reposition the text to leave its visible area clear." />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="usb" id="schematic_sheet_0">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="D1" positionAnchor="center" schX="10.98" schY="7.99" width="0.24" height="0.3" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="D1" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate D1 by -90° so its power-connected pin faces up and the component is vertical" />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="motor" id="schematic_sheet_6">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="D11" positionAnchor="center" schX="-11" schY="0" width="0.4" height="0.32" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="D11" railPin="pin1" railType="power" deltaSchRotation="90" suggestedRailFacingDirection="up" message="rotate D11 by 90° so its power-connected pin faces up and the component is vertical" />
+</SchematicPlacementIssues>
+</SchematicSheet>

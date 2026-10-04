@@ -1,0 +1,8 @@
+{
+  "labels": 163,
+  "issues": [
+    "top:USB-C PD/12: ink overlap/clearance",
+    "top:TP1 SWDIO: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-29.8149953,\"right\":-26.385004700000003,\"bottom\":-3.8900033,\"top\":-2.1099967})",
+    "top:TP6 VBUS: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-20.8900033,\"right\":-19.1099967,\"bottom\":10.7850047,\"top\":14.2149953})"
+  ]
+}

@@ -1,0 +1,27 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/groups/group-pcb-anchor-center.test.tsx:
+(pass) group with center anchor [703.53ms]
+
+tests/groups/group-pcb-anchor-nested.test.tsx:
+(pass) nested group with anchor positioning [793.33ms]
+
+tests/groups/group-pcb-anchor-bottom-right.test.tsx:
+(pass) group with bottom_right anchor [649.85ms]
+
+tests/groups/group-pcb-anchor.test.tsx:
+(pass) group with top_left anchor should output anchor_position and anchor_alignment [644.43ms]
+
+tests/groups/group-schematic-border.test.tsx:
+(pass) group schematic border [1056.83ms]
+
+tests/breakout/fanout-group-schema.test.tsx:
+(pass) transparent fanout groups emit valid enclosing-subcircuit associations and optional anchors [70.43ms]
+
+tests/breakout/fanout-custom-symbol-port-alias.test.tsx:
+(pass) fanout resolves imported-style symbol aliases after source ports and traces exist [244.70ms]
+
+ 7 pass
+ 0 fail
+ 97 expect() calls
+Ran 7 tests across 7 files. [4.86s]

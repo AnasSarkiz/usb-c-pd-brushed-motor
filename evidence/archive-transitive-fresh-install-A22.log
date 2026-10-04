@@ -1,0 +1,11 @@
+bun install v1.3.9 (cf6cdbbb)
+
++ @biomejs/biome@2.5.14
++ @tscircuit/cli@0.1.2237
++ @types/bun@1.4.2
++ tscircuit@0.0.2743
++ typescript@5.9.3
++ @tscircuit/core@./tooling/tscircuit-core-0.0.2073-A22.tgz
++ @tscircuit/props@./tooling/tscircuit-props-0.0.682-A22.tgz
+
+290 packages installed [1498.00ms]

@@ -1,0 +1,2663 @@
+{
+  "revision": "A22",
+  "rawWarningCount": 91,
+  "reviewedAdvisories": [
+    {
+      "ref": "J1",
+      "code": "C165948",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"J\" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />",
+      "importSha256": "7d3f0afe8f5b014edcfb3716ccf542929ae9d45550701aaa8bc63f2700c77bda",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"J\" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />",
+        "source_component_id": "source_component_0",
+        "refdes": "J1",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "J"
+      },
+      "reason": "Passive USB-C receptacle; shield/GND and VBUS/CC wiring explicitly reviewed. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "GND",
+        "pin2": "GND",
+        "pin3": "GND",
+        "pin4": "GND",
+        "pin6": "CC1",
+        "pin12": "CC2",
+        "pin13": "GND",
+        "pin14": "GND",
+        "pin15": "VBUS",
+        "pin16": "VBUS"
+      }
+    },
+    {
+      "ref": "SW2",
+      "code": "C3293142",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"S\" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />",
+      "importSha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_1",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"S\" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />",
+        "source_component_id": "source_component_20",
+        "refdes": "SW2",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "SW"
+      },
+      "reason": "Passive DIP contacts; electrical completeness checked, slider/pad mechanical reconciliation remains open. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "VCC3V3",
+        "pin2": "VOLTAGE_BIT_9",
+        "pin3": "VCC3V3",
+        "pin4": "VOLTAGE_BIT_12"
+      }
+    },
+    {
+      "ref": "Q6",
+      "code": "C7420353",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_2",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+        "source_component_id": "source_component_26",
+        "refdes": "Q6",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "Q"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "HOST_INHIBIT_B",
+        "E": "GND",
+        "C": "MOTOR_READY"
+      }
+    },
+    {
+      "ref": "Q7",
+      "code": "C20917",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_3",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+        "source_component_id": "source_component_33",
+        "refdes": "Q7",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "Q"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "VOLTAGE_DRIVE_9",
+        "S": "GND",
+        "D": "SELECT_9"
+      }
+    },
+    {
+      "ref": "Q8",
+      "code": "C20917",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_4",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+        "source_component_id": "source_component_34",
+        "refdes": "Q8",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "Q"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "VOLTAGE_DRIVE_12",
+        "S": "GND",
+        "D": "SELECT_12"
+      }
+    },
+    {
+      "ref": "Q1",
+      "code": "C7420353",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_5",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+        "source_component_id": "source_component_42",
+        "refdes": "Q1",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "Q"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "PD_INHIBIT",
+        "E": "GND",
+        "C": "POWER_ENABLE"
+      }
+    },
+    {
+      "ref": "RV1",
+      "code": "C5710902",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"R\" prefix is being used with a <chip />, try using it with a <resistor />",
+      "importSha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_6",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"R\" prefix is being used with a <chip />, try using it with a <resistor />",
+        "source_component_id": "source_component_78",
+        "refdes": "RV1",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "RV"
+      },
+      "reason": "Passive potentiometer and mounting contacts; terminals/pads reviewed against Bourns drawing. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "POT_CHARGE",
+        "pin2": "WIPER",
+        "pin3": "POT_DISCHARGE",
+        "pin4": "GND",
+        "pin5": "GND"
+      }
+    },
+    {
+      "ref": "SW1",
+      "code": "C908270",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"S\" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />",
+      "importSha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_7",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"S\" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />",
+        "source_component_id": "source_component_86",
+        "refdes": "SW1",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "SW"
+      },
+      "reason": "Passive ON-OFF-ON contacts, physical common 2; manufacturer contact table reviewed. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "IN1",
+        "pin2": "PWM",
+        "pin3": "IN2"
+      }
+    },
+    {
+      "ref": "J2",
+      "code": "C395849",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"J\" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />",
+      "importSha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_8",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"J\" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />",
+        "source_component_id": "source_component_111",
+        "refdes": "J2",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "J"
+      },
+      "reason": "Passive two-pole motor connector; neither motor terminal is GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "MOTOR_P",
+        "pin2": "MOTOR_N"
+      }
+    },
+    {
+      "ref": "Q2",
+      "code": "C53444",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "importSha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_9",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+        "source_component_id": "source_component_114",
+        "refdes": "Q2",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "Q"
+      },
+      "reason": "MMBT3906 PNP; emitter VM, base DUMP_BASE, collector DUMP_DRIVE. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "DUMP_BASE",
+        "E": "VM",
+        "C": "DUMP_DRIVE"
+      }
+    },
+    {
+      "ref": "Q3",
+      "code": "C20917",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_10",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+        "source_component_id": "source_component_120",
+        "refdes": "Q3",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "Q"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "DUMP_GATE",
+        "S": "GND",
+        "D": "DUMP_LOAD"
+      }
+    },
+    {
+      "ref": "Q4",
+      "code": "C7420353",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_11",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+        "source_component_id": "source_component_125",
+        "refdes": "Q4",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "Q"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "OV_INHIBIT",
+        "E": "GND",
+        "C": "MOTOR_READY"
+      }
+    },
+    {
+      "ref": "Q5",
+      "code": "C7420353",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_12",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+        "source_component_id": "source_component_127",
+        "refdes": "Q5",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "Q"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "OV_INHIBIT",
+        "E": "GND",
+        "C": "BUCK_EN"
+      }
+    },
+    {
+      "ref": "D1",
+      "code": "C10214",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on D1 are underspecified (no pinAttributes set)",
+      "importSha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on D1 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_4",
+        "source_port_ids": [
+          "source_port_59",
+          "source_port_60"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "TVS: cathode VBUS, anode GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "K": "VBUS",
+        "A": "GND"
+      }
+    },
+    {
+      "ref": "D2",
+      "code": "C477999",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on D2 are underspecified (no pinAttributes set)",
+      "importSha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_1",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on D2 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_5",
+        "source_port_ids": [
+          "source_port_61",
+          "source_port_62",
+          "source_port_63"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive dual ESD network: CC1/CC2/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "CC1",
+        "pin2": "CC2",
+        "pin3": "GND"
+      }
+    },
+    {
+      "ref": "SW2",
+      "code": "C3293142",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on SW2 are underspecified (no pinAttributes set)",
+      "importSha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_2",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on SW2 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_20",
+        "source_port_ids": [
+          "source_port_110",
+          "source_port_111",
+          "source_port_112",
+          "source_port_113"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive DIP contacts; electrical completeness checked, slider/pad mechanical reconciliation remains open. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "VCC3V3",
+        "pin2": "VOLTAGE_BIT_9",
+        "pin3": "VCC3V3",
+        "pin4": "VOLTAGE_BIT_12"
+      }
+    },
+    {
+      "ref": "Q6",
+      "code": "C7420353",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on Q6 are underspecified (no pinAttributes set)",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_3",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on Q6 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_26",
+        "source_port_ids": [
+          "source_port_124",
+          "source_port_125",
+          "source_port_126"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "HOST_INHIBIT_B",
+        "E": "GND",
+        "C": "MOTOR_READY"
+      }
+    },
+    {
+      "ref": "Q7",
+      "code": "C20917",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on Q7 are underspecified (no pinAttributes set)",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_4",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on Q7 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_33",
+        "source_port_ids": [
+          "source_port_139",
+          "source_port_140",
+          "source_port_141"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "VOLTAGE_DRIVE_9",
+        "S": "GND",
+        "D": "SELECT_9"
+      }
+    },
+    {
+      "ref": "Q8",
+      "code": "C20917",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on Q8 are underspecified (no pinAttributes set)",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_5",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on Q8 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_34",
+        "source_port_ids": [
+          "source_port_142",
+          "source_port_143",
+          "source_port_144"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "VOLTAGE_DRIVE_12",
+        "S": "GND",
+        "D": "SELECT_12"
+      }
+    },
+    {
+      "ref": "Q1",
+      "code": "C7420353",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on Q1 are underspecified (no pinAttributes set)",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_6",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on Q1 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_42",
+        "source_port_ids": [
+          "source_port_186",
+          "source_port_187",
+          "source_port_188"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "PD_INHIBIT",
+        "E": "GND",
+        "C": "POWER_ENABLE"
+      }
+    },
+    {
+      "ref": "RV1",
+      "code": "C5710902",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on RV1 are underspecified (no pinAttributes set)",
+      "importSha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_7",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on RV1 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_78",
+        "source_port_ids": [
+          "source_port_280",
+          "source_port_281",
+          "source_port_282",
+          "source_port_283",
+          "source_port_284"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive potentiometer and mounting contacts; terminals/pads reviewed against Bourns drawing. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "POT_CHARGE",
+        "pin2": "WIPER",
+        "pin3": "POT_DISCHARGE",
+        "pin4": "GND",
+        "pin5": "GND"
+      }
+    },
+    {
+      "ref": "SW1",
+      "code": "C908270",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on SW1 are underspecified (no pinAttributes set)",
+      "importSha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_8",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on SW1 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_86",
+        "source_port_ids": [
+          "source_port_299",
+          "source_port_300",
+          "source_port_301"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive ON-OFF-ON contacts, physical common 2; manufacturer contact table reviewed. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "IN1",
+        "pin2": "PWM",
+        "pin3": "IN2"
+      }
+    },
+    {
+      "ref": "U8",
+      "code": "C23892",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on U8 are underspecified (no pinAttributes set)",
+      "importSha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_9",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on U8 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_91",
+        "source_port_ids": [
+          "source_port_310",
+          "source_port_311",
+          "source_port_312"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "TL431 shunt: CATHODE/REF tied to reference; ANODE GND; VM bias through 2 kOhm. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "CATHODE": "VREF2V5",
+        "REF": "VREF2V5",
+        "ANODE": "GND"
+      }
+    },
+    {
+      "ref": "D10",
+      "code": "C211759",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on D10 are underspecified (no pinAttributes set)",
+      "importSha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_10",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on D10 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_109",
+        "source_port_ids": [
+          "source_port_376",
+          "source_port_377"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Bidirectional TVS across motor terminals. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "MOTOR_P",
+        "pin2": "MOTOR_N"
+      }
+    },
+    {
+      "ref": "D11",
+      "code": "C211759",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on D11 are underspecified (no pinAttributes set)",
+      "importSha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_11",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on D11 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_110",
+        "source_port_ids": [
+          "source_port_378",
+          "source_port_379"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Bidirectional TVS across VM/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "VM",
+        "pin2": "GND"
+      }
+    },
+    {
+      "ref": "J2",
+      "code": "C395849",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on J2 are underspecified (no pinAttributes set)",
+      "importSha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_12",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on J2 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_111",
+        "source_port_ids": [
+          "source_port_380",
+          "source_port_381"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive two-pole motor connector; neither motor terminal is GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "MOTOR_P",
+        "pin2": "MOTOR_N"
+      }
+    },
+    {
+      "ref": "Q2",
+      "code": "C53444",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on Q2 are underspecified (no pinAttributes set)",
+      "importSha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_13",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on Q2 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_114",
+        "source_port_ids": [
+          "source_port_386",
+          "source_port_387",
+          "source_port_388"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3906 PNP; emitter VM, base DUMP_BASE, collector DUMP_DRIVE. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "DUMP_BASE",
+        "E": "VM",
+        "C": "DUMP_DRIVE"
+      }
+    },
+    {
+      "ref": "Q3",
+      "code": "C20917",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on Q3 are underspecified (no pinAttributes set)",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_14",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on Q3 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_120",
+        "source_port_ids": [
+          "source_port_399",
+          "source_port_400",
+          "source_port_401"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "DUMP_GATE",
+        "S": "GND",
+        "D": "DUMP_LOAD"
+      }
+    },
+    {
+      "ref": "Q4",
+      "code": "C7420353",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on Q4 are underspecified (no pinAttributes set)",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_15",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on Q4 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_125",
+        "source_port_ids": [
+          "source_port_410",
+          "source_port_411",
+          "source_port_412"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "OV_INHIBIT",
+        "E": "GND",
+        "C": "MOTOR_READY"
+      }
+    },
+    {
+      "ref": "Q5",
+      "code": "C7420353",
+      "type": "source_component_pins_underspecified_warning",
+      "message": "All pins on Q5 are underspecified (no pinAttributes set)",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_component_pins_underspecified_warning",
+        "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_16",
+        "warning_type": "source_component_pins_underspecified_warning",
+        "message": "All pins on Q5 are underspecified (no pinAttributes set)",
+        "source_component_id": "source_component_127",
+        "source_port_ids": [
+          "source_port_415",
+          "source_port_416",
+          "source_port_417"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "OV_INHIBIT",
+        "E": "GND",
+        "C": "BUCK_EN"
+      }
+    },
+    {
+      "ref": "J1",
+      "code": "C165948",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "J1 has no pin with requires_power=true",
+      "importSha256": "7d3f0afe8f5b014edcfb3716ccf542929ae9d45550701aaa8bc63f2700c77bda",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "J1 has no pin with requires_power=true",
+        "source_component_id": "source_component_0",
+        "source_port_ids": [
+          "source_port_0",
+          "source_port_1",
+          "source_port_2",
+          "source_port_3",
+          "source_port_4",
+          "source_port_5",
+          "source_port_6",
+          "source_port_7",
+          "source_port_8",
+          "source_port_9",
+          "source_port_10",
+          "source_port_11",
+          "source_port_12",
+          "source_port_13",
+          "source_port_14",
+          "source_port_15"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive USB-C receptacle; shield/GND and VBUS/CC wiring explicitly reviewed. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "GND",
+        "pin2": "GND",
+        "pin3": "GND",
+        "pin4": "GND",
+        "pin6": "CC1",
+        "pin12": "CC2",
+        "pin13": "GND",
+        "pin14": "GND",
+        "pin15": "VBUS",
+        "pin16": "VBUS"
+      }
+    },
+    {
+      "ref": "U2",
+      "code": "C468238",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "U2 has no pin with requires_power=true",
+      "importSha256": "9468fa1522c45d3420702b99400458cb24fbd0b29e06296f630be1f87503479b",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_1",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "U2 has no pin with requires_power=true",
+        "source_component_id": "source_component_2",
+        "source_port_ids": [
+          "source_port_41",
+          "source_port_42",
+          "source_port_43",
+          "source_port_44",
+          "source_port_45",
+          "source_port_46",
+          "source_port_47",
+          "source_port_48",
+          "source_port_49"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "TPS7A1650: pin 8 IN/5 EN on VBUS, 4/9 GND; pin 1 VDD5 output. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "VDD5",
+        "pin4": "GND",
+        "pin5": "VBUS",
+        "pin8": "VBUS",
+        "pin9": "GND"
+      }
+    },
+    {
+      "ref": "U3",
+      "code": "C181239",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "U3 has no pin with requires_power=true",
+      "importSha256": "c78527d69b202bbb0a416928a072cd0ffabecea2adf05b60df3ece5bac8b54e2",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_2",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "U3 has no pin with requires_power=true",
+        "source_component_id": "source_component_3",
+        "source_port_ids": [
+          "source_port_50",
+          "source_port_51",
+          "source_port_52",
+          "source_port_53",
+          "source_port_54",
+          "source_port_55",
+          "source_port_56",
+          "source_port_57",
+          "source_port_58"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "TPS7A1633: pin 8 IN/5 EN on VBUS, 4/9 GND; pin 1 VCC3V3 output. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "VCC3V3",
+        "pin4": "GND",
+        "pin5": "VBUS",
+        "pin8": "VBUS",
+        "pin9": "GND"
+      }
+    },
+    {
+      "ref": "D1",
+      "code": "C10214",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "D1 has no pin with requires_power=true",
+      "importSha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_3",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "D1 has no pin with requires_power=true",
+        "source_component_id": "source_component_4",
+        "source_port_ids": [
+          "source_port_59",
+          "source_port_60"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "TVS: cathode VBUS, anode GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "K": "VBUS",
+        "A": "GND"
+      }
+    },
+    {
+      "ref": "D2",
+      "code": "C477999",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "D2 has no pin with requires_power=true",
+      "importSha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_4",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "D2 has no pin with requires_power=true",
+        "source_component_id": "source_component_5",
+        "source_port_ids": [
+          "source_port_61",
+          "source_port_62",
+          "source_port_63"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive dual ESD network: CC1/CC2/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "CC1",
+        "pin2": "CC2",
+        "pin3": "GND"
+      }
+    },
+    {
+      "ref": "SW2",
+      "code": "C3293142",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "SW2 has no pin with requires_power=true",
+      "importSha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_5",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "SW2 has no pin with requires_power=true",
+        "source_component_id": "source_component_20",
+        "source_port_ids": [
+          "source_port_110",
+          "source_port_111",
+          "source_port_112",
+          "source_port_113"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive DIP contacts; electrical completeness checked, slider/pad mechanical reconciliation remains open. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "VCC3V3",
+        "pin2": "VOLTAGE_BIT_9",
+        "pin3": "VCC3V3",
+        "pin4": "VOLTAGE_BIT_12"
+      }
+    },
+    {
+      "ref": "Q6",
+      "code": "C7420353",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "Q6 has no pin with requires_power=true",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_6",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "Q6 has no pin with requires_power=true",
+        "source_component_id": "source_component_26",
+        "source_port_ids": [
+          "source_port_124",
+          "source_port_125",
+          "source_port_126"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "HOST_INHIBIT_B",
+        "E": "GND",
+        "C": "MOTOR_READY"
+      }
+    },
+    {
+      "ref": "Q7",
+      "code": "C20917",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "Q7 has no pin with requires_power=true",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_7",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "Q7 has no pin with requires_power=true",
+        "source_component_id": "source_component_33",
+        "source_port_ids": [
+          "source_port_139",
+          "source_port_140",
+          "source_port_141"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "VOLTAGE_DRIVE_9",
+        "S": "GND",
+        "D": "SELECT_9"
+      }
+    },
+    {
+      "ref": "Q8",
+      "code": "C20917",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "Q8 has no pin with requires_power=true",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_8",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "Q8 has no pin with requires_power=true",
+        "source_component_id": "source_component_34",
+        "source_port_ids": [
+          "source_port_142",
+          "source_port_143",
+          "source_port_144"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "VOLTAGE_DRIVE_12",
+        "S": "GND",
+        "D": "SELECT_12"
+      }
+    },
+    {
+      "ref": "U4",
+      "code": "C1849461",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "U4 has no pin with requires_power=true",
+      "importSha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_9",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "U4 has no pin with requires_power=true",
+        "source_component_id": "source_component_41",
+        "source_port_ids": [
+          "source_port_157",
+          "source_port_158",
+          "source_port_159",
+          "source_port_160",
+          "source_port_161",
+          "source_port_162",
+          "source_port_163",
+          "source_port_164",
+          "source_port_165",
+          "source_port_166",
+          "source_port_167",
+          "source_port_168",
+          "source_port_169",
+          "source_port_170",
+          "source_port_171",
+          "source_port_172",
+          "source_port_173",
+          "source_port_174",
+          "source_port_175",
+          "source_port_176",
+          "source_port_177"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "TPS16630: input pins 1/2/3 EFUSE_IN; ground 9/21; output 18/19/20 VIN_BUCK. Thermal-via errors remain independent blockers. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "EFUSE_IN",
+        "pin2": "EFUSE_IN",
+        "pin3": "EFUSE_IN",
+        "pin6": "EFUSE_IN",
+        "pin7": "INPUT_UV",
+        "pin8": "INPUT_OV",
+        "pin9": "GND",
+        "pin10": "SLEW",
+        "pin11": "INPUT_ILIM",
+        "pin13": "POWER_ENABLE",
+        "pin16": "INPUT_PG",
+        "pin18": "VIN_BUCK",
+        "pin19": "VIN_BUCK",
+        "pin20": "VIN_BUCK",
+        "pin21": "GND"
+      }
+    },
+    {
+      "ref": "Q1",
+      "code": "C7420353",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "Q1 has no pin with requires_power=true",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_10",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "Q1 has no pin with requires_power=true",
+        "source_component_id": "source_component_42",
+        "source_port_ids": [
+          "source_port_186",
+          "source_port_187",
+          "source_port_188"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "PD_INHIBIT",
+        "E": "GND",
+        "C": "POWER_ENABLE"
+      }
+    },
+    {
+      "ref": "RV1",
+      "code": "C5710902",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "RV1 has no pin with requires_power=true",
+      "importSha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_11",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "RV1 has no pin with requires_power=true",
+        "source_component_id": "source_component_78",
+        "source_port_ids": [
+          "source_port_280",
+          "source_port_281",
+          "source_port_282",
+          "source_port_283",
+          "source_port_284"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive potentiometer and mounting contacts; terminals/pads reviewed against Bourns drawing. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "POT_CHARGE",
+        "pin2": "WIPER",
+        "pin3": "POT_DISCHARGE",
+        "pin4": "GND",
+        "pin5": "GND"
+      }
+    },
+    {
+      "ref": "SW1",
+      "code": "C908270",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "SW1 has no pin with requires_power=true",
+      "importSha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_12",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "SW1 has no pin with requires_power=true",
+        "source_component_id": "source_component_86",
+        "source_port_ids": [
+          "source_port_299",
+          "source_port_300",
+          "source_port_301"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive ON-OFF-ON contacts, physical common 2; manufacturer contact table reviewed. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "IN1",
+        "pin2": "PWM",
+        "pin3": "IN2"
+      }
+    },
+    {
+      "ref": "U8",
+      "code": "C23892",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "U8 has no pin with requires_power=true",
+      "importSha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_13",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "U8 has no pin with requires_power=true",
+        "source_component_id": "source_component_91",
+        "source_port_ids": [
+          "source_port_310",
+          "source_port_311",
+          "source_port_312"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "TL431 shunt: CATHODE/REF tied to reference; ANODE GND; VM bias through 2 kOhm. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "CATHODE": "VREF2V5",
+        "REF": "VREF2V5",
+        "ANODE": "GND"
+      }
+    },
+    {
+      "ref": "U10",
+      "code": "C1855818",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "U10 has no pin with requires_power=true",
+      "importSha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_14",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "U10 has no pin with requires_power=true",
+        "source_component_id": "source_component_102",
+        "source_port_ids": [
+          "source_port_339",
+          "source_port_340",
+          "source_port_341",
+          "source_port_342",
+          "source_port_343",
+          "source_port_344",
+          "source_port_345",
+          "source_port_346",
+          "source_port_347",
+          "source_port_348",
+          "source_port_349",
+          "source_port_350",
+          "source_port_351",
+          "source_port_352",
+          "source_port_353",
+          "source_port_354",
+          "source_port_355"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "DRV8874: VM pin 14; GND pins 9/15/17; VREF pin 5 VCC3V3. Thermal-via errors remain independent blockers. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "IN1",
+        "pin2": "IN2",
+        "pin3": "MOTOR_READY",
+        "pin4": "MOTOR_FAULT_N",
+        "pin5": "VCC3V3",
+        "pin6": "IPROPI",
+        "pin7": "GND",
+        "pin8": "MOTOR_P",
+        "pin9": "GND",
+        "pin10": "MOTOR_N",
+        "pin11": "VM",
+        "pin12": "VCP",
+        "pin13": "CPH",
+        "pin14": "CPL",
+        "pin15": "GND",
+        "pin16": "VCC3V3",
+        "pin17": "GND"
+      }
+    },
+    {
+      "ref": "D10",
+      "code": "C211759",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "D10 has no pin with requires_power=true",
+      "importSha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_15",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "D10 has no pin with requires_power=true",
+        "source_component_id": "source_component_109",
+        "source_port_ids": [
+          "source_port_376",
+          "source_port_377"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Bidirectional TVS across motor terminals. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "MOTOR_P",
+        "pin2": "MOTOR_N"
+      }
+    },
+    {
+      "ref": "D11",
+      "code": "C211759",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "D11 has no pin with requires_power=true",
+      "importSha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_16",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "D11 has no pin with requires_power=true",
+        "source_component_id": "source_component_110",
+        "source_port_ids": [
+          "source_port_378",
+          "source_port_379"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Bidirectional TVS across VM/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "VM",
+        "pin2": "GND"
+      }
+    },
+    {
+      "ref": "J2",
+      "code": "C395849",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "J2 has no pin with requires_power=true",
+      "importSha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_17",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "J2 has no pin with requires_power=true",
+        "source_component_id": "source_component_111",
+        "source_port_ids": [
+          "source_port_380",
+          "source_port_381"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive two-pole motor connector; neither motor terminal is GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "MOTOR_P",
+        "pin2": "MOTOR_N"
+      }
+    },
+    {
+      "ref": "Q2",
+      "code": "C53444",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "Q2 has no pin with requires_power=true",
+      "importSha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_18",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "Q2 has no pin with requires_power=true",
+        "source_component_id": "source_component_114",
+        "source_port_ids": [
+          "source_port_386",
+          "source_port_387",
+          "source_port_388"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3906 PNP; emitter VM, base DUMP_BASE, collector DUMP_DRIVE. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "DUMP_BASE",
+        "E": "VM",
+        "C": "DUMP_DRIVE"
+      }
+    },
+    {
+      "ref": "Q3",
+      "code": "C20917",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "Q3 has no pin with requires_power=true",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_19",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "Q3 has no pin with requires_power=true",
+        "source_component_id": "source_component_120",
+        "source_port_ids": [
+          "source_port_399",
+          "source_port_400",
+          "source_port_401"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "DUMP_GATE",
+        "S": "GND",
+        "D": "DUMP_LOAD"
+      }
+    },
+    {
+      "ref": "Q4",
+      "code": "C7420353",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "Q4 has no pin with requires_power=true",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_20",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "Q4 has no pin with requires_power=true",
+        "source_component_id": "source_component_125",
+        "source_port_ids": [
+          "source_port_410",
+          "source_port_411",
+          "source_port_412"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "OV_INHIBIT",
+        "E": "GND",
+        "C": "MOTOR_READY"
+      }
+    },
+    {
+      "ref": "Q5",
+      "code": "C7420353",
+      "type": "source_no_power_pin_defined_warning",
+      "message": "Q5 has no pin with requires_power=true",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_no_power_pin_defined_warning",
+        "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_21",
+        "warning_type": "source_no_power_pin_defined_warning",
+        "message": "Q5 has no pin with requires_power=true",
+        "source_component_id": "source_component_127",
+        "source_port_ids": [
+          "source_port_415",
+          "source_port_416",
+          "source_port_417"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "OV_INHIBIT",
+        "E": "GND",
+        "C": "BUCK_EN"
+      }
+    },
+    {
+      "ref": "J1",
+      "code": "C165948",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "J1 has no pin with requires_ground=true",
+      "importSha256": "7d3f0afe8f5b014edcfb3716ccf542929ae9d45550701aaa8bc63f2700c77bda",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "J1 has no pin with requires_ground=true",
+        "source_component_id": "source_component_0",
+        "source_port_ids": [
+          "source_port_0",
+          "source_port_1",
+          "source_port_2",
+          "source_port_3",
+          "source_port_4",
+          "source_port_5",
+          "source_port_6",
+          "source_port_7",
+          "source_port_8",
+          "source_port_9",
+          "source_port_10",
+          "source_port_11",
+          "source_port_12",
+          "source_port_13",
+          "source_port_14",
+          "source_port_15"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive USB-C receptacle; shield/GND and VBUS/CC wiring explicitly reviewed. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "GND",
+        "pin2": "GND",
+        "pin3": "GND",
+        "pin4": "GND",
+        "pin6": "CC1",
+        "pin12": "CC2",
+        "pin13": "GND",
+        "pin14": "GND",
+        "pin15": "VBUS",
+        "pin16": "VBUS"
+      }
+    },
+    {
+      "ref": "D1",
+      "code": "C10214",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "D1 has no pin with requires_ground=true",
+      "importSha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_1",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "D1 has no pin with requires_ground=true",
+        "source_component_id": "source_component_4",
+        "source_port_ids": [
+          "source_port_59",
+          "source_port_60"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "TVS: cathode VBUS, anode GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "K": "VBUS",
+        "A": "GND"
+      }
+    },
+    {
+      "ref": "D2",
+      "code": "C477999",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "D2 has no pin with requires_ground=true",
+      "importSha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_2",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "D2 has no pin with requires_ground=true",
+        "source_component_id": "source_component_5",
+        "source_port_ids": [
+          "source_port_61",
+          "source_port_62",
+          "source_port_63"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive dual ESD network: CC1/CC2/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "CC1",
+        "pin2": "CC2",
+        "pin3": "GND"
+      }
+    },
+    {
+      "ref": "SW2",
+      "code": "C3293142",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "SW2 has no pin with requires_ground=true",
+      "importSha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_3",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "SW2 has no pin with requires_ground=true",
+        "source_component_id": "source_component_20",
+        "source_port_ids": [
+          "source_port_110",
+          "source_port_111",
+          "source_port_112",
+          "source_port_113"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive DIP contacts; electrical completeness checked, slider/pad mechanical reconciliation remains open. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "VCC3V3",
+        "pin2": "VOLTAGE_BIT_9",
+        "pin3": "VCC3V3",
+        "pin4": "VOLTAGE_BIT_12"
+      }
+    },
+    {
+      "ref": "Q6",
+      "code": "C7420353",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "Q6 has no pin with requires_ground=true",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_4",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "Q6 has no pin with requires_ground=true",
+        "source_component_id": "source_component_26",
+        "source_port_ids": [
+          "source_port_124",
+          "source_port_125",
+          "source_port_126"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "HOST_INHIBIT_B",
+        "E": "GND",
+        "C": "MOTOR_READY"
+      }
+    },
+    {
+      "ref": "Q7",
+      "code": "C20917",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "Q7 has no pin with requires_ground=true",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_5",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "Q7 has no pin with requires_ground=true",
+        "source_component_id": "source_component_33",
+        "source_port_ids": [
+          "source_port_139",
+          "source_port_140",
+          "source_port_141"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "VOLTAGE_DRIVE_9",
+        "S": "GND",
+        "D": "SELECT_9"
+      }
+    },
+    {
+      "ref": "Q8",
+      "code": "C20917",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "Q8 has no pin with requires_ground=true",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_6",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "Q8 has no pin with requires_ground=true",
+        "source_component_id": "source_component_34",
+        "source_port_ids": [
+          "source_port_142",
+          "source_port_143",
+          "source_port_144"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "VOLTAGE_DRIVE_12",
+        "S": "GND",
+        "D": "SELECT_12"
+      }
+    },
+    {
+      "ref": "Q1",
+      "code": "C7420353",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "Q1 has no pin with requires_ground=true",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_7",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "Q1 has no pin with requires_ground=true",
+        "source_component_id": "source_component_42",
+        "source_port_ids": [
+          "source_port_186",
+          "source_port_187",
+          "source_port_188"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "PD_INHIBIT",
+        "E": "GND",
+        "C": "POWER_ENABLE"
+      }
+    },
+    {
+      "ref": "RV1",
+      "code": "C5710902",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "RV1 has no pin with requires_ground=true",
+      "importSha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_8",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "RV1 has no pin with requires_ground=true",
+        "source_component_id": "source_component_78",
+        "source_port_ids": [
+          "source_port_280",
+          "source_port_281",
+          "source_port_282",
+          "source_port_283",
+          "source_port_284"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive potentiometer and mounting contacts; terminals/pads reviewed against Bourns drawing. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "POT_CHARGE",
+        "pin2": "WIPER",
+        "pin3": "POT_DISCHARGE",
+        "pin4": "GND",
+        "pin5": "GND"
+      }
+    },
+    {
+      "ref": "SW1",
+      "code": "C908270",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "SW1 has no pin with requires_ground=true",
+      "importSha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_9",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "SW1 has no pin with requires_ground=true",
+        "source_component_id": "source_component_86",
+        "source_port_ids": [
+          "source_port_299",
+          "source_port_300",
+          "source_port_301"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive ON-OFF-ON contacts, physical common 2; manufacturer contact table reviewed. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "IN1",
+        "pin2": "PWM",
+        "pin3": "IN2"
+      }
+    },
+    {
+      "ref": "U8",
+      "code": "C23892",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "U8 has no pin with requires_ground=true",
+      "importSha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_10",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "U8 has no pin with requires_ground=true",
+        "source_component_id": "source_component_91",
+        "source_port_ids": [
+          "source_port_310",
+          "source_port_311",
+          "source_port_312"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "TL431 shunt: CATHODE/REF tied to reference; ANODE GND; VM bias through 2 kOhm. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "CATHODE": "VREF2V5",
+        "REF": "VREF2V5",
+        "ANODE": "GND"
+      }
+    },
+    {
+      "ref": "D10",
+      "code": "C211759",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "D10 has no pin with requires_ground=true",
+      "importSha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_11",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "D10 has no pin with requires_ground=true",
+        "source_component_id": "source_component_109",
+        "source_port_ids": [
+          "source_port_376",
+          "source_port_377"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Bidirectional TVS across motor terminals. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "MOTOR_P",
+        "pin2": "MOTOR_N"
+      }
+    },
+    {
+      "ref": "D11",
+      "code": "C211759",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "D11 has no pin with requires_ground=true",
+      "importSha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_12",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "D11 has no pin with requires_ground=true",
+        "source_component_id": "source_component_110",
+        "source_port_ids": [
+          "source_port_378",
+          "source_port_379"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Bidirectional TVS across VM/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "VM",
+        "pin2": "GND"
+      }
+    },
+    {
+      "ref": "J2",
+      "code": "C395849",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "J2 has no pin with requires_ground=true",
+      "importSha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_13",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "J2 has no pin with requires_ground=true",
+        "source_component_id": "source_component_111",
+        "source_port_ids": [
+          "source_port_380",
+          "source_port_381"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "Passive two-pole motor connector; neither motor terminal is GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "pin1": "MOTOR_P",
+        "pin2": "MOTOR_N"
+      }
+    },
+    {
+      "ref": "Q2",
+      "code": "C53444",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "Q2 has no pin with requires_ground=true",
+      "importSha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_14",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "Q2 has no pin with requires_ground=true",
+        "source_component_id": "source_component_114",
+        "source_port_ids": [
+          "source_port_386",
+          "source_port_387",
+          "source_port_388"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3906 PNP; emitter VM, base DUMP_BASE, collector DUMP_DRIVE. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "DUMP_BASE",
+        "E": "VM",
+        "C": "DUMP_DRIVE"
+      }
+    },
+    {
+      "ref": "Q3",
+      "code": "C20917",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "Q3 has no pin with requires_ground=true",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_15",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "Q3 has no pin with requires_ground=true",
+        "source_component_id": "source_component_120",
+        "source_port_ids": [
+          "source_port_399",
+          "source_port_400",
+          "source_port_401"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "AO3400A analog MOSFET; G/S/D net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "G": "DUMP_GATE",
+        "S": "GND",
+        "D": "DUMP_LOAD"
+      }
+    },
+    {
+      "ref": "Q4",
+      "code": "C7420353",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "Q4 has no pin with requires_ground=true",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_16",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "Q4 has no pin with requires_ground=true",
+        "source_component_id": "source_component_125",
+        "source_port_ids": [
+          "source_port_410",
+          "source_port_411",
+          "source_port_412"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "OV_INHIBIT",
+        "E": "GND",
+        "C": "MOTOR_READY"
+      }
+    },
+    {
+      "ref": "Q5",
+      "code": "C7420353",
+      "type": "source_no_ground_pin_defined_warning",
+      "message": "Q5 has no pin with requires_ground=true",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "source_no_ground_pin_defined_warning",
+        "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_17",
+        "warning_type": "source_no_ground_pin_defined_warning",
+        "message": "Q5 has no pin with requires_ground=true",
+        "source_component_id": "source_component_127",
+        "source_port_ids": [
+          "source_port_415",
+          "source_port_416",
+          "source_port_417"
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "reason": "MMBT3904 analog NPN; B/E/C net roles individually recorded in the validated manifest. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "wiredPins": {
+        "B": "OV_INHIBIT",
+        "E": "GND",
+        "C": "BUCK_EN"
+      }
+    },
+    {
+      "ref": "D1",
+      "code": "C10214",
+      "type": "schematic_component_styling_warning",
+      "message": "D1 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_0",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "D1 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_4",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_4",
+        "schematic_sheet_id": "schematic_sheet_0"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_28",
+        "anchor": "bottom_left",
+        "text": "D1 \u00b7 SMBJ22A",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": 11.8,
+          "y": 7.35
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_0"
+      },
+      "distanceSchematicUnits": 1.0401922899156681,
+      "wiredPins": {
+        "K": "VBUS",
+        "A": "GND"
+      }
+    },
+    {
+      "ref": "D2",
+      "code": "C477999",
+      "type": "schematic_component_styling_warning",
+      "message": "D2 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_1",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "D2 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_5",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_5",
+        "schematic_sheet_id": "schematic_sheet_0"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_29",
+        "anchor": "bottom_left",
+        "text": "D2 \u00b7 PESD24VS2UT",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": -10.2,
+          "y": 3.35
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_0"
+      },
+      "distanceSchematicUnits": 1.089311709291698,
+      "wiredPins": {
+        "pin1": "CC1",
+        "pin2": "CC2",
+        "pin3": "GND"
+      }
+    },
+    {
+      "ref": "Q6",
+      "code": "C7420353",
+      "type": "schematic_component_styling_warning",
+      "message": "Q6 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_2",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "Q6 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_26",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_26",
+        "schematic_sheet_id": "schematic_sheet_1"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_32",
+        "anchor": "bottom_left",
+        "text": "Q6 \u00b7 MMBT3904",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": 0.8,
+          "y": 3.35
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_1"
+      },
+      "distanceSchematicUnits": 0.95524865872714,
+      "wiredPins": {
+        "B": "HOST_INHIBIT_B",
+        "E": "GND",
+        "C": "MOTOR_READY"
+      }
+    },
+    {
+      "ref": "Q7",
+      "code": "C20917",
+      "type": "schematic_component_styling_warning",
+      "message": "Q7 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_3",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "Q7 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_33",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_33",
+        "schematic_sheet_id": "schematic_sheet_1"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_33",
+        "anchor": "bottom_left",
+        "text": "Q7 \u00b7 AO3400A",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": 11.8,
+          "y": -0.65
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_1"
+      },
+      "distanceSchematicUnits": 0.9263368717696604,
+      "wiredPins": {
+        "G": "VOLTAGE_DRIVE_9",
+        "S": "GND",
+        "D": "SELECT_9"
+      }
+    },
+    {
+      "ref": "Q8",
+      "code": "C20917",
+      "type": "schematic_component_styling_warning",
+      "message": "Q8 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_4",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "Q8 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_34",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_34",
+        "schematic_sheet_id": "schematic_sheet_1"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_34",
+        "anchor": "bottom_left",
+        "text": "Q8 \u00b7 AO3400A",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": -10.2,
+          "y": -4.65
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_1"
+      },
+      "distanceSchematicUnits": 0.9263368717696606,
+      "wiredPins": {
+        "G": "VOLTAGE_DRIVE_12",
+        "S": "GND",
+        "D": "SELECT_12"
+      }
+    },
+    {
+      "ref": "Q1",
+      "code": "C7420353",
+      "type": "schematic_component_styling_warning",
+      "message": "Q1 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_5",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "Q1 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_42",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_42",
+        "schematic_sheet_id": "schematic_sheet_2"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_37",
+        "anchor": "bottom_left",
+        "text": "Q1 \u00b7 MMBT3904",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": 0.8,
+          "y": 7.35
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_2"
+      },
+      "distanceSchematicUnits": 0.9552486587271403,
+      "wiredPins": {
+        "B": "PD_INHIBIT",
+        "E": "GND",
+        "C": "POWER_ENABLE"
+      }
+    },
+    {
+      "ref": "RV1",
+      "code": "C5710902",
+      "type": "schematic_component_styling_warning",
+      "message": "RV1 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_6",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "RV1 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_78",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_78",
+        "schematic_sheet_id": "schematic_sheet_4"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_42",
+        "anchor": "bottom_left",
+        "text": "RV1 \u00b7 10 kOhm speed",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": -4.7,
+          "y": 7.35
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_4"
+      },
+      "distanceSchematicUnits": 0.9656603957913984,
+      "wiredPins": {
+        "pin1": "POT_CHARGE",
+        "pin2": "WIPER",
+        "pin3": "POT_DISCHARGE",
+        "pin4": "GND",
+        "pin5": "GND"
+      }
+    },
+    {
+      "ref": "U8",
+      "code": "C23892",
+      "type": "schematic_component_styling_warning",
+      "message": "U8 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_7",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "U8 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_91",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_91",
+        "schematic_sheet_id": "schematic_sheet_5"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_46",
+        "anchor": "bottom_left",
+        "text": "U8 \u00b7 TL431",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": -10.2,
+          "y": 7.35
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_5"
+      },
+      "distanceSchematicUnits": 0.9617692030835685,
+      "wiredPins": {
+        "CATHODE": "VREF2V5",
+        "REF": "VREF2V5",
+        "ANODE": "GND"
+      }
+    },
+    {
+      "ref": "D10",
+      "code": "C211759",
+      "type": "schematic_component_styling_warning",
+      "message": "D10 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_8",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "D10 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_109",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_109",
+        "schematic_sheet_id": "schematic_sheet_6"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_49",
+        "anchor": "bottom_left",
+        "text": "D10 \u00b7 SMBJ15CA",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": 11.8,
+          "y": 3.35
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_6"
+      },
+      "distanceSchematicUnits": 1.0307764064044156,
+      "wiredPins": {
+        "pin1": "MOTOR_P",
+        "pin2": "MOTOR_N"
+      }
+    },
+    {
+      "ref": "D11",
+      "code": "C211759",
+      "type": "schematic_component_styling_warning",
+      "message": "D11 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_9",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "D11 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_110",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_110",
+        "schematic_sheet_id": "schematic_sheet_6"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_50",
+        "anchor": "bottom_left",
+        "text": "D11 \u00b7 SMBJ15CA",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": -10.2,
+          "y": -0.65
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_6"
+      },
+      "distanceSchematicUnits": 1.0307764064044156,
+      "wiredPins": {
+        "pin1": "VM",
+        "pin2": "GND"
+      }
+    },
+    {
+      "ref": "Q2",
+      "code": "C53444",
+      "type": "schematic_component_styling_warning",
+      "message": "Q2 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_10",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "Q2 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_114",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_114",
+        "schematic_sheet_id": "schematic_sheet_7"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_53",
+        "anchor": "bottom_left",
+        "text": "Q2 \u00b7 MMBT3906",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": -10.2,
+          "y": 7.35
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_7"
+      },
+      "distanceSchematicUnits": 0.955248658727141,
+      "wiredPins": {
+        "B": "DUMP_BASE",
+        "E": "VM",
+        "C": "DUMP_DRIVE"
+      }
+    },
+    {
+      "ref": "Q3",
+      "code": "C20917",
+      "type": "schematic_component_styling_warning",
+      "message": "Q3 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_11",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "Q3 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_120",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_120",
+        "schematic_sheet_id": "schematic_sheet_7"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_54",
+        "anchor": "bottom_left",
+        "text": "Q3 \u00b7 AO3400A",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": -4.7,
+          "y": 3.35
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_7"
+      },
+      "distanceSchematicUnits": 0.9263368717696596,
+      "wiredPins": {
+        "G": "DUMP_GATE",
+        "S": "GND",
+        "D": "DUMP_LOAD"
+      }
+    },
+    {
+      "ref": "Q4",
+      "code": "C7420353",
+      "type": "schematic_component_styling_warning",
+      "message": "Q4 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_12",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "Q4 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_125",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_125",
+        "schematic_sheet_id": "schematic_sheet_7"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_55",
+        "anchor": "bottom_left",
+        "text": "Q4 \u00b7 MMBT3904",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": -4.7,
+          "y": -0.65
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_7"
+      },
+      "distanceSchematicUnits": 0.9552486587271402,
+      "wiredPins": {
+        "B": "OV_INHIBIT",
+        "E": "GND",
+        "C": "MOTOR_READY"
+      }
+    },
+    {
+      "ref": "Q5",
+      "code": "C7420353",
+      "type": "schematic_component_styling_warning",
+      "message": "Q5 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "importSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "rawDiagnostic": {
+        "type": "schematic_component_styling_warning",
+        "schematic_component_styling_warning_id": "schematic_component_styling_warning_13",
+        "warning_type": "schematic_component_styling_warning",
+        "message": "Q5 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+        "schematic_component_id": "schematic_component_127",
+        "styling_issue_type": "missing_reference_designator_text",
+        "source_component_id": "source_component_127",
+        "schematic_sheet_id": "schematic_sheet_7"
+      },
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "label": {
+        "type": "schematic_text",
+        "schematic_text_id": "schematic_text_56",
+        "anchor": "bottom_left",
+        "text": "Q5 \u00b7 MMBT3904",
+        "font_size": 0.15,
+        "color": "#000000",
+        "position": {
+          "x": 6.3,
+          "y": -0.65
+        },
+        "rotation": 0,
+        "schematic_sheet_id": "schematic_sheet_7"
+      },
+      "distanceSchematicUnits": 0.9552486587271402,
+      "wiredPins": {
+        "B": "OV_INHIBIT",
+        "E": "GND",
+        "C": "BUCK_EN"
+      }
+    },
+    {
+      "ref": "TP5",
+      "code": "C2906768",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+      "importSha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_1",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+        "source_component_id": "source_component_19",
+        "refdes": "TP5",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "TP"
+      },
+      "wiredPins": {
+        "pin1": "VCC3V3"
+      },
+      "reason": "Keystone 5015 is a passive one-terminal measurement/programming contact; the untouched official JLC import uses chip-category metadata. Manufacturer catalog M70p61, matching one source/schematic port and one 3.43 x 1.78 mm top SMT pad were independently checked. Correct passive pinAttributes are now supplied by the board instance; the reference-category advisory is retained. This does not approve mechanical access or fabrication."
+    },
+    {
+      "ref": "TP6",
+      "code": "C2906768",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+      "importSha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_2",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+        "source_component_id": "source_component_20",
+        "refdes": "TP6",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "TP"
+      },
+      "wiredPins": {
+        "pin1": "VBUS"
+      },
+      "reason": "Keystone 5015 is a passive one-terminal measurement/programming contact; the untouched official JLC import uses chip-category metadata. Manufacturer catalog M70p61, matching one source/schematic port and one 3.43 x 1.78 mm top SMT pad were independently checked. Correct passive pinAttributes are now supplied by the board instance; the reference-category advisory is retained. This does not approve mechanical access or fabrication."
+    },
+    {
+      "ref": "TP1",
+      "code": "C2906768",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+      "importSha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_7",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+        "source_component_id": "source_component_42",
+        "refdes": "TP1",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "TP"
+      },
+      "wiredPins": {
+        "pin1": "SWDIO"
+      },
+      "reason": "Keystone 5015 is a passive one-terminal measurement/programming contact; the untouched official JLC import uses chip-category metadata. Manufacturer catalog M70p61, matching one source/schematic port and one 3.43 x 1.78 mm top SMT pad were independently checked. Correct passive pinAttributes are now supplied by the board instance; the reference-category advisory is retained. This does not approve mechanical access or fabrication."
+    },
+    {
+      "ref": "TP2",
+      "code": "C2906768",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+      "importSha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_8",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+        "source_component_id": "source_component_43",
+        "refdes": "TP2",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "TP"
+      },
+      "wiredPins": {
+        "pin1": "SWCLK"
+      },
+      "reason": "Keystone 5015 is a passive one-terminal measurement/programming contact; the untouched official JLC import uses chip-category metadata. Manufacturer catalog M70p61, matching one source/schematic port and one 3.43 x 1.78 mm top SMT pad were independently checked. Correct passive pinAttributes are now supplied by the board instance; the reference-category advisory is retained. This does not approve mechanical access or fabrication."
+    },
+    {
+      "ref": "TP3",
+      "code": "C2906768",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+      "importSha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_9",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+        "source_component_id": "source_component_44",
+        "refdes": "TP3",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "TP"
+      },
+      "wiredPins": {
+        "pin1": "MCU_NRST"
+      },
+      "reason": "Keystone 5015 is a passive one-terminal measurement/programming contact; the untouched official JLC import uses chip-category metadata. Manufacturer catalog M70p61, matching one source/schematic port and one 3.43 x 1.78 mm top SMT pad were independently checked. Correct passive pinAttributes are now supplied by the board instance; the reference-category advisory is retained. This does not approve mechanical access or fabrication."
+    },
+    {
+      "ref": "TP4",
+      "code": "C2906768",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+      "importSha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_10",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+        "source_component_id": "source_component_45",
+        "refdes": "TP4",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "TP"
+      },
+      "wiredPins": {
+        "pin1": "GND"
+      },
+      "reason": "Keystone 5015 is a passive one-terminal measurement/programming contact; the untouched official JLC import uses chip-category metadata. Manufacturer catalog M70p61, matching one source/schematic port and one 3.43 x 1.78 mm top SMT pad were independently checked. Correct passive pinAttributes are now supplied by the board instance; the reference-category advisory is retained. This does not approve mechanical access or fabrication."
+    },
+    {
+      "ref": "TP7",
+      "code": "C2906768",
+      "type": "source_refdes_convention_warning",
+      "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+      "importSha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "rawDiagnostic": {
+        "type": "source_refdes_convention_warning",
+        "source_refdes_convention_warning_id": "source_refdes_convention_warning_15",
+        "warning_type": "source_refdes_convention_warning",
+        "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+        "source_component_id": "source_component_121",
+        "refdes": "TP7",
+        "source_component_ftype": "simple_chip",
+        "expected_prefixes": [
+          "U",
+          "IC"
+        ],
+        "actual_prefix": "TP"
+      },
+      "wiredPins": {
+        "pin1": "VM"
+      },
+      "reason": "Keystone 5015 is a passive one-terminal measurement/programming contact; the untouched official JLC import uses chip-category metadata. Manufacturer catalog M70p61, matching one source/schematic port and one 3.43 x 1.78 mm top SMT pad were independently checked. Correct passive pinAttributes are now supplied by the board instance; the reference-category advisory is retained. This does not approve mechanical access or fabrication."
+    }
+  ],
+  "unreviewedWarnings": []
+}

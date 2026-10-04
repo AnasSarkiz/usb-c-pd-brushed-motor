@@ -1,0 +1,2113 @@
+bun install v1.3.9 (cf6cdbbb)
+   - "@biomejs/biome": "^1.8.3" - @biomejs/biome@1.9.4
+   - "@resvg/resvg-js": "^2.6.2" - @resvg/resvg-js@2.6.2
+   - "@tscircuit/alphabet": "0.0.25" - @tscircuit/alphabet@0.0.25
+   - "@tscircuit/capacity-autorouter": "^0.0.954" - @tscircuit/capacity-autorouter@0.0.954
+   - "@tscircuit/checks": "^0.0.236" - @tscircuit/checks@0.0.236
+   - "@tscircuit/circuit-json-util": "^0.0.118" - @tscircuit/circuit-json-util@0.0.118
+   - "@tscircuit/common": "^0.0.20" - @tscircuit/common@0.0.20
+   - "@tscircuit/copper-pour-solver": "^0.0.67" - @tscircuit/copper-pour-solver@0.0.67
+   - "@tscircuit/create-fdm-enclosure": "0.0.4" - @tscircuit/create-fdm-enclosure@0.0.4
+   - "@tscircuit/fanout-solver": "0.0.78" - @tscircuit/fanout-solver@0.0.78
+   - "@tscircuit/footprinter": "^0.0.430" - @tscircuit/footprinter@0.0.430
+   - "@tscircuit/image-utils": "^0.0.8" - @tscircuit/image-utils@0.0.8
+   - "@tscircuit/infer-cable-insertion-point": "^0.0.4" - @tscircuit/infer-cable-insertion-point@0.0.4
+   - "@tscircuit/infgrid-ijump-astar": "^0.0.35" - @tscircuit/infgrid-ijump-astar@0.0.35
+   - "@tscircuit/krt-wasm": "^0.1.1" - @tscircuit/krt-wasm@0.1.9
+   - "@tscircuit/log-soup": "^1.0.2" - @tscircuit/log-soup@1.0.2
+   - "@tscircuit/matchpack": "^0.0.97" - @tscircuit/matchpack@0.0.97
+   - "@tscircuit/math-utils": "^0.0.36" - @tscircuit/math-utils@0.0.36
+   - "@tscircuit/miniflex": "^0.0.4" - @tscircuit/miniflex@0.0.4
+   - "@tscircuit/modelprinter": "^0.0.5" - @tscircuit/modelprinter@0.0.5
+   - "@tscircuit/ngspice-spice-engine": "^0.0.20" - @tscircuit/ngspice-spice-engine@0.0.20
+   - "@tscircuit/props": "^0.0.682" - @tscircuit/props@0.0.682
+   - "@tscircuit/schematic-match-adapt": "^0.0.18" - @tscircuit/schematic-match-adapt@0.0.18
+   - "@tscircuit/solver-utils": "^0.0.16" - @tscircuit/solver-utils@0.0.16
+   - "@tscircuit/soup-util": "^0.0.41" - @tscircuit/soup-util@0.0.41
+   - "@types/bun": "^1.2.16" - @types/bun@1.4.2
+   - "@types/debug": "^4.1.12" - @types/debug@4.1.13
+   - "@types/react": "^19.1.8" - @types/react@19.3.0
+   - "@types/react-dom": "^19.1.6" - @types/react-dom@19.3.0
+   - "@types/react-reconciler": "^0.28.9" - @types/react-reconciler@0.28.9
+   - "bpc-graph": "^0.0.57" - bpc-graph@0.0.57
+   - "bun-match-svg": "0.0.12" - bun-match-svg@0.0.12
+   - "calculate-elbow": "^0.0.12" - calculate-elbow@0.0.12
+   - "chokidar-cli": "^3.0.0" - chokidar-cli@3.0.0
+   - "circuit-json": "^0.0.511" - circuit-json@0.0.511
+   - "circuit-json-to-bpc": "^0.0.13" - circuit-json-to-bpc@0.0.13
+   - "circuit-json-to-connectivity-map": "^0.0.33" - circuit-json-to-connectivity-map@0.0.33
+   - "circuit-json-to-gltf": "^0.0.141" - circuit-json-to-gltf@0.0.141
+   - "circuit-json-to-spice": "^0.0.45" - circuit-json-to-spice@0.0.45
+   - "circuit-to-svg": "^0.0.438" - circuit-to-svg@0.0.438
+   - "concurrently": "^9.1.2" - concurrently@9.2.4
+   - "connectivity-map": "^1.0.1" - connectivity-map@1.0.1
+   - "debug": "^4.3.6" - debug@4.4.3
+   - "flatbush": "^4.5.0" - flatbush@4.6.2
+   - "graphics-debug": "^0.0.95" - graphics-debug@0.0.95
+   - "howfat": "^0.3.8" - howfat@0.3.8
+   - "kicad-to-circuit-json": "^0.0.142" - kicad-to-circuit-json@0.0.142
+   - "kicadts": "^0.0.53" - kicadts@0.0.53
+   - "live-server": "^1.2.2" - live-server@1.2.2
+   - "minicssgrid": "^0.0.9" - minicssgrid@0.0.9
+   - "pkg-pr-new": "^0.0.37" - pkg-pr-new@0.0.37
+   - "poppygl": "0.0.30" - poppygl@0.0.30
+   - "react": "^19.1.0" - react@19.3.0
+   - "react-dom": "^19.1.0" - react-dom@19.3.0
+   - "schematic-symbols": "^0.0.248" - schematic-symbols@0.0.248
+   - "spicets": "^0.0.4" - spicets@0.0.4
+   - "spicey": "^0.0.14" - spicey@0.0.14
+   - "stack-svgs": "^0.0.1" - stack-svgs@0.0.1
+   - "ts-expect": "^1.3.0" - ts-expect@1.3.0
+   - "tsup": "^8.2.4" - tsup@8.5.1
+   - "@flatten-js/core": "^1.6.2" - @flatten-js/core@1.6.14
+   - "@lume/kiwi": "^0.4.3" - @lume/kiwi@0.4.4
+   - "calculate-cell-boundaries": "^0.0.25" - calculate-cell-boundaries@0.0.25
+   - "calculate-packing": "^0.0.90" - calculate-packing@0.0.90
+   - "css-select": "5.1.0" - css-select@5.1.0
+   - "format-si-unit": "^0.0.12" - format-si-unit@0.0.12
+   - "nanoid": "^5.0.7" - nanoid@5.1.16
+   - "performance-now": "^2.1.0" - performance-now@2.1.0
+   - "react-reconciler": "^0.32.0" - react-reconciler@0.32.0
+   - "svg-path-commander": "^2.1.11" - svg-path-commander@2.3.3
+   - "transformation-matrix": "^2.16.1" - transformation-matrix@2.16.1
+   - "zod": "^3.25.67" - zod@3.25.76
+   - "@biomejs/cli-linux-x64": "1.9.4" - @biomejs/cli-linux-x64@1.9.4
+   - "@biomejs/cli-win32-x64": "1.9.4" - @biomejs/cli-win32-x64@1.9.4
+   - "@biomejs/cli-darwin-x64": "1.9.4" - @biomejs/cli-darwin-x64@1.9.4
+   - "@biomejs/cli-linux-arm64": "1.9.4" - @biomejs/cli-linux-arm64@1.9.4
+   - "@biomejs/cli-win32-arm64": "1.9.4" - @biomejs/cli-win32-arm64@1.9.4
+   - "@biomejs/cli-darwin-arm64": "1.9.4" - @biomejs/cli-darwin-arm64@1.9.4
+   - "@biomejs/cli-linux-x64-musl": "1.9.4" - @biomejs/cli-linux-x64-musl@1.9.4
+   - "@biomejs/cli-linux-arm64-musl": "1.9.4" - @biomejs/cli-linux-arm64-musl@1.9.4
+   - "@resvg/resvg-js-darwin-x64": "2.6.2" - @resvg/resvg-js-darwin-x64@2.6.2
+   - "@resvg/resvg-js-darwin-arm64": "2.6.2" - @resvg/resvg-js-darwin-arm64@2.6.2
+   - "@resvg/resvg-js-android-arm64": "2.6.2" - @resvg/resvg-js-android-arm64@2.6.2
+   - "@resvg/resvg-js-linux-x64-gnu": "2.6.2" - @resvg/resvg-js-linux-x64-gnu@2.6.2
+   - "@resvg/resvg-js-linux-x64-musl": "2.6.2" - @resvg/resvg-js-linux-x64-musl@2.6.2
+   - "@resvg/resvg-js-win32-x64-msvc": "2.6.2" - @resvg/resvg-js-win32-x64-msvc@2.6.2
+   - "@resvg/resvg-js-linux-arm64-gnu": "2.6.2" - @resvg/resvg-js-linux-arm64-gnu@2.6.2
+   - "@resvg/resvg-js-win32-ia32-msvc": "2.6.2" - @resvg/resvg-js-win32-ia32-msvc@2.6.2
+   - "@resvg/resvg-js-android-arm-eabi": "2.6.2" - @resvg/resvg-js-android-arm-eabi@2.6.2
+   - "@resvg/resvg-js-linux-arm64-musl": "2.6.2" - @resvg/resvg-js-linux-arm64-musl@2.6.2
+   - "@resvg/resvg-js-win32-arm64-msvc": "2.6.2" - @resvg/resvg-js-win32-arm64-msvc@2.6.2
+   - "@resvg/resvg-js-linux-arm-gnueabihf": "2.6.2" - @resvg/resvg-js-linux-arm-gnueabihf@2.6.2
+   - "object-hash": "^3.0.0" - object-hash@3.0.0
+   - "fast-json-stable-stringify": "^2.1.0" - fast-json-stable-stringify@2.1.0
+   - "parsel-js": "^1.1.2" - parsel-js@1.2.3
+   - "@tscircuit/manifold-2d": "^0.0.6" - @tscircuit/manifold-2d@0.0.6
+   - "jscad-planner": "^0.0.14" - jscad-planner@0.0.14
+   - "graphics-debug": "^0.0.96" - graphics-debug@0.0.96
+   - "@tscircuit/solver-utils": "^0.0.19" - @tscircuit/solver-utils@0.0.19
+   - "graphics-debug": "0.0.99" - graphics-debug@0.0.99
+   - "@tscircuit/capacity-autorouter": "0.0.718" - @tscircuit/capacity-autorouter@0.0.718
+   - "@tscircuit/mm": "^0.0.8" - @tscircuit/mm@0.0.8
+   - "fast-png": "^8.0.0" - fast-png@8.0.0
+   - "color-diff": "^1.4.0" - color-diff@1.4.0
+   - "redaxios": "^0.5.1" - redaxios@0.5.1
+   - "@tscircuit/mm": "^0.0.9" - @tscircuit/mm@0.0.9
+   - "bun-types": "1.4.2" - bun-types@1.4.2
+   - "@types/ms": "*" - @types/ms@2.1.0
+   - "csstype": "^3.2.2" - csstype@3.2.3
+   - "looks-same": "^9.0.1" - looks-same@9.0.1
+   - "yargs": "^13.3.0" - yargs@13.3.2
+   - "chokidar": "^3.5.2" - chokidar@3.6.0
+   - "lodash.debounce": "^4.0.8" - lodash.debounce@4.0.8
+   - "lodash.throttle": "^4.1.1" - lodash.throttle@4.1.1
+   - "@tscircuit/math-utils": "^0.0.9" - @tscircuit/math-utils@0.0.9
+   - "earcut": "^3.0.2" - earcut@3.2.4
+   - "gl-matrix": "^3.4.4" - gl-matrix@3.4.4
+   - "jscad-to-gltf": "^0.0.5" - jscad-to-gltf@0.0.5
+   - "occt-import-js": "^0.0.23" - occt-import-js@0.0.23
+   - "@jscad/modeling": "^2.12.6" - @jscad/modeling@2.13.0
+   - "jscad-electronics": "^0.0.178" - jscad-electronics@0.0.178
+   - "circuit-json-to-connectivity-map": "^0.0.22" - circuit-json-to-connectivity-map@0.0.22
+   - "svgson": "^5.3.1" - svgson@5.3.1
+   - "@types/node": "^22.5.5" - @types/node@22.20.5
+   - "rxjs": "7.8.2" - rxjs@7.8.2
+   - "chalk": "4.1.2" - chalk@4.1.2
+   - "yargs": "17.7.2" - yargs@17.7.2
+   - "tree-kill": "1.2.2" - tree-kill@1.2.2
+   - "shell-quote": "1.9.0" - shell-quote@1.9.0
+   - "supports-color": "8.1.1" - supports-color@8.1.1
+   - "ms": "^2.1.3" - ms@2.1.3
+   - "flatqueue": "^3.1.0" - flatqueue@3.1.0
+   - "polished": "^4.3.1" - polished@4.3.1
+   - "react-supergrid": "^1.0.10" - react-supergrid@1.0.10
+   - "react-router-dom": "^6.28.0" - react-router-dom@6.30.6
+   - "transformation-matrix": "^3.0.0" - transformation-matrix@3.1.0
+   - "@types/react-router-dom": "^5.3.3" - @types/react-router-dom@5.3.3
+   - "use-mouse-matrix-transform": "^1.3.0" - use-mouse-matrix-transform@1.3.5
+   - "@react-hook/resize-observer": "^2.0.2" - @react-hook/resize-observer@2.0.2
+   - "axios": "^0.26.1" - axios@0.26.1
+   - "npm-package-arg": "^10.0.0" - npm-package-arg@10.1.0
+   - "package-options": "^0.1.4" - package-options@0.1.5
+   - "semver": "^7.3.8" - semver@7.8.5
+   - "tar": "^6.1.12" - tar@6.2.1
+   - "opn": "latest" - opn@6.0.0
+   - "cors": "latest" - cors@2.8.6
+   - "send": "latest" - send@1.2.1
+   - "colors": "1.4.0" - colors@1.4.0
+   - "morgan": "^1.9.1" - morgan@1.12.1
+   - "connect": "^3.6.6" - connect@3.7.0
+   - "chokidar": "^2.0.4" - chokidar@2.1.8
+   - "http-auth": "3.1.x" - http-auth@3.1.3
+   - "serve-index": "^1.9.1" - serve-index@1.9.2
+   - "event-stream": "3.3.4" - event-stream@3.3.4
+   - "object-assign": "latest" - object-assign@4.1.1
+   - "faye-websocket": "0.11.x" - faye-websocket@0.11.4
+   - "proxy-middleware": "latest" - proxy-middleware@0.15.0
+   - "ignore": "^5.3.1" - ignore@5.3.2
+   - "pkg-types": "^1.1.1" - pkg-types@1.3.1
+   - "tinyglobby": "^0.2.9" - tinyglobby@0.2.17
+   - "isbinaryfile": "^5.0.2" - isbinaryfile@5.0.7
+   - "query-registry": "^3.0.1" - query-registry@3.0.1
+   - "@octokit/action": "^6.1.0" - @octokit/action@6.1.0
+   - "@jsdevtools/ez-spawn": "^3.0.4" - @jsdevtools/ez-spawn@3.0.4
+   - "pureimage": "^0.4.18" - pureimage@0.4.20
+   - "readable-stream": "^4.7.0" - readable-stream@4.7.0
+   - "scheduler": "^0.28.0" - scheduler@0.28.0
+   - "bundle-require": "^5.1.0" - bundle-require@5.1.0
+   - "cac": "^6.7.14" - cac@6.7.14
+   - "chokidar": "^4.0.3" - chokidar@4.0.3
+   - "consola": "^3.4.0" - consola@3.4.2
+   - "esbuild": "^0.27.0" - esbuild@0.27.7
+   - "fix-dts-default-cjs-exports": "^1.0.0" - fix-dts-default-cjs-exports@1.0.1
+   - "joycon": "^3.1.1" - joycon@3.1.1
+   - "picocolors": "^1.1.1" - picocolors@1.1.1
+   - "postcss-load-config": "^6.0.1" - postcss-load-config@6.0.1
+   - "resolve-from": "^5.0.0" - resolve-from@5.0.0
+   - "rollup": "^4.34.8" - rollup@4.64.0
+   - "source-map": "^0.7.6" - source-map@0.7.6
+   - "sucrase": "^3.35.0" - sucrase@3.35.1
+   - "tinyexec": "^0.3.2" - tinyexec@0.3.2
+   - "@flatten-js/interval-tree": "^2.0.0" - @flatten-js/interval-tree@2.0.3
+   - "react": "^18.3.1" - react@18.3.1
+   - "react-dom": "^18.3.1" - react-dom@18.3.1
+   - "lucide-react": "^1.17.0" - lucide-react@1.51.0
+   - "boolbase": "^1.0.0" - boolbase@1.0.0
+   - "css-what": "^6.1.0" - css-what@6.2.2
+   - "domutils": "^3.0.1" - domutils@3.2.2
+   - "nth-check": "^2.0.1" - nth-check@2.1.1
+   - "domhandler": "^5.0.2" - domhandler@5.0.3
+   - "scheduler": "^0.26.0" - scheduler@0.26.0
+   - "@thednp/dommatrix": "^3.1.2" - @thednp/dommatrix@3.1.2
+   - "fflate": "^0.8.2" - fflate@0.8.3
+   - "iobuffer": "^6.0.1" - iobuffer@6.0.1
+   - "sharp": "0.32.6" - sharp@0.32.6
+   - "lodash": "^4.17.3" - lodash@4.18.1
+   - "fs-extra": "^8.1.0" - fs-extra@8.1.0
+   - "parse-color": "^1.0.0" - parse-color@1.0.0
+   - "js-graph-algorithms": "1.0.18" - js-graph-algorithms@1.0.18
+   - "nested-error-stacks": "^2.1.0" - nested-error-stacks@2.1.1
+   - "y18n": "^4.0.0" - y18n@4.0.3
+   - "cliui": "^5.0.0" - cliui@5.0.0
+   - "find-up": "^3.0.0" - find-up@3.0.0
+   - "set-blocking": "^2.0.0" - set-blocking@2.0.0
+   - "string-width": "^3.0.0" - string-width@3.1.0
+   - "which-module": "^2.0.0" - which-module@2.0.1
+   - "yargs-parser": "^13.1.2" - yargs-parser@13.1.2
+   - "get-caller-file": "^2.0.1" - get-caller-file@2.0.5
+   - "require-directory": "^2.1.1" - require-directory@2.1.1
+   - "require-main-filename": "^2.0.0" - require-main-filename@2.0.0
+   - "braces": "~3.0.2" - braces@3.0.3
+   - "is-glob": "~4.0.1" - is-glob@4.0.3
+   - "anymatch": "~3.1.2" - anymatch@3.1.3
+   - "readdirp": "~3.6.0" - readdirp@3.6.0
+   - "glob-parent": "~5.1.2" - glob-parent@5.1.2
+   - "is-binary-path": "~2.1.0" - is-binary-path@2.1.0
+   - "normalize-path": "~3.0.0" - normalize-path@3.0.0
+   - "fsevents": "~2.3.2" - fsevents@2.3.3
+   - "jscad-planner": "^0.0.13" - jscad-planner@0.0.13
+   - "@tscircuit/modelprinter": "^0.0.2" - @tscircuit/modelprinter@0.0.2
+   - "deep-rename-keys": "^0.2.1" - deep-rename-keys@0.2.1
+   - "xml-reader": "2.4.3" - xml-reader@2.4.3
+   - "undici-types": "~6.21.0" - undici-types@6.21.0
+   - "tslib": "^2.1.0" - tslib@2.8.1
+   - "ansi-styles": "^4.1.0" - ansi-styles@4.3.0
+   - "supports-color": "^7.1.0" - supports-color@7.2.0
+   - "y18n": "^5.0.5" - y18n@5.0.8
+   - "cliui": "^8.0.1" - cliui@8.0.1
+   - "escalade": "^3.1.1" - escalade@3.2.0
+   - "string-width": "^4.2.3" - string-width@4.2.3
+   - "yargs-parser": "^21.1.1" - yargs-parser@21.1.1
+   - "has-flag": "^4.0.0" - has-flag@4.0.0
+   - "@babel/runtime": "^7.17.8" - @babel/runtime@7.29.7
+   - "react-router": "6.30.6" - react-router@6.30.6
+   - "@remix-run/router": "1.23.4" - @remix-run/router@1.23.4
+   - "@types/history": "^4.7.11" - @types/history@4.7.11
+   - "@types/react-router": "*" - @types/react-router@5.1.20
+   - "@react-hook/latest": "^1.0.2" - @react-hook/latest@1.0.3
+   - "@react-hook/passive-layout-effect": "^1.2.0" - @react-hook/passive-layout-effect@1.2.1
+   - "follow-redirects": "^1.14.8" - follow-redirects@1.16.1
+   - "proc-log": "^3.0.0" - proc-log@3.0.0
+   - "hosted-git-info": "^6.0.0" - hosted-git-info@6.1.3
+   - "validate-npm-package-name": "^5.0.0" - validate-npm-package-name@5.0.1
+   - "chownr": "^2.0.0" - chownr@2.0.0
+   - "mkdirp": "^1.0.3" - mkdirp@1.0.4
+   - "yallist": "^4.0.0" - yallist@4.0.0
+   - "minipass": "^5.0.0" - minipass@5.0.0
+   - "minizlib": "^2.1.1" - minizlib@2.1.2
+   - "fs-minipass": "^2.0.0" - fs-minipass@2.1.0
+   - "is-wsl": "^1.1.0" - is-wsl@1.1.0
+   - "vary": "^1" - vary@1.1.2
+   - "encodeurl": "^2.0.0" - encodeurl@2.0.0
+   - "escape-html": "^1.0.3" - escape-html@1.0.3
+   - "etag": "^1.8.1" - etag@1.8.1
+   - "fresh": "^2.0.0" - fresh@2.0.0
+   - "http-errors": "^2.0.1" - http-errors@2.0.1
+   - "mime-types": "^3.0.2" - mime-types@3.0.2
+   - "on-finished": "^2.4.1" - on-finished@2.4.1
+   - "range-parser": "^1.2.1" - range-parser@1.3.0
+   - "statuses": "^2.0.2" - statuses@2.0.2
+   - "depd": "~2.0.0" - depd@2.0.0
+   - "debug": "2.6.9" - debug@2.6.9
+   - "basic-auth": "~2.0.1" - basic-auth@2.0.1
+   - "on-headers": "~1.1.0" - on-headers@1.1.0
+   - "finalhandler": "1.1.2" - finalhandler@1.1.2
+   - "parseurl": "~1.3.3" - parseurl@1.3.3
+   - "utils-merge": "1.0.1" - utils-merge@1.0.1
+   - "upath": "^1.1.1" - upath@1.2.0
+   - "braces": "^2.3.2" - braces@2.3.2
+   - "anymatch": "^2.0.0" - anymatch@2.0.0
+   - "inherits": "^2.0.3" - inherits@2.0.4
+   - "readdirp": "^2.2.1" - readdirp@2.2.1
+   - "async-each": "^1.0.1" - async-each@1.0.6
+   - "glob-parent": "^3.1.0" - glob-parent@3.1.0
+   - "is-binary-path": "^1.0.0" - is-binary-path@1.0.1
+   - "path-is-absolute": "^1.0.0" - path-is-absolute@1.0.1
+   - "fsevents": "^1.2.7" - fsevents@1.2.13
+   - "uuid": "^3.0.0" - uuid@3.4.0
+   - "bcryptjs": "^2.3.0" - bcryptjs@2.4.3
+   - "apache-md5": "^1.0.6" - apache-md5@1.1.8
+   - "apache-crypt": "^1.1.2" - apache-crypt@1.2.6
+   - "accepts": "~1.3.8" - accepts@1.3.8
+   - "batch": "0.6.1" - batch@0.6.1
+   - "http-errors": "~1.8.0" - http-errors@1.8.1
+   - "mime-types": "~2.1.35" - mime-types@2.1.35
+   - "through": "~2.3.1" - through@2.3.8
+   - "duplexer": "~0.1.1" - duplexer@0.1.2
+   - "from": "~0" - from@0.1.7
+   - "map-stream": "~0.1.0" - map-stream@0.1.0
+   - "pause-stream": "0.0.11" - pause-stream@0.0.11
+   - "split": "0.3" - split@0.3.3
+   - "stream-combiner": "~0.0.4" - stream-combiner@0.0.4
+   - "websocket-driver": ">=0.5.1" - websocket-driver@0.7.5
+   - "mlly": "^1.7.4" - mlly@1.8.2
+   - "pathe": "^2.0.1" - pathe@2.0.3
+   - "confbox": "^0.1.8" - confbox@0.1.8
+   - "fdir": "^6.5.0" - fdir@6.5.0
+   - "picomatch": "^4.0.4" - picomatch@4.0.7
+   - "url-join": "^5.0.0" - url-join@5.0.0
+   - "quick-lru": "^7.0.0" - quick-lru@7.3.0
+   - "query-string": "^9.0.0" - query-string@9.5.1
+   - "zod-package-json": "^1.0.3" - zod-package-json@1.2.0
+   - "undici": "^6.0.0" - undici@6.29.0
+   - "@octokit/core": "^5.0.0" - @octokit/core@5.2.2
+   - "@octokit/types": "^12.0.0" - @octokit/types@12.6.0
+   - "@octokit/auth-action": "^4.0.0" - @octokit/auth-action@4.1.0
+   - "@octokit/plugin-paginate-rest": "^9.0.0" - @octokit/plugin-paginate-rest@9.2.2
+   - "@octokit/plugin-rest-endpoint-methods": "^10.0.0" - @octokit/plugin-rest-endpoint-methods@10.4.1
+   - "cross-spawn": "^7.0.3" - cross-spawn@7.0.6
+   - "string-argv": "^0.3.1" - string-argv@0.3.2
+   - "type-detect": "^4.0.8" - type-detect@4.1.0
+   - "call-me-maybe": "^1.0.1" - call-me-maybe@1.0.2
+   - "jpeg-js": "^0.4.4" - jpeg-js@0.4.4
+   - "opentype.js": "^0.4.3" - opentype.js@0.4.11
+   - "pngjs": "^7.0.0" - pngjs@7.0.0
+   - "abort-controller": "^3.0.0" - abort-controller@3.0.0
+   - "buffer": "^6.0.3" - buffer@6.0.3
+   - "events": "^3.3.0" - events@3.3.0
+   - "process": "^0.11.10" - process@0.11.10
+   - "string_decoder": "^1.3.0" - string_decoder@1.3.0
+   - "load-tsconfig": "^0.2.3" - load-tsconfig@0.2.5
+   - "readdirp": "^4.0.1" - readdirp@4.1.2
+   - "@esbuild/aix-ppc64": "0.27.7" - @esbuild/aix-ppc64@0.27.7
+   - "@esbuild/linux-arm": "0.27.7" - @esbuild/linux-arm@0.27.7
+   - "@esbuild/linux-x64": "0.27.7" - @esbuild/linux-x64@0.27.7
+   - "@esbuild/sunos-x64": "0.27.7" - @esbuild/sunos-x64@0.27.7
+   - "@esbuild/win32-x64": "0.27.7" - @esbuild/win32-x64@0.27.7
+   - "@esbuild/darwin-x64": "0.27.7" - @esbuild/darwin-x64@0.27.7
+   - "@esbuild/linux-ia32": "0.27.7" - @esbuild/linux-ia32@0.27.7
+   - "@esbuild/netbsd-x64": "0.27.7" - @esbuild/netbsd-x64@0.27.7
+   - "@esbuild/win32-ia32": "0.27.7" - @esbuild/win32-ia32@0.27.7
+   - "@esbuild/android-arm": "0.27.7" - @esbuild/android-arm@0.27.7
+   - "@esbuild/android-x64": "0.27.7" - @esbuild/android-x64@0.27.7
+   - "@esbuild/freebsd-x64": "0.27.7" - @esbuild/freebsd-x64@0.27.7
+   - "@esbuild/linux-arm64": "0.27.7" - @esbuild/linux-arm64@0.27.7
+   - "@esbuild/linux-ppc64": "0.27.7" - @esbuild/linux-ppc64@0.27.7
+   - "@esbuild/linux-s390x": "0.27.7" - @esbuild/linux-s390x@0.27.7
+   - "@esbuild/openbsd-x64": "0.27.7" - @esbuild/openbsd-x64@0.27.7
+   - "@esbuild/win32-arm64": "0.27.7" - @esbuild/win32-arm64@0.27.7
+   - "@esbuild/darwin-arm64": "0.27.7" - @esbuild/darwin-arm64@0.27.7
+   - "@esbuild/netbsd-arm64": "0.27.7" - @esbuild/netbsd-arm64@0.27.7
+   - "@esbuild/android-arm64": "0.27.7" - @esbuild/android-arm64@0.27.7
+   - "@esbuild/freebsd-arm64": "0.27.7" - @esbuild/freebsd-arm64@0.27.7
+   - "@esbuild/linux-loong64": "0.27.7" - @esbuild/linux-loong64@0.27.7
+   - "@esbuild/linux-riscv64": "0.27.7" - @esbuild/linux-riscv64@0.27.7
+   - "@esbuild/openbsd-arm64": "0.27.7" - @esbuild/openbsd-arm64@0.27.7
+   - "@esbuild/linux-mips64el": "0.27.7" - @esbuild/linux-mips64el@0.27.7
+   - "@esbuild/openharmony-arm64": "0.27.7" - @esbuild/openharmony-arm64@0.27.7
+   - "magic-string": "^0.30.17" - magic-string@0.30.21
+   - "lilconfig": "^3.1.1" - lilconfig@3.1.3
+   - "@types/estree": "1.0.9" - @types/estree@1.0.9
+   - "@rollup/rollup-darwin-x64": "4.64.0" - @rollup/rollup-darwin-x64@4.64.0
+   - "@rollup/rollup-freebsd-x64": "4.64.0" - @rollup/rollup-freebsd-x64@4.64.0
+   - "@rollup/rollup-openbsd-x64": "4.64.0" - @rollup/rollup-openbsd-x64@4.64.0
+   - "@napi-rs/lzma-linux-x64-gnu": "1.5.1" - @napi-rs/lzma-linux-x64-gnu@1.5.1
+   - "@rollup/rollup-darwin-arm64": "4.64.0" - @rollup/rollup-darwin-arm64@4.64.0
+   - "@rollup/rollup-android-arm64": "4.64.0" - @rollup/rollup-android-arm64@4.64.0
+   - "@rollup/rollup-freebsd-arm64": "4.64.0" - @rollup/rollup-freebsd-arm64@4.64.0
+   - "@rollup/rollup-linux-x64-gnu": "4.64.0" - @rollup/rollup-linux-x64-gnu@4.64.0
+   - "@rollup/rollup-win32-x64-gnu": "4.64.0" - @rollup/rollup-win32-x64-gnu@4.64.0
+   - "@rollup/rollup-linux-x64-musl": "4.64.0" - @rollup/rollup-linux-x64-musl@4.64.0
+   - "@rollup/rollup-win32-x64-msvc": "4.64.0" - @rollup/rollup-win32-x64-msvc@4.64.0
+   - "@rollup/rollup-linux-arm64-gnu": "4.64.0" - @rollup/rollup-linux-arm64-gnu@4.64.0
+   - "@rollup/rollup-linux-ppc64-gnu": "4.64.0" - @rollup/rollup-linux-ppc64-gnu@4.64.0
+   - "@rollup/rollup-linux-s390x-gnu": "4.64.0" - @rollup/rollup-linux-s390x-gnu@4.64.0
+   - "@rollup/rollup-win32-ia32-msvc": "4.64.0" - @rollup/rollup-win32-ia32-msvc@4.64.0
+   - "@rollup/rollup-android-arm-eabi": "4.64.0" - @rollup/rollup-android-arm-eabi@4.64.0
+   - "@rollup/rollup-linux-arm64-musl": "4.64.0" - @rollup/rollup-linux-arm64-musl@4.64.0
+   - "@rollup/rollup-linux-ppc64-musl": "4.64.0" - @rollup/rollup-linux-ppc64-musl@4.64.0
+   - "@rollup/rollup-win32-arm64-msvc": "4.64.0" - @rollup/rollup-win32-arm64-msvc@4.64.0
+   - "@rollup/rollup-linux-loong64-gnu": "4.64.0" - @rollup/rollup-linux-loong64-gnu@4.64.0
+   - "@rollup/rollup-linux-riscv64-gnu": "4.64.0" - @rollup/rollup-linux-riscv64-gnu@4.64.0
+   - "@rollup/rollup-openharmony-arm64": "4.64.0" - @rollup/rollup-openharmony-arm64@4.64.0
+   - "@rollup/rollup-linux-loong64-musl": "4.64.0" - @rollup/rollup-linux-loong64-musl@4.64.0
+   - "@rollup/rollup-linux-riscv64-musl": "4.64.0" - @rollup/rollup-linux-riscv64-musl@4.64.0
+   - "@rollup/rollup-linux-arm-gnueabihf": "4.64.0" - @rollup/rollup-linux-arm-gnueabihf@4.64.0
+   - "@rollup/rollup-linux-arm-musleabihf": "4.64.0" - @rollup/rollup-linux-arm-musleabihf@4.64.0
+   - "@jridgewell/gen-mapping": "^0.3.2" - @jridgewell/gen-mapping@0.3.13
+   - "commander": "^4.0.0" - commander@4.1.1
+   - "lines-and-columns": "^1.1.6" - lines-and-columns@1.2.4
+   - "mz": "^2.7.0" - mz@2.7.0
+   - "pirates": "^4.0.1" - pirates@4.0.7
+   - "ts-interface-checker": "^0.1.9" - ts-interface-checker@0.1.13
+   - "loose-envify": "^1.1.0" - loose-envify@1.4.0
+   - "scheduler": "^0.23.2" - scheduler@0.23.2
+   - "dom-serializer": "^2.0.0" - dom-serializer@2.0.0
+   - "domelementtype": "^2.3.0" - domelementtype@2.3.0
+   - "color": "^4.2.3" - color@4.2.3
+   - "tar-fs": "^3.0.4" - tar-fs@3.1.3
+   - "simple-get": "^4.0.1" - simple-get@4.0.1
+   - "detect-libc": "^2.0.2" - detect-libc@2.1.2
+   - "tunnel-agent": "^0.6.0" - tunnel-agent@0.6.0
+   - "node-addon-api": "^6.1.0" - node-addon-api@6.1.0
+   - "prebuild-install": "^7.1.1" - prebuild-install@7.1.3
+   - "jsonfile": "^4.0.0" - jsonfile@4.0.0
+   - "graceful-fs": "^4.2.0" - graceful-fs@4.2.11
+   - "universalify": "^0.1.0" - universalify@0.1.2
+   - "color-convert": "~0.5.0" - color-convert@0.5.3
+   - "wrap-ansi": "^5.1.0" - wrap-ansi@5.1.0
+   - "strip-ansi": "^5.2.0" - strip-ansi@5.2.0
+   - "locate-path": "^3.0.0" - locate-path@3.0.0
+   - "emoji-regex": "^7.0.1" - emoji-regex@7.0.3
+   - "is-fullwidth-code-point": "^2.0.0" - is-fullwidth-code-point@2.0.0
+   - "camelcase": "^5.0.0" - camelcase@5.3.1
+   - "decamelize": "^1.2.0" - decamelize@1.2.0
+   - "fill-range": "^7.1.1" - fill-range@7.1.1
+   - "is-extglob": "^2.1.1" - is-extglob@2.1.1
+   - "picomatch": "^2.0.4" - picomatch@2.3.2
+   - "binary-extensions": "^2.0.0" - binary-extensions@2.3.0
+   - "zod": "^4.4.3" - zod@4.6.5
+   - "kind-of": "^3.0.2" - kind-of@3.2.2
+   - "rename-keys": "^1.1.2" - rename-keys@1.2.0
+   - "eventemitter3": "^2.0.0" - eventemitter3@2.0.3
+   - "xml-lexer": "^0.2.2" - xml-lexer@0.2.2
+   - "color-convert": "^2.0.1" - color-convert@2.0.1
+   - "wrap-ansi": "^7.0.0" - wrap-ansi@7.0.0
+   - "strip-ansi": "^6.0.1" - strip-ansi@6.0.1
+   - "emoji-regex": "^8.0.0" - emoji-regex@8.0.0
+   - "is-fullwidth-code-point": "^3.0.0" - is-fullwidth-code-point@3.0.0
+   - "lru-cache": "^7.5.1" - lru-cache@7.18.3
+   - "minipass": "^3.0.0" - minipass@3.3.6
+   - "setprototypeof": "~1.2.0" - setprototypeof@1.2.0
+   - "toidentifier": "~1.0.1" - toidentifier@1.0.1
+   - "mime-db": "^1.54.0" - mime-db@1.54.0
+   - "ee-first": "1.1.1" - ee-first@1.1.1
+   - "ms": "2.0.0" - ms@2.0.0
+   - "safe-buffer": "5.1.2" - safe-buffer@5.1.2
+   - "unpipe": "~1.0.0" - unpipe@1.0.0
+   - "statuses": "~1.5.0" - statuses@1.5.0
+   - "encodeurl": "~1.0.2" - encodeurl@1.0.2
+   - "on-finished": "~2.3.0" - on-finished@2.3.0
+   - "isobject": "^3.0.1" - isobject@3.0.1
+   - "to-regex": "^3.0.1" - to-regex@3.0.2
+   - "fill-range": "^4.0.0" - fill-range@4.0.0
+   - "snapdragon": "^0.8.1" - snapdragon@0.8.2
+   - "arr-flatten": "^1.1.0" - arr-flatten@1.1.0
+   - "array-unique": "^0.3.2" - array-unique@0.3.2
+   - "split-string": "^3.0.2" - split-string@3.1.0
+   - "extend-shallow": "^2.0.1" - extend-shallow@2.0.1
+   - "repeat-element": "^1.1.2" - repeat-element@1.1.4
+   - "snapdragon-node": "^2.0.1" - snapdragon-node@2.1.1
+   - "micromatch": "^3.1.4" - micromatch@3.1.10
+   - "normalize-path": "^2.1.1" - normalize-path@2.1.1
+   - "readable-stream": "^2.0.2" - readable-stream@2.3.8
+   - "is-glob": "^3.1.0" - is-glob@3.1.0
+   - "path-dirname": "^1.0.0" - path-dirname@1.0.2
+   - "binary-extensions": "^1.0.0" - binary-extensions@1.13.1
+   - "nan": "^2.12.1" - nan@2.29.0
+   - "bindings": "^1.5.0" - bindings@1.5.0
+   - "unix-crypt-td-js": "^1.1.4" - unix-crypt-td-js@1.1.4
+   - "negotiator": "0.6.3" - negotiator@0.6.3
+   - "depd": "~1.1.2" - depd@1.1.2
+   - "mime-db": "1.52.0" - mime-db@1.52.0
+   - "http-parser-js": ">=0.5.1" - http-parser-js@0.5.10
+   - "websocket-extensions": ">=0.1.1" - websocket-extensions@0.1.4
+   - "acorn": "^8.16.0" - acorn@8.18.0
+   - "ufo": "^1.6.3" - ufo@1.6.4
+   - "filter-obj": "^5.1.0" - filter-obj@5.1.0
+   - "split-on-first": "^3.0.0" - split-on-first@3.0.0
+   - "decode-uri-component": "^0.5.0" - decode-uri-component@0.5.0
+   - "@octokit/types": "^13.0.0" - @octokit/types@13.10.0
+   - "@octokit/graphql": "^7.1.0" - @octokit/graphql@7.1.1
+   - "@octokit/request": "^8.4.1" - @octokit/request@8.4.1
+   - "before-after-hook": "^2.2.0" - before-after-hook@2.2.3
+   - "@octokit/auth-token": "^4.0.0" - @octokit/auth-token@4.0.0
+   - "universal-user-agent": "^6.0.0" - universal-user-agent@6.0.1
+   - "@octokit/request-error": "^5.1.1" - @octokit/request-error@5.1.1
+   - "@octokit/openapi-types": "^20.0.0" - @octokit/openapi-types@20.0.0
+   - "which": "^2.0.1" - which@2.0.2
+   - "path-key": "^3.1.0" - path-key@3.1.1
+   - "shebang-command": "^2.0.0" - shebang-command@2.0.0
+   - "event-target-shim": "^5.0.0" - event-target-shim@5.0.1
+   - "base64-js": "^1.3.1" - base64-js@1.5.1
+   - "ieee754": "^1.2.1" - ieee754@1.2.1
+   - "safe-buffer": "~5.2.0" - safe-buffer@5.2.1
+   - "@jridgewell/sourcemap-codec": "^1.5.5" - @jridgewell/sourcemap-codec@1.6.0
+   - "@jridgewell/trace-mapping": "^0.3.24" - @jridgewell/trace-mapping@0.3.31
+   - "any-promise": "^1.0.0" - any-promise@1.3.0
+   - "thenify-all": "^1.0.0" - thenify-all@1.6.0
+   - "js-tokens": "^3.0.0 || ^4.0.0" - js-tokens@4.0.0
+   - "entities": "^4.2.0" - entities@4.5.0
+   - "color-string": "^1.9.0" - color-string@1.9.1
+   - "pump": "^3.0.0" - pump@3.0.4
+   - "tar-stream": "^3.1.5" - tar-stream@3.2.2
+   - "bare-fs": "^4.0.1" - bare-fs@4.8.2
+   - "bare-path": "^3.0.0" - bare-path@3.1.2
+   - "decompress-response": "^6.0.0" - decompress-response@6.0.0
+   - "once": "^1.3.1" - once@1.4.0
+   - "simple-concat": "^1.0.0" - simple-concat@1.0.1
+   - "rc": "^1.2.7" - rc@1.2.8
+   - "tar-fs": "^2.0.0" - tar-fs@2.1.5
+   - "minimist": "^1.2.3" - minimist@1.2.8
+   - "node-abi": "^3.3.0" - node-abi@3.96.0
+   - "mkdirp-classic": "^0.5.3" - mkdirp-classic@0.5.3
+   - "expand-template": "^2.0.3" - expand-template@2.0.3
+   - "napi-build-utils": "^2.0.0" - napi-build-utils@2.0.0
+   - "github-from-package": "0.0.0" - github-from-package@0.0.0
+   - "ansi-styles": "^3.2.0" - ansi-styles@3.2.1
+   - "ansi-regex": "^4.1.0" - ansi-regex@4.1.1
+   - "p-locate": "^3.0.0" - p-locate@3.0.0
+   - "path-exists": "^3.0.0" - path-exists@3.0.0
+   - "to-regex-range": "^5.0.1" - to-regex-range@5.0.1
+   - "is-buffer": "^1.1.5" - is-buffer@1.1.6
+   - "color-name": "~1.1.4" - color-name@1.1.4
+   - "ansi-regex": "^5.0.1" - ansi-regex@5.0.1
+   - "define-property": "^2.0.2" - define-property@2.0.2
+   - "extend-shallow": "^3.0.2" - extend-shallow@3.0.2
+   - "regex-not": "^1.0.2" - regex-not@1.0.2
+   - "safe-regex": "^1.1.0" - safe-regex@1.1.0
+   - "is-number": "^3.0.0" - is-number@3.0.0
+   - "repeat-string": "^1.6.1" - repeat-string@1.6.1
+   - "to-regex-range": "^2.1.0" - to-regex-range@2.1.1
+   - "base": "^0.11.1" - base@0.11.2
+   - "define-property": "^0.2.5" - define-property@0.2.5
+   - "map-cache": "^0.2.2" - map-cache@0.2.2
+   - "source-map": "^0.5.6" - source-map@0.5.7
+   - "source-map-resolve": "^0.5.0" - source-map-resolve@0.5.3
+   - "use": "^3.1.0" - use@3.1.1
+   - "is-extendable": "^0.1.0" - is-extendable@0.1.1
+   - "define-property": "^1.0.0" - define-property@1.0.0
+   - "snapdragon-util": "^3.0.1" - snapdragon-util@3.0.1
+   - "extglob": "^2.0.4" - extglob@2.0.4
+   - "kind-of": "^6.0.2" - kind-of@6.0.3
+   - "arr-diff": "^4.0.0" - arr-diff@4.0.0
+   - "nanomatch": "^1.2.9" - nanomatch@1.2.13
+   - "object.pick": "^1.3.0" - object.pick@1.3.0
+   - "fragment-cache": "^0.2.1" - fragment-cache@0.2.1
+   - "remove-trailing-separator": "^1.0.1" - remove-trailing-separator@1.1.0
+   - "isarray": "~1.0.0" - isarray@1.0.0
+   - "core-util-is": "~1.0.0" - core-util-is@1.0.3
+   - "string_decoder": "~1.1.1" - string_decoder@1.1.1
+   - "util-deprecate": "~1.0.1" - util-deprecate@1.0.2
+   - "process-nextick-args": "~2.0.0" - process-nextick-args@2.0.1
+   - "file-uri-to-path": "1.0.0" - file-uri-to-path@1.0.0
+   - "@octokit/openapi-types": "^24.2.0" - @octokit/openapi-types@24.2.0
+   - "@octokit/endpoint": "^9.0.6" - @octokit/endpoint@9.0.6
+   - "deprecation": "^2.0.0" - deprecation@2.3.1
+   - "isexe": "^2.0.0" - isexe@2.0.0
+   - "shebang-regex": "^3.0.0" - shebang-regex@3.0.0
+   - "@jridgewell/resolve-uri": "^3.1.0" - @jridgewell/resolve-uri@3.1.2
+   - "thenify": ">= 3.1.0 < 4" - thenify@3.3.1
+   - "simple-swizzle": "^0.2.2" - simple-swizzle@0.2.4
+   - "end-of-stream": "^1.1.0" - end-of-stream@1.4.5
+   - "b4a": "^1.9.0" - b4a@1.9.0
+   - "streamx": "^2.28.1" - streamx@2.28.1
+   - "fast-fifo": "^1.3.2" - fast-fifo@1.3.2
+   - "bare-url": "^2.2.2" - bare-url@2.5.4
+   - "bare-events": "^2.5.4" - bare-events@2.9.2
+   - "bare-stream": "^2.6.4" - bare-stream@2.13.4
+   - "mimic-response": "^3.1.0" - mimic-response@3.1.0
+   - "wrappy": "1" - wrappy@1.0.2
+   - "ini": "~1.3.0" - ini@1.3.8
+   - "deep-extend": "^0.6.0" - deep-extend@0.6.0
+   - "strip-json-comments": "~2.0.1" - strip-json-comments@2.0.1
+   - "chownr": "^1.1.1" - chownr@1.1.4
+   - "tar-stream": "^2.1.4" - tar-stream@2.2.0
+   - "color-convert": "^1.9.0" - color-convert@1.9.3
+   - "p-limit": "^2.0.0" - p-limit@2.3.0
+   - "is-number": "^7.0.0" - is-number@7.0.0
+   - "is-descriptor": "^1.0.2" - is-descriptor@1.0.4
+   - "assign-symbols": "^1.0.0" - assign-symbols@1.0.0
+   - "is-extendable": "^1.0.1" - is-extendable@1.0.1
+   - "ret": "~0.1.10" - ret@0.1.15
+   - "cache-base": "^1.0.1" - cache-base@1.0.1
+   - "class-utils": "^0.3.5" - class-utils@0.3.6
+   - "component-emitter": "^1.2.1" - component-emitter@1.3.1
+   - "mixin-deep": "^1.2.0" - mixin-deep@1.3.2
+   - "pascalcase": "^0.1.1" - pascalcase@0.1.1
+   - "is-descriptor": "^0.1.0" - is-descriptor@0.1.8
+   - "atob": "^2.1.2" - atob@2.1.2
+   - "decode-uri-component": "^0.2.0" - decode-uri-component@0.2.2
+   - "resolve-url": "^0.2.1" - resolve-url@0.2.1
+   - "source-map-url": "^0.4.0" - source-map-url@0.4.1
+   - "urix": "^0.1.0" - urix@0.1.0
+   - "expand-brackets": "^2.1.4" - expand-brackets@2.1.4
+   - "is-windows": "^1.0.2" - is-windows@1.0.2
+   - "is-arrayish": "^0.3.1" - is-arrayish@0.3.4
+   - "text-decoder": "^1.1.0" - text-decoder@1.2.7
+   - "events-universal": "^1.0.0" - events-universal@1.0.1
+   - "teex": "^1.0.1" - teex@1.0.1
+   - "bl": "^4.0.3" - bl@4.1.0
+   - "fs-constants": "^1.0.0" - fs-constants@1.0.0
+   - "readable-stream": "^3.1.1" - readable-stream@3.6.2
+   - "color-name": "1.1.3" - color-name@1.1.3
+   - "p-try": "^2.0.0" - p-try@2.2.0
+   - "is-data-descriptor": "^1.0.1" - is-data-descriptor@1.0.1
+   - "is-accessor-descriptor": "^1.0.2" - is-accessor-descriptor@1.0.2
+   - "is-plain-object": "^2.0.4" - is-plain-object@2.0.4
+   - "collection-visit": "^1.0.0" - collection-visit@1.0.0
+   - "get-value": "^2.0.6" - get-value@2.0.6
+   - "has-value": "^1.0.0" - has-value@1.0.0
+   - "set-value": "^2.0.0" - set-value@2.0.1
+   - "to-object-path": "^0.3.0" - to-object-path@0.3.0
+   - "union-value": "^1.0.0" - union-value@1.0.1
+   - "unset-value": "^1.0.0" - unset-value@1.0.0
+   - "arr-union": "^3.1.0" - arr-union@3.1.0
+   - "static-extend": "^0.1.1" - static-extend@0.1.2
+   - "for-in": "^1.0.2" - for-in@1.0.2
+   - "posix-character-classes": "^0.1.0" - posix-character-classes@0.1.1
+   - "buffer": "^5.5.0" - buffer@5.7.1
+   - "hasown": "^2.0.0" - hasown@2.0.4
+   - "map-visit": "^1.0.0" - map-visit@1.0.0
+   - "object-visit": "^1.0.0" - object-visit@1.0.1
+   - "has-values": "^1.0.0" - has-values@1.0.0
+   - "has-value": "^0.3.1" - has-value@0.3.1
+   - "object-copy": "^0.1.0" - object-copy@0.1.0
+   - "function-bind": "^1.1.2" - function-bind@1.1.2
+   - "kind-of": "^4.0.0" - kind-of@4.0.0
+   - "has-values": "^0.1.4" - has-values@0.1.4
+   - "isobject": "^2.0.0" - isobject@2.1.0
+   - "copy-descriptor": "^0.1.0" - copy-descriptor@0.1.1
+Resolving dependencies
+> HTTP/1.1 GET https://jscdn.tscircuit.com/@tscircuit/flex-utils/0.0.8.tgz
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: jscdn.tscircuit.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.224.tgz
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: jscdn.tscircuit.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://jscdn.tscircuit.com/@tscircuit/bus-lanes-solver/0.0.9.tgz
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: jscdn.tscircuit.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://jscdn.tscircuit.com/@tscircuit/dogbone-solver/0.0.1.tgz
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: jscdn.tscircuit.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://api.github.com/repos/tscircuit/via-stitch-solver/tarball/64f2ac7781b795bdc0d74ba411988e60767fa653
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: api.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://api.github.com/repos/tscircuit/bga-fanout-solver/tarball/247c835cb8d69b65e53891dcf869731079415b39
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: api.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://api.github.com/repos/tscircuit/ti/tarball/57e314be4b2b06bc546d4def7453e619604d1157
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: api.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://api.github.com/repos/tscircuit/pcb-trace-linter/tarball/4c035f9d40ffb03ba547a08975b5e64b20371123
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: api.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://api.github.com/repos/tscircuit/winding-breakout-point-solver/tarball/202dbe9eb0088633b6fa094120dba6f2f41f8803
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: api.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://api.github.com/repos/tscircuit/jlcpcb-manufacturing-specs/tarball/23260504fceffff2d64bf11720f74e974d1d9321
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: api.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://api.github.com/repos/tscircuit/implicit-copper-pour-solver/tarball/a5cbbda0cd65fd4707c5c1af25779837c25aba92
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: api.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 302 Found
+< Date: Sat, 03 Oct 2026 22:19:49 GMT
+< Content-Type: text/html;charset=utf-8
+< Content-Length: 0
+< Cache-Control: public, must-revalidate, max-age=0
+< expires: Sat, 03 Oct 2026 22:19:49 GMT
+< Location: https://codeload.github.com/tscircuit/via-stitch-solver/legacy.tar.gz/64f2ac7781b795bdc0d74ba411988e60767fa653
+< x-github-api-version-selected: 2022-11-28
+< X-RateLimit-Limit: 60
+< X-RateLimit-Remaining: 60
+< X-RateLimit-Reset: 1791069589
+< X-RateLimit-Used: 0
+< X-RateLimit-Resource: core
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+< Access-Control-Allow-Origin: *
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< X-Frame-Options: deny
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 0
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Content-Security-Policy: default-src 'none'
+< Vary: Accept-Encoding, Accept, X-Requested-With
+< Server: github.com
+< X-GitHub-Request-Id: F151:16261B:2E11DFD:2DD8DFA:6AC18017
+< x-github-edge-region: fra
+
+< 302 Found
+< Date: Sat, 03 Oct 2026 22:19:49 GMT
+< Content-Type: text/html;charset=utf-8
+< Content-Length: 0
+< Cache-Control: public, must-revalidate, max-age=0
+< expires: Sat, 03 Oct 2026 22:19:49 GMT
+< Location: https://codeload.github.com/tscircuit/bga-fanout-solver/legacy.tar.gz/247c835cb8d69b65e53891dcf869731079415b39
+< x-github-api-version-selected: 2022-11-28
+< X-RateLimit-Limit: 60
+< X-RateLimit-Remaining: 60
+< X-RateLimit-Reset: 1791069589
+< X-RateLimit-Used: 0
+< X-RateLimit-Resource: core
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+< Access-Control-Allow-Origin: *
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< X-Frame-Options: deny
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 0
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Content-Security-Policy: default-src 'none'
+< Vary: Accept-Encoding, Accept, X-Requested-With
+< Server: github.com
+< X-GitHub-Request-Id: F49E:31602E:2D66D40:2D2E540:6AC18017
+< x-github-edge-region: fra
+
+< 302 Found
+< Date: Sat, 03 Oct 2026 22:19:49 GMT
+< Content-Type: text/html;charset=utf-8
+< Content-Length: 0
+< Cache-Control: public, must-revalidate, max-age=0
+< expires: Sat, 03 Oct 2026 22:19:49 GMT
+< Location: https://codeload.github.com/tscircuit/jlcpcb-manufacturing-specs/legacy.tar.gz/23260504fceffff2d64bf11720f74e974d1d9321
+< x-github-api-version-selected: 2022-11-28
+< X-RateLimit-Limit: 60
+< X-RateLimit-Remaining: 60
+< X-RateLimit-Reset: 1791069589
+< X-RateLimit-Used: 0
+< X-RateLimit-Resource: core
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+< Access-Control-Allow-Origin: *
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< X-Frame-Options: deny
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 0
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Content-Security-Policy: default-src 'none'
+< Vary: Accept-Encoding, Accept, X-Requested-With
+< Server: github.com
+< X-GitHub-Request-Id: F548:C8C41:2D83FD3:2D4AF89:6AC18017
+< x-github-edge-region: fra
+
+< 302 Found
+< Date: Sat, 03 Oct 2026 22:19:49 GMT
+< Content-Type: text/html;charset=utf-8
+< Content-Length: 0
+< Cache-Control: public, must-revalidate, max-age=0
+< expires: Sat, 03 Oct 2026 22:19:49 GMT
+< Location: https://codeload.github.com/tscircuit/ti/legacy.tar.gz/57e314be4b2b06bc546d4def7453e619604d1157
+< x-github-api-version-selected: 2022-11-28
+< X-RateLimit-Limit: 60
+< X-RateLimit-Remaining: 60
+< X-RateLimit-Reset: 1791069589
+< X-RateLimit-Used: 0
+< X-RateLimit-Resource: core
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+< Access-Control-Allow-Origin: *
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< X-Frame-Options: deny
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 0
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Content-Security-Policy: default-src 'none'
+< Vary: Accept-Encoding, Accept, X-Requested-With
+< Server: github.com
+< X-GitHub-Request-Id: F46B:D1B46:2E3B0E1:2DFDF3A:6AC18017
+< x-github-edge-region: fra
+
+< 302 Found
+< Date: Sat, 03 Oct 2026 22:19:49 GMT
+< Content-Type: text/html;charset=utf-8
+< Content-Length: 0
+< Cache-Control: public, must-revalidate, max-age=0
+< expires: Sat, 03 Oct 2026 22:19:49 GMT
+< Location: https://codeload.github.com/tscircuit/pcb-trace-linter/legacy.tar.gz/4c035f9d40ffb03ba547a08975b5e64b20371123
+< x-github-api-version-selected: 2022-11-28
+< X-RateLimit-Limit: 60
+< X-RateLimit-Remaining: 60
+< X-RateLimit-Reset: 1791069589
+< X-RateLimit-Used: 0
+< X-RateLimit-Resource: core
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+< Access-Control-Allow-Origin: *
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< X-Frame-Options: deny
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 0
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Content-Security-Policy: default-src 'none'
+< Vary: Accept-Encoding, Accept, X-Requested-With
+< Server: github.com
+< X-GitHub-Request-Id: F589:16261B:2E11E0B:2DD8E09:6AC18017
+< x-github-edge-region: fra
+
+< 302 Found
+< Date: Sat, 03 Oct 2026 22:19:49 GMT
+< Content-Type: text/html;charset=utf-8
+< Content-Length: 0
+< Cache-Control: public, must-revalidate, max-age=0
+< expires: Sat, 03 Oct 2026 22:19:49 GMT
+< Location: https://codeload.github.com/tscircuit/winding-breakout-point-solver/legacy.tar.gz/202dbe9eb0088633b6fa094120dba6f2f41f8803
+< x-github-api-version-selected: 2022-11-28
+< X-RateLimit-Limit: 60
+< X-RateLimit-Remaining: 60
+< X-RateLimit-Reset: 1791069589
+< X-RateLimit-Used: 0
+< X-RateLimit-Resource: core
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+< Access-Control-Allow-Origin: *
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< X-Frame-Options: deny
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 0
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Content-Security-Policy: default-src 'none'
+< Vary: Accept-Encoding, Accept, X-Requested-With
+< Server: github.com
+< X-GitHub-Request-Id: F49C:1664EF:2D4020F:2D077F6:6AC18017
+< x-github-edge-region: fra
+
+< 302 Found
+< Date: Sat, 03 Oct 2026 22:19:49 GMT
+< Content-Type: text/html;charset=utf-8
+< Content-Length: 0
+< Cache-Control: public, must-revalidate, max-age=0
+< expires: Sat, 03 Oct 2026 22:19:49 GMT
+< Location: https://codeload.github.com/tscircuit/implicit-copper-pour-solver/legacy.tar.gz/a5cbbda0cd65fd4707c5c1af25779837c25aba92
+< x-github-api-version-selected: 2022-11-28
+< X-RateLimit-Limit: 60
+< X-RateLimit-Remaining: 60
+< X-RateLimit-Reset: 1791069589
+< X-RateLimit-Used: 0
+< X-RateLimit-Resource: core
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+< Access-Control-Allow-Origin: *
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< X-Frame-Options: deny
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 0
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Content-Security-Policy: default-src 'none'
+< Vary: Accept-Encoding, Accept, X-Requested-With
+< Server: github.com
+< X-GitHub-Request-Id: EFFD:12324E:2D34AA7:2CFBAF4:6AC18017
+< x-github-edge-region: fra
+
+< 200 OK
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< Content-Type: application/octet-stream
+< Content-Length: 177316
+< Connection: keep-alive
+< Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RxS7jTbdKJXkajY0INAAbQ8moTP1nCho7V2u7berg1Inm2GyeQLoIRS%2B3dLXbu9%2Bfovin8ANBvRhAeMcTdELsGQ3xefAIenoKSUFEtS7tuZrv%2BSgFjyuqukRFp%2F8IAZJNCxypXY%3D"}]}
+< Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+< Server: cloudflare
+< CF-RAY: a44f583568449b00-TIA
+
+< 200 OK
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< Content-Type: application/octet-stream
+< Content-Length: 9797
+< Connection: keep-alive
+< Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=K3DS1nwH80WnTz04q0EA845c4mAUE7o7g9g1OLIjNIUDd4NehSo0By%2BmTHnprwOBJm3rITFIhogQvEBLr98TAFxdUPi2anr9k%2F6TQLWzI7kRdy8YBaO4U6u9%2BGVTLCqobr0JJKA%3D"}]}
+< Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+< Server: cloudflare
+< CF-RAY: a44f58356d7951a4-TIA
+
+[PackageManager] waiting for 11 tasks
+    [278.25ms] Downloaded @tscircuit/dogbone-solver tarball
+< 200 OK
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< Content-Type: application/octet-stream
+< Content-Length: 12105
+< Connection: keep-alive
+< Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sQGggL1Y91RX%2F%2Bir9faBpoQ0WvktJqdgyH5T1YWk7%2BU7NBm074wWLMqwEZkQcYYqan%2FIsskVNqLvtJ%2BzDn%2BNpbh1tWA%2Bm4KzJRSzOX5MpBhpFFPDT4foQVF1%2FnbSq7jPN49bRY4%3D"}]}
+< Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+< Server: cloudflare
+< CF-RAY: a44f583569f4bd99-TIA
+
+[PackageManager] waiting for 11 tasks
+    [279.86ms] Downloaded @tscircuit/flex-utils tarball
+ dist/index.js
+ package.json
+ README.md
+ dist/index.d.ts
+[@tscircuit/flex-utils] Extract .7ddbf5bf4fbb6fdc-00000002.flex-utils (decompressed 12.11 KB tgz file in 332.625us)
+[@tscircuit/flex-utils] Extracted to .7ddbf5bf4fbb6fdc-00000002.flex-utils (2.063ms)
+[PackageManager] waiting for 11 tasks
+ LICENSE
+ package.json
+ README.md
+ lib/dogbone-autorouter.ts
+ lib/dogbone-fanout-solver.ts
+ lib/generic-local-autorouter.ts
+ lib/get-via-board-layers.ts
+ lib/index.ts
+ lib/obstacle.ts
+ lib/types.ts
+[@tscircuit/dogbone-solver] Extract .b9df3fa95fd5fef8-00000001.dogbone-solver (decompressed 9.80 KB tgz file in 246.041us)
+[@tscircuit/dogbone-solver] Extracted to .b9df3fa95fd5fef8-00000001.dogbone-solver (3.518ms)
+[PackageManager] waiting for 10 tasks
+   - "@tscircuit/capacity-autorouter": "0.0.941" - @tscircuit/capacity-autorouter@0.0.941
+   - "@tscircuit/fanout-solver": "0.0.79" - @tscircuit/fanout-solver@0.0.79
+[PackageManager] waiting for 9 tasks
+    [299.62ms] Downloaded @tscircuit/schematic-trace-solver tarball
+ LICENSE
+ dist/index.js
+ package.json
+ README.md
+ dist/index.d.ts
+[@tscircuit/schematic-trace-solver] Extract .f8dfe5bb6fd4fff1-00000003.schematic-trace-solver (decompressed 177.32 KB tgz file in 1.236ms)
+[@tscircuit/schematic-trace-solver] Extracted to .f8dfe5bb6fd4fff1-00000003.schematic-trace-solver (3.023ms)
+[PackageManager] waiting for 9 tasks
+> HTTP/1.1 GET https://codeload.github.com/tscircuit/winding-breakout-point-solver/legacy.tar.gz/202dbe9eb0088633b6fa094120dba6f2f41f8803
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: codeload.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://codeload.github.com/tscircuit/via-stitch-solver/legacy.tar.gz/64f2ac7781b795bdc0d74ba411988e60767fa653
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: codeload.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://codeload.github.com/tscircuit/ti/legacy.tar.gz/57e314be4b2b06bc546d4def7453e619604d1157
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: codeload.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://codeload.github.com/tscircuit/jlcpcb-manufacturing-specs/legacy.tar.gz/23260504fceffff2d64bf11720f74e974d1d9321
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: codeload.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://codeload.github.com/tscircuit/implicit-copper-pour-solver/legacy.tar.gz/a5cbbda0cd65fd4707c5c1af25779837c25aba92
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: codeload.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://codeload.github.com/tscircuit/pcb-trace-linter/legacy.tar.gz/4c035f9d40ffb03ba547a08975b5e64b20371123
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: codeload.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+> HTTP/1.1 GET https://codeload.github.com/tscircuit/bga-fanout-solver/legacy.tar.gz/247c835cb8d69b65e53891dcf869731079415b39
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: codeload.github.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< Access-Control-Allow-Origin: https://render.githubusercontent.com
+< content-disposition: attachment; filename=tscircuit-jlcpcb-manufacturing-specs-2326050.tar.gz
+< Content-Length: 3930
+< Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+< Content-Type: application/x-gzip
+< cross-origin-resource-policy: cross-origin
+< ETag: W/"da60da8bc55569e6b6baf1137d2b8fedb53100f18b2caf1a4425d7f100627603"
+< Strict-Transport-Security: max-age=31536000
+< Vary: Authorization,Accept-Encoding
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: deny
+< X-XSS-Protection: 1; mode=block
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< X-GitHub-Request-Id: F573:30297E:4B31FA:7B4056:6AC18018
+< x-github-edge-region: fra
+
+[PackageManager] waiting for 8 tasks
+    [530.23ms] Downloaded @tscircuit/jlcpcb-manufacturing-specs tarball
+< 200 OK
+< Access-Control-Allow-Origin: https://render.githubusercontent.com
+< content-disposition: attachment; filename=tscircuit-pcb-trace-linter-4c035f9.tar.gz
+< Content-Length: 265736
+< Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+< Content-Type: application/x-gzip
+< cross-origin-resource-policy: cross-origin
+< ETag: W/"0a015d3c35ec6200c84fe575a6ec7731a567c0e5fc00f7b31bc59c691b6b6b16"
+< Strict-Transport-Security: max-age=31536000
+< Vary: Authorization,Accept-Encoding
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: deny
+< X-XSS-Protection: 1; mode=block
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< X-GitHub-Request-Id: F529:2EE24E:4DB2CF:7DAFD8:6AC18018
+< x-github-edge-region: fra
+
+ .github/
+ .github/workflows/
+ .github/workflows/bun-formatcheck.yml
+ .github/workflows/bun-typecheck.yml
+ .gitignore
+ LICENSE
+ README.md
+ biome.json
+ bunfig.toml
+ index.ts
+ lib/
+ lib/jlcpcb-manufacturing-specs.ts
+ package.json
+ tsconfig.json
+[@tscircuit/jlcpcb-manufacturing-specs] Extract .7edf3f3ddddbb575-00000004.jlcpcb-manufacturing-specs (decompressed 3.93 KB tgz file in 137.708us)
+[@tscircuit/jlcpcb-manufacturing-specs] Extracted to .7edf3f3ddddbb575-00000004.jlcpcb-manufacturing-specs (4.827ms)
+[PackageManager] waiting for 8 tasks
+< 200 OK
+< Access-Control-Allow-Origin: https://render.githubusercontent.com
+< content-disposition: attachment; filename=tscircuit-winding-breakout-point-solver-202dbe9.tar.gz
+< Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+< Content-Type: application/x-gzip
+< cross-origin-resource-policy: cross-origin
+< ETag: W/"b3de3485058857bc090c2e5006abd693971c75fb9ddf7dc75aa7d276dc8534e2"
+< Strict-Transport-Security: max-age=31536000
+< Vary: Authorization,Accept-Encoding
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: deny
+< X-XSS-Protection: 1; mode=block
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< Transfer-Encoding: chunked
+< X-GitHub-Request-Id: EE74:743B0:4DD2BB:7DD257:6AC18018
+< x-github-edge-region: fra
+
+< 200 OK
+< Access-Control-Allow-Origin: https://render.githubusercontent.com
+< content-disposition: attachment; filename=tscircuit-implicit-copper-pour-solver-a5cbbda.tar.gz
+< Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+< Content-Type: application/x-gzip
+< cross-origin-resource-policy: cross-origin
+< ETag: W/"bb49b14e28f2153af599265e4d3559756f86698ca235631a9d509a6eb31f64ed"
+< Strict-Transport-Security: max-age=31536000
+< Vary: Authorization,Accept-Encoding
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: deny
+< X-XSS-Protection: 1; mode=block
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< Transfer-Encoding: chunked
+< X-GitHub-Request-Id: F515:268E4B:49593B:7961C3:6AC18018
+< x-github-edge-region: fra
+
+< 200 OK
+< Access-Control-Allow-Origin: https://render.githubusercontent.com
+< content-disposition: attachment; filename=tscircuit-via-stitch-solver-64f2ac7.tar.gz
+< Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+< Content-Type: application/x-gzip
+< cross-origin-resource-policy: cross-origin
+< ETag: W/"d6317dd1c53479937038d3249784296c6bf71520c5ec06ff80dbb9edbf1cefc0"
+< Strict-Transport-Security: max-age=31536000
+< Vary: Authorization,Accept-Encoding
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: deny
+< X-XSS-Protection: 1; mode=block
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< Transfer-Encoding: chunked
+< X-GitHub-Request-Id: F40F:1ED707:485AE4:786158:6AC18018
+< x-github-edge-region: fra
+
+< 200 OK
+< Access-Control-Allow-Origin: https://render.githubusercontent.com
+< content-disposition: attachment; filename=tscircuit-ti-57e314b.tar.gz
+< Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+< Content-Type: application/x-gzip
+< cross-origin-resource-policy: cross-origin
+< ETag: W/"a3dba63780bb3ab0bceb4af5f527090d72ec5f618aa33b2055514e41afadd32e"
+< Strict-Transport-Security: max-age=31536000
+< Vary: Authorization,Accept-Encoding
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: deny
+< X-XSS-Protection: 1; mode=block
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< Transfer-Encoding: chunked
+< X-GitHub-Request-Id: F5EA:BC877:50FA11:80E83F:6AC18018
+< x-github-edge-region: fra
+
+[PackageManager] waiting for 7 tasks
+    [627.97ms] Downloaded @tscircuit/winding-breakout-point-solver tarball
+< 200 OK
+< Access-Control-Allow-Origin: https://render.githubusercontent.com
+< content-disposition: attachment; filename=tscircuit-bga-fanout-solver-247c835.tar.gz
+< Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+< Content-Type: application/x-gzip
+< cross-origin-resource-policy: cross-origin
+< ETag: W/"0027278be45e56665f5ec396e5147332c9c77ee2817d83ed6d2e1f3089b9f6cf"
+< Strict-Transport-Security: max-age=31536000
+< Vary: Authorization,Accept-Encoding
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: deny
+< X-XSS-Protection: 1; mode=block
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< Transfer-Encoding: chunked
+< X-GitHub-Request-Id: EE8E:157B:400CB5:6DACDA:6AC18018
+< x-github-edge-region: fra
+
+ .agents/
+ .agents/roles/
+ .agents/roles/adversarial-reviewer.md
+ .agents/roles/black-box-qa.md
+ .agents/roles/context-auditor.md
+ .agents/roles/lead.md
+ .agents/roles/solver-engineer.md
+ .agents/roles/visualization-engineer.md
+ .gitignore
+ README.md
+ biome.json
+ bun.lock
+ bunfig.toml
+ cosmos.config.json
+ examples/
+ examples/am62l/
+ examples/am62l/am62l-example-data.ts
+ examples/am62l/control-bus-example.ts
+ examples/am62l/ddr-byte0-example.ts
+ examples/am62l/ddr-byte1-example.ts
+ examples/am62l/full-ddr-example.ts
+ examples/am62l/index.ts
+ examples/padding/
+ examples/padding/one-millimeter-padding-input.ts
+ examples/region-count/
+ examples/region-count/index.ts
+ examples/region-count/region-count-examples.ts
+ index.html
+ lib/
+ lib/WindingBreakoutSolver.ts
+ lib/gate-placement/
+ lib/gate-placement/place-breakout-gates.ts
+ lib/get-layer-names.ts
+ lib/index.ts
+ lib/input/
+ lib/input/errors.ts
+ lib/input/get-bus-layer-candidates.ts
+ lib/input/get-canonical-connections.ts
+ lib/input/validate-winding-breakout-input.ts
+ lib/layer-assignment/
+ lib/layer-assignment/assign-connection-layers.ts
+ lib/ordering/
+ lib/ordering/get-natural-winding-order.ts
+ lib/ordering/get-reference-winding-order.ts
+ lib/solvers/
+ lib/solvers/GatePlacementSolver.ts
+ lib/solvers/ReferenceOrderingSolver.ts
+ lib/types.ts
+ lib/validation/
+ lib/validation/finalize-winding-breakout-output.ts
+ lib/validation/validate-breakout-points.ts
+ lib/visualization/
+ lib/visualization/create-input-graphics.ts
+ lib/visualization/create-solver-phase-visualization.ts
+ lib/visualization/create-state-graphics.ts
+ lib/visualization/create-winding-breakout-visualization.ts
+ lib/visualization/get-connection-color.ts
+ lib/visualization/get-graphics-layer.ts
+ package.json
+ pages/
+ pages/1mm Padding.page.tsx
+ pages/am62l-lpddr4-ram/
+ pages/am62l-lpddr4-ram/AM62L LPDDR4 RAM.page.tsx
+ pages/am62l-lpddr4-ram/WindingBreakoutSolverFixture.tsx
+ pages/region-count-breakdown/
+ pages/region-count-breakdown/OneRegionDestinationVisualizationSolver.ts
+ pages/region-count-breakdown/Region Count Breakdown.page.tsx
+ tests/
+ tests/determinism.test.ts
+ tests/fixtures/
+ tests/fixtures/solver-test-utils.ts
+ tests/get-output-before-solved.test.ts
+ tests/input-api.test.ts
+ tests/input-immutability.test.ts
+ tests/padding-input.test.ts
+ tests/preload.ts
+ tests/region-count.test.ts
+ tsconfig.json
+ vercel.json
+ vite.config.ts
+[@tscircuit/winding-breakout-point-solver] Extract .3cfb753f5b7b7f7d-00000005.winding-breakout-point-solver (decompressed 57.1 KB tgz file in 880.75us)
+[@tscircuit/winding-breakout-point-solver] Extracted to .3cfb753f5b7b7f7d-00000005.winding-breakout-point-solver (15.737ms)
+[PackageManager] waiting for 7 tasks
+[PackageManager] waiting for 6 tasks
+    [689.34ms] Downloaded @tscircuit/via-stitch-solver tarball
+[PackageManager] waiting for 6 tasks
+    [696.07ms] Downloaded @tscircuit/pcb-trace-linter tarball
+ .github/
+ .github/workflows/
+ .github/workflows/bun-formatcheck.yml
+ .github/workflows/bun-test.yml
+ .github/workflows/bun-typecheck.yml
+ .gitignore
+ LICENSE
+ README.md
+ biome.json
+ bunfig.toml
+ cosmos.config.json
+ examples/
+ examples/copper-pour-via-stitching-circuits.tsx
+ lib/
+ lib/geometry/
+ lib/geometry/brep-point-containment.ts
+ lib/geometry/circuit-element-obstacles.ts
+ lib/index.ts
+ lib/solvers/
+ lib/solvers/ViaStitchSolver.ts
+ lib/types.ts
+ package.json
+ site/
+ site/Welcome.page.tsx
+ tests/
+ tests/__snapshots__/
+ tests/__snapshots__/copper-pour-via-stitching-circuits-qfn32.snap.svg
+ tests/__snapshots__/copper-pour-via-stitching-circuits-qfp16.snap.svg
+ tests/__snapshots__/copper-pour-via-stitching-circuits-soic16.snap.svg
+ tests/__snapshots__/copper-pour-via-stitching-circuits-soic8.snap.svg
+ tests/__snapshots__/copper-pour-via-stitching-circuits-tssop20.snap.svg
+ tests/__snapshots__/copper-pour-via-stitching.snap.svg
+ tests/__snapshots__/polygon-copper-pour-via-stitching-concave.snap.svg
+ tests/__snapshots__/polygon-copper-pour-via-stitching-convex.snap.svg
+ tests/copper-pour-via-stitching-circuits.test.tsx
+ tests/copper-pour-via-stitching.test.tsx
+ tests/fixtures/
+ tests/fixtures/create-ground-pour-circuit.tsx
+ tests/fixtures/preload.ts
+ tests/options-validation.test.ts
+ tests/polygon-copper-pour-via-stitching.test.tsx
+ tsconfig.json
+ vercel.json
+[@tscircuit/via-stitch-solver] Extract .38dfef79df9587b9-00000006.via-stitch-solver (decompressed 60.29 KB tgz file in 502.375us)
+[@tscircuit/via-stitch-solver] Extracted to .38dfef79df9587b9-00000006.via-stitch-solver (8.903ms)
+[PackageManager] waiting for 6 tasks
+[PackageManager] waiting for 5 tasks
+    [706.45ms] Downloaded @tscircuit/implicit-copper-pour-solver tarball
+ .github/
+ .github/workflows/
+ .github/workflows/bun-formatcheck.yml
+ .github/workflows/bun-test.yml
+ .github/workflows/bun-typecheck.yml
+ .gitignore
+ LICENSE
+ README.md
+ biome.json
+ bunfig.toml
+ cosmos.config.json
+ cosmos.decorator.tsx
+ index.html
+ lib/
+ lib/CircuitJsonPcbTraceLinter.ts
+ lib/OddAngleFinder.ts
+ lib/PcbTraceLinter.ts
+ lib/index.ts
+ lib/normalizeInput.ts
+ lib/segments.ts
+ lib/srj.ts
+ lib/types.ts
+ lib/validateSimpleRouteJson.ts
+ lib/visualizeIssues.ts
+ package.json
+ pages/
+ pages/_welcome.page.tsx
+ pages/dataset-srj18.page.tsx
+ scripts/
+ scripts/generate-fixture.ts
+ tests/
+ tests/__snapshots__/
+ tests/__snapshots__/pipeline9-sample003-issue-001.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-002.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-003.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-004.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-005.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-006.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-007.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-008.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-009.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-010.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-011.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-012.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-013.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-014.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-015.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-016.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-017.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-018.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-019.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-020.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-021.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-022.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-023.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-024.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-025.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-026.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-027.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-028.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-029.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-030.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-031.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-032.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-033.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-034.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-035.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-036.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-037.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-038.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-039.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-040.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-041.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-042.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-043.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-044.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-045.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-046.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-047.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-048.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-049.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-050.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-051.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-052.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-053.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-054.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-055.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-056.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-057.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-058.snap.svg .github/
+ .github/workflows/
+ .github/workflows/bun-formatcheck.yml
+ .github/workflows/bun-test.yml
+ .github/workflows/bun-typecheck.yml
+ .gitignore
+ LICENSE
+ README.md
+ biome.json
+ bunfig.toml
+ cosmos.config.json
+ lib/
+ lib/geometry.ts
+ lib/grid-solver.ts
+ lib/implicit-copper-pour-pipeline-solver.ts
+ lib/index.ts
+ lib/prepare-circuit-json.ts
+ lib/simplify-polygon-edges.ts
+ lib/types.ts
+ lib/visualize.ts
+ package.json
+ site/
+ site/solver.page.tsx
+ tests/
+ tests/__snapshots__/
+ tests/__snapshots__/implicit-copper-pour-pipeline-solver-nrf52810-bottom-layer-after-solve.snap.svg
+ tests/__snapshots__/implicit-copper-pour-pipeline-solver-nrf52810-full-board-after-solve.snap.svg
+ tests/__snapshots__/implicit-copper-pour-pipeline-solver-nrf52810-full-board-before-solve.snap.svg
+ tests/__snapshots__/implicit-copper-pour-pipeline-solver-nrf52810-top-layer-after-solve.snap.svg
+ tests/fixtures/
+ tests/fixtures/filter-graphics-by-layer.ts
+ tests/fixtures/nrf52810-board.ts
+ tests/fixtures/nrf52810.json
+ tests/fixtures/preload.ts
+ tests/fixtures/simple-power-board.ts
+ tests/implicit-copper-pour-pipeline-solver.test.ts
+ tests/simplify-polygon-edges.test.ts
+ tsconfig.json
+ vercel.json
+ vite.config.ts
+[@tscircuit/implicit-copper-pour-solver] Extract .5bdbbf29703fedf8-00000008.implicit-copper-pour-solver (decompressed 183.70 KB tgz file in 1.277ms)
+[@tscircuit/implicit-copper-pour-solver] Extracted to .5bdbbf29703fedf8-00000008.implicit-copper-pour-solver (6.118ms)
+[PackageManager] waiting for 5 tasks
+   - "@tscircuit/math-utils": "^0.0.38" - @tscircuit/math-utils@0.0.38
+
+ tests/__snapshots__/pipeline9-sample003-issue-059.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-060.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-061.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-062.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-063.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-064.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-065.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-066.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-067.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-068.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-069.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-070.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-071.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-072.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-073.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-074.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-075.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-076.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-077.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-078.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-079.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-080.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-081.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-082.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-083.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-084.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-085.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-086.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-087.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-088.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-089.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-090.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-091.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-092.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-093.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-094.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-095.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-096.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-097.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-098.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-099.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-100.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-101.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-102.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-103.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-104.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-105.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-106.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-107.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-108.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-109.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-110.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-111.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-112.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-113.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-114.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-115.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-116.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-117.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-118.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-119.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-120.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-121.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-122.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-123.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-124.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-125.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-126.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-127.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-128.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-129.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-130.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-131.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-132.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-133.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-134.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-135.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-136.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-137.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-138.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-139.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-140.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-141.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-142.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-143.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-144.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-145.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-146.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-147.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-148.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-149.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-150.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-151.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-152.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-153.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-154.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-155.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-156.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-157.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-158.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-159.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-160.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-161.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-162.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-163.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-164.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-165.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-166.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-167.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-168.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-169.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-170.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-171.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-172.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-173.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-174.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-175.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-176.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-177.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-178.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-179.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-180.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-181.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-182.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-183.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-184.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-185.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-186.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-187.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-188.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-189.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-190.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-191.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-192.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-193.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-194.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-195.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-196.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-197.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-198.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-199.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-200.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-201.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-202.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-203.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-204.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-205.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-206.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-207.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-208.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-209.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-210.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-211.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-212.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-213.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-214.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-215.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-216.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-217.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-218.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-219.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-220.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-221.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-222.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-223.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-224.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-225.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-226.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-227.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-228.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-229.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-230.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-231.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-232.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-233.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-234.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-235.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-236.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-237.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-238.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-239.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-240.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-241.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-242.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-243.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-244.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-245.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-246.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-247.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-248.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-249.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-250.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-251.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-252.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-253.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-254.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-255.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-256.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-257.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-258.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-259.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-260.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-261.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-262.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-263.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-264.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-265.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-266.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-267.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-268.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-269.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-270.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-271.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-272.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-273.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-274.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-275.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-276.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-277.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-278.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-279.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-280.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-281.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-282.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-283.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-284.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-285.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-286.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-287.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-288.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-289.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-290.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-291.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-292.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-293.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-294.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-295.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-296.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-297.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-298.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-299.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-300.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-301.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-302.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-303.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-304.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-305.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-306.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-307.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-308.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-309.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-310.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-311.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-312.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-313.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-314.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-315.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-316.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-317.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-318.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-319.snap.svg
+ tests/__snapshots__/pipeline9-sample003-issue-320.snap.svg
+ tests/__snapshots__/pipeline9-sample003-overview.snap.svg
+ tests/__snapshots__/pipeline9-visual.test.ts.snap
+ tests/fixtures/
+ tests/fixtures/README.md
+ tests/fixtures/dataset-srj18-sample003.input.json
+ tests/fixtures/dataset-srj18-sample003.routed.json
+ tests/fixtures/make-srj.ts
+ tests/fixtures/preload.ts
+ tests/input.test.ts
+ tests/odd-angle.test.ts
+ tests/pipeline9-visual.test.ts
+ tests/srj-entry.test.ts
+ tsconfig.json
+ vite.config.ts
+[@tscircuit/pcb-trace-linter] Extract .dadbfd6fdffdfdbe-00000007.pcb-trace-linter (decompressed 0.27 MB tgz file in 2.579ms)
+[@tscircuit/pcb-trace-linter] Extracted to .dadbfd6fdffdfdbe-00000007.pcb-trace-linter (37.79ms)
+[PackageManager] waiting for 4 tasks
+   - "@tscircuit/copper-pour-solver": "^0.0.59" - @tscircuit/copper-pour-solver@0.0.59
+   - "@tscircuit/core": "0.0.1974" - @tscircuit/core@0.0.1974
+   - "@tscircuit/schematic-trace-solver": "^0.0.208" - @tscircuit/schematic-trace-solver@0.0.208
+   - "@tscircuit/solver-utils": "^0.0.21" - @tscircuit/solver-utils@0.0.21
+   - "calculate-elbow": "^0.0.13" - calculate-elbow@0.0.13
+   - "calculate-packing": "^0.0.89" - calculate-packing@0.0.89
+   - "calculate-cell-boundaries": "^0.0.21" - calculate-cell-boundaries@0.0.21
+< 200 OK
+< Date: Sat, 03 Oct 2026 22:22:16 GMT
+< Content-Type: application/octet-stream
+< Content-Length: 293251
+< Connection: keep-alive
+< Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WPyTSUw9xQzeXcQYyBQOZzDB%2BN183wwZ0ujFWLDRGE8NmFJpg4%2B0QnQj7nPAwtN1Fw6LhULSW6G4V1xNuZFwT9oYJG10eAJqC2MutChtihKmRBIsOftf6tvJqn0c3hBPtUeRcdc%3D"}]}
+< Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+< Server: cloudflare
+< CF-RAY: a44f58356d7851a4-TIA
+
+[PackageManager] waiting for 3 tasks
+    [845.27ms] Downloaded @tscircuit/bus-lanes-solver tarball
+ LICENSE
+ dist/index.js
+ package.json
+ README.md
+ dist/index.d.ts
+[@tscircuit/bus-lanes-solver] Extract .bfff7d2ffeffa7fa-00000009.bus-lanes-solver (decompressed 0.29 MB tgz file in 1.45ms)
+[@tscircuit/bus-lanes-solver] Extracted to .bfff7d2ffeffa7fa-00000009.bus-lanes-solver (3.35ms)
+[PackageManager] waiting for 3 tasks
+[PackageManager] waiting for 2 tasks
+    [961.53ms] Downloaded @tscircuit/bga-fanout-solver tarball
+ .github/
+ .github/workflows/
+ .github/workflows/bun-formatcheck.yml
+ .github/workflows/bun-test.yml
+ .github/workflows/bun-typecheck.yml
+ .gitignore
+ AGENTS.md
+ LICENSE
+ README.md
+ biome.json
+ bun.lock
+ cosmos.config.json
+ fixtures/
+ fixtures/am62l-soc-fanout.srj.json
+ fixtures/create-simplified-am62l-ddr-fixed-layer-distribution.ts
+ fixtures/expanded-breakpoint-spacing-1.25-ram.srj.json
+ fixtures/expanded-breakpoint-spacing-1.25-soc.srj.json
+ fixtures/full-am62l-soc-failing-repro.problem.json
+ fixtures/lpddr4-ram-fanout.srj.json
+ fixtures/provenance.json
+ fixtures/simplified-am62l-ddr-ram-repro-fixed-layer-distribution.ts
+ fixtures/simplified-am62l-ddr-ram-repro.srj.json
+ fixtures/simplified-am62l-ddr-soc-repro-fixed-layer-distribution.ts
+ fixtures/simplified-am62l-ddr-soc-repro.srj.json
+ index.html
+ lib/
+ lib/FixedTargetBgaFanoutSolver.ts
+ lib/index.ts
+ lib/model/
+ lib/model/bestValidPowerSignalSolution.ts
+ lib/model/boundedViaLinePathSearch.ts
+ lib/model/buildFanoutModel.ts
+ lib/model/geometry.ts
+ lib/model/powerPlanePlanning.ts
+ lib/model/powerSignalCoRouting.ts
+ lib/model/signalViaRelocationCandidates.ts
+ lib/model/types.ts
+ lib/model/viaLineCandidates.ts
+ lib/private/
+ lib/private/CompatibilityRouteSolver.ts
+ lib/private/reference/
+ lib/private/reference/am62l-free-space-fanout.ts
+ lib/private/reference/create-in-process-autorouter.ts
+ lib/private/reference/solve-am62l-free-space-fanout.ts
+ lib/private/reference/squared-distance.ts
+ lib/stages/
+ lib/stages/BuildFanoutModelSolver.ts
+ lib/stages/FindFreeSpaceSolver.ts
+ lib/stages/PlanCopperPourViaDropsSolver.ts
+ lib/stages/PlanSameNetPadClustersSolver.ts
+ lib/stages/RankFanoutNetsSolver.ts
+ lib/stages/ReferenceRoutingStageSolvers.ts
+ lib/stages/ResolvePowerSignalConflictsSolver.ts
+ lib/visualize/
+ lib/visualize/clampLayerOffset.ts
+ lib/visualize/cleanCosmosGraphics.ts
+ lib/visualize/getGraphicsLayerIndex.ts
+ lib/visualize/getGraphicsLayerOffset.ts
+ lib/visualize/inputVisuals.ts
+ lib/visualize/layerVisuals.ts
+ lib/visualize/modelVisuals.ts
+ lib/visualize/offsetGraphicsLayers.ts
+ lib/visualize/offsetGraphicsPoint.ts
+ lib/visualize/powerPlaneVisuals.ts
+ lib/visualize/promoteTraceLinework.ts
+ lib/visualize/simpleRouteJsonVisuals.ts
+ package.json
+ pages/
+ pages/FixedTargetFanoutPage.tsx
+ pages/LayerOffsetSolverPage.tsx
+ pages/expanded-breakpoint-spacing-1.25.page.tsx
+ pages/full-am62l-soc-failing-repro.page.tsx
+ pages/full-am62l-soc-failing-repro/
+ pages/full-am62l-soc-failing-repro/FullAm62lSocFailingReproSolver.ts
+ pages/full-am62l-soc-failing-repro/types.ts
+ pages/full-am62l-soc-failing-repro/visualizeFullSocProblem.ts
+ pages/layer-offset/
+ pages/layer-offset/LayerOffsetFixedTargetBgaFanoutSolver.ts
+ pages/layer-offset/LayerOffsetFullAm62lSocFailingReproSolver.ts
+ pages/layer-offset/normalizeLayerOffsetInput.ts
+ pages/layer-offset/parseLayerOffsetInput.ts
+ pages/ram-bga.page.tsx
+ pages/simplified-am62l-ddr-ram-repro-fixed-layer-distribution.page.tsx
+ pages/simplified-am62l-ddr-ram-repro.page.tsx
+ pages/simplified-am62l-ddr-soc-repro-fixed-layer-distribution.page.tsx
+ pages/simplified-am62l-ddr-soc-repro.page.tsx
+ pages/soc-bga.page.tsx
+ scripts/
+ scripts/derive-fixtures.ts
+ scripts/generate-parity-goldens.ts
+ scripts/import-simplified-am62l-ddr-repro.ts
+ scripts/render-expanded-breakpoint-spacing-1.25.ts
+ scripts/sweep-breakout-target-spacing.ts
+ scripts/validate-cosmos-export.ts
+ tests/
+ tests/best-valid-power-signal-solution.test.ts
+ tests/breakout-target-spacing-input-normalization.test.ts
+ tests/build-fanout-model.test.ts
+ tests/complete-top-layer-routes-outward-bends.test.ts
+ tests/expanded-spacing-miter-regression.test.ts
+ tests/expanded-target-spacing-local-repair.test.ts
+ tests/fixed-layer-distribution-helpers.ts
+ tests/fixtures/
+ tests/fixtures/am62l-soc-fanout.expected-traces.json
+ tests/fixtures/lpddr4-ram-fanout.expected-traces.json
+ tests/full-am62l-soc-failing-repro.test.ts
+ tests/general-via-line-candidates.test.ts
+ tests/generic-translated-progression.test.ts
+ tests/granular-pipeline-visibility.test.ts
+ tests/helpers.ts
+ tests/input-immutability.test.ts
+ tests/layer-offset-input.test.ts
+ tests/lifecycle-guards.test.ts
+ tests/offset-graphics-layers.test.ts
+ tests/power-plane-outward-edge-via-search.test.ts
+ tests/power-plane-signal-priority.test.ts
+ tests/ram-output-parity.test.ts
+ tests/reversed-connection-order.test.ts
+ tests/setup-validation.test.ts
+ tests/shuffled-connection-order.test.ts
+ tests/simple-route-json-visuals.test.ts
+ tests/simplified-am62l-ddr-ram-repro-fixed-layer-distribution.test.ts
+ tests/simplified-am62l-ddr-ram-repro.test.ts
+ tests/simplified-am62l-ddr-repro.test.ts
+ tests/simplified-am62l-ddr-soc-repro-fixed-layer-distribution.test.ts
+ tests/soc-output-parity.test.ts
+ tests/squared-distance-order.test.ts
+ tests/symmetric-via-line-depths.test.ts
+ tests/trace-linework-stacking.test.ts
+ tsconfig.json
+ vercel.json
+ vite.config.ts
+[@tscircuit/bga-fanout-solver] Extract .7ddb3ff96fedfcfc-0000000A.bga-fanout-solver (decompressed 1.13 MB tgz file in 14.067ms)
+[@tscircuit/bga-fanout-solver] Extracted to .7ddb3ff96fedfcfc-0000000A.bga-fanout-solver (49.343ms)
+[PackageManager] waiting for 2 tasks
+   - "@tscircuit/core": "0.0.1736" - @tscircuit/core@0.0.1736
+   - "calculate-packing": "^0.0.86" - calculate-packing@0.0.86
+   - "calculate-cell-boundaries": "^0.0.19" - calculate-cell-boundaries@0.0.19
+[PackageManager] waiting for 1 tasks
+    [1191.04ms] Downloaded @tsci/tscircuit.ti tarball
+ .github/
+ .github/workflows/
+ .github/workflows/bun-formatcheck.yml
+ .gitignore
+ .npmrc
+ README.md
+ biome.json
+ bunfig.toml
+ index.ts
+ lib/
+ lib/chips/
+ lib/chips/BQ24074.circuit.tsx
+ lib/chips/BQ24074RGTR.circuit.tsx
+ lib/chips/BQ25895.circuit.tsx
+ lib/chips/BQ25895RTWR.circuit.tsx
+ lib/chips/BQ27441DRZR_G1B.circuit.tsx
+ lib/chips/BQ27441G1.circuit.tsx
+ lib/chips/BQ32002.circuit.tsx
+ lib/chips/CC2340R5.circuit.tsx
+ lib/chips/CC2745R10.circuit.tsx
+ lib/chips/CC2745R10E0WRHARQ1.circuit.tsx
+ lib/chips/CC3235SF.circuit.tsx
+ lib/chips/CC3235SF12RGKR.circuit.tsx
+ lib/chips/CoaxialTestPort.circuit.tsx
+ lib/chips/DRV8833.circuit.tsx
+ lib/chips/DRV8876.circuit.tsx
+ lib/chips/HDC2080.circuit.tsx
+ lib/chips/HDC2080DMBR.circuit.tsx
+ lib/chips/HDC3020.circuit.tsx
+ lib/chips/HDC3020DEFR.circuit.tsx
+ lib/chips/HDC3022.circuit.tsx
+ lib/chips/HDC3022DEJR.circuit.tsx
+ lib/chips/Header2x10.circuit.tsx
+ lib/chips/INA237.circuit.tsx
+ lib/chips/INA237AQDGSRQ1.circuit.tsx
+ lib/chips/MSPM0G3507.circuit.tsx
+ lib/chips/MSPM0G3507SPMR.circuit.tsx
+ lib/chips/MSPM33C3x.circuit.tsx
+ lib/chips/OscillatorCrystal4.circuit.tsx
+ lib/chips/TLC59116.circuit.tsx
+ lib/chips/TMP1075.circuit.tsx
+ lib/chips/TMP1075DSGR.circuit.tsx
+ lib/chips/TMP1827.circuit.tsx
+ lib/chips/TPS22919.circuit.tsx
+ lib/chips/TPS61222.circuit.tsx
+ lib/chips/TPS61299DRLR.circuit.tsx
+ lib/chips/TPS61299X.circuit.tsx
+ lib/chips/TPS6293.circuit.tsx
+ lib/chips/TPS63802.circuit.tsx
+ lib/chips/TPS63802DLAR.circuit.tsx
+ lib/chips/TPS6521835.circuit.tsx
+ lib/chips/TPS7A02.circuit.tsx
+ lib/chips/TPS7A0230PDBVR.circuit.tsx
+ lib/chips/TPSM82823.circuit.tsx
+ lib/chips/TRF7960RHB.circuit.tsx
+ lib/chips/TXB0104.circuit.tsx
+ lib/chips/TXB0104RGYR.circuit.tsx
+ lib/chips/TXS0102.circuit.tsx
+ lib/chips/TXS0102DCUR.circuit.tsx
+ lib/chips/W25Q128JVSIQ.circuit.tsx
+ lib/chips/index.tsx
+ lib/chips/spice-models/
+ lib/chips/spice-models/BQ24074-spice-model.encrypted.json
+ lib/chips/spice-models/BQ24074-spice-model.json
+ lib/chips/spice-models/DRV8876-spice-model.json
+ lib/chips/spice-models/TPS22919-spice-model.json
+ lib/chips/spice-models/TPS62933P-spice-model.json
+ lib/chips/spice-models/TPS63802-spice-model.json
+ lib/chips/spice-models/TPS7A02-spice-model.json
+ lib/chips/spice-models/TPSM82823-spice-model.json
+ lib/simulations/
+ lib/simulations/BQ24074-ovp-fault.circuit.tsx
+ lib/simulations/BQ24075-system-on-off-input-disconnected.circuit.tsx
+ lib/simulations/DRV8876-driver-pwm-operation-ph-en.circuit.tsx
+ lib/simulations/DRV8876-driver-pwm-operation-with-current-feedback.circuit.tsx
+ lib/simulations/TPS22919-turn-off-small-load-capacitance.circuit.tsx
+ lib/simulations/TPS63802-switching-waveforms-pfm-buck-operation.circuit.tsx
+ lib/simulations/__snapshots__/
+ lib/simulations/__snapshots__/BQ24074-ovp-fault.circuit-schematic-simulation.snap.svg
+ lib/simulations/__snapshots__/BQ24074-ovp-fault.circuit-simulation.snap.svg
+ lib/simulations/__snapshots__/BQ24075-system-on-off-input-disconnected.circuit-schematic-simulation.snap.svg
+ lib/simulations/__snapshots__/BQ24075-system-on-off-input-disconnected.circuit-simulation.snap.svg
+ lib/simulations/__snapshots__/DRV8876-driver-pwm-operation-ph-en.circuit-schematic-simulation.snap.svg
+ lib/simulations/__snapshots__/DRV8876-driver-pwm-operation-ph-en.circuit-simulation.snap.svg
+ lib/simulations/__snapshots__/DRV8876-driver-pwm-operation-with-current-feedback.circuit-schematic-simulation.snap.svg
+ lib/simulations/__snapshots__/DRV8876-driver-pwm-operation-with-current-feedback.circuit-simulation.snap.svg
+ lib/simulations/__snapshots__/TPS22919-turn-off-small-load-capacitance.circuit-schematic-simulation.snap.svg
+ lib/simulations/__snapshots__/TPS22919-turn-off-small-load-capacitance.circuit-simulation.snap.svg
+ lib/simulations/__snapshots__/TPS63802-switching-waveforms-pfm-buck-operation.circuit-schematic-simulation.snap.svg
+ lib/simulations/__snapshots__/TPS63802-switching-waveforms-pfm-buck-operation.circuit-simulation.snap.svg
+ lib/spice/
+ lib/spice/create-encrypted-pspice-ngspice-engine.ts
+ lib/spice/encrypted-pspice-model.ts
+ lib/subcircuits/
+ lib/subcircuits/BatteryManagement_BQ24074.circuit.tsx
+ lib/subcircuits/BatteryManagement_BQ25895.circuit.tsx
+ lib/subcircuits/BatteryManagement_BQ27441G1.circuit.tsx
+ lib/subcircuits/BoostConverter_TPS61299X.circuit.tsx
+ lib/subcircuits/BuckBoostConverter_TPS63802.circuit.tsx
+ lib/subcircuits/BuckConverter_TPS62933.circuit.tsx
+ lib/subcircuits/EnvironmentalSensor_HDC2080.circuit.tsx
+ lib/subcircuits/EnvironmentalSensor_HDC3020.circuit.tsx
+ lib/subcircuits/EnvironmentalSensor_HDC3022.circuit.tsx
+ lib/subcircuits/FlashMemory_W25Q128JVSIQ.circuit.tsx
+ lib/subcircuits/LEDDriver_TLC59116.circuit.tsx
+ lib/subcircuits/LevelShifter_TXB0104.circuit.tsx
+ lib/subcircuits/LevelShifter_TXS0102.circuit.tsx
+ lib/subcircuits/LoadSwitch_TPS22919.circuit.tsx
+ lib/subcircuits/Microcontroller_MSPM0G3507.circuit.tsx
+ lib/subcircuits/Microcontroller_MSPM33C3x.circuit.tsx
+ lib/subcircuits/MotorDriver_DRV8833.circuit.tsx
+ lib/subcircuits/MotorDriver_DRV8876.circuit.tsx
+ lib/subcircuits/PowerManagement_TPS6521835.circuit.tsx
+ lib/subcircuits/PowerManagement_TPS7A02.circuit.tsx
+ lib/subcircuits/PowerModule_TPSM82823.circuit.tsx
+ lib/subcircuits/PowerMonitor_INA237.circuit.tsx
+ lib/subcircuits/RFIDReader_TRF7960.circuit.tsx
+ lib/subcircuits/RealTimeClock_BQ32002.circuit.tsx
+ lib/subcircuits/TemperatureSensor_TMP1075.circuit.tsx
+ lib/subcircuits/TemperatureSensor_TMP1827.circuit.tsx
+ lib/subcircuits/WirelessMCU_CC2340R5.circuit.tsx
+ lib/subcircuits/WirelessMCU_CC2745R10.circuit.tsx
+ lib/subcircuits/WirelessMCU_CC3235SF.circuit.tsx
+ lib/subcircuits/__snapshots__/
+ lib/subcircuits/__snapshots__/BatteryManagement_BQ24074.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/BatteryManagement_BQ24074.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/BatteryManagement_BQ25895.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/BatteryManagement_BQ25895.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/BatteryManagement_BQ27441G1.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/BatteryManagement_BQ27441G1.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/BoostConverter_TPS61299X.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/BoostConverter_TPS61299X.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/BuckBoostConverter_TPS63802.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/BuckBoostConverter_TPS63802.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/BuckConverter_TPS62933.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/BuckConverter_TPS62933.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/EnvironmentalSensor_HDC2080.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/EnvironmentalSensor_HDC2080.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/EnvironmentalSensor_HDC3020.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/EnvironmentalSensor_HDC3020.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/EnvironmentalSensor_HDC3022.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/EnvironmentalSensor_HDC3022.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/FlashMemory_W25Q128JVSIQ.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/FlashMemory_W25Q128JVSIQ.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/LEDDriver_TLC59116.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/LevelShifter_TXB0104.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/LevelShifter_TXS0102.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/LoadSwitch_TPS22919.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/LoadSwitch_TPS22919.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/Microcontroller_MSPM0G3507.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/Microcontroller_MSPM0G3507.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/Microcontroller_MSPM33C3x.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/MotorDriver_DRV8833.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/MotorDriver_DRV8833.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/MotorDriver_DRV8876.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/MotorDriver_DRV8876.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/PowerManagement_TPS6521835.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/PowerManagement_TPS7A02.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/PowerManagement_TPS7A02.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/PowerModule_TPSM82823.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/PowerModule_TPSM82823.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/PowerMonitor_INA237.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/PowerMonitor_INA237.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/RFIDReader_TRF7960.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/RealTimeClock_BQ32002.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/TemperatureSensor_TMP1075.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/TemperatureSensor_TMP1075.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/TemperatureSensor_TMP1827.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/WirelessMCU_CC2340R5.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/WirelessMCU_CC2340R5.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/WirelessMCU_CC2745R10.circuit-schematic.snap.svg
+ lib/subcircuits/__snapshots__/WirelessMCU_CC3235SF.circuit-pcb.snap.svg
+ lib/subcircuits/__snapshots__/WirelessMCU_CC3235SF.circuit-schematic.snap.svg
+ package.json
+ scripts/
+ scripts/encrypt-bq24074-spice-model.ts
+ tscircuit.config.json
+ tscircuit.config.ts
+ tsconfig.json
+[@tsci/tscircuit.ti] Extract .7cff3d79fefb5ffd-0000000B.tscircuit.ti (decompressed 2.48 MB tgz file in 19.588ms)
+[@tsci/tscircuit.ti] Extracted to .7cff3d79fefb5ffd-0000000B.tscircuit.ti (53.731ms)
+[PackageManager] waiting for 1 tasks
+   - "typescript": "^5.0.0" - typescript@5.9.3
+   - "tscircuit": "*" - tscircuit@0.0.2742
+   - "@tscircuit/schematic-corpus": "*" - @tscircuit/schematic-corpus@0.0.114
+   - "three": "^0.179.1" - three@0.179.1
+   - "comlink": "^4.4.2" - comlink@4.4.2
+   - "poppygl": "0.0.29" - poppygl@0.0.29
+   - "s-expression": "^3.1.1" - s-expression@3.1.1
+   - "@tscircuit/cli": "^0.1.2235" - @tscircuit/cli@0.1.2237
+   - "@tscircuit/core": "^0.0.2056" - @tscircuit/core@0.0.2056
+   - "@tscircuit/eval": "^0.0.1522" - @tscircuit/eval@0.0.1522
+   - "@tscircuit/checks": "^0.0.233" - @tscircuit/checks@0.0.233
+   - "rollup-plugin-dts": "^6.2.3" - rollup-plugin-dts@6.5.1
+   - "@rollup/plugin-json": "^6.1.0" - @rollup/plugin-json@6.1.0
+   - "@tscircuit/runframe": "^0.0.2887" - @tscircuit/runframe@0.0.2887
+   - "@rollup/plugin-commonjs": "^29.0.0" - @rollup/plugin-commonjs@29.0.3
+   - "circuit-json-to-pnp-csv": "^0.0.16" - circuit-json-to-pnp-csv@0.0.16
+   - "@tscircuit/simple-3d-svg": "^0.0.41" - @tscircuit/simple-3d-svg@0.0.41
+   - "@rollup/plugin-typescript": "^12.3.0" - @rollup/plugin-typescript@12.3.0
+   - "circuit-json-to-simple-3d": "^0.0.9" - circuit-json-to-simple-3d@0.0.9
+   - "kicad-component-converter": "^0.1.40" - kicad-component-converter@0.1.41
+   - "@rollup/plugin-node-resolve": "^16.0.3" - @rollup/plugin-node-resolve@16.0.3
+   - "@tscircuit/copper-pour-solver": "^0.0.62" - @tscircuit/copper-pour-solver@0.0.62
+   - "@tscircuit/capacity-autorouter": "^0.0.953" - @tscircuit/capacity-autorouter@0.0.953
+   - "@tscircuit/internal-dynamic-import": "^0.0.11" - @tscircuit/internal-dynamic-import@0.0.11
+   - "convert-source-map": "^2.0.0" - convert-source-map@2.0.0
+   - "@jridgewell/remapping": "^2.3.5" - @jridgewell/remapping@2.3.5
+   - "@babel/code-frame": "^8.0.0" - @babel/code-frame@8.0.6
+   - "@rollup/pluginutils": "^5.1.0" - @rollup/pluginutils@5.4.0
+   - "@tscircuit/core": "^0.0.1911" - @tscircuit/core@0.0.1911
+   - "@tscircuit/eval": "0.0.1521" - @tscircuit/eval@0.0.1521
+   - "commondir": "^1.0.1" - commondir@1.0.1
+   - "estree-walker": "^2.0.2" - estree-walker@2.0.2
+   - "is-reference": "1.2.1" - is-reference@1.2.1
+   - "papaparse": "^5.4.1" - papaparse@5.7.0
+   - "fast-xml-parser": "^5.2.5" - fast-xml-parser@5.11.2
+   - "resolve": "^1.22.1" - resolve@1.22.12
+   - "@types/resolve": "1.20.2" - @types/resolve@1.20.2
+   - "deepmerge": "^4.2.2" - deepmerge@4.3.1
+   - "is-module": "^1.0.0" - is-module@1.0.0
+   - "js-tokens": "^10.0.0" - js-tokens@10.0.0
+   - "@babel/helper-validator-identifier": "^8.0.6" - @babel/helper-validator-identifier@8.0.6
+   - "strnum": "^2.4.2" - strnum@2.4.2
+   - "is-unsafe": "^2.0.0" - is-unsafe@2.0.2
+   - "xml-naming": "^0.3.0" - xml-naming@0.3.0
+   - "fast-xml-builder": "^1.2.0" - fast-xml-builder@1.3.1
+   - "@nodable/entities": "^3.0.1" - @nodable/entities@3.1.0
+   - "path-expression-matcher": "^1.6.2" - path-expression-matcher@1.6.2
+   - "es-errors": "^1.3.0" - es-errors@1.3.0
+   - "path-parse": "^1.0.7" - path-parse@1.0.7
+   - "is-core-module": "^2.16.1" - is-core-module@2.17.0
+   - "supports-preserve-symlinks-flag": "^1.0.0" - supports-preserve-symlinks-flag@1.0.0
+   - "anynum": "^1.0.1" - anynum@1.0.1
+> HTTP/1.1 GET https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.223.tgz
+> Connection: keep-alive
+> User-Agent: Bun/1.3.9
+> Accept: */*
+> Host: jscdn.tscircuit.com
+> Accept-Encoding: gzip, deflate, br, zstd
+
+< 200 OK
+< Date: Sat, 03 Oct 2026 22:22:17 GMT
+< Content-Type: application/octet-stream
+< Content-Length: 177133
+< Connection: keep-alive
+< Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xTWLol66CsgEKzupRvTYFkFKKOgZxv21uegpyoMr84viukadZTya1l5hy%2Ffd9%2B6XFTFmfdMsK9NS0Y5kTO5duQ%2FA7y%2FNhEBMDgzRyADNgUkPPnb5yflE5i3v39cju%2FmAw%2BwqaOk%3D"}]}
+< Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+< Server: cloudflare
+< CF-RAY: a44f583d6b8551a4-TIA
+
+[PackageManager] waiting for 1 tasks
+    [335.46ms] Downloaded @tscircuit/schematic-trace-solver tarball
+ LICENSE
+ dist/index.js
+ package.json
+ README.md
+ dist/index.d.ts
+[@tscircuit/schematic-trace-solver] Extract .38dfa53dd7de57fb-0000000C.schematic-trace-solver (decompressed 177.13 KB tgz file in 1.989ms)
+[@tscircuit/schematic-trace-solver] Extracted to .38dfa53dd7de57fb-0000000C.schematic-trace-solver (5.591ms)
+[PackageManager] waiting for 1 tasks
+Resolved, downloaded and extracted [24]
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+Clean lockfile: 689 packages - 689 packages in 2.7ms
+error: @tscircuit/pcb-trace-linter@github:tscircuit/pcb-trace-linter#4c035f9d40ffb03ba547a08975b5e64b20371123 failed to resolve

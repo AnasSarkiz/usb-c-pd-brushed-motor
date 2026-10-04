@@ -1,0 +1,13 @@
+$ bun scripts/build-firmware.ts qualified
+36 | let configurationSource =
+37 |   '#include "motor_owner.h"\nconst struct motor_owner_config motor_build_config={0};\nconst bool motor_environment_qualification_present=false;\n'
+38 | let provisioningHash: string | null = null
+39 | if (mode === "qualified") {
+40 |   if (!process.argv[3])
+41 |     throw new Error(
+                   ^
+error: Qualified build blocked: independently approved 40-byte NVM, RX-path and measurement provisioning evidence is required; use explicit bringup mode for an inhibited diagnostic image.
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/build-firmware.ts:41:15
+
+Bun v1.3.9 (macOS arm64)
+error: script "firmware:qualified" exited with code 1

@@ -1,3 +1,4 @@
+import { productPlacement } from "./product-placement"
 import { AO3400A } from "../imports/AO3400A"
 import { BZT52C10 } from "../imports/BZT52C10"
 import { A_0603WAF1001T5E } from "../imports/A_0603WAF1001T5E"
@@ -12,6 +13,7 @@ export function EnergyDump() {
       {/* Dump MOSFET gate driver */}
       <MMBT3906LT1G
         name="Q2"
+        pcbRotation={productPlacement.Q2.ccwRotationDegrees}
         schSheetName="dump"
         schX={-11.0}
         schY={8}
@@ -31,6 +33,7 @@ export function EnergyDump() {
       {/* PNP default off */}
       <CRCW060310K0FKEA
         name="R41"
+        pcbRotation={productPlacement.R41.ccwRotationDegrees}
         schSheetName="dump"
         schX={-5.5}
         schY={8}
@@ -43,6 +46,7 @@ export function EnergyDump() {
       {/* Comparator sink-current limit */}
       <CRCW060310K0FKEA
         name="R42"
+        pcbRotation={productPlacement.R42.ccwRotationDegrees}
         schSheetName="dump"
         schX={0.0}
         schY={8}
@@ -54,6 +58,7 @@ export function EnergyDump() {
       {/* Dump gate slew and zener-current limit */}
       <A_0603WAF1001T5E
         name="R43"
+        pcbRotation={productPlacement.R43.ccwRotationDegrees}
         schSheetName="dump"
         schX={5.5}
         schY={8}
@@ -65,6 +70,7 @@ export function EnergyDump() {
       {/* Dump gate default low */}
       <CRCW060310K0FKEA
         name="R44"
+        pcbRotation={productPlacement.R44.ccwRotationDegrees}
         schSheetName="dump"
         schX={11.0}
         schY={8}
@@ -77,6 +83,7 @@ export function EnergyDump() {
       {/* 10 V gate protection */}
       <BZT52C10
         name="D9"
+        pcbRotation={productPlacement.D9.ccwRotationDegrees}
         schSheetName="dump"
         schX={-11.0}
         schY={4}
@@ -89,6 +96,7 @@ export function EnergyDump() {
       {/* Switched regenerative energy dump */}
       <AO3400A
         name="Q3"
+        pcbRotation={productPlacement.Q3.ccwRotationDegrees}
         schSheetName="dump"
         schX={-5.5}
         schY={4}
@@ -100,14 +108,15 @@ export function EnergyDump() {
       />
       <schematictext
         text="Q3 · AO3400A"
-        schX={-4.7}
+        schX={-4.6}
         schY={3.35}
         fontSize={0.15}
         anchor="bottom_left"
       />
-      {/* 10 ohm/2 W; two 20 ohm parallel branches */}
+      {/* 10 ohm/2 W; four 20 ohm parallel branches */}
       <RPL_12K10R0FT
         name="R45"
+        pcbRotation={productPlacement.R45.ccwRotationDegrees}
         schSheetName="dump"
         schX={0.0}
         schY={4}
@@ -117,9 +126,10 @@ export function EnergyDump() {
           pin2: "net.DUMP_MID_A",
         }}
       />
-      {/* 10 ohm/2 W; two 20 ohm parallel branches */}
+      {/* 10 ohm/2 W; four 20 ohm parallel branches */}
       <RPL_12K10R0FT
         name="R46"
+        pcbRotation={productPlacement.R46.ccwRotationDegrees}
         schSheetName="dump"
         schX={5.5}
         schY={4}
@@ -128,9 +138,10 @@ export function EnergyDump() {
           pin2: "net.DUMP_LOAD",
         }}
       />
-      {/* 10 ohm/2 W; two 20 ohm parallel branches */}
+      {/* 10 ohm/2 W; four 20 ohm parallel branches */}
       <RPL_12K10R0FT
         name="R47"
+        pcbRotation={productPlacement.R47.ccwRotationDegrees}
         schSheetName="dump"
         schX={11.0}
         schY={4}
@@ -140,9 +151,10 @@ export function EnergyDump() {
           pin2: "net.DUMP_MID_B",
         }}
       />
-      {/* 10 ohm/2 W; two 20 ohm parallel branches */}
+      {/* 10 ohm/2 W; four 20 ohm parallel branches */}
       <RPL_12K10R0FT
         name="R48"
+        pcbRotation={productPlacement.R48.ccwRotationDegrees}
         schSheetName="dump"
         schX={-11.0}
         schY={0}
@@ -151,9 +163,48 @@ export function EnergyDump() {
           pin2: "net.DUMP_LOAD",
         }}
       />
+      {/* 10 ohm/2 W; four 20 ohm parallel dump branches */}
+      <RPL_12K10R0FT
+        name="R69"
+        pcbRotation={productPlacement.R69.ccwRotationDegrees}
+        schSheetName="dump"
+        schX={-11}
+        schY={-4}
+        schRotation={-90}
+        connections={{ pin1: "net.VM", pin2: "net.DUMP_MID_C" }}
+      />
+      {/* 10 ohm/2 W; four 20 ohm parallel dump branches */}
+      <RPL_12K10R0FT
+        name="R70"
+        pcbRotation={productPlacement.R70.ccwRotationDegrees}
+        schSheetName="dump"
+        schX={-5.5}
+        schY={-4}
+        connections={{ pin1: "net.DUMP_MID_C", pin2: "net.DUMP_LOAD" }}
+      />
+      {/* 10 ohm/2 W; four 20 ohm parallel dump branches */}
+      <RPL_12K10R0FT
+        name="R71"
+        pcbRotation={productPlacement.R71.ccwRotationDegrees}
+        schSheetName="dump"
+        schX={0}
+        schY={-4}
+        schRotation={-90}
+        connections={{ pin1: "net.VM", pin2: "net.DUMP_MID_D" }}
+      />
+      {/* 10 ohm/2 W; four 20 ohm parallel dump branches */}
+      <RPL_12K10R0FT
+        name="R72"
+        pcbRotation={productPlacement.R72.ccwRotationDegrees}
+        schSheetName="dump"
+        schX={5.5}
+        schY={-4}
+        connections={{ pin1: "net.DUMP_MID_D", pin2: "net.DUMP_LOAD" }}
+      />
       {/* Disable bridge while energy clamp conducts */}
       <MMBT3904
         name="Q4"
+        pcbRotation={productPlacement.Q4.ccwRotationDegrees}
         schSheetName="dump"
         schX={-5.5}
         schY={0}
@@ -165,7 +216,7 @@ export function EnergyDump() {
       />
       <schematictext
         text="Q4 · MMBT3904"
-        schX={-4.7}
+        schX={-4.6}
         schY={-0.65}
         fontSize={0.15}
         anchor="bottom_left"
@@ -173,6 +224,7 @@ export function EnergyDump() {
       {/* OV inhibit base-current limit */}
       <CRCW060310K0FKEA
         name="R49"
+        pcbRotation={productPlacement.R49.ccwRotationDegrees}
         schSheetName="dump"
         schX={0.0}
         schY={0}
@@ -184,6 +236,7 @@ export function EnergyDump() {
       {/* Disable buck during motor overvoltage */}
       <MMBT3904
         name="Q5"
+        pcbRotation={productPlacement.Q5.ccwRotationDegrees}
         schSheetName="dump"
         schX={5.5}
         schY={0}

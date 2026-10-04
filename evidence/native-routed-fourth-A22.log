@@ -1,0 +1,13 @@
+{
+  "purchased": 140,
+  "traces": 306,
+  "diagnostics": 113,
+  "types": [
+    "pcb_trace_error",
+    "pcb_placement_error",
+    "pcb_pad_trace_clearance_error",
+    "pcb_via_trace_clearance_error",
+    "pcb_pad_pad_clearance_error",
+    "pcb_via_clearance_error"
+  ]
+}

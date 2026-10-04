@@ -1,3 +1,4 @@
+import { productPlacement } from "./product-placement"
 import { CC0603KRX7R9BB104 } from "../imports/CC0603KRX7R9BB104"
 import { A_0603WAF1001T5E } from "../imports/A_0603WAF1001T5E"
 import { A_0603WAF3300T5E } from "../imports/A_0603WAF3300T5E"
@@ -15,6 +16,7 @@ export function PwmControls() {
       {/* Hardware potentiometer PWM */}
       <TLC555CDR
         name="U6"
+        pcbRotation={productPlacement.U6.ccwRotationDegrees}
         schSheetName="controls"
         schX={-11.0}
         schY={8}
@@ -32,6 +34,7 @@ export function PwmControls() {
       {/* Bourns vertical 10 k linear speed pot */}
       <PTV09A_4015F_B103
         name="RV1"
+        pcbRotation={productPlacement.RV1.ccwRotationDegrees}
         schSheetName="controls"
         schX={-5.5}
         schY={8}
@@ -53,6 +56,7 @@ export function PwmControls() {
       {/* Charge end resistance */}
       <A_0603WAF3300T5E
         name="R25"
+        pcbRotation={productPlacement.R25.ccwRotationDegrees}
         schSheetName="controls"
         schX={0.0}
         schY={8}
@@ -65,6 +69,7 @@ export function PwmControls() {
       {/* Steer charging through one pot segment */}
       <B5819W_SL
         name="D6"
+        pcbRotation={productPlacement.D6.ccwRotationDegrees}
         schSheetName="controls"
         schX={5.5}
         schY={8}
@@ -76,6 +81,7 @@ export function PwmControls() {
       {/* Steer discharging through opposite segment */}
       <B5819W_SL
         name="D7"
+        pcbRotation={productPlacement.D7.ccwRotationDegrees}
         schSheetName="controls"
         schX={11.0}
         schY={8}
@@ -87,6 +93,7 @@ export function PwmControls() {
       {/* Discharge end resistance */}
       <A_0603WAF3300T5E
         name="R26"
+        pcbRotation={productPlacement.R26.ccwRotationDegrees}
         schSheetName="controls"
         schX={-11.0}
         schY={4}
@@ -98,6 +105,7 @@ export function PwmControls() {
       {/* 5.6 nF C0G PWM timing */}
       <GRM1885C1H562JA01D
         name="C21"
+        pcbRotation={productPlacement.C21.ccwRotationDegrees}
         schSheetName="controls"
         schX={-5.5}
         schY={4}
@@ -110,6 +118,7 @@ export function PwmControls() {
       {/* Timer threshold bypass */}
       <A_0603B103K500NT
         name="C22"
+        pcbRotation={productPlacement.C22.ccwRotationDegrees}
         schSheetName="controls"
         schX={0.0}
         schY={4}
@@ -122,6 +131,7 @@ export function PwmControls() {
       {/* Timer local bypass */}
       <CC0603KRX7R9BB104
         name="C23"
+        pcbRotation={productPlacement.C23.ccwRotationDegrees}
         schSheetName="controls"
         schX={5.5}
         schY={4}
@@ -134,6 +144,7 @@ export function PwmControls() {
       {/* Manufacturer contact table: 2-3 / OPEN / 2-1; pin 2 is common. */}
       <A_1MS3T1B1M2QES_5
         name="SW1"
+        pcbRotation={productPlacement.SW1.ccwRotationDegrees}
         schSheetName="controls"
         schX={11}
         schY={4}
@@ -146,6 +157,7 @@ export function PwmControls() {
       {/* LED current limit */}
       <A_0603WAF1001T5E
         name="R29"
+        pcbRotation={productPlacement.R29.ccwRotationDegrees}
         schSheetName="controls"
         schX={11.0}
         schY={0}
@@ -157,6 +169,7 @@ export function PwmControls() {
       {/* LED current limit */}
       <A_0603WAF1001T5E
         name="R30"
+        pcbRotation={productPlacement.R30.ccwRotationDegrees}
         schSheetName="controls"
         schX={-11.0}
         schY={-4}
@@ -168,6 +181,7 @@ export function PwmControls() {
       {/* Forward PWM indicator; brightness follows duty */}
       <A_19_217_G7C_AN1P2_6T
         name="LED2"
+        pcbRotation={productPlacement.LED2.ccwRotationDegrees}
         schSheetName="controls"
         schX={-5.5}
         schY={-4}
@@ -180,6 +194,7 @@ export function PwmControls() {
       {/* Reverse PWM indicator; brightness follows duty */}
       <A_19_217_G7C_AN1P2_6T
         name="LED3"
+        pcbRotation={productPlacement.LED3.ccwRotationDegrees}
         schSheetName="controls"
         schX={0.0}
         schY={-4}

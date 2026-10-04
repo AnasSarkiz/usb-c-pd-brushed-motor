@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/audit-routed-drills.py", line 38, in <module>
+    assert any(e['type']=='pcb_trace'for e in elements)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

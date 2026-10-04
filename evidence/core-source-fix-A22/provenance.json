@@ -1,0 +1,40 @@
+{
+  "revision": "A22",
+  "official_source_commit": "51b3b57d60b9153e8e7a0449023bbefdba18ec23",
+  "official_source_url": "https://github.com/tscircuit/core",
+  "source_fix": "Native board mounting/plated-hole associations; board label association follows existing Board method; explicit plated-hole stencil layers with legacy both-layer default. Custom JSX symbol graphics and electrical ports rotate together; rotated rectangle bounds use world-space corners. Explicit autorouter preset safety settings survive normalization and trace clearance reaches SRJ. Shared authoritative supplier geometry cache deduplicates requests, expires after 24 hours and propagates failures. PCB port selectors include primitive-container ancestry, so custom JSX symbol ports remain selectable in saved routing paths. Fanout discovery runs after port alias indexing and source traces; literal pin selectors preserve schematic-symbol ownership and resolve nested imported ports without depending on warmed caches. Transparent schematic groups receive their enclosing subcircuit association; omitted PCB anchors and unset trace-clearance metadata remain optional instead of invalid null/undefined members. Interior PCB route pieces preserve exact known source-net ownership independently of pad endpoint geometry; physical dangling/missing-port checks remain enforced.",
+  "distribution": "Canonical source build and npm pack; task-local tarball dependencies and Bun overrides; clean frozen-lockfile installation. Imported electronics and Circuit JSON schemas are unchanged.",
+  "checks": {
+    "tests": "5 focused core tests / 344 assertions",
+    "typecheck": "passed",
+    "build": "passed",
+    "snapshots": "core snapshots actually rendered and inspected",
+    "custom_symbol": "1 regression/26 assertions plus negative baseline, 6 compatibility tests/257 assertions; source TS/build pass, snapshot inspected",
+    "router_cache": "5 regressions/42 assertions plus 5 compatibility passes and one escalated remote-server test/2 assertions; original-source negative baseline fails as expected. TS and canonical build pass.",
+    "port_selectors": "Original-source regression fails;5 regressions/122 assertions pass, TS/canonical build pass.",
+    "fanout": "Original-source regression fails; 12 selector/alias compatibility tests /34 assertions pass;34 fanout tests/1808 assertions pass (2 pre-existing skipped), source TS/build pass, new snapshot inspected. Local-server test passes under escalated sandbox.",
+    "fanout_schema": "Original-source strict-schema regression fails;7 group/fanout tests/97 assertions pass, source TS/build pass, new snapshot inspected.",
+    "route_net": "Original-source regression fails;7 routing attribution/fanout/saved-route tests/74 assertions pass, source TS/build pass. Regression still rejects isolated copper with2 dangling endpoints and missing physical ports; unknown source nets remain unattributed."
+  },
+  "sha256": {
+    "evidence/core-source-fix-A22/board-silkscreen-schema-pcb.snap.svg": "5d4ee87369a074fbff6a7099df35311f71b71d216eb3d474d373d3a1fe2eb11b",
+    "evidence/core-source-fix-A22/board-silkscreen-schema.test.tsx.txt": "a7f0ce08ef7f4ff601f6606ac55ec1f3af7f0453a61cafa8346377d52bb17b9b",
+    "evidence/core-source-fix-A22/board-plated-hole-solder-paste.test.tsx.txt": "89a1a45cfa6050cd82e156dbec4fc254cb7bfa0f5b738ddfc369023ac5ce101a",
+    "evidence/core-source-fix-A22/board-plated-hole-solder-paste-pcb.snap.svg": "b4c75c1e5791d57c736c975d66e4567a4349952d7b5f57ece8f452d183306e6a",
+    "evidence/core-source-fix-A22/board-mounted-hole-schema.test.tsx.txt": "f4e0a832727204cf8ab92ebca5030c0ede9e864ba94ba09325c1c02686b9ffcd",
+    "evidence/core-source-fix-A22/board-mounted-hole-schema-pcb.snap.svg": "ba09fd7f83ab5bb6cb2782d40c30208b028934fd5e06e32fbafebd805b793dbf",
+    "evidence/core-source-fix-A22/core.patch": "f0df38514891fbbf4519bfd3a7885da48d449348b773f6d95e0b968aa20e9b65",
+    "evidence/core-source-fix-A22/development-package-lock.json": "f015b8086fcbdf19f501ee3e13ad2456de25a2f6990933b8a433e86afb9ba315",
+    "tooling/tscircuit-core-0.0.2073-A22.tgz": "2986128f051f507a614a3c93a512cca189f005fd3be1c4310f6b3c35e8cb4a5b",
+    "node_modules/@tscircuit/core/dist/index.js": "e02f236c710d6818a9f9165622dd787805fca79c85c8e1a9d68bfd5b565f1de9",
+    "node_modules/@tscircuit/core/dist/index.d.ts": "319b1f0bbf407c8f76359daf18a9b21940d658052f98b7ed048ae0b44476d7fc",
+    "evidence/core-source-fix-A22/core-A22-final.patch": "bd06960b82224761df2a55e196467c36ea9c3cdb5dfe97e497956a6793e0272e",
+    "tooling/tscircuit-core-0.0.2074-A22.tgz": "257fdc5dd682118e07e2c34d284893b9a5c37d0bbed98f80e3b25fbaa5d60df6",
+    "tooling/tscircuit-core-0.0.2075-A22.tgz": "eb2629680c5f9f010e262cd558125ebaaacc368a45ec2f42436277648417cfac",
+    "tooling/tscircuit-core-0.0.2076-A22.tgz": "654871abc7ba38c7647fa0a0073f58c2895e52228d43fc581449e5d4868d0cf8",
+    "tooling/tscircuit-core-0.0.2077-A22.tgz": "b4ba57a8c033abf85fe78662ec760ad9e1e52e1d936bcd3037b29f6a30db4fe9",
+    "tooling/tscircuit-core-0.0.2078-A22.tgz": "0b57ca2c9800db08089f34648e83f736910c90dea5e7d0eb6ed313c282b1775b",
+    "tooling/tscircuit-core-0.0.2079-A22.tgz": "3ca611995c2772dd4d1d196d160564ad35da552c40a0b777320cfad78af90af2"
+  },
+  "current_package": "0.0.2079"
+}

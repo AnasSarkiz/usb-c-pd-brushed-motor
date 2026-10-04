@@ -1,0 +1,2 @@
+$ tsc --noEmit
+lib/solvers/TraceSimplificationSolver/TraceSimplificationSolver.ts(206,17): error TS2551: Property 'splice' does not exist on type 'readonly PreservedRouteEndpointPair[]'. Did you mean 'slice'?

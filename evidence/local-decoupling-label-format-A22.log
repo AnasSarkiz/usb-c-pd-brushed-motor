@@ -1,0 +1,26 @@
+$ biome format .
+circuit/MechanicalFeatures.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     39  39 │         <silkscreentext text="+" pcbX={38.5} pcbY={5.5} fontSize={1.2} />
+     40  40 │         <silkscreentext text="-" pcbX={38.5} pcbY={10.5} fontSize={1.2} />
+     41     │ - ······<silkscreentext
+     42     │ - ········text="TP1·SWDIO"
+     43     │ - ········pcbX={-34}
+     44     │ - ········pcbY={-1.6}
+     45     │ - ········fontSize={1.2}
+     46     │ - ······/>
+         41 │ + ······<silkscreentext·text="TP1·SWDIO"·pcbX={-34}·pcbY={-1.6}·fontSize={1.2}·/>
+     47  42 │         <silkscreentext text="TP2 CLK" pcbX={-27.5} pcbY={-5.25} fontSize={1.2} />
+     48  43 │         <silkscreentext
+  
+
+Checked 144 files in 33ms. No fixes applied.
+Found 1 error.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format:check" exited with code 1

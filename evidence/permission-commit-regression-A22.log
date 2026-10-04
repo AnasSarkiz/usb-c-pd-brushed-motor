@@ -1,0 +1,15 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/motor-measurement.test.ts:
+(pass) Measurement conversion encloses physical corners and never approves raw validity [974.24ms]
+
+tests/motor-owner.test.ts:
+(pass) serialized owner applies only fresh qualified contracts and revokes on faults [773.51ms]
+
+tests/stm32-adc.test.ts:
+(pass) STM32 ADC fresh bounded conversions and failure inhibition [390.64ms]
+
+ 3 pass
+ 0 fail
+ 9 expect() calls
+Ran 3 tests across 3 files. [2.19s]

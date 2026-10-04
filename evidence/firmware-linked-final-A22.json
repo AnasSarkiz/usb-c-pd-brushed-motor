@@ -1,0 +1,95 @@
+{
+  "revision": "A22",
+  "mode": "bringup",
+  "status": "linked diagnostic image; motor qualification intentionally unavailable and inhibited",
+  "provisioningHash": null,
+  "compiler": "arm-none-eabi-gcc (GCC) 16.1.0",
+  "memory": {
+    "text": 20352,
+    "data": 0,
+    "bss": 448,
+    "flashBytes": 20352,
+    "staticRamBytes": 448,
+    "reservedStackBytes": 2048
+  },
+  "sourceHashes": [
+    {
+      "path": "firmware/pd_policy.c",
+      "sha256": "d348eadc5f6adda8c2a655dcf956465961591fd4b1a3de49d470cc27e5b1154d"
+    },
+    {
+      "path": "firmware/pd_sequence.c",
+      "sha256": "dd2551830c291903d162824832d30fa64d6c2051451e2da3dbc8bd2d2a06d20a"
+    },
+    {
+      "path": "firmware/stm32_safe_gpio.c",
+      "sha256": "cf43eb6651a58d403d01415fa25b3f80e675277020405e44c3e0a6f8dae7d978"
+    },
+    {
+      "path": "firmware/stm32_adc.c",
+      "sha256": "389d0a41d21f5e22f0f001aabfe5ecfaf119da2e71b87d86b614ffe1a299caac"
+    },
+    {
+      "path": "firmware/stm32_i2c.c",
+      "sha256": "607da4572f776ca25e1b7d68df391bdb3cba41783bd01beccb8b4d64dce2df5f"
+    },
+    {
+      "path": "firmware/stm32_clock.c",
+      "sha256": "027d0f3514258567499398af3bdd008e891a984662e4349ce4941b242515200c"
+    },
+    {
+      "path": "firmware/motor_measurement.c",
+      "sha256": "c3da16a921e2343fdf2d991f2e06a9fae44638bb9601aad7eb0642b99bcef179"
+    },
+    {
+      "path": "firmware/stusb4500_rx.c",
+      "sha256": "d0d14946908b36b28a00c8bb6d587c40adae238ac1418515626ac2fe247c9156"
+    },
+    {
+      "path": "firmware/stusb4500_startup.c",
+      "sha256": "00644224f0956a5f93a61feeffdb4aa53555246fa03bd88bb84f027269453197"
+    },
+    {
+      "path": "firmware/stusb4500_request.c",
+      "sha256": "0186da556984d7d8b658224571010638e987dfadd6e14a7713ac5c55fd057a5d"
+    },
+    {
+      "path": "firmware/stusb4500_nvm.c",
+      "sha256": "0dabe1d0fc594d30a5b2191284ed63796452abb3143942d0c642531fbd5278bb"
+    },
+    {
+      "path": "firmware/motor_owner.c",
+      "sha256": "2ac3317c649a90ef4d31e0a41e556c012ce3b69950c7bacf5ad5604ecf8d6429"
+    },
+    {
+      "path": "firmware/motor_main.c",
+      "sha256": "bb45367a7691719c6ec8b4f8e88046ce0188e9db0284388bbc27a4c25b888765"
+    },
+    {
+      "path": "firmware/freestanding_memory.c",
+      "sha256": "1db7090694b59a73c7d71bebe9186ff40f9239ed8681ace0cc0f11123ab9ee66"
+    },
+    {
+      "path": "firmware/startup_stm32g030f6.S",
+      "sha256": "95aa90f0b34f7151a9b76140d936baa0839eb43a13ce6d622486512548f7dc4d"
+    },
+    {
+      "path": "firmware/stm32g030f6.ld",
+      "sha256": "62496aeb631ca3cd18c8bc19e2997757316c61ea52b87d4312b0e617c041db55"
+    },
+    {
+      "path": "dist/firmware/bringup/build_configuration.c",
+      "sha256": "bd2be06a65bfe4d8009454448b1475b746de50d4af2f8a2e265859f55c2475a7"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "dist/firmware/bringup/motor-controller-A22.elf",
+      "sha256": "d8eb299c191ce814e94a66ed5f986577eda4fae1be35bc8ef9453c7bfdd2fd20"
+    },
+    {
+      "path": "dist/firmware/bringup/motor-controller-A22.bin",
+      "sha256": "836c743748fb0e71127bf00a732ab204a6a96e034b73d9602fa1f02e4dd562e0"
+    }
+  ]
+}

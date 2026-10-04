@@ -1,0 +1,30 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/custom-symbol-pcb-port-selector.test.tsx:
+(pass) custom JSX symbol resolves the same physical PCB port through routing selectors [32.83ms]
+
+tests/breakout/fanout-custom-symbol-port-alias.test.tsx:
+(pass) fanout resolves imported-style symbol aliases after source ports and traces exist [51.12ms]
+
+tests/components/primitive-components/schematic-symbol-selector-scope.test.tsx:
+(pass) schematicsymbol and physical chip selectors share mapped connections [1022.87ms]
+
+tests/components/base-components/shorthand-selector.test.tsx:
+(pass) shorthand selectors resolve correctly [11.80ms]
+(pass) shorthand selector errors use original selector [2.78ms]
+(pass) shorthand selectors resolve ports nested in custom symbol [18.85ms]
+(pass) shorthand selectors resolve ports for kicad library footprint refs [41.45ms]
+
+tests/components/base-components/trace-port-selector-errors.test.tsx:
+(pass) error when component is missing [3.00ms]
+(pass) error when component has no ports [0.74ms]
+(pass) error when component has numeric pins only [3.23ms]
+(pass) error lists available labeled pins [2.38ms]
+
+tests/components/base-components/empty-selector-cache.test.ts:
+(pass) empty selectors are cached and invalidated through ancestor tree changes
+
+ 12 pass
+ 0 fail
+ 34 expect() calls
+Ran 12 tests across 6 files. [1.75s]

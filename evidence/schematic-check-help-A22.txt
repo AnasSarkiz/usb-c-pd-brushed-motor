@@ -1,0 +1,9 @@
+Usage: tsci check schematic-placement [options] [file]
+
+Analyze schematic component placement
+
+Arguments:
+  file        Path to the entry file
+
+Options:
+  -h, --help  display help for command

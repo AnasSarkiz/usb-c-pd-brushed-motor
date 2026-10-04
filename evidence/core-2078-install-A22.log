@@ -1,0 +1,9 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [3]
+Saved lockfile
+
++ @tscircuit/core@./tooling/tscircuit-core-0.0.2078-A22.tgz
++ @tscircuit/props@./tooling/tscircuit-props-0.0.682-A22.tgz
+
+2 packages installed [196.00ms]

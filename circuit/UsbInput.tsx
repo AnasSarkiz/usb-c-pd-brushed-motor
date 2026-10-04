@@ -1,3 +1,5 @@
+import { A_5015 } from "../imports/A_5015"
+import { productPlacement } from "./product-placement"
 import { SMBJ22A } from "../imports/SMBJ22A"
 import { CC0603KRX7R9BB104 } from "../imports/CC0603KRX7R9BB104"
 import { TYPE_C_31_M_12 } from "../imports/TYPE_C_31_M_12"
@@ -18,6 +20,7 @@ export function UsbInput() {
       {/* Single USB-C power input */}
       <TYPE_C_31_M_12
         name="J1"
+        pcbRotation={productPlacement.J1.ccwRotationDegrees}
         schSheetName="usb"
         schX={-11.0}
         schY={8}
@@ -36,45 +39,57 @@ export function UsbInput() {
         }}
       />
       {/* Autonomous PD sink; NVM provisioning mandatory */}
-      <STUSB4500QTR
-        name="U1"
-        schSheetName="usb"
-        schX={-5.5}
-        schY={8}
-        noConnect={[
-          "pin3",
-          "pin9",
-          "pin11",
-          "pin14",
-          "pin15",
-          "pin17",
-
-          "pin20",
-        ]}
-        connections={{
-          pin1: "net.CC1",
-          pin2: "net.CC1",
-          pin4: "net.CC2",
-          pin5: "net.CC2",
-          pin6: "net.PD_RESET",
-          pin7: "net.SCL",
-          pin8: "net.SDA",
-          pin10: "net.GND",
-          pin12: "net.GND",
-          pin13: "net.GND",
-          pin16: "net.PD_ENABLE_N",
-          pin18: "net.VBUS_SENSE",
-          pin19: "net.PD_ALERT_N",
-          pin21: "net.VREG_1V2",
-          pin22: "net.GND",
-          pin23: "net.VREG_2V7",
-          pin24: "net.VDD5",
-          pin25: "net.GND",
+      <fanout
+        name="pd_pin_escape"
+        autorouter={{
+          preset: "dogbone",
+          allowViaInPad: false,
+          traceClearance: 0.25,
         }}
-      />
+        fanoutRoutingLayers={["bottom"]}
+      >
+        <STUSB4500QTR
+          name="U1"
+          pcbRotation={productPlacement.U1.ccwRotationDegrees}
+          schSheetName="usb"
+          schX={-5.5}
+          schY={8}
+          noConnect={[
+            "pin3",
+            "pin9",
+            "pin11",
+            "pin14",
+            "pin15",
+            "pin17",
+
+            "pin20",
+          ]}
+          connections={{
+            pin1: "net.CC1",
+            pin2: "net.CC1",
+            pin4: "net.CC2",
+            pin5: "net.CC2",
+            pin6: "net.PD_RESET",
+            pin7: "net.SCL",
+            pin8: "net.SDA",
+            pin10: "net.GND",
+            pin12: "net.GND",
+            pin13: "net.GND",
+            pin16: "net.PD_ENABLE_N",
+            pin18: "net.VBUS_SENSE",
+            pin19: "net.PD_ALERT_N",
+            pin21: "net.VREG_1V2",
+            pin22: "net.GND",
+            pin23: "net.VREG_2V7",
+            pin24: "net.VDD5",
+            pin25: "net.GND",
+          }}
+        />
+      </fanout>
       {/* 60 V rated 5 V PD/monitor supply */}
       <TPS7A1650DGNR
         name="U2"
+        pcbRotation={productPlacement.U2.ccwRotationDegrees}
         schSheetName="usb"
         schX={0.0}
         schY={8}
@@ -90,6 +105,7 @@ export function UsbInput() {
       {/* 60 V rated logic supply */}
       <TPS7A1633DGNR
         name="U3"
+        pcbRotation={productPlacement.U3.ccwRotationDegrees}
         schSheetName="usb"
         schX={5.5}
         schY={8}
@@ -105,10 +121,11 @@ export function UsbInput() {
       {/* 22 V standoff input TVS; main ICs rated 60 V */}
       <SMBJ22A
         name="D1"
+        pcbRotation={productPlacement.D1.ccwRotationDegrees}
         schSheetName="usb"
         schX={11.0}
         schY={8}
-        schRotation={-90.0}
+        schRotation={-90}
         connections={{
           K: "net.VBUS",
           A: "net.GND",
@@ -124,6 +141,7 @@ export function UsbInput() {
       {/* Dual CC ESD protection */}
       <PESD24VS2UT_215
         name="D2"
+        pcbRotation={productPlacement.D2.ccwRotationDegrees}
         schSheetName="usb"
         schX={-11.0}
         schY={4}
@@ -143,6 +161,7 @@ export function UsbInput() {
       {/* VBUS sense/discharge current limiting */}
       <A_0603WAF1001T5E
         name="R1"
+        pcbRotation={productPlacement.R1.ccwRotationDegrees}
         schSheetName="usb"
         schX={-5.5}
         schY={4}
@@ -155,6 +174,7 @@ export function UsbInput() {
       {/* 24 V local PD-sense transient clamp */}
       <BZT52C24
         name="D3"
+        pcbRotation={productPlacement.D3.ccwRotationDegrees}
         schSheetName="usb"
         schX={0.0}
         schY={4}
@@ -167,6 +187,7 @@ export function UsbInput() {
       {/* Connector bulk, 1 uF/50 V */}
       <GRM21BR71H105KA12L
         name="C1"
+        pcbRotation={productPlacement.C1.ccwRotationDegrees}
         schSheetName="usb"
         schX={-9}
         schY={0}
@@ -179,6 +200,7 @@ export function UsbInput() {
       {/* U2 input bypass */}
       <CC0603KRX7R9BB104
         name="C2"
+        pcbRotation={productPlacement.C2.ccwRotationDegrees}
         schSheetName="usb"
         schX={-7}
         schY={0}
@@ -191,6 +213,7 @@ export function UsbInput() {
       {/* U3 input bypass */}
       <CC0603KRX7R9BB104
         name="C3"
+        pcbRotation={productPlacement.C3.ccwRotationDegrees}
         schSheetName="usb"
         schX={-5}
         schY={0}
@@ -203,6 +226,7 @@ export function UsbInput() {
       {/* 5 V LDO stability */}
       <CL10A475KO8NNNC
         name="C4"
+        pcbRotation={productPlacement.C4.ccwRotationDegrees}
         schSheetName="usb"
         schX={-2}
         schY={0}
@@ -215,6 +239,7 @@ export function UsbInput() {
       {/* 3.3 V LDO stability */}
       <CL10A475KO8NNNC
         name="C5"
+        pcbRotation={productPlacement.C5.ccwRotationDegrees}
         schSheetName="usb"
         schX={3}
         schY={0}
@@ -227,6 +252,7 @@ export function UsbInput() {
       {/* PD internal regulator bypass */}
       <GRM21BR71H105KA12L
         name="C6"
+        pcbRotation={productPlacement.C6.ccwRotationDegrees}
         schSheetName="usb"
         schX={5.5}
         schY={0}
@@ -239,6 +265,7 @@ export function UsbInput() {
       {/* PD internal regulator bypass */}
       <GRM21BR71H105KA12L
         name="C7"
+        pcbRotation={productPlacement.C7.ccwRotationDegrees}
         schSheetName="usb"
         schX={11.0}
         schY={0}
@@ -251,6 +278,7 @@ export function UsbInput() {
       {/* PD local decoupling */}
       <CC0603KRX7R9BB104
         name="C8"
+        pcbRotation={productPlacement.C8.ccwRotationDegrees}
         schSheetName="usb"
         schX={0}
         schY={0}
@@ -263,6 +291,7 @@ export function UsbInput() {
       {/* I2C pull-up */}
       <A_0603WAF4701T5E
         name="R2"
+        pcbRotation={productPlacement.R2.ccwRotationDegrees}
         schSheetName="usb"
         schX={-5.5}
         schY={-4}
@@ -275,6 +304,7 @@ export function UsbInput() {
       {/* I2C pull-up */}
       <A_0603WAF4701T5E
         name="R3"
+        pcbRotation={productPlacement.R3.ccwRotationDegrees}
         schSheetName="usb"
         schX={0.0}
         schY={-4}
@@ -287,6 +317,7 @@ export function UsbInput() {
       {/* Default run/reset low */}
       <A_0603WAF1003T5E
         name="R4"
+        pcbRotation={productPlacement.R4.ccwRotationDegrees}
         schSheetName="usb"
         schX={5.5}
         schY={-4}
@@ -295,6 +326,28 @@ export function UsbInput() {
           pin1: "net.PD_RESET",
           pin2: "net.GND",
         }}
+      />
+      <A_5015
+        name="TP5"
+        pinAttributes={{
+          pin1: { isPassive: true, includeInBoardPinout: true },
+        }}
+        pcbRotation={productPlacement.TP5.ccwRotationDegrees}
+        schSheetName="usb"
+        schX={-11}
+        schY={-8}
+        connections={{ pin1: "net.VCC3V3" }}
+      />
+      <A_5015
+        name="TP6"
+        pinAttributes={{
+          pin1: { isPassive: true, includeInBoardPinout: true },
+        }}
+        pcbRotation={productPlacement.TP6.ccwRotationDegrees}
+        schSheetName="usb"
+        schX={-5.5}
+        schY={-8}
+        connections={{ pin1: "net.VBUS" }}
       />
     </>
   )

@@ -1,0 +1,141 @@
+{
+  "elementCount": 5120,
+  "errorCount": 15,
+  "reportPath": "evidence/circuit-schema-A22.json",
+  "errors": [
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_hole",
+      "issues": [
+        {
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    }
+  ]
+}
+36 |     "@tscircuit/core": "./tooling/tscircuit-core-0.0.2073.tgz",
+         ^
+warn: Duplicate key "@tscircuit/core" in object literal
+   at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/package.json:36:5

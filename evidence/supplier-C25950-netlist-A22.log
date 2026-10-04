@@ -1,0 +1,17 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - R65: 11kΩ resistor
+
+
+EMPTY NET PINS:
+  - R65 pin1
+  - R65 pin2
+
+COMPONENT_PINS:
+R65 (11kΩ undefined)
+- pin1(anode, pos, left): NETS(PROBE_0)
+- pin2(cathode, neg, right): NETS(PROBE_1)
+

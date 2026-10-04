@@ -20,7 +20,7 @@ static void check_source_currents(void) {
         const uint32_t source_pdos[] = {fixed(5000,3000),fixed(source_voltages_mv[voltage],source_units*10u)};
         const struct pd_capabilities capabilities = {.source_pdos=source_pdos,.count=2,.source_generation=77};
         const struct pd_plan plan=pd_make_plan(bits,&capabilities);
-        const bool adequate=source_units>=300 && source_units<=500 && !(bits==2 && voltage==0);
+        const bool adequate=source_units>=300 && source_units<=500 && !(bits>=1 && voltage==0);
         CHECK(plan.valid == adequate);
         if (!adequate) continue;
         CHECK(pd_plan_valid(&plan) && plan.source_pdo == source_pdos[1]);
@@ -78,7 +78,7 @@ int main(void) {
   uint32_t caps[] = {fixed(5000,3000),fixed(15000,3000),fixed(20000,3000)};
   struct pd_plan p = pd_make_plan(0,&(struct pd_capabilities){.source_pdos=caps,.count=3,.source_generation=1});
   CHECK(p.valid && p.voltage_mv==15000 && p.source_object_position==2);
-  CHECK(pd_make_plan(1,&(struct pd_capabilities){.source_pdos=caps,.count=3,.source_generation=1}).voltage_mv==15000);
+  CHECK(pd_make_plan(1,&(struct pd_capabilities){.source_pdos=caps,.count=3,.source_generation=1}).voltage_mv==20000);
   p=pd_make_plan(2,&(struct pd_capabilities){.source_pdos=caps,.count=3,.source_generation=1});
   CHECK(p.valid && p.voltage_mv==20000 && p.source_object_position==3);
   CHECK(!pd_make_plan(3,&(struct pd_capabilities){.source_pdos=caps,.count=3,.source_generation=1}).valid);

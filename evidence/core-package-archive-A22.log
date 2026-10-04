@@ -1,0 +1,4 @@
+npm error code EOVERRIDE
+npm error Override for @tscircuit/circuit-json-util@* conflicts with direct dependency
+npm error Log files were not written due to an error writing to the directory: /Users/anassarkiz/.npm/_logs
+npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal

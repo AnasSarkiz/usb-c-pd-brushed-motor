@@ -1,0 +1,7 @@
+{
+  "labels": 162,
+  "issues": [
+    "top:TP2 SWCLK: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-23.741966099999964,\"right\":-21.999957899999963,\"bottom\":-5.8568836999999165,\"top\":-5.492876299999916})",
+    "top:TP2 SWCLK: exposed pad/drill ink clearance (pcb_smtpad {\"left\":-23.741966099999964,\"right\":-21.999957899999963,\"bottom\":-5.206897700000018,\"top\":-4.842890300000017})"
+  ]
+}

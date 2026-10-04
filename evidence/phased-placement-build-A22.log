@@ -1,0 +1,46 @@
+$ tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs --routing-disabled
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+6406 |         detail = `It has [${labelList}]`;
+6407 |       }
+6408 |       const errorMessage = `Could not find port for selector "${selector}". Component "${targetComponent.props.name ?? parentSelector}" found, but does not have pin "${portLabel}". ${detail}`;
+6409 |       const subcircuit = trace.getSubcircuit();
+6410 |       const sourceGroup = subcircuit.getGroup();
+6411 |       throw new TraceConnectionError({
+                   ^
+TraceConnectionError: Could not find port for selector ".D1 > .K". Component ".D1 > " found, but does not have pin "K". It has no ports
+ errorData: {
+  error_type: "source_trace_not_connected_error",
+  message: "Could not find port for selector \".D1 > .K\". Component \".D1 > \" found, but does not have pin \"K\". It has no ports",
+  subcircuit_id: undefined,
+  source_group_id: undefined,
+  source_trace_id: undefined,
+  selectors_not_found: [ ".D1 > .K" ],
+},
+
+      at Trace__findConnectedPorts (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:6411:13)
+      at doInitialCreateAutoplacedBreakoutPoints (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:126259:28)
+      at runRenderPhase (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:604:24)
+      at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:614:13)
+      at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:613:13)
+      at runRenderPhaseForChildren (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:120745:11)
+      at runRenderCycle (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:552:12)
+      at render (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:119395:16)
+      at generateCircuitJson (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js:167864:10)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js:167984:28)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js:182506:38)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/cli/dist/cli/main.js:182628:15)
+
+Fatal error [circuit_generation_failed]: Could not find port for selector ".D1 > .K". Component ".D1 > " found, but does not have pin "K". It has no ports
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred
+error: script "build" exited with code 1

@@ -1,0 +1,147 @@
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: jscad-electronics@0.0.178
+npm warn Found: @tscircuit/alphabet@0.0.25
+npm warn node_modules/@tscircuit/alphabet
+npm warn   dev @tscircuit/alphabet@"0.0.25" from the root project
+npm warn   10 more (graphics-debug, graphics-debug, graphics-debug, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer @tscircuit/alphabet@"^0.0.24" from jscad-electronics@0.0.178
+npm warn node_modules/jscad-electronics
+npm warn   jscad-electronics@"^0.0.178" from circuit-json-to-gltf@0.0.141
+npm warn   node_modules/circuit-json-to-gltf
+npm warn
+npm warn Conflicting peer dependency: @tscircuit/alphabet@0.0.24
+npm warn node_modules/@tscircuit/alphabet
+npm warn   peer @tscircuit/alphabet@"^0.0.24" from jscad-electronics@0.0.178
+npm warn   node_modules/jscad-electronics
+npm warn     jscad-electronics@"^0.0.178" from circuit-json-to-gltf@0.0.141
+npm warn     node_modules/circuit-json-to-gltf
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: jscad-electronics@0.0.178
+npm warn Found: react@19.3.0
+npm warn node_modules/react
+npm warn   dev react@"^19.1.0" from the root project
+npm warn   11 more (@react-hook/latest, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"19.1.0" from jscad-electronics@0.0.178
+npm warn node_modules/jscad-electronics
+npm warn   jscad-electronics@"^0.0.178" from circuit-json-to-gltf@0.0.141
+npm warn   node_modules/circuit-json-to-gltf
+npm warn
+npm warn Conflicting peer dependency: react@19.1.0
+npm warn node_modules/react
+npm warn   peer react@"19.1.0" from jscad-electronics@0.0.178
+npm warn   node_modules/jscad-electronics
+npm warn     jscad-electronics@"^0.0.178" from circuit-json-to-gltf@0.0.141
+npm warn     node_modules/circuit-json-to-gltf
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: use-mouse-matrix-transform@1.3.5
+npm warn Found: react@19.3.0
+npm warn node_modules/react
+npm warn   dev react@"^19.1.0" from the root project
+npm warn   11 more (@react-hook/latest, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer react@"^18.2.0" from use-mouse-matrix-transform@1.3.5
+npm warn node_modules/use-mouse-matrix-transform
+npm warn   use-mouse-matrix-transform@"^1.3.0" from graphics-debug@0.0.99
+npm warn   node_modules/@tscircuit/bga-fanout-solver/node_modules/graphics-debug
+npm warn   6 more (graphics-debug, graphics-debug, graphics-debug, ...)
+npm warn
+npm warn Conflicting peer dependency: react@18.3.1
+npm warn node_modules/react
+npm warn   peer react@"^18.2.0" from use-mouse-matrix-transform@1.3.5
+npm warn   node_modules/use-mouse-matrix-transform
+npm warn     use-mouse-matrix-transform@"^1.3.0" from graphics-debug@0.0.99
+npm warn     node_modules/@tscircuit/bga-fanout-solver/node_modules/graphics-debug
+npm warn     6 more (graphics-debug, graphics-debug, graphics-debug, ...)
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'circuit-to-svg@0.0.438',
+npm warn EBADENGINE   required: { node: '24.x' },
+npm warn EBADENGINE   current: { node: 'v25.6.0', npm: '11.8.0' }
+npm warn EBADENGINE }
+npm error code EUSAGE
+npm error
+npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm error
+npm error Missing: typescript@5.9.3 from lock file
+npm error Missing: tscircuit@0.0.2743 from lock file
+npm error Missing: @tscircuit/schematic-corpus@0.0.114 from lock file
+npm error Invalid: lock file's picomatch@2.3.2 does not satisfy picomatch@4.0.7
+npm error Missing: picomatch@2.3.2 from lock file
+npm error Invalid: lock file's react-dom@19.3.0 does not satisfy react-dom@19.1.0
+npm error Missing: three@0.179.1 from lock file
+npm error Invalid: lock file's scheduler@0.28.0 does not satisfy scheduler@0.26.0
+npm error Missing: picomatch@2.3.2 from lock file
+npm error Missing: @rollup/plugin-commonjs@29.0.3 from lock file
+npm error Missing: @rollup/plugin-json@6.1.0 from lock file
+npm error Missing: @rollup/plugin-node-resolve@16.0.3 from lock file
+npm error Missing: @rollup/plugin-typescript@12.3.0 from lock file
+npm error Missing: @tscircuit/cli@0.1.2237 from lock file
+npm error Missing: @tscircuit/core@0.0.2073 from lock file
+npm error Missing: @tscircuit/eval@0.0.1538 from lock file
+npm error Missing: @tscircuit/internal-dynamic-import@0.0.11 from lock file
+npm error Missing: @tscircuit/runframe@0.0.2897 from lock file
+npm error Missing: @tscircuit/simple-3d-svg@0.0.41 from lock file
+npm error Missing: circuit-json-to-pnp-csv@0.0.16 from lock file
+npm error Missing: circuit-json-to-simple-3d@0.0.9 from lock file
+npm error Missing: comlink@4.4.2 from lock file
+npm error Missing: jscad-planner@0.0.13 from lock file
+npm error Missing: kicad-component-converter@0.1.41 from lock file
+npm error Missing: rollup-plugin-dts@6.5.1 from lock file
+npm error Missing: s-expression@3.1.1 from lock file
+npm error Missing: @rollup/pluginutils@5.4.0 from lock file
+npm error Missing: commondir@1.0.1 from lock file
+npm error Missing: estree-walker@2.0.2 from lock file
+npm error Missing: is-reference@1.2.1 from lock file
+npm error Missing: @types/resolve@1.20.2 from lock file
+npm error Missing: deepmerge@4.3.1 from lock file
+npm error Missing: is-module@1.0.0 from lock file
+npm error Missing: resolve@1.22.12 from lock file
+npm error Missing: @tscircuit/core@0.0.1911 from lock file
+npm error Missing: @tscircuit/eval@0.0.1538 from lock file
+npm error Missing: fast-xml-parser@5.11.2 from lock file
+npm error Missing: papaparse@5.7.0 from lock file
+npm error Missing: @nodable/entities@3.1.0 from lock file
+npm error Missing: fast-xml-builder@1.3.1 from lock file
+npm error Missing: is-unsafe@2.0.2 from lock file
+npm error Missing: path-expression-matcher@1.6.2 from lock file
+npm error Missing: strnum@2.4.2 from lock file
+npm error Missing: xml-naming@0.3.0 from lock file
+npm error Missing: es-errors@1.3.0 from lock file
+npm error Missing: is-core-module@2.17.0 from lock file
+npm error Missing: path-parse@1.0.7 from lock file
+npm error Missing: supports-preserve-symlinks-flag@1.0.0 from lock file
+npm error Missing: @babel/code-frame@8.0.6 from lock file
+npm error Missing: @jridgewell/remapping@2.3.5 from lock file
+npm error Missing: convert-source-map@2.0.0 from lock file
+npm error Missing: @babel/helper-validator-identifier@8.0.6 from lock file
+npm error Missing: js-tokens@10.0.0 from lock file
+npm error Missing: anynum@1.0.1 from lock file
+npm error Missing: calculate-cell-boundaries@0.0.21 from lock file
+npm error Missing: calculate-packing@0.0.89 from lock file
+npm error Missing: @tscircuit/solver-utils@0.0.19 from lock file
+npm error Missing: react@18.3.1 from lock file
+npm error Missing: react-dom@18.3.1 from lock file
+npm error Missing: scheduler@0.23.2 from lock file
+npm error
+npm error Clean install a project
+npm error
+npm error Usage:
+npm error npm ci
+npm error
+npm error Options:
+npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+npm error [--no-bin-links] [--no-fund] [--dry-run]
+npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+npm error [--workspaces] [--include-workspace-root] [--install-links]
+npm error
+npm error aliases: clean-install, ic, install-clean, isntall-clean
+npm error
+npm error Run "npm help ci" for more info
+npm error A complete log of this run can be found in: /Users/anassarkiz/.npm/_logs/2026-10-04T01_37_39_657Z-debug-0.log

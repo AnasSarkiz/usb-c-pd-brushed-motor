@@ -1,0 +1,15 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C908270.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C908270/circuit.json
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+All pins on SW1 are underspecified (no pinAttributes set)
+SW1 has no pin with requires_power=true
+SW1 has no pin with requires_ground=true
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

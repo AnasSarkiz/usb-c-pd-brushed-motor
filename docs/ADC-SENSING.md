@@ -1,3 +1,9 @@
+# Current A22 update
+
+A22 implements timestamped conservative intervals,32 MHz ADC/160.5-cycle acquisition and22 pF C0G filters. The100 nF/8 MHz discussion below is historical. See STM32-RUNTIME-A22.md.
+
+---
+
 # A19 precision rail sensing — conditional engineering screen
 
 R60/R66 now use unchanged official imports of YAGEO AT0603BRD07100KL/C855559 (100 kΩ,0.1%,25 ppm/°C). R61/R67 use YAGEO RT0603BRD0710KL/C95204 (10 kΩ,0.1%,25 ppm/°C). Nominal11:1 scaling and100 nF filters stay the same. Four parts are replaced; total remains129 placements, now57 supplier codes. The hardware PWM network, direction switch, regulator settings and current limits are unchanged.

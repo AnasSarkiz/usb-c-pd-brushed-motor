@@ -1,3 +1,4 @@
+import { productPlacement } from "./product-placement"
 import { ESR18EZPF1001 } from "../imports/ESR18EZPF1001"
 import { CC0603KRX7R9BB104 } from "../imports/CC0603KRX7R9BB104"
 import { CL10C220JB8NNNC } from "../imports/CL10C220JB8NNNC"
@@ -23,6 +24,7 @@ export function MotorSupply() {
       {/* 60 V / 3.5 A buck regulator */}
       <TPS54360DDAR
         name="U5"
+        pcbRotation={productPlacement.U5.ccwRotationDegrees}
         schSheetName="buck"
         schX={-11.0}
         schY={8}
@@ -41,6 +43,7 @@ export function MotorSupply() {
       {/* 5 A catch rectifier */}
       <SS54
         name="D5"
+        pcbRotation={productPlacement.D5.ccwRotationDegrees}
         schSheetName="buck"
         schX={-5.5}
         schY={8}
@@ -53,6 +56,7 @@ export function MotorSupply() {
       {/* 8.2 uH power inductor */}
       <MHCC10040_8R2M_R7
         name="L1"
+        pcbRotation={productPlacement.L1.ccwRotationDegrees}
         schSheetName="buck"
         schX={0.0}
         schY={8}
@@ -64,6 +68,8 @@ export function MotorSupply() {
       {/* Bootstrap capacitor */}
       <CC0603KRX7R9BB104
         name="C12"
+        schRotation={90}
+        pcbRotation={productPlacement.C12.ccwRotationDegrees}
         schSheetName="buck"
         schX={5.5}
         schY={8}
@@ -75,6 +81,7 @@ export function MotorSupply() {
       {/* Buck input ceramic 1 */}
       <CL32B106KBJNNNE
         name="C13"
+        pcbRotation={productPlacement.C13.ccwRotationDegrees}
         schSheetName="buck"
         schX={-8}
         schY={4}
@@ -87,6 +94,7 @@ export function MotorSupply() {
       {/* Buck input ceramic 2 */}
       <CL32B106KBJNNNE
         name="C14"
+        pcbRotation={productPlacement.C14.ccwRotationDegrees}
         schSheetName="buck"
         schX={-6}
         schY={4}
@@ -99,6 +107,7 @@ export function MotorSupply() {
       {/* Buck HF input bypass */}
       <CC0603KRX7R9BB104
         name="C15"
+        pcbRotation={productPlacement.C15.ccwRotationDegrees}
         schSheetName="buck"
         schX={-4}
         schY={4}
@@ -111,6 +120,7 @@ export function MotorSupply() {
       {/* 47 uF/25 V output ceramic 1 */}
       <GRM31CR61E476ME44L
         name="C16"
+        pcbRotation={productPlacement.C16.ccwRotationDegrees}
         schSheetName="buck"
         schX={1}
         schY={4}
@@ -123,6 +133,7 @@ export function MotorSupply() {
       {/* 47 uF/25 V output ceramic 2 */}
       <GRM31CR61E476ME44L
         name="C17"
+        pcbRotation={productPlacement.C17.ccwRotationDegrees}
         schSheetName="buck"
         schX={3}
         schY={4}
@@ -135,6 +146,7 @@ export function MotorSupply() {
       {/* 330 uF/35 V polymer bulk; compensation/thermal qualification pending */}
       <A_35SVPK330M
         name="C18"
+        pcbRotation={productPlacement.C18.ccwRotationDegrees}
         schSheetName="buck"
         schX={5}
         schY={4}
@@ -147,6 +159,7 @@ export function MotorSupply() {
       {/* About 600 kHz switching frequency */}
       <A_0603WAF1623T5E
         name="R17"
+        pcbRotation={productPlacement.R17.ccwRotationDegrees}
         schSheetName="buck"
         schX={-11.0}
         schY={0}
@@ -159,6 +172,7 @@ export function MotorSupply() {
       {/* 100 k feedback upper segment */}
       <A_0603WAF1003T5E
         name="R18"
+        pcbRotation={productPlacement.R18.ccwRotationDegrees}
         schSheetName="buck"
         schX={-5.5}
         schY={0}
@@ -171,6 +185,7 @@ export function MotorSupply() {
       {/* 5.1 k feedback upper segment; total 105.1 k */}
       <A_0603WAF5101T5E
         name="R55"
+        pcbRotation={productPlacement.R55.ccwRotationDegrees}
         schSheetName="buck"
         schX={0.0}
         schY={0}
@@ -182,6 +197,7 @@ export function MotorSupply() {
       {/* 20 k default lower: 5.004 V */}
       <A_0603WAF2002T5E
         name="R19"
+        pcbRotation={productPlacement.R19.ccwRotationDegrees}
         schSheetName="buck"
         schX={5.5}
         schY={0}
@@ -194,6 +210,7 @@ export function MotorSupply() {
       {/* 21 k parallel lower: 9.008 V */}
       <A_0603WAF2102T5E
         name="R20"
+        pcbRotation={productPlacement.R20.ccwRotationDegrees}
         schSheetName="buck"
         schX={11.0}
         schY={0}
@@ -205,6 +222,7 @@ export function MotorSupply() {
       {/* 12 k parallel lower: 12.011 V */}
       <A_0603WAF1202T5E
         name="R21"
+        pcbRotation={productPlacement.R21.ccwRotationDegrees}
         schSheetName="buck"
         schX={-11.0}
         schY={-4}
@@ -216,6 +234,7 @@ export function MotorSupply() {
       {/* 27 k type-II compensation */}
       <A_0603WAF2702T5E
         name="R22"
+        pcbRotation={productPlacement.R22.ccwRotationDegrees}
         schSheetName="buck"
         schX={-5.5}
         schY={-4}
@@ -227,6 +246,7 @@ export function MotorSupply() {
       {/* 22 nF compensation zero */}
       <CL10B223KB8NNNC
         name="C19"
+        pcbRotation={productPlacement.C19.ccwRotationDegrees}
         schSheetName="buck"
         schX={0.0}
         schY={-4}
@@ -239,6 +259,7 @@ export function MotorSupply() {
       {/* 22 pF HF compensation pole */}
       <CL10C220JB8NNNC
         name="C20"
+        pcbRotation={productPlacement.C20.ccwRotationDegrees}
         schSheetName="buck"
         schX={5.5}
         schY={-4}
@@ -251,6 +272,7 @@ export function MotorSupply() {
       {/* Enable isolation resistor */}
       <CRCW060310K0FKEA
         name="R23"
+        pcbRotation={productPlacement.R23.ccwRotationDegrees}
         schSheetName="buck"
         schX={11.0}
         schY={-4}
@@ -262,6 +284,7 @@ export function MotorSupply() {
       {/* Defined motor-rail discharge, independent of motor/IC load */}
       <ESR18EZPF1001
         name="R68"
+        pcbRotation={productPlacement.R68.ccwRotationDegrees}
         schSheetName="buck"
         schX={-5.5}
         schY={-8}
@@ -271,6 +294,7 @@ export function MotorSupply() {
       {/* Default buck disabled */}
       <A_0603WAF1003T5E
         name="R24"
+        pcbRotation={productPlacement.R24.ccwRotationDegrees}
         schSheetName="buck"
         schX={-11.0}
         schY={-8}

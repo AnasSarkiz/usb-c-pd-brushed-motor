@@ -1,0 +1,14 @@
+[
+  {
+    "ref": "R65",
+    "code": "C25950",
+    "sheet": "protection",
+    "pins": {
+      "pin1": "OV_REF",
+      "pin2": "GND"
+    },
+    "nc": [],
+    "purpose": "10 k\u03a9 OV-reference lower divider",
+    "import_path": "imports/A_0603WAF1102T5E.tsx"
+  }
+]

@@ -6,11 +6,11 @@ import {
 
 import { reviewMotorContracts } from "./motor-validation-calculations"
 
-const inputLimitNominalA = 18_000 / 7_150
-const inputLimitMinimumA = (inputLimitNominalA * 0.9) / 1.01
-const inputLimitMaximumA = (inputLimitNominalA * 1.1) / 0.99
+const inputLimitNominalA = 18_000 / 6_980
+const inputLimitMinimumA = (inputLimitNominalA * 0.9) / 1.02
+const inputLimitMaximumA = (inputLimitNominalA * 1.1) / 0.98
 console.log({
-  revision: "A11 draft",
+  revision: "A22 prototype analysis",
   warning:
     "Analytic assumptions; physical efficiency/thermal/peak tests pending",
   inputLimitNominalA,

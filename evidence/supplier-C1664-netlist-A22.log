@@ -1,0 +1,17 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - C33: 330pF capacitor
+
+
+EMPTY NET PINS:
+  - C33 pin1 (+)
+  - C33 pin2 (-)
+
+COMPONENT_PINS:
+C33 (330pF undefined)
+- pin1(pos): NETS(PROBE_0)
+- pin2(neg): NETS(PROBE_1)
+

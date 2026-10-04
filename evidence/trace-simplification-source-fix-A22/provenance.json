@@ -1,0 +1,7 @@
+{
+  "baseCommit": "63589c466643da56c99122998ef2768adc8859dd",
+  "upstream": "https://github.com/tscircuit/trace-simplification-solver",
+  "status": "Source correction tested independently; not yet integrated into published capacity-router bundle. No claim that the failed 5x board rerun is resolved.",
+  "tests": "44 tests/425 assertions; focused positive and missing/changed-endpoint negatives; unmodified-source regression fails; TS passes",
+  "patchSha256": "c8b1e1b9921fa18014c5a37ca1016c9942a39405d82ddee33fcea9f786419911"
+}

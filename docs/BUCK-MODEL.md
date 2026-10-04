@@ -1,3 +1,9 @@
+# Current A22 update
+
+A22 adds six passing conditional TI/Panasonic full switching startup/load/PWM cases. Older outstanding full-switching claims below are historical. See POWER-PROTOTYPE-A22.md and evidence/buck-switching-A22/report.json; physical DCM/thermal/ripple qualification remains pending.
+
+---
+
 # A14 exact-manufacturer capacitor and CCM loop screen
 
 2026-10-03. C18/C178373/Panasonic35SVPK330M and the connected27 kΩ/22 nF/22 pF compensation are unchanged. This step replaces unsupported broadband constant-ESR assumptions with Panasonic's exact frequency-dependent model for analysis. No PCB component definition or manufacturer model is edited. Hardware, imports, dependencies and BOM remain A11.

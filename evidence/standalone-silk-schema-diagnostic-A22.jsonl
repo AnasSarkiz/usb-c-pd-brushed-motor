@@ -1,0 +1,11 @@
+{"id":"pcb_silkscreen_text_0","text":"USB-C PD INPUT","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}
+{"id":"pcb_silkscreen_text_1","text":"MOTOR","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}
+{"id":"pcb_silkscreen_text_2","text":"SPEED","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}
+{"id":"pcb_silkscreen_text_3","text":"FWD / OFF / REV","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}
+{"id":"pcb_silkscreen_text_4","text":"5V:00  9V:01  12V:10  OFF:11","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}
+{"id":"pcb_silkscreen_text_5","text":"TP1 SWDIO  TP2 SWCLK  TP3 NRST  TP4 GND","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}
+{"id":"pcb_silkscreen_text_6","text":"TP5 3V3  TP6 VBUS  TP7 VM","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}
+{"id":"pcb_silkscreen_text_7","text":"POWER","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}
+{"id":"pcb_silkscreen_text_8","text":"FWD","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}
+{"id":"pcb_silkscreen_text_9","text":"REV","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}
+{"id":"pcb_silkscreen_text_10","text":"A22 PROTOTYPE","issues":[{"code":"invalid_type","expected":"string","received":"null","path":["pcb_component_id"],"message":"Expected string, received null"}]}

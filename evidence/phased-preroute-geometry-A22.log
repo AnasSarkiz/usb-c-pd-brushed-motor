@@ -1,0 +1,9 @@
+{
+  "purchased": 140,
+  "inspected": 140,
+  "thermalVias": 12,
+  "issues": [
+    "Original EP via inventory mismatch or unexpected new via",
+    "Unexpected routed copper before gate"
+  ]
+}

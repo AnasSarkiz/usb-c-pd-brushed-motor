@@ -1,0 +1,21 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/autorouter-preset-explicit-settings2.test.ts:
+(pass) normalized supported presets retain explicitly authored safety settings
+
+tests/features/autorouter-preset-explicit-settings.test.tsx:
+(pass) local preset preserves explicit clearance and via prohibition in actual router input [136.43ms]
+
+tests/features/supplier-circuit-json-cache.test.ts:
+(pass) supplier cache deduplicates concurrent calls, expires success, and propagates failures [6.35ms]
+
+tests/components/normal-components/supplier-footprint-mismatch-warning.test.tsx:
+(pass) emits supplier footprint mismatch warning for mismatched supplier footprint dimensions [11.87ms]
+
+tests/components/normal-components/part-orientation-analysis.test.tsx:
+(pass) part orientation analysis defaults on, uses the platform cache, and supports opt-out [337.32ms]
+
+ 5 pass
+ 0 fail
+ 42 expect() calls
+Ran 5 tests across 5 files. [1348.00ms]

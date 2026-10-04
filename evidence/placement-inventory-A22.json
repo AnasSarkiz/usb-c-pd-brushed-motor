@@ -1,0 +1,5602 @@
+[
+  {
+    "ref": "J1",
+    "code": "C165948",
+    "sheet": "usb",
+    "width": 9.85,
+    "height": 6.498,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_0",
+        "pcb_component_id": "pcb_component_0",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -5.174805999999876,
+            "y": 3.0786011999998664
+          },
+          {
+            "x": 5.180394000000092,
+            "y": 3.0786011999998664
+          },
+          {
+            "x": 5.180394000000092,
+            "y": -5.650998800000025
+          },
+          {
+            "x": -5.174805999999876,
+            "y": -5.650998800000025
+          },
+          {
+            "x": -5.174805999999876,
+            "y": 3.0786011999998664
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Single USB-C power input"
+  },
+  {
+    "ref": "U1",
+    "code": "C2678061",
+    "sheet": "usb",
+    "width": 4.7,
+    "height": 4.7,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_1",
+        "pcb_component_id": "pcb_component_1",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.5995000000000346,
+            "y": 2.5934040000000778
+          },
+          {
+            "x": 2.599499999999921,
+            "y": 2.5934040000000778
+          },
+          {
+            "x": 2.599499999999921,
+            "y": -2.6055959999999914
+          },
+          {
+            "x": -2.5995000000000346,
+            "y": -2.6055959999999914
+          },
+          {
+            "x": -2.5995000000000346,
+            "y": 2.5934040000000778
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "STUSB4500 sink with MCU-driven runtime matching"
+  },
+  {
+    "ref": "U2",
+    "code": "C468238",
+    "sheet": "usb",
+    "width": 2.314,
+    "height": 5.924,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_2",
+        "pcb_component_id": "pcb_component_2",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.0026000000000295,
+            "y": 3.018600000000106
+          },
+          {
+            "x": 1.8247999999998683,
+            "y": 3.018600000000106
+          },
+          {
+            "x": 1.8247999999998683,
+            "y": -3.2725999999998976
+          },
+          {
+            "x": -2.0026000000000295,
+            "y": -3.2725999999998976
+          },
+          {
+            "x": -2.0026000000000295,
+            "y": 3.018600000000106
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "60 V rated 5 V PD/monitor supply"
+  },
+  {
+    "ref": "U3",
+    "code": "C181239",
+    "sheet": "usb",
+    "width": 2.314,
+    "height": 5.924,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_3",
+        "pcb_component_id": "pcb_component_3",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.0026000000000295,
+            "y": 3.018600000000106
+          },
+          {
+            "x": 1.8247999999998683,
+            "y": 3.018600000000106
+          },
+          {
+            "x": 1.8247999999998683,
+            "y": -3.2725999999998976
+          },
+          {
+            "x": -2.0026000000000295,
+            "y": -3.2725999999998976
+          },
+          {
+            "x": -2.0026000000000295,
+            "y": 3.018600000000106
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "60 V rated logic supply"
+  },
+  {
+    "ref": "D1",
+    "code": "C10214",
+    "sheet": "usb",
+    "width": 6.769,
+    "height": 2.192,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_4",
+        "pcb_component_id": "pcb_component_4",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -3.6282000000001062,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 3.628199999999879,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 3.628199999999879,
+            "y": -2.231200000000058
+          },
+          {
+            "x": -3.6282000000001062,
+            "y": -2.231200000000058
+          },
+          {
+            "x": -3.6282000000001062,
+            "y": 2.2058000000000675
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "22 V standoff input TVS; main ICs rated 60 V"
+  },
+  {
+    "ref": "D2",
+    "code": "C477999",
+    "sheet": "usb",
+    "width": 3.0,
+    "height": 2.55,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_5",
+        "pcb_component_id": "pcb_component_5",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Dual CC ESD protection"
+  },
+  {
+    "ref": "R1",
+    "code": "C21190",
+    "sheet": "usb",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_6",
+        "pcb_component_id": "pcb_component_6",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "VBUS sense/discharge current limiting"
+  },
+  {
+    "ref": "D3",
+    "code": "C2109",
+    "sheet": "usb",
+    "width": 4.335,
+    "height": 1.15,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_7",
+        "pcb_component_id": "pcb_component_7",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.4090000000001055,
+            "y": 1.1390000000001237
+          },
+          {
+            "x": 2.4343999999999824,
+            "y": 1.1390000000001237
+          },
+          {
+            "x": 2.4343999999999824,
+            "y": -1.1897999999998774
+          },
+          {
+            "x": -2.4090000000001055,
+            "y": -1.1897999999998774
+          },
+          {
+            "x": -2.4090000000001055,
+            "y": 1.1390000000001237
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "24 V local PD-sense transient clamp"
+  },
+  {
+    "ref": "C1",
+    "code": "C77083",
+    "sheet": "usb",
+    "width": 3.41,
+    "height": 1.35,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_8",
+        "pcb_component_id": "pcb_component_8",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.205799999999954,
+            "y": 1.1644000000000005
+          },
+          {
+            "x": 2.2311999999999443,
+            "y": 1.1644000000000005
+          },
+          {
+            "x": 2.2311999999999443,
+            "y": -1.13900000000001
+          },
+          {
+            "x": -2.205799999999954,
+            "y": -1.13900000000001
+          },
+          {
+            "x": -2.205799999999954,
+            "y": 1.1644000000000005
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Connector bulk, 1 uF/50 V"
+  },
+  {
+    "ref": "C2",
+    "code": "C14663",
+    "sheet": "usb",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_9",
+        "pcb_component_id": "pcb_component_9",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "U2 input bypass"
+  },
+  {
+    "ref": "C3",
+    "code": "C14663",
+    "sheet": "usb",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_10",
+        "pcb_component_id": "pcb_component_10",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "U3 input bypass"
+  },
+  {
+    "ref": "C4",
+    "code": "C19666",
+    "sheet": "usb",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_11",
+        "pcb_component_id": "pcb_component_11",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "5 V LDO stability"
+  },
+  {
+    "ref": "C5",
+    "code": "C19666",
+    "sheet": "usb",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_12",
+        "pcb_component_id": "pcb_component_12",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "3.3 V LDO stability"
+  },
+  {
+    "ref": "C6",
+    "code": "C77083",
+    "sheet": "usb",
+    "width": 3.41,
+    "height": 1.35,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_13",
+        "pcb_component_id": "pcb_component_13",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.205799999999954,
+            "y": 1.1644000000000005
+          },
+          {
+            "x": 2.2311999999999443,
+            "y": 1.1644000000000005
+          },
+          {
+            "x": 2.2311999999999443,
+            "y": -1.13900000000001
+          },
+          {
+            "x": -2.205799999999954,
+            "y": -1.13900000000001
+          },
+          {
+            "x": -2.205799999999954,
+            "y": 1.1644000000000005
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "PD internal regulator bypass"
+  },
+  {
+    "ref": "C7",
+    "code": "C77083",
+    "sheet": "usb",
+    "width": 3.41,
+    "height": 1.35,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_14",
+        "pcb_component_id": "pcb_component_14",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.205799999999954,
+            "y": 1.1644000000000005
+          },
+          {
+            "x": 2.2311999999999443,
+            "y": 1.1644000000000005
+          },
+          {
+            "x": 2.2311999999999443,
+            "y": -1.13900000000001
+          },
+          {
+            "x": -2.205799999999954,
+            "y": -1.13900000000001
+          },
+          {
+            "x": -2.205799999999954,
+            "y": 1.1644000000000005
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "PD internal regulator bypass"
+  },
+  {
+    "ref": "C8",
+    "code": "C14663",
+    "sheet": "usb",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_15",
+        "pcb_component_id": "pcb_component_15",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "PD local decoupling"
+  },
+  {
+    "ref": "R2",
+    "code": "C23162",
+    "sheet": "usb",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_16",
+        "pcb_component_id": "pcb_component_16",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "4.7 kOhm I2C pull-up; 400 kHz rise-time qualification requires bus capacitance <=75 pF"
+  },
+  {
+    "ref": "R3",
+    "code": "C23162",
+    "sheet": "usb",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_17",
+        "pcb_component_id": "pcb_component_17",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "4.7 kOhm I2C pull-up; 400 kHz rise-time qualification requires bus capacitance <=75 pF"
+  },
+  {
+    "ref": "R4",
+    "code": "C25803",
+    "sheet": "usb",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_18",
+        "pcb_component_id": "pcb_component_18",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Default run/reset low"
+  },
+  {
+    "ref": "U11",
+    "code": "C529330",
+    "sheet": "pdhost",
+    "width": 6.214,
+    "height": 7.484,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_19",
+        "pcb_component_id": "pcb_component_19",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -3.499980800000003,
+            "y": 3.9919661000000133
+          },
+          {
+            "x": 3.50000620000003,
+            "y": 3.9919661000000133
+          },
+          {
+            "x": 3.50000620000003,
+            "y": -3.9919661000000133
+          },
+          {
+            "x": -3.499980800000003,
+            "y": -3.9919661000000133
+          },
+          {
+            "x": -3.499980800000003,
+            "y": 3.9919661000000133
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "PD qualification only; hardware PWM independent"
+  },
+  {
+    "ref": "SW2",
+    "code": "C3293142",
+    "sheet": "pdhost",
+    "width": 2.032,
+    "height": 9.144,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_20",
+        "pcb_component_id": "pcb_component_20",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.3149945999999773,
+            "y": 4.822000000000003
+          },
+          {
+            "x": 2.3250021999999717,
+            "y": 4.822000000000003
+          },
+          {
+            "x": 2.3250021999999717,
+            "y": -4.821999999999889
+          },
+          {
+            "x": -2.3149945999999773,
+            "y": -4.821999999999889
+          },
+          {
+            "x": -2.3149945999999773,
+            "y": 4.822000000000003
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "DIP voltage selector: both OFF=5 V; right ON=9 V; left ON=12 V; both ON=inhibit"
+  },
+  {
+    "ref": "C30",
+    "code": "C14663",
+    "sheet": "pdhost",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_21",
+        "pcb_component_id": "pcb_component_21",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "MCU local decoupling"
+  },
+  {
+    "ref": "C31",
+    "code": "C77083",
+    "sheet": "pdhost",
+    "width": 3.41,
+    "height": 1.35,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_22",
+        "pcb_component_id": "pcb_component_22",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.205799999999954,
+            "y": 1.1644000000000005
+          },
+          {
+            "x": 2.2311999999999443,
+            "y": 1.1644000000000005
+          },
+          {
+            "x": 2.2311999999999443,
+            "y": -1.13900000000001
+          },
+          {
+            "x": -2.205799999999954,
+            "y": -1.13900000000001
+          },
+          {
+            "x": -2.205799999999954,
+            "y": 1.1644000000000005
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "MCU local bulk"
+  },
+  {
+    "ref": "C32",
+    "code": "C14663",
+    "sheet": "pdhost",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_23",
+        "pcb_component_id": "pcb_component_23",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "NRST noise filtering"
+  },
+  {
+    "ref": "R56",
+    "code": "C25803",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_24",
+        "pcb_component_id": "pcb_component_24",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Default-off eFuse host enable"
+  },
+  {
+    "ref": "R57",
+    "code": "C844918",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_25",
+        "pcb_component_id": "pcb_component_25",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Bridge inhibit defaults asserted until MCU sinks base"
+  },
+  {
+    "ref": "Q6",
+    "code": "C7420353",
+    "sheet": "pdhost",
+    "width": 3.0,
+    "height": 2.55,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_26",
+        "pcb_component_id": "pcb_component_26",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Fail-safe bridge inhibit; GPIO open drain releases motor only after qualification"
+  },
+  {
+    "ref": "R58",
+    "code": "C25803",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_27",
+        "pcb_component_id": "pcb_component_27",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Selector 9 V bit default low"
+  },
+  {
+    "ref": "R59",
+    "code": "C25803",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_28",
+        "pcb_component_id": "pcb_component_28",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Selector 12 V bit default low"
+  },
+  {
+    "ref": "R60",
+    "code": "C855559",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_29",
+        "pcb_component_id": "pcb_component_29",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "VBUS ADC divider upper; 0.1% precision sensing"
+  },
+  {
+    "ref": "R61",
+    "code": "C95204",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_30",
+        "pcb_component_id": "pcb_component_30",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "VBUS ADC divider lower; 11:1 scale; 0.1% precision sensing"
+  },
+  {
+    "ref": "C33",
+    "code": "C1653",
+    "sheet": "pdhost",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_74",
+        "pcb_component_id": "pcb_component_82",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "VBUS ADC filtering; about 0.91 ms"
+  },
+  {
+    "ref": "R62",
+    "code": "C844918",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_32",
+        "pcb_component_id": "pcb_component_32",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "PD alert open-drain pull-up"
+  },
+  {
+    "ref": "Q7",
+    "code": "C20917",
+    "sheet": "pdhost",
+    "width": 3.0,
+    "height": 2.55,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_33",
+        "pcb_component_id": "pcb_component_33",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "9 V feedback branch switch; isolates analog node from MCU"
+  },
+  {
+    "ref": "Q8",
+    "code": "C20917",
+    "sheet": "pdhost",
+    "width": 3.0,
+    "height": 2.55,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_34",
+        "pcb_component_id": "pcb_component_34",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "12 V feedback branch switch; isolates analog node from MCU"
+  },
+  {
+    "ref": "R63",
+    "code": "C25803",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_35",
+        "pcb_component_id": "pcb_component_35",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "9 V feedback branch default off"
+  },
+  {
+    "ref": "R64",
+    "code": "C25803",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_36",
+        "pcb_component_id": "pcb_component_36",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "12 V feedback branch default off"
+  },
+  {
+    "ref": "R66",
+    "code": "C855559",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_37",
+        "pcb_component_id": "pcb_component_37",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Motor-rail ADC divider upper; 0.1% precision sensing"
+  },
+  {
+    "ref": "R67",
+    "code": "C95204",
+    "sheet": "pdhost",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_38",
+        "pcb_component_id": "pcb_component_38",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Motor-rail ADC divider lower; independent absolute-rail qualification; 0.1% precision sensing"
+  },
+  {
+    "ref": "C34",
+    "code": "C1653",
+    "sheet": "pdhost",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_74",
+        "pcb_component_id": "pcb_component_82",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Motor-rail ADC filtering; about 0.91 ms"
+  },
+  {
+    "ref": "D4",
+    "code": "C22452",
+    "sheet": "input",
+    "width": 7.07,
+    "height": 1.539,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_40",
+        "pcb_component_id": "pcb_component_40",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -3.7806000000000495,
+            "y": 1.672399999999925
+          },
+          {
+            "x": 3.780599999999936,
+            "y": 1.672399999999925
+          },
+          {
+            "x": 3.780599999999936,
+            "y": -1.6978000000000293
+          },
+          {
+            "x": -3.7806000000000495,
+            "y": -1.6978000000000293
+          },
+          {
+            "x": -3.7806000000000495,
+            "y": 1.672399999999925
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "5 A/40 V reverse-current blocking diode"
+  },
+  {
+    "ref": "U4",
+    "code": "C1849461",
+    "sheet": "input",
+    "width": 7.494,
+    "height": 6.193,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_41",
+        "pcb_component_id": "pcb_component_45",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -3.99675400000001,
+            "y": 3.499980800000003
+          },
+          {
+            "x": 3.99675400000001,
+            "y": 3.499980800000003
+          },
+          {
+            "x": 3.99675400000001,
+            "y": -3.50000620000003
+          },
+          {
+            "x": -3.99675400000001,
+            "y": -3.50000620000003
+          },
+          {
+            "x": -3.99675400000001,
+            "y": 3.499980800000003
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Input inrush, overload latch-off and UV/OV cut-off"
+  },
+  {
+    "ref": "Q1",
+    "code": "C7420353",
+    "sheet": "input",
+    "width": 3.0,
+    "height": 2.55,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_42",
+        "pcb_component_id": "pcb_component_46",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Invert active-low PD enable; default inhibits motor path"
+  },
+  {
+    "ref": "R5",
+    "code": "C23162",
+    "sheet": "input",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_43",
+        "pcb_component_id": "pcb_component_47",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "4.7 kOhm PD-enable pull-up; preserves valid MCU high level despite Q1 base loading"
+  },
+  {
+    "ref": "R6",
+    "code": "C4184",
+    "sheet": "input",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_44",
+        "pcb_component_id": "pcb_component_48",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "20 kOhm Q1 base resistor; robust default inhibit and GPIO input margin"
+  },
+  {
+    "ref": "R7",
+    "code": "C844918",
+    "sheet": "input",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_45",
+        "pcb_component_id": "pcb_component_49",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Host-qualified eFuse enable isolation"
+  },
+  {
+    "ref": "R8",
+    "code": "C25803",
+    "sheet": "input",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_46",
+        "pcb_component_id": "pcb_component_50",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "13.2 V input UV threshold top"
+  },
+  {
+    "ref": "R9",
+    "code": "C844918",
+    "sheet": "input",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_47",
+        "pcb_component_id": "pcb_component_51",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Input UV threshold bottom"
+  },
+  {
+    "ref": "R10",
+    "code": "C22815",
+    "sheet": "input",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_48",
+        "pcb_component_id": "pcb_component_52",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "OV divider top segment"
+  },
+  {
+    "ref": "R11",
+    "code": "C4184",
+    "sheet": "input",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_49",
+        "pcb_component_id": "pcb_component_53",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "23.04 V OV threshold top segment"
+  },
+  {
+    "ref": "R12",
+    "code": "C844918",
+    "sheet": "input",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_50",
+        "pcb_component_id": "pcb_component_54",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "OV divider bottom"
+  },
+  {
+    "ref": "R13",
+    "code": "C25980",
+    "sheet": "input",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_51",
+        "pcb_component_id": "pcb_component_55",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "7.15 k\u03a9 eFuse limit; 2.243\u20132.797 A including IC/resistor tolerances"
+  },
+  {
+    "ref": "R16",
+    "code": "C844918",
+    "sheet": "input",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_52",
+        "pcb_component_id": "pcb_component_56",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "PG open-drain pull-up"
+  },
+  {
+    "ref": "C9",
+    "code": "C21122",
+    "sheet": "input",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_53",
+        "pcb_component_id": "pcb_component_57",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "22 nF inrush slew control"
+  },
+  {
+    "ref": "C10",
+    "code": "C14663",
+    "sheet": "input",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_54",
+        "pcb_component_id": "pcb_component_58",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "eFuse local input bypass"
+  },
+  {
+    "ref": "C11",
+    "code": "C77083",
+    "sheet": "input",
+    "width": 3.41,
+    "height": 1.35,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_55",
+        "pcb_component_id": "pcb_component_59",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.205799999999954,
+            "y": 1.1644000000000005
+          },
+          {
+            "x": 2.2311999999999443,
+            "y": 1.1644000000000005
+          },
+          {
+            "x": 2.2311999999999443,
+            "y": -1.13900000000001
+          },
+          {
+            "x": -2.205799999999954,
+            "y": -1.13900000000001
+          },
+          {
+            "x": -2.205799999999954,
+            "y": 1.1644000000000005
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Protected input bulk"
+  },
+  {
+    "ref": "U5",
+    "code": "C44377",
+    "sheet": "buck",
+    "width": 4.384,
+    "height": 7.576,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_56",
+        "pcb_component_id": "pcb_component_64",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.700007800000094,
+            "y": 4.038105200000018
+          },
+          {
+            "x": 2.6999823999999535,
+            "y": 4.038105200000018
+          },
+          {
+            "x": 2.6999823999999535,
+            "y": -4.0381051999999045
+          },
+          {
+            "x": -2.700007800000094,
+            "y": -4.0381051999999045
+          },
+          {
+            "x": -2.700007800000094,
+            "y": 4.038105200000018
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "60 V / 3.5 A buck regulator"
+  },
+  {
+    "ref": "D5",
+    "code": "C22452",
+    "sheet": "buck",
+    "width": 7.07,
+    "height": 1.539,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_57",
+        "pcb_component_id": "pcb_component_65",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -3.7806000000000495,
+            "y": 1.672399999999925
+          },
+          {
+            "x": 3.780599999999936,
+            "y": 1.672399999999925
+          },
+          {
+            "x": 3.780599999999936,
+            "y": -1.6978000000000293
+          },
+          {
+            "x": -3.7806000000000495,
+            "y": -1.6978000000000293
+          },
+          {
+            "x": -3.7806000000000495,
+            "y": 1.672399999999925
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "5 A catch rectifier"
+  },
+  {
+    "ref": "L1",
+    "code": "C285788",
+    "sheet": "buck",
+    "width": 13.1,
+    "height": 4.0,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_58",
+        "pcb_component_id": "pcb_component_66",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -6.803327000000081,
+            "y": 5.304600000000164
+          },
+          {
+            "x": 6.803072999999813,
+            "y": 5.304600000000164
+          },
+          {
+            "x": 6.803072999999813,
+            "y": -5.329999999999927
+          },
+          {
+            "x": -6.803327000000081,
+            "y": -5.329999999999927
+          },
+          {
+            "x": -6.803327000000081,
+            "y": 5.304600000000164
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "8.2 uH power inductor"
+  },
+  {
+    "ref": "C12",
+    "code": "C14663",
+    "sheet": "buck",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_59",
+        "pcb_component_id": "pcb_component_67",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Bootstrap capacitor"
+  },
+  {
+    "ref": "C13",
+    "code": "C138687",
+    "sheet": "buck",
+    "width": 4.67,
+    "height": 2.7,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_60",
+        "pcb_component_id": "pcb_component_68",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.584895000000188,
+            "y": 1.599997300000041
+          },
+          {
+            "x": 2.584895000000074,
+            "y": 1.599997300000041
+          },
+          {
+            "x": 2.584895000000074,
+            "y": -1.599997300000041
+          },
+          {
+            "x": -2.584895000000188,
+            "y": -1.599997300000041
+          },
+          {
+            "x": -2.584895000000188,
+            "y": 1.599997300000041
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 uF / 50 V X7R buck input ceramic; DC-bias and ripple screened"
+  },
+  {
+    "ref": "C14",
+    "code": "C138687",
+    "sheet": "buck",
+    "width": 4.67,
+    "height": 2.7,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_61",
+        "pcb_component_id": "pcb_component_69",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.584895000000188,
+            "y": 1.599997300000041
+          },
+          {
+            "x": 2.584895000000074,
+            "y": 1.599997300000041
+          },
+          {
+            "x": 2.584895000000074,
+            "y": -1.599997300000041
+          },
+          {
+            "x": -2.584895000000188,
+            "y": -1.599997300000041
+          },
+          {
+            "x": -2.584895000000188,
+            "y": 1.599997300000041
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 uF / 50 V X7R buck input ceramic; DC-bias and ripple screened"
+  },
+  {
+    "ref": "C15",
+    "code": "C14663",
+    "sheet": "buck",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_62",
+        "pcb_component_id": "pcb_component_70",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Buck HF input bypass"
+  },
+  {
+    "ref": "C16",
+    "code": "C403725",
+    "sheet": "buck",
+    "width": 4.67,
+    "height": 1.728,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_63",
+        "pcb_component_id": "pcb_component_71",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.815400000000068,
+            "y": 1.342200000000048
+          },
+          {
+            "x": 2.815399999999954,
+            "y": 1.342200000000048
+          },
+          {
+            "x": 2.815399999999954,
+            "y": -1.3421999999999343
+          },
+          {
+            "x": -2.815400000000068,
+            "y": -1.3421999999999343
+          },
+          {
+            "x": -2.815400000000068,
+            "y": 1.342200000000048
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "47 uF/25 V output ceramic 1"
+  },
+  {
+    "ref": "C17",
+    "code": "C403725",
+    "sheet": "buck",
+    "width": 4.67,
+    "height": 1.728,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_64",
+        "pcb_component_id": "pcb_component_72",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.815400000000068,
+            "y": 1.342200000000048
+          },
+          {
+            "x": 2.815399999999954,
+            "y": 1.342200000000048
+          },
+          {
+            "x": 2.815399999999954,
+            "y": -1.3421999999999343
+          },
+          {
+            "x": -2.815400000000068,
+            "y": -1.3421999999999343
+          },
+          {
+            "x": -2.815400000000068,
+            "y": 1.342200000000048
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "47 uF/25 V output ceramic 2"
+  },
+  {
+    "ref": "C18",
+    "code": "C178373",
+    "sheet": "buck",
+    "width": 13.5,
+    "height": 1.65,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_65",
+        "pcb_component_id": "pcb_component_73",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -6.999859499999843,
+            "y": 5.400002400000062
+          },
+          {
+            "x": 6.999859499999843,
+            "y": 5.400002400000062
+          },
+          {
+            "x": 6.999859499999843,
+            "y": -5.399977000000035
+          },
+          {
+            "x": -6.999859499999843,
+            "y": -5.399977000000035
+          },
+          {
+            "x": -6.999859499999843,
+            "y": 5.400002400000062
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "330 uF/35 V polymer motor bulk; compensation/thermal qualification pending"
+  },
+  {
+    "ref": "R17",
+    "code": "C22815",
+    "sheet": "buck",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_66",
+        "pcb_component_id": "pcb_component_74",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "About 600 kHz switching frequency"
+  },
+  {
+    "ref": "R18",
+    "code": "C25803",
+    "sheet": "buck",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_67",
+        "pcb_component_id": "pcb_component_75",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "100 k feedback upper segment"
+  },
+  {
+    "ref": "R55",
+    "code": "C23186",
+    "sheet": "buck",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_68",
+        "pcb_component_id": "pcb_component_76",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "5.1 k feedback upper segment; total 105.1 k"
+  },
+  {
+    "ref": "R19",
+    "code": "C4184",
+    "sheet": "buck",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_69",
+        "pcb_component_id": "pcb_component_77",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "20 k default lower: 5.004 V"
+  },
+  {
+    "ref": "R20",
+    "code": "C22956",
+    "sheet": "buck",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_70",
+        "pcb_component_id": "pcb_component_78",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "21 k parallel lower: 9.008 V"
+  },
+  {
+    "ref": "R21",
+    "code": "C22790",
+    "sheet": "buck",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_71",
+        "pcb_component_id": "pcb_component_79",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "12 k parallel lower: 12.011 V"
+  },
+  {
+    "ref": "R22",
+    "code": "C22967",
+    "sheet": "buck",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_72",
+        "pcb_component_id": "pcb_component_80",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "27 k type-II compensation"
+  },
+  {
+    "ref": "C19",
+    "code": "C21122",
+    "sheet": "buck",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_73",
+        "pcb_component_id": "pcb_component_81",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "22 nF compensation zero"
+  },
+  {
+    "ref": "C20",
+    "code": "C1653",
+    "sheet": "buck",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_74",
+        "pcb_component_id": "pcb_component_82",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "22 pF HF compensation pole"
+  },
+  {
+    "ref": "R23",
+    "code": "C844918",
+    "sheet": "buck",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_75",
+        "pcb_component_id": "pcb_component_83",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Enable isolation resistor"
+  },
+  {
+    "ref": "R68",
+    "code": "C2074262",
+    "sheet": "buck",
+    "width": 4.165,
+    "height": 1.701,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_76",
+        "pcb_component_id": "pcb_component_84",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.332546000000093,
+            "y": 1.1005063000000064
+          },
+          {
+            "x": 2.3325459999999794,
+            "y": 1.1005063000000064
+          },
+          {
+            "x": 2.3325459999999794,
+            "y": -1.1005063000000064
+          },
+          {
+            "x": -2.332546000000093,
+            "y": -1.1005063000000064
+          },
+          {
+            "x": -2.332546000000093,
+            "y": 1.1005063000000064
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "1 kOhm/0.5 W motor-rail discharge; 3 s power-sequencing timeout; thermal verification pending"
+  },
+  {
+    "ref": "R24",
+    "code": "C25803",
+    "sheet": "buck",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_77",
+        "pcb_component_id": "pcb_component_85",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Default buck disabled"
+  },
+  {
+    "ref": "U6",
+    "code": "C6986",
+    "sheet": "controls",
+    "width": 4.378,
+    "height": 7.36,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_78",
+        "pcb_component_id": "pcb_component_86",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.7391999999999825,
+            "y": 3.653599999999983
+          },
+          {
+            "x": 2.7645999999998594,
+            "y": 3.653599999999983
+          },
+          {
+            "x": 2.7645999999998594,
+            "y": -3.7806000000000495
+          },
+          {
+            "x": -2.7391999999999825,
+            "y": -3.7806000000000495
+          },
+          {
+            "x": -2.7391999999999825,
+            "y": 3.653599999999983
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Hardware potentiometer PWM"
+  },
+  {
+    "ref": "RV1",
+    "code": "C5710902",
+    "sheet": "controls",
+    "width": 11.4,
+    "height": 9.45,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_79",
+        "pcb_component_id": "pcb_component_87",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -5.950090200000091,
+            "y": 9.706966050000005
+          },
+          {
+            "x": 5.950090200000091,
+            "y": 9.706966050000005
+          },
+          {
+            "x": 5.950090200000091,
+            "y": -4.24999205000006
+          },
+          {
+            "x": -5.950090200000091,
+            "y": -4.24999205000006
+          },
+          {
+            "x": -5.950090200000091,
+            "y": 9.706966050000005
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Bourns vertical 10 k linear speed pot"
+  },
+  {
+    "ref": "R25",
+    "code": "C23138",
+    "sheet": "controls",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_80",
+        "pcb_component_id": "pcb_component_88",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Charge end resistance"
+  },
+  {
+    "ref": "D6",
+    "code": "C8598",
+    "sheet": "controls",
+    "width": 4.6,
+    "height": 0.95,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_81",
+        "pcb_component_id": "pcb_component_89",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.561400000000006,
+            "y": 1.21520000000001
+          },
+          {
+            "x": 2.5360000000000014,
+            "y": 1.21520000000001
+          },
+          {
+            "x": 2.5360000000000014,
+            "y": -1.2405999999999864
+          },
+          {
+            "x": -2.561400000000006,
+            "y": -1.2405999999999864
+          },
+          {
+            "x": -2.561400000000006,
+            "y": 1.21520000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Steer charging through one pot segment"
+  },
+  {
+    "ref": "D7",
+    "code": "C8598",
+    "sheet": "controls",
+    "width": 4.6,
+    "height": 0.95,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_82",
+        "pcb_component_id": "pcb_component_90",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.561400000000006,
+            "y": 1.21520000000001
+          },
+          {
+            "x": 2.5360000000000014,
+            "y": 1.21520000000001
+          },
+          {
+            "x": 2.5360000000000014,
+            "y": -1.2405999999999864
+          },
+          {
+            "x": -2.561400000000006,
+            "y": -1.2405999999999864
+          },
+          {
+            "x": -2.561400000000006,
+            "y": 1.21520000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Steer discharging through opposite segment"
+  },
+  {
+    "ref": "R26",
+    "code": "C23138",
+    "sheet": "controls",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_83",
+        "pcb_component_id": "pcb_component_91",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Discharge end resistance"
+  },
+  {
+    "ref": "C21",
+    "code": "C440183",
+    "sheet": "controls",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_84",
+        "pcb_component_id": "pcb_component_92",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "5.6 nF C0G PWM timing"
+  },
+  {
+    "ref": "C22",
+    "code": "C57112",
+    "sheet": "controls",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_85",
+        "pcb_component_id": "pcb_component_93",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Timer threshold bypass"
+  },
+  {
+    "ref": "C23",
+    "code": "C14663",
+    "sheet": "controls",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_86",
+        "pcb_component_id": "pcb_component_94",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Timer local bypass"
+  },
+  {
+    "ref": "SW1",
+    "code": "C908270",
+    "sheet": "controls",
+    "width": 3.4,
+    "height": 11.2,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_87",
+        "pcb_component_id": "pcb_component_95",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -3.6799905999999964,
+            "y": 6.349987800000008
+          },
+          {
+            "x": 3.67999060000011,
+            "y": 6.349987800000008
+          },
+          {
+            "x": 3.67999060000011,
+            "y": -6.349987800000008
+          },
+          {
+            "x": -3.6799905999999964,
+            "y": -6.349987800000008
+          },
+          {
+            "x": -3.6799905999999964,
+            "y": 6.349987800000008
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "SPDT ON-OFF-ON routes hardware PWM; common physical pin 2"
+  },
+  {
+    "ref": "R29",
+    "code": "C21190",
+    "sheet": "controls",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_88",
+        "pcb_component_id": "pcb_component_96",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Forward PWM LED current limit"
+  },
+  {
+    "ref": "R30",
+    "code": "C21190",
+    "sheet": "controls",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_89",
+        "pcb_component_id": "pcb_component_97",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Reverse PWM LED current limit"
+  },
+  {
+    "ref": "LED2",
+    "code": "C2986030",
+    "sheet": "controls",
+    "width": 2.6,
+    "height": 1.0,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_90",
+        "pcb_component_id": "pcb_component_98",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.8112110000000712,
+            "y": 1.0119999999999436
+          },
+          {
+            "x": 1.9907889999999497,
+            "y": 1.0119999999999436
+          },
+          {
+            "x": 1.9907889999999497,
+            "y": -0.9866000000000668
+          },
+          {
+            "x": -1.8112110000000712,
+            "y": -0.9866000000000668
+          },
+          {
+            "x": -1.8112110000000712,
+            "y": 1.0119999999999436
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Forward command indicator"
+  },
+  {
+    "ref": "LED3",
+    "code": "C2986030",
+    "sheet": "controls",
+    "width": 2.6,
+    "height": 1.0,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_91",
+        "pcb_component_id": "pcb_component_99",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.8112110000000712,
+            "y": 1.0119999999999436
+          },
+          {
+            "x": 1.9907889999999497,
+            "y": 1.0119999999999436
+          },
+          {
+            "x": 1.9907889999999497,
+            "y": -0.9866000000000668
+          },
+          {
+            "x": -1.8112110000000712,
+            "y": -0.9866000000000668
+          },
+          {
+            "x": -1.8112110000000712,
+            "y": 1.0119999999999436
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Reverse command indicator"
+  },
+  {
+    "ref": "U8",
+    "code": "C23892",
+    "sheet": "protection",
+    "width": 3.54,
+    "height": 2.5,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_92",
+        "pcb_component_id": "pcb_component_100",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.0281269999999267,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 2.0024730000002364,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 2.0024730000002364,
+            "y": -1.7993999999999915
+          },
+          {
+            "x": -2.0281269999999267,
+            "y": -1.7993999999999915
+          },
+          {
+            "x": -2.0281269999999267,
+            "y": 1.774000000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "2.495 V reference"
+  },
+  {
+    "ref": "R31",
+    "code": "C22975",
+    "sheet": "protection",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_93",
+        "pcb_component_id": "pcb_component_101",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": 0.6820032000000538
+          },
+          {
+            "x": 1.4066016999997828,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": -0.6820032000000538
+          },
+          {
+            "x": -1.4066016999998965,
+            "y": 0.6820032000000538
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "2 kOhm motor-rail-powered TL431 reference bias; independent of USB supply"
+  },
+  {
+    "ref": "U9",
+    "code": "C67470",
+    "sheet": "protection",
+    "width": 4.378,
+    "height": 7.36,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_94",
+        "pcb_component_id": "pcb_component_102",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.7391999999999825,
+            "y": 3.653599999999983
+          },
+          {
+            "x": 2.7645999999998594,
+            "y": 3.653599999999983
+          },
+          {
+            "x": 2.7645999999998594,
+            "y": -3.7806000000000495
+          },
+          {
+            "x": -2.7391999999999825,
+            "y": -3.7806000000000495
+          },
+          {
+            "x": -2.7391999999999825,
+            "y": 3.653599999999983
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Motor-rail-powered UV/OV comparator; regeneration protection persists on USB unplug"
+  },
+  {
+    "ref": "R32",
+    "code": "C23348",
+    "sheet": "protection",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_95",
+        "pcb_component_id": "pcb_component_103",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "0.727 V undervoltage reference top"
+  },
+  {
+    "ref": "R33",
+    "code": "C844918",
+    "sheet": "protection",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_96",
+        "pcb_component_id": "pcb_component_104",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Undervoltage reference bottom"
+  },
+  {
+    "ref": "R34",
+    "code": "C21190",
+    "sheet": "protection",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_97",
+        "pcb_component_id": "pcb_component_105",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Motor readiness open-drain pull-up"
+  },
+  {
+    "ref": "D8",
+    "code": "C8598",
+    "sheet": "protection",
+    "width": 4.6,
+    "height": 0.95,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_98",
+        "pcb_component_id": "pcb_component_106",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.561400000000006,
+            "y": 1.21520000000001
+          },
+          {
+            "x": 2.5360000000000014,
+            "y": 1.21520000000001
+          },
+          {
+            "x": 2.5360000000000014,
+            "y": -1.2405999999999864
+          },
+          {
+            "x": -2.561400000000006,
+            "y": -1.2405999999999864
+          },
+          {
+            "x": -2.561400000000006,
+            "y": 1.21520000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Input-PG interlock on motor readiness"
+  },
+  {
+    "ref": "R39",
+    "code": "C4184",
+    "sheet": "protection",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_99",
+        "pcb_component_id": "pcb_component_107",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "20 k\u03a9 OV-reference upper divider"
+  },
+  {
+    "ref": "R65",
+    "code": "C844918",
+    "sheet": "protection",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_100",
+        "pcb_component_id": "pcb_component_108",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 k\u03a9 OV-reference lower divider"
+  },
+  {
+    "ref": "R40",
+    "code": "C22935",
+    "sheet": "protection",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_101",
+        "pcb_component_id": "pcb_component_109",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "OV hysteresis feedback"
+  },
+  {
+    "ref": "C25",
+    "code": "C14663",
+    "sheet": "protection",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_102",
+        "pcb_component_id": "pcb_component_110",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Motor-rail-powered monitor bypass"
+  },
+  {
+    "ref": "U10",
+    "code": "C1855818",
+    "sheet": "motor",
+    "width": 4.893,
+    "height": 7.493,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_103",
+        "pcb_component_id": "pcb_component_115",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.7499950000001263,
+            "y": 3.996499999999969
+          },
+          {
+            "x": 2.749994999999899,
+            "y": 3.996499999999969
+          },
+          {
+            "x": 2.749994999999899,
+            "y": -3.996499999999969
+          },
+          {
+            "x": -2.7499950000001263,
+            "y": -3.996499999999969
+          },
+          {
+            "x": -2.7499950000001263,
+            "y": 3.996499999999969
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Integrated PWM-mode H bridge, nominal 2.22 A chopping"
+  },
+  {
+    "ref": "R50",
+    "code": "C25890",
+    "sheet": "motor",
+    "width": 1.431,
+    "height": 0.54,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_104",
+        "pcb_component_id": "pcb_component_116",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.1897999999998774,
+            "y": 0.7580000000000382
+          },
+          {
+            "x": 1.189799999999991,
+            "y": 0.7580000000000382
+          },
+          {
+            "x": 1.189799999999991,
+            "y": -0.7326000000000477
+          },
+          {
+            "x": -1.1897999999998774,
+            "y": -0.7326000000000477
+          },
+          {
+            "x": -1.1897999999998774,
+            "y": 0.7580000000000382
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "3.3 k current-sense resistor"
+  },
+  {
+    "ref": "R51",
+    "code": "C844918",
+    "sheet": "motor",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_105",
+        "pcb_component_id": "pcb_component_117",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Fault test output pull-up"
+  },
+  {
+    "ref": "C26",
+    "code": "C21122",
+    "sheet": "motor",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_106",
+        "pcb_component_id": "pcb_component_118",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "22 nF charge-pump flying capacitor"
+  },
+  {
+    "ref": "C27",
+    "code": "C14663",
+    "sheet": "motor",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_107",
+        "pcb_component_id": "pcb_component_119",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Charge-pump reservoir differential capacitor"
+  },
+  {
+    "ref": "C28",
+    "code": "C14663",
+    "sheet": "motor",
+    "width": 2.2,
+    "height": 0.9,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_108",
+        "pcb_component_id": "pcb_component_120",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9612000000000762
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9611999999999625
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9612000000000762
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Bridge local HF bypass"
+  },
+  {
+    "ref": "C29",
+    "code": "C403725",
+    "sheet": "motor",
+    "width": 4.67,
+    "height": 1.728,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_109",
+        "pcb_component_id": "pcb_component_121",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.815400000000068,
+            "y": 1.342200000000048
+          },
+          {
+            "x": 2.815399999999954,
+            "y": 1.342200000000048
+          },
+          {
+            "x": 2.815399999999954,
+            "y": -1.3421999999999343
+          },
+          {
+            "x": -2.815400000000068,
+            "y": -1.3421999999999343
+          },
+          {
+            "x": -2.815400000000068,
+            "y": 1.342200000000048
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Local bridge ceramic bulk"
+  },
+  {
+    "ref": "D10",
+    "code": "C211759",
+    "sheet": "motor",
+    "width": 6.829,
+    "height": 2.4,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_110",
+        "pcb_component_id": "pcb_component_122",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -3.653092000000015,
+            "y": 2.1549999999999727
+          },
+          {
+            "x": 3.6795080000000553,
+            "y": 2.1549999999999727
+          },
+          {
+            "x": 3.6795080000000553,
+            "y": -2.1549999999999727
+          },
+          {
+            "x": -3.653092000000015,
+            "y": -2.1549999999999727
+          },
+          {
+            "x": -3.653092000000015,
+            "y": 2.1549999999999727
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Bidirectional motor terminal TVS, 24.4 V nominal surge clamp"
+  },
+  {
+    "ref": "D11",
+    "code": "C211759",
+    "sheet": "motor",
+    "width": 6.829,
+    "height": 2.4,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_111",
+        "pcb_component_id": "pcb_component_123",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -3.653092000000015,
+            "y": 2.1549999999999727
+          },
+          {
+            "x": 3.6795080000000553,
+            "y": 2.1549999999999727
+          },
+          {
+            "x": 3.6795080000000553,
+            "y": -2.1549999999999727
+          },
+          {
+            "x": -3.653092000000015,
+            "y": -2.1549999999999727
+          },
+          {
+            "x": -3.653092000000015,
+            "y": 2.1549999999999727
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Backup motor-rail TVS; primary clamp tracks selected rail"
+  },
+  {
+    "ref": "J2",
+    "code": "C395849",
+    "sheet": "motor",
+    "width": 7.5,
+    "height": 2.5,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_112",
+        "pcb_component_id": "pcb_component_124",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -5.660200000000032,
+            "y": 4.264850999999908
+          },
+          {
+            "x": 5.380799999999908,
+            "y": 4.264850999999908
+          },
+          {
+            "x": 5.380799999999908,
+            "y": -4.312349000000154
+          },
+          {
+            "x": -5.660200000000032,
+            "y": -4.312349000000154
+          },
+          {
+            "x": -5.660200000000032,
+            "y": 4.264850999999908
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Direct 2-pin 5 mm motor screw terminal"
+  },
+  {
+    "ref": "R54",
+    "code": "C25890",
+    "sheet": "motor",
+    "width": 1.431,
+    "height": 0.54,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_113",
+        "pcb_component_id": "pcb_component_125",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.1897999999998774,
+            "y": 0.7580000000000382
+          },
+          {
+            "x": 1.189799999999991,
+            "y": 0.7580000000000382
+          },
+          {
+            "x": 1.189799999999991,
+            "y": -0.7326000000000477
+          },
+          {
+            "x": -1.1897999999998774,
+            "y": -0.7326000000000477
+          },
+          {
+            "x": -1.1897999999998774,
+            "y": 0.7580000000000382
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Power LED current limit"
+  },
+  {
+    "ref": "LED1",
+    "code": "C2986030",
+    "sheet": "motor",
+    "width": 2.6,
+    "height": 1.0,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_114",
+        "pcb_component_id": "pcb_component_126",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.8112110000000712,
+            "y": 1.0119999999999436
+          },
+          {
+            "x": 1.9907889999999497,
+            "y": 1.0119999999999436
+          },
+          {
+            "x": 1.9907889999999497,
+            "y": -0.9866000000000668
+          },
+          {
+            "x": -1.8112110000000712,
+            "y": -0.9866000000000668
+          },
+          {
+            "x": -1.8112110000000712,
+            "y": 1.0119999999999436
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Regulated motor power indicator"
+  },
+  {
+    "ref": "Q2",
+    "code": "C53444",
+    "sheet": "dump",
+    "width": 3.0,
+    "height": 2.55,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_115",
+        "pcb_component_id": "pcb_component_127",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Dump MOSFET gate driver"
+  },
+  {
+    "ref": "R41",
+    "code": "C844918",
+    "sheet": "dump",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_116",
+        "pcb_component_id": "pcb_component_128",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "PNP default off"
+  },
+  {
+    "ref": "R42",
+    "code": "C844918",
+    "sheet": "dump",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_117",
+        "pcb_component_id": "pcb_component_129",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Comparator sink-current limit"
+  },
+  {
+    "ref": "R43",
+    "code": "C21190",
+    "sheet": "dump",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_118",
+        "pcb_component_id": "pcb_component_130",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Dump gate slew and zener-current limit"
+  },
+  {
+    "ref": "R44",
+    "code": "C844918",
+    "sheet": "dump",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_119",
+        "pcb_component_id": "pcb_component_131",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Dump gate default low"
+  },
+  {
+    "ref": "D9",
+    "code": "C2103",
+    "sheet": "dump",
+    "width": 4.335,
+    "height": 1.15,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_120",
+        "pcb_component_id": "pcb_component_132",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -2.4090000000001055,
+            "y": 1.1390000000001237
+          },
+          {
+            "x": 2.4343999999999824,
+            "y": 1.1390000000001237
+          },
+          {
+            "x": 2.4343999999999824,
+            "y": -1.1897999999998774
+          },
+          {
+            "x": -2.4090000000001055,
+            "y": -1.1897999999998774
+          },
+          {
+            "x": -2.4090000000001055,
+            "y": 1.1390000000001237
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 V gate protection"
+  },
+  {
+    "ref": "Q3",
+    "code": "C20917",
+    "sheet": "dump",
+    "width": 3.0,
+    "height": 2.55,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_121",
+        "pcb_component_id": "pcb_component_133",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Switched regenerative energy dump"
+  },
+  {
+    "ref": "R45",
+    "code": "C2991665",
+    "sheet": "dump",
+    "width": 7.415,
+    "height": 3.456,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_122",
+        "pcb_component_id": "pcb_component_134",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 ohm/2 W; two 20 ohm parallel branches"
+  },
+  {
+    "ref": "R46",
+    "code": "C2991665",
+    "sheet": "dump",
+    "width": 7.415,
+    "height": 3.456,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_123",
+        "pcb_component_id": "pcb_component_135",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 ohm/2 W; two 20 ohm parallel branches"
+  },
+  {
+    "ref": "R47",
+    "code": "C2991665",
+    "sheet": "dump",
+    "width": 7.415,
+    "height": 3.456,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_124",
+        "pcb_component_id": "pcb_component_136",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 ohm/2 W; two 20 ohm parallel branches"
+  },
+  {
+    "ref": "R48",
+    "code": "C2991665",
+    "sheet": "dump",
+    "width": 7.415,
+    "height": 3.456,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_125",
+        "pcb_component_id": "pcb_component_137",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 ohm/2 W; two 20 ohm parallel branches"
+  },
+  {
+    "ref": "Q4",
+    "code": "C7420353",
+    "sheet": "dump",
+    "width": 3.0,
+    "height": 2.55,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_126",
+        "pcb_component_id": "pcb_component_138",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Disable bridge while energy clamp conducts"
+  },
+  {
+    "ref": "R49",
+    "code": "C844918",
+    "sheet": "dump",
+    "width": 2.313,
+    "height": 0.864,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_127",
+        "pcb_component_id": "pcb_component_139",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": 0.9103999999999814
+          },
+          {
+            "x": 1.6216000000000577,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": -0.9103999999998678
+          },
+          {
+            "x": -1.647000000000162,
+            "y": 0.9103999999999814
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "OV inhibit base-current limit"
+  },
+  {
+    "ref": "Q5",
+    "code": "C7420353",
+    "sheet": "dump",
+    "width": 3.0,
+    "height": 2.55,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_128",
+        "pcb_component_id": "pcb_component_140",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": 1.774000000000001
+          },
+          {
+            "x": 1.7993999999998778,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": -1.774000000000001
+          },
+          {
+            "x": -1.748600000000124,
+            "y": 1.774000000000001
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "Disable buck during motor overvoltage"
+  },
+  {
+    "ref": "TP1",
+    "code": "C2906768",
+    "sheet": "pdhost",
+    "width": 3.4299906,
+    "height": 1.7800066,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_0",
+        "pcb_component_id": "pcb_component_0",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "SWDIO contact"
+  },
+  {
+    "ref": "TP2",
+    "code": "C2906768",
+    "sheet": "pdhost",
+    "width": 3.4299906,
+    "height": 1.7800066,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_0",
+        "pcb_component_id": "pcb_component_0",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "SWCLK contact"
+  },
+  {
+    "ref": "TP3",
+    "code": "C2906768",
+    "sheet": "pdhost",
+    "width": 3.4299906,
+    "height": 1.7800066,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_0",
+        "pcb_component_id": "pcb_component_0",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "MCU_NRST contact"
+  },
+  {
+    "ref": "TP4",
+    "code": "C2906768",
+    "sheet": "pdhost",
+    "width": 3.4299906,
+    "height": 1.7800066,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_0",
+        "pcb_component_id": "pcb_component_0",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "GND contact"
+  },
+  {
+    "ref": "TP5",
+    "code": "C2906768",
+    "sheet": "usb",
+    "width": 3.4299906,
+    "height": 1.7800066,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_0",
+        "pcb_component_id": "pcb_component_0",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "VCC3V3 contact"
+  },
+  {
+    "ref": "TP6",
+    "code": "C2906768",
+    "sheet": "usb",
+    "width": 3.4299906,
+    "height": 1.7800066,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_0",
+        "pcb_component_id": "pcb_component_0",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "VBUS contact"
+  },
+  {
+    "ref": "TP7",
+    "code": "C2906768",
+    "sheet": "motor",
+    "width": 3.4299906,
+    "height": 1.7800066,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_0",
+        "pcb_component_id": "pcb_component_0",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": 1.1400032999999894
+          },
+          {
+            "x": 1.9649953000001688,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": -1.1400032999999894
+          },
+          {
+            "x": -1.9649952999999414,
+            "y": 1.1400032999999894
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "VM contact"
+  },
+  {
+    "ref": "R69",
+    "code": "C2991665",
+    "sheet": "dump",
+    "width": 7.415,
+    "height": 3.456,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_122",
+        "pcb_component_id": "pcb_component_134",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches"
+  },
+  {
+    "ref": "R70",
+    "code": "C2991665",
+    "sheet": "dump",
+    "width": 7.415,
+    "height": 3.456,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_122",
+        "pcb_component_id": "pcb_component_134",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches"
+  },
+  {
+    "ref": "R71",
+    "code": "C2991665",
+    "sheet": "dump",
+    "width": 7.415,
+    "height": 3.456,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_122",
+        "pcb_component_id": "pcb_component_134",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches"
+  },
+  {
+    "ref": "R72",
+    "code": "C2991665",
+    "sheet": "dump",
+    "width": 7.415,
+    "height": 3.456,
+    "rotation": 0,
+    "courtyard": [
+      {
+        "type": "pcb_courtyard_outline",
+        "pcb_courtyard_outline_id": "pcb_courtyard_outline_122",
+        "pcb_component_id": "pcb_component_134",
+        "layer": "top",
+        "outline": [
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": 2.2058000000000675
+          },
+          {
+            "x": 4.186999999999898,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": -2.2058000000000675
+          },
+          {
+            "x": -4.187000000000012,
+            "y": 2.2058000000000675
+          }
+        ],
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches"
+  }
+]

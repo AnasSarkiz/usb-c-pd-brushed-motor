@@ -1,0 +1,194 @@
+diff --git a/lib/solvers/TraceSimplificationSolver/TraceSimplificationSolver.ts b/lib/solvers/TraceSimplificationSolver/TraceSimplificationSolver.ts
+index e0d3241..2f16092 100644
+--- a/lib/solvers/TraceSimplificationSolver/TraceSimplificationSolver.ts
++++ b/lib/solvers/TraceSimplificationSolver/TraceSimplificationSolver.ts
+@@ -44,6 +44,12 @@ const isMultilayerObstacle = (obstacle: Obstacle) =>
+  *
+  * Each iteration consists of all phases executed sequentially.
+  */
++type RouteConnectionName = HighDensityRoute["connectionName"]
++type PreservedRouteEndpointPair = {
++  start: HighDensityRoute["route"][number]
++  end: HighDensityRoute["route"][number]
++}
++
+ export class TraceSimplificationSolver extends BaseSolver {
+   override getSolverName(): string {
+     return "TraceSimplificationSolver"
+@@ -52,11 +58,8 @@ export class TraceSimplificationSolver extends BaseSolver {
+   hdRoutes: HighDensityRoute[] = []
+ 
+   private readonly preservedRouteEndpoints?: ReadonlyMap<
+-    string,
+-    {
+-      start: HighDensityRoute["route"][number]
+-      end: HighDensityRoute["route"][number]
+-    }
++    RouteConnectionName,
++    PreservedRouteEndpointPair[]
+   >
+ 
+   simplificationPipelineLoops = 0
+@@ -141,11 +144,8 @@ export class TraceSimplificationSolver extends BaseSolver {
+     )
+     if (simplificationConfig.preserveRouteEndpoints) {
+       const endpointByConnectionName = new Map<
+-        string,
+-        {
+-          start: HighDensityRoute["route"][number]
+-          end: HighDensityRoute["route"][number]
+-        }
++        RouteConnectionName,
++        PreservedRouteEndpointPair[]
+       >()
+       for (const route of simplificationConfig.hdRoutes) {
+         const start = route.route[0]
+@@ -155,15 +155,10 @@ export class TraceSimplificationSolver extends BaseSolver {
+             `TraceSimplificationSolver cannot preserve endpoints for empty route "${route.connectionName}"`,
+           )
+         }
+-        if (endpointByConnectionName.has(route.connectionName)) {
+-          throw new Error(
+-            `TraceSimplificationSolver cannot preserve endpoints for duplicate route "${route.connectionName}"`,
+-          )
+-        }
+-        endpointByConnectionName.set(route.connectionName, {
+-          start: { ...start },
+-          end: { ...end },
+-        })
++        const endpoints =
++          endpointByConnectionName.get(route.connectionName) ?? []
++        endpoints.push({ start: { ...start }, end: { ...end } })
++        endpointByConnectionName.set(route.connectionName, endpoints)
+       }
+       this.preservedRouteEndpoints = endpointByConnectionName
+     }
+@@ -172,13 +167,30 @@ export class TraceSimplificationSolver extends BaseSolver {
+ 
+   private validatePreservedRouteEndpoints(routes: HighDensityRoute[]): void {
+     if (!this.preservedRouteEndpoints) return
+-    if (routes.length !== this.preservedRouteEndpoints.size) {
++    // A connection can contain several physical pieces after DRC repair.
++    // Preserve the complete endpoint multiset, including duplicate pieces,
++    // rather than incorrectly treating a net/connection name as a route ID.
++    const remainingEndpoints = new Map<
++      RouteConnectionName,
++      PreservedRouteEndpointPair[]
++    >(
++      [...this.preservedRouteEndpoints].map(
++        ([connectionName, endpoints]): [
++          RouteConnectionName,
++          PreservedRouteEndpointPair[],
++        ] => [connectionName, [...endpoints]],
++      ),
++    )
++    const expectedRouteCount = [...remainingEndpoints.values()].reduce(
++      (count, endpoints) => count + endpoints.length,
++      0,
++    )
++    if (routes.length !== expectedRouteCount) {
+       throw new Error(
+-        `TraceSimplificationSolver changed the preserved route set (expected ${this.preservedRouteEndpoints.size}, got ${routes.length})`,
++        `TraceSimplificationSolver changed the preserved route set (expected ${expectedRouteCount}, got ${routes.length})`,
+       )
+     }
+ 
+-    const outputConnectionNames = new Set<string>()
+     const pointsMatch = (
+       left: HighDensityRoute["route"][number],
+       right: HighDensityRoute["route"][number],
+@@ -188,26 +200,24 @@ export class TraceSimplificationSolver extends BaseSolver {
+       left.z === right.z
+ 
+     for (const route of routes) {
+-      if (outputConnectionNames.has(route.connectionName)) {
+-        throw new Error(
+-          `TraceSimplificationSolver produced duplicate preserved route "${route.connectionName}"`,
+-        )
+-      }
+-      outputConnectionNames.add(route.connectionName)
+-      const expected = this.preservedRouteEndpoints.get(route.connectionName)
++      const endpoints = remainingEndpoints.get(route.connectionName)
+       const start = route.route[0]
+       const end = route.route.at(-1)
+-      if (
+-        !expected ||
+-        !start ||
+-        !end ||
+-        !pointsMatch(start, expected.start) ||
+-        !pointsMatch(end, expected.end)
+-      ) {
++      const matchingEndpointIndex =
++        endpoints?.findIndex((expected) =>
++          Boolean(
++            start &&
++              end &&
++              pointsMatch(start, expected.start) &&
++              pointsMatch(end, expected.end),
++          ),
++        ) ?? -1
++      if (!endpoints || matchingEndpointIndex < 0) {
+         throw new Error(
+           `TraceSimplificationSolver changed a preserved endpoint for route "${route.connectionName}"`,
+         )
+       }
++      endpoints.splice(matchingEndpointIndex, 1)
+     }
+   }
+ 
+diff --git a/tests/solvers/trace-simplification-preserves-duplicate-route-pieces.test.ts b/tests/solvers/trace-simplification-preserves-duplicate-route-pieces.test.ts
+new file mode 100644
+index 0000000..17fd5dd
+--- /dev/null
++++ b/tests/solvers/trace-simplification-preserves-duplicate-route-pieces.test.ts
+@@ -0,0 +1,50 @@
++import { expect, test } from "bun:test"
++import { ConnectivityMap } from "circuit-json-to-connectivity-map"
++import { TraceSimplificationSolver } from "lib/solvers/TraceSimplificationSolver/TraceSimplificationSolver"
++import type { HighDensityRoute } from "lib/types/high-density-types"
++test("duplicate connection names preserve every physical route piece and reject missing or changed endpoints", () => {
++  const routes: HighDensityRoute[] = [0, 1].map((z) => ({
++    connectionName: "split_connection",
++    rootConnectionName: "net0",
++    traceThickness: 0.2,
++    viaDiameter: 0.6,
++    route: [
++      { x: 0, y: z, z },
++      { x: 2, y: z, z },
++    ],
++    vias: [],
++  }))
++  for (const fault of ["none", "missing", "changed"] as const) {
++    const solver = new TraceSimplificationSolver({
++      hdRoutes: structuredClone(routes),
++      obstacles: [],
++      connMap: new ConnectivityMap({ net0: ["split_connection"] }),
++      colorMap: {},
++      defaultViaDiameter: 0.6,
++      layerCount: 2,
++      preserveRouteEndpoints: true,
++    })
++    if (fault === "missing") solver.hdRoutes.pop()
++    if (fault === "changed") solver.hdRoutes[1]!.route[0]!.x = 0.3
++    if (fault === "none") {
++      solver.solve()
++      expect(solver.failed).toBeFalse()
++      expect(solver.simplifiedHdRoutes).toHaveLength(2)
++      for (const route of routes) {
++        const output = solver.simplifiedHdRoutes.find(
++          (r) => r.route[0]?.z === route.route[0]?.z,
++        )
++        expect(output?.route[0]).toEqual(route.route[0])
++        expect(output?.route.at(-1)).toEqual(route.route.at(-1))
++      }
++    } else {
++      expect(() => solver.solve()).toThrow(
++        fault === "missing" ? "preserved route set" : "preserved endpoint",
++      )
++      expect(solver.failed).toBeTrue()
++      expect(solver.error).toContain(
++        fault === "missing" ? "preserved route set" : "preserved endpoint",
++      )
++    }
++  }
++})

@@ -6,8 +6,12 @@ import { z } from "zod"
 const auditConfiguration = z
   .object({
     revision: z.string(),
+    routingPhase: z.enum(["unrouted", "routed"]).default("unrouted"),
     importManifestPath: z.string(),
     reportPath: z.string(),
+    warningReviewPath: z
+      .string()
+      .default("evidence/main-warning-review-A7.json"),
   })
   .parse(
     process.argv[2]
@@ -131,8 +135,10 @@ for (const part of manifest) {
   }
 }
 const pcbTraceCount = circuitJson.filter((e) => e.type === "pcb_trace").length
-if (pcbTraceCount !== 0)
+if (auditConfiguration.routingPhase === "unrouted" && pcbTraceCount !== 0)
   issues.push("Copper routing was generated while routing is disabled")
+if (auditConfiguration.routingPhase === "routed" && pcbTraceCount === 0)
+  issues.push("Routed connectivity audit requires actual PCB traces")
 const diagnostics = circuitJson.filter(
   (e) => e.type.includes("warning") || e.type.includes("error"),
 )
@@ -151,7 +157,7 @@ const warningReview = z
     unreviewedWarnings: z.array(z.unknown()),
   })
   .parse(
-    JSON.parse(await readFile("evidence/main-warning-review-A7.json", "utf8")),
+    JSON.parse(await readFile(auditConfiguration.warningReviewPath, "utf8")),
   )
 const importManifest = z
   .array(z.object({ code: z.string(), import_path: z.string() }))
@@ -202,8 +208,7 @@ const report = {
   issues,
   pcbTraceCount,
   diagnostics,
-  metadataReviewStatus:
-    "Raw diagnostics retained; exact source, message and wiring reviewed in main-warning-review-A7.json",
+  metadataReviewStatus: `Raw diagnostics retained; exact source, message and wiring reviewed in ${auditConfiguration.warningReviewPath}`,
 }
 await writeFile(
   auditConfiguration.reportPath,

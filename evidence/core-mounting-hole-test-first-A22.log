@@ -1,0 +1,14 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/components/primitive-components/board-mounted-hole-schema.test.tsx:
+
+# Unhandled error between tests
+-------------------------------
+error: Cannot find module '@tscircuit/flex-utils' from '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/components/normal-components/Board/Board.ts'
+-------------------------------
+
+
+ 0 pass
+ 1 fail
+ 1 error
+Ran 1 test across 1 file. [303.00ms]

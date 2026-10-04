@@ -1,0 +1,65 @@
+{
+  "EFUSE_IN": {
+    "traces": 7,
+    "minimumWidthMm": 0.2,
+    "wireLengthMm": 115.83562408991932,
+    "lengthBelow1mm": 115.35730988991932,
+    "viaTransitions": 6
+  },
+  "MOTOR_P": {
+    "traces": 2,
+    "minimumWidthMm": 0.2,
+    "wireLengthMm": 26.039680844139617,
+    "lengthBelow1mm": 26.039680844139617,
+    "viaTransitions": 2
+  },
+  "GND": {
+    "traces": 94,
+    "minimumWidthMm": 0.2,
+    "wireLengthMm": 582.659753963324,
+    "lengthBelow1mm": 582.659753963324,
+    "viaTransitions": 58
+  },
+  "SWITCH_NODE": {
+    "traces": 3,
+    "minimumWidthMm": 0.2,
+    "wireLengthMm": 18.025251774441053,
+    "lengthBelow1mm": 15.47967655442126,
+    "viaTransitions": 2
+  },
+  "VM": {
+    "traces": 22,
+    "minimumWidthMm": 0.2,
+    "wireLengthMm": 212.82939301285768,
+    "lengthBelow1mm": 186.04274462940998,
+    "viaTransitions": 16
+  },
+  "MOTOR_N": {
+    "traces": 2,
+    "minimumWidthMm": 0.2,
+    "wireLengthMm": 23.74933580805584,
+    "lengthBelow1mm": 12.574514889590928,
+    "viaTransitions": 3
+  },
+  "VBUS": {
+    "traces": 13,
+    "minimumWidthMm": 0.2,
+    "wireLengthMm": 97.92915910176183,
+    "lengthBelow1mm": 97.92915910176183,
+    "viaTransitions": 2
+  },
+  "DUMP_LOAD": {
+    "traces": 4,
+    "minimumWidthMm": 0.2,
+    "wireLengthMm": 53.56261371849864,
+    "lengthBelow1mm": 53.56261371849864,
+    "viaTransitions": 0
+  },
+  "VIN_BUCK": {
+    "traces": 7,
+    "minimumWidthMm": 0.2,
+    "wireLengthMm": 45.004345887458506,
+    "lengthBelow1mm": 44.832844087458504,
+    "viaTransitions": 4
+  }
+}

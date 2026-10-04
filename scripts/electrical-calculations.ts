@@ -5,13 +5,16 @@ export interface PdCapability {
 
 // A7 host policy: prefer the lowest adequate fixed-voltage contract.
 // Conservative engineering screen; hardware efficiency/thermal measurements pending.
+export const inputBudgetReserveFraction = 0.05
+
 export function chooseMotorContract(
   sourceCapabilities: PdCapability[],
   selection: { motorVoltageV: 5 | 9 | 12; peakMotorCurrentA?: number },
 ) {
   const { motorVoltageV, peakMotorCurrentA = 2.423 } = selection
-  const minimumLimitA = ((18_000 / 7_150) * 0.9) / 1.01
-  const maximumLimitA = ((18_000 / 7_150) * 1.1) / 0.99
+  // 1% initial tolerance plus 100 ppm/K over 100 K, added conservatively.
+  const minimumLimitA = ((18_000 / 6_980) * 0.9) / 1.02
+  const maximumLimitA = ((18_000 / 6_980) * 1.1) / 0.98
   const adequate = sourceCapabilities
     .filter(
       (source) =>
@@ -23,7 +26,9 @@ export function chooseMotorContract(
           motorVoltageV,
           motorCurrentA: peakMotorCurrentA,
           contractVoltageV: source.voltageV,
-        }) <= minimumLimitA,
+        }) *
+          (1 + inputBudgetReserveFraction) <=
+          minimumLimitA,
     )
     .sort((a, b) => a.voltageV - b.voltageV)[0]
   return adequate ? { voltageV: adequate.voltageV, currentA: 3 } : null

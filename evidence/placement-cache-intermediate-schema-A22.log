@@ -1,0 +1,51 @@
+{
+  "elementCount": 4985,
+  "errorCount": 4,
+  "reportPath": "evidence/placement-cache-intermediate-schema-A22.json",
+  "errors": [
+    {
+      "type": "schematic_group",
+      "issues": [
+        {
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "schematic_group",
+      "issues": [
+        {
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_group",
+      "issues": [
+        {
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "type": "pcb_group",
+      "issues": [
+        {
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    }
+  ]
+}

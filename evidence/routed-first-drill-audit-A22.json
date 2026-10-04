@@ -1,0 +1,60 @@
+{
+  "revision": "A22",
+  "artifactSha256": "db4aa602726e1560ffdfd9e03e0be69a070f26b2f307e3921290ce89d4dc27f7",
+  "ordinaryVias": 298,
+  "originalThermalVias": 12,
+  "drills": 330,
+  "minimumDrillDrillMm": 0.0,
+  "minimumOrdinaryDrillPadWithinSearchMm": 0.04022513921330351,
+  "issues": [
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_14",
+      "pad": "pcb_smtpad_364",
+      "clearanceMm": 0.06803889070569635
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_132",
+      "pad": "pcb_smtpad_147",
+      "clearanceMm": 0.1785906032108579
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_133",
+      "pad": "pcb_smtpad_150",
+      "clearanceMm": 0.04022513921330351
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_210",
+      "pad": "pcb_smtpad_115",
+      "clearanceMm": 0.1855394295841517
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_273",
+      "pad": "pcb_smtpad_8",
+      "clearanceMm": 0.11104726670783549
+    },
+    {
+      "rule": "ordinary_drill_to_component_pad",
+      "via": "pcb_via_275",
+      "pad": "pcb_smtpad_114",
+      "clearanceMm": 0.18582968648863485
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_218",
+      "second": "pcb_via_225",
+      "clearanceMm": 0.0
+    },
+    {
+      "rule": "drill_to_drill",
+      "first": "pcb_via_268",
+      "second": "pcb_via_274",
+      "clearanceMm": 0.0
+    }
+  ],
+  "limitations": "No source-net exception for ordinary via drills. Original EP exclusions bind exact coordinates and sizes. Other routed copper checks are separately mandatory."
+}

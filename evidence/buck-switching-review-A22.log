@@ -1,0 +1,16 @@
+mkdir -p failed for path /Users/anassarkiz/.matplotlib: [Errno 1] Operation not permitted: '/Users/anassarkiz/.matplotlib'
+Matplotlib created a temporary cache directory at /var/folders/bq/vfyx_yrj6ps_btmlp2pqy1wh0000gn/T/matplotlib-s3_175f1 because there was an issue with the default path (/Users/anassarkiz/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+Simulating 5V-20V-step
+Simulating 5V-15V-step
+Completed 5V-20V-step: {"startup_peak": 5.07493, "step_min": 4.87027, "loaded_max": 5.00132, "loaded_min": 4.97165, "unload_peak": 5.14218, "inductor_peak": 2.47966, "poly_rms": 0.0919823, "ceramic_rms": 0.255746, "source_peak": -140.42}
+Simulating 9V-20V-step
+Completed 5V-15V-step: {"startup_peak": 5.07429, "step_min": 4.86722, "loaded_max": 5.00071, "loaded_min": 4.97157, "unload_peak": 5.14446, "inductor_peak": 2.43502, "poly_rms": 0.0831135, "ceramic_rms": 0.225495, "source_peak": -106.788}
+Simulating 12V-20V-step
+Completed 9V-20V-step: {"startup_peak": 9.17724, "step_min": 8.7865, "loaded_max": 9.00196, "loaded_min": 8.9509, "unload_peak": 9.25689, "inductor_peak": 3.55482, "poly_rms": 0.120713, "ceramic_rms": 0.321218, "source_peak": -139.621}
+Simulating 5V-15V-PWM
+Completed 12V-20V-step: {"startup_peak": 12.2775, "step_min": 11.7408, "loaded_max": 12.0026, "loaded_min": 11.937, "unload_peak": 12.3394, "inductor_peak": 4.73634, "poly_rms": 0.113575, "ceramic_rms": 0.298798, "source_peak": -138.33}
+Simulating 12V-20V-PWM
+Completed 12V-20V-PWM: {"startup_peak": 12.2775, "step_min": 11.82, "loaded_max": 12.0456, "loaded_min": 11.9277, "unload_peak": 12.0525, "inductor_peak": 4.73634, "poly_rms": 0.848399, "ceramic_rms": 0.350045, "source_peak": -138.903}
+Completed 5V-15V-PWM: {"startup_peak": 5.07429, "step_min": 4.88921, "loaded_max": 5.03669, "loaded_min": 4.95122, "unload_peak": 5.03928, "inductor_peak": 2.11881, "poly_rms": 0.807832, "ceramic_rms": 0.285764, "source_peak": -108.011}
+All six conditional switching cases completed

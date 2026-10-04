@@ -1,0 +1,21 @@
+$ biome format .
+.tscircuit/cache/98dda1ba89-ced2b330c5883f3f902822aaedb472ad.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ! The size of the file is 1.8 MiB, which exceeds the configured maximum of 1.0 MiB for this project.
+    Use the `files.maxSize` configuration to change the maximum size of files processed, or `files.includes` to ignore the file.
+  
+
+.tscircuit/cache/9eb429ea67-72a8e394bfaa09286b5a9b0bb6e5483c.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ! The size of the file is 1.4 MiB, which exceeds the configured maximum of 1.0 MiB for this project.
+    Use the `files.maxSize` configuration to change the maximum size of files processed, or `files.includes` to ignore the file.
+  
+
+.tscircuit/cache/9eb429ea67-c4c47867b355990853748a6fbc74b4cd.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ! The size of the file is 1.5 MiB, which exceeds the configured maximum of 1.0 MiB for this project.
+    Use the `files.maxSize` configuration to change the maximum size of files processed, or `files.includes` to ignore the file.
+  
+
+Checked 269 files in 32ms. No fixes applied.
+Found 3 warnings.

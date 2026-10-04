@@ -1,0 +1,3 @@
+$ tsc --noEmit
+evidence/core-source-fix-A22/board-mounted-hole-schema.test.tsx(3,32): error TS2307: Cannot find module 'tests/fixtures/get-test-fixture' or its corresponding type declarations.
+evidence/core-source-fix-A22/board-mounted-hole-schema.test.tsx(24,19): error TS2551: Property 'toMatchPcbSnapshot' does not exist on type 'Matchers<any>'. Did you mean 'toMatchSnapshot'?

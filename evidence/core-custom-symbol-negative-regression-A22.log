@@ -1,0 +1,26 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/components/primitive-components/custom-symbol-rotation.test.tsx:
+64 |     { x: 12, y: 2, direction: "down" },
+65 |     { x: 16, y: 2, direction: "down" },
+66 |   ] as const
+67 |   for (const [index, position] of expected.entries()) {
+68 |     const port = ports.filter((p) => p.pin_number === 1)[index]!
+69 |     expect(port.center.x).toBeCloseTo(position.x, 8)
+                               ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 4
+Received: 5
+
+Expected precision: 8
+Expected difference: < 0.000000005
+Received difference: 1
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/components/primitive-components/custom-symbol-rotation.test.tsx:69:27)
+(fail) custom symbol rotation moves graphics, electrical pins and facing together [38.72ms]
+
+ 0 pass
+ 1 fail
+ 6 expect() calls
+Ran 1 test across 1 file. [739.00ms]

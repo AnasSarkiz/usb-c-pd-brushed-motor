@@ -1,3 +1,20 @@
+# A22 product placement orientation — 2026-10-04
+
+The current native PCB rotation is90° at(-23,24) mm. Viewed from the top,
+ON is toward the **left**. The upper slider marked9 controls VOLTAGE_BIT_9;
+the lower slider marked12 controls VOLTAGE_BIT_12. Both OFF selects5 V;
+only9 ON selects9 V; only12 ON selects12 V; both ON inhibits. The firmware
+binary encoding is(12-bit,9-bit), not a left-to-right physical-switch order.
+Change voltage settings with USB unplugged. The MCU also inhibits and preserves
+charged-rail feedback when a selector change is detected; this is not permission
+to switch motor rated voltage while running.
+
+The original unrotated manufacturer/import reconciliation below remains valid.
+Its old top/left/right description must be transformed by the current90° placement.
+Prototype continuity/knob fit and assembly orientation remain physical checks.
+
+---
+
 # A9 voltage selector drawing review
 
 SW2 is C3293142 / Kongshen DSHP02TSGER. The manufacturer's top view places slider 1 on the left and slider 2 on the right, ON at the top; each slider connects the two terminals along its own vertical column. Nominal body width 4.14 mm, length 5.40 mm, height 2.30 mm; column pitch 1.27 mm. Recommended PCB lands: 0.76 mm width, total span 8.89 mm, inner separation 6.35 mm, giving land length 1.27 mm and center span 7.62 mm.

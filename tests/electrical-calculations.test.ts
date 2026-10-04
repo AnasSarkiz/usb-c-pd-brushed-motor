@@ -20,7 +20,7 @@ describe("PD power qualification", () => {
       ).toBeNull()
     }
   })
-  test("selects 20 V for 12 V peaks and 15 V for 9 V peaks", () => {
+  test("requires 20 V for 9/12 V peaks with budgeting reserve", () => {
     expect(
       chooseMotorContract(
         [
@@ -34,10 +34,21 @@ describe("PD power qualification", () => {
       chooseMotorContract([{ voltageV: 15, currentA: 3 }], {
         motorVoltageV: 9,
       }),
-    ).toEqual({
-      voltageV: 15,
-      currentA: 3,
-    })
+    ).toBeNull()
+    expect(
+      chooseMotorContract(
+        [
+          { voltageV: 15, currentA: 3 },
+          { voltageV: 20, currentA: 3 },
+        ],
+        { motorVoltageV: 9 },
+      ),
+    ).toEqual({ voltageV: 20, currentA: 3 })
+    expect(
+      chooseMotorContract([{ voltageV: 15, currentA: 3 }], {
+        motorVoltageV: 5,
+      }),
+    ).toEqual({ voltageV: 15, currentA: 3 })
   })
   test("a 5 A source retains a 3 A operating request and malformed currents fail", () => {
     expect(
@@ -56,7 +67,7 @@ describe("PD power qualification", () => {
       ).toBeNull()
   })
   test("worst assumed 12 V continuous input fits minimum eFuse limit", () => {
-    const minimumLimitA = ((18_000 / 7_150) * 0.9) / 1.01
+    const minimumLimitA = ((18_000 / 6_980) * 0.9) / 1.02
     expect(
       motorInputCurrentA({
         motorVoltageV: 12,

@@ -1,0 +1,7 @@
+tests/components/primitive-components/board-plated-hole-solder-paste.test.tsx(74,17): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(expected: ("top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8")[]): void', gave the following error.
+    Argument of type 'string[]' is not assignable to parameter of type '("top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8")[]'.
+      Type 'string' is not assignable to type '"top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8"'.
+  Overload 2 of 2, '(expected: NoInfer<("top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8")[]>): void', gave the following error.
+    Argument of type 'string[]' is not assignable to parameter of type '("top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8")[]'.
+      Type 'string' is not assignable to type '"top" | "bottom" | "inner1" | "inner2" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8"'.

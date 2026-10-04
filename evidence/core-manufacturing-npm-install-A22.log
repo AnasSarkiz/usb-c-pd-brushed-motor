@@ -1,0 +1,31 @@
+npm warn gitignore-fallback No .npmignore file found, using .gitignore for file exclusion. Consider creating a .npmignore file to explicitly control published files.
+npm warn gitignore-fallback No .npmignore file found, using .gitignore for file exclusion. Consider creating a .npmignore file to explicitly control published files.
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'circuit-to-svg@0.0.438',
+npm warn EBADENGINE   required: { node: '24.x' },
+npm warn EBADENGINE   current: { node: 'v25.6.0', npm: '11.8.0' }
+npm warn EBADENGINE }
+npm warn skipping integrity check for git dependency ssh://git@github.com/tscircuit/pcb-trace-linter.git
+npm warn skipping integrity check for git dependency ssh://git@github.com/tscircuit/winding-breakout-point-solver.git
+npm warn skipping integrity check for git dependency ssh://git@github.com/tscircuit/via-stitch-solver.git
+npm warn skipping integrity check for git dependency ssh://git@github.com/tscircuit/jlcpcb-manufacturing-specs.git
+npm warn skipping integrity check for git dependency ssh://git@github.com/tscircuit/implicit-copper-pour-solver.git
+npm warn skipping integrity check for git dependency ssh://git@github.com/tscircuit/bga-fanout-solver.git
+npm warn skipping integrity check for git dependency ssh://git@github.com/tscircuit/ti.git
+npm warn deprecated path-dirname@1.0.2: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm warn deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm warn deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+npm warn deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm warn deprecated opn@6.0.0: The package has been renamed to `open`
+npm warn deprecated uuid@3.4.0: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+npm warn deprecated fsevents@1.2.13: Upgrade to fsevents v2 to mitigate potential security issues
+npm warn gitignore-fallback No .npmignore file found, using .gitignore for file exclusion. Consider creating a .npmignore file to explicitly control published files.
+npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/node_modules/rxjs/dist/types/internal/scheduler/intervalProvider.d.ts.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/node_modules/rxjs/dist/cjs/internal/scheduler/intervalProvider.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/node_modules/lucide-react/dist/esm/icons/map-pin-x-inside.mjs.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/node_modules/rxjs/dist/esm/internal/scheduler/intervalProvider.js.map'
+npm error A complete log of this run can be found in: /Users/anassarkiz/.npm/_logs/2026-10-03T22_31_30_314Z-debug-0.log

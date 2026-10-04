@@ -1,0 +1,2 @@
+tests/components/primitive-components/custom-symbol-rotation.test.tsx(23,32): error TS2322: Type '{ schX: number; schY: number; radius: number; }' is not assignable to type 'SchematicCircleProps'.
+  Property 'schX' does not exist on type 'SchematicCircleProps'.

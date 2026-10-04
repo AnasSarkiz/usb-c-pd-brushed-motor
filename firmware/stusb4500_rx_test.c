@@ -84,8 +84,8 @@ int main(void) {
   for (uint8_t selector=0; selector<3; ++selector) {
     const struct pd_plan plan = pd_make_plan(selector, &(struct pd_capabilities){.source_pdos=message.source_pdos, .count=message.object_count, .source_generation=77});
     CHECK(plan.valid && plan.source_generation == 77);
-    CHECK(plan.source_object_position == (selector == 2 ? 5 : 4));
-    CHECK(plan.voltage_mv == (selector == 2 ? 20000 : 15000));
+    CHECK(plan.source_object_position == (selector >= 1 ? 5 : 4));
+    CHECK(plan.voltage_mv == (selector >= 1 ? 20000 : 15000));
   }
   /* A control header must never decode stale source-object bytes as PDOs. */
   const uint8_t controls[] = {3,4,6,12,13,1};

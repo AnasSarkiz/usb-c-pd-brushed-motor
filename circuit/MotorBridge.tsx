@@ -1,3 +1,5 @@
+import { A_5015 } from "../imports/A_5015"
+import { productPlacement } from "./product-placement"
 import { CC0603KRX7R9BB104 } from "../imports/CC0603KRX7R9BB104"
 import { DRV8874PWPR } from "../imports/DRV8874PWPR"
 import { CL10B223KB8NNNC } from "../imports/CL10B223KB8NNNC"
@@ -14,6 +16,7 @@ export function MotorBridge() {
       {/* Integrated PWM-mode H bridge, nominal 2.22 A chopping */}
       <DRV8874PWPR
         name="U10"
+        pcbRotation={productPlacement.U10.ccwRotationDegrees}
         schSheetName="motor"
         schX={-11.0}
         schY={8}
@@ -40,6 +43,7 @@ export function MotorBridge() {
       {/* 3.3 k current-sense resistor */}
       <A_0402WGF3301TCE
         name="R50"
+        pcbRotation={productPlacement.R50.ccwRotationDegrees}
         schSheetName="motor"
         schX={-5.5}
         schY={8}
@@ -52,6 +56,7 @@ export function MotorBridge() {
       {/* Fault test output pull-up */}
       <CRCW060310K0FKEA
         name="R51"
+        pcbRotation={productPlacement.R51.ccwRotationDegrees}
         schSheetName="motor"
         schX={0.0}
         schY={8}
@@ -64,6 +69,7 @@ export function MotorBridge() {
       {/* 22 nF charge-pump flying capacitor */}
       <CL10B223KB8NNNC
         name="C26"
+        pcbRotation={productPlacement.C26.ccwRotationDegrees}
         schSheetName="motor"
         schX={-11.0}
         schY={4}
@@ -75,6 +81,7 @@ export function MotorBridge() {
       {/* Charge-pump reservoir differential capacitor */}
       <CC0603KRX7R9BB104
         name="C27"
+        pcbRotation={productPlacement.C27.ccwRotationDegrees}
         schSheetName="motor"
         schX={-5.5}
         schY={4}
@@ -87,6 +94,7 @@ export function MotorBridge() {
       {/* Bridge local HF bypass */}
       <CC0603KRX7R9BB104
         name="C28"
+        pcbRotation={productPlacement.C28.ccwRotationDegrees}
         schSheetName="motor"
         schX={0.0}
         schY={4}
@@ -99,6 +107,7 @@ export function MotorBridge() {
       {/* Local bridge ceramic bulk */}
       <GRM31CR61E476ME44L
         name="C29"
+        pcbRotation={productPlacement.C29.ccwRotationDegrees}
         schSheetName="motor"
         schX={2}
         schY={4}
@@ -111,6 +120,7 @@ export function MotorBridge() {
       {/* Bidirectional motor terminal TVS, 24.4 V nominal surge clamp */}
       <SMBJ15CA
         name="D10"
+        pcbRotation={productPlacement.D10.ccwRotationDegrees}
         schSheetName="motor"
         schX={11.0}
         schY={4}
@@ -129,10 +139,11 @@ export function MotorBridge() {
       {/* Backup motor-rail TVS; primary clamp tracks selected rail */}
       <SMBJ15CA
         name="D11"
+        pcbRotation={productPlacement.D11.ccwRotationDegrees}
         schSheetName="motor"
         schX={-11.0}
         schY={0}
-        schRotation={90.0}
+        schRotation={90}
         connections={{
           pin1: "net.VM",
           pin2: "net.GND",
@@ -148,6 +159,7 @@ export function MotorBridge() {
       {/* Direct 2-pin 5 mm motor screw terminal */}
       <DB126V_5_0_2P_GN_P
         name="J2"
+        pcbRotation={productPlacement.J2.ccwRotationDegrees}
         schSheetName="motor"
         schX={-5.5}
         schY={0}
@@ -159,6 +171,7 @@ export function MotorBridge() {
       {/* Power LED current limit */}
       <A_0402WGF3301TCE
         name="R54"
+        pcbRotation={productPlacement.R54.ccwRotationDegrees}
         schSheetName="motor"
         schX={0.0}
         schY={0}
@@ -171,6 +184,7 @@ export function MotorBridge() {
       {/* Regulated motor power indicator */}
       <A_19_217_G7C_AN1P2_6T
         name="LED1"
+        pcbRotation={productPlacement.LED1.ccwRotationDegrees}
         schSheetName="motor"
         schX={5.5}
         schY={0}
@@ -179,6 +193,17 @@ export function MotorBridge() {
           anode: "net.POWER_LED",
           cathode: "net.GND",
         }}
+      />
+      <A_5015
+        name="TP7"
+        pinAttributes={{
+          pin1: { isPassive: true, includeInBoardPinout: true },
+        }}
+        pcbRotation={productPlacement.TP7.ccwRotationDegrees}
+        schSheetName="motor"
+        schX={-11}
+        schY={-4}
+        connections={{ pin1: "net.VM" }}
       />
     </>
   )

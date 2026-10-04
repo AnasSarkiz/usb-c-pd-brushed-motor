@@ -1,0 +1,296 @@
+{
+  revision: "A22 prototype analysis",
+  warning: "Analytic assumptions; physical efficiency/thermal/peak tests pending",
+  inputLimitNominalA: 2.5787965616045847,
+  inputLimitMinimumA: 2.275408730827575,
+  inputLimitMaximumA: 2.8945675691480037,
+  regulatedVoltagesV: [ 5.0040000000000004, 9.007809523809525, 12.010666666666667 ],
+  pwmAtMinimum: {
+    frequencyHz: 19412.193355098618,
+    dutyFraction: 0.028645452148261377,
+  },
+  pwmAtMidpoint: {
+    frequencyHz: 20140.05343582184,
+    dutyFraction: 0.48001516799627475,
+  },
+  pwmAtMaximum: {
+    frequencyHz: 20924.62202086584,
+    dutyFraction: 0.966551672296271,
+  },
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 15,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 1.0980261735480275,
+  minimumInputLimitMarginA: 1.1773825572795475,
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 15,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 1.2259114461972331,
+  minimumInputLimitMarginA: 1.0494972846303419,
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 15,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 1.3327706990954726,
+  minimumInputLimitMarginA: 0.9426380317321024,
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 20,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 0.8158594959574521,
+  minimumInputLimitMarginA: 1.459549234870123,
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 20,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 0.9108203759191931,
+  minimumInputLimitMarginA: 1.364588354908382,
+}
+{
+  motorVoltageV: 5,
+  contractVoltageV: 20,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 0.990168439046883,
+  minimumInputLimitMarginA: 1.285240291780692,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 15,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 1.8250060662971759,
+  minimumInputLimitMarginA: 0.4504026645303991,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 15,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 2.032238698328091,
+  minimumInputLimitMarginA: 0.2431700324994841,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 15,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 2.204018517993183,
+  minimumInputLimitMarginA: 0.07139021283439195,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 20,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 1.355676543689882,
+  minimumInputLimitMarginA: 0.9197321871376929,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 20,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 1.5095566010786914,
+  minimumInputLimitMarginA: 0.7658521297488836,
+}
+{
+  motorVoltageV: 9,
+  contractVoltageV: 20,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 1.6371112639194374,
+  minimumInputLimitMarginA: 0.6382974669081376,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 15,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 2.3723560841114146,
+  minimumInputLimitMarginA: -0.09694735328383963,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 15,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 2.6390992356786107,
+  minimumInputLimitMarginA: -0.3636905048510357,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 15,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 2.859569480418843,
+  minimumInputLimitMarginA: -0.584160749591268,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 20,
+  motorCurrentA: 2,
+  requiredInputCurrentA: 1.7621098902511325,
+  minimumInputLimitMarginA: 0.5132988405764425,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 20,
+  motorCurrentA: 2.22,
+  requiredInputCurrentA: 1.960179330710243,
+  minimumInputLimitMarginA: 0.3152294001173319,
+}
+{
+  motorVoltageV: 12,
+  contractVoltageV: 20,
+  motorCurrentA: 2.4,
+  requiredInputCurrentA: 2.123888943335781,
+  minimumInputLimitMarginA: 0.15151978749179396,
+}
+{
+  implementationStatus: "MCU qualification wired; embedded transport/prototype validation pending",
+  nominalInputLimitA: 2.5787965616045847,
+  minimumInputLimitA: 2.275408730827575,
+  maximumInputLimitA: 2.8945675691480037,
+  candidates: [
+    {
+      voltageV: 15,
+      currentA: 3,
+      requestedOperatingCurrentA: 3,
+      expectedMaximumCurrentA: 3,
+      requiredInputCurrentA: 1.346569277025915,
+      reservedInputCurrentA: 1.4138977408772109,
+      maximumTotalFaultCurrentA: 2.964743007744495,
+      rejectionReasons: [],
+      qualified: true,
+    }, {
+      voltageV: 20,
+      currentA: 3,
+      requestedOperatingCurrentA: 3,
+      expectedMaximumCurrentA: 3,
+      requiredInputCurrentA: 1.000414537564339,
+      reservedInputCurrentA: 1.0504352644425559,
+      maximumTotalFaultCurrentA: 2.9471991480953723,
+      rejectionReasons: [],
+      qualified: true,
+    }
+  ],
+  selectedContract: {
+    voltageV: 15,
+    currentA: 3,
+    requestedOperatingCurrentA: 3,
+    expectedMaximumCurrentA: 3,
+    requiredInputCurrentA: 1.346569277025915,
+    reservedInputCurrentA: 1.4138977408772109,
+    maximumTotalFaultCurrentA: 2.964743007744495,
+    rejectionReasons: [],
+    qualified: true,
+  },
+  motorMustRemainInhibited: false,
+}
+{
+  implementationStatus: "MCU qualification wired; embedded transport/prototype validation pending",
+  nominalInputLimitA: 2.5787965616045847,
+  minimumInputLimitA: 2.275408730827575,
+  maximumInputLimitA: 2.8945675691480037,
+  candidates: [
+    {
+      voltageV: 15,
+      currentA: 3,
+      requestedOperatingCurrentA: 3,
+      expectedMaximumCurrentA: 3,
+      requiredInputCurrentA: 2.226112501677167,
+      reservedInputCurrentA: 2.3374181267610257,
+      maximumTotalFaultCurrentA: 2.964743007744495,
+      rejectionReasons: [ "Peak load plus 5% reserve exceeds minimum input current limit" ],
+      qualified: false,
+    }, {
+      voltageV: 20,
+      currentA: 3,
+      requestedOperatingCurrentA: 3,
+      expectedMaximumCurrentA: 3,
+      requiredInputCurrentA: 1.6535170946224502,
+      reservedInputCurrentA: 1.7361929493535728,
+      maximumTotalFaultCurrentA: 2.9471991480953723,
+      rejectionReasons: [],
+      qualified: true,
+    }
+  ],
+  selectedContract: {
+    voltageV: 20,
+    currentA: 3,
+    requestedOperatingCurrentA: 3,
+    expectedMaximumCurrentA: 3,
+    requiredInputCurrentA: 1.6535170946224502,
+    reservedInputCurrentA: 1.7361929493535728,
+    maximumTotalFaultCurrentA: 2.9471991480953723,
+    rejectionReasons: [],
+    qualified: true,
+  },
+  motorMustRemainInhibited: false,
+}
+{
+  implementationStatus: "MCU qualification wired; embedded transport/prototype validation pending",
+  nominalInputLimitA: 2.5787965616045847,
+  minimumInputLimitA: 2.275408730827575,
+  maximumInputLimitA: 2.8945675691480037,
+  candidates: [
+    {
+      voltageV: 15,
+      currentA: 3,
+      requestedOperatingCurrentA: 3,
+      expectedMaximumCurrentA: 3,
+      requiredInputCurrentA: 2.8878850184179834,
+      reservedInputCurrentA: 3.0322792693388827,
+      maximumTotalFaultCurrentA: 2.964743007744495,
+      rejectionReasons: [ "Peak load plus 5% reserve exceeds minimum input current limit" ],
+      qualified: false,
+    }, {
+      voltageV: 20,
+      currentA: 3,
+      requestedOperatingCurrentA: 3,
+      expectedMaximumCurrentA: 3,
+      requiredInputCurrentA: 2.144914573177962,
+      reservedInputCurrentA: 2.2521603018368603,
+      maximumTotalFaultCurrentA: 2.9471991480953723,
+      rejectionReasons: [],
+      qualified: true,
+    }
+  ],
+  selectedContract: {
+    voltageV: 20,
+    currentA: 3,
+    requestedOperatingCurrentA: 3,
+    expectedMaximumCurrentA: 3,
+    requiredInputCurrentA: 2.144914573177962,
+    reservedInputCurrentA: 2.2521603018368603,
+    maximumTotalFaultCurrentA: 2.9471991480953723,
+    rejectionReasons: [],
+    qualified: true,
+  },
+  motorMustRemainInhibited: false,
+}
+{
+  nominalRailV: 5.0040000000000004,
+  uvV: 4.2178986486486485,
+  ovTripV: 5.747847271688788,
+  ovReleaseV: 5.50748542600897,
+  referenceBiasAtNominalA: 0.0012545000000000002,
+  referenceBiasResistorPowerAtTripW: 0.005290507686466595,
+  instantaneousDumpPowerAtTripW: 6.6075496517320484,
+}
+{
+  nominalRailV: 9.007809523809525,
+  uvV: 7.592731338481339,
+  ovTripV: 10.734810252637002,
+  ovReleaseV: 9.914144618834085,
+  referenceBiasAtNominalA: 0.003256404761904763,
+  referenceBiasResistorPowerAtTripW: 0.033947236499730936,
+  instantaneousDumpPowerAtTripW: 23.0472302320241,
+}
+{
+  nominalRailV: 12.010666666666665,
+  uvV: 10.123855855855854,
+  ovTripV: 14.72757368194816,
+  ovReleaseV: 13.219139013452919,
+  referenceBiasAtNominalA: 0.004757833333333333,
+  referenceBiasResistorPowerAtTripW: 0.07481792944214538,
+  instantaneousDumpPowerAtTripW: 43.380285311442414,
+}

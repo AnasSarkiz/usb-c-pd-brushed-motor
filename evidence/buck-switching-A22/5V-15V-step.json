@@ -1,0 +1,38 @@
+{
+  "case": {
+    "name": "5V-15V-step",
+    "vin": 14.7,
+    "bottom": 20000,
+    "voltage": 5,
+    "pwm": false
+  },
+  "provenance": {
+    "deck": "34b8d9caf218ab641528425c4b665a80a3f4e7f7da0d920d4881a1e131ebddb0",
+    "TI": "84de74e80f9abcc6cce316de4c7532187e23d198bc988612993136cb38dbec77",
+    "Panasonic": "84312597b54d1a5e5b37d221a42c49896cdf964386081e3a705a6caf293e1bea"
+  },
+  "completed": true,
+  "measurements": {
+    "startup_peak": 5.07429,
+    "step_min": 4.86722,
+    "loaded_max": 5.00071,
+    "loaded_min": 4.97157,
+    "unload_peak": 5.14446,
+    "inductor_peak": 2.43502,
+    "poly_rms": 0.0831135,
+    "ceramic_rms": 0.225495,
+    "source_peak": -106.788
+  },
+  "plot_samples": 7001,
+  "status": "conditional typical-model screen; not a hardware rating",
+  "voltage_window_screen": true,
+  "limitations": [
+    "TI and Panasonic models are typical; diode uses stated engineering model, not manufacturer corners",
+    "40uF effective MLCC and 5mOhm ESR assumed; minimum over bias/temperature must be qualified",
+    "Vin includes an engineering path-drop allowance, not charger/cable dynamics",
+    "2A chopped current is a conservative load waveform, not an electromagnetic motor or reversal model",
+    "Native RMS covers modeled mixed-frequency content; manufacturer polymer correction above500kHz is unspecified",
+    "Inductor startup peak is model-only; current limit delay and physical overshoot require measurement",
+    "Layout ESL, hot polymer ESR, thermal rise, back-drive and dump energy are outside this simulation"
+  ]
+}

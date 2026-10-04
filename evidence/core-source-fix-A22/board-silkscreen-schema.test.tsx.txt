@@ -1,0 +1,41 @@
+import { expect, test } from "bun:test"
+import { any_circuit_element, pcb_silkscreen_text } from "circuit-json"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+
+test("standalone board labels use the native board artwork association", () => {
+  const { circuit } = getTestFixture()
+  circuit.add(
+    <board
+      width="30mm"
+      height="20mm"
+      routingDisabled
+      manualEdits={{
+        pcb_placements: [{ selector: "R1", center: { x: 8, y: 0 } }],
+      }}
+    >
+      <silkscreentext text="TOP BOARD LABEL" layers={["top"]} pcbY={4} />
+      <silkscreentext text="BOTTOM BOARD LABEL" layers={["bottom"]} pcbY={-4} />
+      <resistor name="R1" resistance="1k" footprint="0603" />
+    </board>,
+  )
+  circuit.render()
+  const boardLabels = circuit.db.pcb_silkscreen_text
+    .list()
+    .filter((label) => label.text.endsWith("BOARD LABEL"))
+  expect(boardLabels.map((label) => label.layer)).toEqual(["top", "bottom"])
+  for (const label of boardLabels) {
+    expect(label.pcb_component_id).toBe(
+      circuit.db.pcb_board.list()[0].pcb_board_id,
+    )
+    pcb_silkscreen_text.parse(label)
+  }
+  expect(
+    circuit.db.pcb_silkscreen_text.list().find((label) => label.text === "R1")
+      ?.pcb_component_id,
+  ).toBe(circuit.db.pcb_component.list()[0].pcb_component_id)
+  for (const element of circuit.getCircuitJson()) {
+    const parsed = any_circuit_element.safeParse(element)
+    expect(parsed.success, JSON.stringify(element)).toBe(true)
+  }
+  expect(circuit).toMatchPcbSnapshot(import.meta.path)
+})

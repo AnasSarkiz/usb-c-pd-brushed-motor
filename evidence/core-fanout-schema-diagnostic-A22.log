@@ -1,0 +1,45 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/breakout/fanout-group-schema.test.tsx:
+Invalid emitted element {
+  type: "pcb_group",
+  pcb_group_id: "pcb_group_0",
+  is_subcircuit: undefined,
+  subcircuit_id: "subcircuit_source_group_1",
+  name: "PIN_ESCAPE",
+  anchor_position: {
+    x: 0,
+    y: 0,
+  },
+  center: {
+    x: 0,
+    y: 0,
+  },
+  width: 5.3,
+  height: 4.41,
+  pcb_component_ids: [],
+  source_group_id: "source_group_0",
+  autorouter_configuration: {
+    trace_clearance: undefined,
+  },
+  anchor_alignment: undefined,
+}
+26 |   )
+27 |   await circuit.renderUntilSettled()
+28 |   for (const element of circuit.getCircuitJson())
+29 |     if (!any_circuit_element.safeParse(element).success) console.error("Invalid emitted element", element)
+30 |   for (const element of circuit.getCircuitJson())
+31 |     expect(any_circuit_element.safeParse(element).success).toBe(true)
+                                                                ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/breakout/fanout-group-schema.test.tsx:31:60)
+(fail) transparent fanout groups emit valid enclosing-subcircuit associations and optional anchors [116.91ms]
+
+ 0 pass
+ 1 fail
+ 33 expect() calls
+Ran 1 test across 1 file. [799.00ms]

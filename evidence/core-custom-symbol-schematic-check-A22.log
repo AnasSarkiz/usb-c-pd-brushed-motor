@@ -1,0 +1,10 @@
+<SchematicSheet name="dump" id="schematic_sheet_7">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="Q3" positionAnchor="center" schX="-5.36" schY="4" width="0.68" height="0.4" />
+<SchematicBoxPlacement componentName="R70" positionAnchor="center" schX="-5.5" schY="-4" width="0.6" height="0.65" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<SchematicTextCollision schematicTextId="schematic_text_68" text="Q3 · AO3400A" collidingObjectType="trace" collidingObjectId="schematic_trace_229" newSchX="-4.6" newSchY="3.35" message="Text &quot;Q3 · AO3400A&quot; overlaps trace schematic_trace_229; reposition the text to leave its visible area clear." />
+<SchematicTextCollision schematicTextId="schematic_text_69" text="Q4 · MMBT3904" collidingObjectType="trace" collidingObjectId="schematic_trace_229" newSchX="-4.6" newSchY="-0.65" message="Text &quot;Q4 · MMBT3904&quot; overlaps trace schematic_trace_229; reposition the text to leave its visible area clear." />
+</SchematicPlacementIssues>
+</SchematicSheet>

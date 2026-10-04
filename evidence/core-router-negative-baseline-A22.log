@@ -1,0 +1,38 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/autorouter-preset-explicit-settings2.test.ts:
+12 |     const config = getPresetAutoroutingConfig({
+13 |       preset,
+14 |       allowViaInPad: false,
+15 |       traceClearance: 0.25,
+16 |     })
+17 |     expect(config.allowViaInPad).toBe(false)
+                                      ^
+error: expect(received).toBe(expected)
+
+Expected: false
+Received: undefined
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/features/autorouter-preset-explicit-settings2.test.ts:17:34)
+(fail) normalized supported presets retain explicitly authored safety settings [1.16ms]
+
+tests/features/autorouter-preset-explicit-settings.test.tsx:
+23 |       <resistor name="R2" resistance="1k" footprint="0603" pcbX={3} />
+24 |       <trace from=".R1 > .pin2" to=".R2 > .pin1" />
+25 |     </board>,
+26 |   )
+27 |   await circuit.renderUntilSettled()
+28 |   expect(input?.allowViaInPad).toBe(false)
+                                    ^
+error: expect(received).toBe(expected)
+
+Expected: false
+Received: undefined
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/features/autorouter-preset-explicit-settings.test.tsx:28:32)
+(fail) local preset preserves explicit clearance and via prohibition in actual router input [237.67ms]
+
+ 0 pass
+ 2 fail
+ 2 expect() calls
+Ran 2 tests across 2 files. [1249.00ms]

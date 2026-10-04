@@ -1,0 +1,27 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/components/primitive-components/board-mounted-hole-schema.test.tsx:
+(pass) standalone mounting holes omit an absent component association [27.08ms]
+
+tests/components/primitive-components/hole-oval.test.tsx:
+(pass) Hole component with oval shape [174.53ms]
+
+tests/components/primitive-components/hole-rect.test.tsx:
+(pass) Hole component with rect shape [158.09ms]
+
+tests/components/primitive-components/hole-in-footprint.test.tsx:
+(pass) Hole in footprint [7.91ms]
+
+tests/components/primitive-components/hole-pill-rotated.test.tsx:
+(pass) Hole component with rotated pill shape [163.90ms]
+
+tests/components/primitive-components/hole.test.tsx:
+(pass) Hole component rendering [156.93ms]
+
+tests/components/primitive-components/hole-pill.test.tsx:
+(pass) Hole component with pill shape [151.91ms]
+
+ 7 pass
+ 0 fail
+ 36 expect() calls
+Ran 7 tests across 7 files. [1481.00ms]

@@ -1,0 +1,35 @@
+Usage: tsci snapshot [options] [path]
+
+Generate schematic and PCB snapshots (add --3d for 3d preview)
+
+Arguments:
+  path                              Path to file, directory, or glob pattern
+                                    (e.g., 'examples/**/*.tsx')
+
+Options:
+  --x-ray-net <name-or-id>          Inspect a PCB net by exact name, display
+                                    name, or connected element ID (repeatable)
+                                    (default: [])
+  --hidden-layer-opacity <opacity>  Other copper opacity during X-Ray, from 0 to
+                                    1 (default: 0.2)
+  -u, --update                      Update snapshots on disk
+  --force-update                    Force update snapshots even if they match
+  --3d                              Generate 3d preview snapshots
+  --pcb-only                        Generate only PCB snapshots
+  --schematic-only                  Generate only schematic snapshots
+  --simulation-only                 Generate only simulation snapshots
+  --layer <layer>                   Generate a PCB snapshot for one layer: top
+                                    or bottom (implies --pcb-only)
+  --disable-parts-engine            Disable the parts engine
+  --show-courtyards                 Show courtyard outlines in PCB snapshots
+  --camera-preset <preset>          Camera angle preset for 3D snapshots
+                                    (implies --3d). Valid presets: top-down,
+                                    top-down-ortho, top-left-corner, top-left,
+                                    top-right-corner, top-right, left-sideview,
+                                    right-sideview, front, top-center-angled
+  --ci                              Enable CI mode with snapshot diff artifacts
+  --test                            Enable test mode with snapshot diff
+                                    artifacts
+  --concurrency <number>            Number of files to snapshot in parallel
+                                    (default: 1) (default: "1")
+  -h, --help                        display help for command

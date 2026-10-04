@@ -1,0 +1,22 @@
+bun install v1.3.9 (cf6cdbbb)
+Resolving dependencies
+Resolved, downloaded and extracted [511]
+warn: incorrect peer dependency "react@19.3.0"
+
++ @biomejs/biome@1.9.4 (v2.5.15 available)
++ @resvg/resvg-js@2.6.2
++ @types/bun@1.4.2
++ looks-same@9.0.1 (v10.0.1 available)
++ stack-svgs@0.0.1
++ typescript@5.9.3 (v7.0.2 available)
++ @tscircuit/math-utils@0.0.36 (v0.0.38 available)
++ @types/rbush@4.0.0
++ circuit-json-to-connectivity-map@0.0.19 (v0.0.33 available)
++ flatbush@4.6.2
++ graphics-debug@0.0.99 (v0.0.100 available)
++ polished@4.3.1
++ rbush@4.0.1
+
+124 packages installed [5.58s]
+
+Blocked 1 postinstall. Run `bun pm untrusted` for details.

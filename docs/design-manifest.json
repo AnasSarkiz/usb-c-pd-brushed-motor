@@ -376,13 +376,13 @@
   },
   {
     "ref": "R13",
-    "code": "C25980",
+    "code": "C23215",
     "sheet": "input",
     "pins": {
       "pin1": "INPUT_ILIM",
       "pin2": "GND"
     },
-    "purpose": "7.15 k\u03a9 eFuse limit; 2.243\u20132.797 A including IC/resistor tolerances",
+    "purpose": "6.98 k\u03a9 eFuse limit; 2.298\u20132.865 A including IC/resistor tolerances; 5% qualification reserve",
     "nc": []
   },
   {
@@ -873,14 +873,15 @@
   },
   {
     "ref": "R32",
-    "code": "C23348",
+    "code": "C22967",
     "sheet": "protection",
     "pins": {
       "pin1": "VREF2V5",
       "pin2": "UV_REF"
     },
-    "purpose": "0.727 V undervoltage reference top",
-    "nc": []
+    "purpose": "27 kOhm UV-reference upper divider; conservative comparator tolerance margin",
+    "nc": [],
+    "import_path": "imports/A_0603WAF2702T5E.tsx"
   },
   {
     "ref": "R33",
@@ -1024,7 +1025,7 @@
       "pin1": "VM",
       "pin2": "DUMP_MID_A"
     },
-    "purpose": "10 ohm/2 W; two 20 ohm parallel branches",
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches",
     "nc": []
   },
   {
@@ -1035,7 +1036,7 @@
       "pin1": "DUMP_MID_A",
       "pin2": "DUMP_LOAD"
     },
-    "purpose": "10 ohm/2 W; two 20 ohm parallel branches",
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches",
     "nc": []
   },
   {
@@ -1046,7 +1047,7 @@
       "pin1": "VM",
       "pin2": "DUMP_MID_B"
     },
-    "purpose": "10 ohm/2 W; two 20 ohm parallel branches",
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches",
     "nc": []
   },
   {
@@ -1057,7 +1058,7 @@
       "pin1": "DUMP_MID_B",
       "pin2": "DUMP_LOAD"
     },
-    "purpose": "10 ohm/2 W; two 20 ohm parallel branches",
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches",
     "nc": []
   },
   {
@@ -1407,14 +1408,15 @@
   },
   {
     "ref": "C33",
-    "code": "C14663",
+    "code": "C1653",
     "sheet": "pdhost",
     "pins": {
       "pin1": "ADC_VBUS",
       "pin2": "GND"
     },
     "nc": [],
-    "purpose": "VBUS ADC filtering; about 0.91 ms"
+    "purpose": "22 pF C0G fast ADC sensing; acquisition/noise qualification required",
+    "import_path": "imports/CL10C220JB8NNNC.tsx"
   },
   {
     "ref": "R62",
@@ -1497,25 +1499,27 @@
   },
   {
     "ref": "C34",
-    "code": "C14663",
+    "code": "C1653",
     "sheet": "pdhost",
     "pins": {
       "pin1": "ADC_VM",
       "pin2": "GND"
     },
     "nc": [],
-    "purpose": "Motor-rail ADC filtering; about 0.91 ms"
+    "purpose": "22 pF C0G fast ADC sensing; acquisition/noise qualification required",
+    "import_path": "imports/CL10C220JB8NNNC.tsx"
   },
   {
     "ref": "R65",
-    "code": "C844918",
+    "code": "C25950",
     "sheet": "protection",
     "pins": {
       "pin1": "OV_REF",
       "pin2": "GND"
     },
     "nc": [],
-    "purpose": "10 k\u03a9 OV-reference lower divider"
+    "purpose": "11 kOhm OV-reference lower divider; conservative comparator tolerance margin",
+    "import_path": "imports/A_0603WAF1102T5E.tsx"
   },
   {
     "ref": "R68",
@@ -1527,5 +1531,119 @@
     },
     "nc": [],
     "purpose": "1 kOhm/0.5 W motor-rail discharge; 3 s power-sequencing timeout; thermal verification pending"
+  },
+  {
+    "ref": "TP1",
+    "code": "C2906768",
+    "sheet": "pdhost",
+    "pins": {
+      "pin1": "SWDIO"
+    },
+    "purpose": "SWDIO accessible programming/measurement contact",
+    "nc": []
+  },
+  {
+    "ref": "TP2",
+    "code": "C2906768",
+    "sheet": "pdhost",
+    "pins": {
+      "pin1": "SWCLK"
+    },
+    "purpose": "SWCLK accessible programming/measurement contact",
+    "nc": []
+  },
+  {
+    "ref": "TP3",
+    "code": "C2906768",
+    "sheet": "pdhost",
+    "pins": {
+      "pin1": "MCU_NRST"
+    },
+    "purpose": "MCU_NRST accessible programming/measurement contact",
+    "nc": []
+  },
+  {
+    "ref": "TP4",
+    "code": "C2906768",
+    "sheet": "pdhost",
+    "pins": {
+      "pin1": "GND"
+    },
+    "purpose": "GND accessible programming/measurement contact",
+    "nc": []
+  },
+  {
+    "ref": "TP5",
+    "code": "C2906768",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "VCC3V3"
+    },
+    "purpose": "VCC3V3 accessible programming/measurement contact",
+    "nc": []
+  },
+  {
+    "ref": "TP6",
+    "code": "C2906768",
+    "sheet": "usb",
+    "pins": {
+      "pin1": "VBUS"
+    },
+    "purpose": "VBUS accessible programming/measurement contact",
+    "nc": []
+  },
+  {
+    "ref": "TP7",
+    "code": "C2906768",
+    "sheet": "motor",
+    "pins": {
+      "pin1": "VM"
+    },
+    "purpose": "VM accessible programming/measurement contact",
+    "nc": []
+  },
+  {
+    "ref": "R69",
+    "code": "C2991665",
+    "sheet": "dump",
+    "pins": {
+      "pin1": "VM",
+      "pin2": "DUMP_MID_C"
+    },
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches",
+    "nc": []
+  },
+  {
+    "ref": "R70",
+    "code": "C2991665",
+    "sheet": "dump",
+    "pins": {
+      "pin1": "DUMP_MID_C",
+      "pin2": "DUMP_LOAD"
+    },
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches",
+    "nc": []
+  },
+  {
+    "ref": "R71",
+    "code": "C2991665",
+    "sheet": "dump",
+    "pins": {
+      "pin1": "VM",
+      "pin2": "DUMP_MID_D"
+    },
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches",
+    "nc": []
+  },
+  {
+    "ref": "R72",
+    "code": "C2991665",
+    "sheet": "dump",
+    "pins": {
+      "pin1": "DUMP_MID_D",
+      "pin2": "DUMP_LOAD"
+    },
+    "purpose": "10 ohm/2 W; four 20 ohm parallel dump branches",
+    "nc": []
   }
 ]

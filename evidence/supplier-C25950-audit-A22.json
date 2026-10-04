@@ -1,0 +1,68 @@
+{
+  "revision": "A22",
+  "supplierCount": 1,
+  "totalPcbTraces": 0,
+  "issues": [],
+  "parts": [
+    {
+      "code": "C25950",
+      "ref": "R65",
+      "sourceSha256": "e52692c9e5924cd71491838f6bd50920b881d6fe1b243d75bb717affc40651f5",
+      "path": "dist/tests/supplier-audit/C25950/circuit.json",
+      "ports": [
+        {
+          "alias": "pin1",
+          "pinNumber": 1,
+          "pcbPortId": "pcb_port_0",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_0",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": -0.75335,
+              "y": 0,
+              "width": 0.8065,
+              "height": 0.864,
+              "layer": "top",
+              "port_hints": [
+                "1"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_0",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        },
+        {
+          "alias": "pin2",
+          "pinNumber": 2,
+          "pcbPortId": "pcb_port_1",
+          "pads": [
+            {
+              "type": "pcb_smtpad",
+              "shape": "rect",
+              "pcb_smtpad_id": "pcb_smtpad_1",
+              "subcircuit_id": "subcircuit_source_group_0",
+              "x": 0.75335,
+              "y": 0,
+              "width": 0.8065,
+              "height": 0.864,
+              "layer": "top",
+              "port_hints": [
+                "2"
+              ],
+              "pcb_component_id": "pcb_component_0",
+              "pcb_port_id": "pcb_port_1",
+              "is_covered_with_solder_mask": false
+            }
+          ]
+        }
+      ],
+      "pcbTraceCount": 0,
+      "diagnostics": [],
+      "issues": [],
+      "status": "electrical/schema pass; metadata and mechanical approval separate"
+    }
+  ]
+}

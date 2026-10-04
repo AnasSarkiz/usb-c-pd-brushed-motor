@@ -1,3 +1,149 @@
+# A22 functional placement validated — 2026-10-04
+
+Untested engineering prototype. All five native preroute commands pass on the
+corrected component coordinates/rotations (`local-decoupling-all-preroute-accepted-A22.log`).
+Pin-specification has57 individually reviewed supplier metadata advisories; no
+unresolved error or geometric warning is suppressed. Final changes to three
+operator labels are PCB text only and do not change these checked connections,
+component geometry or schematic sheets.
+
+Fresh full build (`local-decoupling-label-build-A22.log`) passes. Its SHA256 is
+`f2125d20d7df28d03ad39f37ca5c87125816afe3000917c4297f63f2fb14be91`:4985 records,140 purchased/152 PCB components,
+12 original imported EP vias, zero routed traces. Strict schema, supplier
+transforms/pads/ports, native full-artifact placement, connectivity and163 artwork
+labels pass; see `local-decoupling-label-{schema,geometry,native,connectivity,artwork}-A22.log`.
+Both freshly rendered faces were visually inspected. All eight A4 sheets were
+inspected after final component rotations; subsequent PCB text edits leave them
+unchanged. Source/artifact binding is `local-decoupling-validation-binding-A22.json`.
+Formatting and TypeScript pass; full suite37 tests/458 assertions passes.
+
+Stages1–3:passed at the documented conditional prototype level. Stage4:in progress;
+routing may now resume. Stages5–6:not started. Stage7:not started, physical tests
+pending. Stage8:blocked by missing configured GitHub remote; neither remote push
+nor package publication has succeeded. Local routing continues. Firmware remains
+fail-closed until the documented external NVM/RX/measurement approvals exist.
+No fabrication approval or hardware rating is claimed.
+
+---
+
+# A22 routing implementation in progress — 2026-10-04
+
+The previous geometric placement milestone below remains historical evidence.
+A subsequent functional review found distant bypass/compensation parts; their
+placements are corrected in native source and require renewed full validation.
+The current board uses native PD/MCU dogbone fanout groups; routing is temporarily
+disabled while their full-board prerequisites are revalidated. No fabrication
+approval, routed pass or physical rating is claimed.
+
+Five native routing attempts were rejected: first72 DRC/14 bitmap shorts;
+second and third endpoint-preservation failures with zero traces; fourth113 DRC/
+44 bitmap shorts; pipeline7 fifth384 DRC. Actual fourth-run power-path measurements
+also found long0.20 mm runs; nominal2 mm net settings are insufficient evidence.
+Each failed artifact/log is retained in evidence. No failed copper is exported
+as a fabrication-ready revision.
+
+Canonical core source fixes preserve explicit router safety controls and cache
+supplier geometry without hiding fetch failures. They also correct custom-symbol
+port selectors, fanout discovery ordering/alias resolution, and transparent-group
+schema metadata. Official imports remain untouched. Source-built core0.0.2079 is installed consistently through the frozen lockfile.
+All five native source checks passed before the latest functional placement
+revision. The revised coordinates are now being checked; see core-source-fix-A22/provenance.json and logs.
+
+Local linked firmware, power calculations and140-part/58-code BOM are complete
+at their documented conditional prototype level. Physical motor/PD/ADC/thermal
+qualification remains pending. GitHub publication is blocked because this task's
+Git repository has no configured remote; independent local implementation continues.
+
+---
+
+# A22 validated placement milestone — 2026-10-04
+
+**Untested engineering prototype:140 purchased components/58 official supplier codes,
+eight native A4 sheets,80×65 mm two-layer1 oz board. Prerequisites for local routing
+passed. Physical motor/PD/ADC/thermal qualification remains pending.**
+
+|Stage|Status|Evidence and limits|
+|---|---|---|
+|1 Requirements|passed|Explicit5/9/12 V selector,2 A intended target, declared0–40°C initial prototype envelope and manufacturing process. No measured rating.|
+|2 Schematic/BOM|passed|58 fresh official probes pass strict schema/pin/pad checks;140-part connectivity audit passes;91 exact metadata advisories individually retained/reviewed; all8 sheets visually inspected. Prototype limits below remain explicit.|
+|3 Placement|passed|All five required native checks pass; direct full4939-record artifact has152 PCB components,140 purchased sources,12 original EP vias and zero traces. Supplier transforms, pads/ports, mounting/access and162 artwork labels pass. Both faces inspected.|
+|4 Routing|in progress|Prerequisites passed; source/config/build disable controls removed, local native router and two GND pours enabled. New routed via-in-pad prohibited. No routing success claimed yet.|
+|5 Routed checks|not started|Await copper, shorts, geometry and visual review.|
+|6 Fabrication|not started|Await reviewable exact-revision Gerber/drill/BOM/PnP package; no order.|
+|7 Physical prototype|not started|No physical measurements invented. Inhibited diagnostic image allows first board bring-up.|
+|8 Publication|blocked|Independent task Git main has no remote. No GitHub push or package publication succeeded; local implementation continues.|
+
+Current tooling is tscircuit0.0.2743/CLI0.1.2237, source-built core0.0.2074 and
+props0.0.682, strict official Circuit JSON0.0.511, Bun1.3.9/TS5.9.3/Biome2.5.14.
+Canonical source patches/tarballs/tests/provenance are retained; imports remain
+unchanged. Custom imported symbol rotation is fixed at its core graphics/port
+root cause, with positive and negative regressions and visually inspected snapshot.
+
+Latest actual checks:preroute-final-threshold-A22.log (all5),
+schema-final-preroute-A22.log (4939 records/0 errors),
+geometry-final-preroute-A22.log (140/140/12 vias/0 issues),
+connectivity-final-preroute-A22.log (140/58/0 issues/91 reviewed advisories),
+threshold-import-audit-A22.log (58/0 issues), threshold-artwork-final-A22.log
+(162/0 issues),full-product-tests-A22.log (36 pass/0 fail/456 expects),
+full-product-typecheck-A22.log and format-final-preroute-A22.log (pass).
+R32/R65 changed to27 kΩ/11 kΩ after the real5 V comparator overlap defect;
+all3×16,384 declared analog corners now pass. Six manufacturer-model switching
+cases pass the declared±5% voltage screen; see POWER-PROTOTYPE-A22.md for
+conditional assumptions, nonphysical ideal-source impulses and remaining tests.
+
+The linked14-module STM32 diagnostic image occupies20,352 flash bytes and448
+static RAM bytes;2,048-byte stack reservation exceeds the948-byte static call/
+interrupt screen. Actual ELF/BIN/map/vector/source hashes are retained. Updated
+I2C timing inequalities pass conditionally; exact G0 manual/captures remain
+qualification evidence. The motor-enabled build correctly refuses absent
+approved40-byte NVM/RX-path/measurement provisioning. The MCU keeps PWM and
+direction entirely hardware controlled. No raw sample becomes voltage approval.
+
+Prototype limitations:initial motor stored energy≤1 mJ, expanded braking tests
+require measured clamp/SOA;5 V current regulation accuracy and2 A continuous
+thermal behavior remain unqualified. C18 is fitted/hand-soldered after SMT,
+all14 THT electrical pads have no paste,12 EP vias require filled/capped process,
+seven Keystone contacts require procurement/manual fit (public action Pre-order).
+Short imported plated slots and two-layer via-fill/cap options require CAM/process
+acceptance before an order. These do not prevent preparing the prototype files.
+
+Prior A22 working notes below are historical and superseded where stated above.
+
+---
+
+# A22 implementation — 2026-10-04 — in progress
+
+**Unrouted WIP prototype; 140 purchased components / 58 supplier codes. Numeric product placement is implemented at 80 × 65 mm, with four 3.2 mm NPTH holes on 70 × 55 mm centers and 7 mm fastener clearance regions.** The outline was enlarged to fit the added power protection, dump bank and controls. Routing remains disabled in source, configuration and build commands.
+
+| Stage | Status | Current evidence / remaining work |
+|---|---|---|
+| 1. Requirements | in progress | Product function retained; intended approximately 2 A output, 5/9/12 V selector; final thermal, current and regenerative energy envelope pending. |
+| 2. Schematic/BOM | in progress | Fresh full board strict schema and electrical connectivity pass, 140 components / 58 supplier codes / eight A4 sheets; 91 individually bound metadata advisories retained. Current all-supplier revalidation and sheet/process/electrical/firmware closure continue. |
+| 3. Product placement | in progress | Native numeric manualEdits, actual mounting holes/keepouts and connector/control reservations. Placement passed after rotations; visual review found artwork overlaps. Front artwork and probe placement now revised and require renewed checks. |
+| 4. Routing | not started | Disabled; no routed traces or pours. Existing 12 imported EP vias retained; new routed via-in-pad prohibited. |
+| 5. Routed validation | not started | No routed copper, shorts or final snapshot approval. |
+| 6. Fabrication | not started | No reviewed Gerber/drill/PnP package or order. |
+| 7. Physical prototype | not started | No measured motor, PD, ADC/noise, thermal, stall or reversal evidence. |
+| 8. Store release | not started | GitHub remote absent; no publication succeeded. This does not halt local implementation. |
+
+## Completed work and evidence so far
+
+- Toolchain: tscircuit 0.0.2743, CLI 0.1.2237, source-built core base 0.0.2073 and props base 0.0.682. Official circuit-json 0.0.511 remains strict and unchanged. Core's existing getCoreVersion reports the next patch (0.0.2074); package/source/archive hashes identify the actual build. No imported electronic definition is patched.
+- Core fixes: native mounting/plated-hole association normalization; standalone board text uses the existing Board-information association. Explicit pcbPlatedHoleSolderPaste assembly choice excludes hand-soldered THT from stencil, with legacy both-layer default preserved. Five focused core regressions / 344 assertions pass, source TypeScript and configured build pass; snapshots rendered and actually inspected. Props: all 601 tests / 2068 assertions pass, TypeScript/build and all four generation scripts pass. Source patches, exact bases, tests, snapshots and archive hashes are under evidence/{core,props}-source-fix-A22.
+- Dependency reconciliation: clean frozen-lockfile installation plus explicit core/props overrides makes direct and umbrella consumers use the same source fix. Failed nested-package and network-limited builds are retained. Final network-enabled build contains no supplier-fetch warnings. No generated Circuit JSON rewrite was used.
+- Fresh full board: schema-network-source-fixes-A22.log reports 4952 elements / zero schema errors. schematic-network-source-fixes-A22.log reports 140 components / 58 supplier codes / zero connectivity issues / 91 reviewed advisories / zero routes. 14 THT pads remain electrically intact with zero THT paste; SMT paste remains, and 12 original EP vias remain.
+- Required preroute source checks completed before the latest artwork/placement adjustment; placement-transitive-fixes-A22.log also directly checks the full generated artifact with zero issues, zero errors and zero warnings. These are historical for the subsequent artwork/measurement-contact movement; rerun affected checks before accepting placement. A zero-PCB schematic-only artifact is never valid placement evidence.
+- Board TypeScript and configured formatting pass after upstream test evidence was stored as text rather than compiled as board tests; local package-store files are excluded from the board formatter as installed tooling. Complete board suite: 31 tests / 429 assertions pass. Power report passes its stated analytic assumptions; it is not a transient/thermal rating.
+- Hardware changes: official C23215 / 6.98 kΩ sets conservative input-current bounds with temperature allowance. Policy chooses 15 V for qualified 5 V mode and 20 V for 9/12 V, uses input reserve and refuses inadequate sources. Seven official C2906768 / Keystone 5015 contacts expose SWDIO/SWCLK/NRST/GND/3V3/VBUS/VM. JLC assembly eligibility/stock for the 58 current codes is archived in jlc-assembly-stock-A22.json.
+- Regenerative bank now has eight unchanged C2991665 / 10 Ω 2 W resistors: four 20 Ω branches, effective 5 Ω, 16 W sum of component ratings. Tolerance/derating, worst independent component power and manufacturer two-second overload screening are implemented/tested. Sum-of-ratings is not continuous board dissipation approval; analog threshold/response, repetition/energy and thermal closure remain in progress.
+- Firmware: actual GPIO permission/feedback application and idle ADC rearming are implemented with readback/fault/rollover tests. Qualified ADC intervals, linked target runtime and fresh PD/NVM integration remain unfinished. No object-only compile is described as a linked/flashable image.
+
+See docs/IMPLEMENTATION-CHECKLIST.md for remaining implementation work. Current changes are uncommitted pending this implementation milestone's checks. Task Git HEAD remains 19e78be; no GitHub remote is configured and no tscircuit package update has succeeded. No hardware testing or fabrication readiness is claimed.
+
+---
+
+A21 and earlier records below are historical.
+
 # A21 validation — 2026-10-03
 
 **Unrouted WIP prototype; hardware/BOM remain A19,129 purchased components/57 supplier codes. Product placement is unstarted.** PD/VM decisions now contain entire explicit voltage-uncertainty intervals, and VM rise during request/contract waiting aborts power permission. No calibrated physical measurement adapter or hardware qualification is implied.

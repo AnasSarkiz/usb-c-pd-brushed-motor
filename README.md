@@ -1,33 +1,53 @@
-# USB-C PD brushed DC motor controller — A21 voltage uncertainty integration step
+# USB-C PD brushed DC motor controller — A22 prototype
 
-Connected tscircuit prototype for one 5/9/12 V brushed motor, targeting approximately 2 A continuous. One USB-C power input, regulated motor voltage, hardware speed potentiometer, FWD/OFF/REV switch, DRV8874 H-bridge, power/direction LEDs and one motor screw terminal. The user approved an MCU only for PD qualification; PWM remains hardware controlled.
+One5/9/12 V brushed motor, approximately2 A continuous target, one USB-C PD
+input, regulated motor voltage, hardware10 kΩ speed potentiometer,
+FWD/OFF/REV switch, DRV8874, three LEDs and one motor terminal. The MCU only
+qualifies PD power and rail voltage; speed and direction remain hardware controlled.
 
-**Not ready for placement, routing or fabrication.** All 57 active supplier models pass the electrical/pad/schema audit. The 12 imported thermal vias are accepted under the explicitly authorized checker policy; new routed via-in-pad remains prohibited. The explicit-coordinate defect remains in official packages. A12 independently validates the native numeric manual-placement API on a supplier-backed probe; unit-string manual placement still fails. Power/firmware qualification remains open. Selector mechanics and the simplification pass are documented. No physical hardware has been tested.
+**Placement is validated; routing is the current implementation stage.**
+The80×65×1.6 mm two-layer1 oz board has140 purchased components/58 unchanged
+official JLCPCB imports and four3.2 mm mounting holes. All8 A4 sheets and both
+placement faces were inspected. Strict schema, import/connectivity, five native
+preroute checks, artwork, formatting, TypeScript and36 tests pass. No physical
+hardware or continuous-current rating is verified.
 
-Use this task directory for every command. Entry point: index.circuit.tsx. Dependencies are pinned to tscircuit 0.0.2742 / CLI 0.1.2237 / core 0.0.2056. Every electronic component is an unchanged official JLCPCB import; no custom or patched component is used.
+Run every command from this directory. Install with `bun install --frozen-lockfile`.
+Use `bun run format:check`, `bun run typecheck`, `bun run test`, `bun run power:report`
+and `bun run build`. Core/props source fixes are reproducible tarballs with patches,
+upstream bases and regression evidence; no installed dependency or supplier part
+was patched. Use explicit A22 audit configurations to avoid overwriting history.
 
-- docs/BOM.csv: current 129 components / 57 supplier parts, dates and pending approvals.
-- VALIDATION.md: current gates, checks and historical evidence.
-- docs/ARCHITECTURE.md: connected circuit and electrical limitations.
-- docs/PD-VOLTAGE-INTERVALS.md: whole-interval voltage checks, invalid-measurement inhibition and request-wait back-drive rejection.
-- docs/STM32-ADC.md: bounded real-peripheral raw sampling, calibration and failure inhibition; voltage qualification integration pending.
-- docs/ADC-SENSING.md: precision sensing replacements and conservative rail/decay uncertainty screen.
-- docs/STM32-SAFE-GPIO.md: actual STM32 pin initialization/inhibition, bonded aliases and unchanged vendor definitions.
-- docs/PD-RDO-CURRENT.md: source/operating-current correction, malformed-RDO rejection and passing regression evidence.
-- docs/PD-QUALIFICATION.md: selector, voltage-aware contract policy and incomplete embedded port.
-- docs/STUSB4500-RX.md: bounded receive handling, manufacturer-register discrepancies and pending target integration.
-- docs/STUSB4500-NVM.md: complete stored-image readback transport; approved manufacturer image still pending.
-- docs/STUSB4500-STARTUP.md: checked standby initialization and new-capability acquisition with no motor-power permission.
-- docs/STUSB4500-REQUEST.md: verified RAM profile write/readback and pending fresh-contract integration.
-- docs/BUCK-MODEL.md: passing exact-manufacturer CCM screen and remaining electrical limits.
-- docs/DIRECTION-CONTROL.md and docs/SIMPLIFICATION.md: implemented direct-PWM architecture and part-count review.
-- dist/review/1-usb.svg through 8-pdhost.svg: eight native A4 schematic sheets, with warnings visible.
+- `VALIDATION.md`: current gates and exact evidence.
+- `docs/BOM.csv`:140 purchased components/58 supplier codes and dated assembly stock.
+- `docs/PLACEMENT.md`:80×65 mm actual controls, access, holes and clearance.
+- `docs/POWER-PROTOTYPE-A22.md`:corrected analog thresholds, PD reserve,
+  six switching-model cases, thermal and bounded regeneration requirements.
+- `docs/STM32-RUNTIME-A22.md` and `docs/I2C-TIMING.md`:linked timestamped runtime,
+  conservative intervals, permission ordering and transport qualification.
+- `docs/ASSEMBLY-PROCESS-A22.md`:hand-fit C18/THT/contacts, EP fill/cap and
+  short-slot CAM acceptance before an order.
+- `docs/PROTOTYPE-TEST-PLAN.md`:physical qualification remains pending.
 
-Viewed from above with ON at the top, both voltage DIP bits OFF select 5 V; right ON selects 9 V; left ON selects 12 V; both ON inhibit. Footprint-local numbering and nominal mechanics are reconciled; physical continuity/orientation still require prototype verification. Only adequate 15/20 V PD contracts may enable the motor. A 5 V-only or insufficient source leaves it off; native 12 V PD is not required. Do not assume any 45/60 W charger offers the exact accepted PDO/current profile. See the qualification policy.
+With ON at the left in the placed product, both voltage bits OFF select5 V,
+9 ON selects9 V,12 ON selects12 V,both ON inhibit.5 V prefers adequate15 V,
+9/12 V require adequate20 V under the conservative budget; native12 V is not
+required. Non-PD and insufficient sources leave the motor off.
 
-Development checks: bun run format:check, bun run typecheck, bun run test and bun run power:report. For a schematic-only review use `bunx tsci build index.circuit.tsx --disable-pcb --routing-disabled --schematic-svgs`, then `bun scripts/audit-schematic.ts` and `bun scripts/render-schematic-sheets.ts`. Full board/placement validation currently fails and must not be bypassed. All supplier probes live under tests/supplier-audit; run each with the official single-file CLI and inspect evidence/active-import-audit-A11.json. Unused A10 candidates have a separate audit; C178373 is the active provisional C18.
+`bun run firmware:bringup` links the inhibited diagnostic ELF/BIN/map with20,352
+flash bytes,448 static RAM bytes and2 KiB stack. `firmware:qualified` requires
+independently approved complete40-byte NVM, receive-path and measured ADC
+provisioning. No synthetic approval or motor-enabled image is provided.
+Initial motor tests are limited to≤1 mJ stored energy; further braking,5 V current
+regulation and2 A thermal ratings require prototype measurements.
 
-A nominal 65 x 50 mm, two-layer, 1.6 mm board remains provisional. Four mounting holes, USB-C/motor-terminal opposite edges, top-access controls, clear silkscreen and SWD/NRST test pads are requirements for the future placement stage. Routing remains explicitly disabled in both the board and configuration. No Gerbers, assembly release or order is approved. WIP source pushes and package publication are authorized by the workspace instructions; no GitHub remote is configured yet.
+No fabrication order has been placed. This independent Git main has no remote;
+GitHub/package publication remains externally blocked without stopping local work.
+
+## Historical implementation notes
+
+Earlier part counts, unplaced geometry and missing runtime claims below refer to
+their original revisions and are superseded by the current A22 evidence.
 
 A9 corrects buck input capacitance to two supplier-backed 10 µF/50 V X7R ceramics. See docs/REGULATOR-REVIEW.md, docs/SELECTOR-MECHANICS.md, docs/MCU-POWER-SEQUENCING.md and docs/TOOLING-ISSUES.md for evidence and remaining gates. Routing stays disabled.
 

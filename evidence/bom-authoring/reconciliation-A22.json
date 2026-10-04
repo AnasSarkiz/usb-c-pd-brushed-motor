@@ -1,0 +1,10 @@
+{
+  "componentCount": 140,
+  "supplierCount": 58,
+  "inspections": [
+    "{\"kind\":\"table\",\"sheet\":\"BOM\",\"address\":\"A14:O14\",\"rows\":1,\"cols\":15,\"values\":[[\"R4,R8,R18,R24,R56,R58,R59,R63,R64\",9,\"100kohm\",\"UNI-ROYAL\",\"0603WAF1003T5E\",\"C25803\",\"0603\",\"Default run/reset low; 13.2 V input UV threshold top; 100 k feedback upper segment; Default buck disabled; Default-off eFuse host enable; Selector 9 V bit default low; Selector 12 V bit default low; 9 V feedback branch default off; 12 V feedback branch default off\",\"imports/A_0603WAF1003T5E.tsx\",22108635,\"JLCPCB Basic assembly listing; stock snapshot, not reserved\",\"https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF1003T5E\",\"https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803\",\"A22 unchanged official import/schema/pin/pad audit passed; prototype qualification and assembly process pending\",\"2026-10-03\"]]}",
+    "{\"kind\":\"table\",\"sheet\":\"BOM\",\"address\":\"A59:O59\",\"rows\":1,\"cols\":15,\"values\":[[\"TP1,TP2,TP3,TP4,TP5,TP6,TP7\",7,\"5015\",\"Keystone Electronics\",\"5015\",\"C2906768\",\"SMD\",\"SWDIO accessible programming/measurement contact; SWCLK accessible programming/measurement contact; MCU_NRST accessible programming/measurement contact; GND accessible programming/measurement contact; VCC3V3 accessible programming/measurement contact; VBUS accessible programming/measurement contact; VM accessible programming/measurement contact\",\"imports/A_5015.tsx\",35,\"JLCPCB Extended assembly listing; stock snapshot, not reserved\",\"https://jlcpcb.com/parts/componentSearch?searchTxt=5015\",\"https://beta.keyelco.com/userAssets/file/M70p61.pdf\",\"A22 unchanged official import/schema/pin/pad audit passed; prototype qualification and assembly process pending\",\"2026-10-04\"]]}"
+  ],
+  "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "export": "RFC4180 serialized Artifact Tool range.values; public CSV export unavailable"
+}

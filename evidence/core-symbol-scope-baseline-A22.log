@@ -1,0 +1,9 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/components/primitive-components/schematic-symbol-selector-scope.test.tsx:
+(pass) schematicsymbol and physical chip selectors share mapped connections [1059.60ms]
+
+ 1 pass
+ 0 fail
+ 2 expect() calls
+Ran 1 test across 1 file. [1.61s]

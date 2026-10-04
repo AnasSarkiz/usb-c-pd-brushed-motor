@@ -1,0 +1,21 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/components/primitive-components/board-mounted-hole-schema.test.tsx:
+13 |       <pcbnotetext text="Four native NPTH mounting holes" pcbY={0} />
+14 |     </board>,
+15 |   )
+16 |   circuit.render()
+17 |   for (const hole of circuit.db.pcb_hole.list()) {
+18 |     expect(hole.pcb_component_id).toBeUndefined()
+                                       ^
+error: expect(received).toBeUndefined()
+
+Received: null
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/components/primitive-components/board-mounted-hole-schema.test.tsx:18:35)
+(fail) standalone mounting holes omit an absent component association [18.88ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [1249.00ms]

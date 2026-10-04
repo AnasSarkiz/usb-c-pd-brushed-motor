@@ -1,0 +1,51 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/features/autorouter-preset-explicit-settings.test.tsx:
+(pass) local preset preserves explicit clearance and via prohibition in actual router input [138.61ms]
+
+tests/features/custom-symbol-pcb-port-selector.test.tsx:
+(pass) custom JSX symbol resolves the same physical PCB port through routing selectors [18.26ms]
+
+tests/features/supplier-circuit-json-cache.test.ts:
+(pass) supplier cache deduplicates concurrent calls, expires success, and propagates failures [7.29ms]
+
+tests/selector-index/selector-index1.test.tsx:
+(skip) selector-index1
+
+tests/selector-index/selector-index2.test.tsx:
+(skip) selector-index2
+
+tests/components/primitive-components/schematic-symbol-selector-scope.test.tsx:
+61 |     </board>,
+62 |   )
+63 | 
+64 |   await circuit.renderUntilSettled()
+65 | 
+66 |   await expect(circuit).toMatchSchematicSnapshot(import.meta.path)
+                             ^
+error: 
+
+Snapshot does not match (diff 0.16%). Diff saved at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/components/primitive-components/__snapshots__/schematic-symbol-selector-scope-schematic.diff.png
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/components/primitive-components/schematic-symbol-selector-scope.test.tsx:66:25)
+(fail) schematicsymbol and physical chip selectors share mapped connections [2181.06ms]
+
+tests/components/base-components/shorthand-selector.test.tsx:
+(pass) shorthand selectors resolve correctly [15.80ms]
+(pass) shorthand selector errors use original selector [3.89ms]
+(pass) shorthand selectors resolve ports nested in custom symbol [28.13ms]
+(pass) shorthand selectors resolve ports for kicad library footprint refs [53.08ms]
+
+tests/components/base-components/trace-port-selector-errors.test.tsx:
+(pass) error when component is missing [4.65ms]
+(pass) error when component has no ports [1.52ms]
+(pass) error when component has numeric pins only [4.14ms]
+(pass) error lists available labeled pins [2.61ms]
+
+tests/components/base-components/empty-selector-cache.test.ts:
+(pass) empty selectors are cached and invalidated through ancestor tree changes [0.50ms]
+
+ 12 pass
+ 2 skip
+ 1 fail
+ 42 expect() calls
+Ran 15 tests across 9 files. [3.15s]

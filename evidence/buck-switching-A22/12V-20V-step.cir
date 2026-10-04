@@ -1,0 +1,45 @@
+A22 conditional typical switching model 12V-20V-step
+.include "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/TI-TPS54360-model-A22/TPS54360_PSPICE_TRANS/TPS54360_TRANS.LIB"
+.include "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/Panasonic-model-A14/35SVPK330M/35SVPK330M.lib"
+VIN vin 0 PWL(0 0 10u 19.45)
+VEN en 0 PWL(0 0 20u 0 21u 3.3)
+CIN vin 0 6.06u
+XU boot comp en 0 sw rt vin fb 0 TPS54360_TRANS
+CB boot sw 100n
+RT rt 0 162k
+LPOWER sw lx 8.2u
+RL lx out 27m
+DCATCH 0 sw SCHOTTKY
+.model SCHOTTKY D(IS=10u N=1 RS=30m CJO=300p BV=40 IBV=1m)
+VPOL out poly 0
+XCP poly 0 35SVPK330M
+RMLCC out ceramic 5m
+CMLCC ceramic creturn 40u
+VCS creturn 0 0
+RTOP out fb 105.1k
+RBOT fb 0 7500
+RCOMP comp cz 27k
+CCOMP cz 0 22n
+CHF comp 0 22p
+RBLEED out 0 1k
+ILOAD out 0 PWL(0 0 3m 0 3.001m 2 5m 2 5.001m 0 7m 0)
+.save v(out) i(LPOWER) v(sw) i(VPOL) i(VCS) i(VIN)
+.options method=gear reltol=0.003 abstol=1e-9 chgtol=1e-14
+.control
+tran 1u 7m 0 100n
+meas tran startup_peak MAX v(out) FROM=0 TO=3m
+meas tran step_min MIN v(out) FROM=3m TO=3.5m
+meas tran loaded_max MAX v(out) FROM=4m TO=5m
+meas tran loaded_min MIN v(out) FROM=4m TO=5m
+meas tran unload_peak MAX v(out) FROM=5m TO=7m
+meas tran inductor_peak MAX i(LPOWER) FROM=0 TO=7m
+meas tran poly_rms RMS i(VPOL) FROM=4m TO=5m
+meas tran ceramic_rms RMS i(VCS) FROM=4m TO=5m
+meas tran source_peak MIN i(VIN) FROM=3m TO=7m
+linearize v(out) i(LPOWER) i(VPOL) i(VCS) i(VIN)
+set wr_singlescale
+set wr_vecnames
+wrdata summary.txt v(out) i(LPOWER) i(VPOL) i(VCS) i(VIN)
+quit
+.endc
+.end

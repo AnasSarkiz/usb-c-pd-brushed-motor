@@ -1,6 +1,6 @@
 # Requirements and reference review
 
-Review date: 2026-10-03 (A9). Scope: schematic, manufacturer/JLCPCB BOM and unrouted component placement for one reversible brushed DC motor. This document records intent; it does not establish tested operating ratings.
+Review date: 2026-10-04 (A22). Scope: manufacturer/JLCPCB BOM, complete schematic, runtime, product placement and gated routing/fabrication preparation for one reversible brushed DC motor. This document records intent; it does not establish tested operating ratings.
 
 ## Product reference
 
@@ -20,15 +20,15 @@ Our intended function remains simple motor speed and direction control. The adde
 | Motor output | Two-pin screw terminal wired directly to the integrated H-bridge |
 | Controls | Top-access speed potentiometer and REV/OFF/FWD three-position switch |
 | Indicators | Power, FWD, REV; direction indications represent commands, not measured shaft motion |
-| Mechanical | Provisional 65 x 50 mm; four 3.2 mm NPTH holes on 55 x 40 mm centers; placement/fit not proven |
+| Mechanical | 80 × 65 mm; four 3.2 mm NPTH holes on 70 × 55 mm centers and 7 mm fastener keepouts; actual numeric placement implemented |
 | Layout | USB-C left edge, motor terminal right edge, all controls on top |
 | Layers | Initial two-layer FR-4, 1.6 mm thickness, 1 oz outer copper; increase area or layer/copper weight if thermal review requires it |
 | Temperature | Initial supervised bench-prototype planning range 0-40 C ambient, not a verified rating |
 | Simplicity | Hardware PWM; MCU only for PD/voltage qualification; no display, radio, CAN or motor sensors |
 | Schematic | Eight native A4 sheets: USB/PD, input protection, buck, controls, rail monitor, dump, bridge, qualification |
-| Current stage | Schematic/BOM validation; no product placement, routing, copper pours, fabrication exports or ordering |
+| Current stage | Placed unrouted prototype; firmware linked as inhibited diagnostics; remaining electrical analysis and final placement gates precede routing/fabrication |
 
-Motor voltage is explicitly selected by the two-slider SW2 DIP: both OFF=5 V, right ON=9 V, left ON=12 V, both ON=invalid/inhibit, viewed from above with ON at the top. See SELECTOR-MECHANICS.md for the manufacturer's unnumbered lands and imported footprint mapping. Change settings only with USB unplugged. A fresh adequate fixed high-voltage contract and correct measured VM are required before drive. Turning PWM down does not replace selecting the motor's rated voltage.
+Motor voltage is explicitly selected by the two-slider SW2 DIP: both OFF=5 V, upper slider marked 9 ON=9 V, lower slider marked 12 ON=12 V, both ON=invalid/inhibit; viewed from above with ON toward the left. See SELECTOR-MECHANICS.md for the manufacturer's unnumbered lands and imported footprint mapping. Change settings only with USB unplugged. A fresh adequate fixed high-voltage contract and correct measured VM are required before drive. Turning PWM down does not replace selecting the motor's rated voltage.
 
 ## Initial fabrication rules
 

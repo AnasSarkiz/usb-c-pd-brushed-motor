@@ -25,7 +25,7 @@ describe("A7 voltage-aware PD policy engineering screen", () => {
         }).motorMustRemainInhibited,
       ).toBe(true)
   })
-  test("5/9 V peaks fit 15 V while 12 V peaks require 20 V", () => {
+  test("5 V uses 15 V; 9/12 V retain reserve with 20 V", () => {
     for (const motorVoltageV of [5, 9, 12] as const) {
       const review = reviewMotorContracts({
         motorVoltageV,
@@ -36,7 +36,7 @@ describe("A7 voltage-aware PD policy engineering screen", () => {
         ],
       })
       expect(review.selectedContract?.voltageV).toBe(
-        motorVoltageV === 12 ? 20 : 15,
+        motorVoltageV === 5 ? 15 : 20,
       )
     }
   })
@@ -126,9 +126,61 @@ describe("A7 motor-rail-powered analog clamp", () => {
       expect(result.ovTripV).toBeGreaterThan(result.ovReleaseV)
       expect(result.ovReleaseV).toBeGreaterThan(result.nominalRailV)
       expect(result.uvV).toBeLessThan(result.nominalRailV)
-      // Four 2 W resistors require pulse-energy qualification at 12 V.
+      // Eight 2 W resistors still require a bounded pulse/repetition envelope.
       if (branch === 12_000)
-        expect(result.instantaneousDumpPowerAtTripW).toBeGreaterThan(8)
+        expect(result.instantaneousDumpPowerAtTripW).toBeGreaterThan(16)
     }
+  })
+})
+
+import { dumpResistorEnvelope } from "../scripts/motor-validation-calculations"
+describe("Four-branch regenerative resistor screen", () => {
+  test("current headroom is retained even at the lowest clamp release", () => {
+    const lowerRelease12V = railMonitorThresholdsV(12_000).ovReleaseV * 0.94
+    const bank = dumpResistorEnvelope({
+      railV: lowerRelease12V,
+      ambientC: 70,
+      pulseS: 0.1,
+      periodS: 1,
+    })
+    expect(bank.minimumSinkCurrentA).toBeGreaterThan(2.222)
+    expect(bank.maximumSinkCurrentA).toBeLessThan(4)
+    expect(bank.manufacturerSingleOverloadScreenPasses).toBe(true)
+    expect(bank.averageComponentScreenPasses).toBe(true)
+  })
+  test("a 15 V, 100 ms pulse fits the component overload screen", () => {
+    const bank = dumpResistorEnvelope({
+      railV: 15,
+      ambientC: 70,
+      pulseS: 0.1,
+      periodS: 1,
+    })
+    expect(bank.minimumSinkCurrentA).toBeGreaterThan(2.423)
+    expect(bank.worstResistorPowerW).toBeLessThan(bank.overloadPerResistorW)
+    expect(bank.worstResistorAveragePowerW).toBeLessThan(2)
+    expect(bank.worstResistorPulseEnergyJ).toBeLessThan(0.6)
+    expect(bank.repetitivePulseHardwareQualification).toBe("pending")
+  })
+  test("continuous braking and excessive pulse length are rejected", () => {
+    expect(
+      dumpResistorEnvelope({ railV: 15, ambientC: 70, pulseS: 1, periodS: 1 })
+        .averageComponentScreenPasses,
+    ).toBe(false)
+    expect(
+      dumpResistorEnvelope({
+        railV: 15,
+        ambientC: 70,
+        pulseS: 2.001,
+        periodS: 30,
+      }).manufacturerSingleOverloadScreenPasses,
+    ).toBe(false)
+    expect(() =>
+      dumpResistorEnvelope({
+        railV: 15,
+        ambientC: 155,
+        pulseS: 0.1,
+        periodS: 1,
+      }),
+    ).toThrow()
   })
 })
