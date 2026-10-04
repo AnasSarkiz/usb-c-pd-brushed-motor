@@ -1,0 +1,1 @@
+{"solved":false,"failed":true,"error":"Pipeline9 primary high-density routing failed: B01 failed: No path found for source_net_20_mst1; regional fallback failed: Pipeline9 regional force-improve output failed its candidate validator","elapsedMs":2631}

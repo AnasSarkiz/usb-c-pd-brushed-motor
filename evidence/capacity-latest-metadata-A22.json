@@ -1,0 +1,33 @@
+{
+  "url": "https://registry.npmjs.org/@tscircuit%2fcapacity-autorouter/latest",
+  "name": "@tscircuit/capacity-autorouter",
+  "version": "0.0.958",
+  "dist": {
+    "shasum": "44bf17c21d38a4abc24fdbee6adb3f79160a25dd",
+    "tarball": "https://registry.npmjs.org/@tscircuit/capacity-autorouter/-/capacity-autorouter-0.0.958.tgz",
+    "fileCount": 6,
+    "integrity": "sha512-RfknQbBM6dJvqyuqnLwNEzHectokj8S6EYHpCorvjF1caJZCVE5J3ozWdM6wa40XglaXD7FCj0UP329fcWqWcg==",
+    "signatures": [
+      {
+        "sig": "MEQCIE/6/e6xj31iXTWv1Xjjo5AZl1TgD5DcKbtp0H8LNmIkAiB/NkrZRX33r3tMFfFk0RsGSdMq0xBdYmW8F25KE3ocfA==",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEYCIQCfE9ONaEcT/9L7nm5f+OjRDfhpnGVGk3TbusXjvG9lHgIhAMBkm4Stt/5dM4LKjI/19uhN9LYyz8BU7vbLo5z2ZY6b",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tscircuit%2fcapacity-autorouter@0.0.958",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 18879445
+  },
+  "repository": {
+    "url": "git+https://github.com/tscircuit/tscircuit-autorouter.git",
+    "type": "git"
+  },
+  "checkedUtcDate": "2026-10-04"
+}

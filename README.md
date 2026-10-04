@@ -5,11 +5,14 @@ input, regulated motor voltage, hardware10 kΩ speed potentiometer,
 FWD/OFF/REV switch, DRV8874, three LEDs and one motor terminal. The MCU only
 qualifies PD power and rail voltage; speed and direction remain hardware controlled.
 
-**Placement is validated; routing is the current implementation stage.**
-The80×65×1.6 mm two-layer1 oz board has140 purchased components/58 unchanged
-official JLCPCB imports and four3.2 mm mounting holes. All8 A4 sheets and both
-placement faces were inspected. Strict schema, import/connectivity, five native
-preroute checks, artwork, formatting, TypeScript and38 tests pass. No physical
+**Four-layer placement is validated; native routing is in progress.**
+The80×65×1.6 mm board has140 purchased components/58 unchanged official
+JLCPCB imports and four3.2 mm mounting holes. Revision31 selects
+JLC04161H-7628 with35um outer/15.2um inner copper and ordinary through vias;
+see docs/STACKUP-A31.md. Prior placement and8 A4 reviews remain evidence for
+unchanged bodies/pads/sheets. Fresh layer-span/import/connectivity/placement
+audits, all5 native prerequisites, formatting/TypeScript and38 board tests pass.
+Actual routed copper and manufacturing checks remain pending. No physical
 hardware or continuous-current rating is verified.
 
 Run every command from this directory with Bun1.4.2 (pinned in package.json).
@@ -51,7 +54,7 @@ regulation and2 A thermal ratings require prototype measurements.
 No fabrication order has been placed. This independent Git main has no remote;
 GitHub publication remains blocked by the missing repository/branch. The known
 private tscircuit package has the source milestone release
-`0.0.1-a22-cc-isolation-d734c6f` (475 files acknowledged); its server build is unverified. Local work continues.
+`0.0.1-a22-adc-source-5a015d5-verified-ffe2435d` (565 files acknowledged; source hashes match Git); its server build is unverified. Local work continues.
 
 ## Historical implementation notes
 

@@ -1,0 +1,110 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "R" prefix is being used with a <chip />, try using it with a <resistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+All pins on D1 are underspecified (no pinAttributes set)
+All pins on D2 are underspecified (no pinAttributes set)
+All pins on SW2 are underspecified (no pinAttributes set)
+All pins on Q6 are underspecified (no pinAttributes set)
+All pins on Q7 are underspecified (no pinAttributes set)
+All pins on Q8 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on RV1 are underspecified (no pinAttributes set)
+All pins on SW1 are underspecified (no pinAttributes set)
+All pins on U8 are underspecified (no pinAttributes set)
+All pins on D10 are underspecified (no pinAttributes set)
+All pins on D11 are underspecified (no pinAttributes set)
+All pins on J2 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on Q3 are underspecified (no pinAttributes set)
+All pins on Q4 are underspecified (no pinAttributes set)
+All pins on Q5 are underspecified (no pinAttributes set)
+J1 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+U3 has no pin with requires_power=true
+D1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+SW2 has no pin with requires_power=true
+Q6 has no pin with requires_power=true
+Q7 has no pin with requires_power=true
+Q8 has no pin with requires_power=true
+U4 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+RV1 has no pin with requires_power=true
+SW1 has no pin with requires_power=true
+U8 has no pin with requires_power=true
+U10 has no pin with requires_power=true
+D10 has no pin with requires_power=true
+D11 has no pin with requires_power=true
+J2 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Q3 has no pin with requires_power=true
+Q4 has no pin with requires_power=true
+Q5 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+D1 has no pin with requires_ground=true
+D2 has no pin with requires_ground=true
+SW2 has no pin with requires_ground=true
+Q6 has no pin with requires_ground=true
+Q7 has no pin with requires_ground=true
+Q8 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+RV1 has no pin with requires_ground=true
+SW1 has no pin with requires_ground=true
+U8 has no pin with requires_ground=true
+D10 has no pin with requires_ground=true
+D11 has no pin with requires_ground=true
+J2 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+Q3 has no pin with requires_ground=true
+Q4 has no pin with requires_ground=true
+Q5 has no pin with requires_ground=true
+D1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q6 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q7 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+RV1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+U8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D10 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D11 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q3 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q4 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q5 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

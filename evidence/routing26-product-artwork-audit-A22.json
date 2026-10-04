@@ -1,0 +1,1638 @@
+{
+  "revision": "A22",
+  "artifactSha256": "1baad29865fc6baf468d18f34c445b1de835dbca916faae80b8b948b8a6b8770",
+  "highPrecisionSilkscreenRequired": true,
+  "texts": [
+    {
+      "label": "USB-C PD",
+      "layer": "top",
+      "bounds": {
+        "left": -37.0399646,
+        "right": -30.560035399999997,
+        "bottom": 21.8234044,
+        "top": 22.7765956
+      }
+    },
+    {
+      "label": "INPUT",
+      "layer": "top",
+      "bounds": {
+        "left": -34.881771,
+        "right": -31.118229,
+        "bottom": 20.5313142,
+        "top": 21.4686858
+      }
+    },
+    {
+      "label": "MOTOR",
+      "layer": "top",
+      "bounds": {
+        "left": 33.9702798,
+        "right": 38.0297202,
+        "bottom": 14.323959400000001,
+        "top": 15.2760406
+      }
+    },
+    {
+      "label": "SPEED",
+      "layer": "top",
+      "bounds": {
+        "left": -10.9973472,
+        "right": -7.0026528,
+        "bottom": 29.6239594,
+        "top": 30.576040600000002
+      }
+    },
+    {
+      "label": "FWD / OFF / REV",
+      "layer": "top",
+      "bounds": {
+        "left": 3.8400868,
+        "right": 16.1599132,
+        "bottom": 28.0795384,
+        "top": 29.120461600000002
+      }
+    },
+    {
+      "label": "5V BOTH OFF / 9V 9 ON / 12V 12 ON",
+      "layer": "top",
+      "bounds": {
+        "left": -16.61693639999999,
+        "right": 10.61693639999999,
+        "bottom": 30.7795384,
+        "top": 31.8204616
+      }
+    },
+    {
+      "label": "BOTH ON: STOP",
+      "layer": "top",
+      "bounds": {
+        "left": 20.682707,
+        "right": 31.317293,
+        "bottom": 30.8239594,
+        "top": 31.7760406
+      }
+    },
+    {
+      "label": "SELECT: ON LEFT",
+      "layer": "top",
+      "bounds": {
+        "left": -29.1745616,
+        "right": -16.8254384,
+        "bottom": 29.3239594,
+        "top": 30.2760406
+      }
+    },
+    {
+      "label": "9",
+      "layer": "top",
+      "bounds": {
+        "left": -29.806,
+        "right": -29.194,
+        "bottom": 24.5260006,
+        "top": 25.4739994
+      }
+    },
+    {
+      "label": "12",
+      "layer": "top",
+      "bounds": {
+        "left": -30.1504528,
+        "right": -28.8495472,
+        "bottom": 22.5313082,
+        "top": 23.4686918
+      }
+    },
+    {
+      "label": "+",
+      "layer": "top",
+      "bounds": {
+        "left": 38.1363316,
+        "right": 38.8636684,
+        "bottom": 5.1577372,
+        "top": 5.8422628
+      }
+    },
+    {
+      "label": "-",
+      "layer": "top",
+      "bounds": {
+        "left": 38.293363,
+        "right": 38.706637,
+        "bottom": 10.446,
+        "top": 10.554
+      }
+    },
+    {
+      "label": "TP1 SWDIO",
+      "layer": "top",
+      "bounds": {
+        "left": -37.689034,
+        "right": -30.310966,
+        "bottom": -2.0760406,
+        "top": -1.1239594000000002
+      }
+    },
+    {
+      "label": "TP2 CLK",
+      "layer": "top",
+      "bounds": {
+        "left": -30.371609,
+        "right": -24.628391,
+        "bottom": -5.7260406,
+        "top": -4.7739594
+      }
+    },
+    {
+      "label": "NRST",
+      "layer": "top",
+      "bounds": {
+        "left": -21.8064328,
+        "right": -18.5935672,
+        "bottom": 6.0239594,
+        "top": 6.9760406
+      }
+    },
+    {
+      "label": "TP4 GND",
+      "layer": "top",
+      "bounds": {
+        "left": -25.8541772,
+        "right": -20.1458228,
+        "bottom": -11.2260406,
+        "top": -10.2739594
+      }
+    },
+    {
+      "label": "TP5 3V3",
+      "layer": "top",
+      "bounds": {
+        "left": -25.350222,
+        "right": -19.649778,
+        "bottom": 20.5234044,
+        "top": 21.4765956
+      }
+    },
+    {
+      "label": "TP6 VBUS",
+      "layer": "top",
+      "bounds": {
+        "left": -20.567943200000002,
+        "right": -14.032056800000001,
+        "bottom": 9.6234044,
+        "top": 10.5765956
+      }
+    },
+    {
+      "label": "TP7 VM",
+      "layer": "top",
+      "bounds": {
+        "left": 17.547870800000002,
+        "right": 22.452129199999998,
+        "bottom": 14.5392156,
+        "top": 15.4607844
+      }
+    },
+    {
+      "label": "POWER",
+      "layer": "top",
+      "bounds": {
+        "left": 22.9871254,
+        "right": 27.0128746,
+        "bottom": 25.923959399999998,
+        "top": 26.8760406
+      }
+    },
+    {
+      "label": "FWD",
+      "layer": "top",
+      "bounds": {
+        "left": 18.8448338,
+        "right": 21.1551662,
+        "bottom": 25.939215599999997,
+        "top": 26.8607844
+      }
+    },
+    {
+      "label": "REV",
+      "layer": "top",
+      "bounds": {
+        "left": 18.7919528,
+        "right": 21.2080472,
+        "bottom": 16.5392156,
+        "top": 17.4607844
+      }
+    },
+    {
+      "label": "A22 PROTOTYPE",
+      "layer": "bottom",
+      "bounds": {
+        "left": -5.3391186,
+        "right": 5.3391186,
+        "bottom": 31.0239594,
+        "top": 31.9760406
+      }
+    },
+    {
+      "label": "TP1",
+      "layer": "bottom",
+      "bounds": {
+        "left": -29.199668600000003,
+        "right": -27.0003314,
+        "bottom": -3.4607844,
+        "top": -2.5392156
+      }
+    },
+    {
+      "label": "TP2",
+      "layer": "bottom",
+      "bounds": {
+        "left": -29.284170200000002,
+        "right": -26.9158298,
+        "bottom": -7.4686942,
+        "top": -6.5313058
+      }
+    },
+    {
+      "label": "TP3",
+      "layer": "bottom",
+      "bounds": {
+        "left": -20.9392972,
+        "right": -18.5607028,
+        "bottom": 2.7739594,
+        "top": 3.7260406
+      }
+    },
+    {
+      "label": "TP4",
+      "layer": "bottom",
+      "bounds": {
+        "left": -24.2026274,
+        "right": -21.7973726,
+        "bottom": -12.9607844,
+        "top": -12.0392156
+      }
+    },
+    {
+      "label": "TP5",
+      "layer": "bottom",
+      "bounds": {
+        "left": -21.1869536,
+        "right": -18.8130464,
+        "bottom": 17.5313142,
+        "top": 18.4686858
+      }
+    },
+    {
+      "label": "TP6",
+      "layer": "bottom",
+      "bounds": {
+        "left": -21.192959600000002,
+        "right": -18.807040399999998,
+        "bottom": 12.0239594,
+        "top": 12.9760406
+      }
+    },
+    {
+      "label": "TP7",
+      "layer": "bottom",
+      "bounds": {
+        "left": 18.8109956,
+        "right": 21.1890044,
+        "bottom": 11.5392156,
+        "top": 12.4607844
+      }
+    },
+    {
+      "label": "C29",
+      "layer": "bottom",
+      "bounds": {
+        "left": 23.8527208,
+        "right": 26.1472792,
+        "bottom": 10.5239594,
+        "top": 11.4760406
+      }
+    },
+    {
+      "label": "C28",
+      "layer": "bottom",
+      "bounds": {
+        "left": 27.1364842,
+        "right": 29.4635158,
+        "bottom": 5.4239594,
+        "top": 6.3760406000000005
+      }
+    },
+    {
+      "label": "C27",
+      "layer": "bottom",
+      "bounds": {
+        "left": 24.341025000000002,
+        "right": 26.658974999999998,
+        "bottom": 5.4239594,
+        "top": 6.3760406000000005
+      }
+    },
+    {
+      "label": "C26",
+      "layer": "bottom",
+      "bounds": {
+        "left": 21.437069800000003,
+        "right": 23.7629302,
+        "bottom": 5.0239594,
+        "top": 5.9760406
+      }
+    },
+    {
+      "label": "C22",
+      "layer": "bottom",
+      "bounds": {
+        "left": 6.7458592,
+        "right": 9.0541408,
+        "bottom": 12.7739594,
+        "top": 13.7260406
+      }
+    },
+    {
+      "label": "C23",
+      "layer": "bottom",
+      "bounds": {
+        "left": -2.3092677999999998,
+        "right": 0.009267799999999937,
+        "bottom": 13.0239594,
+        "top": 13.9760406
+      }
+    },
+    {
+      "label": "C34",
+      "layer": "bottom",
+      "bounds": {
+        "left": -9.572598000000001,
+        "right": -7.2274020000000005,
+        "bottom": 1.5239594,
+        "top": 2.4760406
+      }
+    },
+    {
+      "label": "R67",
+      "layer": "bottom",
+      "bounds": {
+        "left": -13.1818266,
+        "right": -10.8181734,
+        "bottom": 1.5239594,
+        "top": 2.4760406
+      }
+    },
+    {
+      "label": "R66",
+      "layer": "bottom",
+      "bounds": {
+        "left": -13.1857818,
+        "right": -10.8142182,
+        "bottom": -0.4760405999999999,
+        "top": 0.4760405999999999
+      }
+    },
+    {
+      "label": "C33",
+      "layer": "bottom",
+      "bounds": {
+        "left": -11.1592678,
+        "right": -8.8407322,
+        "bottom": -7.6760406,
+        "top": -6.7239594
+      }
+    },
+    {
+      "label": "R61",
+      "layer": "bottom",
+      "bounds": {
+        "left": -11.5924908,
+        "right": -9.4075092,
+        "bottom": -5.2760406,
+        "top": -4.3239594
+      }
+    },
+    {
+      "label": "R60",
+      "layer": "bottom",
+      "bounds": {
+        "left": -12.6857818,
+        "right": -10.3142182,
+        "bottom": -2.4760406,
+        "top": -1.5239594
+      }
+    },
+    {
+      "label": "C32",
+      "layer": "bottom",
+      "bounds": {
+        "left": -14.0541408,
+        "right": -11.7458592,
+        "bottom": -4.8260406,
+        "top": -3.8739593999999995
+      }
+    },
+    {
+      "label": "C31",
+      "layer": "bottom",
+      "bounds": {
+        "left": -15.269639199999999,
+        "right": -13.1303608,
+        "bottom": -11.176040599999999,
+        "top": -10.2239594
+      }
+    },
+    {
+      "label": "C30",
+      "layer": "bottom",
+      "bounds": {
+        "left": -14.9629302,
+        "right": -12.6370698,
+        "bottom": -7.4760406,
+        "top": -6.5239594
+      }
+    },
+    {
+      "label": "C15",
+      "layer": "bottom",
+      "bounds": {
+        "left": -8.3569242,
+        "right": -6.0430758,
+        "bottom": -14.2265956,
+        "top": -13.2734044
+      }
+    },
+    {
+      "label": "C12",
+      "layer": "bottom",
+      "bounds": {
+        "left": -4.3541408,
+        "right": -2.0458592,
+        "bottom": -16.4760406,
+        "top": -15.5239594
+      }
+    },
+    {
+      "label": "J1",
+      "layer": "bottom",
+      "bounds": {
+        "left": -34.6416634,
+        "right": -33.3583366,
+        "bottom": 3.5313142,
+        "top": 4.4686858
+      }
+    },
+    {
+      "label": "J2",
+      "layer": "bottom",
+      "bounds": {
+        "left": 33.273835,
+        "right": 34.726165,
+        "bottom": 7.5234044,
+        "top": 8.4765956
+      }
+    },
+    {
+      "label": "RV1",
+      "layer": "bottom",
+      "bounds": {
+        "left": -10.0924908,
+        "right": -7.9075092,
+        "bottom": 16.5392156,
+        "top": 17.4607844
+      }
+    },
+    {
+      "label": "SW1",
+      "layer": "bottom",
+      "bounds": {
+        "left": 15.926699,
+        "right": 18.073301,
+        "bottom": 20.5239594,
+        "top": 21.4760406
+      }
+    },
+    {
+      "label": "SW2",
+      "layer": "bottom",
+      "bounds": {
+        "left": -24.1578026,
+        "right": -21.8421974,
+        "bottom": 23.5239594,
+        "top": 24.4760406
+      }
+    },
+    {
+      "label": "U1",
+      "layer": "bottom",
+      "bounds": {
+        "left": -25.0549936,
+        "right": -23.745006399999998,
+        "bottom": 3.5313142,
+        "top": 4.4686858
+      }
+    },
+    {
+      "label": "U2",
+      "layer": "bottom",
+      "bounds": {
+        "left": -32.7394952,
+        "right": -31.2605048,
+        "bottom": 14.5234044,
+        "top": 15.4765956
+      }
+    },
+    {
+      "label": "U3",
+      "layer": "bottom",
+      "bounds": {
+        "left": -25.7446222,
+        "right": -24.2553778,
+        "bottom": 14.5234044,
+        "top": 15.4765956
+      }
+    },
+    {
+      "label": "U11",
+      "layer": "bottom",
+      "bounds": {
+        "left": -21.0702248,
+        "right": -18.9297752,
+        "bottom": -6.4686858,
+        "top": -5.5313142
+      }
+    },
+    {
+      "label": "U4",
+      "layer": "bottom",
+      "bounds": {
+        "left": -22.7579524,
+        "right": -21.2420476,
+        "bottom": -25.9686858,
+        "top": -25.0313142
+      }
+    },
+    {
+      "label": "U5",
+      "layer": "bottom",
+      "bounds": {
+        "left": -9.4422786,
+        "right": -7.9577214,
+        "bottom": -24.368685799999998,
+        "top": -23.4313142
+      }
+    },
+    {
+      "label": "U6",
+      "layer": "bottom",
+      "bounds": {
+        "left": 2.2517154,
+        "right": 3.7482846,
+        "bottom": 8.5234044,
+        "top": 9.4765956
+      }
+    },
+    {
+      "label": "U8",
+      "layer": "bottom",
+      "bounds": {
+        "left": 12.2511298,
+        "right": 13.7488702,
+        "bottom": -3.4765956,
+        "top": -2.5234044
+      }
+    },
+    {
+      "label": "U9",
+      "layer": "bottom",
+      "bounds": {
+        "left": 12.2673664,
+        "right": 13.7326336,
+        "bottom": 4.5234044,
+        "top": 5.4765956
+      }
+    },
+    {
+      "label": "U10",
+      "layer": "bottom",
+      "bounds": {
+        "left": 23.8364842,
+        "right": 26.1635158,
+        "bottom": -5.276595599999999,
+        "top": -4.3234044
+      }
+    },
+    {
+      "label": "L1",
+      "layer": "bottom",
+      "bounds": {
+        "left": 4.6470572,
+        "right": 5.9529428,
+        "bottom": -18.9607844,
+        "top": -18.0392156
+      }
+    },
+    {
+      "label": "C18",
+      "layer": "bottom",
+      "bounds": {
+        "left": 24.3364842,
+        "right": 26.6635158,
+        "bottom": -14.4760406,
+        "top": -13.5239594
+      }
+    },
+    {
+      "label": "D1",
+      "layer": "bottom",
+      "bounds": {
+        "left": -33.6595344,
+        "right": -32.3404656,
+        "bottom": -7.4607844,
+        "top": -6.5392156
+      }
+    },
+    {
+      "label": "D4",
+      "layer": "bottom",
+      "bounds": {
+        "left": -32.7624932,
+        "right": -31.2375068,
+        "bottom": -17.4607844,
+        "top": -16.5392156
+      }
+    },
+    {
+      "label": "D5",
+      "layer": "bottom",
+      "bounds": {
+        "left": -4.4468194,
+        "right": -2.9531806000000005,
+        "bottom": -22.9686858,
+        "top": -22.0313142
+      }
+    },
+    {
+      "label": "D10",
+      "layer": "bottom",
+      "bounds": {
+        "left": 29.8319434,
+        "right": 32.1680566,
+        "bottom": 17.5239594,
+        "top": 18.4760406
+      }
+    },
+    {
+      "label": "D11",
+      "layer": "bottom",
+      "bounds": {
+        "left": 31.9252344,
+        "right": 34.0747656,
+        "bottom": -3.4607844,
+        "top": -2.5392156
+      }
+    },
+    {
+      "label": "C13",
+      "layer": "bottom",
+      "bounds": {
+        "left": -10.3592678,
+        "right": -8.040732199999999,
+        "bottom": -11.076040599999999,
+        "top": -10.1239594
+      }
+    },
+    {
+      "label": "C14",
+      "layer": "bottom",
+      "bounds": {
+        "left": -14.672598,
+        "right": -12.327402,
+        "bottom": -19.4760406,
+        "top": -18.5239594
+      }
+    },
+    {
+      "label": "Q3",
+      "layer": "bottom",
+      "bounds": {
+        "left": 34.746442,
+        "right": 36.253558,
+        "bottom": -15.541704,
+        "top": -14.458296
+      }
+    },
+    {
+      "label": "R45",
+      "layer": "bottom",
+      "bounds": {
+        "left": 15.8202242,
+        "right": 18.1797758,
+        "bottom": -29.4686858,
+        "top": -28.5313142
+      }
+    },
+    {
+      "label": "R46",
+      "layer": "bottom",
+      "bounds": {
+        "left": 25.3142182,
+        "right": 27.6857818,
+        "bottom": -29.4760406,
+        "top": -28.5239594
+      }
+    },
+    {
+      "label": "R47",
+      "layer": "bottom",
+      "bounds": {
+        "left": 15.8181734,
+        "right": 18.1818266,
+        "bottom": -24.4607844,
+        "top": -23.5392156
+      }
+    },
+    {
+      "label": "R48",
+      "layer": "bottom",
+      "bounds": {
+        "left": 25.3136326,
+        "right": 27.6863674,
+        "bottom": -24.4760406,
+        "top": -23.5239594
+      }
+    },
+    {
+      "label": "R69",
+      "layer": "bottom",
+      "bounds": {
+        "left": -23.1701308,
+        "right": -20.8298692,
+        "bottom": -29.9760406,
+        "top": -29.0239594
+      }
+    },
+    {
+      "label": "R70",
+      "layer": "bottom",
+      "bounds": {
+        "left": -13.6857818,
+        "right": -11.3142182,
+        "bottom": -29.9760406,
+        "top": -29.0239594
+      }
+    },
+    {
+      "label": "R71",
+      "layer": "bottom",
+      "bounds": {
+        "left": -3.0924908,
+        "right": -0.9075092,
+        "bottom": -29.9607844,
+        "top": -29.0392156
+      }
+    },
+    {
+      "label": "R72",
+      "layer": "bottom",
+      "bounds": {
+        "left": 6.3230076,
+        "right": 8.6769924,
+        "bottom": -29.9686942,
+        "top": -29.0313058
+      }
+    },
+    {
+      "label": "LED1",
+      "layer": "bottom",
+      "bounds": {
+        "left": 23.5165948,
+        "right": 26.4834052,
+        "bottom": 23.5392156,
+        "top": 24.4607844
+      }
+    },
+    {
+      "label": "LED2",
+      "layer": "bottom",
+      "bounds": {
+        "left": 18.4320932,
+        "right": 21.5679068,
+        "bottom": 23.5313058,
+        "top": 24.4686942
+      }
+    },
+    {
+      "label": "LED3",
+      "layer": "bottom",
+      "bounds": {
+        "left": 18.4269662,
+        "right": 21.5730338,
+        "bottom": 18.5239594,
+        "top": 19.4760406
+      }
+    },
+    {
+      "label": "C16",
+      "layer": "bottom",
+      "bounds": {
+        "left": 14.0370698,
+        "right": 16.3629302,
+        "bottom": -16.4760406,
+        "top": -15.5239594
+      }
+    },
+    {
+      "label": "C17",
+      "layer": "bottom",
+      "bounds": {
+        "left": 14.041025,
+        "right": 16.358975,
+        "bottom": -19.9760406,
+        "top": -19.0239594
+      }
+    },
+    {
+      "label": "D2",
+      "layer": "bottom",
+      "bounds": {
+        "left": -23.994036,
+        "right": -22.505964,
+        "bottom": 8.2813058,
+        "top": 9.2186942
+      }
+    },
+    {
+      "label": "Q6",
+      "layer": "bottom",
+      "bounds": {
+        "left": 0.24277959999999998,
+        "right": 1.7572204,
+        "bottom": 1.458296,
+        "top": 2.541704
+      }
+    },
+    {
+      "label": "Q7",
+      "layer": "bottom",
+      "bounds": {
+        "left": -4.2532651999999995,
+        "right": -2.7467348,
+        "bottom": -11.791704,
+        "top": -10.708296
+      }
+    },
+    {
+      "label": "Q8",
+      "layer": "bottom",
+      "bounds": {
+        "left": -16.757806,
+        "right": -15.242194,
+        "bottom": 0.45829600000000004,
+        "top": 1.541704
+      }
+    },
+    {
+      "label": "Q1",
+      "layer": "bottom",
+      "bounds": {
+        "left": -29.6639294,
+        "right": -28.3360706,
+        "bottom": -24.541704,
+        "top": -23.458296
+      }
+    },
+    {
+      "label": "Q2",
+      "layer": "bottom",
+      "bounds": {
+        "left": 34.751569,
+        "right": 36.248431,
+        "bottom": -11.541704,
+        "top": -10.458296
+      }
+    },
+    {
+      "label": "Q4",
+      "layer": "bottom",
+      "bounds": {
+        "left": 7.2331118,
+        "right": 8.7668882,
+        "bottom": 1.458296,
+        "top": 2.541704
+      }
+    },
+    {
+      "label": "Q5",
+      "layer": "bottom",
+      "bounds": {
+        "left": 4.2487856,
+        "right": 5.7512144,
+        "bottom": -10.541704,
+        "top": -9.458296
+      }
+    },
+    {
+      "label": "R68",
+      "layer": "bottom",
+      "bounds": {
+        "left": -5.1863674,
+        "right": -2.8136326,
+        "bottom": -8.4760406,
+        "top": -7.5239594
+      }
+    },
+    {
+      "label": "D3",
+      "layer": "bottom",
+      "bounds": {
+        "left": -17.749163,
+        "right": -16.250837,
+        "bottom": 5.5239594,
+        "top": 6.4760406
+      }
+    },
+    {
+      "label": "D9",
+      "layer": "bottom",
+      "bounds": {
+        "left": 34.2628256,
+        "right": 35.7371744,
+        "bottom": -20.4739994,
+        "top": -19.5260006
+      }
+    },
+    {
+      "label": "C1",
+      "layer": "bottom",
+      "bounds": {
+        "left": -30.654408,
+        "right": -29.345592,
+        "bottom": 18.5239594,
+        "top": 19.4760406
+      }
+    },
+    {
+      "label": "C6",
+      "layer": "bottom",
+      "bounds": {
+        "left": -29.947699,
+        "right": -28.452301,
+        "bottom": 6.0239594,
+        "top": 6.9760406
+      }
+    },
+    {
+      "label": "C7",
+      "layer": "bottom",
+      "bounds": {
+        "left": -29.9437438,
+        "right": -28.4562562,
+        "bottom": 1.1239594000000002,
+        "top": 2.0760406
+      }
+    },
+    {
+      "label": "C11",
+      "layer": "bottom",
+      "bounds": {
+        "left": -19.0696392,
+        "right": -16.9303608,
+        "bottom": -14.2760406,
+        "top": -13.323959400000001
+      }
+    },
+    {
+      "label": "D6",
+      "layer": "bottom",
+      "bounds": {
+        "left": -2.7528254,
+        "right": -1.2471746,
+        "bottom": 8.5239594,
+        "top": 9.4760406
+      }
+    },
+    {
+      "label": "D7",
+      "layer": "bottom",
+      "bounds": {
+        "left": -5.7488702,
+        "right": -4.2511298,
+        "bottom": 8.5392156,
+        "top": 9.4607844
+      }
+    },
+    {
+      "label": "D8",
+      "layer": "bottom",
+      "bounds": {
+        "left": 7.246589,
+        "right": 8.753411,
+        "bottom": 6.5239594,
+        "top": 7.4760406
+      }
+    },
+    {
+      "label": "R1",
+      "layer": "bottom",
+      "bounds": {
+        "left": -11.6772596,
+        "right": -10.3227404,
+        "bottom": 5.5392156,
+        "top": 6.4607844
+      }
+    },
+    {
+      "label": "R2",
+      "layer": "bottom",
+      "bounds": {
+        "left": -14.7617612,
+        "right": -13.2382388,
+        "bottom": 5.5313058,
+        "top": 6.4686942
+      }
+    },
+    {
+      "label": "R3",
+      "layer": "bottom",
+      "bounds": {
+        "left": -13.7668882,
+        "right": -12.2331118,
+        "bottom": 8.0239594,
+        "top": 8.9760406
+      }
+    },
+    {
+      "label": "R4",
+      "layer": "bottom",
+      "bounds": {
+        "left": -21.7802184,
+        "right": -20.2197816,
+        "bottom": -0.4607843999999999,
+        "top": 0.4607843999999999
+      }
+    },
+    {
+      "label": "R56",
+      "layer": "bottom",
+      "bounds": {
+        "left": -18.4357818,
+        "right": -16.0642182,
+        "bottom": -11.176595599999999,
+        "top": -10.2234044
+      }
+    },
+    {
+      "label": "R57",
+      "layer": "bottom",
+      "bounds": {
+        "left": -9.1818266,
+        "right": -6.8181734,
+        "bottom": -2.4686858,
+        "top": -1.5313142000000002
+      }
+    },
+    {
+      "label": "R58",
+      "layer": "bottom",
+      "bounds": {
+        "left": -25.1863674,
+        "right": -22.8136326,
+        "bottom": 18.5234044,
+        "top": 19.4765956
+      }
+    },
+    {
+      "label": "R59",
+      "layer": "bottom",
+      "bounds": {
+        "left": -9.170130799999999,
+        "right": -6.8298692,
+        "bottom": 5.5234044,
+        "top": 6.4765956
+      }
+    },
+    {
+      "label": "R62",
+      "layer": "bottom",
+      "bounds": {
+        "left": -29.1769924,
+        "right": -26.8230076,
+        "bottom": -14.4760406,
+        "top": -13.5239594
+      }
+    },
+    {
+      "label": "R63",
+      "layer": "bottom",
+      "bounds": {
+        "left": -6.1821193999999995,
+        "right": -3.8178806,
+        "bottom": -3.4760406,
+        "top": -2.5239594
+      }
+    },
+    {
+      "label": "R64",
+      "layer": "bottom",
+      "bounds": {
+        "left": -6.1954496,
+        "right": -3.8045504,
+        "bottom": 0.5239594000000001,
+        "top": 1.4760406
+      }
+    },
+    {
+      "label": "R5",
+      "layer": "bottom",
+      "bounds": {
+        "left": -32.7645446,
+        "right": -31.2354554,
+        "bottom": -12.4686858,
+        "top": -11.5313142
+      }
+    },
+    {
+      "label": "R6",
+      "layer": "bottom",
+      "bounds": {
+        "left": -25.7705506,
+        "right": -24.2294494,
+        "bottom": -24.4760406,
+        "top": -23.5239594
+      }
+    },
+    {
+      "label": "R7",
+      "layer": "bottom",
+      "bounds": {
+        "left": -29.0665954,
+        "right": -27.5334046,
+        "bottom": -19.1107844,
+        "top": -18.189215599999997
+      }
+    },
+    {
+      "label": "R8",
+      "layer": "bottom",
+      "bounds": {
+        "left": -32.7711362,
+        "right": -31.2288638,
+        "bottom": -23.2260406,
+        "top": -22.2739594
+      }
+    },
+    {
+      "label": "R9",
+      "layer": "bottom",
+      "bounds": {
+        "left": -31.0048996,
+        "right": -29.4951004,
+        "bottom": -28.2239994,
+        "top": -27.2760006
+      }
+    },
+    {
+      "label": "R10",
+      "layer": "bottom",
+      "bounds": {
+        "left": -29.1857818,
+        "right": -26.8142182,
+        "bottom": -28.4760406,
+        "top": -27.5239594
+      }
+    },
+    {
+      "label": "R11",
+      "layer": "bottom",
+      "bounds": {
+        "left": -37.0924908,
+        "right": -34.9075092,
+        "bottom": -22.4607844,
+        "top": -21.5392156
+      }
+    },
+    {
+      "label": "R12",
+      "layer": "bottom",
+      "bounds": {
+        "left": -37.1769924,
+        "right": -34.8230076,
+        "bottom": -19.4686942,
+        "top": -18.5313058
+      }
+    },
+    {
+      "label": "R13",
+      "layer": "bottom",
+      "bounds": {
+        "left": -36.1821194,
+        "right": -33.8178806,
+        "bottom": -16.4760406,
+        "top": -15.5239594
+      }
+    },
+    {
+      "label": "R16",
+      "layer": "bottom",
+      "bounds": {
+        "left": -3.1857818,
+        "right": -0.8142182,
+        "bottom": -4.4760406,
+        "top": -3.5239594
+      }
+    },
+    {
+      "label": "R17",
+      "layer": "bottom",
+      "bounds": {
+        "left": -14.6318266,
+        "right": -12.268173399999998,
+        "bottom": -14.7607844,
+        "top": -13.839215600000001
+      }
+    },
+    {
+      "label": "R18",
+      "layer": "bottom",
+      "bounds": {
+        "left": -17.886367399999997,
+        "right": -15.5136326,
+        "bottom": -17.4760406,
+        "top": -16.5239594
+      }
+    },
+    {
+      "label": "R55",
+      "layer": "bottom",
+      "bounds": {
+        "left": -17.8797758,
+        "right": -15.5202242,
+        "bottom": -21.0686858,
+        "top": -20.131314200000002
+      }
+    },
+    {
+      "label": "R19",
+      "layer": "bottom",
+      "bounds": {
+        "left": -18.2201308,
+        "right": -15.879869200000002,
+        "bottom": -24.4739994,
+        "top": -23.5260006
+      }
+    },
+    {
+      "label": "R20",
+      "layer": "bottom",
+      "bounds": {
+        "left": -20.7357818,
+        "right": -18.3642182,
+        "bottom": -25.8760406,
+        "top": -24.923959399999998
+      }
+    },
+    {
+      "label": "R21",
+      "layer": "bottom",
+      "bounds": {
+        "left": -17.1924908,
+        "right": -15.007509200000001,
+        "bottom": -26.568694200000003,
+        "top": -25.6313058
+      }
+    },
+    {
+      "label": "R22",
+      "layer": "bottom",
+      "bounds": {
+        "left": -10.6769924,
+        "right": -8.3230076,
+        "bottom": -25.9186942,
+        "top": -24.981305799999998
+      }
+    },
+    {
+      "label": "R23",
+      "layer": "bottom",
+      "bounds": {
+        "left": 7.8178806000000005,
+        "right": 10.1821194,
+        "bottom": -2.4760406,
+        "top": -1.5239594
+      }
+    },
+    {
+      "label": "R24",
+      "layer": "bottom",
+      "bounds": {
+        "left": 9.8045504,
+        "right": 12.1954496,
+        "bottom": -7.4686942,
+        "top": -6.5313058
+      }
+    },
+    {
+      "label": "R25",
+      "layer": "bottom",
+      "bounds": {
+        "left": -9.1797758,
+        "right": -6.8202242,
+        "bottom": 9.5234044,
+        "top": 10.4765956
+      }
+    },
+    {
+      "label": "R26",
+      "layer": "bottom",
+      "bounds": {
+        "left": -5.1857818,
+        "right": -2.8142182,
+        "bottom": 4.5239594,
+        "top": 5.4760406
+      }
+    },
+    {
+      "label": "R29",
+      "layer": "bottom",
+      "bounds": {
+        "left": 10.829869200000001,
+        "right": 13.170130799999999,
+        "bottom": 12.5260006,
+        "top": 13.4739994
+      }
+    },
+    {
+      "label": "R30",
+      "layer": "bottom",
+      "bounds": {
+        "left": 14.8142182,
+        "right": 17.1857818,
+        "bottom": 12.5239594,
+        "top": 13.4760406
+      }
+    },
+    {
+      "label": "R31",
+      "layer": "bottom",
+      "bounds": {
+        "left": 11.9075092,
+        "right": 14.0924908,
+        "bottom": -0.4760405999999999,
+        "top": 0.4760405999999999
+      }
+    },
+    {
+      "label": "R32",
+      "layer": "bottom",
+      "bounds": {
+        "left": 15.8230076,
+        "right": 18.1769924,
+        "bottom": -1.4760406,
+        "top": -0.5239594000000001
+      }
+    },
+    {
+      "label": "R33",
+      "layer": "bottom",
+      "bounds": {
+        "left": 16.8178806,
+        "right": 19.1821194,
+        "bottom": 1.5239594,
+        "top": 2.4760406
+      }
+    },
+    {
+      "label": "R34",
+      "layer": "bottom",
+      "bounds": {
+        "left": 6.8045504,
+        "right": 9.1954496,
+        "bottom": 10.5239594,
+        "top": 11.4760406
+      }
+    },
+    {
+      "label": "R39",
+      "layer": "bottom",
+      "bounds": {
+        "left": 16.8298692,
+        "right": 19.1701308,
+        "bottom": 4.5239594,
+        "top": 5.4760406
+      }
+    },
+    {
+      "label": "R65",
+      "layer": "bottom",
+      "bounds": {
+        "left": 16.8202242,
+        "right": 19.1797758,
+        "bottom": 7.5234044,
+        "top": 8.4765956
+      }
+    },
+    {
+      "label": "R40",
+      "layer": "bottom",
+      "bounds": {
+        "left": 20.8142182,
+        "right": 23.1857818,
+        "bottom": 7.5239594,
+        "top": 8.4760406
+      }
+    },
+    {
+      "label": "R51",
+      "layer": "bottom",
+      "bounds": {
+        "left": 18.9075092,
+        "right": 21.0924908,
+        "bottom": -1.4686857999999998,
+        "top": -0.5313142000000001
+      }
+    },
+    {
+      "label": "R41",
+      "layer": "bottom",
+      "bounds": {
+        "left": 26.9075092,
+        "right": 29.0924908,
+        "bottom": -7.4607844,
+        "top": -6.5392156
+      }
+    },
+    {
+      "label": "R42",
+      "layer": "bottom",
+      "bounds": {
+        "left": 22.8230076,
+        "right": 25.1769924,
+        "bottom": -7.4686942,
+        "top": -6.5313058
+      }
+    },
+    {
+      "label": "R43",
+      "layer": "bottom",
+      "bounds": {
+        "left": 18.8178806,
+        "right": 21.1821194,
+        "bottom": -7.4760406,
+        "top": -6.5239594
+      }
+    },
+    {
+      "label": "R44",
+      "layer": "bottom",
+      "bounds": {
+        "left": 14.8045504,
+        "right": 17.1954496,
+        "bottom": -7.4607844,
+        "top": -6.5392156
+      }
+    },
+    {
+      "label": "R49",
+      "layer": "bottom",
+      "bounds": {
+        "left": 12.829869200000001,
+        "right": 15.170130799999999,
+        "bottom": -10.4739994,
+        "top": -9.5260006
+      }
+    },
+    {
+      "label": "C2",
+      "layer": "bottom",
+      "bounds": {
+        "left": -36.9889096,
+        "right": -35.5110904,
+        "bottom": 13.5239594,
+        "top": 14.4760406
+      }
+    },
+    {
+      "label": "C3",
+      "layer": "bottom",
+      "bounds": {
+        "left": -26.9940366,
+        "right": -25.5059634,
+        "bottom": 8.0239594,
+        "top": 8.9760406
+      }
+    },
+    {
+      "label": "C4",
+      "layer": "bottom",
+      "bounds": {
+        "left": -29.3573668,
+        "right": -27.8426332,
+        "bottom": 11.0239594,
+        "top": 11.9760406
+      }
+    },
+    {
+      "label": "C5",
+      "layer": "bottom",
+      "bounds": {
+        "left": -23.991693,
+        "right": -22.508307,
+        "bottom": 11.2734044,
+        "top": 12.2265956
+      }
+    },
+    {
+      "label": "C8",
+      "layer": "bottom",
+      "bounds": {
+        "left": -25.9482846,
+        "right": -24.451715399999998,
+        "bottom": -0.6760405999999999,
+        "top": 0.2760405999999999
+      }
+    },
+    {
+      "label": "C9",
+      "layer": "bottom",
+      "bounds": {
+        "left": -28.782048,
+        "right": -27.317952000000002,
+        "bottom": -21.4760406,
+        "top": -20.5239594
+      }
+    },
+    {
+      "label": "C10",
+      "layer": "bottom",
+      "bounds": {
+        "left": -29.162930199999998,
+        "right": -26.837069800000002,
+        "bottom": -16.6760406,
+        "top": -15.7239594
+      }
+    },
+    {
+      "label": "C19",
+      "layer": "bottom",
+      "bounds": {
+        "left": -13.4972792,
+        "right": -11.2027208,
+        "bottom": -25.5260406,
+        "top": -24.5739594
+      }
+    },
+    {
+      "label": "C20",
+      "layer": "bottom",
+      "bounds": {
+        "left": -14.4629302,
+        "right": -12.1370698,
+        "bottom": -23.2760406,
+        "top": -22.3239594
+      }
+    },
+    {
+      "label": "C21",
+      "layer": "bottom",
+      "bounds": {
+        "left": 3.8303608000000002,
+        "right": 5.9696392000000005,
+        "bottom": 14.173959400000001,
+        "top": 15.1260406
+      }
+    },
+    {
+      "label": "C25",
+      "layer": "bottom",
+      "bounds": {
+        "left": 10.3430758,
+        "right": 12.6569242,
+        "bottom": 9.4734044,
+        "top": 10.426595599999999
+      }
+    },
+    {
+      "label": "R50",
+      "layer": "bottom",
+      "bounds": {
+        "left": 27.8142182,
+        "right": 30.1857818,
+        "bottom": -0.4765955999999999,
+        "top": 0.4765955999999999
+      }
+    },
+    {
+      "label": "R54",
+      "layer": "bottom",
+      "bounds": {
+        "left": 23.8045504,
+        "right": 26.1954496,
+        "bottom": 28.5313142,
+        "top": 29.4686858
+      }
+    }
+  ],
+  "issues": []
+}

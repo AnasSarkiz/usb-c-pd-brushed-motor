@@ -1,0 +1,18 @@
+{
+  "currentSha256": "03d21f7f2a6c2f54caf2a4e177a987b65e619cacbb0d99f05561b8b655051cff",
+  "previousArtifact": "routing29-preroute-A22.json.gz",
+  "unchangedTypes": [
+    "pcb_component",
+    "pcb_smtpad",
+    "pcb_plated_hole",
+    "pcb_hole",
+    "pcb_via",
+    "pcb_silkscreen_text",
+    "pcb_silkscreen_path",
+    "pcb_courtyard_outline",
+    "schematic_component",
+    "schematic_sheet",
+    "pcb_breakout_point"
+  ],
+  "reviewBasis": "Retains reviewed physical placement and8 A4 sheets; routing priorities only differ."
+}

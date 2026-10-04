@@ -1,0 +1,12 @@
+{
+  "sourceCommit": "5a015d5a4b3d13922d1469dca2268680cebdb9b7",
+  "status": "Partial source publication; retry required",
+  "acknowledgedFiles": 565,
+  "failedFiles": [
+    "evidence/publication-source-d734c6f-A22.log"
+  ],
+  "failure": "HTTP413 /package_files/create",
+  "archiveUploadFailure": "HTTP413 /package_files/upload_archive",
+  "logSha256": "49e2854fedf001b508bf4545b5edcd428a00a23ba57d6e4d94622526c1f7bc5d",
+  "sourceChanges": "none; redundant oversized raw publishing log omitted from retry scope"
+}

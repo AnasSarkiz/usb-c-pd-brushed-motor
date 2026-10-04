@@ -1,0 +1,48 @@
+{
+  "currentArtifactSha256": "cb0f960ec6b07bde6ca20c0dcd9f2b2e6346f499d8a1d6f3a24243725a0db12d",
+  "previousArtifactSha256": "6012d89c7c76cbc6f9e031121e916a4468eaa7f1259b2b96aa309ea141bf464c",
+  "unchangedReviewedGeometry": {
+    "pcb_component": {
+      "unchanged": true,
+      "count": 152
+    },
+    "pcb_smtpad": {
+      "unchanged": true,
+      "count": 397
+    },
+    "pcb_plated_hole": {
+      "unchanged": true,
+      "count": 14
+    },
+    "pcb_hole": {
+      "unchanged": true,
+      "count": 6
+    },
+    "pcb_via": {
+      "unchanged": true,
+      "count": 12
+    },
+    "pcb_silkscreen_text": {
+      "unchanged": true,
+      "count": 163
+    },
+    "pcb_silkscreen_path": {
+      "unchanged": true,
+      "count": 636
+    },
+    "pcb_courtyard_outline": {
+      "unchanged": true,
+      "count": 139
+    },
+    "schematic_component": {
+      "unchanged": true,
+      "count": 140
+    },
+    "schematic_sheet": {
+      "unchanged": true,
+      "count": 8
+    }
+  },
+  "changedRoutingIntent": "U11 pin10 target x -14.8mm, bottom layer; same Y/pad row",
+  "reviewBasis": "Existing full A4 and both-face placement reviews apply to identical physical bodies, pads, courtyards and sheet geometry. Final copper review remains pending."
+}

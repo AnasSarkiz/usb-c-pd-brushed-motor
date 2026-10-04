@@ -16,6 +16,8 @@ elements=json.loads(artifact)
 assert sum(e['type']=='source_component'for e in elements)==140
 traces=[e for e in elements if e['type']=='pcb_trace']
 assert traces,'Full routed artifact required'
+stackup=json.loads(Path('docs/STACKUP-A31.json').read_text())
+assert next(e for e in elements if e['type']=='pcb_board')['num_layers']==len(stackup['copperLayers'])
 nets={e['source_net_id']:e['name']for e in elements if e['type']=='source_net'}
 intent=json.loads(Path(arguments.net_map).read_text())
 net_names_by_intent={}
@@ -45,6 +47,6 @@ for name,report in summary.items():
     if not report['traces']:raise ValueError('Missing critical routed net '+name)
     report['layers']=sorted(report['layers'])
     report['isolated2ASeriesLossWatts']=4*report['isolatedSeriesResistanceOhmAt60C']
-output={'revision':'A22','artifactSha256':hashlib.sha256(artifact).hexdigest(),'criticalNets':summary,'basis':'35um copper; resistivity2.0e-8 ohm m at elevated copper temperature. Individual segment resistance sums include branches and are not equivalent circuit resistance. Ground pours and via sharing require independent review. No ampacity or temperature-rise pass inferred.'}
+output={'revision':'A22','artifactSha256':hashlib.sha256(artifact).hexdigest(),'stackup':stackup,'criticalNets':summary,'basis':'35um outer/15.2um inner copper, JLC04161H-7628; resistivity2.0e-8 ohm m at elevated copper temperature. Individual segment resistance sums include branches and are not equivalent circuit resistance. Ground pours and via sharing require independent review. No ampacity or temperature-rise pass inferred.'}
 Path('evidence/routed-power-paths-A22.json').write_text(json.dumps(output,indent=2)+'\n')
 print(json.dumps({n:{k:r[k]for k in ['traces','minimumWidthMm','wireLengthMm','lengthBelow1mm','viaTransitions']}for n,r in summary.items()},indent=2))

@@ -3,6 +3,7 @@ import { any_circuit_element } from "circuit-json"
 import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
 import { Resvg } from "@resvg/resvg-js"
 import { z } from "zod"
+import stackup from "../docs/STACKUP-A31.json"
 
 const circuitJson = z
   .array(any_circuit_element)
@@ -30,7 +31,15 @@ for (const source of sources) {
     throw new Error(`Missing or duplicate board placement for ${source.name}`)
 }
 await mkdir("dist/review", { recursive: true })
-for (const layer of ["top", "bottom"] as const) {
+const layers = z
+  .array(z.enum(["top", "inner1", "inner2", "bottom"]))
+  .parse(stackup.copperLayers.map((layer) => layer.name))
+if (
+  circuitJson.find((element) => element.type === "pcb_board")?.num_layers !==
+  layers.length
+)
+  throw new Error("Copper review layer list differs from native board stack")
+for (const layer of layers) {
   const svg = convertCircuitJsonToPcbSvg(circuitJson, {
     layer,
     width: 1800,
@@ -46,5 +55,5 @@ for (const layer of ["top", "bottom"] as const) {
   await writeFile(`${path}.png`, new Resvg(svg).render().asPng())
 }
 console.log(
-  `Rendered both layers with ${sources.length} verified component placements.`,
+  `Rendered all ${layers.length} copper layers with ${sources.length} verified component placements.`,
 )

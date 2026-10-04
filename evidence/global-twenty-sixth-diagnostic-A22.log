@@ -1,0 +1,1 @@
+{"solved":false,"failed":true,"error":"Pipeline9 primary high-density routing failed: B01 failed: No path found for source_net_16_mst1; regional fallback failed: Failed to solve 1 nodes, cmn_71. err0: GrowShrinkHighDensityIntraNodeSolver failed after resizing to 8x. Last error: High-density scale solution rejected by validator.","elapsedMs":28694}

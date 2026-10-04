@@ -51,7 +51,11 @@ def audit():
     if len(ground_ids) != 1 or ground_ids[0] not in intent:
         raise ValueError('Exactly one known ground net required')
     ground_intent = intent[ground_ids[0]]
-    copper_by_layer = {'top': [], 'bottom': []}
+    stackup = json.loads(Path('docs/STACKUP-A31.json').read_text())
+    layers = [layer['name'] for layer in stackup['copperLayers']]
+    if next(e for e in elements if e['type'] == 'pcb_board')['num_layers'] != len(layers):
+        raise ValueError('Ground audit layer list differs from native board stack')
+    copper_by_layer = {layer: [] for layer in layers}
     barrels = []
     pads = []
     drills = []

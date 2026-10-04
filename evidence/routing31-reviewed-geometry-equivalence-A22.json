@@ -1,0 +1,19 @@
+{
+  "currentSha256": "210ef1d22f4270e43e6127cd3012ca7ee8213cc9eeed4119afdbd49964f4bac1",
+  "previousArtifact": "routing30-preroute-A22.json.gz",
+  "unchangedTypes": [
+    "pcb_component",
+    "pcb_smtpad",
+    "pcb_hole",
+    "pcb_silkscreen_text",
+    "pcb_silkscreen_path",
+    "pcb_courtyard_outline",
+    "schematic_component",
+    "schematic_sheet",
+    "pcb_breakout_point"
+  ],
+  "thermalVias": 12,
+  "platedHoles": 14,
+  "physicalSpans": "all4 layers; all coordinates/dimensions unchanged",
+  "reviewBasis": "Prior physical placement and8 A4 sheets remain applicable; all4 copper layers will require postroute visual review."
+}

@@ -26,6 +26,13 @@ assert len(set(separate_layers[1])) == 2
 barrel = {'layers':['top','bottom'], 'geometry':Point(-1.5,0).buffer(.3).difference(Point(-1.5,0).buffer(.15))}
 joined = ground_islands({'top':[left], 'bottom':[left]}, [barrel])
 assert len(set(joined[1])) == 1
+four_layers = {layer:[left] for layer in ['top','inner1','inner2','bottom']}
+incomplete_barrel = ground_islands(four_layers, [barrel])
+assert len(set(incomplete_barrel[1])) == 3
+through_barrel = {**barrel, 'layers':list(four_layers)}
+complete_stack = ground_islands(four_layers, [through_barrel])
+assert len(set(complete_stack[1])) == 1
+assert pad_roots({'layers':['inner1'], 'geometry':left}, complete_stack) == pad_roots(pad, complete_stack)
 missed = ground_islands({'top':[left], 'bottom':[right]}, [barrel])
 assert len(set(missed[1])) == 2
 vertices = lambda pts: [{'x':x,'y':y} for x,y in pts]

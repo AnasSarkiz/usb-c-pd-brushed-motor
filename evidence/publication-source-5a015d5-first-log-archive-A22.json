@@ -1,0 +1,9 @@
+{
+  "originalLog": "evidence/publication-source-5a015d5-A22.log",
+  "uncompressedSha256": "49e2854fedf001b508bf4545b5edcd428a00a23ba57d6e4d94622526c1f7bc5d",
+  "uncompressedBytes": 15788252,
+  "losslessArchive": "evidence/publication-source-5a015d5-A22.log.gz",
+  "archiveSha256": "ea1c27099feab6f74619ffd6aa1eb73be43548378bb72493540fd5dc823a1809",
+  "archiveBytes": 11868781,
+  "purpose": "Preserve full failed publisher output losslessly; avoid oversized raw diagnostic reupload. Does not replace the later verified publication result."
+}

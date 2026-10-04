@@ -9,11 +9,18 @@ import {
 import { any_circuit_element } from "circuit-json"
 import { z } from "zod"
 import { productPlacement } from "../circuit/product-placement"
+import stackup from "../docs/STACKUP-A31.json"
 const routingPhase = z
   .enum(["unrouted", "routed"])
   .parse(process.argv[2] ?? "unrouted")
 const artifact = await readFile("dist/index/circuit.json", "utf8")
 const elements = z.array(any_circuit_element).parse(JSON.parse(artifact))
+const board = elements.find((element) => element.type === "pcb_board")
+const copperLayers = z
+  .array(z.enum(["top", "inner1", "inner2", "bottom"]))
+  .parse(stackup.copperLayers.map((layer) => layer.name))
+if (board?.num_layers !== copperLayers.length)
+  throw new Error("Native board layer count differs from manufacturing stackup")
 const manifest = z
   .array(
     z.object({
@@ -177,6 +184,15 @@ for (const part of manifest) {
   const originalVias = probe.filter((e) => e.type === "pcb_via")
   expectedVias += originalVias.length
   for (const via of originalVias) {
+    const layerIndices = via.layers.map((layer) =>
+      copperLayers.findIndex((candidate) => candidate === layer),
+    )
+    if (layerIndices.some((index) => index < 0))
+      throw new Error(`${part.ref}: unsupported imported via layer`)
+    const physicalLayers = copperLayers.slice(
+      Math.min(...layerIndices),
+      Math.max(...layerIndices) + 1,
+    )
     const expected = applyToPoint(footprintToBoard, via)
     const actual = elements.find(
       (e) =>
@@ -188,7 +204,7 @@ for (const part of manifest) {
       actual?.type !== "pcb_via" ||
       !close(actual.hole_diameter, via.hole_diameter) ||
       !close(actual.outer_diameter, via.outer_diameter) ||
-      JSON.stringify(actual.layers) !== JSON.stringify(via.layers)
+      JSON.stringify(actual.layers) !== JSON.stringify(physicalLayers)
     )
       issues.push(`${part.ref}: missing/changed original thermal via`)
   }

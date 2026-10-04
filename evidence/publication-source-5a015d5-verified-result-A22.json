@@ -1,0 +1,14 @@
+{
+  "sourceCommit": "5a015d5a4b3d13922d1469dca2268680cebdb9b7",
+  "publishedPackage": "@tsci/AnasSarkiz.usb-c-pd-brushed-motor@0.0.1-a22-adc-source-5a015d5-verified-ffe2435d",
+  "expectedVersion": "0.0.1-a22-adc-source-5a015d5-verified-ffe2435d",
+  "acknowledgedFiles": 565,
+  "expectedFiles": 565,
+  "exitCode": 0,
+  "postPublicationSourceMismatches": [],
+  "sourceFilesMatchedGit": true,
+  "cloudBuildVerified": false,
+  "GitHubRemote": null,
+  "logSha256": "3a63629e3a03e879dd939d66954e19e3ecf474801d1c36e38ec797e1c8ebaad1",
+  "status": "Private WIP prototype; full routing unfinished; no fabrication approval"
+}

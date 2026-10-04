@@ -1,0 +1,10 @@
+{
+  "sourceCommit": "5a015d5a4b3d13922d1469dca2268680cebdb9b7",
+  "status": "Does not qualify as exact-source publication",
+  "changedByPublisher": [
+    "package.json"
+  ],
+  "automaticBaseVersion": "0.0.1 -> 0.0.2",
+  "affectedManifest": "package.json checksum no longer matches source manifest",
+  "correctiveAction": "Fresh Git-exact staging and unique new prerelease tag; verify all hashes after publishing. No board code changes or import edits."
+}

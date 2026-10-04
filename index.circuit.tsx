@@ -17,7 +17,8 @@ export default function UsbCPdBrushedMotorController() {
       width="80mm"
       height="65mm"
       thickness="1.6mm"
-      layers={2}
+      layers={4}
+      allowBlindAndBuriedVias={false}
       minTraceWidth={0.2}
       minTraceToPadEdgeClearance={0.2}
       minPadEdgeToPadEdgeClearance={0.2}
@@ -57,6 +58,22 @@ export default function UsbCPdBrushedMotorController() {
       <copperpour
         name="ground_bottom"
         layer="bottom"
+        connectsTo="net.GND"
+        clearance={0.2}
+        boardEdgeMargin={0.5}
+        useThermalReliefs={false}
+      />
+      <copperpour
+        name="ground_inner1"
+        layer="inner1"
+        connectsTo="net.GND"
+        clearance={0.2}
+        boardEdgeMargin={0.5}
+        useThermalReliefs={false}
+      />
+      <copperpour
+        name="ground_inner2"
+        layer="inner2"
         connectsTo="net.GND"
         clearance={0.2}
         boardEdgeMargin={0.5}

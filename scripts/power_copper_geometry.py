@@ -1,12 +1,23 @@
 """Outgoing PCB wire segment metrics; widths/lengths in board-world millimetres.
 
-35 um copper, resistivity 2e-8 ohm m at the declared elevated copper temperature.
+Stackup-specific copper thickness, resistivity 2e-8 ohm m at the declared elevated copper temperature.
 This isolated segment resistance screen does not establish temperature rise.
 """
 import math
+import json
+from pathlib import Path
+
+STACKUP = json.loads((Path(__file__).resolve().parent.parent / "docs/STACKUP-A31.json").read_text())
+COPPER_THICKNESS_UM = {layer["name"]: layer["thicknessUm"] for layer in STACKUP["copperLayers"]}
 
 
-def measure_wire_segment(first, second, route_thickness_mode="constant"):
+def measure_wire_segment(segment, options=None):
+    first, second = segment
+    options = options or {}
+    route_thickness_mode = options.get("routeThicknessMode", "constant")
+    thickness_um = options.get("copperThicknessUm", 35)
+    if not math.isfinite(thickness_um) or thickness_um <= 0:
+        raise ValueError("Copper thickness must be finite and positive")
     length_mm = math.hypot(second["x"] - first["x"], second["y"] - first["y"])
     interpolation = first.get("width_interpolation_mode")
     if interpolation is None and route_thickness_mode == "interpolated":
@@ -18,7 +29,7 @@ def measure_wire_segment(first, second, route_thickness_mode="constant"):
     if not all(math.isfinite(w) and w > 0 for w in (start_width_mm, end_width_mm)):
         raise ValueError("Copper widths must be finite and positive")
     width_change_mm = end_width_mm - start_width_mm
-    resistance_ohm = (2e-8 / 35e-6) * length_mm * (
+    resistance_ohm = (2e-8 / (thickness_um * 1e-6)) * length_mm * (
         1 / start_width_mm if abs(width_change_mm) < 1e-12
         else math.log(end_width_mm / start_width_mm) / width_change_mm
     )
@@ -34,6 +45,7 @@ def measure_wire_segment(first, second, route_thickness_mode="constant"):
         "minimumWidthMm": min(start_width_mm, end_width_mm),
         "lengthBelow1mm": length_below_1mm,
         "resistanceOhm": resistance_ohm,
+        "copperThicknessUm": thickness_um,
     }
 
 
@@ -77,5 +89,5 @@ def measure_trace_wire_segments(trace):
             if (first.get("width_interpolation_mode") or mode == "interpolated") and "end_width" not in first:
                 raise ValueError("Taper ending at barrel lacks end width")
             end = {"x": second["x"], "y": second["y"], "width": first.get("end_width", first["width"])}
-        measured.append({"layer": start_layer, "start": {"x": first["x"], "y": first["y"]}, "end": {"x": second["x"], "y": second["y"]}, **measure_wire_segment(start, end, segment_mode)})
+        measured.append({"layer": start_layer, "start": {"x": first["x"], "y": first["y"]}, "end": {"x": second["x"], "y": second["y"]}, **measure_wire_segment([start, end], {"routeThicknessMode": segment_mode, "copperThicknessUm": COPPER_THICKNESS_UM[start_layer]})})
     return measured

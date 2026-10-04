@@ -33,7 +33,7 @@ const mcuEscapePositions = [
   { pinNumber: 7, xMm: -15.65, yMm: -5.025 },
   { pinNumber: 8, xMm: -14.8, yMm: -4.375 },
   { pinNumber: 9, xMm: -15.65, yMm: -3.725 },
-  { pinNumber: 10, xMm: -15.65, yMm: -3.075 },
+  { pinNumber: 10, xMm: -14.8, yMm: -3.075 },
   { pinNumber: 11, xMm: -24.35, yMm: -3.075 },
   { pinNumber: 12, xMm: -25.2, yMm: -3.725 },
   { pinNumber: 13, xMm: -24.35, yMm: -4.375 },
@@ -55,11 +55,12 @@ export function PinBreakoutPoints({ reference }: { reference: "U1" | "U11" }) {
             connection={`${reference}.pin${pinNumber}`}
             pcbX={xMm}
             pcbY={yMm}
-            // PD enable and the two ADC inputs cross dense corridors on bottom.
-            // Other signals retain the proven top-layer pad-row ordering.
+            // MCU controls cross beneath its body rather than wrapping side corridors.
+            // Power and reset stay top; all bottom
+            // landings preserve row order and reserve at least0.85mm pitch.
             layer={
-              (reference === "U1" && pinNumber === 16) ||
-              (reference === "U11" && [7, 8, 15].includes(pinNumber))
+              (reference === "U1" && [16, 18].includes(pinNumber)) ||
+              (reference === "U11" && ![4, 6].includes(pinNumber))
                 ? "bottom"
                 : "top"
             }

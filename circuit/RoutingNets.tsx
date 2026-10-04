@@ -1,6 +1,6 @@
 import { Fragment } from "react"
 
-// Native priorities route the75 remaining networks together after local escapes.
+// Reserve short sensing/reference routes before the remaining shared networks.
 // Global ground drops follow so fixed supply branches do not partition signals.
 // Names match the existing schematic; no electrical components are defined here.
 const signalNetNames = [
@@ -75,29 +75,37 @@ const signalNetNames = [
   "OV_INHIBIT",
 ]
 
+const quietNetNames = [
+  "VBUS_SENSE",
+  "VREG_1V2",
+  "VREG_2V7",
+  "ADC_VBUS",
+  "ADC_VM",
+]
+
 export function RoutingNets() {
   return (
     <>
-      <net name="GND" isGroundNet routingPhaseIndex={2} />
+      <net name="GND" isGroundNet routingPhaseIndex={4} />
       <net
         name="VBUS"
         isPowerNet
         nominalTraceWidth="2mm"
-        routingPhaseIndex={1}
+        routingPhaseIndex={3}
       />
-      <net name="VDD5" isPowerNet routingPhaseIndex={1} />
-      <net name="VCC3V3" isPowerNet routingPhaseIndex={1} />
+      <net name="VDD5" isPowerNet routingPhaseIndex={3} />
+      <net name="VCC3V3" isPowerNet routingPhaseIndex={3} />
       <net
         name="EFUSE_IN"
         isPowerNet
         nominalTraceWidth="2mm"
-        routingPhaseIndex={1}
+        routingPhaseIndex={3}
       />
       <net
         name="VIN_BUCK"
         isPowerNet
         nominalTraceWidth="2mm"
-        routingPhaseIndex={1}
+        routingPhaseIndex={3}
       />
       <net
         name="SWITCH_NODE"
@@ -105,12 +113,17 @@ export function RoutingNets() {
         nominalTraceWidth="2mm"
         routingPhaseIndex={0}
       />
-      <net name="VM" isPowerNet nominalTraceWidth="2mm" routingPhaseIndex={1} />
+      <net name="VM" isPowerNet nominalTraceWidth="2mm" routingPhaseIndex={3} />
       <net name="MOTOR_P" nominalTraceWidth="2mm" routingPhaseIndex={0} />
       <net name="MOTOR_N" nominalTraceWidth="2mm" routingPhaseIndex={0} />
       {signalNetNames.map((name) => (
         <Fragment key={name}>
-          <net name={name} routingPhaseIndex={1} />
+          <net
+            name={name}
+            routingPhaseIndex={
+              name === "MCU_NRST" ? 1 : quietNetNames.includes(name) ? 2 : 3
+            }
+          />
         </Fragment>
       ))}
     </>

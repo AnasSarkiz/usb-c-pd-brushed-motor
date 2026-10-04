@@ -144,7 +144,7 @@ export function PowerRouting() {
       />
       <autoroutingphase
         name="ground-plane-connections"
-        phaseIndex={4}
+        phaseIndex={5}
         autorouter={{
           preset: "fanout",
           allowViaInPad: false,

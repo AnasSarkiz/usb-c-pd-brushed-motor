@@ -1,3 +1,166 @@
+# A22 revision31 — four-layer stackup, prerequisites in progress
+
+Native30 solves reset alone and all5 other quiet nets. Main69-net routing
+rejects VCC3V3/source_net_3_mst15 in cmn146 beside the MCU. Exact rejected
+artifactd2e46a7041d78150327790e7794864ca58679588d0f0b95b475df20031b1eee8
+contains no final accepted PCB traces. The failure remains preserved.
+
+The permitted provisional-stackup adjustment selects four-layer1.6mm
+JLC04161H-7628:35um outer/15.2um inner copper. All4 layers have native GND
+pours. Ordinary0.60/0.30mm vias remain full-stack; blind/buried vias are
+explicitly disabled. All12 imported EP barrels retain positions/sizes and
+span the full stack through native rendering, without supplier edits.
+Physical outline, bodies, pads, breakouts, nets and all DRC rules are unchanged.
+Independent audits now verify layer count/span against the manufacturing
+manifest, ground on all4 layers and thickness-specific power resistance.
+New regressions cover missing inner barrel bonds and inner copper resistance.
+Unrouted artifact210ef1d22f4270e43e6127cd3012ca7ee8213cc9eeed4119afdbd49964f4bac1
+passes strict schema,140 supplier transforms/exact12 EP vias, derived-net
+isolation, full140/152 placement,31 targets/163 labels and129 automatic
+rotations. Native layer spans are independently verified for all12 imported
+vias and14 PTH pads; bodies/pads/courtyards and8 A4 sheets remain identical
+to the reviewed placement. Final formatting/TypeScript and38 board tests/460
+assertions pass, including inner-copper and barrel-bond regressions. Core
+four-layer focus:6 pass/18 assertions,1 pre-existing dense-routing test skipped.
+The initial draft TypeScript enum lookup failed and was corrected without type
+escapes; original failure and final passing logs remain preserved. All five
+native prerequisites pass with zero errors. Native31 routing is authorized.
+All4 emitted copper layers, routed checks and fabrication remain pending.
+GitHub publication remains blocked: this independent main has no configured
+remote. Known private tscircuit publication follows the validated source commit.
+
+---
+
+# A22 revision30 — reset routing priority, prerequisites in progress
+
+Native29 passes all local IC escapes but rejects MCU_NRST in its6-net quiet
+phase. Exact failed artifact27d73c4cbb98c4627117a73e101baed2eaaa95a69b957b61337803925337ea21
+has no final PCB traces. Independent native2x diagnosis reproduces the failure
+in2.631s. The affected region beside the MCU combines reset and both ADC
+routes; the new pin10 escape is retained. No rejected copper is accepted.
+
+Supported native phases now route MCU_NRST alone first, the5 remaining quiet
+nets second, the69 other networks third and ground fourth. Final native
+plane fanout moves to phase5. Electrical nets, component/pad geometry,
+breakout targets, trace/via/edge rules and two-layer stackup are unchanged.
+Fresh complete artifact03d21f7f2a6c2f54caf2a4e177a987b65e619cacbb0d99f05561b8b655051cff
+passes strict schema,140 supplier transforms/exact12 EP vias, derived-net
+isolation, full140/152 placement,31 targets/163 labels and129 automatic
+rotations. Formatting/TypeScript and all five native prerequisite commands
+pass with zero errors. Identical physical geometry preserves the reviewed
+placement and8 A4 sheets. Native30 routing is authorized; final copper,
+fabrication and physical gates remain pending.
+
+---
+
+# A22 revision29 — selector underside escape, prerequisites in progress
+
+Native28 completes all6 quiet nets, then fails the remaining69-net phase on
+VOLTAGE_BIT_12/source_net_24_mst0 in cmn146 beside the MCU. Exact failed artifact
+7840cc5b5c841bc1a111789db06cb45ed510f675820c5e11e92961f9a92793d3
+has zero final accepted copper; the earlier solved phases remain diagnostic
+outputs only. Rejected primary/regional results are retained.
+
+Pin10's target staggers to(-14.8,-3.075),1.07005mm from pin9(-15.65,-3.725),
+and changes to bottom. Only MCU power pin4 and reset pin6 remain top. PD
+enable/sense remain bottom. Existing component, pad, schematic and other
+target coordinates are unchanged; all ordinary via/drill/edge rules remain.
+The6-net quiet phase remains first,69 networks second,ground afterward.
+Fresh complete-board audits pass on artifact SHA256
+cb0f960ec6b07bde6ca20c0dcd9f2b2e6346f499d8a1d6f3a24243725a0db12d.
+Strict schema,140 unchanged supplier transforms/exact12 EP vias, derived-net
+isolation, full140/152 placement,31 targets/163 labels and129 automatic
+rotations pass. All five native prerequisites pass with zero errors; the
+complete-artifact audits verify physical board records. Formatting and
+TypeScript pass. Geometry equivalence preserves the prior reviewed bodies,
+pads, courtyards, artwork and all8 A4 sheets. Native29 routing is authorized;
+final copper/fabrication/physical gates remain pending.
+
+---
+
+# A22 revision28 — quiet-net routing priority, prerequisites in progress
+
+Native27 passes all local escapes but main routing still fails VBUS_SENSE
+in cmn71. Exact failed artifact
+fb547da4d947149ef9a83d7108cc0f55747302fc21692028c04d2f8a6c88f62e
+has zero final copper; rejected primary/regional results stay preserved.
+
+Supported native net priorities now route6 short sensing/reference nets first:
+VBUS_SENSE,VREG_1V2,VREG_2V7,MCU_NRST,ADC_VBUS,ADC_VM. The69 remaining networks
+follow together, then global ground. Local IC escapes and7 saved high-current
+paths still precede these phases; final ground-plane fanout remains phase4.
+No trace/drill/edge rule, electrical connection, component, pad or placement
+is changed. The two-layer1oz stackup and2x native solver remain unchanged.
+Fresh unrouted native build passes:SHA256
+6012d89c7c76cbc6f9e031121e916a4468eaa7f1259b2b96aa309ea141bf464c.
+Strict schema,140 supplier transforms/exact12 EP vias, derived-net isolation,
+full140/152 placement,31 targets/163 labels and129 automatic rotations pass.
+Body/pad/hole/via/artwork/courtyard/schematic geometry matches the reviewed
+revision27/25. Formatting and TypeScript pass. All five native prerequisite checks
+pass with zero errors. Complete-artifact placement independently confirms
+140/152 PCB records. Native28 routing is now authorized under unchanged rules. Full copper/manufacturing/physical gates remain pending.
+
+---
+
+# A22 revision27 — PD sense underside escape, prerequisites in progress
+
+Native26 passes all local escapes and fixed paths. Its main phase fails at
+VBUS_SENSE/source_net_16_mst1; exact failed artifact
+b5f9e0f588a59ebb80791a051fff5f3a2f95f615979a0380059aa5230e4021fd
+has zero final PCB traces. Exact native2x diagnostic reproduces failure in
+28.694s. Final rejected region cmn71 is3.050×2.075mm above the PD controller:
+PD enable is bottom, VBUS sense starts top and must transition beside it.
+Failure and validator rejection remain visible; no failed copper is accepted.
+
+PD sense pin18 now escapes to bottom, alongside enable pin16. Unchanged
+landings(-25.65,6.9)/(-24.65,7.5) are1.16619mm apart. The previously validated
+1.150005mm upper corridor remains available for ordinary off-pad vias. MCU
+escapes and all component/land/schematic geometry are unchanged. Routing
+rules,2x native solver and electrical connections are unchanged. Fresh unrouted build passes:SHA256
+bb1b3120faa378f52da56e7e2c3b5336de08a21debf615d1b248caf9dafc2e5e.
+Strict schema,140 supplier transforms/exact12 EP vias, derived-net isolation,
+full140/152 placement,31 landing targets,163 labels and129 automatic supplier
+rotations pass. Physical component/artwork/schematic geometry matches reviewed
+revision26/25 exactly; formatting and TypeScript pass. All five native prerequisite
+checks pass with zero errors; complete-artifact guard independently confirms
+140/152 PCB records. Native27 routing is now authorized with unchanged rules. No fabrication output yet.
+
+---
+
+# A22 revision26 — MCU underside escapes, prerequisites in progress
+
+Native25 passes every local escape but fails main routing at VOLTAGE_DRIVE_9.
+Both2x and5x exact-input diagnostic runs reproduce the same failed22-port
+MCU-side region; rejected copper and validator failures remain preserved.
+Revision25 source is committed as5a015d5a4b3d13922d1469dca2268680cebdb9b7.
+Its verified private release is0.0.1-a22-adc-source-5a015d5-verified-ffe2435d:
+565 acknowledgements/0 failures, all staged source hashes match Git after
+publishing. Initial archive/per-file413 rejection and automatic-version
+manifest mismatch are retained separately; neither counted as exact-source
+publication. A fresh unique tag and excluded redundant oversized raw upload
+log corrected publication integrity. GitHub remote is still absent.
+
+All MCU signal targets except pins4/6/10 now use bottom, so controls can cross
+beneath its body instead of wrapping congested side corridors. Existing
+staggered target coordinates and the revised ADC pin8 target are retained.
+Power pin4, NRST pin6 and closely spaced pin10 remain top. PD escapes stay
+unchanged: only PD enable pin16 uses bottom. This yields16 bottom targets
+and15 top targets; target pitch/all-pad planning rules remain unchanged and
+require a fresh audit. Supplier components, PCB positions,8 sheets, electrical
+connections, trace/drill/edge rules and native2x solver are unchanged.
+Fresh unrouted native build passes:SHA256
+1baad29865fc6baf468d18f34c445b1de835dbca916faae80b8b948b8a6b8770.
+The140 source/152 PCB/exact12 imported vias/no-trace inventory, strict schema,
+all supplier transforms, derived-net isolation, full placement,31 targets,
+163 labels and129 automatic supplier rotations pass. All body/pad/hole/via/
+artwork/courtyard/schematic geometry equals visually inspected revision25;
+that review remains applicable. Formatting and TypeScript pass. All five fresh
+native prerequisite checks pass with zero errors; complete-artifact placement
+audit independently verifies140/152 PCB records. Native26 routing is now
+authorized with unchanged copper/drill rules. Routing/fabrication/physical gates remain pending.
+
+---
+
 # A22 revision25 — ADC escape and fresh diode import, prerequisites in progress
 
 Native24 routes all local escapes/fixed paths but fails main routing at ADC_VBUS.

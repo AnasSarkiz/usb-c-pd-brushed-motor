@@ -36,6 +36,9 @@ artifact=Path('dist/index/circuit.json').read_bytes()
 elements=json.loads(artifact)
 assert sum(e['type']=='source_component'for e in elements)==140
 assert any(e['type']=='pcb_trace'for e in elements)
+stackup=json.loads(Path('docs/STACKUP-A31.json').read_text())
+copper_layers=[layer['name']for layer in stackup['copperLayers']]
+assert next(e for e in elements if e['type']=='pcb_board')['num_layers']==len(copper_layers)
 original=json.loads(gzip.decompress(Path('evidence/validated-preroute-circuit-A22.json.gz').read_bytes()))
 original_vias=[e for e in original if e['type']=='pcb_via']
 assert len(original_vias)==12
@@ -54,7 +57,7 @@ for e in elements:
         if not is_original:
             ordinary_vias+=1
             if abs(e['hole_diameter']-.3)>EPS or abs(e['outer_diameter']-.6)>EPS:issues.append({'rule':'ordinary_via_size','via':e['pcb_via_id']})
-            if e['layers']!=['top','bottom']:issues.append({'rule':'ordinary_via_layer_span','via':e['pcb_via_id']})
+            if e['layers']!=copper_layers:issues.append({'rule':'ordinary_via_layer_span','via':e['pcb_via_id']})
             for index in pad_tree.query(geometry.buffer(.2)):
                 distance=geometry.distance(pad_geometries[index]);minimum_drill_pad=min(minimum_drill_pad,distance)
                 if distance+EPS<.2:issues.append({'rule':'ordinary_drill_to_component_pad','via':e['pcb_via_id'],'pad':pads[index].get('pcb_smtpad_id',pads[index].get('pcb_plated_hole_id')),'clearanceMm':distance})

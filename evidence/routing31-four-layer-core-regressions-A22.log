@@ -1,0 +1,24 @@
+bun test v1.4.2 (744846f84)
+
+tests/utils/get-autorouted-via-layers.test.ts:
+(pass) autorouted vias use the board's physical span policy [0.14ms]
+
+tests/repros/repro-through-via-inner-layer-missing-barrel.test.tsx:
+(pass) a missing through barrel leaves the top escape disconnected from inner2 [835.67ms]
+
+tests/repros/repro-through-via-inner-layer-connectivity.test.tsx:
+(pass) through-via barrels connect separate top escapes to an inner2 bridge [227.29ms]
+
+tests/features/four-layer-routing/four-layer-routing01.test.tsx:
+(skip) autorouter uses inner layers on a four-layer board with dense crossings
+
+tests/components/primitive-components/via-layer-span.test.tsx:
+(pass) pcb_via.layers includes intermediate inner layers on a 4-layer board [2.69ms]
+(pass) pcb_via.layers spans only the crossed layers for a partial-span via [1.24ms]
+(pass) pcb_via.layers stays [top, bottom] on a 2-layer board [1.00ms]
+
+ 6 pass
+ 1 skip
+ 0 fail
+ 18 expect() calls
+Ran 7 tests across 5 files. [1.62s]
