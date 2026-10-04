@@ -1,0 +1,30 @@
+{
+  "type": "autorouter_debug_summary",
+  "generatedAt": "2026-10-04T09:07:46.303Z",
+  "phaseCount": 1,
+  "phases": [
+    {
+      "subcircuit_id": "subcircuit_source_group_2",
+      "componentDisplayName": "<board#848 />",
+      "routingPhaseIndex": 0,
+      "phaseOrdinal": 1,
+      "phaseCount": 11,
+      "connectionCount": 13,
+      "obstacleCount": 437,
+      "previousTraceCount": 0,
+      "autorouterName": "tscircuit",
+      "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+      "effort": 2,
+      "cacheStatus": "miss",
+      "cacheKey": "routes:core@0.0.2087:solver:0f3db71771b19459:srj:6dab8cdd18ef6010",
+      "elapsedMs": 6560,
+      "error": {
+        "message": "aJ ran out of iterations (capacity-autorouter@0.0.958)"
+      },
+      "startedAt": "2026-10-04T09:07:39.127Z",
+      "completedAt": "2026-10-04T09:07:45.687Z"
+    }
+  ],
+  "circuitJsonElementCount": 5269,
+  "targetPhaseReached": false
+}

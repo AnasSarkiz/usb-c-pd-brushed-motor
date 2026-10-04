@@ -1,0 +1,22 @@
+bun test v1.4.2 (744846f84)
+
+tests/repros/repro-symbol-alias-is-not-internal-short.test.tsx:
+11 |       <PESD24VS2UT_215 name="D1" connections={{ pin1: "net.CC1", pin2: "net.CC2", pin3: "net.GND" }} />
+12 |       <pcbnotetext text="C477999: C1 and C2 share alias C but are separate cathodes" pcbY={4} fontSize={0.3} />
+13 |     </board>,
+14 |   )
+15 |   await circuit.renderUntilSettled()
+16 |   expect(circuit.db.source_component_internal_connection.list()).toHaveLength(0)
+                                                                      ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/repros/repro-symbol-alias-is-not-internal-short.test.tsx:16:66)
+(fail) shared symbol alias preserves independent dual ESD cathodes [47.42ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [404.00ms]

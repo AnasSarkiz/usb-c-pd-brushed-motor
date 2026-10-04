@@ -1,0 +1,20 @@
+{
+  "part": "C477999",
+  "officialImportCommand": "tsci import C477999 --jlcpcb --use-exact-footprint",
+  "originalSha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+  "freshSha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
+  "allThreeSupplierLocalPadsByteIdentical": true,
+  "electricalPins": [
+    1,
+    2,
+    3
+  ],
+  "pin1": "CC1 cathode",
+  "pin2": "CC2 cathode",
+  "pin3": "GND common anode",
+  "removedGenericSymbolAlias": "C",
+  "independentRenderSchemaPassed": true,
+  "internalConnectionCount": 0,
+  "courtyardOnlyGeometryChange": "official converter now emits symmetric approximately3.50\u00d73.40mm courtyard instead of approximately3.548\u00d73.548mm",
+  "currentBoardNotYetChanged": true
+}

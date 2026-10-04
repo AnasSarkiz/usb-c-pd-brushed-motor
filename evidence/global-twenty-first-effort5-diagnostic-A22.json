@@ -1,0 +1,24 @@
+{
+  "inputPath": "evidence/routing-twenty-first-debug-A22/phase-0.input.simple-route.json",
+  "inputSha256": "e7f49211443f4a6d7c2f0833253ee5d573a45cd7ad3811dc9526e67f1d17bcba",
+  "diagnosticOnly": true,
+  "effort": 5,
+  "solved": false,
+  "failed": true,
+  "error": "aJ ran out of iterations",
+  "elapsedMs": 2412,
+  "phaseTimings": {
+    "preprocessSimpleRouteJsonSolver": 2.6775419999999883,
+    "componentDetectionSolver": 0.701541000000006,
+    "escapeViaLocationSolver": 4.313041999999996,
+    "netToPointPairsSolver": 0.19616700000000264,
+    "topologyPlanningSolver": 24.942500000000024,
+    "topologyMergingSolver": 26.275667,
+    "nodeDimensionSubdivisionSolver": 0.7879159999999956,
+    "edgeSolver": 7.202249999999992,
+    "availableSegmentPointSolver": 1.0922499999999786,
+    "necessaryCrampedPortPointSolver": 0.46179200000000264,
+    "preloadedTraceGraphSolver": 0.13695899999999028,
+    "portPointPathingSolver": 0
+  }
+}

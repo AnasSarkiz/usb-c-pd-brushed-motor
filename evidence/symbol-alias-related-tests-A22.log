@@ -1,0 +1,33 @@
+bun test v1.4.2 (744846f84)
+
+tests/repros/repro-symbol-alias-is-not-internal-short.test.tsx:
+(pass) shared symbol alias preserves independent dual ESD cathodes [47.67ms]
+
+tests/repros/repro-ics43434-ground-pad-ports.test.tsx:
+(pass) ICS-43434 imported ground polygons have internally connected PCB ports [1361.17ms]
+
+tests/repros/repro-custom-symbol-internally-connected-pins.test.tsx:
+(pass) imported DMT6007LFG_7 custom symbol ports support internallyConnectedPins [577.85ms]
+
+tests/repros/repro109-non-overlapping-composite-pin-ambiguous.test.tsx:
+(pass) repro109: repeated portHints on non-overlapping pads create internally connected ports [193.32ms]
+
+tests/repros/repro112-implicit-internal-composite-pin.test.tsx:
+(pass) repro111: separated contacts for one terminal become internally connected ports [333.11ms]
+
+tests/repros/repro-custom-symbol-internally-connected-pins-without-traces.test.tsx:
+(pass) imported DMT6007LFG_7 custom symbol supports internallyConnectedPins without traces or netlabels [386.14ms]
+
+tests/breakout/fanout-custom-symbol-port-alias.test.tsx:
+(pass) fanout resolves imported-style symbol aliases after source ports and traces exist [199.06ms]
+
+tests/components/primitive-components/trace-ambiguous-imported-alias-pcb-target.test.tsx:
+(pass) ambiguous imported alias pin connects through inferred internal ports [19.84ms]
+
+tests/components/normal-components/internally-connected-pins-numbers.test.tsx:
+(pass) internallyConnectedPins with numbers should convert to pin names [683.61ms]
+
+ 9 pass
+ 0 fail
+ 75 expect() calls
+Ran 9 tests across 9 files. [4.17s]

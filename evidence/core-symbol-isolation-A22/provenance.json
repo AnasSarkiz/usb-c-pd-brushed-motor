@@ -1,0 +1,28 @@
+{
+  "baseCommit": "51b3b57d60b9153e8e7a0449023bbefdba18ec23",
+  "version": "0.0.2089",
+  "sourceSha256": {
+    "lib/components/base-components/NormalComponent/utils/inferInternallyConnectedPinNamesFromPorts.ts": "6c6144072735fc0401616d961114280eee0b2702dcbc81ce9bedde9a3ef9f7e9",
+    "lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson.ts": "366a0a3a8ee237c8d1f82068f61348da9e9e668ccb8fbf25433e47d281235866",
+    "tests/repros/repro-symbol-alias-is-not-internal-short.test.tsx": "32c5eb4e0d27fcb0e099f58aba28305e334f88edd25e4a2093357229d1d3e521",
+    "tests/utils/autorouting/simple-route-json-missing-pcb-ports.test.tsx": "0c68d06706b9a7c313e8440f6c375f6aa0b5636f590a7eab7047531123a601e2",
+    "tests/fixtures/pesd24vs2ut-import.tsx": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+    "tests/repros/__snapshots__/repro-symbol-alias-is-not-internal-short-pcb.snap.svg": "f23ef934e73d978f5923167f4474febdcb36f978c1a467cd2e02d303f3b697de",
+    "tests/repros/__snapshots__/repro-symbol-alias-is-not-internal-short-schematic.snap.svg": "df7950755f6db242573abed6025447f014f08c7897acd26ca02b7d8bbb804ad5"
+  },
+  "patchSha256": "b873137e3e2e4b88deca9930121757f370370c9e021a4c221a0479fbc8ae5fd9",
+  "untrackedFixturesPreservedSeparately": true,
+  "focusedTests": {
+    "passed": 9,
+    "assertions": 75
+  },
+  "compatibilityTests": {
+    "passed": 146,
+    "skipped": 4,
+    "failed": 0,
+    "assertions": 2638,
+    "files": 136
+  },
+  "supplierImportUnchanged": true,
+  "pcbAndSchematicSnapshotsVisuallyReviewed": true
+}

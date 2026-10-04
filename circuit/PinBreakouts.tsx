@@ -16,7 +16,7 @@ const pdEscapePositions = [
   { pinNumber: 6, xMm: -22.4, yMm: 1.2 },
   { pinNumber: 7, xMm: -21.5, yMm: 2.3 },
   { pinNumber: 8, xMm: -21.5, yMm: 3.15 },
-  { pinNumber: 16, xMm: -24.65, yMm: 6.9 },
+  { pinNumber: 16, xMm: -24.65, yMm: 7.5 },
   { pinNumber: 18, xMm: -25.65, yMm: 6.9 },
   { pinNumber: 19, xMm: -27.3, yMm: 5.8 },
   { pinNumber: 21, xMm: -27.3, yMm: 4.6 },
@@ -55,13 +55,14 @@ export function PinBreakoutPoints({ reference }: { reference: "U1" | "U11" }) {
             connection={`${reference}.pin${pinNumber}`}
             pcbX={xMm}
             pcbY={yMm}
-            // Escape to the bottom outside supplier pads. The three right-side
-            // MCU targets with no adjacent via room stay on top; this preserves
-            // pin order and reserves 0.85mm between bottom via landing centers.
+            // PD_ENABLE_N crosses the supply corridor on bottom; remaining
+            // local escapes stay on top so the fine-pitch pad rows retain
+            // their proven ordering and do not force unnecessary vias.
             layer={
-              reference === "U11" && [4, 8, 10].includes(pinNumber)
-                ? "top"
-                : "bottom"
+              (reference === "U1" && pinNumber === 16) ||
+              (reference === "U11" && pinNumber === 15)
+                ? "bottom"
+                : "top"
             }
           />
         </Fragment>

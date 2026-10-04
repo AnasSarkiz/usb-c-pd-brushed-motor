@@ -18,7 +18,10 @@ put its directory first in PATH for this task. Bun1.3.9 exhibits a native routin
 regression that passes with source-identical1.4.2. Install with
 `bun install --frozen-lockfile`.
 Use `bun run format:check`, `bun run typecheck`, `bun run test`, `bun run power:report`
-and `bun run build`. Core/props source fixes are reproducible tarballs with patches,
+and `bun run build`. Core2089 preserves independent symbol terminals; its source regression suite
+passes146 tests/2638 assertions (four existing skips). The current board audit
+also checks derived internal links against distinct intended nets.
+Core/props source fixes are reproducible tarballs with patches,
 upstream bases and regression evidence; no installed dependency or supplier part
 was patched. Use explicit A22 audit configurations to avoid overwriting history.
 
@@ -48,7 +51,7 @@ regulation and2 A thermal ratings require prototype measurements.
 No fabrication order has been placed. This independent Git main has no remote;
 GitHub publication remains blocked by the missing repository/branch. The known
 private tscircuit package has the earlier WIP release
-`0.0.1-a22-placement-c265655`; its server build is unverified. Local work continues.
+`0.0.1-0.0.1-a22-breakouts21-52f7feb`; its server build is unverified. Local work continues.
 
 ## Historical implementation notes
 

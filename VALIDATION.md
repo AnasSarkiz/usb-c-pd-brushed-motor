@@ -1,3 +1,130 @@
+# A22 revision24 — CC isolation and prerouting passed, 2026-10-04
+
+Native23 completed the PD/MCU local escape and fixed power phases, but failed
+main phase1 high-density routing on source_net_11_mst2 (CC2, not SDA).
+Its failed artifact SHA256 is
+17991d6e5b35103845da8719d895995a679ee7814dc3ef73b8f89d57dba0b4a8;
+no final copper was committed. Numeric inspection of its native routing graph
+found CC1 and CC2 sharing one conductive root. The generated source internal
+connection links D2 pins1/2 because both imported symbol ports carry alias C.
+Nexperia PESD24VS2UT datasheet (2023-04-13), pin table2, specifies independent
+cathodes1/2 and common anode3:
+https://assets.nexperia.com/documents/data-sheet/PESD24VS2UT.pdf .
+
+This is a canonical core alias-inference defect, not a physical diode short.
+The exact unchanged official C477999 import is copied into a regression fixture.
+The original source fails the independent-cathode assertion; fixed source passes.
+Symbol drawing aliases no longer imply conductive package connections; explicit
+package pin labels and physical repeated-contact inference remain active.
+Nine focused tests/75 assertions pass. A broader run exposed missing PCB-port
+records returning undefined where the netless-routing filter expected null;
+a direct regression reproduces that exception and the canonical filter now
+excludes both absent-record forms. The final affected suite passes146 tests/2638
+assertions across136 files, with four pre-existing skipped tests and no errors.
+Canonical TypeScript and build pass. Local package2089 is built from canonical
+source, with packed/installed byte equality checked. Current-board revalidation passes all five required native checks, strict
+schema,140 imports/12 EP vias, connectivity/internal-net isolation, full
+placement,31 routing targets,163 labels and129 automatic supplier rotations. No installed dependency or supplier definition is manually patched.
+
+The schematic audit now independently rejects internal links between distinct
+intended nets. It rejects the old artifact's CC1/CC2 link. Earlier individual
+pin/trace checks did not detect that derived connection; their historical passing
+results do not qualify CC isolation. Stage2 and prerouting placement gates pass against regenerated artifact
+c3cd306c2ad8955bebdf74b2e2c39cbc56b9f0fa0d99a28372dd21e9fd68dcca.
+All eight current A4 schematics were inspected; warnings remain visible with
+exact accepted advisory evidence. Current38 board tests/460 assertions, assembly
+split regression, formatting, TypeScript and reproducibly linked bring-up
+firmware pass. ELF/BIN hashes match the previous inhibited build.
+Native24 may now route; routed/copper/manufacturing validation remains pending.
+Placement geometry, exact12 imported EP exceptions, clearance and via rules
+remain unchanged. The independent official exact-footprint C477999 reimport
+also passes three-pin/three-pad/schema/internal-net checks. Its three copper pads
+are byte-identical, symbol alias C is removed and courtyard is slightly smaller.
+It is audited separately and not yet adopted into this validated revision.
+The initial default importer proposed a99.04% generic footprinter match; that
+output was superseded by the explicit supported exact-footprint import.
+No manufacturing output or fabrication approval is claimed.
+
+---
+
+# A22 PD via corridor revision23 — prerouting passed, 2026-10-04
+
+Native22 fails the same PD local phase before committing copper. Exact failed
+artifact830e094459eba8ef758754b93f4e2052fb9509aba4c4511c0b7bee1e34743943.
+Diagnostic graph traversal identifies a disconnected top/bottom escape graph,
+even before applying via-fit constraints. Source investigation then identifies
+a geometric cause: the outer0.550005mm strip is below the native0.60mm via plus
+clearance threshold, so no multilayer region exists inside the local routing
+bounds. This does not establish a supplier-import or tooling-source defect.
+No installed/canonical dependency or electronic definition was changed.
+
+U1.pin16's native routing target moves from(-24.65,6.9) to(-24.65,7.5).
+The upper escape corridor is now1.150005mm deep, exceeding the conservative
+0.60+2×0.25=1.10mm requirement; its target clears all actual pads by0.924994mm.
+An added planning check rejects the exact previous artifact and passes the
+current one. This reserves real off-pad routing area without expanding or
+altering a supplier footprint. Its native pd_pin_escape group follows the
+new target extent; all other targets/components are unchanged.
+Fresh unrouted SHA256:
+64d7d2b827ecc20fcd833ea0c26aa6eb98d51bc006448680f7c561f268fe8664.
+Strict schema,140 supplier transforms/12 EP vias, connectivity, full placement,
+31 targets,163 labels and129 automatic supplier rotations pass. Only one
+breakout Y, its generated native group bounds and source metadata differ from
+the previous checked artifact; visual component/artwork/eight A4 schematic
+reviews remain applicable. All five required native commands pass with zero errors.
+Native23 may now route under the unchanged copper/drill rules. Current source formatting and
+TypeScript pass; prior complete38tests/460assertions remain applicable to
+unchanged firmware/logic.
+
+Assembly preparation preserves a reproduced full-part rotation rejection for
+the seven manually fitted nonpolar single-pin contacts. Structured advisories
+stay visible; all129 automatic rotations pass. The assembly-file guard rejects
+an unrouted input before creating any output. Native copper/drill/ground/power,
+routed visual review and manufacturing export remain unfinished; no order.
+
+---
+
+# A22 selected bottom escape revision22 — prerouting passed, 2026-10-04
+
+Native21's13 forced-bottom PD escapes fail in port-point pathing (iteration
+limit), before any copper is committed. Exact failed artifact:
+e4a936229de53e5f89f8d70a126b8ea381399a5f26d25b6c39553090143e3d59.
+An untouched native5x diagnostic reproduces the iteration failure. This is
+retained as a failed routing experiment, not manufacturing evidence.
+
+Revision22 targets only PD_ENABLE_N endpoints U1.pin16/U11.pin15 on bottom;
+other29 native targets stay top. Minimum bottom landing center spacing is
+12.5786mm, and all31 targets retain0.50mm all-pad planning clearance. Native
+routing combines the75 remaining networks after local escapes/fixed traces,
+then routes global ground drops, allowing supply/control routes to be solved
+in one stage. No component, connection, outline or copper rule changes.
+Fresh unrouted SHA256:
+ef65db3a8e18c840094766dc0eb7811c8f775cc3e090be07f61fa1230fa4d9b5.
+All five required native commands pass, as do strict schema,140 imports/12 EP
+vias, full placement, connectivity,31 targets and163 labels. The26 changed
+breakout layers and source metadata are the only Circuit JSON differences from
+revision21; its visual placement/eight A4 schematic reviews remain applicable.
+Formatting, TypeScript and38tests/460assertions pass. Native22 may now route.
+
+Manufacturing preparation adds tested native assembly row splitting, retaining
+140 engineering parts and explicit129 automatic/11 manual operations. The
+strict automatic supplier-orientation audit passes all129 parts. Seven exact
+Keystone5015/C2906768 single-electrical-pin contacts lack pin1 rotation anchors;
+their native warnings are retained, their exact identity/pin count verified,
+and they remain outside automatic assembly. Their PCB rotations are manual-fit
+intent; physical fit is a required prototype test. No electronic import changed.
+The initial strict full140-part orientation audit failed on these contacts and
+is not misreported as passing. New scripts never approve copper or fabrication.
+
+Validated milestone52f7febe2d5905a33eec2f6ba1cbef24c8026ca8 published411 files,
+zero failed, under exact registry version
+0.0.1-0.0.1-a22-breakouts21-52f7feb. Cloud build unverified; GitHub remains blocked
+by missing remote. Raw tool-log whitespace is preserved verbatim; source-only
+Git whitespace check passes. Full routing/copper/drill/power/visual/fabrication
+checks remain pending; no fabrication order or physical hardware claim.
+
+---
+
 # A22 bottom-layer escape revision21 — prerouting passed, 2026-10-04
 
 Native20 routes all seven supply networks, then fails phase2 PD/host routing:

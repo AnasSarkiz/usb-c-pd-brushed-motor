@@ -1,0 +1,12 @@
+{
+  "targets": 31,
+  "issues": [
+    {
+      "reference": "U1",
+      "pin": "VBUS_EN_SNK",
+      "issue": "PD upper escape corridor cannot reserve the routed via plus two clearances",
+      "corridorDepthMm": 0.5500046999999997,
+      "requiredDepthMm": 1.1
+    }
+  ]
+}

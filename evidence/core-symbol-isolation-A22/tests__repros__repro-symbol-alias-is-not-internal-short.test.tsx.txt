@@ -1,0 +1,43 @@
+import { expect, test } from "bun:test"
+import { getSimpleRouteJsonFromCircuitJson } from "lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson"
+import { getTestFixture } from "tests/fixtures/get-test-fixture"
+import { PESD24VS2UT_215 } from "tests/fixtures/pesd24vs2ut-import"
+
+test("shared symbol alias preserves independent dual ESD cathodes", async () => {
+  const { circuit } = getTestFixture()
+  circuit.pcbRoutingDisabled = true
+  circuit.add(
+    <board width={12} height={10} schAutoLayoutEnabled>
+      <PESD24VS2UT_215
+        name="D1"
+        connections={{ pin1: "net.CC1", pin2: "net.CC2", pin3: "net.GND" }}
+      />
+      <pcbnotetext
+        text="C477999: C1 and C2 share alias C but are separate cathodes"
+        pcbY={4}
+        fontSize={0.3}
+      />
+    </board>,
+  )
+  await circuit.renderUntilSettled()
+  expect(circuit.db.source_component_internal_connection.list()).toHaveLength(0)
+  const { simpleRouteJson } = getSimpleRouteJsonFromCircuitJson({
+    db: circuit.db,
+    subcircuitComponent: circuit.firstChild!,
+  })
+  const cc1 = circuit.db.source_net.getWhere({ name: "CC1" })!
+  const cc2 = circuit.db.source_net.getWhere({ name: "CC2" })!
+  for (const obstacle of simpleRouteJson.obstacles) {
+    expect(obstacle.offBoardConnectsTo?.length ?? 0).toBe(0)
+    if (obstacle.connectedTo.includes(cc1.source_net_id))
+      expect(obstacle.connectedTo).not.toContain(cc2.source_net_id)
+  }
+  expect(
+    circuit.db.source_port
+      .list()
+      .map((port) => port.pin_number)
+      .toSorted(),
+  ).toEqual([1, 2, 3])
+  expect(circuit).toMatchPcbSnapshot(import.meta.path)
+  expect(circuit).toMatchSchematicSnapshot(import.meta.path)
+})

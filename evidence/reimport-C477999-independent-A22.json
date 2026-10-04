@@ -1,0 +1,115 @@
+{
+  "part": "C477999",
+  "sourceSha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
+  "schemaPassed": true,
+  "pinNumbers": [
+    1,
+    2,
+    3
+  ],
+  "internalConnections": 0,
+  "pads": [
+    {
+      "type": "pcb_smtpad",
+      "shape": "rect",
+      "pcb_smtpad_id": "pcb_smtpad_0",
+      "subcircuit_id": "subcircuit_source_group_0",
+      "x": 0.999998,
+      "y": -0.94996,
+      "width": 0.999998,
+      "height": 0.6500114,
+      "layer": "top",
+      "port_hints": [
+        "pin1"
+      ],
+      "pcb_component_id": "pcb_component_0",
+      "pcb_port_id": "pcb_port_1",
+      "is_covered_with_solder_mask": false
+    },
+    {
+      "type": "pcb_smtpad",
+      "shape": "rect",
+      "pcb_smtpad_id": "pcb_smtpad_1",
+      "subcircuit_id": "subcircuit_source_group_0",
+      "x": 0.999998,
+      "y": 0.94996,
+      "width": 0.999998,
+      "height": 0.6500114,
+      "layer": "top",
+      "port_hints": [
+        "pin2"
+      ],
+      "pcb_component_id": "pcb_component_0",
+      "pcb_port_id": "pcb_port_0",
+      "is_covered_with_solder_mask": false
+    },
+    {
+      "type": "pcb_smtpad",
+      "shape": "rect",
+      "pcb_smtpad_id": "pcb_smtpad_2",
+      "subcircuit_id": "subcircuit_source_group_0",
+      "x": -0.999998,
+      "y": 0,
+      "width": 0.999998,
+      "height": 0.6500114,
+      "layer": "top",
+      "port_hints": [
+        "pin3"
+      ],
+      "pcb_component_id": "pcb_component_0",
+      "pcb_port_id": "pcb_port_2",
+      "is_covered_with_solder_mask": false
+    }
+  ],
+  "diagnostics": [
+    {
+      "type": "source_component_pins_underspecified_warning",
+      "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+      "warning_type": "source_component_pins_underspecified_warning",
+      "message": "All pins on D2 are underspecified (no pinAttributes set)",
+      "source_component_id": "source_component_0",
+      "source_port_ids": [
+        "source_port_0",
+        "source_port_1",
+        "source_port_2"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "D2 has no pin with requires_power=true",
+      "source_component_id": "source_component_0",
+      "source_port_ids": [
+        "source_port_0",
+        "source_port_1",
+        "source_port_2"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_ground_pin_defined_warning",
+      "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+      "warning_type": "source_no_ground_pin_defined_warning",
+      "message": "D2 has no pin with requires_ground=true",
+      "source_component_id": "source_component_0",
+      "source_port_ids": [
+        "source_port_0",
+        "source_port_1",
+        "source_port_2"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "schematic_component_styling_warning",
+      "schematic_component_styling_warning_id": "schematic_component_styling_warning_0",
+      "warning_type": "schematic_component_styling_warning",
+      "message": "D2 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
+      "schematic_component_id": "schematic_component_0",
+      "styling_issue_type": "missing_reference_designator_text",
+      "source_component_id": "source_component_0",
+      "schematic_sheet_id": "schematic_sheet_0"
+    }
+  ]
+}

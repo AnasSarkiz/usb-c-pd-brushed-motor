@@ -1,6 +1,7 @@
 import { Fragment } from "react"
 
-// Native route priorities reserve supplies before PD/host and control networks.
+// Native priorities route the75 remaining networks together after local escapes.
+// Global ground drops follow so fixed supply branches do not partition signals.
 // Names match the existing schematic; no electrical components are defined here.
 const signalNetNames = [
   "CC1",
@@ -74,43 +75,10 @@ const signalNetNames = [
   "OV_INHIBIT",
 ]
 
-const pdAndHostNetNames = new Set([
-  "CC1",
-  "CC2",
-  "PD_RESET",
-  "SCL",
-  "SDA",
-  "PD_ENABLE_N",
-  "VBUS_SENSE",
-  "PD_ALERT_N",
-  "VREG_1V2",
-  "VREG_2V7",
-  "MCU_NRST",
-  "ADC_VBUS",
-  "ADC_VM",
-  "VOLTAGE_BIT_9",
-  "VOLTAGE_BIT_12",
-  "VOLTAGE_DRIVE_9",
-  "VOLTAGE_DRIVE_12",
-  "HOST_ALLOW",
-  "HOST_INHIBIT_B",
-  "MOTOR_FAULT_N",
-  "SWDIO",
-  "SWCLK",
-  "SELECT_9",
-  "SELECT_12",
-  "PD_INHIBIT",
-])
-
-function signalRoutingPhaseIndex(name: string): number {
-  if (name === "DUMP_LOAD") return 1
-  return pdAndHostNetNames.has(name) ? 2 : 3
-}
-
 export function RoutingNets() {
   return (
     <>
-      <net name="GND" isGroundNet routingPhaseIndex={4} />
+      <net name="GND" isGroundNet routingPhaseIndex={2} />
       <net
         name="VBUS"
         isPowerNet
@@ -142,7 +110,7 @@ export function RoutingNets() {
       <net name="MOTOR_N" nominalTraceWidth="2mm" routingPhaseIndex={0} />
       {signalNetNames.map((name) => (
         <Fragment key={name}>
-          <net name={name} routingPhaseIndex={signalRoutingPhaseIndex(name)} />
+          <net name={name} routingPhaseIndex={1} />
         </Fragment>
       ))}
     </>

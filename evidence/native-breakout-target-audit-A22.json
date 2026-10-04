@@ -1,7 +1,7 @@
 {
-  "minimumBottomTargetPitchMm": 0.8500000000000001,
-  "bottomTargets": 28,
-  "artifactSha256": "7bef4a1142dd2eebfaa82f7b0377043c631c03afab41f51d1697fa82409797b1",
+  "minimumBottomTargetPitchMm": 13.178415117152745,
+  "bottomTargets": 2,
+  "artifactSha256": "c3cd306c2ad8955bebdf74b2e2c39cbc56b9f0fa0d99a28372dd21e9fd68dcca",
   "targets": [
     {
       "reference": "U1",
@@ -9,7 +9,7 @@
       "xMm": -26.25,
       "yMm": 1.2,
       "minimumPadGapMm": 0.701536927255411,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
@@ -17,7 +17,7 @@
       "xMm": -25.4,
       "yMm": 1.2,
       "minimumPadGapMm": 0.5007606136867511,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
@@ -25,7 +25,7 @@
       "xMm": -24.1,
       "yMm": 1.1,
       "minimumPadGapMm": 0.551818652747304,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
@@ -33,7 +33,7 @@
       "xMm": -23.25,
       "yMm": 1.1,
       "minimumPadGapMm": 0.5572048910995788,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
@@ -41,7 +41,7 @@
       "xMm": -22.4,
       "yMm": 1.2,
       "minimumPadGapMm": 0.8056437284886723,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
@@ -49,7 +49,7 @@
       "xMm": -21.5,
       "yMm": 2.3,
       "minimumPadGapMm": 0.6838111441802104,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
@@ -57,14 +57,14 @@
       "xMm": -21.5,
       "yMm": 3.15,
       "minimumPadGapMm": 0.5572054610370653,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
       "pin": "VBUS_EN_SNK",
       "xMm": -24.65,
-      "yMm": 6.9,
-      "minimumPadGapMm": 0.5500047037236042,
+      "yMm": 7.5,
+      "minimumPadGapMm": 0.9249942999999998,
       "layer": "bottom"
     },
     {
@@ -73,7 +73,7 @@
       "xMm": -25.65,
       "yMm": 6.9,
       "minimumPadGapMm": 0.5219933625430982,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
@@ -81,7 +81,7 @@
       "xMm": -27.3,
       "yMm": 5.8,
       "minimumPadGapMm": 0.7424272147774865,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
@@ -89,7 +89,7 @@
       "xMm": -27.3,
       "yMm": 4.6,
       "minimumPadGapMm": 0.5661362965792515,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
@@ -97,7 +97,7 @@
       "xMm": -27.3,
       "yMm": 2.9,
       "minimumPadGapMm": 0.5661090184583021,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U1",
@@ -105,7 +105,7 @@
       "xMm": -27.3,
       "yMm": 2.05,
       "minimumPadGapMm": 0.8429548058281512,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -113,7 +113,7 @@
       "xMm": -15.65,
       "yMm": -8.925,
       "minimumPadGapMm": 0.6080339033682693,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -121,7 +121,7 @@
       "xMm": -14.8,
       "yMm": -8.275,
       "minimumPadGapMm": 0.7199995999999995,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -129,7 +129,7 @@
       "xMm": -15.65,
       "yMm": -7.625,
       "minimumPadGapMm": 0.6080339069601743,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -145,7 +145,7 @@
       "xMm": -14.8,
       "yMm": -5.675,
       "minimumPadGapMm": 0.7749768000000001,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -153,7 +153,7 @@
       "xMm": -15.65,
       "yMm": -5.025,
       "minimumPadGapMm": 0.6080339092396525,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -169,7 +169,7 @@
       "xMm": -15.65,
       "yMm": -3.725,
       "minimumPadGapMm": 0.6080339050030467,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -185,7 +185,7 @@
       "xMm": -24.35,
       "yMm": -3.075,
       "minimumPadGapMm": 0.6080339033682711,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -193,7 +193,7 @@
       "xMm": -25.2,
       "yMm": -3.725,
       "minimumPadGapMm": 1.1850047000000041,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -201,7 +201,7 @@
       "xMm": -24.35,
       "yMm": -4.375,
       "minimumPadGapMm": 0.6080339069601761,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -209,7 +209,7 @@
       "xMm": -25.2,
       "yMm": -5.025,
       "minimumPadGapMm": 1.4580339038531698,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -225,7 +225,7 @@
       "xMm": -25.2,
       "yMm": -6.325,
       "minimumPadGapMm": 1.1850047000000041,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -233,7 +233,7 @@
       "xMm": -24.35,
       "yMm": -6.975,
       "minimumPadGapMm": 0.6080339092396543,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -241,7 +241,7 @@
       "xMm": -25.2,
       "yMm": -7.625,
       "minimumPadGapMm": 1.1850047000000041,
-      "layer": "bottom"
+      "layer": "top"
     },
     {
       "reference": "U11",
@@ -249,7 +249,7 @@
       "xMm": -24.35,
       "yMm": -8.275,
       "minimumPadGapMm": 0.6080339050030484,
-      "layer": "bottom"
+      "layer": "top"
     }
   ],
   "issues": [],

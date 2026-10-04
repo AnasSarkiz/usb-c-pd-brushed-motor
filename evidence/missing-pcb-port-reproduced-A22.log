@@ -1,0 +1,21 @@
+bun test v1.4.2 (744846f84)
+
+tests/utils/autorouting/simple-route-json-missing-pcb-ports.test.tsx:
+561 |       ) {
+562 |         return null
+563 |       }
+564 | 
+565 |       for (const connectedPort of connectedPcbPorts) {
+566 |         if (connectedPort.x === undefined || connectedPort.y === undefined) {
+                  ^
+TypeError: undefined is not an object (evaluating 'connectedPort.x')
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson.ts:566:13)
+      at map (1:11)
+      at getSimpleRouteJsonFromCircuitJson (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/lib/utils/autorouting/getSimpleRouteJsonFromCircuitJson.ts:548:6)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/utils/autorouting/simple-route-json-missing-pcb-ports.test.tsx:18:31)
+(fail) schematic-only terminals do not produce invalid routing connections [38.14ms]
+
+ 0 pass
+ 1 fail
+ 2 expect() calls
+Ran 1 test across 1 file. [400.00ms]

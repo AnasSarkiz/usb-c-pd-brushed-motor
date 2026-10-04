@@ -1,0 +1,11 @@
+{
+  "sourceCommit": "52f7febe2d5905a33eec2f6ba1cbef24c8026ca8",
+  "publishedPackage": "@tsci/AnasSarkiz.usb-c-pd-brushed-motor@0.0.1-0.0.1-a22-breakouts21-52f7feb",
+  "acknowledgedFiles": 411,
+  "failedFiles": 0,
+  "sourceFilesMatchedGit": true,
+  "cloudBuildVerified": false,
+  "GitHubRemote": null,
+  "status": "Private work-in-progress prototype; routing incomplete; no manufacturing approval",
+  "logSha256": "f7b9c91f607fff28a523343205057cb2752d873eedb6e98ab2f60b03ea5f4c86"
+}

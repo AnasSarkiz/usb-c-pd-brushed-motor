@@ -1,0 +1,26 @@
+{
+  "artifactSha256": "64d7d2b827ecc20fcd833ea0c26aa6eb98d51bc006448680f7c561f268fe8664",
+  "changes": [
+    {
+      "type": "pcb_group",
+      "fields": [
+        "center",
+        "height"
+      ]
+    },
+    {
+      "type": "pcb_breakout_point",
+      "fields": [
+        "y"
+      ]
+    },
+    {
+      "type": "source_project_metadata",
+      "fields": [
+        "source_filesystem_md5_hash"
+      ]
+    }
+  ],
+  "unchangedRecords": 4976,
+  "visualApplicability": "Previous both-face placement and8A4 schematic reviews apply to identical supplier/artwork/schematic geometry; native escape target moves0.60mm and its generated routing-group bounds follow"
+}

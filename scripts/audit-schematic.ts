@@ -134,6 +134,37 @@ for (const part of manifest) {
       issues.push(`${part.ref}.${alias}: no-connect pin has wiring`)
   }
 }
+// Routing interprets internal connection records as conductive links. Check
+// them independently of the individual schematic trace declarations so a
+// shared symbol alias cannot conceal a short between intended product nets.
+const internalConnections = circuitJson.filter(
+  (element) => element.type === "source_component_internal_connection",
+)
+for (const internalConnection of internalConnections) {
+  const source = sources.find(
+    (source) =>
+      source.source_component_id === internalConnection.source_component_id,
+  )
+  const connectedNetIds = new Set(
+    circuitJson
+      .filter((element) => element.type === "source_trace")
+      .filter((trace) =>
+        trace.connected_source_port_ids.some((portId) =>
+          internalConnection.source_port_ids.includes(portId),
+        ),
+      )
+      .flatMap((trace) => trace.connected_source_net_ids),
+  )
+  if (connectedNetIds.size > 1) {
+    const netNames = circuitJson
+      .filter((element) => element.type === "source_net")
+      .filter((net) => connectedNetIds.has(net.source_net_id))
+      .map((net) => net.name)
+    issues.push(
+      `${source?.name ?? "unnamed component"}: internal connection shorts distinct schematic nets ${netNames.join(", ")}`,
+    )
+  }
+}
 const pcbTraceCount = circuitJson.filter((e) => e.type === "pcb_trace").length
 if (auditConfiguration.routingPhase === "unrouted" && pcbTraceCount !== 0)
   issues.push("Copper routing was generated while routing is disabled")

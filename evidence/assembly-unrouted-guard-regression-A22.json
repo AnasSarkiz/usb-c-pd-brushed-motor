@@ -1,0 +1,7 @@
+{
+  "inputArtifactSha256": "ef65db3a8e18c840094766dc0eb7811c8f775cc3e090be07f61fa1230fa4d9b5",
+  "exitCode": 1,
+  "expectedFailure": "Assembly files require the identical full routed artifact with zero native routing errors",
+  "outputDirectoryCreated": false,
+  "result": "passed: native assembly-file generation refused an unrouted input"
+}

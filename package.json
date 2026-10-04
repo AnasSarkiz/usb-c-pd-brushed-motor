@@ -35,11 +35,11 @@
   "private": true,
   "dependencies": {
     "@tscircuit/capacity-autorouter": "0.0.958",
-    "@tscircuit/core": "./tooling/tscircuit-core-0.0.2087-A22.tgz",
+    "@tscircuit/core": "./tooling/tscircuit-core-0.0.2089-A22.tgz",
     "@tscircuit/props": "./tooling/tscircuit-props-0.0.683-A22.tgz"
   },
   "overrides": {
-    "@tscircuit/core": "file:./tooling/tscircuit-core-0.0.2087-A22.tgz",
+    "@tscircuit/core": "file:./tooling/tscircuit-core-0.0.2089-A22.tgz",
     "@tscircuit/props": "file:./tooling/tscircuit-props-0.0.683-A22.tgz",
     "@tscircuit/capacity-autorouter": "0.0.958"
   },

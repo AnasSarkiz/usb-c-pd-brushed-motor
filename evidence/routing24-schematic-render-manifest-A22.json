@@ -1,0 +1,42 @@
+[
+  {
+    "native": "dist/review/8-pdhost-A22.png",
+    "review": "dist/review/8-pdhost-A22-routing24.png",
+    "sha256": "b609c918505cc7997bdebed9fa74ddb5d4a7d38d9521d31a65a83a322d184f8f"
+  },
+  {
+    "native": "dist/review/5-protection-A22.png",
+    "review": "dist/review/5-protection-A22-routing24.png",
+    "sha256": "ed4dd7016621278076168608e4133c0c4365470ab6c1e55d2f22d8f048580fa2"
+  },
+  {
+    "native": "dist/review/1-usb-A22.png",
+    "review": "dist/review/1-usb-A22-routing24.png",
+    "sha256": "8155f145eb5bf9097153fa6e18a34acf2b54204643f76cc5b1cbae8efbe7c913"
+  },
+  {
+    "native": "dist/review/6-dump-A22.png",
+    "review": "dist/review/6-dump-A22-routing24.png",
+    "sha256": "5c6fa2a0bbb903eb10dfb36a8819b33ade0a3b435311a13863d3f2e7f16b5ee6"
+  },
+  {
+    "native": "dist/review/4-controls-A22.png",
+    "review": "dist/review/4-controls-A22-routing24.png",
+    "sha256": "3c8fdfa5a8605cf10057ff5b514c072a5cbba573d8e3ac4df049433c9fc36f1f"
+  },
+  {
+    "native": "dist/review/2-input-A22.png",
+    "review": "dist/review/2-input-A22-routing24.png",
+    "sha256": "5f274a8515a9491a17d4933bbde369e4a3a1b4c2f0f38febf0746c7c7205eb69"
+  },
+  {
+    "native": "dist/review/3-buck-A22.png",
+    "review": "dist/review/3-buck-A22-routing24.png",
+    "sha256": "189a4548b27a514a8f37c5f0e1ef4b397f156b23115c0e7716cb444c91ccda14"
+  },
+  {
+    "native": "dist/review/7-motor-A22.png",
+    "review": "dist/review/7-motor-A22-routing24.png",
+    "sha256": "59c4081d5861d1ef1b6b15438431b54ad8d3d8adb2e0f82d07a47d65dbfa1f7c"
+  }
+]

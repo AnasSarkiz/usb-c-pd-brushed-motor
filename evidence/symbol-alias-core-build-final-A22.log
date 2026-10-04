@@ -1,0 +1,12 @@
+$ tsup-node
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+ESM dist/index.js 5.10 MB
+ESM ⚡️ Build success in 207ms
+DTS Build start
+DTS ⚡️ Build success in 16138ms
+DTS dist/index.d.ts 9.53 MB

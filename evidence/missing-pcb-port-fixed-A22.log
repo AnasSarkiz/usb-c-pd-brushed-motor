@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/utils/autorouting/simple-route-json-missing-pcb-ports.test.tsx:
+(pass) schematic-only terminals do not produce invalid routing connections [33.55ms]
+
+ 1 pass
+ 0 fail
+ 3 expect() calls
+Ran 1 test across 1 file. [391.00ms]
