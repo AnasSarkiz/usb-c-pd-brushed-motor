@@ -1,3 +1,32 @@
+# A43 public GitHub destination and fresh publication checks
+
+2026-10-04. The user requested a new public destination. Repository
+https://github.com/AnasSarkiz/usb-c-pd-brushed-motor is created under the configured
+AnasSarkiz account; main tracks origin/main. The initial pushed source commit is
+57abd4548542084ea8bad48ea92ba80553e81d42. Anonymous GitHub API/raw-file access
+confirms public visibility, main, exact commit and matching committed circuit JSON.
+No credentials were sent during this verification. A credential-pattern scan of
+all reachable text objects found no matches; no blob exceeds GitHub's100MiB limit.
+Historical local diagnostics not committed in this step are preserved.
+
+Fresh configured formatting, TypeScript,42tests/468 assertions and the native
+routing-disabled build pass. Logs are evidence/github-public-A43-*.log. The rebuilt
+circuit contains zero PCB traces. Its sole difference from the previous artifact
+is the generated source_project_metadata.source_filesystem_md5_hash; all4977
+other elements, including complete schematic and physical geometry, are identical.
+A43 artifact equivalence/source binding and the renewed physical copper gate
+record the actual new checksum. The prior connector visual review remains
+applicable to identical model/pose/footprint records. No fresh visual review or
+new five-check placement approval is invented by this metadata-only update.
+
+USB-C C165948 still fails five required0.20mm foreign-pad gaps. Stage2/3 remain
+blocked at connector qualification; routing and fabrication remain blocked.
+Both routingDisabled controls stay true. No supplier component, motor circuitry,
+voltage policy, manufacturing rule or protection is modified in this step.
+The new publication bundle is prepared from this committed source and contains
+its rebuilt dist/index/circuit.json. A public push and package receipt must verify
+the final commit and matching artifact before this step is fully published.
+
 # Public source publication verified —3ce8ea0
 
 Source commit3ce8ea0a6526e99e935cdf06ae3cbf6062f3dbdf is published publicly as
@@ -19,11 +48,12 @@ is pending; no cloud-generated circuit or fabrication approval is claimed.
 The staging directory is removed only after full file/hash/metadata checks,
 and is reproducible from the source commit and retained staged metadata.
 
-GitHub push and commit-link verification remain blocked: this main checkout
-has no remote and the destination repository/branch is unknown. A concise
-asynchronous destination question is pending; this does not invalidate the
-public tscircuit source upload. The overall two-destination publication gate
-is therefore incomplete. Local routing remains blocked by five imported USB-C
+The missing GitHub destination was resolved on2026-10-04 by the user-authorized
+creation of the public AnasSarkiz/usb-c-pd-brushed-motor repository, branch main.
+The initial57abd45 push and exact committed circuit JSON are verified anonymously
+in evidence/github-public-initial-A43.json. A new documentation/publication update
+is committed and synchronized separately; its exact release receipt determines
+completion. The earlier missing-destination status below is historical. Local routing remains blocked by five imported USB-C
 land gaps below the unchanged0.20mm rule. No accepted fabrication ZIP exists.
 This publication receipt changes documentation only; the published board source,
 BOM, configuration, dependencies and circuit artifact remain source3ce8ea0.

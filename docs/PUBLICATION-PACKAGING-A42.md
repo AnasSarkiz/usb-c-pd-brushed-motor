@@ -39,6 +39,9 @@ from their pinned requirements; local test results are not cloud test claims.
 Public release readback must establish visibility, complete file presence and
 matching circuit JSON before publication is reported successful.
 
-GitHub publication remains blocked because this standalone main has no remote
-and the authorized destination repository is unknown. No GitHub commit URL is
-invented. No fabrication package or hardware qualification is claimed.
+The user-authorized public GitHub destination is now
+https://github.com/AnasSarkiz/usb-c-pd-brushed-motor, branch main. Initial57abd45
+and its committed circuit JSON are verified anonymously in
+ evidence/github-public-initial-A43.json. Subsequent synchronization/publication
+receipts bind their actual source commit and artifact. No fabrication package
+or hardware qualification is claimed.

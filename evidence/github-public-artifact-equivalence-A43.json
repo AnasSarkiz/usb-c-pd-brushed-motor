@@ -1,0 +1,18 @@
+{
+  "prior_source_commit": "57abd4548542084ea8bad48ea92ba80553e81d42",
+  "prior_artifact_sha256": "3246642e4085ab0fcc0c96b5923599de70f3e729b9b68be4f409918a1bf8b810",
+  "current_artifact_sha256": "4c770dfb3efe52ca285848c2ad6f7fbafe6434048517d3ead1b3c66522d9b6ac",
+  "elements": 4978,
+  "changes": [
+    {
+      "index": 4977,
+      "type": "source_project_metadata",
+      "keys": [
+        "source_filesystem_md5_hash"
+      ]
+    }
+  ],
+  "all_schematic_and_physical_geometry_identical": true,
+  "pcb_traces": 0,
+  "prior_model_and_copper_reviews_remain_applicable": "Identical4977 non-metadata elements; no new supplier or placement approval implied"
+}

@@ -11,7 +11,7 @@ JLCPCB imports and four3.2 mm mounting holes. Revision31 selects
 JLC04161H-7628 with35um outer/15.2um inner copper and ordinary through vias;
 see docs/STACKUP-A31.md. Prior placement and8 A4 reviews remain evidence for
 unchanged bodies/pads/sheets. Fresh layer-span/import/connectivity/placement
-audits, all5 native prerequisites, formatting/TypeScript and41 board tests pass.
+audits, all5 native prerequisites, formatting/TypeScript and42 board tests pass.
 Canonical revision41 repairs distinguish component lands from fixed routed
 copper and enforce connected-pad clearance for ordinary vias. Native MCU
 escape paths are independently screened; fresh integration gates are pending. Its repair dependency retains one independently reproduced upstream
@@ -63,16 +63,22 @@ provisioning. No synthetic approval or motor-enabled image is provided.
 Initial motor tests are limited to≤1 mJ stored energy; further braking,5 V current
 regulation and2 A thermal ratings require prototype measurements.
 
-No fabrication order has been placed. This independent Git main has no remote;
-GitHub publication remains blocked by the missing repository/branch.
+No fabrication order has been placed. The project is now synchronized to the public
+[GitHub repository](https://github.com/AnasSarkiz/usb-c-pd-brushed-motor), branch
+`main`. Initial commit57abd45 and its committed circuit JSON were independently
+verified accessible without signing in; see evidence/github-public-initial-A43.json.
 The existing [tscircuit package](https://tscircuit.com/AnasSarkiz/usb-c-pd-brushed-motor)
-was independently verified public in revision41 and must remain public only.
-The current committed3ce8ea0 unrouted WIP is publicly published as
-`0.0.1-a42-unrouted-3ce8ea0-59889506`. Anonymous verification confirms all528
-source-bundle file names,163critical file hashes and matching circuit JSON.
-The cloud preview/build remains pending; no fabrication approval is implied.
-GitHub publication still awaits the destination repository and branch. Earlier
-partial/private uploads do not satisfy the overall two-destination publication gate.
+remains public. Source revision3ce8ea0 was verified as
+`0.0.1-a42-unrouted-3ce8ea0-59889506`; the repository/publication update is being
+published from its exact new committed revision with current circuit JSON.
+Publication receipts identify the actual uploaded version and verification result.
+Neither publication constitutes fabrication approval or physical testing.
+
+The USB-C connector opens toward the correct board edge. Its imported C165948
+footprint has five foreign-pad gaps of0.1996186–0.1999107mm against the required
+0.20mm clearance. A passing supplier-backed replacement or a corrected official
+supplier model is needed. Imported pads and the clearance rule are not modified
+to hide this discrepancy. Both routing controls remain disabled.
 
 ## Historical implementation notes
 
