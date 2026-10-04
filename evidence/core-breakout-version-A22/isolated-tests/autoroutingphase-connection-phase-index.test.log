@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-connection-phase-index.test.tsx:
+(pass) autoroutingphase connection props assign phase index order [1269.61ms]
+
+ 1 pass
+ 0 fail
+ 4 expect() calls
+Ran 1 test across 1 file. [2.45s]

@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-variety.test.tsx:
+(pass) autoroutingphase supports net phases nested groups and configured phase autorouters [2272.96ms]
+
+ 1 pass
+ 0 fail
+ 8 expect() calls
+Ran 1 test across 1 file. [3.40s]

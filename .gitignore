@@ -30,6 +30,8 @@ tooling/trace-simplification-manufacturing-A22/
 # Canonical solver checkouts; source diffs and provenance are retained in evidence.
 tooling/fanout-manufacturing-A22/
 tooling/fanout-baseline-A22/
+tooling/repair03-manufacturing-A39/
+tooling/repair03-baseline-A39/
 
 # Source-only regression isolation; manifest and results retained in evidence.
 tooling/fanout-drill-isolation-A22/

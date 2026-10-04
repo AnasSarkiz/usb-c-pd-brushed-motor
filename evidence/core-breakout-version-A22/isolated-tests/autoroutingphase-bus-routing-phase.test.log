@@ -1,0 +1,10 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-bus-routing-phase.test.tsx:
+(pass) a bus routing phase assigns its traces to that phase [283.99ms]
+(pass) a bus without a phase does not change its trace phases [52.70ms]
+
+ 2 pass
+ 0 fail
+ 7 expect() calls
+Ran 2 tests across 1 file. [1.59s]

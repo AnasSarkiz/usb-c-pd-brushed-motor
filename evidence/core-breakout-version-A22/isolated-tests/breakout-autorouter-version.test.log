@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/breakout-autorouter-version.test.tsx:
+(pass) breakout honors its router version while remaining board routes inherit the board version [1545.54ms]
+
+ 1 pass
+ 0 fail
+ 4 expect() calls
+Ran 1 test across 1 file. [2.53s]

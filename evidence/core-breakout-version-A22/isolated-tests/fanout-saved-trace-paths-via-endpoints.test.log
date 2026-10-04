@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-saved-trace-paths-via-endpoints.test.tsx:
+(pass) saved fanout paths support leading and trailing vias [2214.87ms]
+
+ 1 pass
+ 0 fail
+ 27 expect() calls
+Ran 1 test across 1 file. [3.41s]

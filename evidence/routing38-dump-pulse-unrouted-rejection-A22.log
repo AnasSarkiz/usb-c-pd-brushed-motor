@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/review-routed-dump-pulse.py", line 16, in <module>
+    raise ValueError("Pulse review requires the complete140-part routed artifact")
+ValueError: Pulse review requires the complete140-part routed artifact

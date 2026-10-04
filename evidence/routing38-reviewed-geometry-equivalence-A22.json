@@ -1,0 +1,22 @@
+{
+  "from": "revision37",
+  "to": "revision38 dump current widths",
+  "artifact_sha256": "5600121e046098b3be6d245ab7ebd22658f404f26525c1680a2c6ea4c5c3f11c",
+  "equivalent_types": {
+    "pcb_board": true,
+    "pcb_component": true,
+    "pcb_smtpad": true,
+    "pcb_plated_hole": true,
+    "pcb_hole": true,
+    "pcb_via": true,
+    "pcb_port": true,
+    "pcb_courtyard_outline": true,
+    "pcb_courtyard_rect": true,
+    "pcb_silkscreen_text": true,
+    "pcb_silkscreen_path": true,
+    "pcb_silkscreen_line": true,
+    "schematic_sheet": false,
+    "schematic_component": true,
+    "schematic_trace": false
+  }
+}

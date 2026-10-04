@@ -1,0 +1,16 @@
+bun test v1.4.2 (744846f84)
+
+tests/pipeline7-autorouting-drc-evaluator.test.ts:
+(pass) Pipeline7 autorouting DRC finds every reference trace collision [5.24ms]
+(pass) Pipeline7 candidate conversion reuses static obstacle connectivity [0.16ms]
+
+tests/pipeline7-configured-copper-clearance.test.ts:
+(pass) Pipeline7 repair honors explicit copper clearance above its legacy minimum [0.20ms]
+
+tests/features/pipeline7-preloaded-trace-drc-feedback.test.ts:
+(pass) Pipeline7 DRC feedback includes preloaded traces [2335.54ms]
+
+ 4 pass
+ 0 fail
+ 13 expect() calls
+Ran 4 tests across 3 files. [2.49s]

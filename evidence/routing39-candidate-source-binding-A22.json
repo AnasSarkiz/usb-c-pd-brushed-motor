@@ -1,0 +1,18 @@
+{
+  "candidateOnly": true,
+  "boardSourcesUnchanged": true,
+  "source": [
+    {
+      "path": ".cache/LogicPadEscapes39.tsx",
+      "archive": "evidence/LogicPadEscapes39.tsx.txt",
+      "sha256": "1ac173d909fc125f7202abab1819eee95e589c9e21bf1d4236704e7debb3187a"
+    },
+    {
+      "path": ".cache/native-clearance-escape39.circuit.tsx",
+      "archive": "evidence/native-clearance-escape39.circuit.tsx.txt",
+      "sha256": "e9987c409b17bb6bb5e523f9dc92514f8ab83dd346c162bf40a1f547cbfc9149"
+    }
+  ],
+  "artifact": "evidence/routing39-candidate-preroute-A22.json.gz",
+  "artifactSha256": "157a0895ff571e9b448fd539ab94ad4d6d9b05bfcfc4cfe27add45484cdf6950"
+}

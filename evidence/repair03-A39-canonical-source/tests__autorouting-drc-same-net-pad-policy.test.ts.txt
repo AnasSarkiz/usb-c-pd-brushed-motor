@@ -1,0 +1,55 @@
+import { expect, test } from "bun:test"
+import { AutoroutingDrcEngine } from "../lib/drc/AutoroutingDrcEngine"
+import type { SimpleRouteJson, SimplifiedPcbTraces } from "../lib/types"
+
+test("explicit physical same-net via-to-pad clearance preserves legacy default", () => {
+  const srj: SimpleRouteJson = {
+    bounds: { minX: -2, minY: -2, maxX: 2, maxY: 2 },
+    connections: [{ name: "connected", pointsToConnect: [] }],
+    layerCount: 2,
+    minTraceWidth: 0.2,
+    minViaDiameter: 0.6,
+    minViaEdgeToPadEdgeClearance: 0.2,
+    obstacles: [
+      {
+        type: "rect",
+        layers: ["top"],
+        center: { x: 0, y: 0 },
+        width: 0.4,
+        height: 0.4,
+        connectedTo: ["pcb_smtpad_same", "connected"],
+      },
+    ],
+  }
+  const traces: SimplifiedPcbTraces = [
+    {
+      type: "pcb_trace",
+      pcb_trace_id: "connected_trace",
+      connection_name: "connected",
+      route: [
+        { route_type: "wire", x: 0, y: 0, width: 0.2, layer: "top" },
+        { route_type: "wire", x: 0.5, y: 0, width: 0.2, layer: "top" },
+        {
+          route_type: "via",
+          x: 0.5,
+          y: 0,
+          from_layer: "top",
+          to_layer: "bottom",
+          via_diameter: 0.6,
+        },
+        { route_type: "wire", x: 0.5, y: 0, width: 0.2, layer: "bottom" },
+      ],
+    },
+  ]
+  expect(new AutoroutingDrcEngine(srj).evaluate(traces).errors).toEqual([])
+  const physicalResult = new AutoroutingDrcEngine(srj, {
+    enforceSameNetViaToPadClearance: true,
+  }).evaluate(traces)
+  expect(physicalResult.errors).toHaveLength(1)
+  expect(physicalResult.errors[0]).toMatchObject({
+    type: "pcb_pad_pad_clearance_error",
+    minimum_clearance: 0.2,
+    actual_clearance: 0,
+    pcb_pad_ids: ["via_0", "pcb_smtpad_same"],
+  })
+})

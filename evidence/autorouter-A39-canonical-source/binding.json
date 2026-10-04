@@ -1,0 +1,25 @@
+{
+  "upstream_commit": "d010db4155513fad6e1cef325180d99a28d6201f",
+  "files": [
+    {
+      "source": "lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/create-pipeline7-autorouting-drc-evaluator.ts",
+      "archive": "evidence/autorouter-A39-canonical-source/lib__autorouter-pipelines__AutoroutingPipeline7_MultiGraph__create-pipeline7-autorouting-drc-evaluator.ts.txt",
+      "sha256": "63a8efab42e93febca368fa76f0d3231cca1d8b142bea6811f1c2505c74204dc"
+    },
+    {
+      "source": "tests/pipeline7-configured-copper-clearance.test.ts",
+      "archive": "evidence/autorouter-A39-canonical-source/tests__pipeline7-configured-copper-clearance.test.ts.txt",
+      "sha256": "7bc77a807dc3d540abdacdc54068a87370c7aa1cdf40095c260ab543c042ba6d"
+    },
+    {
+      "source": "tests/pipeline7-no-via-in-pad-policy.test.ts",
+      "archive": "evidence/autorouter-A39-canonical-source/tests__pipeline7-no-via-in-pad-policy.test.ts.txt",
+      "sha256": "d87c0afbac315e448c5ce37f9f4f8b5995c881f8b3d79bbb504949a3fabe9887"
+    },
+    {
+      "source": "package.json",
+      "archive": "evidence/autorouter-A39-canonical-source/package.json.txt",
+      "sha256": "555c0ff5e90ff1c3191f223842570840a15e71d3697fbac2e9111e8808fae4ef"
+    }
+  ]
+}

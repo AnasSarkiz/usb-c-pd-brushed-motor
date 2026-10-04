@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autorouter-version-beta-pipeline1.test.tsx:
+(pass) board with autorouterVersion beta_pipeline1 uses AutoroutingPipeline1_OriginalUnravel [723.95ms]
+
+ 1 pass
+ 0 fail
+ 3 expect() calls
+Ran 1 test across 1 file. [1.96s]

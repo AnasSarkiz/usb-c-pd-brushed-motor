@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/custom-implicit-breakout-point-solver.test.tsx:
+(pass) uses a custom implicit breakout point solver when provided [1535.34ms]
+
+ 1 pass
+ 0 fail
+ 11 expect() calls
+Ran 1 test across 1 file. [2.80s]

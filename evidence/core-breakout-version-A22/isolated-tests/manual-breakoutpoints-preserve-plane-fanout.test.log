@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/manual-breakoutpoints-preserve-plane-fanout.test.tsx:
+(pass) manual breakout points preserve fanout for automatic plane drops [2336.20ms]
+
+ 1 pass
+ 0 fail
+ 7 expect() calls
+Ran 1 test across 1 file. [4.13s]

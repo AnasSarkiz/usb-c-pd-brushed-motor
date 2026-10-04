@@ -1,0 +1,9 @@
+{
+  "intentSha256": "952f2365edfe5fcd96462d469acda4c85df2663903d350c0a6e262ccdbccea5a",
+  "sourceSha256": "5b096efa6054c2a81dd93b0d4df59c029b1d9ee9d9dddc653f3d4157210a6540",
+  "minimumForeignPadGapMm": 0.3500009000000012,
+  "minimumExistingForeignWireGapMm": 0.4591709802390138,
+  "minimumViaCentreAllPadGapMm": 0.7106161344488678,
+  "issues": [],
+  "scope": "Planning only: existing component/ADC reservations and MCU fanouts. VCC3V3 will reroute around these paths; later full copper/drill checks remain mandatory."
+}

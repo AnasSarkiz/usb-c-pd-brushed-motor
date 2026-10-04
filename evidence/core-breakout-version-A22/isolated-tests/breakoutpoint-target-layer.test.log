@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/breakoutpoint-target-layer.test.tsx:
+(pass) explicit breakout target layers survive both escape and global routing [1483.85ms]
+
+ 1 pass
+ 0 fail
+ 13 expect() calls
+Ran 1 test across 1 file. [2.04s]

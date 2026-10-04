@@ -1,0 +1,44 @@
+{
+  "diagnosticOnly": true,
+  "partialStage": "native38 buck completed,120 partial traces; not accepted full Circuit JSON",
+  "sourceArtifactSha256": "5600121e046098b3be6d245ab7ebd22658f404f26525c1680a2c6ea4c5c3f11c",
+  "partialNativeTraceSha256": "c2e6f54299b8cf2f555c046812d70df754e5b38326409ff591948d8c0dd08e3b",
+  "traces": 120,
+  "ordinaryVias": 83,
+  "viaSpanNotQualifiedFromPartialRoutes": true,
+  "minimumDrillToAllPadMm": 0.15000099999999986,
+  "minimumOrdinaryDrillToOtherDrillMm": 0.3395886824407311,
+  "issues": [
+    {
+      "rule": "ordinary_drill_to_all_component_pads",
+      "trace": "source_net_16_mst0_0",
+      "viaCentreMm": [
+        -17.876,
+        7.866912207727412
+      ],
+      "pad": "pcb_smtpad_63",
+      "clearanceMm": 0.15099480000000295
+    },
+    {
+      "rule": "ordinary_drill_to_all_component_pads",
+      "trace": "source_net_30_0",
+      "viaCentreMm": [
+        -26.61502507613135,
+        -4.190335935200383
+      ],
+      "pad": "pcb_smtpad_153",
+      "clearanceMm": 0.15033263520038265
+    },
+    {
+      "rule": "ordinary_drill_to_all_component_pads",
+      "trace": "source_net_28_mst0_0",
+      "viaCentreMm": [
+        -7.799974200000001,
+        -0.5433973000000002
+      ],
+      "pad": "pcb_smtpad_120",
+      "clearanceMm": 0.15000099999999986
+    }
+  ],
+  "limitations": "Final native routing, all copper checks and full emitted-via checks remain mandatory. No merged or modified Circuit JSON created."
+}

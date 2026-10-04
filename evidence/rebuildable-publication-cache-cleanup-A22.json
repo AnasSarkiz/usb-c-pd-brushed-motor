@@ -1,0 +1,50 @@
+{
+  "deleted": [
+    {
+      "path": ".cache/publication-placement-c265655",
+      "bytes": 19830834,
+      "kind": "rebuildable historical publication staging; original Git source and publication evidence retained"
+    },
+    {
+      "path": ".cache/publication-source-350f03c",
+      "bytes": 7884390,
+      "kind": "rebuildable historical publication staging; original Git source and publication evidence retained"
+    },
+    {
+      "path": ".cache/publication-source-52f7feb",
+      "bytes": 8292363,
+      "kind": "rebuildable historical publication staging; original Git source and publication evidence retained"
+    },
+    {
+      "path": ".cache/publication-source-5a015d5",
+      "bytes": 26325310,
+      "kind": "rebuildable historical publication staging; original Git source and publication evidence retained"
+    },
+    {
+      "path": ".cache/publication-source-5a015d5-verified",
+      "bytes": 26325628,
+      "kind": "rebuildable historical publication staging; original Git source and publication evidence retained"
+    },
+    {
+      "path": ".cache/publication-source-73ab2a5",
+      "bytes": 72593821,
+      "kind": "rebuildable historical publication staging; original Git source and publication evidence retained"
+    },
+    {
+      "path": ".cache/publication-source-d734c6f",
+      "bytes": 9311952,
+      "kind": "rebuildable historical publication staging; original Git source and publication evidence retained"
+    },
+    {
+      "path": ".cache/publication-source-d78470b",
+      "bytes": 7683255,
+      "kind": "rebuildable historical publication staging; original Git source and publication evidence retained"
+    },
+    {
+      "path": ".cache/publication-source-d8caeec",
+      "bytes": 8461925,
+      "kind": "rebuildable historical publication staging; original Git source and publication evidence retained"
+    }
+  ],
+  "sourceEvidenceAndImportsUntouched": true
+}

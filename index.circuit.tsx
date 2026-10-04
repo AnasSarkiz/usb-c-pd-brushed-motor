@@ -1,3 +1,4 @@
+import { LogicPadEscapes } from "./circuit/LogicPadEscapes"
 import { RoutingNets } from "./circuit/RoutingNets"
 import { MechanicalFeatures } from "./circuit/MechanicalFeatures"
 import { pcbPlacements } from "./circuit/product-placement"
@@ -37,6 +38,7 @@ export default function UsbCPdBrushedMotorController() {
         allowViaInPad: false,
         traceClearance: 0.25,
       }}
+      autorouterVersion="beta_pipeline7"
       autorouterEffortLevel="2x"
       pcbSx={{
         "& footprint silkscreentext[text='ON']": { visibility: "hidden" },
@@ -80,6 +82,7 @@ export default function UsbCPdBrushedMotorController() {
         useThermalReliefs={false}
       />
       <RoutingNets />
+      <LogicPadEscapes />
       <schematicsheet
         name="usb"
         displayName="USB-C PD and quiet supplies · A22"

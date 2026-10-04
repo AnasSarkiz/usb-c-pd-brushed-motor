@@ -1,0 +1,82 @@
+{
+  "planningOnly": true,
+  "sourceArtifactSha256": "5600121e046098b3be6d245ab7ebd22658f404f26525c1680a2c6ea4c5c3f11c",
+  "partialNativeTraceSha256": "557ec24127527de57472e3bc371f2a1007a1b2e69d5a3618a3e6c3a6332e44de",
+  "plans": [
+    {
+      "connection": "D3.cathode",
+      "net": "source_net_16",
+      "pad": "pcb_smtpad_63",
+      "start": [
+        -17,
+        7.692402
+      ],
+      "via": [
+        -18.3,
+        7.692402
+      ],
+      "exitLayer": "bottom",
+      "drillToAllPadMm": 0.5749948000000025,
+      "drillToOriginalDrillMm": 8.441084596121387,
+      "wireToOtherPadMm": 2.133097181238402,
+      "copperToForeignPartialWireMm": 0.3895102077274117,
+      "drillToForeignPartialDrillMm": 1.9379490594005142
+    },
+    {
+      "connection": "TP1.pin1",
+      "net": "source_net_30",
+      "pad": "pcb_smtpad_153",
+      "start": [
+        -28.1,
+        -3
+      ],
+      "via": [
+        -26.615,
+        -4.3
+      ],
+      "exitLayer": "bottom",
+      "drillToAllPadMm": 0.2599966999999994,
+      "drillToOriginalDrillMm": 6.30044083642233,
+      "wireToOtherPadMm": 1.7099979353456716,
+      "copperToForeignPartialWireMm": 0.11552237733209482,
+      "drillToForeignPartialDrillMm": 0.4800770760332089
+    },
+    {
+      "connection": "R57.pin2",
+      "net": "source_net_28",
+      "pad": "pcb_smtpad_120",
+      "start": [
+        -8,
+        -1.246636
+      ],
+      "via": [
+        -7.8,
+        -0.455
+      ],
+      "exitLayer": "inner1",
+      "drillToAllPadMm": 0.23839830000000006,
+      "drillToOriginalDrillMm": 13.65488363373974,
+      "wireToOtherPadMm": 1.003490505269979,
+      "copperToForeignPartialWireMm": 0.17760491551426472,
+      "drillToForeignPartialDrillMm": 3.629294141645353
+    }
+  ],
+  "issues": [
+    {
+      "connection": "TP1.pin1",
+      "rule": "planned_copper_to_other_routed_wire",
+      "trace": "source_net_12_mst1_0",
+      "layer": "bottom",
+      "minimumMm": 0.11552237733209482
+    },
+    {
+      "connection": "R57.pin2",
+      "rule": "planned_copper_to_other_routed_wire",
+      "trace": "source_net_34_0",
+      "layer": "bottom",
+      "minimumMm": 0.17760491551426472
+    }
+  ],
+  "notEmittedCopper": true,
+  "limitations": "Native fanout pcbTracePaths API supports free-end escapes followed by automatic routing. Remaining routes must regenerate around these reservations; each full final emitted artifact must be audited. No generated JSON or imported part modified."
+}

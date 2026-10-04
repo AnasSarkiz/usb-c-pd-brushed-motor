@@ -1,0 +1,547 @@
+{
+  "records": [
+    {
+      "code": "C23215",
+      "mpn": "0603WAF6981T5E",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 28659,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF6981T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C165948",
+      "mpn": "TYPE-C-31-M-12",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 425017,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=TYPE-C-31-M-12",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C2678061",
+      "mpn": "STUSB4500QTR",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 4882,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=STUSB4500QTR",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C468238",
+      "mpn": "TPS7A1650DGNR",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 164,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=TPS7A1650DGNR",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C181239",
+      "mpn": "TPS7A1633DGNR",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 893,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=TPS7A1633DGNR",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C10214",
+      "mpn": "SMBJ22A",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 855,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=SMBJ22A",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C477999",
+      "mpn": "PESD24VS2UT,215",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 9951,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=PESD24VS2UT,215",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 21598279,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF1001T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C2109",
+      "mpn": "BZT52C24",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 10601,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=BZT52C24",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C77083",
+      "mpn": "GRM21BR71H105KA12L",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 127305,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=GRM21BR71H105KA12L",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 58067738,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=CC0603KRX7R9BB104",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 2523918,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=CL10A475KO8NNNC",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C23162",
+      "mpn": "0603WAF4701T5E",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 22423299,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF4701T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 22108635,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF1003T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C22452",
+      "mpn": "SS54",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 2393322,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=SS54",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C1849461",
+      "mpn": "TPS16630PWPR",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 1131,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=TPS16630PWPR",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C4184",
+      "mpn": "0603WAF2002T5E",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 8033484,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF2002T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C844918",
+      "mpn": "CRCW060310K0FKEA",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 894480,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=CRCW060310K0FKEA",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C22815",
+      "mpn": "0603WAF1623T5E",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 42391,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF1623T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C21122",
+      "mpn": "CL10B223KB8NNNC",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 881568,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=CL10B223KB8NNNC",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C44377",
+      "mpn": "TPS54360DDAR",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 76289,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=TPS54360DDAR",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C285788",
+      "mpn": "MHCC10040-8R2M-R7",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 117,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=MHCC10040-8R2M-R7",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C138687",
+      "mpn": "CL32B106KBJNNNE",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 30513,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=CL32B106KBJNNNE",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C403725",
+      "mpn": "GRM31CR61E476ME44L",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 109783,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=GRM31CR61E476ME44L",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C178373",
+      "mpn": "35SVPK330M",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 251,
+      "checked_on": "2026-10-03",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=35SVPK330M",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C23186",
+      "mpn": "0603WAF5101T5E",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 25255061,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF5101T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C22956",
+      "mpn": "0603WAF2102T5E",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 43014,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF2102T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C22790",
+      "mpn": "0603WAF1202T5E",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 1191611,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF1202T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C22967",
+      "mpn": "0603WAF2702T5E",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 702287,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF2702T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C1653",
+      "mpn": "CL10C220JB8NNNC",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 2747234,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=CL10C220JB8NNNC",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C6986",
+      "mpn": "TLC555CDR",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 89914,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=TLC555CDR",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C5710902",
+      "mpn": "PTV09A-4015F-B103",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 123,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=PTV09A-4015F-B103",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C23138",
+      "mpn": "0603WAF3300T5E",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 3271608,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF3300T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C440183",
+      "mpn": "GRM1885C1H562JA01D",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 17893,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=GRM1885C1H562JA01D",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C57112",
+      "mpn": "0603B103K500NT",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 6789091,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603B103K500NT",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C908270",
+      "mpn": "1MS3T1B1M2QES-5",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 1463,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=1MS3T1B1M2QES-5",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C2986030",
+      "mpn": "19-217/G7C-AN1P2/6T",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 225582,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=19-217/G7C-AN1P2/6T",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C23892",
+      "mpn": "TL431AIDBZR",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 169742,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=TL431AIDBZR",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C22975",
+      "mpn": "0603WAF2001T5E",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 13556801,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF2001T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C67470",
+      "mpn": "LM393DR",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 200957,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=LM393DR",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C23348",
+      "mpn": "0603WAF2432T5E",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 12679,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF2432T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C22935",
+      "mpn": "0603WAF1004T5E",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 6599341,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF1004T5E",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C53444",
+      "mpn": "MMBT3906LT1G",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 999698,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=MMBT3906LT1G",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C2103",
+      "mpn": "BZT52C10",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 84843,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=BZT52C10",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C20917",
+      "mpn": "AO3400A",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 956540,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=AO3400A",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C2991665",
+      "mpn": "RPL-12K10R0FT",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 111774,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=RPL-12K10R0FT",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C1855818",
+      "mpn": "DRV8874PWPR",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 29975,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=DRV8874PWPR",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C25890",
+      "mpn": "0402WGF3301TCE",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 2083720,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0402WGF3301TCE",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C211759",
+      "mpn": "SMBJ15CA",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 21342,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=SMBJ15CA",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C395849",
+      "mpn": "DB126V-5.0-2P-GN-P",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 6538,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=DB126V-5.0-2P-GN-P",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C529330",
+      "mpn": "STM32G030F6P6TR",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 4682,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=STM32G030F6P6TR",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C3293142",
+      "mpn": "DSHP02TSGER",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 33971,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=DSHP02TSGER",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C2074262",
+      "mpn": "ESR18EZPF1001",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 101376,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=ESR18EZPF1001",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C855559",
+      "mpn": "AT0603BRD07100KL",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 7676,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=AT0603BRD07100KL",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C95204",
+      "mpn": "RT0603BRD0710KL",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 1844547,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=RT0603BRD0710KL",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C7420353",
+      "mpn": "MMBT3904",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 5189350,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=C7420353",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C8598",
+      "mpn": "B5819W SL",
+      "assembly_catalog_listing": "Basic",
+      "stock_observed": 468274,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=C8598",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C2906768",
+      "mpn": "5015",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 35,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=5015",
+      "evidence": "Exact supplier code and MPN visible in JLCPCB assembly search row; read-only CUA audit. Does not reserve stock or approve this board assembly process."
+    },
+    {
+      "code": "C25950",
+      "mpn": "0603WAF1102T5E",
+      "assembly_catalog_listing": "Extended",
+      "stock_observed": 323637,
+      "checked_on": "2026-10-04",
+      "public_search_url": "https://jlcpcb.com/parts/componentSearch?searchTxt=0603WAF1102T5E",
+      "evidence": "Exact SKU and code visible in JLCPCB assembly UI, in-stock row and Add to My Part Lib action. Read-only; not reserved."
+    }
+  ],
+  "pending_exact_sku_lookup": [],
+  "unsearched_codes": [],
+  "retained_search_issues": [
+    {
+      "code": "C7420353",
+      "issue": "Generic MMBT3904 results did not show exact SKU; exact-code UI search succeeded."
+    },
+    {
+      "code": "C8598",
+      "issue": "MPN search returned no rows; exact-code UI search succeeded."
+    }
+  ]
+}

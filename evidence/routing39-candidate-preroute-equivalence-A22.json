@@ -1,0 +1,23 @@
+{
+  "candidateOnly": true,
+  "artifactSha256": "157a0895ff571e9b448fd539ab94ad4d6d9b05bfcfc4cfe27add45484cdf6950",
+  "purchased": 140,
+  "pcbComponents": 152,
+  "traces": 0,
+  "equivalentRecordTypes": {
+    "pcb_board": true,
+    "pcb_component": true,
+    "pcb_smtpad": true,
+    "pcb_plated_hole": true,
+    "pcb_hole": true,
+    "pcb_via": true,
+    "pcb_port": true,
+    "schematic_sheet": true,
+    "schematic_component": true,
+    "schematic_trace": true,
+    "pcb_silkscreen_text": true,
+    "pcb_silkscreen_path": true,
+    "pcb_silkscreen_line": true
+  },
+  "errors": []
+}

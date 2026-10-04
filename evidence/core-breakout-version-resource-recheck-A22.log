@@ -1,0 +1,15 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-saved-paths-transforms.test.tsx:
+(pass) saved phase paths follow enclosing group placement on both PCB layers [4497.90ms]
+
+tests/breakout/breakoutpoint-route.test.tsx:
+(pass) autorouter uses breakout point [530.89ms]
+
+tests/breakout/fanout-saved-trace-paths-transforms.test.tsx:
+(pass) saved fanout routes follow placement and preserve physical via layers [5264.39ms]
+
+ 3 pass
+ 0 fail
+ 128 expect() calls
+Ran 3 tests across 3 files. [11.87s]

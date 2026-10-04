@@ -1,0 +1,162 @@
+{
+  "inputPath": "evidence/routing-thirty-fourth-debug-A22/phase-4.input.simple-route.json",
+  "inputSha256": "430da9ac8535cdaec3bc60b4aff8c7ce6c66e25ac944882f504930c578611197",
+  "diagnosticOnly": true,
+  "solved": false,
+  "failed": true,
+  "error": "Static reachability precheck failed: 1 route(s) have no legal path under the current reservation and start-region rules source_net_24_mst0 (pcb_breakout_point_21->pcb_port_131)",
+  "elapsedMs": 3633,
+  "pathingStats": {
+    "duplicateCongestedPortSourceCount": 0,
+    "duplicateCongestedPortCount": 0,
+    "duplicateCongestedPortFallbackToOriginal": true,
+    "duplicateCongestedPortPenalty": 0,
+    "duplicateCongestedPortPenaltyCount": 0,
+    "metadataPortPenaltyCount": 9203,
+    "crampedPortPenalty": 150,
+    "crampedPortPenaltyCount": 11094,
+    "preloadedPortCount": 230,
+    "preloadedFixedSegmentCount": 111,
+    "duplicateCongestedPortError": "Route 25 could not be solved independently: Static reachability precheck failed: 1 route(s) have no legal path under the current reservation and start-region rules source_net_24_mst0 (pcb_breakout_point_21->pcb_port_131)",
+    "candidatePortfolioPhase": "complete",
+    "candidatePortfolioSelectedCandidate": "primary",
+    "initialAssignmentCount": 111,
+    "initiallyRoutedRouteCount": 30,
+    "staticallyUnroutableRouteCount": 1,
+    "currentStage": "solveGraph",
+    "stageStats": {
+      "solveGraph": {
+        "timeSpent": 0,
+        "iterations": 1,
+        "completed": false
+      },
+      "optimizeSection": {
+        "timeSpent": 0,
+        "iterations": 0,
+        "completed": false
+      }
+    }
+  },
+  "candidateStartRegions": [
+    {
+      "regionId": "topology_merge_2197__sub_3_0",
+      "d": {
+        "capacityMeshNodeId": "topology_merge_2197__sub_3_0",
+        "center": {
+          "x": -14.847070423529413,
+          "y": -2.900735294117647
+        },
+        "width": 0.10590555294117543,
+        "height": 0.542647058823529,
+        "layer": "z3",
+        "availableZ": [
+          3
+        ]
+      },
+      "ports": []
+    }
+  ],
+  "failedConnection": {
+    "connectionId": "source_net_24_mst0",
+    "startRegionId": "topology_merge_2197__sub_3_0",
+    "endRegionId": "cmn_1132",
+    "mutuallyConnectedNetworkId": "connectivity_net10",
+    "simpleRouteConnection": {
+      "name": "source_net_24_mst0",
+      "nominalTraceWidth": 0.2,
+      "width": 0.2,
+      "pointsToConnect": [
+        {
+          "x": -14.8,
+          "y": -3.075,
+          "layer": "bottom",
+          "pointId": "pcb_breakout_point_21"
+        },
+        {
+          "x": -8,
+          "y": 5.246636,
+          "layer": "top",
+          "pointId": "pcb_port_131",
+          "pcb_port_id": "pcb_port_131"
+        }
+      ],
+      "__rootConnectionNames": [
+        "source_net_24"
+      ]
+    }
+  },
+  "incidentRegions": [
+    {
+      "regionId": "topology_merge_2197__sub_3_0",
+      "d": {
+        "capacityMeshNodeId": "topology_merge_2197__sub_3_0",
+        "center": {
+          "x": -14.847070423529413,
+          "y": -2.900735294117647
+        },
+        "width": 0.10590555294117543,
+        "height": 0.542647058823529,
+        "layer": "z3",
+        "availableZ": [
+          3
+        ]
+      },
+      "ports": []
+    },
+    {
+      "regionId": "cmn_1132",
+      "d": {
+        "capacityMeshNodeId": "cmn_1132",
+        "center": {
+          "x": -8,
+          "y": 5.246636
+        },
+        "width": 0.864006400000001,
+        "height": 0.8064754000000001,
+        "layer": "z0",
+        "availableZ": [
+          0
+        ],
+        "_containsObstacle": true,
+        "_containsTarget": true,
+        "_connectedTo": [
+          "connectivity_net10"
+        ]
+      },
+      "ports": [
+        {
+          "portId": "ce11535_pp0_z0::0",
+          "x": -8,
+          "y": 4.843398149999999,
+          "z": 0,
+          "region1": "cmn_28",
+          "region2": "cmn_1132"
+        },
+        {
+          "portId": "ce12952_pp0_z0::0",
+          "x": -8.4320032,
+          "y": 5.246636,
+          "z": 0,
+          "region1": "cmn_216",
+          "region2": "cmn_1132"
+        },
+        {
+          "portId": "ce13900_pp0_z0::0",
+          "x": -8.000000100000001,
+          "y": 5.6498737,
+          "z": 0,
+          "region1": "cmn_1132",
+          "region2": "new-cmn_173-642"
+        },
+        {
+          "portId": "ce13901_pp0_z0::0",
+          "x": -7.567996900000001,
+          "y": 5.246636,
+          "z": 0,
+          "region1": "cmn_1132",
+          "region2": "cmn_173"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/breakout-rp2040-with-passives.test.tsx:
+(skip) breakout routes rp2040 pins to nearby capacitors and resistors
+
+ 0 pass
+ 1 skip
+ 0 fail
+Ran 1 test across 1 file. [515.00ms]

@@ -1,0 +1,7 @@
+{
+  "stage": "partial native drill diagnostic",
+  "exitCode": 1,
+  "error": "KeyError: 'layers'",
+  "cause": "Partial native router routes do not consistently contain emitted via span records. This diagnostic measures drill geometry only. Final full Circuit JSON must prove all ordinary vias span all four layers.",
+  "noLayerSpanGuessed": true
+}

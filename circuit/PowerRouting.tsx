@@ -132,6 +132,73 @@ const powerPaths: FanoutTracePath[] = [
   },
 ]
 
+// Native quiet divider/filter tree. Anchors match the validated supplier pads;
+// the last endpoint is the already-routed U11 pin7 bottom breakout target.
+export const adcVbusPaths: FanoutTracePath[] = [
+  {
+    connection: "R60.pin2",
+    route: [
+      { route_type: "wire", x: -10.746636, y: -2, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -11.4, y: -2, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -11.4, y: -4.8, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -11.253364, y: -4.8, width: 0.2, layer: "top" },
+    ],
+  },
+  {
+    connection: "C33.pin1",
+    route: [
+      { route_type: "wire", x: -10.700024, y: -7.2, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -12, y: -7.2, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -12, y: -4.8, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -11.253364, y: -4.8, width: 0.2, layer: "top" },
+    ],
+  },
+  {
+    connection: "R61.pin1",
+    route: [
+      { route_type: "wire", x: -11.253364, y: -4.8, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -12, y: -4.8, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -12, y: -6, width: 0.2, layer: "top" },
+      {
+        route_type: "via",
+        x: -12,
+        y: -6,
+        from_layer: "top",
+        to_layer: "bottom",
+        via_diameter: 0.6,
+        via_hole_diameter: 0.3,
+      },
+      { route_type: "wire", x: -12, y: -6, width: 0.2, layer: "bottom" },
+      { route_type: "wire", x: -14.35, y: -6, width: 0.2, layer: "bottom" },
+      { route_type: "wire", x: -15.65, y: -5.025, width: 0.2, layer: "bottom" },
+    ],
+  },
+]
+
+// Reserve the reset capacitor and accessible reset contact before supply routing.
+// Board-world mm; these paths use the unchanged validated electrical endpoints.
+export const resetPaths: FanoutTracePath[] = [
+  {
+    connection: "C32.pin1",
+    route: [
+      { route_type: "wire", x: -12.9, y: -5.050024, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -13.8, y: -5.675, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -14.8, y: -5.675, width: 0.2, layer: "top" },
+    ],
+  },
+  {
+    connection: "TP3.pin1",
+    route: [
+      { route_type: "wire", x: -19.75, y: 3.25, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -19.75, y: 2.1, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -16.9, y: -0.5, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -14.4, y: -2.8, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -14.4, y: -5.2, width: 0.2, layer: "top" },
+      { route_type: "wire", x: -14.8, y: -5.675, width: 0.2, layer: "top" },
+    ],
+  },
+]
+
 export function PowerRouting() {
   return (
     <>
@@ -139,12 +206,18 @@ export function PowerRouting() {
         phaseIndex={0}
         // Fixed high-current paths precede the ground and signal routing stages.
         fanoutPourNetMap={{}}
-        connections={["net.SWITCH_NODE", "net.MOTOR_P", "net.MOTOR_N"]}
-        pcbTracePaths={powerPaths}
+        connections={[
+          "net.SWITCH_NODE",
+          "net.MOTOR_P",
+          "net.MOTOR_N",
+          "net.ADC_VBUS",
+          "net.MCU_NRST",
+        ]}
+        pcbTracePaths={[...powerPaths, ...adcVbusPaths, ...resetPaths]}
       />
       <autoroutingphase
         name="ground-plane-connections"
-        phaseIndex={5}
+        phaseIndex={11}
         autorouter={{
           preset: "fanout",
           allowViaInPad: false,

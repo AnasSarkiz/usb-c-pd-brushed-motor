@@ -1,0 +1,28 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/breakout-autorouter-version.test.tsx:
+26 |         fontSize={0.32}
+27 |       />
+28 |     </board>,
+29 |   )
+30 |   await circuit.renderUntilSettled()
+31 |   expect(versions).toEqual(["beta_pipeline9", "beta_pipeline7"])
+                        ^
+error: expect(received).toEqual(expected)
+
+  [
+-   "beta_pipeline9",
++   "beta_pipeline7",
+    "beta_pipeline7",
+  ]
+
+- Expected  - 1
++ Received  + 1
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/features/breakout-autorouter-version.test.tsx:31:20)
+(fail) breakout honors its router version while remaining board routes inherit the board version [327.69ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [1356.00ms]

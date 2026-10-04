@@ -1,0 +1,20 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 3,
+  "phaseOrdinal": 4,
+  "phaseCount": 14,
+  "elapsedMs": 498,
+  "connectionCount": 18,
+  "obstacleCount": 437,
+  "previousTraceCount": 18,
+  "autorouterName": "tscircuit",
+  "autorouterVersion": "beta_pipeline7",
+  "solverName": "AutoroutingPipelineSolver7_MultiGraph",
+  "effort": 2,
+  "cacheStatus": "miss",
+  "cacheKey": "routes:core@0.0.2089:solver:8a4fb521710f795e:srj:1f94b9b4b129ec7b",
+  "error": {
+    "message": "Node repair requires coincident via transition endpoints (capacity-autorouter@0.0.958)"
+  }
+}

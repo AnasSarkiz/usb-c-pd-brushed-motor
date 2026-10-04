@@ -1,0 +1,7 @@
+{
+  "stage": "independent partial-native-trace drill diagnostic",
+  "exitCode": 1,
+  "error": "ValueError: Different via definitions at one position",
+  "cause": "One full-stack physical via is referenced by route transitions with opposite from_layer/to_layer directions. Physical dimensions and layers must agree; traversal direction does not define a different drill.",
+  "noBoardOrImportedGeometryChanged": true
+}

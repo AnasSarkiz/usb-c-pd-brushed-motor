@@ -1,0 +1,442 @@
+{
+  "command": "bun test <each affected file>, unchanged assertions/snapshots/default timeout; fresh process per file",
+  "files": 71,
+  "results": [
+    {
+      "file": "tests/breakout/autoplaced-breakoutpoints1.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoplaced-breakoutpoints1.test.log",
+      "sha256": "a280c08f8c3b6e5dec9c9e5054013e90ef8510524a93f059c2c115350a2a7cab"
+    },
+    {
+      "file": "tests/breakout/breakout-arduino-uno.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakout-arduino-uno.test.log",
+      "sha256": "c490ad7ead085dbb65481992ef9a995e5ad7ba2f76f96281a1f16697acb09203"
+    },
+    {
+      "file": "tests/breakout/breakout-bga36-decoupling-caps.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakout-bga36-decoupling-caps.test.log",
+      "sha256": "22c868b6c00821166166a2587ac47c29488e7a90c6bdb61f645cc1759b08986f"
+    },
+    {
+      "file": "tests/breakout/breakout-insufficient-fanout-space-error.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakout-insufficient-fanout-space-error.test.log",
+      "sha256": "55dee8b26d6320a93b1da2f076cd4a82416a997dc7476b2ae9f288607a46843e"
+    },
+    {
+      "file": "tests/breakout/breakout-padding.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakout-padding.test.log",
+      "sha256": "521c95c5466bf37e85cfcc3641c5c8966c1876d5ccaaaea1563d4be3194eb51a"
+    },
+    {
+      "file": "tests/breakout/breakout-point-source-trace-ids.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakout-point-source-trace-ids.test.log",
+      "sha256": "32bcd6426b9b7e1ec5be1a2973f59d3c7119ebd7bb73a59e87064dedce9f5bb7"
+    },
+    {
+      "file": "tests/breakout/breakout-qfp16-with-header-and-passives.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakout-qfp16-with-header-and-passives.test.log",
+      "sha256": "582a1f7003628ccd7ac0dbcd009699f10e1f3660388c33b912712f3fe7a1dad1"
+    },
+    {
+      "file": "tests/breakout/breakout-rp2040-with-passives.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakout-rp2040-with-passives.test.log",
+      "sha256": "3a7d6f4b39152bf73259f655d0c3f69d056e4a24cb04887d315e224eef687cd1"
+    },
+    {
+      "file": "tests/breakout/breakout-sot23-regulator-power-rail.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakout-sot23-regulator-power-rail.test.log",
+      "sha256": "e0dfbb9558a8a68195f6f6e876591692a3ee6673248fc31dbdcf9c5db0a690c7"
+    },
+    {
+      "file": "tests/breakout/breakoutpoint-route.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakoutpoint-route.test.log",
+      "sha256": "7b9ef59244d5849dba3ac64c8b76d12557593027567c1421a59baa0b2209eef1"
+    },
+    {
+      "file": "tests/breakout/breakoutpoint-target-layer.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakoutpoint-target-layer.test.log",
+      "sha256": "e826603537f0b03f7de3c891fa87904c8fd3df40b4aa936954cb09aac00ceb3d"
+    },
+    {
+      "file": "tests/breakout/custom-implicit-breakout-point-solver.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/custom-implicit-breakout-point-solver.test.log",
+      "sha256": "db5c52481f072eea88610b3842b4583d33cb07f6ba13257e63f2af46f2ae1bd8"
+    },
+    {
+      "file": "tests/breakout/default-breakout-one-point-net.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/default-breakout-one-point-net.test.log",
+      "sha256": "e27a8f9a44131079041446e6f0637bce9f823d15b002e6453ffe0937c9a8f590"
+    },
+    {
+      "file": "tests/breakout/dogbone-autorouting-phase.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/dogbone-autorouting-phase.test.log",
+      "sha256": "df476ff745b932f523577045dbbc89a30b28af90976e98bedef91b61ec7f2053"
+    },
+    {
+      "file": "tests/breakout/dogbone-plane-drop-phase-isolation.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/dogbone-plane-drop-phase-isolation.test.log",
+      "sha256": "2800aa42d2faecfc184a22d0c8f75c96d9787e1c35ad1af524070eb43e90f7fc"
+    },
+    {
+      "file": "tests/breakout/fanout-am3352-dogbones.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-am3352-dogbones.test.log",
+      "sha256": "44cfdf8cf64957cbbd6b77a3cf75a54ef3c171fce25fbfeeb569c3bfd7860e84"
+    },
+    {
+      "file": "tests/breakout/fanout-breakout-routes-before-global.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-breakout-routes-before-global.test.log",
+      "sha256": "31a2339c5ae684cf297199e3198376adef80ce001a7c8e6e2261f2264613adc8"
+    },
+    {
+      "file": "tests/breakout/fanout-custom-symbol-port-alias.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-custom-symbol-port-alias.test.log",
+      "sha256": "df0b6565ba5e3bc3a8f4c18657d7a1394591775b04b60d5f13ca0aa260466f68"
+    },
+    {
+      "file": "tests/breakout/fanout-dogbone-artifact-replay.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-dogbone-artifact-replay.test.log",
+      "sha256": "076f94b98a55a880cd300040b4c663409426349b9c380cf4eae96d0ca8658d8a"
+    },
+    {
+      "file": "tests/breakout/fanout-dogbone-global-handoff.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-dogbone-global-handoff.test.log",
+      "sha256": "8543bf60a43c233f15fb5f0283cae818d9b7cf8a4cb8ee82319bbe12ed89250d"
+    },
+    {
+      "file": "tests/breakout/fanout-dogbone-no-site.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-dogbone-no-site.test.log",
+      "sha256": "6d4bd53acf59d124ff48ff3a54caee94de26f741dae108785f5c2461b58915fb"
+    },
+    {
+      "file": "tests/breakout/fanout-dogbone-solver-events.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-dogbone-solver-events.test.log",
+      "sha256": "76fe7d7ce91245d41d6bcf58140fded379064ccb5d057a8f1e459d33b43cc1e7"
+    },
+    {
+      "file": "tests/breakout/fanout-dogbone-transforms.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-dogbone-transforms.test.log",
+      "sha256": "643d4c799315fbef05d91b69173937dd4168ee022e3afd0ef7766a6f8ac7c86d"
+    },
+    {
+      "file": "tests/breakout/fanout-group-schema.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-group-schema.test.log",
+      "sha256": "934d7285c703d1c99e82f534a429e9601e08959c71e806cd4d77069255503eb9"
+    },
+    {
+      "file": "tests/breakout/fanout-margin-placement-error.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-margin-placement-error.test.log",
+      "sha256": "a909b30767d434d7da3a0643cef326cdd6cda3d75859f9b81e1297b36aa2ca82"
+    },
+    {
+      "file": "tests/breakout/fanout-overlap-placement-error.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-overlap-placement-error.test.log",
+      "sha256": "8346dc7c4a245068048107b80c64d557715d7bf499f5fbf43201755320e88c95"
+    },
+    {
+      "file": "tests/breakout/fanout-saved-trace-paths-transforms.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-saved-trace-paths-transforms.test.log",
+      "sha256": "df3225cccb03846555fc9e574bc07e1ef7549a4b3587b395002212d51f8cb9d1"
+    },
+    {
+      "file": "tests/breakout/fanout-saved-trace-paths-validation.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-saved-trace-paths-validation.test.log",
+      "sha256": "5253f86726e791a7bd784081899f7f25928b14d2bb3de4cd3216235010bbab5c"
+    },
+    {
+      "file": "tests/breakout/fanout-saved-trace-paths-via-endpoints.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-saved-trace-paths-via-endpoints.test.log",
+      "sha256": "4460d88b7dbf1b9e1929e038818d39602ce0bdb2ead10a5777f621e9e8b5803f"
+    },
+    {
+      "file": "tests/breakout/fanout-saved-trace-paths.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-saved-trace-paths.test.log",
+      "sha256": "40d023b5a5a71ec218f8b78bbb41f9e3ef2142d2ebcd5323062aba62173d586a"
+    },
+    {
+      "file": "tests/breakout/fanout-soic8-sensor-to-i2c-header.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanout-soic8-sensor-to-i2c-header.test.log",
+      "sha256": "b2bb68fee65827fffca900fadb7cb117560a49149f0ee6b887a14cddc8257f99"
+    },
+    {
+      "file": "tests/breakout/fanoutpoint-chip-route.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/fanoutpoint-chip-route.test.log",
+      "sha256": "defea9d4d978ebdc46f6f85a99aee49fb3f7502fa2cf26488e528e60e6490fea"
+    },
+    {
+      "file": "tests/breakout/manual-breakoutpoints-preserve-plane-fanout.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/manual-breakoutpoints-preserve-plane-fanout.test.log",
+      "sha256": "62d86e23e98162dbd4ddd0baec0489e406f3f1749ce1f81acc5def8c0ccd6b49"
+    },
+    {
+      "file": "tests/breakout/manual-breakoutpoints-use-default-autorouter.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/manual-breakoutpoints-use-default-autorouter.test.log",
+      "sha256": "0add49234eccc21121bfdf6b7681cf5e25aa689a8583899dcd4bca97db81f569"
+    },
+    {
+      "file": "tests/breakout/manualplaced-breakoutpoint.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/manualplaced-breakoutpoint.test.log",
+      "sha256": "91fad90565017e7ea0d91d24536a14115756a7a62da65d73cd5fb8ba531ab4e9"
+    },
+    {
+      "file": "tests/breakout/overlapping-fanout-regions-error.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/overlapping-fanout-regions-error.test.log",
+      "sha256": "8adc8a93b8e9254cb32e2dba988d42500bd67c80145d8dc10f771a7ee4979305"
+    },
+    {
+      "file": "tests/breakout/unrelated-winding-breakout-scopes.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/unrelated-winding-breakout-scopes.test.log",
+      "sha256": "539a65521430820e7e0b7c3f2b41c1713f9c5c5213457fb4b2960f056e7f44be"
+    },
+    {
+      "file": "tests/features/autorouter-version-beta-pipeline1.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autorouter-version-beta-pipeline1.test.log",
+      "sha256": "eefcb7214f2b457e4cd5edabd441e2a617b42085d849a9cb0fa42df19f0e9d52"
+    },
+    {
+      "file": "tests/features/autorouter-version-beta-pipeline3.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autorouter-version-beta-pipeline3.test.log",
+      "sha256": "b5911f6fdfaaaf6249ea5cde67e45233c327a72166e099e32e9a3bd854f72459"
+    },
+    {
+      "file": "tests/features/autorouter-version-beta-pipeline4.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autorouter-version-beta-pipeline4.test.log",
+      "sha256": "e56537fff493e7934f77c79607490e14b02acd069374d534c6756ed83301621f"
+    },
+    {
+      "file": "tests/features/autorouter-version-beta-pipeline5.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autorouter-version-beta-pipeline5.test.log",
+      "sha256": "b7b906e41edde0a21779c2cf85be5a58cd9a6d72e6506a768aca01414da0eb60"
+    },
+    {
+      "file": "tests/features/autorouter-version-beta-pipeline7.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autorouter-version-beta-pipeline7.test.log",
+      "sha256": "de8998b2d3d52b8646964fd508ae6cfdc41d93d31c35f1fc74ff9d38079fc94d"
+    },
+    {
+      "file": "tests/features/autorouter-version-beta-pipeline9.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autorouter-version-beta-pipeline9.test.log",
+      "sha256": "100328027add041d65ab6f2294ec977f2f9e118bd75874be2a9484fa0f57f4aa"
+    },
+    {
+      "file": "tests/features/autorouter-version-latest.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autorouter-version-latest.test.log",
+      "sha256": "97cc6749ae56c4fb75cb25866e60fa5a102b0a6960099ece4bc24c2a7299faad"
+    },
+    {
+      "file": "tests/features/autorouter-version-unknown-fallback.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autorouter-version-unknown-fallback.test.log",
+      "sha256": "70320994f229fa23a4451d76afd89e1f30cb3ca146e80ed05e6c107ccf352d5e"
+    },
+    {
+      "file": "tests/features/autoroutingphase-algorithm-fn.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-algorithm-fn.test.log",
+      "sha256": "e3ae16e28095ef78f10946441f2d36c52bf4e462460e1543e0749a2171c5f5b8"
+    },
+    {
+      "file": "tests/features/autoroutingphase-bus-routing-phase.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-bus-routing-phase.test.log",
+      "sha256": "eec969403735c99c6aa2990f260b2cb49aeeda876d8e466cdafe1a20c4d0b11a"
+    },
+    {
+      "file": "tests/features/autoroutingphase-connection-phase-index.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-connection-phase-index.test.log",
+      "sha256": "4c680d1d6f733426f658d33435a87aab51dc9914f851c94a0c3f8b7726c60654"
+    },
+    {
+      "file": "tests/features/autoroutingphase-connection-reroute.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-connection-reroute.test.log",
+      "sha256": "b98cbdc3ad8937583aa98151db48e9a6ca010f4f16b56e1012cc636ca6de3a3f"
+    },
+    {
+      "file": "tests/features/autoroutingphase-emitted-paths-cache.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-emitted-paths-cache.test.log",
+      "sha256": "940cf169896a32ca9f9f4d67b64a156ad63574aceb0603ca0a41135100a782b7"
+    },
+    {
+      "file": "tests/features/autoroutingphase-emitted-paths-fanout.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-emitted-paths-fanout.test.log",
+      "sha256": "3fab800079b7609f2dedad0afdac12b79b6c25a7a7223816aaecb6b5aaa6c44e"
+    },
+    {
+      "file": "tests/features/autoroutingphase-emitted-paths-parity.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-emitted-paths-parity.test.log",
+      "sha256": "390924475a513cad67024f6121b41680870e11256db6d7a816c16fcdda63fbc2"
+    },
+    {
+      "file": "tests/features/autoroutingphase-emitted-paths-transforms.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-emitted-paths-transforms.test.log",
+      "sha256": "4afcfa5788ddc013cd0474fe6bc9f8ba80c53e84e22c9de65f98ccacc47f106e"
+    },
+    {
+      "file": "tests/features/autoroutingphase-emitted-paths-unavailable.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-emitted-paths-unavailable.test.log",
+      "sha256": "f65ca02ed895e861678fbb7d76b15f78045ca85972d871cde453e7f198de5be1"
+    },
+    {
+      "file": "tests/features/autoroutingphase-event-error-index.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-event-error-index.test.log",
+      "sha256": "1a884e01e6132b180123795e0aa032b2cd37e0c88385f42d5ba93dae23912d41"
+    },
+    {
+      "file": "tests/features/autoroutingphase-event-index.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-event-index.test.log",
+      "sha256": "fc19dc2bf59635cb31e55d00343e887dadb5ae176143a9b6813335ba6dd0f565"
+    },
+    {
+      "file": "tests/features/autoroutingphase-event-stage-index.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-event-stage-index.test.log",
+      "sha256": "5af01ca9fd3b58519340f54b5c7e6ab6e8ad4bbb546995a6fecd494c4217c1d8"
+    },
+    {
+      "file": "tests/features/autoroutingphase-fixed-pcb-path.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-fixed-pcb-path.test.log",
+      "sha256": "fcdcaee7e1ee654da02fb07d358ce6eac50c6ae99938fa4d6091be4f2ec6bb0c"
+    },
+    {
+      "file": "tests/features/autoroutingphase-imported-circuit-json-reroute-builtin.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-imported-circuit-json-reroute-builtin.test.log",
+      "sha256": "cadd5f1481648705094ecda543c2e4eab55ab9bb4b78b94929ebaac1587275af"
+    },
+    {
+      "file": "tests/features/autoroutingphase-props.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-props.test.log",
+      "sha256": "15502b56b39746671fac48e6e8afebf97d3c1ce60f1d9322cc606cb4b7db63f3"
+    },
+    {
+      "file": "tests/features/autoroutingphase-region-reroute.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-region-reroute.test.log",
+      "sha256": "5fec9eec4f27ff89257f1af213eccbb7a7a18d8edb0de70533d0af14ce160adf"
+    },
+    {
+      "file": "tests/features/autoroutingphase-reroute.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-reroute.test.log",
+      "sha256": "c7b9ff3951fd8df67656cdc083732583294ca5b19c44e4e8216386b3ad929c30"
+    },
+    {
+      "file": "tests/features/autoroutingphase-saved-complete-fanout-paths.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-saved-complete-fanout-paths.test.log",
+      "sha256": "f1260d60f9816cbd2c7d606b4ce90cde3a35693567e8293e269843b11863181c"
+    },
+    {
+      "file": "tests/features/autoroutingphase-saved-fanout-paths.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-saved-fanout-paths.test.log",
+      "sha256": "04d798bc62e0aa007e13504f0a1b544c44b795c65b951f47f774a9afe9a4e11e"
+    },
+    {
+      "file": "tests/features/autoroutingphase-saved-paths-transforms.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-saved-paths-transforms.test.log",
+      "sha256": "5e4936a87d0b78e58108015a7ee9afe6d306e3676c5ee2c7fd38f4ddf0cd6eb8"
+    },
+    {
+      "file": "tests/features/autoroutingphase-saved-paths-validation.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-saved-paths-validation.test.log",
+      "sha256": "dc43f3ea1e0544bdd8fc837f50ec47accdc9e3c89d7def22d1d33956a4a2e842"
+    },
+    {
+      "file": "tests/features/autoroutingphase-saved-plated-paths-validation.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-saved-plated-paths-validation.test.log",
+      "sha256": "7bcf052fe13c61d98bfb7782e7db1a254f92d6222f8edc5dc443b6f839c31d1b"
+    },
+    {
+      "file": "tests/features/autoroutingphase-saved-trace-paths.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-saved-trace-paths.test.log",
+      "sha256": "3f02bc1b7618947f72a44fb9e37212103c3f19fb708e916901cee783c5de08bb"
+    },
+    {
+      "file": "tests/features/autoroutingphase-simplify.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-simplify.test.log",
+      "sha256": "7f4c905b67f37ba73dd108517839625cbc70027d75eb209fdc0cd6dbf954edb2"
+    },
+    {
+      "file": "tests/features/autoroutingphase-variety.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/autoroutingphase-variety.test.log",
+      "sha256": "95b27ea908dbddaeb0a4d3b4e4abb2a3ad70107b73440ab62e46fb19bec75fb7"
+    },
+    {
+      "file": "tests/features/breakout-autorouter-version.test.tsx",
+      "exit_code": 0,
+      "log": "evidence/core-breakout-version-A22/isolated-tests/breakout-autorouter-version.test.log",
+      "sha256": "688fd5c3f4077b6cbc5663490929b2af33bcd66ce9f6ad764fa91ac8604d81f7"
+    }
+  ],
+  "summary": {
+    "passed": 71,
+    "failed": 0,
+    "skipped": 3,
+    "assertions": 2200
+  },
+  "prior_shared_runner_rejections_preserved": [
+    "evidence/core-breakout-version-routing-tests-A22.log",
+    "evidence/core-breakout-version-routing-tests-final-A22.log"
+  ]
+}

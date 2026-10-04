@@ -1,0 +1,1092 @@
+{
+  "artifactSha256": "e42521568233e50d703c623b787a6d38c710bc47d5553dae9edbefa36afff124",
+  "csvSha256": "fed31c30a9144df924e0ac883d3eebab2ce15227f5bb52cd1b9fceab0a73a354",
+  "referenceCount": 140,
+  "supplier": "jlcpcb",
+  "automaticReferenceCount": 129,
+  "automaticSupplierRotationsVerified": true,
+  "acceptedManualRotationWarnings": [
+    {
+      "designator": "TP5",
+      "pcb_component_id": "pcb_component_19",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP5: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "TP6",
+      "pcb_component_id": "pcb_component_20",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP6: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "TP1",
+      "pcb_component_id": "pcb_component_42",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP1: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "TP2",
+      "pcb_component_id": "pcb_component_43",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP2: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "TP3",
+      "pcb_component_id": "pcb_component_44",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP3: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "TP4",
+      "pcb_component_id": "pcb_component_45",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP4: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "TP7",
+      "pcb_component_id": "pcb_component_133",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP7: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "TP5",
+      "pcb_component_id": "pcb_component_19",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP5: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "TP6",
+      "pcb_component_id": "pcb_component_20",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP6: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "TP1",
+      "pcb_component_id": "pcb_component_42",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP1: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "TP2",
+      "pcb_component_id": "pcb_component_43",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP2: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "TP3",
+      "pcb_component_id": "pcb_component_44",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP3: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "TP4",
+      "pcb_component_id": "pcb_component_45",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP4: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "TP7",
+      "pcb_component_id": "pcb_component_133",
+      "supplier": "jlcpcb",
+      "reason": "missing_pin1_location",
+      "message": "TP7: cannot verify jlcpcb pick-and-place rotation (missing_pin1_location); PCB rotation 90 is unverified."
+    }
+  ],
+  "manualOrientationReview": "TP1..TP7 are single-electrical-pin, nonpolar contacts, omitted from automatic assembly; board rotation is the documented manual-fit intent; mechanical fit requires the prototype test plan",
+  "rows": [
+    {
+      "designator": "J1",
+      "mid_x": -34.42504355,
+      "mid_y": 4,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "U1",
+      "mid_x": -24.4,
+      "mid_y": 4,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "U2",
+      "mid_x": -32,
+      "mid_y": 15,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "U3",
+      "mid_x": -25,
+      "mid_y": 15,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "D1",
+      "mid_x": -33,
+      "mid_y": -7,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "D2",
+      "mid_x": -23.25,
+      "mid_y": 8.75,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R1",
+      "mid_x": -11,
+      "mid_y": 6,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "D3",
+      "mid_x": -17,
+      "mid_y": 6,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "C1",
+      "mid_x": -30,
+      "mid_y": 19,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C2",
+      "mid_x": -36.25,
+      "mid_y": 14,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "C3",
+      "mid_x": -26.25,
+      "mid_y": 8.5,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "C4",
+      "mid_x": -28.6,
+      "mid_y": 11.5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C5",
+      "mid_x": -23.25,
+      "mid_y": 11.75,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "C6",
+      "mid_x": -29.2,
+      "mid_y": 6.5,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "C7",
+      "mid_x": -29.2,
+      "mid_y": 1.6,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "C8",
+      "mid_x": -25.2,
+      "mid_y": -0.20000000000000004,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R2",
+      "mid_x": -14,
+      "mid_y": 6,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R3",
+      "mid_x": -13,
+      "mid_y": 8.5,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "R4",
+      "mid_x": -21,
+      "mid_y": 0,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "TP5",
+      "mid_x": -20,
+      "mid_y": 18,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "TP6",
+      "mid_x": -20,
+      "mid_y": 12.5,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "U11",
+      "mid_x": -20,
+      "mid_y": -6.000000000000057,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "SW2",
+      "mid_x": -23,
+      "mid_y": 24,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "C30",
+      "mid_x": -13.8,
+      "mid_y": -7,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C31",
+      "mid_x": -14.2,
+      "mid_y": -10.7,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "C32",
+      "mid_x": -12.9,
+      "mid_y": -4.35,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "R56",
+      "mid_x": -17.25,
+      "mid_y": -10.7,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R57",
+      "mid_x": -8,
+      "mid_y": -2,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "Q6",
+      "mid_x": 1,
+      "mid_y": 2,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R58",
+      "mid_x": -24,
+      "mid_y": 19,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R59",
+      "mid_x": -8,
+      "mid_y": 6,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "R60",
+      "mid_x": -11.5,
+      "mid_y": -2,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R61",
+      "mid_x": -10.5,
+      "mid_y": -4.8,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C33",
+      "mid_x": -10,
+      "mid_y": -7.2,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R62",
+      "mid_x": -28,
+      "mid_y": -14,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "Q7",
+      "mid_x": -3.5,
+      "mid_y": -11.25,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "Q8",
+      "mid_x": -16,
+      "mid_y": 1,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R63",
+      "mid_x": -5,
+      "mid_y": -3,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "R64",
+      "mid_x": -5,
+      "mid_y": 1,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "R66",
+      "mid_x": -12,
+      "mid_y": 0,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R67",
+      "mid_x": -12,
+      "mid_y": 2,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C34",
+      "mid_x": -8.4,
+      "mid_y": 2,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "TP1",
+      "mid_x": -28.1,
+      "mid_y": -3,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "TP2",
+      "mid_x": -28.1,
+      "mid_y": -7,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "TP3",
+      "mid_x": -19.75,
+      "mid_y": 3.25,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "TP4",
+      "mid_x": -23,
+      "mid_y": -12.5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "D4",
+      "mid_x": -32,
+      "mid_y": -17,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "U4",
+      "mid_x": -22,
+      "mid_y": -19,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "Q1",
+      "mid_x": -29,
+      "mid_y": -24,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R5",
+      "mid_x": -31.999999999999996,
+      "mid_y": -12,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R6",
+      "mid_x": -25,
+      "mid_y": -24,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R7",
+      "mid_x": -28.3,
+      "mid_y": -18.65,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R8",
+      "mid_x": -32,
+      "mid_y": -22.75,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "R9",
+      "mid_x": -30.25,
+      "mid_y": -27.75,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "R10",
+      "mid_x": -28,
+      "mid_y": -28,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "R11",
+      "mid_x": -36,
+      "mid_y": -22,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R12",
+      "mid_x": -36,
+      "mid_y": -19,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R13",
+      "mid_x": -35,
+      "mid_y": -16,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "R16",
+      "mid_x": -2,
+      "mid_y": -4,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "C9",
+      "mid_x": -28.05,
+      "mid_y": -21,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "C10",
+      "mid_x": -28,
+      "mid_y": -16.2,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "C11",
+      "mid_x": -18,
+      "mid_y": -13.8,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "U5",
+      "mid_x": -8.7,
+      "mid_y": -19,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "D5",
+      "mid_x": -3.7,
+      "mid_y": -22.5,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "L1",
+      "mid_x": 5.300000000000001,
+      "mid_y": -18.5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C12",
+      "mid_x": -3.2,
+      "mid_y": -16,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "C13",
+      "mid_x": -9.2,
+      "mid_y": -10.6,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "C14",
+      "mid_x": -13.5,
+      "mid_y": -19,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "C15",
+      "mid_x": -7.2,
+      "mid_y": -13.75,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C16",
+      "mid_x": 15.2,
+      "mid_y": -16,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C17",
+      "mid_x": 15.2,
+      "mid_y": -19.5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C18",
+      "mid_x": 25.5,
+      "mid_y": -14,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R17",
+      "mid_x": -13.45,
+      "mid_y": -14.3,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R18",
+      "mid_x": -16.7,
+      "mid_y": -17,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "R55",
+      "mid_x": -16.7,
+      "mid_y": -20.6,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "R19",
+      "mid_x": -17.05,
+      "mid_y": -24,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R20",
+      "mid_x": -20.05,
+      "mid_y": -25.4,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "R21",
+      "mid_x": -16.1,
+      "mid_y": -26.1,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R22",
+      "mid_x": -9.5,
+      "mid_y": -24.95,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "C19",
+      "mid_x": -12.35,
+      "mid_y": -25.05,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "C20",
+      "mid_x": -13.3,
+      "mid_y": -22.8,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R23",
+      "mid_x": 9,
+      "mid_y": -2,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "R68",
+      "mid_x": -4,
+      "mid_y": -8,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R24",
+      "mid_x": 11,
+      "mid_y": -7,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "U6",
+      "mid_x": 3,
+      "mid_y": 9,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "RV1",
+      "mid_x": -9,
+      "mid_y": 17.724998499999998,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R25",
+      "mid_x": -8,
+      "mid_y": 10,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "D6",
+      "mid_x": -2,
+      "mid_y": 9,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "D7",
+      "mid_x": -5,
+      "mid_y": 9,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "R26",
+      "mid_x": -4,
+      "mid_y": 5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C21",
+      "mid_x": 4.9,
+      "mid_y": 14.65,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "C22",
+      "mid_x": 7.9,
+      "mid_y": 13.25,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C23",
+      "mid_x": -1.15,
+      "mid_y": 13.5,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "SW1",
+      "mid_x": 10,
+      "mid_y": 21,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R29",
+      "mid_x": 12,
+      "mid_y": 13,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R30",
+      "mid_x": 16,
+      "mid_y": 13,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "LED2",
+      "mid_x": 20,
+      "mid_y": 24,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "LED3",
+      "mid_x": 20,
+      "mid_y": 19,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "U8",
+      "mid_x": 13,
+      "mid_y": -3,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R31",
+      "mid_x": 13,
+      "mid_y": 0,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "U9",
+      "mid_x": 13,
+      "mid_y": 5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R32",
+      "mid_x": 17,
+      "mid_y": -1,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "R33",
+      "mid_x": 18,
+      "mid_y": 2,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R34",
+      "mid_x": 8,
+      "mid_y": 11,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "D8",
+      "mid_x": 8,
+      "mid_y": 7,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "R39",
+      "mid_x": 18,
+      "mid_y": 5,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R65",
+      "mid_x": 18,
+      "mid_y": 8,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R40",
+      "mid_x": 22,
+      "mid_y": 8,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C25",
+      "mid_x": 11.5,
+      "mid_y": 9.95,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "U10",
+      "mid_x": 25,
+      "mid_y": 0,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R50",
+      "mid_x": 29,
+      "mid_y": 0,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "R51",
+      "mid_x": 20,
+      "mid_y": -1,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "C26",
+      "mid_x": 23.1,
+      "mid_y": 5.5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "C27",
+      "mid_x": 26,
+      "mid_y": 5.9,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "C28",
+      "mid_x": 28.3,
+      "mid_y": 5.9,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "C29",
+      "mid_x": 25,
+      "mid_y": 11,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "D10",
+      "mid_x": 31,
+      "mid_y": 18,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "D11",
+      "mid_x": 33,
+      "mid_y": -3.0000000000000004,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "J2",
+      "mid_x": 34.099949,
+      "mid_y": 8.000126999999999,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "R54",
+      "mid_x": 25,
+      "mid_y": 29,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "LED1",
+      "mid_x": 25,
+      "mid_y": 24,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "TP7",
+      "mid_x": 20,
+      "mid_y": 12,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "Q2",
+      "mid_x": 35.5,
+      "mid_y": -11,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R41",
+      "mid_x": 28,
+      "mid_y": -7,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R42",
+      "mid_x": 24,
+      "mid_y": -7,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R43",
+      "mid_x": 20,
+      "mid_y": -7,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R44",
+      "mid_x": 16,
+      "mid_y": -7,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "D9",
+      "mid_x": 35,
+      "mid_y": -20,
+      "layer": "top",
+      "rotation": 90
+    },
+    {
+      "designator": "Q3",
+      "mid_x": 35.5,
+      "mid_y": -15,
+      "layer": "top",
+      "rotation": 180
+    },
+    {
+      "designator": "R45",
+      "mid_x": 17,
+      "mid_y": -29,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R46",
+      "mid_x": 26.5,
+      "mid_y": -29,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R47",
+      "mid_x": 17,
+      "mid_y": -24,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R48",
+      "mid_x": 26.5,
+      "mid_y": -24,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R69",
+      "mid_x": -22,
+      "mid_y": -29.5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R70",
+      "mid_x": -12.5,
+      "mid_y": -29.5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R71",
+      "mid_x": -2,
+      "mid_y": -29.5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R72",
+      "mid_x": 7.5,
+      "mid_y": -29.5,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "Q4",
+      "mid_x": 8,
+      "mid_y": 2,
+      "layer": "top",
+      "rotation": 0
+    },
+    {
+      "designator": "R49",
+      "mid_x": 14,
+      "mid_y": -10,
+      "layer": "top",
+      "rotation": 270
+    },
+    {
+      "designator": "Q5",
+      "mid_x": 5,
+      "mid_y": -10,
+      "layer": "top",
+      "rotation": 180
+    }
+  ],
+  "status": "Orientation and placement data only; copper/fabrication approval requires all routed checks"
+}

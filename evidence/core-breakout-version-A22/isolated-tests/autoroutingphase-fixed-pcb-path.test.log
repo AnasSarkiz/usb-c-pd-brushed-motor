@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-fixed-pcb-path.test.tsx:
+(pass) autorouting phases detour around a fixed hand-authored pcbPath [1274.20ms]
+
+ 1 pass
+ 0 fail
+ 16 expect() calls
+Ran 1 test across 1 file. [2.38s]

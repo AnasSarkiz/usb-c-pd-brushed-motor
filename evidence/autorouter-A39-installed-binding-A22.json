@@ -1,0 +1,6 @@
+{
+  "version": "0.0.959-a39",
+  "tar_sha256": "02729fa4d946a13bd4e662f5d3649caf794b68cdb0dad162a65d9f42ef42b814",
+  "built_and_installed_js_sha256": "f6c0321bc72b2457832c59effa8f2827692fe71a9af0d6a0132bffc3dc7a5340",
+  "installed_package": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/capacity-autorouter"
+}

@@ -1,0 +1,22 @@
+{
+  "from": "revision36",
+  "to": "revision37 analog groups",
+  "artifact_sha256": "23ffc9891fb214026d5b607cb52c92d1502f9021f6f7f57ad7a8ea3dbdf72405",
+  "equivalent_types": {
+    "pcb_board": true,
+    "pcb_component": true,
+    "pcb_smtpad": true,
+    "pcb_plated_hole": true,
+    "pcb_hole": true,
+    "pcb_via": true,
+    "pcb_port": true,
+    "pcb_courtyard_outline": true,
+    "pcb_courtyard_rect": true,
+    "pcb_silkscreen_text": true,
+    "pcb_silkscreen_path": true,
+    "pcb_silkscreen_line": true,
+    "schematic_sheet": true,
+    "schematic_component": true,
+    "schematic_trace": true
+  }
+}

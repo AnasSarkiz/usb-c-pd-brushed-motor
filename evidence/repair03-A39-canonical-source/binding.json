@@ -1,0 +1,20 @@
+{
+  "upstream_commit": "5ec441040f04f40715051af23987bd6dde72c6c8",
+  "files": [
+    {
+      "source": "lib/drc/AutoroutingDrcEngine.ts",
+      "archive": "evidence/repair03-A39-canonical-source/lib__drc__AutoroutingDrcEngine.ts.txt",
+      "sha256": "db5696128eab38453c3a6f800c2e08aed9a17da54a82dd3dff956fa0f7a37efe"
+    },
+    {
+      "source": "tests/autorouting-drc-same-net-pad-policy.test.ts",
+      "archive": "evidence/repair03-A39-canonical-source/tests__autorouting-drc-same-net-pad-policy.test.ts.txt",
+      "sha256": "d31b6c261a00da3bbc461d2930c9c01a3c827a709c2bc09bba87a87baf299e50"
+    },
+    {
+      "source": "package.json",
+      "archive": "evidence/repair03-A39-canonical-source/package.json.txt",
+      "sha256": "4166143eecb02a52796382accc0e871b983a27880880b0c0fdee94eab0d299c4"
+    }
+  ]
+}

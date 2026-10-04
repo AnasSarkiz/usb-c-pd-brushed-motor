@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autorouter-version-latest.test.tsx:
+(pass) autorouterVersion latest uses AutoroutingPipelineSolver9_PreloadedTraceGraph [366.75ms]
+
+ 1 pass
+ 0 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [1499.00ms]

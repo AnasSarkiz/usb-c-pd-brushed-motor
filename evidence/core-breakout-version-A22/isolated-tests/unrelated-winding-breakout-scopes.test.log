@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/unrelated-winding-breakout-scopes.test.tsx:
+(pass) unrelated automatic breakout cohorts solve independently [2188.67ms]
+
+ 1 pass
+ 0 fail
+ 3 expect() calls
+Ran 1 test across 1 file. [3.39s]

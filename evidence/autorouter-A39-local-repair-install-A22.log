@@ -1,0 +1,24 @@
+bun install v1.4.2 (744846f84)
+Resolving dependencies
+Resolved, downloaded and extracted [35]
+warn: incorrect peer dependency "react@19.2.8"
+
+warn: incorrect peer dependency "circuit-json@0.0.506"
+
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.2.8"
+
+warn: incorrect peer dependency "circuit-json@0.0.506"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+
++ @tscircuit/fixed-via-hypergraph-solver@https://codeload.github.com/tscircuit/fixed-via-hypergraph-solver/tar.gz/bed37a6201b5dd07c9cc68b828917ecc20d6d049
++ @tscircuit/repair04@https://codeload.github.com/tscircuit/repair04/tar.gz/422b75460e80147c0a1b92521a765d9ae8eab548
++ high-density-repair02@https://codeload.github.com/tscircuit/high-density-repair02/tar.gz/67fbcfe637a5f5cd6e5f819de6f015ea1ee78e11
++ high-density-repair03@../repair03-manufacturing-A39
++ pcb-poly-hyper-graph@https://codeload.github.com/tscircuit/pcb-poly-hyper-graph/tar.gz/80db1463c4a47506eeda15b2c14d59679de900f8
++ react-for-pipeline9-fixtures@19.2.8
++ typescript@5.9.3 (v7.0.2 available)
+
+87 packages installed [11.21s]

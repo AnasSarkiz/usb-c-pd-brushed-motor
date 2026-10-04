@@ -1,0 +1,62 @@
+diff --git a/lib/drc/AutoroutingDrcEngine.ts b/lib/drc/AutoroutingDrcEngine.ts
+index 6e017a8..566629e 100644
+--- a/lib/drc/AutoroutingDrcEngine.ts
++++ b/lib/drc/AutoroutingDrcEngine.ts
+@@ -114,6 +114,13 @@ export interface AutoroutingDrcEngineOptions {
+   viaClearance?: number
+   /** Copper-edge clearance used for via-to-pad checks. */
+   viaToPadClearance?: number
++  /**
++   * Apply the physical via-to-pad gap to connected pads too. Electrical
++   * connectivity does not remove this manufacturing clearance. Omitted/false
++   * preserves legacy same-net copper exemptions; routing callers that prohibit
++   * new via-in-pad placement can explicitly enable it.
++   */
++  enforceSameNetViaToPadClearance?: boolean
+   /**
+    * Optional broad-phase cell size. The engine derives one from the board
+    * bounds when this is omitted.
+@@ -380,6 +387,7 @@ export class AutoroutingDrcEngine {
+   private readonly traceClearance: number
+   private readonly viaClearance: number
+   private readonly viaToPadClearance: number
++  private readonly enforceSameNetViaToPadClearance: boolean
+   private readonly cellSize: number
+   private readonly connMap?: ConnectivityMap
+   private readonly includeTraceViaOwnerMetadata: boolean
+@@ -413,6 +421,8 @@ export class AutoroutingDrcEngine {
+       options.viaToPadClearance ??
+       this.srj.minViaEdgeToPadEdgeClearance ??
+       DEFAULT_VIA_TO_PAD_CLEARANCE
++    this.enforceSameNetViaToPadClearance =
++      options.enforceSameNetViaToPadClearance ?? false
+     this.connMap = options.connMap
+     this.includeTraceViaOwnerMetadata =
+       options.includeTraceViaOwnerMetadata ?? false
+@@ -851,7 +861,11 @@ export class AutoroutingDrcEngine {
+     via: Via,
+     obstacle: StaticObstacle,
+   ): AutoroutingDrcError | undefined {
+-    if (this.obstacleSharesNet(via.netId, obstacle)) return undefined
++    if (
++      !this.enforceSameNetViaToPadClearance &&
++      this.obstacleSharesNet(via.netId, obstacle)
++    )
++      return undefined
+     this.lastRunStats.exactCheckCount += 1
+ 
+     const obstacleBounds = getObstacleLocalBounds(obstacle)
+diff --git a/package.json b/package.json
+index 59cb7c1..cc54793 100644
+--- a/package.json
++++ b/package.json
+@@ -4,7 +4,8 @@
+   "type": "module",
+   "private": true,
+   "files": [
+-    "lib"
++    "lib",
++    "types"
+   ],
+   "scripts": {
+     "start": "cosmos",

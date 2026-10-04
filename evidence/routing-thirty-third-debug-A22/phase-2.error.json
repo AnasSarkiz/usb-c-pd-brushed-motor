@@ -1,0 +1,19 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 2,
+  "phaseOrdinal": 9,
+  "phaseCount": 15,
+  "elapsedMs": 2884,
+  "connectionCount": 1,
+  "obstacleCount": 527,
+  "previousTraceCount": 57,
+  "autorouterName": "tscircuit",
+  "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "effort": 2,
+  "cacheStatus": "miss",
+  "cacheKey": "routes:core@0.0.2089:solver:0f3db71771b19459:srj:0a064143b47e9ca6",
+  "error": {
+    "message": "Static reachability precheck failed: 1 route(s) have no legal path under the current reservation and start-region rules source_net_20_mst0 (pcb_breakout_point_17->pcb_port_120) (capacity-autorouter@0.0.958)"
+  }
+}

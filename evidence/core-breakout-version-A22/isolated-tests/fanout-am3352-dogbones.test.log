@@ -1,0 +1,12 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-am3352-dogbones.test.tsx:
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `footprint`. It was passed a child from AM3352. See https://react.dev/link/warning-keys for more information.
+(pass) dogbone fanout escapes AM3352 power, ground and signal pads locally [2696.02ms]
+
+ 1 pass
+ 0 fail
+ 5 expect() calls
+Ran 1 test across 1 file. [3.26s]

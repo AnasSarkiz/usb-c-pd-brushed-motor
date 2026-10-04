@@ -1,0 +1,14 @@
+{
+  "inputPath": "evidence/routing-thirty-sixth-debug-A22/phase-5.input.simple-route.json",
+  "inputSha256": "ebc7340e146f89513e6948af8f0e85c5110bfb000ae348626d6c46044d45406c",
+  "fixturePath": ".cache/routing36-buck-available-segments-A22.json.gz",
+  "fixtureSha256": "5c31537d3cf5d9d23654b1fdd345b402d97a9dc72b9d137c67b4bc2430a0a719",
+  "diagnosticOnly": true,
+  "elapsedMs": 69202,
+  "nodes": 66765,
+  "edges": 197229,
+  "offBoardNodes": 0,
+  "traceWidth": 0.2,
+  "obstacleMargin": 0.15,
+  "serializedBytes": 34192666
+}

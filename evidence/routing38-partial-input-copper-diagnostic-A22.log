@@ -1,0 +1,103 @@
+{
+  "partialTraces": 133,
+  "constantWireSegments": 770,
+  "issues": 25,
+  "examples": [
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_32_mst5_0",
+      "net": "source_net_32",
+      "pad": "pcb_smtpad_294",
+      "layer": "top",
+      "clearanceMm": 0.19719037909159937
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_32_mst5_0",
+      "net": "source_net_32",
+      "pad": "pcb_smtpad_294",
+      "layer": "top",
+      "clearanceMm": 0.1971902328124184
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_23_mst1_0",
+      "net": "source_net_23",
+      "pad": "pcb_smtpad_54",
+      "layer": "top",
+      "clearanceMm": 0.10805608120290211
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_11_mst1_0",
+      "net": "source_net_11",
+      "pad": "pcb_smtpad_79",
+      "layer": "top",
+      "clearanceMm": 0.12230613030806248
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_11_mst1_0",
+      "net": "source_net_11",
+      "pad": "pcb_smtpad_79",
+      "layer": "top",
+      "clearanceMm": 0.12230486715707241
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_11_mst1_0",
+      "net": "source_net_11",
+      "pad": "pcb_smtpad_79",
+      "layer": "top",
+      "clearanceMm": 0.1457707534535181
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_11_mst2_0",
+      "net": "source_net_11",
+      "pad": "pcb_smtpad_79",
+      "layer": "top",
+      "clearanceMm": 0.12276581443517831
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_11_mst2_0",
+      "net": "source_net_11",
+      "pad": "pcb_smtpad_79",
+      "layer": "top",
+      "clearanceMm": 0.12276448042308069
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_11_mst2_0",
+      "net": "source_net_11",
+      "pad": "pcb_smtpad_79",
+      "layer": "top",
+      "clearanceMm": 0.13147964148334074
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_46_mst5_0",
+      "net": "source_net_46",
+      "pad": "pcb_smtpad_222",
+      "layer": "top",
+      "clearanceMm": 0.18134991312923315
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_46_mst5_0",
+      "net": "source_net_46",
+      "pad": "pcb_smtpad_222",
+      "layer": "top",
+      "clearanceMm": 0.19506487986632162
+    },
+    {
+      "rule": "constant_wire_to_foreign_pad",
+      "trace": "source_net_42_0",
+      "net": "source_net_42",
+      "pad": "pcb_smtpad_191",
+      "layer": "top",
+      "clearanceMm": 0.19655920984176603
+    }
+  ]
+}

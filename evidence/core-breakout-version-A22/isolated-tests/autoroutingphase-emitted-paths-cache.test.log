@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-emitted-paths-cache.test.tsx:
+(pass) cached phases emit independent replayable arrays without earlier phase copper [1385.78ms]
+
+ 1 pass
+ 0 fail
+ 16 expect() calls
+Ran 1 test across 1 file. [2.25s]

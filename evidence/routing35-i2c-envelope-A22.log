@@ -1,0 +1,30 @@
+{
+  "timingRegister": "0x00521018",
+  "prescaler": 1,
+  "sclDelay": 6,
+  "sdaDelay": 2,
+  "sclHigh": 17,
+  "sclLow": 25,
+  "tickMinimumNs": 60.679611650485434,
+  "tickMaximumNs": 64.43298969072166,
+  "setupMinimumNs": 364.0776699029126,
+  "holdRegisterMinimumNs": 121.35922330097087,
+  "holdRegisterMaximumNs": 128.8659793814433,
+  "requiredHoldMinimumNs": -132.0388349514563,
+  "permittedHoldMaximumNs": 182.26804123711338,
+  "lowMinimumNs": 1688.3495145631068,
+  "highMinimumNs": 1202.9126213592233,
+  "minimumFrequencyHz": 258212.21317148482,
+  "maximumFrequencyHz": 345869.7112155809,
+  "maximumBusCapacitancePf": 49.23736006803815,
+  "checks": {
+    "setup": true,
+    "holdMinimum": true,
+    "holdMaximum": true,
+    "low": true,
+    "high": true,
+    "frequency": true
+  },
+  "passed": true,
+  "status": "conditional AN4235 peripheral-equation screen; G0 timing and measured rise/fall must be qualified"
+}

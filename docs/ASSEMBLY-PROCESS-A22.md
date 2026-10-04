@@ -49,11 +49,11 @@ features, not ordinary routed vias. Specify filled and copper-capped processing
 for these holes before SMT reflow so solder cannot wick through the exposed pads.
 The eventual fabrication drawing must identify each via by actual generated
 coordinates and distinguish it from the 14 component holes and six NPTH holes.
-Confirm the selected two-layer process accepts this option before ordering.
+Confirm the selected four-layer JLC04161H-7628 process accepts this option before ordering.
 No new routed via is permitted inside a component pad.
 Primary source: https://jlcpcb.com/help/article/pcb-via-covering
 
-Use **1 oz copper** initially: unchanged fine-pitch and THT footprints must be
+Use **1 oz outer / 0.5 oz nominal inner copper** on the selected four-layer stackup: unchanged fine-pitch and THT footprints must be
 checked against that process; a 2 oz upgrade cannot be assumed compatible with
 all imported annular rings. Final thermal/current-path acceptance still requires
 measured routed geometry and bring-up temperatures.
@@ -76,5 +76,13 @@ potentiometer mechanical slots include2.0×2.2 mm (ratio1.10). JLC's capability
 page recommends slot length at least twice width. The actual short imported
 slots must be reviewed by CAM before an order; no geometry patch is permitted.
 Keystone C2906768 is in the assembly catalog with35 observed stock, but its
-public procurement action is Pre-order. Procure the exact SKU and manually
+public procurement action is Pre-order with minimum33 (2026-10-04). Procure the exact SKU and manually
 fit all seven contacts; do not claim automated assembly stock is reserved.
+
+The2026-10-04 active BOM refresh covers all58 exact supplier codes and140
+placements. STM32 C529330 lists4682 but offers Pre-order, minimum8 and an
+estimated13-day lead time. Arrange the exact part before automatic assembly;
+the displayed stock does not establish immediate turnkey availability.
+All other active parts show a purchase action with positive stock. The lowest
+observed stocked items are L1/117, potentiometer/123,5V LDO/162 and C18/241.
+The evidence is `evidence/jlc-assembly-stock-oct04-A22.json`; nothing is reserved.

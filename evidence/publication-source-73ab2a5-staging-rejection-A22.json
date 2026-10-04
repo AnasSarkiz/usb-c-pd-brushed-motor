@@ -1,0 +1,5 @@
+{
+  "failure": "Initial over-broad staging exhausted available filesystem space before manifest/publisher invocation; no remote upload was attempted",
+  "correction": "Removed only the failed task-created cache stage, then used the prior verified source scope plus all new Git changes. Canonical source and diagnostic evidence remain in Git/local.",
+  "sourceCommit": "73ab2a5547b04424a728e3a21ffe20ed9e0c6709"
+}

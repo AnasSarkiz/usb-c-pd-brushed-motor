@@ -1,0 +1,11 @@
+ 8 | solver.solve()
+ 9 | const params = solver.portPointPathingSolver?.getConstructorParams()[0]
+10 | const failedConnection = params?.connections.find(connection => connection.connectionId === 'source_net_24_mst0')
+11 | const incidentRegions = params?.graph.regions.filter(region => [failedConnection?.startRegionId,failedConnection?.endRegionId].includes(region.regionId))
+12 | const report = {inputPath, inputSha256:createHash('sha256').update(input).digest('hex'),diagnosticOnly:true, solved:solver.solved,failed:solver.failed,error:solver.error,elapsedMs:solver.timeToSolve,pathingStats:solver.portPointPathingSolver?.stats,failedConnection,incidentRegions:incidentRegions?.map(region => ({regionId:region.regionId,d:region.d,ports:region.ports.map(port=>({portId:port.d.portId,x:port.d.x,y:port.d.y,z:port.d.z,region1:port.region1.regionId,region2:port.region2.regionId}))}))}
+13 | await writeFile('evidence/global-thirty-fourth-diagnostic-A22.json',JSON.stringify(report,null,2)+'\n')
+                                                                              ^
+TypeError: JSON.stringify cannot serialize cyclic structures.
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/.cache/diagnose-native-thirty-fourth-A22.ts:13:74
+
+Bun v1.4.2 (macOS arm64)

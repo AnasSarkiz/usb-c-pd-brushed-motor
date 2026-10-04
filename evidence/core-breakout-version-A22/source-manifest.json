@@ -1,0 +1,35 @@
+{
+  "version": "0.0.2090 task-local",
+  "base_commit": "51b3b57d60b9153e8e7a0449023bbefdba18ec23",
+  "change": "Carry explicit breakout autorouterVersion into routing phase plan and resolve it before board version. No change when omitted.",
+  "patch_sha256": "8ca6d398001cfd94ef7df88e222f5bcdc7a441dd3ad0080d324b5db4a55a8c5b",
+  "files": [
+    {
+      "path": "lib/components/primitive-components/Group/Group.ts",
+      "sha256": "c3a4be85e1b2342cf2fc782b38f257053726216268ca6b3c7ba6228bc0d5e721",
+      "archive_path": "evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts.txt"
+    },
+    {
+      "path": "lib/components/primitive-components/Group/GroupRoutingPhasePlan.ts",
+      "sha256": "87d07adebf14391d95db6d857a3fce04c8f1358107b8f36efff3005229c1cf02",
+      "archive_path": "evidence/core-breakout-version-A22/lib/components/primitive-components/Group/GroupRoutingPhasePlan.ts.txt"
+    },
+    {
+      "path": "lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts",
+      "sha256": "72a17dbba5b885f66d9847b00f0dbef6c5741717ca79855885b14fc4b2723e29",
+      "archive_path": "evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts.txt"
+    },
+    {
+      "path": "tests/features/breakout-autorouter-version.test.tsx",
+      "sha256": "8487ca47990e17006acabe12e928b18feabc98b5b4da70d2107b7b9fa541398d",
+      "archive_path": "evidence/core-breakout-version-A22/tests/features/breakout-autorouter-version.test.tsx.txt"
+    },
+    {
+      "path": "tests/features/__snapshots__/breakout-autorouter-version-pcb.snap.svg",
+      "sha256": "5cf5c2fa6f19f689b78e0f0b39d6685086f35f002842618a1bb1c96d1bc715e9",
+      "archive_path": "evidence/core-breakout-version-A22/tests/features/__snapshots__/breakout-autorouter-version-pcb.snap.svg"
+    }
+  ],
+  "supplier_imports_untouched": true,
+  "pcb_snapshot_inspected": true
+}

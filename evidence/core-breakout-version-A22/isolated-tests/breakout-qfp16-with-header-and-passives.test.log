@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/breakout-qfp16-with-header-and-passives.test.tsx:
+(pass) breakout routes qfp16 controller pins to header and passives with auto breakout points [1295.51ms]
+
+ 1 pass
+ 0 fail
+ 20 expect() calls
+Ran 1 test across 1 file. [1.82s]

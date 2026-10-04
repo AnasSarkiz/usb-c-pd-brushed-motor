@@ -1,0 +1,33 @@
+{
+  "inputSha256": "430da9ac8535cdaec3bc60b4aff8c7ce6c66e25ac944882f504930c578611197",
+  "diagnosticOnly": true,
+  "pipeline": "7",
+  "solved": true,
+  "failed": false,
+  "error": null,
+  "elapsedMs": 78198,
+  "timings": {
+    "preprocessSimpleRouteJsonSolver": 11.988957999999968,
+    "componentDetectionSolver": 2.3217920000000163,
+    "escapeViaLocationSolver": 8.590958,
+    "netToPointPairsSolver": 0.9957499999999868,
+    "topologyPlanningSolver": 584.0905,
+    "topologyMergingSolver": 4278.692708,
+    "nodeDimensionSubdivisionSolver": 200.74487500000032,
+    "edgeSolver": 1295.8970000000008,
+    "availableSegmentPointSolver": 69.97895900000003,
+    "necessaryCrampedPortPointSolver": 56.03062500000033,
+    "portPointPathingSolver": 4827.285208999999,
+    "uniformPortDistributionSolver": 221.81912499999999,
+    "highDensityRouteSolver": 1735.6302080000023,
+    "highDensityForceImproveSolver": 148.41862499999115,
+    "highDensityRepairSolver": 160.15333299999475,
+    "highDensityStitchSolver": 12.764291999992565,
+    "traceSimplificationSolver": 407.74262499999895,
+    "traceWidthSolver": 118.4149999999936,
+    "globalDrcForceImproveSolver": 1032.3581250000134,
+    "exactGeometryDrcForceImproveSolver": 409.6442079999979,
+    "lengthMatchingPostProcessingSolver": 2.7445000000006985,
+    "powerTraceExpansionSolver": 0.005583999998634681
+  }
+}

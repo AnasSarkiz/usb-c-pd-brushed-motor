@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<string>", line 37, in <module>
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/fabrication_drill_geometry.py", line 14, in parsed_drill_geometry
+    hole = drill.converted(MM)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/power-review-venv/lib/python3.12/site-packages/gerbonara/graphic_objects.py", line 83, in converted
+    obj.convert_to(unit)
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/power-review-venv/lib/python3.12/site-packages/gerbonara/graphic_objects.py", line 92, in convert_to
+    for f in fields(self):
+             ^^^^^^^^^^^^
+  File "/Users/anassarkiz/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/dataclasses.py", line 1289, in fields
+    raise TypeError('must be called with a dataclass type or instance') from None
+TypeError: must be called with a dataclass type or instance

@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/manualplaced-breakoutpoint.test.tsx:
+(pass) autoplaced breakout points skipped when manual breakoutpoint exists [1573.44ms]
+
+ 1 pass
+ 0 fail
+ 3 expect() calls
+Ran 1 test across 1 file. [3.02s]

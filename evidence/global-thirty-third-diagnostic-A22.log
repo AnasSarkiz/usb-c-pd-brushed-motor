@@ -1,0 +1,1 @@
+{"solved":false,"failed":true,"error":"Static reachability precheck failed: 1 route(s) have no legal path under the current reservation and start-region rules source_net_20_mst0 (pcb_breakout_point_17->pcb_port_120)","elapsedMs":2180}

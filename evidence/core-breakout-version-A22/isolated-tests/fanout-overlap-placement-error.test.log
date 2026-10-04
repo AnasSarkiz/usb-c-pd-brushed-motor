@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-overlap-placement-error.test.tsx:
+(pass) overlapping fanout boundaries produce a placement error [312.60ms]
+
+ 1 pass
+ 0 fail
+ 2 expect() calls
+Ran 1 test across 1 file. [717.00ms]

@@ -1,0 +1,56 @@
+diff --git a/lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/create-pipeline7-autorouting-drc-evaluator.ts b/lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/create-pipeline7-autorouting-drc-evaluator.ts
+index 562815d..59361b1 100644
+--- a/lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/create-pipeline7-autorouting-drc-evaluator.ts
++++ b/lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/create-pipeline7-autorouting-drc-evaluator.ts
+@@ -35,6 +35,11 @@ export const createPipeline7AutoroutingDrcEvaluator = (
+       conversionOptions.originalSrj.minViaDiameter ??
+       conversionOptions.srjWithPointPairs.minViaDiameter,
+   }
++  const traceClearance = Math.max(
++    AUTOROUTING_TRACE_CLEARANCE,
++    conversionOptions.originalSrj.minTraceToPadEdgeClearance ?? 0,
++    conversionOptions.originalSrj.defaultObstacleMargin ?? 0,
++  )
+   // DRC interactions cannot span farther than the widest copper feature plus
+   // clearance. Indexing at that physical scale avoids board-size-dependent
+   // cells that become increasingly coarse on large layouts.
+@@ -42,12 +47,15 @@ export const createPipeline7AutoroutingDrcEvaluator = (
+     Math.max(
+       getViaDimensions(conversionOptions.originalSrj).padDiameter,
+       engineSrj.minTraceWidth,
+-    ) + Math.max(AUTOROUTING_TRACE_CLEARANCE, AUTOROUTING_VIA_CLEARANCE)
++    ) + Math.max(traceClearance, AUTOROUTING_VIA_CLEARANCE)
+   const engine = new AutoroutingDrcEngine(engineSrj as RepairSimpleRouteJson, {
+     connMap: conversionOptions.connMap,
+     includeTraceViaOwnerMetadata: true,
+-    traceClearance: AUTOROUTING_TRACE_CLEARANCE,
++    traceClearance,
+     viaClearance: AUTOROUTING_VIA_CLEARANCE,
++    viaToPadClearance: conversionOptions.originalSrj.minViaEdgeToPadEdgeClearance,
++    enforceSameNetViaToPadClearance:
++      conversionOptions.originalSrj.allowViaInPad === false,
+     spatialCellSize,
+   })
+   const convertCandidateRoutes =
+diff --git a/package.json b/package.json
+index f6b9451..7a08e11 100644
+--- a/package.json
++++ b/package.json
+@@ -1,7 +1,7 @@
+ {
+   "name": "@tscircuit/capacity-autorouter",
+   "main": "./dist/index.js",
+-  "version": "0.0.958",
++  "version": "0.0.959-a39",
+   "type": "module",
+   "repository": {
+     "type": "git",
+@@ -104,7 +104,7 @@
+     "zdwiel-dataset": "git+https://github.com/dwiel/tscircuit-benchmark.git#be36518b5bf51755dae92c230061ab3cf4e3e063",
+     "high-density-repair01": "git+https://github.com/tscircuit/high-density-repair01.git#27b3392c38ed4474b0557c73640b261155e28c27",
+     "high-density-repair02": "https://codeload.github.com/tscircuit/high-density-repair02/tar.gz/67fbcfe637a5f5cd6e5f819de6f015ea1ee78e11",
+-    "high-density-repair03": "https://codeload.github.com/tscircuit/high-density-repair03/tar.gz/5ec441040f04f40715051af23987bd6dde72c6c8",
++    "high-density-repair03": "file:../repair03-manufacturing-A39",
+     "@tscircuit/high-density-a01": "git+https://github.com/tscircuit/high-density-a01.git#44005d6b9dde7d93a3d3a4815b4e7c8c52b59d34",
+     "@tscircuit/high-density-a13": "git+https://github.com/tscircuit/high-density-a01.git#c6812cebd44b09f29f2fee929837b313b822f2ae",
+     "@tscircuit/high-density-b01": "git+https://github.com/tscircuit/high-density-b01.git#e651cab6c314e7aab6df31fd6067277436f67148"

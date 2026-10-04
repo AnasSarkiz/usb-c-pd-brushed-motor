@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autorouter-version-beta-pipeline7.test.tsx:
+(pass) board with autorouterVersion beta_pipeline7 uses AutoroutingPipelineSolver7_MultiGraph [336.11ms]
+
+ 1 pass
+ 0 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [1.66s]

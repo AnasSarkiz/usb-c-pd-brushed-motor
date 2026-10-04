@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-emitted-paths-fanout.test.tsx:
+(pass) emitted fanout paths preserve escaped copper and allow follow-up routing [1257.06ms]
+
+ 1 pass
+ 0 fail
+ 6 expect() calls
+Ran 1 test across 1 file. [2.12s]

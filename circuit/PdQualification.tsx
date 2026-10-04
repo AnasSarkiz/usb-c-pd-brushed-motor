@@ -17,7 +17,7 @@ export function PdQualification() {
   return (
     <>
       {/* PD qualification only; hardware PWM independent */}
-      <breakout name="mcu_pin_escape">
+      <breakout name="mcu_pin_escape" autorouterVersion="beta_pipeline9">
         <STM32G030F6P6TR
           name="U11"
           pcbRotation={productPlacement.U11.ccwRotationDegrees}

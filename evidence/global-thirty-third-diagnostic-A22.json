@@ -1,0 +1,55 @@
+{
+  "inputPath": "evidence/routing-thirty-third-debug-A22/phase-2.input.simple-route.json",
+  "inputSha256": "40711978615b420e5a5ea617282c004ac9d4249831791ea6c7953c918013a390",
+  "diagnosticOnly": true,
+  "effort": 2,
+  "solved": false,
+  "failed": true,
+  "error": "Static reachability precheck failed: 1 route(s) have no legal path under the current reservation and start-region rules source_net_20_mst0 (pcb_breakout_point_17->pcb_port_120)",
+  "elapsedMs": 2180,
+  "phaseTimings": {
+    "preprocessSimpleRouteJsonSolver": 3.203958,
+    "componentDetectionSolver": 2.983457999999999,
+    "escapeViaLocationSolver": 4.848166000000006,
+    "netToPointPairsSolver": 0.28750000000002274,
+    "topologyPlanningSolver": 344.16891699999996,
+    "topologyMergingSolver": 697.9302909999999,
+    "nodeDimensionSubdivisionSolver": 20.56558300000006,
+    "edgeSolver": 130.73487499999987,
+    "availableSegmentPointSolver": 21.982790999999906,
+    "necessaryCrampedPortPointSolver": 40.977333000000044,
+    "preloadedTraceGraphSolver": 628.1009170000002,
+    "portPointPathingSolver": 0
+  },
+  "pathingStats": {
+    "duplicateCongestedPortSourceCount": 0,
+    "duplicateCongestedPortCount": 0,
+    "duplicateCongestedPortFallbackToOriginal": true,
+    "duplicateCongestedPortPenalty": 0,
+    "duplicateCongestedPortPenaltyCount": 0,
+    "metadataPortPenaltyCount": 7779,
+    "crampedPortPenalty": 150,
+    "crampedPortPenaltyCount": 9656,
+    "preloadedPortCount": 193,
+    "preloadedFixedSegmentCount": 80,
+    "duplicateCongestedPortError": "Route 0 could not be solved independently: Static reachability precheck failed: 1 route(s) have no legal path under the current reservation and start-region rules source_net_20_mst0 (pcb_breakout_point_17->pcb_port_120)",
+    "candidatePortfolioPhase": "complete",
+    "candidatePortfolioSelectedCandidate": "primary",
+    "initialAssignmentCount": 80,
+    "initiallyRoutedRouteCount": 23,
+    "staticallyUnroutableRouteCount": 1,
+    "currentStage": "solveGraph",
+    "stageStats": {
+      "solveGraph": {
+        "timeSpent": 0,
+        "iterations": 1,
+        "completed": false
+      },
+      "optimizeSection": {
+        "timeSpent": 0,
+        "iterations": 0,
+        "completed": false
+      }
+    }
+  }
+}

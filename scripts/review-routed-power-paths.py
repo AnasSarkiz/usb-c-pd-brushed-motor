@@ -24,7 +24,7 @@ net_names_by_intent={}
 for identifier,name in nets.items():
     if identifier not in intent:raise ValueError('Unknown source net ownership '+identifier)
     net_names_by_intent.setdefault(intent[identifier],set()).add(name)
-critical={'VBUS','EFUSE_IN','VIN_BUCK','SWITCH_NODE','VM','MOTOR_P','MOTOR_N','DUMP_LOAD','GND'}
+critical={'VBUS','EFUSE_IN','VIN_BUCK','SWITCH_NODE','VM','MOTOR_P','MOTOR_N','DUMP_LOAD','DUMP_MID_A','DUMP_MID_B','DUMP_MID_C','DUMP_MID_D','GND'}
 summary={n:{'traces':0,'wireLengthMm':0,'minimumWidthMm':math.inf,'lengthBelow1mm':0,'isolatedSeriesResistanceOhmAt60C':0,'viaTransitions':0,'layers':set(),'narrowSegments':[]}for n in critical}
 for trace in traces:
     identifier=trace['pcb_trace_id']

@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-dogbone-transforms.test.tsx:
+(pass) dogbone handoffs follow emitted pads on both sides at each right angle [1549.50ms]
+
+ 1 pass
+ 0 fail
+ 184 expect() calls
+Ran 1 test across 1 file. [1.95s]

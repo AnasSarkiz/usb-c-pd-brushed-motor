@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-emitted-paths-transforms.test.tsx:
+(pass) emitted routes replay translated and rotated groups on both layers [4542.86ms]
+
+ 1 pass
+ 0 fail
+ 48 expect() calls
+Ran 1 test across 1 file. [5.11s]

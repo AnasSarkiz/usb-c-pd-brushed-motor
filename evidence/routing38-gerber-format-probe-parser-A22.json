@@ -1,0 +1,228 @@
+{
+  "probeOnly": true,
+  "unrouted": true,
+  "sourceArtifactSha256": "5600121e046098b3be6d245ab7ebd22658f404f26525c1680a2c6ea4c5c3f11c",
+  "archiveSha256": "cac9d644a43a95ee29f8b58e7c037ad3f36084e69dda963cf2999155f6fdac5e",
+  "files": [
+    {
+      "file": "F_Cu.gbr",
+      "sha256": "8add9af898504c1644c1de688432358af2fd4077e03d0f4655271b511078fe24",
+      "objects": 933,
+      "boundsMm": [
+        [
+          -39.5,
+          -32.0
+        ],
+        [
+          39.5,
+          32.0
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "F_SilkScreen.gbr",
+      "sha256": "f17d0279da9f95e5756b90669c2624323bf679b21402da226f96cad6f7644816",
+      "objects": 3148,
+      "boundsMm": [
+        [
+          -39.444140999999995,
+          -31.506587
+        ],
+        [
+          38.608399,
+          31.557437
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "F_Mask.gbr",
+      "sha256": "802be03e6d8b4a595b911d180fa566e92f0093ece6bbfc225954d5131270c84f",
+      "objects": 675,
+      "boundsMm": [
+        [
+          -37.67412899999999,
+          -31.228
+        ],
+        [
+          36.999997,
+          29.715645
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "F_Paste.gbr",
+      "sha256": "14b6271ed675c98db611823d5ff6469cc50c10edc0310569259c8cab803e272b",
+      "objects": 273,
+      "boundsMm": [
+        [
+          -37.035630499999996,
+          -30.709600000000002
+        ],
+        [
+          36.8499975,
+          29.6307965
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "B_Cu.gbr",
+      "sha256": "6950acd8e42b974a7d3d4260be5652160f8a76b0dea4dfd8331c8fb01d58b7bd",
+      "objects": 65,
+      "boundsMm": [
+        [
+          -39.5,
+          -32.0
+        ],
+        [
+          39.5,
+          32.0
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "B_SilkScreen.gbr",
+      "sha256": "6a0410ada55c4c4d53265480547f692c5011d4a211fa88192ead80d61418bdc0",
+      "objects": 5291,
+      "boundsMm": [
+        [
+          -36.908099,
+          -29.941419999999997
+        ],
+        [
+          36.336474,
+          31.757437
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "B_Mask.gbr",
+      "sha256": "cffaeba87ad77f55de4d0ae56d0379516c6dac41746e4d86a080b6783ea231c5",
+      "objects": 38,
+      "boundsMm": [
+        [
+          -37.67412899999999,
+          -29.1
+        ],
+        [
+          36.6,
+          29.1
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "B_Paste.gbr",
+      "sha256": "c2ccdb4195b368dfadc3749a60993e18258775ff790d74ba2c19dbf7897844a1",
+      "objects": 0,
+      "boundsMm": null,
+      "warnings": []
+    },
+    {
+      "file": "Edge_Cuts.gbr",
+      "sha256": "34bab145525bf777abd8ecc03435d4b1cc2fc98985878210a41b86ab40217da2",
+      "objects": 4,
+      "boundsMm": [
+        [
+          -40.025,
+          -32.525
+        ],
+        [
+          40.025,
+          32.525
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "In1_Cu.gbr",
+      "sha256": "17408e820835e0d01960967bb0565c2a58683094978169b3c7f1d7d16ee86592",
+      "objects": 65,
+      "boundsMm": [
+        [
+          -39.5,
+          -32.0
+        ],
+        [
+          39.5,
+          32.0
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "In2_Cu.gbr",
+      "sha256": "4de1873b225c4adf5402286e2fce6ca23882f7233d7333c79fbc842060171ffb",
+      "objects": 65,
+      "boundsMm": [
+        [
+          -39.5,
+          -32.0
+        ],
+        [
+          39.5,
+          32.0
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "F_Fab.gbr",
+      "sha256": "f1ac7ca9e105e3422f02612a75ed4a85461c6ac1edcd42958986b932b5d47c96",
+      "objects": 304,
+      "boundsMm": [
+        [
+          -34.032002000000006,
+          -25.004998999999998
+        ],
+        [
+          35.756006,
+          25.927173999999997
+        ]
+      ],
+      "warnings": []
+    },
+    {
+      "file": "drill-L1-L4.drl",
+      "sha256": "1a6f7c56e002e2e08164fd3e83e64c74c910d69da7a626489224586c7a820557",
+      "objects": 35,
+      "boundsMm": [
+        [
+          -37.474099,
+          -19.7523
+        ],
+        [
+          34.8998985,
+          26.2500115
+        ]
+      ],
+      "warnings": [
+        ".cache/gerber-format-probe-unrouted38-A22/drill-L1-L4.drl:22 \"G90\": G90 header statement found after end of header"
+      ]
+    },
+    {
+      "file": "drill_npth.drl",
+      "sha256": "470c87e930e7a77eea3897a120a4347a49276a6b48dc564c72ea7c27aa2425aa",
+      "objects": 6,
+      "boundsMm": [
+        [
+          -36.6,
+          -29.1
+        ],
+        [
+          36.6,
+          29.1
+        ]
+      ],
+      "warnings": [
+        ".cache/gerber-format-probe-unrouted38-A22/drill_npth.drl:14 \"G90\": G90 header statement found after end of header"
+      ]
+    }
+  ],
+  "status": "Format diagnostics only; final routed manufacturing approval pending"
+}

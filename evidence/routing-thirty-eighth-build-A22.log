@@ -1,0 +1,100 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/placement-unrouted.png
+Autorouting <board#850 /> phase 1/18 start: connections=13, obstacles=437, previous_traces=0, router=tscircuit, version=beta_pipeline9, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=2x, cache=miss, cache_id=8efffac3/f2736c2c
+  connections: breakout:pcb_breakout_point_0, breakout:pcb_breakout_point_1, breakout:pcb_breakout_point_2, breakout:pcb_breakout_point_3, breakout:pcb_breakout_point_4, breakout:pcb_breakout_point_5, breakout:pcb_breakout_point_6, breakout:pcb_breakout_point_7, breakout:pcb_breakout_point_8, breakout:pcb_breakout_point_9, breakout:pcb_breakout_point_10, breakout:pcb_breakout_point_11, breakout:pcb_breakout_point_12
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-0.input.simple-route.json
+  phase 1/18 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=1 progress=52% iterations_per_second=28052 elapsed=5.4s
+  phase 1/18 done: routed_traces=13, jumpers=0, errors=0, elapsed=6.0s
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-0.output.traces.json
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-0-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 2/18 start: connections=5, obstacles=437, previous_traces=13, router=fanout, version=beta_pipeline9, solver=FanoutSolver, effort=2x, cache=disabled(strategy_not_cacheable)
+  connections: 
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-1.input.simple-route.json
+  phase 2/18 progress: solver=FanoutSolver solver_phase=fanout steps=1 progress=100% elapsed=885ms
+  phase 2/18 done: routed_traces=18, jumpers=0, errors=0, elapsed=889ms
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-1.output.traces.json
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-1-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 4/18 start: connections=18, obstacles=437, previous_traces=18, router=tscircuit, version=beta_pipeline9, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=2x, cache=miss, cache_id=8efffac3/1f94b9b4
+  connections: breakout:pcb_breakout_point_13, breakout:pcb_breakout_point_14, breakout:pcb_breakout_point_15, breakout:pcb_breakout_point_16, breakout:pcb_breakout_point_17, breakout:pcb_breakout_point_18, breakout:pcb_breakout_point_19, breakout:pcb_breakout_point_20, breakout:pcb_breakout_point_21, breakout:pcb_breakout_point_22, breakout:pcb_breakout_point_23, breakout:pcb_breakout_point_24, breakout:pcb_breakout_point_25, breakout:pcb_breakout_point_26, breakout:pcb_breakout_point_27, breakout:pcb_breakout_point_28, breakout:pcb_breakout_point_29, breakout:pcb_breakout_point_30
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-3.input.simple-route.json
+  phase 4/18 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=1 progress=56% iterations_per_second=137600 elapsed=274ms
+  phase 4/18 done: routed_traces=18, jumpers=0, errors=0, elapsed=1.9s
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-3.output.traces.json
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-3-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-default-order-3.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 5/18 start: connections=1, obstacles=437, previous_traces=36, router=fanout, version=beta_pipeline9, solver=FanoutSolver, effort=2x, cache=disabled(strategy_not_cacheable)
+  connections: 
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-4.input.simple-route.json
+  phase 5/18 progress: solver=FanoutSolver solver_phase=fanout steps=1 progress=100% elapsed=79ms
+  phase 5/18 done: routed_traces=37, jumpers=0, errors=0, elapsed=81ms
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-4.output.traces.json
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-4-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-default-order-4.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 7/18 start: connections=5, obstacles=437, previous_traces=37, router=precomputed, version=beta_pipeline7, effort=2x, cache=disabled(precomputed)
+  connections: net.SWITCH_NODE, net.MOTOR_P, net.MOTOR_N, net.MCU_NRST, net.ADC_VBUS
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-0.input.simple-route.json
+  phase 7/18 done: routed_traces=49, jumpers=0, errors=0, elapsed=14ms
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-0.output.traces.json
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-0-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-0-order-6.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 8/18 start: connections=1, obstacles=577, previous_traces=37, router=tscircuit, version=beta_pipeline7, solver=AutoroutingPipelineSolver7_MultiGraph, effort=2x, cache=miss, cache_id=8a4fb521/af34704a
+  connections: net.VCC3V3
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-1.input.simple-route.json
+  phase 8/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyPlanningSolver steps=1 progress=18% iterations_per_second=4404 elapsed=274ms
+  phase 8/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=highDensityRouteSolver steps=9 progress=55% iterations_per_second=9 elapsed=18.3s
+  phase 8/18 done: routed_traces=57, jumpers=0, errors=0, elapsed=19.3s
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-1.output.traces.json
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-1-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-1-order-7.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 9/18 start: connections=4, obstacles=577, previous_traces=57, router=tscircuit, version=beta_pipeline7, solver=AutoroutingPipelineSolver7_MultiGraph, effort=2x, cache=miss, cache_id=8a4fb521/9a6a33b9
+  connections: net.VBUS_SENSE, net.VREG_1V2, net.VREG_2V7, net.ADC_VM
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-3.input.simple-route.json
+  phase 9/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyPlanningSolver steps=1 progress=18% iterations_per_second=1908 elapsed=274ms
+  phase 9/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=highDensityRouteSolver steps=11 progress=55% iterations_per_second=1 elapsed=77.7s
+  phase 9/18 done: routed_traces=64, jumpers=0, errors=0, elapsed=78.6s
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-3.output.traces.json
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-3-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Saved phase path ".D3 > port.cathode" must end at another connection endpoint; use autorouter="fanout" for saved escapes
+Autorouting <board#850 /> phase 10/18 start: connections=19, obstacles=577, previous_traces=64, router=tscircuit, version=beta_pipeline7, solver=AutoroutingPipelineSolver7_MultiGraph, effort=2x, cache=miss, cache_id=8a4fb521/7493865b
+  connections: net.CC1, net.CC2, net.PD_RESET, net.SCL, net.SDA, net.PD_ENABLE_N, net.PD_ALERT_N, net.VOLTAGE_BIT_9, net.VOLTAGE_BIT_12, net.VOLTAGE_DRIVE_9, net.VOLTAGE_DRIVE_12, net.HOST_ALLOW, net.HOST_INHIBIT_B, net.MOTOR_FAULT_N, net.SWDIO, net.SWCLK, net.MOTOR_READY, net.SELECT_9, net.SELECT_12
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-4.input.simple-route.json
+  phase 10/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyPlanningSolver steps=1 progress=18% iterations_per_second=151 elapsed=387ms
+  phase 10/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=nodeDimensionSubdivisionSolver steps=11 progress=27% iterations_per_second=1 elapsed=13.7s
+  phase 10/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=portPointPathingSolver steps=33 progress=45% iterations_per_second=74371 elapsed=24.0s
+  phase 10/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=highDensityRouteSolver steps=52 progress=55% iterations_per_second=0 elapsed=174.6s
+  phase 10/18 done: routed_traces=105, jumpers=0, errors=0, elapsed=182.0s
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-4.output.traces.json
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-4-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#850 /> phase 11/18 start: connections=7, obstacles=577, previous_traces=105, router=tscircuit, version=beta_pipeline7, solver=AutoroutingPipelineSolver7_MultiGraph, effort=2x, cache=miss, cache_id=8a4fb521/7c64befc
+  connections: net.BOOT, net.BUCK_EN, net.RT, net.MOTOR_FB, net.COMP, net.FB_TOP_MID, net.COMP_ZERO
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-5.input.simple-route.json
+  phase 11/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyPlanningSolver steps=1 progress=18% iterations_per_second=1127 elapsed=468ms
+  phase 11/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=nodeDimensionSubdivisionSolver steps=13 progress=27% iterations_per_second=43 elapsed=28.6s
+  phase 11/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=availableSegmentPointSolver steps=18 progress=36% iterations_per_second=339 elapsed=43.1s
+  phase 11/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=highDensityRouteSolver steps=33 progress=55% iterations_per_second=0 elapsed=790.0s
+  phase 11/18 done: routed_traces=120, jumpers=0, errors=0, elapsed=792.2s
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-5.output.traces.json
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-5-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-5-order-10.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 12/18 start: connections=8, obstacles=577, previous_traces=120, router=tscircuit, version=beta_pipeline7, solver=AutoroutingPipelineSolver7_MultiGraph, effort=2x, cache=miss, cache_id=8a4fb521/39e08159
+  connections: net.INPUT_UV, net.INPUT_OV, net.SLEW, net.INPUT_ILIM, net.POWER_ENABLE, net.INPUT_PG, net.PD_INHIBIT, net.INPUT_OV_TOP
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-6.input.simple-route.json
+  phase 12/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyPlanningSolver steps=1 progress=18% iterations_per_second=1073 elapsed=513ms
+  phase 12/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=nodeDimensionSubdivisionSolver steps=22 progress=27% iterations_per_second=22 elapsed=33.3s
+  phase 12/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=availableSegmentPointSolver steps=28 progress=36% iterations_per_second=783 elapsed=50.7s
+  phase 12/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=highDensityRouteSolver steps=36 progress=55% iterations_per_second=0 elapsed=1376.3s
+  phase 12/18 done: routed_traces=133, jumpers=0, errors=0, elapsed=1383.0s
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-6.output.traces.json
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-6-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-6-order-11.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 13/18 start: connections=9, obstacles=577, previous_traces=133, router=tscircuit, version=beta_pipeline7, solver=AutoroutingPipelineSolver7_MultiGraph, effort=2x, cache=miss, cache_id=8a4fb521/77114404
+  connections: net.VREF2V5, net.UV_REF, net.OV_REF, net.OV_ACTIVE_N, net.IPROPI, net.VCP, net.CPH, net.CPL, net.POWER_LED
+Wrote debug artifact: evidence/routing-thirty-eighth-debug-A22/phase-7.input.simple-route.json
+  phase 13/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyPlanningSolver steps=1 progress=18% iterations_per_second=1091 elapsed=513ms
+  phase 13/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=nodeDimensionSubdivisionSolver steps=23 progress=27% iterations_per_second=0 elapsed=88.0s
+  phase 13/18 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=availableSegmentPointSolver steps=30 progress=36% iterations_per_second=582 elapsed=109.8s

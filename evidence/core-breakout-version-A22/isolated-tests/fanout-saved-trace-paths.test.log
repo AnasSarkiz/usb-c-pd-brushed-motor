@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-saved-trace-paths.test.tsx:
+(pass) saved fanout paths preserve bends and hand off to global routing [875.49ms]
+
+ 1 pass
+ 0 fail
+ 7 expect() calls
+Ran 1 test across 1 file. [1.56s]

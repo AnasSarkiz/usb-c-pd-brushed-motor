@@ -1,0 +1,80 @@
+{
+  "artifact_sha256": "5600121e046098b3be6d245ab7ebd22658f404f26525c1680a2c6ea4c5c3f11c",
+  "from": "revision37",
+  "to": "revision38",
+  "all_physical_types_identical": {
+    "pcb_board": true,
+    "pcb_breakout_point": true,
+    "pcb_component": true,
+    "pcb_copper_pour": true,
+    "pcb_courtyard_outline": true,
+    "pcb_courtyard_rect": true,
+    "pcb_fabrication_note_path": true,
+    "pcb_group": true,
+    "pcb_hole": true,
+    "pcb_keepout": true,
+    "pcb_plated_hole": true,
+    "pcb_port": true,
+    "pcb_silkscreen_circle": true,
+    "pcb_silkscreen_path": true,
+    "pcb_silkscreen_rect": true,
+    "pcb_silkscreen_text": true,
+    "pcb_smtpad": true,
+    "pcb_solder_paste": true,
+    "pcb_via": true
+  },
+  "schematic_sheets": [
+    {
+      "name": "usb",
+      "index": 1,
+      "records_byte_identical": true,
+      "review": "Prior eight-sheet visual review remains applicable: byte-identical records"
+    },
+    {
+      "name": "pdhost",
+      "index": 8,
+      "records_byte_identical": true,
+      "review": "Prior eight-sheet visual review remains applicable: byte-identical records"
+    },
+    {
+      "name": "input",
+      "index": 2,
+      "records_byte_identical": true,
+      "review": "Prior eight-sheet visual review remains applicable: byte-identical records"
+    },
+    {
+      "name": "buck",
+      "index": 3,
+      "records_byte_identical": true,
+      "review": "Prior eight-sheet visual review remains applicable: byte-identical records"
+    },
+    {
+      "name": "controls",
+      "index": 4,
+      "records_byte_identical": true,
+      "review": "Prior eight-sheet visual review remains applicable: byte-identical records"
+    },
+    {
+      "name": "protection",
+      "index": 5,
+      "records_byte_identical": true,
+      "review": "Prior eight-sheet visual review remains applicable: byte-identical records"
+    },
+    {
+      "name": "motor",
+      "index": 7,
+      "records_byte_identical": true,
+      "review": "Prior eight-sheet visual review remains applicable: byte-identical records"
+    },
+    {
+      "name": "dump",
+      "index": 6,
+      "records_byte_identical": false,
+      "review": "Re-rendered dump sheet inspected: power labels/junctions readable inside A4; existing supplier reference advisories retained with readable board-level reference labels"
+    }
+  ],
+  "new_dump_png": "evidence/routing38-dump-schematic-A22.png",
+  "new_dump_png_sha256": "4301e20e842d9b791af3a697925c0628ee58a4b2c05cd2bbab730275bfdb7435",
+  "initial_equivalence_rejection": "evidence/routing38-reviewed-geometry-equivalence-A22.json",
+  "accepted_change": "Explicit power-net declarations change only dump-sheet power-label/junction presentation; no supplier/model/connection/PCB geometry edit"
+}

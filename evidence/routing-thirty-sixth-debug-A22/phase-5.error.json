@@ -1,0 +1,20 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 5,
+  "phaseOrdinal": 11,
+  "phaseCount": 14,
+  "elapsedMs": 42489,
+  "connectionCount": 44,
+  "obstacleCount": 577,
+  "previousTraceCount": 105,
+  "autorouterName": "tscircuit",
+  "autorouterVersion": "beta_pipeline7",
+  "solverName": "AutoroutingPipelineSolver7_MultiGraph",
+  "effort": 2,
+  "cacheStatus": "miss",
+  "cacheKey": "routes:core@0.0.2090:solver:8a4fb521710f795e:srj:b584a0656ffeb647",
+  "error": {
+    "message": "aJ ran out of iterations (capacity-autorouter@0.0.958)"
+  }
+}

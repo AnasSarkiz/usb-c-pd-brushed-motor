@@ -1,0 +1,44 @@
+bun install v1.4.2 (744846f84)
+Resolving dependencies
+Resolved, downloaded and extracted [875]
+warn: incorrect peer dependency "typescript@6.0.3"
+
+warn: incorrect peer dependency "typescript@6.0.3"
+
+warn: incorrect peer dependency "typescript@6.0.3"
+
+warn: incorrect peer dependency "typescript@6.0.3"
+
+warn: incorrect peer dependency "typescript@6.0.3"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "typescript@6.0.3"
+
+warn: incorrect peer dependency "typescript@6.0.3"
+
+warn: incorrect peer dependency "typescript@6.0.3"
+
++ @biomejs/biome@2.5.15
++ @tscircuit/solver-utils@0.0.19 (v0.0.21 available)
++ @types/bun@1.4.2
++ @types/react@19.3.0
++ @types/react-dom@19.3.0
++ @vitejs/plugin-react@6.1.1
++ bun-match-svg@0.0.14 (v0.0.17 available)
++ dataset-drc14@github:tscircuit/dataset-14#6582f63
++ react-cosmos@7.4.1
++ react-cosmos-plugin-vite@7.4.0
++ typescript@6.0.3 (v7.0.2 available)
++ vite@8.3.2
++ @tscircuit/checks@0.0.123 (v0.0.238 available)
++ @tscircuit/circuit-json-util@0.0.94 (v0.0.119 available)
++ @tscircuit/math-utils@0.0.36 (v0.0.38 available)
++ circuit-json@0.0.422 (v0.0.515 available)
++ circuit-json-to-connectivity-map@0.0.25 (v0.0.33 available)
++ graphics-debug@0.0.93 (v0.0.100 available)
++ react@19.3.0
++ react-dom@19.3.0
++ transformation-matrix@3.1.0
+
+270 packages installed [4.71s]

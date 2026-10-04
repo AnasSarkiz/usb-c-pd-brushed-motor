@@ -1,0 +1,14 @@
+bun test v1.4.2 (744846f84)
+Dense RP2040 saved-path parity {
+  differentPixels: 0,
+  parityPercent: 100,
+  foregroundParityPercent: 100,
+}
+
+tests/features/autoroutingphase-emitted-paths-parity.test.tsx:
+(pass) dense RP2040 emitted PCB paths replay the autorouter copper with visual parity [9338.56ms]
+
+ 1 pass
+ 0 fail
+ 13 expect() calls
+Ran 1 test across 1 file. [10.21s]

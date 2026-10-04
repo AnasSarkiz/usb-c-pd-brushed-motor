@@ -1,0 +1,14 @@
+{
+  "revision": "A22 revision39",
+  "sourceArtifactSha256": "d97422db3ea64b4a79f7c5af02b1014da7dd7595e6085672401ac611551fa674",
+  "advisories": [
+    "<TwoPinComponentShouldBeVertical componentName=\"R46\" railPin=\"pin1\" railType=\"power\" deltaSchRotation=\"-90\" suggestedRailFacingDirection=\"up\" message=\"rotate R46 by -90\u00b0 so its power-connected pin faces up and the component is vertical\" />",
+    "<TwoPinComponentShouldBeVertical componentName=\"R48\" railPin=\"pin1\" railType=\"power\" deltaSchRotation=\"-90\" suggestedRailFacingDirection=\"up\" message=\"rotate R48 by -90\u00b0 so its power-connected pin faces up and the component is vertical\" />",
+    "<TwoPinComponentShouldBeVertical componentName=\"R70\" railPin=\"pin1\" railType=\"power\" deltaSchRotation=\"-90\" suggestedRailFacingDirection=\"up\" message=\"rotate R70 by -90\u00b0 so its power-connected pin faces up and the component is vertical\" />",
+    "<TwoPinComponentShouldBeVertical componentName=\"R72\" railPin=\"pin1\" railType=\"power\" deltaSchRotation=\"-90\" suggestedRailFacingDirection=\"up\" message=\"rotate R72 by -90\u00b0 so its power-connected pin faces up and the component is vertical\" />"
+  ],
+  "matchesRevision38": true,
+  "reviewedImage": "evidence/routing38-dump-schematic-A22.png",
+  "reviewedImageSha256": "4301e20e842d9b791af3a697925c0628ee58a4b2c05cd2bbab730275bfdb7435",
+  "acceptedReason": "R46/R48/R70/R72 are the horizontal second resistor in each two-resistor series dump branch. Their net labels, values and connections are readable. Power-net classification triggers the generic vertical-rail preference; rotating these separated branch symbols would not repair a connectivity or spacing defect. Physical and schematic records match revision38. Missing supplier-symbol reference metadata remains visible, with board-level Q2/Q3/Q4/Q5 labels readable."
+}

@@ -1,0 +1,18 @@
+{
+  "currentSha256": "e9cda36a6134a2d2f05eb1444dd15d73e0c24ae8cdc46ecccf4dda15ceb7ea53",
+  "previousArtifact": "routing32-preroute-A22.json.gz",
+  "unchangedTypes": [
+    "pcb_component",
+    "pcb_smtpad",
+    "pcb_plated_hole",
+    "pcb_hole",
+    "pcb_via",
+    "pcb_silkscreen_text",
+    "pcb_silkscreen_path",
+    "pcb_courtyard_outline",
+    "schematic_component",
+    "schematic_sheet",
+    "pcb_breakout_point"
+  ],
+  "reviewBasis": "Native ADC routing intent only; physical placement, full-stack imported barrels and8 A4 sheets unchanged."
+}

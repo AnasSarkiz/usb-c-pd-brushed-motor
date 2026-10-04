@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/breakout-point-source-trace-ids.test.tsx:
+(pass) transparent breakout points use board source trace ids [136.83ms]
+
+ 1 pass
+ 0 fail
+ 18 expect() calls
+Ran 1 test across 1 file. [665.00ms]

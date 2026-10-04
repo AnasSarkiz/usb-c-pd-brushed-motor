@@ -1,0 +1,6 @@
+{
+  "diagnosticOnly": true,
+  "status": "interrupted; no solve result claimed",
+  "reason": "Replace synchronous run with per-stage progress reporting",
+  "log": "evidence/routing36-buck-subset-diagnostic-A22.log"
+}

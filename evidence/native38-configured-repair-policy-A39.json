@@ -1,0 +1,4696 @@
+{
+  "diagnosticOnly": true,
+  "inputPath": "evidence/routing-thirty-eighth-debug-A22/phase-6.input.simple-route.json",
+  "tracePath": "evidence/routing-thirty-eighth-debug-A22/phase-6.output.traces.json",
+  "inputSha256": "ca2dec634e8ea8c00c73114b53255a5e38f049b8ca14466a3a4d41e6e3099876",
+  "nativeTraceSha256": "557ec24127527de57472e3bc371f2a1007a1b2e69d5a3618a3e6c3a6332e44de",
+  "partialNativeTraces": 133,
+  "scopedSourceNetTraces": 96,
+  "baselineErrors": [
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst1_0 is too close to pcb_via \"via_47\" (gap: 0.014mm)",
+      "pcb_trace_id": "source_net_11_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst1_0_via_47",
+      "minimum_clearance": 0.1,
+      "actual_clearance": 0.01377379655692293,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -25.869096470471987,
+        "y": 0.6933909326918783
+      },
+      "first_contact_center": {
+        "x": -25.869096470471987,
+        "y": 0.6933909326918783
+      },
+      "first_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_via \"via_47\" (gap: 0.014mm)",
+      "first_actual_clearance": 0.01377379655692293,
+      "worst_contact_center": {
+        "x": -25.869096470471987,
+        "y": 0.6933909326918783
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_via \"via_47\" (gap: 0.014mm)",
+      "worst_actual_clearance": 0.01377379655692293
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst2_0 is too close to pcb_via \"via_47\" (gap: 0.024mm)",
+      "pcb_trace_id": "source_net_11_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst2_0_via_47",
+      "minimum_clearance": 0.1,
+      "actual_clearance": 0.024019327337578028,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -25.875178497802075,
+        "y": 0.6880404580604023
+      },
+      "first_contact_center": {
+        "x": -25.95955264248403,
+        "y": 0.6897278100731082
+      },
+      "first_contact_message": "PCB trace source_net_11_mst2_0 is too close to pcb_via \"via_47\" (gap: 0.050mm)",
+      "first_actual_clearance": 0.04975117723913289,
+      "worst_contact_center": {
+        "x": -25.875178497802075,
+        "y": 0.6880404580604023
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst2_0 is too close to pcb_via \"via_47\" (gap: 0.024mm)",
+      "worst_actual_clearance": 0.024019327337578028
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_37_pcb_smtpad_155",
+      "message": "pcb_via \"via_37\" and pcb_smtpad \"pcb_smtpad_155\" are too close (gap: 0.101mm)",
+      "pcb_trace_id": "source_net_14_mst0_0",
+      "pcb_pad_ids": [
+        "via_37",
+        "pcb_smtpad_155"
+      ],
+      "pcb_via_ids": [
+        "via_37"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1009999829999984,
+      "center": {
+        "x": -20.395501641499997,
+        "y": 3.1552401332779
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_40_pcb_smtpad_155",
+      "message": "pcb_via \"via_40\" and pcb_smtpad \"pcb_smtpad_155\" are too close (gap: 0.101mm)",
+      "pcb_trace_id": "source_net_14_mst1_0",
+      "pcb_pad_ids": [
+        "via_40",
+        "pcb_smtpad_155"
+      ],
+      "pcb_via_ids": [
+        "via_40"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1009999829999984,
+      "center": {
+        "x": -20.395501641499997,
+        "y": 3.1552401332779
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_52_pcb_smtpad_241",
+      "message": "pcb_via \"via_52\" and pcb_smtpad \"pcb_smtpad_241\" are too close (gap: 0.073mm)",
+      "pcb_trace_id": "source_net_46_mst1_0",
+      "pcb_pad_ids": [
+        "via_52",
+        "pcb_smtpad_241"
+      ],
+      "pcb_via_ids": [
+        "via_52"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.0730083745984812,
+      "center": {
+        "x": -17.10250578729924,
+        "y": -19.993358206499998
+      }
+    }
+  ],
+  "configuredPhysicalErrors": [
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst6_0 is too close to pcb_smtpad \"pcb_smtpad_114\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst6_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst6_0_pcb_smtpad_114",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499911292499066,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -14.76007588171704,
+        "y": -8.835242864746052
+      },
+      "first_contact_center": {
+        "x": -14.76007588171704,
+        "y": -8.835242864746052
+      },
+      "first_contact_message": "PCB trace source_net_3_mst6_0 is too close to pcb_smtpad \"pcb_smtpad_114\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499911292499066,
+      "worst_contact_center": {
+        "x": -14.76007588171704,
+        "y": -8.835242864746052
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst6_0 is too close to pcb_smtpad \"pcb_smtpad_114\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499911292499066
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst7_0 is too close to pcb_smtpad \"pcb_smtpad_47\" (gap: 0.230mm)",
+      "pcb_trace_id": "source_net_3_mst7_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst7_0_pcb_smtpad_47",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2299999999999978,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_51"
+      ],
+      "center": {
+        "x": -22.05522447811936,
+        "y": 14.25114327314876
+      },
+      "first_contact_center": {
+        "x": -22.05522447811936,
+        "y": 14.25114327314876
+      },
+      "first_contact_message": "PCB trace source_net_3_mst7_0 is too close to pcb_smtpad \"pcb_smtpad_47\" (gap: 0.230mm)",
+      "first_actual_clearance": 0.2299999999999978,
+      "worst_contact_center": {
+        "x": -22.05522447811936,
+        "y": 14.25114327314876
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst7_0 is too close to pcb_smtpad \"pcb_smtpad_47\" (gap: 0.230mm)",
+      "worst_actual_clearance": 0.2299999999999978
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst10_0 is too close to pcb_smtpad \"pcb_smtpad_322\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst10_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst10_0_pcb_smtpad_322",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499172695710253,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_105"
+      ],
+      "center": {
+        "x": 25.101082225268254,
+        "y": -2.202310956346413
+      },
+      "first_contact_center": {
+        "x": 25.101082225268254,
+        "y": -2.202310956346413
+      },
+      "first_contact_message": "PCB trace source_net_3_mst10_0 is too close to pcb_smtpad \"pcb_smtpad_322\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499172695710253,
+      "worst_contact_center": {
+        "x": 25.101082225268254,
+        "y": -2.202310956346413
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst10_0 is too close to pcb_smtpad \"pcb_smtpad_322\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499172695710253
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst10_0 is too close to pcb_smtpad \"pcb_smtpad_319\" (gap: 0.242mm)",
+      "pcb_trace_id": "source_net_3_mst10_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst10_0_pcb_smtpad_319",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.24227897600579099,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_307"
+      ],
+      "center": {
+        "x": 22.709686076013266,
+        "y": -1.827865365397521
+      },
+      "first_contact_center": {
+        "x": 22.709686076013266,
+        "y": -1.827865365397521
+      },
+      "first_contact_message": "PCB trace source_net_3_mst10_0 is too close to pcb_smtpad \"pcb_smtpad_319\" (gap: 0.242mm)",
+      "first_actual_clearance": 0.24227897600579099,
+      "worst_contact_center": {
+        "x": 22.709686076013266,
+        "y": -1.827865365397521
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst10_0 is too close to pcb_smtpad \"pcb_smtpad_319\" (gap: 0.242mm)",
+      "worst_actual_clearance": 0.24227897600579099
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst11_0 is too close to pcb_smtpad \"pcb_smtpad_143\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst11_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst11_0_pcb_smtpad_143",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499732249669581,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -5,
+        "y": -1.685899638751652
+      },
+      "first_contact_center": {
+        "x": -5,
+        "y": -1.685899638751652
+      },
+      "first_contact_message": "PCB trace source_net_3_mst11_0 is too close to pcb_smtpad \"pcb_smtpad_143\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499732249669581,
+      "worst_contact_center": {
+        "x": -5,
+        "y": -1.685899638751652
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst11_0 is too close to pcb_smtpad \"pcb_smtpad_143\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499732249669581
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst12_0 is too close to pcb_smtpad \"pcb_smtpad_265\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst12_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst12_0_pcb_smtpad_265",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499916372977054,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_286"
+      ],
+      "center": {
+        "x": 1.7769300109003017,
+        "y": 10.975362865938903
+      },
+      "first_contact_center": {
+        "x": 1.7769300109003017,
+        "y": 10.975362865938903
+      },
+      "first_contact_message": "PCB trace source_net_3_mst12_0 is too close to pcb_smtpad \"pcb_smtpad_265\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499916372977054,
+      "worst_contact_center": {
+        "x": 1.7769300109003017,
+        "y": 10.975362865938903
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst12_0 is too close to pcb_smtpad \"pcb_smtpad_265\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499916372977054
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst12_0 is too close to pcb_smtpad \"pcb_smtpad_266\" (gap: 0.230mm)",
+      "pcb_trace_id": "source_net_3_mst12_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst12_0_pcb_smtpad_266",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2300000000000003,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_281"
+      ],
+      "center": {
+        "x": 3.635,
+        "y": 10.564993999999999
+      },
+      "first_contact_center": {
+        "x": 3.635,
+        "y": 10.564993999999999
+      },
+      "first_contact_message": "PCB trace source_net_3_mst12_0 is too close to pcb_smtpad \"pcb_smtpad_266\" (gap: 0.230mm)",
+      "first_actual_clearance": 0.2300000000000003,
+      "worst_contact_center": {
+        "x": 3.635,
+        "y": 10.564993999999999
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst12_0 is too close to pcb_smtpad \"pcb_smtpad_266\" (gap: 0.230mm)",
+      "worst_actual_clearance": 0.2300000000000003
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst12_0 is too close to pcb_smtpad \"pcb_smtpad_267\" (gap: 0.230mm)",
+      "pcb_trace_id": "source_net_3_mst12_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst12_0_pcb_smtpad_267",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2300000000000003,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_284"
+      ],
+      "center": {
+        "x": 4.905,
+        "y": 10.564993999999999
+      },
+      "first_contact_center": {
+        "x": 4.905,
+        "y": 10.564993999999999
+      },
+      "first_contact_message": "PCB trace source_net_3_mst12_0 is too close to pcb_smtpad \"pcb_smtpad_267\" (gap: 0.230mm)",
+      "first_actual_clearance": 0.2300000000000003,
+      "worst_contact_center": {
+        "x": 4.905,
+        "y": 10.564993999999999
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst12_0 is too close to pcb_smtpad \"pcb_smtpad_267\" (gap: 0.230mm)",
+      "worst_actual_clearance": 0.2300000000000003
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst13_0 is too close to pcb_smtpad \"pcb_smtpad_273\" (gap: 0.234mm)",
+      "pcb_trace_id": "source_net_3_mst13_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst13_0_pcb_smtpad_273",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.23364431360738344,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_297"
+      ],
+      "center": {
+        "x": -5.624233034965913,
+        "y": 11.386712118762025
+      },
+      "first_contact_center": {
+        "x": -5.624233034965913,
+        "y": 11.386712118762025
+      },
+      "first_contact_message": "PCB trace source_net_3_mst13_0 is too close to pcb_smtpad \"pcb_smtpad_273\" (gap: 0.234mm)",
+      "first_actual_clearance": 0.23364431360738344,
+      "worst_contact_center": {
+        "x": -5.624233034965913,
+        "y": 11.386712118762025
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst13_0 is too close to pcb_smtpad \"pcb_smtpad_273\" (gap: 0.234mm)",
+      "worst_actual_clearance": 0.23364431360738344
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst14_0 is too close to pcb_smtpad \"pcb_smtpad_111\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst14_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst14_0_pcb_smtpad_111",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2149864406039714,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_101"
+      ],
+      "center": {
+        "x": -26.0346191374111,
+        "y": 23.954272498123572
+      },
+      "first_contact_center": {
+        "x": -26.0346191374111,
+        "y": 23.954272498123572
+      },
+      "first_contact_message": "PCB trace source_net_3_mst14_0 is too close to pcb_smtpad \"pcb_smtpad_111\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.2149864406039714,
+      "worst_contact_center": {
+        "x": -26.0346191374111,
+        "y": 23.954272498123572
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst14_0 is too close to pcb_smtpad \"pcb_smtpad_111\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.2149864406039714
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst15_0 is too close to PCB trace source_net_13_mst0_0 (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst15_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst15_0_source_net_13_mst0_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2150025939459614,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -8.242632998320229,
+        "y": -6.3998308775643435
+      },
+      "first_contact_center": {
+        "x": -8.242635503048053,
+        "y": -7.89736006383211
+      },
+      "first_contact_message": "PCB trace source_net_3_mst15_0 is too close to PCB trace source_net_13_mst0_0 (gap: 0.240mm)",
+      "first_actual_clearance": 0.23984422871456965,
+      "worst_contact_center": {
+        "x": -8.242632998320229,
+        "y": -6.3998308775643435
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst15_0 is too close to PCB trace source_net_13_mst0_0 (gap: 0.215mm)",
+      "worst_actual_clearance": 0.2150025939459614
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst15_0 is too close to pcb_smtpad \"pcb_smtpad_134\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst15_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst15_0_pcb_smtpad_134",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499843336719135,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_98"
+      ],
+      "center": {
+        "x": -10.701531737788898,
+        "y": -7.807890913800336
+      },
+      "first_contact_center": {
+        "x": -10.701531737788898,
+        "y": -7.807890913800336
+      },
+      "first_contact_message": "PCB trace source_net_3_mst15_0 is too close to pcb_smtpad \"pcb_smtpad_134\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499843336719135,
+      "worst_contact_center": {
+        "x": -10.701531737788898,
+        "y": -7.807890913800336
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst15_0 is too close to pcb_smtpad \"pcb_smtpad_134\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499843336719135
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst15_0 is too close to pcb_smtpad \"pcb_smtpad_133\" (gap: 0.218mm)",
+      "pcb_trace_id": "source_net_3_mst15_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst15_0_pcb_smtpad_133",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.217754960915192,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -9.30148916506291,
+        "y": -7.80926917490292
+      },
+      "first_contact_center": {
+        "x": -9.30148916506291,
+        "y": -7.80926917490292
+      },
+      "first_contact_message": "PCB trace source_net_3_mst15_0 is too close to pcb_smtpad \"pcb_smtpad_133\" (gap: 0.218mm)",
+      "first_actual_clearance": 0.217754960915192,
+      "worst_contact_center": {
+        "x": -9.30148916506291,
+        "y": -7.80926917490292
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst15_0 is too close to pcb_smtpad \"pcb_smtpad_133\" (gap: 0.218mm)",
+      "worst_actual_clearance": 0.217754960915192
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst16_0 is too close to pcb_smtpad \"pcb_smtpad_60\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst16_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst16_0_pcb_smtpad_60",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499981768364188,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_33"
+      ],
+      "center": {
+        "x": -10.990515702565544,
+        "y": 6.189844640626978
+      },
+      "first_contact_center": {
+        "x": -10.990515702565544,
+        "y": 6.189844640626978
+      },
+      "first_contact_message": "PCB trace source_net_3_mst16_0 is too close to pcb_smtpad \"pcb_smtpad_60\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499981768364188,
+      "worst_contact_center": {
+        "x": -10.990515702565544,
+        "y": 6.189844640626978
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst16_0 is too close to pcb_smtpad \"pcb_smtpad_60\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499981768364188
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst16_0 is too close to pcb_smtpad \"pcb_smtpad_61\" (gap: 0.240mm)",
+      "pcb_trace_id": "source_net_3_mst16_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst16_0_pcb_smtpad_61",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.239783997721332,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_14"
+      ],
+      "center": {
+        "x": -10.457382521971246,
+        "y": 5.779398509870486
+      },
+      "first_contact_center": {
+        "x": -10.457382521971246,
+        "y": 5.779398509870486
+      },
+      "first_contact_message": "PCB trace source_net_3_mst16_0 is too close to pcb_smtpad \"pcb_smtpad_61\" (gap: 0.240mm)",
+      "first_actual_clearance": 0.239783997721332,
+      "worst_contact_center": {
+        "x": -10.457382521971246,
+        "y": 5.779398509870486
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst16_0 is too close to pcb_smtpad \"pcb_smtpad_61\" (gap: 0.240mm)",
+      "worst_actual_clearance": 0.239783997721332
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst16_0 is too close to pcb_smtpad \"pcb_smtpad_151\" (gap: 0.223mm)",
+      "pcb_trace_id": "source_net_3_mst16_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst16_0_pcb_smtpad_151",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2230806061296807,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -7.175426883116278,
+        "y": 2.5540482033560763
+      },
+      "first_contact_center": {
+        "x": -7.175426883116278,
+        "y": 2.5540482033560763
+      },
+      "first_contact_message": "PCB trace source_net_3_mst16_0 is too close to pcb_smtpad \"pcb_smtpad_151\" (gap: 0.223mm)",
+      "first_actual_clearance": 0.2230806061296807,
+      "worst_contact_center": {
+        "x": -7.175426883116278,
+        "y": 2.5540482033560763
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst16_0 is too close to pcb_smtpad \"pcb_smtpad_151\" (gap: 0.223mm)",
+      "worst_actual_clearance": 0.2230806061296807
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst17_0 is too close to pcb_via \"via_2\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst17_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst17_0_via_2",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499999999999933,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -17.876,
+        "y": 8.174412207727412
+      },
+      "first_contact_center": {
+        "x": -17.876,
+        "y": 8.174412207727412
+      },
+      "first_contact_message": "PCB trace source_net_3_mst17_0 is too close to pcb_via \"via_2\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499999999999933,
+      "worst_contact_center": {
+        "x": -17.876,
+        "y": 8.174412207727412
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst17_0 is too close to pcb_via \"via_2\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499999999999933
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst17_0 is too close to pcb_smtpad \"pcb_smtpad_63\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst17_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst17_0_pcb_smtpad_63",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21450480772741207,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_33"
+      ],
+      "center": {
+        "x": -17,
+        "y": 8.324659803863705
+      },
+      "first_contact_center": {
+        "x": -17,
+        "y": 8.324659803863705
+      },
+      "first_contact_message": "PCB trace source_net_3_mst17_0 is too close to pcb_smtpad \"pcb_smtpad_63\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21450480772741207,
+      "worst_contact_center": {
+        "x": -17,
+        "y": 8.324659803863705
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst17_0 is too close to pcb_smtpad \"pcb_smtpad_63\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21450480772741207
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst18_0 is too close to pcb_smtpad \"pcb_smtpad_156\" (gap: 0.234mm)",
+      "pcb_trace_id": "source_net_3_mst18_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst18_0_pcb_smtpad_156",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2343795291751273,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -21.457788202247595,
+        "y": -13.713524998757986
+      },
+      "first_contact_center": {
+        "x": -21.457788202247595,
+        "y": -13.713524998757986
+      },
+      "first_contact_message": "PCB trace source_net_3_mst18_0 is too close to pcb_smtpad \"pcb_smtpad_156\" (gap: 0.234mm)",
+      "first_actual_clearance": 0.2343795291751273,
+      "worst_contact_center": {
+        "x": -21.457788202247595,
+        "y": -13.713524998757986
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst18_0 is too close to pcb_smtpad \"pcb_smtpad_156\" (gap: 0.234mm)",
+      "worst_actual_clearance": 0.2343795291751273
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst18_0 is too close to pcb_smtpad \"pcb_smtpad_135\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst18_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst18_0_pcb_smtpad_135",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2149988743233309,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_34"
+      ],
+      "center": {
+        "x": -27.244547934899288,
+        "y": -14.590063069414716
+      },
+      "first_contact_center": {
+        "x": -27.244547934899288,
+        "y": -14.590063069414716
+      },
+      "first_contact_message": "PCB trace source_net_3_mst18_0 is too close to pcb_smtpad \"pcb_smtpad_135\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.2149988743233309,
+      "worst_contact_center": {
+        "x": -27.244547934899288,
+        "y": -14.590063069414716
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst18_0 is too close to pcb_smtpad \"pcb_smtpad_135\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.2149988743233309
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_307\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst19_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst19_0_pcb_smtpad_307",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21470101115642545,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_128"
+      ],
+      "center": {
+        "x": 8.753266234144307,
+        "y": 11.58938009658292
+      },
+      "first_contact_center": {
+        "x": 8.753266234144307,
+        "y": 11.58938009658292
+      },
+      "first_contact_message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_307\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21470101115642545,
+      "worst_contact_center": {
+        "x": 8.753266234144307,
+        "y": 11.58938009658292
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_307\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21470101115642545
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_299\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst19_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst19_0_pcb_smtpad_299",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21489363604711856,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_151"
+      ],
+      "center": {
+        "x": 10.514684296531641,
+        "y": 6.918329908754821
+      },
+      "first_contact_center": {
+        "x": 10.514684296531641,
+        "y": 6.918329908754821
+      },
+      "first_contact_message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_299\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21489363604711856,
+      "worst_contact_center": {
+        "x": 10.514684296531641,
+        "y": 6.918329908754821
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_299\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21489363604711856
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_298\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst19_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst19_0_pcb_smtpad_298",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499796159776682,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": 15.346699580798882,
+        "y": 2.5149081479267643
+      },
+      "first_contact_center": {
+        "x": 15.379557235698094,
+        "y": 3.3057505235181934
+      },
+      "first_contact_message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_298\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499967136884865,
+      "worst_contact_center": {
+        "x": 15.346699580798882,
+        "y": 2.5149081479267643
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_298\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499796159776682
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_305\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_3_mst19_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_3_mst19_0_pcb_smtpad_305",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499595605117108,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": 16.71769215252141,
+        "y": 1.4715897876157253
+      },
+      "first_contact_center": {
+        "x": 16.71769215252141,
+        "y": 1.4715897876157253
+      },
+      "first_contact_message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_305\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499595605117108,
+      "worst_contact_center": {
+        "x": 16.71769215252141,
+        "y": 1.4715897876157253
+      },
+      "worst_contact_message": "PCB trace source_net_3_mst19_0 is too close to pcb_smtpad \"pcb_smtpad_305\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499595605117108
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_22_mst1_0 is too close to pcb_via \"via_44\" (gap: 0.118mm)",
+      "pcb_trace_id": "source_net_22_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_22_mst1_0_via_44",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.11756323211155709,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -12.481703441701388,
+        "y": 3.0207848160557784
+      },
+      "first_contact_center": {
+        "x": -12.481703441701388,
+        "y": 3.0207848160557784
+      },
+      "first_contact_message": "PCB trace source_net_22_mst1_0 is too close to pcb_via \"via_44\" (gap: 0.118mm)",
+      "first_actual_clearance": 0.11756323211155709,
+      "worst_contact_center": {
+        "x": -12.481703441701388,
+        "y": 3.0207848160557784
+      },
+      "worst_contact_message": "PCB trace source_net_22_mst1_0 is too close to pcb_via \"via_44\" (gap: 0.118mm)",
+      "worst_actual_clearance": 0.11756323211155709
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_22_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_149\" (gap: 0.230mm)",
+      "pcb_trace_id": "source_net_22_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_22_mst1_0_pcb_smtpad_149",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.23000000000000012,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -11.246636,
+        "y": 2.5970032
+      },
+      "first_contact_center": {
+        "x": -11.246636,
+        "y": 2.5970032
+      },
+      "first_contact_message": "PCB trace source_net_22_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_149\" (gap: 0.230mm)",
+      "first_actual_clearance": 0.23000000000000012,
+      "worst_contact_center": {
+        "x": -11.246636,
+        "y": 2.5970032
+      },
+      "worst_contact_message": "PCB trace source_net_22_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_149\" (gap: 0.230mm)",
+      "worst_actual_clearance": 0.23000000000000012
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_22_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_130\" (gap: 0.230mm)",
+      "pcb_trace_id": "source_net_22_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_22_mst2_0_pcb_smtpad_130",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.23000000000000007,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_14"
+      ],
+      "center": {
+        "x": -12.78046569389578,
+        "y": -1.4585155561042198
+      },
+      "first_contact_center": {
+        "x": -12.755685338828883,
+        "y": -1.4337352010373228
+      },
+      "first_contact_message": "PCB trace source_net_22_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_130\" (gap: 0.234mm)",
+      "first_actual_clearance": 0.23372889859637516,
+      "worst_contact_center": {
+        "x": -12.78046569389578,
+        "y": -1.4585155561042198
+      },
+      "worst_contact_message": "PCB trace source_net_22_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_130\" (gap: 0.230mm)",
+      "worst_actual_clearance": 0.23000000000000007
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_22_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_-14.474_-2.732\" (gap: 0.242mm)",
+      "pcb_trace_id": "source_net_22_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_22_mst2_0_pcb_smtpad_-14.474_-2.732",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.24225032144724182,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_120"
+      ],
+      "center": {
+        "x": -14.142675167612065,
+        "y": -2.497380420996976
+      },
+      "first_contact_center": {
+        "x": -14.142675167612065,
+        "y": -2.497380420996976
+      },
+      "first_contact_message": "PCB trace source_net_22_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_-14.474_-2.732\" (gap: 0.242mm)",
+      "first_actual_clearance": 0.24225032144724182,
+      "worst_contact_center": {
+        "x": -14.142675167612065,
+        "y": -2.497380420996976
+      },
+      "worst_contact_message": "PCB trace source_net_22_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_-14.474_-2.732\" (gap: 0.242mm)",
+      "worst_actual_clearance": 0.24225032144724182
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_18_0 is too close to pcb_via \"via_34\" (gap: 0.244mm)",
+      "pcb_trace_id": "source_net_18_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_18_0_via_34",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.24390414451420264,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -28.066252655272304,
+        "y": 5.792857339059328
+      },
+      "first_contact_center": {
+        "x": -28.066252655272304,
+        "y": 5.792857339059328
+      },
+      "first_contact_message": "PCB trace source_net_18_0 is too close to pcb_via \"via_34\" (gap: 0.244mm)",
+      "first_actual_clearance": 0.24390414451420264,
+      "worst_contact_center": {
+        "x": -28.066252655272304,
+        "y": 5.792857339059328
+      },
+      "worst_contact_message": "PCB trace source_net_18_0 is too close to pcb_via \"via_34\" (gap: 0.244mm)",
+      "worst_actual_clearance": 0.24390414451420264
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_16_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_68\" (gap: 0.230mm)",
+      "pcb_trace_id": "source_net_16_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_16_mst1_0_pcb_smtpad_68",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22999999999999773,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -26.8649991,
+        "y": 7.6089907023088
+      },
+      "first_contact_center": {
+        "x": -26.8649991,
+        "y": 7.6089907023088
+      },
+      "first_contact_message": "PCB trace source_net_16_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_68\" (gap: 0.230mm)",
+      "first_actual_clearance": 0.22999999999999773,
+      "worst_contact_center": {
+        "x": -26.8649991,
+        "y": 7.6089907023088
+      },
+      "worst_contact_message": "PCB trace source_net_16_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_68\" (gap: 0.230mm)",
+      "worst_actual_clearance": 0.22999999999999773
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_16_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_69\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_16_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_16_mst1_0_pcb_smtpad_69",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499846217648208,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_14"
+      ],
+      "center": {
+        "x": -26.238279836464375,
+        "y": 9.76109969444668
+      },
+      "first_contact_center": {
+        "x": -26.8649991,
+        "y": 8.905
+      },
+      "first_contact_message": "PCB trace source_net_16_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_69\" (gap: 0.230mm)",
+      "first_actual_clearance": 0.22999999999999773,
+      "worst_contact_center": {
+        "x": -26.238279836464375,
+        "y": 9.76109969444668
+      },
+      "worst_contact_message": "PCB trace source_net_16_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_69\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499846217648208
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_16_mst1_0 is too close to PCB trace source_net_11_mst2_0 (gap: 0.223mm)",
+      "pcb_trace_id": "source_net_16_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_16_mst1_0_source_net_11_mst2_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22317258294522377,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -27.02786022582702,
+        "y": 10.146576969375598
+      },
+      "first_contact_center": {
+        "x": -27.02786022582702,
+        "y": 10.146576969375598
+      },
+      "first_contact_message": "PCB trace source_net_16_mst1_0 is too close to PCB trace source_net_11_mst2_0 (gap: 0.223mm)",
+      "first_actual_clearance": 0.22317258294522377,
+      "worst_contact_center": {
+        "x": -27.02786022582702,
+        "y": 10.146576969375598
+      },
+      "worst_contact_message": "PCB trace source_net_16_mst1_0 is too close to PCB trace source_net_11_mst2_0 (gap: 0.223mm)",
+      "worst_actual_clearance": 0.22317258294522377
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_16_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_58\" (gap: 0.229mm)",
+      "pcb_trace_id": "source_net_16_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_16_mst1_0_pcb_smtpad_58",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22853575327466627,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_11"
+      ],
+      "center": {
+        "x": -22.848695904595065,
+        "y": 9.237767565526024
+      },
+      "first_contact_center": {
+        "x": -22.848695904595065,
+        "y": 9.237767565526024
+      },
+      "first_contact_message": "PCB trace source_net_16_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_58\" (gap: 0.229mm)",
+      "first_actual_clearance": 0.22853575327466627,
+      "worst_contact_center": {
+        "x": -22.848695904595065,
+        "y": 9.237767565526024
+      },
+      "worst_contact_message": "PCB trace source_net_16_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_58\" (gap: 0.229mm)",
+      "worst_actual_clearance": 0.22853575327466627
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_34_0 is too close to pcb_smtpad \"pcb_smtpad_243\" (gap: 0.230mm)",
+      "pcb_trace_id": "source_net_34_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_34_0_pcb_smtpad_243",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22999999999999896,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_225"
+      ],
+      "center": {
+        "x": -15.76953430610422,
+        "y": -24.54148444389578
+      },
+      "first_contact_center": {
+        "x": -15.76953430610422,
+        "y": -24.54148444389578
+      },
+      "first_contact_message": "PCB trace source_net_34_0 is too close to pcb_smtpad \"pcb_smtpad_243\" (gap: 0.230mm)",
+      "first_actual_clearance": 0.22999999999999896,
+      "worst_contact_center": {
+        "x": -15.76953430610422,
+        "y": -24.54148444389578
+      },
+      "worst_contact_message": "PCB trace source_net_34_0 is too close to pcb_smtpad \"pcb_smtpad_243\" (gap: 0.230mm)",
+      "worst_actual_clearance": 0.22999999999999896
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_34_0 is too close to PCB trace source_net_28_mst1_0 (gap: 0.147mm)",
+      "pcb_trace_id": "source_net_34_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_34_0_source_net_28_mst1_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.1474280438520989,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -14.831800835309757,
+        "y": -19.554244553455796
+      },
+      "first_contact_center": {
+        "x": -14.831800835309757,
+        "y": -19.554244553455796
+      },
+      "first_contact_message": "PCB trace source_net_34_0 is too close to PCB trace source_net_28_mst1_0 (gap: 0.147mm)",
+      "first_actual_clearance": 0.1474280438520989,
+      "worst_contact_center": {
+        "x": -14.831800835309757,
+        "y": -19.554244553455796
+      },
+      "worst_contact_message": "PCB trace source_net_34_0 is too close to PCB trace source_net_28_mst1_0 (gap: 0.147mm)",
+      "worst_actual_clearance": 0.1474280438520989
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_34_0 is too close to pcb_via \"via_42\" (gap: 0.185mm)",
+      "pcb_trace_id": "source_net_34_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_34_0_via_42",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.18546918465630516,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -6.487154429408099,
+        "y": -8.742101885816213
+      },
+      "first_contact_center": {
+        "x": -6.487154429408099,
+        "y": -8.742101885816213
+      },
+      "first_contact_message": "PCB trace source_net_34_0 is too close to pcb_via \"via_42\" (gap: 0.185mm)",
+      "first_actual_clearance": 0.18546918465630516,
+      "worst_contact_center": {
+        "x": -6.487154429408099,
+        "y": -8.742101885816213
+      },
+      "worst_contact_message": "PCB trace source_net_34_0 is too close to pcb_via \"via_42\" (gap: 0.185mm)",
+      "worst_actual_clearance": 0.18546918465630516
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_34_0 is too close to pcb_via \"via_12\" (gap: 0.115mm)",
+      "pcb_trace_id": "source_net_34_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_34_0_via_12",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.11499499859515785,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -7.981698606192846,
+        "y": -0.725828663362676
+      },
+      "first_contact_center": {
+        "x": -7.981698606192846,
+        "y": -0.725828663362676
+      },
+      "first_contact_message": "PCB trace source_net_34_0 is too close to pcb_via \"via_12\" (gap: 0.115mm)",
+      "first_actual_clearance": 0.11499499859515785,
+      "worst_contact_center": {
+        "x": -7.981698606192846,
+        "y": -0.725828663362676
+      },
+      "worst_contact_message": "PCB trace source_net_34_0 is too close to pcb_via \"via_12\" (gap: 0.115mm)",
+      "worst_actual_clearance": 0.11499499859515785
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_229\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_33_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_33_0_pcb_smtpad_229",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21497904198578113,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_180"
+      ],
+      "center": {
+        "x": -7.919549768656815,
+        "y": -13.137666379888083
+      },
+      "first_contact_center": {
+        "x": -7.919549768656815,
+        "y": -13.137666379888083
+      },
+      "first_contact_message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_229\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21497904198578113,
+      "worst_contact_center": {
+        "x": -7.919549768656815,
+        "y": -13.137666379888083
+      },
+      "worst_contact_message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_229\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21497904198578113
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_226\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_33_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_33_0_pcb_smtpad_226",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499941310256407,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -12.424234762051423,
+        "y": -18.601529325686577
+      },
+      "first_contact_center": {
+        "x": -11.975157086870476,
+        "y": -17.43641660048311
+      },
+      "first_contact_message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_226\" (gap: 0.229mm)",
+      "first_actual_clearance": 0.22861027083627303,
+      "worst_contact_center": {
+        "x": -12.424234762051423,
+        "y": -18.601529325686577
+      },
+      "worst_contact_message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_226\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499941310256407
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_227\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_33_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_33_0_pcb_smtpad_227",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21454187378486686,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_180"
+      ],
+      "center": {
+        "x": -15.00727258307878,
+        "y": -20.517423963375634
+      },
+      "first_contact_center": {
+        "x": -13.058825104247862,
+        "y": -19.54174365478351
+      },
+      "first_contact_message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_227\" (gap: 0.216mm)",
+      "first_actual_clearance": 0.2163066904329861,
+      "worst_contact_center": {
+        "x": -15.00727258307878,
+        "y": -20.517423963375634
+      },
+      "worst_contact_message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_227\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21454187378486686
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_240\" (gap: 0.214mm)",
+      "pcb_trace_id": "source_net_33_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_33_0_pcb_smtpad_240",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21440212356958607,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_225"
+      ],
+      "center": {
+        "x": -16.153021920545743,
+        "y": -21.86380689519203
+      },
+      "first_contact_center": {
+        "x": -16.153021920545743,
+        "y": -21.86380689519203
+      },
+      "first_contact_message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_240\" (gap: 0.214mm)",
+      "first_actual_clearance": 0.21440212356958607,
+      "worst_contact_center": {
+        "x": -16.153021920545743,
+        "y": -21.86380689519203
+      },
+      "worst_contact_message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_240\" (gap: 0.214mm)",
+      "worst_actual_clearance": 0.21440212356958607
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_242\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_33_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_33_0_pcb_smtpad_242",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2149925676345776,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -18.32616247201586,
+        "y": -23.46487585773031
+      },
+      "first_contact_center": {
+        "x": -18.32616247201586,
+        "y": -23.46487585773031
+      },
+      "first_contact_message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_242\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.2149925676345776,
+      "worst_contact_center": {
+        "x": -18.32616247201586,
+        "y": -23.46487585773031
+      },
+      "worst_contact_message": "PCB trace source_net_33_0 is too close to pcb_smtpad \"pcb_smtpad_242\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.2149925676345776
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_32_mst4_0 is too close to pcb_smtpad \"pcb_smtpad_123\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_32_mst4_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_32_mst4_0_pcb_smtpad_123",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21480884262904662,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": 1.4267843282558383,
+        "y": 3.4256075382722253
+      },
+      "first_contact_center": {
+        "x": 1.4267843282558383,
+        "y": 3.4256075382722253
+      },
+      "first_contact_message": "PCB trace source_net_32_mst4_0 is too close to pcb_smtpad \"pcb_smtpad_123\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21480884262904662,
+      "worst_contact_center": {
+        "x": 1.4267843282558383,
+        "y": 3.4256075382722253
+      },
+      "worst_contact_message": "PCB trace source_net_32_mst4_0 is too close to pcb_smtpad \"pcb_smtpad_123\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21480884262904662
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_32_mst4_0 is too close to pcb_smtpad \"pcb_smtpad_262\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_32_mst4_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_32_mst4_0_pcb_smtpad_262",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499429025766045,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_282"
+      ],
+      "center": {
+        "x": 4.154046256676146,
+        "y": 5.31582689343349
+      },
+      "first_contact_center": {
+        "x": 4.154046256676146,
+        "y": 5.31582689343349
+      },
+      "first_contact_message": "PCB trace source_net_32_mst4_0 is too close to pcb_smtpad \"pcb_smtpad_262\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499429025766045,
+      "worst_contact_center": {
+        "x": 4.154046256676146,
+        "y": 5.31582689343349
+      },
+      "worst_contact_message": "PCB trace source_net_32_mst4_0 is too close to pcb_smtpad \"pcb_smtpad_262\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499429025766045
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_294\" (gap: 0.197mm)",
+      "pcb_trace_id": "source_net_32_mst5_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_32_mst5_0_pcb_smtpad_294",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.1971902262093538,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_151"
+      ],
+      "center": {
+        "x": 12.299865537218382,
+        "y": 0.5805983131046769
+      },
+      "first_contact_center": {
+        "x": 12.299865537218382,
+        "y": 0.5805983131046769
+      },
+      "first_contact_message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_294\" (gap: 0.197mm)",
+      "first_actual_clearance": 0.1971902262093538,
+      "worst_contact_center": {
+        "x": 12.299865537218382,
+        "y": 0.5805983131046769
+      },
+      "worst_contact_message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_294\" (gap: 0.197mm)",
+      "worst_actual_clearance": 0.1971902262093538
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_296\" (gap: 0.190mm)",
+      "pcb_trace_id": "source_net_32_mst5_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_32_mst5_0_pcb_smtpad_296",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.18951251984136994,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_324"
+      ],
+      "center": {
+        "x": 11.818481863760997,
+        "y": 1.4056173903814475
+      },
+      "first_contact_center": {
+        "x": 11.818481863760997,
+        "y": 1.4056173903814475
+      },
+      "first_contact_message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_296\" (gap: 0.190mm)",
+      "first_actual_clearance": 0.18951251984136994,
+      "worst_contact_center": {
+        "x": 11.818481863760997,
+        "y": 1.4056173903814475
+      },
+      "worst_contact_message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_296\" (gap: 0.190mm)",
+      "worst_actual_clearance": 0.18951251984136994
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_293\" (gap: 0.214mm)",
+      "pcb_trace_id": "source_net_32_mst5_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_32_mst5_0_pcb_smtpad_293",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21403313036590912,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_319"
+      ],
+      "center": {
+        "x": 13.177695541262146,
+        "y": 0.05996475322597972
+      },
+      "first_contact_center": {
+        "x": 13.198294133475468,
+        "y": 0.5029647842853784
+      },
+      "first_contact_message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_293\" (gap: 0.235mm)",
+      "first_actual_clearance": 0.2351927996590841,
+      "worst_contact_center": {
+        "x": 13.177695541262146,
+        "y": 0.05996475322597972
+      },
+      "worst_contact_message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_293\" (gap: 0.214mm)",
+      "worst_actual_clearance": 0.21403313036590912
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_304\" (gap: 0.225mm)",
+      "pcb_trace_id": "source_net_32_mst5_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_32_mst5_0_pcb_smtpad_304",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22518079510301034,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_319"
+      ],
+      "center": {
+        "x": 16.460219402335515,
+        "y": -2.278761847664486
+      },
+      "first_contact_center": {
+        "x": 16.460219402335515,
+        "y": -2.278761847664486
+      },
+      "first_contact_message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_304\" (gap: 0.225mm)",
+      "first_actual_clearance": 0.22518079510301034,
+      "worst_contact_center": {
+        "x": 16.460219402335515,
+        "y": -2.278761847664486
+      },
+      "worst_contact_message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_304\" (gap: 0.225mm)",
+      "worst_actual_clearance": 0.22518079510301034
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_320\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_32_mst5_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_32_mst5_0_pcb_smtpad_320",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21495589176403426,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_309"
+      ],
+      "center": {
+        "x": 23.718012375902525,
+        "y": -3.099447739725969
+      },
+      "first_contact_center": {
+        "x": 23.718012375902525,
+        "y": -3.099447739725969
+      },
+      "first_contact_message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_320\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21495589176403426,
+      "worst_contact_center": {
+        "x": 23.718012375902525,
+        "y": -3.099447739725969
+      },
+      "worst_contact_message": "PCB trace source_net_32_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_320\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21495589176403426
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_29_mst0_0 is too close to pcb_via \"via_7\" (gap: 0.115mm)",
+      "pcb_trace_id": "source_net_29_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_29_mst0_0_via_7",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.1149378061563762,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": 24.024027103307624,
+        "y": -4.3837112702942544
+      },
+      "first_contact_center": {
+        "x": 24.024027103307624,
+        "y": -4.3837112702942544
+      },
+      "first_contact_message": "PCB trace source_net_29_mst0_0 is too close to pcb_via \"via_7\" (gap: 0.115mm)",
+      "first_actual_clearance": 0.1149378061563762,
+      "worst_contact_center": {
+        "x": 24.024027103307624,
+        "y": -4.3837112702942544
+      },
+      "worst_contact_message": "PCB trace source_net_29_mst0_0 is too close to pcb_via \"via_7\" (gap: 0.115mm)",
+      "worst_actual_clearance": 0.1149378061563762
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_29_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_100\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_29_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_29_mst1_0_pcb_smtpad_100",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21491780335713193,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_104"
+      ],
+      "center": {
+        "x": -21.882458757788083,
+        "y": -7.312871108253251
+      },
+      "first_contact_center": {
+        "x": -22.435036571590434,
+        "y": -7.209044150000055
+      },
+      "first_contact_message": "PCB trace source_net_29_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_100\" (gap: 0.234mm)",
+      "first_actual_clearance": 0.23353060932176792,
+      "worst_contact_center": {
+        "x": -21.882458757788083,
+        "y": -7.312871108253251
+      },
+      "worst_contact_message": "PCB trace source_net_29_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_100\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21491780335713193
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_29_mst1_0 is too close to PCB trace source_net_15_mst0_0 (gap: 0.231mm)",
+      "pcb_trace_id": "source_net_29_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_29_mst1_0_source_net_15_mst0_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.23144644440152348,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -21.397121639341677,
+        "y": -7.559715049639809
+      },
+      "first_contact_center": {
+        "x": -21.397121639341677,
+        "y": -7.559715049639809
+      },
+      "first_contact_message": "PCB trace source_net_29_mst1_0 is too close to PCB trace source_net_15_mst0_0 (gap: 0.231mm)",
+      "first_actual_clearance": 0.23144644440152348,
+      "worst_contact_center": {
+        "x": -21.397121639341677,
+        "y": -7.559715049639809
+      },
+      "worst_contact_message": "PCB trace source_net_29_mst1_0 is too close to PCB trace source_net_15_mst0_0 (gap: 0.231mm)",
+      "worst_actual_clearance": 0.23144644440152348
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_29_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_99\" (gap: 0.227mm)",
+      "pcb_trace_id": "source_net_29_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_29_mst1_0_pcb_smtpad_99",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2270952337644833,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_103"
+      ],
+      "center": {
+        "x": -21.832675712853906,
+        "y": -8.355091767599358
+      },
+      "first_contact_center": {
+        "x": -21.832675712853906,
+        "y": -8.355091767599358
+      },
+      "first_contact_message": "PCB trace source_net_29_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_99\" (gap: 0.227mm)",
+      "first_actual_clearance": 0.2270952337644833,
+      "worst_contact_center": {
+        "x": -21.832675712853906,
+        "y": -8.355091767599358
+      },
+      "worst_contact_message": "PCB trace source_net_29_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_99\" (gap: 0.227mm)",
+      "worst_actual_clearance": 0.2270952337644833
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_28_mst0_0 is too close to pcb_via \"via_19\" (gap: 0.208mm)",
+      "pcb_trace_id": "source_net_28_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_28_mst0_0_via_19",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.20804644180789125,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -4.162965685377324,
+        "y": 0.7280232209039456
+      },
+      "first_contact_center": {
+        "x": -4.162965685377324,
+        "y": 0.7280232209039456
+      },
+      "first_contact_message": "PCB trace source_net_28_mst0_0 is too close to pcb_via \"via_19\" (gap: 0.208mm)",
+      "first_actual_clearance": 0.20804644180789125,
+      "worst_contact_center": {
+        "x": -4.162965685377324,
+        "y": 0.7280232209039456
+      },
+      "worst_contact_message": "PCB trace source_net_28_mst0_0 is too close to pcb_via \"via_19\" (gap: 0.208mm)",
+      "worst_actual_clearance": 0.20804644180789125
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_28_mst1_0 is too close to pcb_via \"via_33\" (gap: 0.178mm)",
+      "pcb_trace_id": "source_net_28_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_28_mst1_0_via_33",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.1778252371672672,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -26.307292071770853,
+        "y": -12.74629207177085
+      },
+      "first_contact_center": {
+        "x": -26.307292071770853,
+        "y": -12.74629207177085
+      },
+      "first_contact_message": "PCB trace source_net_28_mst1_0 is too close to pcb_via \"via_33\" (gap: 0.178mm)",
+      "first_actual_clearance": 0.1778252371672672,
+      "worst_contact_center": {
+        "x": -26.307292071770853,
+        "y": -12.74629207177085
+      },
+      "worst_contact_message": "PCB trace source_net_28_mst1_0 is too close to pcb_via \"via_33\" (gap: 0.178mm)",
+      "worst_actual_clearance": 0.1778252371672672
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_27_mst0_0 is too close to PCB trace source_net_15_mst0_0 (gap: 0.200mm)",
+      "pcb_trace_id": "source_net_27_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_27_mst0_0_source_net_15_mst0_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.19982714921369768,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -20.836605819611645,
+        "y": -8.146042883109239
+      },
+      "first_contact_center": {
+        "x": -20.836605819611645,
+        "y": -8.146042883109239
+      },
+      "first_contact_message": "PCB trace source_net_27_mst0_0 is too close to PCB trace source_net_15_mst0_0 (gap: 0.200mm)",
+      "first_actual_clearance": 0.19982714921369768,
+      "worst_contact_center": {
+        "x": -20.836605819611645,
+        "y": -8.146042883109239
+      },
+      "worst_contact_message": "PCB trace source_net_27_mst0_0 is too close to PCB trace source_net_15_mst0_0 (gap: 0.200mm)",
+      "worst_actual_clearance": 0.19982714921369768
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_27_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_161\" (gap: 0.240mm)",
+      "pcb_trace_id": "source_net_27_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_27_mst1_0_pcb_smtpad_161",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.24034379875406084,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_162"
+      ],
+      "center": {
+        "x": -25.9033696414832,
+        "y": -17.136848833280315
+      },
+      "first_contact_center": {
+        "x": -25.9033696414832,
+        "y": -17.136848833280315
+      },
+      "first_contact_message": "PCB trace source_net_27_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_161\" (gap: 0.240mm)",
+      "first_actual_clearance": 0.24034379875406084,
+      "worst_contact_center": {
+        "x": -25.9033696414832,
+        "y": -17.136848833280315
+      },
+      "worst_contact_message": "PCB trace source_net_27_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_161\" (gap: 0.240mm)",
+      "worst_actual_clearance": 0.24034379875406084
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_27_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_159\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_27_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_27_mst1_0_pcb_smtpad_159",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499800049994375,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_162"
+      ],
+      "center": {
+        "x": -25.55443482644109,
+        "y": -15.641903855790316
+      },
+      "first_contact_center": {
+        "x": -25.908924755442104,
+        "y": -16.088491069287752
+      },
+      "first_contact_message": "PCB trace source_net_27_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_159\" (gap: 0.223mm)",
+      "first_actual_clearance": 0.2225335165450427,
+      "worst_contact_center": {
+        "x": -25.55443482644109,
+        "y": -15.641903855790316
+      },
+      "worst_contact_message": "PCB trace source_net_27_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_159\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499800049994375
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_27_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_160\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_27_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_27_mst1_0_pcb_smtpad_160",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21517862277590236,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_162"
+      ],
+      "center": {
+        "x": -25.905247543994754,
+        "y": -16.738393845245454
+      },
+      "first_contact_center": {
+        "x": -25.905247543994754,
+        "y": -16.738393845245454
+      },
+      "first_contact_message": "PCB trace source_net_27_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_160\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21517862277590236,
+      "worst_contact_center": {
+        "x": -25.905247543994754,
+        "y": -16.738393845245454
+      },
+      "worst_contact_message": "PCB trace source_net_27_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_160\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21517862277590236
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_26_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_141\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_26_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_26_mst0_0_pcb_smtpad_141",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2149610025615413,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -15.65748150128077,
+        "y": 1.94996
+      },
+      "first_contact_center": {
+        "x": -15.65748150128077,
+        "y": 1.94996
+      },
+      "first_contact_message": "PCB trace source_net_26_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_141\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.2149610025615413,
+      "worst_contact_center": {
+        "x": -15.65748150128077,
+        "y": 1.94996
+      },
+      "worst_contact_message": "PCB trace source_net_26_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_141\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.2149610025615413
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_26_mst1_0 is too close to pcb_via \"via_8\" (gap: 0.222mm)",
+      "pcb_trace_id": "source_net_26_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_26_mst1_0_via_8",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22183224330835574,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -26.83487597413324,
+        "y": -3.9704850371984923
+      },
+      "first_contact_center": {
+        "x": -26.83487597413324,
+        "y": -3.9704850371984923
+      },
+      "first_contact_message": "PCB trace source_net_26_mst1_0 is too close to pcb_via \"via_8\" (gap: 0.222mm)",
+      "first_actual_clearance": 0.22183224330835574,
+      "worst_contact_center": {
+        "x": -26.83487597413324,
+        "y": -3.9704850371984923
+      },
+      "worst_contact_message": "PCB trace source_net_26_mst1_0 is too close to pcb_via \"via_8\" (gap: 0.222mm)",
+      "worst_actual_clearance": 0.22183224330835574
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_26_mst1_0 is too close to pcb_plated_hole \"pcb_plated_hole_-12.000_-6.000\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_26_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_26_mst1_0_pcb_plated_hole_-12.000_-6.000",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21493323018324942,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_134"
+      ],
+      "center": {
+        "x": -11.69253339276408,
+        "y": -6.0000695034845055
+      },
+      "first_contact_center": {
+        "x": -11.69253339276408,
+        "y": -6.0000695034845055
+      },
+      "first_contact_message": "PCB trace source_net_26_mst1_0 is too close to pcb_plated_hole \"pcb_plated_hole_-12.000_-6.000\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21493323018324942,
+      "worst_contact_center": {
+        "x": -11.69253339276408,
+        "y": -6.0000695034845055
+      },
+      "worst_contact_message": "PCB trace source_net_26_mst1_0 is too close to pcb_plated_hole \"pcb_plated_hole_-12.000_-6.000\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21493323018324942
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_25_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_138\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_25_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_25_mst0_0_pcb_smtpad_138",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21459605053725592,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -3.0713012083760503,
+        "y": -10.777070847214842
+      },
+      "first_contact_center": {
+        "x": -3.0713012083760503,
+        "y": -10.777070847214842
+      },
+      "first_contact_message": "PCB trace source_net_25_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_138\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21459605053725592,
+      "worst_contact_center": {
+        "x": -3.0713012083760503,
+        "y": -10.777070847214842
+      },
+      "worst_contact_message": "PCB trace source_net_25_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_138\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21459605053725592
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_25_mst1_0 is too close to pcb_via \"via_42\" (gap: 0.177mm)",
+      "pcb_trace_id": "source_net_25_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_25_mst1_0_via_42",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.1767606243563358,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -6.575872932294994,
+        "y": -8.945917095506447
+      },
+      "first_contact_center": {
+        "x": -6.575872932294994,
+        "y": -8.945917095506447
+      },
+      "first_contact_message": "PCB trace source_net_25_mst1_0 is too close to pcb_via \"via_42\" (gap: 0.177mm)",
+      "first_actual_clearance": 0.1767606243563358,
+      "worst_contact_center": {
+        "x": -6.575872932294994,
+        "y": -8.945917095506447
+      },
+      "worst_contact_message": "PCB trace source_net_25_mst1_0 is too close to pcb_via \"via_42\" (gap: 0.177mm)",
+      "worst_actual_clearance": 0.1767606243563358
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_24_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_-14.621_-2.597\" (gap: 0.210mm)",
+      "pcb_trace_id": "source_net_24_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_24_mst0_0_pcb_smtpad_-14.621_-2.597",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21034986953838355,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_120"
+      ],
+      "center": {
+        "x": -14.797058823529413,
+        "y": -2.9198529411764707
+      },
+      "first_contact_center": {
+        "x": -14.797058823529413,
+        "y": -2.9198529411764707
+      },
+      "first_contact_message": "PCB trace source_net_24_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_-14.621_-2.597\" (gap: 0.210mm)",
+      "first_actual_clearance": 0.21034986953838355,
+      "worst_contact_center": {
+        "x": -14.797058823529413,
+        "y": -2.9198529411764707
+      },
+      "worst_contact_message": "PCB trace source_net_24_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_-14.621_-2.597\" (gap: 0.210mm)",
+      "worst_actual_clearance": 0.21034986953838355
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_24_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_-14.474_-2.732\" (gap: 0.132mm)",
+      "pcb_trace_id": "source_net_24_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_24_mst0_0_pcb_smtpad_-14.474_-2.732",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.13241343218542295,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_120"
+      ],
+      "center": {
+        "x": -14.723529411764705,
+        "y": -2.9875000000000003
+      },
+      "first_contact_center": {
+        "x": -14.723529411764705,
+        "y": -2.9875000000000003
+      },
+      "first_contact_message": "PCB trace source_net_24_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_-14.474_-2.732\" (gap: 0.132mm)",
+      "first_actual_clearance": 0.13241343218542295,
+      "worst_contact_center": {
+        "x": -14.723529411764705,
+        "y": -2.9875000000000003
+      },
+      "worst_contact_message": "PCB trace source_net_24_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_-14.474_-2.732\" (gap: 0.132mm)",
+      "worst_actual_clearance": 0.13241343218542295
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_24_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_-14.400_-4.000\" (gap: 0.200mm)",
+      "pcb_trace_id": "source_net_24_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_24_mst0_0_pcb_smtpad_-14.400_-4.000",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.20000000000000037,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_120"
+      ],
+      "center": {
+        "x": -14.65,
+        "y": -3.075
+      },
+      "first_contact_center": {
+        "x": -14.65,
+        "y": -3.075
+      },
+      "first_contact_message": "PCB trace source_net_24_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_-14.400_-4.000\" (gap: 0.200mm)",
+      "first_actual_clearance": 0.20000000000000037,
+      "worst_contact_center": {
+        "x": -14.65,
+        "y": -3.075
+      },
+      "worst_contact_message": "PCB trace source_net_24_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_-14.400_-4.000\" (gap: 0.200mm)",
+      "worst_actual_clearance": 0.20000000000000037
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_24_mst1_0 is too close to pcb_via \"via_38\" (gap: 0.148mm)",
+      "pcb_trace_id": "source_net_24_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_24_mst1_0_via_38",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.14840340012042078,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -14.564,
+        "y": 10.23220170006021
+      },
+      "first_contact_center": {
+        "x": -14.564,
+        "y": 10.23220170006021
+      },
+      "first_contact_message": "PCB trace source_net_24_mst1_0 is too close to pcb_via \"via_38\" (gap: 0.148mm)",
+      "first_actual_clearance": 0.14840340012042078,
+      "worst_contact_center": {
+        "x": -14.564,
+        "y": 10.23220170006021
+      },
+      "worst_contact_message": "PCB trace source_net_24_mst1_0 is too close to pcb_via \"via_38\" (gap: 0.148mm)",
+      "worst_actual_clearance": 0.14840340012042078
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_23_mst1_0 is too close to pcb_via \"via_25\" (gap: 0.168mm)",
+      "pcb_trace_id": "source_net_23_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_23_mst1_0_via_25",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.1682303195369577,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -18.101580424470214,
+        "y": -1.8962245190096763
+      },
+      "first_contact_center": {
+        "x": -18.101580424470214,
+        "y": -1.8962245190096763
+      },
+      "first_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_via \"via_25\" (gap: 0.168mm)",
+      "first_actual_clearance": 0.1682303195369577,
+      "worst_contact_center": {
+        "x": -18.101580424470214,
+        "y": -1.8962245190096763
+      },
+      "worst_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_via \"via_25\" (gap: 0.168mm)",
+      "worst_actual_clearance": 0.1682303195369577
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_23_mst1_0 is too close to pcb_via \"via_47\" (gap: 0.210mm)",
+      "pcb_trace_id": "source_net_23_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_23_mst1_0_via_47",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.20954737931339065,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -26.095341573515505,
+        "y": 0.6844914573165062
+      },
+      "first_contact_center": {
+        "x": -26.095341573515505,
+        "y": 0.6844914573165062
+      },
+      "first_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_via \"via_47\" (gap: 0.210mm)",
+      "first_actual_clearance": 0.20954737931339065,
+      "worst_contact_center": {
+        "x": -26.095341573515505,
+        "y": 0.6844914573165062
+      },
+      "worst_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_via \"via_47\" (gap: 0.210mm)",
+      "worst_actual_clearance": 0.20954737931339065
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_23_mst1_0 is too close to pcb_via \"via_49\" (gap: 0.115mm)",
+      "pcb_trace_id": "source_net_23_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_23_mst1_0_via_49",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.11499952954769235,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -26.53347425054138,
+        "y": 12.899266890287883
+      },
+      "first_contact_center": {
+        "x": -26.53347425054138,
+        "y": 12.899266890287883
+      },
+      "first_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_via \"via_49\" (gap: 0.115mm)",
+      "first_actual_clearance": 0.11499952954769235,
+      "worst_contact_center": {
+        "x": -26.53347425054138,
+        "y": 12.899266890287883
+      },
+      "worst_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_via \"via_49\" (gap: 0.115mm)",
+      "worst_actual_clearance": 0.11499952954769235
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_50\" (gap: 0.230mm)",
+      "pcb_trace_id": "source_net_23_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_23_mst1_0_pcb_smtpad_50",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2300000000000003,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_14"
+      ],
+      "center": {
+        "x": -26.13454712801152,
+        "y": 14.018116995546528
+      },
+      "first_contact_center": {
+        "x": -26.13454712801152,
+        "y": 14.018116995546528
+      },
+      "first_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_50\" (gap: 0.230mm)",
+      "first_actual_clearance": 0.2300000000000003,
+      "worst_contact_center": {
+        "x": -26.13454712801152,
+        "y": 14.018116995546528
+      },
+      "worst_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_50\" (gap: 0.230mm)",
+      "worst_actual_clearance": 0.2300000000000003
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_51\" (gap: 0.234mm)",
+      "pcb_trace_id": "source_net_23_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_23_mst1_0_pcb_smtpad_51",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.23379217159834956,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_56"
+      ],
+      "center": {
+        "x": -26.13265107445719,
+        "y": 14.668334879765538
+      },
+      "first_contact_center": {
+        "x": -26.13265107445719,
+        "y": 14.668334879765538
+      },
+      "first_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_51\" (gap: 0.234mm)",
+      "first_actual_clearance": 0.23379217159834956,
+      "worst_contact_center": {
+        "x": -26.13265107445719,
+        "y": 14.668334879765538
+      },
+      "worst_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_51\" (gap: 0.234mm)",
+      "worst_actual_clearance": 0.23379217159834956
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_52\" (gap: 0.238mm)",
+      "pcb_trace_id": "source_net_23_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_23_mst1_0_pcb_smtpad_52",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.23758286187966857,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_55"
+      ],
+      "center": {
+        "x": -26.130755761548777,
+        "y": 15.318298772623525
+      },
+      "first_contact_center": {
+        "x": -26.130755761548777,
+        "y": 15.318298772623525
+      },
+      "first_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_52\" (gap: 0.238mm)",
+      "first_actual_clearance": 0.23758286187966857,
+      "worst_contact_center": {
+        "x": -26.130755761548777,
+        "y": 15.318298772623525
+      },
+      "worst_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_52\" (gap: 0.238mm)",
+      "worst_actual_clearance": 0.23758286187966857
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_54\" (gap: 0.108mm)",
+      "pcb_trace_id": "source_net_23_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_23_mst1_0_pcb_smtpad_54",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.10805608120290303,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -25.856636347817638,
+        "y": 15.005617869045922
+      },
+      "first_contact_center": {
+        "x": -25.856636347817638,
+        "y": 15.005617869045922
+      },
+      "first_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_54\" (gap: 0.108mm)",
+      "first_actual_clearance": 0.10805608120290303,
+      "worst_contact_center": {
+        "x": -25.856636347817638,
+        "y": 15.005617869045922
+      },
+      "worst_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_54\" (gap: 0.108mm)",
+      "worst_actual_clearance": 0.10805608120290303
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_53\" (gap: 0.241mm)",
+      "pcb_trace_id": "source_net_23_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_23_mst1_0_pcb_smtpad_53",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2413735521609873,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_14"
+      ],
+      "center": {
+        "x": -26.128860448640367,
+        "y": 15.968262665481511
+      },
+      "first_contact_center": {
+        "x": -26.128860448640367,
+        "y": 15.968262665481511
+      },
+      "first_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_53\" (gap: 0.241mm)",
+      "first_actual_clearance": 0.2413735521609873,
+      "worst_contact_center": {
+        "x": -26.128860448640367,
+        "y": 15.968262665481511
+      },
+      "worst_contact_message": "PCB trace source_net_23_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_53\" (gap: 0.241mm)",
+      "worst_actual_clearance": 0.2413735521609873
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_102\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_15_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst0_0_pcb_smtpad_102",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499174223347253,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_21"
+      ],
+      "center": {
+        "x": -22.050889941990654,
+        "y": -5.886379688826708
+      },
+      "first_contact_center": {
+        "x": -22.050889941990654,
+        "y": -5.886379688826708
+      },
+      "first_contact_message": "PCB trace source_net_15_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_102\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499174223347253,
+      "worst_contact_center": {
+        "x": -22.050889941990654,
+        "y": -5.886379688826708
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst0_0 is too close to pcb_smtpad \"pcb_smtpad_102\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499174223347253
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst0_0 is too close to pcb_via \"via_9\" (gap: 0.107mm)",
+      "pcb_trace_id": "source_net_15_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst0_0_via_9",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.10727129028531271,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -21.237299784560165,
+        "y": -8.518899973032243
+      },
+      "first_contact_center": {
+        "x": -21.3316942190106,
+        "y": -8.329187715101856
+      },
+      "first_contact_message": "PCB trace source_net_15_mst0_0 is too close to pcb_via \"via_9\" (gap: 0.117mm)",
+      "first_actual_clearance": 0.11650307939687157,
+      "worst_contact_center": {
+        "x": -21.237299784560165,
+        "y": -8.518899973032243
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst0_0 is too close to pcb_via \"via_9\" (gap: 0.107mm)",
+      "worst_actual_clearance": 0.10727129028531271
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst0_0 is too close to pcb_via \"via_15\" (gap: 0.115mm)",
+      "pcb_trace_id": "source_net_15_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst0_0_via_15",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.11499497265188122,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -20.925777735459533,
+        "y": -7.431783540506839
+      },
+      "first_contact_center": {
+        "x": -20.925777735459533,
+        "y": -7.431783540506839
+      },
+      "first_contact_message": "PCB trace source_net_15_mst0_0 is too close to pcb_via \"via_15\" (gap: 0.115mm)",
+      "first_actual_clearance": 0.11499497265188122,
+      "worst_contact_center": {
+        "x": -20.925777735459533,
+        "y": -7.431783540506839
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst0_0 is too close to pcb_via \"via_15\" (gap: 0.115mm)",
+      "worst_actual_clearance": 0.11499497265188122
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst0_0 is too close to pcb_via \"via_14\" (gap: 0.233mm)",
+      "pcb_trace_id": "source_net_15_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst0_0_via_14",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.23274901194158862,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -28.47935436583129,
+        "y": -9.14037430751109
+      },
+      "first_contact_center": {
+        "x": -28.47935436583129,
+        "y": -9.14037430751109
+      },
+      "first_contact_message": "PCB trace source_net_15_mst0_0 is too close to pcb_via \"via_14\" (gap: 0.233mm)",
+      "first_actual_clearance": 0.23274901194158862,
+      "worst_contact_center": {
+        "x": -28.47935436583129,
+        "y": -9.14037430751109
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst0_0 is too close to pcb_via \"via_14\" (gap: 0.233mm)",
+      "worst_actual_clearance": 0.23274901194158862
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_104\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_15_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst1_0_pcb_smtpad_104",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21498774421137282,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_108"
+      ],
+      "center": {
+        "x": -22.072465042749577,
+        "y": -5.479283482806446
+      },
+      "first_contact_center": {
+        "x": -22.072465042749577,
+        "y": -5.479283482806446
+      },
+      "first_contact_message": "PCB trace source_net_15_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_104\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21498774421137282,
+      "worst_contact_center": {
+        "x": -22.072465042749577,
+        "y": -5.479283482806446
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_104\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21498774421137282
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_157\" (gap: 0.225mm)",
+      "pcb_trace_id": "source_net_15_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst2_0_pcb_smtpad_157",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22459554239302662,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_14"
+      ],
+      "center": {
+        "x": -32.93694339101678,
+        "y": -14.48521107523449
+      },
+      "first_contact_center": {
+        "x": -32.93694339101678,
+        "y": -14.48521107523449
+      },
+      "first_contact_message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_157\" (gap: 0.225mm)",
+      "first_actual_clearance": 0.22459554239302662,
+      "worst_contact_center": {
+        "x": -32.93694339101678,
+        "y": -14.48521107523449
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_157\" (gap: 0.225mm)",
+      "worst_actual_clearance": 0.22459554239302662
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_203\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_15_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst2_0_pcb_smtpad_203",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499965281252922,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -28.72341716620643,
+        "y": -20.392500899999998
+      },
+      "first_contact_center": {
+        "x": -28.72341716620643,
+        "y": -20.392500899999998
+      },
+      "first_contact_message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_203\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21500000000000072,
+      "worst_contact_center": {
+        "x": -28.72341716620643,
+        "y": -20.392500899999998
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_203\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499965281252922
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_187\" (gap: 0.211mm)",
+      "pcb_trace_id": "source_net_15_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst2_0_pcb_smtpad_187",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21142754732376198,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_175"
+      ],
+      "center": {
+        "x": -29.570456389776986,
+        "y": -19.188455221313937
+      },
+      "first_contact_center": {
+        "x": -29.570456389776986,
+        "y": -19.188455221313937
+      },
+      "first_contact_message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_187\" (gap: 0.211mm)",
+      "first_actual_clearance": 0.21142754732376198,
+      "worst_contact_center": {
+        "x": -29.570456389776986,
+        "y": -19.188455221313937
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_187\" (gap: 0.211mm)",
+      "worst_actual_clearance": 0.21142754732376198
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst2_0 is too close to PCB trace source_net_36_mst1_0 (gap: 0.193mm)",
+      "pcb_trace_id": "source_net_15_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst2_0_source_net_36_mst1_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.19293446407697065,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -26.48121737393967,
+        "y": -20.111724419639202
+      },
+      "first_contact_center": {
+        "x": -27.442605268322943,
+        "y": -20.027501981111467
+      },
+      "first_contact_message": "PCB trace source_net_15_mst2_0 is too close to PCB trace source_net_36_mst1_0 (gap: 0.215mm)",
+      "first_actual_clearance": 0.21500021962348834,
+      "worst_contact_center": {
+        "x": -26.48121737393967,
+        "y": -20.111724419639202
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst2_0 is too close to PCB trace source_net_36_mst1_0 (gap: 0.193mm)",
+      "worst_actual_clearance": 0.19293446407697065
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_204\" (gap: 0.214mm)",
+      "pcb_trace_id": "source_net_15_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst2_0_pcb_smtpad_204",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21436612365561888,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_172"
+      ],
+      "center": {
+        "x": -26.792531782173587,
+        "y": -21.000833515089752
+      },
+      "first_contact_center": {
+        "x": -27.34997528869045,
+        "y": -20.39250153852621
+      },
+      "first_contact_message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_204\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.2149983510212278,
+      "worst_contact_center": {
+        "x": -26.792531782173587,
+        "y": -21.000833515089752
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_204\" (gap: 0.214mm)",
+      "worst_actual_clearance": 0.21436612365561888
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_168\" (gap: 0.212mm)",
+      "pcb_trace_id": "source_net_15_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_15_mst2_0_pcb_smtpad_168",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21204640832850727,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_172"
+      ],
+      "center": {
+        "x": -25.60414831642366,
+        "y": -22.38451937755886
+      },
+      "first_contact_center": {
+        "x": -25.60414831642366,
+        "y": -22.38451937755886
+      },
+      "first_contact_message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_168\" (gap: 0.212mm)",
+      "first_actual_clearance": 0.21204640832850727,
+      "worst_contact_center": {
+        "x": -25.60414831642366,
+        "y": -22.38451937755886
+      },
+      "worst_contact_message": "PCB trace source_net_15_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_168\" (gap: 0.212mm)",
+      "worst_actual_clearance": 0.21204640832850727
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_14_mst1_0 is too close to PCB trace source_net_13_mst0_0 (gap: 0.220mm)",
+      "pcb_trace_id": "source_net_14_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_14_mst1_0_source_net_13_mst0_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21962611828260667,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -14.798042641215698,
+        "y": -8.484803928783094
+      },
+      "first_contact_center": {
+        "x": -14.798042641215698,
+        "y": -8.484803928783094
+      },
+      "first_contact_message": "PCB trace source_net_14_mst1_0 is too close to PCB trace source_net_13_mst0_0 (gap: 0.220mm)",
+      "first_actual_clearance": 0.21962611828260667,
+      "worst_contact_center": {
+        "x": -14.798042641215698,
+        "y": -8.484803928783094
+      },
+      "worst_contact_message": "PCB trace source_net_14_mst1_0 is too close to PCB trace source_net_13_mst0_0 (gap: 0.220mm)",
+      "worst_actual_clearance": 0.21962611828260667
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_13_mst0_0 is too close to pcb_via \"via_25\" (gap: 0.245mm)",
+      "pcb_trace_id": "source_net_13_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_13_mst0_0_via_25",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.24487793116016124,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -18.6248871506516,
+        "y": -1.6907824976206323
+      },
+      "first_contact_center": {
+        "x": -18.6248871506516,
+        "y": -1.6907824976206323
+      },
+      "first_contact_message": "PCB trace source_net_13_mst0_0 is too close to pcb_via \"via_25\" (gap: 0.245mm)",
+      "first_actual_clearance": 0.24487793116016124,
+      "worst_contact_center": {
+        "x": -18.6248871506516,
+        "y": -1.6907824976206323
+      },
+      "worst_contact_message": "PCB trace source_net_13_mst0_0 is too close to pcb_via \"via_25\" (gap: 0.245mm)",
+      "worst_actual_clearance": 0.24487793116016124
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_13_mst0_0 is too close to pcb_via \"via_39\" (gap: 0.114mm)",
+      "pcb_trace_id": "source_net_13_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_13_mst0_0_via_39",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.11384374825029323,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -7.595793308207162,
+        "y": -7.916359766487982
+      },
+      "first_contact_center": {
+        "x": -7.595793308207162,
+        "y": -7.916359766487982
+      },
+      "first_contact_message": "PCB trace source_net_13_mst0_0 is too close to pcb_via \"via_39\" (gap: 0.114mm)",
+      "first_actual_clearance": 0.11384374825029323,
+      "worst_contact_center": {
+        "x": -7.595793308207162,
+        "y": -7.916359766487982
+      },
+      "worst_contact_message": "PCB trace source_net_13_mst0_0 is too close to pcb_via \"via_39\" (gap: 0.114mm)",
+      "worst_actual_clearance": 0.11384374825029323
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_13_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_84\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_13_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_13_mst1_0_pcb_smtpad_84",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21480827637068114,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -20.23688072113483,
+        "y": 0.5894073381853405
+      },
+      "first_contact_center": {
+        "x": -20.23688072113483,
+        "y": 0.5894073381853405
+      },
+      "first_contact_message": "PCB trace source_net_13_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_84\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21480827637068114,
+      "worst_contact_center": {
+        "x": -20.23688072113483,
+        "y": 0.5894073381853405
+      },
+      "worst_contact_message": "PCB trace source_net_13_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_84\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21480827637068114
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_13_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_155\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_13_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_13_mst1_0_pcb_smtpad_155",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2147559514938022,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_97"
+      ],
+      "center": {
+        "x": -20.926925675907523,
+        "y": 1.6291409652862743
+      },
+      "first_contact_center": {
+        "x": -20.926925675907523,
+        "y": 1.6291409652862743
+      },
+      "first_contact_message": "PCB trace source_net_13_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_155\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.2147559514938022,
+      "worst_contact_center": {
+        "x": -20.926925675907523,
+        "y": 1.6291409652862743
+      },
+      "worst_contact_message": "PCB trace source_net_13_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_155\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.2147559514938022
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_12_mst1_0 is too close to pcb_via \"via_8\" (gap: 0.115mm)",
+      "pcb_trace_id": "source_net_12_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_12_mst1_0_via_8",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.11498625457420433,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -26.357535274106024,
+        "y": -4.189027327906228
+      },
+      "first_contact_center": {
+        "x": -26.357535274106024,
+        "y": -4.189027327906228
+      },
+      "first_contact_message": "PCB trace source_net_12_mst1_0 is too close to pcb_via \"via_8\" (gap: 0.115mm)",
+      "first_actual_clearance": 0.11498625457420433,
+      "worst_contact_center": {
+        "x": -26.357535274106024,
+        "y": -4.189027327906228
+      },
+      "worst_contact_message": "PCB trace source_net_12_mst1_0 is too close to pcb_via \"via_8\" (gap: 0.115mm)",
+      "worst_actual_clearance": 0.11498625457420433
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_12_mst1_0 is too close to pcb_via \"via_20\" (gap: 0.115mm)",
+      "pcb_trace_id": "source_net_12_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_12_mst1_0_via_20",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.11499769301439147,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -25.847282116882752,
+        "y": -3.2552793430896934
+      },
+      "first_contact_center": {
+        "x": -25.847282116882752,
+        "y": -3.2552793430896934
+      },
+      "first_contact_message": "PCB trace source_net_12_mst1_0 is too close to pcb_via \"via_20\" (gap: 0.115mm)",
+      "first_actual_clearance": 0.11499769301439147,
+      "worst_contact_center": {
+        "x": -25.847282116882752,
+        "y": -3.2552793430896934
+      },
+      "worst_contact_message": "PCB trace source_net_12_mst1_0 is too close to pcb_via \"via_20\" (gap: 0.115mm)",
+      "worst_actual_clearance": 0.11499769301439147
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_6\" (gap: 0.229mm)",
+      "pcb_trace_id": "source_net_11_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst1_0_pcb_smtpad_6",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2289373631933597,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_10"
+      ],
+      "center": {
+        "x": -31.809602671168687,
+        "y": 2.425397690510743
+      },
+      "first_contact_center": {
+        "x": -31.809602671168687,
+        "y": 2.425397690510743
+      },
+      "first_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_6\" (gap: 0.229mm)",
+      "first_actual_clearance": 0.2289373631933597,
+      "worst_contact_center": {
+        "x": -31.809602671168687,
+        "y": 2.425397690510743
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_6\" (gap: 0.229mm)",
+      "worst_actual_clearance": 0.2289373631933597
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_10\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_11_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst1_0_pcb_smtpad_10",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499828919713268,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_14"
+      ],
+      "center": {
+        "x": -31.136115915207604,
+        "y": 2.086831479007534
+      },
+      "first_contact_center": {
+        "x": -31.136115915207604,
+        "y": 2.086831479007534
+      },
+      "first_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_10\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499828919713268,
+      "worst_contact_center": {
+        "x": -31.136115915207604,
+        "y": 2.086831479007534
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_10\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499828919713268
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_76\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_11_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst1_0_pcb_smtpad_76",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499633813476568,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -29.2,
+        "y": -0.2624985690673828
+      },
+      "first_contact_center": {
+        "x": -30.01054459537626,
+        "y": -0.21060352977188512
+      },
+      "first_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_76\" (gap: 0.242mm)",
+      "first_actual_clearance": 0.24166252797845336,
+      "worst_contact_center": {
+        "x": -29.2,
+        "y": -0.2624985690673828
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_76\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499633813476568
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst1_0 is too close to pcb_via \"via_47\" (gap: 0.014mm)",
+      "pcb_trace_id": "source_net_11_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst1_0_via_47",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.01377379655692293,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -25.869096470471987,
+        "y": 0.6933909326918783
+      },
+      "first_contact_center": {
+        "x": -26.155024756984723,
+        "y": 0.7666222128035693
+      },
+      "first_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_via \"via_47\" (gap: 0.212mm)",
+      "first_actual_clearance": 0.2116185187624672,
+      "worst_contact_center": {
+        "x": -25.869096470471987,
+        "y": 0.6933909326918783
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_via \"via_47\" (gap: 0.014mm)",
+      "worst_actual_clearance": 0.01377379655692293
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_79\" (gap: 0.122mm)",
+      "pcb_trace_id": "source_net_11_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst1_0_pcb_smtpad_79",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.12230446484983723,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_39"
+      ],
+      "center": {
+        "x": -26.136964123864626,
+        "y": 0.36115133242491865
+      },
+      "first_contact_center": {
+        "x": -26.281494109463086,
+        "y": 0.40749910000000006
+      },
+      "first_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_79\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21500000000000005,
+      "worst_contact_center": {
+        "x": -26.136964123864626,
+        "y": 0.36115133242491865
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_79\" (gap: 0.122mm)",
+      "worst_actual_clearance": 0.12230446484983723
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst1_0 is too close to PCB trace source_net_10_mst1_0 (gap: 0.214mm)",
+      "pcb_trace_id": "source_net_11_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst1_0_source_net_10_mst1_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21378549911358757,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -25.869096470471987,
+        "y": 0.6933909326918783
+      },
+      "first_contact_center": {
+        "x": -25.8716756433973,
+        "y": 0.7077272459466181
+      },
+      "first_contact_message": "PCB trace source_net_11_mst1_0 is too close to PCB trace source_net_10_mst1_0 (gap: 0.243mm)",
+      "first_actual_clearance": 0.2426889145123446,
+      "worst_contact_center": {
+        "x": -25.869096470471987,
+        "y": 0.6933909326918783
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst1_0 is too close to PCB trace source_net_10_mst1_0 (gap: 0.214mm)",
+      "worst_actual_clearance": 0.21378549911358757
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst1_0 is too close to PCB trace source_net_10_mst2_0 (gap: 0.214mm)",
+      "pcb_trace_id": "source_net_11_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst1_0_source_net_10_mst2_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21377379655692294,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -25.869096470471987,
+        "y": 0.6933909326918783
+      },
+      "first_contact_center": {
+        "x": -25.869096470471987,
+        "y": 0.6933909326918783
+      },
+      "first_contact_message": "PCB trace source_net_11_mst1_0 is too close to PCB trace source_net_10_mst2_0 (gap: 0.214mm)",
+      "first_actual_clearance": 0.21377379655692294,
+      "worst_contact_center": {
+        "x": -25.869096470471987,
+        "y": 0.6933909326918783
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst1_0 is too close to PCB trace source_net_10_mst2_0 (gap: 0.214mm)",
+      "worst_actual_clearance": 0.21377379655692294
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_72\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_11_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst2_0_pcb_smtpad_72",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499923007830704,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -23.964248471206183,
+        "y": 11.138921249409101
+      },
+      "first_contact_center": {
+        "x": -23.579033207611435,
+        "y": 11.135373089202076
+      },
+      "first_contact_message": "PCB trace source_net_11_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_72\" (gap: 0.229mm)",
+      "first_actual_clearance": 0.22925562159584786,
+      "worst_contact_center": {
+        "x": -23.964248471206183,
+        "y": 11.138921249409101
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_72\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499923007830704
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_76\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_11_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst2_0_pcb_smtpad_76",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499633813476568,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -29.2,
+        "y": -0.2624985690673828
+      },
+      "first_contact_center": {
+        "x": -29.2,
+        "y": -0.2624985690673828
+      },
+      "first_contact_message": "PCB trace source_net_11_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_76\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499633813476568,
+      "worst_contact_center": {
+        "x": -29.2,
+        "y": -0.2624985690673828
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_76\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499633813476568
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst2_0 is too close to pcb_via \"via_47\" (gap: 0.024mm)",
+      "pcb_trace_id": "source_net_11_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst2_0_via_47",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.024019327337578028,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -25.875178497802075,
+        "y": 0.6880404580604023
+      },
+      "first_contact_center": {
+        "x": -26.0682854985267,
+        "y": 0.7309509197520612
+      },
+      "first_contact_message": "PCB trace source_net_11_mst2_0 is too close to pcb_via \"via_47\" (gap: 0.106mm)",
+      "first_actual_clearance": 0.10632483293551634,
+      "worst_contact_center": {
+        "x": -25.875178497802075,
+        "y": 0.6880404580604023
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst2_0 is too close to pcb_via \"via_47\" (gap: 0.024mm)",
+      "worst_actual_clearance": 0.024019327337578028
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_79\" (gap: 0.123mm)",
+      "pcb_trace_id": "source_net_11_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst2_0_pcb_smtpad_79",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.1227641468631819,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_39"
+      ],
+      "center": {
+        "x": -26.021616361060488,
+        "y": 0.361381173431591
+      },
+      "first_contact_center": {
+        "x": -26.256736966221382,
+        "y": 0.4059509697520611
+      },
+      "first_contact_message": "PCB trace source_net_11_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_79\" (gap: 0.206mm)",
+      "first_actual_clearance": 0.2055575800693513,
+      "worst_contact_center": {
+        "x": -26.021616361060488,
+        "y": 0.361381173431591
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_79\" (gap: 0.123mm)",
+      "worst_actual_clearance": 0.1227641468631819
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst2_0 is too close to PCB trace source_net_10_mst1_0 (gap: 0.224mm)",
+      "pcb_trace_id": "source_net_11_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst2_0_source_net_10_mst1_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22403102989424262,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -25.875178497802075,
+        "y": 0.6880404580604023
+      },
+      "first_contact_center": {
+        "x": -25.87847033236453,
+        "y": 0.6896693073246771
+      },
+      "first_contact_message": "PCB trace source_net_11_mst2_0 is too close to PCB trace source_net_10_mst1_0 (gap: 0.227mm)",
+      "first_actual_clearance": 0.22743372730616873,
+      "worst_contact_center": {
+        "x": -25.875178497802075,
+        "y": 0.6880404580604023
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst2_0 is too close to PCB trace source_net_10_mst1_0 (gap: 0.224mm)",
+      "worst_actual_clearance": 0.22403102989424262
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_11_mst2_0 is too close to PCB trace source_net_10_mst2_0 (gap: 0.224mm)",
+      "pcb_trace_id": "source_net_11_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_11_mst2_0_source_net_10_mst2_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22401932733757798,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -25.875178497802075,
+        "y": 0.6880404580604023
+      },
+      "first_contact_center": {
+        "x": -25.875178497802075,
+        "y": 0.6880404580604023
+      },
+      "first_contact_message": "PCB trace source_net_11_mst2_0 is too close to PCB trace source_net_10_mst2_0 (gap: 0.224mm)",
+      "first_actual_clearance": 0.22401932733757798,
+      "worst_contact_center": {
+        "x": -25.875178497802075,
+        "y": 0.6880404580604023
+      },
+      "worst_contact_message": "PCB trace source_net_11_mst2_0 is too close to PCB trace source_net_10_mst2_0 (gap: 0.224mm)",
+      "worst_actual_clearance": 0.22401932733757798
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_10_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_2\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_10_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_10_mst1_0_pcb_smtpad_2",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2149796184185422,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_6"
+      ],
+      "center": {
+        "x": -31.951546103711955,
+        "y": 5.067817040366523
+      },
+      "first_contact_center": {
+        "x": -31.951546103711955,
+        "y": 5.067817040366523
+      },
+      "first_contact_message": "PCB trace source_net_10_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_2\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.2149796184185422,
+      "worst_contact_center": {
+        "x": -31.951546103711955,
+        "y": 5.067817040366523
+      },
+      "worst_contact_message": "PCB trace source_net_10_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_2\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.2149796184185422
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_46_mst0_0 is too close to pcb_via \"via_3\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_46_mst0_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_46_mst0_0_via_3",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21503983610819902,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -15.0708983,
+        "y": -24.305500000000002
+      },
+      "first_contact_center": {
+        "x": -15.38647410849173,
+        "y": -23.994333398579446
+      },
+      "first_contact_message": "PCB trace source_net_46_mst0_0 is too close to pcb_via \"via_3\" (gap: 0.230mm)",
+      "first_actual_clearance": 0.22954043152877027,
+      "worst_contact_center": {
+        "x": -15.0708983,
+        "y": -24.305500000000002
+      },
+      "worst_contact_message": "PCB trace source_net_46_mst0_0 is too close to pcb_via \"via_3\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21503983610819902
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_46_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_252\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_46_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_46_mst1_0_pcb_smtpad_252",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499843123943432,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -14.534573393744914,
+        "y": -22.263373500158696
+      },
+      "first_contact_center": {
+        "x": -14.534573393744914,
+        "y": -22.263373500158696
+      },
+      "first_contact_message": "PCB trace source_net_46_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_252\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499843123943432,
+      "worst_contact_center": {
+        "x": -14.534573393744914,
+        "y": -22.263373500158696
+      },
+      "worst_contact_message": "PCB trace source_net_46_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_252\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499843123943432
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_46_mst2_0 is too close to pcb_via \"via_3\" (gap: 0.237mm)",
+      "pcb_trace_id": "source_net_46_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_46_mst2_0_via_3",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.23676172998517744,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -15.060498360750765,
+        "y": -24.32649296483626
+      },
+      "first_contact_center": {
+        "x": -15.060498360750765,
+        "y": -24.32649296483626
+      },
+      "first_contact_message": "PCB trace source_net_46_mst2_0 is too close to pcb_via \"via_3\" (gap: 0.237mm)",
+      "first_actual_clearance": 0.23676172998517744,
+      "worst_contact_center": {
+        "x": -15.060498360750765,
+        "y": -24.32649296483626
+      },
+      "worst_contact_message": "PCB trace source_net_46_mst2_0 is too close to pcb_via \"via_3\" (gap: 0.237mm)",
+      "worst_actual_clearance": 0.23676172998517744
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_46_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_246\" (gap: 0.225mm)",
+      "pcb_trace_id": "source_net_46_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_46_mst2_0_pcb_smtpad_246",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22544830236009675,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_144"
+      ],
+      "center": {
+        "x": -16.33168718373251,
+        "y": -26.643786538456123
+      },
+      "first_contact_center": {
+        "x": -16.33168718373251,
+        "y": -26.643786538456123
+      },
+      "first_contact_message": "PCB trace source_net_46_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_246\" (gap: 0.225mm)",
+      "first_actual_clearance": 0.22544830236009675,
+      "worst_contact_center": {
+        "x": -16.33168718373251,
+        "y": -26.643786538456123
+      },
+      "worst_contact_message": "PCB trace source_net_46_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_246\" (gap: 0.225mm)",
+      "worst_actual_clearance": 0.22544830236009675
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_46_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_244\" (gap: 0.211mm)",
+      "pcb_trace_id": "source_net_46_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_46_mst2_0_pcb_smtpad_244",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21130564905853863,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_141"
+      ],
+      "center": {
+        "x": -20.663359245700157,
+        "y": -26.45623494128719
+      },
+      "first_contact_center": {
+        "x": -20.02893045816064,
+        "y": -26.72255324441989
+      },
+      "first_contact_message": "PCB trace source_net_46_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_244\" (gap: 0.220mm)",
+      "first_actual_clearance": 0.21999410381214193,
+      "worst_contact_center": {
+        "x": -20.663359245700157,
+        "y": -26.45623494128719
+      },
+      "worst_contact_message": "PCB trace source_net_46_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_244\" (gap: 0.211mm)",
+      "worst_actual_clearance": 0.21130564905853863
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_222\" (gap: 0.181mm)",
+      "pcb_trace_id": "source_net_46_mst5_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_46_mst5_0_pcb_smtpad_222",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.18134991312923374,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_228"
+      ],
+      "center": {
+        "x": -3.196522700352788,
+        "y": -16.158212391972878
+      },
+      "first_contact_center": {
+        "x": -3.196522700352788,
+        "y": -16.158212391972878
+      },
+      "first_contact_message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_222\" (gap: 0.181mm)",
+      "first_actual_clearance": 0.18134991312923374,
+      "worst_contact_center": {
+        "x": -3.196522700352788,
+        "y": -16.158212391972878
+      },
+      "worst_contact_message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_222\" (gap: 0.181mm)",
+      "worst_actual_clearance": 0.18134991312923374
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_223\" (gap: 0.214mm)",
+      "pcb_trace_id": "source_net_46_mst5_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_46_mst5_0_pcb_smtpad_223",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21411408212888153,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_221"
+      ],
+      "center": {
+        "x": -3.20364395464584,
+        "y": -15.858169480602843
+      },
+      "first_contact_center": {
+        "x": -3.20364395464584,
+        "y": -15.858169480602843
+      },
+      "first_contact_message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_223\" (gap: 0.214mm)",
+      "first_actual_clearance": 0.21411408212888153,
+      "worst_contact_center": {
+        "x": -3.20364395464584,
+        "y": -15.858169480602843
+      },
+      "worst_contact_message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_223\" (gap: 0.214mm)",
+      "worst_actual_clearance": 0.21411408212888153
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_217\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_46_mst5_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_46_mst5_0_pcb_smtpad_217",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2149791266592265,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -7.526692001212637,
+        "y": -19.863899439603443
+      },
+      "first_contact_center": {
+        "x": -7.526692001212637,
+        "y": -19.863899439603443
+      },
+      "first_contact_message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_217\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.2149791266592265,
+      "worst_contact_center": {
+        "x": -7.526692001212637,
+        "y": -19.863899439603443
+      },
+      "worst_contact_message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_217\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.2149791266592265
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_215\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_46_mst5_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_46_mst5_0_pcb_smtpad_215",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21497307761911064,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_226"
+      ],
+      "center": {
+        "x": -9.790270407232626,
+        "y": -20.970646863138
+      },
+      "first_contact_center": {
+        "x": -9.770506527314291,
+        "y": -20.64517002005436
+      },
+      "first_contact_message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_215\" (gap: 0.227mm)",
+      "first_actual_clearance": 0.2265504495754844,
+      "worst_contact_center": {
+        "x": -9.790270407232626,
+        "y": -20.970646863138
+      },
+      "worst_contact_message": "PCB trace source_net_46_mst5_0 is too close to pcb_smtpad \"pcb_smtpad_215\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21497307761911064
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_45_0 is too close to pcb_via \"via_3\" (gap: 0.200mm)",
+      "pcb_trace_id": "source_net_45_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_45_0_via_3",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.20049127037294348,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -15.167976223737053,
+        "y": -24.523172807026754
+      },
+      "first_contact_center": {
+        "x": -15.167976223737053,
+        "y": -24.523172807026754
+      },
+      "first_contact_message": "PCB trace source_net_45_0 is too close to pcb_via \"via_3\" (gap: 0.200mm)",
+      "first_actual_clearance": 0.20049127037294348,
+      "worst_contact_center": {
+        "x": -15.167976223737053,
+        "y": -24.523172807026754
+      },
+      "worst_contact_message": "PCB trace source_net_45_0 is too close to pcb_via \"via_3\" (gap: 0.200mm)",
+      "worst_actual_clearance": 0.20049127037294348
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_45_0 is too close to pcb_via \"via_52\" (gap: 0.217mm)",
+      "pcb_trace_id": "source_net_45_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_45_0_via_52",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21725573989459415,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -17.813616631247207,
+        "y": -20.14383289471773
+      },
+      "first_contact_center": {
+        "x": -17.813616631247207,
+        "y": -20.14383289471773
+      },
+      "first_contact_message": "PCB trace source_net_45_0 is too close to pcb_via \"via_52\" (gap: 0.217mm)",
+      "first_actual_clearance": 0.21725573989459415,
+      "worst_contact_center": {
+        "x": -17.813616631247207,
+        "y": -20.14383289471773
+      },
+      "worst_contact_message": "PCB trace source_net_45_0 is too close to pcb_via \"via_52\" (gap: 0.217mm)",
+      "worst_actual_clearance": 0.21725573989459415
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_45_0 is too close to pcb_smtpad \"pcb_smtpad_238\" (gap: 0.214mm)",
+      "pcb_trace_id": "source_net_45_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_45_0_pcb_smtpad_238",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21374275289680475,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_259"
+      ],
+      "center": {
+        "x": -17.0070617155828,
+        "y": -17.157507756382742
+      },
+      "first_contact_center": {
+        "x": -17.0070617155828,
+        "y": -17.157507756382742
+      },
+      "first_contact_message": "PCB trace source_net_45_0 is too close to pcb_smtpad \"pcb_smtpad_238\" (gap: 0.214mm)",
+      "first_actual_clearance": 0.21374275289680475,
+      "worst_contact_center": {
+        "x": -17.0070617155828,
+        "y": -17.157507756382742
+      },
+      "worst_contact_message": "PCB trace source_net_45_0 is too close to pcb_smtpad \"pcb_smtpad_238\" (gap: 0.214mm)",
+      "worst_actual_clearance": 0.21374275289680475
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_45_0 is too close to pcb_smtpad \"pcb_smtpad_239\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_45_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_45_0_pcb_smtpad_239",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21495964691999578,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_151"
+      ],
+      "center": {
+        "x": -16.109328652631984,
+        "y": -16.24218057554914
+      },
+      "first_contact_center": {
+        "x": -17.0070617155828,
+        "y": -16.80738145638274
+      },
+      "first_contact_message": "PCB trace source_net_45_0 is too close to pcb_smtpad \"pcb_smtpad_239\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.2150155127654824,
+      "worst_contact_center": {
+        "x": -16.109328652631984,
+        "y": -16.24218057554914
+      },
+      "worst_contact_message": "PCB trace source_net_45_0 is too close to pcb_smtpad \"pcb_smtpad_239\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21495964691999578
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_45_0 is too close to pcb_smtpad \"pcb_smtpad_236\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_45_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_45_0_pcb_smtpad_236",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21484114832141546,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -14.403483268135263,
+        "y": -13.700973174325284
+      },
+      "first_contact_center": {
+        "x": -14.403483268135263,
+        "y": -13.700973174325284
+      },
+      "first_contact_message": "PCB trace source_net_45_0 is too close to pcb_smtpad \"pcb_smtpad_236\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21484114832141546,
+      "worst_contact_center": {
+        "x": -14.403483268135263,
+        "y": -13.700973174325284
+      },
+      "worst_contact_message": "PCB trace source_net_45_0 is too close to pcb_smtpad \"pcb_smtpad_236\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21484114832141546
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_210\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_44_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_44_mst2_0_pcb_smtpad_210",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21493481647049592,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_180"
+      ],
+      "center": {
+        "x": -8.65839749325594,
+        "y": -15.423030902608541
+      },
+      "first_contact_center": {
+        "x": -8.65839749325594,
+        "y": -15.423030902608541
+      },
+      "first_contact_message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_210\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21493481647049592,
+      "worst_contact_center": {
+        "x": -8.65839749325594,
+        "y": -15.423030902608541
+      },
+      "worst_contact_message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_210\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21493481647049592
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_229\" (gap: 0.229mm)",
+      "pcb_trace_id": "source_net_44_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_44_mst2_0_pcb_smtpad_229",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22862295234538174,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_180"
+      ],
+      "center": {
+        "x": -7.92944786547371,
+        "y": -14.364310576172691
+      },
+      "first_contact_center": {
+        "x": -7.92944786547371,
+        "y": -14.364310576172691
+      },
+      "first_contact_message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_229\" (gap: 0.229mm)",
+      "first_actual_clearance": 0.22862295234538174,
+      "worst_contact_center": {
+        "x": -7.92944786547371,
+        "y": -14.364310576172691
+      },
+      "worst_contact_message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_229\" (gap: 0.229mm)",
+      "worst_actual_clearance": 0.22862295234538174
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_228\" (gap: 0.233mm)",
+      "pcb_trace_id": "source_net_44_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_44_mst2_0_pcb_smtpad_228",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2330895024032922,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -6.50338344673491,
+        "y": -14.367406367536553
+      },
+      "first_contact_center": {
+        "x": -6.50338344673491,
+        "y": -14.367406367536553
+      },
+      "first_contact_message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_228\" (gap: 0.233mm)",
+      "first_actual_clearance": 0.2330895024032922,
+      "worst_contact_center": {
+        "x": -6.50338344673491,
+        "y": -14.367406367536553
+      },
+      "worst_contact_message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_228\" (gap: 0.233mm)",
+      "worst_actual_clearance": 0.2330895024032922
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_395\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_44_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_44_mst2_0_pcb_smtpad_395",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2149695768136308,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": 4.563286322593822,
+        "y": -11.433283798000586
+      },
+      "first_contact_center": {
+        "x": 4.563286322593822,
+        "y": -11.433283798000586
+      },
+      "first_contact_message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_395\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.2149695768136308,
+      "worst_contact_center": {
+        "x": 4.563286322593822,
+        "y": -11.433283798000586
+      },
+      "worst_contact_message": "PCB trace source_net_44_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_395\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.2149695768136308
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_42_0 is too close to pcb_via \"via_76\" (gap: 0.107mm)",
+      "pcb_trace_id": "source_net_42_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_42_0_via_76",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.10686008898754454,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -31.095275059783425,
+        "y": -23.29563619680706
+      },
+      "first_contact_center": {
+        "x": -31.34885686983686,
+        "y": -23.039256933569924
+      },
+      "first_contact_message": "PCB trace source_net_42_0 is too close to pcb_via \"via_76\" (gap: 0.133mm)",
+      "first_actual_clearance": 0.13283519782824263,
+      "worst_contact_center": {
+        "x": -31.095275059783425,
+        "y": -23.29563619680706
+      },
+      "worst_contact_message": "PCB trace source_net_42_0 is too close to pcb_via \"via_76\" (gap: 0.107mm)",
+      "worst_actual_clearance": 0.10686008898754454
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_189\" (gap: 0.226mm)",
+      "pcb_trace_id": "source_net_42_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_42_0_pcb_smtpad_189",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.22586133931131366,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_169"
+      ],
+      "center": {
+        "x": -32.00096034501948,
+        "y": -22.936911832391147
+      },
+      "first_contact_center": {
+        "x": -32.00096034501948,
+        "y": -22.936911832391147
+      },
+      "first_contact_message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_189\" (gap: 0.226mm)",
+      "first_actual_clearance": 0.22586133931131366,
+      "worst_contact_center": {
+        "x": -32.00096034501948,
+        "y": -22.936911832391147
+      },
+      "worst_contact_message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_189\" (gap: 0.226mm)",
+      "worst_actual_clearance": 0.22586133931131366
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_42_0 is too close to PCB trace source_net_35_mst0_0 (gap: 0.159mm)",
+      "pcb_trace_id": "source_net_42_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_42_0_source_net_35_mst0_0",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.15886432827277916,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -31.00569944090701,
+        "y": -23.68714957631223
+      },
+      "first_contact_center": {
+        "x": -31.00569944090701,
+        "y": -23.68714957631223
+      },
+      "first_contact_message": "PCB trace source_net_42_0 is too close to PCB trace source_net_35_mst0_0 (gap: 0.159mm)",
+      "first_actual_clearance": 0.15886432827277916,
+      "worst_contact_center": {
+        "x": -31.00569944090701,
+        "y": -23.68714957631223
+      },
+      "worst_contact_message": "PCB trace source_net_42_0 is too close to PCB trace source_net_35_mst0_0 (gap: 0.159mm)",
+      "worst_actual_clearance": 0.15886432827277916
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_182\" (gap: 0.201mm)",
+      "pcb_trace_id": "source_net_42_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_42_0_pcb_smtpad_182",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2006086012389031,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_175"
+      ],
+      "center": {
+        "x": -30.65622265398337,
+        "y": -24.032205599097562
+      },
+      "first_contact_center": {
+        "x": -30.65622265398337,
+        "y": -24.032205599097562
+      },
+      "first_contact_message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_182\" (gap: 0.201mm)",
+      "first_actual_clearance": 0.2006086012389031,
+      "worst_contact_center": {
+        "x": -30.65622265398337,
+        "y": -24.032205599097562
+      },
+      "worst_contact_message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_182\" (gap: 0.201mm)",
+      "worst_actual_clearance": 0.2006086012389031
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_191\" (gap: 0.197mm)",
+      "pcb_trace_id": "source_net_42_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_42_0_pcb_smtpad_191",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.19655920984176414,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -29.722342696527946,
+        "y": -26.479462953571783
+      },
+      "first_contact_center": {
+        "x": -29.722342696527946,
+        "y": -26.479462953571783
+      },
+      "first_contact_message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_191\" (gap: 0.197mm)",
+      "first_actual_clearance": 0.19655920984176414,
+      "worst_contact_center": {
+        "x": -29.722342696527946,
+        "y": -26.479462953571783
+      },
+      "worst_contact_message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_191\" (gap: 0.197mm)",
+      "worst_actual_clearance": 0.19655920984176414
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_194\" (gap: 0.214mm)",
+      "pcb_trace_id": "source_net_42_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_42_0_pcb_smtpad_194",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.2138716702732917,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_162"
+      ],
+      "center": {
+        "x": -28.58999730704613,
+        "y": -27.2505927927601
+      },
+      "first_contact_center": {
+        "x": -28.590043102344644,
+        "y": -27.233278522251933
+      },
+      "first_contact_message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_194\" (gap: 0.216mm)",
+      "first_actual_clearance": 0.21607980468929192,
+      "worst_contact_center": {
+        "x": -28.58999730704613,
+        "y": -27.2505927927601
+      },
+      "worst_contact_message": "PCB trace source_net_42_0 is too close to pcb_smtpad \"pcb_smtpad_194\" (gap: 0.214mm)",
+      "worst_actual_clearance": 0.2138716702732917
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_40_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_179\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_40_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_40_mst2_0_pcb_smtpad_179",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499999999999972,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -20.5499956,
+        "y": -18.231229902324948
+      },
+      "first_contact_center": {
+        "x": -20.5499956,
+        "y": -18.231229902324948
+      },
+      "first_contact_message": "PCB trace source_net_40_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_179\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499999999999972,
+      "worst_contact_center": {
+        "x": -20.5499956,
+        "y": -18.231229902324948
+      },
+      "worst_contact_message": "PCB trace source_net_40_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_179\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499999999999972
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_40_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_172\" (gap: 0.208mm)",
+      "pcb_trace_id": "source_net_40_mst2_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_40_mst2_0_pcb_smtpad_172",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.20771638748361007,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_179"
+      ],
+      "center": {
+        "x": -19.891775099512262,
+        "y": -18.4759585046012
+      },
+      "first_contact_center": {
+        "x": -19.891775099512262,
+        "y": -18.4759585046012
+      },
+      "first_contact_message": "PCB trace source_net_40_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_172\" (gap: 0.208mm)",
+      "first_actual_clearance": 0.20771638748361007,
+      "worst_contact_center": {
+        "x": -19.891775099512262,
+        "y": -18.4759585046012
+      },
+      "worst_contact_message": "PCB trace source_net_40_mst2_0 is too close to pcb_smtpad \"pcb_smtpad_172\" (gap: 0.208mm)",
+      "worst_actual_clearance": 0.20771638748361007
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_39_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_179\" (gap: 0.233mm)",
+      "pcb_trace_id": "source_net_39_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_39_mst1_0_pcb_smtpad_179",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.23258759999999853,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -21.355398623887748,
+        "y": -20.4587982
+      },
+      "first_contact_center": {
+        "x": -21.355398623887748,
+        "y": -20.4587982
+      },
+      "first_contact_message": "PCB trace source_net_39_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_179\" (gap: 0.233mm)",
+      "first_actual_clearance": 0.23258759999999853,
+      "worst_contact_center": {
+        "x": -21.355398623887748,
+        "y": -20.4587982
+      },
+      "worst_contact_message": "PCB trace source_net_39_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_179\" (gap: 0.233mm)",
+      "worst_actual_clearance": 0.23258759999999853
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_37_0 is too close to pcb_smtpad \"pcb_smtpad_203\" (gap: 0.244mm)",
+      "pcb_trace_id": "source_net_37_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_37_0_pcb_smtpad_203",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.24423991429881955,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -28.2302561679585,
+        "y": -21.573702453119076
+      },
+      "first_contact_center": {
+        "x": -28.2302561679585,
+        "y": -21.573702453119076
+      },
+      "first_contact_message": "PCB trace source_net_37_0 is too close to pcb_smtpad \"pcb_smtpad_203\" (gap: 0.244mm)",
+      "first_actual_clearance": 0.24423991429881955,
+      "worst_contact_center": {
+        "x": -28.2302561679585,
+        "y": -21.573702453119076
+      },
+      "worst_contact_message": "PCB trace source_net_37_0 is too close to pcb_smtpad \"pcb_smtpad_203\" (gap: 0.244mm)",
+      "worst_actual_clearance": 0.24423991429881955
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_37_0 is too close to pcb_smtpad \"pcb_smtpad_181\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_37_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_37_0_pcb_smtpad_181",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21473194796318076,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -28.65736697398159,
+        "y": -23.05004
+      },
+      "first_contact_center": {
+        "x": -28.65736697398159,
+        "y": -23.05004
+      },
+      "first_contact_message": "PCB trace source_net_37_0 is too close to pcb_smtpad \"pcb_smtpad_181\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21473194796318076,
+      "worst_contact_center": {
+        "x": -28.65736697398159,
+        "y": -23.05004
+      },
+      "worst_contact_message": "PCB trace source_net_37_0 is too close to pcb_smtpad \"pcb_smtpad_181\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21473194796318076
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_37_0 is too close to pcb_via \"via_61\" (gap: 0.115mm)",
+      "pcb_trace_id": "source_net_37_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_37_0_via_61",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.11499816211851602,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -25.88091111485879,
+        "y": -24.949494566533737
+      },
+      "first_contact_center": {
+        "x": -25.88091111485879,
+        "y": -24.949494566533737
+      },
+      "first_contact_message": "PCB trace source_net_37_0 is too close to pcb_via \"via_61\" (gap: 0.115mm)",
+      "first_actual_clearance": 0.11499816211851602,
+      "worst_contact_center": {
+        "x": -25.88091111485879,
+        "y": -24.949494566533737
+      },
+      "worst_contact_message": "PCB trace source_net_37_0 is too close to pcb_via \"via_61\" (gap: 0.115mm)",
+      "worst_actual_clearance": 0.11499816211851602
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_37_0 is too close to pcb_smtpad \"pcb_smtpad_186\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_37_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_37_0_pcb_smtpad_186",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21494511256484797,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_31"
+      ],
+      "center": {
+        "x": -23.6859000993238,
+        "y": -23.99991471582864
+      },
+      "first_contact_center": {
+        "x": -23.6859000993238,
+        "y": -23.99991471582864
+      },
+      "first_contact_message": "PCB trace source_net_37_0 is too close to pcb_smtpad \"pcb_smtpad_186\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21494511256484797,
+      "worst_contact_center": {
+        "x": -23.6859000993238,
+        "y": -23.99991471582864
+      },
+      "worst_contact_message": "PCB trace source_net_37_0 is too close to pcb_smtpad \"pcb_smtpad_186\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21494511256484797
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_36_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_188\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_36_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_36_mst1_0_pcb_smtpad_188",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499660829431996,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_109"
+      ],
+      "center": {
+        "x": -28.005744997632274,
+        "y": -19.23506497321298
+      },
+      "first_contact_center": {
+        "x": -28.005744997632274,
+        "y": -19.23506497321298
+      },
+      "first_contact_message": "PCB trace source_net_36_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_188\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499660829431996,
+      "worst_contact_center": {
+        "x": -28.005744997632274,
+        "y": -19.23506497321298
+      },
+      "worst_contact_message": "PCB trace source_net_36_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_188\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499660829431996
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_36_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_187\" (gap: 0.238mm)",
+      "pcb_trace_id": "source_net_36_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_36_mst1_0_pcb_smtpad_187",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.23842963498374345,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_175"
+      ],
+      "center": {
+        "x": -28.476089607119224,
+        "y": -18.66730911317792
+      },
+      "first_contact_center": {
+        "x": -28.476089607119224,
+        "y": -18.66730911317792
+      },
+      "first_contact_message": "PCB trace source_net_36_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_187\" (gap: 0.238mm)",
+      "first_actual_clearance": 0.23842963498374345,
+      "worst_contact_center": {
+        "x": -28.476089607119224,
+        "y": -18.66730911317792
+      },
+      "worst_contact_message": "PCB trace source_net_36_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_187\" (gap: 0.238mm)",
+      "worst_actual_clearance": 0.23842963498374345
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_36_mst1_0 is too close to pcb_via \"via_69\" (gap: 0.104mm)",
+      "pcb_trace_id": "source_net_36_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_36_mst1_0_via_69",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.10376483096995895,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -29.327954460639702,
+        "y": -17.103286047989574
+      },
+      "first_contact_center": {
+        "x": -29.185764548186665,
+        "y": -17.174370509900033
+      },
+      "first_contact_message": "PCB trace source_net_36_mst1_0 is too close to pcb_via \"via_69\" (gap: 0.149mm)",
+      "first_actual_clearance": 0.14940212092138563,
+      "worst_contact_center": {
+        "x": -29.327954460639702,
+        "y": -17.103286047989574
+      },
+      "worst_contact_message": "PCB trace source_net_36_mst1_0 is too close to pcb_via \"via_69\" (gap: 0.104mm)",
+      "worst_actual_clearance": 0.10376483096995895
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_36_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_205\" (gap: 0.148mm)",
+      "pcb_trace_id": "source_net_36_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_36_mst1_0_pcb_smtpad_205",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.14828990879078557,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -29.026764875107954,
+        "y": -16.79106302238983
+      },
+      "first_contact_center": {
+        "x": -29.026764875107954,
+        "y": -16.79106302238983
+      },
+      "first_contact_message": "PCB trace source_net_36_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_205\" (gap: 0.182mm)",
+      "first_actual_clearance": 0.18212784477966168,
+      "worst_contact_center": {
+        "x": -29.026764875107954,
+        "y": -16.79106302238983
+      },
+      "worst_contact_message": "PCB trace source_net_36_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_205\" (gap: 0.148mm)",
+      "worst_actual_clearance": 0.14828990879078557
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_35_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_164\" (gap: 0.209mm)",
+      "pcb_trace_id": "source_net_35_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_35_mst1_0_pcb_smtpad_164",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.20896155205657554,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_162"
+      ],
+      "center": {
+        "x": -24.014560807145678,
+        "y": -19.753545946082266
+      },
+      "first_contact_center": {
+        "x": -24.014560807145678,
+        "y": -19.753545946082266
+      },
+      "first_contact_message": "PCB trace source_net_35_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_164\" (gap: 0.209mm)",
+      "first_actual_clearance": 0.20896155205657554,
+      "worst_contact_center": {
+        "x": -24.014560807145678,
+        "y": -19.753545946082266
+      },
+      "worst_contact_message": "PCB trace source_net_35_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_164\" (gap: 0.209mm)",
+      "worst_actual_clearance": 0.20896155205657554
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace source_net_35_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_179\" (gap: 0.215mm)",
+      "pcb_trace_id": "source_net_35_mst1_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_source_net_35_mst1_0_pcb_smtpad_179",
+      "minimum_clearance": 0.25,
+      "actual_clearance": 0.21499952615072757,
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_370"
+      ],
+      "center": {
+        "x": -23.45000433386816,
+        "y": -18.999999575165496
+      },
+      "first_contact_center": {
+        "x": -23.4500044,
+        "y": -19.50046369948444
+      },
+      "first_contact_message": "PCB trace source_net_35_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_179\" (gap: 0.215mm)",
+      "first_actual_clearance": 0.21499999999999972,
+      "worst_contact_center": {
+        "x": -23.45000433386816,
+        "y": -18.999999575165496
+      },
+      "worst_contact_message": "PCB trace source_net_35_mst1_0 is too close to pcb_smtpad \"pcb_smtpad_179\" (gap: 0.215mm)",
+      "worst_actual_clearance": 0.21499952615072757
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_2_pcb_smtpad_63",
+      "message": "pcb_via \"via_2\" and pcb_smtpad \"pcb_smtpad_63\" are too close (gap: 0.001mm)",
+      "pcb_trace_id": "source_net_16_mst0_0",
+      "pcb_pad_ids": [
+        "via_2",
+        "pcb_smtpad_63"
+      ],
+      "pcb_via_ids": [
+        "via_2"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.0009948000000012391,
+      "center": {
+        "x": -17.438000000000002,
+        "y": 7.7796571038637055
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_7_pcb_smtpad_321",
+      "message": "pcb_via \"via_7\" and pcb_smtpad \"pcb_smtpad_321\" are too close (gap: 0.155mm)",
+      "pcb_trace_id": "source_net_32_mst5_0",
+      "pcb_pad_ids": [
+        "via_7",
+        "pcb_smtpad_321"
+      ],
+      "pcb_via_ids": [
+        "via_7"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.15527145558803218,
+      "center": {
+        "x": 23.93344382297289,
+        "y": -3.53743835817182
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_8_pcb_smtpad_153",
+      "message": "pcb_via \"via_8\" and pcb_smtpad \"pcb_smtpad_153\" are too close (gap: 0.000mm)",
+      "pcb_trace_id": "source_net_30_0",
+      "pcb_pad_ids": [
+        "via_8",
+        "pcb_smtpad_153"
+      ],
+      "pcb_via_ids": [
+        "via_8"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.00033263520038301353,
+      "center": {
+        "x": -27.357512538065677,
+        "y": -3.5951679676001915
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_12_pcb_smtpad_120",
+      "message": "pcb_via \"via_12\" and pcb_smtpad \"pcb_smtpad_120\" are too close (gap: 0.000mm)",
+      "pcb_trace_id": "source_net_28_mst0_0",
+      "pcb_pad_ids": [
+        "via_12",
+        "pcb_smtpad_120"
+      ],
+      "pcb_via_ids": [
+        "via_12"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 9.999999999177334e-7,
+      "center": {
+        "x": -7.899987100000001,
+        "y": -0.8950166500000001
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_26_pcb_smtpad_128",
+      "message": "pcb_via \"via_26\" and pcb_smtpad \"pcb_smtpad_128\" are too close (gap: 0.100mm)",
+      "pcb_trace_id": "source_net_24_mst0_0",
+      "pcb_pad_ids": [
+        "via_26",
+        "pcb_smtpad_128"
+      ],
+      "pcb_via_ids": [
+        "via_26"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.09999679999999989,
+      "center": {
+        "x": -7.584,
+        "y": 5.242818
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_29_pcb_smtpad_109",
+      "message": "pcb_via \"via_29\" and pcb_smtpad \"pcb_smtpad_109\" are too close (gap: 0.100mm)",
+      "pcb_trace_id": "source_net_23_mst0_0",
+      "pcb_pad_ids": [
+        "via_29",
+        "pcb_smtpad_109"
+      ],
+      "pcb_via_ids": [
+        "via_29"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.10000000000000236,
+      "center": {
+        "x": -19.19,
+        "y": 25.0255
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_37_pcb_smtpad_155",
+      "message": "pcb_via \"via_37\" and pcb_smtpad \"pcb_smtpad_155\" are too close (gap: 0.101mm)",
+      "pcb_trace_id": "source_net_14_mst0_0",
+      "pcb_pad_ids": [
+        "via_37",
+        "pcb_smtpad_155"
+      ],
+      "pcb_via_ids": [
+        "via_37"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1009999829999984,
+      "center": {
+        "x": -20.395501641499997,
+        "y": 3.1552401332779
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_40_pcb_smtpad_155",
+      "message": "pcb_via \"via_40\" and pcb_smtpad \"pcb_smtpad_155\" are too close (gap: 0.101mm)",
+      "pcb_trace_id": "source_net_14_mst1_0",
+      "pcb_pad_ids": [
+        "via_40",
+        "pcb_smtpad_155"
+      ],
+      "pcb_via_ids": [
+        "via_40"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1009999829999984,
+      "center": {
+        "x": -20.395501641499997,
+        "y": 3.1552401332779
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_48_pcb_smtpad_1",
+      "message": "pcb_via \"via_48\" and pcb_smtpad \"pcb_smtpad_1\" are too close (gap: 0.150mm)",
+      "pcb_trace_id": "source_net_10_mst1_0",
+      "pcb_pad_ids": [
+        "via_48",
+        "pcb_smtpad_1"
+      ],
+      "pcb_via_ids": [
+        "via_48"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1503264496117272,
+      "center": {
+        "x": -32.37611937480587,
+        "y": 5.223891474075913
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_50_pcb_smtpad_57",
+      "message": "pcb_via \"via_50\" and pcb_smtpad \"pcb_smtpad_57\" are too close (gap: 0.062mm)",
+      "pcb_trace_id": "source_net_10_mst2_0",
+      "pcb_pad_ids": [
+        "via_50",
+        "pcb_smtpad_57"
+      ],
+      "pcb_via_ids": [
+        "via_50"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.06226444201919501,
+      "center": {
+        "x": -22.681133721009594,
+        "y": 7.926487089548472
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_52_pcb_smtpad_241",
+      "message": "pcb_via \"via_52\" and pcb_smtpad \"pcb_smtpad_241\" are too close (gap: 0.073mm)",
+      "pcb_trace_id": "source_net_46_mst1_0",
+      "pcb_pad_ids": [
+        "via_52",
+        "pcb_smtpad_241"
+      ],
+      "pcb_via_ids": [
+        "via_52"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.0730083745984812,
+      "center": {
+        "x": -17.10250578729924,
+        "y": -19.993358206499998
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_54_pcb_smtpad_301",
+      "message": "pcb_via \"via_54\" and pcb_smtpad \"pcb_smtpad_301\" are too close (gap: 0.100mm)",
+      "pcb_trace_id": "source_net_46_mst3_0",
+      "pcb_pad_ids": [
+        "via_54",
+        "pcb_smtpad_301"
+      ],
+      "pcb_via_ids": [
+        "via_54"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.09979400000000022,
+      "center": {
+        "x": 13.635,
+        "y": 8.39255
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_61_pcb_smtpad_185",
+      "message": "pcb_via \"via_61\" and pcb_smtpad \"pcb_smtpad_185\" are too close (gap: 0.036mm)",
+      "pcb_trace_id": "source_net_41_0",
+      "pcb_pad_ids": [
+        "via_61",
+        "pcb_smtpad_185"
+      ],
+      "pcb_via_ids": [
+        "via_61"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.035622690336322704,
+      "center": {
+        "x": -25.725992670896247,
+        "y": -24.38381294516816
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_62_pcb_smtpad_310",
+      "message": "pcb_via \"via_62\" and pcb_smtpad \"pcb_smtpad_310\" are too close (gap: 0.140mm)",
+      "pcb_trace_id": "source_net_40_mst0_0",
+      "pcb_pad_ids": [
+        "via_62",
+        "pcb_smtpad_310"
+      ],
+      "pcb_via_ids": [
+        "via_62"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": 0.1397552838361359,
+      "center": {
+        "x": 8.45,
+        "y": 4.943489
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "via_pad_clearance_via_76_pcb_smtpad_189",
+      "message": "pcb_via \"via_76\" and pcb_smtpad \"pcb_smtpad_189\" are too close (gap: -0.081mm)",
+      "pcb_trace_id": "source_net_35_mst1_0",
+      "pcb_pad_ids": [
+        "via_76",
+        "pcb_smtpad_189"
+      ],
+      "pcb_via_ids": [
+        "via_76"
+      ],
+      "minimum_clearance": 0.2,
+      "actual_clearance": -0.08050942670714767,
+      "center": {
+        "x": -31.674253113353572,
+        "y": -23.40451915086802
+      }
+    }
+  ],
+  "limitations": "Read-only partial native-trace policy comparison. Non-source-net breakout traces are outside this comparison; no full-board pass or regenerated Circuit JSON is claimed."
+}

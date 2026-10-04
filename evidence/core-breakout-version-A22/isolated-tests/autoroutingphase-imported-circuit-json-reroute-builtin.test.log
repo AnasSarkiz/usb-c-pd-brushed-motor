@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-imported-circuit-json-reroute-builtin.test.tsx:
+(pass) autoroutingphase reroutes an imported circuit json region with the builtin autorouter [1084.62ms]
+
+ 1 pass
+ 0 fail
+ 3 expect() calls
+Ran 1 test across 1 file. [2.10s]

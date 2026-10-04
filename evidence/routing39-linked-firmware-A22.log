@@ -1,0 +1,23 @@
+$ bun scripts/build-firmware.ts bringup
+{
+  "mode": "bringup",
+  "status": "linked diagnostic image; motor qualification intentionally unavailable and inhibited",
+  "memory": {
+    "text": 20352,
+    "data": 0,
+    "bss": 448,
+    "flashBytes": 20352,
+    "staticRamBytes": 448,
+    "reservedStackBytes": 2048
+  },
+  "artifacts": [
+    {
+      "path": "dist/firmware/bringup/motor-controller-A22.elf",
+      "sha256": "d8eb299c191ce814e94a66ed5f986577eda4fae1be35bc8ef9453c7bfdd2fd20"
+    },
+    {
+      "path": "dist/firmware/bringup/motor-controller-A22.bin",
+      "sha256": "836c743748fb0e71127bf00a732ab204a6a96e034b73d9602fa1f02e4dd562e0"
+    }
+  ]
+}

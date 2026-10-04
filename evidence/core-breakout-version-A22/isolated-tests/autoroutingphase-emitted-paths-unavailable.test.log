@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-emitted-paths-unavailable.test.tsx:
+(pass) unrepresentable output reports a reason without partial paths or input mutation [293.96ms]
+
+ 1 pass
+ 0 fail
+ 3 expect() calls
+Ran 1 test across 1 file. [1401.00ms]

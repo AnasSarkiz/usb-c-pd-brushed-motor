@@ -1,0 +1,18 @@
+{
+  "currentSha256": "60ff10c94b0ce3f99642b0c0237903d5299b6a67b280702d1e0d57fb6af0d1d8",
+  "previousArtifact": "routing31-preroute-A22.json.gz",
+  "unchangedTypes": [
+    "pcb_component",
+    "pcb_smtpad",
+    "pcb_plated_hole",
+    "pcb_hole",
+    "pcb_via",
+    "pcb_silkscreen_text",
+    "pcb_silkscreen_path",
+    "pcb_courtyard_outline",
+    "schematic_component",
+    "schematic_sheet",
+    "pcb_breakout_point"
+  ],
+  "reviewBasis": "Functional routing priority only; physical placement, full-stack imported barrels and8 A4 sheets unchanged."
+}

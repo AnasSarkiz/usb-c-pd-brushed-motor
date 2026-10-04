@@ -1,0 +1,11 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/manual-breakoutpoints-use-default-autorouter.test.tsx:
+(pass) manual breakout points use the default autorouter before global routing [1640.71ms]
+(pass) an explicit fanout autorouter is preserved with a manual breakout point [99.77ms]
+(pass) breakout owns nested nets and shares stable boundary point identities with its parent [282.75ms]
+
+ 3 pass
+ 0 fail
+ 14 expect() calls
+Ran 3 tests across 1 file. [3.37s]

@@ -1,0 +1,22 @@
+{
+  "from": "revision38",
+  "to": "revision39 native clearance reservations",
+  "artifact_sha256": "d97422db3ea64b4a79f7c5af02b1014da7dd7595e6085672401ac611551fa674",
+  "equivalent_types": {
+    "pcb_board": true,
+    "pcb_component": true,
+    "pcb_smtpad": true,
+    "pcb_plated_hole": true,
+    "pcb_hole": true,
+    "pcb_via": true,
+    "pcb_port": true,
+    "pcb_courtyard_outline": true,
+    "pcb_courtyard_rect": true,
+    "pcb_silkscreen_text": true,
+    "pcb_silkscreen_path": true,
+    "pcb_silkscreen_line": true,
+    "schematic_sheet": true,
+    "schematic_component": true,
+    "schematic_trace": true
+  }
+}

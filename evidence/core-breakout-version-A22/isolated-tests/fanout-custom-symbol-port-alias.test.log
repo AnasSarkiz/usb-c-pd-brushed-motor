@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-custom-symbol-port-alias.test.tsx:
+(pass) fanout resolves imported-style symbol aliases after source ports and traces exist [514.22ms]
+
+ 1 pass
+ 0 fail
+ 7 expect() calls
+Ran 1 test across 1 file. [1093.00ms]

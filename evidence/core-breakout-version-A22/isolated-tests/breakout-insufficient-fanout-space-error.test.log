@@ -1,0 +1,10 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/breakout-insufficient-fanout-space-error.test.tsx:
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+(pass) a breakout with too little room reports how to give the fanout space [2675.62ms]
+
+ 1 pass
+ 0 fail
+ 7 expect() calls
+Ran 1 test across 1 file. [3.61s]

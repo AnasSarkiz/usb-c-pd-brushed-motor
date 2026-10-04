@@ -1,0 +1,7 @@
+1 | var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,o=Object.getOwnPropertyNames,i=Object.getPrototypeOf,r=Object.prototype.hasOwnProperty,s=(e,t)=>function(){return t||(0,e[o(e)[0]])((t={exports:{}}).exports,t),t.exports},a=(e,n)=>{for(var o in n)t(e,o,{get:n[o],enumerable:!0})},c=(s,a,c)=>(c=null!=s?e(i(s)):{},((e,i,s,a)=>{if(i&&"object"==typeof i||"function"==typeof i)for(let c of o(i))r.call(e,c)||c===s||t(e,c,{get:()=>i[c],enumerable:!(a=n(i,c))||a.enumerable});return e})(!a&&s&&s.__esModule?c:t(c,"default",{value:s,enumerable:!0}),s)),l=s({"node_modules/is-buffer/index.js"(e,t){function n(e){return!!e.constructor&&"function"==typeof e.constructor.isBuffer&&e.constructor.isBuffer(e)}t.exports=function(e){return null!=e&&(n(e)||function(e){return"function"==typeof e.readFloatLE&&"function"==typeof e.slice&&n(e.slice(0,0))}(e)||!!e._isBuffer)}}}),h=s({"node_modules/kind-of/index.js"(e,t){var n=l(),o=Object.prototype.toString;t.exports=function(e){if(void 0===e)return"undefined";if
+
+error: AutoroutingPipelineSolver5_HdCache requires async execution. Use solveAsync() or stepAsync().
+      at solve (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/capacity-autorouter/dist/index.js:1:2134866)
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/.cache/compare-native34-A22.ts:9:8
+
+Bun v1.4.2 (macOS arm64)

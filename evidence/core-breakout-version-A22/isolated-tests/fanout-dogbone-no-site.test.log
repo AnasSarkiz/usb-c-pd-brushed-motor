@@ -1,0 +1,12 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-dogbone-no-site.test.tsx:
+Async effect error in PcbTraceRender "autorouting":
+Error: No complete local dogbone assignment within clearance/search limits
+    at tick (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/node_modules/@tscircuit/dogbone-solver/lib/dogbone-autorouter.ts:176:24)
+(pass) dogbone failure does not publish partial handoffs [103.29ms]
+
+ 1 pass
+ 0 fail
+ 9 expect() calls
+Ran 1 test across 1 file. [967.00ms]

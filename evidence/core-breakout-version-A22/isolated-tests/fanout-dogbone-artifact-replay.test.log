@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-dogbone-artifact-replay.test.tsx:
+(pass) dogbone phase exports editable fanout-local paths including power nets [3914.20ms]
+
+ 1 pass
+ 0 fail
+ 544 expect() calls
+Ran 1 test across 1 file. [4.61s]

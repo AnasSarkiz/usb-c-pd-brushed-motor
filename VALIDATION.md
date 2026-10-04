@@ -1,3 +1,353 @@
+# A22 revision39 — enforce configured clearances in native routing
+
+Revision38 was stopped after measured violations, not because routing was slow.
+The retained partial output has three same-net ordinary drill-to-pad gaps of
+0.150001–0.150995mm and25 foreign copper violations below the0.20mm rule.
+The stopped full artifact is unchanged preroute SHA5600121e046098b3be6d245ab7ebd22658f404f26525c1680a2c6ea4c5c3f11c,
+with140 purchased/152 PCB components and zero final traces. It is rejected as
+routing evidence. All partial traces and failure diagnostics are retained.
+
+Canonical capacity-autorouter source now propagates configured trace clearance
+into Pipeline7 repair rather than hardcoding0.10mm. Canonical repair03 source
+adds an explicit same-net via-to-pad enforcement option, enabled by the
+existing no-via-in-pad routing policy. Legacy callers retain their prior behavior.
+No imports, installed dependencies or generated Circuit JSON are patched.
+Ten affected autorouter regressions/66 assertions, TypeScript, build and published
+version guard pass. The repair full suite has110 passing tests and one unchanged
+upstream golden-coordinate failure (about3e-17mm), independently reproduced on
+the untouched upstream commit and both Bun1.3.9/1.4.2. It is retained unchanged;
+the full repair suite is not claimed as passing. The new repair regression,
+formatting and TypeScript pass. Source archives and exact package hashes bind
+the local integration. Installing and revalidating this prototype is in progress.
+
+Three native pad escape reservations will precede logic routing. Their candidate
+preroute and physical/schematic equivalence audits pass. Full rerouting, actual
+copper/drill checks, visual review and prototype fabrication export remain pending.
+Hardware measurements and production PD provisioning remain external dependencies.
+
+Fresh production-source preroute SHA d97422db3ea64b4a79f7c5af02b1014da7dd7595e6085672401ac611551fa674
+contains140 purchased/152 PCB components and zero traces. All seven direct
+prerequisite audits pass; all physical records and eight schematic sheets are
+identical to revision38. Current formatting, TypeScript and41 board tests/466
+assertions pass. The new independent all-net copper checker explicitly compares
+wire/pad/via/pour copper by layer and handles linear taper boundaries; its
+regression catches a0.15mm foreign gap and rejects unsupported geometry.
+The fresh power report and linked bring-up firmware build pass with unchanged
+ELF/BIN hashes. Motor-enabled provisioning and physical tests are not inferred.
+All134 source/dependency/import hashes are bound in routing39-source-binding.
+Canonical built/installed autorouter JS SHA f6c0321bc72b2457832c59effa8f2827692fe71a9af0d6a0132bffc3dc7a5340;
+packed artifact SHA02729fa4d946a13bd4e662f5d3649caf794b68cdb0dad162a65d9f42ef42b814.
+The initial sandboxed package installation is rejected by the temp-directory
+permission boundary; the supported escalated install succeeds and matches the
+built artifact byte-for-byte. The package is a local0.0.959-a39 prototype build,
+not an upstream publication. Native prerequisites are still in progress. The four schematic-placement
+style advisories are unchanged from revision38 and explicitly reviewed: the
+horizontal second resistor in each dump series branch remains readable. The
+actual dump A4 image was inspected; labels/values/connections are clear. Generic
+vertical-rail suggestions do not identify connectivity or spacing defects.
+See routing39-schematic-style-review-A22.json. No diagnostics are suppressed.
+
+All five native prerequisites now exit0; placement reports0 errors/0 warnings.
+The four explicitly accepted schematic style advisories remain visible. Every
+one of the134 bound source/dependency/import hashes matches. Native39 full
+routing started with a fresh CLI cache and retained per-phase native inputs,
+outputs and logs. No partial output counts as accepted routed copper.
+
+---
+
+# A22 revision38 — explicit dump-current copper widths
+
+Revision37's fresh unrouted build, seven direct prerequisite audits and38 board
+tests/460 assertions pass. Before its five native checks started, validation
+was deliberately stopped to correct the remaining dump-current width intent.
+No native37 routed build or fabrication output is claimed.
+
+DUMP_LOAD now has a2mm nominal width in the power phase. Each individual
+DUMP_MID branch has0.5mm nominal width in the dump phase. These are supported
+net-level width settings; the source net identifiers, wiring, components,
+imports, geometry and clearance/drill constraints remain unchanged. Actual
+widths can still taper around obstacles, so emitted sections, layer thickness,
+barrels and branch currents require independent pulse and thermal review.
+The established2A target and bounded regeneration envelope are unchanged.
+Fresh build and all7 direct audits pass. The initial all-record equivalence
+guard correctly rejects changed dump power labels/junctions. All physical PCB
+record types and seven sheets remain byte-identical; the re-rendered dump A4
+sheet was inspected and is readable. That rejection remains preserved. A new
+conditional SI copper-pulse screen passes an independent energy-balance
+regression; no continuous ampacity or pulse rating is inferred from it.
+Formatting/TypeScript,39 board tests/462 assertions and all5 native
+prerequisites pass with successful exits and zero reported errors. All129
+source/dependency/import bindings remain unchanged. Native38 is authorized
+and in progress. A fully local Pipeline4 diagnostic on the rejected original
+44-net input also fails in14.672s with its iteration-limit error. The local
+seven-net buck diagnostic solves with zero errors in486.576s on the same
+obstacles/preloaded traces. Constructor work is outside the per-phase timing
+report; the actual elapsed duration is retained. This is subset evidence only;
+no partial output is accepted. The preceding uninstrumented attempt was
+interrupted without a claimed result. The captured available-segment input
+has66,765 nodes/197,229 edges, finite dimensions and no off-board nodes. Four-layer actual copper and manufacturing
+validation remain in progress; hardware qualification is pending.
+
+Native38's buck group completes with zero solver errors in792.2s; input
+protection routing is now in progress. The final audit pipeline explicitly
+includes actual routed artwork and supplier rotations, all13 critical power
+nets, and a conditional dump-wire pulse calculation bound to the same checked
+artifact. The pulse report cannot authorize the expanded regeneration envelope
+or establish continuous ampacity. Its unrouted-artifact rejection is retained.
+
+Independent native-export format diagnostics use a separate clearly marked
+unrouted probe while the full routing process continues. Gerbonara1.6.3 parses
+all12 Gerbers and both drill files; the isolated tooling versions are recorded.
+The first relative output path fails because CLI resolves it beside the input;
+an absolute output path succeeds. No export or Circuit JSON was patched.
+The initial0.2um drill-equivalence assumption correctly rejects a0.327um slot
+endpoint difference. CLI source proves G85 endpoints use3 decimal mm, ordinary
+drill coordinates4 and tools6. A diagonal half-LSB plus tool-radius/polygon-sag
+bound of0.727–0.738um accounts for that representation: all26 plated source
+drills and6 NPTH drills match within the calculated bound. The original
+rejection remains preserved. This is format evidence only; final routed
+clearance checks, full manufacturing export and visual review remain pending.
+Both parser G90-after-header diagnostics remain visible for explicit review;
+none is suppressed or automatically approved. Rebuildable historical
+publication staging caches were removed to recover disk space; sources,
+imports and original validation/publication evidence remain untouched.
+The manufacturing-unit/slot regression initially exposes an unsupported
+primitive reaching unit conversion; the helper now rejects unsupported drills
+explicitly before conversion. The original failure remains retained. The fixed
+regression covers inch units,0/90/180/270-degree slots and displaced geometry.
+Current formatting/TypeScript and all40 board tests/464 assertions pass;
+all129 routing source/dependency/import hashes still match the checked source.
+
+
+A diagnostic on the120 completed native38 traces independently measures83
+unique ordinary via drills against every component pad and existing drill,
+without constructing or modifying Circuit JSON. Drill-to-drill minimum is
+0.339589mm. Three same-net via-to-pad gaps fail the0.20mm rule:
+D3/VBUS_SENSE0.150995mm,TP1/SWDIO0.150333mm and
+R57/HOST_INHIBIT_B0.150001mm. The partial native output is not accepted.
+Later native phases may alter preloaded routes; final geometry must resolve
+these exact issues rather than accepting same-net exceptions. Pipeline7's
+high-density and repair constraint propagation is under investigation.
+The first diagnostic implementation incorrectly treated opposite route
+traversals as different via definitions; its rejection is retained and the
+comparison now requires identical physical diameters. A second rejection
+shows partial router routes lack consistent emitted layer-span records;
+this diagnostic does not qualify spans. Final full-artifact span checks remain
+mandatory. Source/import geometry and routing constraints are unchanged.
+
+
+Native38's input group completes with zero solver errors in1,383.0s and
+133 accumulated traces. Protection9 is now routing. All120 preceding traces
+remain unchanged, including the three rejected same-net drill gaps.
+An isolated source candidate introduces native fanout-phase pcbTracePaths,
+covering D3.cathode,TP1.pin1 and R57.pin2 before quiet/interface routing.
+Canonical source and its existing saved-fanout regression confirm that the
+native phase continues from the supplied exit layers. Proposed drills have
+0.574995,0.559997 and0.393398mm clearance to every component pad, respectively.
+The first two planning variants conflict with later automatically routed
+wires and remain rejected evidence. Planning against the57 traces actually
+preceding the proposed phase passes: minimum foreign copper gaps
+0.389510,2.530978 and0.865418mm. Later circuitry must regenerate around the
+reservations; its previous paths are not accepted as compatible. An independent
+candidate preroute build passes with140 purchased/152 PCB components,zero
+traces/errors, and every compared physical record plus all8 sheets unchanged.
+CandidateSHA157a0895ff571e9b448fd539ab94ad4d6d9b05bfcfc4cfe27add45484cdf6950.
+This is source/placement planning only, not actual routed-copper validation.
+The active native38 source and its index output are preserved unchanged.
+
+---
+
+# A22 revision37 — route analog circuitry in five functional groups
+
+Native36 confirms the core fix: PD and MCU breakouts use Pipeline9 and pass;
+Pipeline7 routes VCC3V3, four quiet nets and all19 interface nets with zero
+solver errors. The combined44-net analog phase then hits an iteration limit.
+Rejected artifact740df6edfece5787de1d4dace3e820b338a9e43b668754fcf11d1e4d5baaecd2
+contains zero final traces and is retained. Source inspection shows Pipeline7
+caps the failing subsolver effort at1, so increasing board effort cannot give
+that stage more iterations.
+
+Native phases now divide those44 analog nets into buck7, input8, protection9,
+PWM/direction11 and dump9. Power and native ground fanout follow these groups.
+This is explicit supported route ordering; component geometry, imports,
+connectivity, clearance and drill constraints are unchanged. Every signal must
+belong to a declared group; unknown names throw. Complete fresh prerequisite
+checks are in progress before native37 routing.
+
+Automatic approval review rejected a Pipeline5 diagnostic because its external
+cache may upload private routing geometry/connectivity. Source inspection
+confirms POST requests to hd-cache.tscircuit.com/solve. That diagnostic was not
+executed. Work continues with the fully local Pipeline7; no rejected transfer
+or network workaround is used. Optional reusable-path serialization warnings
+from native36 remain preserved; no rejected copper is accepted.
+
+---
+
+# A22 revision36 — honor the breakout router version in canonical core
+
+Revision35's native build ignored both breakout Pipeline9 selections and used
+board Pipeline7 for the MCU escape. It failed with the coincident-via endpoint
+repair error; rejected artifact
+f5a478e1da7e162d81846efa6f503a4ac90665f5b49e661ce3f1843aed4590cc
+has zero final traces. The failure remains preserved.
+
+The canonical core routing-phase planner now carries each breakout's existing
+autorouterVersion property through to solver selection. Omitted values retain
+board inheritance. The regression fails before the fix (Pipeline7 twice) and
+passes after it (Pipeline9 breakout, Pipeline7 remaining board). Its actual
+PCB snapshot was inspected. Core formatting, TypeScript, build and package
+binding pass;71 affected test files pass in fresh processes with unchanged
+assertions/snapshots/default deadlines. Three existing skips remain explicit.
+The two shared-runner attempts retain their sandbox socket/timing failures;
+no assertions or timeouts were relaxed. Source patch, text archives, test logs
+and the exact task-local core2090 tarball are retained in evidence/tooling.
+Built, packed and installed JavaScript are byte-identical.
+
+Fresh complete unrouted artifact
+c7a20a566d226d751eb28f4525571bc8c4c06b7ab684049167556b8890d6ea4a
+passes all7 direct schema/import/connectivity/placement/target/artwork/PnP
+checks. All31 physical/schematic record types and8 A4 sheets are unchanged
+from revision35. No supplier import or component definition was edited.
+An initial board typecheck correctly rejected external core evidence copied
+as compilable TS; those archives now use text extensions, with the failed
+log preserved. Board formatting/TypeScript and38 tests/460 assertions pass.
+All5 native prerequisites pass with successful exits and zero reported errors;
+schematic-placement emits no diagnostics, complemented by the full-artifact
+schematic audits. All129 source/dependency/import hashes remain unchanged.
+Native routing36 is authorized and in progress.
+
+On unchanged revision34 inputs, Pipeline7 additionally solves VCC3V3 in28.576s
+and the four quiet nets in97.093s, complementing the78.198s interface result.
+These remain diagnostic-only evidence. Actual full-board copper, drills,
+ground, thermal paths, snapshots and fabrication remain in progress. Physical
+qualification remains pending. All58 active supplier listings were refreshed
+2026-10-04; MCU and test contacts have explicit pre-order constraints.
+
+---
+
+# A22 revision35 — explicit native Pipeline 7 board routing
+
+The unchanged revision34 interface input is rejected by Pipeline9 static
+reachability: the VOLTAGE_BIT12 breakout endpoint lies in a narrow bottom
+region with zero exits. The native build and independent2x reproduction fail;
+no resulting copper is accepted. On that exact input
+430da9ac8535cdaec3bc60b4aff8c7ce6c66e25ac944882f504930c578611197,
+the supported native Pipeline7 solves in78.198s with zero solver errors,
+including its geometry improvement stages. Pipeline5 independently solves
+in42.790s. These are diagnostic results, not complete board validation.
+
+The board now explicitly selects beta_pipeline7. Both previously validated
+IC breakouts explicitly retain beta_pipeline9. This is a supported routing
+configuration, not an automatic fallback; trace, via, drill and clearance
+requirements are unchanged. Official supplier imports are untouched.
+Fresh unrouted artifact
+e42521568233e50d703c623b787a6d38c710bc47d5553dae9edbefa36afff124
+has140 purchased/152 PCB components,12 imported EP vias and zero PCB traces.
+All7 direct prerequisite audits, formatting and TypeScript pass. Physical
+records and all8 sheets are byte-identical to revision34. All5 native
+prerequisite gates pass, with zero reported errors and successful exits;
+schematic-placement emits no diagnostics. The complete-artifact schematic
+audits complement that CLI result. Routing35 is authorized. All38 board tests
+pass with460 assertions; power report and reproducible bring-up firmware
+link also pass, with the exact earlier ELF/BIN hashes reproduced.
+Actual full-board copper, ground, drills, power, snapshots and fabrication
+remain in progress. Hardware qualification remains pending.
+
+Assembly availability refreshed2026-10-04 for all58 active codes/140 parts,
+with exact visible JLCPCB rows and positive displayed stock. C529330 remains
+pre-order/minimum8/estimated13days; C2906768 pre-order/minimum33/manual fit.
+BOM.csv and assembly instructions record these constraints. The prior stock
+report and BOM are preserved. No import or board connection changed.
+
+---
+
+# A22 revision34 — reserve native reset and ADC paths before logic supply
+
+Native33 loads the saved ADC tree and routes VCC3V3, then fails the static
+reachability precheck for the reset breakout-to-C32 connection. Its exact
+failed artifact72b31b73e672b4ef693e645300e54ac96c013dd6608ec8fb50bf79c23b078c3b
+contains no final traces. Independent unchanged-input2x diagnosis reproduces
+that failure in2.180s; both failures remain preserved.
+
+Two supported native0.20mm reset paths now join C32.pin1 and TP3.pin1 to
+the existing U11.pin6 top breakout endpoint before supply routing. They do
+not add vias or alter components, supplier models, connectivity or DRC rules.
+The exported native path schema passes. Independent planning against exact
+component/ADC reservations and MCU fanouts measures0.350001mm foreign-pad
+clearance,0.459171mm existing foreign-wire clearance and0.710616mm ADC-via
+centre-to-all-pad clearance, with zero issues. The supply must reroute around
+these fixed paths; this planning result is not accepted emitted copper.
+
+Fresh unrouted artifact9fdd295d1d923b7afdbbf15ecb4e9a86d70784a87f57568b446cd09056892bea
+has140 purchased/152 PCB components,12 unchanged full-stack imported EP
+vias and zero PCB traces. Strict schema, all supplier transforms, derived
+net isolation, full placement,31 breakout targets,163 labels and129 automatic
+assembly rotations pass. Geometry equivalence confirms unchanged reviewed
+bodies, pads, barrels, artwork and eight A4 sheets. Formatting and TypeScript
+pass. All five required native prerequisites pass with zero errors. Native
+routing34 is authorized. Actual copper, ground, drills, power, snapshots,
+fabrication and hardware qualification remain pending.
+
+Publication of exact Git73ab2a5 failed:818/828 files acknowledged, ten explicit
+network timeouts, zero source-hash changes. The release is not marked ready.
+The current workspace instructions require public destinations and matching
+Circuit JSON. A signed-out browser check on2026-10-04 shows the known package
+as404/may be private. Earlier private publications do not satisfy that rule;
+GitHub remains blocked by the missing board repository/branch. Independent
+board implementation continues.
+
+---
+
+# A22 revision33 — native ADC VBUS tree, prerequisites in progress
+
+Native32 routes VCC3V3 and reset, then rejects ADC_VBUS/source_net_21_mst2
+in the5-net sensing phase. Exact failed artifact
+ ae690394503613b344e483be0219ee0ff479fad56ec917dce90f1787211b77bb
+has no final PCB traces; failure and rejected regional output are preserved.
+
+Three supported saved native0.20mm paths now connect the actual R60.pin2,
+R61.pin1 and C33.pin1 supplier pads and the U11.pin7 bottom breakout target.
+One0.60/0.30mm ordinary through via is planned at(-12,-6), outside all pads.
+The tree is reserved in phase0 alongside the7 existing buck/motor paths;
+remaining4 quiet nets stay in phase3. Components, imported models, net
+connectivity and DRC rules are unchanged. This is routing intent, not accepted
+copper. Independent planning uses the exported native paths and exact32
+pads:zero foreign-pad clearance issues; planned via centre gap0.710616mm
+exceeds0.50mm. Fresh artifacte9cda36a6134a2d2f05eb1444dd15d73e0c24ae8cdc46ecccf4dda15ceb7ea53
+passes strict schema,140 supplier transforms/exact12 EP vias, derived-net
+isolation, full140/152 placement,31 targets/163 labels and129 automatic
+rotations. Formatting/TypeScript and all five native prerequisites pass with
+zero errors. Body/pad/barrel/schematic geometry is unchanged. Native33 routing
+is authorized; all actual copper/drill/ground/power/fabrication gates remain pending.
+
+---
+
+# A22 revision32 — functional routing phases, prerequisites in progress
+
+Native31 passes every local IC escape, reset and5 quiet nets. The69-network
+phase rejects its high-density/regional candidates; exact failed artifact
+25616b68b83d243844bf02d8d8aed54923811d556fd4dc457ecc189184ac01c0
+has no final PCB traces. Independent2x diagnosis reproduces failure in11.993s,
+with VCC3V3,VM and selector/interface paths competing beside the MCU and
+capacitors. All4 layers were available; no failed candidate is accepted.
+
+Supported phases now reserve VCC3V3 first, reset second,5 quiet nets third,
+19 interface nets fourth,44 analog signals fifth and5 remaining power nets
+sixth. GND's phase7 matches the explicit native plane-fanout phase, avoiding
+an additional shared ground-trunk stage. Physical ground continuity still
+must pass the independent all4-layer island/barrel audit on actual copper.
+The four-layer stackup, all components/pads/breakouts, connectivity and
+trace/drill/edge rules remain unchanged. Fresh artifact
+60ff10c94b0ce3f99642b0c0237903d5299b6a67b280702d1e0d57fb6af0d1d8
+passes strict schema,140 supplier transforms/exact12 EP vias, derived-net
+isolation, full140/152 placement,31 targets/163 labels and129 automatic
+rotations. Geometry equivalence preserves full-stack barrels, reviewed
+physical bodies and8 A4 sheets. Formatting/TypeScript and all five native
+prerequisites pass with zero errors. Native32 routing is authorized; actual
+copper, ground continuity, fabrication and physical gates remain pending.
+
+---
+
 # A22 revision31 — four-layer stackup, prerequisites in progress
 
 Native30 solves reset alone and all5 other quiet nets. Main69-net routing

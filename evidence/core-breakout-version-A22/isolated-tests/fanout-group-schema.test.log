@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-group-schema.test.tsx:
+(pass) transparent fanout groups emit valid enclosing-subcircuit associations and optional anchors [315.14ms]
+
+ 1 pass
+ 0 fail
+ 72 expect() calls
+Ran 1 test across 1 file. [707.00ms]

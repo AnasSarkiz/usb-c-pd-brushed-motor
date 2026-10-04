@@ -1,0 +1,12 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-dogbone-solver-events.test.tsx:
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `footprint`. It was passed a child from AM3352. See https://react.dev/link/warning-keys for more information.
+(pass) dogbone solver events can replay and step the AM3352 solve [2882.32ms]
+
+ 1 pass
+ 0 fail
+ 686 expect() calls
+Ran 1 test across 1 file. [3.47s]

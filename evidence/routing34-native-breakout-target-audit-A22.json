@@ -1,0 +1,257 @@
+{
+  "minimumBottomTargetPitchMm": 1.0700467279516328,
+  "bottomTargets": 18,
+  "artifactSha256": "9fdd295d1d923b7afdbbf15ecb4e9a86d70784a87f57568b446cd09056892bea",
+  "targets": [
+    {
+      "reference": "U1",
+      "pin": "CC1DB",
+      "xMm": -26.25,
+      "yMm": 1.2,
+      "minimumPadGapMm": 0.701536927255411,
+      "layer": "top"
+    },
+    {
+      "reference": "U1",
+      "pin": "CC1",
+      "xMm": -25.4,
+      "yMm": 1.2,
+      "minimumPadGapMm": 0.5007606136867511,
+      "layer": "top"
+    },
+    {
+      "reference": "U1",
+      "pin": "CC2",
+      "xMm": -24.1,
+      "yMm": 1.1,
+      "minimumPadGapMm": 0.551818652747304,
+      "layer": "top"
+    },
+    {
+      "reference": "U1",
+      "pin": "CC2DB",
+      "xMm": -23.25,
+      "yMm": 1.1,
+      "minimumPadGapMm": 0.5572048910995788,
+      "layer": "top"
+    },
+    {
+      "reference": "U1",
+      "pin": "RESET",
+      "xMm": -22.4,
+      "yMm": 1.2,
+      "minimumPadGapMm": 0.8056437284886723,
+      "layer": "top"
+    },
+    {
+      "reference": "U1",
+      "pin": "SCL",
+      "xMm": -21.5,
+      "yMm": 2.3,
+      "minimumPadGapMm": 0.6838111441802104,
+      "layer": "top"
+    },
+    {
+      "reference": "U1",
+      "pin": "SDA",
+      "xMm": -21.5,
+      "yMm": 3.15,
+      "minimumPadGapMm": 0.5572054610370653,
+      "layer": "top"
+    },
+    {
+      "reference": "U1",
+      "pin": "VBUS_EN_SNK",
+      "xMm": -24.65,
+      "yMm": 7.5,
+      "minimumPadGapMm": 0.9249942999999998,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U1",
+      "pin": "VBUS_VS_DISCH",
+      "xMm": -25.65,
+      "yMm": 6.9,
+      "minimumPadGapMm": 0.5219933625430982,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U1",
+      "pin": "ALERT",
+      "xMm": -27.3,
+      "yMm": 5.8,
+      "minimumPadGapMm": 0.7424272147774865,
+      "layer": "top"
+    },
+    {
+      "reference": "U1",
+      "pin": "VREG_1V2",
+      "xMm": -27.3,
+      "yMm": 4.6,
+      "minimumPadGapMm": 0.5661362965792515,
+      "layer": "top"
+    },
+    {
+      "reference": "U1",
+      "pin": "VREG_2V7",
+      "xMm": -27.3,
+      "yMm": 2.9,
+      "minimumPadGapMm": 0.5661090184583021,
+      "layer": "top"
+    },
+    {
+      "reference": "U1",
+      "pin": "VDD",
+      "xMm": -27.3,
+      "yMm": 2.05,
+      "minimumPadGapMm": 0.8429548058281512,
+      "layer": "top"
+    },
+    {
+      "reference": "U11",
+      "pin": "PB7",
+      "xMm": -15.65,
+      "yMm": -8.925,
+      "minimumPadGapMm": 0.6080339033682693,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PB9",
+      "xMm": -14.8,
+      "yMm": -8.275,
+      "minimumPadGapMm": 0.7199995999999995,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PC15_OSC32_OUT",
+      "xMm": -15.65,
+      "yMm": -7.625,
+      "minimumPadGapMm": 0.6080339069601743,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "VDDA",
+      "xMm": -15.65,
+      "yMm": -6.975,
+      "minimumPadGapMm": 0.6080339092396525,
+      "layer": "top"
+    },
+    {
+      "reference": "U11",
+      "pin": "NRST",
+      "xMm": -14.8,
+      "yMm": -5.675,
+      "minimumPadGapMm": 0.8750009,
+      "layer": "top"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA0",
+      "xMm": -15.65,
+      "yMm": -5.025,
+      "minimumPadGapMm": 0.6080339092396525,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA1",
+      "xMm": -14.8,
+      "yMm": -4.375,
+      "minimumPadGapMm": 1.4580339029025746,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA2",
+      "xMm": -15.65,
+      "yMm": -3.725,
+      "minimumPadGapMm": 0.6080339050030467,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA3",
+      "xMm": -14.8,
+      "yMm": -3.075,
+      "minimumPadGapMm": 1.458033901404667,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA4",
+      "xMm": -24.35,
+      "yMm": -3.075,
+      "minimumPadGapMm": 0.6080339033682711,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA5",
+      "xMm": -25.2,
+      "yMm": -3.725,
+      "minimumPadGapMm": 1.1850047000000041,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA6",
+      "xMm": -24.35,
+      "yMm": -4.375,
+      "minimumPadGapMm": 0.6080339069601761,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA7",
+      "xMm": -25.2,
+      "yMm": -5.025,
+      "minimumPadGapMm": 1.4580339038531698,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PB0",
+      "xMm": -24.35,
+      "yMm": -5.675,
+      "minimumPadGapMm": 0.6080339118414828,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA11_PA9_",
+      "xMm": -25.2,
+      "yMm": -6.325,
+      "minimumPadGapMm": 1.1850047000000041,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA12_PA10_",
+      "xMm": -24.35,
+      "yMm": -6.975,
+      "minimumPadGapMm": 0.6080339092396543,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA13",
+      "xMm": -25.2,
+      "yMm": -7.625,
+      "minimumPadGapMm": 1.1850047000000041,
+      "layer": "bottom"
+    },
+    {
+      "reference": "U11",
+      "pin": "PA15",
+      "xMm": -24.35,
+      "yMm": -8.275,
+      "minimumPadGapMm": 0.6080339050030484,
+      "layer": "bottom"
+    }
+  ],
+  "issues": [],
+  "basis": "Planning only; does not prove native routes, actual vias, current capacity or ground-plane connectivity."
+}

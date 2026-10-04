@@ -1,0 +1,19 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 3,
+  "phaseOrdinal": 10,
+  "phaseCount": 13,
+  "elapsedMs": 15056,
+  "connectionCount": 69,
+  "obstacleCount": 504,
+  "previousTraceCount": 49,
+  "autorouterName": "tscircuit",
+  "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "effort": 2,
+  "cacheStatus": "miss",
+  "cacheKey": "routes:core@0.0.2089:solver:0f3db71771b19459:srj:ffb6eb4178f36cb9",
+  "error": {
+    "message": "Pipeline9 primary high-density routing failed: B01 failed: Convergence failure: exceeded MAX_RIPS 200; regional fallback failed: Pipeline9 regional force-improve output failed its candidate validator (capacity-autorouter@0.0.958)"
+  }
+}

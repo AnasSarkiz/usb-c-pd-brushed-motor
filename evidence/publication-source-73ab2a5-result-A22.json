@@ -1,0 +1,14 @@
+{
+  "sourceCommit": "73ab2a5547b04424a728e3a21ffe20ed9e0c6709",
+  "publishedPackage": null,
+  "expectedVersion": "0.0.1-a22-layout31-73ab2a5-c6b58e71",
+  "acknowledgedFiles": 818,
+  "expectedFiles": 828,
+  "exitCode": 1,
+  "postPublicationSourceMismatches": [],
+  "sourceFilesMatchedGit": true,
+  "cloudBuildVerified": false,
+  "GitHubRemote": null,
+  "logSha256": "48c150f0714f44cc84f7d6f559c82766d9d207d49821f6c9b630dac42fdb58c0",
+  "status": "Private WIP prototype; full routing unfinished; no fabrication approval"
+}

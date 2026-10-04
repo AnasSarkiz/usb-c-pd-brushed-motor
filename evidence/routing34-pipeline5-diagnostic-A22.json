@@ -1,0 +1,28 @@
+{
+  "inputSha256": "430da9ac8535cdaec3bc60b4aff8c7ce6c66e25ac944882f504930c578611197",
+  "diagnosticOnly": true,
+  "pipeline": "5",
+  "solved": true,
+  "failed": false,
+  "error": null,
+  "elapsedMs": 42790,
+  "timings": {
+    "preprocessSimpleRouteJsonSolver": 10.666291999999999,
+    "escapeViaLocationSolver": 6.369999999999976,
+    "netToPointPairsSolver": 0.8339579999999955,
+    "nodeSolver": 598.839667,
+    "nodeDimensionSubdivisionSolver": 16.60704199999998,
+    "edgeSolver": 547.3685409999999,
+    "availableSegmentPointSolver": 38.55158400000005,
+    "necessaryCrampedPortPointSolver": 56.83758399999988,
+    "portPointPathingSolver": 594.6238330000001,
+    "uniformPortDistributionSolver": 25.871708000000126,
+    "highDensityRouteSolver": 856.3616250000014,
+    "highDensityForceImproveSolver": 344.1063749999994,
+    "highDensityRepairSolver": 86.41641700000037,
+    "highDensityStitchSolver": 13.788040999999794,
+    "traceSimplificationSolver": 416.2282919999998,
+    "traceWidthSolver": 142.29724999999962,
+    "globalDrcForceImproveSolver": 24621.225667000002
+  }
+}

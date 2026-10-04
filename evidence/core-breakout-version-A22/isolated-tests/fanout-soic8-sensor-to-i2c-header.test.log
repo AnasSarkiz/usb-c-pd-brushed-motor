@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-soic8-sensor-to-i2c-header.test.tsx:
+(pass) fanout routes soic8 sensor support parts to an i2c header without fanoutpoints [1472.20ms]
+
+ 1 pass
+ 0 fail
+ 7 expect() calls
+Ran 1 test across 1 file. [2.11s]

@@ -1,0 +1,22 @@
+bun test v1.4.2 (744846f84)
+
+tests/pipeline7-configured-copper-clearance.test.ts:
+55 |     srjWithPointPairs: srj,
+56 |     originalSrj: srj,
+57 |   })
+58 |   const result = evaluator({ traces: [], routes })
+59 |   if (Array.isArray(result)) throw new Error("Expected centered DRC result")
+60 |   expect(result.errors).toHaveLength(1)
+                             ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 1
+Received length: 0
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/autorouter-manufacturing-A22/tests/pipeline7-configured-copper-clearance.test.ts:60:25)
+(fail) Pipeline7 repair honors explicit copper clearance above its legacy minimum [1.11ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [970.00ms]

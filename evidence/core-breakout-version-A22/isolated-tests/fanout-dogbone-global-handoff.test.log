@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanout-dogbone-global-handoff.test.tsx:
+(pass) global routing continues from a local dogbone via [1024.14ms]
+
+ 1 pass
+ 0 fail
+ 19 expect() calls
+Ran 1 test across 1 file. [2.22s]

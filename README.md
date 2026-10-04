@@ -11,8 +11,11 @@ JLCPCB imports and four3.2 mm mounting holes. Revision31 selects
 JLC04161H-7628 with35um outer/15.2um inner copper and ordinary through vias;
 see docs/STACKUP-A31.md. Prior placement and8 A4 reviews remain evidence for
 unchanged bodies/pads/sheets. Fresh layer-span/import/connectivity/placement
-audits, all5 native prerequisites, formatting/TypeScript and38 board tests pass.
-Actual routed copper and manufacturing checks remain pending. No physical
+audits, all5 native prerequisites, formatting/TypeScript and41 board tests pass.
+Canonical autorouter959-a39 now carries the configured clearance and same-net
+via policy into repair; exact built/installed artifacts and regressions are
+recorded. Its repair dependency retains one independently reproduced upstream
+floating-coordinate test failure. Actual routed copper and manufacturing checks remain pending. No physical
 hardware or continuous-current rating is verified.
 
 Run every command from this directory with Bun1.4.2 (pinned in package.json).
@@ -21,12 +24,19 @@ put its directory first in PATH for this task. Bun1.3.9 exhibits a native routin
 regression that passes with source-identical1.4.2. Install with
 `bun install --frozen-lockfile`.
 Use `bun run format:check`, `bun run typecheck`, `bun run test`, `bun run power:report`
-and `bun run build`. Core2089 preserves independent symbol terminals; its source regression suite
-passes146 tests/2638 assertions (four existing skips). The current board audit
+and `bun run build`. Task-local core2090 preserves independent symbol terminals
+and now honors each breakout's router version. Its71 affected routing test files
+pass71 tests/2200 assertions with three existing skips; the earlier core2089
+146-test isolation suite remains historical evidence for unchanged behavior. The current board audit
 also checks derived internal links against distinct intended nets.
 Core/props source fixes are reproducible tarballs with patches,
 upstream bases and regression evidence; no installed dependency or supplier part
 was patched. Use explicit A22 audit configurations to avoid overwriting history.
+The isolated Python manufacturing-review environment is
+`tooling/power-review-venv`; its pinned packages are recorded in
+`evidence/manufacturing-python-requirements-A22.txt`. It includes Shapely for
+physical copper/drill checks and Gerbonara for independent Gerber/Excellon
+parsing. Final exports use absolute output paths and retain parser diagnostics.
 
 - `VALIDATION.md`: current gates and exact evidence.
 - `docs/BOM.csv`:140 purchased components/58 supplier codes and dated assembly stock.
@@ -55,6 +65,11 @@ No fabrication order has been placed. This independent Git main has no remote;
 GitHub publication remains blocked by the missing repository/branch. The known
 private tscircuit package has the source milestone release
 `0.0.1-a22-adc-source-5a015d5-verified-ffe2435d` (565 files acknowledged; source hashes match Git); its server build is unverified. Local work continues.
+Current workspace publication requires public destinations and matching
+Circuit JSON. The known package's signed-out page returns404; its earlier
+private release does not satisfy that rule. The subsequent73ab2a5 upload
+failed on ten network timeouts and was never marked ready. Both limitations
+remain explicit while local fabrication preparation continues.
 
 ## Historical implementation notes
 

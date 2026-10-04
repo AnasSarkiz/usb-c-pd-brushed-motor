@@ -1,0 +1,317 @@
+$ tsc --noEmit
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1,50): error TS2307: Cannot find module './get-autorouting-phase-pcb-trace-paths' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(27,19): error TS7016: Could not find a declaration file for module 'debug'. '/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/debug/src/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/debug` if it exists or add a new declaration (.d.ts) file containing `declare module 'debug';`
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(29,33): error TS2307: Cannot find module 'lib/utils/autorouting/with-fixed-traces' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(30,53): error TS2307: Cannot find module 'lib/utils/schematic/assign-schematic-net-label-superscripts' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(32,41): error TS2307: Cannot find module 'lib/components/base-components/PrimitiveComponent' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(33,43): error TS2307: Cannot find module 'lib/components/base-components/is-assembly-device-container' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(34,33): error TS2307: Cannot find module 'lib/errors/AutorouterError' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(35,40): error TS2307: Cannot find module 'lib/utils/autorouting/CapacityMeshAutorouter' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(36,34): error TS2307: Cannot find module 'lib/utils/autorouting/FanoutAutorouter' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(37,45): error TS2307: Cannot find module 'lib/utils/autorouting/GenericLocalAutorouter' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(42,8): error TS2307: Cannot find module 'lib/utils/autorouting/SimpleRouteJson' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(43,42): error TS2307: Cannot find module 'lib/utils/autorouting/compare-pcb-vias' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(44,59): error TS2307: Cannot find module 'lib/utils/autorouting/createSourceTracesFromOffboardConnections' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(48,8): error TS2307: Cannot find module 'lib/utils/autorouting/get-circuit-json-pcb-trace-route' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(49,47): error TS2307: Cannot find module 'lib/utils/autorouting/get-fanout-boundary-point-spacing' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(50,42): error TS2307: Cannot find module 'lib/utils/autorouting/get-pcb-component-names-by-id' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(56,8): error TS2307: Cannot find module 'lib/utils/autorouting/getPresetAutoroutingConfig' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(57,43): error TS2307: Cannot find module 'lib/utils/autorouting/local-autorouter-strategies' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(58,63): error TS2307: Cannot find module 'lib/utils/autorouting/should-skip-autorouting-because-of-placement-errors' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(59,69): error TS2307: Cannot find module 'lib/utils/autorouting/should-skip-autorouting-because-of-trace-length-violations' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(60,42): error TS2307: Cannot find module 'lib/utils/get-bounds-of-pcb-components' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(61,40): error TS2307: Cannot find module 'lib/utils/getViaSpanLayers' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(65,8): error TS2307: Cannot find module 'lib/utils/gnd-power-net-regex' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(66,39): error TS2307: Cannot find module 'lib/utils/pcb-trace-route-point-utils' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(67,40): error TS2307: Cannot find module 'lib/utils/pcbStyle/getViaDiameterDefaults' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(68,51): error TS2307: Cannot find module 'lib/utils/public-exports' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(69,38): error TS2307: Cannot find module 'lib/utils/reverse-pcb-trace-route' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(70,44): error TS2307: Cannot find module 'lib/utils/schematic/getSizeOfSidesFromPortArrangement' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(72,33): error TS2307: Cannot find module '../../base-components/NormalComponent/NormalComponent' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(73,22): error TS2307: Cannot find module '../Port/Port' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(74,23): error TS2307: Cannot find module '../Trace/Trace' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(75,27): error TS2307: Cannot find module '../TraceHint' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(77,74): error TS2307: Cannot find module './Group_doInitialAssignSchematicSheetToConnectedComponents' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(78,59): error TS2307: Cannot find module './Group_doInitialPcbCalcPlacementResolution' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(79,60): error TS2307: Cannot find module './Group_doInitialPcbComponentAnchorAlignment' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(80,46): error TS2307: Cannot find module './Group_doInitialPcbLayoutFlex' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(81,46): error TS2307: Cannot find module './Group_doInitialPcbLayoutGrid' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(82,46): error TS2307: Cannot find module './Group_doInitialPcbLayoutPack/Group_doInitialPcbLayoutPack' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(86,8): error TS2307: Cannot find module './Group_doInitialSchematicBoxComponentRender' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(87,52): error TS2307: Cannot find module './Group_doInitialSchematicLayoutFlex' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(88,52): error TS2307: Cannot find module './Group_doInitialSchematicLayoutGrid' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(89,58): error TS2307: Cannot find module './Group_doInitialSchematicLayoutMatchAdapt' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(90,57): error TS2307: Cannot find module './Group_doInitialSchematicLayoutMatchPack' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(91,56): error TS2307: Cannot find module './Group_doInitialSchematicLayoutSections' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(95,8): error TS2307: Cannot find module './Group_doInitialSchematicSheetRender' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(96,53): error TS2307: Cannot find module './Group_doInitialSchematicTraceRender/Group_doInitialSchematicTraceRender' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(97,60): error TS2307: Cannot find module './Group_doInitialSimulationSpiceEngineRender' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(98,60): error TS2307: Cannot find module './Group_doInitialSourceAddConnectivityMapKey' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(99,72): error TS2307: Cannot find module './Group_doInitialStandaloneSubcircuitPcbDesignRuleChecks' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(100,43): error TS2307: Cannot find module './Group_getFanoutPourNetMap' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(106,8): error TS2307: Cannot find module './Group_localAutoroutingCache' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(112,8): error TS2307: Cannot find module './Group_phasedAutoroutingUtils' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(113,60): error TS2307: Cannot find module './Group_syncFanoutExitsWithGlobalConnections' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(114,34): error TS2307: Cannot find module './Subcircuit/ISubcircuit' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(118,8): error TS2307: Cannot find module './add-port-ids-to-traces-at-jumper-pads' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(119,59): error TS2307: Cannot find module './claim-srj-assignable-pcb-vias-traversed-by-route' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(120,51): error TS2307: Cannot find module './find-fanout-phase-separation-conflict' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(121,68): error TS2307: Cannot find module './get-accumulated-pcb-traces-with-stage-output-replacements' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(122,48): error TS2307: Cannot find module './get-source-trace-id-for-routed-trace' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(123,41): error TS2307: Cannot find module './insert-autoplaced-jumpers' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(129,8): error TS2307: Cannot find module './region-replacement' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(130,48): error TS2307: Cannot find module './split-pcb-traces-on-jumper-segments' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(131,49): error TS2307: Cannot find module './utils/computeCenterFromAnchorPosition' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(142,26): error TS2339: Property 'root' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(156,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(157,11): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(171,11): error TS2339: Property 'selectAll' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(239,25): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(267,30): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(300,12): error TS4112: This member cannot have an 'override' modifier because its containing class 'Group<Props>' does not extend another class.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(303,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(304,13): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(307,10): error TS7006: Parameter 'pin' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(316,15): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(325,29): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(385,12): error TS4112: This member cannot have an 'override' modifier because its containing class 'Group<Props>' does not extend another class.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(393,15): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(394,15): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(397,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(399,33): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(400,10): error TS7006: Parameter 'child' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(410,12): error TS2339: Property 'add' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(420,12): error TS4112: This member cannot have an 'override' modifier because its containing class 'Group<Props>' does not extend another class.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(425,12): error TS4112: This member cannot have an 'override' modifier because its containing class 'Group<Props>' does not extend another class.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(430,12): error TS4112: This member cannot have an 'override' modifier because its containing class 'Group<Props>' does not extend another class.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(432,15): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(434,39): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(435,16): error TS7006: Parameter 'child' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(436,13): error TS7006: Parameter 'port' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(437,16): error TS7006: Parameter 'pinNumber' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(443,12): error TS4112: This member cannot have an 'override' modifier because its containing class 'Group<Props>' does not extend another class.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(444,15): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(451,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(453,20): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(454,13): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(457,18): error TS2339: Property 'name' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(458,27): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(461,10): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(462,14): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(471,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(474,30): error TS2339: Property 'getDescendants' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(475,54): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(477,31): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(481,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(488,33): error TS2339: Property 'source_component_id' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(497,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(498,30): error TS2339: Property 'parent' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(500,35): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(505,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(508,40): error TS2339: Property 'parent' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(509,39): error TS2339: Property 'parent' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(511,33): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(517,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(518,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(519,13): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(530,22): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(531,33): error TS2339: Property '_getGlobalPcbPositionBeforeLayout' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(535,27): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(536,49): error TS2339: Property 'getSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(537,18): error TS2339: Property 'name' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(542,29): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(552,30): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(565,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(566,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(567,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(573,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(574,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(607,52): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(621,14): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(621,35): error TS2339: Property 'isRoutingDirective' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(642,12): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(643,12): error TS2339: Property 'isRoutingDirective' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(655,35): error TS2339: Property '_getGlobalPcbPositionBeforeLayout' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(659,19): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(698,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(728,13): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(729,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(733,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(740,12): error TS2339: Property 'add' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(780,42): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(782,30): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<ZodDiscriminatedUnion<"subcircuit", [ZodObject<{ pcbX: ZodOptional<ZodUnion<[ZodString, ZodEffects<ZodUnion<[ZodString, ZodNumber]>, number, string | number>]>>; ... 34 more ...; pcbRelative: ZodOptional<...>; } & { ...; } & { ...; }, "strip", ZodTypeAny, { ...; }, { ...; }>, ZodObject<...>]>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(789,16): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(818,18): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(827,20): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(833,18): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(842,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(844,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(862,42): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(863,8): error TS7006: Parameter 'element' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(872,16): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(906,14): error TS2339: Property '_markDirty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(924,12): error TS2339: Property '_markDirty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(936,30): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(986,14): error TS2339: Property '_markDirty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1011,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1012,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1014,20): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1027,12): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1068,20): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1105,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1107,26): error TS7006: Parameter 'stage' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1107,33): error TS7006: Parameter 'phaseStageIndex' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1161,12): error TS7006: Parameter 'component' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1168,12): error TS7006: Parameter 'warning' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1218,18): error TS7006: Parameter 'point' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1219,15): error TS7006: Parameter 'point' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1245,12): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1290,12): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1292,36): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1338,52): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1350,51): error TS7006: Parameter 'name' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1363,12): error TS2339: Property 'getDescendants' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1365,12): error TS7006: Parameter 'child' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1370,15): error TS7006: Parameter 'trace' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1376,12): error TS7006: Parameter 'trace' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1380,15): error TS7006: Parameter 'trace' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1495,16): error TS7006: Parameter 'obstacle' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1498,14): error TS7006: Parameter 'obstacle' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1552,48): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1558,14): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1640,41): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1649,52): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1656,14): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1657,32): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1664,30): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1699,18): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1736,12): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1739,36): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1761,26): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1770,31): error TS7006: Parameter 'event' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1771,22): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1774,39): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1783,17): error TS7031: Binding element 'solverName' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1784,17): error TS7031: Binding element 'solverParams' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1785,17): error TS7031: Binding element 'solverConstructorArgs' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1787,22): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1792,39): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1803,48): error TS7006: Parameter 'event' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1804,32): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1808,45): error TS7006: Parameter 'event' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1810,28): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1817,44): error TS7006: Parameter 'event' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1818,18): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1820,42): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1865,18): error TS7006: Parameter 'point' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1928,19): error TS2339: Property 'selectAll' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1941,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(1945,38): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2026,29): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2034,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2037,38): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2067,10): error TS2339: Property '_markDirty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2074,12): error TS2339: Property '_queueAsyncEffect' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2078,12): error TS2339: Property '_queueAsyncEffect' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2086,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2087,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2089,12): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2090,12): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2099,18): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2105,16): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2127,14): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2141,20): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2142,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2167,20): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2177,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2181,18): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2189,18): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2197,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2209,46): error TS7006: Parameter 'point' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2263,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2269,27): error TS2339: Property 'getInheritedMergedProperty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2271,33): error TS2339: Property '_getBoard' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2445,41): error TS7006: Parameter 'materializedPcbVia' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2459,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2460,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2461,13): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2463,27): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2464,27): error TS2339: Property 'getSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2465,18): error TS2339: Property 'name' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2466,20): error TS2339: Property '_getGlobalSchematicPositionBeforeLayout' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2470,29): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2480,30): error TS2339: Property 'getDescendants' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2481,54): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2492,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2511,45): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2511,60): error TS7006: Parameter 'child' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2537,14): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2542,36): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2543,8): error TS7006: Parameter 'c' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2590,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2591,27): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2625,50): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2626,8): error TS7006: Parameter 'count' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2626,15): error TS7006: Parameter 'child' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2655,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2659,27): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2660,26): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2666,34): error TS2339: Property 'parent' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2672,19): error TS2339: Property '_getBoard' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2709,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2710,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2711,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2754,38): error TS2339: Property '_getGlobalSchematicPositionBeforeLayout' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2822,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2822,44): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2823,56): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2833,33): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2848,33): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2861,25): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2880,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2883,12): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2884,12): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2887,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2889,14): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2892,32): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2926,46): error TS2339: Property 'name' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2949,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2952,14): error TS2339: Property 'getTopLevelRenderable' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2953,46): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2961,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2962,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group.ts(2963,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(8,48): error TS2307: Cannot find module './get-saved-autorouting-phase-traces' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(9,44): error TS2307: Cannot find module 'lib/utils/autorouting/getPresetAutoroutingConfig' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(10,39): error TS2307: Cannot find module '../AutoroutingPhase' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(11,38): error TS2307: Cannot find module '../Breakout/get-saved-fanout-traces' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(12,31): error TS2307: Cannot find module '../Breakout/Breakout' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(13,31): error TS2307: Cannot find module '../BreakoutPoint' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(14,26): error TS2307: Cannot find module '../Bus' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(15,26): error TS2307: Cannot find module '../Net' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(16,27): error TS2307: Cannot find module '../Port' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(17,28): error TS2307: Cannot find module '../Trace/Trace' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(72,8): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(145,10): error TS7006: Parameter 'selector' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(165,35): error TS2339: Property 'selectAll' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(182,35): error TS2339: Property 'selectAll' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(256,24): error TS2339: Property 'selectAll' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(257,22): error TS2339: Property 'selectAll' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(258,23): error TS2339: Property 'selectAll' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(259,28): error TS2339: Property 'selectAll' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(260,53): error TS2339: Property 'isRoutingDirective' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(289,34): error TS2339: Property '_parsedProps' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(290,32): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(406,29): error TS2339: Property 'selectAll' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(415,61): error TS2339: Property 'root' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(428,8): error TS7006: Parameter 'child' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/Group_getRoutingPhasePlans.ts(533,18): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/GroupRoutingPhasePlan.ts(7,8): error TS2307: Cannot find module 'lib/utils/autorouting/SimpleRouteJson' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/GroupRoutingPhasePlan.ts(8,40): error TS2307: Cannot find module 'lib/utils/autorouting/autorouter-version' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/GroupRoutingPhasePlan.ts(9,39): error TS2307: Cannot find module '../AutoroutingPhase' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/GroupRoutingPhasePlan.ts(10,26): error TS2307: Cannot find module '../Net' or its corresponding type declarations.
+evidence/core-breakout-version-A22/lib/components/primitive-components/Group/GroupRoutingPhasePlan.ts(11,28): error TS2307: Cannot find module '../Trace/Trace' or its corresponding type declarations.
+evidence/core-breakout-version-A22/tests/features/breakout-autorouter-version.test.tsx(2,32): error TS2307: Cannot find module 'tests/fixtures/get-test-fixture' or its corresponding type declarations.
+evidence/core-breakout-version-A22/tests/features/breakout-autorouter-version.test.tsx(7,36): error TS7006: Parameter 'event' implicitly has an 'any' type.
+evidence/core-breakout-version-A22/tests/features/breakout-autorouter-version.test.tsx(34,25): error TS2551: Property 'toMatchPcbSnapshot' does not exist on type 'Matchers<any>'. Did you mean 'toMatchSnapshot'?

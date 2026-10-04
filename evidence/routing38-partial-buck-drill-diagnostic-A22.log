@@ -1,0 +1,39 @@
+{
+  "diagnosticOnly": true,
+  "traces": 120,
+  "ordinaryVias": 83,
+  "minimumDrillToAllPadMm": 0.15000099999999986,
+  "minimumOrdinaryDrillToOtherDrillMm": 0.3395886824407311,
+  "issues": [
+    {
+      "rule": "ordinary_drill_to_all_component_pads",
+      "trace": "source_net_16_mst0_0",
+      "viaCentreMm": [
+        -17.876,
+        7.866912207727412
+      ],
+      "pad": "pcb_smtpad_63",
+      "clearanceMm": 0.15099480000000295
+    },
+    {
+      "rule": "ordinary_drill_to_all_component_pads",
+      "trace": "source_net_30_0",
+      "viaCentreMm": [
+        -26.61502507613135,
+        -4.190335935200383
+      ],
+      "pad": "pcb_smtpad_153",
+      "clearanceMm": 0.15033263520038265
+    },
+    {
+      "rule": "ordinary_drill_to_all_component_pads",
+      "trace": "source_net_28_mst0_0",
+      "viaCentreMm": [
+        -7.799974200000001,
+        -0.5433973000000002
+      ],
+      "pad": "pcb_smtpad_120",
+      "clearanceMm": 0.15000099999999986
+    }
+  ]
+}

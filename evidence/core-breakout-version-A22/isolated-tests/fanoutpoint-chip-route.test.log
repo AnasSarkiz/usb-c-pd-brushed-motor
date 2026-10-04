@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/fanoutpoint-chip-route.test.tsx:
+(pass) fanout routes a chip pin through a fanoutpoint [1210.10ms]
+
+ 1 pass
+ 0 fail
+ 14 expect() calls
+Ran 1 test across 1 file. [2.31s]

@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-region-reroute.test.tsx:
+(pass) autoroutingphase can reroute middle components with a zigzag route [1273.98ms]
+
+ 1 pass
+ 0 fail
+ 26 expect() calls
+Ran 1 test across 1 file. [1.88s]

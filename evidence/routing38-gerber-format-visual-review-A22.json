@@ -1,0 +1,32 @@
+{
+  "revision": "A22 revision38",
+  "unroutedFormatProbeOnly": true,
+  "artifactSha256": "5600121e046098b3be6d245ab7ebd22658f404f26525c1680a2c6ea4c5c3f11c",
+  "inspected": [
+    {
+      "sourceGerberOrDrill": "F_Paste.gbr",
+      "sourceSha256": "14b6271ed675c98db611823d5ff6469cc50c10edc0310569259c8cab803e272b",
+      "png": ".cache/gerber-format-probe-unrouted38-A22/F_Paste.gbr-white.png",
+      "pngSha256": "68e7efba5eb1826a3dbea6da4cf45c84176172480c14ec3eca373ce88b5c9cbf"
+    },
+    {
+      "sourceGerberOrDrill": "F_SilkScreen.gbr",
+      "sourceSha256": "f17d0279da9f95e5756b90669c2624323bf679b21402da226f96cad6f7644816",
+      "png": ".cache/gerber-format-probe-unrouted38-A22/F_SilkScreen.gbr-white.png",
+      "pngSha256": "9387730345a19e974b9f2de89fff0b8648b85546a8997f7c16bd6634f7079dce"
+    },
+    {
+      "sourceGerberOrDrill": "drill-L1-L4.drl",
+      "sourceSha256": "1a6f7c56e002e2e08164fd3e83e64c74c910d69da7a626489224586c7a820557",
+      "png": ".cache/gerber-format-probe-unrouted38-A22/drill-L1-L4.drl-white.png",
+      "pngSha256": "72aee33b28ddfbe9e5994f7991fb4328982b1d4c768d7e1559fcfb2586b1410a"
+    }
+  ],
+  "findings": [
+    "Top paste leaves potentiometer/direction-switch/motor-terminal THT areas without paste apertures; untouched EP/SMT paste remains visible.",
+    "Native top silkscreen visibly labels USB-C PD input,5/9/12 selection,speed,FWD/OFF/REV,three LEDs,motor polarity and SWD/power test contacts.",
+    "Full-stack drill render visibly includes connector slots,three pot holes,three switch slots,two motor-terminal holes and12 EP holes; independent geometry comparison separately binds all source drills."
+  ],
+  "renderingCorrection": "Initial transparent PNGs were not suitable for inspection; native SVG geometry remains unchanged and the rasterizer now uses its supported white background option. Final routed manufacturing renders will use this same option.",
+  "status": "Limited format/mechanical visual review; no actual routed copper or final fabrication acceptance claimed"
+}

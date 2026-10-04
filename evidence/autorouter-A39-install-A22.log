@@ -1,0 +1,107 @@
+bun install v1.4.2 (744846f84)
+Resolving dependencies
+Resolved, downloaded and extracted [1356]
+warn: incorrect peer dependency "react@19.2.8"
+
+warn: incorrect peer dependency "circuit-json@0.0.506"
+
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.2.8"
+
+warn: incorrect peer dependency "circuit-json@0.0.506"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+
++ @biomejs/biome@1.9.4 (v2.5.15 available)
++ @radix-ui/react-icons@1.3.2
++ @radix-ui/react-menubar@1.1.24
++ @react-hook/resize-observer@2.0.2
++ @resvg/resvg-js@2.6.2
++ @tsci/0hmX.multi-component-dataset-srj01@github:tscircuit/multi-component-dataset-srj01#abf9d17
++ @tsci/dataset-srj23-partially-routed-subcircuits@github:tscircuit/dataset-srj23-partially-routed-subcircuits#53fc559
++ @tsci/seveibar.dataset-srj13@github:tscircuit/dataset-srj13#56db700
++ @tsci/tscircuit.dataset-srj12-bus-routing@github:tscircuit/dataset-srj12-bus-routing#ba82f86
++ @tsci/tscircuit.dataset-srj16-bga-breakouts@github:tscircuit/dataset-srj16-bga-breakouts#e8b2e70
++ @tsci/tscircuit.dataset-srj19-bga-passive-overlays@github:tscircuit/dataset-srj19#5104d03
++ @tsci/tscircuit.dataset-srj20-partial-bga-breakouts@github:tscircuit/dataset-srj20#9384fb8
++ @tscircuit/autorouting-dataset-01@github:tscircuit/autorouting-dataset-01#b97f505
++ @tscircuit/checks@0.0.233 (v0.0.238 available)
++ @tscircuit/circuit-json-util@0.0.114 (v0.0.119 available)
++ @tscircuit/core@0.0.337 (v0.0.2080 available)
++ @tscircuit/curvy-trace-solver@0.0.10 (v0.0.12 available)
++ @tscircuit/dataset-srj05@github:tscircuit/dataset-srj05#9a49c12
++ @tscircuit/dataset-srj24@github:tscircuit/dataset-srj24#6340ee4
++ @tscircuit/dataset-srj27-power-traces@github:tscircuit/dataset-srj27-power-traces#eb24d36
++ @tscircuit/dataset-srj28-partially-prerouted@github:tscircuit/dataset-srj28-partially-prerouted#5b16735
++ @tscircuit/dataset-srj29-ddr3-bga-pairs@github:ShiboSoftwareDev/dataset-srj29-ddr3-bga-pairs#585c3ab
++ @tscircuit/dataset-srj33-drc-failures@github:tscircuit/dataset-srj33-drc-failures#f566b62
++ @tscircuit/fanout-for-pipeline9-fixtures@0.0.66
++ @tscircuit/fanout-solver@0.0.29 (v0.0.80 available)
++ @tscircuit/fixed-via-hypergraph-solver@https://codeload.github.com/tscircuit/fixed-via-hypergraph-solver/tar.gz/bed37a6201b5dd07c9cc68b828917ecc20d6d049
++ @tscircuit/high-density-a01@github:tscircuit/high-density-a01#44005d6
++ @tscircuit/high-density-a13@github:tscircuit/high-density-a01#c6812ce
++ @tscircuit/high-density-b01@github:tscircuit/high-density-b01#e651cab
++ @tscircuit/hypergraph@0.0.71 (v0.0.73 available)
++ @tscircuit/jumper-topology-generator@0.0.4
++ @tscircuit/krt-wasm@0.1.9
++ @tscircuit/length-matching-solver@github:tscircuit/length-matching-solver#e36fe8c
++ @tscircuit/math-utils@0.0.36 (v0.0.38 available)
++ @tscircuit/power-trace-expander@github:tscircuit/power-trace-expander#2ecd1cd
++ @tscircuit/rectdiff@github:tscircuit/rectdiff#215284c
++ @tscircuit/repair04@https://codeload.github.com/tscircuit/repair04/tar.gz/422b75460e80147c0a1b92521a765d9ae8eab548
++ @tscircuit/solver-utils@0.0.16 (v0.0.21 available)
++ @tscircuit/trace-simplification-solver@github:tscircuit/trace-simplification-solver#63589c4
++ @types/bun@1.4.2
++ @types/fast-json-stable-stringify@2.1.2
++ @types/object-hash@3.0.6
++ @types/rbush@4.0.0
++ @types/react@19.3.0
++ @types/react-dom@19.3.0
++ @vercel/node@5.10.2 (v20.0.0 available)
++ @vitejs/plugin-react@4.7.0 (v6.1.1 available)
++ bun-match-svg@0.0.14 (v0.0.17 available)
++ circuit-json@0.0.506 (v0.0.515 available)
++ circuit-json-to-connectivity-map@0.0.19 (v0.0.33 available)
++ circuit-to-svg@0.0.220 (v0.0.441 available)
++ clsx@2.1.1
++ dataset-srj11-45-degree@github:tscircuit/dataset-srj11-45-degree#c49dd43
++ dataset-srj18@github:tscircuit/dataset-srj18#100e895
++ flatbush@4.6.2
++ format-si-unit@0.0.12 (v0.0.14 available)
++ graphics-debug@0.0.99 (v0.0.100 available)
++ high-density-dataset-z04@github:tscircuit/high-density-dataset-z04#b9128ed
++ high-density-repair01@github:tscircuit/high-density-repair01#27b3392
++ high-density-repair02@https://codeload.github.com/tscircuit/high-density-repair02/tar.gz/67fbcfe637a5f5cd6e5f819de6f015ea1ee78e11
++ high-density-repair03@https://codeload.github.com/tscircuit/high-density-repair03/tar.gz/5ec441040f04f40715051af23987bd6dde72c6c8
++ kicad-to-circuit-json@0.0.77 (v0.0.142 available)
++ kleur@4.1.5
++ looks-same@9.0.1 (v10.0.1 available)
++ pcb-poly-hyper-graph@https://codeload.github.com/tscircuit/pcb-poly-hyper-graph/tar.gz/80db1463c4a47506eeda15b2c14d59679de900f8
++ rbush@4.0.1
++ react@18.3.1 (v19.3.0 available)
++ react-cosmos@6.2.3 (v7.4.1 available)
++ react-cosmos-plugin-vite@6.2.0 (v7.4.0 available)
++ react-dom@18.3.1 (v19.3.0 available)
++ react-for-pipeline9-fixtures@19.2.8
++ react-konva@18.2.16 (v19.3.0 available)
++ recharts@2.15.4 (v3.10.1 available)
++ tailwind-merge@3.7.0
++ terser@5.51.2
++ tiny-hypergraph@github:tscircuit/tiny-hypergraph#4e21569
++ tiny-hypergraph-poly@github:tscircuit/tiny-hypergraph#7b93b4c
++ tscircuit-for-pipeline9-fixtures@0.0.2467
++ tsup@8.5.1
++ typescript@5.9.3 (v7.0.2 available)
++ use-mouse-matrix-transform@1.3.5
++ vite@6.4.3 (v8.3.2 available)
++ vite-tsconfig-paths@5.1.4 (v6.1.1 available)
++ zdwiel-dataset@github:dwiel/tscircuit-benchmark#be36518
++ @tscircuit/pcb-trace-linter@github:tscircuit/pcb-trace-linter#4c035f9
++ fast-json-stable-stringify@2.1.0
++ object-hash@3.0.0
++ stack-svgs@0.0.1
+
+779 packages installed [17.46s]
+
+Blocked 1 postinstall. Run `bun pm untrusted` for details.

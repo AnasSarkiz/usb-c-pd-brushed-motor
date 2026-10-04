@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-saved-trace-paths.test.tsx:
+(pass) autoroutingphase preserves complete saved routes before later routing [1447.91ms]
+
+ 1 pass
+ 0 fail
+ 7 expect() calls
+Ran 1 test across 1 file. [2.72s]

@@ -1,0 +1,30 @@
+{
+  "probeOnly": true,
+  "unrouted": true,
+  "artifactSha256": "5600121e046098b3be6d245ab7ebd22658f404f26525c1680a2c6ea4c5c3f11c",
+  "results": [
+    {
+      "file": "drill-L1-L4.drl",
+      "sourceDrills": 26,
+      "parsedOperations": 35,
+      "hausdorffDeviationMm": 0.000327459217145846,
+      "missingSourceHoles": [],
+      "extraAreaMm2": 0.00012205920032563641,
+      "parserWarnings": [
+        ".cache/gerber-format-probe-unrouted38-A22/drill-L1-L4.drl:22 \"G90\": G90 header statement found after end of header"
+      ]
+    },
+    {
+      "file": "drill_npth.drl",
+      "sourceDrills": 6,
+      "parsedOperations": 6,
+      "hausdorffDeviationMm": 3.7514435643284095e-05,
+      "missingSourceHoles": [],
+      "extraAreaMm2": 0.0,
+      "parserWarnings": [
+        ".cache/gerber-format-probe-unrouted38-A22/drill_npth.drl:14 \"G90\": G90 header statement found after end of header"
+      ]
+    }
+  ],
+  "status": "Rejected exported drill geometry; no fabrication approval"
+}

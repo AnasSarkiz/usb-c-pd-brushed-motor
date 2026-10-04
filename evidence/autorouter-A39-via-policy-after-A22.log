@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/pipeline7-no-via-in-pad-policy.test.ts:
+(pass) Pipeline7 explicit no-via-in-pad policy enforces connected-pad clearance [3.31ms]
+
+ 1 pass
+ 0 fail
+ 4 expect() calls
+Ran 1 test across 1 file. [336.00ms]

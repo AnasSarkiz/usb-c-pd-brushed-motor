@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/autoroutingphase-simplify.test.tsx:
+(pass) simplify autorouting phase cleans existing traces with Pipeline 11 [1324.67ms]
+
+ 1 pass
+ 0 fail
+ 8 expect() calls
+Ran 1 test across 1 file. [2.49s]

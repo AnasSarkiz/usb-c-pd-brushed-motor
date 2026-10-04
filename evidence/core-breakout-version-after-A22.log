@@ -1,0 +1,10 @@
+bun test v1.4.2 (744846f84)
+
+tests/features/breakout-autorouter-version.test.tsx:
+Creating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/core-manufacturing-A22/tests/features/__snapshots__/breakout-autorouter-version-pcb.snap.svg
+(pass) breakout honors its router version while remaining board routes inherit the board version [169.06ms]
+
+ 1 pass
+ 0 fail
+ 4 expect() calls
+Ran 1 test across 1 file. [928.00ms]

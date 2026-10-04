@@ -1,0 +1,9 @@
+{
+  "checked_on": "2026-10-04",
+  "method": "Authenticated GitHub app repository search user:AnasSarkiz motor",
+  "matching_repositories": [
+    "AnasSarkiz/smart-nema14-motor-controller",
+    "AnasSarkiz/drv8833-dual-tt-motor-driver-3-6v"
+  ],
+  "result": "Both concern different boards; neither is adopted as this board destination. Local independent Git has no remote; publication destination remains unknown."
+}

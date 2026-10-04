@@ -40,7 +40,11 @@ export function UsbInput() {
         }}
       />
       {/* Autonomous PD sink; NVM provisioning mandatory */}
-      <breakout name="pd_pin_escape" fanoutBoundaryPadding="2mm">
+      <breakout
+        name="pd_pin_escape"
+        fanoutBoundaryPadding="2mm"
+        autorouterVersion="beta_pipeline9"
+      >
         <STUSB4500QTR
           name="U1"
           pcbRotation={productPlacement.U1.ccwRotationDegrees}

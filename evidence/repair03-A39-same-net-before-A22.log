@@ -1,0 +1,22 @@
+bun test v1.4.2 (744846f84)
+
+tests/autorouting-drc-same-net-pad-policy.test.ts:
+43 |   ]
+44 |   expect(new AutoroutingDrcEngine(srj).evaluate(traces).errors).toEqual([])
+45 |   const physicalResult = new AutoroutingDrcEngine(srj, {
+46 |     enforceSameNetViaToPadClearance: true,
+47 |   }).evaluate(traces)
+48 |   expect(physicalResult.errors).toHaveLength(1)
+                                     ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 1
+Received length: 0
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/repair03-manufacturing-A39/tests/autorouting-drc-same-net-pad-policy.test.ts:48:33)
+(fail) explicit physical same-net via-to-pad clearance preserves legacy default [20.17ms]
+
+ 0 pass
+ 1 fail
+ 2 expect() calls
+Ran 1 test across 1 file. [95.00ms]

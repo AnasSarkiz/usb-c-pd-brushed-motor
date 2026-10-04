@@ -1,0 +1,21 @@
+tests/bugs/bugreport108-am3352-four-layer.test.ts(4,45): error TS2307: Cannot find module '../../fixtures/bug-reports/bugreport108-am3352-four-layer/getAm3352FailureSnapshotSvg' or its corresponding type declarations.
+tests/bugs/high-density-solver-extra-center-connection.test.ts(5,8): error TS2307: Cannot find module 'fixtures/features/highDensityRouteSolver/highDensityRouteSolver.fixture' or its corresponding type declarations.
+tests/features/arduino-uno-inner-pours.test.ts(7,8): error TS2307: Cannot find module '../../fixtures/bug-reports/bugreport46-ac4337/bugreport46-ac4337-arduino-uno-inner-pours' or its corresponding type declarations.
+tests/features/arduino-uno-inner-pours.test.ts(21,6): error TS7006: Parameter 'obstacle' implicitly has an 'any' type.
+tests/features/arduino-uno-inner-pours.test.ts(36,32): error TS7006: Parameter 'c' implicitly has an 'any' type.
+tests/features/arduino-uno-inner-pours.test.ts(39,32): error TS7006: Parameter 'c' implicitly has an 'any' type.
+tests/features/arduino-uno-inner-pours.test.ts(81,16): error TS7006: Parameter 'obstacle' implicitly has an 'any' type.
+tests/features/arduino-uno-inner-pours.test.ts(82,15): error TS7031: Binding element 'obstacleId' implicitly has an 'any' type.
+tests/features/arduino-uno-inner-pours.test.ts(82,27): error TS7031: Binding element 'layers' implicitly has an 'any' type.
+tests/features/arduino-uno-inner-pours.test.ts(82,35): error TS7031: Binding element 'connectedTo' implicitly has an 'any' type.
+tests/features/arduino-uno-inner-pours.test.ts(82,48): error TS7031: Binding element 'center' implicitly has an 'any' type.
+tests/features/arduino-uno-inner-pours.test.ts(82,56): error TS7031: Binding element 'width' implicitly has an 'any' type.
+tests/features/arduino-uno-inner-pours.test.ts(82,63): error TS7031: Binding element 'height' implicitly has an 'any' type.
+tests/features/multilayerconnectionpoints/multilayerconnectionpoints01.test.ts(5,33): error TS2307: Cannot find module '../../../fixtures/features/multilayerconnectionpoints/multilayerconnectionpoints01.fixture' or its corresponding type declarations.
+tests/features/off-board-obstacles/off-board-assignable.test.ts(5,33): error TS2307: Cannot find module '../../../fixtures/features/off-board-obstacles/off-board-assignable.fixture' or its corresponding type declarations.
+tests/pipeline-immutability/assignable-autorouting-pipeline1-solver.test.ts(4,33): error TS2307: Cannot find module '../../fixtures/unassigned-obstacles/AssignableViaAutoroutingPipelineSolver/AssignableViaAutoroutingPipelineSolver03.fixture' or its corresponding type declarations.
+tests/repro/broken-trace-segment.test.ts(5,8): error TS2307: Cannot find module 'fixtures/repro/broken-trace-segment/broken-trace-segment.fixture' or its corresponding type declarations.
+tests/repro/broken-trace-segment.test.ts(15,26): error TS7006: Parameter 'route' implicitly has an 'any' type.
+tests/repro/broken-trace-segment.test.ts(19,15): error TS7006: Parameter 'route' implicitly has an 'any' type.
+tests/repro/broken-trace-segment.test.ts(24,15): error TS7006: Parameter 'route' implicitly has an 'any' type.
+tests/unassigned-obstacles/AssignableViaAutoroutingPipeline/AssignableViaAutoroutingPipelineSolver03.test.ts(4,33): error TS2307: Cannot find module '../../../fixtures/unassigned-obstacles/AssignableViaAutoroutingPipelineSolver/AssignableViaAutoroutingPipelineSolver03.fixture' or its corresponding type declarations.

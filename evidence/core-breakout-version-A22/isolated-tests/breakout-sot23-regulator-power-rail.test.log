@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/breakout/breakout-sot23-regulator-power-rail.test.tsx:
+(pass) breakout routes sot23 regulator power rail parts without breakoutpoints [1773.32ms]
+
+ 1 pass
+ 0 fail
+ 12 expect() calls
+Ran 1 test across 1 file. [2.29s]
