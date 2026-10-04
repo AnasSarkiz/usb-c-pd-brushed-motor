@@ -1,0 +1,1065 @@
+{
+  "anonymous": true,
+  "sourceCommit": "3ce8ea0a6526e99e935cdf06ae3cbf6062f3dbdf",
+  "package": "AnasSarkiz/usb-c-pd-brushed-motor@0.0.1-a42-unrouted-3ce8ea0-59889506",
+  "visibility": {
+    "is_public": true,
+    "is_private": false,
+    "package_id": "abd21ef2-d536-4123-aeef-4364fd8829f8",
+    "is_unlisted": false,
+    "public_dist_enabled": true
+  },
+  "expectedFiles": 528,
+  "remoteFiles": 528,
+  "criticalExpectedFiles": 163,
+  "allCriticalPublishedBytesMatched": true,
+  "circuitJson": {
+    "matched": true,
+    "path": "dist/index/circuit.json",
+    "expectedSha256": "3246642e4085ab0fcc0c96b5923599de70f3e729b9b68be4f409918a1bf8b810",
+    "remoteSha256": "3246642e4085ab0fcc0c96b5923599de70f3e729b9b68be4f409918a1bf8b810"
+  },
+  "records": [
+    {
+      "path": "bun.lock",
+      "expectedSha256": "51d613ba381efb1168ec087f39acac8654d6eb50ade87139ed7d25fe48351675",
+      "remoteSha256": "51d613ba381efb1168ec087f39acac8654d6eb50ade87139ed7d25fe48351675",
+      "matched": true
+    },
+    {
+      "path": "circuit/EnergyDump.tsx",
+      "expectedSha256": "9c144f2340a4f38555e53c16b2689f024e42c54d2408c521d5df837193f4c7fe",
+      "remoteSha256": "9c144f2340a4f38555e53c16b2689f024e42c54d2408c521d5df837193f4c7fe",
+      "matched": true
+    },
+    {
+      "path": "circuit/InputProtection.tsx",
+      "expectedSha256": "8d31cf52e3e48fb3bd7e2ad831f87cbdb41fb58c384a0a23644c48c5986a496a",
+      "remoteSha256": "8d31cf52e3e48fb3bd7e2ad831f87cbdb41fb58c384a0a23644c48c5986a496a",
+      "matched": true
+    },
+    {
+      "path": "circuit/LogicPadEscapes.tsx",
+      "expectedSha256": "fa4eac333cc93b2d59b9df8ad169d08df726075ba0809c54d84d3912ebb7e926",
+      "remoteSha256": "fa4eac333cc93b2d59b9df8ad169d08df726075ba0809c54d84d3912ebb7e926",
+      "matched": true
+    },
+    {
+      "path": "circuit/McuPadEscapes.ts",
+      "expectedSha256": "8841496ea4a3466dfced2bc76b4a884e49966afda661f52596024fe7fd08a59f",
+      "remoteSha256": "8841496ea4a3466dfced2bc76b4a884e49966afda661f52596024fe7fd08a59f",
+      "matched": true
+    },
+    {
+      "path": "circuit/MechanicalFeatures.tsx",
+      "expectedSha256": "e829cbdd1ab35562685846abab9e4465dfe653bb2b30bf630e440ccc464b6bb5",
+      "remoteSha256": "e829cbdd1ab35562685846abab9e4465dfe653bb2b30bf630e440ccc464b6bb5",
+      "matched": true
+    },
+    {
+      "path": "circuit/MotorBridge.tsx",
+      "expectedSha256": "b7caeabc3d66792d0908d506d6a5ecdc5ebadd8fcd3c2a6a1cbe0d7b4d2dcf2c",
+      "remoteSha256": "b7caeabc3d66792d0908d506d6a5ecdc5ebadd8fcd3c2a6a1cbe0d7b4d2dcf2c",
+      "matched": true
+    },
+    {
+      "path": "circuit/MotorSupply.tsx",
+      "expectedSha256": "c445e243c7e2b3d6364146fe48c6a5bcf06e6bc5351311bfc17790f3d88dc744",
+      "remoteSha256": "c445e243c7e2b3d6364146fe48c6a5bcf06e6bc5351311bfc17790f3d88dc744",
+      "matched": true
+    },
+    {
+      "path": "circuit/PdQualification.tsx",
+      "expectedSha256": "63b36bbbaa753d2c9e962cb761397e63a420ab9f2041adde0e08839eb5615c30",
+      "remoteSha256": "63b36bbbaa753d2c9e962cb761397e63a420ab9f2041adde0e08839eb5615c30",
+      "matched": true
+    },
+    {
+      "path": "circuit/PinBreakouts.tsx",
+      "expectedSha256": "acd8d57ab4062a60df292f398d1bb5347f1ad0183fa71477564b8ef8a7c865d7",
+      "remoteSha256": "acd8d57ab4062a60df292f398d1bb5347f1ad0183fa71477564b8ef8a7c865d7",
+      "matched": true
+    },
+    {
+      "path": "circuit/PowerRouting.tsx",
+      "expectedSha256": "b00c303781e5c0bdfc19c559931fca202771002871d1272bfabb772e4c170a47",
+      "remoteSha256": "b00c303781e5c0bdfc19c559931fca202771002871d1272bfabb772e4c170a47",
+      "matched": true
+    },
+    {
+      "path": "circuit/PwmControls.tsx",
+      "expectedSha256": "025f9e68e82258d903c2416371ad1005863567c59e15a0c34f5cad306caeafa6",
+      "remoteSha256": "025f9e68e82258d903c2416371ad1005863567c59e15a0c34f5cad306caeafa6",
+      "matched": true
+    },
+    {
+      "path": "circuit/RailProtection.tsx",
+      "expectedSha256": "515015940d3f3608800112ee5592f75546b485f3c3c24209ce486ebe9c9d5c9f",
+      "remoteSha256": "515015940d3f3608800112ee5592f75546b485f3c3c24209ce486ebe9c9d5c9f",
+      "matched": true
+    },
+    {
+      "path": "circuit/RoutingNets.tsx",
+      "expectedSha256": "681eb76e8f3d2319782c34a7dc401834c73a1e0c783b4c0da54b3257497afbf8",
+      "remoteSha256": "681eb76e8f3d2319782c34a7dc401834c73a1e0c783b4c0da54b3257497afbf8",
+      "matched": true
+    },
+    {
+      "path": "circuit/UsbInput.tsx",
+      "expectedSha256": "08c678b1b7e57d78d49bf6a5b83b456e607f79001c988f9920056c09c16f3239",
+      "remoteSha256": "08c678b1b7e57d78d49bf6a5b83b456e607f79001c988f9920056c09c16f3239",
+      "matched": true
+    },
+    {
+      "path": "circuit/product-placement.ts",
+      "expectedSha256": "78a7dbf5885411081f8bfd7c6ded8c8f68c43d81a4aef94d1b1efcdb0d82aa6d",
+      "remoteSha256": "78a7dbf5885411081f8bfd7c6ded8c8f68c43d81a4aef94d1b1efcdb0d82aa6d",
+      "matched": true
+    },
+    {
+      "path": "circuit/underside-label-offsets.ts",
+      "expectedSha256": "c199cd8e98a86c396e7499e88a8e34162da86e3b14c67d273c0a6a3dbb9901d8",
+      "remoteSha256": "c199cd8e98a86c396e7499e88a8e34162da86e3b14c67d273c0a6a3dbb9901d8",
+      "matched": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "expectedSha256": "3246642e4085ab0fcc0c96b5923599de70f3e729b9b68be4f409918a1bf8b810",
+      "remoteSha256": "3246642e4085ab0fcc0c96b5923599de70f3e729b9b68be4f409918a1bf8b810",
+      "matched": true
+    },
+    {
+      "path": "docs/BOM.csv",
+      "expectedSha256": "7e79c124ee26583533d5fe9d7ce2518f600eb34b7860b5bca5cb30d1287e74ce",
+      "remoteSha256": "7e79c124ee26583533d5fe9d7ce2518f600eb34b7860b5bca5cb30d1287e74ce",
+      "matched": true
+    },
+    {
+      "path": "docs/design-manifest.json",
+      "expectedSha256": "5a63fb3b46d8799d072edd530a46119ab5483d4321fbe4ffe4cf4ad8ab50a3f8",
+      "remoteSha256": "5a63fb3b46d8799d072edd530a46119ab5483d4321fbe4ffe4cf4ad8ab50a3f8",
+      "matched": true
+    },
+    {
+      "path": "imports/ADR421ARZ_REEL7.tsx",
+      "expectedSha256": "885270ea5812382d25aa19c1965f674034896115d1712873c27b74692c466ab9",
+      "remoteSha256": "885270ea5812382d25aa19c1965f674034896115d1712873c27b74692c466ab9",
+      "matched": true
+    },
+    {
+      "path": "imports/AO3400A.tsx",
+      "expectedSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "remoteSha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "matched": true
+    },
+    {
+      "path": "imports/AP2204K_5_0TRG1.tsx",
+      "expectedSha256": "ac7839a8eec5ae6a633fbcbb2d77453c244b50c33de1ac69b3c5e0abb7a5b946",
+      "remoteSha256": "ac7839a8eec5ae6a633fbcbb2d77453c244b50c33de1ac69b3c5e0abb7a5b946",
+      "matched": true
+    },
+    {
+      "path": "imports/APSG250ELL331MJB5S.tsx",
+      "expectedSha256": "f53fcdb64f2fd23313179b5a52af1b13a8e767a905b626a1ab78d97eaf5a6520",
+      "remoteSha256": "f53fcdb64f2fd23313179b5a52af1b13a8e767a905b626a1ab78d97eaf5a6520",
+      "matched": true
+    },
+    {
+      "path": "imports/AT0603BRD07100KL.tsx",
+      "expectedSha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99",
+      "remoteSha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0402WGF3301TCE.tsx",
+      "expectedSha256": "3b9cf6de2088a252c5e3da65ae3d9667df8fd38602f47bcc99def2f0dada2731",
+      "remoteSha256": "3b9cf6de2088a252c5e3da65ae3d9667df8fd38602f47bcc99def2f0dada2731",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603B103K500NT.tsx",
+      "expectedSha256": "f94d58f906b97c568d280edac96a7c06c35ce0b7165db8fefc50cdb9a977abef",
+      "remoteSha256": "f94d58f906b97c568d280edac96a7c06c35ce0b7165db8fefc50cdb9a977abef",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1000T5E.tsx",
+      "expectedSha256": "3438363e6c15be8a308923b2c96c7dd4a845595f04db3c47bbb306949b070637",
+      "remoteSha256": "3438363e6c15be8a308923b2c96c7dd4a845595f04db3c47bbb306949b070637",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1001T5E.tsx",
+      "expectedSha256": "5902e8307dd04e282fc33a5c3a8637a05b4bc0c6265ec150b6acc1e2dd8cfdfb",
+      "remoteSha256": "5902e8307dd04e282fc33a5c3a8637a05b4bc0c6265ec150b6acc1e2dd8cfdfb",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1002T5E.tsx",
+      "expectedSha256": "5bdb2b8ab1b18c4f68d790341f6d7046e10705ee9e9817e771556e67dfc791b3",
+      "remoteSha256": "5bdb2b8ab1b18c4f68d790341f6d7046e10705ee9e9817e771556e67dfc791b3",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1003T5E.tsx",
+      "expectedSha256": "03a087ff0e23fdbfbb78619d3019aa2d705a0a18edf8f5775a2ad35736129777",
+      "remoteSha256": "03a087ff0e23fdbfbb78619d3019aa2d705a0a18edf8f5775a2ad35736129777",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1004T5E.tsx",
+      "expectedSha256": "8bfdabf9cf75e71e43a99391224c435e7479bfe2f93e568790d217ec6826f929",
+      "remoteSha256": "8bfdabf9cf75e71e43a99391224c435e7479bfe2f93e568790d217ec6826f929",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1053T5E.tsx",
+      "expectedSha256": "6f530f03254210be28f4e38106f30ea47b76567542fb68f6bb12fc759cd28663",
+      "remoteSha256": "6f530f03254210be28f4e38106f30ea47b76567542fb68f6bb12fc759cd28663",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1102T5E.tsx",
+      "expectedSha256": "e52692c9e5924cd71491838f6bd50920b881d6fe1b243d75bb717affc40651f5",
+      "remoteSha256": "e52692c9e5924cd71491838f6bd50920b881d6fe1b243d75bb717affc40651f5",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1103T5E.tsx",
+      "expectedSha256": "071851efb71bc4068ea0e62c838dc239b5897fb1abbd76b1297549e59289fb33",
+      "remoteSha256": "071851efb71bc4068ea0e62c838dc239b5897fb1abbd76b1297549e59289fb33",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1202T5E.tsx",
+      "expectedSha256": "ab5764c0cdd81a1b6114f7728a2a090ab236eca3b37687d1e1d8e856b8f36695",
+      "remoteSha256": "ab5764c0cdd81a1b6114f7728a2a090ab236eca3b37687d1e1d8e856b8f36695",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1302T5E.tsx",
+      "expectedSha256": "83263fd00787d5809133c992d3413943e680e9e5787ca4df8ed0b25183845ea7",
+      "remoteSha256": "83263fd00787d5809133c992d3413943e680e9e5787ca4df8ed0b25183845ea7",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF1623T5E.tsx",
+      "expectedSha256": "cffc68d597f9996543e2183ef0e0af30581079956d933a7004f2e1a79642a089",
+      "remoteSha256": "cffc68d597f9996543e2183ef0e0af30581079956d933a7004f2e1a79642a089",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF2001T5E.tsx",
+      "expectedSha256": "251cc9030dc8096b74016eb21a07bb8f28f15a7210499c4673a242a88aa57077",
+      "remoteSha256": "251cc9030dc8096b74016eb21a07bb8f28f15a7210499c4673a242a88aa57077",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF2002T5E.tsx",
+      "expectedSha256": "75957bbcc45f275e2a0560bd86b246d8c6a223144936821aec5a351074a5cdef",
+      "remoteSha256": "75957bbcc45f275e2a0560bd86b246d8c6a223144936821aec5a351074a5cdef",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF2102T5E.tsx",
+      "expectedSha256": "b42069dd4e1311c8f6eb6947ea81dc4356c8b4432ebb816919221643bec14c22",
+      "remoteSha256": "b42069dd4e1311c8f6eb6947ea81dc4356c8b4432ebb816919221643bec14c22",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF2431T5E.tsx",
+      "expectedSha256": "315a69936a48338c7c9c0932b2dd0cdf4e222cb3b2c828454ebcd7748c5153e0",
+      "remoteSha256": "315a69936a48338c7c9c0932b2dd0cdf4e222cb3b2c828454ebcd7748c5153e0",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF2432T5E.tsx",
+      "expectedSha256": "e2d131b6fa2f079c304acaddf974d6db365ee6448b012b75663bf1a92b15732b",
+      "remoteSha256": "e2d131b6fa2f079c304acaddf974d6db365ee6448b012b75663bf1a92b15732b",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF2612T5E.tsx",
+      "expectedSha256": "c785f9538f33103fdca1a79e88ebcbcd73750a3bb794bb2686dc9fb2874fef90",
+      "remoteSha256": "c785f9538f33103fdca1a79e88ebcbcd73750a3bb794bb2686dc9fb2874fef90",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF2702T5E.tsx",
+      "expectedSha256": "fd8a8ace33b6046e96b7700fa2b4791bf6c0e177eadc9bfa3ef3812dc9fead22",
+      "remoteSha256": "fd8a8ace33b6046e96b7700fa2b4791bf6c0e177eadc9bfa3ef3812dc9fead22",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF3242T5E.tsx",
+      "expectedSha256": "ec4a9f97616913ac3b7293dfd266bca1b6d69c083f9e854da9bce04796b1033d",
+      "remoteSha256": "ec4a9f97616913ac3b7293dfd266bca1b6d69c083f9e854da9bce04796b1033d",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF3300T5E.tsx",
+      "expectedSha256": "942c41cd7d58ee6a0290f6a090277c2b9a2875c50dd9465edaa5aedac91026e6",
+      "remoteSha256": "942c41cd7d58ee6a0290f6a090277c2b9a2875c50dd9465edaa5aedac91026e6",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF4701T5E.tsx",
+      "expectedSha256": "7d47f4ea58f80777dd9d5c5eadd4332639c687c11e320a7223ba12983b59d109",
+      "remoteSha256": "7d47f4ea58f80777dd9d5c5eadd4332639c687c11e320a7223ba12983b59d109",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF5101T5E.tsx",
+      "expectedSha256": "27f22e23e54192f5bac6a357c2a79509f81007988352553e78c8a44833805070",
+      "remoteSha256": "27f22e23e54192f5bac6a357c2a79509f81007988352553e78c8a44833805070",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF5601T5E.tsx",
+      "expectedSha256": "4fc51b69b0c553deda3765b36ff299061f1fcbc5b19b8efa16b54ee95247a4dc",
+      "remoteSha256": "4fc51b69b0c553deda3765b36ff299061f1fcbc5b19b8efa16b54ee95247a4dc",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF5622T5E.tsx",
+      "expectedSha256": "2831fbf310cae85fb0c91614d3e78d255693d9a069b9e126ba1829ce33ac3455",
+      "remoteSha256": "2831fbf310cae85fb0c91614d3e78d255693d9a069b9e126ba1829ce33ac3455",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF6801T5E.tsx",
+      "expectedSha256": "d03e86729be7163f725aa25dc24c47ac1f0b8bee1140214a16219951f94d8e99",
+      "remoteSha256": "d03e86729be7163f725aa25dc24c47ac1f0b8bee1140214a16219951f94d8e99",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF6981T5E.tsx",
+      "expectedSha256": "ffdcc9d4f748b20bc7d60213769060137d54146c130a979a431bc42671ee6850",
+      "remoteSha256": "ffdcc9d4f748b20bc7d60213769060137d54146c130a979a431bc42671ee6850",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF7151T5E.tsx",
+      "expectedSha256": "16f78e179f033163bcd8d34b4702d3c87e2a31f34b22ce9823e5f63056e110a3",
+      "remoteSha256": "16f78e179f033163bcd8d34b4702d3c87e2a31f34b22ce9823e5f63056e110a3",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF8062T5E.tsx",
+      "expectedSha256": "3829630316f288feaa59050b170b7a579d0949c137199a56b7d1354a7f4b1388",
+      "remoteSha256": "3829630316f288feaa59050b170b7a579d0949c137199a56b7d1354a7f4b1388",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF8201T5E.tsx",
+      "expectedSha256": "b6996ae9d005cbddee3b38055afab6348b131b3a26696299156bdad4ddfd07a8",
+      "remoteSha256": "b6996ae9d005cbddee3b38055afab6348b131b3a26696299156bdad4ddfd07a8",
+      "matched": true
+    },
+    {
+      "path": "imports/A_0603WAF820JT5E.tsx",
+      "expectedSha256": "62186e22b861469d9b5e80ef77d39960bc9fe264880148a5de5154f66a8a6650",
+      "remoteSha256": "62186e22b861469d9b5e80ef77d39960bc9fe264880148a5de5154f66a8a6650",
+      "matched": true
+    },
+    {
+      "path": "imports/A_08053D226MAT2A.tsx",
+      "expectedSha256": "39c4cf956e43feb53853a37ecda0ccd708aa82af90a839d34de420ecda11d4a8",
+      "remoteSha256": "39c4cf956e43feb53853a37ecda0ccd708aa82af90a839d34de420ecda11d4a8",
+      "matched": true
+    },
+    {
+      "path": "imports/A_1054500101.tsx",
+      "expectedSha256": "0abec2e6f256662048b347ac13dd257f1075fa08bf51a12219bc75d65bb80d98",
+      "remoteSha256": "0abec2e6f256662048b347ac13dd257f1075fa08bf51a12219bc75d65bb80d98",
+      "matched": true
+    },
+    {
+      "path": "imports/A_1103M2S3CQE2.tsx",
+      "expectedSha256": "3f9eb63632e1e4f48b857a958f3496424cdb931284946ef20a1cdb98959eca3c",
+      "remoteSha256": "3f9eb63632e1e4f48b857a958f3496424cdb931284946ef20a1cdb98959eca3c",
+      "matched": true
+    },
+    {
+      "path": "imports/A_118EC333.tsx",
+      "expectedSha256": "a7a87c288a126831d3d12bf2f698071d0f92a8a3ba217f8a52ce5392c51d8a0c",
+      "remoteSha256": "a7a87c288a126831d3d12bf2f698071d0f92a8a3ba217f8a52ce5392c51d8a0c",
+      "matched": true
+    },
+    {
+      "path": "imports/A_1210B473K501CT.tsx",
+      "expectedSha256": "6863c6c98d569be4734fabb0ea28e2490e9824faf605e6d06d951193b24a9a60",
+      "remoteSha256": "6863c6c98d569be4734fabb0ea28e2490e9824faf605e6d06d951193b24a9a60",
+      "matched": true
+    },
+    {
+      "path": "imports/A_12402012E212A.tsx",
+      "expectedSha256": "5eb94aa4e4fec11ea45cbf5953ead30a224da5f07d726dc7a6dab171ddbf27e9",
+      "remoteSha256": "5eb94aa4e4fec11ea45cbf5953ead30a224da5f07d726dc7a6dab171ddbf27e9",
+      "matched": true
+    },
+    {
+      "path": "imports/A_19_213_BHC_AP1Q2_3T.tsx",
+      "expectedSha256": "5375392b1df083f0742b381f8fc942f2fc18072188f0965da980f35830f81cf3",
+      "remoteSha256": "5375392b1df083f0742b381f8fc942f2fc18072188f0965da980f35830f81cf3",
+      "matched": true
+    },
+    {
+      "path": "imports/A_19_217_G7C_AN1P2_6T.tsx",
+      "expectedSha256": "c2bafbbedfc255df5e274606ff00eac4347fd9549fef10bf4b2686c53f75d69f",
+      "remoteSha256": "c2bafbbedfc255df5e274606ff00eac4347fd9549fef10bf4b2686c53f75d69f",
+      "matched": true
+    },
+    {
+      "path": "imports/A_1MS3T1B1M2QES_5.tsx",
+      "expectedSha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+      "remoteSha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+      "matched": true
+    },
+    {
+      "path": "imports/A_1N4148W.tsx",
+      "expectedSha256": "da33325e0227d616476868a31a63b7d51fce36aae5aebb20e58992378c7418da",
+      "remoteSha256": "da33325e0227d616476868a31a63b7d51fce36aae5aebb20e58992378c7418da",
+      "matched": true
+    },
+    {
+      "path": "imports/A_2171750001.tsx",
+      "expectedSha256": "cc25cede0f9206c8b7de5339496a5054b8090bbf12a418b2200c1687843fa154",
+      "remoteSha256": "cc25cede0f9206c8b7de5339496a5054b8090bbf12a418b2200c1687843fa154",
+      "matched": true
+    },
+    {
+      "path": "imports/A_2171790001.tsx",
+      "expectedSha256": "8168532b3dcd18d702cf09e8762aa840e42ec4bd2de30b53e61753d06dd7ef23",
+      "remoteSha256": "8168532b3dcd18d702cf09e8762aa840e42ec4bd2de30b53e61753d06dd7ef23",
+      "matched": true
+    },
+    {
+      "path": "imports/A_25SVPF100M.tsx",
+      "expectedSha256": "02a6afbbcb25469004ba5802b820840166784726ce89e4a306af630357391b39",
+      "remoteSha256": "02a6afbbcb25469004ba5802b820840166784726ce89e4a306af630357391b39",
+      "matched": true
+    },
+    {
+      "path": "imports/A_25SVPF330M.tsx",
+      "expectedSha256": "5abdba99b8c0c0f803a60ea1e47781a1d19fbf26f20d4514f13e73a072fbe07a",
+      "remoteSha256": "5abdba99b8c0c0f803a60ea1e47781a1d19fbf26f20d4514f13e73a072fbe07a",
+      "matched": true
+    },
+    {
+      "path": "imports/A_2MS3T1B1M1QES_5.tsx",
+      "expectedSha256": "3ed81c46f5ec47461764dea2ebc3e0eef1ddb339f392a4ab5301c3d9a7a32b48",
+      "remoteSha256": "3ed81c46f5ec47461764dea2ebc3e0eef1ddb339f392a4ab5301c3d9a7a32b48",
+      "matched": true
+    },
+    {
+      "path": "imports/A_35SVPK330M.tsx",
+      "expectedSha256": "81434531148c497612f0806dba8f336433d326a695d969beeed2eb408cec7987",
+      "remoteSha256": "81434531148c497612f0806dba8f336433d326a695d969beeed2eb408cec7987",
+      "matched": true
+    },
+    {
+      "path": "imports/A_5015.tsx",
+      "expectedSha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "remoteSha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "matched": true
+    },
+    {
+      "path": "imports/A_632723300011.tsx",
+      "expectedSha256": "13a10ead5393dbc0633d3408a0729c75e94382d42dfb0f970640b64beb7bfaee",
+      "remoteSha256": "13a10ead5393dbc0633d3408a0729c75e94382d42dfb0f970640b64beb7bfaee",
+      "matched": true
+    },
+    {
+      "path": "imports/B5819W_SL.tsx",
+      "expectedSha256": "7a11383d915188d9ae949f11683e74558f42ec89c962fe61ade095f811d48b4a",
+      "remoteSha256": "7a11383d915188d9ae949f11683e74558f42ec89c962fe61ade095f811d48b4a",
+      "matched": true
+    },
+    {
+      "path": "imports/BZT52C10.tsx",
+      "expectedSha256": "0343e82f6274fedd7475112549678e9a28cafa45d8fcb2681a906b3096834fd5",
+      "remoteSha256": "0343e82f6274fedd7475112549678e9a28cafa45d8fcb2681a906b3096834fd5",
+      "matched": true
+    },
+    {
+      "path": "imports/BZT52C24.tsx",
+      "expectedSha256": "8ae660a88c78bbeaceb386fc84c54cd61f462132b0d24e1028d0b93e87230f8b",
+      "remoteSha256": "8ae660a88c78bbeaceb386fc84c54cd61f462132b0d24e1028d0b93e87230f8b",
+      "matched": true
+    },
+    {
+      "path": "imports/B_2100S04P_A110.tsx",
+      "expectedSha256": "bd9129ee7253e757bcb161d634bb106a229b3242547559444552dffb37f9ce71",
+      "remoteSha256": "bd9129ee7253e757bcb161d634bb106a229b3242547559444552dffb37f9ce71",
+      "matched": true
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104.tsx",
+      "expectedSha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2",
+      "remoteSha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2",
+      "matched": true
+    },
+    {
+      "path": "imports/CL10A105KB8NNNC.tsx",
+      "expectedSha256": "cf176b8dcffdbecbfb2f5ce69b43a0bf0bced7a5f9264d2ecd78e3e14e9b439a",
+      "remoteSha256": "cf176b8dcffdbecbfb2f5ce69b43a0bf0bced7a5f9264d2ecd78e3e14e9b439a",
+      "matched": true
+    },
+    {
+      "path": "imports/CL10A475KO8NNNC.tsx",
+      "expectedSha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462",
+      "remoteSha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462",
+      "matched": true
+    },
+    {
+      "path": "imports/CL10B223KB8NNNC.tsx",
+      "expectedSha256": "9da3dedeadd7fdd03ee32c819841773086149daed2f086c13a36f0ecc74f9cb1",
+      "remoteSha256": "9da3dedeadd7fdd03ee32c819841773086149daed2f086c13a36f0ecc74f9cb1",
+      "matched": true
+    },
+    {
+      "path": "imports/CL10C220JB8NNNC.tsx",
+      "expectedSha256": "41cc61b4d9466ec5f554480830bdf048d1b47fa5fc09c6e9d9427215166a4d56",
+      "remoteSha256": "41cc61b4d9466ec5f554480830bdf048d1b47fa5fc09c6e9d9427215166a4d56",
+      "matched": true
+    },
+    {
+      "path": "imports/CL10C331JB8NNNC.tsx",
+      "expectedSha256": "b3cdc21548b9c07a5b5d1bc60e00f70da1a0d643bb6d2063606cb2ad1e3a4f3d",
+      "remoteSha256": "b3cdc21548b9c07a5b5d1bc60e00f70da1a0d643bb6d2063606cb2ad1e3a4f3d",
+      "matched": true
+    },
+    {
+      "path": "imports/CL21B105KBFNNNE.tsx",
+      "expectedSha256": "8c1aa3942d3210aaa6dcc0b88f4a9bd705c2c46770beb922847c292fdefbfae9",
+      "remoteSha256": "8c1aa3942d3210aaa6dcc0b88f4a9bd705c2c46770beb922847c292fdefbfae9",
+      "matched": true
+    },
+    {
+      "path": "imports/CL31A106KBHNNNE.tsx",
+      "expectedSha256": "4d04352d003f455d74abe0a1c5228c17495162d72a8a8a423919f814e088374b",
+      "remoteSha256": "4d04352d003f455d74abe0a1c5228c17495162d72a8a8a423919f814e088374b",
+      "matched": true
+    },
+    {
+      "path": "imports/CL32B106KBJNNNE.tsx",
+      "expectedSha256": "1e82266b998724227ca723578b492d42c2b82bc123c0f5e60a769c9c58abddb0",
+      "remoteSha256": "1e82266b998724227ca723578b492d42c2b82bc123c0f5e60a769c9c58abddb0",
+      "matched": true
+    },
+    {
+      "path": "imports/CRCW060310K0FKEA.tsx",
+      "expectedSha256": "bb8cf3d001fe06c7cf2d1f7db55f7bf0954310500b009a438010f7fcc2cd0eb6",
+      "remoteSha256": "bb8cf3d001fe06c7cf2d1f7db55f7bf0954310500b009a438010f7fcc2cd0eb6",
+      "matched": true
+    },
+    {
+      "path": "imports/D882_RANGE_160_320_.tsx",
+      "expectedSha256": "5e08b45d3a8247fa9f18689c66fc4e86bcadf39627757098b35b9ecde8c48d77",
+      "remoteSha256": "5e08b45d3a8247fa9f18689c66fc4e86bcadf39627757098b35b9ecde8c48d77",
+      "matched": true
+    },
+    {
+      "path": "imports/DB126V_5_0_2P_GN_P.tsx",
+      "expectedSha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0",
+      "remoteSha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0",
+      "matched": true
+    },
+    {
+      "path": "imports/DRV8874PWPR.tsx",
+      "expectedSha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "remoteSha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "matched": true
+    },
+    {
+      "path": "imports/DSHP02TSGER.tsx",
+      "expectedSha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa",
+      "remoteSha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa",
+      "matched": true
+    },
+    {
+      "path": "imports/ESR18EZPF1001.tsx",
+      "expectedSha256": "5bd8e0a6639e7ac4d34d826219eaf66a58771b5c54028b714707512b8ccfdd76",
+      "remoteSha256": "5bd8e0a6639e7ac4d34d826219eaf66a58771b5c54028b714707512b8ccfdd76",
+      "matched": true
+    },
+    {
+      "path": "imports/FRC0603F8062TS.tsx",
+      "expectedSha256": "79c22b89072e89e32e100576490d047452ea9246691698db9316759a1c71f311",
+      "remoteSha256": "79c22b89072e89e32e100576490d047452ea9246691698db9316759a1c71f311",
+      "matched": true
+    },
+    {
+      "path": "imports/GEO_3F_12MS3F.tsx",
+      "expectedSha256": "6fdae0580be5aced47f50d1132bd7ce609c538871d878d643166300a7241b92a",
+      "remoteSha256": "6fdae0580be5aced47f50d1132bd7ce609c538871d878d643166300a7241b92a",
+      "matched": true
+    },
+    {
+      "path": "imports/GRM1885C1H562JA01D.tsx",
+      "expectedSha256": "ae57d221c1ca4ea607bbcd93bf844c40ccdfe0a2f5b22ebd8dc95de4da1f121f",
+      "remoteSha256": "ae57d221c1ca4ea607bbcd93bf844c40ccdfe0a2f5b22ebd8dc95de4da1f121f",
+      "matched": true
+    },
+    {
+      "path": "imports/GRM21BR71H105KA12L.tsx",
+      "expectedSha256": "02065c55ec3ab96a9a3f305102e3989d52c153723776d6043c62e9cd18ce9fa6",
+      "remoteSha256": "02065c55ec3ab96a9a3f305102e3989d52c153723776d6043c62e9cd18ce9fa6",
+      "matched": true
+    },
+    {
+      "path": "imports/GRM31CR61E476ME44L.tsx",
+      "expectedSha256": "567d871c3c483e2e156691930e842185fc85e758eb6878d32403e22c8486ed1b",
+      "remoteSha256": "567d871c3c483e2e156691930e842185fc85e758eb6878d32403e22c8486ed1b",
+      "matched": true
+    },
+    {
+      "path": "imports/KH_SS23D03_G6.tsx",
+      "expectedSha256": "07e3cb54f5996eed030c491d36ca235e06789c034f0ec1ffe40398bca3c7d70f",
+      "remoteSha256": "07e3cb54f5996eed030c491d36ca235e06789c034f0ec1ffe40398bca3c7d70f",
+      "matched": true
+    },
+    {
+      "path": "imports/KH_SS23E06_G8.tsx",
+      "expectedSha256": "c9d3ef2f631f11592ad49edf36463cec838e047dcb7570eeb00ac08a43c0fba4",
+      "remoteSha256": "c9d3ef2f631f11592ad49edf36463cec838e047dcb7570eeb00ac08a43c0fba4",
+      "matched": true
+    },
+    {
+      "path": "imports/KH_SS23F06_G6.tsx",
+      "expectedSha256": "8353459f2ede571da7bb9659c730707788e9d30ca4b4581e51630a50bcd222ee",
+      "remoteSha256": "8353459f2ede571da7bb9659c730707788e9d30ca4b4581e51630a50bcd222ee",
+      "matched": true
+    },
+    {
+      "path": "imports/KH_TYPE_C_16P.tsx",
+      "expectedSha256": "ae9d4dd582764df3ccfadf4dfb93dae4e1fff4a3f8043b8780a37774b4244906",
+      "remoteSha256": "ae9d4dd582764df3ccfadf4dfb93dae4e1fff4a3f8043b8780a37774b4244906",
+      "matched": true
+    },
+    {
+      "path": "imports/LM358DR2G.tsx",
+      "expectedSha256": "e5cc31ca1a26bbaffc275eadf4174b4acf6d03c157e2ee517d418a96f9f453a0",
+      "remoteSha256": "e5cc31ca1a26bbaffc275eadf4174b4acf6d03c157e2ee517d418a96f9f453a0",
+      "matched": true
+    },
+    {
+      "path": "imports/LM393DR.tsx",
+      "expectedSha256": "5e20beaffa770f57c1fa179ea78b01bcb80522d6afcef13a9606db5f8cbf19db",
+      "remoteSha256": "5e20beaffa770f57c1fa179ea78b01bcb80522d6afcef13a9606db5f8cbf19db",
+      "matched": true
+    },
+    {
+      "path": "imports/LMR33630ADDAR.tsx",
+      "expectedSha256": "441e5929ef6edad659201dfa957837380647490e2d08e955a179d2fc1227c688",
+      "remoteSha256": "441e5929ef6edad659201dfa957837380647490e2d08e955a179d2fc1227c688",
+      "matched": true
+    },
+    {
+      "path": "imports/MHCC10040_8R2M_R7.tsx",
+      "expectedSha256": "12de0c462a2c8eb5be066751305f75721305a15c302f6b3acd0575cc9617d35a",
+      "remoteSha256": "12de0c462a2c8eb5be066751305f75721305a15c302f6b3acd0575cc9617d35a",
+      "matched": true
+    },
+    {
+      "path": "imports/MMBD4148CC.tsx",
+      "expectedSha256": "0533efae818154f386b903030b3ab03763a448095b7e1aeef6635aa345d9746d",
+      "remoteSha256": "0533efae818154f386b903030b3ab03763a448095b7e1aeef6635aa345d9746d",
+      "matched": true
+    },
+    {
+      "path": "imports/MMBT3904.tsx",
+      "expectedSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "remoteSha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "matched": true
+    },
+    {
+      "path": "imports/MMBT3904_RANGE_100_300_.tsx",
+      "expectedSha256": "bf651bf4c7a16e75ddba030c0731b7a252b5ab3a2d41e520e340c9d478c0fe0e",
+      "remoteSha256": "bf651bf4c7a16e75ddba030c0731b7a252b5ab3a2d41e520e340c9d478c0fe0e",
+      "matched": true
+    },
+    {
+      "path": "imports/MMBT3906LT1G.tsx",
+      "expectedSha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a",
+      "remoteSha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a",
+      "matched": true
+    },
+    {
+      "path": "imports/OS103011MS8QP1.tsx",
+      "expectedSha256": "91380f75dc491d2f1b3f4397270604a6f98b145381e00d5cc7cdbc1bf67da58f",
+      "remoteSha256": "91380f75dc491d2f1b3f4397270604a6f98b145381e00d5cc7cdbc1bf67da58f",
+      "matched": true
+    },
+    {
+      "path": "imports/PESD24VS2UT_215.tsx",
+      "expectedSha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
+      "remoteSha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
+      "matched": true
+    },
+    {
+      "path": "imports/PTV09A_4015F_B103.tsx",
+      "expectedSha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6",
+      "remoteSha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6",
+      "matched": true
+    },
+    {
+      "path": "imports/RC1206FR_7W1KL.tsx",
+      "expectedSha256": "9d3d0d6b784e6152de826cc9615e5bfae56959049b014ada19c66a8f944039a8",
+      "remoteSha256": "9d3d0d6b784e6152de826cc9615e5bfae56959049b014ada19c66a8f944039a8",
+      "matched": true
+    },
+    {
+      "path": "imports/RPL_12K10R0FT.tsx",
+      "expectedSha256": "2438409a625ad7fe574c01aa43f88ad235a40c0af5e2566c64a9048e32b64a87",
+      "remoteSha256": "2438409a625ad7fe574c01aa43f88ad235a40c0af5e2566c64a9048e32b64a87",
+      "matched": true
+    },
+    {
+      "path": "imports/RT0603BRD0710KL.tsx",
+      "expectedSha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81",
+      "remoteSha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81",
+      "matched": true
+    },
+    {
+      "path": "imports/RVT1E221M0607.tsx",
+      "expectedSha256": "cf35f51f4ec19d35cfb1787172039aa00de588889459661396a1ea1eda9ce813",
+      "remoteSha256": "cf35f51f4ec19d35cfb1787172039aa00de588889459661396a1ea1eda9ce813",
+      "matched": true
+    },
+    {
+      "path": "imports/SMBJ15CA.tsx",
+      "expectedSha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "remoteSha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "matched": true
+    },
+    {
+      "path": "imports/SMBJ22A.tsx",
+      "expectedSha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1",
+      "remoteSha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1",
+      "matched": true
+    },
+    {
+      "path": "imports/SN74LVC2G08DCUR.tsx",
+      "expectedSha256": "88b100341a691acb27276415bb2fe648acb5426ba41857e8211b663b5ea08d47",
+      "remoteSha256": "88b100341a691acb27276415bb2fe648acb5426ba41857e8211b663b5ea08d47",
+      "matched": true
+    },
+    {
+      "path": "imports/SRV05_4_P_T7.tsx",
+      "expectedSha256": "6375b69cd72cd0e7f7e55c0667017e9acde6588696a5fcd87a08e8944694eb93",
+      "remoteSha256": "6375b69cd72cd0e7f7e55c0667017e9acde6588696a5fcd87a08e8944694eb93",
+      "matched": true
+    },
+    {
+      "path": "imports/SS54.tsx",
+      "expectedSha256": "dbb814bf82b9771e25ab0b4b970f526310234853c749be7ecbe4055bcb516c6c",
+      "remoteSha256": "dbb814bf82b9771e25ab0b4b970f526310234853c749be7ecbe4055bcb516c6c",
+      "matched": true
+    },
+    {
+      "path": "imports/SSSS211900.tsx",
+      "expectedSha256": "1ba78cc54e261bfff595470d86bc785ca5544259e9f81d78b14cbb3c21d34cc0",
+      "remoteSha256": "1ba78cc54e261bfff595470d86bc785ca5544259e9f81d78b14cbb3c21d34cc0",
+      "matched": true
+    },
+    {
+      "path": "imports/SS_23D03_G080.tsx",
+      "expectedSha256": "112cca3105967d18622883f8dea247282296b59fbb87949b2678516fb48d367d",
+      "remoteSha256": "112cca3105967d18622883f8dea247282296b59fbb87949b2678516fb48d367d",
+      "matched": true
+    },
+    {
+      "path": "imports/STM32G030F6P6TR.tsx",
+      "expectedSha256": "8341d8be4d4d2ba11868533ad8cb0fe51462fffd50b2418151e2fc2106332b63",
+      "remoteSha256": "8341d8be4d4d2ba11868533ad8cb0fe51462fffd50b2418151e2fc2106332b63",
+      "matched": true
+    },
+    {
+      "path": "imports/STUSB4500QTR.tsx",
+      "expectedSha256": "f9acdc195538fe06d3ad46bf0a1ee3b4014e2de9c7c58731866a34c0d231f1d7",
+      "remoteSha256": "f9acdc195538fe06d3ad46bf0a1ee3b4014e2de9c7c58731866a34c0d231f1d7",
+      "matched": true
+    },
+    {
+      "path": "imports/T491C107M010AT.tsx",
+      "expectedSha256": "12d71b52c601584f54a803e16223c6eb96578962a4061d7887015c31aa1ce006",
+      "remoteSha256": "12d71b52c601584f54a803e16223c6eb96578962a4061d7887015c31aa1ce006",
+      "matched": true
+    },
+    {
+      "path": "imports/TC4538S.tsx",
+      "expectedSha256": "0471365c2a3df744dc948c79834024b94e4410936cfe92679b65e5a2ea8506c3",
+      "remoteSha256": "0471365c2a3df744dc948c79834024b94e4410936cfe92679b65e5a2ea8506c3",
+      "matched": true
+    },
+    {
+      "path": "imports/TL431AIDBZR.tsx",
+      "expectedSha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff",
+      "remoteSha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff",
+      "matched": true
+    },
+    {
+      "path": "imports/TLC555CDR.tsx",
+      "expectedSha256": "80964cdac247fc06fd8948bfc11c43e6743f1a480ef2105615fae7e7d7a3ea1b",
+      "remoteSha256": "80964cdac247fc06fd8948bfc11c43e6743f1a480ef2105615fae7e7d7a3ea1b",
+      "matched": true
+    },
+    {
+      "path": "imports/TPS16630PWPR.tsx",
+      "expectedSha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "remoteSha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "matched": true
+    },
+    {
+      "path": "imports/TPS26630RGER.tsx",
+      "expectedSha256": "41685107ec7a3dda7058355c1b06047b958678c2452505ebf1b3ebfbb7b18bee",
+      "remoteSha256": "41685107ec7a3dda7058355c1b06047b958678c2452505ebf1b3ebfbb7b18bee",
+      "matched": true
+    },
+    {
+      "path": "imports/TPS54302DDCR.tsx",
+      "expectedSha256": "77537a73e1d88dcae7a7e50bb6bfe6e22da447501c97b3fcc49012ec9b38038b",
+      "remoteSha256": "77537a73e1d88dcae7a7e50bb6bfe6e22da447501c97b3fcc49012ec9b38038b",
+      "matched": true
+    },
+    {
+      "path": "imports/TPS54360DDAR.tsx",
+      "expectedSha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2",
+      "remoteSha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2",
+      "matched": true
+    },
+    {
+      "path": "imports/TPS7A1633DGNR.tsx",
+      "expectedSha256": "c78527d69b202bbb0a416928a072cd0ffabecea2adf05b60df3ece5bac8b54e2",
+      "remoteSha256": "c78527d69b202bbb0a416928a072cd0ffabecea2adf05b60df3ece5bac8b54e2",
+      "matched": true
+    },
+    {
+      "path": "imports/TPS7A1650DGNR.tsx",
+      "expectedSha256": "9468fa1522c45d3420702b99400458cb24fbd0b29e06296f630be1f87503479b",
+      "remoteSha256": "9468fa1522c45d3420702b99400458cb24fbd0b29e06296f630be1f87503479b",
+      "matched": true
+    },
+    {
+      "path": "imports/TS_103.tsx",
+      "expectedSha256": "cb44dcec9f9c4d27648ad359e7e45c14c6245d4e7a790c4c7be2e7dc50e1359a",
+      "remoteSha256": "cb44dcec9f9c4d27648ad359e7e45c14c6245d4e7a790c4c7be2e7dc50e1359a",
+      "matched": true
+    },
+    {
+      "path": "imports/TYPE_C_24P_QCHT.tsx",
+      "expectedSha256": "28966d6991c9a35288cd4625b301bc850558310bd558561ea4e2599537ca4093",
+      "remoteSha256": "28966d6991c9a35288cd4625b301bc850558310bd558561ea4e2599537ca4093",
+      "matched": true
+    },
+    {
+      "path": "imports/TYPE_C_24P_SMD.tsx",
+      "expectedSha256": "4d899219e92f3f2a93c19018549e967ca5cf97aa84334ce863e26fbbdd2ee619",
+      "remoteSha256": "4d899219e92f3f2a93c19018549e967ca5cf97aa84334ce863e26fbbdd2ee619",
+      "matched": true
+    },
+    {
+      "path": "imports/TYPE_C_31_E_06.tsx",
+      "expectedSha256": "3df9d740e158b81a1ee9f3f102909cc3d8bed8312543a2f5f2085ab0c8e2fe1e",
+      "remoteSha256": "3df9d740e158b81a1ee9f3f102909cc3d8bed8312543a2f5f2085ab0c8e2fe1e",
+      "matched": true
+    },
+    {
+      "path": "imports/TYPE_C_31_E_07.tsx",
+      "expectedSha256": "789a02cb24f5796411e392bd883e33cc0f16a738b9018511cd87f4b4ed0bb679",
+      "remoteSha256": "789a02cb24f5796411e392bd883e33cc0f16a738b9018511cd87f4b4ed0bb679",
+      "matched": true
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12.tsx",
+      "expectedSha256": "7d3f0afe8f5b014edcfb3716ccf542929ae9d45550701aaa8bc63f2700c77bda",
+      "remoteSha256": "7d3f0afe8f5b014edcfb3716ccf542929ae9d45550701aaa8bc63f2700c77bda",
+      "matched": true
+    },
+    {
+      "path": "imports/TYPE_C_31_M_30.tsx",
+      "expectedSha256": "4806fd634912bb5cffcc76b59ac4fa27a66770893d048af77d8b4c0970e3bb6d",
+      "remoteSha256": "4806fd634912bb5cffcc76b59ac4fa27a66770893d048af77d8b4c0970e3bb6d",
+      "matched": true
+    },
+    {
+      "path": "imports/TYPE_C_6PFS_4J_H7_5_IPX8.tsx",
+      "expectedSha256": "b430ceb94833efa8652f0f8b5d933fec505ddc5c4363b5f87ef9a00e98f84411",
+      "remoteSha256": "b430ceb94833efa8652f0f8b5d933fec505ddc5c4363b5f87ef9a00e98f84411",
+      "matched": true
+    },
+    {
+      "path": "imports/TYPE_C_6P_073_.tsx",
+      "expectedSha256": "24b87d429b663b263024eaf25f7c7221b77d72c2e400ac93a8ac96de3d990154",
+      "remoteSha256": "24b87d429b663b263024eaf25f7c7221b77d72c2e400ac93a8ac96de3d990154",
+      "matched": true
+    },
+    {
+      "path": "imports/Type_C_2_0_6Pin.tsx",
+      "expectedSha256": "2bbe74d4767edc341aafff8a0aa1e3a238f86beae1f32d758be6f68db24e887d",
+      "remoteSha256": "2bbe74d4767edc341aafff8a0aa1e3a238f86beae1f32d758be6f68db24e887d",
+      "matched": true
+    },
+    {
+      "path": "imports/UJC_HP2_3_SMT_TR.tsx",
+      "expectedSha256": "771b064a2b65442226429e58127f89e0e5528c45c09d53ee1065bceb50f2605c",
+      "remoteSha256": "771b064a2b65442226429e58127f89e0e5528c45c09d53ee1065bceb50f2605c",
+      "matched": true
+    },
+    {
+      "path": "imports/USB4085_GF_A.tsx",
+      "expectedSha256": "e9b2014b0065cb25f91ed20895375b1bcff539b99546d29a945c4037d2362122",
+      "remoteSha256": "e9b2014b0065cb25f91ed20895375b1bcff539b99546d29a945c4037d2362122",
+      "matched": true
+    },
+    {
+      "path": "imports/USB4105_GF_A.tsx",
+      "expectedSha256": "9990e0baccb231e06483b643cc1d934cb2e57dafeeb87f35f760ae4cce723c1c",
+      "remoteSha256": "9990e0baccb231e06483b643cc1d934cb2e57dafeeb87f35f760ae4cce723c1c",
+      "matched": true
+    },
+    {
+      "path": "imports/USB4110_GF_A.tsx",
+      "expectedSha256": "4e4d79a0a7b9406e39c5dbd6a6484f6ccd56e3ef3906ccf3e7357b94ae86cf05",
+      "remoteSha256": "4e4d79a0a7b9406e39c5dbd6a6484f6ccd56e3ef3906ccf3e7357b94ae86cf05",
+      "matched": true
+    },
+    {
+      "path": "imports/USB4120_03_C.tsx",
+      "expectedSha256": "c787f8b3824c296e22d86fb86656348e09f5a2ecd33a5b6dc02e3afe9c7208e6",
+      "remoteSha256": "c787f8b3824c296e22d86fb86656348e09f5a2ecd33a5b6dc02e3afe9c7208e6",
+      "matched": true
+    },
+    {
+      "path": "imports/USB4125_GF_A.tsx",
+      "expectedSha256": "fb3bcd716a7a3080f0996608d78c6eb6e622ca98af5ffe48696b77e55030f257",
+      "remoteSha256": "fb3bcd716a7a3080f0996608d78c6eb6e622ca98af5ffe48696b77e55030f257",
+      "matched": true
+    },
+    {
+      "path": "imports/USB4125_GF_A_0190.tsx",
+      "expectedSha256": "59f76d25ef4fe2742347ccb81570fe09c480c4d53b45f0b77e16adfabf809731",
+      "remoteSha256": "59f76d25ef4fe2742347ccb81570fe09c480c4d53b45f0b77e16adfabf809731",
+      "matched": true
+    },
+    {
+      "path": "imports/USB4515_GF_A.tsx",
+      "expectedSha256": "6e9ffc6999c7f47e19b8e6aebbcd2aef85f2a9a3cf00d579b7041c85f04e77bc",
+      "remoteSha256": "6e9ffc6999c7f47e19b8e6aebbcd2aef85f2a9a3cf00d579b7041c85f04e77bc",
+      "matched": true
+    },
+    {
+      "path": "index.circuit.tsx",
+      "expectedSha256": "a47045a4bc9e2eff26d057c28c2ea1aaa529282eab7206e5f7ee9eec55c7e8e1",
+      "remoteSha256": "a47045a4bc9e2eff26d057c28c2ea1aaa529282eab7206e5f7ee9eec55c7e8e1",
+      "matched": true
+    },
+    {
+      "path": "package.json",
+      "expectedSha256": "4a38c814c988e26bd393921daff6ee3226120303147dbf66ea36b790c4b31f25",
+      "remoteSha256": "4a38c814c988e26bd393921daff6ee3226120303147dbf66ea36b790c4b31f25",
+      "matched": true
+    },
+    {
+      "path": "tooling/high-density-repair03-0.0.1-a41.tgz",
+      "expectedSha256": "02014c35d71461252c1a332165256cb1bacec1b5dbb0e5722418a9893f99e67e",
+      "remoteSha256": "02014c35d71461252c1a332165256cb1bacec1b5dbb0e5722418a9893f99e67e",
+      "matched": true,
+      "bytes": 81378,
+      "downloadApi": "GET package_files/download by package_file_id; no authentication"
+    },
+    {
+      "path": "tooling/tscircuit-capacity-autorouter-0.0.960-a42.tgz",
+      "expectedSha256": "f9d44c7145f6972cd7161e4588ffa1f5105e929f4e3553f2e69644e274964f7e",
+      "remoteSha256": "f9d44c7145f6972cd7161e4588ffa1f5105e929f4e3553f2e69644e274964f7e",
+      "matched": true,
+      "bytes": 840432,
+      "downloadApi": "GET package_files/download by package_file_id; no authentication"
+    },
+    {
+      "path": "tooling/tscircuit-core-0.0.2091-a41.tgz",
+      "expectedSha256": "171f104768cf6be3259a7ef9ba9bb1b5bae79c6cf7eb7f1ed4cd4b05b07c6581",
+      "remoteSha256": "171f104768cf6be3259a7ef9ba9bb1b5bae79c6cf7eb7f1ed4cd4b05b07c6581",
+      "matched": true,
+      "bytes": 1407523,
+      "downloadApi": "GET package_files/download by package_file_id; no authentication"
+    },
+    {
+      "path": "tooling/tscircuit-props-0.0.683-A22.tgz",
+      "expectedSha256": "6f468f3240c16076806ef0319ea6c78f412ea311a574af75f0a26d1239751e75",
+      "remoteSha256": "6f468f3240c16076806ef0319ea6c78f412ea311a574af75f0a26d1239751e75",
+      "matched": true,
+      "bytes": 937562,
+      "downloadApi": "GET package_files/download by package_file_id; no authentication"
+    },
+    {
+      "path": "tscircuit.config.json",
+      "expectedSha256": "22c2cefeeabcee5931e1d01a7a6316b4577a9084b7fcedea05500e39d0baf3ef",
+      "remoteSha256": "22c2cefeeabcee5931e1d01a7a6316b4577a9084b7fcedea05500e39d0baf3ef",
+      "matched": true
+    },
+    {
+      "path": "PUBLISHED-SOURCE.json",
+      "expectedSha256": "0c96aaa72cd2a05857f1863a60d70807c40a796d4f37cb621e075a148b221685",
+      "remoteSha256": "0c96aaa72cd2a05857f1863a60d70807c40a796d4f37cb621e075a148b221685",
+      "matched": true
+    }
+  ],
+  "release": {
+    "package_release_id": "4e483d3d-e2df-41b6-916b-1a40f3e88574",
+    "package_id": "abd21ef2-d536-4123-aeef-4364fd8829f8",
+    "version": "0.0.1-a42-unrouted-3ce8ea0-59889506",
+    "github_commit_sha": null,
+    "is_locked": false,
+    "is_latest": true,
+    "ready_to_build": true,
+    "is_pr_preview": false,
+    "created_at": "2026-10-04T17:45:30.871Z",
+    "circuit_json_build_error": null,
+    "circuit_json_build_error_last_updated_at": null,
+    "has_transpiled": false,
+    "transpilation_error": null,
+    "transpilation_logs": null,
+    "transpilation_in_progress": false,
+    "transpilation_started_at": null,
+    "transpilation_completed_at": null,
+    "transpilation_is_stale": false,
+    "transpilation_display_status": "pending",
+    "fs_sha": "md5-0d1ff3fabb183d514a861a9c105adb20",
+    "circuit_json_build_logs": null,
+    "circuit_json_build_in_progress": false,
+    "circuit_json_build_started_at": null,
+    "circuit_json_build_completed_at": null,
+    "circuit_json_build_is_stale": false,
+    "circuit_json_build_display_status": "pending",
+    "image_generation_error": null,
+    "image_generation_error_last_updated_at": null,
+    "image_generation_logs": null,
+    "image_generation_in_progress": false,
+    "image_generation_started_at": null,
+    "image_generation_completed_at": null,
+    "image_generation_is_stale": false,
+    "image_generation_display_status": "pending",
+    "pcb_preview_image_url": null,
+    "sch_preview_image_url": null,
+    "cad_preview_image_url": null,
+    "package_release_website_url": null,
+    "display_status": "pending",
+    "latest_package_build_id": "4da92512-7169-4cfd-b06d-f72c1fa8600a",
+    "user_code_job_started_at": "2026-10-04T17:49:42.572Z",
+    "user_code_job_completed_at": null,
+    "user_code_job_error": null,
+    "user_code_job_completed_logs": null,
+    "user_code_job_log_stream_url": "https://usercode.tscircuit.com/user_code_jobs/view_log_stream?user_code_job_id=3a4032e4b6581a993f46a31e643d85b9ca9ce8dd7a2ccc64666338ccd0de55c7",
+    "ai_review_requested": false,
+    "github_pr_number": null,
+    "github_pr_title": null,
+    "github_branch_name": null
+  },
+  "metadataOnlyReport": "evidence/publication-source-3ce8ea0-anonymous-readback-A42.json",
+  "metadataOnlyReportSha256": "a9b1cb016f5f446b9a5272ae66135fd3a1cad3f357c7db13794d66ea1140b649",
+  "binaryDownloadSource": "https://github.com/tscircuit/tscircuit.com/blob/bb16eb884985e88c54b4e8742db9d27f8afc58e0/src/hooks/useOptimizedPackageFilesLoader.ts",
+  "limits": "All528 source-bundle file names verified.163 critical board/component/config/dependency/BOM/manifest/circuit files hash-verified anonymously. Other staged files matched the source commit before and after upload. Cloud-generated copper or other fabrication files are not qualified by this publication check."
+}

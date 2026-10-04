@@ -1,0 +1,22 @@
+{
+  "sourceCommit": "3ce8ea0a6526e99e935cdf06ae3cbf6062f3dbdf",
+  "publishedPackage": "@tsci/AnasSarkiz.usb-c-pd-brushed-motor@0.0.1-a42-unrouted-3ce8ea0-59889506",
+  "acknowledgedFiles": 528,
+  "expectedFiles": 528,
+  "exitCode": 0,
+  "postPublicationSourceMismatches": [],
+  "allStagedSourceFilesMatchedCommittedManifest": true,
+  "circuitJsonSha256": "3246642e4085ab0fcc0c96b5923599de70f3e729b9b68be4f409918a1bf8b810",
+  "cloudBuildVerified": false,
+  "anonymousReadback": "passed; all528 file names,163critical file hashes including binary dependencies and circuit JSON",
+  "GitHubRemote": null,
+  "logSha256": "615e247c61ad5425bf67423337f225e3f11c089f658eae960aa70379ac7b96e7",
+  "status": "Public unrouted WIP prototype; USB-C geometry qualification blocked; no fabrication approval or hardware testing",
+  "publicVisibilityVerified": true,
+  "anonymousCircuitJsonVerified": true,
+  "publicVerificationReport": "evidence/publication-source-3ce8ea0-anonymous-verification-A42.json",
+  "publicVerificationReportSha256": "36076126fa6ec919f8b748d4f643d24888ac7052e5abb05e72d5baba80588b2c",
+  "cloudBuildStatus": "pending",
+  "stageCanBeRebuiltFromCommitAndMetadata": true,
+  "stageRemovedAfterChecksumProof": true
+}

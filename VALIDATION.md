@@ -1,3 +1,33 @@
+# Public source publication verified —3ce8ea0
+
+Source commit3ce8ea0a6526e99e935cdf06ae3cbf6062f3dbdf is published publicly as
+`@tsci/AnasSarkiz.usb-c-pd-brushed-motor@0.0.1-a42-unrouted-3ce8ea0-59889506`:
+https://tscircuit.com/AnasSarkiz/usb-c-pd-brushed-motor . The supported
+individual publisher exits0 and acknowledges all528files. All staged bytes
+match the exact committed manifest before and after publication. Anonymous
+access confirms public/not-private/not-unlisted/public-dist visibility,
+all528source-bundle file names and163critical file hashes: circuit sources,
+all included supplier definitions, configuration, required dependencies, BOM,
+design manifest and the current circuit JSON. Four binary tarballs require the
+canonical `package_files/download` API; the earlier metadata-only verifier
+reported their absent inline bytes and is preserved. Actual downloaded bytes
+match all four dependency hashes. The current uploaded circuit JSON is exactly
+3246642e4085ab0fcc0c96b5923599de70f3e729b9b68be4f409918a1bf8b810.
+See `evidence/publication-source-3ce8ea0-anonymous-verification-A42.json` and
+`evidence/publication-source-3ce8ea0-result-A42.json`. Cloud preview/build status
+is pending; no cloud-generated circuit or fabrication approval is claimed.
+The staging directory is removed only after full file/hash/metadata checks,
+and is reproducible from the source commit and retained staged metadata.
+
+GitHub push and commit-link verification remain blocked: this main checkout
+has no remote and the destination repository/branch is unknown. A concise
+asynchronous destination question is pending; this does not invalidate the
+public tscircuit source upload. The overall two-destination publication gate
+is therefore incomplete. Local routing remains blocked by five imported USB-C
+land gaps below the unchanged0.20mm rule. No accepted fabrication ZIP exists.
+This publication receipt changes documentation only; the published board source,
+BOM, configuration, dependencies and circuit artifact remain source3ce8ea0.
+
 # A22 revision42 — USB-C supplier replacement audit in progress
 
 The public ebc76f4 upload acknowledges525 of526 files, including the exact

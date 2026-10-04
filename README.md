@@ -67,11 +67,12 @@ No fabrication order has been placed. This independent Git main has no remote;
 GitHub publication remains blocked by the missing repository/branch.
 The existing [tscircuit package](https://tscircuit.com/AnasSarkiz/usb-c-pd-brushed-motor)
 was independently verified public in revision41 and must remain public only.
-Its latest attempted committed69ff9a9 publication is incomplete: the official
-compressed upload returned413 and the individual upload recorded28 failures.
-No successful current publication, cloud build or matching remote circuit JSON
-is claimed. Local design work continues while these publication issues remain
-explicit. Earlier private releases do not satisfy the public publication rule.
+The current committed3ce8ea0 unrouted WIP is publicly published as
+`0.0.1-a42-unrouted-3ce8ea0-59889506`. Anonymous verification confirms all528
+source-bundle file names,163critical file hashes and matching circuit JSON.
+The cloud preview/build remains pending; no fabrication approval is implied.
+GitHub publication still awaits the destination repository and branch. Earlier
+partial/private uploads do not satisfy the overall two-destination publication gate.
 
 ## Historical implementation notes
 
