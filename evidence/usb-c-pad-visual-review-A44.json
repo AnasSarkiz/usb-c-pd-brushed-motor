@@ -1,0 +1,34 @@
+{
+  "artifact_sha256": "b83b47f32ae9c1055c44804afc1c02d9bf358b2ba3193fd3e9ff886eb1a57527",
+  "all_cad_model_and_pose_records_identical_to_prior_review": true,
+  "unchanged_record_types": [
+    "cad_component",
+    "pcb_board",
+    "pcb_component",
+    "pcb_hole",
+    "pcb_plated_hole",
+    "pcb_courtyard_outline",
+    "schematic_sheet"
+  ],
+  "schematic_symbol_rotations_changed": [
+    "R46",
+    "R48",
+    "R70",
+    "R72"
+  ],
+  "rendered_current_images": [
+    {
+      "path": "evidence/usb-c-pad-board-A44.png",
+      "sha256": "66522d37fd9cf847bb0af43b4a3d37b7013e50c8e02ff3e7361d3c6d55b9e2f8"
+    },
+    {
+      "path": "evidence/usb-c-pad-supplier-probe-A44.png",
+      "sha256": "620b4a26cd90ced8c94b6e509431578e3e6c7af4d23fd1eaa07f619c252a40ca"
+    },
+    {
+      "path": "evidence/usb-c-pad-dump-sheet-A44.png",
+      "sha256": "15a19b1b2f6d526a5b2df7aab1493d60719afb5f292d99a43dcd66ac98faf5cf"
+    }
+  ],
+  "3d_visual_review": "Prior body/CAD visual review applies to exact unchanged model/pose records. No new browser3D review claimed; existing tab was rejected by browser URL policy. Current footprint and changed dump schematic are reviewed locally."
+}

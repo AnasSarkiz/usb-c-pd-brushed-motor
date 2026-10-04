@@ -1,4 +1,4 @@
-// Official supplier-model inspection only; not product placement.
+// Supplier C165948 with user-authorized A44 pad translations; not product placement.
 import { TYPE_C_31_M_12 } from "../../imports/TYPE_C_31_M_12"
 export default function SupplierProbe() {
   return (

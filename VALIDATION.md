@@ -1,3 +1,55 @@
+# A44 user-authorized manual USB-C pad positions
+
+Current native artifact SHA256:b83b47f32ae9c1055c44804afc1c02d9bf358b2ba3193fd3e9ff886eb1a57527. Fresh native build, all five required
+checks and eight independent audits pass. Strict full-board physical copper
+review covers505 primitives with zero issues. The four historical EnergyDump
+schematic notices are resolved by rotating R46/R48/R70/R72 symbols−90° without
+changing their PCB poses, values or connections. Current native schematic-placement
+output is empty, verified against the official CLI implementation rather than
+assuming exit0 proves absence of issue XML. Formatting, TypeScript and43tests/
+472assertions pass. The dump sheet and board/probe images were inspected locally;
+all CAD model/pose and mounting records remain exactly identical to prior3D review.
+The original failed stale-warning review and original schematic issue output are
+retained. All91 generated metadata advisories remain visible and reviewed, with
+J1's three records independently rebound to its authorized corrected source.
+
+Evidence: usb-c-pad-validation-summary-A44.json, usb-c-pad-five-native-gates-A44.json,
+usb-c-pad-final-direct-prerequisites-A44.json, usb-c-pad-copper-A44.json,
+usb-c-pad-visual-review-A44.json and routing44-source-binding-A22.json. Stage3
+geometric checks now pass, but its overall gate remains blocked by upstream
+stage2 connector voltage qualification. Stage4 remains blocked and routing is
+still disabled. Publication of the corrected board step requires the exact generated circuit
+JSON; its subsequent receipt identifies the actual commit/version and verifies
+both public readbacks.
+
+2026-10-04. The user explicitly selected "Move individual USB-C pads" after
+being told that this overrides the earlier instruction to keep supplier imports
+unchanged. This exception applies to C165948 pad translations only. No custom
+replacement component is created. The original official source is preserved
+with SHA256 in evidence/usb-c-C165948-original-import-A44.tsx.txt. The corrected
+supplier definition keeps all16 electrical pin assignments, twelve SMT land
+shapes/sizes/Y coordinates, four plated mounting lands, alignment holes and CAD
+model/connector pose unchanged. Only twelve SMT pad X positions are translated.
+All other imports remain unchanged. BOM identifies this local correction openly.
+
+The maximum movement is0.000445mm. Manufacturer recommended fine-pitch spacing
+is0.50mm and PCB-layout tolerance is±0.05mm; the corrected0.50005mm pitch and
+wide-land positions fit that allowance. The independent source geometry review
+measures all eleven adjacent gaps at≥0.20005mm with unchanged0.20mm acceptance.
+The regression also requires the archived original footprint to fail clearance.
+Native generated-board, supplier-probe, schema, connectivity, placement and
+formatting/TypeScript/test results follow in current A44 evidence. No pass is
+claimed for an unperformed check. Prior unchanged imported-model claims are
+historical; this part now has a user-authorized manual correction.
+
+A separately reviewed primary manufacturer drawing states20V rating, below the
+21V worst-case PD budget. Pad correction does not qualify operation beyond this
+rating. Stage2 remains blocked by USB-C voltage qualification; stage3 remains
+pending current checks, stage4 remains blocked, and routing stays disabled in
+both board and CLI settings. No native routing or fabrication approval is
+performed in this pad-position step. The ±0.05mm drawing tolerance is not used
+to waive the0.20mm copper clearance requirement.
+
 # A43 both public source destinations verified —1c22640
 
 2026-10-04. Board source commit1c22640e1b5979f30debd2074f216bfe58acb1f4 is

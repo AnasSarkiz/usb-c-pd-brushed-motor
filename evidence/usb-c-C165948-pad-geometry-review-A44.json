@@ -1,0 +1,129 @@
+{
+  "source": "imports/TYPE_C_31_M_12.tsx",
+  "source_sha256": "2e96b0cdc06560900aba5c66e7771743223f89f1c7246d9be746b4887cd95d59",
+  "original_sha256": "7d3f0afe8f5b014edcfb3716ccf542929ae9d45550701aaa8bc63f2700c77bda",
+  "pads": 12,
+  "changes_are_translations_only": true,
+  "minimum_adjacent_clearance_mm": 0.20005000000000003,
+  "manufacturer_layout_tolerance_mm": 0.05,
+  "shifts": [
+    {
+      "pin": 5,
+      "translation_x_mm": -0.000115,
+      "nominal_center_error_mm": -0.00017500000000003624
+    },
+    {
+      "pin": 6,
+      "translation_x_mm": -0.000191,
+      "nominal_center_error_mm": -0.00012500000000015277
+    },
+    {
+      "pin": 7,
+      "translation_x_mm": -1.3e-05,
+      "nominal_center_error_mm": -7.500000000004725e-05
+    },
+    {
+      "pin": 8,
+      "translation_x_mm": -8.9e-05,
+      "nominal_center_error_mm": -2.4999999999997247e-05
+    },
+    {
+      "pin": 9,
+      "translation_x_mm": 8.9e-05,
+      "nominal_center_error_mm": 2.4999999999997247e-05
+    },
+    {
+      "pin": 10,
+      "translation_x_mm": 1.3e-05,
+      "nominal_center_error_mm": 7.500000000004725e-05
+    },
+    {
+      "pin": 11,
+      "translation_x_mm": 0.000445,
+      "nominal_center_error_mm": 0.00012500000000015277
+    },
+    {
+      "pin": 12,
+      "translation_x_mm": 0.000115,
+      "nominal_center_error_mm": 0.00017500000000003624
+    },
+    {
+      "pin": 13,
+      "translation_x_mm": -0.0002793,
+      "nominal_center_error_mm": -0.00023479999999986845
+    },
+    {
+      "pin": 14,
+      "translation_x_mm": 0.0003047,
+      "nominal_center_error_mm": 0.0003109999999999502
+    },
+    {
+      "pin": 15,
+      "translation_x_mm": 7.65e-05,
+      "nominal_center_error_mm": 0.000236800000000148
+    },
+    {
+      "pin": 16,
+      "translation_x_mm": -0.0002543,
+      "nominal_center_error_mm": -0.00021139999999997272
+    }
+  ],
+  "adjacent_gaps": [
+    {
+      "first_pin": 13,
+      "second_pin": 16,
+      "clearance_mm": 0.20005000000000003
+    },
+    {
+      "first_pin": 16,
+      "second_pin": 5,
+      "clearance_mm": 0.20005000000000006
+    },
+    {
+      "first_pin": 5,
+      "second_pin": 6,
+      "clearance_mm": 0.20005059999999997
+    },
+    {
+      "first_pin": 6,
+      "second_pin": 7,
+      "clearance_mm": 0.20005059999999997
+    },
+    {
+      "first_pin": 7,
+      "second_pin": 8,
+      "clearance_mm": 0.20005059999999997
+    },
+    {
+      "first_pin": 8,
+      "second_pin": 9,
+      "clearance_mm": 0.2000506
+    },
+    {
+      "first_pin": 9,
+      "second_pin": 10,
+      "clearance_mm": 0.20005059999999997
+    },
+    {
+      "first_pin": 10,
+      "second_pin": 11,
+      "clearance_mm": 0.20005059999999997
+    },
+    {
+      "first_pin": 11,
+      "second_pin": 12,
+      "clearance_mm": 0.20005059999999997
+    },
+    {
+      "first_pin": 12,
+      "second_pin": 15,
+      "clearance_mm": 0.20005000000000003
+    },
+    {
+      "first_pin": 15,
+      "second_pin": 14,
+      "clearance_mm": 0.20005000000000006
+    }
+  ],
+  "power_qualification": "Blocked: manufacturer20V rating does not establish21V maximum PD operation"
+}

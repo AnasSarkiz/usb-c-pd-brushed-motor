@@ -133,6 +133,7 @@ export function EnergyDump() {
         schSheetName="dump"
         schX={5.5}
         schY={4}
+        schRotation={-90}
         connections={{
           pin1: "net.DUMP_MID_A",
           pin2: "net.DUMP_LOAD",
@@ -158,6 +159,7 @@ export function EnergyDump() {
         schSheetName="dump"
         schX={-11.0}
         schY={0}
+        schRotation={-90}
         connections={{
           pin1: "net.DUMP_MID_B",
           pin2: "net.DUMP_LOAD",
@@ -180,6 +182,7 @@ export function EnergyDump() {
         schSheetName="dump"
         schX={-5.5}
         schY={-4}
+        schRotation={-90}
         connections={{ pin1: "net.DUMP_MID_C", pin2: "net.DUMP_LOAD" }}
       />
       {/* 10 ohm/2 W; four 20 ohm parallel dump branches */}
@@ -199,6 +202,7 @@ export function EnergyDump() {
         schSheetName="dump"
         schX={5.5}
         schY={-4}
+        schRotation={-90}
         connections={{ pin1: "net.DUMP_MID_D", pin2: "net.DUMP_LOAD" }}
       />
       {/* Disable bridge while energy clamp conducts */}

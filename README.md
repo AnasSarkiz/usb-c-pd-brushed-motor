@@ -5,8 +5,8 @@ input, regulated motor voltage, hardware10 kΩ speed potentiometer,
 FWD/OFF/REV switch, DRV8874, three LEDs and one motor terminal. The MCU only
 qualifies PD power and rail voltage; speed and direction remain hardware controlled.
 
-**Four-layer placement is implemented; routing is blocked by USB-C land spacing.**
-The80×65×1.6 mm board has140 purchased components/58 unchanged official
+**Four-layer placement is implemented; routing is blocked by USB-C voltage qualification.**
+The80×65×1.6 mm board has140 purchased components/58 supplier-backed official
 JLCPCB imports and four3.2 mm mounting holes. Revision31 selects
 JLC04161H-7628 with35um outer/15.2um inner copper and ordinary through vias;
 see docs/STACKUP-A31.md. Prior placement and8 A4 reviews remain evidence for
@@ -76,11 +76,16 @@ preview/build is still pending. Documentation/evidence receipts do not change th
 published board revision.
 Neither publication constitutes fabrication approval or physical testing.
 
-The USB-C connector opens toward the correct board edge. Its imported C165948
-footprint has five foreign-pad gaps of0.1996186–0.1999107mm against the required
-0.20mm clearance. A passing supplier-backed replacement or a corrected official
-supplier model is needed. Imported pads and the clearance rule are not modified
-to hide this discrepancy. Both routing controls remain disabled.
+The USB-C connector opens toward the correct board edge. A44 applies the user's
+explicit exception to move its individual SMT pads: all twelve original lands
+are translated by at most0.000445mm. Shapes, sizes, holes, pin assignments and
+connector pose stay unchanged. The source-geometry review measures a minimum
+0.20005mm gap without reducing the0.20mm rule; full generated-board checks are
+recorded in VALIDATION.md. This is a locally adjusted supplier footprint, not an
+unchanged official import. All other supplier definitions remain unchanged.
+The reviewed manufacturer drawing rates C165948 at20V; our worst-case PD input
+budget reaches21V. That separate qualification issue remains blocked, and both
+routing controls remain disabled. See docs/USB-C-PAD-CORRECTION-A44.md.
 
 ## Historical implementation notes
 

@@ -1,0 +1,90 @@
+{
+  "artifact_sha256": "ccbc3e0591ee1e501997e2111e29bf69fc027266eb4976b0e9b2b64babefa5a9",
+  "results": [
+    {
+      "name": "schema",
+      "command": [
+        "bun",
+        "scripts/audit-circuit-schema.ts",
+        "dist/index/circuit.json",
+        "evidence/usb-c-pad-schema-A44.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-schema-A44.log",
+      "sha256": "12ccf242dc889bd3a4db443c1c06e8dcd663532b4562c54a95958574d0a32658"
+    },
+    {
+      "name": "supplier-imports",
+      "command": [
+        "bun",
+        "scripts/audit-active-imports.ts",
+        "evidence/import-audit-config-A44.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-supplier-imports-A44.log",
+      "sha256": "f6d0c0376cb59ce3639fa59e2675584178f1a9bc772570a006de6d7a8023f0ac"
+    },
+    {
+      "name": "import-transforms",
+      "command": [
+        "bun",
+        "scripts/audit-product-placement.ts",
+        "unrouted"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-import-transforms-A44.log",
+      "sha256": "1cbbea7a68c7a39200b362e1e4b9ca4997e24c46f88ee1663cad5d7609b49c1b"
+    },
+    {
+      "name": "connectivity",
+      "command": [
+        "bun",
+        "scripts/audit-schematic.ts",
+        "evidence/schematic-audit-config-A44.json"
+      ],
+      "exit_code": 1,
+      "log": "evidence/usb-c-pad-connectivity-A44.log",
+      "sha256": "7d236178f7297c4c9bba3961132033845e6829978e3b9c6c9f8e014bb0e16cb5"
+    },
+    {
+      "name": "full-placement",
+      "command": [
+        "bun",
+        "scripts/check-full-placement.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-full-placement-A44.log",
+      "sha256": "9e2fd944b1a746bce1e822c813b79b2201c71180f3b2e866e98739a3f0371bfb"
+    },
+    {
+      "name": "targets",
+      "command": [
+        "tooling/power-review-venv/bin/python",
+        "scripts/audit-breakout-targets.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-targets-A44.log",
+      "sha256": "08c1570469a96e6904610f1cc4b32030c4e3622464b047b3728180f72cbf6409"
+    },
+    {
+      "name": "artwork",
+      "command": [
+        "bun",
+        "scripts/audit-product-artwork.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-artwork-A44.log",
+      "sha256": "af46aeaa6b50fcb1c252c7466ccad9bc44d445deb0ff311f4d9ec49bf4d4ffe2"
+    },
+    {
+      "name": "pnp",
+      "command": [
+        "bun",
+        "scripts/audit-supplier-pnp.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-pnp-A44.log",
+      "sha256": "3130cca1c435d91479da3c4716062bccaa119c3d8cb2a7d22f714b0d87967300"
+    }
+  ]
+}

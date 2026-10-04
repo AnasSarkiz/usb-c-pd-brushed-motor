@@ -1,0 +1,13 @@
+{
+  "artifactSha256": "b83b47f32ae9c1055c44804afc1c02d9bf358b2ba3193fd3e9ff886eb1a57527",
+  "routingPhase": "unrouted",
+  "copperPrimitives": 505,
+  "nearbyForeignComparisons": 340,
+  "rulesMm": {
+    "width": 0.2,
+    "foreignCopper": 0.2,
+    "edge": 0.5
+  },
+  "issues": [],
+  "limitations": "Physical geometric spacing only. No electrical, thermal or power rating is inferred. Unsupported route interpolation is rejected."
+}

@@ -1,0 +1,96 @@
+$ bun test ./tests
+bun test v1.4.2 (744846f84)
+
+tests/ground-copper-geometry.test.ts:
+(pass) physical ground connectivity preserves islands, layers and pour cutouts [78.35ms]
+
+tests/stusb4500-nvm.test.ts:
+(pass) NVM readback requires every approved byte and never programs memory [1178.51ms]
+
+tests/stusb4500-request.test.ts:
+(pass) PD profile transaction rejects partial writes and never repeats an uncertain command [391.05ms]
+
+tests/motor-measurement.test.ts:
+(pass) Measurement conversion encloses physical corners and never approves raw validity [391.60ms]
+
+tests/stm32-gpio-outputs.test.ts:
+(pass) actual sequencing outputs revoke before feedback changes and preserve charged rails [403.42ms]
+
+tests/pd-sequence.test.ts:
+(pass) compiled C power sequence inhibits stale contracts and unsafe voltage changes [390.67ms]
+
+tests/fabrication-drill-geometry.test.ts:
+(pass) manufacturing drill comparison preserves slots, rotations and physical units [121.75ms]
+
+tests/power-prototype-envelope.test.ts:
+(pass) every declared analog corner remains separated from the conservative buck FB window [11.48ms]
+(pass) I2C timing accepts its declared envelope and rejects excessive rise time [0.34ms]
+
+tests/pd-policy.test.ts:
+(pass) compiled C PD policy rejects unsafe contracts and stale qualification [367.81ms]
+
+tests/motor-owner.test.ts:
+(pass) serialized owner applies only fresh qualified contracts and revokes on faults [522.43ms]
+
+tests/power-copper-geometry.test.ts:
+(pass) power copper metrics integrate tapers and reject unsupported geometry [40.40ms]
+
+tests/electrical-calculations.test.ts:
+(pass) PD power qualification > rejects insufficient chargers including native 12 V [0.35ms]
+(pass) PD power qualification > requires 20 V for 9/12 V peaks with budgeting reserve [0.42ms]
+(pass) PD power qualification > a 5 A source retains a 3 A operating request and malformed currents fail [0.06ms]
+(pass) PD power qualification > worst assumed 12 V continuous input fits minimum eFuse limit [0.02ms]
+(pass) 10 k potentiometer and selected motor rail > regulates all three modes within 0.1 percent nominal [0.03ms]
+(pass) 10 k potentiometer and selected motor rail > PWM has useful monotonically increasing range with finite end times [0.09ms]
+(pass) PD-enable default high survives transistor base loading
+
+tests/stusb4500-startup.test.ts:
+(pass) PD startup drains old events under inhibition and verifies standby acquisition [353.95ms]
+
+tests/motor-validation-calculations.test.ts:
+(pass) A7 voltage-aware PD policy engineering screen > 5 A advertisements remain separate from the 3 A operating request [1.43ms]
+(pass) A7 voltage-aware PD policy engineering screen > 5 V uses 15 V; 9/12 V retain reserve with 20 V [2.21ms]
+(pass) A7 voltage-aware PD policy engineering screen > a low-power 20 V source fails despite enough nominal output watts [0.06ms]
+(pass) A7 voltage-aware PD policy engineering screen > 5 V-only, native 12 V-only and unplugged sources inhibit [0.07ms]
+(pass) A7 voltage-aware PD policy engineering screen > 20 V fallback fits a 9 V motor when 15 V is unavailable [0.03ms]
+(pass) Motor and converter stress screening > running reversal can double unrestricted startup current [0.50ms]
+(pass) Motor and converter stress screening > output capacitance cannot absorb the example rotor energy [0.06ms]
+(pass) Motor and converter stress screening > screened inductor peaks remain below the 4.5 A minimum buck limit [0.07ms]
+(pass) A7 motor-rail-powered analog clamp > reference stays biased and clamp has hysteresis in all selected modes [0.11ms]
+(pass) Four-branch regenerative resistor screen > current headroom is retained even at the lowest clamp release [0.12ms]
+(pass) Four-branch regenerative resistor screen > a 15 V, 100 ms pulse fits the component overload screen [0.03ms]
+(pass) Four-branch regenerative resistor screen > continuous braking and excessive pulse length are rejected [1.85ms]
+
+tests/stusb4500-rx.test.ts:
+(pass) STUSB4500 capture rejects late, changed and malformed PD messages [376.19ms]
+
+tests/copper-pulse-geometry.test.ts:
+(pass) pulse copper screen preserves SI energy balance and rejects invalid manufacturing inputs [34.38ms]
+
+tests/stm32-i2c.test.ts:
+(pass) STM32 I2C bounded whole transfers, faults and rollover [387.67ms]
+
+tests/usb-c-pad-translations.test.ts:
+(pass) USB-C correction preserves the supplier geometry and clears every adjacent land [125.49ms]
+
+tests/copper-clearance-geometry.test.ts:
+(pass) physical copper spacing preserves layers, via boundaries and linear tapers [45.94ms]
+(pass) static copper rejects sub-rule supplier lands without exempting pours [50.83ms]
+
+tests/schema-diagnostic.test.ts:
+(pass) nested union diagnostics retain the actual invalid board-label field [10.77ms]
+
+tests/pd-interval.test.ts:
+(pass) PD qualification contains whole voltage intervals and rejects back-drive [399.75ms]
+
+tests/stm32-gpio.test.ts:
+(pass) STM32 GPIO safety ordering and feedback preservation [408.05ms]
+(pass) vendor MCU and CMSIS definitions remain byte-exact [10.72ms]
+
+tests/stm32-adc.test.ts:
+(pass) STM32 ADC fresh bounded conversions and failure inhibition [390.78ms]
+
+ 43 pass
+ 0 fail
+ 472 expect() calls
+Ran 43 tests across 23 files. [6.61s]

@@ -1,0 +1,87 @@
+{
+  "artifact_sha256": "b83b47f32ae9c1055c44804afc1c02d9bf358b2ba3193fd3e9ff886eb1a57527",
+  "results": [
+    {
+      "name": "netlist",
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "netlist",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-final-netlist-A44.log",
+      "sha256": "fc0378008c7f3f6b8ad5a5785a4e32320c4e5f537a148f627460fea471aaa4b4",
+      "errors": [
+        0
+      ]
+    },
+    {
+      "name": "pin_specification",
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "pin_specification",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-final-native-pin_specification-A44.log",
+      "sha256": "af649e28e0ae82f2d3c8959eccf98c06bbe5fa935cb9eaa48610de015c1a3047",
+      "errors": [
+        0
+      ]
+    },
+    {
+      "name": "source",
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "source",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-final-native-source-A44.log",
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3",
+      "errors": [
+        0
+      ]
+    },
+    {
+      "name": "schematic-placement",
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "schematic-placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-final-native-schematic-placement-A44.log",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "issues": [],
+      "errors": [
+        0
+      ],
+      "interpretation": "Official CLI returns analyzeSchematicPlacement.getString(); blank output means no issue/placement line items. Exit0 alone is not acceptance."
+    },
+    {
+      "name": "placement",
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-pad-final-native-placement-A44.log",
+      "sha256": "0f5d8c0ad36f4389009340a1d3ee830414057752d2e36f1ac4446a3955ab29c8",
+      "errors": [
+        0
+      ]
+    }
+  ]
+}

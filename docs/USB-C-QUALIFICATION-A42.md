@@ -1,3 +1,19 @@
+# A44 current status
+
+The user authorized manual movement of individual USB-C SMT pads. C165948 now
+has a locally adjusted supplier footprint; original source/hash and every shift
+are preserved. Current full-board copper, native connectivity/schema/placement,
+supplier electrical/pad-transform checks and43 tests pass. Minimum source gap
+is0.20005mm, with zero full-board clearance issues. The original revision42
+results below are historical and do not describe the corrected gap geometry.
+
+The manufacturer drawing rates C165948 at20V, while the worst-case PD input
+budget is21V. This separate voltage qualification remains blocked, and both
+routing controls stay disabled. See docs/USB-C-PAD-CORRECTION-A44.md and current
+VALIDATION.md. GitHub main is now public at
+https://github.com/AnasSarkiz/usb-c-pd-brushed-motor; the tscircuit package is
+public. New step receipts verify their exact source/artifact/version.
+
 # USB-C supplier qualification — revision42 WIP
 
 The active connector is still C165948. Its orientation passes the actual

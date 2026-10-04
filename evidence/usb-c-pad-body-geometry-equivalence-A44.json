@@ -1,0 +1,16 @@
+{
+  "artifact_sha256": "ccbc3e0591ee1e501997e2111e29bf69fc027266eb4976b0e9b2b64babefa5a9",
+  "baseline_commit": "b062ce14a2ebf30bdbfcc0e7e2df5a8a19c0bc6f",
+  "all_cad_components_identical": true,
+  "unchanged_records": [
+    "board outline",
+    "component positions and rotations",
+    "holes",
+    "plated mounting lands",
+    "courtyards",
+    "schematic sheets and all schematic connections"
+  ],
+  "prior_body_3d_visual_review": "Remains applicable to exact identical CAD/model/pose records; not a fresh3D visual review",
+  "fresh_footprint_review": "Local current PCB/probe images and independent copper/position audits required",
+  "browser_limitation": "Existing tab could not be selected: URL protocol rejected by browser policy. No browser workaround attempted."
+}

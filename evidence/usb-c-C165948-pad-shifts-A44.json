@@ -1,0 +1,85 @@
+{
+  "supplier_code": "C165948",
+  "mpn": "TYPE-C-31-M-12",
+  "authorization": "User explicitly selected Move individual USB-C pads; exception limited to manual pad-position changes for this part",
+  "original_import_sha256": "7d3f0afe8f5b014edcfb3716ccf542929ae9d45550701aaa8bc63f2700c77bda",
+  "adjusted_import_sha256": "2e96b0cdc06560900aba5c66e7771743223f89f1c7246d9be746b4887cd95d59",
+  "method": "Translate twelve existing SMT pads along footprint X only; leave every pad shape, size and Y coordinate, all holes, pin assignments, CAD model and connector pose unchanged",
+  "target_foreign_pad_gap_mm": 0.20005,
+  "manufacturer_pcb_layout_tolerance_mm": 0.05,
+  "manufacturer_fine_pin_pitch_mm": 0.5,
+  "fine_pad_pitch_mm": 0.50005,
+  "max_abs_translation_mm": 0.000445,
+  "moves": [
+    {
+      "pin": 5,
+      "x_translation_mm": "-0.000115",
+      "old_center_x_mm": "-1.75006",
+      "new_center_x_mm": "-1.750175"
+    },
+    {
+      "pin": 6,
+      "x_translation_mm": "-0.000191",
+      "old_center_x_mm": "-1.249934",
+      "new_center_x_mm": "-1.250125"
+    },
+    {
+      "pin": 7,
+      "x_translation_mm": "-0.000013",
+      "old_center_x_mm": "-0.750062",
+      "new_center_x_mm": "-0.750075"
+    },
+    {
+      "pin": 8,
+      "x_translation_mm": "-0.000089",
+      "old_center_x_mm": "-0.249936",
+      "new_center_x_mm": "-0.250025"
+    },
+    {
+      "pin": 9,
+      "x_translation_mm": "0.000089",
+      "old_center_x_mm": "0.249936",
+      "new_center_x_mm": "0.250025"
+    },
+    {
+      "pin": 10,
+      "x_translation_mm": "0.000013",
+      "old_center_x_mm": "0.750062",
+      "new_center_x_mm": "0.750075"
+    },
+    {
+      "pin": 11,
+      "x_translation_mm": "0.000445",
+      "old_center_x_mm": "1.24968",
+      "new_center_x_mm": "1.250125"
+    },
+    {
+      "pin": 12,
+      "x_translation_mm": "0.000115",
+      "old_center_x_mm": "1.75006",
+      "new_center_x_mm": "1.750175"
+    },
+    {
+      "pin": 13,
+      "x_translation_mm": "-0.0002793",
+      "polygon_vertices": 16
+    },
+    {
+      "pin": 14,
+      "x_translation_mm": "0.0003047",
+      "polygon_vertices": 16
+    },
+    {
+      "pin": 15,
+      "x_translation_mm": "0.0000765",
+      "polygon_vertices": 16
+    },
+    {
+      "pin": 16,
+      "x_translation_mm": "-0.0002543",
+      "polygon_vertices": 16
+    }
+  ],
+  "voltage_rating": "Manufacturer drawing20V;21V maximum PD budget remains unqualified independently of pad clearance",
+  "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/9e56b777c022540fcce7c7f67825f55e.pdf?productCode=C165948"
+}

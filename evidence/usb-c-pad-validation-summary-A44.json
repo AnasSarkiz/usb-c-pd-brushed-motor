@@ -1,0 +1,24 @@
+{
+  "artifact_sha256": "b83b47f32ae9c1055c44804afc1c02d9bf358b2ba3193fd3e9ff886eb1a57527",
+  "native_checks": 5,
+  "native_check_errors": 0,
+  "schematic_placement_issues": 0,
+  "independent_checks": 8,
+  "clearance_issues": 0,
+  "minimum_local_pad_clearance_mm": 0.20005,
+  "source_bindings": 230,
+  "tests": {
+    "passed": 43,
+    "failed": 0,
+    "assertions": 472
+  },
+  "routing_disabled": true,
+  "voltage_blocker": "C165948 manufacturer20V rating does not establish21V maximum PD operation",
+  "accepted_metadata_warnings": "91 generated advisories retained and hash-bound to explicit role/wiring review;57 native pin-spec notices are identical to prior reviewed output. No fresh or unknown warning accepted.",
+  "retained_initial_findings": [
+    "Initial J1 warning review hash was stale after pad correction; original failure retained and independently reviewed/rebound",
+    "Initial native driver expected JSON errors; correct native text parsed, with schematic issue XML checked separately",
+    "Four historical dump resistor rotation notices fixed in native schematic instances; current schematic-placement output is empty",
+    "Existing browser tab rejected by URL policy; current local board/probe/schematic renders inspected, identical CAD/pose records proven"
+  ]
+}

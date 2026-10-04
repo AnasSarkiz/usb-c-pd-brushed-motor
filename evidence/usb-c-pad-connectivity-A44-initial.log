@@ -1,0 +1,11 @@
+{
+  "componentCount": 140,
+  "supplierPartCount": 58,
+  "issues": [
+    "J1: new or stale warning review for source_refdes_convention_warning",
+    "J1: new or stale warning review for source_no_power_pin_defined_warning",
+    "J1: new or stale warning review for source_no_ground_pin_defined_warning"
+  ],
+  "pcbTraceCount": 0,
+  "diagnostics": 91
+}
