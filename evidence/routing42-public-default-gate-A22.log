@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/run-native-routing.py", line 85, in <module>
+    raise SystemExit(run(parser.parse_args()))
+                     ~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/run-native-routing.py", line 43, in run
+    raise ValueError(f'Routing blocked by current copper prerequisite: {log_path}; {copper_report_path}')
+ValueError: Routing blocked by current copper prerequisite: evidence/routing42-routing-gate-1-A22.log; evidence/routing42-routing-gate-copper-A22.json

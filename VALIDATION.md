@@ -1,13 +1,26 @@
 # A22 revision42 — USB-C supplier replacement audit in progress
 
+After reviewing publication behavior, both the board's native
+`routingDisabled` property and CLI build default are restored to `true`.
+The prior routing experiments had left these defaults enabled; a blocked
+public WIP must not start native routing when opened or built. The explicit
+router prerequisite gate remains in force. Re-enable routing only after all
+supplier and current prerequisite results pass, then regenerate source binding. The ordinary configured build, TypeScript,
+formatting and42 tests/468 assertions pass. Its native artifact has no schema
+or generation errors and zero routed traces. A renewed physical copper gate
+fails on five J1 gaps and does not start routing. Connector records remain
+identical to the reviewed 3D baseline; the model audit is rerun successfully.
+
 A new independent preroute all-copper gate reproduces five connector land
 violations and138 pour clearance violations (0.19302–0.19836mm).
 The pour setting is increased from0.20 to0.23mm; the acceptance rule remains
 0.20mm. A fresh full native build passes. Its strict geometry audit removes
 all138 pour issues and retains all five J1 issues. Artifact SHA256
-3a2ebba27de9793260f8dfc20b3d75900ee324a0e797ae6f7e9b3160e7de03b1
+fed118fac8157644fdfd5580211fe572f704a1d4a274723c00a4d5bf77ccdeb4
 has140 purchased components and no routed traces. See
-`evidence/routing42-static-copper-clearance-A22.json` and the native build log.
+`evidence/routing42-routing-gate-copper-A22.json` and
+`evidence/routing42-public-default-preroute-build-A22.log`. The original
+static-clearance result remains historical evidence for the prior artifact.
 TypeScript passes and42 board tests/468 assertions pass, including a new
 regression that rejects the actual sub-rule connector/pour gaps without
 changing the rule or circular-geometry tolerance. Formatting passes (156files).

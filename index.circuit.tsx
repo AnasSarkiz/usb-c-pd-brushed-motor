@@ -19,6 +19,7 @@ export default function UsbCPdBrushedMotorController() {
       height="65mm"
       thickness="1.6mm"
       layers={4}
+      routingDisabled={true}
       allowBlindAndBuriedVias={false}
       minTraceWidth={0.2}
       minTraceToPadEdgeClearance={0.2}

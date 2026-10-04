@@ -1,6 +1,6 @@
 {
   "revision": "A22 revision42 unrouted WIP; connector orientation reviewed; current copper prerequisite fails5 J1 land gaps",
-  "artifact_preroute_sha256": "3a2ebba27de9793260f8dfc20b3d75900ee324a0e797ae6f7e9b3160e7de03b1",
+  "artifact_preroute_sha256": "fed118fac8157644fdfd5580211fe572f704a1d4a274723c00a4d5bf77ccdeb4",
   "records": [
     {
       "path": ".gitattributes",
@@ -532,7 +532,7 @@
     },
     {
       "path": "index.circuit.tsx",
-      "sha256": "522d7e93d9f1566a0f79ff4a96490b8fdfb3dd53cbd77ca7939402e89fdae569"
+      "sha256": "a47045a4bc9e2eff26d057c28c2ea1aaa529282eab7206e5f7ee9eec55c7e8e1"
     },
     {
       "path": "package.json",
@@ -908,7 +908,7 @@
     },
     {
       "path": "tscircuit.config.json",
-      "sha256": "c53278451bfef9b0ea89d3b5a3bcecdd6ecc18952dca2a078a5ebe6b10ebfb14"
+      "sha256": "22c2cefeeabcee5931e1d01a7a6316b4577a9084b7fcedea05500e39d0baf3ef"
     }
   ]
 }

@@ -24,7 +24,9 @@ put its directory first in PATH for this task. Bun1.3.9 exhibits a native routin
 regression that passes with source-identical1.4.2. Install with
 `bun install --frozen-lockfile`.
 Use `bun run format:check`, `bun run typecheck`, `bun run test`, `bun run power:report`
-and `bun run build`. Task-local canonical core preserves independent symbol terminals, each
+and `bun run build`. Both board and CLI defaults keep routing disabled while
+the USB-C prerequisite is blocked. Re-enable them only after the replacement
+component and all current prerequisite gates pass. Task-local canonical core preserves independent symbol terminals, each
 breakout's router version and physical fixed-copper ownership. Its71 affected routing test files
 pass71 tests/2200 assertions with three existing skips; the earlier core2089
 146-test isolation suite remains historical evidence for unchanged behavior. The current board audit
