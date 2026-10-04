@@ -1,0 +1,8 @@
+{
+  "action": "supported tsci push --private --include-dist --compress of committed0ddf430 WIP prototype",
+  "executed": false,
+  "reason": "Automatic approval review rejected private source/circuit JSON egress because trusted instructions authorize public board publication only. No workaround or indirect upload was executed.",
+  "sourceCommit": "0ddf430006d85c9d35ccde2b4e4e8a1a3488f05c",
+  "userQuestion": "Keep publication public only, or allow this private WIP publication while public visibility is unresolved?",
+  "localWork": "Native39 routing and full local validation continue."
+}

@@ -1,0 +1,542 @@
+{
+  "revision": "A22 revision40 explicit escape net phase indices",
+  "artifact_preroute_sha256": "5821495b3399167242ca35701a85199b26cc4c3dc24c70dbcce157777ee9b0c3",
+  "records": [
+    {
+      "path": "bun.lock",
+      "sha256": "e5705073d211658c33cc4f6e531f0c55a74f4985eb4e107778645fb3d526752d"
+    },
+    {
+      "path": "circuit/EnergyDump.tsx",
+      "sha256": "9c144f2340a4f38555e53c16b2689f024e42c54d2408c521d5df837193f4c7fe"
+    },
+    {
+      "path": "circuit/InputProtection.tsx",
+      "sha256": "8d31cf52e3e48fb3bd7e2ad831f87cbdb41fb58c384a0a23644c48c5986a496a"
+    },
+    {
+      "path": "circuit/LogicPadEscapes.tsx",
+      "sha256": "fa4eac333cc93b2d59b9df8ad169d08df726075ba0809c54d84d3912ebb7e926"
+    },
+    {
+      "path": "circuit/MechanicalFeatures.tsx",
+      "sha256": "e829cbdd1ab35562685846abab9e4465dfe653bb2b30bf630e440ccc464b6bb5"
+    },
+    {
+      "path": "circuit/MotorBridge.tsx",
+      "sha256": "b7caeabc3d66792d0908d506d6a5ecdc5ebadd8fcd3c2a6a1cbe0d7b4d2dcf2c"
+    },
+    {
+      "path": "circuit/MotorSupply.tsx",
+      "sha256": "c445e243c7e2b3d6364146fe48c6a5bcf06e6bc5351311bfc17790f3d88dc744"
+    },
+    {
+      "path": "circuit/PdQualification.tsx",
+      "sha256": "2846a2d80e07cfe4bc55e065686eed452e4bf848e52860f478fa67dc95ac19cb"
+    },
+    {
+      "path": "circuit/PinBreakouts.tsx",
+      "sha256": "e306bbb24c679e013a3ba9af3d8e16a6c1c2886b804fc7506f155e7b24e383b8"
+    },
+    {
+      "path": "circuit/PowerRouting.tsx",
+      "sha256": "b00c303781e5c0bdfc19c559931fca202771002871d1272bfabb772e4c170a47"
+    },
+    {
+      "path": "circuit/PwmControls.tsx",
+      "sha256": "025f9e68e82258d903c2416371ad1005863567c59e15a0c34f5cad306caeafa6"
+    },
+    {
+      "path": "circuit/RailProtection.tsx",
+      "sha256": "515015940d3f3608800112ee5592f75546b485f3c3c24209ce486ebe9c9d5c9f"
+    },
+    {
+      "path": "circuit/RoutingNets.tsx",
+      "sha256": "681eb76e8f3d2319782c34a7dc401834c73a1e0c783b4c0da54b3257497afbf8"
+    },
+    {
+      "path": "circuit/UsbInput.tsx",
+      "sha256": "08c678b1b7e57d78d49bf6a5b83b456e607f79001c988f9920056c09c16f3239"
+    },
+    {
+      "path": "imports/ADR421ARZ_REEL7.tsx",
+      "sha256": "885270ea5812382d25aa19c1965f674034896115d1712873c27b74692c466ab9"
+    },
+    {
+      "path": "imports/AO3400A.tsx",
+      "sha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6"
+    },
+    {
+      "path": "imports/AP2204K_5_0TRG1.tsx",
+      "sha256": "ac7839a8eec5ae6a633fbcbb2d77453c244b50c33de1ac69b3c5e0abb7a5b946"
+    },
+    {
+      "path": "imports/APSG250ELL331MJB5S.tsx",
+      "sha256": "f53fcdb64f2fd23313179b5a52af1b13a8e767a905b626a1ab78d97eaf5a6520"
+    },
+    {
+      "path": "imports/AT0603BRD07100KL.tsx",
+      "sha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99"
+    },
+    {
+      "path": "imports/A_0402WGF3301TCE.tsx",
+      "sha256": "3b9cf6de2088a252c5e3da65ae3d9667df8fd38602f47bcc99def2f0dada2731"
+    },
+    {
+      "path": "imports/A_0603B103K500NT.tsx",
+      "sha256": "f94d58f906b97c568d280edac96a7c06c35ce0b7165db8fefc50cdb9a977abef"
+    },
+    {
+      "path": "imports/A_0603WAF1000T5E.tsx",
+      "sha256": "3438363e6c15be8a308923b2c96c7dd4a845595f04db3c47bbb306949b070637"
+    },
+    {
+      "path": "imports/A_0603WAF1001T5E.tsx",
+      "sha256": "5902e8307dd04e282fc33a5c3a8637a05b4bc0c6265ec150b6acc1e2dd8cfdfb"
+    },
+    {
+      "path": "imports/A_0603WAF1002T5E.tsx",
+      "sha256": "5bdb2b8ab1b18c4f68d790341f6d7046e10705ee9e9817e771556e67dfc791b3"
+    },
+    {
+      "path": "imports/A_0603WAF1003T5E.tsx",
+      "sha256": "03a087ff0e23fdbfbb78619d3019aa2d705a0a18edf8f5775a2ad35736129777"
+    },
+    {
+      "path": "imports/A_0603WAF1004T5E.tsx",
+      "sha256": "8bfdabf9cf75e71e43a99391224c435e7479bfe2f93e568790d217ec6826f929"
+    },
+    {
+      "path": "imports/A_0603WAF1053T5E.tsx",
+      "sha256": "6f530f03254210be28f4e38106f30ea47b76567542fb68f6bb12fc759cd28663"
+    },
+    {
+      "path": "imports/A_0603WAF1102T5E.tsx",
+      "sha256": "e52692c9e5924cd71491838f6bd50920b881d6fe1b243d75bb717affc40651f5"
+    },
+    {
+      "path": "imports/A_0603WAF1103T5E.tsx",
+      "sha256": "071851efb71bc4068ea0e62c838dc239b5897fb1abbd76b1297549e59289fb33"
+    },
+    {
+      "path": "imports/A_0603WAF1202T5E.tsx",
+      "sha256": "ab5764c0cdd81a1b6114f7728a2a090ab236eca3b37687d1e1d8e856b8f36695"
+    },
+    {
+      "path": "imports/A_0603WAF1302T5E.tsx",
+      "sha256": "83263fd00787d5809133c992d3413943e680e9e5787ca4df8ed0b25183845ea7"
+    },
+    {
+      "path": "imports/A_0603WAF1623T5E.tsx",
+      "sha256": "cffc68d597f9996543e2183ef0e0af30581079956d933a7004f2e1a79642a089"
+    },
+    {
+      "path": "imports/A_0603WAF2001T5E.tsx",
+      "sha256": "251cc9030dc8096b74016eb21a07bb8f28f15a7210499c4673a242a88aa57077"
+    },
+    {
+      "path": "imports/A_0603WAF2002T5E.tsx",
+      "sha256": "75957bbcc45f275e2a0560bd86b246d8c6a223144936821aec5a351074a5cdef"
+    },
+    {
+      "path": "imports/A_0603WAF2102T5E.tsx",
+      "sha256": "b42069dd4e1311c8f6eb6947ea81dc4356c8b4432ebb816919221643bec14c22"
+    },
+    {
+      "path": "imports/A_0603WAF2431T5E.tsx",
+      "sha256": "315a69936a48338c7c9c0932b2dd0cdf4e222cb3b2c828454ebcd7748c5153e0"
+    },
+    {
+      "path": "imports/A_0603WAF2432T5E.tsx",
+      "sha256": "e2d131b6fa2f079c304acaddf974d6db365ee6448b012b75663bf1a92b15732b"
+    },
+    {
+      "path": "imports/A_0603WAF2612T5E.tsx",
+      "sha256": "c785f9538f33103fdca1a79e88ebcbcd73750a3bb794bb2686dc9fb2874fef90"
+    },
+    {
+      "path": "imports/A_0603WAF2702T5E.tsx",
+      "sha256": "fd8a8ace33b6046e96b7700fa2b4791bf6c0e177eadc9bfa3ef3812dc9fead22"
+    },
+    {
+      "path": "imports/A_0603WAF3242T5E.tsx",
+      "sha256": "ec4a9f97616913ac3b7293dfd266bca1b6d69c083f9e854da9bce04796b1033d"
+    },
+    {
+      "path": "imports/A_0603WAF3300T5E.tsx",
+      "sha256": "942c41cd7d58ee6a0290f6a090277c2b9a2875c50dd9465edaa5aedac91026e6"
+    },
+    {
+      "path": "imports/A_0603WAF4701T5E.tsx",
+      "sha256": "7d47f4ea58f80777dd9d5c5eadd4332639c687c11e320a7223ba12983b59d109"
+    },
+    {
+      "path": "imports/A_0603WAF5101T5E.tsx",
+      "sha256": "27f22e23e54192f5bac6a357c2a79509f81007988352553e78c8a44833805070"
+    },
+    {
+      "path": "imports/A_0603WAF5601T5E.tsx",
+      "sha256": "4fc51b69b0c553deda3765b36ff299061f1fcbc5b19b8efa16b54ee95247a4dc"
+    },
+    {
+      "path": "imports/A_0603WAF5622T5E.tsx",
+      "sha256": "2831fbf310cae85fb0c91614d3e78d255693d9a069b9e126ba1829ce33ac3455"
+    },
+    {
+      "path": "imports/A_0603WAF6801T5E.tsx",
+      "sha256": "d03e86729be7163f725aa25dc24c47ac1f0b8bee1140214a16219951f94d8e99"
+    },
+    {
+      "path": "imports/A_0603WAF6981T5E.tsx",
+      "sha256": "ffdcc9d4f748b20bc7d60213769060137d54146c130a979a431bc42671ee6850"
+    },
+    {
+      "path": "imports/A_0603WAF7151T5E.tsx",
+      "sha256": "16f78e179f033163bcd8d34b4702d3c87e2a31f34b22ce9823e5f63056e110a3"
+    },
+    {
+      "path": "imports/A_0603WAF8062T5E.tsx",
+      "sha256": "3829630316f288feaa59050b170b7a579d0949c137199a56b7d1354a7f4b1388"
+    },
+    {
+      "path": "imports/A_0603WAF8201T5E.tsx",
+      "sha256": "b6996ae9d005cbddee3b38055afab6348b131b3a26696299156bdad4ddfd07a8"
+    },
+    {
+      "path": "imports/A_0603WAF820JT5E.tsx",
+      "sha256": "62186e22b861469d9b5e80ef77d39960bc9fe264880148a5de5154f66a8a6650"
+    },
+    {
+      "path": "imports/A_08053D226MAT2A.tsx",
+      "sha256": "39c4cf956e43feb53853a37ecda0ccd708aa82af90a839d34de420ecda11d4a8"
+    },
+    {
+      "path": "imports/A_1103M2S3CQE2.tsx",
+      "sha256": "3f9eb63632e1e4f48b857a958f3496424cdb931284946ef20a1cdb98959eca3c"
+    },
+    {
+      "path": "imports/A_118EC333.tsx",
+      "sha256": "a7a87c288a126831d3d12bf2f698071d0f92a8a3ba217f8a52ce5392c51d8a0c"
+    },
+    {
+      "path": "imports/A_1210B473K501CT.tsx",
+      "sha256": "6863c6c98d569be4734fabb0ea28e2490e9824faf605e6d06d951193b24a9a60"
+    },
+    {
+      "path": "imports/A_19_213_BHC_AP1Q2_3T.tsx",
+      "sha256": "5375392b1df083f0742b381f8fc942f2fc18072188f0965da980f35830f81cf3"
+    },
+    {
+      "path": "imports/A_19_217_G7C_AN1P2_6T.tsx",
+      "sha256": "c2bafbbedfc255df5e274606ff00eac4347fd9549fef10bf4b2686c53f75d69f"
+    },
+    {
+      "path": "imports/A_1MS3T1B1M2QES_5.tsx",
+      "sha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de"
+    },
+    {
+      "path": "imports/A_1N4148W.tsx",
+      "sha256": "da33325e0227d616476868a31a63b7d51fce36aae5aebb20e58992378c7418da"
+    },
+    {
+      "path": "imports/A_25SVPF100M.tsx",
+      "sha256": "02a6afbbcb25469004ba5802b820840166784726ce89e4a306af630357391b39"
+    },
+    {
+      "path": "imports/A_25SVPF330M.tsx",
+      "sha256": "5abdba99b8c0c0f803a60ea1e47781a1d19fbf26f20d4514f13e73a072fbe07a"
+    },
+    {
+      "path": "imports/A_2MS3T1B1M1QES_5.tsx",
+      "sha256": "3ed81c46f5ec47461764dea2ebc3e0eef1ddb339f392a4ab5301c3d9a7a32b48"
+    },
+    {
+      "path": "imports/A_35SVPK330M.tsx",
+      "sha256": "81434531148c497612f0806dba8f336433d326a695d969beeed2eb408cec7987"
+    },
+    {
+      "path": "imports/A_5015.tsx",
+      "sha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8"
+    },
+    {
+      "path": "imports/B5819W_SL.tsx",
+      "sha256": "7a11383d915188d9ae949f11683e74558f42ec89c962fe61ade095f811d48b4a"
+    },
+    {
+      "path": "imports/BZT52C10.tsx",
+      "sha256": "0343e82f6274fedd7475112549678e9a28cafa45d8fcb2681a906b3096834fd5"
+    },
+    {
+      "path": "imports/BZT52C24.tsx",
+      "sha256": "8ae660a88c78bbeaceb386fc84c54cd61f462132b0d24e1028d0b93e87230f8b"
+    },
+    {
+      "path": "imports/B_2100S04P_A110.tsx",
+      "sha256": "bd9129ee7253e757bcb161d634bb106a229b3242547559444552dffb37f9ce71"
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104.tsx",
+      "sha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2"
+    },
+    {
+      "path": "imports/CL10A105KB8NNNC.tsx",
+      "sha256": "cf176b8dcffdbecbfb2f5ce69b43a0bf0bced7a5f9264d2ecd78e3e14e9b439a"
+    },
+    {
+      "path": "imports/CL10A475KO8NNNC.tsx",
+      "sha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462"
+    },
+    {
+      "path": "imports/CL10B223KB8NNNC.tsx",
+      "sha256": "9da3dedeadd7fdd03ee32c819841773086149daed2f086c13a36f0ecc74f9cb1"
+    },
+    {
+      "path": "imports/CL10C220JB8NNNC.tsx",
+      "sha256": "41cc61b4d9466ec5f554480830bdf048d1b47fa5fc09c6e9d9427215166a4d56"
+    },
+    {
+      "path": "imports/CL10C331JB8NNNC.tsx",
+      "sha256": "b3cdc21548b9c07a5b5d1bc60e00f70da1a0d643bb6d2063606cb2ad1e3a4f3d"
+    },
+    {
+      "path": "imports/CL21B105KBFNNNE.tsx",
+      "sha256": "8c1aa3942d3210aaa6dcc0b88f4a9bd705c2c46770beb922847c292fdefbfae9"
+    },
+    {
+      "path": "imports/CL31A106KBHNNNE.tsx",
+      "sha256": "4d04352d003f455d74abe0a1c5228c17495162d72a8a8a423919f814e088374b"
+    },
+    {
+      "path": "imports/CL32B106KBJNNNE.tsx",
+      "sha256": "1e82266b998724227ca723578b492d42c2b82bc123c0f5e60a769c9c58abddb0"
+    },
+    {
+      "path": "imports/CRCW060310K0FKEA.tsx",
+      "sha256": "bb8cf3d001fe06c7cf2d1f7db55f7bf0954310500b009a438010f7fcc2cd0eb6"
+    },
+    {
+      "path": "imports/D882_RANGE_160_320_.tsx",
+      "sha256": "5e08b45d3a8247fa9f18689c66fc4e86bcadf39627757098b35b9ecde8c48d77"
+    },
+    {
+      "path": "imports/DB126V_5_0_2P_GN_P.tsx",
+      "sha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0"
+    },
+    {
+      "path": "imports/DRV8874PWPR.tsx",
+      "sha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7"
+    },
+    {
+      "path": "imports/DSHP02TSGER.tsx",
+      "sha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa"
+    },
+    {
+      "path": "imports/ESR18EZPF1001.tsx",
+      "sha256": "5bd8e0a6639e7ac4d34d826219eaf66a58771b5c54028b714707512b8ccfdd76"
+    },
+    {
+      "path": "imports/FRC0603F8062TS.tsx",
+      "sha256": "79c22b89072e89e32e100576490d047452ea9246691698db9316759a1c71f311"
+    },
+    {
+      "path": "imports/GEO_3F_12MS3F.tsx",
+      "sha256": "6fdae0580be5aced47f50d1132bd7ce609c538871d878d643166300a7241b92a"
+    },
+    {
+      "path": "imports/GRM1885C1H562JA01D.tsx",
+      "sha256": "ae57d221c1ca4ea607bbcd93bf844c40ccdfe0a2f5b22ebd8dc95de4da1f121f"
+    },
+    {
+      "path": "imports/GRM21BR71H105KA12L.tsx",
+      "sha256": "02065c55ec3ab96a9a3f305102e3989d52c153723776d6043c62e9cd18ce9fa6"
+    },
+    {
+      "path": "imports/GRM31CR61E476ME44L.tsx",
+      "sha256": "567d871c3c483e2e156691930e842185fc85e758eb6878d32403e22c8486ed1b"
+    },
+    {
+      "path": "imports/KH_SS23D03_G6.tsx",
+      "sha256": "07e3cb54f5996eed030c491d36ca235e06789c034f0ec1ffe40398bca3c7d70f"
+    },
+    {
+      "path": "imports/KH_SS23E06_G8.tsx",
+      "sha256": "c9d3ef2f631f11592ad49edf36463cec838e047dcb7570eeb00ac08a43c0fba4"
+    },
+    {
+      "path": "imports/KH_SS23F06_G6.tsx",
+      "sha256": "8353459f2ede571da7bb9659c730707788e9d30ca4b4581e51630a50bcd222ee"
+    },
+    {
+      "path": "imports/LM358DR2G.tsx",
+      "sha256": "e5cc31ca1a26bbaffc275eadf4174b4acf6d03c157e2ee517d418a96f9f453a0"
+    },
+    {
+      "path": "imports/LM393DR.tsx",
+      "sha256": "5e20beaffa770f57c1fa179ea78b01bcb80522d6afcef13a9606db5f8cbf19db"
+    },
+    {
+      "path": "imports/LMR33630ADDAR.tsx",
+      "sha256": "441e5929ef6edad659201dfa957837380647490e2d08e955a179d2fc1227c688"
+    },
+    {
+      "path": "imports/MHCC10040_8R2M_R7.tsx",
+      "sha256": "12de0c462a2c8eb5be066751305f75721305a15c302f6b3acd0575cc9617d35a"
+    },
+    {
+      "path": "imports/MMBD4148CC.tsx",
+      "sha256": "0533efae818154f386b903030b3ab03763a448095b7e1aeef6635aa345d9746d"
+    },
+    {
+      "path": "imports/MMBT3904.tsx",
+      "sha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab"
+    },
+    {
+      "path": "imports/MMBT3904_RANGE_100_300_.tsx",
+      "sha256": "bf651bf4c7a16e75ddba030c0731b7a252b5ab3a2d41e520e340c9d478c0fe0e"
+    },
+    {
+      "path": "imports/MMBT3906LT1G.tsx",
+      "sha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a"
+    },
+    {
+      "path": "imports/OS103011MS8QP1.tsx",
+      "sha256": "91380f75dc491d2f1b3f4397270604a6f98b145381e00d5cc7cdbc1bf67da58f"
+    },
+    {
+      "path": "imports/PESD24VS2UT_215.tsx",
+      "sha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55"
+    },
+    {
+      "path": "imports/PTV09A_4015F_B103.tsx",
+      "sha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6"
+    },
+    {
+      "path": "imports/RC1206FR_7W1KL.tsx",
+      "sha256": "9d3d0d6b784e6152de826cc9615e5bfae56959049b014ada19c66a8f944039a8"
+    },
+    {
+      "path": "imports/RPL_12K10R0FT.tsx",
+      "sha256": "2438409a625ad7fe574c01aa43f88ad235a40c0af5e2566c64a9048e32b64a87"
+    },
+    {
+      "path": "imports/RT0603BRD0710KL.tsx",
+      "sha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81"
+    },
+    {
+      "path": "imports/RVT1E221M0607.tsx",
+      "sha256": "cf35f51f4ec19d35cfb1787172039aa00de588889459661396a1ea1eda9ce813"
+    },
+    {
+      "path": "imports/SMBJ15CA.tsx",
+      "sha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508"
+    },
+    {
+      "path": "imports/SMBJ22A.tsx",
+      "sha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1"
+    },
+    {
+      "path": "imports/SN74LVC2G08DCUR.tsx",
+      "sha256": "88b100341a691acb27276415bb2fe648acb5426ba41857e8211b663b5ea08d47"
+    },
+    {
+      "path": "imports/SRV05_4_P_T7.tsx",
+      "sha256": "6375b69cd72cd0e7f7e55c0667017e9acde6588696a5fcd87a08e8944694eb93"
+    },
+    {
+      "path": "imports/SS54.tsx",
+      "sha256": "dbb814bf82b9771e25ab0b4b970f526310234853c749be7ecbe4055bcb516c6c"
+    },
+    {
+      "path": "imports/SSSS211900.tsx",
+      "sha256": "1ba78cc54e261bfff595470d86bc785ca5544259e9f81d78b14cbb3c21d34cc0"
+    },
+    {
+      "path": "imports/SS_23D03_G080.tsx",
+      "sha256": "112cca3105967d18622883f8dea247282296b59fbb87949b2678516fb48d367d"
+    },
+    {
+      "path": "imports/STM32G030F6P6TR.tsx",
+      "sha256": "8341d8be4d4d2ba11868533ad8cb0fe51462fffd50b2418151e2fc2106332b63"
+    },
+    {
+      "path": "imports/STUSB4500QTR.tsx",
+      "sha256": "f9acdc195538fe06d3ad46bf0a1ee3b4014e2de9c7c58731866a34c0d231f1d7"
+    },
+    {
+      "path": "imports/T491C107M010AT.tsx",
+      "sha256": "12d71b52c601584f54a803e16223c6eb96578962a4061d7887015c31aa1ce006"
+    },
+    {
+      "path": "imports/TC4538S.tsx",
+      "sha256": "0471365c2a3df744dc948c79834024b94e4410936cfe92679b65e5a2ea8506c3"
+    },
+    {
+      "path": "imports/TL431AIDBZR.tsx",
+      "sha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff"
+    },
+    {
+      "path": "imports/TLC555CDR.tsx",
+      "sha256": "80964cdac247fc06fd8948bfc11c43e6743f1a480ef2105615fae7e7d7a3ea1b"
+    },
+    {
+      "path": "imports/TPS16630PWPR.tsx",
+      "sha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b"
+    },
+    {
+      "path": "imports/TPS26630RGER.tsx",
+      "sha256": "41685107ec7a3dda7058355c1b06047b958678c2452505ebf1b3ebfbb7b18bee"
+    },
+    {
+      "path": "imports/TPS54302DDCR.tsx",
+      "sha256": "77537a73e1d88dcae7a7e50bb6bfe6e22da447501c97b3fcc49012ec9b38038b"
+    },
+    {
+      "path": "imports/TPS54360DDAR.tsx",
+      "sha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2"
+    },
+    {
+      "path": "imports/TPS7A1633DGNR.tsx",
+      "sha256": "c78527d69b202bbb0a416928a072cd0ffabecea2adf05b60df3ece5bac8b54e2"
+    },
+    {
+      "path": "imports/TPS7A1650DGNR.tsx",
+      "sha256": "9468fa1522c45d3420702b99400458cb24fbd0b29e06296f630be1f87503479b"
+    },
+    {
+      "path": "imports/TS_103.tsx",
+      "sha256": "cb44dcec9f9c4d27648ad359e7e45c14c6245d4e7a790c4c7be2e7dc50e1359a"
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12.tsx",
+      "sha256": "7d3f0afe8f5b014edcfb3716ccf542929ae9d45550701aaa8bc63f2700c77bda"
+    },
+    {
+      "path": "index.circuit.tsx",
+      "sha256": "13aa2350e6406623efeb7d1201632ea4b45c00bdf458bc62f550e518ae202b5b"
+    },
+    {
+      "path": "package.json",
+      "sha256": "3e40258ed188e57dea863a1f3e621b2ba83831b42f468eee407f486814413d99"
+    },
+    {
+      "path": "scripts/audit-routed-copper-clearances.py",
+      "sha256": "ddec7b86266149ffbea8b0468bc69996587eaf45927636499e5e15bcec372681"
+    },
+    {
+      "path": "scripts/copper_clearance_geometry.py",
+      "sha256": "75dd020ed31eba4519a4e492182d8c2d5f50540d307a0b78f9cb05f129583b89"
+    },
+    {
+      "path": "tests/copper-clearance-geometry.test.ts",
+      "sha256": "20932edb512b0abe9aa9c74b7a7f712dae7d9f668020e11ac53f2de433f18377"
+    },
+    {
+      "path": "tooling/tscircuit-capacity-autorouter-0.0.959-a39.tgz",
+      "sha256": "02729fa4d946a13bd4e662f5d3649caf794b68cdb0dad162a65d9f42ef42b814"
+    },
+    {
+      "path": "tscircuit.config.json",
+      "sha256": "c53278451bfef9b0ea89d3b5a3bcecdd6ecc18952dca2a078a5ebe6b10ebfb14"
+    }
+  ]
+}

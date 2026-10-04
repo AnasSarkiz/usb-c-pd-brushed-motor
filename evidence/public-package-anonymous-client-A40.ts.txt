@@ -1,0 +1,17 @@
+import { writeFile } from "node:fs/promises"
+import { z } from "zod"
+import { getRegistryApiKy } from "../tooling/registry-api-cli-A40/lib/registry-api/get-ky"
+
+// The unchanged client treats an explicit empty session as anonymous:
+// nullish-coalescing preserves it and no Authorization header is generated.
+const anonymousRegistry = getRegistryApiKy({ sessionToken: "" })
+const response = z.object({ package: z.object({
+  package_id: z.literal("abd21ef2-d536-4123-aeef-4364fd8829f8"),
+  name: z.literal("AnasSarkiz/usb-c-pd-brushed-motor"),
+  is_private: z.literal(false), is_public: z.literal(true),
+  is_unlisted: z.literal(false), public_dist_enabled: z.literal(true),
+}) }).parse(await anonymousRegistry.post("packages/get", {
+  json: { name: "AnasSarkiz/usb-c-pd-brushed-motor" },
+}).json<unknown>())
+await writeFile("evidence/public-package-anonymous-readback-A40.json", JSON.stringify({ anonymous: true, ...response }, null, 2) + "\n")
+console.log(JSON.stringify({ anonymous: true, ...response }))

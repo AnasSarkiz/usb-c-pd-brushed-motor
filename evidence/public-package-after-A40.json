@@ -1,0 +1,11 @@
+{
+  "package_id": "abd21ef2-d536-4123-aeef-4364fd8829f8",
+  "name": "AnasSarkiz/usb-c-pd-brushed-motor",
+  "is_private": false,
+  "is_public": true,
+  "is_unlisted": false,
+  "public_dist_enabled": true,
+  "user_permissions": {
+    "can_manage_package": true
+  }
+}

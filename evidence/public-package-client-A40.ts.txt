@@ -1,0 +1,39 @@
+import { writeFile } from "node:fs/promises"
+import { z } from "zod"
+import { getRegistryApiKy } from "../tooling/registry-api-cli-A40/lib/registry-api/get-ky"
+
+const mode = z.enum(["inspect", "make-public"]).parse(process.argv[2])
+const packageName = "AnasSarkiz/usb-c-pd-brushed-motor"
+const packageId = "abd21ef2-d536-4123-aeef-4364fd8829f8"
+const packageState = z.object({
+  package_id: z.literal(packageId),
+  name: z.literal(packageName),
+  is_private: z.boolean(),
+  is_public: z.boolean(),
+  is_unlisted: z.boolean(),
+  public_dist_enabled: z.boolean(),
+  user_permissions: z.record(z.boolean()),
+})
+const responseSchema = z.object({ package: packageState })
+const registry = getRegistryApiKy()
+const before = responseSchema.parse(await registry.post("packages/get", {
+  json: { name: packageName },
+}).json<unknown>()).package
+await writeFile("evidence/public-package-before-A40.json", JSON.stringify(before, null, 2) + "\n")
+console.log(JSON.stringify({ mode, before }))
+if (mode === "make-public") {
+  if (before.user_permissions.can_manage_package !== true)
+    throw new Error("Public visibility update requires explicit management permission")
+  const update = z.object({ package: packageState.omit({ user_permissions: true }) }).parse(await registry.post("packages/update", {
+    json: { package_id: packageId, is_private: false, is_unlisted: false, public_dist_enabled: true },
+  }).json<unknown>()).package
+  if (update.is_private || !update.is_public || update.is_unlisted || !update.public_dist_enabled)
+    throw new Error("Registry did not establish requested public visibility")
+  const after = responseSchema.parse(await registry.post("packages/get", {
+    json: { name: packageName },
+  }).json<unknown>()).package
+  if (after.is_private || !after.is_public || after.is_unlisted || !after.public_dist_enabled)
+    throw new Error("Public visibility readback failed")
+  await writeFile("evidence/public-package-after-A40.json", JSON.stringify(after, null, 2) + "\n")
+  console.log(JSON.stringify({ after }))
+}

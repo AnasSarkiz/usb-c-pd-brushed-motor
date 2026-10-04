@@ -1,3 +1,57 @@
+# A22 revision40 — assign escape nets to their declared native phase
+
+Native39 correctly rejects the saved escape phase: it receives zero connections
+because VBUS_SENSE,SWDIO and HOST_INHIBIT_B still carry their explicit prior
+net-level phase indices. The phase connection filter does not override those
+indices. The failed artifact76ddb1ed559538ff7b3d83bf6820e6fd15e33368a9a73bec91f355e15a70d9c6
+contains140 purchased components and zero final traces; it is not accepted.
+All successful partial phases and the exact error remain preserved. Native39
+PD/MCU and VCC3V3 routes finish with zero solver errors under the stricter
+policy. Source inspection confirms the native saved-phase API behavior.
+
+The three net-level routing indices now explicitly select phase2, matching
+LogicPadEscapes. Only route ordering changes; no supplier component, placement,
+connectivity or clearance rule changes. Fresh prerequisite validation is in
+progress before native40. Publication remains public only as explicitly
+confirmed by the user; no private upload will be retried.
+
+The first fresh revision40 build exits0 but its independent connectivity and
+supplier-rotation audits correctly fail: the sandbox cannot resolve easyeda.com
+after the previous cache reset, so supplier orientation metadata is unavailable.
+Artifact5821495b3399167242ca35701a85199b26cc4c3dc24c70dbcce157777ee9b0c3
+and all network warnings/rejections are retained. No warning is accepted or
+suppressed. A supported network-enabled rebuild is required before routing.
+
+The supported network-enabled rebuild succeeds. Fresh artifact
+dc06f764745aec6ab1b426a264e954f869ab50e1a20d13f9626c8824a83756c0
+passes all seven independent audits, including strict supplier rotations and
+exact warning reconciliation. Physical PCB and all eight schematic record
+types match revision39. Formatting/TypeScript and41 tests/466 assertions pass;
+134 source/dependency/import hashes are freshly bound. The five native
+prerequisites are running; full routing remains gated until they pass.
+
+All five native prerequisites now pass; PCB placement reports0 errors/0
+warnings. All134 source bindings still match. Native40 starts with supplier
+network access enabled and a fresh CLI cache. Partial routes remain diagnostic
+only. Official website source independently proves packages/update supports
+is_private/is_unlisted/public_dist_enabled. The unchanged official CLI0.1.2237
+authentication client (commit5de7cd6cecc9a87a1ea88bb5a4a3e13b9c2eb0e2)
+reads existing credentials in their original provider. Read-only registry
+inspection verifies can_manage_package=true for the exact existing board
+package. A first permission schema incorrectly assumed can_manage and was
+rejected before any mutation; that original failure is retained. Public
+visibility is being established through the supported API before any upload.
+No private publication is authorized or retried.
+
+The supported public-visibility update succeeds: is_private=false,
+is_public=true,is_unlisted=false,public_dist_enabled=true. Independent
+anonymous readback with no Authorization header verifies those exact fields.
+The existing board package is publicly accessible; no private upload occurred.
+Official API/client source hashes and sanitized responses are retained.
+GitHub publication remains blocked by the missing task remote.
+
+---
+
 # A22 revision39 — enforce configured clearances in native routing
 
 Revision38 was stopped after measured violations, not because routing was slow.
@@ -52,6 +106,14 @@ The four explicitly accepted schematic style advisories remain visible. Every
 one of the134 bound source/dependency/import hashes matches. Native39 full
 routing started with a fresh CLI cache and retained per-phase native inputs,
 outputs and logs. No partial output counts as accepted routed copper.
+
+Local source and the exact checked preroute Circuit JSON are committed as
+0ddf430006d85c9d35ccde2b4e4e8a1a3488f05c. GitHub push is blocked because
+this task repository has no remote. Automatic approval review rejected a
+supported archive publication to the existing private package: authorization
+covers a public board package. No transfer or indirect workaround occurred.
+An explicit visibility-scope question is pending; this does not halt native39
+routing, local validation or fabrication preparation.
 
 ---
 

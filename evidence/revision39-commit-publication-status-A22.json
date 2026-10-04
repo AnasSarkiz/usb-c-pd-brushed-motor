@@ -1,0 +1,10 @@
+{
+  "commit": "0ddf430006d85c9d35ccde2b4e4e8a1a3488f05c",
+  "stage": "validated preroute prototype with canonical clearance fixes",
+  "committedCircuitSha256": "d97422db3ea64b4a79f7c5af02b1014da7dd7595e6085672401ac611551fa674",
+  "githubRemote": "",
+  "githubPushStatus": "blocked: task repository has no configured remote",
+  "tscircuitPackage": "@tsci/AnasSarkiz.usb-c-pd-brushed-motor",
+  "packagePublicStatus": "not public; prior supported registry and browser checks recorded in publication-public-visibility-check-A22.json",
+  "routedRevisionPublicationStatus": "pending full routed validation; no failed/partial output published as routed"
+}

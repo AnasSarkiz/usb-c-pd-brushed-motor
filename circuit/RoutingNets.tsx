@@ -157,6 +157,7 @@ const analogRoutingGroups = [
 function signalRoutingPhase(name: string) {
   if (name === "ADC_VBUS") return 0
   if (name === "MCU_NRST") return 0
+  if (["VBUS_SENSE", "SWDIO", "HOST_INHIBIT_B"].includes(name)) return 2
   if (quietNetNames.includes(name)) return 3
   if (interfaceNetNames.includes(name)) return 4
   const groupIndex = analogRoutingGroups.findIndex((group) =>

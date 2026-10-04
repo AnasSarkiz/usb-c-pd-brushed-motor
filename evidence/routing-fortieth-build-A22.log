@@ -1,0 +1,24 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Wrote debug artifact: evidence/routing-fortieth-debug-A22/placement-unrouted.png
+Autorouting <board#851 /> phase 1/20 start: connections=13, obstacles=437, previous_traces=0, router=tscircuit, version=beta_pipeline9, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=2x, cache=miss, cache_id=8efffac3/f2736c2c
+  connections: breakout:pcb_breakout_point_0, breakout:pcb_breakout_point_1, breakout:pcb_breakout_point_2, breakout:pcb_breakout_point_3, breakout:pcb_breakout_point_4, breakout:pcb_breakout_point_5, breakout:pcb_breakout_point_6, breakout:pcb_breakout_point_7, breakout:pcb_breakout_point_8, breakout:pcb_breakout_point_9, breakout:pcb_breakout_point_10, breakout:pcb_breakout_point_11, breakout:pcb_breakout_point_12
+Wrote debug artifact: evidence/routing-fortieth-debug-A22/phase-0.input.simple-route.json
+  phase 1/20 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=1 progress=52% iterations_per_second=27475 elapsed=4.9s
+  phase 1/20 done: routed_traces=13, jumpers=0, errors=0, elapsed=5.6s
+Wrote debug artifact: evidence/routing-fortieth-debug-A22/phase-0.output.traces.json
+Wrote debug artifact: evidence/routing-fortieth-debug-A22/phase-0-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#851 /> phase 2/20 start: connections=5, obstacles=437, previous_traces=13, router=fanout, version=beta_pipeline9, solver=FanoutSolver, effort=2x, cache=disabled(strategy_not_cacheable)
+  connections: 
+Wrote debug artifact: evidence/routing-fortieth-debug-A22/phase-1.input.simple-route.json
+  phase 2/20 progress: solver=FanoutSolver solver_phase=fanout steps=1 progress=100% elapsed=3.9s
+  phase 2/20 done: routed_traces=18, jumpers=0, errors=0, elapsed=3.9s
+Wrote debug artifact: evidence/routing-fortieth-debug-A22/phase-1.output.traces.json
+Wrote debug artifact: evidence/routing-fortieth-debug-A22/phase-1-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#851 /> phase 4/20 start: connections=18, obstacles=437, previous_traces=18, router=tscircuit, version=beta_pipeline9, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=2x, cache=miss, cache_id=8efffac3/1f94b9b4
+  connections: breakout:pcb_breakout_point_13, breakout:pcb_breakout_point_14, breakout:pcb_breakout_point_15, breakout:pcb_breakout_point_16, breakout:pcb_breakout_point_17, breakout:pcb_breakout_point_18, breakout:pcb_breakout_point_19, breakout:pcb_breakout_point_20, breakout:pcb_breakout_point_21, breakout:pcb_breakout_point_22, breakout:pcb_breakout_point_23, breakout:pcb_breakout_point_24, breakout:pcb_breakout_point_25, breakout:pcb_breakout_point_26, breakout:pcb_breakout_point_27, breakout:pcb_breakout_point_28, breakout:pcb_breakout_point_29, breakout:pcb_breakout_point_30
+Wrote debug artifact: evidence/routing-fortieth-debug-A22/phase-3.input.simple-route.json
+  phase 4/20 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=portPointPathingSolver steps=1 progress=44% iterations_per_second=24604 elapsed=298ms

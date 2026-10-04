@@ -1,0 +1,78 @@
+{
+  "artifact_sha256": "dc06f764745aec6ab1b426a264e954f869ab50e1a20d13f9626c8824a83756c0",
+  "results": [
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "netlist",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/routing40-netlist-native-A22.log",
+      "sha256": "fc0378008c7f3f6b8ad5a5785a4e32320c4e5f537a148f627460fea471aaa4b4"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "pin_specification",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/routing40-pin_specification-native-A22.log",
+      "sha256": "af649e28e0ae82f2d3c8959eccf98c06bbe5fa935cb9eaa48610de015c1a3047"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "source",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/routing40-source-native-A22.log",
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "schematic-placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [],
+      "log": "evidence/routing40-schematic-placement-native-A22.log",
+      "sha256": "8ea7fed7004f40dd6ca3a2ef887c72d6d8de11911777ca0f218be07b4fb0a30c"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/routing40-placement-native-A22.log",
+      "sha256": "0f5d8c0ad36f4389009340a1d3ee830414057752d2e36f1ac4446a3955ab29c8"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "optionalFullGitWhitespaceCheck": "Reports trailing spaces/new blank lines in unchanged raw native logs and archived upstream text.",
+  "scope": "Configured board formatting excludes evidence; source/documentation whitespace is independently checked.",
+  "handling": "Preserve exact raw evidence and its hashes; no log/source archive was stripped or rewritten. No schematic/PCB check or test is weakened."
+}

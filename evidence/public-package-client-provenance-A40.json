@@ -1,0 +1,41 @@
+{
+  "officialCliRepository": "https://github.com/tscircuit/cli",
+  "officialCliVersion": "0.1.2237",
+  "officialCliCommit": "5de7cd6cecc9a87a1ea88bb5a4a3e13b9c2eb0e2",
+  "sourceUnmodified": true,
+  "authProvider": "Unchanged official client; original credential provider read only; no token printed/copied/persisted",
+  "clientHelpers": [
+    {
+      "path": "tooling/registry-api-cli-A40/lib/registry-api/get-ky.ts",
+      "sha256": "b0c1420f7c9ed5514ca2bb14560223bd33d2299e44dfadce21cf31ed8a7dabc7"
+    },
+    {
+      "path": "tooling/registry-api-cli-A40/lib/cli-config/index.ts",
+      "sha256": "c06eef34ba9e9e5cac5f89d6491f64e698b36c01212ffb45d5dfd8ee63389d2d"
+    }
+  ],
+  "apiSource": "https://github.com/tscircuit/tscircuit.com/blob/main/fake-snippets-api/routes/api/packages/update.ts",
+  "records": [
+    {
+      "source": ".cache/public-package-update-source-A40.ts.txt",
+      "archive": "evidence/public-package-update-api-source-A40.ts.txt",
+      "sha256": "55b5652fd9f0350b2226672fbbafa9ef4ed88d458dedbfb6af9f08bf8b407fc5"
+    },
+    {
+      "source": ".cache/public-package-visibility-dialog-A40.tsx.txt",
+      "archive": "evidence/public-package-visibility-dialog-source-A40.tsx.txt",
+      "sha256": "6aaeb930efffc6c664c2aad23d97ec22aaea493227344c97c23ee525062dede4"
+    },
+    {
+      "source": ".cache/use-official-public-registry-A40.ts",
+      "archive": "evidence/public-package-client-A40.ts.txt",
+      "sha256": "329146c8fe9dad71cf0804eb2e9f3e397788b0cb4421675c666d365f34dd6b06"
+    },
+    {
+      "source": ".cache/verify-public-package-anonymous-A40.ts",
+      "archive": "evidence/public-package-anonymous-client-A40.ts.txt",
+      "sha256": "29acfef09f02c8b6cec2305ca556417be2e0ed00a32d1f2a2272fd07208f5456"
+    }
+  ],
+  "supportedEffect": "Existing package made public/listed with public distribution, then verified anonymously. No private upload occurred."
+}

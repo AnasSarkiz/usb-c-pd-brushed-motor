@@ -1,0 +1,30 @@
+34 |         return {
+35 |             success: false,
+36 |             get error() {
+37 |                 if (this._error)
+38 |                     return this._error;
+39 |                 const error = new ZodError(ctx.common.issues);
+                                   ^
+ZodError: [
+  {
+    "code": "invalid_literal",
+    "expected": true,
+    "path": [
+      "package",
+      "user_permissions",
+      "can_manage"
+    ],
+    "message": "Invalid literal value, expected true"
+  }
+]
+    issues: [
+  [Object ...]
+],
+  addIssue: [Function],
+ addIssues: [Function],
+
+      at error (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/zod/v3/types.js:39:31)
+      at parse (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/zod/v3/types.js:114:15)
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/.cache/use-official-public-registry-A40.ts:19:31
+
+Bun v1.4.2 (macOS arm64)

@@ -1,0 +1,22 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 2,
+  "phaseName": "logic-pad-clearance-escapes",
+  "phaseStageIndex": 0,
+  "phaseStageCount": 2,
+  "phaseOrdinal": 9,
+  "phaseCount": 20,
+  "elapsedMs": 131,
+  "connectionCount": 0,
+  "obstacleCount": 577,
+  "previousTraceCount": 57,
+  "autorouterName": "precomputed",
+  "autorouterVersion": "beta_pipeline7",
+  "effort": 2,
+  "cacheStatus": "disabled",
+  "cacheDisabledReason": "precomputed",
+  "error": {
+    "message": "Saved phase path \"D3.cathode\" must select exactly one connection in this phase"
+  }
+}

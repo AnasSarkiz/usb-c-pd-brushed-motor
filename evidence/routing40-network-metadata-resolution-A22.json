@@ -1,0 +1,20 @@
+{
+  "stage": "revision40 supplier metadata restoration",
+  "rejectedArtifactSha256": "5821495b3399167242ca35701a85199b26cc4c3dc24c70dbcce157777ee9b0c3",
+  "successfulArtifactSha256": "dc06f764745aec6ab1b426a264e954f869ab50e1a20d13f9626c8824a83756c0",
+  "rejectedChecks": [
+    "connectivity",
+    "pnp"
+  ],
+  "successfulChecks": [
+    "schema",
+    "import-transforms",
+    "connectivity",
+    "full-placement",
+    "targets",
+    "artwork",
+    "pnp"
+  ],
+  "resolution": "Supported network-enabled native build restores supplier model/orientation metadata. Original imports, schemas, checks and warning thresholds are unchanged.",
+  "networkBuildLogSha256": "91cf8b4e5fda5807637601fba6caf3bb3466d51ece5737793464a8b5031b4f69"
+}

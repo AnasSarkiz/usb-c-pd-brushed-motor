@@ -1,0 +1,79 @@
+{
+  "artifact_sha256": "dc06f764745aec6ab1b426a264e954f869ab50e1a20d13f9626c8824a83756c0",
+  "results": [
+    {
+      "name": "schema",
+      "command": [
+        "bun",
+        "scripts/audit-circuit-schema.ts",
+        "dist/index/circuit.json",
+        "evidence/routing40-circuit-schema-A22.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/routing40-schema-A22.log",
+      "sha256": "8bace8ed6622e865531ba204da6ac741f1599d1e02ad4a4a0703e11e1cd1660f"
+    },
+    {
+      "name": "import-transforms",
+      "command": [
+        "bun",
+        "scripts/audit-product-placement.ts",
+        "unrouted"
+      ],
+      "exit_code": 0,
+      "log": "evidence/routing40-import-transforms-A22.log",
+      "sha256": "1cbbea7a68c7a39200b362e1e4b9ca4997e24c46f88ee1663cad5d7609b49c1b"
+    },
+    {
+      "name": "connectivity",
+      "command": [
+        "bun",
+        "scripts/audit-schematic.ts",
+        "evidence/schematic-audit-config-A22.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/routing40-connectivity-A22.log",
+      "sha256": "19be90d7dee0042e8414c6e094b8f1568ec7a30aa59b2dec866252d7af3f27ac"
+    },
+    {
+      "name": "full-placement",
+      "command": [
+        "bun",
+        "scripts/check-full-placement.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/routing40-full-placement-A22.log",
+      "sha256": "cea43b1db80121ad9931bee68b2700087c4ed5145422b48423151461ee63a867"
+    },
+    {
+      "name": "targets",
+      "command": [
+        "tooling/power-review-venv/bin/python",
+        "scripts/audit-breakout-targets.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/routing40-targets-A22.log",
+      "sha256": "08c1570469a96e6904610f1cc4b32030c4e3622464b047b3728180f72cbf6409"
+    },
+    {
+      "name": "artwork",
+      "command": [
+        "bun",
+        "scripts/audit-product-artwork.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/routing40-artwork-A22.log",
+      "sha256": "af46aeaa6b50fcb1c252c7466ccad9bc44d445deb0ff311f4d9ec49bf4d4ffe2"
+    },
+    {
+      "name": "pnp",
+      "command": [
+        "bun",
+        "scripts/audit-supplier-pnp.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/routing40-pnp-A22.log",
+      "sha256": "d41cee29376d8e6da75cea1a218dd50b5a242617645055c8dbb4373ad45b1b4d"
+    }
+  ]
+}

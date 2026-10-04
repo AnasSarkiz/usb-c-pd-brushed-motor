@@ -1,0 +1,13 @@
+128 | var getPickAndPlaceRotation = (pcbComponent, designator, opts) => {
+129 |   const { supplier } = opts;
+130 |   if (!supplier) return pcbComponent.rotation;
+131 |   const unresolved = (reason) => {
+132 |     const message = `${designator}: cannot verify ${supplier} pick-and-place rotation (${reason}); PCB rotation ${pcbComponent.rotation} is unverified.`;
+133 |     if (opts.requireSupplierRotation) throw new Error(message);
+                                                      ^
+error: J1: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 270 is unverified.
+      at unresolved (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-pnp-csv/dist/index.js:133:49)
+      at convertCircuitJsonToPickAndPlaceRows (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/circuit-json-to-pnp-csv/dist/index.js:175:19)
+      at /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/scripts/audit-supplier-pnp.ts:46:23
+
+Bun v1.4.2 (macOS arm64)

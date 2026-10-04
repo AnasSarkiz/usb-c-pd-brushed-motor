@@ -1,0 +1,6 @@
+bun-tests/fake-snippets-api/routes/packages/create.test.ts
+bun-tests/fake-snippets-api/routes/packages/update.test.ts
+fake-snippets-api/routes/api/packages/create.ts
+fake-snippets-api/routes/api/packages/update.ts
+fake-snippets-api/routes/api/packages/update_ai_description.ts
+src/components/dialogs/package-visibility-settings-dialog.tsx
