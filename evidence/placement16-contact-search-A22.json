@@ -1,0 +1,215 @@
+{
+  "basis": "Read-only native courtyard geometry; no imported model or generated JSON edited. Source candidates only; native whole-board checks remain mandatory.",
+  "candidates": [
+    {
+      "xMm": -19.5,
+      "yMm": 3.0,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.12460470000007716,
+      "resetBranchDistanceScoreMm": 18.88028680823927
+    },
+    {
+      "xMm": -19.75,
+      "yMm": 3.0,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.12460470000007716,
+      "resetBranchDistanceScoreMm": 19.142835301579783
+    },
+    {
+      "xMm": -19.5,
+      "yMm": 3.25,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.17019670000013318,
+      "resetBranchDistanceScoreMm": 19.3098571778632
+    },
+    {
+      "xMm": -20.0,
+      "yMm": 3.0,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.12460470000007716,
+      "resetBranchDistanceScoreMm": 19.414686940125495
+    },
+    {
+      "xMm": -19.75,
+      "yMm": 3.25,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.3746047000000772,
+      "resetBranchDistanceScoreMm": 19.56663128200296
+    },
+    {
+      "xMm": -19.5,
+      "yMm": 3.5,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.17019670000013318,
+      "resetBranchDistanceScoreMm": 19.742765958974903
+    },
+    {
+      "xMm": -20.0,
+      "yMm": 3.25,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.3746047000000772,
+      "resetBranchDistanceScoreMm": 19.832665910588112
+    },
+    {
+      "xMm": -19.75,
+      "yMm": 3.5,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.42019670000013315,
+      "resetBranchDistanceScoreMm": 19.993969573048442
+    },
+    {
+      "xMm": -19.5,
+      "yMm": 3.75,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.17019670000013318,
+      "resetBranchDistanceScoreMm": 20.178797323928684
+    },
+    {
+      "xMm": -20.0,
+      "yMm": 3.5,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.6246047000000772,
+      "resetBranchDistanceScoreMm": 20.25438265087267
+    },
+    {
+      "xMm": -19.75,
+      "yMm": 3.75,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.42019670000013315,
+      "resetBranchDistanceScoreMm": 20.424627019376665
+    },
+    {
+      "xMm": -19.5,
+      "yMm": 4.0,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.17019670000013318,
+      "resetBranchDistanceScoreMm": 20.61775222636254
+    },
+    {
+      "xMm": -20.0,
+      "yMm": 3.75,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.6604967000000883,
+      "resetBranchDistanceScoreMm": 20.679607831833447
+    },
+    {
+      "xMm": -19.75,
+      "yMm": 4.0,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.42019670000013315,
+      "resetBranchDistanceScoreMm": 20.858397228663932
+    },
+    {
+      "xMm": -19.5,
+      "yMm": 4.25,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.17019670000013318,
+      "resetBranchDistanceScoreMm": 21.059446958889147
+    },
+    {
+      "xMm": -20.0,
+      "yMm": 4.0,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.6604967000000883,
+      "resetBranchDistanceScoreMm": 21.10812874958463
+    },
+    {
+      "xMm": -19.75,
+      "yMm": 4.25,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.42019670000013315,
+      "resetBranchDistanceScoreMm": 21.295089199466446
+    },
+    {
+      "xMm": -19.5,
+      "yMm": 4.5,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.17019670000013318,
+      "resetBranchDistanceScoreMm": 21.503711836164086
+    },
+    {
+      "xMm": -20.0,
+      "yMm": 4.25,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.6604967000000883,
+      "resetBranchDistanceScoreMm": 21.539748033151124
+    },
+    {
+      "xMm": -19.75,
+      "yMm": 4.5,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.42019670000013315,
+      "resetBranchDistanceScoreMm": 21.734526059080533
+    },
+    {
+      "xMm": -19.5,
+      "yMm": 4.75,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.17019670000013318,
+      "resetBranchDistanceScoreMm": 21.950389994115845
+    },
+    {
+      "xMm": -20.0,
+      "yMm": 4.5,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.5979934058774303,
+      "resetBranchDistanceScoreMm": 21.974282446592355
+    },
+    {
+      "xMm": -19.75,
+      "yMm": 4.75,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.42019670000013315,
+      "resetBranchDistanceScoreMm": 22.176543904843264
+    },
+    {
+      "xMm": -19.5,
+      "yMm": 5.0,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.17019670000013318,
+      "resetBranchDistanceScoreMm": 22.39933629622822
+    },
+    {
+      "xMm": -20.0,
+      "yMm": 4.75,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.40570156947314606,
+      "resetBranchDistanceScoreMm": 22.411561781502808
+    },
+    {
+      "xMm": -19.75,
+      "yMm": 5.0,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.42019670000013315,
+      "resetBranchDistanceScoreMm": 22.620990742021412
+    },
+    {
+      "xMm": -19.5,
+      "yMm": 5.25,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.17019670000013318,
+      "resetBranchDistanceScoreMm": 22.850416338062892
+    },
+    {
+      "xMm": -20.0,
+      "yMm": 5.0,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.31079159170263726,
+      "resetBranchDistanceScoreMm": 22.851427835163655
+    },
+    {
+      "xMm": -19.75,
+      "yMm": 5.25,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.42019670000013315,
+      "resetBranchDistanceScoreMm": 23.067725511380416
+    },
+    {
+      "xMm": -20.0,
+      "yMm": 5.25,
+      "rotationDegrees": 90,
+      "minimumCourtyardGapMm": 0.3105967000001328,
+      "resetBranchDistanceScoreMm": 23.293733469262907
+    }
+  ]
+}

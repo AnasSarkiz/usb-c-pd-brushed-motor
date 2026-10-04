@@ -1,0 +1,52 @@
+{
+  "before_sha256": "afecf221c372afff162fb035b1fb56dd96e20e486747252466ea97fbfe913a05",
+  "after_sha256": "988e545ccad69422e1868e56f5a3a38a839659a8bc7e8a126cde63a2c49bf14d",
+  "identical_non_artwork_records": 4815,
+  "changes": [
+    {
+      "before": {
+        "type": "pcb_silkscreen_text",
+        "pcb_silkscreen_text_id": "pcb_silkscreen_text_14",
+        "anchor_alignment": "center",
+        "anchor_position": {
+          "x": -19.75,
+          "y": 6.5
+        },
+        "font": "tscircuit2024",
+        "font_size": 1.2,
+        "layer": "top",
+        "text": "TP3 NRST",
+        "ccw_rotation": 0,
+        "pcb_component_id": "pcb_board_0",
+        "subcircuit_id": "subcircuit_source_group_2"
+      },
+      "after": {
+        "type": "pcb_silkscreen_text",
+        "pcb_silkscreen_text_id": "pcb_silkscreen_text_14",
+        "anchor_alignment": "center",
+        "anchor_position": {
+          "x": -20.2,
+          "y": 6.5
+        },
+        "font": "tscircuit2024",
+        "font_size": 1.2,
+        "layer": "top",
+        "text": "NRST",
+        "ccw_rotation": 0,
+        "pcb_component_id": "pcb_board_0",
+        "subcircuit_id": "subcircuit_source_group_2"
+      }
+    },
+    {
+      "before": {
+        "type": "source_project_metadata",
+        "source_filesystem_md5_hash": "185d778d0247f546bac889cb897ae95d"
+      },
+      "after": {
+        "type": "source_project_metadata",
+        "source_filesystem_md5_hash": "b6097cbc9fee04672787c29b0e146fa8"
+      }
+    }
+  ],
+  "preroute_checks": "All five previously passed checks retained: identical source, schematic, connectivity, placements, pads, vias and geometry; artwork rerun separately."
+}

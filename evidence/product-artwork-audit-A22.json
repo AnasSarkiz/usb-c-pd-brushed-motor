@@ -1,6 +1,6 @@
 {
   "revision": "A22",
-  "artifactSha256": "f2125d20d7df28d03ad39f37ca5c87125816afe3000917c4297f63f2fb14be91",
+  "artifactSha256": "988e545ccad69422e1868e56f5a3a38a839659a8bc7e8a126cde63a2c49bf14d",
   "highPrecisionSilkscreenRequired": true,
   "texts": [
     {
@@ -144,13 +144,13 @@
       }
     },
     {
-      "label": "TP3 NRST",
+      "label": "NRST",
       "layer": "top",
       "bounds": {
-        "left": -31.3943108,
-        "right": -24.805689200000003,
-        "bottom": -9.7260406,
-        "top": -8.7739594
+        "left": -21.8064328,
+        "right": -18.5935672,
+        "bottom": 6.0239594,
+        "top": 6.9760406
       }
     },
     {
@@ -257,10 +257,10 @@
       "label": "TP3",
       "layer": "bottom",
       "bounds": {
-        "left": -29.2892972,
-        "right": -26.910702800000003,
-        "bottom": -11.4760406,
-        "top": -10.5239594
+        "left": -20.9392972,
+        "right": -18.5607028,
+        "bottom": 2.7739594,
+        "top": 3.7260406
       }
     },
     {

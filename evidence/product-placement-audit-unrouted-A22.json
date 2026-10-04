@@ -2,7 +2,7 @@
   "revision": "A22",
   "routingPhase": "unrouted",
   "routedTraceCount": 0,
-  "artifactSha256": "6cb147ed86f770553766d7b7cdc0b3cc023b7dc3db8ff315e50ff49a6c82ef51",
+  "artifactSha256": "988e545ccad69422e1868e56f5a3a38a839659a8bc7e8a126cde63a2c49bf14d",
   "purchasedComponentCount": 140,
   "inspectedCount": 140,
   "importedThermalVias": 12,
@@ -1977,13 +1977,13 @@
       "ref": "TP3",
       "code": "C2906768",
       "footprintAnchorMm": {
-        "x": -28.1,
-        "y": -11,
-        "ccwRotationDegrees": 0
+        "x": -19.75,
+        "y": 3.25,
+        "ccwRotationDegrees": 90
       },
       "actualCenterMm": {
-        "x": -28.1,
-        "y": -11
+        "x": -19.75,
+        "y": 3.25
       },
       "electricalPins": 1,
       "originalVias": 0

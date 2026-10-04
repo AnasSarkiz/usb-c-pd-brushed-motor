@@ -11,9 +11,9 @@ export const productPlacement = {
     ccwRotationDegrees: 0,
   },
   TP3: {
-    x: -28.1,
-    y: -11,
-    ccwRotationDegrees: 0,
+    x: -19.75,
+    y: 3.25,
+    ccwRotationDegrees: 90,
   },
   TP4: {
     x: -23,

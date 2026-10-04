@@ -62,3 +62,8 @@ is archived with zero PCB traces.
 Routing may now begin for the explicitly limited diagnostic engineering prototype.
 No measured continuous-current/thermal rating is claimed. New routed via-in-pad
 remains prohibited; imported EP vias use the declared fill/cap assembly process.
+
+NRST contact refinement (A22 iteration16, validation passed): the close
+(-12.8,-4.5)/90 candidate failed unchanged supplier courtyard checks and was
+rejected. The new candidate is(-19.75,3.25)/90 above the MCU, with its operator
+NRST label at(-20.2,6.5), with TP3 retained on the underside. All other component placements remain unchanged.

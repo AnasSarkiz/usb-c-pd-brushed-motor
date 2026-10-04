@@ -1,0 +1,26 @@
+$ biome format .
+circuit/MechanicalFeatures.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     41 41 │         <silkscreentext text="TP1 SWDIO" pcbX={-34} pcbY={-1.6} fontSize={1.2} />
+     42 42 │         <silkscreentext text="TP2 CLK" pcbX={-27.5} pcbY={-5.25} fontSize={1.2} />
+     43    │ - ······<silkscreentext
+     44    │ - ········text="TP3·NRST"
+     45    │ - ········pcbX={-19.75}
+     46    │ - ········pcbY={6.5}
+     47    │ - ········fontSize={1.2}
+     48    │ - ······/>
+        43 │ + ······<silkscreentext·text="TP3·NRST"·pcbX={-19.75}·pcbY={6.5}·fontSize={1.2}·/>
+     49 44 │         <silkscreentext text="TP4 GND" pcbX={-23} pcbY={-10.75} fontSize={1.2} />
+     50 45 │         <silkscreentext text="TP5 3V3" pcbX={-22.5} pcbY={21} fontSize={1.2} />
+  
+
+Checked 147 files in 24ms. No fixes applied.
+Found 1 error.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format:check" exited with code 1

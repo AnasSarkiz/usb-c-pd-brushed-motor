@@ -1,3 +1,52 @@
+# A22 placement iteration16 — passed; native routing in progress, 2026-10-04
+
+Starting from source commit d78470b. Native attempt15 completes the31 signal
+escapes and95 ground drops but fails the final MCU reset connection. Native
+connectivity maps all six reset identifiers to one net; no alias is missing.
+The first TP3 candidate(-12.8,-4.5)/90 failed four imported courtyard checks:
+C30, C32, R60 and R61. Its untouched native failure is retained as
+placement16-failed-preroute-A22.json.gz; no gate was bypassed. Read-only polygon
+search identifies a second candidate(-19.75,3.25)/90 above the MCU with
+0.3746mm minimum existing-courtyard gap. Native placement and artwork validation
+were completed after the label correction. Its operational label moves with the contact. All five native prerequisite
+checks passed on the complete140-part/152-PCB artifact. The artwork audit found
+one label-pad clearance failure; the front legend is shortened to NRST at
+(-20.2,6.5), retaining TP3 on the underside. Fresh artwork validation passes:163 labels, zero issues. Both top and bottom
+placement renders were inspected. Schema, all140 supplier transforms,
+connectivity, full native placement and31 breakout targets pass. Board
+formatting, TypeScript and38tests/460assertions pass. The complete unrouted
+artifact SHA256 is988e545ccad69422e1868e56f5a3a38a839659a8bc7e8a126cde63a2c49bf14d.
+Its4815 non-artwork/nonmetadata records exactly equal the complete artifact
+that passed all five native checks; that evidence remains applicable.
+An earlier sandboxed build failed140 supplier metadata requests withENOTFOUND;
+its output is retained and rejected. A network-enabled rebuild restored all
+supplier metadata and the unchanged91 reviewed advisories. No failure suppressed.
+The proposed shorter reset interconnect avoids the long cross-package branch
+to the previous contact at(-28.1,-11). Only board placement changes; the official
+C2906768 import, pin mapping, supplier code, circuit and quantity remain intact.
+
+Fresh full-board placement, pad clearance, contact access, labels and all five
+native prerequisite checks must pass before native route16. Earlier failed
+route15 output remains diagnostic evidence only. No fabrication files are issued.
+
+Publication recovery uses an exact Git archive of the circuit, imported parts,
+active dependencies, firmware, tests, scripts, documentation and current
+validation. Historical research archives remain in Git. The earlier full-repo
+archive timed out and file-by-file upload had failures; its incomplete status
+is explicit. Recovered milestone d8caeec-source acknowledges all369 package files; published
+version0.0.1-a22-router-d8caeec-source. No individual uploads failed. The archive
+endpoint rejected the request withHTTP413; the supported individual-file workflow
+then completed. Rotation milestone d78470b publication completed as
+0.0.1-a22-rotation-d78470b-compressed: all377 files acknowledged, zero failures.
+The first rotation publication failed one4.95MB plain source-diff upload with
+HTTP413. The successful recovery replaces only that evidence file with its
+203114-byte lossless gzip; executable circuit, imports, firmware and dependencies
+remain exact Git bytes. PUBLICATION-MANIFEST.json binds both encodings and hashes.
+Cloud build and physical hardware remain unverified.
+GitHub publication remains blocked by the absent remote; local work continues.
+
+---
+
 # A22 rotated MCU pad bounds — passed; board routing in progress, 2026-10-04
 
 Native routing attempt14 passed the13 PD signal escapes, five PD ground drops

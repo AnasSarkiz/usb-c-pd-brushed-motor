@@ -1,0 +1,78 @@
+{
+  "artifact_sha256": "afecf221c372afff162fb035b1fb56dd96e20e486747252466ea97fbfe913a05",
+  "results": [
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "netlist",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/placement16-netlist-A22.log",
+      "sha256": "e8278d5595d1e21a974a3e330778a34822c29a2d30642d0981fcd58149cdb405"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "pin_specification",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/placement16-pin_specification-A22.log",
+      "sha256": "af649e28e0ae82f2d3c8959eccf98c06bbe5fa935cb9eaa48610de015c1a3047"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "source",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/placement16-source-A22.log",
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "schematic-placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [],
+      "log": "evidence/placement16-schematic-placement-A22.log",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/placement16-placement-A22.log",
+      "sha256": "a721898eddbfe7cce904ce420c7d372ff91f65c7690a65612c182c57223e9398"
+    }
+  ]
+}

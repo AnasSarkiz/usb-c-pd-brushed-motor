@@ -40,12 +40,7 @@ export function MechanicalFeatures() {
       <silkscreentext text="-" pcbX={38.5} pcbY={10.5} fontSize={1.2} />
       <silkscreentext text="TP1 SWDIO" pcbX={-34} pcbY={-1.6} fontSize={1.2} />
       <silkscreentext text="TP2 CLK" pcbX={-27.5} pcbY={-5.25} fontSize={1.2} />
-      <silkscreentext
-        text="TP3 NRST"
-        pcbX={-28.1}
-        pcbY={-9.25}
-        fontSize={1.2}
-      />
+      <silkscreentext text="NRST" pcbX={-20.2} pcbY={6.5} fontSize={1.2} />
       <silkscreentext text="TP4 GND" pcbX={-23} pcbY={-10.75} fontSize={1.2} />
       <silkscreentext text="TP5 3V3" pcbX={-22.5} pcbY={21} fontSize={1.2} />
       <silkscreentext text="TP6 VBUS" pcbX={-17.3} pcbY={10.1} fontSize={1.2} />
