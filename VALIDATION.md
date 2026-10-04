@@ -1,5 +1,21 @@
 # A22 revision42 — USB-C supplier replacement audit in progress
 
+The public ebc76f4 upload acknowledges525 of526 files, including the exact
+circuit JSON; its capacity dependency failsHTTP413 and the release is not
+completed. Anonymous full-file readback times out; no verification is invented.
+The canonical capacity package is rebuilt as0.0.960-a42 with explicit JavaScript
+and declaration file inclusion. Its15.4MB development source map stays in the
+canonical local build but is omitted from the executable dependency package.
+Tarball size is840,432bytes. All four reviewed algorithm/test source records
+match revision41 byte-for-byte; canonical, packed and installed package/runtime/
+declaration bytes match. Focused2tests/8assertions, TypeScript, native build,
+version guard and pack checks pass. The current board build, TypeScript and
+42tests/468assertions pass; final formatting passes after removing the checksum-
+verified reproducible publication stage. The initial formatting failure caused
+by its duplicate root configuration remains recorded. Source binding and the
+connector model review are regenerated; the strict copper gate still fails
+five J1 gaps and starts no router. See `docs/PUBLICATION-PACKAGING-A42.md`.
+
 After reviewing publication behavior, both the board's native
 `routingDisabled` property and CLI build default are restored to `true`.
 The prior routing experiments had left these defaults enabled; a blocked
@@ -16,10 +32,10 @@ violations and138 pour clearance violations (0.19302–0.19836mm).
 The pour setting is increased from0.20 to0.23mm; the acceptance rule remains
 0.20mm. A fresh full native build passes. Its strict geometry audit removes
 all138 pour issues and retains all five J1 issues. Artifact SHA256
-fed118fac8157644fdfd5580211fe572f704a1d4a274723c00a4d5bf77ccdeb4
+3246642e4085ab0fcc0c96b5923599de70f3e729b9b68be4f409918a1bf8b810
 has140 purchased components and no routed traces. See
 `evidence/routing42-routing-gate-copper-A22.json` and
-`evidence/routing42-public-default-preroute-build-A22.log`. The original
+`evidence/routing42-compact-package-preroute-build-A22.log`. The original
 static-clearance result remains historical evidence for the prior artifact.
 TypeScript passes and42 board tests/468 assertions pass, including a new
 regression that rejects the actual sub-rule connector/pour gaps without

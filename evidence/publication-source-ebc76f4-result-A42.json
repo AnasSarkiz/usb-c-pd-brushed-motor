@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "ebc76f4ca9cededafc4c123c63d66d6e9f21b7cb",
+  "expectedFiles": 526,
+  "acknowledgedFiles": 525,
+  "failedFiles": [
+    "tooling/tscircuit-capacity-autorouter-0.0.960-a41.tgz"
+  ],
+  "failure": "HTTP413 archive and capacity dependency file; release not completed and not cloud-build-ready",
+  "sourceFilesChangedByPublisher": false,
+  "stageCanBeRebuiltFromCommitAndMetadata": true,
+  "stageMetadataArchive": "evidence/publication-source-ebc76f4-staged-metadata-A42.json",
+  "stageMetadataSha256": "0d7d83879cc55c8493ee3adbf27c91c86cb1b8fdd07334cbf1ab44ea1163c297",
+  "circuitJsonSha256": "fed118fac8157644fdfd5580211fe572f704a1d4a274723c00a4d5bf77ccdeb4",
+  "cloudBuildVerified": false,
+  "GitHubRemote": null
+}

@@ -23,6 +23,7 @@ not full component approvals. Successfully importing a symbol is insufficient.
 | C5438410 GCTUSB4135-GF-A | Both importer searches fail; actual JLC library preview states that no library currently exists. |
 | C45082808 CUIUJC-H-G-SMT-P6-TR | Supplier-code import fails. Manufacturer-name query returns unrelated C42459724 and is rejected. |
 | C5407555 Amphenol10164359-00011LF | Supplier-code import fails. Manufacturer-name query returns unrelated C4550712 and is rejected. Manufacturer page30V rating differs from the linked older20V family specification. |
+| C52989298 HOAUC HYCW376-USBC06-750B | Exact-code import fails. Actual JLC listing has20 stock/order20; reviewed manufacturer drawing rates30V but specifies0.8–1.0mm PCB rather than1.6mm. |
 | C5414498 Amphenol10165429-00011LF | Exact supplier-code import fails. |
 | C54829840 YUWENFAPTCFW-H22D-019 | Exact supplier-code import fails. |
 | C970566 HROTYPE-C-31-E-07 | Native copper screen passes, but recommended mounting lands differ; midmount edge cutout and DC working-voltage evidence remain unqualified. |

@@ -1,0 +1,24 @@
+{
+  "supplierCode": "C52989298",
+  "manufacturer": "HOAUC",
+  "manufacturerPartNumber": "HYCW376-USBC06-750B",
+  "checkedOn": "2026-10-04",
+  "jlcpcbUrl": "https://jlcpcb.com/partdetail/C52989298",
+  "jlcpcbObservedStock": 20,
+  "jlcpcbObservedOrderQuantity": 20,
+  "assembly": "Wave Soldering; Economic and Standard",
+  "import": "failed",
+  "officialImporterLog": "evidence/usb-c-C52989298-import-A42.log",
+  "error": "Component not found in EasyEDA library search for C52989298",
+  "manufacturerDrawing": "evidence/usb-c-C52989298-manufacturer-drawing-A42.pdf",
+  "drawingSha256": "7cc8c0ccd3b2ce0fc5434db6b03f69161fa88fcc4315f7b643d19d2056bc0eae",
+  "drawingVisuallyReviewed": true,
+  "manufacturerWorkingVoltageV": 30,
+  "recommendedBoardThicknessMm": [
+    0.8,
+    1.0
+  ],
+  "boardThicknessMm": 1.6,
+  "status": "not adopted; official supplier model unavailable and manufacturer recommended board thickness differs from board",
+  "componentPatched": false
+}

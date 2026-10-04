@@ -1,0 +1,18 @@
+$ biome format .
+/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/.publication/ebc76f4-public-A42/biome.json configuration ━━━━━━━━━━
+
+  × Found a nested root configuration, but there's already a root configuration.
+  
+  i The other configuration was found in /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12.
+  
+  i Use the migration command from the root of the project to update the configuration.
+  
+  $ biome migrate --write
+  
+
+configuration ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Biome exited because the configuration resulted in errors. Please fix them.
+  
+
+error: script "format:check" exited with code 1

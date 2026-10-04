@@ -5,7 +5,7 @@
     "": {
       "name": "@tsci/AnasSarkiz.usb-c-pd-brushed-motor",
       "dependencies": {
-        "@tscircuit/capacity-autorouter": "./tooling/tscircuit-capacity-autorouter-0.0.960-a41.tgz",
+        "@tscircuit/capacity-autorouter": "./tooling/tscircuit-capacity-autorouter-0.0.960-a42.tgz",
         "@tscircuit/core": "./tooling/tscircuit-core-0.0.2091-a41.tgz",
         "@tscircuit/props": "./tooling/tscircuit-props-0.0.683-A22.tgz",
       },
@@ -19,7 +19,7 @@
     },
   },
   "overrides": {
-    "@tscircuit/capacity-autorouter": "file:./tooling/tscircuit-capacity-autorouter-0.0.960-a41.tgz",
+    "@tscircuit/capacity-autorouter": "file:./tooling/tscircuit-capacity-autorouter-0.0.960-a42.tgz",
     "@tscircuit/core": "file:./tooling/tscircuit-core-0.0.2091-a41.tgz",
     "@tscircuit/props": "file:./tooling/tscircuit-props-0.0.683-A22.tgz",
   },
@@ -168,7 +168,7 @@
 
     "@tscircuit/alphabet": ["@tscircuit/alphabet@0.0.25", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-PWLjptI6AlLEtF/wjN1N8uC+n3G7vtg0j3xKE1fgWHDhahtnlQRqHDrtPSLlkIR9aJjRfjplzLuaUEaCRvJmZA=="],
 
-    "@tscircuit/capacity-autorouter": ["@tscircuit/capacity-autorouter@./tooling/tscircuit-capacity-autorouter-0.0.960-a41.tgz", { "dependencies": { "@tscircuit/pcb-trace-linter": "github:tscircuit/pcb-trace-linter#4c035f9d40ffb03ba547a08975b5e64b20371123", "fast-json-stable-stringify": "^2.1.0", "object-hash": "^3.0.0", "stack-svgs": "^0.0.1" } }, "sha512-11T7hSTpImWj0mEcfxZ2612w/ehVoHF+4p1WFEYoCGuacHqJIdbGrrqiZ5/n/zwuWo1bx5U1OsLWvwK6zkvrog=="],
+    "@tscircuit/capacity-autorouter": ["@tscircuit/capacity-autorouter@./tooling/tscircuit-capacity-autorouter-0.0.960-a42.tgz", { "dependencies": { "@tscircuit/pcb-trace-linter": "github:tscircuit/pcb-trace-linter#4c035f9d40ffb03ba547a08975b5e64b20371123", "fast-json-stable-stringify": "^2.1.0", "object-hash": "^3.0.0", "stack-svgs": "^0.0.1" } }, "sha512-ElkE5NKXuJoiifSo0xBVIy/UO635VC3JTddy11Fd1u8aGtKjFHC+4evhhsM/MCFVMmnFHdwUA1bAmYNYn1qlew=="],
 
     "@tscircuit/checks": ["@tscircuit/checks@0.0.236", "", { "dependencies": { "flatbush": "^4.6.2" }, "peerDependencies": { "@flatten-js/core": "*", "@tscircuit/math-utils": "*", "circuit-json": "*", "circuit-json-to-connectivity-map": "*", "typescript": "^5.5.3" } }, "sha512-XnIMJeKGgn+VNu+NRBkQK8T7SgWwjTORuOAq9GEXpxOPMfMFIXArvtCvq23c+BW1E2fLcYA5Yu3+djRVk+qnqQ=="],
 

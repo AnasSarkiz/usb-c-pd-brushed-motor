@@ -1,0 +1,19 @@
+4 |     return new Promise((resolve, reject) => {
+5 |         const timeoutId = setTimeout(() => {
+6 |             if (abortController) {
+7 |                 abortController.abort();
+8 |             }
+9 |             reject(new TimeoutError(request));
+                       ^
+TimeoutError: Request timed out: GET https://registry-api.tscircuit.com/package_files/get?package_name_with_version=AnasSarkiz%2Fusb-c-pd-brushed-motor%400.0.1-a42-unrouted-ebc76f4-3eeb7168&file_path=evidence%2Fusb-c-C134092-candidate-status-A42.json
+ request: Request (0 KB) {
+  method: "GET",
+  url: "https://registry-api.tscircuit.com/package_files/get?package_name_with_version=AnasSarkiz%2Fusb-c-pd-brushed-motor%400.0.1-a42-unrouted-ebc76f4-3eeb7168&file_path=evidence%2Fusb-c-C134092-candidate-status-A42.json",
+  headers: Headers {
+    "accept": "application/json",
+  }
+},
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/registry-api-cli-A40/node_modules/ky/distribution/utils/timeout.js:9:20)
+
+Bun v1.4.2 (macOS arm64)

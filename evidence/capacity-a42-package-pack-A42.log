@@ -1,0 +1,15 @@
+bun pack v1.4.2 (744846f84)
+
+packed 7.75KB package.json
+packed 1.1KB LICENSE
+packed 9.27KB README.md
+packed 0.31MB dist/index.d.ts
+packed 3.12MB dist/index.js
+
+../tscircuit-capacity-autorouter-0.0.960-a42.tgz
+
+Total files: 5
+Shasum: c5c6e44bb5dc695eaade71e97ab41371c15ff59b
+Integrity: sha512-ElkE5NKXuJoii[...]1bAmYNYn1qlew==
+Unpacked size: 3.45MB
+Packed size: 0.84MB

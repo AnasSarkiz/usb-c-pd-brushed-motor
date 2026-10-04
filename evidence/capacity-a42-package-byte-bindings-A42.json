@@ -1,0 +1,47 @@
+{
+  "upstreamCommit": "d010db4155513fad6e1cef325180d99a28d6201f",
+  "version": "0.0.960-a42",
+  "tarball": "tooling/tscircuit-capacity-autorouter-0.0.960-a42.tgz",
+  "tarballSha256": "f9d44c7145f6972cd7161e4588ffa1f5105e929f4e3553f2e69644e274964f7e",
+  "tarballBytes": 840432,
+  "sourceMapsRetainedLocally": true,
+  "runtimeAndRuleSourceUnchanged": true,
+  "onlySourceChanges": "Canonical package version and explicit published runtime/declaration file list; no solver or rule changes",
+  "records": [
+    {
+      "path": "lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/create-pipeline7-autorouting-drc-evaluator.ts",
+      "sha256": "24171cdeeb684d9c9e0e4de1603a63d07d88e5ecf816c429e2748fbd5cf28d35",
+      "unchangedFromA41": true
+    },
+    {
+      "path": "lib/types/srj-types.ts",
+      "sha256": "1825ffac79e7d09265a307060e2df478e1c40574f9c29425942493b2678622ad",
+      "unchangedFromA41": true
+    },
+    {
+      "path": "tests/pipeline7-configured-copper-clearance.test.ts",
+      "sha256": "0ccb5a4bf247e926bdf9177285123c75508b976faa70a223f32aeb388b781c16",
+      "unchangedFromA41": true
+    },
+    {
+      "path": "tests/pipeline7-no-via-in-pad-policy.test.ts",
+      "sha256": "d87c0afbac315e448c5ce37f9f4f8b5995c881f8b3d79bbb504949a3fabe9887",
+      "unchangedFromA41": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "b4891d30ddb3151d345b655a65c5c00c7763216ebde3d685dc88064f24bbf817",
+      "canonicalPackedInstalledEqual": true
+    },
+    {
+      "path": "dist/index.js",
+      "sha256": "bdd75198877e99d8386cb37eed6c44e221346155b6b3daf2fe0426026214528d",
+      "canonicalPackedInstalledEqual": true
+    },
+    {
+      "path": "dist/index.d.ts",
+      "sha256": "3f9de7df3d13e50998fd7fd655d91436fbb38a371fcf11655d356ececf906b6f",
+      "canonicalPackedInstalledEqual": true
+    }
+  ]
+}

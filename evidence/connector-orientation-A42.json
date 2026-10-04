@@ -1,6 +1,6 @@
 {
   "reviewedOn": "2026-10-04",
-  "artifactSha256": "fed118fac8157644fdfd5580211fe572f704a1d4a274723c00a4d5bf77ccdeb4",
+  "artifactSha256": "3246642e4085ab0fcc0c96b5923599de70f3e729b9b68be4f409918a1bf8b810",
   "modelBaselineArtifactSha256": "2154d1fabbbb878543f4a1128380edc76300aaaadc9ab5e6c4a76d4be479615a",
   "glbSha256": "a8bee5da558157612d3b389cf87a6d717f44d72550edf27e39923aa40c9b273b",
   "currentConnectorRecordsMatchReviewedBaseline": true,

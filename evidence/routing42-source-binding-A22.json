@@ -1,6 +1,6 @@
 {
   "revision": "A22 revision42 unrouted WIP; connector orientation reviewed; current copper prerequisite fails5 J1 land gaps",
-  "artifact_preroute_sha256": "fed118fac8157644fdfd5580211fe572f704a1d4a274723c00a4d5bf77ccdeb4",
+  "artifact_preroute_sha256": "3246642e4085ab0fcc0c96b5923599de70f3e729b9b68be4f409918a1bf8b810",
   "records": [
     {
       "path": ".gitattributes",
@@ -12,7 +12,7 @@
     },
     {
       "path": "bun.lock",
-      "sha256": "47bea03a17253a711662154c81f2ad6b7a4d944755e35860e4684a0056c415f5"
+      "sha256": "51d613ba381efb1168ec087f39acac8654d6eb50ade87139ed7d25fe48351675"
     },
     {
       "path": "circuit/EnergyDump.tsx",
@@ -536,7 +536,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "82534c84ced8d87ab0bc6f176e348665b8398b74dd9612c0a464b412a8d076ca"
+      "sha256": "4a38c814c988e26bd393921daff6ee3226120303147dbf66ea36b790c4b31f25"
     },
     {
       "path": "scripts/adc-sensing-review.py",
@@ -895,8 +895,8 @@
       "sha256": "95a6defa764805d6d61a739812bd86707686b6068ff3a09dac204307c4e36cee"
     },
     {
-      "path": "tooling/tscircuit-capacity-autorouter-0.0.960-a41.tgz",
-      "sha256": "7f6ef0301fae52b8f96d8d85027445e17446e667c76a042e6942acf154220c83"
+      "path": "tooling/tscircuit-capacity-autorouter-0.0.960-a42.tgz",
+      "sha256": "f9d44c7145f6972cd7161e4588ffa1f5105e929f4e3553f2e69644e274964f7e"
     },
     {
       "path": "tooling/tscircuit-core-0.0.2091-a41.tgz",
