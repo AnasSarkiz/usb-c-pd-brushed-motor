@@ -1,0 +1,7 @@
+{
+  "before_sha256": "988e545ccad69422e1868e56f5a3a38a839659a8bc7e8a126cde63a2c49bf14d",
+  "after_sha256": "d4409307cac1681999731cb7e2455b3e16ba19e8af7bd401e95baaeaa8707e32",
+  "identical_non_metadata_records": 4978,
+  "effort": "2x",
+  "preroute_checks": "Same source connectivity, schematic, placement and imported geometry. All five previous native checks and visual reviews remain applicable."
+}

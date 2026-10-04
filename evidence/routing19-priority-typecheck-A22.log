@@ -1,0 +1,3 @@
+$ tsc --noEmit
+circuit/RoutingNets.tsx(109,14): error TS2322: Type '{ key: string; name: string; routingPhaseIndex: number; }' is not assignable to type 'NetProps'.
+  Property 'key' does not exist on type 'NetProps'.

@@ -1,0 +1,6 @@
+{
+  "before_sha256": "9be52d72cccc33bb502388e5cdce27caacac484dd4104c9f55c41c47e4580bcd",
+  "after_sha256": "499abd3233614ecec24b6e0a0041d00883edf401674f55bc7078632d528bbe6a",
+  "identical_non_metadata_records": 4978,
+  "preroute_checks": "All five native19 checks and independent/visual reviews remain applicable: every nonmetadata source, schematic and PCB record is identical. Only native routing controls changed."
+}

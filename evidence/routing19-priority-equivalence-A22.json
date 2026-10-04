@@ -1,0 +1,7 @@
+{
+  "before_sha256": "e6eaaf3946c7b0c4852467b8731cecdfbec36a0bc5e39e626a8d511beb920877",
+  "after_sha256": "9be52d72cccc33bb502388e5cdce27caacac484dd4104c9f55c41c47e4580bcd",
+  "identical_normalized_records": 4978,
+  "policy": "Fixed power paths, remaining signals/supplies, then global ground drops",
+  "changed_representation": "Explicit declarations reorder source records and connectivity-group metadata. All records otherwise identical after sorting. Fresh connectivity audit validates each pin against its intended named net. All five native commands will rerun before routing."
+}

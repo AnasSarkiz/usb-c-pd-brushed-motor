@@ -1,3 +1,4 @@
+import { RoutingNets } from "./circuit/RoutingNets"
 import { MechanicalFeatures } from "./circuit/MechanicalFeatures"
 import { pcbPlacements } from "./circuit/product-placement"
 import { PdQualification } from "./circuit/PdQualification"
@@ -35,7 +36,7 @@ export default function UsbCPdBrushedMotorController() {
         allowViaInPad: false,
         traceClearance: 0.25,
       }}
-      autorouterEffortLevel="1x"
+      autorouterEffortLevel="2x"
       pcbSx={{
         "& footprint silkscreentext[text='ON']": { visibility: "hidden" },
         "& footprint silkscreentext[text='{NAME}']": { visibility: "hidden" },
@@ -61,21 +62,7 @@ export default function UsbCPdBrushedMotorController() {
         boardEdgeMargin={0.5}
         useThermalReliefs={false}
       />
-      <net name="GND" isGroundNet routingPhaseIndex={1} />
-      <net name="VBUS" isPowerNet nominalTraceWidth="2mm" />
-      <net name="VDD5" isPowerNet />
-      <net name="VCC3V3" isPowerNet />
-      <net name="EFUSE_IN" isPowerNet nominalTraceWidth="2mm" />
-      <net name="VIN_BUCK" isPowerNet nominalTraceWidth="2mm" />
-      <net
-        name="SWITCH_NODE"
-        isPowerNet
-        nominalTraceWidth="2mm"
-        routingPhaseIndex={0}
-      />
-      <net name="VM" isPowerNet nominalTraceWidth="2mm" />
-      <net name="MOTOR_P" nominalTraceWidth="2mm" routingPhaseIndex={0} />
-      <net name="MOTOR_N" nominalTraceWidth="2mm" routingPhaseIndex={0} />
+      <RoutingNets />
       <schematicsheet
         name="usb"
         displayName="USB-C PD and quiet supplies · A22"

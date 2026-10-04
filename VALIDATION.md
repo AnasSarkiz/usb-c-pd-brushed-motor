@@ -1,3 +1,114 @@
+# A22 bottom-layer escape revision21 — prerouting passed, 2026-10-04
+
+Native20 routes all seven supply networks, then fails phase2 PD/host routing:
+Pipeline9 cannot resolve immutable fixed VM route source_net_7_fixed_54_1.
+Its untouched failed artifact SHA256 is
+532112e3f99246f819f7b7c0f5bd52326e04ef0924cabf3da3a32e88bb7a8b24;
+zero committed PCB traces. Independent native2x diagnostic reproduces this
+failure in2780ms. No failed output is manufacturing evidence.
+
+Revision21 uses the supported native breakoutpoint layer property:28 signal
+escapes target bottom and MCU pins4/8/10 retain top targets. Exact supplier
+pads remain unchanged. The independent planning audit now checks0.85mm minimum
+bottom-target center spacing, reserving0.60mm via lands plus0.25mm copper
+clearance; actual routed vias must still pass drill/pad checks including same-net
+cases. Minimum planned center spacing is0.85mm. No purchased component is created,
+modified or replaced; no routing or validation failure is suppressed.
+
+Fresh unrouted artifact SHA256:
+7bef4a1142dd2eebfaa82f7b0377043c631c03afab41f51d1697fa82409797b1.
+Strict schema,140 imported transforms/12 original EP vias, connectivity, full
+152-component placement,31 targets and163 labels pass. All nonmetadata records
+except the31 intended breakout-layer properties equal revision20. Both placement
+faces were visually inspected; the eight reviewed A4 schematic sheets remain
+applicable to identical schematic records. React list elements now use keyed
+Fragments rather than unsupported native-net keys or keyless arrays. Formatting,
+TypeScript,38 board tests/460 assertions and native layer routing regression
+(1test/13 assertions) pass. All five required native commands pass with zero errors. Native routing21
+may now start with the unchanged trace/drill/edge rules.
+
+Remaining: finish native routing, validate actual copper/drills/ground/power
+geometry, inspect both routed faces and detail areas, then generate and review
+one native manufacturing packet with manual assembly split and checksums.
+GitHub remote remains unconfigured. Physical motor/thermal qualification and
+manufacturer provisioning remain explicitly pending; no fabrication order.
+
+---
+
+# A22 native routing priority19 — prerequisites passed, 2026-10-04
+
+Attempt18 clears the dump-gate corridor and reaches785/1063 high-density
+regions, then fails PD_ENABLE_N/source_net_15_mst1. Its unchanged native result
+has zero committed traces; SHA256:
+801d0c88f2cc77b029142c0b162f1e032f5d9e45b37c094025368827d0546ea4.
+Native2x diagnostic reproduces the failure. Failed artifacts stay diagnostic.
+
+Supported native net priorities now retain local IC escapes/fixed power routes
+first, route all remaining75 networks next, and place global ground drops last.
+The79 named nets and all electronic components are unchanged. Explicit native
+net declarations reorder serialized records and internal connectivity-group
+metadata. All4978 records otherwise match the reviewed prerequisite artifact
+after sorting; independent connectivity validation verifies every expected pin.
+Fresh unrouted SHA256:9be52d72cccc33bb502388e5cdce27caacac484dd4104c9f55c41c47e4580bcd.
+Schema, supplier transforms, connectivity and native placement pass.
+The combined typecheck/format shell initially concealed a TypeScript exit2: an
+unsupported React key on native net elements. Native19 was run as a diagnostic
+before that failure was noticed; it is not validated routing evidence. The
+failure is retained and corrected in iteration20, with failure-stop checks.
+All five native prerequisite commands pass, with zero printed
+errors. Previous schematic/placement visual reviews remain applicable: identical
+schematic and PCB geometry. Board38tests/460assertions pass; linked firmware ELF/
+BIN hashes reproduce. Power-budget/analog/thermal/regen screens rerun successfully.
+These are analytic/geometry screens, not measured thermal or motor qualification.
+
+Current JLC via-covering guidance (updated2026-09-09, checked2026-10-04) identifies
+epoxy/copper fill for pad vias and recommends explicit hole-location instructions.
+The12 unchanged0.3048mm imported holes are below its0.5mm filling limit. CAM
+acceptance of the selected process and short slots remains required before order.
+https://jlcpcb.com/help/article/pcb-via-covering
+
+Native route19 is permitted with unchanged trace/drill/edge clearances. No
+fabrication files are issued until actual generated copper passes its audits.
+
+---
+
+# A22 dump gate routing refinement18 — in progress, 2026-10-04
+
+Starting from validated placement commit350f03c. Native attempt16 routes the
+previously failing MCU reset connection and every local escape/ground drop,
+but final routing fails DUMP_GATE/source_net_72_mst3. Native attempt17 at
+supported2x effort reproduces the same failure. Its failed artifact is
+944af2727068b0f725b86a9c14fe8e2d251967b1b117432f52fbb4bd2e88112a,
+with zero committed traces. Separate native5x diagnostic on the untouched final
+SRJ also fails; neither failed output is fabrication evidence. Diagnostics show
+a1mm-wide top-layer corridor crossed by preloaded ground copper near Q3.
+
+Q3's unchanged official AO3400A import rotates180 degrees at its existing
+(35.5,-15) center so its gate faces the control circuitry. No supplier geometry,
+pin mapping, component quantity or electrical connection is changed. Fresh
+unrouted output SHA256:e6eaaf3946c7b0c4852467b8731cecdfbec36a0bc5e39e626a8d511beb920877.
+Strict schema,140 supplier transforms, connectivity, full native placement,
+31 breakout targets,163 labels and TypeScript pass. Both placement faces were
+visually inspected. All five native checks pass with zero printed errors. All eight current A4
+schematic sheets were rendered and visually reviewed; component labels and
+accepted styling advisories remain readable within the sheet geometry. Source
+SVGs contain the native A4 inner/outer borders, and PNG border pixels were
+independently confirmed. Native route18 is now permitted.
+Signal/drill/clearance rules and12 imported-via exceptions are unchanged.
+
+Placement milestone350f03c publishes as0.0.1-a22-placement16-350f03c;
+all381 files acknowledged, no upload failures. GitHub remote remains absent.
+
+Remaining implementation: finish native routing; inspect and validate actual
+copper, drills, ground continuity and power geometry; review8 schematic sheets
+and both routed faces; generate/checksum native manufacturing files and manual
+assembly split. External prerequisites before ordering remain CAM acceptance
+of the imported short slots/thermal-via process, supplier procurement and the
+manufacturer's PD provisioning workflow. Physical qualification remains pending.
+No fabrication files or order are issued.
+
+---
+
 # A22 placement iteration16 — passed; native routing in progress, 2026-10-04
 
 Starting from source commit d78470b. Native attempt15 completes the31 signal

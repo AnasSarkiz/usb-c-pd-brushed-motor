@@ -1,0 +1,9 @@
+{
+  "artifactSha256": "7bef4a1142dd2eebfaa82f7b0377043c631c03afab41f51d1697fa82409797b1",
+  "comparedUnchangedRecords": 4947,
+  "reviewedImages": {
+    "dist/review/pcb-top-A22.png": "80a9d9280980a6151965f0c8445d02ca7a8f1a2955855cf01fdf319b302bc378",
+    "dist/review/pcb-bottom-A22.png": "6f5bea042286ce2a668623f9dcdc7ce3288f494d6bb38c5f34ceceda24569276"
+  },
+  "review": "Both placement faces inspected; unchanged supplier geometry and legends. Eight previous A4 schematic visual reviews remain applicable to identical schematic records."
+}

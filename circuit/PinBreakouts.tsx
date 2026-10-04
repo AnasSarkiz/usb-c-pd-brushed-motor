@@ -55,8 +55,14 @@ export function PinBreakoutPoints({ reference }: { reference: "U1" | "U11" }) {
             connection={`${reference}.pin${pinNumber}`}
             pcbX={xMm}
             pcbY={yMm}
-            // Keep these peripheral escapes on the component's top layer.
-            // Separate, unescaped ground pads receive checked bottom-plane barrels.
+            // Escape to the bottom outside supplier pads. The three right-side
+            // MCU targets with no adjacent via room stay on top; this preserves
+            // pin order and reserves 0.85mm between bottom via landing centers.
+            layer={
+              reference === "U11" && [4, 8, 10].includes(pinNumber)
+                ? "top"
+                : "bottom"
+            }
           />
         </Fragment>
       ))}

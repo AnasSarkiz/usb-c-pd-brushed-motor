@@ -1,0 +1,19 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 2,
+  "phaseOrdinal": 9,
+  "phaseCount": 12,
+  "elapsedMs": 3426,
+  "connectionCount": 25,
+  "obstacleCount": 504,
+  "previousTraceCount": 113,
+  "autorouterName": "tscircuit",
+  "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "effort": 2,
+  "cacheStatus": "miss",
+  "cacheKey": "routes:core@0.0.2087:solver:0f3db71771b19459:srj:4bb4ac5eb03284d9",
+  "error": {
+    "message": "Pipeline9 promoted regional fallback could not resolve immutable fixed route conflict(s): source_net_7_fixed_54_1 (capacity-autorouter@0.0.958)"
+  }
+}

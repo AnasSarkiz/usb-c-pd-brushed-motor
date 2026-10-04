@@ -243,7 +243,7 @@ export const productPlacement = {
   Q3: {
     x: 35.5,
     y: -15.0,
-    ccwRotationDegrees: 0,
+    ccwRotationDegrees: 180,
   },
   R45: {
     x: 17,

@@ -49,18 +49,27 @@ for target in [e for e in elements if e['type']=='pcb_breakout_point']:
     pin=port.get('name',port.get('pin_number'))
     actual_port=next(e for e in elements if e['type']=='pcb_port'and e['source_port_id']==target['source_port_id'])
     if reference=='U11'and abs(target['y']-actual_port['y'])>0.001:issues.append({'reference':reference,'pin':pin,'issue':'MCU target crosses the imported pin-row order','actualPadYMm':actual_port['y'],'targetYMm':target['y']})
-    expected_layer=None
+    expected_layer="top" if reference=="U11" and int(port["pin_number"]) in [4,8,10] else "bottom"
     if target.get('layer')!=expected_layer:issues.append({'reference':reference,'pin':pin,'issue':'breakout target layer differs from intended escape','expectedLayer':expected_layer,'actualLayer':target.get('layer')})
     if gap<0.5-1e-5:issues.append({'reference':reference,'pin':pin,'xMm':target['x'],'yMm':target['y'],'gapMm':gap,'nearestComponent':purchased[nearest[0]['pcb_component_id']]})
     if abs(target['x'])>39.5 or abs(target['y'])>32:issues.append({'reference':reference,'pin':pin,'issue':'target outside usable board'})
     if any(point.distance(Point(x,y))<3.5 for x in[-35,35]for y in[-27.5,27.5]):issues.append({'reference':reference,'pin':pin,'issue':'target inside mounting reservation'})
     targets.append({'reference':reference,'pin':pin,'xMm':target['x'],'yMm':target['y'],'minimumPadGapMm':gap,'layer':target.get('layer')})
-expected_pins={'U1':{1,2,4,5,6,7,8,16,18,19,21,23,24},'U11':set(range(1,20))-{5}}
+# Bottom targets require via landing space; this is conservative routing intent,
+# not a substitute for auditing the actual native routed drills and copper.
+minimum_bottom_target_pitch_mm=math.inf
+bottom_targets=[target for target in targets if target['layer']=='bottom']
+for index,target in enumerate(bottom_targets):
+    for other in bottom_targets[index+1:]:
+        pitch_mm=math.hypot(target['xMm']-other['xMm'],target['yMm']-other['yMm'])
+        minimum_bottom_target_pitch_mm=min(minimum_bottom_target_pitch_mm,pitch_mm)
+        if pitch_mm<0.85-1e-5:issues.append({'issue':'Bottom breakout targets cannot reserve 0.60mm vias with 0.25mm copper clearance','first':target,'second':other,'centerPitchMm':pitch_mm})
+expected_pins={'U1' :{1,2,4,5,6,7,8,16,18,19,21,23,24},'U11':set(range(1,20))-{5}}
 for reference,pin_numbers in expected_pins.items():
     actual_pins={int(ports[e['source_port_id']]['pin_number']) for e in elements if e['type']=='pcb_breakout_point' and sources[ports[e['source_port_id']]['source_component_id']]==reference}
     if actual_pins!=pin_numbers:issues.append({'issue':'Unexpected peripheral breakout pin set; ground must remain at component pads','reference':reference,'expectedPins':sorted(pin_numbers),'actualPins':sorted(actual_pins)})
 if len(targets)!=31:issues.append({'issue':'Expected13 PD peripheral and18 MCU signal targets; ground retains actual component endpoints','expectedTargets':31,'actualTargets':len(targets)})
-report={'artifactSha256':hashlib.sha256(artifact).hexdigest(),'targets':targets,'issues':issues,'basis':'Planning only; does not prove native routes, actual vias, current capacity or ground-plane connectivity.'}
+report={'minimumBottomTargetPitchMm':minimum_bottom_target_pitch_mm,'bottomTargets':len(bottom_targets),'artifactSha256':hashlib.sha256(artifact).hexdigest(),'targets':targets,'issues':issues,'basis':'Planning only; does not prove native routes, actual vias, current capacity or ground-plane connectivity.'}
 Path('evidence/native-breakout-target-audit-A22.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({'targets':len(targets),'issues':issues},indent=2))
 if issues:raise SystemExit(1)

@@ -1,0 +1,19 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 9,
+  "phaseOrdinal": 10,
+  "phaseCount": 10,
+  "elapsedMs": 2872,
+  "connectionCount": 75,
+  "obstacleCount": 504,
+  "previousTraceCount": 126,
+  "autorouterName": "tscircuit",
+  "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "effort": 1,
+  "cacheStatus": "miss",
+  "cacheKey": "routes:core@0.0.2087:solver:0f4472dc30628a43:srj:92d18e1dabf8c52c",
+  "error": {
+    "message": "Pipeline9 primary high-density routing failed: B01 failed: No path found for source_net_72_mst3; regional fallback failed: Pipeline9 regional repair output failed its candidate validator (capacity-autorouter@0.0.958)"
+  }
+}
