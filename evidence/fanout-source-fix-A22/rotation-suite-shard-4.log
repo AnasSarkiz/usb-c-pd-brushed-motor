@@ -1,0 +1,144 @@
+Running test shard 4/8: 34 of 273 files
+- tests/am62l-core-decoupling-obstacles.test.ts
+- tests/am62l-direct-decoupling-dram.test.ts
+- tests/am62l-top-edge-breakout-repro.test.ts
+- tests/benchmark-validation.test.ts
+- tests/boundary-tail-near-via.test.ts
+- tests/boundary-terminal-side-entry.test.ts
+- tests/bus-length-matching-dense-boundary-split.test.ts
+- tests/bus-length-matching-transit-fold.test.ts
+- tests/cached-via-occupant-neighborhoods.test.ts
+- tests/connection-exit-targets.test.ts
+- tests/dataset05-rk3588.test.ts
+- tests/dataset31-imx6ull-left-bottom-offset.test.ts
+- tests/dataset31-k230-top-center.test.ts
+- tests/dataset31-top-left-offset.test.ts
+- tests/embedded-singleton-layer-assignment.test.ts
+- tests/fanout-exit-position-mapping.test.ts
+- tests/fanout31-am62l-left-planes-address.test.ts
+- tests/footprinter-benchmark.test.ts
+- tests/joint-boundary-via-reservation-policy.test.ts
+- tests/layer-routing-attempts.test.ts
+- tests/left-crossbar-bus.test.ts
+- tests/multi-edge-bus-targets.test.ts
+- tests/opposite-wide-exit-over-source-field.test.ts
+- tests/peripheral-source-reservations.test.ts
+- tests/refine-adaptive-plane-reservations.test.ts
+- tests/reserved-narrow-interior-edge-gap.test.ts
+- tests/retained-tail-singleton-matching.test.ts
+- tests/routed-copper-drc-via-in-pad.test.ts
+- tests/shallow-split-perimeter-bus.test.ts
+- tests/soc-dram-northeast-failure.test.ts
+- tests/source-origin-static-edge-cache.test.ts
+- tests/srj19-sample001.test.ts
+- tests/static-edge-clearance-cache.test.ts
+- tests/via-in-pad-opt-in.test.ts
+bun test v1.4.2 (744846f84)
+
+tests/am62l-direct-decoupling-dram.test.ts:
+(pass) finalizes the real AM62L direct-decoupling DRAM fanout [51991.54ms]
+
+tests/cached-via-occupant-neighborhoods.test.ts:
+(pass) cached native via neighborhoods preserve order and read fresh owners after rip-ups [1.21ms]
+
+tests/shallow-split-perimeter-bus.test.ts:
+(pass) shortens a lower perimeter while preserving all pending source escapes [2617.41ms]
+
+tests/bus-length-matching-dense-boundary-split.test.ts:
+(pass) length matches the outside portion of a 45-degree dense-boundary crossing [3.75ms]
+
+tests/static-edge-clearance-cache.test.ts:
+(pass) static edge cache preserves native neighbors, via cells, exact fallback keys, owners, layers, and uncached terminal connectors [20.90ms]
+
+tests/fanout31-am62l-left-planes-address.test.ts:
+(pass) routes the RAM-left address/control bus with all 102 plane drops [26681.78ms]
+
+tests/retained-tail-singleton-matching.test.ts:
+(pass) shortened singleton routing becomes length-matchable without changing other nets [330.00ms]
+
+tests/dataset31-imx6ull-left-bottom-offset.test.ts:
+(pass) retries shared source reservations when a wide bus cannot length-match [92216.67ms]
+
+tests/embedded-singleton-layer-assignment.test.ts:
+(pass) isolates a fixed-layer singleton enclosed by a mixed-layer wide source field [4.20ms]
+
+tests/dataset05-rk3588.test.ts:
+(pass) Dataset 05 preserves the exact RK3588 map and completes plane-aware fanout [4413.09ms]
+
+tests/dataset31-k230-top-center.test.ts:
+(pass) routes opposite-side control buses after the fixed-source strategy fails [100813.97ms]
+
+tests/reserved-narrow-interior-edge-gap.test.ts:
+(pass) recovers a fixed-via singleton through an interior gap in its original corner band [1694.55ms]
+
+tests/fanout-exit-position-mapping.test.ts:
+(pass) canonical fanout exit positions resolve to orthogonal routing fields [0.10ms]
+
+tests/soc-dram-northeast-failure.test.ts:
+(pass) records the current SoC and DRAM northeast breakout failures [14505.80ms]
+
+tests/bus-length-matching-transit-fold.test.ts:
+(pass) grows a retained transit-layer fold atomically inside a narrow tuning window [480.62ms]
+
+tests/am62l-top-edge-breakout-repro.test.ts:
+(pass) captures the AM62L nine-bus top-edge breakout input [223.99ms]
+
+tests/source-origin-static-edge-cache.test.ts:
+(pass) directed TOP cache preserves outward pad ownership and exact terminal clearance [683.58ms]
+
+tests/peripheral-source-reservations.test.ts:
+(pass) reserves every peripheral lead and exposed plane pad beyond long pad bodies [211.53ms]
+
+tests/multi-edge-bus-targets.test.ts:
+(pass) allocates flexible whole buses across layers before packing multiple boundary edges [266.51ms]
+
+tests/srj19-sample001.test.ts:
+(pass) SRJ19 sample001 solves on six layers [677.63ms]
+
+tests/opposite-wide-exit-over-source-field.test.ts:
+(pass) source retry priority follows opposite exits over the pad field through every rotation [67.81ms]
+
+tests/joint-boundary-via-reservation-policy.test.ts:
+(pass) selects joint boundary routing only within bounded dense groups [0.10ms]
+
+tests/left-crossbar-bus.test.ts:
+(pass) uses only the allowed crossbar layer to preserve permuted corner targets [567.78ms]
+
+tests/footprinter-benchmark.test.ts:
+(pass) footprinter BGA64 benchmark escapes every pad [1316.09ms]
+
+tests/boundary-tail-near-via.test.ts:
+(pass) repairs boundary links after a real transit via inside the repair strip [427.10ms]
+
+tests/boundary-terminal-side-entry.test.ts:
+(pass) a side-first terminal entry clears a retained through-via while preserving the exact tail [190.99ms]
+
+tests/am62l-core-decoupling-obstacles.test.ts:
+(pass) routes core's AM62L fanout around its future decoupling vias [9250.89ms]
+
+tests/benchmark-validation.test.ts:
+(pass) benchmark worker requires validated AM62L fanout and records constructor errors [85.62ms]
+
+tests/layer-routing-attempts.test.ts:
+(pass) layer retries preserve the first successful choice and distinguish topology from length failures [0.46ms]
+
+tests/dataset31-top-left-offset.test.ts:
+(pass) routes a centered layered bus beside a constrained corner band [25145.42ms]
+
+tests/via-in-pad-opt-in.test.ts:
+(pass) an explicit SRJ allowViaInPad opts a plane drop into via-in-pad [1.57ms]
+
+tests/routed-copper-drc-via-in-pad.test.ts:
+(pass) routed copper DRC requires an explicit via-in-pad opt-in [0.15ms]
+
+tests/refine-adaptive-plane-reservations.test.ts:
+(pass) moves the terminal reservation inward to protect the same corridor [9.64ms]
+
+tests/connection-exit-targets.test.ts:
+(pass) connection exit targets align a breakout with its paired fanout [180.86ms]
+(pass) explicit exit targets clamp to the perpendicular boundary span [2.13ms]
+
+ 35 pass
+ 0 fail
+ 107954 expect() calls
+Ran 35 tests across 34 files. [335.57s]

@@ -32,9 +32,9 @@
     "evidence/core-source-fix-A22/core.patch": "f0df38514891fbbf4519bfd3a7885da48d449348b773f6d95e0b968aa20e9b65",
     "evidence/core-source-fix-A22/development-package-lock.json": "f015b8086fcbdf19f501ee3e13ad2456de25a2f6990933b8a433e86afb9ba315",
     "tooling/tscircuit-core-0.0.2073-A22.tgz": "2986128f051f507a614a3c93a512cca189f005fd3be1c4310f6b3c35e8cb4a5b",
-    "node_modules/@tscircuit/core/dist/index.js": "027474c9b6416aac6989056c995f9d210c3bb8f46246a1bea198996978930b40",
+    "node_modules/@tscircuit/core/dist/index.js": "466f4c281641f8052ce5fafbc46bb1b1e543a6578270cac80774d43033eac853",
     "node_modules/@tscircuit/core/dist/index.d.ts": "b8c0e210679d36f53f3a680af387a0a172c6dd3a8f5fe6e1c17976d25f004c70",
-    "evidence/core-source-fix-A22/core-A22-final.patch": "68441ccbdfd187265971583f77a8d7179daf8ff60a5007e9afe5805b04e5bf07",
+    "evidence/core-source-fix-A22/core-A22-final.patch": "94c244f66571ba63ae2190f9de42cbc0ae5c16be60e594f45f698bc641a7173e",
     "tooling/tscircuit-core-0.0.2074-A22.tgz": "257fdc5dd682118e07e2c34d284893b9a5c37d0bbed98f80e3b25fbaa5d60df6",
     "tooling/tscircuit-core-0.0.2075-A22.tgz": "eb2629680c5f9f010e262cd558125ebaaacc368a45ec2f42436277648417cfac",
     "tooling/tscircuit-core-0.0.2076-A22.tgz": "654871abc7ba38c7647fa0a0073f58c2895e52228d43fc581449e5d4868d0cf8",
@@ -55,10 +55,20 @@
     "evidence/core-source-fix-A22/with-fixed-trace-taper-envelope.test.ts.txt": "9d4feea504172a19d1cbf065ea0ff2267c3cb486bc32d5242cf8e8b33f97d971",
     "evidence/core-source-fix-A22/with-fixed-trace-taper-envelope-pcb.snap.svg": "c8c3d57303c863f7168e9bdf210051ea69c814e5af90130238b131e264ebc1fa",
     "evidence/core-source-fix-A22/with-fixed-traces-original.ts.txt": "f6bbae90e4d43852a7ebf1ae5a6d82e311ea88d68198f810f24c51fa18c83566",
-    "tooling/tscircuit-core-0.0.2086-A22.tgz": "93aa2957a89c93d6b19abdc008f10482d1841f047bfd81f11485b22777476332"
+    "tooling/tscircuit-core-0.0.2086-A22.tgz": "93aa2957a89c93d6b19abdc008f10482d1841f047bfd81f11485b22777476332",
+    "tooling/tscircuit-core-0.0.2087-A22.tgz": "f1cc715b37b96a069b56df36c82418e1adde422489bd35606a4b85de2e018b68"
   },
-  "current_package": "0.0.2086",
+  "current_package": "0.0.2087",
   "current_props_package": "0.0.683",
   "dependency_transport": "Bun Git resolver rejected existing fixed commits; authenticated GitHub verifies all six exact revisions. Canonical source manifest uses official fixed-commit archive URLs for the same source. No installed dependency is edited. Logs retain rejected attempts.",
-  "current_fanout_package": "0.0.82"
+  "current_fanout_package": "0.0.83",
+  "current_local_prototype_version": "0.0.2087",
+  "current_fanout_version": "0.0.83",
+  "rotation_bounds_fix_evidence": "evidence/fanout-source-fix-A22/rotated-boundary-provenance.json",
+  "rotation_compatibility": "88pass/2existing skips/0fail;2110assertions/83files;Bun1.4.2 with canonical loopback-server access",
+  "packaging_correction": "Rejected first2087 tar contained an unnecessary relative runtime fanout dependency; canonical core packaging corrected to the existing bundled model. Dev fanout83 remains source-built and bundled by canonical tsup configuration. Failed board install/frozen logs retained; corrected install/frozen both pass.",
+  "hashes": {
+    "tooling/tscircuit-core-0.0.2087-A22.tgz": "f1cc715b37b96a069b56df36c82418e1adde422489bd35606a4b85de2e018b68",
+    "evidence/core-source-fix-A22/core-A22-final.patch": "94c244f66571ba63ae2190f9de42cbc0ae5c16be60e594f45f698bc641a7173e"
+  }
 }

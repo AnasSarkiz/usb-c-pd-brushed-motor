@@ -1,0 +1,413 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_2-phase-default-order-3.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#779 /> phase 5/10 failed start: connections=1, obstacles=437, previous_traces=36, router=fanout, solver=FanoutSolver, effort=1x, cache=disabled(strategy_not_cacheable)
+  connections: 
+  phase 5/10 error after 3ms: FanoutSolver: sharedBoundary must contain every pad of component "internal element"
+Async effect error in PcbTraceRender "autorouting":
+Error: FanoutSolver: sharedBoundary must contain every pad of component "pcb_component_21"
+    at validateSharedBoundary (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:36376:17)
+    at prepareFanoutBuses (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:37091:26)
+    at new FanoutSolver (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:46449:26)
+    at solveFanout (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:51312:30)
+    at startFanout (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:51355:79)
+    at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/node_modules/@tscircuit/core/dist/index.js:51383:12)
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "R" prefix is being used with a <chip />, try using it with a <resistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "TP" prefix is being used with a <chip />, try using it with a <testpoint />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+All pins on D1 are underspecified (no pinAttributes set)
+All pins on D2 are underspecified (no pinAttributes set)
+All pins on SW2 are underspecified (no pinAttributes set)
+All pins on Q6 are underspecified (no pinAttributes set)
+All pins on Q7 are underspecified (no pinAttributes set)
+All pins on Q8 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on RV1 are underspecified (no pinAttributes set)
+All pins on SW1 are underspecified (no pinAttributes set)
+All pins on U8 are underspecified (no pinAttributes set)
+All pins on D10 are underspecified (no pinAttributes set)
+All pins on D11 are underspecified (no pinAttributes set)
+All pins on J2 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on Q3 are underspecified (no pinAttributes set)
+All pins on Q4 are underspecified (no pinAttributes set)
+All pins on Q5 are underspecified (no pinAttributes set)
+J1 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+U3 has no pin with requires_power=true
+D1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+SW2 has no pin with requires_power=true
+Q6 has no pin with requires_power=true
+Q7 has no pin with requires_power=true
+Q8 has no pin with requires_power=true
+U4 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+RV1 has no pin with requires_power=true
+SW1 has no pin with requires_power=true
+U8 has no pin with requires_power=true
+U10 has no pin with requires_power=true
+D10 has no pin with requires_power=true
+D11 has no pin with requires_power=true
+J2 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+Q3 has no pin with requires_power=true
+Q4 has no pin with requires_power=true
+Q5 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+D1 has no pin with requires_ground=true
+D2 has no pin with requires_ground=true
+SW2 has no pin with requires_ground=true
+Q6 has no pin with requires_ground=true
+Q7 has no pin with requires_ground=true
+Q8 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+RV1 has no pin with requires_ground=true
+SW1 has no pin with requires_ground=true
+U8 has no pin with requires_ground=true
+D10 has no pin with requires_ground=true
+D11 has no pin with requires_ground=true
+J2 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+Q3 has no pin with requires_ground=true
+Q4 has no pin with requires_ground=true
+Q5 has no pin with requires_ground=true
+D1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q6 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q7 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+RV1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+U8 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D10 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D11 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q3 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q4 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q5 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+FanoutSolver: sharedBoundary must contain every pad of component "pcb_component_21"
+Port [J1.A5] is not connected to net [CC1] by a PCB trace.
+Port [J1.B5] is not connected to net [CC2] by a PCB trace.
+Port [J1.B4A9] is not connected to net [VBUS] by a PCB trace.
+Port [J1.A4B9] is not connected to net [VBUS] by a PCB trace.
+Port [U1.CC1DB] is not connected to net [CC1] by a PCB trace.
+Port [U1.CC1] is not connected to net [CC1] by a PCB trace.
+Port [U1.CC2] is not connected to net [CC2] by a PCB trace.
+Port [U1.CC2DB] is not connected to net [CC2] by a PCB trace.
+Port [U1.RESET] is not connected to net [PD_RESET] by a PCB trace.
+Port [U1.SCL] is not connected to net [SCL] by a PCB trace.
+Port [U1.SDA] is not connected to net [SDA] by a PCB trace.
+Port [U1.VBUS_EN_SNK] is not connected to net [PD_ENABLE_N] by a PCB trace.
+Port [U1.VBUS_VS_DISCH] is not connected to net [VBUS_SENSE] by a PCB trace.
+Port [U1.ALERT] is not connected to net [PD_ALERT_N] by a PCB trace.
+Port [U1.VREG_1V2] is not connected to net [VREG_1V2] by a PCB trace.
+Port [U1.VREG_2V7] is not connected to net [VREG_2V7] by a PCB trace.
+Port [U1.VDD] is not connected to net [VDD5] by a PCB trace.
+Port [U2.OUT] is not connected to net [VDD5] by a PCB trace.
+Port [U2.EN] is not connected to net [VBUS] by a PCB trace.
+Port [U2.IN] is not connected to net [VBUS] by a PCB trace.
+Port [U3.OUT] is not connected to net [VCC3V3] by a PCB trace.
+Port [U3.EN] is not connected to net [VBUS] by a PCB trace.
+Port [U3.IN] is not connected to net [VBUS] by a PCB trace.
+Port [D1.pin1] is not connected to net [VBUS] by a PCB trace.
+Port [D2.pin1] is not connected to net [CC1] by a PCB trace.
+Port [D2.pin2] is not connected to net [CC2] by a PCB trace.
+Port [R1.pin1] is not connected to net [VBUS] by a PCB trace.
+Port [R1.pin2] is not connected to net [VBUS_SENSE] by a PCB trace.
+Port [D3.cathode] is not connected to net [VBUS_SENSE] by a PCB trace.
+Port [C1.pin1] is not connected to net [VBUS] by a PCB trace.
+Port [C2.pin1] is not connected to net [VBUS] by a PCB trace.
+Port [C3.pin1] is not connected to net [VBUS] by a PCB trace.
+Port [C4.pin1] is not connected to net [VDD5] by a PCB trace.
+Port [C5.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [C6.pin1] is not connected to net [VREG_1V2] by a PCB trace.
+Port [C7.pin1] is not connected to net [VREG_2V7] by a PCB trace.
+Port [C8.pin1] is not connected to net [VDD5] by a PCB trace.
+Port [R2.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [R2.pin2] is not connected to net [SCL] by a PCB trace.
+Port [R3.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [R3.pin2] is not connected to net [SDA] by a PCB trace.
+Port [R4.pin1] is not connected to net [PD_RESET] by a PCB trace.
+Port [TP5.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [TP6.pin1] is not connected to net [VBUS] by a PCB trace.
+Port [U11.PB7] is not connected to net [SCL] by a PCB trace.
+Port [U11.PB9] is not connected to net [SDA] by a PCB trace.
+Port [U11.PC15_OSC32_OUT] is not connected to net [PD_ALERT_N] by a PCB trace.
+Port [U11.VDDA] is not connected to net [VCC3V3] by a PCB trace.
+Port [U11.NRST] is not connected to net [MCU_NRST] by a PCB trace.
+Port [U11.PA0] is not connected to net [ADC_VBUS] by a PCB trace.
+Port [U11.PA1] is not connected to net [ADC_VM] by a PCB trace.
+Port [U11.PA2] is not connected to net [VOLTAGE_BIT_9] by a PCB trace.
+Port [U11.PA3] is not connected to net [VOLTAGE_BIT_12] by a PCB trace.
+Port [U11.PA4] is not connected to net [VOLTAGE_DRIVE_9] by a PCB trace.
+Port [U11.PA5] is not connected to net [VOLTAGE_DRIVE_12] by a PCB trace.
+Port [U11.PA6] is not connected to net [HOST_ALLOW] by a PCB trace.
+Port [U11.PA7] is not connected to net [HOST_INHIBIT_B] by a PCB trace.
+Port [U11.PB0] is not connected to net [PD_ENABLE_N] by a PCB trace.
+Port [U11.PA11_PA9_] is not connected to net [PD_RESET] by a PCB trace.
+Port [U11.PA12_PA10_] is not connected to net [MOTOR_FAULT_N] by a PCB trace.
+Port [U11.PA13] is not connected to net [SWDIO] by a PCB trace.
+Port [U11.PA15] is not connected to net [SWCLK] by a PCB trace.
+Port [SW2.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [SW2.pin2] is not connected to net [VOLTAGE_BIT_9] by a PCB trace.
+Port [SW2.pin3] is not connected to net [VCC3V3] by a PCB trace.
+Port [SW2.pin4] is not connected to net [VOLTAGE_BIT_12] by a PCB trace.
+Port [C30.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [C31.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [C32.pin1] is not connected to net [MCU_NRST] by a PCB trace.
+Port [R56.pin1] is not connected to net [HOST_ALLOW] by a PCB trace.
+Port [R57.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [R57.pin2] is not connected to net [HOST_INHIBIT_B] by a PCB trace.
+Port [Q6.pin1] is not connected to net [HOST_INHIBIT_B] by a PCB trace.
+Port [Q6.pin3] is not connected to net [MOTOR_READY] by a PCB trace.
+Port [R58.pin1] is not connected to net [VOLTAGE_BIT_9] by a PCB trace.
+Port [R59.pin1] is not connected to net [VOLTAGE_BIT_12] by a PCB trace.
+Port [R60.pin1] is not connected to net [VBUS] by a PCB trace.
+Port [R60.pin2] is not connected to net [ADC_VBUS] by a PCB trace.
+Port [R61.pin1] is not connected to net [ADC_VBUS] by a PCB trace.
+Port [C33.pin1] is not connected to net [ADC_VBUS] by a PCB trace.
+Port [R62.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [R62.pin2] is not connected to net [PD_ALERT_N] by a PCB trace.
+Port [Q7.pin1] is not connected to net [VOLTAGE_DRIVE_9] by a PCB trace.
+Port [Q7.pin3] is not connected to net [SELECT_9] by a PCB trace.
+Port [Q8.pin1] is not connected to net [VOLTAGE_DRIVE_12] by a PCB trace.
+Port [Q8.pin3] is not connected to net [SELECT_12] by a PCB trace.
+Port [R63.pin1] is not connected to net [VOLTAGE_DRIVE_9] by a PCB trace.
+Port [R64.pin1] is not connected to net [VOLTAGE_DRIVE_12] by a PCB trace.
+Port [R66.pin1] is not connected to net [VM] by a PCB trace.
+Port [R66.pin2] is not connected to net [ADC_VM] by a PCB trace.
+Port [R67.pin1] is not connected to net [ADC_VM] by a PCB trace.
+Port [C34.pin1] is not connected to net [ADC_VM] by a PCB trace.
+Port [TP1.pin1] is not connected to net [SWDIO] by a PCB trace.
+Port [TP2.pin1] is not connected to net [SWCLK] by a PCB trace.
+Port [TP3.pin1] is not connected to net [MCU_NRST] by a PCB trace.
+Port [D4.anode] is not connected to net [VBUS] by a PCB trace.
+Port [D4.cathode] is not connected to net [EFUSE_IN] by a PCB trace.
+Port [U4.IN1] is not connected to net [EFUSE_IN] by a PCB trace.
+Port [U4.IN2] is not connected to net [EFUSE_IN] by a PCB trace.
+Port [U4.IN3] is not connected to net [EFUSE_IN] by a PCB trace.
+Port [U4.P_IN] is not connected to net [EFUSE_IN] by a PCB trace.
+Port [U4.UVLO] is not connected to net [INPUT_UV] by a PCB trace.
+Port [U4.OVP] is not connected to net [INPUT_OV] by a PCB trace.
+Port [U4.dVdT] is not connected to net [SLEW] by a PCB trace.
+Port [U4.ILIM] is not connected to net [INPUT_ILIM] by a PCB trace.
+Port [U4.N_SHDN] is not connected to net [POWER_ENABLE] by a PCB trace.
+Port [U4.PGOOD] is not connected to net [INPUT_PG] by a PCB trace.
+Port [U4.OUT3] is not connected to net [VIN_BUCK] by a PCB trace.
+Port [U4.OUT2] is not connected to net [VIN_BUCK] by a PCB trace.
+Port [U4.OUT1] is not connected to net [VIN_BUCK] by a PCB trace.
+Port [Q1.pin1] is not connected to net [PD_INHIBIT] by a PCB trace.
+Port [Q1.pin3] is not connected to net [POWER_ENABLE] by a PCB trace.
+Port [R5.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [R5.pin2] is not connected to net [PD_ENABLE_N] by a PCB trace.
+Port [R6.pin1] is not connected to net [PD_ENABLE_N] by a PCB trace.
+Port [R6.pin2] is not connected to net [PD_INHIBIT] by a PCB trace.
+Port [R7.pin1] is not connected to net [HOST_ALLOW] by a PCB trace.
+Port [R7.pin2] is not connected to net [POWER_ENABLE] by a PCB trace.
+Port [R8.pin1] is not connected to net [EFUSE_IN] by a PCB trace.
+Port [R8.pin2] is not connected to net [INPUT_UV] by a PCB trace.
+Port [R9.pin1] is not connected to net [INPUT_UV] by a PCB trace.
+Port [R10.pin1] is not connected to net [EFUSE_IN] by a PCB trace.
+Port [R10.pin2] is not connected to net [INPUT_OV_TOP] by a PCB trace.
+Port [R11.pin1] is not connected to net [INPUT_OV_TOP] by a PCB trace.
+Port [R11.pin2] is not connected to net [INPUT_OV] by a PCB trace.
+Port [R12.pin1] is not connected to net [INPUT_OV] by a PCB trace.
+Port [R13.pin1] is not connected to net [INPUT_ILIM] by a PCB trace.
+Port [R16.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [R16.pin2] is not connected to net [INPUT_PG] by a PCB trace.
+Port [C9.pin1] is not connected to net [SLEW] by a PCB trace.
+Port [C10.pin1] is not connected to net [EFUSE_IN] by a PCB trace.
+Port [C11.pin1] is not connected to net [VIN_BUCK] by a PCB trace.
+Port [U5.BOOT] is not connected to net [BOOT] by a PCB trace.
+Port [U5.VIN] is not connected to net [VIN_BUCK] by a PCB trace.
+Port [U5.EN] is not connected to net [BUCK_EN] by a PCB trace.
+Port [U5.RT] is not connected to net [RT] by a PCB trace.
+Port [U5.FB] is not connected to net [MOTOR_FB] by a PCB trace.
+Port [U5.COMP] is not connected to net [COMP] by a PCB trace.
+Port [U5.SW] is not connected to net [SWITCH_NODE] by a PCB trace.
+Port [D5.cathode] is not connected to net [SWITCH_NODE] by a PCB trace.
+Port [L1.pin1] is not connected to net [SWITCH_NODE] by a PCB trace.
+Port [L1.pin2] is not connected to net [VM] by a PCB trace.
+Port [C12.pin1] is not connected to net [BOOT] by a PCB trace.
+Port [C12.pin2] is not connected to net [SWITCH_NODE] by a PCB trace.
+Port [C13.pin1] is not connected to net [VIN_BUCK] by a PCB trace.
+Port [C14.pin1] is not connected to net [VIN_BUCK] by a PCB trace.
+Port [C15.pin1] is not connected to net [VIN_BUCK] by a PCB trace.
+Port [C16.pin1] is not connected to net [VM] by a PCB trace.
+Port [C17.pin1] is not connected to net [VM] by a PCB trace.
+Port [C18.pin1] is not connected to net [VM] by a PCB trace.
+Port [R17.pin1] is not connected to net [RT] by a PCB trace.
+Port [R18.pin1] is not connected to net [VM] by a PCB trace.
+Port [R18.pin2] is not connected to net [FB_TOP_MID] by a PCB trace.
+Port [R55.pin1] is not connected to net [FB_TOP_MID] by a PCB trace.
+Port [R55.pin2] is not connected to net [MOTOR_FB] by a PCB trace.
+Port [R19.pin1] is not connected to net [MOTOR_FB] by a PCB trace.
+Port [R20.pin1] is not connected to net [MOTOR_FB] by a PCB trace.
+Port [R20.pin2] is not connected to net [SELECT_9] by a PCB trace.
+Port [R21.pin1] is not connected to net [MOTOR_FB] by a PCB trace.
+Port [R21.pin2] is not connected to net [SELECT_12] by a PCB trace.
+Port [R22.pin1] is not connected to net [COMP] by a PCB trace.
+Port [R22.pin2] is not connected to net [COMP_ZERO] by a PCB trace.
+Port [C19.pin1] is not connected to net [COMP_ZERO] by a PCB trace.
+Port [C20.pin1] is not connected to net [COMP] by a PCB trace.
+Port [R23.pin1] is not connected to net [INPUT_PG] by a PCB trace.
+Port [R23.pin2] is not connected to net [BUCK_EN] by a PCB trace.
+Port [R68.pin1] is not connected to net [VM] by a PCB trace.
+Port [R24.pin1] is not connected to net [BUCK_EN] by a PCB trace.
+Port [U6.TRIG] is not connected to net [TIMING] by a PCB trace.
+Port [U6.OUT] is not connected to net [PWM] by a PCB trace.
+Port [U6.RESET] is not connected to net [MOTOR_READY] by a PCB trace.
+Port [U6.CONT] is not connected to net [TIMER_CONT] by a PCB trace.
+Port [U6.THRES] is not connected to net [TIMING] by a PCB trace.
+Port [U6.DISCH] is not connected to net [WIPER] by a PCB trace.
+Port [U6.VDD] is not connected to net [VCC3V3] by a PCB trace.
+Port [RV1.pin1] is not connected to net [POT_CHARGE] by a PCB trace.
+Port [RV1.pin2] is not connected to net [WIPER] by a PCB trace.
+Port [RV1.pin3] is not connected to net [POT_DISCHARGE] by a PCB trace.
+Port [R25.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [R25.pin2] is not connected to net [WIPER] by a PCB trace.
+Port [D6.anode] is not connected to net [POT_CHARGE] by a PCB trace.
+Port [D6.cathode] is not connected to net [TIMING] by a PCB trace.
+Port [D7.anode] is not connected to net [TIMING] by a PCB trace.
+Port [D7.cathode] is not connected to net [DISCHARGE_END] by a PCB trace.
+Port [R26.pin1] is not connected to net [DISCHARGE_END] by a PCB trace.
+Port [R26.pin2] is not connected to net [POT_DISCHARGE] by a PCB trace.
+Port [C21.pin1] is not connected to net [TIMING] by a PCB trace.
+Port [C22.pin1] is not connected to net [TIMER_CONT] by a PCB trace.
+Port [C23.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [SW1.pin1] is not connected to net [IN1] by a PCB trace.
+Port [SW1.pin2] is not connected to net [PWM] by a PCB trace.
+Port [SW1.pin3] is not connected to net [IN2] by a PCB trace.
+Port [R29.pin1] is not connected to net [IN1] by a PCB trace.
+Port [R29.pin2] is not connected to net [R29_LED] by a PCB trace.
+Port [R30.pin1] is not connected to net [IN2] by a PCB trace.
+Port [R30.pin2] is not connected to net [R30_LED] by a PCB trace.
+Port [LED2.anode] is not connected to net [R29_LED] by a PCB trace.
+Port [LED3.anode] is not connected to net [R30_LED] by a PCB trace.
+Port [U8.pin1] is not connected to net [VREF2V5] by a PCB trace.
+Port [U8.pin2] is not connected to net [VREF2V5] by a PCB trace.
+Port [R31.pin1] is not connected to net [VM] by a PCB trace.
+Port [R31.pin2] is not connected to net [VREF2V5] by a PCB trace.
+Port [U9.1OUT] is not connected to net [MOTOR_READY] by a PCB trace.
+Port [U9.1IN_NEG] is not connected to net [UV_REF] by a PCB trace.
+Port [U9.1IN_POS] is not connected to net [MOTOR_FB] by a PCB trace.
+Port [U9.2IN_POS] is not connected to net [OV_REF] by a PCB trace.
+Port [U9.2IN_NEG] is not connected to net [MOTOR_FB] by a PCB trace.
+Port [U9.2OUT] is not connected to net [OV_ACTIVE_N] by a PCB trace.
+Port [U9.VCC] is not connected to net [VM] by a PCB trace.
+Port [R32.pin1] is not connected to net [VREF2V5] by a PCB trace.
+Port [R32.pin2] is not connected to net [UV_REF] by a PCB trace.
+Port [R33.pin1] is not connected to net [UV_REF] by a PCB trace.
+Port [R34.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [R34.pin2] is not connected to net [MOTOR_READY] by a PCB trace.
+Port [D8.anode] is not connected to net [MOTOR_READY] by a PCB trace.
+Port [D8.cathode] is not connected to net [INPUT_PG] by a PCB trace.
+Port [R39.pin1] is not connected to net [VREF2V5] by a PCB trace.
+Port [R39.pin2] is not connected to net [OV_REF] by a PCB trace.
+Port [R65.pin1] is not connected to net [OV_REF] by a PCB trace.
+Port [R40.pin1] is not connected to net [OV_ACTIVE_N] by a PCB trace.
+Port [R40.pin2] is not connected to net [OV_REF] by a PCB trace.
+Port [C25.pin1] is not connected to net [VM] by a PCB trace.
+Port [U10.EN] is not connected to net [IN1] by a PCB trace.
+Port [U10.PH] is not connected to net [IN2] by a PCB trace.
+Port [U10.nSLEEP] is not connected to net [MOTOR_READY] by a PCB trace.
+Port [U10.nFAULT] is not connected to net [MOTOR_FAULT_N] by a PCB trace.
+Port [U10.VREF] is not connected to net [VCC3V3] by a PCB trace.
+Port [U10.IPROPI] is not connected to net [IPROPI] by a PCB trace.
+Port [U10.OUT1] is not connected to net [MOTOR_P] by a PCB trace.
+Port [U10.OUT2] is not connected to net [MOTOR_N] by a PCB trace.
+Port [U10.VM] is not connected to net [VM] by a PCB trace.
+Port [U10.VCP] is not connected to net [VCP] by a PCB trace.
+Port [U10.CPH] is not connected to net [CPH] by a PCB trace.
+Port [U10.CPL] is not connected to net [CPL] by a PCB trace.
+Port [U10.PMODE] is not connected to net [VCC3V3] by a PCB trace.
+Port [R50.pin1] is not connected to net [IPROPI] by a PCB trace.
+Port [R51.pin1] is not connected to net [VCC3V3] by a PCB trace.
+Port [R51.pin2] is not connected to net [MOTOR_FAULT_N] by a PCB trace.
+Port [C26.pin1] is not connected to net [CPH] by a PCB trace.
+Port [C26.pin2] is not connected to net [CPL] by a PCB trace.
+Port [C27.pin1] is not connected to net [VCP] by a PCB trace.
+Port [C27.pin2] is not connected to net [VM] by a PCB trace.
+Port [C28.pin1] is not connected to net [VM] by a PCB trace.
+Port [C29.pin1] is not connected to net [VM] by a PCB trace.
+Port [D10.pin1] is not connected to net [MOTOR_P] by a PCB trace.
+Port [D10.pin2] is not connected to net [MOTOR_N] by a PCB trace.
+Port [D11.pin1] is not connected to net [VM] by a PCB trace.
+Port [J2.pin1] is not connected to net [MOTOR_P] by a PCB trace.
+Port [J2.pin2] is not connected to net [MOTOR_N] by a PCB trace.
+Port [R54.pin1] is not connected to net [VM] by a PCB trace.
+Port [R54.pin2] is not connected to net [POWER_LED] by a PCB trace.
+Port [LED1.anode] is not connected to net [POWER_LED] by a PCB trace.
+Port [TP7.pin1] is not connected to net [VM] by a PCB trace.
+Port [Q2.pin1] is not connected to net [DUMP_BASE] by a PCB trace.
+Port [Q2.pin2] is not connected to net [VM] by a PCB trace.
+Port [Q2.pin3] is not connected to net [DUMP_DRIVE] by a PCB trace.
+Port [R41.pin1] is not connected to net [VM] by a PCB trace.
+Port [R41.pin2] is not connected to net [DUMP_BASE] by a PCB trace.
+Port [R42.pin1] is not connected to net [DUMP_BASE] by a PCB trace.
+Port [R42.pin2] is not connected to net [OV_ACTIVE_N] by a PCB trace.
+Port [R43.pin1] is not connected to net [DUMP_DRIVE] by a PCB trace.
+Port [R43.pin2] is not connected to net [DUMP_GATE] by a PCB trace.
+Port [R44.pin1] is not connected to net [DUMP_GATE] by a PCB trace.
+Port [D9.cathode] is not connected to net [DUMP_GATE] by a PCB trace.
+Port [Q3.pin1] is not connected to net [DUMP_GATE] by a PCB trace.
+Port [Q3.pin3] is not connected to net [DUMP_LOAD] by a PCB trace.
+Port [R45.pin1] is not connected to net [VM] by a PCB trace.
+Port [R45.pin2] is not connected to net [DUMP_MID_A] by a PCB trace.
+Port [R46.pin1] is not connected to net [DUMP_MID_A] by a PCB trace.
+Port [R46.pin2] is not connected to net [DUMP_LOAD] by a PCB trace.
+Port [R47.pin1] is not connected to net [VM] by a PCB trace.
+Port [R47.pin2] is not connected to net [DUMP_MID_B] by a PCB trace.
+Port [R48.pin1] is not connected to net [DUMP_MID_B] by a PCB trace.
+Port [R48.pin2] is not connected to net [DUMP_LOAD] by a PCB trace.
+Port [R69.pin1] is not connected to net [VM] by a PCB trace.
+Port [R69.pin2] is not connected to net [DUMP_MID_C] by a PCB trace.
+Port [R70.pin1] is not connected to net [DUMP_MID_C] by a PCB trace.
+Port [R70.pin2] is not connected to net [DUMP_LOAD] by a PCB trace.
+Port [R71.pin1] is not connected to net [VM] by a PCB trace.
+Port [R71.pin2] is not connected to net [DUMP_MID_D] by a PCB trace.
+Port [R72.pin1] is not connected to net [DUMP_MID_D] by a PCB trace.
+Port [R72.pin2] is not connected to net [DUMP_LOAD] by a PCB trace.
+Port [Q4.pin1] is not connected to net [OV_INHIBIT] by a PCB trace.
+Port [Q4.pin3] is not connected to net [MOTOR_READY] by a PCB trace.
+Port [R49.pin1] is not connected to net [DUMP_GATE] by a PCB trace.
+Port [R49.pin2] is not connected to net [OV_INHIBIT] by a PCB trace.
+Port [Q5.pin1] is not connected to net [OV_INHIBIT] by a PCB trace.
+Port [Q5.pin3] is not connected to net [BUCK_EN] by a PCB trace.
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

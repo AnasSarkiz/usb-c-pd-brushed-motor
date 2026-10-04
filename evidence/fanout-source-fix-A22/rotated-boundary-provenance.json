@@ -1,0 +1,109 @@
+{
+  "native_phase_srj_sha256": "df6aa06de50dff4a8c4c9e0dbb30161a9ddef74b763b783c62d08f9a6ba30d86",
+  "source_component": "pcb_component_21",
+  "pad_rotation_ccw_degrees": 90,
+  "unrotated_y_range_mm": [
+    -9.7960681,
+    -2.2039319
+  ],
+  "actual_y_range_mm": [
+    -9.1070677,
+    -2.8929323
+  ],
+  "shared_boundary_unchanged": true,
+  "negative_old_source": "rotated-mcu-ground-negative.log",
+  "focused_result": "2tests/31assertions pass; exactly1plane termination; independent copper DRC zero issues; shrunk-boundary rejection retained",
+  "visual_review": "full native SVG and detail PNG inspected; ground via inside body clears the electrical pads, retained signal escape prefixes and surrounding passives.",
+  "format_advisory": "Canonical default formatter reports file-size advisories on23 oversized fixtures. The new1.7MB fixture was explicitly formatted with a3MB processing limit; no formatter check disabled. Fixture SRJ equals the exact native input semantically.",
+  "full_suite": {
+    "runtime": "Bun1.4.2(744846f84)",
+    "source_package": "@tscircuit/fanout-solver0.0.83",
+    "passed": 316,
+    "failed": 0,
+    "assertions": 636960,
+    "files": 273,
+    "shards": [
+      {
+        "shard": 1,
+        "passed": 43,
+        "failed": 0,
+        "assertions": 81790,
+        "files": 35,
+        "seconds": 249.04,
+        "log": "evidence/fanout-source-fix-A22/rotation-suite-shard-1.log",
+        "sha256": "e41f8cb6d1344ec0843873c4f515968747b4404877e30e50bac8211ad58f4293"
+      },
+      {
+        "shard": 2,
+        "passed": 37,
+        "failed": 0,
+        "assertions": 133941,
+        "files": 34,
+        "seconds": 382.4,
+        "log": "evidence/fanout-source-fix-A22/rotation-suite-shard-2.log",
+        "sha256": "b1377c05de439a63919340dcd135233d2982793b45ad6d09dfa9d6f4790bc438"
+      },
+      {
+        "shard": 3,
+        "passed": 35,
+        "failed": 0,
+        "assertions": 130125,
+        "files": 34,
+        "seconds": 156.21,
+        "log": "evidence/fanout-source-fix-A22/rotation-suite-shard-3.log",
+        "sha256": "3998325966eb3f4e9c68a58e07b0a3b15b4f8cebc089047b63b227fb83392782"
+      },
+      {
+        "shard": 4,
+        "passed": 35,
+        "failed": 0,
+        "assertions": 107954,
+        "files": 34,
+        "seconds": 335.57,
+        "log": "evidence/fanout-source-fix-A22/rotation-suite-shard-4.log",
+        "sha256": "837b7aced3b687b9a1c01c06c5e8058b0076786d8edea476ed70b64cb3889f19"
+      },
+      {
+        "shard": 5,
+        "passed": 47,
+        "failed": 0,
+        "assertions": 71834,
+        "files": 34,
+        "seconds": 290.97,
+        "log": "evidence/fanout-source-fix-A22/rotation-suite-shard-5.log",
+        "sha256": "4ba2e81e09b2b7a3a2432b7950436c4fa49aaad5aa05dda42a15d81970f6f465"
+      },
+      {
+        "shard": 6,
+        "passed": 43,
+        "failed": 0,
+        "assertions": 16941,
+        "files": 34,
+        "seconds": 183.54,
+        "log": "evidence/fanout-source-fix-A22/rotation-suite-shard-6.log",
+        "sha256": "60e372fd43bdf9c3f2e8d63846268d777b4a9738ea8fc0c673cb867487e5d470"
+      },
+      {
+        "shard": 7,
+        "passed": 39,
+        "failed": 0,
+        "assertions": 76240,
+        "files": 34,
+        "seconds": 131.75,
+        "log": "evidence/fanout-source-fix-A22/rotation-suite-shard-7.log",
+        "sha256": "d086ec8bbdd455701b442957568fc376517dea9c500bb1a1dc61e59650ad5f45"
+      },
+      {
+        "shard": 8,
+        "passed": 37,
+        "failed": 0,
+        "assertions": 18135,
+        "files": 34,
+        "seconds": 137.35,
+        "log": "evidence/fanout-source-fix-A22/rotation-suite-shard-8.log",
+        "sha256": "6d98705b8df03dd9a6a08d2a4ae7ecb801048da1b58531c880cbcc81840fa336"
+      }
+    ]
+  },
+  "package_sha256": "6bab79aea8f0990e901445760739e6f4eec03483d8eeb0aa8b56c300cd066724"
+}

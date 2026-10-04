@@ -1,3 +1,51 @@
+# A22 rotated MCU pad bounds — passed; board routing in progress, 2026-10-04
+
+Native routing attempt14 passed the13 PD signal escapes, five PD ground drops
+and18 MCU signal escapes, then failed at the MCU ground phase. The exact failed
+input and native phase outputs are retained under
+`evidence/routing-fourteenth-debug-A22/`; the failed board output has zero
+committed traces and is not fabrication evidence.
+
+The source defect is in fanout component bounds: 90-degree pads were bounded
+using their unrotated width/height. All20 actual MCU pads fit the unchanged
+shared boundary. Canonical fanout source now shares rotation-aware pad bounds
+with its spatial index, using transformation-matrix. The exact native-input
+regression fails against the old source and passes with one ground termination
+and zero independent copper DRC issues. A deliberately truncated boundary still
+fails. Rectangles at0/45/90/180/270 degrees and circular bounds also pass.
+The native SVG and detailed ground escape have been visually inspected.
+No supplier model, board placement, boundary or clearance rule was changed.
+
+Fanout typechecks/build and all316 tests/636960 assertions across273 files
+pass, with zero failures. The canonical135-connection benchmark completes in
+13.94seconds with its unchanged120-second deadline. Core2087/fanout83 candidates preserve all preceding changes; core
+TypeScript/build and88 tests/2110 assertions pass with loopback access. The
+sandbox run passed87 tests but could not start its canonical local test server;
+that failure is retained and does not count as a pass. The two existing core
+skips are unchanged. Fresh complete-board schema, supplier transforms, connectivity, native placement
+and31 breakout targets pass. The140 purchased/152 PCB/12 original-via/0-trace
+artifact SHA256 is6cb147ed86f770553766d7b7cdc0b3cc023b7dc3db8ff315e50ff49a6c82ef51.
+All4978 nonmetadata records equal the preceding visually reviewed prerequisites.
+Board formatting, TypeScript and38 tests/460 assertions pass. All five required native commands pass; printed error counts are zero, not
+merely successful process exit codes. The full native placement checker returns
+zero diagnostics on the complete152-record PCB. Native attempt15 passes every local escape and all95 ground drops. The final
+75-net phase fails at MCU_NRST_mst1; its regional candidate is rejected for
+via-to-pad conflicts. No partial route is accepted or committed to board output.
+The140-part result has zero PCB traces; SHA256:
+288a159b15f89a70fb1d40b79d52d2d4727bac8c5e0b0c95679b4b472d8e2cda.
+Exact native input, phase logs, outputs and error are retained. All six reset-net
+identifiers resolve to the same native connectivity group, ruling out a lost
+preloaded-trace alias. Product placement/routing refinement continues. This section records the validated tooling fix and unfinished routing; it is
+not fabrication approval. Stored upstream patch context retains intentional
+blank context lines and original whitespace; board/source format commands pass.
+
+Git source milestone d8caeec is committed locally. Its private package upload is
+running; archive upload timed out and individual uploads have failures. Do not
+claim publication success until remote acknowledgements are verified. No GitHub
+remote is configured; independent local work continues.
+
+---
+
 # A22 validated native router toolchain — passed, 2026-10-04
 
 Fanout0.0.82 passes all eight canonical partitions on official Bun1.4.2:

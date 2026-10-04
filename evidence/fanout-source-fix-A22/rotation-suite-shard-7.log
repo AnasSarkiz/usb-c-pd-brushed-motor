@@ -1,0 +1,148 @@
+Running test shard 7/8: 34 of 273 files
+- tests/am62l-core-two-bus-dram.test.ts
+- tests/am62l-lpddr4-progressive-through-all-soc-repro.test.ts
+- tests/available-corners-and-sides.test.ts
+- tests/boundary-tail-blocked-approach.test.ts
+- tests/boundary-tail-wide-cluster.test.ts
+- tests/bus-layer-atomicity.test.ts
+- tests/bus-length-matching-retained-lead.test.ts
+- tests/bus-length-matching.test.ts
+- tests/compact-opposite-crossbar-bus.test.ts
+- tests/cross-layer-via-obstacle-clearance.test.ts
+- tests/dataset31-bottom-center.test.ts
+- tests/dataset31-imx6ull-right-top-offset.test.ts
+- tests/dataset31-left-bottom-offset.test.ts
+- tests/dense-through-all-pair-routing-priority.test.ts
+- tests/existing-trace-clearance-repro.test.ts
+- tests/fanout-exits-shared-boundary.test.ts
+- tests/fanout31-am62l-top-solved.test.ts
+- tests/high-layer-fanout-visualization.test.ts
+- tests/layer-length-transit-retry.test.ts
+- tests/layered-winding-channel.test.ts
+- tests/length-constrained-corner-normalization.test.ts
+- tests/no-right-angle-traces.test.ts
+- tests/packed-boundary-bus-intervals.test.ts
+- tests/plane-source-corner-normalization.test.ts
+- tests/reroute-overlong-bus-lanes.test.ts
+- tests/reserved-via-mixed-targets.test.ts
+- tests/rotated-obstacle-geometry.test.ts
+- tests/same-net-drill-drc.test.ts
+- tests/should-use-adaptive-dense-plane-routing.test.ts
+- tests/source-origin-buses.test.ts
+- tests/source-origin-transit-search.test.ts
+- tests/srj19-sample064.test.ts
+- tests/transit-length-repair.test.ts
+- tests/winding-large-fine-grid.test.ts
+bun test v1.4.2 (744846f84)
+
+tests/am62l-lpddr4-progressive-through-all-soc-repro.test.ts:
+(pass) routes the AM62L nine-bus SoC fanout with DMI1 [2425.63ms]
+
+tests/plane-source-corner-normalization.test.ts:
+(pass) normalizes plane source corners without moving pads, physical vias, or neighboring copper [503.33ms]
+
+tests/boundary-tail-blocked-approach.test.ts:
+(pass) repairs a neighboring tail that blocks another lane’s inward exit approach [567.56ms]
+
+tests/source-origin-transit-search.test.ts:
+(pass) native search keys distinguish TOP history and reset for new connections and retries [4.36ms]
+
+tests/compact-opposite-crossbar-bus.test.ts:
+(pass) staggered compact crossbar rows clear a transverse copper obstruction [252.87ms]
+
+tests/dataset31-left-bottom-offset.test.ts:
+(pass) routes raw dataset31 left-bottom with all signals and plane drops [21484.45ms]
+
+tests/srj19-sample064.test.ts:
+(pass) SRJ19 sample064 solves on six layers [1511.50ms]
+
+tests/length-constrained-corner-normalization.test.ts:
+(pass) corner cleanup preserves matched lengths or physically retunes their lost margin [213.15ms]
+
+tests/bus-layer-atomicity.test.ts:
+(pass) each bus escapes in one direction and onto one layer [1824.48ms]
+
+tests/cross-layer-via-obstacle-clearance.test.ts:
+(pass) a via is rejected by an obstacle on an intermediate span layer [2.86ms]
+(pass) an obstacle outside the via span does not block the fanout [0.86ms]
+
+tests/transit-length-repair.test.ts:
+(pass) transit cleanup repairs complete bus skew without moving other copper or source escapes [296.52ms]
+
+tests/fanout31-am62l-top-solved.test.ts:
+(pass) routes the complete AM62L RAM-above sample with its timing constraints [10120.40ms]
+
+tests/source-origin-buses.test.ts:
+(pass) a whole bus can choose first vias beyond a blocked target layer without moving other sources [669.60ms]
+
+tests/bus-length-matching.test.ts:
+(pass) matches fanout bus lengths after the dense pad escape [229.54ms]
+
+tests/am62l-core-two-bus-dram.test.ts:
+(pass) keeps one via per connection when automatic dogbone matching cannot route a byte bus [1345.95ms]
+
+tests/dataset31-bottom-center.test.ts:
+(pass) routes the raw dataset31 bottom-center sample with adaptive plane reservation repair [14502.16ms]
+
+tests/reroute-overlong-bus-lanes.test.ts:
+(pass) bounded same-layer cleanup shortens a detour while preserving other lanes and a through-plane reservation [226.76ms]
+
+tests/boundary-tail-wide-cluster.test.ts:
+(pass) repairs all 26 lanes in a connected boundary cluster without moving sources or exits [598.13ms]
+
+tests/existing-trace-clearance-repro.test.ts:
+(pass) fanout avoids an existing different-net trace [247.55ms]
+
+tests/dataset31-imx6ull-right-top-offset.test.ts:
+(pass) repairs successive constrained pairs and a final bus with new source reservations [44809.65ms]
+
+tests/winding-large-fine-grid.test.ts:
+(pass) routes a fine winding grid across a 28.65 mm shared boundary [265.73ms]
+
+tests/dense-through-all-pair-routing-priority.test.ts:
+(pass) orders all three dense pairs by one guarded, deterministic farthest-lane key [0.87ms]
+(pass) disables pair-distance priority for the entire group when any guard fails [0.18ms]
+
+tests/rotated-obstacle-geometry.test.ts:
+(pass) rotated rectangular pads use their oriented geometry for clearance [0.11ms]
+
+tests/layered-winding-channel.test.ts:
+(pass) layered paired exits preserve winding without crossover vias [247.92ms]
+
+tests/same-net-drill-drc.test.ts:
+(pass) the independent copper audit rejects same-net drill spacing [278.44ms]
+
+tests/available-corners-and-sides.test.ts:
+(pass) availableCornersAndSides restricts a fanout to the requested edge [2.54ms]
+(pass) edge aliases and invalid availability constraints are validated [0.42ms]
+
+tests/should-use-adaptive-dense-plane-routing.test.ts:
+(pass) adaptive dense-plane routing selection is rotation invariant [0.41ms]
+(pass) an edge-aligned memory field keeps the simpler routing strategy [0.15ms]
+(pass) a straight-through opposite-edge field keeps the simpler strategy [0.13ms]
+
+tests/layer-length-transit-retry.test.ts:
+(pass) a complete length-trapped bus retries permitted transit without reserving the failed copper [2842.68ms]
+
+tests/packed-boundary-bus-intervals.test.ts:
+(pass) packs and routes overlapping whole bus intervals without changing lane order or bounds [499.91ms]
+
+tests/bus-length-matching-retained-lead.test.ts:
+(pass) retains an unchanged lead beside a chamfered continuation while checking new meander copper [292.46ms]
+
+tests/fanout-exits-shared-boundary.test.ts:
+(pass) every Dataset 01 pad exits the one shared breakout boundary [3027.66ms]
+
+tests/reserved-via-mixed-targets.test.ts:
+(pass) joint routing keeps each crossing bus atomic on its mapped final layer [275.95ms]
+
+tests/high-layer-fanout-visualization.test.ts:
+(pass) an 18-layer DDR3 fanout renders every routed copper layer [20322.12ms]
+
+tests/no-right-angle-traces.test.ts:
+(pass) post-processing chamfers every same-layer corner away from 90 degrees [1210.10ms]
+
+ 39 pass
+ 0 fail
+ 76240 expect() calls
+Ran 39 tests across 34 files. [131.75s]

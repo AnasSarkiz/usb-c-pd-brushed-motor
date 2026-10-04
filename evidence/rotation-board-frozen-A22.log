@@ -1,0 +1,5 @@
+bun install v1.4.2 (744846f84)
+Resolving dependencies
+Resolved, downloaded and extracted [4]
+error: ENOENT extracting tarball from @tscircuit/fanout-solver
+error: @tscircuit/fanout-solver@file:../tscircuit-fanout-solver-0.0.83-A22.tgz failed to resolve

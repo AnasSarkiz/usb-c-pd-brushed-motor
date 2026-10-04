@@ -1,0 +1,12 @@
+bun test v1.4.2 (744846f84)
+
+tests/rotated-mcu-ground-boundary.test.ts:
+(pass) rotated MCU ground pads escape inside their actual shared boundary [271.32ms]
+
+tests/obstacle-axis-aligned-bounds.test.ts:
+(pass) pad bounds enclose rotated rectangles and preserve circular geometry [0.15ms]
+
+ 2 pass
+ 0 fail
+ 31 expect() calls
+Ran 2 tests across 2 files. [370.00ms]

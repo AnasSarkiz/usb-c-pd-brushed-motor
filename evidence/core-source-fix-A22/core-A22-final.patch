@@ -1047,7 +1047,7 @@ index 7a9eb56..c3616bb 100644
        return {
          ...point,
 diff --git a/package.json b/package.json
-index 8c9ca79..0b55eee 100644
+index 8c9ca79..99f85be 100644
 --- a/package.json
 +++ b/package.json
 @@ -1,7 +1,7 @@
@@ -1055,7 +1055,7 @@ index 8c9ca79..0b55eee 100644
    "name": "@tscircuit/core",
    "type": "module",
 -  "version": "0.0.2073",
-+  "version": "0.0.2086",
++  "version": "0.0.2087",
    "types": "dist/index.d.ts",
    "main": "dist/index.js",
    "module": "dist/index.js",
@@ -1076,7 +1076,7 @@ index 8c9ca79..0b55eee 100644
      "@tscircuit/create-fdm-enclosure": "0.0.4",
      "@tscircuit/dogbone-solver": "https://jscdn.tscircuit.com/@tscircuit/dogbone-solver/0.0.1.tgz",
 -    "@tscircuit/fanout-solver": "0.0.78",
-+    "@tscircuit/fanout-solver": "file:../tscircuit-fanout-solver-0.0.82-A22.tgz",
++    "@tscircuit/fanout-solver": "file:../tscircuit-fanout-solver-0.0.83-A22.tgz",
      "@tscircuit/flex-utils": "https://jscdn.tscircuit.com/@tscircuit/flex-utils/0.0.8.tgz",
      "@tscircuit/footprinter": "^0.0.430",
      "@tscircuit/image-utils": "^0.0.8",

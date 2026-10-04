@@ -1,0 +1,6 @@
+source_net_20 connectivity_net16
+breakout:pcb_breakout_point_17 connectivity_net16
+pcb_port_97 connectivity_net16
+pcb_breakout_point_17 connectivity_net16
+pcb_port_120 connectivity_net16
+pcb_port_159 connectivity_net16

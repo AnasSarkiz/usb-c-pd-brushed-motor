@@ -1,0 +1,144 @@
+Running test shard 3/8: 34 of 273 files
+- tests/aligned-opposite-approach.test.ts
+- tests/am62l-ddr4-trace-finalization.test.ts
+- tests/am62l-soc-winding-fanout-repro.test.ts
+- tests/benchmark-process-isolation.test.ts
+- tests/boundary-tail-independent-clusters.test.ts
+- tests/boundary-terminal-self-contact.test.ts
+- tests/bus-length-matching-declared-pairs.test.ts
+- tests/bus-length-matching-source-prefix.test.ts
+- tests/cached-plan-clearance.test.ts
+- tests/connected-routed-trace.test.ts
+- tests/dataset04-package-surrounded-by-caps.test.ts
+- tests/dataset31-imx6ull-bottom-right-offset.test.ts
+- tests/dataset31-k230-right-center.test.ts
+- tests/dataset31-sample59-live-visualization.test.ts
+- tests/downstream-router-injection.test.ts
+- tests/fanout-exit-position-legacy-compatibility.test.ts
+- tests/fanout31-am62l-left-input.test.ts
+- tests/fixed-via-winding-reserved-exits.test.ts
+- tests/jlcpcb-design-rules.test.ts
+- tests/layer-reserved-source-transit.test.ts
+- tests/layered-winding-via-minimal.test.ts
+- tests/literal-corner-slot-reservations.test.ts
+- tests/opposite-bottom-crossbar-bus.test.ts
+- tests/peripheral-buses.test.ts
+- tests/pr-benchmark-report.test.ts
+- tests/reserved-narrow-group-interior-gap.test.ts
+- tests/retained-boundary-tail-repair.test.ts
+- tests/routed-copper-drc-through-all-via.test.ts
+- tests/sequential-fanout-output-identities.test.ts
+- tests/singleton-package-edge-via.test.ts
+- tests/source-origin-route-self-clear.test.ts
+- tests/srj19-dataset.test.ts
+- tests/staged-perimeter-coincident-track.test.ts
+- tests/via-channel-grid-phase.test.ts
+bun test v1.4.2 (744846f84)
+
+tests/layer-reserved-source-transit.test.ts:
+(pass) a reserved group retries permitted source-layer transit when its target layer is blocked [515.32ms]
+
+tests/srj19-dataset.test.ts:
+(pass) SRJ19 adapts a representative sample into a BGA fanout problem [1.21ms]
+(pass) SRJ19 keeps all obstacles and only connections touching the BGA [0.03ms]
+
+tests/routed-copper-drc-through-all-via.test.ts:
+(pass) through-all DRC checks obstacles beyond a via's logical transition [0.41ms]
+
+tests/aligned-opposite-approach.test.ts:
+(pass) approach protection follows overlapping source and target corridors through every rotation [42.09ms]
+
+tests/staged-perimeter-coincident-track.test.ts:
+(pass) staged lanes continue directly when their boundary tracks coincide with their roofs [195.70ms]
+
+tests/am62l-ddr4-trace-finalization.test.ts:
+(pass) finalizes the exact AM62L DDR4 clock escape [403.47ms]
+
+tests/benchmark-process-isolation.test.ts:
+(pass) a hung, crashed, or malformed benchmark worker cannot block subsequent samples [545.49ms]
+
+tests/dataset31-sample59-live-visualization.test.ts:
+(pass) shows dataset 31 sample 59 while the native router is still running [2679.01ms]
+
+tests/downstream-router-injection.test.ts:
+(pass) endpoint completion delegates unresolved board routes to the host [5366.41ms]
+
+tests/source-origin-route-self-clear.test.ts:
+(pass) TOP returns and through-vias cannot shortcut retained copper on their own net [179.43ms]
+
+tests/bus-length-matching-declared-pairs.test.ts:
+(pass) matches declared pairs within intact buses, including overlapping and pair-only constraints, without tuning outside scope [182.19ms]
+
+tests/pr-benchmark-report.test.ts:
+(pass) PR benchmark comments count failures, flag incomplete runs, and bound untrusted report data [1.96ms]
+
+tests/singleton-package-edge-via.test.ts:
+(pass) a trapped singleton reaches a package-edge via after local escapes fail [346.31ms]
+
+tests/peripheral-buses.test.ts:
+(pass) routes every four-sided lead and exposed pad while preserving atomic paired exits [227.15ms]
+
+tests/connected-routed-trace.test.ts:
+(pass) fanout may share copper with a connected routed trace [0.81ms]
+
+tests/dataset31-k230-right-center.test.ts:
+(pass) routes coupled control buses and tunes their complete source-routed pairs [84083.91ms]
+
+tests/cached-plan-clearance.test.ts:
+(pass) cached clearance rechecks replacement traces and vias during length tuning [253.21ms]
+
+tests/layered-winding-via-minimal.test.ts:
+(pass) layered winding is ordered at the first escape without crossover vias [19.93ms]
+
+tests/sequential-fanout-output-identities.test.ts:
+(pass) visual regression: sequential fanouts keep both real copper escapes [285.75ms]
+
+tests/reserved-narrow-group-interior-gap.test.ts:
+(pass) moves an ordered pair into an interior gap after routing a plain-edge singleton [1397.50ms]
+
+tests/retained-boundary-tail-repair.test.ts:
+(pass) retained boundary tails jointly repair neighboring buses without moving source or supplied copper [302.09ms]
+
+tests/boundary-terminal-self-contact.test.ts:
+(pass) terminal elbows reject retained same-net arms before and after corner normalization [600.32ms]
+
+tests/dataset04-package-surrounded-by-caps.test.ts:
+(pass) dataset04 breaks out larger BGAs and an RP2040-class thermal QFN, each surrounded by eight capacitors [500.20ms]
+
+tests/jlcpcb-design-rules.test.ts:
+(pass) the four-layer BGA400 clears JLCPCB copper and standard-via rules [989.55ms]
+
+tests/literal-corner-slot-reservations.test.ts:
+(pass) same-band buses reserve distinct right-edge slots and rails [5.09ms]
+
+tests/bus-length-matching-source-prefix.test.ts:
+(pass) optionally tunes a source prefix while preserving the first pad leg, first via, and narrow target corridor [280.61ms]
+
+tests/fixed-via-winding-reserved-exits.test.ts:
+(pass) fixed-via single-layer winding retries with future exits reserved [616.60ms]
+
+tests/fanout-exit-position-legacy-compatibility.test.ts:
+(pass) canonical positions preserve explicit-tuple geometry and legacy behavior [2.25ms]
+
+tests/boundary-tail-independent-clusters.test.ts:
+(pass) repairs separated exit clusters on independent grid phases within one atomic bus [1252.62ms]
+
+tests/fanout31-am62l-left-input.test.ts:
+(pass) captures the unmodified fanout31 AM62L RAM-left sample [270.31ms]
+
+tests/am62l-soc-winding-fanout-repro.test.ts:
+(pass) routes the captured AM62L winding fanout [545.27ms]
+
+tests/dataset31-imx6ull-bottom-right-offset.test.ts:
+(pass) rematches unfinished source dogbones to free a constrained bus tuning window [51466.15ms]
+
+tests/via-channel-grid-phase.test.ts:
+(pass) phases a uniform grid to fit two legal traces between reserved vias [1560.80ms]
+
+tests/opposite-bottom-crossbar-bus.test.ts:
+(pass) reserves opposite-edge vias across the complete target run [416.44ms]
+
+ 35 pass
+ 0 fail
+ 130125 expect() calls
+Ran 35 tests across 34 files. [156.21s]

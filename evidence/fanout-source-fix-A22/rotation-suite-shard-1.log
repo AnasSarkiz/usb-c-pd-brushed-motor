@@ -1,0 +1,155 @@
+Running test shard 1/8: 35 of 273 files
+- tests/adaptive-available-corners-and-sides.test.ts
+- tests/am62l-ddr4-memory-fanout-repro.test.ts
+- tests/am62l-real-decoupling-copper.test.tsx
+- tests/benchmark-cli.test.ts
+- tests/boundary-tail-early-contact.test.ts
+- tests/boundary-terminal-copper.test.ts
+- tests/bus-length-matching-atomic-failure.test.ts
+- tests/bus-length-matching-self-short-via.test.ts
+- tests/bus-max-length-skew-no-op.test.ts
+- tests/compressed-exit-convergence.test.ts
+- tests/dataset02-stress.test.ts
+- tests/dataset31-bottom-right-offset.test.ts
+- tests/dataset31-imx6ull-top-right-offset.test.ts
+- tests/dataset31-right-bottom-offset.test.ts
+- tests/diagonal-grid-neighbors.test.ts
+- tests/fanout-exit-position-availability.test.ts
+- tests/fanout-solution-validation.test.ts
+- tests/fixed-corner-exit-offset.test.ts
+- tests/inner-pads-fanout.test.ts
+- tests/layer-reserved-solver-integration.test.ts
+- tests/layered-winding-same-band-reservations.test.ts
+- tests/literal-corner-edge-rail-reservations.test.ts
+- tests/obstacle-axis-aligned-bounds.test.ts
+- tests/path-only-boundary-vias.test.ts
+- tests/plane-termination.test.ts
+- tests/reroute-overlong-pair-transaction.test.ts
+- tests/reserved-via-source-layer-transit.test.ts
+- tests/route-via-minimal-winding-obstacle-index.test.ts
+- tests/segment-clearance-broad-phase.test.ts
+- tests/single-dogbone-site-repair.test.ts
+- tests/source-origin-one-short-completion.test.ts
+- tests/source-prefix-fold-shortcuts.test.ts
+- tests/srj29-dataset.test.ts
+- tests/unlayered-exit-targets-legacy-routing.test.ts
+- tests/winding-reserved-boundary-exits.test.ts
+bun test v1.4.2 (744846f84)
+
+tests/unlayered-exit-targets-legacy-routing.test.ts:
+(pass) unlayered paired exits retain the legacy single-transition fanout [14.88ms]
+
+tests/dataset31-imx6ull-top-right-offset.test.ts:
+(pass) retains future approaches with a higher source cost after the fresh source retry cannot route [101481.70ms]
+
+tests/segment-clearance-broad-phase.test.ts:
+(pass) segment clearance broad phase preserves the exact distance predicate [24.28ms]
+
+tests/bus-max-length-skew-no-op.test.ts:
+(pass) a loose bus length-skew constraint leaves fanout geometry unchanged [14.89ms]
+
+tests/fixed-corner-exit-offset.test.ts:
+(pass) fixed corner slots preserve bus order when the upper bus routes first [464.29ms]
+
+tests/single-dogbone-site-repair.test.ts:
+(pass) repairs one diagonal via site while preserving the other reservations [1032.06ms]
+
+tests/winding-reserved-boundary-exits.test.ts:
+(pass) reserves future boundary exits during a forward winding attempt [508.23ms]
+
+tests/bus-length-matching-atomic-failure.test.ts:
+(pass) rejects a complete fanout atomically when its corridor cannot fit length matching [18.03ms]
+
+tests/layer-reserved-solver-integration.test.ts:
+(pass) dense competing bus layers run the reserved strategy before layer probes and commit only a complete fanout [685.86ms]
+
+tests/route-via-minimal-winding-obstacle-index.test.ts:
+(pass) obstacle spatial index preserves every exact clearance collision [1.20ms]
+
+tests/boundary-terminal-copper.test.ts:
+(pass) terminal elbows negotiate intervening copper and physical barrels after finalize, rip, and reroute [1.62ms]
+
+tests/plane-termination.test.ts:
+(pass) a source-only plane target dogbones to a through-all via [2.52ms]
+(pass) plane targets validate their layer and cannot request a border exit [0.50ms]
+
+tests/path-only-boundary-vias.test.ts:
+(pass) same-layer cuts do not create virtual barrels and still respect reserved physical vias [2.43ms]
+
+tests/fanout-exit-position-availability.test.ts:
+(pass) canonical positions use physical-edge availability [2.49ms]
+
+tests/dataset31-right-bottom-offset.test.ts:
+(pass) reserves source escapes for embedded singletons on different target layers [4673.05ms]
+
+tests/fanout-solution-validation.test.ts:
+(pass) validation rejects different-net trace intersections [1.18ms]
+(pass) validation rejects same-layer traces inside different-net pads [0.09ms]
+(pass) validation rejects vias inside different-net obstacles on an intermediate layer [0.08ms]
+(pass) validation requires explicit fanout exits to reach their declared edge [0.13ms]
+(pass) validation follows merged same-net copper to prove every branch breaks out [0.36ms]
+(pass) validation does not count a disconnected same-net branch as broken out [0.21ms]
+
+tests/dataset31-bottom-right-offset.test.ts:
+(pass) routes raw dataset31 bottom-right with all signals and plane drops [29095.07ms]
+
+tests/boundary-tail-early-contact.test.ts:
+(pass) a clear tail that reaches the boundary early is repaired before its exact exit [435.81ms]
+
+tests/diagonal-grid-neighbors.test.ts:
+(pass) diagonal grid edges preserve cardinal costs and exclude clipped cells [0.41ms]
+
+tests/reserved-via-source-layer-transit.test.ts:
+(pass) source-layer transit crosses a blocked target layer while preserving fixed source and plane copper [256.69ms]
+
+tests/reroute-overlong-pair-transaction.test.ts:
+(pass) shortens both pair lanes atomically when the first rewrite alone increases skew [254.08ms]
+
+tests/compressed-exit-convergence.test.ts:
+(pass) compressed perpendicular exits choose first vias for intact competing buses and preserve every other source [669.58ms]
+
+tests/am62l-real-decoupling-copper.test.tsx:
+(pass) routes the AM62L fanout with real decoupling copper [41590.73ms]
+
+tests/srj29-dataset.test.ts:
+(pass) SRJ29 exposes independently routed power pins and directional signal buses [1.60ms]
+(pass) SRJ29 VCC and GND pins break out to dedicated planes [1781.74ms]
+(pass) multi-connection SRJ29 buses never duplicate routed connection plans [3911.59ms]
+
+tests/benchmark-cli.test.ts:
+(pass) benchmark shell entrypoint writes complete ordered JSON and Markdown reports [41137.51ms]
+
+tests/am62l-ddr4-memory-fanout-repro.test.ts:
+(pass) captures the isolated AM62L DDR4 memory fanout [273.94ms]
+
+tests/adaptive-available-corners-and-sides.test.ts:
+(pass) adaptive single-layer routing respects available boundary regions [14057.38ms]
+
+tests/obstacle-axis-aligned-bounds.test.ts:
+(pass) pad bounds enclose rotated rectangles and preserve circular geometry [0.17ms]
+
+tests/bus-length-matching-self-short-via.test.ts:
+(pass) rejects a tuning via that would short a retained source prefix through another layer [2363.99ms]
+
+tests/source-prefix-fold-shortcuts.test.ts:
+(pass) shortens a small returning source arm with exact held via and target copper [193.45ms]
+
+tests/dataset02-stress.test.ts:
+(pass) Dataset 02 completely breaks out a four-layer BGA400 [626.98ms]
+
+tests/source-origin-one-short-completion.test.ts:
+(pass) finishes one missing source-origin lane without exposing a partial bus or changing retained sources [360.51ms]
+
+tests/layered-winding-same-band-reservations.test.ts:
+(pass) layered winding buses sharing a corner reserve distinct boundary exits [5.16ms]
+
+tests/inner-pads-fanout.test.ts:
+(pass) inner BGA pads receive via fanouts [2651.64ms]
+
+tests/literal-corner-edge-rail-reservations.test.ts:
+(pass) upper and lower bands safely reuse right-edge rail depths [4.64ms]
+
+ 43 pass
+ 0 fail
+ 81790 expect() calls
+Ran 43 tests across 35 files. [249.04s]

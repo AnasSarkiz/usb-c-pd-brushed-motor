@@ -1,0 +1,15 @@
+bun pack v1.4.2 (744846f84)
+
+packed 6.12KB package.json
+packed 1.1KB LICENSE
+packed 1.70KB README.md
+packed 9.99MB dist/index.d.ts
+packed 5.35MB dist/index.js
+
+/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/tscircuit-core-0.0.2087.tgz
+
+Total files: 5
+Shasum: e8d3659152b6e6c2cf9362f0dfda8ecca9135867
+Integrity: sha512-mTNoMwiMEhyLw[...]1TjVJc7p5x8/A==
+Unpacked size: 15.35MB
+Packed size: 1.41MB

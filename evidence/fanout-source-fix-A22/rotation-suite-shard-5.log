@@ -1,0 +1,156 @@
+Running test shard 5/8: 34 of 273 files
+- tests/am62l-core-progressive-dram.test.ts
+- tests/am62l-lpddr4-five-bus-singleton-through-all-dram-repro.test.ts
+- tests/am62l-top-edge-breakout-solved-repro.test.ts
+- tests/benchmark-workflow-permissions.test.ts
+- tests/boundary-tail-repair.test.ts
+- tests/bus-allowed-layers.test.ts
+- tests/bus-length-matching-diagonal.test.ts
+- tests/bus-length-matching-via-stub.test.ts
+- tests/centered-layered-exit-targets.test.ts
+- tests/corner-boundary-channel.test.ts
+- tests/dataset06-clad1-rp2040-repro.test.ts
+- tests/dataset31-imx6ull-left-center.test.ts
+- tests/dataset31-k230-top-right-offset.test.ts
+- tests/dataset31-top-right-offset.test.ts
+- tests/empty-via-neighborhoods.test.ts
+- tests/fanout-exit-position-precedence.test.ts
+- tests/fanout31-am62l-left-solved.test.ts
+- tests/future-boundary-approach-reservations.test.ts
+- tests/large-guided-track-fallback.test.ts
+- tests/layered-boundary-target-merge.test.ts
+- tests/left-lower-crossbar.test.ts
+- tests/multi-edge-reserved-buses.test.ts
+- tests/original-endpoint-connectivity.test.ts
+- tests/plane-ground-drill-clearance.test.ts
+- tests/rematch-unrouted-source-dogbones.test.ts
+- tests/reserved-via-buses.test.ts
+- tests/reversing-corner-opt-in.test.ts
+- tests/routed-copper-drc.test.ts
+- tests/shared-via-drill-identity.test.ts
+- tests/soft-plane-via-reservation-repair.test.ts
+- tests/source-origin-top-final.test.ts
+- tests/srj19-sample002.test.ts
+- tests/static-export-entry.test.ts
+- tests/winding-failed-prefix-cache.test.ts
+bun test v1.4.2 (744846f84)
+
+tests/routed-copper-drc.test.ts:
+(pass) rejects a trace crossing a different-net pad on the same layer [1.73ms]
+(pass) does not treat visual overlap on a separate layer as a collision [0.12ms]
+(pass) rejects different-net trace intersections [0.18ms]
+(pass) rejects a via colliding with a different-net pad anywhere in its span [0.26ms]
+(pass) rejects a via placed directly at a moved breakout endpoint [0.17ms]
+(pass) allows a via at an interior point along a connected trace [0.10ms]
+(pass) rejects virtual through-obstacle transitions as emitted copper [0.06ms]
+(pass) allows a trace to leave its own component pad away from the package body [0.15ms]
+(pass) rejects a terminal trace directed through its package body [0.09ms]
+
+tests/centered-layered-exit-targets.test.ts:
+(pass) centered fanout separates overlapping targets from different layers [465.22ms]
+
+tests/left-lower-crossbar.test.ts:
+(pass) mirrors a lower-corner crossbar while retaining pad identity and target metadata [300.92ms]
+
+tests/fanout31-am62l-left-solved.test.ts:
+(pass) routes the complete AM62L RAM-left sample with its timing constraints [5197.49ms]
+
+tests/winding-failed-prefix-cache.test.ts:
+(pass) winding reuses failed prefixes without conflating lane biases or accepted copper [79.95ms]
+
+tests/soft-plane-via-reservation-repair.test.ts:
+(pass) soft plane reservations preserve a complete via assignment during wide-bus repair [17662.69ms]
+
+tests/dataset31-imx6ull-left-center.test.ts:
+(pass) retries shared source reservations when downstream pairs cannot route [41538.11ms]
+
+tests/dataset31-k230-top-right-offset.test.ts:
+(pass) matches offset split buses after protecting aligned opposite approaches [120623.41ms]
+
+tests/shared-via-drill-identity.test.ts:
+(pass) shared immutable vias are not separate drills while distinct same-net holes retain clearance [2.30ms]
+
+tests/source-origin-top-final.test.ts:
+(pass) TOP-final source-origin buses use real separated through-vias despite a clear via-free shortcut [385.67ms]
+
+tests/static-export-entry.test.ts:
+(pass) declares the Cosmos renderer entry before Vite transforms the page [0.93ms]
+
+tests/benchmark-workflow-permissions.test.ts:
+(pass) comment reporting uses trusted workflow code on a different runner from PR execution [1.54ms]
+
+tests/plane-ground-drill-clearance.test.ts:
+(pass) merged QFN ground escapes preserve ordinary drill and pad clearances [778.88ms]
+
+tests/am62l-core-progressive-dram.test.ts:
+(pass) routes every connection in core's complete AM62L progressive DRAM input [47098.08ms]
+
+tests/multi-edge-reserved-buses.test.ts:
+(pass) routes intact buses jointly per edge with distinct legal layers and retained plane sources [236.07ms]
+
+tests/fanout-exit-position-precedence.test.ts:
+(pass) canonical exit positions are atomic and reject conflicting legacy fields [1.16ms]
+
+tests/bus-allowed-layers.test.ts:
+(pass) visual regression: bus allowedLayers constrain fanout layers [219.87ms]
+
+tests/future-boundary-approach-reservations.test.ts:
+(pass) joint first vias leave the later layer's boundary approach available [410.13ms]
+
+tests/am62l-lpddr4-five-bus-singleton-through-all-dram-repro.test.ts:
+(pass) routes the AM62L-to-LPDDR4 five-bus DRAM fanout with a deferred singleton dogbone [2267.29ms]
+
+tests/reversing-corner-opt-in.test.ts:
+(pass) reversing corners require an explicit clear final repair with fixed terminals and vias [1021.07ms]
+
+tests/layered-boundary-target-merge.test.ts:
+(pass) merges layered lane sequences into clear routes without changing any packed track or within-layer order [185.45ms]
+
+tests/original-endpoint-connectivity.test.ts:
+(pass) boundary contact does not replace original endpoint connectivity [1.94ms]
+(pass) a trace that physically enters the target pad connects the endpoint [0.15ms]
+(pass) visual overlap on another layer is not endpoint connectivity [0.08ms]
+(pass) a via creates a physical path from an inner-layer trace to a target pad [0.14ms]
+(pass) same-net dogbones connect through an explicitly declared plane [0.34ms]
+(pass) SRJ29 endpoint tracks connect signals directly without a completion pass [742.30ms]
+
+tests/large-guided-track-fallback.test.ts:
+(pass) visual regression: guided tracks stay inside the fanout boundary [12274.68ms]
+
+tests/rematch-unrouted-source-dogbones.test.ts:
+(pass) rematches only unfinished dogbones and rolls back an impossible assignment [193.12ms]
+
+tests/am62l-top-edge-breakout-solved-repro.test.ts:
+(pass) routes every AM62L top-edge breakout with its original timing constraints [8827.16ms]
+
+tests/dataset06-clad1-rp2040-repro.test.ts:
+(pass) dataset06 routes the spaced 0603 clad1 RP2040 fanout on one layer [8513.36ms]
+
+tests/corner-boundary-channel.test.ts:
+(pass) up/down escapes terminate in quarter-centered bands on the right edge [214.57ms]
+
+tests/boundary-tail-repair.test.ts:
+(pass) repairs a boundary endpoint cluster while preserving the complete bus and real source vias [417.91ms]
+
+tests/empty-via-neighborhoods.test.ts:
+(pass) cached via neighborhoods skip only cells without live primary or shared owners [0.22ms]
+
+tests/reserved-via-buses.test.ts:
+(pass) joint fixed-via routing crosses a blocked layer while preserving every source and permitted layer [206.21ms]
+
+tests/bus-length-matching-via-stub.test.ts:
+(pass) length matches a lane connected to its via through a short grid stub [438.01ms]
+
+tests/dataset31-top-right-offset.test.ts:
+(pass) routes the raw dataset31 top-right sample on pad-aligned winding channels [17724.71ms]
+
+tests/bus-length-matching-diagonal.test.ts:
+(pass) matches a diagonal bus without losing explicitly enabled via-in-pad endpoint metadata [1.73ms]
+
+tests/srj19-sample002.test.ts:
+(pass) SRJ19 sample002 solves on six layers [2362.29ms]
+
+ 47 pass
+ 0 fail
+ 71834 expect() calls
+Ran 47 tests across 34 files. [290.97s]

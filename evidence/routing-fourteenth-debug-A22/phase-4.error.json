@@ -1,0 +1,19 @@
+{
+  "type": "autorouter_phase_error",
+  "subcircuit_id": "subcircuit_source_group_2",
+  "routingPhaseIndex": 4,
+  "phaseOrdinal": 5,
+  "phaseCount": 10,
+  "elapsedMs": 47,
+  "connectionCount": 1,
+  "obstacleCount": 437,
+  "previousTraceCount": 36,
+  "autorouterName": "fanout",
+  "solverName": "FanoutSolver",
+  "effort": 1,
+  "cacheStatus": "disabled",
+  "cacheDisabledReason": "strategy_not_cacheable",
+  "error": {
+    "message": "FanoutSolver: sharedBoundary must contain every pad of component \"pcb_component_21\""
+  }
+}

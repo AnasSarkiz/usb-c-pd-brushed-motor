@@ -1,0 +1,9 @@
+{
+  "current_artifact_sha256": "6cb147ed86f770553766d7b7cdc0b3cc023b7dc3db8ff315e50ff49a6c82ef51",
+  "prior_artifact_sha256": "7f9f79e04b52b5cc55240e050ba615b2e19a7ad23409d59716f759a81bff8984",
+  "excluded_types": [
+    "source_project_metadata"
+  ],
+  "equal_nonmetadata_records": 4978,
+  "interpretation": "All component, pad, port, schematic, copper-pour intent, board-feature and reviewed diagnostic records remain identical; prior visual reviews remain applicable to prerequisites. Actual routed copper will require a new visual review."
+}

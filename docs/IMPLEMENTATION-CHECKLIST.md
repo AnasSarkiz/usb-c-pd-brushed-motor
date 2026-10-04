@@ -21,7 +21,7 @@ This checklist records remaining work; it does not grant routing or fabrication 
 - [x] Link ELF/BIN, measure flash/RAM, and run integrated fault regressions.
 - [ ] Establish documented fresh PD-message provenance ; independently manufacturer-approved40-byte NVM and measured RX-path approval remain external bring-up dependencies.
 - [x] Pass fresh complete-board prerequisite checks with physical pad ownership,2 mm PD fanout margin and unchanged supplier models.
-- [x] Finish canonical fanout drill/corner regression suite; integrate validated source-built core2086/fanout82 and checksum-verified Bun1.4.2.
+- [x] Finish canonical fanout drill/corner regression suite; integrate validated source-built core2087/fanout83 and checksum-verified Bun1.4.2.
 - [ ] Complete native routing and pours; measure actual geometry/current paths.
 - [ ] Run routed strict checks, shorts, snapshots and visual copper review.
 - [ ] Generate and review Gerber/drill/BOM/PnP outputs bound to exact source/firmware/dependency hashes.

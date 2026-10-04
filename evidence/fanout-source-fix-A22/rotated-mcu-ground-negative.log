@@ -1,0 +1,20 @@
+bun test v1.4.2 (744846f84)
+
+tests/rotated-mcu-ground-boundary.test.ts:
+266 |       boundary.minX > grid.bounds.minX + 1e-6 ||
+267 |       boundary.maxX < grid.bounds.maxX - 1e-6 ||
+268 |       boundary.minY > grid.bounds.minY + 1e-6 ||
+269 |       boundary.maxY < grid.bounds.maxY - 1e-6
+270 |     ) {
+271 |       throw new Error(
+                      ^
+error: FanoutSolver: sharedBoundary must contain every pad of component "pcb_component_21"
+      at validateSharedBoundary (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/prepare-buses.ts:271:17)
+      at prepareFanoutBuses (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/prepare-buses.ts:1222:26)
+      at new FanoutSolver (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/lib/fanout-solver.ts:1117:26)
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/fanout-manufacturing-A22/tests/rotated-mcu-ground-boundary.test.ts:13:18)
+(fail) rotated MCU ground pads escape inside their actual shared boundary [5.09ms]
+
+ 0 pass
+ 1 fail
+Ran 1 test across 1 file. [81.00ms]

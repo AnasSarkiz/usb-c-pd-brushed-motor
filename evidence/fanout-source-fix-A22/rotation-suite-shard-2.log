@@ -1,0 +1,146 @@
+Running test shard 2/8: 34 of 273 files
+- tests/adaptive-left-crossbar-bus.test.ts
+- tests/am62l-ddr4-processor-fanout-repro.test.ts
+- tests/am62l-soc-length-matching.test.ts
+- tests/benchmark-dataset31-capture.test.ts
+- tests/boundary-tail-endpoint-phase.test.ts
+- tests/boundary-terminal-returning-tail.test.ts
+- tests/bus-length-matching-crowded-spans.test.ts
+- tests/bus-length-matching-singleton-repair.test.ts
+- tests/bus-max-length-skew-plane-termination.test.ts
+- tests/connected-copper-obstacles.test.ts
+- tests/dataset03-mixed-footprint.test.ts
+- tests/dataset31-imx6ull-bottom-left-offset.test.ts
+- tests/dataset31-k230-bottom-right-offset.test.ts
+- tests/dataset31-right-top-offset.test.ts
+- tests/differential-pair-length-validation.test.ts
+- tests/fanout-exit-position-inferred-bus-merge.test.ts
+- tests/fanout31-am62l-left-byte1-prefix.test.ts
+- tests/fixed-source-singleton-boundary.test.ts
+- tests/interstitial-via-escape.test.ts
+- tests/layer-reserved-source-escapes.test.ts
+- tests/layered-winding-single-escape-layer.test.ts
+- tests/literal-corner-opt-in.test.ts
+- tests/opposed-pair-source-escapes.test.ts
+- tests/peripheral-bus-length-repair.test.ts
+- tests/pr-benchmark-authorization.test.ts
+- tests/reserved-narrow-bus-band.test.ts
+- tests/reserved-via-terminal-approaches.test.ts
+- tests/route-via-minimal-winding-route-orders.test.ts
+- tests/select-compatible-candidates.test.ts
+- tests/single-layer-clamped-boundary-tracks.test.ts
+- tests/source-origin-physical-phase.test.ts
+- tests/split-fixed-source-policy.test.ts
+- tests/srj29-solution-snapshots.test.ts
+- tests/via-between-bga-pads.test.ts
+bun test v1.4.2 (744846f84)
+
+tests/opposed-pair-source-escapes.test.ts:
+(pass) multiple tight pairs split between advancing local vias and opposite-edge remote vias select joint source routing [228.11ms]
+
+tests/route-via-minimal-winding-route-orders.test.ts:
+(pass) bounded route-order iteration is lazy and preserves dedupe order [0.26ms]
+
+tests/benchmark-dataset31-capture.test.ts:
+(pass) dataset 31 capture preserves every upstream connection, obstacle, and bus constraint [276191.05ms]
+
+tests/dataset31-imx6ull-bottom-left-offset.test.ts:
+(pass) shortens overlong source prefixes and repairs a blocked constrained bus lane [28522.12ms]
+
+tests/select-compatible-candidates.test.ts:
+(pass) selects one compatible value from each independent candidate group [1.93ms]
+
+tests/fanout31-am62l-left-byte1-prefix.test.ts:
+(pass) routes all eight BYTE1 connections in the RAM-left sample [293.61ms]
+
+tests/bus-length-matching-crowded-spans.test.ts:
+(pass) ordinary wide buses can finish beyond the initial work cap without moving their fixed sources [471.37ms]
+
+tests/pr-benchmark-authorization.test.ts:
+(pass) PR benchmark authorizes writers and resolves open heads or merged commits [0.60ms]
+
+tests/boundary-tail-endpoint-phase.test.ts:
+(pass) aligns crowded boundary links with their exact exit tracks when the native grid misses their phase [626.33ms]
+
+tests/reserved-via-terminal-approaches.test.ts:
+(pass) off-grid packed terminals retain perpendicular approaches and all fixed source copper [191.00ms]
+
+tests/srj29-solution-snapshots.test.ts:
+(pass) SRJ29 sample001 validated fanout solution [1726.50ms]
+(pass) SRJ29 sample005 validated fanout solution [4572.36ms]
+(pass) SRJ29 sample009 validated fanout solution [2004.37ms]
+
+tests/am62l-ddr4-processor-fanout-repro.test.ts:
+(pass) captures the isolated AM62L DDR4 processor fanout [208.11ms]
+
+tests/source-origin-physical-phase.test.ts:
+(pass) physical source phase ignores discarded provisional vias and preserves all retained copper [529.51ms]
+
+tests/dataset31-right-top-offset.test.ts:
+(pass) routes raw dataset31 right-top with separated layered exits and reserved singleton vias [2610.24ms]
+
+tests/interstitial-via-escape.test.ts:
+(pass) oversized vias use four-pad corner interstices instead of pair gaps [47.75ms]
+
+tests/single-layer-clamped-boundary-tracks.test.ts:
+(pass) spreads clamped single-layer K230 control targets into ordered boundary slots [425.15ms]
+
+tests/via-between-bga-pads.test.ts:
+(pass) escape vias sit in the gap between adjacent BGA pads [1562.58ms]
+
+tests/layer-reserved-source-escapes.test.ts:
+(pass) successive layer groups preserve every source and previously escaped copper [379.52ms]
+
+tests/fanout-exit-position-inferred-bus-merge.test.ts:
+(pass) inferred same-id connections preserve a requested canonical bus [0.53ms]
+
+tests/boundary-terminal-returning-tail.test.ts:
+(pass) removes a short returning terminal arm while retaining its source, via and exact exit [192.16ms]
+
+tests/split-fixed-source-policy.test.ts:
+(pass) stronger source cost follows opposite source geometry through every rotation [33.29ms]
+
+tests/dataset03-mixed-footprint.test.ts:
+(pass) dataset03 fans out a rotated QFN50 and two oriented 0603s on their original endpoint tracks [270.35ms]
+
+tests/layered-winding-single-escape-layer.test.ts:
+(pass) layered winding preserves order with one available escape layer [8.12ms]
+
+tests/connected-copper-obstacles.test.ts:
+(pass) a fanout trace may cross copper connected to the same connection [0.48ms]
+
+tests/dataset31-k230-bottom-right-offset.test.ts:
+(pass) keeps fixed-via retries for opposite control buses with exterior exits [58700.67ms]
+
+tests/am62l-soc-length-matching.test.ts:
+(pass) length matches the AM62L SOC DDR byte-1 fanout [316.87ms]
+
+tests/adaptive-left-crossbar-bus.test.ts:
+(pass) connects unordered source exits through an adaptive peripheral crossbar [516.50ms]
+
+tests/peripheral-bus-length-repair.test.ts:
+(pass) reroutes an untunable pair while preserving its vias and neighboring copper [175.54ms]
+
+tests/differential-pair-length-validation.test.ts:
+(pass) enforces an original differential pair inside a looser atomic bus by measured copper and exact identity [172.92ms]
+
+tests/reserved-narrow-bus-band.test.ts:
+(pass) moves a blocked pair within its corner band while retaining original targets and fixed vias [609.77ms]
+
+tests/bus-length-matching-singleton-repair.test.ts:
+(pass) length matches a crowded pair by rerouting one unconstrained singleton [369.46ms]
+
+tests/bus-max-length-skew-plane-termination.test.ts:
+(pass) rejects length matching for a plane-terminated bus [0.42ms]
+
+tests/fixed-source-singleton-boundary.test.ts:
+(pass) fixed singleton source routes around copper to its captured boundary endpoint without layered guidance [173.10ms]
+
+tests/literal-corner-opt-in.test.ts:
+(pass) independent boundary-edge routing is opt-in and validates its geometry [0.42ms]
+(pass) quarter bands reject exits that cannot retain via-safe edge margins [0.21ms]
+
+ 37 pass
+ 0 fail
+ 133941 expect() calls
+Ran 37 tests across 34 files. [382.40s]

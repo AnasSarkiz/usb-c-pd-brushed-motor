@@ -1,6 +1,6 @@
 {
   "official_commit": "53e16037bfe5a5616bad87c734d7b4590764e6eb",
-  "prototype_package": "0.0.82",
+  "prototype_package": "0.0.83",
   "changed_files": [
     {
       "path": "lib/coalesce-layered-path-points.ts",
@@ -13,6 +13,11 @@
       "sha256": "2c6888b33089468e3b391daecd09e6bd6a5daa2751eb7820a95ea39ff03b3c3b"
     },
     {
+      "path": "lib/get-obstacle-axis-aligned-bounds.ts",
+      "base_sha256": null,
+      "sha256": "4b2c8dcc86677a0d1c810a8ce56742e6147f1a7f39337e1fd85193ebb1cf8a5c"
+    },
+    {
       "path": "lib/get-routed-trace-copper.ts",
       "base_sha256": "8206add3640a716983d383a7e7e70ac86820ec5d0b2c3c59151c50b27884d41b",
       "sha256": "f4aa9ea26b39c2dde93371ca82b4d4be236dbe44aa9a3f45343f78548a71c996"
@@ -23,6 +28,11 @@
       "sha256": "5a7b3c8ba377beafba1fde06778d173e7dcc1465f42e71f6d40133f66d48d2bd"
     },
     {
+      "path": "lib/prepare-buses.ts",
+      "base_sha256": "193f3df5c646de1ecef00995d9056bcc455c27c99109e7158c7ae0e1e20d9e92",
+      "sha256": "8df10479b3f08614080e0d65bba88ad0143f6f0e061efb99bc19b33112089931"
+    },
+    {
       "path": "lib/route-bus.ts",
       "base_sha256": "44e8985937e4d67b0074a1e1f29784fbfc19a571b9cd7575834b2adbff810389",
       "sha256": "c3f6371e09fe277a0f4e85efee11f1dcfd509ea240c00baa97fd2b21af1300aa"
@@ -31,6 +41,11 @@
       "path": "lib/route-reserved-via-buses.ts",
       "base_sha256": "bdfe45137effbed2ff529517e06886cb65dc3a522a65b27ef868bd0a732085c5",
       "sha256": "be4002776496d9916b35bd6430bb8af25aecb21874b1ed869824749ab4b8afed"
+    },
+    {
+      "path": "lib/route-via-minimal-winding.ts",
+      "base_sha256": "3616b3fc1fa68f01eb454e8c967510f73d8e2576b0b107b801e63d429f5511d1",
+      "sha256": "072179054be4c7067114b54cc19b68c88b7eeded133bee8ab732be1030f59b9a"
     },
     {
       "path": "lib/types.ts",
@@ -55,7 +70,7 @@
     {
       "path": "package.json",
       "base_sha256": "90546b7e878e87fb593a89f53013fac4321349f4f0d3958ea555f2b288d501cd",
-      "sha256": "38df22a6acc2afbb14460f9528aabff917b31795769bbfc465c634afc48f40d9"
+      "sha256": "23f5072dbe243df0624f1bc3cd2823afd6f3158b3820c64d047df8db9398b8ff"
     },
     {
       "path": "scripts/diagnose-imx6ull-corners.ts",
@@ -83,6 +98,11 @@
       "sha256": "51220f15d3ba5b105c51b8277224e239ef57a163350933526dbfad31586ae8f8"
     },
     {
+      "path": "tests/__snapshots__/rotated-mcu-ground-boundary.snap.svg",
+      "base_sha256": null,
+      "sha256": "125a045b0eeb5658dc020bc1455ebf0b1d15e7c36eec6505774596aa373ffcaa"
+    },
+    {
       "path": "tests/__snapshots__/same-net-drill-drc.snap.svg",
       "base_sha256": null,
       "sha256": "e82fe658d170ff0b42f6e2499c77741c69ca55732294a936ab1a042f7af72e08"
@@ -108,9 +128,24 @@
       "sha256": "ebc0e54aa0941030705a2bd2dc6d36f35e595ab155ab8ba432e2228a8205b1eb"
     },
     {
+      "path": "tests/fixtures/rotated-mcu-ground-boundary.json",
+      "base_sha256": null,
+      "sha256": "d5eaae3c3420e88c3b7411a8291703de8b51e24ff5c8a289faf70115578e2811"
+    },
+    {
+      "path": "tests/obstacle-axis-aligned-bounds.test.ts",
+      "base_sha256": null,
+      "sha256": "d9a2c25ce33ee9db6545d4b1c2461d1860c266e729a7c3aaa700fa8e9abf4f1f"
+    },
+    {
       "path": "tests/plane-ground-drill-clearance.test.ts",
       "base_sha256": null,
       "sha256": "b50dc04a680949983363bd725bc27bed5af1537eb72bb8ff41725ff6b618d4c2"
+    },
+    {
+      "path": "tests/rotated-mcu-ground-boundary.test.ts",
+      "base_sha256": null,
+      "sha256": "080fb93583434699c89802430600391a484bf3cf99bf5aea23f2949a1c6713f9"
     },
     {
       "path": "tests/same-net-drill-drc.test.ts",
