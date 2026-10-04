@@ -1,4 +1,61 @@
+# A22 revision25 — ADC escape and fresh diode import, prerequisites in progress
+
+Native24 routes all local escapes/fixed paths but fails main routing at ADC_VBUS.
+Failed artifact6cc74f0600da7ab3c891955f349cb69d82363338e224180f686182cda397fb84;
+no final PCB traces. Read-only native2x reproduction finds four unresolved
+regions beside the MCU, including1.308×3.924mm cmn145 carrying both ADC routes.
+It no longer merges CC1 and CC2. Failure and regional candidate rejection are
+retained; no validation is suppressed and no failed copper is fabrication input.
+
+Native routing intent now escapes MCU ADC pins7/8 to bottom, retaining actual
+pad-row Y coordinates. Pin8's landing staggers outward to(-14.8,-4.375), giving
+1.07005mm center spacing from pin7(-15.65,-5.025); both ordinary vias still
+require independent routed drill/clearance acceptance. NRST filter C32 moves
+1.6mm outward and0.55mm down to(-12.9,-4.35) to clear that landing and the shared signal corridor.
+The first native25 prerouting build rejects a C32/R60 courtyard overlap; its
+artifact efcc97565ba9a3947138d21a5acf79eb2ab472ca62faa8ef650b2fab7078d1c0
+is preserved. Actual imported courtyards predict positive gaps of0.0464mm
+to R60 and0.0418mm to C30 after this move; both courtyards already include
+the manufacturer assembly envelope. This prediction requires fresh native
+placement and off-pad-target validation. Other components, schematic
+connections and all copper/drill rules are unchanged.
+
+The independently audited fresh exact-footprint C477999 official import is now
+adopted wholesale. Its three electrical copper pads are identical to the original;
+generic C aliases are removed by the official importer and its generated courtyard
+is narrower. Supplier identity/polarity stay unchanged; BOM remains140/58.
+D2's four advisory reviews retain their messages/wiring and are bound to its new
+source checksum. No symbol, land, alias or import is manually patched.
+Fresh revised unrouted artifact c6999efe65be13991d4af21f940541befae2c226b9e459d56684b139486b1792
+has140 source components/152 PCB components/no traces. Strict schema,140
+supplier transforms/exact12 EP vias, derived-net isolation, full placement,
+31 targets/163 labels and129 automatic supplier rotations pass. Seven manually
+fitted single-pin contact rotation advisories remain visible. Both placement
+faces inspected; all8 schematic PNGs byte-identical to inspected routing24
+sheets. Formatting/TypeScript/38 tests460 assertions/assembly regression pass.
+All five required native schematic/placement checks pass with zero errors.
+The direct full-artifact audit independently verifies the140/152 PCB inventory,
+including the empty schematic-placement CLI output. Prerouting gates pass;
+native25 routing is now authorized under the unchanged manufacturing rules. Native25 subsequently passes all local escapes and fixed paths but fails the
+main75-net phase at VOLTAGE_DRIVE_9/source_net_25_mst1. Exact failed artifact
+a8d637a8046ed80852f9c812754e650f6f82bf8cf48b474f5981f62e02bce5b3
+has zero final PCB traces. Independent2x and5x native diagnostics both
+reproduce the same failure in13 seconds. Four failed regions sit beside MCU
+rows; cmn146 has22 ports from9 nets in2.908×3.657mm. Increasing effort does
+not resolve that geometry. The rejected regional result is retained, not
+accepted fabrication input. Further routing-intent refinement continues.
+Routing/fabrication/physical testing pending.
+
+---
+
 # A22 revision24 — CC isolation and prerouting passed, 2026-10-04
+
+Implementation source committed as d734c6f1d51385379d4f64a462ec6490088f23bb.
+Supported private publication succeeded:0.0.1-a22-cc-isolation-d734c6f,
+475 files acknowledged/0 failed, all staged files match the commit.
+GitHub push remains blocked by the absent repository remote; local work continues.
+Native24 routing subsequently failed at ADC_VBUS; that exact failed output is
+preserved as described in revision25, with zero accepted final copper.
 
 Native23 completed the PD/MCU local escape and fixed power phases, but failed
 main phase1 high-density routing on source_net_11_mst2 (CC2, not SDA).

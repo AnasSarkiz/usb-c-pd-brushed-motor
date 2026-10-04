@@ -96,8 +96,8 @@ export const productPlacement = {
     ccwRotationDegrees: 0,
   },
   C32: {
-    x: -14.5,
-    y: -3.8,
+    x: -12.9,
+    y: -4.35,
     ccwRotationDegrees: 90,
   },
   C31: {

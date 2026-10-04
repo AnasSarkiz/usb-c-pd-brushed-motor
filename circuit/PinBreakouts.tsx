@@ -31,7 +31,7 @@ const mcuEscapePositions = [
   { pinNumber: 4, xMm: -15.65, yMm: -6.975 },
   { pinNumber: 6, xMm: -14.8, yMm: -5.675 },
   { pinNumber: 7, xMm: -15.65, yMm: -5.025 },
-  { pinNumber: 8, xMm: -15.65, yMm: -4.375 },
+  { pinNumber: 8, xMm: -14.8, yMm: -4.375 },
   { pinNumber: 9, xMm: -15.65, yMm: -3.725 },
   { pinNumber: 10, xMm: -15.65, yMm: -3.075 },
   { pinNumber: 11, xMm: -24.35, yMm: -3.075 },
@@ -55,12 +55,11 @@ export function PinBreakoutPoints({ reference }: { reference: "U1" | "U11" }) {
             connection={`${reference}.pin${pinNumber}`}
             pcbX={xMm}
             pcbY={yMm}
-            // PD_ENABLE_N crosses the supply corridor on bottom; remaining
-            // local escapes stay on top so the fine-pitch pad rows retain
-            // their proven ordering and do not force unnecessary vias.
+            // PD enable and the two ADC inputs cross dense corridors on bottom.
+            // Other signals retain the proven top-layer pad-row ordering.
             layer={
               (reference === "U1" && pinNumber === 16) ||
-              (reference === "U11" && pinNumber === 15)
+              (reference === "U11" && [7, 8, 15].includes(pinNumber))
                 ? "bottom"
                 : "top"
             }

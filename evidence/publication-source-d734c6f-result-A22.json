@@ -1,0 +1,11 @@
+{
+  "sourceCommit": "d734c6f1d51385379d4f64a462ec6490088f23bb",
+  "publishedPackage": "@tsci/AnasSarkiz.usb-c-pd-brushed-motor@0.0.1-a22-cc-isolation-d734c6f",
+  "acknowledgedFiles": 475,
+  "failedFiles": 0,
+  "sourceFilesMatchedGit": true,
+  "cloudBuildVerified": false,
+  "GitHubRemote": null,
+  "status": "Private WIP prototype: schematic and placement validated; full routing incomplete; no manufacturing approval",
+  "logSha256": "b67ae2a19cc42a284f976c520b4d9499511b2684b83b1963ea12271b683f7ddd"
+}

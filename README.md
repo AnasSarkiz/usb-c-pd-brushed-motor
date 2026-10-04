@@ -50,8 +50,8 @@ regulation and2 A thermal ratings require prototype measurements.
 
 No fabrication order has been placed. This independent Git main has no remote;
 GitHub publication remains blocked by the missing repository/branch. The known
-private tscircuit package has the earlier WIP release
-`0.0.1-0.0.1-a22-breakouts21-52f7feb`; its server build is unverified. Local work continues.
+private tscircuit package has the source milestone release
+`0.0.1-a22-cc-isolation-d734c6f` (475 files acknowledged); its server build is unverified. Local work continues.
 
 ## Historical implementation notes
 

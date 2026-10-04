@@ -54,7 +54,7 @@ for target in [e for e in elements if e['type']=='pcb_breakout_point']:
         corridor_depth_mm=target['y']-pd_top_pad_edge
         required_via_corridor_mm=0.60+2*0.25
         if corridor_depth_mm<=required_via_corridor_mm+1e-5:issues.append({'reference':reference,'pin':pin,'issue':'PD upper escape corridor cannot reserve the routed via plus two clearances','corridorDepthMm':corridor_depth_mm,'requiredDepthMm':required_via_corridor_mm})
-    expected_layer="bottom" if (reference=="U1" and int(port["pin_number"])==16) or (reference=="U11" and int(port["pin_number"])==15) else "top"
+    expected_layer="bottom" if (reference=="U1" and int(port["pin_number"])==16) or (reference=="U11" and int(port["pin_number"])in[7,8,15]) else "top"
     if target.get('layer')!=expected_layer:issues.append({'reference':reference,'pin':pin,'issue':'breakout target layer differs from intended escape','expectedLayer':expected_layer,'actualLayer':target.get('layer')})
     if gap<0.5-1e-5:issues.append({'reference':reference,'pin':pin,'xMm':target['x'],'yMm':target['y'],'gapMm':gap,'nearestComponent':purchased[nearest[0]['pcb_component_id']]})
     if abs(target['x'])>39.5 or abs(target['y'])>32:issues.append({'reference':reference,'pin':pin,'issue':'target outside usable board'})

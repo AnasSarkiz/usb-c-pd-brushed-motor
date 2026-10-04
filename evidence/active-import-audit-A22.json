@@ -2001,7 +2001,7 @@
     {
       "code": "C477999",
       "ref": "D2",
-      "sourceSha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+      "sourceSha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
       "path": "dist/tests/supplier-audit/C477999/circuit.json",
       "ports": [
         {

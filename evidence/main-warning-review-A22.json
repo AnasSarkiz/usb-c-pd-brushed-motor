@@ -391,7 +391,7 @@
       "code": "C477999",
       "type": "source_component_pins_underspecified_warning",
       "message": "All pins on D2 are underspecified (no pinAttributes set)",
-      "importSha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+      "importSha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
       "rawDiagnostic": {
         "type": "source_component_pins_underspecified_warning",
         "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_1",
@@ -405,7 +405,7 @@
         ],
         "subcircuit_id": "subcircuit_source_group_0"
       },
-      "reason": "Passive dual ESD network: CC1/CC2/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "reason": "Passive dual ESD network: CC1/CC2/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages. Rechecked2026-10-04 against the unchanged fresh official exact-footprint C477999 import: independent cathodes1/2, common anode3; all three copper pads identical; only generic C aliases removed and courtyard narrowed. These warnings remain visible.",
       "wiredPins": {
         "pin1": "CC1",
         "pin2": "CC2",
@@ -945,7 +945,7 @@
       "code": "C477999",
       "type": "source_no_power_pin_defined_warning",
       "message": "D2 has no pin with requires_power=true",
-      "importSha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+      "importSha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
       "rawDiagnostic": {
         "type": "source_no_power_pin_defined_warning",
         "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_4",
@@ -959,7 +959,7 @@
         ],
         "subcircuit_id": "subcircuit_source_group_0"
       },
-      "reason": "Passive dual ESD network: CC1/CC2/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "reason": "Passive dual ESD network: CC1/CC2/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages. Rechecked2026-10-04 against the unchanged fresh official exact-footprint C477999 import: independent cathodes1/2, common anode3; all three copper pads identical; only generic C aliases removed and courtyard narrowed. These warnings remain visible.",
       "wiredPins": {
         "pin1": "CC1",
         "pin2": "CC2",
@@ -1541,7 +1541,7 @@
       "code": "C477999",
       "type": "source_no_ground_pin_defined_warning",
       "message": "D2 has no pin with requires_ground=true",
-      "importSha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+      "importSha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
       "rawDiagnostic": {
         "type": "source_no_ground_pin_defined_warning",
         "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_2",
@@ -1555,7 +1555,7 @@
         ],
         "subcircuit_id": "subcircuit_source_group_0"
       },
-      "reason": "Passive dual ESD network: CC1/CC2/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages.",
+      "reason": "Passive dual ESD network: CC1/CC2/GND. Imported chip-category metadata does not express this function. Advisory retained; explicit port/net/pad checks and manual role review apply. This does not approve unresolved footprint, voltage-selector or power stages. Rechecked2026-10-04 against the unchanged fresh official exact-footprint C477999 import: independent cathodes1/2, common anode3; all three copper pads identical; only generic C aliases removed and courtyard narrowed. These warnings remain visible.",
       "wiredPins": {
         "pin1": "CC1",
         "pin2": "CC2",
@@ -1994,7 +1994,7 @@
       "code": "C477999",
       "type": "schematic_component_styling_warning",
       "message": "D2 is missing schematic reference designator text. For a custom symbol, add name=\"{REFDES}\" inside the symbol.",
-      "importSha256": "963b72aff30d2fa96d596f770a60cf6ed89990420dfb5d3a7c02018754e594e6",
+      "importSha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
       "rawDiagnostic": {
         "type": "schematic_component_styling_warning",
         "schematic_component_styling_warning_id": "schematic_component_styling_warning_1",
@@ -2005,7 +2005,7 @@
         "source_component_id": "source_component_5",
         "schematic_sheet_id": "schematic_sheet_0"
       },
-      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited.",
+      "reason": "Official symbol lacks its internal REFDES. Native board-level reference/value annotation on the same A4 sheet is adjacent and visually readable below the unsuppressed warning overlay. No imported symbol was edited. Rechecked2026-10-04 against the unchanged fresh official exact-footprint C477999 import: independent cathodes1/2, common anode3; all three copper pads identical; only generic C aliases removed and courtyard narrowed. These warnings remain visible.",
       "label": {
         "type": "schematic_text",
         "schematic_text_id": "schematic_text_29",
