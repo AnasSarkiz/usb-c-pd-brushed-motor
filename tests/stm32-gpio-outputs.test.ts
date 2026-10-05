@@ -4,7 +4,7 @@ import { spawnSync } from "node:child_process"
 test("actual sequencing outputs revoke before feedback changes and preserve charged rails", () => {
   const executable = "evidence/stm32-gpio-outputs-host-A22"
   const compile = spawnSync(
-    "cc",
+    process.env.CC ?? "clang",
     [
       "-std=c11",
       "-Wall",

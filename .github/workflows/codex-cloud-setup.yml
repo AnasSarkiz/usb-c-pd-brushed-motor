@@ -19,6 +19,7 @@ jobs:
           mkdir -p evidence/cloud-ci
           {
             uname -a
+            clang --version
             bun --version
             python3 --version
             arm-none-eabi-gcc --version

@@ -4,7 +4,7 @@ import { spawnSync } from "node:child_process"
 test("PD qualification contains whole voltage intervals and rejects back-drive", () => {
   const executable = "evidence/pd-interval-bun-test-A22"
   const compile = spawnSync(
-    "cc",
+    process.env.CC ?? "clang",
     [
       "-std=c11",
       "-Wall",

@@ -4,7 +4,7 @@ import { spawnSync } from "node:child_process"
 test("STM32 ADC fresh bounded conversions and failure inhibition", () => {
   const executable = "evidence/stm32-adc-bun-test-A22"
   const compile = spawnSync(
-    "cc",
+    process.env.CC ?? "clang",
     [
       "-std=c11",
       "-Wall",

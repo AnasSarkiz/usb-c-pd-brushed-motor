@@ -6,7 +6,7 @@ import { createHash } from "node:crypto"
 test("STM32 GPIO safety ordering and feedback preservation", () => {
   const executable = "evidence/stm32-gpio-bun-test-A22"
   const compile = spawnSync(
-    "cc",
+    process.env.CC ?? "clang",
     [
       "-std=c11",
       "-Wall",

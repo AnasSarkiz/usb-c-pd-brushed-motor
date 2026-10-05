@@ -55,6 +55,6 @@ tooling/power-review-venv/bin/python -c 'import shapely, numpy, matplotlib, gerb
 python3 scripts/codex/verify-context.py
 
 # Persist PATH for independent task shells. No routing/build/check commands run here.
-printf 'export PATH=%q:"$PATH"\n' "$(dirname "$bun_binary")" > "$cloud_tools/env.sh"
+printf 'export PATH=%q:"$PATH"\nexport CC=clang\n' "$(dirname "$bun_binary")" > "$cloud_tools/env.sh"
 echo "Cloud dependencies prepared. Source .cache/codex-cloud/env.sh before commands."
 echo "No native board build or autorouter has run during setup."

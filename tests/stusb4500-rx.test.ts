@@ -4,7 +4,7 @@ import { spawnSync } from "node:child_process"
 test("STUSB4500 capture rejects late, changed and malformed PD messages", () => {
   const executable = "evidence/stusb4500-rx-host-A22"
   const compiled = spawnSync(
-    "cc",
+    process.env.CC ?? "clang",
     [
       "-std=c11",
       "-Wall",

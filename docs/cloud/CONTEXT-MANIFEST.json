@@ -494,8 +494,8 @@
     },
     {
       "path": ".github/workflows/codex-cloud-setup.yml",
-      "bytes": 2149,
-      "sha256": "911430ceb3a66c60f6f1e23cab809b3f53d95ac7d2517a19e88ed95f71dc017f"
+      "bytes": 2177,
+      "sha256": "560e06a326ae5bb9f6332edf2c19883b7d50cc618aa2321b88f9ecb6fbe56c2b"
     },
     {
       "path": ".gitignore",
@@ -514,8 +514,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 241116,
-      "sha256": "22da20a867b7050967bc21d7c08a13d23fea9d9d195db705d9194abc451c8947"
+      "bytes": 241573,
+      "sha256": "f0003f933429ee5e3bf8ecccc681d32e7ceb61c41b63dc06119ed5edcefdec2e"
     },
     {
       "path": "biome.json",
@@ -824,8 +824,8 @@
     },
     {
       "path": "docs/cloud/SETUP.md",
-      "bytes": 4505,
-      "sha256": "91075058b26480753fa21077fa504288b47571c13ebcd80888bb39d160ca5f9d"
+      "bytes": 4842,
+      "sha256": "fadb0eab05a1d704ba1ce2e348c11a64145df69c6f6f7e84466ec1cad705cb23"
     },
     {
       "path": "docs/cloud/START-TASK.md",
@@ -1984,8 +1984,8 @@
     },
     {
       "path": "scripts/codex/setup.sh",
-      "bytes": 2406,
-      "sha256": "8f1ac1cb6b083a91b0c50827464cc21524a601f112fd8d7fd91ee85f5002dcfd"
+      "bytes": 2423,
+      "sha256": "3a6b68f869c5fb2b4585db27184103940055943a6df71e86db7b684fe9748a93"
     },
     {
       "path": "scripts/codex/update-context.py",
@@ -2209,13 +2209,13 @@
     },
     {
       "path": "tests/motor-measurement.test.ts",
-      "bytes": 865,
-      "sha256": "fee3a62a64cacdc6d254abff3683e1db5f4099ad87de52adde528c35b40642a4"
+      "bytes": 886,
+      "sha256": "e13810f25e002678160f076cc3844a8de79575add9b959bde9edfaceef7c5f67"
     },
     {
       "path": "tests/motor-owner.test.ts",
-      "bytes": 1095,
-      "sha256": "c9d8d0478a75b98779ade5ed1bcbbd14d36ad7d98c1478b7dd60f60ed04c20e0"
+      "bytes": 1116,
+      "sha256": "96b190efaa901d064e01151b29df1a6c94792158e7d8308d3c4ee71558dc1216"
     },
     {
       "path": "tests/motor-validation-calculations.test.ts",
@@ -2234,18 +2234,18 @@
     },
     {
       "path": "tests/pd-interval.test.ts",
-      "bytes": 750,
-      "sha256": "b457df9b8cc213f29aece174a4f33c98e5e65e7a911eb16483629c3de9e2d746"
+      "bytes": 771,
+      "sha256": "55a5906c6e71a5c86e64c0f9e56ba6090e88ad9033bdd990e336283c2f881baa"
     },
     {
       "path": "tests/pd-policy.test.ts",
-      "bytes": 709,
-      "sha256": "b85fdb4e1b407c7e6bc48c2298412e43c2791a7ba015cf78e20e2c6d99441bd6"
+      "bytes": 730,
+      "sha256": "d7a1d77f48969be60daefe2f4fbbe7ba06a0d4f7df47ea0f5f05dc268e2449cd"
     },
     {
       "path": "tests/pd-sequence.test.ts",
-      "bytes": 755,
-      "sha256": "a34f20fbaa3e74a18fc6103929116f645b5dfa9e1edadc730dcc6cfc092e55f2"
+      "bytes": 776,
+      "sha256": "3cc3adb6692c5bae90ee82a91a7a1f40e7eb74d61168397abbaeccff0e418c4a"
     },
     {
       "path": "tests/power-copper-geometry.test.ts",
@@ -2274,43 +2274,43 @@
     },
     {
       "path": "tests/stm32-adc.test.ts",
-      "bytes": 831,
-      "sha256": "157d6ff7562df82392efd2064d78cab6205ffd21fe0c1199c7760e51fe9fb3d7"
+      "bytes": 852,
+      "sha256": "caffa8e1fbc3b4d37296b3c6ad1c43574b347a70492449dcc0b993f1aa7dafe0"
     },
     {
       "path": "tests/stm32-gpio-outputs.test.ts",
-      "bytes": 841,
-      "sha256": "06a460bdb6b34af2431b96fc6b58474a4a0ce669141919cd900213e15765fbdc"
+      "bytes": 862,
+      "sha256": "1fd8ed1416734ee0bb0db3b2a92be5bf2153226eaa73a9d3de9ed422fcf0a338"
     },
     {
       "path": "tests/stm32-gpio.test.ts",
-      "bytes": 1361,
-      "sha256": "e2b553de42d1529b485a21b10195b57ef113049f17e3368e202652af31d74a2c"
+      "bytes": 1382,
+      "sha256": "3399f12ea486956260cae88ff462025ee1b4909cf5519af78ae67ebd07f60352"
     },
     {
       "path": "tests/stm32-i2c.test.ts",
-      "bytes": 823,
-      "sha256": "6b59eae4ddafa47edb75e7450f6b569ef76ea20fb6a484237f60f25b5c9fa9de"
+      "bytes": 844,
+      "sha256": "533d68425bbe8d26809cca553e08333356c5b4756906702a7377a77e56e02c62"
     },
     {
       "path": "tests/stusb4500-nvm.test.ts",
-      "bytes": 722,
-      "sha256": "78ef55f01367cebfd62b8cf8308d60d5a7e1d416ea28165ef1fd4570faa0cac4"
+      "bytes": 743,
+      "sha256": "38b5c952b6a5fc33612648daf088bf42c04a6b3e686683d3f61ca8090c4b095e"
     },
     {
       "path": "tests/stusb4500-request.test.ts",
-      "bytes": 785,
-      "sha256": "289db12f34d33974ee347be408d2a73e4ccc1e7e70d399bccf60986697ca022e"
+      "bytes": 806,
+      "sha256": "e59caa737d3107fd23079d6ae52bd495aeaa36959edfd399b85b48d26ea53172"
     },
     {
       "path": "tests/stusb4500-rx.test.ts",
-      "bytes": 746,
-      "sha256": "4ba970359eb5919fa4d8ff93e9fc9c50e3133559ec4a4008ac6b07767002b724"
+      "bytes": 767,
+      "sha256": "761e3e3867a84bf5d4a68c693767d07bcd41649eccdb5d14120a9fc5e4ea5b7c"
     },
     {
       "path": "tests/stusb4500-startup.test.ts",
-      "bytes": 749,
-      "sha256": "6bd3a633f50b32e0dcb1347aa8ac9e4c67a3c85ddb33cfa7af21e89517b22713"
+      "bytes": 770,
+      "sha256": "17a092a5d95c86d284f0bf2d96db24b13686c630976a1db84fb417c454a3dedf"
     },
     {
       "path": "tests/supplier-audit/C10214.circuit.tsx",

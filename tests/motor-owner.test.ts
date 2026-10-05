@@ -17,7 +17,7 @@ test("serialized owner applies only fresh qualified contracts and revokes on fau
     "motor_owner_test",
   ]
   const compile = spawnSync(
-    "cc",
+    process.env.CC ?? "clang",
     [
       "-std=c11",
       "-Wall",

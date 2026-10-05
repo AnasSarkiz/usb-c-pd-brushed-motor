@@ -4,7 +4,7 @@ import { spawnSync } from "node:child_process"
 test("compiled C power sequence inhibits stale contracts and unsafe voltage changes", () => {
   const executable = "evidence/pd-sequence-bun-test-A22"
   const compile = spawnSync(
-    "cc",
+    process.env.CC ?? "clang",
     [
       "-std=c11",
       "-Wall",

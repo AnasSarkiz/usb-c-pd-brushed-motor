@@ -20,6 +20,12 @@ Local setup checks: Bash syntax and Python compile pass; configured formatting
 and TypeScript pass;44tests/476assertions pass. Secret-pattern inspection of new
 handoff/skill/scripts found no matching token/private-key material. Cloud setup
 and actual Pipeline9 execution have not run in a Codex Cloud Linux VM.
+The first GitHub Linux installer passed, but host tests were38pass/6fail because
+default cc selected GCC on Linux rather than Clang on macOS. The unchanged
+CMSIS32-bit-register inline pointer casts fail GCC64-bit-host -Werror. Host tests
+now explicitly use CC/Clang, preserving all warning/error flags and assertions;
+ARM firmware remains arm-none-eabi-gcc. Fresh Linux rerun is pending.
+Evidence: cloud-linux-first-failure-A48.log and workflow37292292816.
 The new build's memory monitor was initially denied sandbox process access; the
 orphaned task build was explicitly stopped. With authorized monitor access, an
 unrouted build reached the2GiB process-tree cap (peak sampled2163072KiB) after

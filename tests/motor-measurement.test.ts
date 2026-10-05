@@ -4,7 +4,7 @@ import { spawnSync } from "node:child_process"
 test("Measurement conversion encloses physical corners and never approves raw validity", () => {
   const executable = "evidence/motor-measurement-host-A22"
   const compile = spawnSync(
-    "cc",
+    process.env.CC ?? "clang",
     [
       "-std=c11",
       "-Wall",

@@ -4,7 +4,7 @@ import { spawnSync } from "node:child_process"
 test("STM32 I2C bounded whole transfers, faults and rollover", () => {
   const executable = "evidence/stm32-i2c-host-A22"
   const compile = spawnSync(
-    "cc",
+    process.env.CC ?? "clang",
     [
       "-std=c11",
       "-Wall",

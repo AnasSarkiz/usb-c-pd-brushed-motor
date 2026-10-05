@@ -4,7 +4,7 @@ import { spawnSync } from "node:child_process"
 test("PD startup drains old events under inhibition and verifies standby acquisition", () => {
   const executable = "evidence/stusb4500-startup-host-A22"
   const compiled = spawnSync(
-    "cc",
+    process.env.CC ?? "clang",
     [
       "-std=c11",
       "-Wall",
