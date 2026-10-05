@@ -2,6 +2,9 @@
 
 ## Continue in Codex Cloud
 
+Public handoff revision [c41d79a](https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/commit/c41d79ab6a566700de58a5695cbf1eb75406a5cd)
+and package `0.0.1-a48-cloud-pipeline9-unrouted-c41d79a-305b1e7a` are synchronized; matching circuit JSON is anonymously verified.
+
 Routing now belongs in Codex Cloud Linux because the Mac runs out of memory.
 The repository includes a portable installer, sequential resource-tracked
 Pipeline9 runner and full design/validation context. See

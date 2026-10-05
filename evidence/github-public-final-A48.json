@@ -1,0 +1,22 @@
+{
+  "cloud_context_remote_checks": {
+    "AGENTS.md": "fdea78c44cbd1ea085f49c039e7e0042c9dd8b2d896bc1f21d82b26ae47477ef",
+    ".agents/skills/tscircuit/SKILL.md": "1a837c3a57a9d86b535dc68b698f1935a2b33148371fa5b8a765cd3800b1b4a2",
+    ".github/workflows/codex-cloud-setup.yml": "3e694cdbfc6034620e5b3107fb3c9f7588bc80314c2cd411969213fea6eba081",
+    "docs/cloud/HANDOFF.md": "900ab71e88689e246aba6cdedab0c0eed1db3c4af34e5f1132e50540fb0d5d87",
+    "docs/cloud/CONTEXT-MANIFEST.json": "bb8b91d64a2e89440ae391e79cced45b315caadd9b86799bb5cfaab5c5340d69",
+    "scripts/codex/setup.sh": "118fd7138351235cacc7759189b39051292623963f47b64f1da6692231d10968",
+    "scripts/codex/route.py": "9cb2ebf16c42eb9e9890a0fd2798d844b2c674434b6279d9b689b0c2b9393c22"
+  },
+  "anonymous": true,
+  "repo": "https://github.com/AnasSarkiz/usb-c-pd-brushed-motor",
+  "private": false,
+  "default_branch": "main",
+  "branch": "main",
+  "commit": "c41d79ab6a566700de58a5695cbf1eb75406a5cd",
+  "commit_url": "https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/commit/c41d79ab6a566700de58a5695cbf1eb75406a5cd",
+  "circuit_json_sha256": "ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3",
+  "circuit_json_matches_committed_and_validated_local_source": true,
+  "pcb_traces": 0,
+  "authentication_sent": false
+}

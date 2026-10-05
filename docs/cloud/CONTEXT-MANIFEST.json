@@ -509,13 +509,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 15161,
-      "sha256": "55d14698552ee79c02686b3f9dbec4310d686b42f462c3a67c66acc8c795c8ed"
+      "bytes": 15429,
+      "sha256": "f978041f22419ca2d5ee82875b5c25d6d7dcd87e43eabe952c9c3981b540a6e1"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 243883,
-      "sha256": "4275f376dd835b9da5c408222c5dacf55c434b6cc11c54b17b9c8c25cb721a23"
+      "bytes": 246709,
+      "sha256": "2b276b8ba3ba02b7165d57fa110f8052049ab0fb8fde36e750bbd230cecd4c2a"
     },
     {
       "path": "biome.json",
@@ -819,8 +819,8 @@
     },
     {
       "path": "docs/cloud/HANDOFF.md",
-      "bytes": 12402,
-      "sha256": "900ab71e88689e246aba6cdedab0c0eed1db3c4af34e5f1132e50540fb0d5d87"
+      "bytes": 12848,
+      "sha256": "25032fb2f07b2e31ca4d6a3f2c114539a0e1047f1d6ea48b5adf7c2dc5a44c14"
     },
     {
       "path": "docs/cloud/SETUP.md",

@@ -169,3 +169,10 @@ source. Geometry is unchanged from A45 excluding generated IDs/1e-12 rounding;
 fresh connectivity and import-transform checks pass. Codex Cloud itself is not
 activated, and fresh native gates/actual routing/snapshots remain pending.
 See the newest VALIDATION.md publication receipt for current remote revisions.
+
+Native CLI cache caution: read docs/TOOLING-ISSUES.md (A10 cache mode issue).
+The source-hash cache does not identify requested render mode; schematic-only
+output previously yielded a false placement pass. Preserve full140/152-component
+and routing-state/hash guards. Investigate wrong cached modes/injected properties
+using supported tooling or task-owned cache regeneration, never by accepting
+a schematic-only or unrouted artifact as routed.

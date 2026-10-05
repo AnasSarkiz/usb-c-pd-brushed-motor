@@ -1,5 +1,46 @@
 # A48 Codex Cloud setup — work-in-progress prototype
 
+## A48 public synchronization receipt — 2026-10-05
+
+Cloud handoff and verified Linux-generated unrouted circuit are public at
+[GitHub source `c41d79a`](https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/commit/c41d79ab6a566700de58a5695cbf1eb75406a5cd)
+and [tscircuit package](https://tscircuit.com/AnasSarkiz/usb-c-pd-brushed-motor),
+version `0.0.1-a48-cloud-pipeline9-unrouted-c41d79a-305b1e7a`. Anonymous access and matching circuit JSON are verified;
+SHA256 `ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3`. All469 expected package file names are present, with no extras;
+all176 critical source/component/dependency/configuration/Cloud-document files
+checked anonymously match the committed staging manifest. Remaining file hashes
+are recorded and verified before upload; individual remote bytes were not checked
+for every historical document/test/firmware file.
+
+The complete public GitHub clone is the Cloud source, including all566 checksum-bound
+context files, root AGENTS, full repository-local tscircuit skill and Linux workflow.
+The supported tscircuit CLI packages nonhidden files; its published build is a
+reviewable current-board source subset, not a replacement for the GitHub Cloud clone.
+Native archive upload received HTTP413; the official publisher completed its
+file-by-file workflow. A verification started before upload ended observed partial
+files and was not accepted. Final verification after completion passes. Raw archive
+body is omitted only from the readable publication log; its raw digest/provenance
+and the HTTP failure/individual upload results are retained.
+
+Registry overall status is `pending`, transpilation `pending`, circuit build `pending`.
+No registry preview build pass is inferred. Ubuntu24.04 installer/format/TypeScript/
+44tests and current unrouted native/schema build pass; fresh native gates, actual
+Pipeline9 routing, routed snapshots and all fabrication/physical tests remain pending.
+Codex Cloud environment activation was not performed here: app computer-control
+access was denied, so use the documented Work in→Cloud UI selection/setup/publication.
+No router ran on the Mac, and the guarded local unrouted attempt stopped at2GiB.
+This remains an untested WIP prototype, not fabrication approval.
+
+The final receipt commit adds documentation/evidence/context bindings only. Board
+implementation and published circuit remain source `c41d79a`; active production
+files match the Linux build's1966612 revision byte-for-byte. This bookkeeping receipt
+does not create another board version or recursively require a new publication.
+
+Evidence: github-public-final-A48.json,
+publication-source-c41d79a-anonymous-verification-A48.json,
+publication-source-c41d79a-manifest-A48.json, cloud-linux-verified-A48.json and
+cloud-publication-log-provenance-A48.json.
+
 ## Verified portable Linux setup and fresh artifact
 
 [Linux workflow37293556088](https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/actions/runs/37293556088) passed on source1966612:

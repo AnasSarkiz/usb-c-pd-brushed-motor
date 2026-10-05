@@ -1,0 +1,7 @@
+{
+  "raw_log_sha256": "1bd73e1452b304d7231f2499641b96cc232cf1730d994927a46d1ea0da223fa0",
+  "raw_log_bytes": 5715542,
+  "readable_log": "evidence/publication-source-c41d79a-A48.log",
+  "omitted": "Only the giant base64 Request Body archive line; HTTP413 status, fallback and individual upload outcomes are retained. Raw log is unmodified in task-local .cache.",
+  "secrets_copied": false
+}
