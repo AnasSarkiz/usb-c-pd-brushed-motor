@@ -1,5 +1,38 @@
 # USB-C PD brushed DC motor controller — A22 prototype
 
+## A45 public publication receipt — 2026-10-05
+
+The validated, unrouted WIP prototype is publicly available at
+[GitHub source revision `7a869ef`](https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/commit/7a869ef36fb6a9dd78c24e613d3e3f2f301296e8)
+and [the tscircuit package](https://tscircuit.com/AnasSarkiz/usb-c-pd-brushed-motor),
+version `0.0.1-a45-48v-usb-unrouted-7a869ef-04bbbc95`. Both destinations were verified without authentication.
+The package lists all 482 expected files with no missing or extra files.
+All 164 critical source, component, dependency and configuration files
+checked by anonymous download match the committed publication manifest,
+including `dist/index/circuit.json`, SHA256 `ef7db1d278365d982e844ba166444354492dee501ae500b747d1919e13b1d1fe`.
+The remaining file names were verified; their hashes are preserved in the
+byte-verified staging manifest. This does not claim individual remote byte
+verification for every documentation and firmware file.
+
+The registry reports overall `pending`, transpilation `pending` and cloud circuit
+build `pending`. A cloud build pass is not claimed. The exact locally validated
+circuit JSON is published and verified. Routing remains disabled with zero
+PCB traces. This is not fabrication approval or a hardware-tested release.
+Shell-slot stencil/assembly approval and physical power, thermal and reversal
+tests remain pending.
+
+The publication receipt commit changes documentation and evidence only;
+the published implementation and artifact remain source revision `7a869ef`.
+The recoverable staging directory was removed after every staged byte matched
+that revision. Generated SVG trailing whitespace and a native-check log's final
+blank line are retained as exact generated evidence; the configured formatting
+check passes. Unrelated historical routing diagnostics were left untouched.
+
+Evidence: `evidence/github-public-board-revision-A45.json`,
+`evidence/publication-source-7a869ef-anonymous-verification-A45.json`,
+`evidence/publication-source-7a869ef-manifest-A45.json` and
+`evidence/publication-stage-cleanup-A45.json`.
+
 The current A45 step replaces the input connector with GCT USB4105-GF-A-120,
 C5184243, rated48VDC/5A. This resolves the21V qualification uncertainty. The
 manufacturer-defined left-edge pose and all schematic/placement/import/copper
@@ -8,8 +41,8 @@ USB-C pad translations are disclosed, with original supplier source preserved.
 CAD is reviewed for orientation; the exact manufacturer drawing governs precise
 mechanical fit. Shell-slot stencil/assembly approval and physical tests remain
 pending. See [A45 replacement review](docs/USB-C-REPLACEMENT-A45.md).
-Public publication of this current step is in progress; earlier linked releases
-below describe their exact historical revisions until the A45 receipt is added.
+The receipt above identifies the current public A45 revision; earlier linked
+releases below describe their historical revisions.
 
 One5/9/12 V brushed motor, approximately2 A continuous target, one USB-C PD
 input, regulated motor voltage, hardware10 kΩ speed potentiometer,

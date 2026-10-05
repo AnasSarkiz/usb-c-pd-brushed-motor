@@ -1,0 +1,13 @@
+{
+  "anonymous": true,
+  "repo": "https://github.com/AnasSarkiz/usb-c-pd-brushed-motor",
+  "private": false,
+  "default_branch": "main",
+  "branch": "main",
+  "commit": "7a869ef36fb6a9dd78c24e613d3e3f2f301296e8",
+  "commit_url": "https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/commit/7a869ef36fb6a9dd78c24e613d3e3f2f301296e8",
+  "circuit_json_sha256": "ef7db1d278365d982e844ba166444354492dee501ae500b747d1919e13b1d1fe",
+  "circuit_json_matches_committed_and_validated_local_source": true,
+  "pcb_traces": 0,
+  "authentication_sent": false
+}

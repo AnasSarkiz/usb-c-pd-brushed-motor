@@ -1,0 +1,7 @@
+{
+  "source_commit": "7a869ef36fb6a9dd78c24e613d3e3f2f301296e8",
+  "version_tag": "a45-48v-usb-unrouted-7a869ef-04bbbc95",
+  "exit_code": 0,
+  "workflow": "official tsci push --include-dist; no private option",
+  "log": "evidence/publication-source-7a869ef-A45.log"
+}
