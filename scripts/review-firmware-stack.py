@@ -2,7 +2,7 @@
 from pathlib import Path
 import re,json,subprocess,hashlib
 ROOT=Path.cwd();FOLDER=ROOT/'dist/firmware/bringup';ELF=FOLDER/'motor-controller-A22.elf'
-assembly=subprocess.check_output(['/opt/homebrew/bin/arm-none-eabi-objdump','-d',str(ELF)],text=True)
+assembly=subprocess.check_output(['arm-none-eabi-objdump','-d',str(ELF)],text=True)
 (FOLDER/'disassembly.txt').write_text(assembly)
 def canonical(name):return re.sub(r'\.(constprop|isra)\.\d+$',r'.\1',name)
 frames={};origins={};issues=[]

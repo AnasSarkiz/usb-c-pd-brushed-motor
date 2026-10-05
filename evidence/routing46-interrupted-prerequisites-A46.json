@@ -1,0 +1,7 @@
+{
+  "status": "interrupted",
+  "reason": "User requested Pipeline9 while native prerequisite checks were running; interrupted tool session ended driver and native children. No completed native exit codes were obtained, so no pass is claimed. Existing independent check successes remain historical for Pipeline7 configuration only.",
+  "successfulIndependentChecks": 12,
+  "nativeChecksCompleted": 0,
+  "nextAttempt": "routing47 uses beta_pipeline9 and fresh prerequisites"
+}

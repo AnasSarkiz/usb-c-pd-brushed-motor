@@ -1,0 +1,58 @@
+name: Validate Codex Cloud Linux setup
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  setup:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the repository cloud environment
+        run: bash scripts/codex/setup.sh
+      - name: Record tool versions and run lightweight checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          source .cache/codex-cloud/env.sh
+          mkdir -p evidence/cloud-ci
+          {
+            uname -a
+            bun --version
+            python3 --version
+            arm-none-eabi-gcc --version
+            ngspice --version
+            df -h .
+            cat /proc/meminfo
+          } > evidence/cloud-ci/environment.txt
+          python3 scripts/codex/verify-context.py
+          bun run format:check
+          bun run typecheck
+          bun run test
+      - name: Generate the current unrouted circuit on Linux
+        shell: bash
+        run: |
+          set -euo pipefail
+          source .cache/codex-cloud/env.sh
+          /usr/bin/time -v -o evidence/cloud-ci/unrouted-memory.txt bunx tsci build index.circuit.tsx --routing-disabled > evidence/cloud-ci/unrouted-build.log 2>&1
+          bun scripts/audit-circuit-schema.ts dist/index/circuit.json evidence/cloud-ci/schema.json
+          python3 - <<'PYCODE'
+          import hashlib,json
+          from pathlib import Path
+          raw=Path('dist/index/circuit.json').read_bytes()
+          elements=json.loads(raw)
+          assert sum(e['type']=='source_component' for e in elements)==140
+          assert sum(e['type']=='pcb_component' for e in elements)==152
+          assert not any(e['type']=='pcb_trace' or 'error' in e['type'] for e in elements)
+          print(json.dumps({'sha256':hashlib.sha256(raw).hexdigest(),'routing_enabled':False}))
+          PYCODE
+      - name: Retain Linux setup diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: codex-cloud-linux-setup
+          path: |
+            evidence/cloud-ci/
+            dist/index/circuit.json
+          if-no-files-found: ignore

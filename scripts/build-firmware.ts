@@ -91,7 +91,7 @@ const sourceHashes = await Promise.all(
       .digest("hex"),
   })),
 )
-const gcc = "/opt/homebrew/bin/arm-none-eabi-gcc"
+const gcc = "arm-none-eabi-gcc"
 const common = [
   "-mcpu=cortex-m0plus",
   "-mthumb",
@@ -140,13 +140,8 @@ run(gcc, [
   "-o",
   elfPath,
 ])
-run("/opt/homebrew/bin/arm-none-eabi-objcopy", [
-  "-O",
-  "binary",
-  elfPath,
-  binPath,
-])
-const size = run("/opt/homebrew/bin/arm-none-eabi-size", [elfPath])
+run("arm-none-eabi-objcopy", ["-O", "binary", elfPath, binPath])
+const size = run("arm-none-eabi-size", [elfPath])
 const columns = size.trim().split("\n").slice(-1)[0]?.trim().split(/\s+/)
 const memory = z
   .object({
@@ -166,7 +161,7 @@ if (memory.text + memory.data > 32768 || memory.data + memory.bss + 2048 > 8192)
 const binary = await readFile(binPath)
 if (binary.readUInt32LE(0) !== 0x20002000 || !(binary.readUInt32LE(4) & 1))
   throw new Error("Invalid target reset vector/initial stack")
-const symbols = run("/opt/homebrew/bin/arm-none-eabi-nm", ["-n", elfPath])
+const symbols = run("arm-none-eabi-nm", ["-n", elfPath])
 for (const [index, symbol] of [
   [16 + 16, "TIM3_IRQHandler"],
   [16 + 7, "EXTI4_15_IRQHandler"],
@@ -184,7 +179,7 @@ for (const [index, symbol] of [
 await writeFile(`${directory}/symbols.txt`, symbols)
 await writeFile(
   `${directory}/sections.txt`,
-  run("/opt/homebrew/bin/arm-none-eabi-objdump", ["-h", elfPath]),
+  run("arm-none-eabi-objdump", ["-h", elfPath]),
 )
 const artifacts = await Promise.all(
   [elfPath, binPath].map(async (path) => ({

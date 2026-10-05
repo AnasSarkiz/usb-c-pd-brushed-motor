@@ -1,0 +1,6 @@
+{
+  "revision": "A47",
+  "importManifestPath": "evidence/active-supplier-inspection-manifest-A22.json",
+  "reportPath": "evidence/routing47-connectivity-A47.json",
+  "warningReviewPath": "evidence/main-warning-review-A47.json"
+}

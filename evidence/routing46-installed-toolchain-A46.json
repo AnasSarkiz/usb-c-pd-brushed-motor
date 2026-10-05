@@ -1,0 +1,36 @@
+{
+  "runtime": "Bun1.4.2",
+  "packages": [
+    {
+      "package": "tscircuit",
+      "version": "0.0.2744",
+      "installedPackageMetadataSha256": "ba47f6f0ac3c54391dc95d94f234df9d5d0f91a83c2f9211cc6c02dd6269ac2c"
+    },
+    {
+      "package": "@tscircuit/core",
+      "version": "0.0.2091-a41",
+      "installedPackageMetadataSha256": "1e3591bbd5c3704d243046c3b6ba3c8c7d8d520954130690205f229efc270281"
+    },
+    {
+      "package": "@tscircuit/props",
+      "version": "0.0.683",
+      "installedPackageMetadataSha256": "9eb81572a55df5fd1ae9978fab93f43e62501bcce5b942246f77d4eb55be71f6"
+    },
+    {
+      "package": "@tscircuit/capacity-autorouter",
+      "version": "0.0.960-a42",
+      "installedPackageMetadataSha256": "b4891d30ddb3151d345b655a65c5c00c7763216ebde3d685dc88064f24bbf817"
+    },
+    {
+      "package": "@tscircuit/cli",
+      "version": "0.1.2237",
+      "installedPackageMetadataSha256": "536305cbd35e4388e719940a5ca1f0b12238a13f3107017eea95ebc4980692cd"
+    },
+    {
+      "package": "circuit-json",
+      "version": "0.0.517",
+      "installedPackageMetadataSha256": "56fc782501045a37efbfd11815a7beaf16e372c27ef1db61848486a8f79625d0"
+    }
+  ],
+  "update": "tscircuit0.0.2743 ->0.0.2744; CircuitJSON0.0.511 ->0.0.517; canonical manufacturing fixes retained"
+}

@@ -10,6 +10,9 @@
     "electronics"
   ],
   "scripts": {
+    "cloud:setup": "bash scripts/codex/setup.sh",
+    "cloud:route": "bash scripts/codex/route.sh",
+    "cloud:context": "python3 scripts/codex/verify-context.py",
     "dev": "tsci dev",
     "build": "tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs",
     "snapshot": "tsci snapshot",
@@ -28,7 +31,7 @@
     "@biomejs/biome": "2.5.14",
     "@tscircuit/cli": "0.1.2237",
     "@types/bun": "1.4.2",
-    "tscircuit": "0.0.2743",
+    "tscircuit": "0.0.2744",
     "typescript": "5.9.3"
   },
   "author": "AnasSarkiz",
@@ -36,7 +39,8 @@
   "dependencies": {
     "@tscircuit/capacity-autorouter": "./tooling/tscircuit-capacity-autorouter-0.0.960-a42.tgz",
     "@tscircuit/core": "./tooling/tscircuit-core-0.0.2091-a41.tgz",
-    "@tscircuit/props": "./tooling/tscircuit-props-0.0.683-A22.tgz"
+    "@tscircuit/props": "./tooling/tscircuit-props-0.0.683-A22.tgz",
+    "circuit-json": "0.0.517"
   },
   "overrides": {
     "@tscircuit/core": "file:./tooling/tscircuit-core-0.0.2091-a41.tgz",

@@ -1,0 +1,109 @@
+CONTINUE IMPLEMENTATION of the USB-C PD brushed-motor controller through validated product placement, routing, and preparation of a prototype fabrication package.
+
+Source board: /Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12
+
+This is an implementation request. Inspect the current state briefly, then change the design and code, validate the changes, and keep working. Do not finish after a review, roadmap, documentation update, one small firmware module, or another report that placement and routing remain disabled.
+
+Continue until the board is placed and routed with the strongest fabrication-readiness evidence achievable from the repository, manufacturer documentation, supported tools, and supplier sources. Preserve real validation gates. Never enable routing merely to satisfy this instruction while known connectivity, component, placement, or electrical defects remain unresolved.
+
+1. Establish the current baseline and working directory.
+
+Read applicable AGENTS.md instructions, the tscircuit skill, and the current tscircuit handbook, including https://github.com/tscircuit/handbook/blob/main/guides/code.md.
+
+If continuing the existing implementation chat, use its board directory. If this is a new chat, follow the workspace isolation requirement: create a separate board directory, record the source directory and starting revision, and preserve the original task’s files.
+
+Read VALIDATION.md from its newest section downward. The reviewed baseline is A21, with bookkeeping HEAD 19e78be and implementation commit a7c5cde; verify whether newer changes exist. Hardware remains A19: 129 purchased components, 57 supplier codes, and eight native A4 schematic sheets.
+
+Inspect the entry point, all circuit modules, firmware, tests, scripts, BOM/design manifest, configuration, and the relevant PD, ADC, converter, capacitor, placement, tooling, and prototype-test documents. Treat historical claims as evidence to reconcile, not permanent blockers.
+
+Maintain a short checklist of unresolved implementation tasks, evidence needed, and genuinely external dependencies. Update it as work progresses without turning checklist maintenance into the deliverable.
+
+2. Resolve the schematic, component, and manufacturing prerequisites.
+
+Preserve the intended product: one USB-C power input, one brushed motor, selectable 5/9/12 V, approximately 2 A continuous target, hardware potentiometer PWM, FWD/OFF/REV switch, and qualification-only MCU. Preserve invalid-selector and insufficient-source inhibition. Do not add unrelated features or move PWM/direction control into firmware.
+
+Reconcile every BOM reference, quantity, exact supplier code, connection, package, polarity, and pin mapping against the current design and manufacturer sources. Refresh JLCPCB assembly eligibility and availability; LCSC catalog stock alone does not establish assembly availability.
+
+All electronic components must remain unchanged official JLCPCB imports. Do not hand-author or patch symbols, footprints, pin mappings, or imported component definitions. Resolve unsuitable parts through validated official imports, suitable replacements, or proper source fixes to supported tooling followed by reimport and validation.
+
+Resolve C18/C178373’s land, terminal-tolerance, paste, height, and assembly-process questions. Review active THT paste apertures and the 12 imported thermal vias against the intended assembly process. Replace unsuitable components when necessary instead of keeping them indefinitely provisional.
+
+Keep all eight schematic sheets readable. Review warnings individually and fix actionable issues through permitted board-level changes or proper tooling fixes. Preserve evidence for accepted advisories.
+
+3. Complete measurement and PD integration.
+
+Implement the real path from timestamped ADC frames to conservative, outward-rounded VBUS/VM uncertainty intervals. Include reference/calibration uncertainty, divider tolerance and drift, leakage, qualified ADC conditions, noise, filter lag, and sequential-sample skew. Preserve the oldest relevant sample age. Raw-frame validity or a nominal voltage must never become qualified voltage validity automatically.
+
+Resolve the selected 8 MHz ADC accuracy assumptions from manufacturer evidence or change the implementation to a supported, defensible operating configuration. If the sensing architecture cannot reliably satisfy the required windows, improve it using validated supplier parts rather than weakening the windows.
+
+Complete the STM32 runtime: startup/vector table, linker configuration, clock/timebase, bounded I2C transport, watchdog, serialized peripheral/event ownership, and actual application of sequencing outputs. Produce reproducibly linked ELF/BIN artifacts and verify flash/RAM usage; compiling eight separate objects is insufficient.
+
+Integrate startup, receive capture, request/readback, NVM verification, policy, sequencing, GPIO, and measurements. Establish fresh Source_Capabilities/Accept/PS_RDY provenance and request/source generations from documented device behavior. Reject stale, ambiguous, unsupported, or corrupted responses without inventing SOP encodings.
+
+Generate and independently verify the complete 40-byte manufacturing NVM image through the manufacturer-supported workflow when available. Do not guess reserved bits or equate successful RAM writes/NVM comparison with a negotiated contract.
+
+Add meaningful integration and fault regressions covering detach, hard reset, brownout, watchdog/reset, stale samples/contracts, timer rollover, I2C failures, selector changes, charged/back-driven VM, and permission revocation. Preserve inhibition-before-change ordering and feedback-state protection while VM retains energy. Account for reset/brownout behavior in the actual hardware as well as software.
+
+4. Close the actionable power-stage design gaps.
+
+Build on A14’s exact Panasonic model and passing conditional CCM screen. Complete the remaining source-supported converter analysis: light-load/DCM behavior, startup and PWM load steps, compensation, effective MLCC capacitance, mixed-frequency ripple sharing, and layout parasitics.
+
+Evaluate buck, catch diode, inductor, eFuse, LDO, bridge, capacitor, bleeder, and dump losses and thermal requirements over a declared prototype operating envelope. Resolve the approximately 17 mA 9 V/15 V peak margin with defensible design changes or contract policy; do not treat positive nominal arithmetic as adequate transient margin.
+
+Check current-limit tolerance and overshoot, particularly at 5 V. Quantify analog UV/OV threshold tolerances, hysteresis, response, and dump MOSFET/resistor pulse energy. The approximately 18.9 W nominal 12 V dump event exceeds the resistor bank’s 8 W aggregate continuous rating and requires a bounded energy/duty envelope or a redesign.
+
+Address startup, stall, OFF transitions, both reversal directions, and external back-drive. Preserve the requested operating targets unless an unavoidable constraint requires a clearly identified decision. Do not silently lower ratings to obtain a pass.
+
+Separate calculations/simulations needed before fabrication from measurements requiring a physical prototype. Complete the former now and prepare the latter as explicit bring-up tests. Do not require a fabricated board before preparing the board needed for those tests. A physical uncertainty that exposes an unresolved design defect still needs correction or an explicit release limitation.
+
+5. Implement and validate actual product placement.
+
+Revisit the tooling blocker immediately. A12 already demonstrated that native manualEdits.pcb_placements with numeric millimeter centers works for supplier-backed probes; explicit-coordinate serialization and unit-string placement failures do not prove that all supported placement paths are blocked.
+
+Apply a supported placement API to the complete board. Validate strict Circuit JSON schema, component locations, rotations, imported thermal-via transforms, pad/port coincidence, and connectivity. If another tooling defect appears, reproduce and fix its root cause through the proper source workflow. Do not rewrite generated JSON, relax schemas, patch installed dependencies, or suppress violations.
+
+Instantiate mounting holes and mechanical keepouts. Start from the provisional 65 × 50 mm, two-layer, 1.6 mm layout, with four 3.2 mm NPTH holes on 55 × 40 mm centers and 7 mm fastener clearance regions. Adjust the provisional outline or stackup if justified by fit, routing, or thermal analysis.
+
+Place USB-C at the left edge, the motor terminal at the right, accessible controls and LEDs on top, and accessible SWD/NRST/power/measurement test points. Verify real bodies, courtyards, shaft/knob and switch clearance, screwdriver access, underside leads, polarity, and labels.
+
+Keep buck switching loops short, feedback/sensing quiet, bridge bypass close, and thermal copper practical. Keep dump heat away from controls. Run every required preroute check and fix the actual overlaps and clearance violations before enabling routing.
+
+6. Enable routing and validate the resulting copper.
+
+After the prerequisites pass, remove or update every conflicting routing-disable control: board source, configuration, and build commands. Generate actual routed output and verify it contains the expected components and physical connections.
+
+Use supported native routing and layout controls. Iterate placement, routing, copper pours, and thermal layout until every required connection is complete and checks pass.
+
+Measure generated geometry against the recorded project rules: 0.20 mm signal width/clearance, ordinary 0.60/0.30 mm through vias, 0.25 mm drill-to-drill clearance, 0.20 mm drill-to-unrelated-pad clearance, and 0.50 mm copper-to-edge clearance. Validate these against the chosen manufacturer/process.
+
+Evaluate actual power-path widths, pad-entry neckdowns, via transitions, return paths, copper thickness, and temperature rise. A nominal 2 mm net setting does not prove ampacity.
+
+Preserve the documented acceptance of existing imported thermal vias while prohibiting new routed via-in-pad. Inspect ordinary drills against pads, including same-net cases.
+
+7. Run full validation and prepare fabrication outputs.
+
+Run configured formatting, TypeScript, the complete test suite, power/measurement analyses, strict schema/import/connectivity audits, target compilation, and the linked firmware build.
+
+Run the required tscircuit checks: netlist, pin_specification, source, schematic-placement, and placement before routing; then routed build/render, shorts checks, snapshots, and supported routing/trace checks.
+
+Verify exact commands and input formats against installed help/source. Resolve unavailable or incompatible required checks instead of substituting weaker checks.
+
+Guard against the documented CLI cache-mode bug: a schematic-only artifact containing no PCB components must never count as passing placement or routing evidence. Use fresh outputs, verify expected PCB records, and check the full generated artifact directly where supported.
+
+Inspect all schematic sheets, both copper layers, and detailed power, switching, connector, thermal, mounting, and programming areas. Resolve all actionable errors and warnings. Do not weaken tests, suppress diagnostics, or blindly accept snapshots.
+
+Generate Gerbers, drills, BOM, and placement files from one validated revision. Review outline, slots/holes, layer alignment, solder mask, paste, polarity, rotation, and assembly instructions. Bind source, firmware, dependencies, validation evidence, and fabrication outputs with revision identifiers/checksums.
+
+Keep VALIDATION.md and README current. Clearly distinguish “ready for prototype fabrication” from “hardware tested.” Leave physical qualification pending without inventing measurements or placing an order.
+
+8. Persist through completion.
+
+After each validated implementation milestone, continue to the next remaining task. Do not end merely because one module or commit is complete.
+
+Follow standing workspace authorization for commits, GitHub pushes, and tscircuit publication when the destinations are known. Use AnasSarkiz and the configured authentication workflow. Discover existing destinations from trusted configuration; do not invent one. Missing publication information must not halt independent local design work.
+
+Stop short of completion only when a genuinely external dependency remains after exhausting repository, datasheet, manufacturer, supplier, and supported-tool sources, and no meaningful independent implementation remains. Examples include unavailable physical measurements, indispensable manufacturer-only information, or an inaccessible provisioning tool with no supported alternative.
+
+For any such blocker, identify the exact missing evidence/action, sources and attempts checked, affected gate, completed unaffected work, and concrete artifact state. Do not use “needs review,” “needs testing,” an old tooling note, or missing GitHub publication as a blanket reason to stop.
+
+The final handoff must state what changed, what validation actually ran, placement/routing status, unresolved external blockers, and the location of the fabrication package. The intended endpoint is a placed, routed, validated prototype design with reviewable manufacturing files—not another unrouted status report.

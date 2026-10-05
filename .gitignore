@@ -47,3 +47,6 @@ tooling/bun-1.4.2/
 
 # Unchanged official CLI authentication client; provenance retained in evidence.
 tooling/registry-api-cli-A40/
+
+# Compiled Python cache is environment-specific, never cloud context.
+**/__pycache__/

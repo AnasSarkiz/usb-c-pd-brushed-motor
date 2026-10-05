@@ -12,14 +12,18 @@ import { EnergyDump } from "./circuit/EnergyDump"
 import { MotorBridge } from "./circuit/MotorBridge"
 import { PowerRouting } from "./circuit/PowerRouting"
 
-export default function UsbCPdBrushedMotorController() {
+export default function UsbCPdBrushedMotorController({
+  routingEnabled = false,
+}: {
+  routingEnabled?: boolean
+} = {}) {
   return (
     <board
       width="80mm"
       height="65mm"
       thickness="1.6mm"
       layers={4}
-      routingDisabled={true}
+      routingDisabled={!routingEnabled}
       allowBlindAndBuriedVias={false}
       minTraceWidth={0.2}
       minTraceToPadEdgeClearance={0.2}
@@ -39,7 +43,7 @@ export default function UsbCPdBrushedMotorController() {
         allowViaInPad: false,
         traceClearance: 0.25,
       }}
-      autorouterVersion="beta_pipeline7"
+      autorouterVersion="beta_pipeline9"
       autorouterEffortLevel="2x"
       pcbSx={{
         "& footprint silkscreentext[text='ON']": { visibility: "hidden" },

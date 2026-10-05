@@ -81,7 +81,7 @@ def run(case):
  print('Simulating '+case['name'],flush=True)
  log=OUT/(case['name']+'.log')
  with log.open('w')as handle:
-  result=subprocess.run(['/opt/homebrew/bin/ngspice','-b',str(path)],cwd=folder,stdout=handle,stderr=subprocess.STDOUT,timeout=7200)
+  result=subprocess.run(['ngspice','-b',str(path)],cwd=folder,stdout=handle,stderr=subprocess.STDOUT,timeout=7200)
  text=log.read_text(errors='replace')
  if result.returncode or 'Error:' in text:raise RuntimeError(f'{case["name"]}: failed; inspect {log}')
  measurements={}

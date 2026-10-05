@@ -1,0 +1,8 @@
+{
+  "status": "interrupted",
+  "reason": "User moved routing to Codex cloud after reporting local memory exhaustion. No routing was started. Native netlist/pin/source tool sessions were interrupted with no observed final exit status; no native gate pass is claimed. Process inspection afterward found no current task checks.",
+  "successfulIndependentChecks": 12,
+  "nativeChecksCompleted": 0,
+  "artifact_preroute_sha256": "7f3f36c59271d4ec0989b6602f665975947b8b2e3552feba72027a69eb9fc20e",
+  "next": "Cloud-only Pipeline9, sequential prerequisite checks"
+}

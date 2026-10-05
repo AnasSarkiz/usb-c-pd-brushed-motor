@@ -1,0 +1,21 @@
+{
+  "tag": "bun-v1.4.2",
+  "url": "https://github.com/oven-sh/bun/releases/tag/bun-v1.4.2",
+  "assets": [
+    {
+      "name": "bun-linux-aarch64.zip",
+      "digest": "sha256:54328bbc2d9c8e0c9f892c544d66c57a83b84139e34909e5ee81758f1ac8fda7",
+      "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-aarch64.zip"
+    },
+    {
+      "name": "bun-linux-x64.zip",
+      "digest": "sha256:36368faef7527875d5ffa52e53cd48021741f2a83eb6208a8dd64068d422a913",
+      "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip"
+    },
+    {
+      "name": "SHASUMS256.txt",
+      "digest": "sha256:99ebf3e6afe003b57eae3f257abce7e9aa851452429e84ef16b1b401e9d7cff1",
+      "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/SHASUMS256.txt"
+    }
+  ]
+}

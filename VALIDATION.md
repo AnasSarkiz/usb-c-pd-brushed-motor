@@ -1,3 +1,58 @@
+# A48 Codex Cloud setup — work-in-progress prototype
+
+2026-10-05. The user requested moving routing to Codex Cloud because the Mac runs
+out of memory. Root routing selects Pipeline9 (`beta_pipeline9`, local
+PreloadedTraceGraph in the cloud VM); default source/CLI routing stays disabled.
+Updated pinned tscircuit0.0.2744 and circuit-json0.0.517 resolve the fresh wrapper's
+missing export. Canonical core0.0.2091-a41, props0.0.683 and capacity0.0.960-a42
+are retained; CLI0.1.2237/Bun1.4.2. No electronic part, wiring or placement changes.
+
+Added standalone repository AGENTS.md, complete repository-local tscircuit skill,
+original continuation request, current-decision handoff/start prompt, checksum
+context manifest, portable Linux installer and sequential resource-recorded
+prerequisite/routing driver. ARM and ngspice paths now resolve through PATH.
+The supported routing build injects routingEnabled=true only after fresh gates;
+all routing entry points refuse macOS. Setup never starts a board build/router.
+The manual GitHub Linux setup workflow tests installation, lightweight checks and
+an explicitly unrouted build; it does not activate Codex Cloud or start routing.
+
+Local setup checks: Bash syntax and Python compile pass; configured formatting
+and TypeScript pass;44tests/476assertions pass. Secret-pattern inspection of new
+handoff/skill/scripts found no matching token/private-key material. Cloud setup
+and actual Pipeline9 execution have not run in a Codex Cloud Linux VM.
+The new build's memory monitor was initially denied sandbox process access; the
+orphaned task build was explicitly stopped. With authorized monitor access, an
+unrouted build reached the2GiB process-tree cap (peak sampled2163072KiB) after
+10.17s and was terminated. It did not start routing or yield an accepted current
+artifact. No higher-memory retry or expensive native check is run on the Mac.
+
+A46/A47 twelve independent prerequisites passed before user interruptions;
+none of their fresh five native checks has an observed completed passing result.
+A45 prerequisite/placement passes remain historical evidence for unchanged parts,
+geometry and wiring. Do not claim fresh native gates, routed copper, routed native
+snapshots, fabrication or physical qualification passed. The existing circuit JSON
+is pending fresh current-source Linux regeneration and verification; publication
+must not label stale output as the current validated artifact.
+
+| Stage | A48 status | Boundary |
+| --- | --- | --- |
+| 1 requirements | passed | A45 function/stackup/current targets unchanged |
+| 2 schematic/BOM | in progress | A45 pass; fresh toolchain/native gates pending |
+| 3 placement | in progress | A45 pass; fresh current artifact/native gates pending |
+| 4 routing | not started | Authorized in Cloud after fresh gates; zero accepted routed traces |
+| 5 routed automated/visual checks | not started | Routed-index snapshot integration must be resolved in Cloud |
+| 6 fabrication | not started | Stencil/assembly/mechanical qualification pending; no order |
+| 7 physical tests | not started | No measured motor/PD/current/thermal/reversal results |
+| 8 prototype release | in progress | Public cloud handoff synchronization and current JSON verification pending |
+
+Actual Cloud environment creation/publication needs the Codex UI's Work in→Cloud
+workflow. No purpose-built environment management tool is exposed, and computer-use
+access to the Codex app was denied. Repository preparation is not activation.
+See docs/cloud/SETUP.md and HANDOFF.md for exact UI steps, installer and start prompt.
+No local credentials or auth caches are transferred. The remaining mandatory
+snapshot issue is explicit: CLI snapshot lacks build's inject-props/ignore-config
+flags, so a default index snapshot is unrouted and cannot be accepted as routed.
+
 # A45 public publication receipt
 
 ## A45 public publication receipt — 2026-10-05

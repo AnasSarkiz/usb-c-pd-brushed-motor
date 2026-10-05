@@ -1,0 +1,2 @@
+$ biome format --write .
+Formatted 159 files in 70ms. Fixed 2 files.

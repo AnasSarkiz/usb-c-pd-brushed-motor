@@ -1,0 +1,91 @@
+{
+  "sourceRevision": "6dce7c7",
+  "currentArtifactSha256": "6c16eb4db844a006e13be50477323b2cf0a02670ee9ea9a2380ae56aa794456f",
+  "records": [
+    {
+      "type": "pcb_component",
+      "previousCount": 152,
+      "currentCount": 152,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "pcb_smtpad",
+      "previousCount": 397,
+      "currentCount": 397,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "pcb_plated_hole",
+      "previousCount": 14,
+      "currentCount": 14,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "pcb_via",
+      "previousCount": 12,
+      "currentCount": 12,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "pcb_hole",
+      "previousCount": 6,
+      "currentCount": 6,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "pcb_keepout",
+      "previousCount": 8,
+      "currentCount": 8,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "pcb_port",
+      "previousCount": 435,
+      "currentCount": 435,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "pcb_copper_pour",
+      "previousCount": 4,
+      "currentCount": 4,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "schematic_component",
+      "previousCount": 140,
+      "currentCount": 140,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "schematic_port",
+      "previousCount": 411,
+      "currentCount": 411,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "schematic_trace",
+      "previousCount": 251,
+      "currentCount": 251,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    },
+    {
+      "type": "schematic_sheet",
+      "previousCount": 8,
+      "currentCount": 8,
+      "nonIdGeometryUnchanged": true,
+      "changedRecords": 0
+    }
+  ],
+  "scope": "Geometry comparison excludes generated identifier/link fields. Electrical connectivity, exact imports and placement are independently revalidated. A45 drawing and 3D review applies to unchanged connector geometry and poses."
+}

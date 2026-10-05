@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bunx",
+    "tsci",
+    "build",
+    "index.circuit.tsx",
+    "--routing-disabled"
+  ],
+  "exit_code": -15,
+  "process_tree_peak_rss_kib": 2163072,
+  "rss_limit_kib": 2097152,
+  "elapsed_seconds": 10.17,
+  "stop_reason": "2GiB process-tree RSS limit",
+  "routing_enabled": false,
+  "log_sha256": "4c65a1a1b34ab0273feae3134db6bfce64c12d98be39f7951f761a3d82e5de26"
+}

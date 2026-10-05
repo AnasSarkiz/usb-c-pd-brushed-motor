@@ -8,6 +8,7 @@ import gzip
 import hashlib
 import json
 import subprocess
+import sys
 from pathlib import Path
 
 
@@ -21,6 +22,8 @@ def require_recorded_log(record):
 
 
 def run(configuration):
+    if sys.platform != "linux":
+        raise ValueError("Routing is authorized in Codex Cloud Linux; do not route on this Mac")
     prefix = configuration.evidence_prefix
     if not prefix.replace('-', '').isalnum():
         raise ValueError('Evidence prefix must contain only letters, numbers and hyphens')
@@ -69,7 +72,7 @@ def run(configuration):
     if sha256(artifact_path) != artifact_sha256:
         raise ValueError('The circuit artifact changed during prerequisite review')
     Path(f'evidence/{prefix}-reviewed-preroute-A22.json.gz').write_bytes(gzip.compress(artifact_path.read_bytes(), mtime=0))
-    command = ['bunx', 'tsci', 'build', 'index.circuit.tsx', '--pcb-png', '--pcb-svgs', '--schematic-svgs', '--autorouter-debug', '--autorouter-dump-srj', 'all', '--autorouter-debug-dir', f'evidence/{prefix}-debug-A22']
+    command = ['bunx', 'tsci', 'build', 'index.circuit.tsx', '--ignore-config', '--inject-props', '{"routingEnabled":true}', '--pcb-png', '--pcb-svgs', '--schematic-svgs', '--autorouter-debug', '--autorouter-dump-srj', 'all', '--autorouter-debug-dir', f'evidence/{prefix}-debug-A22']
     with Path(f'evidence/{prefix}-native-build-A22.log').open('w') as log:
         result = subprocess.run(command, stdout=log, stderr=subprocess.STDOUT)
     raw = artifact_path.read_bytes()
