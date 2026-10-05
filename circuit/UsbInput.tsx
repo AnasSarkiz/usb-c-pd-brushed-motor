@@ -3,7 +3,7 @@ import { productPlacement } from "./product-placement"
 import { PinBreakoutPoints } from "./PinBreakouts"
 import { SMBJ22A } from "../imports/SMBJ22A"
 import { CC0603KRX7R9BB104 } from "../imports/CC0603KRX7R9BB104"
-import { TYPE_C_31_M_12 } from "../imports/TYPE_C_31_M_12"
+import { USB4105_GF_A_120 } from "../imports/USB4105_GF_A_120"
 import { TPS7A1633DGNR } from "../imports/TPS7A1633DGNR"
 import { CL10A475KO8NNNC } from "../imports/CL10A475KO8NNNC"
 import { BZT52C24 } from "../imports/BZT52C24"
@@ -19,24 +19,24 @@ export function UsbInput() {
   return (
     <>
       {/* Single USB-C power input */}
-      <TYPE_C_31_M_12
+      <USB4105_GF_A_120
         name="J1"
         pcbRotation={productPlacement.J1.ccwRotationDegrees}
         schSheetName="usb"
         schX={-11.0}
         schY={8}
-        noConnect={["pin5", "pin7", "pin8", "pin9", "pin10", "pin11"]}
+        noConnect={["pin10", "pin11", "pin12", "pin13", "pin14", "pin16"]}
         connections={{
           pin1: "net.GND",
           pin2: "net.GND",
           pin3: "net.GND",
           pin4: "net.GND",
-          pin6: "net.CC1",
-          pin12: "net.CC2",
-          pin13: "net.GND",
-          pin14: "net.GND",
-          pin15: "net.VBUS",
-          pin16: "net.VBUS",
+          pin5: "net.GND",
+          pin6: "net.VBUS",
+          pin7: "net.GND",
+          pin8: "net.VBUS",
+          pin9: "net.CC2",
+          pin15: "net.CC1",
         }}
       />
       {/* Autonomous PD sink; NVM provisioning mandatory */}

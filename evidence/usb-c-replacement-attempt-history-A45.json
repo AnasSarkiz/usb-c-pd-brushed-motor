@@ -1,0 +1,11 @@
+{
+  "first_driver_exit": 143,
+  "initial_connectivity_exit": 1,
+  "initial_reason": "New warning review file not yet available; failure retained.",
+  "first_driver_reason": "Checks took several minutes with no interim output; driver stopped while first four native checks had completed; placement independently rerun to observed exit0.",
+  "final_connectivity_exit": 0,
+  "final_native_checks_exit": 0,
+  "final_native_logs": "evidence/usb-c-replacement-five-native-gates-A45.json",
+  "final_direct_logs": "evidence/usb-c-replacement-final-direct-gates-A45.json",
+  "browser_review": "No browser action; local actual exported GLB triangles/PCB/A4/drawing renders inspected."
+}

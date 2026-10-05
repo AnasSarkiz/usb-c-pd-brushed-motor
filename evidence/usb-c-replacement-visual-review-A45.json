@@ -1,0 +1,151 @@
+{
+  "artifact_sha256": "ef7db1d278365d982e844ba166444354492dee501ae500b747d1919e13b1d1fe",
+  "glb_sha256": "30e334cccfa708760641dab63539c3e6c3c9818c631aff6b383d1373cb4a555f",
+  "renderer": "Actual native GLB triangles, material colors and node positions; PCB axes=(-GLB.x,GLB.z,GLB.y). Board outline shown as a reference plane; other components omitted in connector-detail views.",
+  "connectors": [
+    {
+      "reference": "J1",
+      "minimum_pcb_xyz_mm": [
+        -40.52564003427124,
+        -0.4700636863708487,
+        -0.1999979734420776
+      ],
+      "maximum_pcb_xyz_mm": [
+        -32.62563970048523,
+        8.46993637084961,
+        3.90000205039978
+      ],
+      "vertices": 46644
+    },
+    {
+      "reference": "J2",
+      "minimum_pcb_xyz_mm": [
+        30.214909670471194,
+        2.5913473788757315,
+        -2.6999930858612062
+      ],
+      "maximum_pcb_xyz_mm": [
+        38.01490962278748,
+        13.009161633636474,
+        11.000008392333985
+      ],
+      "vertices": 33048
+    }
+  ],
+  "export_baseline_artifact_sha256": "3e2a467e7947575658707665122fdb12196ae65e65d4a613f955d41a201b68a3",
+  "model_pose_equivalence": [
+    {
+      "reference": "J1",
+      "cad": {
+        "type": "cad_component",
+        "cad_component_id": "cad_component_0",
+        "position": {
+          "x": -35.1900635,
+          "y": 4.000000000000001,
+          "z": 0.8
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 90
+        },
+        "pcb_component_id": "pcb_component_0",
+        "source_component_id": "source_component_0",
+        "model_obj_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C5184243.obj?uuid=c50ce21ae3b941ce8eeb9bccc6cdef41&cachebust_origin=",
+        "model_step_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C5184243.step?uuid=c50ce21ae3b941ce8eeb9bccc6cdef41&cachebust_origin=",
+        "model_origin_alignment": "center_of_component_on_board_surface",
+        "anchor_alignment": "center_of_component_on_board_surface",
+        "model_origin_position": {
+          "x": 6.3500000123895e-05,
+          "y": -2.7355763000001385,
+          "z": 0.14999799999999996
+        }
+      },
+      "native_glb_node_translation": [
+        35.1900635,
+        0.8,
+        4.000000000000001
+      ],
+      "matches_current_cad_pose": true
+    },
+    {
+      "reference": "J2",
+      "cad": {
+        "type": "cad_component",
+        "cad_component_id": "cad_component_118",
+        "position": {
+          "x": 34.099949,
+          "y": 8.000126999999999,
+          "z": 0.8
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 270
+        },
+        "pcb_component_id": "pcb_component_130",
+        "source_component_id": "source_component_118",
+        "model_obj_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C395849.obj?uuid=6da7a3e4055f4f749492a0377ad92fa1&cachebust_origin=",
+        "model_step_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C395849.step?uuid=6da7a3e4055f4f749492a0377ad92fa1&cachebust_origin=",
+        "model_origin_alignment": "center_of_component_on_board_surface",
+        "anchor_alignment": "center_of_component_on_board_surface",
+        "model_origin_position": {
+          "x": -2.490965599999935,
+          "y": -0.11496059999999497,
+          "z": -6.999999999646178e-06
+        }
+      },
+      "native_glb_node_translation": [
+        -34.099949,
+        0.8,
+        8.000126999999999
+      ],
+      "matches_current_cad_pose": true
+    }
+  ],
+  "model_import_sha256": "5bb92117e8ddaec3df02d6e430a9685fae350dadaa574a02b977970917aa4bcf",
+  "rebuild_note": "Final formatted build regenerates identifiers; exact connector source and native GLB node positions/rotations remain unchanged and verified. Visual review remains valid for these unchanged connector meshes and poses.",
+  "reviewed_on": "2026-10-05",
+  "visual_review": "Actual native GLB triangle renders viewed: USB mouth points PCB negativeX and opens beyond the left edge; terminal remains positiveX/right with top screw access. Current PCB PNG visually inspected. Manufacturer drawing inspected at full rendered resolution.",
+  "shell_model_dimensions_mm": {
+    "length": 7.3000002,
+    "width": 8.9400001,
+    "height_above_pcb": 3.1000021
+  },
+  "manufacturer_shell_dimensions_mm": {
+    "length": 7.35,
+    "width": 8.94,
+    "height_above_pcb": 3.31
+  },
+  "shell_dimensions_review": "Overall7.90x4.10mm extents include tails and stakes. Metal shell length7.30mm and height above PCB3.10mm fit the drawing general two-decimal +/-0.30mm tolerance. Exact pads/holes are independently checked against the stricter +/-0.05mm layout tolerance.",
+  "cad_approximation": "Native CAD body origin differs from the drawing/footprint origin by approximately0.425mm; model stakes are approximately1.0mm below board top while exact120 SKU specifies1.20+/-0.15mm. CAD is accepted for orientation and surrounding-body clearance only, not as an exact stake/edge/enclosure fit model. No model is patched. Real part and manufacturer drawing govern assembly/precise mechanical fit.",
+  "drawing_based_edge_alignment": {
+    "source_pcb_x_mm": -34.7650644,
+    "source_pcb_y_mm": 4,
+    "pcb_ccw_rotation_degrees": -90,
+    "left_board_edge_x_mm": -40,
+    "land_row_local_y_mm": 2.1150644,
+    "recommended_edge_distance_from_land_row_mm": 7.35,
+    "recommended_edge_global_x_mm": -40
+  },
+  "acceptance_basis": "Actual supplier PCB lands/drills, exact1.6mm board, supplier1.20mm stakes and manufacturer body dimensions reviewed independently; all current placement and copper checks pass. Model-only tail/stake and origin approximations do not enter fabrication geometry. Precise enclosure/plug/sample fit remains physical-prototype work.",
+  "reviewed_images": [
+    {
+      "path": "evidence/usb-c-replacement-3d-A45.png",
+      "sha256": "01958bce842caeb4f06848e9f4a560d8fe6d16cc041b83d9a8114559227a95ef"
+    },
+    {
+      "path": "dist/index/pcb.png",
+      "sha256": "72aeb7a4ad16050e1da8d71fd6fb0b8e89f98ef39a6d9a55baccb5074fc82333"
+    },
+    {
+      "path": "evidence/usb-c-C5184243-manufacturer-drawing-A45.png",
+      "sha256": "a03c709ae9dc66ca209a035b9d8a61f6d69edfc5129e890a8eb32e533f7b3508"
+    }
+  ],
+  "schematic_review": {
+    "sheet": "dist/review/1-usb-A22.png",
+    "sha256": "8ea53063d306713f00f681028168d332fb4296335459d27af267c780dd240a84",
+    "inspection": "Current native A4 USB sheet inspected: J1 contact numbers, VBUS/GND/CC1/CC2 and deliberate NC readable within A4 boundary. D1/D2 renderer advisories for symbol-contained reference text remain visible; external D1/D2 reference/MPN labels are present and readable. Existing unchanged symbol-metadata limitation, not hidden or a connectivity defect."
+  }
+}

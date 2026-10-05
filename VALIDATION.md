@@ -1,3 +1,54 @@
+# A45 higher-rated USB-C replacement — unrouted WIP
+
+2026-10-05. J1 is now C5184243/GCT USB4105-GF-A-120,48VDC/5A. The21V
+input-budget qualification blocker is resolved. Manufacturer pins/lands/holes,
+stock/assembly listing and current electrical/schema/placement checks are reviewed.
+The user's manual USB-C-pad instruction is applied to the replacement: twelve
+SMT X translations≤0.000381mm, with all sizes/pins/holes/model definition preserved.
+Original source is archived. Minimum gap0.20005mm; full-board505-primitive copper
+review has zero issues. This is disclosed as a locally adjusted supplier footprint.
+J1 moves to the manufacturer-recommended left-edge position; all other placements,
+PD policy, voltage selector, bridge/PWM/current limits and dependencies are unchanged.
+
+Current artifact SHA256ef7db1d278365d982e844ba166444354492dee501ae500b747d1919e13b1d1fe.
+44tests/476assertions, formatting/TypeScript/power report, all five required native
+checks and eight independent audits pass.91 generated metadata advisories and57
+native pin-specification notices remain visible and reviewed. Regenerated native
+IDs are rebound to current source/ports; no unknown warning is waived. Initial
+missing-review and stopped-driver attempts remain recorded; final checks completed.
+
+| Stage | Current status | Evidence/limit |
+| --- | --- | --- |
+| 1 requirements | passed | Existing function/current/stackup limits unchanged; input connector48V/5A |
+| 2 schematic/BOM | passed | Exact supplier/role/pad audits; qualified15/20V analytical power policy unchanged |
+| 3 placement | passed | Native/direct checks,0.20mm physical copper, drawing-based edge fit and actual GLB review |
+| 4 routing | not started | Both routing controls remain disabled; zero traces |
+| 5 routed checks | not started | Current unrouted tests pass; routed copper/snapshots pending |
+| 6 fabrication | not started | No approved fabrication package; shell-slot stencil/pin-in-paste review pending |
+| 7 physical prototype | not started | No physical current/thermal/PD/reversal measurements |
+| 8 release | in progress | WIP source publication/readback receipt follows; no hardware-tested claim |
+
+Current native GLB triangle views and PCB/drawing renders were inspected. The
+initial overall-model versus housing comparison included stakes/contact tails;
+separate shell dimensions agree with the drawing tolerance. CAD stake depth/origin
+are approximate and accepted only for orientation/body-clearance review. Exact
+manufacturer dimensions and imported PCB lands/drills govern assembly/precise fit;
+no CAD model is patched. This accepted rendering limitation does not approve an
+enclosure or physical sample fit. See docs/USB-C-REPLACEMENT-A45.md and
+usb-c-replacement-visual-review-A45.json for measurements and scope.
+Native probe paste shapes are positive/schema-valid and both paste Gerbers parse
+without diagnostics; top/bottom shell-slot stencil selection remains fabrication
+process review. Diagnostic probe Gerbers are not an approved board fab package.
+
+Evidence: usb-c-replacement-five-native-gates-A45.json,
+usb-c-replacement-final-direct-gates-A45.json, active-import-audit-A45.json,
+schematic-connectivity-audit-A45.json, usb-c-C5184243-independent-review-A45.json,
+usb-c-C5184243-paste-review-A45.json, usb-c-replacement-copper-final-A45.json,
+usb-c-replacement-source-binding-A45.json and visual-review-A45.json.
+Public synchronization is required for this completed step; the subsequent
+receipt identifies the actual source commit and package version. Prior A44
+publication/current-status sections below are historical and superseded by A45.
+
 # A44 corrected pad revision published publicly —9ebf605
 
 Board source commit9ebf605bb35b945b82f5aab67299d38cd30cf650 is pushed to public

@@ -1,0 +1,146 @@
+{
+  "artifact_sha256": "ef7db1d278365d982e844ba166444354492dee501ae500b747d1919e13b1d1fe",
+  "results": [
+    {
+      "name": "format",
+      "command": [
+        "bun",
+        "run",
+        "format:check"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-format-A45.log",
+      "log_sha256": "20d961d8469d3dfb7c1a701725a7dde7b7bf3b3775ed5850846a25ce738a9861"
+    },
+    {
+      "name": "typecheck",
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-typecheck-A45.log",
+      "log_sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "name": "tests",
+      "command": [
+        "bun",
+        "run",
+        "test"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-tests-A45.log",
+      "log_sha256": "90482a3c1b3495b371b08269bffbf4bf8caa40745c08bff37fac3f49428e8c11"
+    },
+    {
+      "name": "power",
+      "command": [
+        "bun",
+        "run",
+        "power:report"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-power-A45.log",
+      "log_sha256": "804bcfa6fe32554b3d2fd49cdb256da4dcbf9cf7b8bd1d2a60e04f2e8da38320"
+    },
+    {
+      "name": "supplier-review",
+      "command": [
+        "tooling/power-review-venv/bin/python",
+        "scripts/review-usb-c-replacement.py",
+        "--report",
+        "evidence/usb-c-C5184243-independent-review-A45.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-supplier-review-A45.log",
+      "log_sha256": "b9ed682c868b8fa15f28b1d6331854635ebdd20b43ee7d7b3a4479d1858f5bd9"
+    },
+    {
+      "name": "schema",
+      "command": [
+        "bun",
+        "scripts/audit-circuit-schema.ts",
+        "dist/index/circuit.json",
+        "evidence/usb-c-replacement-schema-A45.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-schema-A45.log",
+      "log_sha256": "75ff67c6a73725730b8e7c3cce33a5c29fdabc491853ebbeff2e5b31be6be5d5"
+    },
+    {
+      "name": "supplier-imports",
+      "command": [
+        "bun",
+        "scripts/audit-active-imports.ts",
+        "evidence/import-audit-config-A45.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-supplier-imports-A45.log",
+      "log_sha256": "f6d0c0376cb59ce3639fa59e2675584178f1a9bc772570a006de6d7a8023f0ac"
+    },
+    {
+      "name": "import-transforms",
+      "command": [
+        "bun",
+        "scripts/audit-product-placement.ts",
+        "unrouted"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-import-transforms-A45.log",
+      "log_sha256": "1cbbea7a68c7a39200b362e1e4b9ca4997e24c46f88ee1663cad5d7609b49c1b"
+    },
+    {
+      "name": "connectivity-final",
+      "command": [
+        "bun",
+        "scripts/audit-schematic.ts",
+        "evidence/schematic-audit-config-A45.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-connectivity-final-A45.log",
+      "log_sha256": "19be90d7dee0042e8414c6e094b8f1568ec7a30aa59b2dec866252d7af3f27ac"
+    },
+    {
+      "name": "full-placement",
+      "command": [
+        "bun",
+        "scripts/check-full-placement.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-full-placement-A45.log",
+      "log_sha256": "c761e7388b85d3b11d73ba1809af1ac0ce19a86f91fe0e1ceeba7159eee66e33"
+    },
+    {
+      "name": "targets",
+      "command": [
+        "tooling/power-review-venv/bin/python",
+        "scripts/audit-breakout-targets.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-targets-A45.log",
+      "log_sha256": "08c1570469a96e6904610f1cc4b32030c4e3622464b047b3728180f72cbf6409"
+    },
+    {
+      "name": "artwork",
+      "command": [
+        "bun",
+        "scripts/audit-product-artwork.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-artwork-A45.log",
+      "log_sha256": "af46aeaa6b50fcb1c252c7466ccad9bc44d445deb0ff311f4d9ec49bf4d4ffe2"
+    },
+    {
+      "name": "pnp",
+      "command": [
+        "bun",
+        "scripts/audit-supplier-pnp.ts"
+      ],
+      "exit_code": 0,
+      "log": "evidence/usb-c-replacement-pnp-A45.log",
+      "log_sha256": "3130cca1c435d91479da3c4716062bccaa119c3d8cb2a7d22f714b0d87967300"
+    }
+  ]
+}

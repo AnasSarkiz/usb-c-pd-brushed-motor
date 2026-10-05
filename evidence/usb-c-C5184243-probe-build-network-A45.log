@@ -1,0 +1,23 @@
+Building 1 file(s)...
+Building tests/supplier-audit/C5184243.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/tests/supplier-audit/C5184243/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+J1 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+Generating preview images...
+[tests/supplier-audit/C5184243] Generating PCB SVG...
+[tests/supplier-audit/C5184243] Written pcb.svg
+[tests/supplier-audit/C5184243] Generating PCB PNG...
+[tests/supplier-audit/C5184243] Written pcb.png
+[tests/supplier-audit/C5184243] Generating schematic SVG...
+[tests/supplier-audit/C5184243] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Config    routing-disabled (from tscircuit.config.json)
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

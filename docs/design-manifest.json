@@ -1,22 +1,22 @@
 [
   {
     "ref": "J1",
-    "code": "C165948",
+    "code": "C5184243",
     "sheet": "usb",
     "pins": {
       "pin1": "GND",
       "pin2": "GND",
       "pin3": "GND",
       "pin4": "GND",
-      "pin6": "CC1",
-      "pin12": "CC2",
-      "pin13": "GND",
-      "pin14": "GND",
-      "pin15": "VBUS",
-      "pin16": "VBUS"
+      "pin5": "GND",
+      "pin6": "VBUS",
+      "pin7": "GND",
+      "pin8": "VBUS",
+      "pin9": "CC2",
+      "pin15": "CC1"
     },
     "purpose": "Single USB-C power input",
-    "nc": ["pin5", "pin7", "pin8", "pin9", "pin10", "pin11"]
+    "nc": ["pin10", "pin11", "pin12", "pin13", "pin14", "pin16"]
   },
   {
     "ref": "U1",

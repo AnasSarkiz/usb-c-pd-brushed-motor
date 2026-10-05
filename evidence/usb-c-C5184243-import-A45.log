@@ -1,0 +1,6 @@
+- Searching...
+✖ Failed to search JLCPCB
+Error: getaddrinfo ENOTFOUND jlcsearch.tscircuit.com
+- Importing "C5184243" from JLCPCB...
+✖ Failed to import part
+getaddrinfo ENOTFOUND easyeda.com

@@ -1,0 +1,83 @@
+{
+  "supplier": "C5184243",
+  "authorization": "User instructed manual movement of individual USB-C pads; applies only to this board connector. All other supplier definitions remain unchanged.",
+  "original_path": "evidence/usb-c-C5184243-original-import-A45.tsx.txt",
+  "original_sha256": "bfc396fc889c4dd3a1e8d5977c482db3060ed772cbd913a62b0fcb4959d3fc29",
+  "adjusted_sha256": "5bb92117e8ddaec3df02d6e430a9685fae350dadaa574a02b977970917aa4bcf",
+  "shifts": [
+    {
+      "pin": 5,
+      "old_x_mm": 3.200146,
+      "new_x_mm": 3.2002729,
+      "shift_mm": 0.0001268999999997078
+    },
+    {
+      "pin": 6,
+      "old_x_mm": 2.400046,
+      "new_x_mm": 2.4002241,
+      "shift_mm": 0.00017809999999984782
+    },
+    {
+      "pin": 7,
+      "old_x_mm": -3.199892,
+      "new_x_mm": -3.2002729,
+      "shift_mm": -0.00038089999999968427
+    },
+    {
+      "pin": 8,
+      "old_x_mm": -2.400046,
+      "new_x_mm": -2.4002241,
+      "shift_mm": -0.00017809999999984782
+    },
+    {
+      "pin": 9,
+      "old_x_mm": 1.75006,
+      "new_x_mm": 1.750175,
+      "shift_mm": 0.00011500000000008725
+    },
+    {
+      "pin": 10,
+      "old_x_mm": 1.249934,
+      "new_x_mm": 1.250125,
+      "shift_mm": 0.0001909999999998302
+    },
+    {
+      "pin": 11,
+      "old_x_mm": 0.750062,
+      "new_x_mm": 0.750075,
+      "shift_mm": 1.3000000000040757e-05
+    },
+    {
+      "pin": 12,
+      "old_x_mm": 0.249936,
+      "new_x_mm": 0.250025,
+      "shift_mm": 8.900000000000574e-05
+    },
+    {
+      "pin": 13,
+      "old_x_mm": -0.249936,
+      "new_x_mm": -0.250025,
+      "shift_mm": -8.900000000000574e-05
+    },
+    {
+      "pin": 14,
+      "old_x_mm": -0.750062,
+      "new_x_mm": -0.750075,
+      "shift_mm": -1.3000000000040757e-05
+    },
+    {
+      "pin": 15,
+      "old_x_mm": -1.249934,
+      "new_x_mm": -1.250125,
+      "shift_mm": -0.0001909999999998302
+    },
+    {
+      "pin": 16,
+      "old_x_mm": -1.75006,
+      "new_x_mm": -1.750175,
+      "shift_mm": -0.00011500000000008725
+    }
+  ],
+  "maximum_shift_mm": 0.00038089999999968427,
+  "manufacturer_pcb_layout_tolerance_mm": 0.05
+}

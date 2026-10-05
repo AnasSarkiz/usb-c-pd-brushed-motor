@@ -1,0 +1,6 @@
+{
+  "revision": "A45",
+  "importManifestPath": "evidence/active-supplier-inspection-manifest-A22.json",
+  "reportPath": "evidence/schematic-connectivity-audit-A45.json",
+  "warningReviewPath": "evidence/main-warning-review-A45.json"
+}

@@ -121,7 +121,8 @@ export const productPlacement = {
     ccwRotationDegrees: 270,
   },
   J1: {
-    x: -34,
+    // GCT recommended PCB edge: 7.35 mm in front of the SMT pad row.
+    x: -34.7650644,
     y: 4,
     ccwRotationDegrees: -90,
   },

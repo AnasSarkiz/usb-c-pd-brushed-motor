@@ -1,0 +1,35 @@
+{
+  "artifact_sha256": "3e2a467e7947575658707665122fdb12196ae65e65d4a613f955d41a201b68a3",
+  "glb_sha256": "30e334cccfa708760641dab63539c3e6c3c9818c631aff6b383d1373cb4a555f",
+  "renderer": "Actual native GLB triangles, material colors and node positions; PCB axes=(-GLB.x,GLB.z,GLB.y). Board outline shown as a reference plane; other components omitted in connector-detail views.",
+  "connectors": [
+    {
+      "reference": "J1",
+      "minimum_pcb_xyz_mm": [
+        -40.52564003427124,
+        -0.4700636863708487,
+        -0.1999979734420776
+      ],
+      "maximum_pcb_xyz_mm": [
+        -32.62563970048523,
+        8.46993637084961,
+        3.90000205039978
+      ],
+      "vertices": 46644
+    },
+    {
+      "reference": "J2",
+      "minimum_pcb_xyz_mm": [
+        30.214909670471194,
+        2.5913473788757315,
+        -2.6999930858612062
+      ],
+      "maximum_pcb_xyz_mm": [
+        38.01490962278748,
+        13.009161633636474,
+        11.000008392333985
+      ],
+      "vertices": 33048
+    }
+  ]
+}

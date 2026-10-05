@@ -1,17 +1,28 @@
 # USB-C PD brushed DC motor controller — A22 prototype
 
+The current A45 step replaces the input connector with GCT USB4105-GF-A-120,
+C5184243, rated48VDC/5A. This resolves the21V qualification uncertainty. The
+manufacturer-defined left-edge pose and all schematic/placement/import/copper
+checks pass;44tests pass. Routing remains disabled. User-authorized individual
+USB-C pad translations are disclosed, with original supplier source preserved.
+CAD is reviewed for orientation; the exact manufacturer drawing governs precise
+mechanical fit. Shell-slot stencil/assembly approval and physical tests remain
+pending. See [A45 replacement review](docs/USB-C-REPLACEMENT-A45.md).
+Public publication of this current step is in progress; earlier linked releases
+below describe their exact historical revisions until the A45 receipt is added.
+
 One5/9/12 V brushed motor, approximately2 A continuous target, one USB-C PD
 input, regulated motor voltage, hardware10 kΩ speed potentiometer,
 FWD/OFF/REV switch, DRV8874, three LEDs and one motor terminal. The MCU only
 qualifies PD power and rail voltage; speed and direction remain hardware controlled.
 
-**Four-layer placement is implemented; routing is blocked by USB-C voltage qualification.**
+**A45 replaces J1 with48V/5A GCT C5184243; schematic and placement checks pass. Routing stays disabled as instructed.**
 The80×65×1.6 mm board has140 purchased components/58 supplier-backed official
 JLCPCB imports and four3.2 mm mounting holes. Revision31 selects
 JLC04161H-7628 with35um outer/15.2um inner copper and ordinary through vias;
 see docs/STACKUP-A31.md. Prior placement and8 A4 reviews remain evidence for
 unchanged bodies/pads/sheets. Fresh layer-span/import/connectivity/placement
-audits, all5 native prerequisites, formatting/TypeScript and42 board tests pass.
+audits, all5 native prerequisites, formatting/TypeScript and44 board tests pass.
 Canonical revision41 repairs distinguish component lands from fixed routed
 copper and enforce connected-pad clearance for ordinary vias. Native MCU
 escape paths are independently screened; fresh integration gates are pending. Its repair dependency retains one independently reproduced upstream
@@ -24,9 +35,9 @@ put its directory first in PATH for this task. Bun1.3.9 exhibits a native routin
 regression that passes with source-identical1.4.2. Install with
 `bun install --frozen-lockfile`.
 Use `bun run format:check`, `bun run typecheck`, `bun run test`, `bun run power:report`
-and `bun run build`. Both board and CLI defaults keep routing disabled while
-the USB-C prerequisite is blocked. Re-enable them only after the replacement
-component and all current prerequisite gates pass. Task-local canonical core preserves independent symbol terminals, each
+and `bun run build`. Both board and CLI defaults keep routing disabled as instructed. The connector
+voltage prerequisite is resolved; routing/fabrication still require their own
+stage validation. Task-local canonical core preserves independent symbol terminals, each
 breakout's router version and physical fixed-copper ownership. Its71 affected routing test files
 pass71 tests/2200 assertions with three existing skips; the earlier core2089
 146-test isolation suite remains historical evidence for unchanged behavior. The current board audit

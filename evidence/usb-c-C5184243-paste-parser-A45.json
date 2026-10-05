@@ -1,0 +1,38 @@
+[
+  {
+    "file": "F_Paste.gbr",
+    "sha256": "414102072e041a6237a691934519f1f71394684a78e9c02217eb1faacdbfaedb",
+    "objects": 16,
+    "parser_diagnostics": [],
+    "apertures": [
+      "ApertureMacroInstance(unit=<LengthUnit millimeter>, attrs=(), original_number=10, _bounding_box=None, macro=<Aperture macro VERTPILL, primitives (CenterLine(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), width=<UE $1 mm>, height=<UE $2-$3 mm>, x=<UE 0 mm>, y=<UE 0 mm>, rotation=ConstantExpression(value=0.0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE 0-$4 mm>, rotation=ConstantExpression(value=0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE $4 mm>, rotation=ConstantExpression(value=0)))>, parameters=(0.999998, 1.799996, 0.999998, 0.399999))",
+      "ApertureMacroInstance(unit=<LengthUnit millimeter>, attrs=(), original_number=10, _bounding_box=None, macro=<Aperture macro VERTPILL, primitives (CenterLine(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), width=<UE $1 mm>, height=<UE $2-$3 mm>, x=<UE 0 mm>, y=<UE 0 mm>, rotation=ConstantExpression(value=0.0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE 0-$4 mm>, rotation=ConstantExpression(value=0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE $4 mm>, rotation=ConstantExpression(value=0)))>, parameters=(0.999998, 1.799996, 0.999998, 0.399999))",
+      "ApertureMacroInstance(unit=<LengthUnit millimeter>, attrs=(), original_number=11, _bounding_box=None, macro=<Aperture macro VERTPILL, primitives (CenterLine(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), width=<UE $1 mm>, height=<UE $2-$3 mm>, x=<UE 0 mm>, y=<UE 0 mm>, rotation=ConstantExpression(value=0.0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE 0-$4 mm>, rotation=ConstantExpression(value=0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE $4 mm>, rotation=ConstantExpression(value=0)))>, parameters=(0.999998, 2.099996, 0.999998, 0.549999))",
+      "ApertureMacroInstance(unit=<LengthUnit millimeter>, attrs=(), original_number=11, _bounding_box=None, macro=<Aperture macro VERTPILL, primitives (CenterLine(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), width=<UE $1 mm>, height=<UE $2-$3 mm>, x=<UE 0 mm>, y=<UE 0 mm>, rotation=ConstantExpression(value=0.0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE 0-$4 mm>, rotation=ConstantExpression(value=0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE $4 mm>, rotation=ConstantExpression(value=0)))>, parameters=(0.999998, 2.099996, 0.999998, 0.549999))",
+      "<rect aperture 0.42x0.805 [mm]>",
+      "<rect aperture 0.42x0.805 [mm]>",
+      "<rect aperture 0.42x0.805 [mm]>",
+      "<rect aperture 0.42x0.805 [mm]>",
+      "<rect aperture 0.21x0.805 [mm]>",
+      "<rect aperture 0.21x0.805 [mm]>",
+      "<rect aperture 0.21x0.805 [mm]>",
+      "<rect aperture 0.21x0.805 [mm]>",
+      "<rect aperture 0.21x0.805 [mm]>",
+      "<rect aperture 0.21x0.805 [mm]>",
+      "<rect aperture 0.21x0.805 [mm]>",
+      "<rect aperture 0.21x0.805 [mm]>"
+    ]
+  },
+  {
+    "file": "B_Paste.gbr",
+    "sha256": "593107fd4e5185cd7bf19b9d7cd7498eaf14401cf4fa36b46f8879f709d56711",
+    "objects": 4,
+    "parser_diagnostics": [],
+    "apertures": [
+      "ApertureMacroInstance(unit=<LengthUnit millimeter>, attrs=(), original_number=10, _bounding_box=None, macro=<Aperture macro VERTPILL, primitives (CenterLine(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), width=<UE $1 mm>, height=<UE $2-$3 mm>, x=<UE 0 mm>, y=<UE 0 mm>, rotation=ConstantExpression(value=0.0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE 0-$4 mm>, rotation=ConstantExpression(value=0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE $4 mm>, rotation=ConstantExpression(value=0)))>, parameters=(0.999998, 1.799996, 0.999998, 0.399999))",
+      "ApertureMacroInstance(unit=<LengthUnit millimeter>, attrs=(), original_number=10, _bounding_box=None, macro=<Aperture macro VERTPILL, primitives (CenterLine(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), width=<UE $1 mm>, height=<UE $2-$3 mm>, x=<UE 0 mm>, y=<UE 0 mm>, rotation=ConstantExpression(value=0.0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE 0-$4 mm>, rotation=ConstantExpression(value=0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE $4 mm>, rotation=ConstantExpression(value=0)))>, parameters=(0.999998, 1.799996, 0.999998, 0.399999))",
+      "ApertureMacroInstance(unit=<LengthUnit millimeter>, attrs=(), original_number=11, _bounding_box=None, macro=<Aperture macro VERTPILL, primitives (CenterLine(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), width=<UE $1 mm>, height=<UE $2-$3 mm>, x=<UE 0 mm>, y=<UE 0 mm>, rotation=ConstantExpression(value=0.0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE 0-$4 mm>, rotation=ConstantExpression(value=0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE $4 mm>, rotation=ConstantExpression(value=0)))>, parameters=(0.999998, 2.099996, 0.999998, 0.549999))",
+      "ApertureMacroInstance(unit=<LengthUnit millimeter>, attrs=(), original_number=11, _bounding_box=None, macro=<Aperture macro VERTPILL, primitives (CenterLine(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), width=<UE $1 mm>, height=<UE $2-$3 mm>, x=<UE 0 mm>, y=<UE 0 mm>, rotation=ConstantExpression(value=0.0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE 0-$4 mm>, rotation=ConstantExpression(value=0)), Circle(unit=<LengthUnit millimeter>, exposure=ConstantExpression(value=1), diameter=<UE $3 mm>, x=<UE 0 mm>, y=<UE $4 mm>, rotation=ConstantExpression(value=0)))>, parameters=(0.999998, 2.099996, 0.999998, 0.549999))"
+    ]
+  }
+]

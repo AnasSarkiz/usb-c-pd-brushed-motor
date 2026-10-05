@@ -1,3 +1,15 @@
+# A45 current status
+
+C5184243 GCT USB4105-GF-A-120 replaces C165948. Manufacturer48VDC/5A
+rating resolves the21V input-budget uncertainty. User-authorized SMT X-only
+translations preserve land sizes/pins and pass0.20mm clearance. Complete
+schematic/placement checks pass; routing stays disabled. CAD is reviewed for
+orientation and the manufacturer drawing governs precise fit; shell-slot
+stencil/assembly and physical tests remain pending. See
+[USB-C-REPLACEMENT-A45.md](USB-C-REPLACEMENT-A45.md).
+
+Earlier A44/A42 records below are historical.
+
 # A44 current status
 
 The user authorized manual movement of individual USB-C SMT pads. C165948 now

@@ -1,0 +1,91 @@
+{
+  "artifact_sha256": "ef7db1d278365d982e844ba166444354492dee501ae500b747d1919e13b1d1fe",
+  "results": [
+    {
+      "name": "netlist",
+      "command": [
+        "bun",
+        "x",
+        "tsci",
+        "check",
+        "netlist",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/usb-c-replacement-native-netlist-A45.log",
+      "sha256": "3c9de2ffb33dfd65551737143d1fb3d03e8f39aeb721f2cd17e307c463c5d561"
+    },
+    {
+      "name": "pin_specification",
+      "command": [
+        "bun",
+        "x",
+        "tsci",
+        "check",
+        "pin_specification",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/usb-c-replacement-native-pin_specification-A45.log",
+      "sha256": "af649e28e0ae82f2d3c8959eccf98c06bbe5fa935cb9eaa48610de015c1a3047"
+    },
+    {
+      "name": "source",
+      "command": [
+        "bun",
+        "x",
+        "tsci",
+        "check",
+        "source",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/usb-c-replacement-native-source-A45.log",
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "name": "schematic-placement",
+      "command": [
+        "bun",
+        "x",
+        "tsci",
+        "check",
+        "schematic-placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/usb-c-replacement-native-schematic-placement-A45.log",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "name": "placement",
+      "command": [
+        "bun",
+        "x",
+        "tsci",
+        "check",
+        "placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "errors": [
+        0
+      ],
+      "log": "evidence/usb-c-replacement-native-placement-final-A45.log",
+      "sha256": "734a30f0b2853b561340a9954180adc44aaa788a08b5e4f0f5a53564eb3a39f9"
+    }
+  ],
+  "execution_note": "First four checks completed exit0 before the long audit driver was stopped; placement was independently rerun to observed exit0. Empty schematic-placement output explicitly required. Original failed missing-warning-review attempt retained."
+}
