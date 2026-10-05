@@ -20,12 +20,16 @@ jobs:
           {
             uname -a
             clang --version
+            command -v bun bunx
             bun --version
             python3 --version
             arm-none-eabi-gcc --version
             ngspice --version
             df -h .
             cat /proc/meminfo
+            for cgroup_file in /sys/fs/cgroup/memory.max /sys/fs/cgroup/memory.peak; do
+              if [[ -f "$cgroup_file" ]]; then cat "$cgroup_file"; fi
+            done
           } > evidence/cloud-ci/environment.txt
           python3 scripts/codex/verify-context.py
           bun run format:check

@@ -27,7 +27,12 @@ now explicitly use CC/Clang, preserving all warning/error flags and assertions;
 ARM firmware remains arm-none-eabi-gcc. Second Linux run passed43tests but the measurement host test lacked explicit
 libm linkage for fmaxl; Linux requires -lm where macOS implicitly links it.
 The measurement test now links -lm with its existing flags/assertions unchanged;
-fresh Linux rerun is pending. Failure evidence: cloud-linux-second-failure-A48.log.
+The third Linux run passes all44tests/476assertions, installer, formatting and
+TypeScript; the unrouted build could not start because the vendor ZIP contains
+only bun and setup omitted its bunx symlink. Setup now creates/verifies that
+launcher; fresh Linux artifact rerun is pending. Original127 failure and GNU
+resource output are retained in cloud-linux-bunx-failure-A48 files.
+Second-run failure evidence: cloud-linux-second-failure-A48.log.
 Evidence: cloud-linux-first-failure-A48.log and workflow37292292816.
 The new build's memory monitor was initially denied sandbox process access; the
 orphaned task build was explicitly stopped. With authorized monitor access, an

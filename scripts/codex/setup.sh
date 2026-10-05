@@ -40,6 +40,8 @@ if [[ ! -x "$bun_binary" ]]; then
   unzip -o "$cloud_tools/bun.zip" -d "$cloud_tools"
 fi
 [[ "$($bun_binary --version)" == 1.4.2 ]]
+ln -sf bun "$(dirname "$bun_binary")/bunx"
+[[ "$("$(dirname "$bun_binary")/bunx" --version)" == 1.4.2 ]]
 export PATH="$(dirname "$bun_binary"):$PATH"
 bun install --frozen-lockfile
 

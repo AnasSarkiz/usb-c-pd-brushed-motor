@@ -494,8 +494,8 @@
     },
     {
       "path": ".github/workflows/codex-cloud-setup.yml",
-      "bytes": 2177,
-      "sha256": "560e06a326ae5bb9f6332edf2c19883b7d50cc618aa2321b88f9ecb6fbe56c2b"
+      "bytes": 2384,
+      "sha256": "3e694cdbfc6034620e5b3107fb3c9f7588bc80314c2cd411969213fea6eba081"
     },
     {
       "path": ".gitignore",
@@ -514,8 +514,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 241861,
-      "sha256": "ebd32bc589a216251b924e12d2736074fd8ee7da044b5f06dbc89ba4c8e226a2"
+      "bytes": 242222,
+      "sha256": "ca79e4ec4065d8c2e29fed0c61577e7c25b01114a9c3b1967ff1e5ca1e5564bf"
     },
     {
       "path": "biome.json",
@@ -1984,8 +1984,8 @@
     },
     {
       "path": "scripts/codex/setup.sh",
-      "bytes": 2423,
-      "sha256": "3a6b68f869c5fb2b4585db27184103940055943a6df71e86db7b684fe9748a93"
+      "bytes": 2528,
+      "sha256": "118fd7138351235cacc7759189b39051292623963f47b64f1da6692231d10968"
     },
     {
       "path": "scripts/codex/update-context.py",
