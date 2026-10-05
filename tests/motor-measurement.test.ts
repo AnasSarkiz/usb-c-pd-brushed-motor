@@ -14,6 +14,7 @@ test("Measurement conversion encloses physical corners and never approves raw va
       "-Ifirmware/vendor/cmsis/Core/Include",
       "firmware/motor_measurement.c",
       "firmware/motor_measurement_test.c",
+      "-lm",
       "-o",
       executable,
     ],

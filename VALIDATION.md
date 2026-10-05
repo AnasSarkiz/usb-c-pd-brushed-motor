@@ -24,7 +24,10 @@ The first GitHub Linux installer passed, but host tests were38pass/6fail because
 default cc selected GCC on Linux rather than Clang on macOS. The unchanged
 CMSIS32-bit-register inline pointer casts fail GCC64-bit-host -Werror. Host tests
 now explicitly use CC/Clang, preserving all warning/error flags and assertions;
-ARM firmware remains arm-none-eabi-gcc. Fresh Linux rerun is pending.
+ARM firmware remains arm-none-eabi-gcc. Second Linux run passed43tests but the measurement host test lacked explicit
+libm linkage for fmaxl; Linux requires -lm where macOS implicitly links it.
+The measurement test now links -lm with its existing flags/assertions unchanged;
+fresh Linux rerun is pending. Failure evidence: cloud-linux-second-failure-A48.log.
 Evidence: cloud-linux-first-failure-A48.log and workflow37292292816.
 The new build's memory monitor was initially denied sandbox process access; the
 orphaned task build was explicitly stopped. With authorized monitor access, an

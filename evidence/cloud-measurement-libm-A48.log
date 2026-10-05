@@ -1,0 +1,9 @@
+bun test v1.4.2 (744846f84)
+
+tests/motor-measurement.test.ts:
+(pass) Measurement conversion encloses physical corners and never approves raw validity [394.11ms]
+
+ 1 pass
+ 0 fail
+ 3 expect() calls
+Ran 1 test across 1 file. [541.00ms]

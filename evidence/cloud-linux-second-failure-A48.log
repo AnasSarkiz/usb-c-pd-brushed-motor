@@ -1,0 +1,200 @@
+setup	Record tool versions and run lightweight checks	﻿2026-10-05T09:51:56.0223321Z ##[group]Run set -euo pipefail
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0224974Z [36;1mset -euo pipefail[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0225119Z [36;1msource .cache/codex-cloud/env.sh[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0226408Z [36;1mmkdir -p evidence/cloud-ci[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0226605Z [36;1m{[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0226860Z [36;1m  uname -a[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0227032Z [36;1m  clang --version[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0228433Z [36;1m  bun --version[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0228565Z [36;1m  python3 --version[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0228851Z [36;1m  arm-none-eabi-gcc --version[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0230476Z [36;1m  ngspice --version[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0230607Z [36;1m  df -h .[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0230725Z [36;1m  cat /proc/meminfo[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0232008Z [36;1m} > evidence/cloud-ci/environment.txt[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0232191Z [36;1mpython3 scripts/codex/verify-context.py[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0232360Z [36;1mbun run format:check[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0232497Z [36;1mbun run typecheck[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0232657Z [36;1mbun run test[0m
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0300886Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.0301089Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.3677083Z {"verifiedContextFiles": 566, "sourceBaseline": "A45 implementation 7a869ef36fb6a9dd78c24e613d3e3f2f301296e8; publication receipt 6dce7c7605c03ac29513557ccebf2a532ee196d2", "routingRun": false}
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.3739444Z $ biome format .
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.4696946Z Checked 160 files in 65ms. No fixes applied.
+setup	Record tool versions and run lightweight checks	2026-10-05T09:51:56.4775891Z $ tsc --noEmit
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.0086588Z $ bun test ./tests
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.0123471Z bun test v1.4.2 (744846f84)
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.0151199Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.0151776Z ##[group]tests/motor-measurement.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2883594Z 17 |       "-o",
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2883898Z 18 |       executable,
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2884119Z 19 |     ],
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2884323Z 20 |     { encoding: "utf8" },
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2884558Z 21 |   )
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2884811Z 22 |   expect(compile.status, compile.stderr).toBe(0)
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2885141Z                                               ^
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2885502Z error: /usr/bin/ld: /tmp/motor_measurement_test-71b41f.o: in function `main':
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2885950Z motor_measurement_test.c:(.text+0x2c5): undefined reference to `fmaxl'
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2886329Z clang: error: linker command failed with exit code 1 (use -v to see invocation)
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2886529Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2886537Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2886601Z Expected: 0
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2886905Z Received: 1
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2886994Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2887224Z       at <anonymous> (/home/runner/work/usb-c-pd-brushed-motor/usb-c-pd-brushed-motor/tests/motor-measurement.test.ts:22:42)
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2887510Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2907400Z ##[error]clang: error: linker command failed with exit code 1 (use -v to see invocation)
+setup	Record tool versions and run lightweight checks	
+setup	Record tool versions and run lightweight checks	
+setup	Record tool versions and run lightweight checks	Expected: 0
+setup	Record tool versions and run lightweight checks	Received: 1
+setup	Record tool versions and run lightweight checks	
+setup	Record tool versions and run lightweight checks	      at <anonymous> (/home/runner/work/usb-c-pd-brushed-motor/usb-c-pd-brushed-motor/tests/motor-measurement.test.ts:22:42)
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2913993Z (fail) Measurement conversion encloses physical corners and never approves raw validity [270.73ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2914364Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2914664Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2914780Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.2915058Z ##[group]tests/ground-copper-geometry.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.3777160Z (pass) physical ground connectivity preserves islands, layers and pour cutouts [88.79ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.3777452Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.3777899Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.3777979Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.3778148Z ##[group]tests/usb-c-replacement.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.5566599Z (pass) 48 V USB-C replacement preserves manufacturer geometry and rejects original sub-rule gaps [178.49ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.5567148Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.5567709Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.5567811Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.5568067Z ##[group]tests/copper-pulse-geometry.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.5710600Z (pass) pulse copper screen preserves SI energy balance and rejects invalid manufacturing inputs [13.91ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.5711238Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.5711669Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.5711836Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.5712264Z ##[group]tests/pd-sequence.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.6778534Z (pass) compiled C power sequence inhibits stale contracts and unsafe voltage changes [106.43ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.6778972Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.6779551Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.6779665Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.6779917Z ##[group]tests/stusb4500-rx.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.7832315Z (pass) STUSB4500 capture rejects late, changed and malformed PD messages [104.94ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.7832601Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.7833497Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.7833580Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.7833766Z ##[group]tests/pd-policy.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8628103Z (pass) compiled C PD policy rejects unsafe contracts and stale qualification [79.12ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8628555Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8629014Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8629171Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8629470Z ##[group]tests/power-copper-geometry.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8861503Z (pass) power copper metrics integrate tapers and reject unsupported geometry [22.83ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8861797Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8862827Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8862946Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8863219Z ##[group]tests/power-prototype-envelope.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8995853Z (pass) every declared analog corner remains separated from the conservative buck FB window [11.69ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8997700Z (pass) I2C timing accepts its declared envelope and rejects excessive rise time [0.31ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8998032Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8998479Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8998701Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.8999748Z ##[group]tests/copper-clearance-geometry.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:06.9842891Z (pass) physical copper spacing preserves layers, via boundaries and linear tapers [84.01ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.0740951Z (pass) static copper rejects sub-rule supplier lands without exempting pours [89.78ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.0741328Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.0741696Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.0741766Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.0741953Z ##[group]tests/stusb4500-nvm.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1571408Z (pass) NVM readback requires every approved byte and never programs memory [82.56ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1571712Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1572067Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1572142Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1572338Z ##[group]tests/electrical-calculations.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1580506Z (pass) PD power qualification > rejects insufficient chargers including native 12 V [0.15ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1581096Z (pass) PD power qualification > requires 20 V for 9/12 V peaks with budgeting reserve [0.08ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1581714Z (pass) PD power qualification > a 5 A source retains a 3 A operating request and malformed currents fail [0.04ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1582312Z (pass) PD power qualification > worst assumed 12 V continuous input fits minimum eFuse limit [0.03ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1582977Z (pass) 10 k potentiometer and selected motor rail > regulates all three modes within 0.1 percent nominal [0.05ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1583935Z (pass) 10 k potentiometer and selected motor rail > PWM has useful monotonically increasing range with finite end times [0.14ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1584600Z (pass) PD-enable default high survives transistor base loading [0.02ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1584868Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1585139Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1585244Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.1585685Z ##[group]tests/stusb4500-request.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.2716607Z (pass) PD profile transaction rejects partial writes and never repeats an uncertain command [112.95ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.2717211Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.2717716Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.2717821Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.2718089Z ##[group]tests/fabrication-drill-geometry.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.4478987Z (pass) manufacturing drill comparison preserves slots, rotations and physical units [175.63ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.4479324Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.4480094Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.4480169Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.4480345Z ##[group]tests/stm32-i2c.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.5823767Z (pass) STM32 I2C bounded whole transfers, faults and rollover [133.99ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.5824083Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.5824436Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.5824505Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.5824674Z ##[group]tests/stm32-gpio.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.7010164Z (pass) STM32 GPIO safety ordering and feedback preservation [113.74ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.7024601Z (pass) vendor MCU and CMSIS definitions remain byte-exact [1.52ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.7024834Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.7025261Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.7025369Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.7025600Z ##[group]tests/stm32-adc.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.9005318Z (pass) STM32 ADC fresh bounded conversions and failure inhibition [197.54ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.9005644Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.9006057Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.9006139Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:07.9006353Z ##[group]tests/stm32-gpio-outputs.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.0063837Z (pass) actual sequencing outputs revoke before feedback changes and preserve charged rails [105.16ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.0064189Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.0064582Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.0064663Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.0064850Z ##[group]tests/schema-diagnostic.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.0463240Z (pass) nested union diagnostics retain the actual invalid board-label field [13.18ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.0463679Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.0464228Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.0464382Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.0464654Z ##[group]tests/motor-owner.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4148191Z (pass) serialized owner applies only fresh qualified contracts and revokes on faults [368.07ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4148604Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4148988Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4149073Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4149489Z ##[group]tests/motor-validation-calculations.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4187034Z (pass) A7 voltage-aware PD policy engineering screen > 5 A advertisements remain separate from the 3 A operating request [2.12ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4187832Z (pass) A7 voltage-aware PD policy engineering screen > 5 V uses 15 V; 9/12 V retain reserve with 20 V [0.11ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4188460Z (pass) A7 voltage-aware PD policy engineering screen > a low-power 20 V source fails despite enough nominal output watts [0.03ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4189132Z (pass) A7 voltage-aware PD policy engineering screen > 5 V-only, native 12 V-only and unplugged sources inhibit [0.04ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4189729Z (pass) A7 voltage-aware PD policy engineering screen > 20 V fallback fits a 9 V motor when 15 V is unavailable [0.02ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4190357Z (pass) Motor and converter stress screening > running reversal can double unrestricted startup current [0.07ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4190915Z (pass) Motor and converter stress screening > output capacitance cannot absorb the example rotor energy [0.03ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4191481Z (pass) Motor and converter stress screening > screened inductor peaks remain below the 4.5 A minimum buck limit [0.04ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4192073Z (pass) A7 motor-rail-powered analog clamp > reference stays biased and clamp has hysteresis in all selected modes [0.07ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4192660Z (pass) Four-branch regenerative resistor screen > current headroom is retained even at the lowest clamp release [0.12ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4193219Z (pass) Four-branch regenerative resistor screen > a 15 V, 100 ms pulse fits the component overload screen [0.03ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4193810Z (pass) Four-branch regenerative resistor screen > continuous braking and excessive pulse length are rejected [0.06ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4194105Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4194977Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4195090Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.4195752Z ##[group]tests/pd-interval.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.5449314Z (pass) PD qualification contains whole voltage intervals and rejects back-drive [125.14ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.5449708Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.5450028Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.5450608Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.5450872Z ##[group]tests/stusb4500-startup.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.6292692Z (pass) PD startup drains old events under inhibition and verifies standby acquisition [83.80ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.6293096Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.6293413Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.6293519Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.6293796Z ##[group]tests/usb-c-pad-translations.test.ts:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8099473Z (pass) USB-C correction preserves the supplier geometry and clears every adjacent land [180.23ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8100281Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8100516Z ##[endgroup]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8100590Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8100636Z 1 tests failed:
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8100855Z (fail) Measurement conversion encloses physical corners and never approves raw validity [270.73ms]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8101049Z 
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8101093Z  43 pass
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8101199Z  1 fail
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8101305Z  474 expect() calls
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8101427Z Ran 44 tests across 24 files. [2.80s]
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8128486Z error: script "test" exited with code 1
+setup	Record tool versions and run lightweight checks	2026-10-05T09:52:08.8137824Z ##[error]Process completed with exit code 1.

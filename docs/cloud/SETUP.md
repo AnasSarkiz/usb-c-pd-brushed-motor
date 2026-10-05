@@ -24,7 +24,8 @@ Linux apt/sudo access and Python ≥3.11 are required. The script installs exact
 ARM compiler/binutils, host C/Clang, ngspice, PDF utilities and a pinned Python
 geometry/Gerber environment. The native tools are invoked via PATH, not Homebrew. Host C tests explicitly
 use CC=clang (the same compiler family as the prior macOS cc); -Wall/-Wextra/-Werror
-remain enabled. ARM firmware continues to use arm-none-eabi-gcc. The initial
+remain enabled. ARM firmware continues to use arm-none-eabi-gcc. The measurement host test
+explicitly links libm for Linux fmaxl; test assertions are unchanged. The initial
 Linux default-GCC run failed six host tests in unchanged vendor CMSIS inline
 32-bit-register pointer casts on a 64-bit host; that failure is retained.
 APT tool versions depend on the cloud image; record them and rerun firmware/numerical

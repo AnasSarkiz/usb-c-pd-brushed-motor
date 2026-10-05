@@ -514,8 +514,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 241573,
-      "sha256": "f0003f933429ee5e3bf8ecccc681d32e7ceb61c41b63dc06119ed5edcefdec2e"
+      "bytes": 241861,
+      "sha256": "ebd32bc589a216251b924e12d2736074fd8ee7da044b5f06dbc89ba4c8e226a2"
     },
     {
       "path": "biome.json",
@@ -824,8 +824,8 @@
     },
     {
       "path": "docs/cloud/SETUP.md",
-      "bytes": 4842,
-      "sha256": "fadb0eab05a1d704ba1ce2e348c11a64145df69c6f6f7e84466ec1cad705cb23"
+      "bytes": 4938,
+      "sha256": "d62b6a8fb584028ced955e0cbccaaeb988420cf0c60ff5a410b2d42184a5e14f"
     },
     {
       "path": "docs/cloud/START-TASK.md",
@@ -2209,8 +2209,8 @@
     },
     {
       "path": "tests/motor-measurement.test.ts",
-      "bytes": 886,
-      "sha256": "e13810f25e002678160f076cc3844a8de79575add9b959bde9edfaceef7c5f67"
+      "bytes": 899,
+      "sha256": "4dbaa4d92fb2a9ab3ff7d8445e2f834eb7a831697fc827d388cb488c7ee65636"
     },
     {
       "path": "tests/motor-owner.test.ts",
