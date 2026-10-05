@@ -1,0 +1,21 @@
+{
+  "workflow_id": 37293556088,
+  "workflow_url": "https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/actions/runs/37293556088",
+  "workflow_source_commit": "19666120b8d14d59869959887a9b7a07e159901a",
+  "installer": "passed on Ubuntu24.04",
+  "formatting": "passed",
+  "typecheck": "passed",
+  "tests": "44 pass / 0 fail / 476 assertions",
+  "preroute_build": "passed",
+  "circuit_schema": "passed",
+  "artifact_sha256": "ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3",
+  "source_components": 140,
+  "pcb_components": 152,
+  "pcb_traces": 0,
+  "maximum_resident_set_kib": 2155676,
+  "native_five_gates": "pending",
+  "codex_cloud_environment": "not activated; GitHub Actions verified portable setup only",
+  "routing": "not started",
+  "fabrication": "not approved",
+  "geometry": "A45 native geometry unchanged excluding generated IDs and 1e-12 rounding"
+}

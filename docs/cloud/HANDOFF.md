@@ -157,3 +157,15 @@ update the manifest with `python3 scripts/codex/update-context.py` and review it
 Cloud setup and Pipeline9 execution have not yet run in a real Linux VM as of
 handoff creation. Local syntax/context/unit checks do not prove cloud installation,
 RAM sufficiency, routing success, physical tests or fabrication readiness.
+
+## Verified Linux handoff update
+
+Workflow [37293556088](https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/actions/runs/37293556088) passed the portable installer,
+formatting, TypeScript,44tests/476assertions, fresh unrouted native build and
+schema. Its circuit SHA256 is `ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3`;
+140 purchased/152 PCB placements,0traces,0generated errors. Build elapsed1:47.36,
+GNU maximum RSS2155676KiB (~2.06GiB).160active production files match that Linux
+source. Geometry is unchanged from A45 excluding generated IDs/1e-12 rounding;
+fresh connectivity and import-transform checks pass. Codex Cloud itself is not
+activated, and fresh native gates/actual routing/snapshots remain pending.
+See the newest VALIDATION.md publication receipt for current remote revisions.

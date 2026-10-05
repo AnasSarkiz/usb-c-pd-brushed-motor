@@ -1,5 +1,28 @@
 # A48 Codex Cloud setup — work-in-progress prototype
 
+## Verified portable Linux setup and fresh artifact
+
+[Linux workflow37293556088](https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/actions/runs/37293556088) passed on source1966612:
+checksum-verified Bun/bunx1.4.2, frozen dependency install, Python geometry tools,
+formatting, TypeScript,44tests/476assertions, native unrouted build and full circuit
+schema. The returned artifact SHA256 is `ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3`;
+140 purchased/152 PCB components, zero traces and no generated errors.
+GNU time reports1:47.36 elapsed and2155676KiB maximum RSS (approximately2.06GiB).
+This is a GitHub Linux smoke test, not activation or execution in Codex Cloud.
+All160 active production source/dependency files match the Linux build revision.
+A45 pad/body/hole/via/keepout/port/pour and A4 schematic geometry are equivalent
+excluding generated IDs and rounding floats to12 decimals. Fresh independent
+connectivity/import-transform checks pass;91 unchanged metadata advisories are
+explicitly rebound. Fresh five native prerequisite gates remain pending in Cloud.
+
+Current geometry and electrical source are preserved. No router ran and no
+routed native snapshot or fabrication/hardware test is claimed. The source and
+fresh artifact are being synchronized to both public destinations; the publication
+receipt below will identify the exact version once anonymous verification succeeds.
+Evidence: cloud-linux-verified-A48.json, cloud-linux-workflow-success-A48.json,
+cloud-production-source-match-A48.json, cloud-linux-geometry-equivalence-A48.json,
+cloud-linux-preroute-resource-A48.txt and cloud48-handoff-connectivity-A48.json.
+
 2026-10-05. The user requested moving routing to Codex Cloud because the Mac runs
 out of memory. Root routing selects Pipeline9 (`beta_pipeline9`, local
 PreloadedTraceGraph in the cloud VM); default source/CLI routing stays disabled.
@@ -44,9 +67,9 @@ A46/A47 twelve independent prerequisites passed before user interruptions;
 none of their fresh five native checks has an observed completed passing result.
 A45 prerequisite/placement passes remain historical evidence for unchanged parts,
 geometry and wiring. Do not claim fresh native gates, routed copper, routed native
-snapshots, fabrication or physical qualification passed. The existing circuit JSON
-is pending fresh current-source Linux regeneration and verification; publication
-must not label stale output as the current validated artifact.
+snapshots, fabrication or physical qualification passed. The current circuit JSON
+was regenerated and verified by the successful Linux workflow described above.
+Earlier pending-artifact notes describe the initial handoff state.
 
 | Stage | A48 status | Boundary |
 | --- | --- | --- |

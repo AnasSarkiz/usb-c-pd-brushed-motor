@@ -7,7 +7,8 @@ The repository includes a portable installer, sequential resource-tracked
 Pipeline9 runner and full design/validation context. See
 [Cloud setup](docs/cloud/SETUP.md), [handoff](docs/cloud/HANDOFF.md) and
 [initial task prompt](docs/cloud/START-TASK.md). Defaults remain unrouted.
-Cloud installation/routing and fresh native prerequisite gates are pending;
+Portable installation,44tests and a fresh unrouted/schema build pass on Linux.
+Actual Codex Cloud activation/routing and fresh native prerequisite gates are pending;
 A45 passes below are historical evidence, not an A48 cloud execution claim.
 
 ## A45 public publication receipt — 2026-10-05

@@ -1,0 +1,6 @@
+{
+  "revision": "cloud48-handoff",
+  "importManifestPath": "evidence/active-supplier-inspection-manifest-A22.json",
+  "reportPath": "evidence/cloud48-handoff-connectivity-A48.json",
+  "warningReviewPath": "evidence/cloud48-handoff-warning-review-A48.json"
+}

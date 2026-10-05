@@ -37,7 +37,7 @@ release assets. Allow necessary official source/manufacturer/tscircuit hosts for
 validation or public publishing, e.g. github.com, raw.githubusercontent.com,
 api.github.com, objects.githubusercontent.com, release-assets.githubusercontent.com,
 registry.npmjs.org, pypi.org, files.pythonhosted.org, docs.tscircuit.com,
-api.tscircuit.com, tscircuit.com, lcsc.com, datasheet.lcsc.com and the exact official
+api.tscircuit.com, tscircuit.com, modelcdn.tscircuit.com, lcsc.com, datasheet.lcsc.com and the exact official
 manufacturer sites cited in this repo. Keep source verification/download failures
 visible. Imports and canonical dependency tarballs are already committed.
 GitHub/registry authentication must be configured through approved Cloud integrations

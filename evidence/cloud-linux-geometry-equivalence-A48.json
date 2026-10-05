@@ -1,0 +1,67 @@
+{
+  "baseline": "A45",
+  "workflow_commit": "19666120b8d14d59869959887a9b7a07e159901a",
+  "artifact_sha256": "ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3",
+  "comparisons": [
+    {
+      "type": "pcb_component",
+      "baseline_count": 152,
+      "current_count": 152,
+      "identical_excluding_generated_ids_and_rounding_12_decimals": true
+    },
+    {
+      "type": "pcb_smtpad",
+      "baseline_count": 397,
+      "current_count": 397,
+      "identical_excluding_generated_ids_and_rounding_12_decimals": true
+    },
+    {
+      "type": "pcb_plated_hole",
+      "baseline_count": 14,
+      "current_count": 14,
+      "identical_excluding_generated_ids_and_rounding_12_decimals": true
+    },
+    {
+      "type": "pcb_via",
+      "baseline_count": 12,
+      "current_count": 12,
+      "identical_excluding_generated_ids_and_rounding_12_decimals": true
+    },
+    {
+      "type": "pcb_hole",
+      "baseline_count": 6,
+      "current_count": 6,
+      "identical_excluding_generated_ids_and_rounding_12_decimals": true
+    },
+    {
+      "type": "pcb_keepout",
+      "baseline_count": 8,
+      "current_count": 8,
+      "identical_excluding_generated_ids_and_rounding_12_decimals": true
+    },
+    {
+      "type": "pcb_port",
+      "baseline_count": 435,
+      "current_count": 435,
+      "identical_excluding_generated_ids_and_rounding_12_decimals": true
+    },
+    {
+      "type": "pcb_copper_pour",
+      "baseline_count": 4,
+      "current_count": 4,
+      "identical_excluding_generated_ids_and_rounding_12_decimals": true
+    },
+    {
+      "type": "schematic_component",
+      "baseline_count": 140,
+      "current_count": 140,
+      "identical_excluding_generated_ids_and_rounding_12_decimals": true
+    },
+    {
+      "type": "schematic_sheet",
+      "baseline_count": 8,
+      "current_count": 8,
+      "identical_excluding_generated_ids_and_rounding_12_decimals": true
+    }
+  ]
+}
