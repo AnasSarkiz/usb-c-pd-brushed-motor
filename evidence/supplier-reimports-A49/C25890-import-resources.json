@@ -1,0 +1,18 @@
+{
+  "command": [
+    "bunx",
+    "tsci",
+    "import",
+    "C25890",
+    "--jlcpcb",
+    "--use-exact-footprint"
+  ],
+  "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C25890",
+  "exit_code": 0,
+  "stop_reason": null,
+  "sampled_process_tree_peak_rss_kib": 831088,
+  "limit_mib": 2048,
+  "elapsed_seconds": 4.19,
+  "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C25890-import.log",
+  "log_sha256": "53644f676df6a703a4233f69b220ce5186c3f76c72f995779b383ca1c9c42a99"
+}

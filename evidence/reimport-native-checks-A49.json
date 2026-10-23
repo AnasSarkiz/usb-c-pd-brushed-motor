@@ -1,0 +1,257 @@
+[
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C908270",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 975056,
+    "limit_mib": 2048,
+    "elapsed_seconds": 2.08,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C908270-native-netlist.log",
+    "log_sha256": "0be42660209d8adf4f7b8857576ce7a00f6d2f35feb6c655b516496c9d5c56c2"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C908270",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 935248,
+    "limit_mib": 2048,
+    "elapsed_seconds": 2.09,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C908270-native-pin_specification.log",
+    "log_sha256": "5678cceab4680fc3d75af73a66d11046cc490a8304723037ce1ccc3417adcdbc"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C908270",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 305872,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.04,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C908270-native-source.log",
+    "log_sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C908270",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 312320,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.03,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C908270-native-schematic-placement.log",
+    "log_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C908270",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 308816,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.03,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C908270-native-placement.log",
+    "log_sha256": "97cfeecd864765054f9c50a441892750d10d2d59a7e77543368095e6761b6ca5"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5710902",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 312528,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.04,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5710902-native-netlist.log",
+    "log_sha256": "bee5aa440ebfdcd13bf17b72fdbeac37f22d692b32023927daeb5fc660896ef4"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5710902",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 1098112,
+    "limit_mib": 2048,
+    "elapsed_seconds": 2.09,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5710902-native-pin_specification.log",
+    "log_sha256": "0b2a8b5d01e8273e1ee509d2088fb543eafb2e11662baaa65f1f823ce95e411d"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5710902",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 309120,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.03,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5710902-native-source.log",
+    "log_sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5710902",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 314512,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.03,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5710902-native-schematic-placement.log",
+    "log_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5710902",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 309456,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.04,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5710902-native-placement.log",
+    "log_sha256": "c643d4a82faa3f54db78a0507ac90b1aefae55bde32fdb05272648b6e68edb33"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5184243",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 303696,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.03,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5184243-native-netlist.log",
+    "log_sha256": "7c567b0e5a6fcba67ab1c5dfbfdedcac6711671c2e142b353ac3549c6fe0aa83"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5184243",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 313200,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.03,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5184243-native-pin_specification.log",
+    "log_sha256": "f1a44e165831a32eb8050f4e82633b4ee7984ca2c813539da4dc5c541a26130b"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5184243",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 308048,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.04,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5184243-native-source.log",
+    "log_sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5184243",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 316736,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.03,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5184243-native-schematic-placement.log",
+    "log_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "probe.circuit.tsx"
+    ],
+    "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5184243",
+    "exit_code": 0,
+    "stop_reason": null,
+    "sampled_process_tree_peak_rss_kib": 323088,
+    "limit_mib": 2048,
+    "elapsed_seconds": 1.03,
+    "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5184243-native-placement.log",
+    "log_sha256": "b5af4af39d2b951317bad3136542399931961f21dba671166c174744b48d3afc"
+  }
+]

@@ -1,0 +1,5252 @@
+{
+  "revision": "A49",
+  "requested_supplier_count": 58,
+  "reviewed_supplier_count": 58,
+  "command_failures": [],
+  "changed_sources": [
+    "C5710902",
+    "C5184243",
+    "C2678061",
+    "C10214",
+    "C14663",
+    "C1653",
+    "C178373",
+    "C181239",
+    "C19666",
+    "C20917",
+    "C2103",
+    "C2109",
+    "C21122",
+    "C211759",
+    "C21190",
+    "C22452",
+    "C22790",
+    "C22815",
+    "C22935",
+    "C22956",
+    "C22967",
+    "C23138",
+    "C23186",
+    "C23892",
+    "C25803",
+    "C25890",
+    "C25950",
+    "C285788",
+    "C2986030",
+    "C2991665",
+    "C3293142",
+    "C395849",
+    "C403725",
+    "C4184",
+    "C440183",
+    "C468238",
+    "C477999",
+    "C529330",
+    "C53444",
+    "C57112",
+    "C67470",
+    "C6986",
+    "C7420353",
+    "C77083",
+    "C844918",
+    "C8598"
+  ],
+  "textually_changed_copper_definitions": [
+    "C5184243",
+    "C25950",
+    "C529330"
+  ],
+  "textually_changed_cad_definitions": [
+    "C529330"
+  ],
+  "parts": [
+    {
+      "code": "C908270",
+      "ref": "SW1",
+      "active_path": "imports/A_1MS3T1B1M2QES_5.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C908270/imports/A_1MS3T1B1M2QES_5.tsx",
+      "active_sha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+      "candidate_sha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 3,
+        "source_component": 1,
+        "source_net": 3,
+        "source_board": 1,
+        "source_refdes_convention_warning": 1,
+        "source_trace": 3,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_text": 5,
+        "schematic_group": 1,
+        "schematic_port": 3,
+        "schematic_trace": 3,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_plated_hole": 3,
+        "pcb_silkscreen_path": 4,
+        "pcb_silkscreen_circle": 3,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 3,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_refdes_convention_warning",
+          "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+          "warning_type": "source_refdes_convention_warning",
+          "message": "The \"S\" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />",
+          "source_component_id": "source_component_0",
+          "refdes": "SW1",
+          "source_component_ftype": "simple_chip",
+          "expected_prefixes": [
+            "U",
+            "IC"
+          ],
+          "actual_prefix": "SW"
+        },
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "SW1 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "SW1 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on SW1 are underspecified (no pinAttributes set)"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C5710902",
+      "ref": "RV1",
+      "active_path": "imports/PTV09A_4015F_B103.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C5710902/imports/PTV09A_4015F_B103.tsx",
+      "active_sha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6",
+      "candidate_sha256": "189208db987c7184848579655e3138e3533ef013bd1afedb4e4e4aac41ec6e99",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 5,
+          "candidate_count": 5
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 5,
+          "candidate_count": 5
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 5,
+        "source_component": 1,
+        "source_net": 5,
+        "source_board": 1,
+        "source_refdes_convention_warning": 1,
+        "source_trace": 5,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 5,
+        "schematic_line": 5,
+        "schematic_symbol": 1,
+        "schematic_circle": 1,
+        "schematic_path": 11,
+        "schematic_text": 6,
+        "schematic_trace": 5,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_plated_hole": 5,
+        "pcb_silkscreen_path": 5,
+        "pcb_silkscreen_circle": 4,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 5,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_refdes_convention_warning",
+          "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+          "warning_type": "source_refdes_convention_warning",
+          "message": "The \"R\" prefix is being used with a <chip />, try using it with a <resistor />",
+          "source_component_id": "source_component_0",
+          "refdes": "RV1",
+          "source_component_ftype": "simple_chip",
+          "expected_prefixes": [
+            "U",
+            "IC"
+          ],
+          "actual_prefix": "RV"
+        },
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "RV1 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3",
+            "source_port_4"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "RV1 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3",
+            "source_port_4"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3",
+            "source_port_4"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on RV1 are underspecified (no pinAttributes set)"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C5184243",
+      "ref": "J1",
+      "active_path": "imports/USB4105_GF_A_120.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C5184243/imports/USB4105_GF_A_120.tsx",
+      "active_sha256": "5bb92117e8ddaec3df02d6e430a9685fae350dadaa574a02b977970917aa4bcf",
+      "candidate_sha256": "bfc396fc889c4dd3a1e8d5977c482db3060ed772cbd913a62b0fcb4959d3fc29",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": false,
+          "active_count": 18,
+          "candidate_count": 18
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 16,
+        "source_component": 1,
+        "source_net": 10,
+        "source_board": 1,
+        "source_refdes_convention_warning": 1,
+        "source_trace": 10,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "schematic_component": 1,
+        "schematic_text": 8,
+        "schematic_group": 1,
+        "schematic_port": 16,
+        "schematic_trace": 10,
+        "schematic_net_label": 4,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_hole": 2,
+        "pcb_plated_hole": 4,
+        "pcb_solder_paste": 20,
+        "pcb_smtpad": 12,
+        "pcb_silkscreen_path": 3,
+        "pcb_silkscreen_rect": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 16,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_refdes_convention_warning",
+          "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+          "warning_type": "source_refdes_convention_warning",
+          "message": "The \"J\" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />",
+          "source_component_id": "source_component_0",
+          "refdes": "J1",
+          "source_component_ftype": "simple_chip",
+          "expected_prefixes": [
+            "U",
+            "IC"
+          ],
+          "actual_prefix": "J"
+        },
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "J1 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3",
+            "source_port_4",
+            "source_port_5",
+            "source_port_6",
+            "source_port_7",
+            "source_port_8",
+            "source_port_9",
+            "source_port_10",
+            "source_port_11",
+            "source_port_12",
+            "source_port_13",
+            "source_port_14",
+            "source_port_15"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "J1 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3",
+            "source_port_4",
+            "source_port_5",
+            "source_port_6",
+            "source_port_7",
+            "source_port_8",
+            "source_port_9",
+            "source_port_10",
+            "source_port_11",
+            "source_port_12",
+            "source_port_13",
+            "source_port_14",
+            "source_port_15"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "paste_centered_on_tht": [
+        {
+          "type": "pcb_solder_paste",
+          "pcb_solder_paste_id": "pcb_solder_paste_0",
+          "layer": "top",
+          "shape": "rotated_pill",
+          "radius": 0.499999,
+          "ccw_rotation": 0,
+          "width": 0.999998,
+          "height": 1.7999964,
+          "x": 4.320032,
+          "y": -2.6400696,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_solder_paste",
+          "pcb_solder_paste_id": "pcb_solder_paste_1",
+          "layer": "bottom",
+          "shape": "rotated_pill",
+          "radius": 0.499999,
+          "ccw_rotation": 0,
+          "width": 0.999998,
+          "height": 1.7999964,
+          "x": 4.320032,
+          "y": -2.6400696,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_solder_paste",
+          "pcb_solder_paste_id": "pcb_solder_paste_2",
+          "layer": "top",
+          "shape": "rotated_pill",
+          "radius": 0.499999,
+          "ccw_rotation": 0,
+          "width": 0.999998,
+          "height": 1.7999964,
+          "x": -4.320032,
+          "y": -2.6400696,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_solder_paste",
+          "pcb_solder_paste_id": "pcb_solder_paste_3",
+          "layer": "bottom",
+          "shape": "rotated_pill",
+          "radius": 0.499999,
+          "ccw_rotation": 0,
+          "width": 0.999998,
+          "height": 1.7999964,
+          "x": -4.320032,
+          "y": -2.6400696,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_solder_paste",
+          "pcb_solder_paste_id": "pcb_solder_paste_4",
+          "layer": "top",
+          "shape": "rotated_pill",
+          "radius": 0.499999,
+          "ccw_rotation": 0,
+          "width": 0.999998,
+          "height": 2.0999958,
+          "x": 4.320032,
+          "y": 1.5400084,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_solder_paste",
+          "pcb_solder_paste_id": "pcb_solder_paste_5",
+          "layer": "bottom",
+          "shape": "rotated_pill",
+          "radius": 0.499999,
+          "ccw_rotation": 0,
+          "width": 0.999998,
+          "height": 2.0999958,
+          "x": 4.320032,
+          "y": 1.5400084,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_solder_paste",
+          "pcb_solder_paste_id": "pcb_solder_paste_6",
+          "layer": "top",
+          "shape": "rotated_pill",
+          "radius": 0.499999,
+          "ccw_rotation": 0,
+          "width": 0.999998,
+          "height": 2.0999958,
+          "x": -4.320032,
+          "y": 1.5400084,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_solder_paste",
+          "pcb_solder_paste_id": "pcb_solder_paste_7",
+          "layer": "bottom",
+          "shape": "rotated_pill",
+          "radius": 0.499999,
+          "ccw_rotation": 0,
+          "width": 0.999998,
+          "height": 2.0999958,
+          "x": -4.320032,
+          "y": 1.5400084,
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C2678061",
+      "ref": "U1",
+      "active_path": "imports/STUSB4500QTR.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C2678061/imports/STUSB4500QTR.tsx",
+      "active_sha256": "f9acdc195538fe06d3ad46bf0a1ee3b4014e2de9c7c58731866a34c0d231f1d7",
+      "candidate_sha256": "b36b5ccb3e69d33dd0a08056ed6f40a33c22d2dee1dc102a4d49a768edff0807",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 25,
+          "candidate_count": 25
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 25,
+        "source_component": 1,
+        "source_net": 18,
+        "source_board": 1,
+        "source_trace": 18,
+        "schematic_component": 1,
+        "schematic_text": 20,
+        "schematic_group": 1,
+        "schematic_port": 25,
+        "schematic_trace": 18,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 25,
+        "pcb_solder_paste": 25,
+        "pcb_silkscreen_path": 4,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 25,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_4QsEYOe7fs",
+          "warning_type": "source_component_availability_warning",
+          "message": "U1 may not have availability from jlcpcb (C2678061).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C2678061"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C44377",
+      "ref": "U5",
+      "active_path": "imports/TPS54360DDAR.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C44377/imports/TPS54360DDAR.tsx",
+      "active_sha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2",
+      "candidate_sha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 13,
+          "candidate_count": 13
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 17,
+        "source_manually_placed_via": 4,
+        "source_component": 1,
+        "source_net": 9,
+        "source_board": 1,
+        "source_trace": 9,
+        "schematic_component": 1,
+        "schematic_text": 11,
+        "schematic_group": 1,
+        "schematic_port": 9,
+        "schematic_trace": 9,
+        "pcb_component": 5,
+        "pcb_board": 1,
+        "pcb_smtpad": 9,
+        "pcb_solder_paste": 9,
+        "pcb_via": 4,
+        "pcb_silkscreen_path": 1,
+        "pcb_silkscreen_circle": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 17,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C10214",
+      "ref": "D1",
+      "active_path": "imports/SMBJ22A.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C10214/imports/SMBJ22A.tsx",
+      "active_sha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1",
+      "candidate_sha256": "c673616d11370fcb463ce0291e8279dc10ecf03096f90c5d9d6b3794b57dc1e9",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_line": 2,
+        "schematic_symbol": 1,
+        "schematic_path": 2,
+        "schematic_text": 3,
+        "schematic_trace": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 5,
+        "pcb_silkscreen_text": 1,
+        "pcb_fabrication_note_path": 3,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "D1 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "D1 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on D1 are underspecified (no pinAttributes set)"
+        },
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_dKjs8A4sjc",
+          "warning_type": "source_component_availability_warning",
+          "message": "D1 may not have availability from jlcpcb (C10214).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C10214"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C138687",
+      "ref": "C13",
+      "active_path": "imports/CL32B106KBJNNNE.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C138687/imports/CL32B106KBJNNNE.tsx",
+      "active_sha256": "1e82266b998724227ca723578b492d42c2b82bc123c0f5e60a769c9c58abddb0",
+      "candidate_sha256": "1e82266b998724227ca723578b492d42c2b82bc123c0f5e60a769c9c58abddb0",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_HFLOewbmfZ",
+          "warning_type": "source_component_availability_warning",
+          "message": "C13 may not have availability from jlcpcb (C138687).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C138687"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C14663",
+      "ref": "C2",
+      "active_path": "imports/CC0603KRX7R9BB104.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C14663/imports/CC0603KRX7R9BB104.tsx",
+      "active_sha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2",
+      "candidate_sha256": "baacbabcc3cf19dff448beea5cb9e0acc3413a4bec70bb79beda722d9479b74f",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_gkDPOvLgwF",
+          "warning_type": "source_component_availability_warning",
+          "message": "C2 may not have availability from jlcpcb (C14663).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C14663"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C1653",
+      "ref": "C20",
+      "active_path": "imports/CL10C220JB8NNNC.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C1653/imports/CL10C220JB8NNNC.tsx",
+      "active_sha256": "41cc61b4d9466ec5f554480830bdf048d1b47fa5fc09c6e9d9427215166a4d56",
+      "candidate_sha256": "16bfe347855018d5a4db3e2fd279924708bf2544e93e1ef1e7d605923b91b9c9",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_yNEAx4SH5t",
+          "warning_type": "source_component_availability_warning",
+          "message": "C20 may not have availability from jlcpcb (C1653).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C1653"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C178373",
+      "ref": "C18",
+      "active_path": "imports/A_35SVPK330M.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C178373/imports/A_35SVPK330M.tsx",
+      "active_sha256": "81434531148c497612f0806dba8f336433d326a695d969beeed2eb408cec7987",
+      "candidate_sha256": "6de50ca59e10cb16f7a8d3e731468f3dbbe68a237be803dfa5d7fe71a6dd8e06",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_fabrication_note_path": 6,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C181239",
+      "ref": "U3",
+      "active_path": "imports/TPS7A1633DGNR.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C181239/imports/TPS7A1633DGNR.tsx",
+      "active_sha256": "c78527d69b202bbb0a416928a072cd0ffabecea2adf05b60df3ece5bac8b54e2",
+      "candidate_sha256": "22361e467c09ef3b1826f214edf636bf33282ebaefceab84b8d7d9ea459c8578",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 9,
+          "candidate_count": 9
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 9,
+        "source_component": 1,
+        "source_net": 5,
+        "source_board": 1,
+        "source_trace": 5,
+        "source_no_power_pin_defined_warning": 1,
+        "schematic_component": 1,
+        "schematic_text": 7,
+        "schematic_group": 1,
+        "schematic_port": 9,
+        "schematic_trace": 5,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 9,
+        "pcb_solder_paste": 9,
+        "pcb_silkscreen_path": 1,
+        "pcb_silkscreen_circle": 1,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 9,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "U3 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3",
+            "source_port_4",
+            "source_port_5",
+            "source_port_6",
+            "source_port_7",
+            "source_port_8"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C1849461",
+      "ref": "U4",
+      "active_path": "imports/TPS16630PWPR.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C1849461/imports/TPS16630PWPR.tsx",
+      "active_sha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "candidate_sha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 25,
+          "candidate_count": 25
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 29,
+        "source_manually_placed_via": 4,
+        "source_component": 1,
+        "source_net": 15,
+        "source_board": 1,
+        "source_trace": 15,
+        "source_no_power_pin_defined_warning": 1,
+        "schematic_component": 1,
+        "schematic_text": 17,
+        "schematic_group": 1,
+        "schematic_port": 21,
+        "schematic_trace": 15,
+        "pcb_component": 5,
+        "pcb_board": 1,
+        "pcb_smtpad": 21,
+        "pcb_solder_paste": 21,
+        "pcb_via": 4,
+        "pcb_silkscreen_path": 1,
+        "pcb_silkscreen_circle": 1,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 29,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "U4 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3",
+            "source_port_4",
+            "source_port_5",
+            "source_port_6",
+            "source_port_7",
+            "source_port_8",
+            "source_port_9",
+            "source_port_10",
+            "source_port_11",
+            "source_port_12",
+            "source_port_13",
+            "source_port_14",
+            "source_port_15",
+            "source_port_16",
+            "source_port_17",
+            "source_port_18",
+            "source_port_19",
+            "source_port_20"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C1855818",
+      "ref": "U10",
+      "active_path": "imports/DRV8874PWPR.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C1855818/imports/DRV8874PWPR.tsx",
+      "active_sha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "candidate_sha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 21,
+          "candidate_count": 21
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 25,
+        "source_manually_placed_via": 4,
+        "source_component": 1,
+        "source_net": 17,
+        "source_board": 1,
+        "source_trace": 17,
+        "source_no_power_pin_defined_warning": 1,
+        "schematic_component": 1,
+        "schematic_text": 19,
+        "schematic_group": 1,
+        "schematic_port": 17,
+        "schematic_trace": 17,
+        "pcb_component": 5,
+        "pcb_board": 1,
+        "pcb_smtpad": 17,
+        "pcb_solder_paste": 17,
+        "pcb_via": 4,
+        "pcb_silkscreen_path": 1,
+        "pcb_silkscreen_circle": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 25,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "U10 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3",
+            "source_port_4",
+            "source_port_5",
+            "source_port_6",
+            "source_port_7",
+            "source_port_8",
+            "source_port_9",
+            "source_port_10",
+            "source_port_11",
+            "source_port_12",
+            "source_port_13",
+            "source_port_14",
+            "source_port_15",
+            "source_port_16"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C19666",
+      "ref": "C4",
+      "active_path": "imports/CL10A475KO8NNNC.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C19666/imports/CL10A475KO8NNNC.tsx",
+      "active_sha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462",
+      "candidate_sha256": "5422b30e8f52ab6317e159d1d57ebdd889c65c53647bb06eff997c4ff54ab4b8",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_81RCPS61CH",
+          "warning_type": "source_component_availability_warning",
+          "message": "C4 may not have availability from jlcpcb (C19666).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C19666"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C2074262",
+      "ref": "R68",
+      "active_path": "imports/ESR18EZPF1001.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C2074262/imports/ESR18EZPF1001.tsx",
+      "active_sha256": "5bd8e0a6639e7ac4d34d826219eaf66a58771b5c54028b714707512b8ccfdd76",
+      "candidate_sha256": "5bd8e0a6639e7ac4d34d826219eaf66a58771b5c54028b714707512b8ccfdd76",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_board": 1,
+        "source_pin_missing_trace_warning": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_pin_missing_trace_warning",
+          "source_pin_missing_trace_warning_id": "source_pin_missing_trace_warning_0",
+          "message": "Port pin1 on R68 is missing a trace",
+          "source_component_id": "source_component_0",
+          "source_port_id": "source_port_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_pin_missing_trace_warning"
+        },
+        {
+          "type": "source_pin_missing_trace_warning",
+          "source_pin_missing_trace_warning_id": "source_pin_missing_trace_warning_1",
+          "message": "Port pin2 on R68 is missing a trace",
+          "source_component_id": "source_component_0",
+          "source_port_id": "source_port_1",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_pin_missing_trace_warning"
+        },
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_iIQ5L1sM0i",
+          "warning_type": "source_component_availability_warning",
+          "message": "R68 may not have availability from jlcpcb (C2074262).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C2074262"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C20917",
+      "ref": "Q3",
+      "active_path": "imports/AO3400A.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C20917/imports/AO3400A.tsx",
+      "active_sha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "candidate_sha256": "5d06ee2292d9ec5c051fd2c0a4e3b00986a6c2c919e23729c18ef2752c9a528a",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 3,
+        "source_component": 1,
+        "source_net": 3,
+        "source_board": 1,
+        "source_refdes_convention_warning": 1,
+        "source_trace": 3,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 3,
+        "schematic_line": 3,
+        "schematic_symbol": 1,
+        "schematic_path": 11,
+        "schematic_text": 4,
+        "schematic_trace": 3,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 3,
+        "pcb_solder_paste": 3,
+        "pcb_silkscreen_path": 3,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 3,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_refdes_convention_warning",
+          "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+          "warning_type": "source_refdes_convention_warning",
+          "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+          "source_component_id": "source_component_0",
+          "refdes": "Q3",
+          "source_component_ftype": "simple_chip",
+          "expected_prefixes": [
+            "U",
+            "IC"
+          ],
+          "actual_prefix": "Q"
+        },
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "Q3 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "Q3 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on Q3 are underspecified (no pinAttributes set)"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C2103",
+      "ref": "D9",
+      "active_path": "imports/BZT52C10.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C2103/imports/BZT52C10.tsx",
+      "active_sha256": "0343e82f6274fedd7475112549678e9a28cafa45d8fcb2681a906b3096834fd5",
+      "candidate_sha256": "01973cc722b7277e5633a6cfca3e7e47217adfd416995fa31c9b8222838d1737",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 12,
+        "pcb_silkscreen_text": 1,
+        "pcb_fabrication_note_path": 3,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_ZWjEQfSrdY",
+          "warning_type": "source_component_availability_warning",
+          "message": "D9 may not have availability from jlcpcb (C2103).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C2103"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C2109",
+      "ref": "D3",
+      "active_path": "imports/BZT52C24.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C2109/imports/BZT52C24.tsx",
+      "active_sha256": "8ae660a88c78bbeaceb386fc84c54cd61f462132b0d24e1028d0b93e87230f8b",
+      "candidate_sha256": "009bba1af0372b1e7bdc0e267930b6ba122f3a1cd1858ef50369889b851f81ad",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 12,
+        "pcb_silkscreen_text": 1,
+        "pcb_fabrication_note_path": 3,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_w912no0ug7",
+          "warning_type": "source_component_availability_warning",
+          "message": "D3 may not have availability from jlcpcb (C2109).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C2109"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C21122",
+      "ref": "C9",
+      "active_path": "imports/CL10B223KB8NNNC.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C21122/imports/CL10B223KB8NNNC.tsx",
+      "active_sha256": "9da3dedeadd7fdd03ee32c819841773086149daed2f086c13a36f0ecc74f9cb1",
+      "candidate_sha256": "ab508bb1e20d110e116ac31e652b6de8dc29f01cc4246c2975a491a662105a5a",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_bRwisIyqCz",
+          "warning_type": "source_component_availability_warning",
+          "message": "C9 may not have availability from jlcpcb (C21122).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C21122"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C211759",
+      "ref": "D10",
+      "active_path": "imports/SMBJ15CA.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C211759/imports/SMBJ15CA.tsx",
+      "active_sha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "candidate_sha256": "6971b130de91ff7f6db909a9580aa5c382ee8ad119a6d36c0e9dc60fa093103b",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_line": 2,
+        "schematic_symbol": 1,
+        "schematic_path": 3,
+        "schematic_text": 3,
+        "schematic_trace": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_fabrication_note_path": 2,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "D10 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "D10 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on D10 are underspecified (no pinAttributes set)"
+        },
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_OSauRFl9L7",
+          "warning_type": "source_component_availability_warning",
+          "message": "D10 may not have availability from jlcpcb (C211759).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C211759"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C21190",
+      "ref": "R1",
+      "active_path": "imports/A_0603WAF1001T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C21190/imports/A_0603WAF1001T5E.tsx",
+      "active_sha256": "5902e8307dd04e282fc33a5c3a8637a05b4bc0c6265ec150b6acc1e2dd8cfdfb",
+      "candidate_sha256": "548fd70ab7f2e458c03e92aa90c4a6d77ad68516b6a4e7124c694a78f27d7672",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_93I60DdMIB",
+          "warning_type": "source_component_availability_warning",
+          "message": "R1 may not have availability from jlcpcb (C21190).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C21190"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C22452",
+      "ref": "D4",
+      "active_path": "imports/SS54.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C22452/imports/SS54.tsx",
+      "active_sha256": "dbb814bf82b9771e25ab0b4b970f526310234853c749be7ecbe4055bcb516c6c",
+      "candidate_sha256": "e7a2e34df8dd80fb29d4425820fe85f3023dfb46e6e32410309b67728043b077",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 5,
+        "pcb_silkscreen_text": 1,
+        "pcb_fabrication_note_path": 3,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_4VwzZqR1Kc",
+          "warning_type": "source_component_availability_warning",
+          "message": "D4 may not have availability from jlcpcb (C22452).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C22452"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C22790",
+      "ref": "R21",
+      "active_path": "imports/A_0603WAF1202T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C22790/imports/A_0603WAF1202T5E.tsx",
+      "active_sha256": "ab5764c0cdd81a1b6114f7728a2a090ab236eca3b37687d1e1d8e856b8f36695",
+      "candidate_sha256": "ddf744358e903828c96a1af5a9975b918bed10c8f1e37a6d41f87265ae4ed008",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_689Ig6o5NQ",
+          "warning_type": "source_component_availability_warning",
+          "message": "R21 may not have availability from jlcpcb (C22790).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C22790"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C22815",
+      "ref": "R10",
+      "active_path": "imports/A_0603WAF1623T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C22815/imports/A_0603WAF1623T5E.tsx",
+      "active_sha256": "cffc68d597f9996543e2183ef0e0af30581079956d933a7004f2e1a79642a089",
+      "candidate_sha256": "030f2958c31559ceac287839a33789f3ab0237b7fad4fd21dde0873f3552f29f",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_tEzI60ln2s",
+          "warning_type": "source_component_availability_warning",
+          "message": "R10 may not have availability from jlcpcb (C22815).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C22815"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C22935",
+      "ref": "R40",
+      "active_path": "imports/A_0603WAF1004T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C22935/imports/A_0603WAF1004T5E.tsx",
+      "active_sha256": "8bfdabf9cf75e71e43a99391224c435e7479bfe2f93e568790d217ec6826f929",
+      "candidate_sha256": "41b08818e6b2152a03f7ee1e878f45605edf8b83bd5e7855c9d1430b8fe7e5d5",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_IMcIRzQUQV",
+          "warning_type": "source_component_availability_warning",
+          "message": "R40 may not have availability from jlcpcb (C22935).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C22935"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C22956",
+      "ref": "R20",
+      "active_path": "imports/A_0603WAF2102T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C22956/imports/A_0603WAF2102T5E.tsx",
+      "active_sha256": "b42069dd4e1311c8f6eb6947ea81dc4356c8b4432ebb816919221643bec14c22",
+      "candidate_sha256": "583d6cd00ed0cdecae5c881bd930dc0ba1689e8bb4da219ebf31d950f4ab965d",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_IBkMFFtUvQ",
+          "warning_type": "source_component_availability_warning",
+          "message": "R20 may not have availability from jlcpcb (C22956).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C22956"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C22967",
+      "ref": "R22",
+      "active_path": "imports/A_0603WAF2702T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C22967/imports/A_0603WAF2702T5E.tsx",
+      "active_sha256": "fd8a8ace33b6046e96b7700fa2b4791bf6c0e177eadc9bfa3ef3812dc9fead22",
+      "candidate_sha256": "adcdd36b18be28d1cd8fd5b2b933276571914f958aef4efad6a189946b44db50",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_j4dWYTVZCP",
+          "warning_type": "source_component_availability_warning",
+          "message": "R22 may not have availability from jlcpcb (C22967).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C22967"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C22975",
+      "ref": "R31",
+      "active_path": "imports/A_0603WAF2001T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C22975/imports/A_0603WAF2001T5E.tsx",
+      "active_sha256": "251cc9030dc8096b74016eb21a07bb8f28f15a7210499c4673a242a88aa57077",
+      "candidate_sha256": "251cc9030dc8096b74016eb21a07bb8f28f15a7210499c4673a242a88aa57077",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_net_label": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_H3qav8ctdf",
+          "warning_type": "source_component_availability_warning",
+          "message": "R31 may not have availability from jlcpcb (C22975).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C22975"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C23138",
+      "ref": "R25",
+      "active_path": "imports/A_0603WAF3300T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C23138/imports/A_0603WAF3300T5E.tsx",
+      "active_sha256": "942c41cd7d58ee6a0290f6a090277c2b9a2875c50dd9465edaa5aedac91026e6",
+      "candidate_sha256": "2fa4e051cde9da721f7af2e2cc1b28b9ccdc93822f79c18ef612d64b74467c55",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_2BN2D2zhiV",
+          "warning_type": "source_component_availability_warning",
+          "message": "R25 may not have availability from jlcpcb (C23138).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C23138"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C23162",
+      "ref": "R2",
+      "active_path": "imports/A_0603WAF4701T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C23162/imports/A_0603WAF4701T5E.tsx",
+      "active_sha256": "7d47f4ea58f80777dd9d5c5eadd4332639c687c11e320a7223ba12983b59d109",
+      "candidate_sha256": "7d47f4ea58f80777dd9d5c5eadd4332639c687c11e320a7223ba12983b59d109",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_1mXaC9JjIT",
+          "warning_type": "source_component_availability_warning",
+          "message": "R2 may not have availability from jlcpcb (C23162).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C23162"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C23186",
+      "ref": "R55",
+      "active_path": "imports/A_0603WAF5101T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C23186/imports/A_0603WAF5101T5E.tsx",
+      "active_sha256": "27f22e23e54192f5bac6a357c2a79509f81007988352553e78c8a44833805070",
+      "candidate_sha256": "53272ba878b2edabce678f95b3efe4ecd4a0bb9247efb99145a5cedde9a8ca67",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_Ee4hUQC3Dp",
+          "warning_type": "source_component_availability_warning",
+          "message": "R55 may not have availability from jlcpcb (C23186).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C23186"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C23215",
+      "ref": "R13",
+      "active_path": "imports/A_0603WAF6981T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C23215/imports/A_0603WAF6981T5E.tsx",
+      "active_sha256": "ffdcc9d4f748b20bc7d60213769060137d54146c130a979a431bc42671ee6850",
+      "candidate_sha256": "ffdcc9d4f748b20bc7d60213769060137d54146c130a979a431bc42671ee6850",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_H8HBDkMxVr",
+          "warning_type": "source_component_availability_warning",
+          "message": "R13 may not have availability from jlcpcb (C23215).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C23215"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C23892",
+      "ref": "U8",
+      "active_path": "imports/TL431AIDBZR.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C23892/imports/TL431AIDBZR.tsx",
+      "active_sha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff",
+      "candidate_sha256": "3d14772384ab7e4136497acbd8d29117ceba3f8022f16a9f56786f526b1c24a8",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 3,
+        "source_component": 1,
+        "source_net": 3,
+        "source_board": 1,
+        "source_trace": 3,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 3,
+        "schematic_line": 3,
+        "schematic_symbol": 1,
+        "schematic_path": 5,
+        "schematic_text": 4,
+        "schematic_trace": 3,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 3,
+        "pcb_solder_paste": 3,
+        "pcb_silkscreen_path": 3,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 3,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "U8 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "U8 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on U8 are underspecified (no pinAttributes set)"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C25803",
+      "ref": "R4",
+      "active_path": "imports/A_0603WAF1003T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C25803/imports/A_0603WAF1003T5E.tsx",
+      "active_sha256": "03a087ff0e23fdbfbb78619d3019aa2d705a0a18edf8f5775a2ad35736129777",
+      "candidate_sha256": "737ff3b5ec16c2e4378d7d9a4185716c300e3ce9619cdbfe94887d58db88e329",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_SLugpZ0HYY",
+          "warning_type": "source_component_availability_warning",
+          "message": "R4 may not have availability from jlcpcb (C25803).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C25803"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C25890",
+      "ref": "R50",
+      "active_path": "imports/A_0402WGF3301TCE.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C25890/imports/A_0402WGF3301TCE.tsx",
+      "active_sha256": "3b9cf6de2088a252c5e3da65ae3d9667df8fd38602f47bcc99def2f0dada2731",
+      "candidate_sha256": "ef9cdcb3023236e33c5cb232f81c535b2aad698716eb7c7e533fc7e8829db771",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_k1TWl6xsuG",
+          "warning_type": "source_component_availability_warning",
+          "message": "R50 may not have availability from jlcpcb (C25890).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C25890"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C25950",
+      "ref": "R65",
+      "active_path": "imports/A_0603WAF1102T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C25950/imports/A_0603WAF1102T5E.tsx",
+      "active_sha256": "e52692c9e5924cd71491838f6bd50920b881d6fe1b243d75bb717affc40651f5",
+      "candidate_sha256": "e8ef900c5da1d5f04c2548a603c663cd0b07fbb57e97ee816ba684035e9c78da",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": false,
+          "active_count": 0,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 0,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_1fHaptlCs4",
+          "warning_type": "source_component_availability_warning",
+          "message": "R65 may not have availability from jlcpcb (C25950).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C25950"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C285788",
+      "ref": "L1",
+      "active_path": "imports/MHCC10040_8R2M_R7.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C285788/imports/MHCC10040_8R2M_R7.tsx",
+      "active_sha256": "12de0c462a2c8eb5be066751305f75721305a15c302f6b3acd0575cc9617d35a",
+      "candidate_sha256": "b5f5c9f5c7a3651ec395b3881cb8e581b9d3d20e92cdb3546b6d983ccd18e2ea",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 6,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_qquEsjpYKi",
+          "warning_type": "source_component_availability_warning",
+          "message": "L1 may not have availability from jlcpcb (C285788).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C285788"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C2906768",
+      "ref": "TP1",
+      "active_path": "imports/A_5015.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C2906768/imports/A_5015.tsx",
+      "active_sha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "candidate_sha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 1,
+        "source_component": 1,
+        "source_net": 1,
+        "source_board": 1,
+        "source_refdes_convention_warning": 1,
+        "source_trace": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_text": 3,
+        "schematic_group": 1,
+        "schematic_port": 1,
+        "schematic_trace": 1,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 1,
+        "pcb_solder_paste": 1,
+        "pcb_silkscreen_rect": 1,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 1,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_refdes_convention_warning",
+          "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+          "warning_type": "source_refdes_convention_warning",
+          "message": "The \"TP\" prefix is being used with a <chip />, try using it with a <testpoint />",
+          "source_component_id": "source_component_0",
+          "refdes": "TP1",
+          "source_component_ftype": "simple_chip",
+          "expected_prefixes": [
+            "U",
+            "IC"
+          ],
+          "actual_prefix": "TP"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on TP1 are underspecified (no pinAttributes set)"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C2986030",
+      "ref": "LED2",
+      "active_path": "imports/A_19_217_G7C_AN1P2_6T.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C2986030/imports/A_19_217_G7C_AN1P2_6T.tsx",
+      "active_sha256": "c2bafbbedfc255df5e274606ff00eac4347fd9549fef10bf4b2686c53f75d69f",
+      "candidate_sha256": "19879630d264de69b73ebf9c2f49ea0a28957745a06776287f2b32b0a873d781",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 1,
+        "pcb_fabrication_note_path": 7,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C2991665",
+      "ref": "R45",
+      "active_path": "imports/RPL_12K10R0FT.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C2991665/imports/RPL_12K10R0FT.tsx",
+      "active_sha256": "2438409a625ad7fe574c01aa43f88ad235a40c0af5e2566c64a9048e32b64a87",
+      "candidate_sha256": "b9ec23e8a97abb6feb7fd07313707dbd9e1ce81896f9a0aef3d3de228fc0fa12",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_5Vqz0hMdFR",
+          "warning_type": "source_component_availability_warning",
+          "message": "R45 may not have availability from jlcpcb (C2991665).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C2991665"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C3293142",
+      "ref": "SW2",
+      "active_path": "imports/DSHP02TSGER.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C3293142/imports/DSHP02TSGER.tsx",
+      "active_sha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa",
+      "candidate_sha256": "e7abaaa96eb3b3a17055c41aaabf67003febac3dc75c6c753c0d93fae4a6abb3",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 4,
+          "candidate_count": 4
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 4,
+        "source_component": 1,
+        "source_net": 4,
+        "source_board": 1,
+        "source_refdes_convention_warning": 1,
+        "source_trace": 4,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_text": 6,
+        "schematic_group": 1,
+        "schematic_port": 4,
+        "schematic_trace": 4,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 4,
+        "pcb_solder_paste": 4,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 3,
+        "pcb_fabrication_note_path": 12,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 4,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_refdes_convention_warning",
+          "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+          "warning_type": "source_refdes_convention_warning",
+          "message": "The \"S\" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />",
+          "source_component_id": "source_component_0",
+          "refdes": "SW2",
+          "source_component_ftype": "simple_chip",
+          "expected_prefixes": [
+            "U",
+            "IC"
+          ],
+          "actual_prefix": "SW"
+        },
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "SW2 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "SW2 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on SW2 are underspecified (no pinAttributes set)"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C395849",
+      "ref": "J2",
+      "active_path": "imports/DB126V_5_0_2P_GN_P.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C395849/imports/DB126V_5_0_2P_GN_P.tsx",
+      "active_sha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0",
+      "candidate_sha256": "1b32c0cd23f399d763a138583bf58941df860b4452b582d1be65b0dc64ad8bd5",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_refdes_convention_warning": 1,
+        "source_trace": 2,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_text": 4,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_plated_hole": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_rect": 1,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_refdes_convention_warning",
+          "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+          "warning_type": "source_refdes_convention_warning",
+          "message": "The \"J\" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />",
+          "source_component_id": "source_component_0",
+          "refdes": "J2",
+          "source_component_ftype": "simple_chip",
+          "expected_prefixes": [
+            "U",
+            "IC"
+          ],
+          "actual_prefix": "J"
+        },
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "J2 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "J2 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on J2 are underspecified (no pinAttributes set)"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C403725",
+      "ref": "C16",
+      "active_path": "imports/GRM31CR61E476ME44L.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C403725/imports/GRM31CR61E476ME44L.tsx",
+      "active_sha256": "567d871c3c483e2e156691930e842185fc85e758eb6878d32403e22c8486ed1b",
+      "candidate_sha256": "265c0f53250ef9693ceaf0cbe596b8c3b96206f7c1c2075974d734b39bdb186b",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_nsBe9tuLCq",
+          "warning_type": "source_component_availability_warning",
+          "message": "C16 may not have availability from jlcpcb (C403725).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C403725"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C4184",
+      "ref": "R11",
+      "active_path": "imports/A_0603WAF2002T5E.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C4184/imports/A_0603WAF2002T5E.tsx",
+      "active_sha256": "75957bbcc45f275e2a0560bd86b246d8c6a223144936821aec5a351074a5cdef",
+      "candidate_sha256": "2ca45ea7a52b3658bb8e3398387a832be5c800bb8379c3c7ad51def05d3e8eed",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_B5cfKyakn9",
+          "warning_type": "source_component_availability_warning",
+          "message": "R11 may not have availability from jlcpcb (C4184).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C4184"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C440183",
+      "ref": "C21",
+      "active_path": "imports/GRM1885C1H562JA01D.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C440183/imports/GRM1885C1H562JA01D.tsx",
+      "active_sha256": "ae57d221c1ca4ea607bbcd93bf844c40ccdfe0a2f5b22ebd8dc95de4da1f121f",
+      "candidate_sha256": "5433eb4b848e9e91e2f898ba78bc5acc092a17a935ed2c3d55c0b20d1652161c",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_CyKrf5IQsp",
+          "warning_type": "source_component_availability_warning",
+          "message": "C21 may not have availability from jlcpcb (C440183).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C440183"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C468238",
+      "ref": "U2",
+      "active_path": "imports/TPS7A1650DGNR.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C468238/imports/TPS7A1650DGNR.tsx",
+      "active_sha256": "9468fa1522c45d3420702b99400458cb24fbd0b29e06296f630be1f87503479b",
+      "candidate_sha256": "11b2a95a8258c5909398aa85ebe49341db2fb0527213acb47cb42a07141af1a5",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 9,
+          "candidate_count": 9
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 9,
+        "source_component": 1,
+        "source_net": 5,
+        "source_board": 1,
+        "source_trace": 5,
+        "source_no_power_pin_defined_warning": 1,
+        "schematic_component": 1,
+        "schematic_text": 7,
+        "schematic_group": 1,
+        "schematic_port": 9,
+        "schematic_trace": 5,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 9,
+        "pcb_solder_paste": 9,
+        "pcb_silkscreen_path": 1,
+        "pcb_silkscreen_circle": 1,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 9,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "U2 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3",
+            "source_port_4",
+            "source_port_5",
+            "source_port_6",
+            "source_port_7",
+            "source_port_8"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C477999",
+      "ref": "D2",
+      "active_path": "imports/PESD24VS2UT_215.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C477999/imports/PESD24VS2UT_215.tsx",
+      "active_sha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
+      "candidate_sha256": "cd6f049a3fea15d0e45259275a82d1d315d005a4b255038db5e5571444d6a46c",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 3,
+        "source_component": 1,
+        "source_net": 3,
+        "source_board": 1,
+        "source_trace": 3,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 3,
+        "schematic_line": 3,
+        "schematic_symbol": 1,
+        "schematic_path": 5,
+        "schematic_text": 4,
+        "schematic_trace": 3,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 3,
+        "pcb_solder_paste": 3,
+        "pcb_silkscreen_path": 3,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 3,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "D2 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "D2 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on D2 are underspecified (no pinAttributes set)"
+        },
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_sFzE0ZV6Y1",
+          "warning_type": "source_component_availability_warning",
+          "message": "D2 may not have availability from jlcpcb (C477999).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C477999"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C529330",
+      "ref": "U11",
+      "active_path": "imports/STM32G030F6P6TR.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C529330/imports/STM32G030F6P6TR.tsx",
+      "active_sha256": "8341d8be4d4d2ba11868533ad8cb0fe51462fffd50b2418151e2fc2106332b63",
+      "candidate_sha256": "1fbcf271254c2629b694ac24e42220ee11d01f318685dcfa1d3061cf43b7252d",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": false,
+          "active_count": 20,
+          "candidate_count": 20
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 20,
+        "source_component": 1,
+        "source_net": 19,
+        "source_board": 1,
+        "source_trace": 19,
+        "schematic_component": 1,
+        "schematic_text": 21,
+        "schematic_group": 1,
+        "schematic_port": 20,
+        "schematic_trace": 19,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 20,
+        "pcb_solder_paste": 20,
+        "pcb_silkscreen_path": 1,
+        "pcb_silkscreen_circle": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 20,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C53444",
+      "ref": "Q2",
+      "active_path": "imports/MMBT3906LT1G.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C53444/imports/MMBT3906LT1G.tsx",
+      "active_sha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a",
+      "candidate_sha256": "175d09eda8c68987f44c7ea9ab6bfa4e7abd0bc55ed25968b24957dec3c087ef",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 3,
+        "source_component": 1,
+        "source_net": 3,
+        "source_board": 1,
+        "source_refdes_convention_warning": 1,
+        "source_trace": 3,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 3,
+        "schematic_line": 3,
+        "schematic_symbol": 1,
+        "schematic_path": 4,
+        "schematic_text": 4,
+        "schematic_trace": 3,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 3,
+        "pcb_solder_paste": 3,
+        "pcb_silkscreen_path": 3,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 3,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_refdes_convention_warning",
+          "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+          "warning_type": "source_refdes_convention_warning",
+          "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+          "source_component_id": "source_component_0",
+          "refdes": "Q2",
+          "source_component_ftype": "simple_chip",
+          "expected_prefixes": [
+            "U",
+            "IC"
+          ],
+          "actual_prefix": "Q"
+        },
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "Q2 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "Q2 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on Q2 are underspecified (no pinAttributes set)"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C57112",
+      "ref": "C22",
+      "active_path": "imports/A_0603B103K500NT.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C57112/imports/A_0603B103K500NT.tsx",
+      "active_sha256": "f94d58f906b97c568d280edac96a7c06c35ce0b7165db8fefc50cdb9a977abef",
+      "candidate_sha256": "42af23cbda895418a46f2366b77e94e0b39d81babbf298745ba12c94209dba5a",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_PmUWKy9ymY",
+          "warning_type": "source_component_availability_warning",
+          "message": "C22 may not have availability from jlcpcb (C57112).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C57112"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C67470",
+      "ref": "U9",
+      "active_path": "imports/LM393DR.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C67470/imports/LM393DR.tsx",
+      "active_sha256": "5e20beaffa770f57c1fa179ea78b01bcb80522d6afcef13a9606db5f8cbf19db",
+      "candidate_sha256": "9e1dac82cc4bd8e4cb6f92f7ef871b737324f4bb2ea44387c3fe2564539de1f1",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 8,
+          "candidate_count": 8
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 8,
+        "source_component": 1,
+        "source_net": 8,
+        "source_board": 1,
+        "source_trace": 8,
+        "source_no_ground_pin_defined_warning": 1,
+        "schematic_component": 1,
+        "schematic_text": 10,
+        "schematic_group": 1,
+        "schematic_port": 8,
+        "schematic_trace": 8,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 8,
+        "pcb_solder_paste": 8,
+        "pcb_silkscreen_path": 6,
+        "pcb_silkscreen_circle": 1,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 8,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "U9 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2",
+            "source_port_3",
+            "source_port_4",
+            "source_port_5",
+            "source_port_6",
+            "source_port_7"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C6986",
+      "ref": "U6",
+      "active_path": "imports/TLC555CDR.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C6986/imports/TLC555CDR.tsx",
+      "active_sha256": "80964cdac247fc06fd8948bfc11c43e6743f1a480ef2105615fae7e7d7a3ea1b",
+      "candidate_sha256": "e40d9c2471c3adf2d164c62cd64e86a91d8fc1d462bb9a4f21ca17dde133cd80",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 8,
+          "candidate_count": 8
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 8,
+        "source_component": 1,
+        "source_net": 8,
+        "source_board": 1,
+        "source_trace": 8,
+        "schematic_component": 1,
+        "schematic_text": 10,
+        "schematic_group": 1,
+        "schematic_port": 8,
+        "schematic_trace": 8,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 8,
+        "pcb_solder_paste": 8,
+        "pcb_silkscreen_path": 6,
+        "pcb_silkscreen_circle": 1,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 8,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C7420353",
+      "ref": "Q1",
+      "active_path": "imports/MMBT3904.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C7420353/imports/MMBT3904.tsx",
+      "active_sha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "candidate_sha256": "fa301a7330a3df6cf1a0e407601edb60e7b5179462b9eba764ac7384f85c34b8",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 3,
+          "candidate_count": 3
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 3,
+        "source_component": 1,
+        "source_net": 3,
+        "source_board": 1,
+        "source_refdes_convention_warning": 1,
+        "source_trace": 3,
+        "source_no_power_pin_defined_warning": 1,
+        "source_no_ground_pin_defined_warning": 1,
+        "source_component_pins_underspecified_warning": 1,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 3,
+        "schematic_line": 3,
+        "schematic_symbol": 1,
+        "schematic_path": 4,
+        "schematic_text": 4,
+        "schematic_trace": 3,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 3,
+        "pcb_solder_paste": 3,
+        "pcb_silkscreen_path": 3,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 3,
+        "cad_component": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_refdes_convention_warning",
+          "source_refdes_convention_warning_id": "source_refdes_convention_warning_0",
+          "warning_type": "source_refdes_convention_warning",
+          "message": "The \"Q\" prefix is being used with a <chip />, try using it with a <transistor />",
+          "source_component_id": "source_component_0",
+          "refdes": "Q1",
+          "source_component_ftype": "simple_chip",
+          "expected_prefixes": [
+            "U",
+            "IC"
+          ],
+          "actual_prefix": "Q"
+        },
+        {
+          "type": "source_no_power_pin_defined_warning",
+          "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_0",
+          "warning_type": "source_no_power_pin_defined_warning",
+          "message": "Q1 has no pin with requires_power=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_no_ground_pin_defined_warning",
+          "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_0",
+          "warning_type": "source_no_ground_pin_defined_warning",
+          "message": "Q1 has no pin with requires_ground=true",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "source_component_pins_underspecified_warning",
+          "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_0",
+          "source_component_id": "source_component_0",
+          "source_port_ids": [
+            "source_port_0",
+            "source_port_1",
+            "source_port_2"
+          ],
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_component_pins_underspecified_warning",
+          "message": "All pins on Q1 are underspecified (no pinAttributes set)"
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C77083",
+      "ref": "C1",
+      "active_path": "imports/GRM21BR71H105KA12L.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C77083/imports/GRM21BR71H105KA12L.tsx",
+      "active_sha256": "02065c55ec3ab96a9a3f305102e3989d52c153723776d6043c62e9cd18ce9fa6",
+      "candidate_sha256": "ad456a6073fdbac98c019d7b786401cc80b44941ab33aafeba33b6a7b57b2912",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 10,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_gROBGcYKzq",
+          "warning_type": "source_component_availability_warning",
+          "message": "C1 may not have availability from jlcpcb (C77083).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C77083"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C844918",
+      "ref": "R5",
+      "active_path": "imports/CRCW060310K0FKEA.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C844918/imports/CRCW060310K0FKEA.tsx",
+      "active_sha256": "bb8cf3d001fe06c7cf2d1f7db55f7bf0954310500b009a438010f7fcc2cd0eb6",
+      "candidate_sha256": "167fd1ae784c5ec8657527afde28bdf76ac7f6709485187dcdb4d5236015726c",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_H4vj6LFVU8",
+          "warning_type": "source_component_availability_warning",
+          "message": "R5 may not have availability from jlcpcb (C844918).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C844918"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C855559",
+      "ref": "R60",
+      "active_path": "imports/AT0603BRD07100KL.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C855559/imports/AT0603BRD07100KL.tsx",
+      "active_sha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99",
+      "candidate_sha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_board": 1,
+        "source_pin_missing_trace_warning": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_pin_missing_trace_warning",
+          "source_pin_missing_trace_warning_id": "source_pin_missing_trace_warning_0",
+          "message": "Port pin1 on R60 is missing a trace",
+          "source_component_id": "source_component_0",
+          "source_port_id": "source_port_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_pin_missing_trace_warning"
+        },
+        {
+          "type": "source_pin_missing_trace_warning",
+          "source_pin_missing_trace_warning_id": "source_pin_missing_trace_warning_1",
+          "message": "Port pin2 on R60 is missing a trace",
+          "source_component_id": "source_component_0",
+          "source_port_id": "source_port_1",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_pin_missing_trace_warning"
+        },
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_zPGwQoCPQE",
+          "warning_type": "source_component_availability_warning",
+          "message": "R60 may not have availability from jlcpcb (C855559).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C855559"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C8598",
+      "ref": "D6",
+      "active_path": "imports/B5819W_SL.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C8598/imports/B5819W_SL.tsx",
+      "active_sha256": "7a11383d915188d9ae949f11683e74558f42ec89c962fe61ade095f811d48b4a",
+      "candidate_sha256": "f86fbb8d766721394f154a6212750cdad3c16213140d06ea7757fefa106fc2f7",
+      "byte_identical": false,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": false,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_net": 2,
+        "source_board": 1,
+        "source_trace": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "schematic_trace": 2,
+        "schematic_text": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 12,
+        "pcb_silkscreen_text": 1,
+        "pcb_fabrication_note_path": 4,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_FUQCFf6AY0",
+          "warning_type": "source_component_availability_warning",
+          "message": "D6 may not have availability from jlcpcb (C8598).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C8598"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    },
+    {
+      "code": "C95204",
+      "ref": "R61",
+      "active_path": "imports/RT0603BRD0710KL.tsx",
+      "candidate_path": "tooling/supplier-reimports-A49/C95204/imports/RT0603BRD0710KL.tsx",
+      "active_sha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81",
+      "candidate_sha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81",
+      "byte_identical": true,
+      "feature_comparisons": {
+        "copper_holes_and_vias": {
+          "identical": true,
+          "active_count": 2,
+          "candidate_count": 2
+        },
+        "courtyards": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "schematic_ports": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        },
+        "cad_model": {
+          "identical": true,
+          "active_count": 1,
+          "candidate_count": 1
+        },
+        "pin_labels": {
+          "identical": true,
+          "active_count": 0,
+          "candidate_count": 0
+        }
+      },
+      "element_counts": {
+        "schematic_sheet": 1,
+        "source_group": 1,
+        "source_port": 2,
+        "source_component": 1,
+        "source_board": 1,
+        "source_pin_missing_trace_warning": 2,
+        "schematic_component": 1,
+        "schematic_group": 1,
+        "schematic_port": 2,
+        "pcb_component": 1,
+        "pcb_board": 1,
+        "pcb_smtpad": 2,
+        "pcb_solder_paste": 2,
+        "pcb_silkscreen_path": 2,
+        "pcb_silkscreen_text": 1,
+        "pcb_courtyard_outline": 1,
+        "pcb_port": 2,
+        "cad_component": 1,
+        "source_component_availability_warning": 1,
+        "source_project_metadata": 1
+      },
+      "native_diagnostics": [
+        {
+          "type": "source_pin_missing_trace_warning",
+          "source_pin_missing_trace_warning_id": "source_pin_missing_trace_warning_0",
+          "message": "Port pin1 on R61 is missing a trace",
+          "source_component_id": "source_component_0",
+          "source_port_id": "source_port_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_pin_missing_trace_warning"
+        },
+        {
+          "type": "source_pin_missing_trace_warning",
+          "source_pin_missing_trace_warning_id": "source_pin_missing_trace_warning_1",
+          "message": "Port pin2 on R61 is missing a trace",
+          "source_component_id": "source_component_0",
+          "source_port_id": "source_port_1",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "warning_type": "source_pin_missing_trace_warning"
+        },
+        {
+          "type": "source_component_availability_warning",
+          "source_component_availability_warning_id": "source_component_availability_warning_FeodQvRsr4",
+          "warning_type": "source_component_availability_warning",
+          "message": "R61 may not have availability from jlcpcb (C95204).",
+          "source_component_id": "source_component_0",
+          "subcircuit_id": "subcircuit_source_group_0",
+          "supplier_name": "jlcpcb",
+          "supplier_part_numbers": [
+            "C95204"
+          ]
+        }
+      ],
+      "paste_centered_on_tht": [],
+      "limitations": "Source/probe comparison only. Stock, manufacturer fit, whole-board validation and stencil approval are separate."
+    }
+  ],
+  "sampled_peak_rss_kib": 1182592,
+  "adopted_into_production": false,
+  "routing_enabled": false
+}

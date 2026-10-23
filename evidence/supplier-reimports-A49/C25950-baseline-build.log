@@ -1,0 +1,12 @@
+Building 1 file(s)...
+Building baseline.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/baseline/circuit.json
+R65 may not have availability from jlcpcb (C25950).
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

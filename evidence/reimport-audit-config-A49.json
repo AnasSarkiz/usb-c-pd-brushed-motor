@@ -1,0 +1,5 @@
+{
+  "revision": "A49 official published toolchain candidate",
+  "manifestPath": "evidence/supplier-reimports-A49/manifest.json",
+  "reportPath": "evidence/active-import-audit-A49.json"
+}

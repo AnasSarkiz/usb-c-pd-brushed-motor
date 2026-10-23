@@ -1,0 +1,377 @@
+{
+  "source_commit": "9d8b45b5d6fcde027a7b5a3f671f3a3e1b8c280f",
+  "records": [
+    {
+      "path": "package.json",
+      "bytes": 2081,
+      "sha256": "df3987be734b5d5d8c6b157f09cf676b58b4b3c36beeef007ab47374d9873072",
+      "archive": "evidence/preupgrade-A49/package.json.txt"
+    },
+    {
+      "path": "bun.lock",
+      "bytes": 84979,
+      "sha256": "660ecd1fb0d923646f91413e6e7f6c54ba569736c6b757f21f8e6a8c6ad11c75",
+      "archive": "evidence/preupgrade-A49/bun.lock.txt"
+    },
+    {
+      "path": "tscircuit.config.json",
+      "bytes": 144,
+      "sha256": "22c2cefeeabcee5931e1d01a7a6316b4577a9084b7fcedea05500e39d0baf3ef",
+      "archive": "evidence/preupgrade-A49/tscircuit.config.json.txt"
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 2730148,
+      "sha256": "ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3",
+      "archive": "evidence/preupgrade-A49/dist/index/circuit.json.txt"
+    },
+    {
+      "path": "imports/AO3400A.tsx",
+      "bytes": 3812,
+      "sha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6",
+      "archive": "evidence/preupgrade-A49/imports/AO3400A.tsx.txt"
+    },
+    {
+      "path": "imports/AT0603BRD07100KL.tsx",
+      "bytes": 1902,
+      "sha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99",
+      "archive": "evidence/preupgrade-A49/imports/AT0603BRD07100KL.tsx.txt"
+    },
+    {
+      "path": "imports/A_0402WGF3301TCE.tsx",
+      "bytes": 1878,
+      "sha256": "3b9cf6de2088a252c5e3da65ae3d9667df8fd38602f47bcc99def2f0dada2731",
+      "archive": "evidence/preupgrade-A49/imports/A_0402WGF3301TCE.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603B103K500NT.tsx",
+      "bytes": 2886,
+      "sha256": "f94d58f906b97c568d280edac96a7c06c35ce0b7165db8fefc50cdb9a977abef",
+      "archive": "evidence/preupgrade-A49/imports/A_0603B103K500NT.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF1001T5E.tsx",
+      "bytes": 1892,
+      "sha256": "5902e8307dd04e282fc33a5c3a8637a05b4bc0c6265ec150b6acc1e2dd8cfdfb",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF1001T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF1003T5E.tsx",
+      "bytes": 1894,
+      "sha256": "03a087ff0e23fdbfbb78619d3019aa2d705a0a18edf8f5775a2ad35736129777",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF1003T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF1004T5E.tsx",
+      "bytes": 1892,
+      "sha256": "8bfdabf9cf75e71e43a99391224c435e7479bfe2f93e568790d217ec6826f929",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF1004T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF1102T5E.tsx",
+      "bytes": 851,
+      "sha256": "e52692c9e5924cd71491838f6bd50920b881d6fe1b243d75bb717affc40651f5",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF1102T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF1202T5E.tsx",
+      "bytes": 1893,
+      "sha256": "ab5764c0cdd81a1b6114f7728a2a090ab236eca3b37687d1e1d8e856b8f36695",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF1202T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF1623T5E.tsx",
+      "bytes": 1894,
+      "sha256": "cffc68d597f9996543e2183ef0e0af30581079956d933a7004f2e1a79642a089",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF1623T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF2001T5E.tsx",
+      "bytes": 1895,
+      "sha256": "251cc9030dc8096b74016eb21a07bb8f28f15a7210499c4673a242a88aa57077",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF2001T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF2002T5E.tsx",
+      "bytes": 1890,
+      "sha256": "75957bbcc45f275e2a0560bd86b246d8c6a223144936821aec5a351074a5cdef",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF2002T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF2102T5E.tsx",
+      "bytes": 1893,
+      "sha256": "b42069dd4e1311c8f6eb6947ea81dc4356c8b4432ebb816919221643bec14c22",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF2102T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF2702T5E.tsx",
+      "bytes": 1893,
+      "sha256": "fd8a8ace33b6046e96b7700fa2b4791bf6c0e177eadc9bfa3ef3812dc9fead22",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF2702T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF3300T5E.tsx",
+      "bytes": 1893,
+      "sha256": "942c41cd7d58ee6a0290f6a090277c2b9a2875c50dd9465edaa5aedac91026e6",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF3300T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF4701T5E.tsx",
+      "bytes": 1897,
+      "sha256": "7d47f4ea58f80777dd9d5c5eadd4332639c687c11e320a7223ba12983b59d109",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF4701T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF5101T5E.tsx",
+      "bytes": 1894,
+      "sha256": "27f22e23e54192f5bac6a357c2a79509f81007988352553e78c8a44833805070",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF5101T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_0603WAF6981T5E.tsx",
+      "bytes": 1898,
+      "sha256": "ffdcc9d4f748b20bc7d60213769060137d54146c130a979a431bc42671ee6850",
+      "archive": "evidence/preupgrade-A49/imports/A_0603WAF6981T5E.tsx.txt"
+    },
+    {
+      "path": "imports/A_19_217_G7C_AN1P2_6T.tsx",
+      "bytes": 3805,
+      "sha256": "c2bafbbedfc255df5e274606ff00eac4347fd9549fef10bf4b2686c53f75d69f",
+      "archive": "evidence/preupgrade-A49/imports/A_19_217_G7C_AN1P2_6T.tsx.txt"
+    },
+    {
+      "path": "imports/A_1MS3T1B1M2QES_5.tsx",
+      "bytes": 2394,
+      "sha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de",
+      "archive": "evidence/preupgrade-A49/imports/A_1MS3T1B1M2QES_5.tsx.txt"
+    },
+    {
+      "path": "imports/A_35SVPK330M.tsx",
+      "bytes": 2876,
+      "sha256": "81434531148c497612f0806dba8f336433d326a695d969beeed2eb408cec7987",
+      "archive": "evidence/preupgrade-A49/imports/A_35SVPK330M.tsx.txt"
+    },
+    {
+      "path": "imports/A_5015.tsx",
+      "bytes": 1385,
+      "sha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8",
+      "archive": "evidence/preupgrade-A49/imports/A_5015.tsx.txt"
+    },
+    {
+      "path": "imports/B5819W_SL.tsx",
+      "bytes": 4206,
+      "sha256": "7a11383d915188d9ae949f11683e74558f42ec89c962fe61ade095f811d48b4a",
+      "archive": "evidence/preupgrade-A49/imports/B5819W_SL.tsx.txt"
+    },
+    {
+      "path": "imports/BZT52C10.tsx",
+      "bytes": 3998,
+      "sha256": "0343e82f6274fedd7475112549678e9a28cafa45d8fcb2681a906b3096834fd5",
+      "archive": "evidence/preupgrade-A49/imports/BZT52C10.tsx.txt"
+    },
+    {
+      "path": "imports/BZT52C24.tsx",
+      "bytes": 3998,
+      "sha256": "8ae660a88c78bbeaceb386fc84c54cd61f462132b0d24e1028d0b93e87230f8b",
+      "archive": "evidence/preupgrade-A49/imports/BZT52C24.tsx.txt"
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104.tsx",
+      "bytes": 2891,
+      "sha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2",
+      "archive": "evidence/preupgrade-A49/imports/CC0603KRX7R9BB104.tsx.txt"
+    },
+    {
+      "path": "imports/CL10A475KO8NNNC.tsx",
+      "bytes": 2887,
+      "sha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462",
+      "archive": "evidence/preupgrade-A49/imports/CL10A475KO8NNNC.tsx.txt"
+    },
+    {
+      "path": "imports/CL10B223KB8NNNC.tsx",
+      "bytes": 2886,
+      "sha256": "9da3dedeadd7fdd03ee32c819841773086149daed2f086c13a36f0ecc74f9cb1",
+      "archive": "evidence/preupgrade-A49/imports/CL10B223KB8NNNC.tsx.txt"
+    },
+    {
+      "path": "imports/CL10C220JB8NNNC.tsx",
+      "bytes": 2883,
+      "sha256": "41cc61b4d9466ec5f554480830bdf048d1b47fa5fc09c6e9d9427215166a4d56",
+      "archive": "evidence/preupgrade-A49/imports/CL10C220JB8NNNC.tsx.txt"
+    },
+    {
+      "path": "imports/CL32B106KBJNNNE.tsx",
+      "bytes": 2880,
+      "sha256": "1e82266b998724227ca723578b492d42c2b82bc123c0f5e60a769c9c58abddb0",
+      "archive": "evidence/preupgrade-A49/imports/CL32B106KBJNNNE.tsx.txt"
+    },
+    {
+      "path": "imports/CRCW060310K0FKEA.tsx",
+      "bytes": 1898,
+      "sha256": "bb8cf3d001fe06c7cf2d1f7db55f7bf0954310500b009a438010f7fcc2cd0eb6",
+      "archive": "evidence/preupgrade-A49/imports/CRCW060310K0FKEA.tsx.txt"
+    },
+    {
+      "path": "imports/DB126V_5_0_2P_GN_P.tsx",
+      "bytes": 2072,
+      "sha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0",
+      "archive": "evidence/preupgrade-A49/imports/DB126V_5_0_2P_GN_P.tsx.txt"
+    },
+    {
+      "path": "imports/DRV8874PWPR.tsx",
+      "bytes": 4898,
+      "sha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7",
+      "archive": "evidence/preupgrade-A49/imports/DRV8874PWPR.tsx.txt"
+    },
+    {
+      "path": "imports/DSHP02TSGER.tsx",
+      "bytes": 10360,
+      "sha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa",
+      "archive": "evidence/preupgrade-A49/imports/DSHP02TSGER.tsx.txt"
+    },
+    {
+      "path": "imports/ESR18EZPF1001.tsx",
+      "bytes": 1853,
+      "sha256": "5bd8e0a6639e7ac4d34d826219eaf66a58771b5c54028b714707512b8ccfdd76",
+      "archive": "evidence/preupgrade-A49/imports/ESR18EZPF1001.tsx.txt"
+    },
+    {
+      "path": "imports/GRM1885C1H562JA01D.tsx",
+      "bytes": 2896,
+      "sha256": "ae57d221c1ca4ea607bbcd93bf844c40ccdfe0a2f5b22ebd8dc95de4da1f121f",
+      "archive": "evidence/preupgrade-A49/imports/GRM1885C1H562JA01D.tsx.txt"
+    },
+    {
+      "path": "imports/GRM21BR71H105KA12L.tsx",
+      "bytes": 2902,
+      "sha256": "02065c55ec3ab96a9a3f305102e3989d52c153723776d6043c62e9cd18ce9fa6",
+      "archive": "evidence/preupgrade-A49/imports/GRM21BR71H105KA12L.tsx.txt"
+    },
+    {
+      "path": "imports/GRM31CR61E476ME44L.tsx",
+      "bytes": 2871,
+      "sha256": "567d871c3c483e2e156691930e842185fc85e758eb6878d32403e22c8486ed1b",
+      "archive": "evidence/preupgrade-A49/imports/GRM31CR61E476ME44L.tsx.txt"
+    },
+    {
+      "path": "imports/LM393DR.tsx",
+      "bytes": 3757,
+      "sha256": "5e20beaffa770f57c1fa179ea78b01bcb80522d6afcef13a9606db5f8cbf19db",
+      "archive": "evidence/preupgrade-A49/imports/LM393DR.tsx.txt"
+    },
+    {
+      "path": "imports/MHCC10040_8R2M_R7.tsx",
+      "bytes": 2105,
+      "sha256": "12de0c462a2c8eb5be066751305f75721305a15c302f6b3acd0575cc9617d35a",
+      "archive": "evidence/preupgrade-A49/imports/MHCC10040_8R2M_R7.tsx.txt"
+    },
+    {
+      "path": "imports/MMBT3904.tsx",
+      "bytes": 2923,
+      "sha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab",
+      "archive": "evidence/preupgrade-A49/imports/MMBT3904.tsx.txt"
+    },
+    {
+      "path": "imports/MMBT3906LT1G.tsx",
+      "bytes": 2926,
+      "sha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a",
+      "archive": "evidence/preupgrade-A49/imports/MMBT3906LT1G.tsx.txt"
+    },
+    {
+      "path": "imports/PESD24VS2UT_215.tsx",
+      "bytes": 3246,
+      "sha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55",
+      "archive": "evidence/preupgrade-A49/imports/PESD24VS2UT_215.tsx.txt"
+    },
+    {
+      "path": "imports/PTV09A_4015F_B103.tsx",
+      "bytes": 5146,
+      "sha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6",
+      "archive": "evidence/preupgrade-A49/imports/PTV09A_4015F_B103.tsx.txt"
+    },
+    {
+      "path": "imports/RPL_12K10R0FT.tsx",
+      "bytes": 1877,
+      "sha256": "2438409a625ad7fe574c01aa43f88ad235a40c0af5e2566c64a9048e32b64a87",
+      "archive": "evidence/preupgrade-A49/imports/RPL_12K10R0FT.tsx.txt"
+    },
+    {
+      "path": "imports/RT0603BRD0710KL.tsx",
+      "bytes": 1896,
+      "sha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81",
+      "archive": "evidence/preupgrade-A49/imports/RT0603BRD0710KL.tsx.txt"
+    },
+    {
+      "path": "imports/SMBJ15CA.tsx",
+      "bytes": 2739,
+      "sha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508",
+      "archive": "evidence/preupgrade-A49/imports/SMBJ15CA.tsx.txt"
+    },
+    {
+      "path": "imports/SMBJ22A.tsx",
+      "bytes": 3467,
+      "sha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1",
+      "archive": "evidence/preupgrade-A49/imports/SMBJ22A.tsx.txt"
+    },
+    {
+      "path": "imports/SS54.tsx",
+      "bytes": 3006,
+      "sha256": "dbb814bf82b9771e25ab0b4b970f526310234853c749be7ecbe4055bcb516c6c",
+      "archive": "evidence/preupgrade-A49/imports/SS54.tsx.txt"
+    },
+    {
+      "path": "imports/STM32G030F6P6TR.tsx",
+      "bytes": 11802,
+      "sha256": "8341d8be4d4d2ba11868533ad8cb0fe51462fffd50b2418151e2fc2106332b63",
+      "archive": "evidence/preupgrade-A49/imports/STM32G030F6P6TR.tsx.txt"
+    },
+    {
+      "path": "imports/STUSB4500QTR.tsx",
+      "bytes": 6127,
+      "sha256": "f9acdc195538fe06d3ad46bf0a1ee3b4014e2de9c7c58731866a34c0d231f1d7",
+      "archive": "evidence/preupgrade-A49/imports/STUSB4500QTR.tsx.txt"
+    },
+    {
+      "path": "imports/TL431AIDBZR.tsx",
+      "bytes": 3037,
+      "sha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff",
+      "archive": "evidence/preupgrade-A49/imports/TL431AIDBZR.tsx.txt"
+    },
+    {
+      "path": "imports/TLC555CDR.tsx",
+      "bytes": 3748,
+      "sha256": "80964cdac247fc06fd8948bfc11c43e6743f1a480ef2105615fae7e7d7a3ea1b",
+      "archive": "evidence/preupgrade-A49/imports/TLC555CDR.tsx.txt"
+    },
+    {
+      "path": "imports/TPS16630PWPR.tsx",
+      "bytes": 5478,
+      "sha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b",
+      "archive": "evidence/preupgrade-A49/imports/TPS16630PWPR.tsx.txt"
+    },
+    {
+      "path": "imports/TPS54360DDAR.tsx",
+      "bytes": 3578,
+      "sha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2",
+      "archive": "evidence/preupgrade-A49/imports/TPS54360DDAR.tsx.txt"
+    },
+    {
+      "path": "imports/TPS7A1633DGNR.tsx",
+      "bytes": 3042,
+      "sha256": "c78527d69b202bbb0a416928a072cd0ffabecea2adf05b60df3ece5bac8b54e2",
+      "archive": "evidence/preupgrade-A49/imports/TPS7A1633DGNR.tsx.txt"
+    },
+    {
+      "path": "imports/TPS7A1650DGNR.tsx",
+      "bytes": 3042,
+      "sha256": "9468fa1522c45d3420702b99400458cb24fbd0b29e06296f630be1f87503479b",
+      "archive": "evidence/preupgrade-A49/imports/TPS7A1650DGNR.tsx.txt"
+    },
+    {
+      "path": "imports/USB4105_GF_A_120.tsx",
+      "bytes": 4632,
+      "sha256": "5bb92117e8ddaec3df02d6e430a9685fae350dadaa574a02b977970917aa4bcf",
+      "archive": "evidence/preupgrade-A49/imports/USB4105_GF_A_120.tsx.txt"
+    }
+  ]
+}

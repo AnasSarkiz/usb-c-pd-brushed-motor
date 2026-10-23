@@ -1,0 +1,18 @@
+--- imports/A_0603WAF1102T5E.tsx
++++ tooling/supplier-reimports-A49/C25950/imports/A_0603WAF1102T5E.tsx
+@@ -13,7 +13,14 @@
+   ]
+ }}
+       manufacturerPartNumber="0603WAF1102T5E"
+-      footprint="smdpads2_p1.5067mm_pw0.8065mm_ph0.864mm_cyw2.8132mm_cyh1.364mm"
++      footprint={<footprint>
++        <smtpad portHints={["pin2"]} pcbX="0.753364mm" pcbY="0mm" width="0.8064754mm" height="0.8640064mm" shape="rect" />
++<smtpad portHints={["pin1"]} pcbX="-0.753364mm" pcbY="0mm" width="0.8064754mm" height="0.8640064mm" shape="rect" />
++<silkscreenpath route={[{"x":0.42621199999996406,"y":-0.6606031999999686},{"x":1.3850873999999749,"y":-0.6606031999999686},{"x":1.3850873999999749,"y":0.6606031999999686},{"x":0.42621199999996406,"y":0.6606031999999686}]} />
++<silkscreenpath route={[{"x":-0.42621200000007775,"y":-0.6606031999999686},{"x":-1.3850874000000886,"y":-0.6606031999999686},{"x":-1.3850874000000886,"y":0.6606031999999686},{"x":-0.42621200000007775,"y":0.6606031999999686}]} />
++<silkscreentext text="{NAME}" pcbX="-0.0127mm" pcbY="1.6604mm" anchorAlignment="center" fontSize="1mm" />
++<courtyardoutline outline={[{"x":-1.4066016999998965,"y":0.6820032000000538},{"x":1.4066016999997828,"y":0.6820032000000538},{"x":1.4066016999997828,"y":-0.6820032000000538},{"x":-1.4066016999998965,"y":-0.6820032000000538},{"x":-1.4066016999998965,"y":0.6820032000000538}]} />
++      </footprint>}
+       cadModel={{
+         objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C25950.obj?uuid=6bd5cd867e9542ebae21caaf5d2d4c4d",
+         stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C25950.step?uuid=6bd5cd867e9542ebae21caaf5d2d4c4d",

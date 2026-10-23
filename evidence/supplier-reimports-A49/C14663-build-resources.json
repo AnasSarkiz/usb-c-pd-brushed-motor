@@ -1,0 +1,19 @@
+{
+  "command": [
+    "bunx",
+    "tsci",
+    "build",
+    "probe.circuit.tsx",
+    "--routing-disabled",
+    "--schematic-svgs",
+    "--pcb-svgs"
+  ],
+  "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C14663",
+  "exit_code": 0,
+  "stop_reason": null,
+  "sampled_process_tree_peak_rss_kib": 823840,
+  "limit_mib": 2048,
+  "elapsed_seconds": 2.06,
+  "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C14663-build.log",
+  "log_sha256": "13f15c65ddbf12ccbde74e681549321d87d5d6f1a30078b9711710e229bb6bfe"
+}

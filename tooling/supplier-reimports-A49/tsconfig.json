@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": "."
+  },
+  "include": [
+    "*/imports/*.tsx",
+    "*/probe.circuit.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

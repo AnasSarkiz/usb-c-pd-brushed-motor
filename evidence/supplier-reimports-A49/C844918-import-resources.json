@@ -1,0 +1,18 @@
+{
+  "command": [
+    "bunx",
+    "tsci",
+    "import",
+    "C844918",
+    "--jlcpcb",
+    "--use-exact-footprint"
+  ],
+  "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C844918",
+  "exit_code": 0,
+  "stop_reason": null,
+  "sampled_process_tree_peak_rss_kib": 812992,
+  "limit_mib": 2048,
+  "elapsed_seconds": 4.72,
+  "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C844918-import.log",
+  "log_sha256": "1e16f47c883eb2055afef5e938f13771ad00529389533bab4cb73fcaa775821a"
+}

@@ -1,0 +1,8 @@
+{
+  "@tscircuit/cli": "0.1.2402",
+  "@tscircuit/core": "0.0.2199",
+  "@tscircuit/props": "0.0.709",
+  "@tscircuit/capacity-autorouter": "0.0.1003",
+  "circuit-json": "0.0.534",
+  "tscircuit": "0.0.3008"
+}

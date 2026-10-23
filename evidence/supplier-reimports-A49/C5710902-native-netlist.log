@@ -1,0 +1,23 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - RV1: PTV09A-4015F-B103
+
+
+EMPTY NET PINS:
+  - RV1 pin1
+  - RV1 pin2
+  - RV1 pin3
+  - RV1 pin4
+  - RV1 pin5
+
+COMPONENT_PINS:
+RV1 (PTV09A-4015F-B103)
+- pin1: NETS(PROBE_0)
+- pin2: NETS(PROBE_1)
+- pin3: NETS(PROBE_2)
+- pin4: NETS(PROBE_3)
+- pin5: NETS(PROBE_4)
+

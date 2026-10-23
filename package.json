@@ -29,23 +29,18 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
-    "@tscircuit/cli": "0.1.2237",
+    "@tscircuit/cli": "0.1.2402",
     "@types/bun": "1.4.2",
-    "tscircuit": "0.0.2744",
+    "tscircuit": "0.0.3008",
     "typescript": "5.9.3"
   },
   "author": "AnasSarkiz",
   "private": true,
   "dependencies": {
-    "@tscircuit/capacity-autorouter": "./tooling/tscircuit-capacity-autorouter-0.0.960-a42.tgz",
-    "@tscircuit/core": "./tooling/tscircuit-core-0.0.2091-a41.tgz",
-    "@tscircuit/props": "./tooling/tscircuit-props-0.0.683-A22.tgz",
-    "circuit-json": "0.0.517"
-  },
-  "overrides": {
-    "@tscircuit/core": "file:./tooling/tscircuit-core-0.0.2091-a41.tgz",
-    "@tscircuit/props": "file:./tooling/tscircuit-props-0.0.683-A22.tgz",
-    "@tscircuit/capacity-autorouter": "file:./tooling/tscircuit-capacity-autorouter-0.0.960-a42.tgz"
+    "@tscircuit/capacity-autorouter": "0.0.1003",
+    "@tscircuit/core": "0.0.2199",
+    "@tscircuit/props": "0.0.709",
+    "circuit-json": "0.0.534"
   },
   "packageManager": "bun@1.4.2"
 }

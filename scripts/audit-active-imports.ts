@@ -23,6 +23,7 @@ const manifest = z
       ref: z.string(),
       code: z.string(),
       import_path: z.string(),
+      probe_path: z.string().optional(),
       pins: z.record(z.string(), z.string()),
       nc: z.array(z.string()),
     }),
@@ -32,8 +33,11 @@ const issues: string[] = []
 const parts = []
 let totalPcbTraces = 0
 for (const part of manifest) {
-  const path = `dist/tests/supplier-audit/${part.code}/circuit.json`
-  const raw: unknown = JSON.parse(await readFile(path, "utf8"))
+  const path =
+    part.probe_path ?? `dist/tests/supplier-audit/${part.code}/circuit.json`
+  const serialized = await readFile(path, "utf8")
+  const probeSha256 = createHash("sha256").update(serialized).digest("hex")
+  const raw: unknown = JSON.parse(serialized)
   const parsed = z.array(any_circuit_element).safeParse(raw)
   const sourceSha256 = createHash("sha256")
     .update(await readFile(part.import_path))
@@ -43,6 +47,7 @@ for (const part of manifest) {
       code: part.code,
       ref: part.ref,
       sourceSha256,
+      probeSha256,
       path,
       schemaIssues: parsed.error.issues,
       status: "failed",
@@ -132,6 +137,7 @@ for (const part of manifest) {
     code: part.code,
     ref: part.ref,
     sourceSha256,
+    probeSha256,
     path,
     ports,
     pcbTraceCount,

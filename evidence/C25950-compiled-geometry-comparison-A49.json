@@ -1,0 +1,132 @@
+{
+  "supplier": "C25950",
+  "comparison": "Same latest compiler; old active definition versus fresh official exact-footprint definition",
+  "rounding_decimals_mm": 9,
+  "types": {
+    "pcb_via": {
+      "equal": true,
+      "old": [],
+      "fresh": []
+    },
+    "pcb_plated_hole": {
+      "equal": true,
+      "old": [],
+      "fresh": []
+    },
+    "pcb_hole": {
+      "equal": true,
+      "old": [],
+      "fresh": []
+    },
+    "cad_component": {
+      "equal": true,
+      "old": [
+        {
+          "type": "cad_component",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0.7
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "model_obj_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C25950.obj?uuid=6bd5cd867e9542ebae21caaf5d2d4c4d&cachebust_origin=",
+          "model_step_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C25950.step?uuid=6bd5cd867e9542ebae21caaf5d2d4c4d&cachebust_origin=",
+          "model_origin_alignment": "center_of_component_on_board_surface",
+          "anchor_alignment": "center_of_component_on_board_surface",
+          "model_origin_position": {
+            "x": -0.005,
+            "y": 0,
+            "z": -0.01
+          }
+        }
+      ],
+      "fresh": [
+        {
+          "type": "cad_component",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0.7
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "model_obj_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C25950.obj?uuid=6bd5cd867e9542ebae21caaf5d2d4c4d&cachebust_origin=",
+          "model_step_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C25950.step?uuid=6bd5cd867e9542ebae21caaf5d2d4c4d&cachebust_origin=",
+          "model_origin_alignment": "center_of_component_on_board_surface",
+          "anchor_alignment": "center_of_component_on_board_surface",
+          "model_origin_position": {
+            "x": -0.005,
+            "y": 0,
+            "z": -0.01
+          }
+        }
+      ]
+    },
+    "pcb_smtpad": {
+      "equal": false,
+      "old": [
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "rect",
+          "width": 0.8065,
+          "height": 0.864,
+          "port_hints": [
+            "1"
+          ],
+          "is_covered_with_solder_mask": false,
+          "x": -0.75335,
+          "y": 0
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "rect",
+          "width": 0.8065,
+          "height": 0.864,
+          "port_hints": [
+            "2"
+          ],
+          "is_covered_with_solder_mask": false,
+          "x": 0.75335,
+          "y": 0
+        }
+      ],
+      "fresh": [
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "rect",
+          "width": 0.8064754,
+          "height": 0.8640064,
+          "port_hints": [
+            "pin1"
+          ],
+          "is_covered_with_solder_mask": false,
+          "x": -0.753364,
+          "y": 0
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "rect",
+          "width": 0.8064754,
+          "height": 0.8640064,
+          "port_hints": [
+            "pin2"
+          ],
+          "is_covered_with_solder_mask": false,
+          "x": 0.753364,
+          "y": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+--- imports/CC0603KRX7R9BB104.tsx
++++ tooling/supplier-reimports-A49/C14663/imports/CC0603KRX7R9BB104.tsx
+@@ -1,4 +1,9 @@
+ import type { CapacitorProps } from "@tscircuit/props"
++
++const pinAttributes = {
++  pin2: {isPassive: true},
++  pin1: {isPassive: true}
++} satisfies NonNullable<CapacitorProps["pinAttributes"]>
+ 
+ export const CC0603KRX7R9BB104 = (props: Omit<CapacitorProps, "capacitance">) => {
+   const { name = "C1", ...restProps } = props
+@@ -13,6 +18,7 @@
+   ]
+ }}
+       manufacturerPartNumber="CC0603KRX7R9BB104"
++      pinAttributes={pinAttributes}
+       footprint={<footprint>
+         <smtpad portHints={["pin2"]} pcbX="0.700024mm" pcbY="0mm" width="0.7999984mm" height="0.8999982mm" shape="rect" />
+ <smtpad portHints={["pin1"]} pcbX="-0.700024mm" pcbY="0mm" width="0.7999984mm" height="0.8999982mm" shape="rect" />
+@@ -27,7 +33,7 @@
+ <silkscreenpath route={[{"x":-1.0801096000000143,"y":-0.7095743999998376},{"x":-1.2991755087698493,"y":-0.6188185485625581},{"x":-1.3899134000000686,"y":-0.3997452000000976}]} />
+ <silkscreenpath route={[{"x":-1.3899134000000686,"y":0.40022780000003877},{"x":-1.2991934705021322,"y":0.6193339880503572},{"x":-1.0801096000000143,"y":0.7101078000000598}]} />
+ <silkscreentext text="{NAME}" pcbX="-0.0127mm" pcbY="1.7112mm" anchorAlignment="center" fontSize="1mm" />
+-<courtyardoutline outline={[{"x":-1.647000000000162,"y":0.9612000000000762},{"x":1.6216000000000577,"y":0.9612000000000762},{"x":1.6216000000000577,"y":-0.9611999999999625},{"x":-1.647000000000162,"y":-0.9611999999999625},{"x":-1.647000000000162,"y":0.9612000000000762}]} />
++<courtyardoutline outline={[{"x":-1.3500232000000096,"y":0.6999991000000136},{"x":1.350023199999896,"y":0.6999991000000136},{"x":1.350023199999896,"y":-0.6999991000000136},{"x":-1.3500232000000096,"y":-0.6999991000000136},{"x":-1.3500232000000096,"y":0.6999991000000136}]} />
+       </footprint>}
+       cadModel={{
+         objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C14663.obj?uuid=ac9b32e974bc448eab36b1293f859dcb",

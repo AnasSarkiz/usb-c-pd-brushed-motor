@@ -1,0 +1,17 @@
+{
+  "command": [
+    "bunx",
+    "tsci",
+    "build",
+    "baseline.circuit.tsx",
+    "--routing-disabled"
+  ],
+  "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C529330",
+  "exit_code": 0,
+  "stop_reason": null,
+  "sampled_process_tree_peak_rss_kib": 854624,
+  "limit_mib": 2048,
+  "elapsed_seconds": 3.12,
+  "log": "evidence/supplier-reimports-A49/C529330-baseline-build.log",
+  "log_sha256": "7066d4aef64269ad097686aadf6dc7fd32bc5a0e95177e6d866c9c01663f1232"
+}

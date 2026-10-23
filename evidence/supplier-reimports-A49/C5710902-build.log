@@ -1,0 +1,21 @@
+Building 1 file(s)...
+Building probe.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/probe/circuit.json
+The "R" prefix is being used with a <chip />, try using it with a <resistor />
+RV1 has no pin with requires_power=true
+RV1 has no pin with requires_ground=true
+All pins on RV1 are underspecified (no pinAttributes set)
+Generating preview images...
+[probe] Generating PCB SVG...
+[probe] Written pcb.svg
+[probe] Generating schematic SVG...
+[probe] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

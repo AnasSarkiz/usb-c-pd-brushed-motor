@@ -1,3 +1,14 @@
+# A49 candidate update is blocked — 2026-10-23
+
+Latest official tscircuit0.0.3008/CLI0.1.2402 are installed; all58 fresh JLCPCB
+imports build and pass isolated TypeScript/schema/electrical pin-pad checks.
+Whole-board TypeScript still fails because the published API lacks two previous
+project-local features (THT paste selection and breakout-point layer).
+Fresh imports are staged; active supplier parts and approved USB-C pad shifts
+are preserved. Do not route or publish a new board build until migration passes.
+The tracked circuit JSON/public package remain the prior A48 artifact.
+Read docs/TOOLCHAIN-REIMPORT-A49.md and the newest VALIDATION.md section first.
+
 # A48 — Codex Cloud handoff
 
 Read this first, then `AGENTS.md`, `SETUP.md`, `START-TASK.md`, the current top of

@@ -1,0 +1,640 @@
+{
+  "supplier": "C529330",
+  "comparison": "Same latest compiler; old active definition versus fresh official exact-footprint definition",
+  "rounding_decimals_mm": 9,
+  "types": {
+    "pcb_via": {
+      "equal": true,
+      "old": [],
+      "fresh": []
+    },
+    "pcb_plated_hole": {
+      "equal": true,
+      "old": [],
+      "fresh": []
+    },
+    "pcb_hole": {
+      "equal": true,
+      "old": [],
+      "fresh": []
+    },
+    "cad_component": {
+      "equal": true,
+      "old": [
+        {
+          "type": "cad_component",
+          "position": {
+            "x": -0.0,
+            "y": 0,
+            "z": 0.7
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "model_obj_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C529330.obj?uuid=f8ba5b4174b9490d8c445fbe2ed40b80&cachebust_origin=",
+          "model_step_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C529330.step?uuid=f8ba5b4174b9490d8c445fbe2ed40b80&cachebust_origin=",
+          "model_origin_alignment": "center_of_component_on_board_surface",
+          "anchor_alignment": "center_of_component_on_board_surface",
+          "model_origin_position": {
+            "x": 0,
+            "y": 1.27e-05,
+            "z": -0.019205
+          }
+        }
+      ],
+      "fresh": [
+        {
+          "type": "cad_component",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0.7
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "model_obj_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C529330.obj?uuid=f8ba5b4174b9490d8c445fbe2ed40b80&cachebust_origin=",
+          "model_step_url": "https://modelcdn.tscircuit.com/easyeda_models/assets/C529330.step?uuid=f8ba5b4174b9490d8c445fbe2ed40b80&cachebust_origin=",
+          "model_origin_alignment": "center_of_component_on_board_surface",
+          "anchor_alignment": "center_of_component_on_board_surface",
+          "model_origin_position": {
+            "x": 0,
+            "y": 1.27e-05,
+            "z": -0.019205
+          }
+        }
+      ]
+    },
+    "pcb_smtpad": {
+      "equal": true,
+      "old": [
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -2.925064,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin1"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 2.925064,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin10"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 2.925064,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin11"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 2.275078,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin12"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 1.625092,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin13"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 0.975106,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin14"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 0.32512,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin15"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -0.324866,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin16"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -0.975106,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin17"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -1.625092,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin18"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -2.275078,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin19"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -2.275078,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin2"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -2.925064,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin20"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -1.625092,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin3"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -0.975106,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin4"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -0.324866,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin5"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 0.32512,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin6"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 0.975106,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin7"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 1.625092,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin8"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 2.275078,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin9"
+          ],
+          "is_covered_with_solder_mask": false
+        }
+      ],
+      "fresh": [
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -2.925064,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin1"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 2.925064,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin10"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 2.925064,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin11"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 2.275078,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin12"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 1.625092,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin13"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 0.975106,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin14"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 0.32512,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin15"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -0.324866,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin16"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -0.975106,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin17"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -1.625092,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin18"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -2.275078,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin19"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -2.275078,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin2"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -2.925064,
+          "y": 2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin20"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -1.625092,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin3"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -0.975106,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin4"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": -0.324866,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin5"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 0.32512,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin6"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 0.975106,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin7"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 1.625092,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin8"
+          ],
+          "is_covered_with_solder_mask": false
+        },
+        {
+          "type": "pcb_smtpad",
+          "layer": "top",
+          "shape": "pill",
+          "x": 2.275078,
+          "y": -2.870962,
+          "radius": 0.1820037,
+          "height": 1.7420082,
+          "width": 0.3640074,
+          "port_hints": [
+            "pin9"
+          ],
+          "is_covered_with_solder_mask": false
+        }
+      ]
+    }
+  }
+}

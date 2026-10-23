@@ -1,0 +1,5 @@
+$ tsc --noEmit
+circuit/PinBreakouts.tsx(62,13): error TS2322: Type '{ connection: string; pcbX: number; pcbY: number; layer: string; }' is not assignable to type 'BreakoutPointProps'.
+  Property 'layer' does not exist on type 'BreakoutPointProps'.
+index.circuit.tsx(40,7): error TS2322: Type '{ children: Element[]; width: string; height: string; thickness: string; layers: 4; routingDisabled: boolean; allowBlindAndBuriedVias: false; minTraceWidth: number; minTraceToPadEdgeClearance: number; ... 16 more ...; schLayout: { ...; }; }' is not assignable to type 'BoardProps'.
+  Property 'pcbPlatedHoleSolderPaste' does not exist on type 'BoardProps'.

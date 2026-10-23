@@ -1,0 +1,44 @@
+--- imports/STUSB4500QTR.tsx
++++ tooling/supplier-reimports-A49/C2678061/imports/STUSB4500QTR.tsx
+@@ -31,8 +31,30 @@
+ const pinAttributes = {
+   pin3: {doNotConnect: true},
+   pin10: {requiresGround: true},
+-  pin24: {requiresPower: true}
+-} as const
++  pin24: {requiresPower: true},
++  pin1: {isBidirectional: true},
++  pin2: {isBidirectional: true},
++  pin4: {isBidirectional: true},
++  pin5: {isBidirectional: true},
++  pin6: {isInput: true},
++  pin7: {isInput: true, capabilities: ["i2c_scl"], needsExternalPullup: true},
++  pin8: {isBidirectional: true, capabilities: ["i2c_sda"], needsExternalPullup: true, canUseOpenDrain: true},
++  pin9: {isBidirectional: true, canUseOpenDrain: true},
++  pin11: {isOutput: true, needsExternalPullup: true, canUseOpenDrain: true},
++  pin12: {isInput: true},
++  pin13: {isInput: true},
++  pin14: {isOutput: true, needsExternalPullup: true, canUseOpenDrain: true},
++  pin15: {isOutput: true, needsExternalPullup: true, canUseOpenDrain: true},
++  pin16: {isOutput: true, needsExternalPullup: true, canUseOpenDrain: true},
++  pin17: {isOutput: true, needsExternalPullup: true, canUseOpenDrain: true},
++  pin18: {isBidirectional: true},
++  pin19: {isOutput: true, needsExternalPullup: true, canUseOpenDrain: true},
++  pin20: {isOutput: true, needsExternalPullup: true, canUseOpenDrain: true},
++  pin21: {isOutput: true, providesVoltage: "1.2V", shouldHaveDecouplingCapacitor: true, recommendedDecouplingCapacitorCapacitance: "1uF"},
++  pin22: {requiresPower: true},
++  pin23: {isOutput: true, providesVoltage: "2.7V", shouldHaveDecouplingCapacitor: true, recommendedDecouplingCapacitorCapacitance: "1uF"},
++  pin25: {requiresGround: true}
++} satisfies NonNullable<ChipProps["pinAttributes"]>
+ 
+ export const STUSB4500QTR = (props: ChipProps<typeof pinLabels>) => {
+   return (
+@@ -76,7 +98,7 @@
+ <silkscreenpath route={[{"x":-1.737359999999967,"y":-2.1501353999999537},{"x":-2.137384599999905,"y":-2.1501353999999537},{"x":-2.137384599999905,"y":-1.750085399999989}]} />
+ <silkscreenpath route={[{"x":2.1628099999998085,"y":-1.750085399999989},{"x":2.1628099999998085,"y":-2.1501353999999537},{"x":1.7627599999999575,"y":-2.1501353999999537}]} />
+ <silkscreentext text="{NAME}" pcbX="-0mm" pcbY="3.343404mm" anchorAlignment="center" fontSize="1mm" />
+-<courtyardoutline outline={[{"x":-2.5995000000000346,"y":2.5934040000000778},{"x":2.599499999999921,"y":2.5934040000000778},{"x":2.599499999999921,"y":-2.6055959999999914},{"x":-2.5995000000000346,"y":-2.6055959999999914},{"x":-2.5995000000000346,"y":2.5934040000000778}]} />
++<courtyardoutline outline={[{"x":-2.599995300000046,"y":2.599995300000046},{"x":2.5999953000001597,"y":2.599995300000046},{"x":2.5999953000001597,"y":-2.599995300000046},{"x":-2.599995300000046,"y":-2.599995300000046},{"x":-2.599995300000046,"y":2.599995300000046}]} />
+       </footprint>}
+       cadModel={{
+         objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2678061.obj?uuid=f4a3249710724deb990f62f343cd4553",

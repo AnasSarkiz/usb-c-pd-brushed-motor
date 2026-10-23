@@ -1,0 +1,33 @@
+--- imports/USB4105_GF_A_120.tsx
++++ tooling/supplier-reimports-A49/C5184243/imports/USB4105_GF_A_120.tsx
+@@ -36,18 +36,18 @@
+ <platedhole  portHints={["pin2"]} pcbX="-4.320032mm" pcbY="-2.6400696mm" holeWidth="0.5999988mm" holeHeight="1.3999972mm" outerWidth="0.999998mm" outerHeight="1.7999964mm" shape="pill" />
+ <platedhole  portHints={["pin4"]} pcbX="4.320032mm" pcbY="1.5400084mm" holeWidth="0.5999988mm" holeHeight="1.6999966mm" outerWidth="0.999998mm" outerHeight="2.0999958mm" shape="pill" />
+ <platedhole  portHints={["pin1"]} pcbX="-4.320032mm" pcbY="1.5400084mm" holeWidth="0.5999988mm" holeHeight="1.700022mm" outerWidth="0.999998mm" outerHeight="2.0999958mm" shape="pill" />
+-<smtpad portHints={["pin5"]} pcbX="3.2002729mm" pcbY="2.1150644mm" width="0.5999988mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin6"]} pcbX="2.4002241mm" pcbY="2.1150644mm" width="0.5999988mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin7"]} pcbX="-3.2002729mm" pcbY="2.1150644mm" width="0.5999988mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin8"]} pcbX="-2.4002241mm" pcbY="2.1150644mm" width="0.5999988mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin9"]} pcbX="1.750175mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin10"]} pcbX="1.250125mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin11"]} pcbX="0.750075mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin12"]} pcbX="0.250025mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin13"]} pcbX="-0.250025mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin14"]} pcbX="-0.750075mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin15"]} pcbX="-1.250125mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
+-<smtpad portHints={["pin16"]} pcbX="-1.750175mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin5"]} pcbX="3.200146mm" pcbY="2.1150644mm" width="0.5999988mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin6"]} pcbX="2.400046mm" pcbY="2.1150644mm" width="0.5999988mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin7"]} pcbX="-3.199892mm" pcbY="2.1150644mm" width="0.5999988mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin8"]} pcbX="-2.400046mm" pcbY="2.1150644mm" width="0.5999988mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin9"]} pcbX="1.75006mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin10"]} pcbX="1.249934mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin11"]} pcbX="0.750062mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin12"]} pcbX="0.249936mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin13"]} pcbX="-0.249936mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin14"]} pcbX="-0.750062mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin15"]} pcbX="-1.249934mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
++<smtpad portHints={["pin16"]} pcbX="-1.75006mm" pcbY="2.1150644mm" width="0.2999994mm" height="1.1500104mm" shape="rect" />
+ <silkscreenpath route={[{"x":-4.571923799999922,"y":-3.8135242000000744},{"x":-4.571923799999922,"y":-5.337524199999962},{"x":4.572076200000083,"y":-5.337524199999962},{"x":4.572076200000083,"y":-3.8135242000000744}]} />
+ <silkscreenpath route={[{"x":-4.571872999999982,"y":0.1869249999999738},{"x":-4.571872999999982,"y":-1.4640750000000935}]} />
+ <silkscreenpath route={[{"x":4.572127000000023,"y":0.1869249999999738},{"x":4.572127000000023,"y":-1.4640750000000935}]} />

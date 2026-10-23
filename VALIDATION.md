@@ -1,3 +1,99 @@
+# A49 official toolchain and supplier re-import audit — blocked migration
+
+2026-10-23. Source baseline9d8b45b; exact current dependencies and generated
+supplier probes are bound in docs/cloud/CONTEXT-MANIFEST.json. See
+[the detailed A49 report](docs/TOOLCHAIN-REIMPORT-A49.md).
+
+Installed the requested latest official tscircuit0.0.3008, CLI0.1.2402,
+core0.0.2199, props0.0.709, Capacity0.0.1003 and Circuit JSON0.0.534.
+Previous local core/props/router overrides are removed in this **candidate**.
+All58 supplier SKUs are freshly imported with the official exact-footprint
+workflow and staged without editing their generated definitions. Active board
+imports, wiring, voltage policy, PWM network and placements remain unchanged.
+The user's approved twelve USB-C pad shifts remain intact. This is not an
+approved dependency migration or updated fabrication build.
+
+| Check | Actual A49 result |
+| --- | --- |
+| Official58 supplier imports and unrouted A4/PCB probe builds | passed58/58; command/resource logs and original generated files retained |
+| Independent entire probe Circuit JSON/schema, expected source/schematic/PCB pins and lands | passed58/58, zero issues/zero routed traces; final source and probe SHA256 bindings recorded |
+| Fresh import/probe TypeScript project | passed; evidence/reimport-typecheck-A49.log |
+| All five native checks on switch/pot/USB probes | passed15/15 commands, zero reported errors; all advisories visible |
+| Formatting | passed; evidence/format-check-A49.log; rerun after final edits below |
+| Existing board/firmware tests |44 passed/0 failed/476 assertions; evidence/tests-A49.log |
+| Unchanged analytical power report | passed; evidence/power-report-A49.log; no measured load/thermal qualification implied |
+| Python audit/tool syntax | passed4 parsed source files |
+| Configured whole-board TypeScript | **blocked**, exit2; evidence/typecheck-final-A49.log |
+| Fresh whole-board schematic/build/placement/native gates | **blocked/not run** because migration loses required API semantics; prior A48 output is not current proof |
+| New routed copper/snapshot/fabrication/physical tests | not started |
+
+## Current blockers
+
+- **B-A49-API, stages2/3:** the official published props/core do not implement
+  two existing project-local features: board `pcbPlatedHoleSolderPaste` and
+  breakout-point `layer`. TypeScript reports index.circuit.tsx:40 and
+  circuit/PinBreakouts.tsx:62. No cast, warning suppression, removal of physical
+  constraints or imported component patch is used to bypass this. Required next
+  work is canonical feature migration or a validated equivalent public API.
+- **B-A49-USB, stages2/3:** raw C5184243 re-import still has6 gaps below0.20mm,
+  minimum0.1998472mm. The accepted adjusted active import remains unchanged.
+  The official runtime's mixed SMT/THT connector also emits8 shell-slot paste
+  apertures; schema is valid, but stencil policy/assembly approval is unfulfilled
+  without the unavailable board-level control. Do not confuse solved schema
+  shape validation with approved THT stencil output.
+- Fresh probes retain38 availability warnings and other metadata/intentional NC
+  advisories. Full details remain in active-import-audit-A49.json and the delta
+  audit. Availability warnings are not independently verified stock failures;
+  the core can emit them after request errors. BOM stock dates are not advanced.
+  New separate dated re-import columns report only the actual import audit.
+  No generic waiver file or warning suppression was introduced.
+
+The raw Dailywell C908270 definition is unchanged, has all3 electrical pins,
+common2 at its reviewed location, matching3 slots and no THT paste. C5710902
+has all5 reviewed terminals and no THT paste; only a schematic reference label
+was added. New candidate MCU source formatting differs, but independently
+compiled20-pad/CAD geometry matches the prior component after1e-9mm rounding.
+C25950 moves from rounded official footprinter notation to exact EasyEDA
+geometry: center change0.000014mm, width change0.0000246mm. These deltas do not
+approve renewed full-board placement or change the manufacturing thresholds.
+
+Peak sampled supplier import/build RSS is1182592KiB (~1.13GiB); later whole-board
+TypeScript sampled peak1382880KiB (~1.32GiB). Each expensive command was sequential,
+bounded at2GiB, and no router ran on the Mac. Resource reports remain raw.
+The first MCU baseline used a local absolute module path; its final portable
+relative-import rerun produces the identical build-log hash and is the accepted
+comparison. No edited Circuit JSON or synthetic physical test evidence is used.
+Generated SVGs, native netlist logs and unified-diff context retain original
+trailing whitespace/blank lines. Git diff --check reports these raw output
+formatting findings; configured production formatting passes. No imported model
+or diagnostic output was rewritten merely to remove them.
+
+| Stage | A49 state | Boundary |
+| --- | --- | --- |
+| 1 requirements | passed | A45 electrical/mechanical requirements unchanged |
+| 2 schematic/BOM | blocked | imports pass; official toolchain feature migration and fresh full-board gates pending |
+| 3 placement | blocked | existing positions preserved; no new placement approved |
+| 4 routing | not started | source/config stay disabled; Pipeline9 remains the requested future router |
+| 5 routed automated/visual checks | not started | probe checks are independent evidence only |
+| 6 fabrication | not started | USB stencil/process and full-board manufacturing gates pending |
+| 7 physical tests | not started | no prototype/PD/current/thermal/reversal measurements |
+| 8 public prototype publication | blocked | candidate full-board validation/fresh matching JSON absent |
+
+## Source and publication state
+
+The tracked dist/index/circuit.json remains **the previous A48 artifact**,
+SHA256ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3;
+it is not a new build of this candidate. No fresh full-board build is claimed.
+GitHub synchronization of this explicitly blocked audit is being performed;
+the final response identifies the committed source. The tscircuit package is
+not republished: the whole-board validation gate fails and the required fresh
+matching circuit JSON does not exist. This is the exact publication blocker,
+not missing authorization. Its previous public A48 version remains historical.
+A GitHub-only diagnostic push does not complete the two-destination publication
+requirement. Prior dirty historical routing diagnostics are not included.
+
+---
+
 # A48 Codex Cloud setup — work-in-progress prototype
 
 ## A48 public synchronization receipt — 2026-10-05

@@ -1,0 +1,23 @@
+--- imports/SMBJ15CA.tsx
++++ tooling/supplier-reimports-A49/C211759/imports/SMBJ15CA.tsx
+@@ -16,6 +16,7 @@
+           <schematicpath points={[{"x":-0.04,"y":0.16},{"x":0,"y":0.12},{"x":0,"y":-0.12},{"x":0.04,"y":-0.16}]} strokeColor="#880000" />
+           <port name="pin2" pinNumber={2} aliases={["2"]} direction="left" schX={-0.4} schY={0} schStemLength={0.2} />
+           <port name="pin1" pinNumber={1} aliases={["1"]} direction="right" schX={0.4} schY={0} schStemLength={0.2} />
++          <schematictext schX={0} schY={0.36} text="{NAME}" fontSize={0.2} anchor="bottom_center" />
+         </symbol>
+       }
+       supplierPartNumbers={{
+@@ -30,9 +31,9 @@
+ <silkscreenpath route={[{"x":2.666974600000003,"y":-1.9049999999999727},{"x":-2.599309000000062,"y":-1.8903695999999854}]} />
+ <silkscreenpath route={[{"x":2.6627581999999848,"y":1.9049999999999727},{"x":-2.5907999999999447,"y":1.8871945999999298}]} />
+ <silkscreentext text="{NAME}" pcbX="0.013208mm" pcbY="2.905mm" anchorAlignment="center" fontSize="1mm" />
+-<fabricationnotepath route={[{"x":0.7619999999999436,"y":-0.7619999999999436},{"x":-1.1368683772161603e-13,"y":0},{"x":0.7619999999999436,"y":0.7620000000000573},{"x":0.7619999999999436,"y":-0.7619999999999436}]} strokeWidth="0.254mm" />
+-<fabricationnotepath route={[{"x":-0.7620000000000573,"y":-0.7619999999999436},{"x":-0.7620000000000573,"y":0.7620000000000573},{"x":-1.1368683772161603e-13,"y":0},{"x":-0.7620000000000573,"y":-0.7619999999999436}]} strokeWidth="0.254mm" />
+-<courtyardoutline outline={[{"x":-3.653092000000015,"y":2.1549999999999727},{"x":3.6795080000000553,"y":2.1549999999999727},{"x":3.6795080000000553,"y":-2.1549999999999727},{"x":-3.653092000000015,"y":-2.1549999999999727},{"x":-3.653092000000015,"y":2.1549999999999727}]} />
++<fabricationnotepath route={[{"x":0.7619999999999436,"y":-0.7619999999999436},{"x":-1.1368683772161603e-13,"y":0},{"x":0.7619999999999436,"y":0.7620000000000573},{"x":0.7619999999999436,"y":-0.7619999999999436}]} strokeWidth="0mm" isFilled hasStroke={false} />
++<fabricationnotepath route={[{"x":-0.7620000000000573,"y":-0.7619999999999436},{"x":-0.7620000000000573,"y":0.7620000000000573},{"x":-1.1368683772161603e-13,"y":0},{"x":-0.7620000000000573,"y":-0.7619999999999436}]} strokeWidth="0mm" isFilled hasStroke={false} />
++<courtyardoutline outline={[{"x":-3.6646489999998266,"y":2.0499964000000546},{"x":3.6646489999999403,"y":2.0499964000000546},{"x":3.6646489999999403,"y":-2.049996399999941},{"x":-3.6646489999998266,"y":-2.049996399999941},{"x":-3.6646489999998266,"y":2.0499964000000546}]} />
+       </footprint>}
+       cadModel={{
+         objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C211759.obj?uuid=dfcbf83754944015b911a9e368f2919e",

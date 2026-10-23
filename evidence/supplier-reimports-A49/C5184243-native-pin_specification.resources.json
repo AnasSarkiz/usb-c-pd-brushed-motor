@@ -1,0 +1,17 @@
+{
+  "command": [
+    "bunx",
+    "tsci",
+    "check",
+    "pin_specification",
+    "probe.circuit.tsx"
+  ],
+  "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/tooling/supplier-reimports-A49/C5184243",
+  "exit_code": 0,
+  "stop_reason": null,
+  "sampled_process_tree_peak_rss_kib": 313200,
+  "limit_mib": 2048,
+  "elapsed_seconds": 1.03,
+  "log": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12/evidence/supplier-reimports-A49/C5184243-native-pin_specification.log",
+  "log_sha256": "f1a44e165831a32eb8050f4e82633b4ee7984ca2c813539da4dc5c541a26130b"
+}

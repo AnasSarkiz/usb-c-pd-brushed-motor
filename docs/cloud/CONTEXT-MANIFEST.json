@@ -1,6 +1,6 @@
 {
-  "revision": "A48 cloud handoff; setup checks only, fresh cloud/native validation pending",
-  "source_baseline": "A45 implementation 7a869ef36fb6a9dd78c24e613d3e3f2f301296e8; publication receipt 6dce7c7605c03ac29513557ccebf2a532ee196d2",
+  "revision": "A49 latest official toolchain candidate; 58 supplier probes pass, whole-board API migration blocked",
+  "source_baseline": "9d8b45b5d6fcde027a7b5a3f671f3a3e1b8c280f; last published board source c41d79ab6a566700de58a5695cbf1eb75406a5cd A48",
   "files": [
     {
       "path": ".agents/skills/tscircuit/.gitignore",
@@ -504,18 +504,18 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 15546,
-      "sha256": "fdea78c44cbd1ea085f49c039e7e0042c9dd8b2d896bc1f21d82b26ae47477ef"
+      "bytes": 16046,
+      "sha256": "36530f6140d3574be7aea8f57f93f08e615313372580069a15ee8e700151b7e7"
     },
     {
       "path": "README.md",
-      "bytes": 15429,
-      "sha256": "f978041f22419ca2d5ee82875b5c25d6d7dcd87e43eabe952c9c3981b540a6e1"
+      "bytes": 16098,
+      "sha256": "322e28c0fa97d71be7b4edee6c222bafb159c343c049bd55aaa703816e6a0048"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 246709,
-      "sha256": "2b276b8ba3ba02b7165d57fa110f8052049ab0fb8fde36e750bbd230cecd4c2a"
+      "bytes": 253269,
+      "sha256": "735bbfc290093a8bcdf4726e9a8370134527c7463f544899eea677c1e0ba68cd"
     },
     {
       "path": "biome.json",
@@ -524,8 +524,8 @@
     },
     {
       "path": "bun.lock",
-      "bytes": 84979,
-      "sha256": "660ecd1fb0d923646f91413e6e7f6c54ba569736c6b757f21f8e6a8c6ad11c75"
+      "bytes": 94058,
+      "sha256": "bdaa11f1ef8107c1c6d019f7f55d692df56e7a6f56bf8cb66b687931c6162ff6"
     },
     {
       "path": "checks/check-shorts/bitmap.png",
@@ -639,8 +639,8 @@
     },
     {
       "path": "docs/BOM.csv",
-      "bytes": 32703,
-      "sha256": "896464031e4a65cc24a0117e24c9b079bb286872d146da74849785592184ad36"
+      "bytes": 48853,
+      "sha256": "690814087046721555f14b20ceeae561fe381f6de826eb15a184f8d77cfc7712"
     },
     {
       "path": "docs/BUCK-MODEL.md",
@@ -788,6 +788,11 @@
       "sha256": "b9bc7f2a480a42afec12265cd555e84911a711d71e36a14ec20424872835a195"
     },
     {
+      "path": "docs/TOOLCHAIN-REIMPORT-A49.md",
+      "bytes": 7956,
+      "sha256": "ae4f2b4426ca80f8b0e88aac2adef956995031bca9f107d05d584aaba70e1e87"
+    },
+    {
       "path": "docs/TOOLING-ISSUES.md",
       "bytes": 7345,
       "sha256": "4842471bee3b673a17ba5feb70298e712ab36bbec4cc79f10abf615f802b13e9"
@@ -819,8 +824,8 @@
     },
     {
       "path": "docs/cloud/HANDOFF.md",
-      "bytes": 12848,
-      "sha256": "25032fb2f07b2e31ca4d6a3f2c114539a0e1047f1d6ea48b5adf7c2dc5a44c14"
+      "bytes": 13517,
+      "sha256": "afc737465f7eb9b4369306f9c325095a157965e349cf30dfde7fd876b17719c1"
     },
     {
       "path": "docs/cloud/SETUP.md",
@@ -848,14 +853,434 @@
       "sha256": "46d382a1bd2bc806bab6117a37885a98832152ae019de1d740261454b55e9e3d"
     },
     {
+      "path": "evidence/C25950-compiled-geometry-comparison-A49.json",
+      "bytes": 3500,
+      "sha256": "d4e693398acb44cf8fb1277744b864ba987e879689dd47618f7984c145f98130"
+    },
+    {
+      "path": "evidence/C529330-compiled-geometry-comparison-A49.json",
+      "bytes": 16457,
+      "sha256": "25a630681f0153559d31ba5520f6d74cf667e40712a575d1fbf7e043e40bf5b7"
+    },
+    {
+      "path": "evidence/active-import-audit-A49.json",
+      "bytes": 268136,
+      "sha256": "6c41f71c7b3b36f7d2d2eef19cb164fc1c3027743fa6f11f2cc5a261191970dd"
+    },
+    {
+      "path": "evidence/active-import-audit-A49.log",
+      "bytes": 65,
+      "sha256": "f6d0c0376cb59ce3639fa59e2675584178f1a9bc772570a006de6d7a8023f0ac"
+    },
+    {
+      "path": "evidence/active-import-audit-final-A49.log",
+      "bytes": 65,
+      "sha256": "f6d0c0376cb59ce3639fa59e2675584178f1a9bc772570a006de6d7a8023f0ac"
+    },
+    {
+      "path": "evidence/active-import-audit-final-resources-A49.json",
+      "bytes": 485,
+      "sha256": "04c379d041fa5dd181c053c0122c127e37bccea893bbe02a62d4de4fe6010f27"
+    },
+    {
+      "path": "evidence/active-import-audit-resources-A49.json",
+      "bytes": 479,
+      "sha256": "0c985d2c49f9b3857cca946adce372aae04883c02ff0990e54ecac47e9167b7f"
+    },
+    {
       "path": "evidence/active-supplier-inspection-manifest-A22.json",
       "bytes": 17468,
       "sha256": "0d22f9827f5ee3e6f5724f7006b196fc2be35ff8172eff62849a6b6a2a399062"
     },
     {
+      "path": "evidence/format-check-A49.log",
+      "bytes": 62,
+      "sha256": "e47a890ea2dabaf52935f3e4da1aa36ac3e29b211eba8bcda154c1e68643036d"
+    },
+    {
+      "path": "evidence/format-check-final-A49.log",
+      "bytes": 62,
+      "sha256": "cdf000fad4b092c416da3f91b89a019f3718b06e85c09fa6727bcf7bcd4ef70a"
+    },
+    {
+      "path": "evidence/format-check-resources-A49.json",
+      "bytes": 414,
+      "sha256": "8bfd3453951bb1da3aa913d4a62d263671b848be28c3b3560b581bc9e0892452"
+    },
+    {
       "path": "evidence/main-warning-review-A45.json",
       "bytes": 202199,
       "sha256": "1fa6798d189af59c8269e213be50a4f4607bfa7c455deca35e95c9674b885a53"
+    },
+    {
+      "path": "evidence/power-report-A49.log",
+      "bytes": 8334,
+      "sha256": "804bcfa6fe32554b3d2fd49cdb256da4dcbf9cf7b8bd1d2a60e04f2e8da38320"
+    },
+    {
+      "path": "evidence/power-report-resources-A49.json",
+      "bytes": 414,
+      "sha256": "b999562b506ce472ca287e2b3177086a6bf45b6e93dcd70f5e44100a1d789ed8"
+    },
+    {
+      "path": "evidence/preupgrade-A49/bun.lock.txt",
+      "bytes": 84979,
+      "sha256": "660ecd1fb0d923646f91413e6e7f6c54ba569736c6b757f21f8e6a8c6ad11c75"
+    },
+    {
+      "path": "evidence/preupgrade-A49/dist/index/circuit.json.txt",
+      "bytes": 2730148,
+      "sha256": "ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/AO3400A.tsx.txt",
+      "bytes": 3812,
+      "sha256": "bb2168fe6cc42566cb4d0d25fa96a9c1ffd5d1613a9ce8e780f3f37fd1bc00e6"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/AT0603BRD07100KL.tsx.txt",
+      "bytes": 1902,
+      "sha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0402WGF3301TCE.tsx.txt",
+      "bytes": 1878,
+      "sha256": "3b9cf6de2088a252c5e3da65ae3d9667df8fd38602f47bcc99def2f0dada2731"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603B103K500NT.tsx.txt",
+      "bytes": 2886,
+      "sha256": "f94d58f906b97c568d280edac96a7c06c35ce0b7165db8fefc50cdb9a977abef"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF1001T5E.tsx.txt",
+      "bytes": 1892,
+      "sha256": "5902e8307dd04e282fc33a5c3a8637a05b4bc0c6265ec150b6acc1e2dd8cfdfb"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF1003T5E.tsx.txt",
+      "bytes": 1894,
+      "sha256": "03a087ff0e23fdbfbb78619d3019aa2d705a0a18edf8f5775a2ad35736129777"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF1004T5E.tsx.txt",
+      "bytes": 1892,
+      "sha256": "8bfdabf9cf75e71e43a99391224c435e7479bfe2f93e568790d217ec6826f929"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF1102T5E.tsx.txt",
+      "bytes": 851,
+      "sha256": "e52692c9e5924cd71491838f6bd50920b881d6fe1b243d75bb717affc40651f5"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF1202T5E.tsx.txt",
+      "bytes": 1893,
+      "sha256": "ab5764c0cdd81a1b6114f7728a2a090ab236eca3b37687d1e1d8e856b8f36695"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF1623T5E.tsx.txt",
+      "bytes": 1894,
+      "sha256": "cffc68d597f9996543e2183ef0e0af30581079956d933a7004f2e1a79642a089"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF2001T5E.tsx.txt",
+      "bytes": 1895,
+      "sha256": "251cc9030dc8096b74016eb21a07bb8f28f15a7210499c4673a242a88aa57077"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF2002T5E.tsx.txt",
+      "bytes": 1890,
+      "sha256": "75957bbcc45f275e2a0560bd86b246d8c6a223144936821aec5a351074a5cdef"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF2102T5E.tsx.txt",
+      "bytes": 1893,
+      "sha256": "b42069dd4e1311c8f6eb6947ea81dc4356c8b4432ebb816919221643bec14c22"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF2702T5E.tsx.txt",
+      "bytes": 1893,
+      "sha256": "fd8a8ace33b6046e96b7700fa2b4791bf6c0e177eadc9bfa3ef3812dc9fead22"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF3300T5E.tsx.txt",
+      "bytes": 1893,
+      "sha256": "942c41cd7d58ee6a0290f6a090277c2b9a2875c50dd9465edaa5aedac91026e6"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF4701T5E.tsx.txt",
+      "bytes": 1897,
+      "sha256": "7d47f4ea58f80777dd9d5c5eadd4332639c687c11e320a7223ba12983b59d109"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF5101T5E.tsx.txt",
+      "bytes": 1894,
+      "sha256": "27f22e23e54192f5bac6a357c2a79509f81007988352553e78c8a44833805070"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_0603WAF6981T5E.tsx.txt",
+      "bytes": 1898,
+      "sha256": "ffdcc9d4f748b20bc7d60213769060137d54146c130a979a431bc42671ee6850"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_19_217_G7C_AN1P2_6T.tsx.txt",
+      "bytes": 3805,
+      "sha256": "c2bafbbedfc255df5e274606ff00eac4347fd9549fef10bf4b2686c53f75d69f"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_1MS3T1B1M2QES_5.tsx.txt",
+      "bytes": 2394,
+      "sha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_35SVPK330M.tsx.txt",
+      "bytes": 2876,
+      "sha256": "81434531148c497612f0806dba8f336433d326a695d969beeed2eb408cec7987"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/A_5015.tsx.txt",
+      "bytes": 1385,
+      "sha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/B5819W_SL.tsx.txt",
+      "bytes": 4206,
+      "sha256": "7a11383d915188d9ae949f11683e74558f42ec89c962fe61ade095f811d48b4a"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/BZT52C10.tsx.txt",
+      "bytes": 3998,
+      "sha256": "0343e82f6274fedd7475112549678e9a28cafa45d8fcb2681a906b3096834fd5"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/BZT52C24.tsx.txt",
+      "bytes": 3998,
+      "sha256": "8ae660a88c78bbeaceb386fc84c54cd61f462132b0d24e1028d0b93e87230f8b"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/CC0603KRX7R9BB104.tsx.txt",
+      "bytes": 2891,
+      "sha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/CL10A475KO8NNNC.tsx.txt",
+      "bytes": 2887,
+      "sha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/CL10B223KB8NNNC.tsx.txt",
+      "bytes": 2886,
+      "sha256": "9da3dedeadd7fdd03ee32c819841773086149daed2f086c13a36f0ecc74f9cb1"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/CL10C220JB8NNNC.tsx.txt",
+      "bytes": 2883,
+      "sha256": "41cc61b4d9466ec5f554480830bdf048d1b47fa5fc09c6e9d9427215166a4d56"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/CL32B106KBJNNNE.tsx.txt",
+      "bytes": 2880,
+      "sha256": "1e82266b998724227ca723578b492d42c2b82bc123c0f5e60a769c9c58abddb0"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/CRCW060310K0FKEA.tsx.txt",
+      "bytes": 1898,
+      "sha256": "bb8cf3d001fe06c7cf2d1f7db55f7bf0954310500b009a438010f7fcc2cd0eb6"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/DB126V_5_0_2P_GN_P.tsx.txt",
+      "bytes": 2072,
+      "sha256": "4a14bd5d925815a2b2673fca1ebe923fbd956e1105f30dc61295921cb0948aa0"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/DRV8874PWPR.tsx.txt",
+      "bytes": 4898,
+      "sha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/DSHP02TSGER.tsx.txt",
+      "bytes": 10360,
+      "sha256": "e4ed5d0f8a0ddeaa22e15131a5e002978179e7f3608fc98f338e85ea1563bafa"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/ESR18EZPF1001.tsx.txt",
+      "bytes": 1853,
+      "sha256": "5bd8e0a6639e7ac4d34d826219eaf66a58771b5c54028b714707512b8ccfdd76"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/GRM1885C1H562JA01D.tsx.txt",
+      "bytes": 2896,
+      "sha256": "ae57d221c1ca4ea607bbcd93bf844c40ccdfe0a2f5b22ebd8dc95de4da1f121f"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/GRM21BR71H105KA12L.tsx.txt",
+      "bytes": 2902,
+      "sha256": "02065c55ec3ab96a9a3f305102e3989d52c153723776d6043c62e9cd18ce9fa6"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/GRM31CR61E476ME44L.tsx.txt",
+      "bytes": 2871,
+      "sha256": "567d871c3c483e2e156691930e842185fc85e758eb6878d32403e22c8486ed1b"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/LM393DR.tsx.txt",
+      "bytes": 3757,
+      "sha256": "5e20beaffa770f57c1fa179ea78b01bcb80522d6afcef13a9606db5f8cbf19db"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/MHCC10040_8R2M_R7.tsx.txt",
+      "bytes": 2105,
+      "sha256": "12de0c462a2c8eb5be066751305f75721305a15c302f6b3acd0575cc9617d35a"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/MMBT3904.tsx.txt",
+      "bytes": 2923,
+      "sha256": "6a4d71c9b72928dad1b8705f6ba2307aba8d0fd10b1aaf07ee8fd9f6a45c46ab"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/MMBT3906LT1G.tsx.txt",
+      "bytes": 2926,
+      "sha256": "216dff878695784f093370361102a0cc2fa24a3984ce8b4d77ad4c9ff32e301a"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/PESD24VS2UT_215.tsx.txt",
+      "bytes": 3246,
+      "sha256": "677b675764163d5f590ac5eaca0ee079055ee3bd72b7133f5b9969d592873c55"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/PTV09A_4015F_B103.tsx.txt",
+      "bytes": 5146,
+      "sha256": "9a936f521fbdc66cd6f08affd80f553f3c7d4b59dab09618d6e3f93b3cf135f6"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/RPL_12K10R0FT.tsx.txt",
+      "bytes": 1877,
+      "sha256": "2438409a625ad7fe574c01aa43f88ad235a40c0af5e2566c64a9048e32b64a87"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/RT0603BRD0710KL.tsx.txt",
+      "bytes": 1896,
+      "sha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/SMBJ15CA.tsx.txt",
+      "bytes": 2739,
+      "sha256": "18441adccbf9eb00f6ac5edc8b66f1a6e6e0d2c5e51f9f9efd1a57eff8658508"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/SMBJ22A.tsx.txt",
+      "bytes": 3467,
+      "sha256": "a5c4c1c2a55e4b5ef4c7d595fc7205e7c6dbc64bbfaa81673d434b98d60f29b1"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/SS54.tsx.txt",
+      "bytes": 3006,
+      "sha256": "dbb814bf82b9771e25ab0b4b970f526310234853c749be7ecbe4055bcb516c6c"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/STM32G030F6P6TR.tsx.txt",
+      "bytes": 11802,
+      "sha256": "8341d8be4d4d2ba11868533ad8cb0fe51462fffd50b2418151e2fc2106332b63"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/STUSB4500QTR.tsx.txt",
+      "bytes": 6127,
+      "sha256": "f9acdc195538fe06d3ad46bf0a1ee3b4014e2de9c7c58731866a34c0d231f1d7"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/TL431AIDBZR.tsx.txt",
+      "bytes": 3037,
+      "sha256": "c339105213cdc0457df339ff1d05d4fc20d27cda60de0bb353d983a6dcc40aff"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/TLC555CDR.tsx.txt",
+      "bytes": 3748,
+      "sha256": "80964cdac247fc06fd8948bfc11c43e6743f1a480ef2105615fae7e7d7a3ea1b"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/TPS16630PWPR.tsx.txt",
+      "bytes": 5478,
+      "sha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/TPS54360DDAR.tsx.txt",
+      "bytes": 3578,
+      "sha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/TPS7A1633DGNR.tsx.txt",
+      "bytes": 3042,
+      "sha256": "c78527d69b202bbb0a416928a072cd0ffabecea2adf05b60df3ece5bac8b54e2"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/TPS7A1650DGNR.tsx.txt",
+      "bytes": 3042,
+      "sha256": "9468fa1522c45d3420702b99400458cb24fbd0b29e06296f630be1f87503479b"
+    },
+    {
+      "path": "evidence/preupgrade-A49/imports/USB4105_GF_A_120.tsx.txt",
+      "bytes": 4632,
+      "sha256": "5bb92117e8ddaec3df02d6e430a9685fae350dadaa574a02b977970917aa4bcf"
+    },
+    {
+      "path": "evidence/preupgrade-A49/manifest.json",
+      "bytes": 14609,
+      "sha256": "92b9380f7286e8204c23229e8c2ee30c9f8a8946ab7a8a0dc82e792c738da48e"
+    },
+    {
+      "path": "evidence/preupgrade-A49/package.json.txt",
+      "bytes": 2081,
+      "sha256": "df3987be734b5d5d8c6b157f09cf676b58b4b3c36beeef007ab47374d9873072"
+    },
+    {
+      "path": "evidence/preupgrade-A49/tscircuit.config.json.txt",
+      "bytes": 144,
+      "sha256": "22c2cefeeabcee5931e1d01a7a6316b4577a9084b7fcedea05500e39d0baf3ef"
+    },
+    {
+      "path": "evidence/reimport-audit-config-A49.json",
+      "bytes": 187,
+      "sha256": "962dd5779ae7549dacefae85b0f4b4488911c410ff4447ab0b5cad04c2addf9c"
+    },
+    {
+      "path": "evidence/reimport-change-progress-A49.json",
+      "bytes": 1913,
+      "sha256": "01c6de553aba9c02afef7c16d755175040de1611d3509cafda0a2f2572664a00"
+    },
+    {
+      "path": "evidence/reimport-delta-audit-A49.json",
+      "bytes": 178902,
+      "sha256": "639e8fbc71964f5210568d7e69de1e3208e612d4d2ba2e535758351c8ec9ce03"
+    },
+    {
+      "path": "evidence/reimport-native-checks-A49.json",
+      "bytes": 9672,
+      "sha256": "9e87c6e75260bf57abf0e5d99122dde3c44e6d3e058e9c0ce3d8de3636b779d4"
+    },
+    {
+      "path": "evidence/reimport-native-checks-A49.log",
+      "bytes": 454,
+      "sha256": "2aae7400d75da7a4058f996f94f251e4a7f4f0c1a84c2714fe000bf221bb7c4c"
+    },
+    {
+      "path": "evidence/reimport-typecheck-A49.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/reimport-typecheck-resources-A49.json",
+      "bytes": 490,
+      "sha256": "ddbd299db3fba7013234c921cd26ebc4f3be284c727d8250970478d1bbc34f3e"
+    },
+    {
+      "path": "evidence/reimports-A49/C908270-import-resources.json",
+      "bytes": 586,
+      "sha256": "bc743b8b8fb4316f9eab8a6c7fd270dd1075e8fb3f2f46d2743c200f6e4016c7"
+    },
+    {
+      "path": "evidence/reimports-A49/C908270-import.log",
+      "bytes": 196,
+      "sha256": "e3c0501fef353d18907edddafdb8999629263e6ccb7e3ee5a404f64d8eb4c824"
     },
     {
       "path": "evidence/routing46-interrupted-prerequisites-A46.json",
@@ -873,6 +1298,1691 @@
       "sha256": "e15ebc26fd14c1a9da7ac35d9402418bcd1bb022377b02276ef557175792a113"
     },
     {
+      "path": "evidence/supplier-reimports-A49/C10214-build-resources.json",
+      "bytes": 641,
+      "sha256": "f2ee845ba92eaf50f727774afdf176334be68fdafaa5fd0a8d412ddef97d8069"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C10214-build.log",
+      "bytes": 619,
+      "sha256": "072945ce281efe5a789e05fd59aeeb0f9e42354b902481b7d17b724b85003638"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C10214-delta.patch.txt",
+      "bytes": 3623,
+      "sha256": "96e9f09ed8e05047281cfb4d19857e9e5ec52a636f78b962f7fa7eb501067445"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C10214-import-resources.json",
+      "bytes": 610,
+      "sha256": "f8397cc3f113d0dd1aeae1a62e08c86ad93c0742edad7e1bfc6921bf96e4e860"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C10214-import.log",
+      "bytes": 201,
+      "sha256": "67653495404a28178882443b1571e55990aa482d7ce5dca9cdf789ada1d20c5f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C138687-build-resources.json",
+      "bytes": 644,
+      "sha256": "bf1af1b4a212b1ac7b2d838c74f5abeb69c6c42aba0b39d5d2e2a61ddae38825"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C138687-build.log",
+      "bytes": 485,
+      "sha256": "6bea9ff2b5d061d7a8e97689ac0829005d7f473b3d42505f36e096792268ca9d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C138687-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C138687-import-resources.json",
+      "bytes": 612,
+      "sha256": "73dff71713b4c2fda03125adb76476c368520f6fa616d360731923a1bcc1ee32"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C138687-import.log",
+      "bytes": 211,
+      "sha256": "dcf302119fec4b8700a42a5a305f615b9ddc76447b6ca80cb0bfdc24d20bc5a1"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C14663-build-resources.json",
+      "bytes": 641,
+      "sha256": "898e93023a2c686b1fd3e01b82dcf0228f1727dcc462288348cef061b36ecdee"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C14663-build.log",
+      "bytes": 483,
+      "sha256": "13f15c65ddbf12ccbde74e681549321d87d5d6f1a30078b9711710e229bb6bfe"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C14663-delta.patch.txt",
+      "bytes": 2034,
+      "sha256": "f5438efd1f56afbcca719659b4b7e801846ed2786783f15f3b54a9bcdceccc1f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C14663-import-resources.json",
+      "bytes": 609,
+      "sha256": "8a41fedef322bd9df3adcf006e6aeb139a56b89ee114a5271c7c0e10af3bb85a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C14663-import.log",
+      "bytes": 211,
+      "sha256": "23e6837cb064c28d574ae6a8c41bf88013ec1d608fb0dea14567e931d9752e88"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1653-build-resources.json",
+      "bytes": 639,
+      "sha256": "e2b9004a8b61f710f8ecac6255191eba4f605f114bbf444c3f2b8fd27a3603f8"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1653-build.log",
+      "bytes": 483,
+      "sha256": "e3dab7700dc1a92a18ca62b1b057e845ba56e340b09bf005a2202d146768c6bf"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1653-delta.patch.txt",
+      "bytes": 1298,
+      "sha256": "91827eb80618cd21449678cd6b809e4f193f361d3e8b441e539ddc607596aa4e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1653-import-resources.json",
+      "bytes": 606,
+      "sha256": "cf7112f639939bb46d999131efdb9f009a4b6a27269c3a9925d45986f61cf13b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1653-import.log",
+      "bytes": 207,
+      "sha256": "36316650a5383b4dcb795fe1f213be90776ec191a06b69ca519d15c8d47a73a0"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C178373-build-resources.json",
+      "bytes": 643,
+      "sha256": "f5cbb22c0ecd7caa6e5bc804d25eda654728fe768e61180805b8e39128ea6e48"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C178373-build.log",
+      "bytes": 432,
+      "sha256": "0c0001887328488fbfabde35dff4cfd7f658cad5dc106d8fa4be753400aca1d4"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C178373-delta.patch.txt",
+      "bytes": 2928,
+      "sha256": "ad8de90f5d2ce304f89b5f4889e61730949c1d3498ec7191fdd0cd6424d152a7"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C178373-import-resources.json",
+      "bytes": 613,
+      "sha256": "db329d5ee557a8b42cb31e3a73bb1f03fb279c933c42b5dfcdb48b47b2717e53"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C178373-import.log",
+      "bytes": 208,
+      "sha256": "4ef686d270e423567995690ad41a4183233d154260f4a28979374da017eabadf"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C181239-build-resources.json",
+      "bytes": 643,
+      "sha256": "a376aeb5b8fd9d651243be10e8309f9345af6ba8ecb34e13f85a4f1f70e78297"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C181239-build.log",
+      "bytes": 471,
+      "sha256": "c2e74d914fa5159fb09afc218d0cf7151461321c40bf7598b5d5bfc42f035423"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C181239-delta.patch.txt",
+      "bytes": 1448,
+      "sha256": "7753df152ac9ec86c75a0f7a2195e8891dd569ab2a701f922b24f3c3737da398"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C181239-import-resources.json",
+      "bytes": 612,
+      "sha256": "e147b3111cd93b40f1275fdefa966f51143327252186cd8cb1fb3b42a6b9be6d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C181239-import.log",
+      "bytes": 209,
+      "sha256": "ad6dd405d0b633073c2519484348a9dcfd473cbc85c7aedf16268d4e28b0ab39"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1849461-build-resources.json",
+      "bytes": 645,
+      "sha256": "44be1ec795b5f8a5a47acd687f5651a26f4c134af0559ba9918f62b4cb9df58d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1849461-build.log",
+      "bytes": 471,
+      "sha256": "10e8ed47b9b17fc539bdaa016fc38ab659ed84b92021e86669d82e8c3e3d3605"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1849461-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1849461-import-resources.json",
+      "bytes": 614,
+      "sha256": "2c000f516fcf963f3b367a06f565cce710aab72d218c8d29378f5554f320dba6"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1849461-import.log",
+      "bytes": 210,
+      "sha256": "9e3154abcd115a5b3c40dbdef6278e9eb8c5ae9fae76cdf891d054daf0a59f35"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1855818-build-resources.json",
+      "bytes": 646,
+      "sha256": "87bd30833f5ae49aace1fb92d5a3a5e53376b5892710d39979e45ec2b7e53e16"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1855818-build.log",
+      "bytes": 472,
+      "sha256": "61f30a76d9bd76f62d6a0e3409230ec19d456123584f1d48f1063e531ee6632e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1855818-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1855818-import-resources.json",
+      "bytes": 615,
+      "sha256": "69c36cf2e2ce7c134fde1daf89f7c4e9658e08f6ec6f7f34a1c29d05aa472c47"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C1855818-import.log",
+      "bytes": 209,
+      "sha256": "f91ffc06444f3adb6bcfa44e612af1ad257c8af5a2104eb08026b92058f3d6b8"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C19666-build-resources.json",
+      "bytes": 641,
+      "sha256": "ebf5a1fd46920957126b7a1acc4c010250b816bf2278c8e644caae34f8acf3a2"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C19666-build.log",
+      "bytes": 483,
+      "sha256": "e2598cdf9ec267ed8b26d7c3b516745011f70e2fe11ab8ef289a5e87d861f35d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C19666-delta.patch.txt",
+      "bytes": 1300,
+      "sha256": "7d06f57df1348c535ddabc59eee456ace6cde7d08903e6cdfc0c679d60c4e0ae"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C19666-import-resources.json",
+      "bytes": 610,
+      "sha256": "b3c1795d76d4e5a74feb60a38a8755ee3d07bb6d19a765c11792f5f7ef9a1d27"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C19666-import.log",
+      "bytes": 209,
+      "sha256": "b920600d53728d769308a812241c79f8c051f5dd7eff1f98a50d46c93808f7d2"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2074262-build-resources.json",
+      "bytes": 645,
+      "sha256": "d36e18f3d36d5a564a798b18ec373e32b9be328227ca9ac1485d7998d2056a87"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2074262-build.log",
+      "bytes": 558,
+      "sha256": "fe267455887c71da139c5aa89263d1c41f40284211a63bdfc3ad6a78c3aa6d55"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2074262-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2074262-import-resources.json",
+      "bytes": 614,
+      "sha256": "d82c7981f40b77f8af53043cbd7e19a256b7bc263d492952d592ea09c5f31bb6"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2074262-import.log",
+      "bytes": 211,
+      "sha256": "441eee078ee05c1b42c4483ffdc7aa7d782b0349eb2f9e0c8fb05ecaa240f8d7"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C20917-build-resources.json",
+      "bytes": 642,
+      "sha256": "1768b4a669b46ff923ecc2a68fd7e4aa910d1964575c2ed0eefc6ce64cfda3b8"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C20917-build.log",
+      "bytes": 649,
+      "sha256": "90e87ac4d6e197d2677e3159e8b55a7d92062e6d59018dbb1df31ab8187ff84e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C20917-delta.patch.txt",
+      "bytes": 2324,
+      "sha256": "076855f973db56d60edd478309a2f1bfddf5765cd9d664fca051f2e5e58e2a52"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C20917-import-resources.json",
+      "bytes": 609,
+      "sha256": "f59a86f20fdd8937d50daffc4d46aec6d7503a40c5a4596756773ec145f875d5"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C20917-import.log",
+      "bytes": 201,
+      "sha256": "7f6058abf6133499b74edd3d891f767c64156979d16013777734ed9746877a02"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2103-build-resources.json",
+      "bytes": 639,
+      "sha256": "206c22a7ff61dc467d10a1d6765a2076cd6b013d34080faeadbc01150c5c279a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2103-build.log",
+      "bytes": 482,
+      "sha256": "32ce6ba82b3e456fc3a4cf42e118fb353efa6c293c6368ee1e5aa184e062f94b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2103-delta.patch.txt",
+      "bytes": 3041,
+      "sha256": "647e5c47a4446c049fa1574cde6ac3f504e715feaa055e0123f74075ff82582b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2103-import-resources.json",
+      "bytes": 607,
+      "sha256": "9633c2aecb27b8a8c86563f5f8a375b85648dcfac999f00d47d9ab1202513d89"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2103-import.log",
+      "bytes": 200,
+      "sha256": "262ebfa4294becc64eebed9da37ff8ede85558ba6d73839f0da1b8e2bf4c143d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2109-build-resources.json",
+      "bytes": 639,
+      "sha256": "14975a02d07bb445f544c43d8a101a5044dd92095a17ea19dc4a1fcb53c0be20"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2109-build.log",
+      "bytes": 482,
+      "sha256": "226983cc9dc0e03db56e8ba94af06596933c73624bb3b68fe8eb5ff6c8c40440"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2109-delta.patch.txt",
+      "bytes": 3041,
+      "sha256": "3fdee39590e5b9ec74f1b61af128218e080d20e04e791f8b12efc531b772b105"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2109-import-resources.json",
+      "bytes": 606,
+      "sha256": "50feeaaa6cbfaf406e5812045e4c5492dde9488909740a171465dd92a7ecaf42"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2109-import.log",
+      "bytes": 200,
+      "sha256": "0feb2f306716c52fdbb3002c8c74ffbca95f2eec2a9fac57eaf64ace4d57e23b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C21122-build-resources.json",
+      "bytes": 641,
+      "sha256": "0149b96aed165ea0cd84756ff34e68efd0fcbc5b4c0ff606d9f41fad52aa971a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C21122-build.log",
+      "bytes": 483,
+      "sha256": "457cd4b0a1d3020e97272b3e94175e8cb2aa3435d0b249f8851cf8cf73d564fd"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C21122-delta.patch.txt",
+      "bytes": 1300,
+      "sha256": "602cc8fdc8313b7537b67785bbad35a485e4b2f38b8bb0d8746fb958993baf0c"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C21122-import-resources.json",
+      "bytes": 608,
+      "sha256": "419533ad9fb57f4c1d64ba17567fbf3d4a2aabce0efb0b480a14711965532fda"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C21122-import.log",
+      "bytes": 209,
+      "sha256": "25cbed0668bf09922acb3647987cfcee71b645d1b587208a3fa0c5d100da6e11"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C211759-build-resources.json",
+      "bytes": 643,
+      "sha256": "3886fc7532ce3b907b64df638be52c93c9283f8755eb730855f62879e6ca25bc"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C211759-build.log",
+      "bytes": 624,
+      "sha256": "2848fb747cf51be4db55a5ade0e88b807828b55d3c65a5657009ef10b2bff844"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C211759-delta.patch.txt",
+      "bytes": 2749,
+      "sha256": "4089062e3024d60d325ccd7d6379a58f0b3e9c9aeb293c29f16f322641b98db0"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C211759-import-resources.json",
+      "bytes": 611,
+      "sha256": "7c1dfe169f693bc62fd670bf2b5db496a8f5f5c83f05a5092d9ae10b10133e09"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C211759-import.log",
+      "bytes": 204,
+      "sha256": "818898e60f49eaeddb76cdeaf78c14296b0ff8da4ebf2b4e263c63f23b108912"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C21190-build-resources.json",
+      "bytes": 641,
+      "sha256": "75ff781348608349d716afc747181ede412ebfeb3b84ac4fbdfe03aeac1bb32b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C21190-build.log",
+      "bytes": 483,
+      "sha256": "cb0ba5af74c416b6a44a998d41dab0161b6051d6fb2623b12071402e29141a39"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C21190-delta.patch.txt",
+      "bytes": 2108,
+      "sha256": "568399c8d81d9682246b715fc5e12f004c2602c68ee9945c2bae7cd150599075"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C21190-import-resources.json",
+      "bytes": 609,
+      "sha256": "d4b5540cf2f9735de8ae8b75ae93cad5e262e361cd8935eb53c30331f04b0ffc"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C21190-import.log",
+      "bytes": 210,
+      "sha256": "e4e5d69cb26387ebed541ed457952b9f4c1878b3cf7f373296ea284f7dc28e50"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22452-build-resources.json",
+      "bytes": 641,
+      "sha256": "8239aa45a9adfd43e1faeb35e684e49e94b58a7c9bf2731fcf6281b9be0936aa"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22452-build.log",
+      "bytes": 483,
+      "sha256": "8960b6cce0c4f3ea011bb68e07dab665d0d8bb9a630bb89b4fb1acbd22747332"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22452-delta.patch.txt",
+      "bytes": 3052,
+      "sha256": "2b0d116729b6c88eae3680b3b2aed22d1aa2e914bd76b9a44729b50c8f81577e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22452-import-resources.json",
+      "bytes": 609,
+      "sha256": "743063e669dad143d3b39534ceadddef4a2ab6ca0cddd0228cbb975d9031d604"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22452-import.log",
+      "bytes": 198,
+      "sha256": "8bd872bc1225ee95660c41bfa0b13cabacd14ac324d05ef3a409324ddb508073"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22790-build-resources.json",
+      "bytes": 641,
+      "sha256": "3d87550267bc856ca07f796a70a32bf37e7492f9f57c82442a6d882b324fa31d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22790-build.log",
+      "bytes": 484,
+      "sha256": "3ccc9cee9272d80d7d39669eb1efbc76ec4f6fb977941eda43eb5c43be7a55e2"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22790-delta.patch.txt",
+      "bytes": 1402,
+      "sha256": "08e0a2ceebd6200b547eec6e477497d7f16f2d9484a1b472534458f2d7316c61"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22790-import-resources.json",
+      "bytes": 610,
+      "sha256": "9b7ffb7622978f36ccb034f0689674caf767cf1c85522e21c9f71468c4bdcebe"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22790-import.log",
+      "bytes": 210,
+      "sha256": "e919e6757183460cbff90b9576f8e4e47dac97c299c9fb0996caa7eb9958eb25"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22815-build-resources.json",
+      "bytes": 642,
+      "sha256": "c2d3906cc439d94dc382a52572efdd4897292976499c7b723e5d44d4bb417334"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22815-build.log",
+      "bytes": 484,
+      "sha256": "1efab1e8cfef99ec9fb902341c7f3767b833aa6f7edd89eaa03d78ea4ba74c28"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22815-delta.patch.txt",
+      "bytes": 1402,
+      "sha256": "db0fcfd852212f7039698081491377913316af056b304450dd2a33869706ff35"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22815-import-resources.json",
+      "bytes": 609,
+      "sha256": "5656a194465691e1a7544966b730d5eb4d287c8d5deff4411cecfd430e2efa25"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22815-import.log",
+      "bytes": 210,
+      "sha256": "ea89bc76d774297d1d377f34aa7c888dea4c5ab77d83cc19ebca36c10a02a4df"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22935-build-resources.json",
+      "bytes": 641,
+      "sha256": "a6dd574c9631c124963e852d4dd6eb46369b769f0fd3b237bef9c1c26550e835"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22935-build.log",
+      "bytes": 484,
+      "sha256": "0f8023a0fa844d766f69e5ce47b8cb87749d988e091fc3297871c9ffb9aa3dd4"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22935-delta.patch.txt",
+      "bytes": 1402,
+      "sha256": "17314a71f52dfcfada42f3d616a349a428fd727b94093603fa6804815d119096"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22935-import-resources.json",
+      "bytes": 609,
+      "sha256": "40d5bd544e633c70b02168f123c37494d06ea9491dc903b8b532a3a2d5683881"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22935-import.log",
+      "bytes": 210,
+      "sha256": "e833420fc7665636512bebb1afd7abd8b1c14a386c1265304deb879a0a445e38"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22956-build-resources.json",
+      "bytes": 642,
+      "sha256": "5bd3b86fc385d7bd53e84cc3e9e64215b533b5e99043ee806ba7df99c68394c4"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22956-build.log",
+      "bytes": 484,
+      "sha256": "4af1b87400dca3bfbbd5c635e34894e2c956143b406b4f56dd9ce6c3fbfbe3bb"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22956-delta.patch.txt",
+      "bytes": 1402,
+      "sha256": "94179b637f672162bd4bec3046da8b81c305772ea8a3836a3ff9a615faf39489"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22956-import-resources.json",
+      "bytes": 610,
+      "sha256": "1f2717854970f0b1b45817efbd443675a5e563945d8f07288aad56e11abfe881"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22956-import.log",
+      "bytes": 210,
+      "sha256": "842c291a25fa5a432401de9abe421baedc24b08b4a123b64ef7419a90fbd80cc"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22967-build-resources.json",
+      "bytes": 641,
+      "sha256": "264638dc427c8b1b474c4c14eceaba8e997ed4ab31ad2e1d8410bbdc122c9f29"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22967-build.log",
+      "bytes": 484,
+      "sha256": "d5e0c7f58f9c55d991735ddcfc1599a452991f5e8f7ae9bd707c2974f844540c"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22967-delta.patch.txt",
+      "bytes": 1402,
+      "sha256": "3e6310d99cf6dd5e30d6db9e8fc77312d08e138a7fe31fa14755a5318393111a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22967-import-resources.json",
+      "bytes": 610,
+      "sha256": "5acf98fb22d6ff9ea852f674b25f38f6cbc3c197487786cef2dab36a8c8cb82a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22967-import.log",
+      "bytes": 210,
+      "sha256": "f9e86e0dcf6ca18253b989b5f1c5cfcf8230e6e0922bd23bc93cbec31a3f7b66"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22975-build-resources.json",
+      "bytes": 642,
+      "sha256": "07dc14fedfe3e5c4bb48485a400c14cbb5c05b16883d149484c0f2e7b6ace06d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22975-build.log",
+      "bytes": 484,
+      "sha256": "4d331a4e29bbe4e8df3c6426f5e4c84e33adbc40704e659f250586986bb53c6b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22975-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22975-import-resources.json",
+      "bytes": 610,
+      "sha256": "7f0d98bb054e103750d2a3066a56c49a0dc0fd7acc4663af56912be8b4646b14"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C22975-import.log",
+      "bytes": 210,
+      "sha256": "ba07dddfef1d396157714b9d033cd1496745f8e2bc856b183fc3d9bf74a61c4d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23138-build-resources.json",
+      "bytes": 642,
+      "sha256": "215a44d7a34c0dfd1c47753dee36313094eabe4bc7959f4f4cb2dbdabb59f1da"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23138-build.log",
+      "bytes": 484,
+      "sha256": "8d7efb3dbaa971dcb5c70d5065b7a0aae09be76c1953fdf9e809393f2e44a4ba"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23138-delta.patch.txt",
+      "bytes": 2108,
+      "sha256": "dcbf593a5877accb2a193f2ea63791a01a4c88710fa21b8d3958510d1e8e2291"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23138-import-resources.json",
+      "bytes": 609,
+      "sha256": "830650797717d95f73d99fe6b9cae42b69725b9a03de6080ae8440fee45392d5"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23138-import.log",
+      "bytes": 210,
+      "sha256": "a3f703eb667175c762bdf9d856e527c17432488cddaa3eb216e0d76fc9624610"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23162-build-resources.json",
+      "bytes": 642,
+      "sha256": "7cdffb1ddbfa4bbc3166b75978fb9a78462d9039130d924469f9dd312bc0fa16"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23162-build.log",
+      "bytes": 483,
+      "sha256": "c6e1275c8e06b07ee12699064ad314eba6caaa3378df8e688407d6bffce3ed5e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23162-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23162-import-resources.json",
+      "bytes": 610,
+      "sha256": "c0b34e94d77119c8e9f122729e4fdab8dfc9480d685a1a0155c8bd5c0a3e0eb9"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23162-import.log",
+      "bytes": 210,
+      "sha256": "2a49f54e52c3b6fa2d9c7e16b9ec973ca284648e775cdc4356c0dac965b9ff35"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23186-build-resources.json",
+      "bytes": 641,
+      "sha256": "07db603c9bdc4d61d48a6f0f5c2610dcced6c23ab51b8af558e98491b5f21142"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23186-build.log",
+      "bytes": 484,
+      "sha256": "2f32d664ed8e06f4b23380173220cb390fbcc4c31e73a3c71f6d201506cc3866"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23186-delta.patch.txt",
+      "bytes": 1402,
+      "sha256": "d7a38b208ab9d949600b99b1d638db8785abbe54c8429555178ea4c5f2082fca"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23186-import-resources.json",
+      "bytes": 610,
+      "sha256": "678eaea4fc7b36e7f8f5a0b14da26722ff05629c6d2c27f5dc55c6117aee2229"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23186-import.log",
+      "bytes": 210,
+      "sha256": "02b88cbb6acbf272afae6e789267a5258005367857b15a71d849f523bb57fe29"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23215-build-resources.json",
+      "bytes": 642,
+      "sha256": "3967dd6eb826ed41ed8427aa8fdb2fa684b17eebe09259a9df72fd77951c7a44"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23215-build.log",
+      "bytes": 484,
+      "sha256": "55c87e84cc2412004625fd3295600a8960116f406963f80cbbc60c441d9863e3"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23215-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23215-import-resources.json",
+      "bytes": 610,
+      "sha256": "8175aa184e566632cd00e4b3cd9487c21519176c1ca6654e4e32224b709da08d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23215-import.log",
+      "bytes": 210,
+      "sha256": "83412adb35ddc4a31374b04c367985503e1eacb9f4626715efe77a6fa7f2ca12"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23892-build-resources.json",
+      "bytes": 642,
+      "sha256": "d25ba90fd19ab216c78978dbc8b6113c61aa87e461341e0c7b0d77cf411a9893"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23892-build.log",
+      "bytes": 568,
+      "sha256": "9fd910e2c8ddd0be6acdb9f8e620d6c40dc737658e9c722bd620d796642d560b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23892-delta.patch.txt",
+      "bytes": 1719,
+      "sha256": "b3b56be9f47d7dc7cd2ebb27596fb761b89db8dfaaaa09b94e74345fc687ed81"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23892-import-resources.json",
+      "bytes": 610,
+      "sha256": "20d2b4fc21c1f19ca3a8b9adbb319599f5d2ce4097b0cfb7d16a0e53174ed85c"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C23892-import.log",
+      "bytes": 205,
+      "sha256": "88709f974e52e7f4c0e2166235c6b7d78505ffe8dacf8bdbc159a6cda207428a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25803-build-resources.json",
+      "bytes": 642,
+      "sha256": "2db4feb4b71ed42ed4dc36badacde56f98fe2f2c19b31a3f4937b1a227e0a3ea"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25803-build.log",
+      "bytes": 483,
+      "sha256": "f4726cd22645a749204c9c95e42475b31aac63a1529fc6021b45c4716243b320"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25803-delta.patch.txt",
+      "bytes": 2108,
+      "sha256": "863f50914d0ed5f9687069a6af34b0d82aad23f2c33463922d635597c6067035"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25803-import-resources.json",
+      "bytes": 609,
+      "sha256": "c3845281d09a9fae3d562b7b382cfc9c5d54614c7c816e3e0c39d69e3aed697f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25803-import.log",
+      "bytes": 210,
+      "sha256": "a890d98337d77364ce8e3cf71412dd4c8d3e5dbd0d303951ef0fa20760eae306"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25890-build-resources.json",
+      "bytes": 642,
+      "sha256": "f8cbe2aaebe225aceb9ed4d993cc0357e90f6c028b194843b31e6b6bb7c8110d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25890-build.log",
+      "bytes": 484,
+      "sha256": "8a729af6cdd6a786b49ec8fabb6a706a93fdf5065f966defbc0c9396393ba211"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25890-delta.patch.txt",
+      "bytes": 1390,
+      "sha256": "292aa43e70ce10810a466def087f2a5792ba84b8ed69f32eec51b8aa76009dda"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25890-import-resources.json",
+      "bytes": 609,
+      "sha256": "c765e6d463663dff4400a99ac19f5ee1f50b2c1f8b6162ed24cc1af8b5159af0"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25890-import.log",
+      "bytes": 210,
+      "sha256": "53644f676df6a703a4233f69b220ce5186c3f76c72f995779b383ca1c9c42a99"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25950-baseline-build-resources.json",
+      "bytes": 532,
+      "sha256": "df544523c43b7ec7a19127dd6223b486b67d283076ed0f8c29d21f88acc0dcdb"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25950-baseline-build.log",
+      "bytes": 304,
+      "sha256": "0b76b830a0b2f315df7f74af36bf038385263ca5cefbb45963871cca21b3c7d8"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25950-build-resources.json",
+      "bytes": 641,
+      "sha256": "421c0eaa9e30605d881cd5615bd0aa563fea425257698c2a5a46fbb9a585db77"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25950-build.log",
+      "bytes": 484,
+      "sha256": "9073b21a546bef64a5eff3e9b4b696b151a56dca78ad3f5358c62d73c446565c"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25950-delta.patch.txt",
+      "bytes": 1660,
+      "sha256": "8a73a4c7574ac8462d8a625fdc3125be7a949748fcfa9be215c5d984b71b0911"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25950-import-resources.json",
+      "bytes": 609,
+      "sha256": "fe248c4dd1224958288359be18b95040de1663c91b69e2b2b93640cf631be291"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C25950-import.log",
+      "bytes": 210,
+      "sha256": "51b726e1d1c19186f99ff3f51dd279d353065688f18e4f0cc19327c775ef6825"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2678061-build-resources.json",
+      "bytes": 645,
+      "sha256": "acf472a4bf3856b826849057e821337c82276d23a4018fb93604273ce70ee34a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2678061-build.log",
+      "bytes": 485,
+      "sha256": "9dead99d295e7bc5fa3649122fbe03a6fc69a6bda78564a297513b8a6c4edb36"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2678061-delta.patch.txt",
+      "bytes": 2999,
+      "sha256": "4957d927642302c49bd8880296c134e1eb53b2d9e452ebd7cb4762961a65ac14"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2678061-import-resources.json",
+      "bytes": 615,
+      "sha256": "d9d04cab9f33399fb45cbd7b68022070d97c30c5ce6bcce9b04afd4d425baf90"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2678061-import.log",
+      "bytes": 210,
+      "sha256": "f7f12d8129788a5d3f4ee12cf35c641b773f770e4e71f2de83f2ecc4ccc20525"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C285788-build-resources.json",
+      "bytes": 643,
+      "sha256": "f41e2e435c9cd54845886d93b34b83697dc215fe7f49eff27f7a344b9c74b734"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C285788-build.log",
+      "bytes": 484,
+      "sha256": "fa2ae0e21326fb415e1d1af680c0cf2a0e401baee67f65ba42e638ecba5f1fb2"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C285788-delta.patch.txt",
+      "bytes": 1183,
+      "sha256": "6ebc5480c763bb5bed715bafc9b9278abe8dcb0d834331a674c7f46ef8f45031"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C285788-import-resources.json",
+      "bytes": 612,
+      "sha256": "cc6bc627c63cb865a035e4fe200a66e74a9315eabe4d7e1bc86b3994c6071607"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C285788-import.log",
+      "bytes": 213,
+      "sha256": "79193853b7d1fe7c65a93f4c03a5ec1e44e35b675fb1e20e8c9d9e464a99f6b2"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2906768-build-resources.json",
+      "bytes": 645,
+      "sha256": "9b5080e42e3f9ede11aeecf54ec5de47b8c7b08ec0e42c4d178fd5faf1e123b3"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2906768-build.log",
+      "bytes": 571,
+      "sha256": "5b5c997476b9d7ef65b926eeae865b5bcdf9350dfc3f34721f47b9845973412d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2906768-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2906768-import-resources.json",
+      "bytes": 614,
+      "sha256": "ce7be63c4d4372106b10d37dbddc334d2fcff1d437dfe1d210760776beaf1841"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2906768-import.log",
+      "bytes": 204,
+      "sha256": "a86eec76104541d79af760bb6a528632253217641406952af6002083df1e6cc6"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2986030-build-resources.json",
+      "bytes": 645,
+      "sha256": "3a93b1aa33915f815ac1c01a4ea01dec736ab66b17e1af540417b8617c8f15cd"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2986030-build.log",
+      "bytes": 432,
+      "sha256": "0c0001887328488fbfabde35dff4cfd7f658cad5dc106d8fa4be753400aca1d4"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2986030-delta.patch.txt",
+      "bytes": 3130,
+      "sha256": "39d600b13441a930a2b453c4a4cad8cf1be2475d2dbc29d20d10ccd1b5880411"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2986030-import-resources.json",
+      "bytes": 616,
+      "sha256": "9c824192639870eee737b4732a333cc596cfb751db1d470e9e8ca4da2882390f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2986030-import.log",
+      "bytes": 219,
+      "sha256": "5954b0f9e1d81006111fa8dc1136f9f83dea47b290c058e12872cd0db07362eb"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2991665-build-resources.json",
+      "bytes": 645,
+      "sha256": "d7fce28c7ad1b3b475ad5d45b57270e120f12a36242aa360295b95be1560e01f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2991665-build.log",
+      "bytes": 486,
+      "sha256": "1b374b13a4c351378a2f20551930ef4a8f1226aaefac52da4d3c6f1039100fd0"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2991665-delta.patch.txt",
+      "bytes": 1383,
+      "sha256": "5b5e0be6473a9d31f96b9e206ca387ac9f0bf2953079f0da994701c0609552e8"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2991665-import-resources.json",
+      "bytes": 615,
+      "sha256": "2c2aae75e1f095102027bf9b7b1cde6c73db286eebbee46be5fca7b9f9adc66f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C2991665-import.log",
+      "bytes": 211,
+      "sha256": "20454096d94d143148c52865b770a6eb02d95d70c9517e81441c7a4509f42632"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C3293142-build-resources.json",
+      "bytes": 646,
+      "sha256": "d6a86ed0bbaaeb455e7a5b8f04db30132d3d353b8996decbd14fda0f8a49c5f9"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C3293142-build.log",
+      "bytes": 666,
+      "sha256": "53ddae49c5152d5d0b992a94f4080ed462e3bedb7c42f6ab3d0d8b381d50bd36"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C3293142-delta.patch.txt",
+      "bytes": 14624,
+      "sha256": "6d87d2608c406aab59e30c540bc41dc80e1813b4df0e6d0a40f3e1e6efd72c5a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C3293142-import-resources.json",
+      "bytes": 614,
+      "sha256": "28bae8b47f5984a3edbe324c54721f82347e5729cb967a9d4013e1d8c56a15b6"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C3293142-import.log",
+      "bytes": 209,
+      "sha256": "0f25c6b8ca98334d51d332bb0d8902debef8659f2d80841e470c75e97c4c1103"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C395849-build-resources.json",
+      "bytes": 643,
+      "sha256": "abf792007b5d3ac8a3032d2921babe38d9bc87416d1642018c407bbcdd3256b1"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C395849-build.log",
+      "bytes": 662,
+      "sha256": "d25b82eb581cc8899aba2fe9e1c259b798cd8f0d8285e7aafbfadd7e6a5b5194"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C395849-delta.patch.txt",
+      "bytes": 1266,
+      "sha256": "bc03a80b4763275176bcbe37d638f48257857555c11258c2a08bfd5c32940a03"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C395849-import-resources.json",
+      "bytes": 612,
+      "sha256": "b4d9d35c8979aeff88203b860bff8cbdb713cf56e52b6e27c052dbfda69de453"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C395849-import.log",
+      "bytes": 214,
+      "sha256": "51138288d53ce7a91e90efea771d9b8fe99b5ea70dc0aa09f43f61a059fae465"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C403725-build-resources.json",
+      "bytes": 643,
+      "sha256": "1f0485ad80d80561009dd8cac704a6e4b32216a64f263ca55c856b232f341ae9"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C403725-build.log",
+      "bytes": 485,
+      "sha256": "a68dacd784bb24aab84b7b47f569db29bb9df5c4326025588585d78d3fd236d6"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C403725-delta.patch.txt",
+      "bytes": 1289,
+      "sha256": "5adc96462ac3151c960f1f6d01e84d4555a3c84012b7c7ba4fc9382ba043f2f1"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C403725-import-resources.json",
+      "bytes": 613,
+      "sha256": "e66880fa380188b62b2cc9314290ca2bd21f6a4d27f80bfaab9b0f309390de8e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C403725-import.log",
+      "bytes": 214,
+      "sha256": "33c4418424c565a1a378104f488c790ec03987a6d8bd50cc7acb0fc88ce264d3"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C4184-build-resources.json",
+      "bytes": 640,
+      "sha256": "8083920ae5dfb67a8d24bec8187682ae3175f53d5d3cd972e3498451b8e0c1ad"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C4184-build.log",
+      "bytes": 483,
+      "sha256": "7f7b4dc2b397530e30f917b3d0628df1f50f60689a73e910fe2793587317d762"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C4184-delta.patch.txt",
+      "bytes": 1400,
+      "sha256": "1880054d92a6c7fa168029dd664b505c5fe9b830179be977bcdbc5c782ed25b6"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C4184-import-resources.json",
+      "bytes": 606,
+      "sha256": "b45b46983f7707ceab0fa6aa176d77968328df2c9000353b329e3fd149e84a77"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C4184-import.log",
+      "bytes": 208,
+      "sha256": "b000ade6a91f75d5d32c99dbf822672659bc8f1292b791620d38072f487578d1"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C440183-build-resources.json",
+      "bytes": 642,
+      "sha256": "19fbc3a36699af8d579155916356aa2fc48c4c7a7200fce258934c474ab46659"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C440183-build.log",
+      "bytes": 485,
+      "sha256": "f5d2573693f9afaa34bf2488a3e43450e6f06f151f340396fb776cb67cff5976"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C440183-delta.patch.txt",
+      "bytes": 1308,
+      "sha256": "8fbcf965e462284fb52dde03a0106a65a6ccab8737720c7fd50bcc8b9b35ac8d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C440183-import-resources.json",
+      "bytes": 613,
+      "sha256": "f998ef18497fae8242ed4259c857deb7c0e64e101d4f318e6cca51fb1e582ac1"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C440183-import.log",
+      "bytes": 214,
+      "sha256": "a54477a429a73e56b92f9de86401029fa467e48818d0f5d5dbe30d5197f26ae8"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C44377-build-resources.json",
+      "bytes": 642,
+      "sha256": "d4ec634ad02758c5059909aa2a96e5d30fecc09169c10a95d4a7389a7cec5cc4"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C44377-build.log",
+      "bytes": 432,
+      "sha256": "0c0001887328488fbfabde35dff4cfd7f658cad5dc106d8fa4be753400aca1d4"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C44377-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C44377-import-resources.json",
+      "bytes": 609,
+      "sha256": "bf081100635539c02e93201387dac5d6752935df7d2125efa9f610cd6620b94e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C44377-import.log",
+      "bytes": 206,
+      "sha256": "0f131e25b63112b946d5c62ba70f038488a0d556e8aeca72b2539e788f5e25f1"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C468238-build-resources.json",
+      "bytes": 644,
+      "sha256": "ee1957d7de80b431a7395eb9978de016594ddc3b1fc75ecf7391aaafd3bc188c"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C468238-build.log",
+      "bytes": 471,
+      "sha256": "ba226cef0967bf13eeafc878643334fbad504e5837725f6f060ce19ae890c68e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C468238-delta.patch.txt",
+      "bytes": 1448,
+      "sha256": "af99a122d36ca91dfa2661ba1bc8f6280fcd81c534b13fbe186816186d9e3a75"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C468238-import-resources.json",
+      "bytes": 613,
+      "sha256": "5d9f8bae57139aa8ad736274dcf0583f19e4ccdaa0f87757c7fa4a1852bb23c4"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C468238-import.log",
+      "bytes": 209,
+      "sha256": "c76b0d752c035b5a8192699b2ce537ea7f2364e62f8ba71707de3ebf8b04b4ef"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C477999-build-resources.json",
+      "bytes": 644,
+      "sha256": "d94da3fd0972b253999f3a18b8a5c3ecc038110da05774228028eeece31a689a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C477999-build.log",
+      "bytes": 620,
+      "sha256": "b8e93c9ebdecfc5e32f214faba61284b064a2357349d42368272e98a20da48d9"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C477999-delta.patch.txt",
+      "bytes": 709,
+      "sha256": "05bb882dae6ed712116f01b50edbb3ea12ea5a4b219cb4cbacf7c57716141e5a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C477999-import-resources.json",
+      "bytes": 612,
+      "sha256": "e84af5e7829cb5630d62b5a60873a310285ff9425d00804ceeefefff1472599f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C477999-import.log",
+      "bytes": 211,
+      "sha256": "ffca86129b0518f5c2fced5d615aee0caa1ef1e3c1b389702ecdd733a8827b2e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-build-resources.json",
+      "bytes": 645,
+      "sha256": "3fb98974a2f3d38e78158917290c7ee43247d59b68a676b057aac705850514f0"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-build.log",
+      "bytes": 605,
+      "sha256": "2b5c823866cff742a4ecbfe4fdb11e221756256441fe39898059c394bd01eda9"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-delta.patch.txt",
+      "bytes": 4167,
+      "sha256": "974bda8b84541f03995c618160bb8c34e4fa3eff05d706bc682b3cd3697cdb5f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-import-resources.json",
+      "bytes": 615,
+      "sha256": "ed3560dfffb265335d5c807aa2794355701dd4915699ca0ab727cdde7f6bfc05"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-import.log",
+      "bytes": 214,
+      "sha256": "b3616086cd198f9ec34ac0f572a5e5d9e3eb44db91973934662075f90e16a3be"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-native-netlist.log",
+      "bytes": 806,
+      "sha256": "7c567b0e5a6fcba67ab1c5dfbfdedcac6711671c2e142b353ac3549c6fe0aa83"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-native-netlist.resources.json",
+      "bytes": 601,
+      "sha256": "b66a7525e5de4162fda86ac43731ddc5917d7a8eb3911702f4918eb760b34602"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-native-pin_specification.log",
+      "bytes": 180,
+      "sha256": "f1a44e165831a32eb8050f4e82633b4ee7984ca2c813539da4dc5c541a26130b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-native-pin_specification.resources.json",
+      "bytes": 621,
+      "sha256": "390a1ac7b2f35fef38f38c2f6e82206701803c5040a668d872419999f8231534"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-native-placement.log",
+      "bytes": 320,
+      "sha256": "b5af4af39d2b951317bad3136542399931961f21dba671166c174744b48d3afc"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-native-placement.resources.json",
+      "bytes": 605,
+      "sha256": "90247d33122c312a1388eafb14786d66e41e271177a494e830edab465b8851be"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-native-schematic-placement.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-native-schematic-placement.resources.json",
+      "bytes": 625,
+      "sha256": "ad6ca6512f80da10f070c68d506fc89a255c925d5b0a8cd64b06c950c8de604b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-native-source.log",
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5184243-native-source.resources.json",
+      "bytes": 599,
+      "sha256": "38b7874c0625a2e65d175d8921be1e6f90af0f20b3686790ee956fc3f8309478"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C529330-baseline-build-resources.json",
+      "bytes": 534,
+      "sha256": "a0e03d7012220410549370442c429df9d9a79f93b2a6de31422f3acef76d35ae"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C529330-baseline-build.log",
+      "bytes": 252,
+      "sha256": "7066d4aef64269ad097686aadf6dc7fd32bc5a0e95177e6d866c9c01663f1232"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C529330-baseline-portable-build-resources.json",
+      "bytes": 543,
+      "sha256": "c834f3230b541d560fb3d9c1678a10b078ea16fd774da8ad39c390619747e955"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C529330-baseline-portable-build.log",
+      "bytes": 252,
+      "sha256": "7066d4aef64269ad097686aadf6dc7fd32bc5a0e95177e6d866c9c01663f1232"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C529330-build-resources.json",
+      "bytes": 643,
+      "sha256": "722caf1d19403b23e72f1f55c4084df26322def6966e7472a85692ca4e39636e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C529330-build.log",
+      "bytes": 432,
+      "sha256": "0c0001887328488fbfabde35dff4cfd7f658cad5dc106d8fa4be753400aca1d4"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C529330-delta.patch.txt",
+      "bytes": 21623,
+      "sha256": "91c96b8c4bbe2ddf96c189525353d83353b7093dbade89beedaeb1013a6204eb"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C529330-import-resources.json",
+      "bytes": 612,
+      "sha256": "720bc9b21514b78d4e3b34cdd0e24eb17b70ac7728b688dfabc4d00da6db4784"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C529330-import.log",
+      "bytes": 211,
+      "sha256": "1291b94824b87e6e090eba793b2dad035d50df251ed4ed98b8523b6037d16178"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C53444-build-resources.json",
+      "bytes": 641,
+      "sha256": "052240a437222f93a72fa9f4840df31496bc8da945af89e19eacec3ed25d93c8"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C53444-build.log",
+      "bytes": 649,
+      "sha256": "9b6c63fa140307a99c2bad747edec18f509fcfcb87665b70169486c975768532"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C53444-delta.patch.txt",
+      "bytes": 1774,
+      "sha256": "5c2c1a22bae33fa19db60627ea49d2ad1466482634ee24e7d7898f5e807900fa"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C53444-import-resources.json",
+      "bytes": 609,
+      "sha256": "e5b93c04f22dee107835502e1d9b9aab649602008355fe961fe03e4987f5d90e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C53444-import.log",
+      "bytes": 206,
+      "sha256": "4eb7eecfabd8ca1f84776bd54732ca84a18fc2efcd57c55fb2980facbf98fd6b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-build-resources.json",
+      "bytes": 645,
+      "sha256": "9aa0a53ef488824cc04f25eafbc3b258dfe53768db51d85175b62d42e6a1245b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-build.log",
+      "bytes": 650,
+      "sha256": "fac36c26e52986bef69ec65b7c1711423dadec0365b712dfa7e431bafe56cad5"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-delta.patch.txt",
+      "bytes": 636,
+      "sha256": "c42e1bd475fe71feb50a89abb7c65c631dbd6f9edde034d45c7c656b8b7548b5"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-import-resources.json",
+      "bytes": 615,
+      "sha256": "57f20a9e1d2363be94a7147314bb23f3c9938619218e84f440092cbee6f9830d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-import.log",
+      "bytes": 215,
+      "sha256": "bda91ab4a8097aae53f780aafc07c6ece8d967d7aea3f00389b1ed2a7e5cdc03"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-native-netlist.log",
+      "bytes": 314,
+      "sha256": "bee5aa440ebfdcd13bf17b72fdbeac37f22d692b32023927daeb5fc660896ef4"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-native-netlist.resources.json",
+      "bytes": 601,
+      "sha256": "46c71aa628d346d40cf5219ca1e622d79cc6cb441cd0152fb64ebbc27663c51d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-native-pin_specification.log",
+      "bytes": 288,
+      "sha256": "0b2a8b5d01e8273e1ee509d2088fb543eafb2e11662baaa65f1f823ce95e411d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-native-pin_specification.resources.json",
+      "bytes": 622,
+      "sha256": "ce07894a85d990204f454a2e01554f10147622d6b0d8e35fed23d57ffb75a062"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-native-placement.log",
+      "bytes": 404,
+      "sha256": "c643d4a82faa3f54db78a0507ac90b1aefae55bde32fdb05272648b6e68edb33"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-native-placement.resources.json",
+      "bytes": 605,
+      "sha256": "df35e58b089a98156d8277c1fdecd167d4afbc40fb143717342e9f66733d92d9"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-native-schematic-placement.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-native-schematic-placement.resources.json",
+      "bytes": 625,
+      "sha256": "92207d45a10a3a044beb8b8b88e8c2753e74c8329d4b5259695f312147360886"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-native-source.log",
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C5710902-native-source.resources.json",
+      "bytes": 599,
+      "sha256": "23fe54e856c92388c0c1933865e5d44a1abcfbd14636132fae573243af2c2bb5"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C57112-build-resources.json",
+      "bytes": 641,
+      "sha256": "aeea6149145e58f7964564ee6c62ae93208680490fba303f4b00c48d091766dd"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C57112-build.log",
+      "bytes": 484,
+      "sha256": "4f6ee307a28870dbeec4903cfa4b5707f1574f19d09593bd32c8e9270fe957aa"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C57112-delta.patch.txt",
+      "bytes": 1302,
+      "sha256": "a86978b1389ef9da706305d7d8b55476b85a17652a843bdf191163d47343fca9"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C57112-import-resources.json",
+      "bytes": 609,
+      "sha256": "7d59b80af0c9195c14d4a149e6ee4584bb2b5e8fefbc84a08e306f7e200065ed"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C57112-import.log",
+      "bytes": 210,
+      "sha256": "a7e674a6ad07034cdf41ec3779dcb10145b177da25b94953234bdc8ab342d19e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C67470-build-resources.json",
+      "bytes": 641,
+      "sha256": "dd9238a654267c505fe009dfbf66418ddbbb247d8a7e66cf94caa2094d5d93a6"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C67470-build.log",
+      "bytes": 472,
+      "sha256": "e7b4f003117228e417088269ba8078b311a0da2ed73c1ec2a9fd6ab0a2d80e8f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C67470-delta.patch.txt",
+      "bytes": 2154,
+      "sha256": "b7fb3ff8ad5738f479d6f43f8a9ee66b005879d73507eab283ff136b1e208506"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C67470-import-resources.json",
+      "bytes": 608,
+      "sha256": "a3c0b214b2ce48ca4f308083e10a4297742a846a14e537bfdf4a0953fd22ca0d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C67470-import.log",
+      "bytes": 201,
+      "sha256": "65ec26a09bc06684f95e7094a73eb619b86857f8c3bba83c3c24d5bc2b5edb4a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C6986-build-resources.json",
+      "bytes": 639,
+      "sha256": "e1a55a810cd085afeb9be50ac95fcbc56cb8ce6bd6eb168ed8bf1f6e405f5fb7"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C6986-build.log",
+      "bytes": 432,
+      "sha256": "0c0001887328488fbfabde35dff4cfd7f658cad5dc106d8fa4be753400aca1d4"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C6986-delta.patch.txt",
+      "bytes": 1523,
+      "sha256": "355a0837baeace77cc580fe4ecd5ed8e69befa85da093ea41930a73765d5b22c"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C6986-import-resources.json",
+      "bytes": 606,
+      "sha256": "64206bdbacb84f78a0b908a4b99102323974d2891e16ed4bc0ff0c6370adf08e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C6986-import.log",
+      "bytes": 201,
+      "sha256": "daaaed28f9ff047bb7309860dfb62aa506ee259551e4ee6fee4267f26ce35d5e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C7420353-build-resources.json",
+      "bytes": 645,
+      "sha256": "82a41a29218157ece1c314272780c2d4c52e532ace63f7243fb037a025f850d2"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C7420353-build.log",
+      "bytes": 649,
+      "sha256": "88080175d7b8ba8385a5c9d64fdf02916e1b50c162bafe5f05d6b953dedbdcd8"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C7420353-delta.patch.txt",
+      "bytes": 2346,
+      "sha256": "9629a55e85576ed65e7d4276b3ba592e758bfd2b0660a750367fe8710e9c01fe"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C7420353-import-resources.json",
+      "bytes": 615,
+      "sha256": "32425202270401f5e340baf9ffd4d9e694609014b5cf100c21570579e5d251fb"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C7420353-import.log",
+      "bytes": 206,
+      "sha256": "0deed9eb2498f9b90799aa6f6a493208bf1f89c91178d261f6333ea0fdd84198"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C77083-build-resources.json",
+      "bytes": 641,
+      "sha256": "2fce03a67df9650614974c17871fa1af2eb50986a509ceefc100a168f06889c9"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C77083-build.log",
+      "bytes": 483,
+      "sha256": "a7a12e5700d16ca995e959d90805992b3c4408329b65b90fa610f5c67710ab81"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C77083-delta.patch.txt",
+      "bytes": 1300,
+      "sha256": "e99943a87831f915dccc1e84891fe4d7f7f1d2d145cda3d2161f21879bc8e994"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C77083-import-resources.json",
+      "bytes": 609,
+      "sha256": "91fc56ac244cdcb065ae89984e64296a716a987832d707223354ab5f714b22ce"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C77083-import.log",
+      "bytes": 212,
+      "sha256": "e7034af9809c9920a06d743ac9f2ce2dee47ff09a541d2d497e4e8a639e5071b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C844918-build-resources.json",
+      "bytes": 642,
+      "sha256": "4dd8b245ddf3ed4d99a95d11dc5497992992eccebda8f70b12aa3c7dfee49ff6"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C844918-build.log",
+      "bytes": 484,
+      "sha256": "c703298f470aee8e1299b91d10e29b70c22a9ea20e3fbfe650bcab503dc8ca86"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C844918-delta.patch.txt",
+      "bytes": 1404,
+      "sha256": "077506cd3db112bbdde64a0e09194536f8dbb13ea68c7d638c8388eb27d58251"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C844918-import-resources.json",
+      "bytes": 612,
+      "sha256": "93cb33b16f9005e9e618eda8392c880f8380c42b722ec616023edadaed73a270"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C844918-import.log",
+      "bytes": 212,
+      "sha256": "1e16f47c883eb2055afef5e938f13771ad00529389533bab4cb73fcaa775821a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C855559-build-resources.json",
+      "bytes": 642,
+      "sha256": "7a9aec55d641eae9cacb8f003114f9fdc65f62ed9faff564575b044904b58310"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C855559-build.log",
+      "bytes": 557,
+      "sha256": "46c0f77f3b9ef9022e37594dbffb7ba2cd94ae2abdb3fb815c04bcc840aa9748"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C855559-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C855559-import-resources.json",
+      "bytes": 612,
+      "sha256": "fa5cf3485dc82db1bfee2ab99b3df98c259de6672ba46356453cb7ea4e31da6f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C855559-import.log",
+      "bytes": 212,
+      "sha256": "b6843b72c078847861324dbed685ebe844e4cc64c7b0c94ac03e8ebc39eeff0f"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C8598-build-resources.json",
+      "bytes": 638,
+      "sha256": "c914b61f2f8de89959776ead99e06d6d2846dff4c2a81558548949a70766671a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C8598-build.log",
+      "bytes": 482,
+      "sha256": "30f728284cf7d756a2179bbcaa95aae049cd99ec97b03e6b4b79f4e96c946d21"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C8598-delta.patch.txt",
+      "bytes": 3578,
+      "sha256": "73223cfce5fab435ec029142670d545dc5bb90dc5a8dc289431f892cab86f25e"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C8598-import-resources.json",
+      "bytes": 606,
+      "sha256": "8ebc2db186b5c165b509c60a0aa523e94189646f0125ece9b47f971520557bbe"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C8598-import.log",
+      "bytes": 201,
+      "sha256": "c01457c53876b3ff68a3a8421e008e916fb14f73420da55ddc8aa90e9120e616"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-build-resources.json",
+      "bytes": 643,
+      "sha256": "e099a3f6a956e47191df13381458101d57e5bd851fbaa249e25c542abc16b40d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-build.log",
+      "bytes": 666,
+      "sha256": "5c99b23131a5d239874c2849adf4439f2a79301af5794f18a2006ac2ab572e05"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-import-resources.json",
+      "bytes": 613,
+      "sha256": "fd5600a8cf24660969a38cc0451604ca510b47e953cf2c4d90bfb4352580811a"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-import.log",
+      "bytes": 213,
+      "sha256": "3686a1d926dd2f6a73a5480ea45e09d2a6cc0eb39d52e50a74c07ce35780c543"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-native-netlist.log",
+      "bytes": 240,
+      "sha256": "0be42660209d8adf4f7b8857576ce7a00f6d2f35feb6c655b516496c9d5c56c2"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-native-netlist.resources.json",
+      "bytes": 599,
+      "sha256": "dd480e30545acb9f8b46781fbe2c51da3fdb374b938853cd2bf1ef53392f4b8d"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-native-pin_specification.log",
+      "bytes": 288,
+      "sha256": "5678cceab4680fc3d75af73a66d11046cc490a8304723037ce1ccc3417adcdbc"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-native-pin_specification.resources.json",
+      "bytes": 619,
+      "sha256": "99e62a7d7172cb9dd6fcc49fd2858a279fab7769c888b3237819d2596e32f1de"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-native-placement.log",
+      "bytes": 397,
+      "sha256": "97cfeecd864765054f9c50a441892750d10d2d59a7e77543368095e6761b6ca5"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-native-placement.resources.json",
+      "bytes": 603,
+      "sha256": "47882f2a687f908148f8a78bcb49600c6806a03846816bb7857efd1ec59859e9"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-native-schematic-placement.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-native-schematic-placement.resources.json",
+      "bytes": 623,
+      "sha256": "daf80d446eea0f5b7825973572928a38a1754674a44bfc45ddf50d2fb29941ac"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-native-source.log",
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C908270-native-source.resources.json",
+      "bytes": 597,
+      "sha256": "e859aa4fdf6103456c6dbeb184fa8972072271cb1fe69a68e1b5eaed13ad27e6"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C95204-build-resources.json",
+      "bytes": 641,
+      "sha256": "bbff708afb4406daf8f5e26a3779b5ed5d453af10957be6f8d6c39bf298ba879"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C95204-build.log",
+      "bytes": 556,
+      "sha256": "590cb2802b399c4fe9ab9dc154e5ee83c5c67a0f1422a5cf3224fa629412efb7"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C95204-delta.patch.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C95204-import-resources.json",
+      "bytes": 609,
+      "sha256": "e78cf7c2c77ec16800b73208aed92e3a4e6629a3bcdb64d05a0e169a87295279"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/C95204-import.log",
+      "bytes": 209,
+      "sha256": "6dbbde8d07946afb899b96059eabcd89a0a45b221b9551f1e5819c2824488809"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/manifest.json",
+      "bytes": 24546,
+      "sha256": "c116b1553b45d26836d106d9b3931b77aabd1b9910ba81d33eb27557e96d68e5"
+    },
+    {
+      "path": "evidence/supplier-reimports-A49/results.json",
+      "bytes": 106436,
+      "sha256": "28590f2a59e2891d152840db71131e306a94e2a470d8eb92358ebb6545de005d"
+    },
+    {
+      "path": "evidence/supplier-reimports-driver-A49.log",
+      "bytes": 67755,
+      "sha256": "65ea336c4e9426b3a6e7e67345b5f2682d1b5c2699a161638985c161217aeb14"
+    },
+    {
+      "path": "evidence/tests-A49.log",
+      "bytes": 5345,
+      "sha256": "42ec5bc0fc2eb9d543d4ac0d7440133015447a810823739962cdca9655801628"
+    },
+    {
+      "path": "evidence/tests-resources-A49.json",
+      "bytes": 401,
+      "sha256": "99766e7cc4572700ae3dd4bbb7f2b526d14ea4eb08528af37136c8bfe1b9df5a"
+    },
+    {
+      "path": "evidence/toolchain-install-A49.log",
+      "bytes": 583,
+      "sha256": "51a3db5994639e97962f56fadb8d5a8d19e090682148a68d74b87417fa41529d"
+    },
+    {
+      "path": "evidence/toolchain-installed-A49.json",
+      "bytes": 205,
+      "sha256": "cfa672d71e8f274276e893c74ad087c5d4a49f37dbc52a6874d78ac0ffc1685e"
+    },
+    {
+      "path": "evidence/toolchain-registry-A49.json",
+      "bytes": 13790,
+      "sha256": "144f4060da1a39466e942032fbd760407c6cb26e1b40986cb971d922ed60854b"
+    },
+    {
+      "path": "evidence/typecheck-A49.log",
+      "bytes": 650,
+      "sha256": "c1e1746cb50d6c56daa512a9ce7a511b3dba421266e46801e07ee47a89c38bac"
+    },
+    {
+      "path": "evidence/typecheck-final-A49.log",
+      "bytes": 650,
+      "sha256": "c1e1746cb50d6c56daa512a9ce7a511b3dba421266e46801e07ee47a89c38bac"
+    },
+    {
+      "path": "evidence/typecheck-final-resources-A49.json",
+      "bytes": 418,
+      "sha256": "8178d6f45608629bc9ee97907cdd8b168f2ad68df033db35442bba6de485d592"
+    },
+    {
       "path": "evidence/usb-c-C165948-original-import-A44.tsx.txt",
       "bytes": 6635,
       "sha256": "7d3f0afe8f5b014edcfb3716ccf542929ae9d45550701aaa8bc63f2700c77bda"
@@ -881,6 +2991,11 @@
       "path": "evidence/usb-c-C5184243-original-import-A45.tsx.txt",
       "bytes": 4626,
       "sha256": "bfc396fc889c4dd3a1e8d5977c482db3060ed772cbd913a62b0fcb4959d3fc29"
+    },
+    {
+      "path": "evidence/usb-c-fresh-clearances-A49.json",
+      "bytes": 1622,
+      "sha256": "5c7ec6c6e87147d55e47f32b9dfa5651b110703dd6351af76a81ee2143c17053"
     },
     {
       "path": "evidence/validated-preroute-circuit-A22.json.gz",
@@ -1829,8 +3944,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 2081,
-      "sha256": "df3987be734b5d5d8c6b157f09cf676b58b4b3c36beeef007ab47374d9873072"
+      "bytes": 1697,
+      "sha256": "193e2c3e7e1b5a297ba0a223ab421319ae086fe65097546f2c62fb2217ac2e71"
     },
     {
       "path": "scripts/adc-sensing-review.py",
@@ -1844,8 +3959,8 @@
     },
     {
       "path": "scripts/audit-active-imports.ts",
-      "bytes": 5192,
-      "sha256": "38e21a1570b15f529731211149923744575ac9aff065962d50eafc7334eb2b03"
+      "bytes": 5400,
+      "sha256": "9e298df1b64c8a649c0d78aafaeb72711c24ea300530b88b3558037b5d407989"
     },
     {
       "path": "scripts/audit-breakout-targets.py",
@@ -1896,6 +4011,11 @@
       "path": "scripts/audit-product-placement.ts",
       "bytes": 9848,
       "sha256": "791b3adaad0cdd1ef704984a703ff0e3bd7521e977c1e57885e2c0ef8822d812"
+    },
+    {
+      "path": "scripts/audit-reimport-deltas.py",
+      "bytes": 5177,
+      "sha256": "ae740e64fe6d4f7fc57600af71273e116de4b83a9060c6b91d59e1298c1be5cd"
     },
     {
       "path": "scripts/audit-routed-copper-clearances.py",
@@ -1989,8 +4109,8 @@
     },
     {
       "path": "scripts/codex/update-context.py",
-      "bytes": 1927,
-      "sha256": "887e6518c793bf557e98fcb967576c92d3485c4089402e9aa536a66a69eaa165"
+      "bytes": 2613,
+      "sha256": "43e4dbac8b556c730c199236f1af12ee2ae6cb2d588c519611f6cad91b640317"
     },
     {
       "path": "scripts/codex/verify-context.py",
@@ -2088,6 +4208,11 @@
       "sha256": "244dd05c693dd4d753f6436b06776cc2fb2c5f30ed50c6b7a6c0165e07f16002"
     },
     {
+      "path": "scripts/reimport-suppliers.py",
+      "bytes": 5189,
+      "sha256": "7be64fed3291e5d29e9dfe8538beff1ad7924756cd6bff29167f14fd4c5cb3b2"
+    },
+    {
       "path": "scripts/relevant-schema-issues.ts",
       "bytes": 659,
       "sha256": "0650a5413f21d0105b7841a2816428852bf9eff96513c0b72403934d8053dd64"
@@ -2151,6 +4276,11 @@
       "path": "scripts/run-native-routing.py",
       "bytes": 5738,
       "sha256": "914ac225eff1234a379036ee8ad2bab8e7a5b32ff02fbd38040fac7ba2e28284"
+    },
+    {
+      "path": "scripts/run-resource-bounded.py",
+      "bytes": 3198,
+      "sha256": "16edc4efb4025bc5fcf3c593376d8f584f81a7591535e7a1c42edad330090ba6"
     },
     {
       "path": "scripts/silkscreen-geometry.ts",
@@ -2666,6 +4796,1781 @@
       "path": "tooling/high-density-repair03-0.0.1-a41.tgz",
       "bytes": 81378,
       "sha256": "02014c35d71461252c1a332165256cb1bacec1b5dbb0e5722418a9893f99e67e"
+    },
+    {
+      "path": "tooling/reimports-A49/imports/A_1MS3T1B1M2QES_5.tsx",
+      "bytes": 2394,
+      "sha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de"
+    },
+    {
+      "path": "tooling/reimports-A49/package.json",
+      "bytes": 64,
+      "sha256": "df02a07b689621616c6044c6c7484bb73da648bfe76d6fda58e0323cc8cca228"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C10214/dist/probe/circuit.json",
+      "bytes": 20477,
+      "sha256": "348e250ac6058c1ec09ab63a3ac52311b4ec72e86110c2d1f5f01a385000e133"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C10214/dist/probe/pcb.svg",
+      "bytes": 33152,
+      "sha256": "e638e5f7ae2d826b4d966b38f3c096c365dd90750a7a6111d0bcd8e3eaa1cd7b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C10214/dist/probe/schematic.svg",
+      "bytes": 43812,
+      "sha256": "386fb984d14a72ccb29dac63c21c96a49eac85753326a690e2c4651a3cc64908"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C10214/imports/SMBJ22A.tsx",
+      "bytes": 3639,
+      "sha256": "c673616d11370fcb463ce0291e8279dc10ecf03096f90c5d9d6b3794b57dc1e9"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C10214/package.json",
+      "bytes": 57,
+      "sha256": "5f5e993c9a544c676d96168b5735f7b7cf8d7ad9b3c18a5c12bb628973122127"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C10214/probe.circuit.tsx",
+      "bytes": 439,
+      "sha256": "cf31900ac41765e86fdce85f9f4e6eb36488284da6137e32bc9058a7453810d5"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C138687/dist/probe/circuit.json",
+      "bytes": 16981,
+      "sha256": "8ec29e6125bdcb6063ae29bab4f1f9a0466935914204eadcd563a4364b7f2751"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C138687/dist/probe/pcb.svg",
+      "bytes": 33952,
+      "sha256": "cb5d8029e65e62ccbbbb845acf8dba8d15d7548067f75471f80c6567983de45d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C138687/dist/probe/schematic.svg",
+      "bytes": 43183,
+      "sha256": "2470771bae3dd8d70599ca33b6d2050dfc895cd3c58f2021ec11000c67a2ebdc"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C138687/imports/CL32B106KBJNNNE.tsx",
+      "bytes": 2880,
+      "sha256": "1e82266b998724227ca723578b492d42c2b82bc123c0f5e60a769c9c58abddb0"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C138687/package.json",
+      "bytes": 58,
+      "sha256": "5fd7d6f060a587aa3823aae27a55c8e2e6ec00edf0d25d49b3b9978367b2e31b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C138687/probe.circuit.tsx",
+      "bytes": 470,
+      "sha256": "3f44f4d26e1cb277d52bdc79cc3fca6562cc2f143ccfbea478a8f69a3729f8af"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C14663/dist/probe/circuit.json",
+      "bytes": 17059,
+      "sha256": "40aeb4549593810e04992e8e586c93f3e20743d965ef9b6244c71fceb2235a96"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C14663/dist/probe/pcb.svg",
+      "bytes": 33971,
+      "sha256": "9f02918ccd0c352f1ffaeaaab680bd325f71e8b4d6ca9f1059fe6cfac963e144"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C14663/dist/probe/schematic.svg",
+      "bytes": 43183,
+      "sha256": "adb11d72b42c687242ab093bc968922bfdcba16025dd1df4549c49c6ca195167"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C14663/imports/CC0603KRX7R9BB104.tsx",
+      "bytes": 3063,
+      "sha256": "baacbabcc3cf19dff448beea5cb9e0acc3413a4bec70bb79beda722d9479b74f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C14663/package.json",
+      "bytes": 57,
+      "sha256": "b22ba72978854c805ddf9be65823f969ab2a7ab715415a55baa6821919482718"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C14663/probe.circuit.tsx",
+      "bytes": 475,
+      "sha256": "94776c234fc4937bddb6839a985eadf31d27349204169c081bbfbf3166cae35f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1653/dist/probe/circuit.json",
+      "bytes": 17010,
+      "sha256": "7e631de1087cda8294e876151b9efc4e9db37886ce0db8e5895cb4252eb5bcd1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1653/dist/probe/pcb.svg",
+      "bytes": 33974,
+      "sha256": "f272c26055249b93cec5b935be46b24049f3bc498e90420dfc2d18ac1d6b6c62"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1653/dist/probe/schematic.svg",
+      "bytes": 43183,
+      "sha256": "57ca33bcc3dd32daf2629f70252ee8b16780ad20dd04888fbc0268a5f900b315"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1653/imports/CL10C220JB8NNNC.tsx",
+      "bytes": 2884,
+      "sha256": "16bfe347855018d5a4db3e2fd279924708bf2544e93e1ef1e7d605923b91b9c9"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1653/package.json",
+      "bytes": 56,
+      "sha256": "9d51a56f7080fd11e4ee7934e4b2d1675c75c71a7f4e9874cebb3ef63660e3ab"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1653/probe.circuit.tsx",
+      "bytes": 470,
+      "sha256": "90c92a546d765d5c80c6ed211b86631881717c0446f67e0dd9ef56fe97bc1055"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C178373/dist/probe/circuit.json",
+      "bytes": 16913,
+      "sha256": "bd8d1337dceb6169b50007b78fd0b231e3fa8a706c118ce38e1a0e1fefb1fd74"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C178373/dist/probe/pcb.svg",
+      "bytes": 33251,
+      "sha256": "b26e5d866bb6e83bb282c2aa95ae4ea40d0028a0635e6ae3be24b5af2ea91b3b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C178373/dist/probe/schematic.svg",
+      "bytes": 45111,
+      "sha256": "559452bb17e5696f7510706f8658ad6244536b704514cd744f51b1949f275507"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C178373/imports/A_35SVPK330M.tsx",
+      "bytes": 2945,
+      "sha256": "6de50ca59e10cb16f7a8d3e731468f3dbbe68a237be803dfa5d7fe71a6dd8e06"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C178373/package.json",
+      "bytes": 58,
+      "sha256": "fe33cbec4bad56481f102b7f54140daba122d5ace061f5c0cac5719d0dba0cb7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C178373/probe.circuit.tsx",
+      "bytes": 478,
+      "sha256": "3722098fc22db7972c1081407e3923515eb08bf603d27303f4892da23755e7e3"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C181239/dist/probe/circuit.json",
+      "bytes": 33271,
+      "sha256": "7c98f6ef41f5c37baf907ecc4c0699e6b147f468fd4dd23f81393237ed2da3ec"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C181239/dist/probe/pcb.svg",
+      "bytes": 32654,
+      "sha256": "128d3b356cc48c0a23f8415ced7d319077d3909b7f203353f45e7ffc8c513b36"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C181239/dist/probe/schematic.svg",
+      "bytes": 56926,
+      "sha256": "fa13a1484dfcd67310a6381ea0e532982fe6f9e17c545a32af2405fcc879aa35"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C181239/imports/TPS7A1633DGNR.tsx",
+      "bytes": 3049,
+      "sha256": "22361e467c09ef3b1826f214edf636bf33282ebaefceab84b8d7d9ea459c8578"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C181239/package.json",
+      "bytes": 58,
+      "sha256": "ed5231f611c86a7620d4c4f53d7e40942c43b575ae643de3885045c4e6ab9466"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C181239/probe.circuit.tsx",
+      "bytes": 652,
+      "sha256": "6fefcca82e9ce3c08ae0f2b501a91336994979de79dcdf9c7b9011b77ec19605"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1849461/dist/probe/circuit.json",
+      "bytes": 82281,
+      "sha256": "559a35370dfd67a85c593a69ad181cfcc538e8d8f348aa981e19f7ce3d1dc7d2"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1849461/dist/probe/pcb.svg",
+      "bytes": 37577,
+      "sha256": "419dea46cddce4a9a85a66f5cd04d5d7384124b87c6c370a25a7a6d8614860b7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1849461/dist/probe/schematic.svg",
+      "bytes": 83164,
+      "sha256": "d8bb267238a05c7b7a1a7949c3a7dd5ff9b4cf0971d1d4d6988337809dc6843e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1849461/imports/TPS16630PWPR.tsx",
+      "bytes": 5478,
+      "sha256": "ac938806b7ab08e25741f6c078d4957bcc1d63859da710855cfb1122df36534b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1849461/package.json",
+      "bytes": 59,
+      "sha256": "f3337cdf4ccfc5749b0c6c015004b0995133d815494a8fda046596ee666db184"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1849461/probe.circuit.tsx",
+      "bytes": 1110,
+      "sha256": "67140590f1521a5b733b81384a37ea62899480a62b6fa3d876e976bb6a2058a7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1855818/dist/probe/circuit.json",
+      "bytes": 78647,
+      "sha256": "5c96856450c911b6c2edef2fd10ecba7d32f28a957cd805a9b58595e84dc118b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1855818/dist/probe/pcb.svg",
+      "bytes": 36930,
+      "sha256": "2bf204d8f230074520510aed669c4331b89e7cf5ae86923b43bb3047515bc94d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1855818/dist/probe/schematic.svg",
+      "bytes": 79404,
+      "sha256": "24466d24fad32726895c73fdae7d191b2499309e5c552c56090e5b0b05787612"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1855818/imports/DRV8874PWPR.tsx",
+      "bytes": 4898,
+      "sha256": "a0aaee18a52a2f15ad52796d7ee86a10d2a5fcc0cce804c8d4c7015f41b7c5a7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1855818/package.json",
+      "bytes": 59,
+      "sha256": "848b918fe6e8d9d096e2106a2d2e1b8d5d0cd1aafc3fbafafb2b48f5582a470a"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C1855818/probe.circuit.tsx",
+      "bytes": 1101,
+      "sha256": "1941a92f01c302a3c1cbc97e79a767060a5f3505004d3ab754b5d450ab086950"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C19666/dist/probe/circuit.json",
+      "bytes": 17014,
+      "sha256": "adda4742d2389415cf346af584f81592296fe83dfbabca194106e721ab73199e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C19666/dist/probe/pcb.svg",
+      "bytes": 33971,
+      "sha256": "2d60bebfeb1e6ec1f256408771e28b9249dc3d797b8449493b1dad76cb76bc6c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C19666/dist/probe/schematic.svg",
+      "bytes": 43183,
+      "sha256": "1a52c14aa2169228257c48e7cd1b5b4db27a1cdc3eed5b83cd687e9211e5ab48"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C19666/imports/CL10A475KO8NNNC.tsx",
+      "bytes": 2888,
+      "sha256": "5422b30e8f52ab6317e159d1d57ebdd889c65c53647bb06eff997c4ff54ab4b8"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C19666/package.json",
+      "bytes": 57,
+      "sha256": "43db866c9020fea26d93070a8d997f96f671911c3b231cea2ce69c284e8de6a7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C19666/probe.circuit.tsx",
+      "bytes": 469,
+      "sha256": "20aaee20c0af4ae117a509a761f466f0a4138aeab04159d030dd17379966f89e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2074262/dist/probe/circuit.json",
+      "bytes": 10994,
+      "sha256": "d7aedeaaf42fb4b8c434924f6a43b04b21de05693d449641059cf68a5deba870"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2074262/dist/probe/pcb.svg",
+      "bytes": 30773,
+      "sha256": "699ad8dcb6c581d8a04d01427de43a88aa64d0abe4d6bbc1d27dc22da8e148b9"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2074262/dist/probe/schematic.svg",
+      "bytes": 41017,
+      "sha256": "c89637ea4dacd7bc83e7fa377a25fe2cc78e46ab041a19c92a6d976df9c07bfe"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2074262/imports/ESR18EZPF1001.tsx",
+      "bytes": 1853,
+      "sha256": "5bd8e0a6639e7ac4d34d826219eaf66a58771b5c54028b714707512b8ccfdd76"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2074262/package.json",
+      "bytes": 59,
+      "sha256": "fefd27ff198f942ebf4163b69a2441ced100db0aebca79caf1340accad069ed2"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2074262/probe.circuit.tsx",
+      "bytes": 272,
+      "sha256": "b82d3141a996f638ffc9b0fd9cb4d3bb7ed2d4b21b89c2a6698202e96ca867a1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C20917/dist/probe/circuit.json",
+      "bytes": 26457,
+      "sha256": "af12ab29528ec52da22f49d9899831bf03deb93a82dcfab8e8b6f56a52c8ae2b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C20917/dist/probe/pcb.svg",
+      "bytes": 31433,
+      "sha256": "ce9cf0a580fac9353de16787de6b782b325d309ed9d712c49cbcc2eb2a8b3e3f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C20917/dist/probe/schematic.svg",
+      "bytes": 48608,
+      "sha256": "067bb71a6a9803b09f910502cfb3897b105c94c093b294578c84ac6b00ac6a0a"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C20917/imports/AO3400A.tsx",
+      "bytes": 4115,
+      "sha256": "5d06ee2292d9ec5c051fd2c0a4e3b00986a6c2c919e23729c18ef2752c9a528a"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C20917/package.json",
+      "bytes": 57,
+      "sha256": "ac6aa4c1a6267ca63e38a7f25e8e0153f9bd2096f2ecad21c26c5d244ccdcf89"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C20917/probe.circuit.tsx",
+      "bytes": 457,
+      "sha256": "1c1c827650d0b9ea3b0a14127b266b7d22edbbc88dcc34bcc0229b86231d48a8"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2103/dist/probe/circuit.json",
+      "bytes": 19835,
+      "sha256": "ccaaa705ed8f52c91ac9f74bd53716a47bdcabed53cc14759e2af3f0d30bbf0c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2103/dist/probe/pcb.svg",
+      "bytes": 35930,
+      "sha256": "eb684f61d03079f0f96c9c2242c37d87fe0a856d72c09ba042d0f9e79e139191"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2103/dist/probe/schematic.svg",
+      "bytes": 43590,
+      "sha256": "c58368aee1042c7d1344e160c37225a6c29c12b3acde571f1fd57abee9494c0e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2103/imports/BZT52C10.tsx",
+      "bytes": 4062,
+      "sha256": "01973cc722b7277e5633a6cfca3e7e47217adfd416995fa31c9b8222838d1737"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2103/package.json",
+      "bytes": 56,
+      "sha256": "5345d2dd259ca6409a314f0de816e7f6a4739f51803a00c8a5d1549cce127ad2"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2103/probe.circuit.tsx",
+      "bytes": 452,
+      "sha256": "0d4ba53c1853269c76b17c423c54bd90e6f8943dda366aeefc80d5f05e7be346"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2109/dist/probe/circuit.json",
+      "bytes": 19835,
+      "sha256": "36018e94809712801f22fb2dfd0da421bab0a94ef9793eaba10008cb4ea22f8b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2109/dist/probe/pcb.svg",
+      "bytes": 35930,
+      "sha256": "3aa4304aaffafa052a1aeb408c5113ee4e43bd14b24d5e04fc5e1681c89849b1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2109/dist/probe/schematic.svg",
+      "bytes": 43590,
+      "sha256": "1632a198a4b1d08b07dbafa577b5e5d75783753195119d35fa0abf23d2e73511"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2109/imports/BZT52C24.tsx",
+      "bytes": 4062,
+      "sha256": "009bba1af0372b1e7bdc0e267930b6ba122f3a1cd1858ef50369889b851f81ad"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2109/package.json",
+      "bytes": 56,
+      "sha256": "2fce63aef4c0b4a325525f4a9625be7211d5373c6b8a3c33a7664df64d04ecdd"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2109/probe.circuit.tsx",
+      "bytes": 452,
+      "sha256": "1a35b9a092e4921fd1b4c97a9a4a7168450a5671627d0f6ff97188e41d183d68"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21122/dist/probe/circuit.json",
+      "bytes": 17009,
+      "sha256": "3623959bb3d0882b9ab2b27a1c1e62237f139816102db03adba6b8c9acaf6141"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21122/dist/probe/pcb.svg",
+      "bytes": 33971,
+      "sha256": "34f00da4176998a344bea7c768b372b42c76965f58f26a18d255b3e2589d2277"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21122/dist/probe/schematic.svg",
+      "bytes": 43182,
+      "sha256": "8f1b7a4e19372a889aa385245aaa77f0e96a258c9652905ce6401ab8b4459ad5"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21122/imports/CL10B223KB8NNNC.tsx",
+      "bytes": 2887,
+      "sha256": "ab508bb1e20d110e116ac31e652b6de8dc29f01cc4246c2975a491a662105a5a"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21122/package.json",
+      "bytes": 57,
+      "sha256": "411d833c02e13df9ee6702eff2733ef5ef171e66ff68496b9fd2a79386239eb3"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21122/probe.circuit.tsx",
+      "bytes": 469,
+      "sha256": "3e0af0790c14fa7a858f0215fa109ec33014eaef5912f74c34a1e35a10146657"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C211759/dist/probe/circuit.json",
+      "bytes": 18703,
+      "sha256": "d213f4f9c0cb5f487fc691217c92d0c8ea34a326a00a533de6f3e39ee7c3448b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C211759/dist/probe/pcb.svg",
+      "bytes": 31454,
+      "sha256": "55ee5fbd682b7d26a62176388c99c7dd997e48a548022fa4481e4ac6e0f9164f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C211759/dist/probe/schematic.svg",
+      "bytes": 43644,
+      "sha256": "8207cc2cf32d13eaeb71c2ce97ce897a6b6ee8bbfedb077494d7ee89977c2e46"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C211759/imports/SMBJ15CA.tsx",
+      "bytes": 2887,
+      "sha256": "6971b130de91ff7f6db909a9580aa5c382ee8ad119a6d36c0e9dc60fa093103b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C211759/package.json",
+      "bytes": 58,
+      "sha256": "1a0cdede283c5c3e17007e9905c9d356306b17a89622b0bf523decd5dbfb3f81"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C211759/probe.circuit.tsx",
+      "bytes": 449,
+      "sha256": "0495ec8468fc8d28e6af077f264db21ce1d7aef20a51abd9f7f4bd0236d90a90"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21190/dist/probe/circuit.json",
+      "bytes": 13739,
+      "sha256": "c8900359700ffc1655a50736cc8994cc0bff25c402fbeb8c522e3978cb216943"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21190/dist/probe/pcb.svg",
+      "bytes": 30864,
+      "sha256": "b1404a2b78f8b63e85f8c762532eb3e422d2ad2aff4450ffe0c0496f8ca17773"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21190/dist/probe/schematic.svg",
+      "bytes": 43072,
+      "sha256": "ea032844a2dd8e8458638e1b962372645390ff931b5abecbc9382109d5833e28"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21190/imports/A_0603WAF1001T5E.tsx",
+      "bytes": 2065,
+      "sha256": "548fd70ab7f2e458c03e92aa90c4a6d77ad68516b6a4e7124c694a78f27d7672"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21190/package.json",
+      "bytes": 57,
+      "sha256": "791b8f7df2b034e9aacb9e6e288bebe8ebddb3a09db300b4de989fc991a2d2fa"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C21190/probe.circuit.tsx",
+      "bytes": 472,
+      "sha256": "0da99596bd07511ea5d284604853b4d08c7d1e44b6cc0c96bf3b88404d5f8f37"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22452/dist/probe/circuit.json",
+      "bytes": 16722,
+      "sha256": "a97b9ef926982ea648f443add2e4f78412166804a739e97b1460d1ace4920cfd"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22452/dist/probe/pcb.svg",
+      "bytes": 33164,
+      "sha256": "c62f9619da7229eeca2bacdb7921aff78ced07bb9e038888d105ba8d9ed47efe"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22452/dist/probe/schematic.svg",
+      "bytes": 43590,
+      "sha256": "3a2c87ac7b88355a6632ac514a3efa9f84b5386ee83e577ac3764c6619bcc21b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22452/imports/SS54.tsx",
+      "bytes": 3077,
+      "sha256": "e7a2e34df8dd80fb29d4425820fe85f3023dfb46e6e32410309b67728043b077"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22452/package.json",
+      "bytes": 57,
+      "sha256": "536796e8d95be1b3bfdd732a053c629af8b287c6110c6407db9366287815d28d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22452/probe.circuit.tsx",
+      "bytes": 440,
+      "sha256": "7079daff81af9f52393f59b451970a87c75777b24bf8ff21d1b6bdbc671d1313"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22790/dist/probe/circuit.json",
+      "bytes": 13699,
+      "sha256": "ec7e2589b4522d571f9fd43b55248b3aac7dc80e2bf8fc680f8874d1c7ee3f22"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22790/dist/probe/pcb.svg",
+      "bytes": 30867,
+      "sha256": "c45b597b841be00f2b84b0c8410ec0dbff49ab386fc1db87381e57c1d0938997"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22790/dist/probe/schematic.svg",
+      "bytes": 43074,
+      "sha256": "56da48c9ef4023c86b6c12889eb2ee88daa28577c723a673cd261a4d27322522"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22790/imports/A_0603WAF1202T5E.tsx",
+      "bytes": 1896,
+      "sha256": "ddf744358e903828c96a1af5a9975b918bed10c8f1e37a6d41f87265ae4ed008"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22790/package.json",
+      "bytes": 57,
+      "sha256": "49981eeec1646ddc0d25da186f8610c34ed0921b3994f56cad938a868af9d03f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22790/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "187b7a45113538b1d91bd11078b964c430447074e4ce5adb560f71f82d582642"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22815/dist/probe/circuit.json",
+      "bytes": 13702,
+      "sha256": "7fe3a4f43df345d0edd733e585388670ef40cfad2802589f4c9a8b766810ca84"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22815/dist/probe/pcb.svg",
+      "bytes": 30867,
+      "sha256": "bc0f4a097d36c0d6a7205d7b136316958829846b8c020a524fcf35a973eb0d05"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22815/dist/probe/schematic.svg",
+      "bytes": 43075,
+      "sha256": "a0d78a2349a1bd3b779e920f6fcdd20991bd603982668302b40a7fbac2530b77"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22815/imports/A_0603WAF1623T5E.tsx",
+      "bytes": 1897,
+      "sha256": "030f2958c31559ceac287839a33789f3ab0237b7fad4fd21dde0873f3552f29f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22815/package.json",
+      "bytes": 57,
+      "sha256": "cec7c6f1881ad4fdd82127d94d00d1ed0ba4ca6012f38089aa4fab6494e7b2dd"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22815/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "86420c98c67ad18a8525b86d00b41aca72caef3586113e6f7b9f082c0a2720ba"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22935/dist/probe/circuit.json",
+      "bytes": 13699,
+      "sha256": "0c4ded9ebf4f439e451eac175af6ca4de82b2f9dd71ff9c43979253680e7a550"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22935/dist/probe/pcb.svg",
+      "bytes": 30867,
+      "sha256": "fb4226efe566dc21e4589ddf56f9152caa8d3b9d27941a03c3108a8326aa5f2d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22935/dist/probe/schematic.svg",
+      "bytes": 43073,
+      "sha256": "c40273ef91fd949d5a3ff64fffd0d7dd271fad275708601d763307683db46dff"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22935/imports/A_0603WAF1004T5E.tsx",
+      "bytes": 1895,
+      "sha256": "41b08818e6b2152a03f7ee1e878f45605edf8b83bd5e7855c9d1430b8fe7e5d5"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22935/package.json",
+      "bytes": 57,
+      "sha256": "da5391e53b3d66ab45cdf2d6ef162844c953c371f765d2d845806ee2f4b0fd2f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22935/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "ff186b23ed63d329eb3fe7908ec01c3cbafe689948eedf7e4a5129d8b0d90c64"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22956/dist/probe/circuit.json",
+      "bytes": 13699,
+      "sha256": "17c2e5c0af7533245592c94fb90cbdf0d93bfb7e955c206efb35c2de3d924fbb"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22956/dist/probe/pcb.svg",
+      "bytes": 30867,
+      "sha256": "0d9e217f91d6f5d0a6ca4bc6330500ff88e13a7cd011b360c853329dc5842313"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22956/dist/probe/schematic.svg",
+      "bytes": 43074,
+      "sha256": "888663ed97dc331d2b7bebd1f22601c3831267bdd2ceaedeb8474e1eadfcd329"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22956/imports/A_0603WAF2102T5E.tsx",
+      "bytes": 1896,
+      "sha256": "583d6cd00ed0cdecae5c881bd930dc0ba1689e8bb4da219ebf31d950f4ab965d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22956/package.json",
+      "bytes": 57,
+      "sha256": "8232ae36f94efb8867b2c5f8d3656c38b01aab5f480019d7e8a6b0a30de49fe0"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22956/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "e7c13fbf585aaaf9e5f2cc1651481690511672cff8428074dddd3193dbd0773c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22967/dist/probe/circuit.json",
+      "bytes": 13699,
+      "sha256": "35a65982e85e9eb82aea7952e9f880fa3d011f90451970869df29eec78063da5"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22967/dist/probe/pcb.svg",
+      "bytes": 30867,
+      "sha256": "b0f703a7a1863c960c1b595e45d392c98175fd9680ef76d13451673f42e9f2e8"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22967/dist/probe/schematic.svg",
+      "bytes": 43074,
+      "sha256": "4543088a77e38fd0d40400dde1bf6ccbf86d8a01f1d46ff74d04a3b3b2e38d84"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22967/imports/A_0603WAF2702T5E.tsx",
+      "bytes": 1896,
+      "sha256": "adcdd36b18be28d1cd8fd5b2b933276571914f958aef4efad6a189946b44db50"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22967/package.json",
+      "bytes": 57,
+      "sha256": "d0470fbaa911dffb0936fa07e21abcbd3216e135fedb38645d5ee1dbd7180895"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22967/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "ecb888a904d72604ee4ff9c3c99711d3f58190aa8d57908071ea6d5ce8c78712"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22975/dist/probe/circuit.json",
+      "bytes": 14074,
+      "sha256": "5e4c411a887f8e25a98f13b4ba8f0a582410ece9f29d201a23fbf6125ed81c84"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22975/dist/probe/pcb.svg",
+      "bytes": 30862,
+      "sha256": "3133dd0259f7d1d144320f45ec7e86be33e5c8b7c7c71672acbcf4fcbd68a0ff"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22975/dist/probe/schematic.svg",
+      "bytes": 45134,
+      "sha256": "7886375a3d77306e3996b6e3a44cdc46c0b764e6f459748d19482b1a9cad3d87"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22975/imports/A_0603WAF2001T5E.tsx",
+      "bytes": 1895,
+      "sha256": "251cc9030dc8096b74016eb21a07bb8f28f15a7210499c4673a242a88aa57077"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22975/package.json",
+      "bytes": 57,
+      "sha256": "906c2a4c0add4955d86b419811097cdbbb1c4cef79366a2866ac953e0b90b057"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C22975/probe.circuit.tsx",
+      "bytes": 401,
+      "sha256": "198b195b3ae6582409d28e61042e578557be57cd9c2fa215e3761b5e02074377"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23138/dist/probe/circuit.json",
+      "bytes": 13745,
+      "sha256": "45966bae47912318b951188da6937393b213d9991abdf6c384b8036a0ea64c32"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23138/dist/probe/pcb.svg",
+      "bytes": 30867,
+      "sha256": "91539e405f8108c6bf861d8be824258be522c4ccaa0ecc2842a7f53d5b888f9d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23138/dist/probe/schematic.svg",
+      "bytes": 43074,
+      "sha256": "27d25208caa00cd7ba374d954beb221fc575fc3d76088519fab1c10403e8cd20"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23138/imports/A_0603WAF3300T5E.tsx",
+      "bytes": 2066,
+      "sha256": "2fa4e051cde9da721f7af2e2cc1b28b9ccdc93822f79c18ef612d64b74467c55"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23138/package.json",
+      "bytes": 57,
+      "sha256": "fa67a4657c7175c9a89540d2d669d4b95d93fca70270c17462649df2e90ead70"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23138/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "62f18195ce1762c60667558cf33bded92e3157690961f048c1195ad648b12197"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23162/dist/probe/circuit.json",
+      "bytes": 13695,
+      "sha256": "c281a242ec17533d1ddaf44d98a8476dcabdaf39c7de2707ddfe3878ca31ea2c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23162/dist/probe/pcb.svg",
+      "bytes": 30864,
+      "sha256": "ac401ddfc2068e2a3779ea9e4aee54a78a53deeff6b5c74c4d6958d58a817454"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23162/dist/probe/schematic.svg",
+      "bytes": 43074,
+      "sha256": "f66f15d319c3f432586988d7519acc4ea90a04df30fc53b9cbfad26756bd4b51"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23162/imports/A_0603WAF4701T5E.tsx",
+      "bytes": 1897,
+      "sha256": "7d47f4ea58f80777dd9d5c5eadd4332639c687c11e320a7223ba12983b59d109"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23162/package.json",
+      "bytes": 57,
+      "sha256": "dd84e6fdaad1d37d7001983c1d7730760605c972655b6fbe60076d2f1a8ba59f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23162/probe.circuit.tsx",
+      "bytes": 472,
+      "sha256": "3d88b666a941df96039d47b554c4ecc924d0c06e1e002a3facb1c339f22b4747"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23186/dist/probe/circuit.json",
+      "bytes": 13700,
+      "sha256": "e21a3c59685fa0fe3f330820d0a41d114e8096e2f99eba8640dfeb44496fdf2e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23186/dist/probe/pcb.svg",
+      "bytes": 30867,
+      "sha256": "09fc57ddce7d25a570de66895dfccd46cc5e0d81949f0b42ff51fc04c80fcb8e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23186/dist/probe/schematic.svg",
+      "bytes": 43075,
+      "sha256": "3eb207b5286c9023d4700fe15cf72f9685d7e8f3550e202c0f1747ca9c62dadc"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23186/imports/A_0603WAF5101T5E.tsx",
+      "bytes": 1897,
+      "sha256": "53272ba878b2edabce678f95b3efe4ecd4a0bb9247efb99145a5cedde9a8ca67"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23186/package.json",
+      "bytes": 57,
+      "sha256": "a219d9b2eaa827aa33f55baa4bdbe90a1b76a6f7227cb5e45f4cfb4b0a013aeb"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23186/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "a398363dd8d37d3264fd58e35327f1f4075968f303a85e77a1ad24a11d908ef7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23215/dist/probe/circuit.json",
+      "bytes": 13704,
+      "sha256": "ed0f256125a60c91ac16e006b4bdc50aa799d4377107892025bd69d6a947fc63"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23215/dist/probe/pcb.svg",
+      "bytes": 30867,
+      "sha256": "f7124a1f43aeff71e16349f58ab512d7bc917b1fef4c4dd5569faec69561898c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23215/dist/probe/schematic.svg",
+      "bytes": 43076,
+      "sha256": "60fb72d166b0ffe815fbc9f85cfa9e35b0b62dd89674ea7516e8a9352db01506"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23215/imports/A_0603WAF6981T5E.tsx",
+      "bytes": 1898,
+      "sha256": "ffdcc9d4f748b20bc7d60213769060137d54146c130a979a431bc42671ee6850"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23215/package.json",
+      "bytes": 57,
+      "sha256": "c1e9da43e00b47a658002acfbc9ac2d945cc21052a7ecefc557e9a8e7117a06e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23215/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "10c8f686104c10afdf9d9e6cde7d091d93db217a123aaec2cb925587fb11f076"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23892/dist/probe/circuit.json",
+      "bytes": 22537,
+      "sha256": "d1b24266f343d8cf100080edfb7999a936b3b7b07f6b7ac5d8a1625695b8db09"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23892/dist/probe/pcb.svg",
+      "bytes": 31426,
+      "sha256": "08a0fa9f255cee1fc5f2aaa7c5549d6a83ec51f579b4469a27913002e7e21685"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23892/dist/probe/schematic.svg",
+      "bytes": 46754,
+      "sha256": "74b58be79869c2953a6275feee76e638c2732bc6535d10f6f54f14a3a6c54d0e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23892/imports/TL431AIDBZR.tsx",
+      "bytes": 3140,
+      "sha256": "3d14772384ab7e4136497acbd8d29117ceba3f8022f16a9f56786f526b1c24a8"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23892/package.json",
+      "bytes": 57,
+      "sha256": "8dbd037d26f8f59000d7d3b2cc3c3adeb9493d908f62d9c09635b8a7faae6e4b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C23892/probe.circuit.tsx",
+      "bytes": 528,
+      "sha256": "7826cdd04ea0bfc827899e42df5bfb351dc39f035030046f21e98b13f995eedc"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25803/dist/probe/circuit.json",
+      "bytes": 13745,
+      "sha256": "dfb3ea4455605eb391c97cb44560cde7c7141853f98725f6d6553fa8d925f455"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25803/dist/probe/pcb.svg",
+      "bytes": 30864,
+      "sha256": "3281c306d45d133c2fa80879580813b59b5a09be04150a32f3a06818ceb4c182"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25803/dist/probe/schematic.svg",
+      "bytes": 43074,
+      "sha256": "af2af893acc36c3a25b04b08520e37ec934a8cc174da5b86e26f9f3b582a6227"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25803/imports/A_0603WAF1003T5E.tsx",
+      "bytes": 2067,
+      "sha256": "737ff3b5ec16c2e4378d7d9a4185716c300e3ce9619cdbfe94887d58db88e329"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25803/package.json",
+      "bytes": 57,
+      "sha256": "c27d7b0fe72dd048f56e1cee2fda5a2f3454b4f5d3768ee54e92ba44d263efaf"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25803/probe.circuit.tsx",
+      "bytes": 472,
+      "sha256": "c8e00031f586c93f1d5fa8f2c9b7740567f873632b3ccd5797c20b3dc2911b2e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25890/dist/probe/circuit.json",
+      "bytes": 13674,
+      "sha256": "ef26df31271a1fa917417560309617225d6ec461b0dbcd5cfa130ee1d543c37c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25890/dist/probe/pcb.svg",
+      "bytes": 30850,
+      "sha256": "fe152c8338a9493810d3cedd471872cf7dbe3e891a3cc96222daa597d418ca4c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25890/dist/probe/schematic.svg",
+      "bytes": 43075,
+      "sha256": "90aa1b36adfe0bf9f684f4d522955d9e9967f3a41b1d246668bf569bbfeedc91"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25890/imports/A_0402WGF3301TCE.tsx",
+      "bytes": 1878,
+      "sha256": "ef9cdcb3023236e33c5cb232f81c535b2aad698716eb7c7e533fc7e8829db771"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25890/package.json",
+      "bytes": 57,
+      "sha256": "5f65bddb0d3387c4ada86bb5bae107b64c4144c0e507fc0f63669d4fa2f4f1ad"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25890/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "afdb4f85dbb4f1a35d43e9fdb701b82ef696617fdbc46d9308c80935b74eb393"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25950/baseline.circuit.tsx",
+      "bytes": 480,
+      "sha256": "8d94f806d6581e0e6c44d5f692cf559889f268cc21de72a1a35540996c480a49"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25950/dist/baseline/circuit.json",
+      "bytes": 12125,
+      "sha256": "01bf6ea58b16395c2f9a5530126db4c862121e5b74930168ba1cb91f3b3315e1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25950/dist/probe/circuit.json",
+      "bytes": 13699,
+      "sha256": "d415bf9ac3c3b637161f4c6cb6f1ecd4729ad5079635be994b48b70e2847ed96"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25950/dist/probe/pcb.svg",
+      "bytes": 30867,
+      "sha256": "a9d4f2ef55d592598977cc493e5ee4e72b3c95dd6d126c36996c5e687d7a5fab"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25950/dist/probe/schematic.svg",
+      "bytes": 43074,
+      "sha256": "7999bd7d24359118adc4e4f4953fa4393fbc7e194327b9917f36942b39a8fa82"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25950/imports/A_0603WAF1102T5E.tsx",
+      "bytes": 1896,
+      "sha256": "e8ef900c5da1d5f04c2548a603c663cd0b07fbb57e97ee816ba684035e9c78da"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25950/package.json",
+      "bytes": 57,
+      "sha256": "5025c586ad1d77cd180fcaa4750e7401c48650f1ad27be89543aeb42a0d55b4e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C25950/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "79acef5af3e9023c80f65189b027408e1361a8b67b601eda175890754e1e16d1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2678061/dist/probe/circuit.json",
+      "bytes": 89579,
+      "sha256": "a888163f7233fb86a550965484b48d0b910e6aa9dc99b6fe682532fd0ce75741"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2678061/dist/probe/pcb.svg",
+      "bytes": 37888,
+      "sha256": "4836857e6732765b6603a1f0f0665116c1a0e3e33c82125a44adc4a6f2be1ac4"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2678061/dist/probe/schematic.svg",
+      "bytes": 91849,
+      "sha256": "5a2d01a93d3c65b59fd31f96f186f2e6399f3503885c9f8a123d301319ba298d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2678061/imports/STUSB4500QTR.tsx",
+      "bytes": 7532,
+      "sha256": "b36b5ccb3e69d33dd0a08056ed6f40a33c22d2dee1dc102a4d49a768edff0807"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2678061/package.json",
+      "bytes": 59,
+      "sha256": "363fd394736c683801575ef754a33e539542dc195ac3da46ddc94ea0ae9db0bf"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2678061/probe.circuit.tsx",
+      "bytes": 1223,
+      "sha256": "b8bd75ad88afa615696de02c394dcf9740b224a2324b1ba961fea976a22bc817"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C285788/dist/probe/circuit.json",
+      "bytes": 15235,
+      "sha256": "d8a22939b49e1628f1fb95ade0cdeb8953c4db36a8d578e597c8b1e42719f81c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C285788/dist/probe/pcb.svg",
+      "bytes": 32276,
+      "sha256": "59fd8bdf1e11a0d8080aa3fc08019be0d9f0e154db104d938dd02c7b7baea532"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C285788/dist/probe/schematic.svg",
+      "bytes": 56024,
+      "sha256": "40c9a16e51b728179ac609b3da956842497274f35fb3163e90641d467fe36c75"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C285788/imports/MHCC10040_8R2M_R7.tsx",
+      "bytes": 2105,
+      "sha256": "b5f5c9f5c7a3651ec395b3881cb8e581b9d3d20e92cdb3546b6d983ccd18e2ea"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C285788/package.json",
+      "bytes": 58,
+      "sha256": "e4db7ebba2630a1e5bf31e4f54e41bfa642047af3817e4f9d7424b860b40be67"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C285788/probe.circuit.tsx",
+      "bytes": 475,
+      "sha256": "6404fcbf837ccf8bcd3a4515211456ddbed50b6bb288c7dde25a2ed057da87ae"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2906768/dist/probe/circuit.json",
+      "bytes": 10396,
+      "sha256": "dd6e76d5f13b0bd8707446a7f47be29200d73959f1e8b6e306f62703753b4970"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2906768/dist/probe/pcb.svg",
+      "bytes": 30031,
+      "sha256": "0d96261bd0ddf04bb81ed0fc1fc4f364a28ef641811c381f4bebc54bafe601cf"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2906768/dist/probe/schematic.svg",
+      "bytes": 41906,
+      "sha256": "e2d8244e7e04ad49a19b951b0aa9306157ebdc44c94ca8ed8b4499ddd07977e5"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2906768/imports/A_5015.tsx",
+      "bytes": 1385,
+      "sha256": "adc129bd5c179906650a37e92fb711d3c6eda1f0fc5937911587c16be5e044f8"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2906768/package.json",
+      "bytes": 59,
+      "sha256": "0550484a7591554725f3b4c705da5ec44e14404b33830d849b57e3e7ded92f2e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2906768/probe.circuit.tsx",
+      "bytes": 394,
+      "sha256": "e93db376b5d87b5ff632ed164c33acb57cfea4bc513e7d04e5ba7530541217a8"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2986030/dist/probe/circuit.json",
+      "bytes": 20292,
+      "sha256": "dfaabe1677b34b3f718efec79f384848712b6f4f618769ed45420f8701c19b23"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2986030/dist/probe/pcb.svg",
+      "bytes": 36584,
+      "sha256": "8ed588458f16ddc1817e00bf31087f4416804f02ef11e61ff16f738cd8628fb1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2986030/dist/probe/schematic.svg",
+      "bytes": 44623,
+      "sha256": "bb83d76cd063f9c2ff20f71d593ca0a9434d44bc3c507779b421267bf846372f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2986030/imports/A_19_217_G7C_AN1P2_6T.tsx",
+      "bytes": 3874,
+      "sha256": "19879630d264de69b73ebf9c2f49ea0a28957745a06776287f2b32b0a873d781"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2986030/package.json",
+      "bytes": 59,
+      "sha256": "c4f5a726a0f04476867af9be88f61abfa1b019d5fb26952b2ac5b6adae0429e5"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2986030/probe.circuit.tsx",
+      "bytes": 493,
+      "sha256": "a30fb7a476eadbbee86e883b549edde548658389c359a3a10ca8b3fa112b362e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2991665/dist/probe/circuit.json",
+      "bytes": 13685,
+      "sha256": "272c4bcc4bc8f36ead06d62a65a96b5d3e87808eae11323fda0eea7a5e1fc744"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2991665/dist/probe/pcb.svg",
+      "bytes": 30858,
+      "sha256": "f244ce1ce15990c9e4c07024ce25878b5dff042abb3c77603272e82be40f89ba"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2991665/dist/probe/schematic.svg",
+      "bytes": 43073,
+      "sha256": "afe57aea32efb26698b05a68727f01c148dacfb8c6f71aee1f6b64b6496e29f7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2991665/imports/RPL_12K10R0FT.tsx",
+      "bytes": 1879,
+      "sha256": "b9ec23e8a97abb6feb7fd07313707dbd9e1ce81896f9a0aef3d3de228fc0fa12"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2991665/package.json",
+      "bytes": 59,
+      "sha256": "368d671406683d1e4d16007d5f41bb717ebbfba68827861b78eeb97a375a8b83"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C2991665/probe.circuit.tsx",
+      "bytes": 464,
+      "sha256": "77ee060c35318eb91b931388fc270d482edf08018a92163f7c5e78f3556fb6af"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C3293142/dist/probe/circuit.json",
+      "bytes": 41623,
+      "sha256": "52af66432fbcaf12fddc289c275022735eb8c4e4d8b915048053889486393d8b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C3293142/dist/probe/pcb.svg",
+      "bytes": 43170,
+      "sha256": "fcd1630442936fed72e047764c9a045ddfe8a751d696bdce924f0da43a1ac36a"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C3293142/dist/probe/schematic.svg",
+      "bytes": 48196,
+      "sha256": "1366733635e1257e0a5069ea0be32eaef6cbf13170d581f4f84e3729171568b6"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C3293142/imports/DSHP02TSGER.tsx",
+      "bytes": 10636,
+      "sha256": "e7abaaa96eb3b3a17055c41aaabf67003febac3dc75c6c753c0d93fae4a6abb3"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C3293142/package.json",
+      "bytes": 59,
+      "sha256": "eb2471d8c1b81e420f2f3597b230c4449e67470871287dc6bade3a8c0f83229d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C3293142/probe.circuit.tsx",
+      "bytes": 559,
+      "sha256": "c047c562283952bbc169c69a9c76068282915075d5a0f8307d7c2f1be8a304ca"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C395849/dist/probe/circuit.json",
+      "bytes": 15767,
+      "sha256": "c55aff402eb710d5879ddb14a7f198729043724c54c1df4e77088c188d592d6b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C395849/dist/probe/pcb.svg",
+      "bytes": 31605,
+      "sha256": "7ca79c5bafca11800433b4e5381bea7c934dd0a885359f2ab1e1439a20096762"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C395849/dist/probe/schematic.svg",
+      "bytes": 43917,
+      "sha256": "818c862fb8aabfdea83d3402cbb13a3e182756509e83313a447a77a2e79426a3"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C395849/imports/DB126V_5_0_2P_GN_P.tsx",
+      "bytes": 2073,
+      "sha256": "1b32c0cd23f399d763a138583bf58941df860b4452b582d1be65b0dc64ad8bd5"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C395849/package.json",
+      "bytes": 58,
+      "sha256": "1c657fbc523df3f3f87749dd12a2e1c42cce35a452b2d8cc92517196771906a2"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C395849/probe.circuit.tsx",
+      "bytes": 478,
+      "sha256": "ad50e1157cf2c4abb3224f5fee95e7a6017d296cc9b1f2f017ba814fa56168ee"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C403725/dist/probe/circuit.json",
+      "bytes": 16988,
+      "sha256": "f1987ebc5b646bad4f249609aaf8d7482816eeaa2e5b693e0d712f8aa7574f9a"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C403725/dist/probe/pcb.svg",
+      "bytes": 33950,
+      "sha256": "b0152d7d94e9c0d7300638de073af2c67a6e6d21f9ae3b8b2ecbdfbaca462252"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C403725/dist/probe/schematic.svg",
+      "bytes": 43183,
+      "sha256": "c04626c67fe2f9c798a51340c9b9a231537e5d1e5779c731b557155a18216dce"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C403725/imports/GRM31CR61E476ME44L.tsx",
+      "bytes": 2876,
+      "sha256": "265c0f53250ef9693ceaf0cbe596b8c3b96206f7c1c2075974d734b39bdb186b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C403725/package.json",
+      "bytes": 58,
+      "sha256": "c5f68cf4a7da4aa94efcd5ade82eb4116aec3bf86e6a2a6cb017131b979e1afb"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C403725/probe.circuit.tsx",
+      "bytes": 479,
+      "sha256": "82c1669c7f6edd5391184733563461320a9baeb245fa55e765a5db1274c40aeb"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C4184/dist/probe/circuit.json",
+      "bytes": 13694,
+      "sha256": "a5bc0de507896bd49e97874ccbcf2bc2c5965b38c6939c11c9bf07f4719701de"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C4184/dist/probe/pcb.svg",
+      "bytes": 30867,
+      "sha256": "42fe94104d4781058e455fb085a893eb0ff62481442906d6c0c84d2dc8bfdb73"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C4184/dist/probe/schematic.svg",
+      "bytes": 43074,
+      "sha256": "3ee8d2457a0f85903b346b704662352b3e0155205ecece3b92ee3da741d1d63d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C4184/imports/A_0603WAF2002T5E.tsx",
+      "bytes": 1893,
+      "sha256": "2ca45ea7a52b3658bb8e3398387a832be5c800bb8379c3c7ad51def05d3e8eed"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C4184/package.json",
+      "bytes": 56,
+      "sha256": "3c651b4f79165f0bc74b1866a4bd5fdc22493fcfa6188976c63c3a0d901e5d65"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C4184/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "2111d98041de73e6eb9e17bf2db98b892c24a01194b83d5f3ef1018d68fc25ba"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C440183/dist/probe/circuit.json",
+      "bytes": 17024,
+      "sha256": "037e976c3e7e459f78f18be0a2812cdeebc40c889b027e35296ef91b83082f24"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C440183/dist/probe/pcb.svg",
+      "bytes": 33974,
+      "sha256": "2aa91c8e319f40928491d3c143225eb3fb60ec8e2bc7b6af242d057b06197a0a"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C440183/dist/probe/schematic.svg",
+      "bytes": 43184,
+      "sha256": "47442c5dcc5996e81afd9dc909270d6d93961865c2628b068a949724a24dd797"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C440183/imports/GRM1885C1H562JA01D.tsx",
+      "bytes": 2897,
+      "sha256": "5433eb4b848e9e91e2f898ba78bc5acc092a17a935ed2c3d55c0b20d1652161c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C440183/package.json",
+      "bytes": 58,
+      "sha256": "b1a8f357230ff388595f72d2feb8cb367e74a046d0cb4bc9cc3243f6ea431670"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C440183/probe.circuit.tsx",
+      "bytes": 479,
+      "sha256": "10e79a96e27b6b08ad33723d772f52c1bd5d789d5df22c17cd91a924d147b819"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C44377/dist/probe/circuit.json",
+      "bytes": 48313,
+      "sha256": "d6458bc5afa042ee1708f406407a01f6d4f83b78037c8be4a3e1e24cae60d421"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C44377/dist/probe/pcb.svg",
+      "bytes": 34608,
+      "sha256": "3ec7aebbdc44b38558d4d89f3f059689913f247ea4a285dd8fa383a41db15312"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C44377/dist/probe/schematic.svg",
+      "bytes": 60783,
+      "sha256": "cd4302d5153388cfd2a8393d3dd01dc51ca394b5b9775b099ad6dbac477347b1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C44377/imports/TPS54360DDAR.tsx",
+      "bytes": 3578,
+      "sha256": "68c1d593a44ed8e1f402828993a3feb6627a8485a9f441fc2b090d4617ad34a2"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C44377/package.json",
+      "bytes": 57,
+      "sha256": "385aa4e4bcfa3389826ce2ea73764924af4758375f4ae9b7864647cd7513ab83"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C44377/probe.circuit.tsx",
+      "bytes": 814,
+      "sha256": "6efbe276e1f6642ce3c3f5fec44eed69ea628530c93ea9e09fa8184f26e0da50"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C468238/dist/probe/circuit.json",
+      "bytes": 33271,
+      "sha256": "6ae215a21dad2d08fe5e1a08edcc116a5f64630d55fe0bb6d262a7e75f368814"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C468238/dist/probe/pcb.svg",
+      "bytes": 32654,
+      "sha256": "bd936503af9835e2463b18b989ac5d866342cf30c0e9ac0c753e4bfdbc8d4a11"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C468238/dist/probe/schematic.svg",
+      "bytes": 56926,
+      "sha256": "922b25d3a09b662603854ee8fd560123bceb030d7d0fd82002dc53f39c465027"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C468238/imports/TPS7A1650DGNR.tsx",
+      "bytes": 3049,
+      "sha256": "11b2a95a8258c5909398aa85ebe49341db2fb0527213acb47cb42a07141af1a5"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C468238/package.json",
+      "bytes": 58,
+      "sha256": "9800b80282427abc0f17eb33bb51e1381d198b661421544155a0a7734a9e270c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C468238/probe.circuit.tsx",
+      "bytes": 652,
+      "sha256": "cf3903023d0416cee9f099f48570db01061e41ccb1ba6bc8de62c0135bfe085b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C477999/dist/probe/circuit.json",
+      "bytes": 23627,
+      "sha256": "58999e43e0ea94a01d4d7880337f34afdbf13e52ebdd2b7dd3740a1ce1a716ea"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C477999/dist/probe/pcb.svg",
+      "bytes": 31433,
+      "sha256": "301366fc78046e11f9a0eba7d40944abb3a522f5de501d6cab7f81266485865d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C477999/dist/probe/schematic.svg",
+      "bytes": 47062,
+      "sha256": "8eaad0f415d8e15dac7f3a9a496aadd7342c517ff9cba8485d3adaab692c4ad7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C477999/imports/PESD24VS2UT_215.tsx",
+      "bytes": 3350,
+      "sha256": "cd6f049a3fea15d0e45259275a82d1d315d005a4b255038db5e5571444d6a46c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C477999/package.json",
+      "bytes": 58,
+      "sha256": "9d3d452eb301abd6bf14f318f614e715601e6616e2465dde666f69a3d7d31470"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C477999/probe.circuit.tsx",
+      "bytes": 537,
+      "sha256": "6c49bcd3702c3d7e9a94e8ceda33b7626af72bd199a5a61aedf7e3934961ca6c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5184243/dist/probe/circuit.json",
+      "bytes": 62573,
+      "sha256": "b6ae855ac06d92e51455b6f6fd8541533b0fde17e507161e433457c6b1329839"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5184243/dist/probe/pcb.svg",
+      "bytes": 37798,
+      "sha256": "96fb760a00d8ce84c9328966a83dc88a1c98608da832e26881ddcdd78d69e1e5"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5184243/dist/probe/schematic.svg",
+      "bytes": 78435,
+      "sha256": "2cfee8abd4b5e6149aee5b0b149ce14cdc1914728b2b16daaf760e8eca2a8824"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5184243/imports/USB4105_GF_A_120.tsx",
+      "bytes": 4626,
+      "sha256": "bfc396fc889c4dd3a1e8d5977c482db3060ed772cbd913a62b0fcb4959d3fc29"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5184243/package.json",
+      "bytes": 59,
+      "sha256": "e77779721f322ec8ac97c04629be83b0f4cfb3089344db81b0cbf2e1f05fa87e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5184243/probe.circuit.tsx",
+      "bytes": 900,
+      "sha256": "b296606f12fb669cc1b35d73f2ffe63bdbb6779bc886c585b980e7689c43849b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C529330/baseline.circuit.tsx",
+      "bytes": 1124,
+      "sha256": "6e46bb90fb62c133fcd10d102100a7ced02e89e3b5e2ae63f8cb39ca47b1fbc7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C529330/dist/baseline/circuit.json",
+      "bytes": 86424,
+      "sha256": "b3eecf2bafc6cebe512ee42495f9275eac46097e4655bf48a83444f953a81ca3"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C529330/dist/probe/circuit.json",
+      "bytes": 85539,
+      "sha256": "46177744a9dfe247470d33369eb26eda79faf9482cab9f1928c60dc68f7e15d1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C529330/dist/probe/pcb.svg",
+      "bytes": 36322,
+      "sha256": "432b453900d5c87c31a17eb99b8e0f3c6e1b57ffed63cbc29a00ccb19421d78b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C529330/dist/probe/schematic.svg",
+      "bytes": 85821,
+      "sha256": "75484d4f1ec939c350026608e833b61bd3d20361d7879e5b96f731ec3e92548f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C529330/imports/STM32G030F6P6TR.tsx",
+      "bytes": 9564,
+      "sha256": "1fbcf271254c2629b694ac24e42220ee11d01f318685dcfa1d3061cf43b7252d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C529330/package.json",
+      "bytes": 58,
+      "sha256": "8eceebb7751104dcb734f815f569a742c0db1c947dd417b6f782aa5c65b8cb40"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C529330/probe.circuit.tsx",
+      "bytes": 1117,
+      "sha256": "21f5a0f597415b2995a0086814cb2685ee1070a21162a086e945eef59876be86"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C53444/dist/probe/circuit.json",
+      "bytes": 22361,
+      "sha256": "ec81f7f770e7869db4f089406f79f9f3812aa53f763c9ca04e2294ed88be9844"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C53444/dist/probe/pcb.svg",
+      "bytes": 31433,
+      "sha256": "cdcf329a8b3a24500817b12a6f95fedd02832260161275730ec97f535ccec7c1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C53444/dist/probe/schematic.svg",
+      "bytes": 46516,
+      "sha256": "9949c8d09611e610068399c7d6b262d035ce92ca768a6d5e0af02d3588d4c662"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C53444/imports/MMBT3906LT1G.tsx",
+      "bytes": 3035,
+      "sha256": "175d09eda8c68987f44c7ea9ab6bfa4e7abd0bc55ed25968b24957dec3c087ef"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C53444/package.json",
+      "bytes": 57,
+      "sha256": "11ac8136f21fd8ce9b2aee2fe915e3ef2159f8f0abacba135a61a5e5ce644235"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C53444/probe.circuit.tsx",
+      "bytes": 472,
+      "sha256": "77cc4dd38c4dc2aa90145ccaa86d11744d5aa2578e78225bee872eb50f0dd40f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5710902/dist/probe/circuit.json",
+      "bytes": 35366,
+      "sha256": "31fcc3ae7adc15ea2a82d53b6d2713990396a20cd700535ace61aee37a8c32b4"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5710902/dist/probe/pcb.svg",
+      "bytes": 35730,
+      "sha256": "7752419d3b8e77dad7b52100311f58c665e8a91293340c79aff5c24338fe6ee4"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5710902/dist/probe/schematic.svg",
+      "bytes": 51282,
+      "sha256": "5548154e2d059f6ba73c076880801e1f72b2fd49e531931b1b55a5801dc11548"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5710902/imports/PTV09A_4015F_B103.tsx",
+      "bytes": 5251,
+      "sha256": "189208db987c7184848579655e3138e3533ef013bd1afedb4e4e4aac41ec6e99"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5710902/package.json",
+      "bytes": 59,
+      "sha256": "df84333c4d4af9492f07d94e8c39d26e836c10937c0efa29bdca306c1d4f2d73"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C5710902/probe.circuit.tsx",
+      "bytes": 610,
+      "sha256": "9c5760efb7662846f85612723404414b9967b3452e1f496dbef6d8cf09f3097b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C57112/dist/probe/circuit.json",
+      "bytes": 17011,
+      "sha256": "06b5edc088614db7ac33b1f9cb312a2987a946145395b0890e968ff58dcd01a5"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C57112/dist/probe/pcb.svg",
+      "bytes": 33974,
+      "sha256": "e9e93304464f79a47aaca8e6a0e0244f6433eea87f78cce67f35b7dfe7bdde2c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C57112/dist/probe/schematic.svg",
+      "bytes": 43183,
+      "sha256": "4344f595dd13d57264b9fecb364966e69fddedb182789b8a12a2cc57b27f86d6"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C57112/imports/A_0603B103K500NT.tsx",
+      "bytes": 2887,
+      "sha256": "42af23cbda895418a46f2366b77e94e0b39d81babbf298745ba12c94209dba5a"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C57112/package.json",
+      "bytes": 57,
+      "sha256": "6209b37351c136bc48ca1b6445cca37fa1476920841173c16af2817366b88e6d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C57112/probe.circuit.tsx",
+      "bytes": 473,
+      "sha256": "2e6375dfc56c5cd87452bcb3339301687be2d852ac14ba3babf6a0b22dc28e24"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C67470/dist/probe/circuit.json",
+      "bytes": 39468,
+      "sha256": "67dce97fa9bab6a40b822a8f9a6cc49ed2d35aaf02789bcd87dd3a7843df202c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C67470/dist/probe/pcb.svg",
+      "bytes": 34639,
+      "sha256": "52655077b0efb95b4c2b18c94f9b529146897be9a82411279ac763eb7fa637a7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C67470/dist/probe/schematic.svg",
+      "bytes": 58911,
+      "sha256": "8f4ddd1ec109881d714ed55f80479708671dee37c715296c9c7ccbaf5e9163a6"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C67470/imports/LM393DR.tsx",
+      "bytes": 4094,
+      "sha256": "9e1dac82cc4bd8e4cb6f92f7ef871b737324f4bb2ea44387c3fe2564539de1f1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C67470/package.json",
+      "bytes": 57,
+      "sha256": "3118c71135beb2813256322e8298211ec2dab9f62330a69d2d302f4cc5d73e1f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C67470/probe.circuit.tsx",
+      "bytes": 700,
+      "sha256": "d105f56e5b30ba5d95ec85debe6ef370871b53f8f2203e449a2ba642f083f171"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C6986/dist/probe/circuit.json",
+      "bytes": 38381,
+      "sha256": "2daed9c7af11ab5b551ba4e3bb15003ffa2879c4f8d187597c32db3954f6d312"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C6986/dist/probe/pcb.svg",
+      "bytes": 34629,
+      "sha256": "7737eb921da4047b99e7234b6c01d8c87500e83f9f30d169328fa1a6a2618b9f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C6986/dist/probe/schematic.svg",
+      "bytes": 58703,
+      "sha256": "453a731b34b9709393d5e0de3b0b788f0247a461ad8dc8b38ca123fcc7c9eb2f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C6986/imports/TLC555CDR.tsx",
+      "bytes": 3748,
+      "sha256": "e40d9c2471c3adf2d164c62cd64e86a91d8fc1d462bb9a4f21ca17dde133cd80"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C6986/package.json",
+      "bytes": 56,
+      "sha256": "0e889558577661252405d2fd930df81f55671c138fa747ccf6832ebbccab1c04"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C6986/probe.circuit.tsx",
+      "bytes": 684,
+      "sha256": "c893ec4a836780bf10d2c09a3d09602e2070288bd8bbc5379e5ae43836c92ba2"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C7420353/dist/probe/circuit.json",
+      "bytes": 22441,
+      "sha256": "94705864072521aecc3405e186add406a0ebbf3a1c1a4d079a4c0a4380744d78"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C7420353/dist/probe/pcb.svg",
+      "bytes": 31433,
+      "sha256": "186f64e32eb3391361750e42af230cf9d1b09a77fa99bce794574b6a2c03b721"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C7420353/dist/probe/schematic.svg",
+      "bytes": 46499,
+      "sha256": "4febf357e62f2e3650109c03713cd5f4f778f93548b2d4893e6ef7f99f105c61"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C7420353/imports/MMBT3904.tsx",
+      "bytes": 3231,
+      "sha256": "fa301a7330a3df6cf1a0e407601edb60e7b5179462b9eba764ac7384f85c34b8"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C7420353/package.json",
+      "bytes": 59,
+      "sha256": "c5e0b0d6ed849462a1a4a3713af39f1cdbf573b34fec40c8ae1b3b679b7da9ef"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C7420353/probe.circuit.tsx",
+      "bytes": 460,
+      "sha256": "f4d6dab412d2e2d12b156df51ef4b55578b2ccefba088cdfcc9bc747eab84ba6"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C77083/dist/probe/circuit.json",
+      "bytes": 17018,
+      "sha256": "493cc6f477f7ed5d409cbcb6e9c7083f813d76cb378b51887340db6ec28ff829"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C77083/dist/probe/pcb.svg",
+      "bytes": 33961,
+      "sha256": "d63124f569f83b99b215c70d3e5f91d8435e49ba7692e97318ccba3c106a13d8"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C77083/dist/probe/schematic.svg",
+      "bytes": 43181,
+      "sha256": "2e7b07d376e03fb7df850917a634252688aabf573ff62135fef91c8b3341317b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C77083/imports/GRM21BR71H105KA12L.tsx",
+      "bytes": 2909,
+      "sha256": "ad456a6073fdbac98c019d7b786401cc80b44941ab33aafeba33b6a7b57b2912"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C77083/package.json",
+      "bytes": 57,
+      "sha256": "6f9e6a569482dcb1dd9a77b66a0f3eff1a2f1e4cf792aa9867cc4ae15168ada6"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C77083/probe.circuit.tsx",
+      "bytes": 478,
+      "sha256": "576b515df020235c0cf345b6d2b3441b6d3ba100cc7ab1b796cf1172bd6fa7da"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C844918/dist/probe/circuit.json",
+      "bytes": 13701,
+      "sha256": "2c2132cd4680af01154629dc2a71458c7413adf8da2f262bf19f415ba4ad86d1"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C844918/dist/probe/pcb.svg",
+      "bytes": 30864,
+      "sha256": "052f83dd6cbcf208d9bc84259c5130bb920c44375c93d983c6cc9e5f3b9f8291"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C844918/dist/probe/schematic.svg",
+      "bytes": 43073,
+      "sha256": "872f6f961d9701c19c54cf00eb775a4f896e1d12834989774bb42f091b586c7e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C844918/imports/CRCW060310K0FKEA.tsx",
+      "bytes": 1901,
+      "sha256": "167fd1ae784c5ec8657527afde28bdf76ac7f6709485187dcdb4d5236015726c"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C844918/package.json",
+      "bytes": 58,
+      "sha256": "38c57d81de4e491b9a76d0cd309382ecccb67535b0bc13cc227a60237bb9ec88"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C844918/probe.circuit.tsx",
+      "bytes": 472,
+      "sha256": "c81d2e6ac5f2aa60ef298cbdc5325c825aaaee7321a015ef8a9be5a6964a810a"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C855559/dist/probe/circuit.json",
+      "bytes": 11027,
+      "sha256": "ace18f0f1f222f82434ce65871413369fbd007b77eb9f39b8fe746af6431ef7f"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C855559/dist/probe/pcb.svg",
+      "bytes": 30811,
+      "sha256": "74397646c30554cd4697dd846417169dc5717f817c8d9bd2b7c280ba1c1a926e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C855559/dist/probe/schematic.svg",
+      "bytes": 41019,
+      "sha256": "464f5a93f203cd9233777fb0418b290cd7e44a10a437163897225025c8d11686"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C855559/imports/AT0603BRD07100KL.tsx",
+      "bytes": 1902,
+      "sha256": "a4bead5162c47e3b9f9eb2794fba0d556573e8a694f9adc48d77088bf905fe99"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C855559/package.json",
+      "bytes": 58,
+      "sha256": "965425a887db3e13d4b9afe0f7da04f61fc092756e46ae095768e81793578607"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C855559/probe.circuit.tsx",
+      "bytes": 281,
+      "sha256": "d314e76c411773f100fa2a90fe233559cb45fcb83beaa151a2a5a1c2dc86a395"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C8598/dist/probe/circuit.json",
+      "bytes": 20505,
+      "sha256": "4dfb5cb846ad0e7ea90dc579f3c62122c7e0ec8fd0495b7be94ddfe58365a134"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C8598/dist/probe/pcb.svg",
+      "bytes": 36251,
+      "sha256": "392704fc01d5776553bd14d531c6a6e5cfdc6808b8eee9e848fa7db97480ca70"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C8598/dist/probe/schematic.svg",
+      "bytes": 43590,
+      "sha256": "5f1ea59a680e3b1556da21a18e6a3161b8e7dc4542a9caafeb1592f97408ffc4"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C8598/imports/B5819W_SL.tsx",
+      "bytes": 4305,
+      "sha256": "f86fbb8d766721394f154a6212750cdad3c16213140d06ea7757fefa106fc2f7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C8598/package.json",
+      "bytes": 56,
+      "sha256": "88fdaa3f62d56718ff09b677bb593f2cbb73362dc97d84bdabf2402b3a1dfd74"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C8598/probe.circuit.tsx",
+      "bytes": 455,
+      "sha256": "a5b5960db362568cdf6b73bbe15557f30ed30fffb74ea50b5ea70744a61d0c1e"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C908270/dist/probe/circuit.json",
+      "bytes": 20221,
+      "sha256": "f7c345868b8e72e020dfdb1a1fd74e65868005dbfdb92910e03404aba11c26e9"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C908270/dist/probe/pcb.svg",
+      "bytes": 34301,
+      "sha256": "f73718b75083cde5920e3eaa168f355cfc7e4dfe6c6c6f950eee5086785625df"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C908270/dist/probe/schematic.svg",
+      "bytes": 46017,
+      "sha256": "54660cb44b32b88ac5a11b29daf41c558d66ecfe13d04fc4b251657c7aaca645"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C908270/imports/A_1MS3T1B1M2QES_5.tsx",
+      "bytes": 2394,
+      "sha256": "6145f8daf69046d82664441c9c1b3675ccc318e9159c755618ef3825468514de"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C908270/package.json",
+      "bytes": 58,
+      "sha256": "edbece6ca8eac7c331683c824ae398293758e467c46c75cf71b36267fad019f7"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C908270/probe.circuit.tsx",
+      "bytes": 544,
+      "sha256": "dadb993627378144a56f054e51cf76ad46b3be93e393390b9179d8d50ff26f3d"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C95204/dist/probe/circuit.json",
+      "bytes": 11018,
+      "sha256": "b903f44abed392e1564fb9cf8f56ec670216ad0d824eee98b9cb6c5c64c6079b"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C95204/dist/probe/pcb.svg",
+      "bytes": 30811,
+      "sha256": "42f60674f29c504edafc6fe174d8b34dfae242235d79a0f8d59747d0f9119759"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C95204/dist/probe/schematic.svg",
+      "bytes": 41018,
+      "sha256": "e5c07e456279020a1d30864fba1b577482dd608e323ed60000d3bc8360feb717"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C95204/imports/RT0603BRD0710KL.tsx",
+      "bytes": 1896,
+      "sha256": "9a0c6d8ab52c89656e54c3d7bf6d80453c64d837eda04ba67f238c38f4434d81"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C95204/package.json",
+      "bytes": 57,
+      "sha256": "a3af8c78cba516fa94d4b9bdb1ac0613bdadeb41802354d370007db8d24ef5c2"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/C95204/probe.circuit.tsx",
+      "bytes": 278,
+      "sha256": "c99ec7a275b76aefd623b62b62e95e1326941e5d8dbae8479c8030bf319bddbf"
+    },
+    {
+      "path": "tooling/supplier-reimports-A49/tsconfig.json",
+      "bytes": 214,
+      "sha256": "ba06e3397b37d99d5a61eb7ddbb32d851bda926098fceefd7cdfc1b95bcade28"
     },
     {
       "path": "tooling/tscircuit-capacity-autorouter-0.0.959-a39.tgz",

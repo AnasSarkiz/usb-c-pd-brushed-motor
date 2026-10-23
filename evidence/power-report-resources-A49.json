@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bun",
+    "run",
+    "power:report"
+  ],
+  "cwd": "/Users/anassarkiz/tsci/tscircuit-store/boards/usb-c-pd-brushed-motor--a7c39d12",
+  "exit_code": 0,
+  "stop_reason": null,
+  "sampled_process_tree_peak_rss_kib": 256,
+  "limit_mib": 2048,
+  "elapsed_seconds": 0.51,
+  "log": "evidence/power-report-A49.log",
+  "log_sha256": "804bcfa6fe32554b3d2fd49cdb256da4dcbf9cf7b8bd1d2a60e04f2e8da38320"
+}

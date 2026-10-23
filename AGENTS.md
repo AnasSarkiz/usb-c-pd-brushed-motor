@@ -1,3 +1,12 @@
+# A49 update gate
+
+The latest official dependency candidate is installed but whole-board TypeScript
+is blocked by two missing project-local APIs. All58 fresh supplier imports pass
+isolated validation and remain staged. Read docs/TOOLCHAIN-REIMPORT-A49.md first.
+Do not remove safety/manufacturing settings, suppress errors, patch components,
+run routing or publish stale circuit JSON to bypass this gate. Prior A48 JSON
+and package are historical. Preserve the approved active USB-C pad correction.
+
 # Cloud continuation of the existing motor-controller board
 
 Read `docs/cloud/HANDOFF.md` first, then `docs/cloud/SETUP.md`. This standalone

@@ -1,0 +1,20 @@
+Building 1 file(s)...
+Building probe.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/probe/circuit.json
+Port pin1 on R61 is missing a trace
+Port pin2 on R61 is missing a trace
+R61 may not have availability from jlcpcb (C95204).
+Generating preview images...
+[probe] Generating PCB SVG...
+[probe] Written pcb.svg
+[probe] Generating schematic SVG...
+[probe] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully
