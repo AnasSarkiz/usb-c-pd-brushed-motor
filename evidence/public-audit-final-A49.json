@@ -1,0 +1,106 @@
+{
+  "checked_at": "2026-10-23T12:28:39.499924+00:00",
+  "anonymous": true,
+  "source_commit": "7aad816f5e224b7c193ada1f3a61522a0a293630",
+  "new_package_published": false,
+  "records": [
+    {
+      "path": "package.json",
+      "sha256": "193e2c3e7e1b5a297ba0a223ab421319ae086fe65097546f2c62fb2217ac2e71",
+      "matched": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3",
+      "matched": true
+    },
+    {
+      "path": "docs/TOOLCHAIN-REIMPORT-A49.md",
+      "sha256": "ae4f2b4426ca80f8b0e88aac2adef956995031bca9f107d05d584aaba70e1e87",
+      "matched": true
+    },
+    {
+      "path": "docs/cloud/CONTEXT-MANIFEST.json",
+      "sha256": "79a0c272da47ef243cc7a21e59d54d82b63d8347ffa65627ebd5eae646d19e30",
+      "matched": true
+    }
+  ],
+  "previous_attempts": [
+    {
+      "outcome": "GitHub repository/commit tree and14 source SHA checks passed; registry public flags passed; prior artifact GET returned403",
+      "source": "Initial verification tool output; process reached package_files/get after all preceding assertions"
+    },
+    {
+      "outcome": "Repeat verification failed with raw.githubusercontent.com TLS handshake timeout",
+      "log": "evidence/public-audit-synchronization-A49.log"
+    }
+  ],
+  "package_public_flags": {
+    "is_public": true,
+    "is_private": false,
+    "is_unlisted": false,
+    "public_dist_enabled": true
+  },
+  "previous_request_header_issue": {
+    "http_status": 400,
+    "error_body": "{\"ok\":false,\"error\":{\"message\":\"Error while parsing JSON body\",\"error_code\":\"internal_server_error\"}}",
+    "version": "0.0.1-a48-cloud-pipeline9-unrouted-c41d79a-305b1e7a"
+  },
+  "prior_package_artifact": {
+    "http_status": 200,
+    "version_requested": "0.0.1-a48-cloud-pipeline9-unrouted-c41d79a-305b1e7a",
+    "observations": {
+      "package_file_id": "1c022572-1c27-47bd-a789-840fea0df1ac",
+      "package_release_id": "4e38bd4f-9d6c-4000-ac79-dfd5b9ac116d",
+      "file_path": "dist/index/circuit.json",
+      "is_text": true,
+      "content_mimetype": "application/json",
+      "created_at": "2026-10-05T10:30:57.537Z",
+      "content_text_length": 2729979,
+      "content_base64_length": 0,
+      "text_sha256": "9e218635057adde618583308f8546aed6a39b1ea086fa67196076b3436b89406"
+    },
+    "expected_sha256": "ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3",
+    "passed": false,
+    "parsed_json_equal": false,
+    "prior_verified_release_id": "4e38bd4f-9d6c-4000-ac79-dfd5b9ac116d",
+    "local_bytes": 2730148,
+    "remote_bytes": 2730148,
+    "differing_elements": 1,
+    "difference_examples": [
+      {
+        "index": 4979,
+        "type": "source_project_metadata",
+        "keys": [
+          "source_filesystem_md5_hash"
+        ],
+        "example": {
+          "source_filesystem_md5_hash": {
+            "local": "850f63e686b35452daf9675c0a997bfc",
+            "remote": "caa6dbd7fcfb044fbc575a5677cfdd48"
+          }
+        }
+      }
+    ]
+  },
+  "request_note": "The previous400 response followed an unnecessary JSON Content-Type on a bodyless GET; corrected request uses the official client header convention. Prior failure log retained.",
+  "retained_prior_request_failures": [
+    {
+      "operation": "anonymous prior package artifact verification",
+      "result": {
+        "http_status": 200,
+        "bytes": 3053445,
+        "note": "Content response requires separate byte validation"
+      }
+    }
+  ],
+  "errors": [
+    {
+      "operation": "anonymous prior package artifact verification",
+      "error": "Downloaded artifact SHA256 differs from previously verified A48 bytes",
+      "remote_sha256": "9e218635057adde618583308f8546aed6a39b1ea086fa67196076b3436b89406",
+      "expected_sha256": "ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3"
+    }
+  ],
+  "status": "Public GitHub diagnostic source verified. No new package published. Prior named package download currently does not byte-match recorded A48 artifact; registry consistency needs investigation."
+}

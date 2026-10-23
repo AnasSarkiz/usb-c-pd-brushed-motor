@@ -1,5 +1,30 @@
 # A49 official toolchain and supplier re-import audit — blocked migration
 
+## A49 public diagnostic synchronization receipt — 2026-10-23
+
+[GitHub diagnostic source7aad816](https://github.com/AnasSarkiz/usb-c-pd-brushed-motor/commit/7aad816f5e224b7c193ada1f3a61522a0a293630)
+is pushed to public main. Repository/commit-tree assertions and14 critical
+source-byte checks passed during the first anonymous verification; final
+sequential checks independently match package.json, prior circuit JSON, A49
+report and all1347 context bindings. No historical dirty routing files are included.
+
+No A49 tscircuit package is published: whole-board API migration fails and no
+valid matching new board artifact exists. The existing package's public flags
+remain true. Its A48 artifact download now succeeds anonymously after initial
+403/TLS failures and a bodyless-GET Content-Type mistake (all retained). The
+named A48 file SHA256 is9e218635057adde618583308f8546aed6a39b1ea086fa67196076b3436b89406,
+while committed A48 bytes are ed522500985229393c04e1bb92896e717fa7501595cdb34358a52598c50c5cf3.
+Comparison of the parsed arrays finds exactly one changed element:
+source_project_metadata.source_filesystem_md5_hash. Every other element,
+including all electrical connectivity and PCB geometry, is identical. This is
+a strict publication-identity blocker, not a newly observed electrical defect.
+No Circuit JSON is hand-edited to force a match. Record/response details are in
+evidence/public-audit-final-A49.json; the ignored cached response is not published.
+
+This receipt adds documentation and verification evidence only. It does not
+claim the candidate migration, full-board gates, routing or registry publication
+passed. The original implementation/audit source remains7aad816.
+
 2026-10-23. Source baseline9d8b45b; exact current dependencies and generated
 supplier probes are bound in docs/cloud/CONTEXT-MANIFEST.json. See
 [the detailed A49 report](docs/TOOLCHAIN-REIMPORT-A49.md).

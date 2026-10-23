@@ -126,3 +126,13 @@ resource records under evidence/supplier-reimports-A49/.
 The generic bounded-command runner requires process-monitor access before
 starting a child. Its2GiB limit is a safeguard, not evidence of routing memory
 requirements or capacity in an actual Codex Cloud VM.
+
+## Public synchronization result
+
+The public GitHub diagnostic source is7aad816f5e224b7c193ada1f3a61522a0a293630. No new registry package was
+published. Current anonymous registry metadata confirms public visibility; the
+old named A48 download succeeds but differs from committed bytes only in its
+source_filesystem_md5_hash project metadata. All remaining JSON elements are
+identical. Strict byte identity still fails. Initial403/TLS failures and the
+corrected bodyless-GET header error remain recorded, not presented as persistent
+private visibility or an electrical failure. See evidence/public-audit-final-A49.json.

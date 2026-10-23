@@ -1,0 +1,7 @@
+package.json matched
+dist/index/circuit.json matched
+docs/TOOLCHAIN-REIMPORT-A49.md matched
+docs/cloud/CONTEXT-MANIFEST.json matched
+{"matched_files": 4, "errors": [{"operation": "anonymous prior package artifact verification", "http_status": 400}], "prior_package_artifact": {"http_status": 400, "error_body": "{\"ok\":false,\"error\":{\"message\":\"Error while parsing JSON body\",\"error_code\":\"internal_server_error\"}}", "version": "0.0.1-a48-cloud-pipeline9-unrouted-c41d79a-305b1e7a"}}
+
+Final saved-response analysis: anonymous HTTP200; artifact differs only in source_project_metadata.source_filesystem_md5_hash; required exact-byte check FAILS. See public-audit-final-A49.json.

@@ -1,6 +1,6 @@
 {
-  "revision": "A49 latest official toolchain candidate; 58 supplier probes pass, whole-board API migration blocked",
-  "source_baseline": "9d8b45b5d6fcde027a7b5a3f671f3a3e1b8c280f; last published board source c41d79ab6a566700de58a5695cbf1eb75406a5cd A48",
+  "revision": "A49 public diagnostic receipt; 58 supplier probes pass, whole-board API migration and exact registry identity blocked",
+  "source_baseline": "A49 diagnostic source 7aad816f5e224b7c193ada1f3a61522a0a293630; last published board source c41d79ab6a566700de58a5695cbf1eb75406a5cd A48",
   "files": [
     {
       "path": ".agents/skills/tscircuit/.gitignore",
@@ -514,8 +514,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 253269,
-      "sha256": "735bbfc290093a8bcdf4726e9a8370134527c7463f544899eea677c1e0ba68cd"
+      "bytes": 254962,
+      "sha256": "d0d4c73927b80308b3eaef512490fa59a220299bd6cb2d2b64f1d4b16f90a3c7"
     },
     {
       "path": "biome.json",
@@ -789,8 +789,8 @@
     },
     {
       "path": "docs/TOOLCHAIN-REIMPORT-A49.md",
-      "bytes": 7956,
-      "sha256": "ae4f2b4426ca80f8b0e88aac2adef956995031bca9f107d05d584aaba70e1e87"
+      "bytes": 8577,
+      "sha256": "3dd278c4fc0d8013c2932dc8a637718e7aff939cccf2ccd717232aec5fb5e1ac"
     },
     {
       "path": "docs/TOOLING-ISSUES.md",
@@ -900,7 +900,7 @@
     {
       "path": "evidence/format-check-final-A49.log",
       "bytes": 62,
-      "sha256": "cdf000fad4b092c416da3f91b89a019f3718b06e85c09fa6727bcf7bcd4ef70a"
+      "sha256": "e33838df4d4983b2858d484a5de820e9532e9b78076686c74f43fac169e64815"
     },
     {
       "path": "evidence/format-check-resources-A49.json",
@@ -1236,6 +1236,21 @@
       "path": "evidence/preupgrade-A49/tscircuit.config.json.txt",
       "bytes": 144,
       "sha256": "22c2cefeeabcee5931e1d01a7a6316b4577a9084b7fcedea05500e39d0baf3ef"
+    },
+    {
+      "path": "evidence/public-audit-final-A49.json",
+      "bytes": 4080,
+      "sha256": "7c33210d337609ba00e646217e3fe649c70056cdbb6c8ec341ba955d6b7a87bb"
+    },
+    {
+      "path": "evidence/public-audit-final-A49.log",
+      "bytes": 689,
+      "sha256": "1cc88a0b0c2a7b6b0e9cc1f4caca96a9bd8e430caf354312b08a4e57d38ebf7e"
+    },
+    {
+      "path": "evidence/public-audit-synchronization-A49.log",
+      "bytes": 6764,
+      "sha256": "042b869158f0fd7b246f470e1c869f2dc06fe9aef57fdd25d058cead1c225c7a"
     },
     {
       "path": "evidence/reimport-audit-config-A49.json",
